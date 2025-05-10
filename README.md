@@ -10,7 +10,7 @@ Collection of single markdown files for each post type on [WordPress Developer R
 - [REST API Handbook](https://developer.wordpress.org/rest-api/) as [wp-rest-api-handbook.md](docs/wp-rest-api-handbook.md)
 - [WordPress Coding Standards Handbook](https://developer.wordpress.org/coding-standards/) as [wp-wpcs-handbook.md](docs/wp-wpcs-handbook.md)
 - [Secure Custom Fields Handbook](https://developer.wordpress.org/secure-custom-fields/) as [wp-scf-handbook.md](docs/wp-scf-handbook.md)
-- [WordPress user documentation](https://wordpress.org/documentation/) as [wp-articles](docs/wp-articles.md)
+- [WordPress user documentation](https://wordpress.org/documentation/) as [wp-articles.md](docs/wp-articles.md)
 
 Extracted from REST API of each site using custom PHP CLI scripts. 
 
