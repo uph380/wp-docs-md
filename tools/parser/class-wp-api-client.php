@@ -131,11 +131,13 @@ class WP_API_Client {
 		$this->log( 'Found %d URLs in %s', count( $urls ), $sitemap_url );
 	
 		// Resolve child sitemaps, if any.
-		foreach ( $sitemap->sitemap as $sitemap ) {
-			$urls = array_merge( $urls, $this->get_sitemap_urls( (string) $sitemap->loc ) );
+		if ( ! empty( $sitemap->sitemap ) ) {
+			foreach ( $sitemap->sitemap as $sitemap ) {
+				$urls = array_merge( $urls, $this->get_sitemap_urls( (string) $sitemap->loc ) );
 
-			if ( $this->delay ) {
-				sleep( $this->delay );
+				if ( $this->delay ) {
+					sleep( $this->delay );
+				}
 			}
 		}
 		
