@@ -1,0 +1,882 @@
+{
+    "https://developer.wordpress.org/plugins/credits/": [],
+    "https://developer.wordpress.org/plugins/plugin-basics/": [
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/",
+        "https://developer.wordpress.org/reference/functions/register_activation_hook/",
+        "https://developer.wordpress.org/reference/functions/register_deactivation_hook/",
+        "https://developer.wordpress.org/reference/functions/register_uninstall_hook/",
+        "https://developer.wordpress.org/plugins/the-basics/activation-deactivation-hooks/",
+        "https://developer.wordpress.org/plugins/the-basics/activation-deactivation-hooks/",
+        "https://developer.wordpress.org/plugins/the-basics/uninstall-methods/",
+        "https://developer.wordpress.org/reference/functions/do_action/",
+        "https://developer.wordpress.org/reference/functions/remove_action/",
+        "https://developer.wordpress.org/reference/functions/remove_action/",
+        "https://developer.wordpress.org/reference/functions/add_action/",
+        "https://developer.wordpress.org/reference/functions/remove_action/",
+        "https://developer.wordpress.org/reference/functions/add_action/",
+        "https://developer.wordpress.org/plugin/hooks/",
+        "https://make.wordpress.org/core/handbook/core-apis/",
+        "https://codex.wordpress.org/Options_API",
+        "https://en.wikipedia.org/wiki/CURL",
+        "https://codex.wordpress.org/HTTP_API",
+        "https://codex.wordpress.org/Plugin_API",
+        "https://wordpress.org/plugins/hello-dolly/",
+        "https://opensource.org/licenses/category"
+    ],
+    "https://developer.wordpress.org/plugins/plugin-basics/header-requirements/": [
+        "https://developer.wordpress.org/plugins/plugin-basics/#getting-started",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#1-plugins-must-be-compatible-with-the-gnu-general-public-license",
+        "https://www.gnu.org/licenses/gpl-2.0.html",
+        "https://www.gnu.org/software/gettext/",
+        "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#text-domains",
+        "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/",
+        "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#domain-path",
+        "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/",
+        "https://make.wordpress.org/core/2021/06/29/introducing-update-uri-plugin-header-in-wordpress-5-8/",
+        "https://make.wordpress.org/core/2024/03/05/introducing-plugin-dependencies-in-wordpress-6-5/"
+    ],
+    "https://developer.wordpress.org/plugins/plugin-basics/including-a-software-license/": [
+        "http://www.gnu.org/licenses/gpl.html",
+        "https://wordpress.org/about/license/",
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/"
+    ],
+    "https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/": [
+        "https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/",
+        "https://developer.wordpress.org/reference/functions/register_activation_hook/",
+        "https://developer.wordpress.org/reference/functions/register_deactivation_hook/",
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/",
+        "https://developer.wordpress.org/reference/functions/register_activation_hook/",
+        "https://developer.wordpress.org/reference/functions/register_deactivation_hook/"
+    ],
+    "https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/": [
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/functions/register_uninstall_hook/",
+        "https://developer.wordpress.org/reference/functions/register_uninstall_hook/"
+    ],
+    "https://developer.wordpress.org/plugins/plugin-basics/best-practices/": [
+        "http://php.net/manual/en/function.isset.php",
+        "http://php.net/manual/en/function.function-exists.php",
+        "http://php.net/manual/en/function.class-exists.php",
+        "http://php.net/manual/en/function.defined.php",
+        "http://php.net/manual/en/language.oop5.php",
+        "https://developer.wordpress.org/plugin/the-basics/uninstall-methods/",
+        "https://codex.wordpress.org/Function_Reference/is_admin",
+        "https://developer.wordpress.org/plugins/security/checking-user-capabilities/",
+        "https://github.com/GaryJones/move-floating-social-bar-in-genesis/blob/master/move-floating-social-bar-in-genesis.php",
+        "https://github.com/norcross/wp-comment-notes/blob/master/wp-comment-notes.php",
+        "https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate",
+        "https://jjj.blog/2012/12/slash-architecture-my-approach-to-building-wordpress-plugins/",
+        "http://iandunn.name/wp-mvc",
+        "https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate",
+        "https://github.com/claudiosmweb/wordpress-plugin-boilerplate",
+        "https://github.com/ptahdunbar/wp-skeleton-plugin",
+        "https://developer.wordpress.org/cli/commands/scaffold/plugin/"
+    ],
+    "https://developer.wordpress.org/plugins/security/": [
+        "https://developer.wordpress.org/apis/security/"
+    ],
+    "https://developer.wordpress.org/plugins/hooks/": [
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/plugins/hooks/filters/",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/plugins/hooks/filters/",
+        "https://en.wikipedia.org/wiki/Side_effect_(computer_science)",
+        "https://developer.wordpress.org/plugins/hooks/custom-hooks/",
+        "https://developer.wordpress.org/apis/hooks/filter-reference/",
+        "https://developer.wordpress.org/apis/hooks/action-reference/"
+    ],
+    "https://developer.wordpress.org/plugins/hooks/actions/": [
+        "https://developer.wordpress.org/plugins/hooks/",
+        "https://developer.wordpress.org/plugin/hooks/filters/",
+        "https://developer.wordpress.org/plugins/hooks/#actions-vs-filters",
+        "https://developer.wordpress.org/reference/functions/add_action/",
+        "https://developer.wordpress.org/plugins/hooks/",
+        "https://developer.wordpress.org/reference/hooks/save_post/",
+        "https://developer.wordpress.org/reference/hooks/save_post/"
+    ],
+    "https://developer.wordpress.org/plugins/hooks/filters/": [
+        "https://developer.wordpress.org/plugins/hooks/",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://en.wikipedia.org/wiki/Side_effect_(computer_science)",
+        "https://developer.wordpress.org/reference/functions/add_filter/",
+        "https://developer.wordpress.org/plugins/hooks/",
+        "https://developer.wordpress.org/reference/functions/add_filter/",
+        "https://developer.wordpress.org/plugins/hooks/actions/"
+    ],
+    "https://developer.wordpress.org/plugins/hooks/custom-hooks/": [
+        "https://developer.wordpress.org/reference/functions/do_action/",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/reference/functions/apply_filters/",
+        "https://developer.wordpress.org/plugins/hooks/filters/",
+        "https://developer.wordpress.org/reference/functions/apply_filters/",
+        "https://developer.wordpress.org/reference/functions/add_action/",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/reference/functions/add_filter/",
+        "https://developer.wordpress.org/plugins/hooks/filters/"
+    ],
+    "https://developer.wordpress.org/plugins/hooks/advanced-topics/": [
+        "https://developer.wordpress.org/reference/hooks/after_setup_theme/",
+        "https://developer.wordpress.org/reference/functions/did_action/"
+    ],
+    "https://developer.wordpress.org/plugins/administration-menus/": [
+        "https://developer.wordpress.org/plugins/administration-menus/top-level-menus/",
+        "https://developer.wordpress.org/plugins/administration-menus/sub-menus/"
+    ],
+    "https://developer.wordpress.org/plugins/administration-menus/top-level-menus/": [
+        "https://developer.wordpress.org/reference/functions/add_menu_page/",
+        "https://developer.wordpress.org/plugins/settings/",
+        "https://developer.wordpress.org/reference/functions/add_menu_page/",
+        "https://developer.wordpress.org/reference/functions/remove_menu_page/",
+        "https://developer.wordpress.org/plugins/users/roles-and-capabilities/",
+        "https://developer.wordpress.org/reference/functions/add_action/",
+        "https://developer.wordpress.org/plugins/settings/",
+        "https://developer.wordpress.org/reference/functions/menu_page_url/",
+        "https://developer.wordpress.org/plugins/security/nonces/"
+    ],
+    "https://developer.wordpress.org/plugins/administration-menus/sub-menus/": [
+        "https://developer.wordpress.org/plugins/settings/",
+        "https://developer.wordpress.org/reference/functions/add_submenu_page/",
+        "https://developer.wordpress.org/reference/functions/add_dashboard_page/",
+        "https://developer.wordpress.org/reference/functions/add_posts_page/",
+        "https://developer.wordpress.org/reference/functions/add_media_page/",
+        "https://developer.wordpress.org/reference/functions/add_pages_page/",
+        "https://developer.wordpress.org/reference/functions/add_comments_page/",
+        "https://developer.wordpress.org/reference/functions/add_theme_page/",
+        "https://developer.wordpress.org/reference/functions/add_plugins_page/",
+        "https://developer.wordpress.org/reference/functions/add_users_page/",
+        "https://developer.wordpress.org/reference/functions/add_management_page/",
+        "https://developer.wordpress.org/reference/functions/add_options_page/",
+        "https://developer.wordpress.org/reference/functions/add_options_page/",
+        "https://developer.wordpress.org/reference/functions/add_links_page/",
+        "https://developer.wordpress.org/plugins/administration-menus/top-level-menus/#remove-a-top-level-menu",
+        "https://developer.wordpress.org/plugins/administration-menus/top-level-menus/#submitting-forms",
+        "https://developer.wordpress.org/plugins/security/data-validation/"
+    ],
+    "https://developer.wordpress.org/plugins/shortcodes/": [
+        "https://developer.wordpress.org/plugins/the-basics/best-practices/",
+        "https://en.wikipedia.org/wiki/Side_effect_(computer_science)",
+        "https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/#complete-example",
+        "http://generatewp.com/shortcodes/"
+    ],
+    "https://developer.wordpress.org/plugins/shortcodes/basic-shortcodes/": [
+        "https://developer.wordpress.org/reference/functions/remove_shortcode/",
+        "https://developer.wordpress.org/reference/functions/add_action/"
+    ],
+    "https://developer.wordpress.org/plugins/shortcodes/enclosing-shortcodes/": [
+        "https://developer.wordpress.org/plugins/shortcodes/basic-shortcodes/",
+        "http://php.net/is_null",
+        "https://developer.wordpress.org/plugins/security/securing-output/"
+    ],
+    "https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/": [
+        "https://developer.wordpress.org/plugins/shortcodes/basic-shortcodes/",
+        "https://developer.wordpress.org/plugins/shortcodes/enclosing-shortcodes/",
+        "http://php.net/manual/en/function.array-change-key-case.php",
+        "https://developer.wordpress.org/reference/functions/shortcode_atts/",
+        "https://developer.wordpress.org/plugins/security/securing-output/"
+    ],
+    "https://developer.wordpress.org/plugins/shortcodes/tinymce-enhanced-shortcodes/": [],
+    "https://developer.wordpress.org/plugins/settings/": [
+        "https://developer.wordpress.org/plugins/settings/settings-api/",
+        "https://developer.wordpress.org/plugins/settings/options-api/",
+        "https://developer.wordpress.org/plugins/settings/custom-settings-page/"
+    ],
+    "https://developer.wordpress.org/plugins/settings/using-settings-api/": [
+        "https://developer.wordpress.org/reference/functions/register_setting/",
+        "https://developer.wordpress.org/reference/functions/add_settings_section/",
+        "https://developer.wordpress.org/reference/functions/add_settings_field/",
+        "https://developer.wordpress.org/reference/functions/register_setting/",
+        "https://developer.wordpress.org/reference/functions/register_setting/",
+        "https://developer.wordpress.org/reference/functions/add_settings_section/",
+        "https://developer.wordpress.org/reference/functions/add_settings_field/",
+        "https://developer.wordpress.org/reference/functions/get_option/"
+    ],
+    "https://developer.wordpress.org/plugins/settings/options-api/": [
+        "https://developer.wordpress.org/plugins/settings/settings-api/",
+        "https://developer.wordpress.org/reference/functions/add_option/",
+        "https://developer.wordpress.org/reference/functions/get_option/",
+        "https://developer.wordpress.org/reference/functions/update_option/",
+        "https://developer.wordpress.org/reference/functions/delete_option/",
+        "https://developer.wordpress.org/reference/functions/add_site_option/",
+        "https://developer.wordpress.org/reference/functions/get_site_option/",
+        "https://developer.wordpress.org/reference/functions/update_site_option/",
+        "https://developer.wordpress.org/reference/functions/delete_site_option/"
+    ],
+    "https://developer.wordpress.org/plugins/settings/settings-api/": [
+        "https://developer.wordpress.org/reference/functions/register_setting/",
+        "https://developer.wordpress.org/reference/functions/unregister_setting/",
+        "https://developer.wordpress.org/reference/functions/add_settings_section/",
+        "https://developer.wordpress.org/reference/functions/add_settings_field/",
+        "https://developer.wordpress.org/reference/functions/settings_fields/",
+        "https://developer.wordpress.org/reference/functions/do_settings_sections/",
+        "https://developer.wordpress.org/reference/functions/do_settings_fields/",
+        "https://developer.wordpress.org/reference/functions/add_settings_error/",
+        "https://developer.wordpress.org/reference/functions/get_settings_errors/",
+        "https://developer.wordpress.org/reference/functions/settings_errors/"
+    ],
+    "https://developer.wordpress.org/plugins/settings/custom-settings-page/": [
+        "https://developer.wordpress.org/plugins/administration-menus/",
+        "https://developer.wordpress.org/plugins/settings/using-settings-api/",
+        "https://developer.wordpress.org/plugins/settings/options-api/"
+    ],
+    "https://developer.wordpress.org/plugins/metadata/": [
+        "https://developer.wordpress.org/plugins/metadata/managing-post-metadata/",
+        "https://developer.wordpress.org/plugins/metadata/custom-meta-boxes/",
+        "https://developer.wordpress.org/plugins/metadata/rendering-post-metadata/"
+    ],
+    "https://developer.wordpress.org/plugins/metadata/managing-post-metadata/": [
+        "https://developer.wordpress.org/reference/functions/add_post_meta/",
+        "https://developer.wordpress.org/reference/functions/update_post_meta/",
+        "https://developer.wordpress.org/reference/functions/add_post_meta/",
+        "https://developer.wordpress.org/reference/functions/add_post_meta/",
+        "https://developer.wordpress.org/reference/functions/delete_post_meta/",
+        "http://php.net/manual/en/function.stripslashes.php",
+        "https://developer.wordpress.org/reference/functions/wp_slash/",
+        "http://php.net/manual/en/function.stripslashes.php",
+        "https://developer.wordpress.org/reference/functions/the_meta/",
+        "https://developer.wordpress.org/reference/functions/add_meta_box/"
+    ],
+    "https://developer.wordpress.org/plugins/metadata/custom-meta-boxes/": [
+        "../../plugin-security/securing-input/",
+        "https://developer.wordpress.org/plugins/security/checking-user-capabilities/",
+        "https://developer.wordpress.org/plugins/security/nonces/",
+        "../internationalization/",
+        "https://developer.wordpress.org/reference/functions/add_meta_box/",
+        "https://developer.wordpress.org/reference/hooks/add_meta_boxes/",
+        "https://developer.wordpress.org/reference/functions/get_post_meta/",
+        "https://developer.wordpress.org/reference/functions/selected/",
+        "https://developer.wordpress.org/reference/functions/do_meta_boxes/",
+        "https://developer.wordpress.org/reference/functions/remove_meta_box/",
+        "https://developer.wordpress.org/reference/functions/add_meta_box/",
+        "https://developer.wordpress.org/reference/functions/add_meta_box/",
+        "https://developer.wordpress.org/plugins/javascript/ajax/",
+        "https://codex.wordpress.org/AJAX_in_Plugins",
+        "http://www.wproots.com/complex-meta-boxes-in-wordpress/",
+        "http://wp.smashingmagazine.com/2011/10/04/create-custom-post-meta-boxes-wordpress/",
+        "http://themefoundation.com/wordpress-meta-boxes-guide/"
+    ],
+    "https://developer.wordpress.org/plugins/metadata/rendering-post-metadata/": [
+        "https://developer.wordpress.org/themes/basics/template-tags/",
+        "https://developer.wordpress.org/reference/functions/the_meta/",
+        "https://developer.wordpress.org/reference/functions/get_post_custom/",
+        "https://developer.wordpress.org/reference/functions/get_post_meta/",
+        "https://developer.wordpress.org/reference/functions/get_post_custom_values/"
+    ],
+    "https://developer.wordpress.org/plugins/post-types/": [
+        "https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/",
+        "https://developer.wordpress.org/plugins/post-types/working-with-custom-post-types/"
+    ],
+    "https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/": [
+        "https://developer.wordpress.org/reference/functions/register_post_type/",
+        "https://developer.wordpress.org/reference/functions/register_post_type/",
+        "https://developer.wordpress.org/reference/hooks/admin_init/",
+        "https://developer.wordpress.org/reference/hooks/after_setup_theme/",
+        "https://developer.wordpress.org/reference/hooks/init/"
+    ],
+    "https://developer.wordpress.org/plugins/post-types/working-with-custom-post-types/": [
+        "https://make.wordpress.org/docs/theme-developer-handbook/theme-basics/theme-files/",
+        "https://developer.wordpress.org/reference/functions/is_post_type_archive/",
+        "https://developer.wordpress.org/reference/functions/post_type_archive_title/",
+        "https://developer.wordpress.org/reference/hooks/pre_get_posts/"
+    ],
+    "https://developer.wordpress.org/plugins/taxonomies/working-with-custom-taxonomies/": [
+        "https://developer.wordpress.org/plugins/taxonomies/",
+        "https://developer.wordpress.org/plugin/the-basics/",
+        "https://i0.wp.com/make.wordpress.org/docs/files/2014/02/no-custom-taxonomy-meta-box.png?ssl=1",
+        "https://i0.wp.com/make.wordpress.org/docs/files/2014/02/courses_taxonomy_post_screen.png?ssl=1",
+        "https://developer.wordpress.org/reference/functions/register_taxonomy/",
+        "https://developer.wordpress.org/reference/functions/add_action/",
+        "https://developer.wordpress.org/reference/functions/register_taxonomy/"
+    ],
+    "https://developer.wordpress.org/plugins/users/": [
+        "https://developer.wordpress.org/plugins/users/roles-and-capabilities/#roles",
+        "https://developer.wordpress.org/plugins/users/roles-and-capabilities/#capabilities"
+    ],
+    "https://developer.wordpress.org/plugins/users/working-with-users/": [
+        "https://developer.wordpress.org/reference/functions/wp_slash/",
+        "https://developer.wordpress.org/reference/functions/wp_insert_user/"
+    ],
+    "https://developer.wordpress.org/plugins/users/working-with-user-metadata/": [
+        "/reference/functions/add_user_meta/",
+        "/reference/functions/update_user_meta/",
+        "/reference/functions/delete_user_meta/",
+        "/reference/functions/get_user_meta/",
+        "/reference/functions/add_user_meta/",
+        "/reference/functions/update_user_meta/",
+        "/reference/functions/delete_user_meta/",
+        "/reference/functions/get_user_meta/"
+    ],
+    "https://developer.wordpress.org/plugins/users/roles-and-capabilities/": [
+        "https://developer.wordpress.org/reference/functions/add_role/",
+        "https://developer.wordpress.org/reference/functions/add_role/",
+        "https://developer.wordpress.org/reference/functions/remove_role/",
+        "https://developer.wordpress.org/reference/functions/add_role/",
+        "https://developer.wordpress.org/reference/functions/remove_role/",
+        "https://developer.wordpress.org/reference/functions/remove_role/",
+        "https://developer.wordpress.org/reference/functions/get_role/",
+        "https://developer.wordpress.org/reference/functions/get_role/",
+        "https://developer.wordpress.org/reference/functions/user_can/",
+        "https://developer.wordpress.org/reference/functions/current_user_can/",
+        "https://developer.wordpress.org/reference/functions/user_can/",
+        "https://developer.wordpress.org/reference/functions/current_user_can_for_blog/",
+        "https://wordpress.org/support/article/roles-and-capabilities/"
+    ],
+    "https://developer.wordpress.org/plugins/http-api/": [
+        "https://github.com/",
+        "https://developer.wordpress.org/reference/functions/wp_remote_get/",
+        "https://developer.wordpress.org/reference/functions/wp_remote_retrieve_body/",
+        "https://developer.wordpress.org/?s=wp_remote_&post_type%5B%5D=wp-parser-function",
+        "https://developer.wordpress.org/reference/functions/wp_remote_retrieve_response_code/",
+        "https://developer.wordpress.org/reference/functions/wp_remote_retrieve_header",
+        "https://developer.wordpress.org/reference/functions/wp_remote_get",
+        "https://developer.wordpress.org/reference/functions/wp_remote_retrieve_body",
+        "https://developer.wordpress.org/reference/functions/wp_remote_post",
+        "https://developer.wordpress.org/reference/functions/wp_remote_get",
+        "https://developer.wordpress.org/reference/functions/wp_remote_post",
+        "https://developer.wordpress.org/reference/functions/wp_remote_request",
+        "https://developer.wordpress.org/reference/functions/wp_remote_get",
+        "https://developer.wordpress.org/reference/functions/set_transient",
+        "https://developer.wordpress.org/apis/handbook/transients/"
+    ],
+    "https://developer.wordpress.org/plugins/javascript/": [
+        "https://developer.wordpress.org/theme/basics/including-css-javascript/#default-scripts-included-and-registered-by-wordpress"
+    ],
+    "https://developer.wordpress.org/plugins/javascript/enqueuing/": [
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_script/",
+        "https://developer.wordpress.org/reference/functions/wp_register_script/",
+        "https://developer.wordpress.org/plugins/javascript/jquery/",
+        "https://developer.wordpress.org/reference/functions/wp_localize_script/",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/plugins/javascript/jquery/",
+        "https://developer.wordpress.org/reference/functions/check_ajax_referer/",
+        "#php-nonce",
+        "https://developer.wordpress.org/reference/functions/wp_unslash/",
+        "https://developer.wordpress.org/reference/functions/update_user_meta/",
+        "https://developer.wordpress.org/reference/classes/wp_ajax_response/",
+        "https://developer.wordpress.org/reference/classes/wp_ajax_response/",
+        "https://developer.wordpress.org/reference/functions/wp_send_json/",
+        "https://developer.wordpress.org/reference/classes/wp_ajax_response/",
+        "https://developer.wordpress.org/reference/functions/wp_send_json_success/",
+        "https://developer.wordpress.org/reference/functions/wp_send_json_error/",
+        "https://developer.wordpress.org/reference/classes/wp_ajax_response/",
+        "https://developer.wordpress.org/reference/functions/wp_die/"
+    ],
+    "https://developer.wordpress.org/plugins/cron/": [],
+    "https://developer.wordpress.org/plugins/cron/understanding-wp-cron-scheduling/": [],
+    "https://developer.wordpress.org/plugins/cron/scheduling-wp-cron-events/": [
+        "https://developer.wordpress.org/plugins/plugin-basics/best-practices/#prefix-everything",
+        "https://developer.wordpress.org/plugins/hooks/actions/",
+        "https://developer.wordpress.org/reference/functions/wp_next_scheduled/",
+        "https://developer.wordpress.org/reference/functions/wp_schedule_event/",
+        "https://developer.wordpress.org/plugins/cron/understanding-wp-cron-scheduling/",
+        "https://developer.wordpress.org/reference/functions/wp_unschedule_event/",
+        "https://developer.wordpress.org/reference/functions/wp_next_scheduled/",
+        "https://developer.wordpress.org/reference/functions/register_deactivation_hook/",
+        "https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/"
+    ],
+    "https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/": [],
+    "https://developer.wordpress.org/plugins/cron/simple-testing/": [
+        "https://wp-cli.org/",
+        "https://developer.wordpress.org/cli/commands/cron/",
+        "https://wordpress.org/plugins/tags/cron/",
+        "https://developer.wordpress.org/reference/functions/_get_cron_array/",
+        "https://developer.wordpress.org/reference/functions/wp_get_schedules/"
+    ],
+    "https://developer.wordpress.org/plugins/internationalization/": [
+        "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/",
+        "http://www.youtube.com/watch?v=fJfqgrzjEis",
+        "http://wordpress.tv/2014/02/26/samuel-otto-wood-on-internationalization-plugins-and-themes-for-the-whole-world/",
+        "http://wceu2013.ottopress.com/",
+        "http://wordpress.tv/2013/08/03/shannon-smith-big-in-japan-a-guide-for-themes-and-internationalization/",
+        "http://wordpress.tv/2009/11/14/ze-fontainhas-i18n-nyc09/",
+        "http://wp.smashingmagazine.com/2011/12/29/internationalizing-localizing-wordpress-theme/",
+        "http://ottopress.com/2012/internationalization-youre-probably-doing-it-wrong/",
+        "http://ottopress.com/2012/more-internationalization-fun/",
+        "http://pippinsplugins.com/use-wp_localize_script-it-is-awesome/",
+        "http://kovshenin.com/2013/_n_noop/",
+        "http://ottopress.com/2013/language-packs-101-prepwork/",
+        "http://markjaquith.wordpress.com/2011/10/06/translating-wordpress-plugins-and-themes-dont-get-clever/",
+        "http://ulrich.pogson.ch/load-theme-plugin-translations",
+        "https://make.wordpress.org/polyglots/handbook/plugin-theme-authors-guide/"
+    ],
+    "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/": [
+        "http://www.gnu.org/software/gettext/",
+        "http://www.gnu.org/software/gettext/manual/html_node/",
+        "#loading-text-domain",
+        "https://developer.wordpress.org/reference/functions/__/",
+        "https://developer.wordpress.org/reference/functions/_e/",
+        "http://php.net/printf",
+        "http://php.net/sprintf",
+        "http://www.php.net/manual/en/function.sprintf.php#example-4829",
+        "https://developer.wordpress.org/reference/functions/_n/",
+        "https://developer.wordpress.org/reference/functions/_n_noop/",
+        "https://developer.wordpress.org/reference/functions/_nx_noop/",
+        "https://developer.wordpress.org/reference/functions/translate_nooped_plural/",
+        "https://developer.wordpress.org/reference/functions/__/",
+        "https://developer.wordpress.org/reference/functions/_e/",
+        "https://developer.wordpress.org/reference/functions/_x/",
+        "https://developer.wordpress.org/reference/functions/_ex/",
+        "https://developer.wordpress.org/reference/functions/_n/",
+        "https://developer.wordpress.org/reference/functions/_nx/",
+        "https://developer.wordpress.org/reference/functions/_n_noop/",
+        "https://developer.wordpress.org/reference/functions/_nx_noop/",
+        "https://developer.wordpress.org/reference/functions/translate_nooped_plural()/",
+        "https://developer.wordpress.org/reference/functions/esc_html__/",
+        "https://developer.wordpress.org/reference/functions/esc_html_e/",
+        "https://developer.wordpress.org/reference/functions/esc_html_x/",
+        "https://developer.wordpress.org/reference/functions/esc_attr__/",
+        "https://developer.wordpress.org/reference/functions/esc_attr_e/",
+        "https://developer.wordpress.org/reference/functions/esc_attr_x/",
+        "https://developer.wordpress.org/reference/functions/number_format_i18n",
+        "https://developer.wordpress.org/reference/functions/date_i18n",
+        "https://develop.svn.wordpress.org/branches/5.2/tools/i18n/add-textdomain.php",
+        "https://translate.wordpress.org/",
+        "https://developer.wordpress.org/apis/handbook/internationalization/#internationalizing-javascript",
+        "https://developer.wordpress.org/apis/",
+        "https://github.com/WordPress/gutenberg/blob/trunk/docs/how-to-guides/internationalization.md",
+        "http://translate.wordpress.org",
+        "https://make.wordpress.org/meta/handbook/documentation/translations/",
+        "https://make.wordpress.org/polyglots/handbook/plugin-theme-authors-guide/"
+    ],
+    "https://developer.wordpress.org/plugins/internationalization/localization/": [
+        "https://make.wordpress.org/cli/handbook/installing/",
+        "https://developer.wordpress.org/cli/commands/i18n/make-pot/",
+        "http://www.poedit.net/",
+        "https://github.com/fxbenard/Blank-WordPress-Pot",
+        "https://github.com/blazersix/grunt-wp-i18n",
+        "https://www.npmjs.org/package/grunt-pot",
+        "https://gist.github.com/grappler/10187003",
+        "https://codex.wordpress.org/Installing_WordPress_in_Your_Language",
+        "http://www.poedit.net/",
+        "https://www.transifex.com/",
+        "https://webtranslateit.com/en",
+        "https://poeditor.com/",
+        "http://translate.google.com/toolkit/",
+        "http://blog.glotpress.org/",
+        "http://www.cygwin.com/",
+        "http://www.poedit.net/",
+        "https://www.npmjs.org/package/grunt-po2mo",
+        "https://foxland.fi/creating-pot-file-for-your-theme-or-plugin/",
+        "http://tommcfarlin.com/internationalize-wordpress-plugins/",
+        "http://wp.tutsplus.com/tutorials/theme-development/translating-your-theme/",
+        "https://github.com/fxbenard/Blank-WordPress-Pot",
+        "https://github.com/grappler/i18n",
+        "http://ulrich.pogson.ch/update-translations-quickly",
+        "http://wp-translations.org/workflow-using-github/",
+        "https://gist.github.com/grappler/10187003",
+        "http://wordpress.tv/",
+        "http://wordpress.tv/tag/i18n/",
+        "http://wordpress.tv/tag/internationalization/",
+        "http://wordpress.tv/tag/translation/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/": [
+        "https://codex.wordpress.org/WordPress.org_API#Plugins",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/",
+        "https://developer.wordpress.org/plugins/wordpress-org/common-issues/",
+        "http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses",
+        "http://subversion.tigris.org/",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://developer.wordpress.org/plugins/wordpress-org/planning-submitting-and-maintaining-plugins/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/",
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+        "https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/",
+        "https://developer.wordpress.org/plugins/wordpress-org/using-the-forums/",
+        "https://developer.wordpress.org/plugins/wordpress-org/special-user-roles-capabilities/",
+        "https://developer.wordpress.org/plugins/wordpress-org/transferring-your-plugin-to-a-new-owner/",
+        "https://developer.wordpress.org/plugins/wordpress-org/add-your-plugin-to-the-block-directory/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/planning-submitting-and-maintaining-plugins/": [
+        "https://wordpress.org/plugins/hello-dolly/",
+        "https://wordpress.org/plugins/developers/#readme",
+        "https://wordpress.org/plugins/developers/add/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/",
+        "https://wordpress.org/plugins/developers/#readme",
+        "https://wordpress.org/plugins/",
+        "https://wordpress.org/plugins/add/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/",
+        "http://github.com",
+        "https://help.github.com/",
+        "http://try.github.com/",
+        "https://bitbucket.org/",
+        "https://about.gitlab.com/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/",
+        "http://jetpack.me/2011/11/18/how-to-write-a-great-bug-report/"
+    ],
+    "https://developer.wordpress.org/plugins/developer-tools/": [
+        "http://xdebug.org/",
+        "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards"
+    ],
+    "https://developer.wordpress.org/plugins/developer-tools/debug-bar-and-add-ons/": [
+        "https://wordpress.org/plugins/debug-bar/",
+        "https://wordpress.org/plugins/debug-bar-console/",
+        "https://wordpress.org/plugins/debug-bar-shortcodes/",
+        "https://wordpress.org/plugins/debug-bar-constants/",
+        "https://wordpress.org/plugins/debug-bar-post-types/",
+        "https://wordpress.org/plugins/debug-bar-cron/",
+        "https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/",
+        "https://wordpress.org/plugins/debug-bar-transients/",
+        "https://wordpress.org/plugins/debug-bar-list-dependencies/",
+        "https://wordpress.org/plugins/debug-bar-remote-requests/"
+    ],
+    "https://developer.wordpress.org/plugins/developer-tools/helper-plugins/": [
+        "https://wordpress.org/plugins/plugin-check/",
+        "https://wordpress.org/plugins/query-monitor/"
+    ],
+    "https://developer.wordpress.org/plugins/security/checking-user-capabilities/": [
+        "https://developer.wordpress.org/plugins/users/roles-and-capabilities/"
+    ],
+    "https://developer.wordpress.org/plugins/security/data-validation/": [
+        "https://developer.wordpress.org/apis/security/data-validation/"
+    ],
+    "https://developer.wordpress.org/plugins/security/securing-input/": [
+        "https://developer.wordpress.org/apis/security/sanitizing/"
+    ],
+    "https://developer.wordpress.org/plugins/security/nonces/": [
+        "https://developer.wordpress.org/apis/security/nonces/"
+    ],
+    "https://developer.wordpress.org/plugins/security/securing-output/": [
+        "https://developer.wordpress.org/apis/security/escaping/"
+    ],
+    "https://developer.wordpress.org/plugins/javascript/ajax/": [
+        "https://developer.wordpress.org/plugin/javascript/jquery/#selector-and-event",
+        "http://api.jquery.com/jQuery.post/",
+        "#callback",
+        "https://developer.wordpress.org/reference/functions/wp_localize_script/",
+        "https://developer.wordpress.org/plugin/javascript/enqueuing/",
+        "https://codex.wordpress.org/WordPress_Nonces",
+        "https://make.wordpress.org/core/2021/04/22/ie-11-support-phase-out-plan/",
+        "https://developer.wordpress.org/plugins/javascript/enqueuing/#json"
+    ],
+    "https://developer.wordpress.org/plugins/javascript/jquery/": [
+        "https://developer.wordpress.org/plugin/javascript/ajax/",
+        "http://api.jquery.com/category/selectors/",
+        "http://api.jquery.com/category/events/",
+        "../../plugin-security/securing-input/",
+        "../../plugin-security/user-capabilities-nonces/#nonces",
+        "http://www.sitepoint.com/error-handling-in-php/",
+        "../internationalization/"
+    ],
+    "https://developer.wordpress.org/plugins/javascript/summary/": [
+        "http://wp.smashingmagazine.com/2011/10/18/how-to-use-ajax-in-wordpress/",
+        "http://www.glennmessersmith.com/pages/wpajax.html"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/block-specific-plugin-guidelines/": [
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://wordpress.org/plugins/browse/block/",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://developer.wordpress.org/block-editor/developers/block-api/block-registration/#block-name",
+        "https://github.com/WordPress/gutenberg/blob/master/docs/rfc/block-registration.md#name",
+        "https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/add-your-plugin-to-the-block-directory/": [
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://wordpress.org/plugins/browse/block/",
+        "https://wordpress.org/plugins/developers/block-plugin-validator/",
+        "https://github.com/WordPress/gutenberg/pull/22831/files?short_path=c4d2c28#diff-c4d2c286eac33acdc7571032a984e0ca",
+        "https://github.com/WordPress/gutenberg/pull/23545/files?short_path=555f1c3#diff-555f1c31856d86ed5ff0d492b5a127c1",
+        "https://make.wordpress.org/plugins/2020/07/11/you-can-now-add-your-own-plugins-to-the-block-directory/",
+        "mailto:plugins@wordpress.org"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/release-confirmation-emails/": [
+        "https://wordpress.org/plugins/developers/releases/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/transferring-your-plugin-to-a-new-owner/": [
+        "https://i0.wp.com/developer.wordpress.org/files/2020/04/transfer.jpeg?ssl=1"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/preventing-wordpress-from-updating-your-external-plugin/": [
+        "https://markjaquith.wordpress.com/2009/12/14/excluding-your-plugin-or-theme-from-update-checks/"
+    ],
+    "https://developer.wordpress.org/plugins/taxonomies/split-terms-wp-4-2/": [],
+    "https://developer.wordpress.org/plugins/taxonomies/": [],
+    "https://developer.wordpress.org/plugins/creating-tables-with-plugins/": [
+        "https://developer.wordpress.org/plugins/",
+        "https://developer.wordpress.org/plugins/settings/options-api/",
+        "https://developer.wordpress.org/plugins/metadata/",
+        "https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/classes/wpdb/get_charset_collate/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/functions/register_activation_hook/",
+        "https://developer.wordpress.org/reference/functions/register_activation_hook/",
+        "https://developer.wordpress.org/plugins/",
+        "https://codex.wordpress.org/Mailing_Lists#Hackers",
+        "http://lists.automattic.com/pipermail/wp-hackers/2005-May/000940.html",
+        "http://wordpress.stackexchange.com/questions/4852/post-meta-vs-seperate-database-tables"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/": [
+        "https://developer.wordpress.org/plugins/wordpress-org/block-specific-plugin-guidelines/",
+        "https://make.wordpress.org/handbook/community-code-of-conduct/",
+        "https://wordpress.org/support/guidelines/",
+        "https://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses",
+        "https://make.wordpress.org/handbook/community-code-of-conduct/",
+        "https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/code-of-conduct/",
+        "https://wordpress.org/support/guidelines/",
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_script/#notes",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/#tags",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/",
+        "http://wordpressfoundation.org/trademark-policy/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/": [
+        "https://tortoisesvn.net/",
+        "https://www.smartsvn.com/",
+        "https://en.wikipedia.org/wiki/Comparison_of_Subversion_clients",
+        "http://svnbook.red-bean.com/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+        "#task-3",
+        "https://profiles.wordpress.org/me/profile/edit/group/3/?screen=svn-password",
+        "https://make.wordpress.org/meta/handbook/tutorials-guides/svn-access/",
+        "https://profiles.wordpress.org/me/profile/edit/group/3/?screen=svn-password",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+        "https://en.wikipedia.org/wiki/Software_versioning",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+        "https://wordpress.org/plugins/developers/#readme",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+        "http://svnbook.red-bean.com/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/previews-and-blueprints/": [
+        "https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#the-plugin-preview-button",
+        "https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#enabling-plugin-previews",
+        "https://i0.wp.com/developer.wordpress.org/files/2024/03/live-preview.png?ssl=1",
+        "https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#blueprints",
+        "https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#using-a-generated-blueprint-file",
+        "https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#committing-a-blueprint-to-subversion"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/": [
+        "https://make.wordpress.org/plugins/handbook/apply/",
+        "https://wordpress.org/plugins/developers/add/",
+        "#why-is-my-submission-failing-saying-my-plugin-name-already-exists",
+        "#how-do-i-give-someone-else-access-to-my-plugin",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/#task-3",
+        "https://wordpress.org/plugins/developers/#readme",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+        "https://wordpress.org/plugins/developers/#readme",
+        "http://semver.org",
+        "https://svnbook.red-bean.com/en/1.0/ch07s03.html",
+        "#closed-plugins",
+        "https://wordpress.org/plugins/developers/#readme",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/",
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/",
+        "https://wordpress.org/plugins/developers/#readme",
+        "https://keepachangelog.com/en/1.1.0/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/#plugin-headers",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/#plugin-headers",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/#plugin-icons",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/#plugin-icons",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#12-public-facing-pages-on-wordpress-org-readmes-must-not-spam",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/",
+        "https://hackerone.com/automattic",
+        "https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/",
+        "https://developer.wordpress.org/plugins/wordpress-org/transferring-your-plugin-to-a-new-owner/",
+        "https://developer.wordpress.org/plugins/wordpress-org/transferring-your-plugin-to-a-new-owner/",
+        "https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/",
+        "https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/"
+    ],
+    "https://developer.wordpress.org/plugins/internationalization/security/": [
+        "https://translate.google.com/",
+        "https://make.wordpress.org/polyglots/handbook/glossary/#project-translation-editor",
+        "https://translate.wordpress.org",
+        "http://php.net/manual/en/function.printf.php",
+        "http://us3.php.net/manual/en/function.sprintf.php",
+        "https://login.wordpress.org/register",
+        "https://login.wordpress.org/register"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/common-issues/": [
+        "https://developer.wordpress.org/apis/security/sanitizing/",
+        "https://developer.wordpress.org/apis/security/escaping/",
+        "https://developer.wordpress.org/reference/functions/sanitize_email/",
+        "https://developer.wordpress.org/reference/functions/wp_kses_post/",
+        "https://www.php.net/manual/en/filter.filters.php",
+        "https://developer.wordpress.org/news/2023/08/understand-and-use-wordpress-nonces-properly/#verifying-the-nonce",
+        "https://developer.wordpress.org/apis/security/escaping/",
+        "https://developer.wordpress.org/reference/functions/wp_kses/",
+        "https://developer.wordpress.org/reference/functions/wp_handle_upload/",
+        "https://developer.wordpress.org/reference/functions/wp_get_mime_types",
+        "https://developer.wordpress.org/reference/hooks/upload_mimes/",
+        "https://developer.wordpress.org/reference/classes/wpdb/",
+        "https://developer.wordpress.org/reference/classes/wpdb/#protect-queries-against-sql-injection-attacks",
+        "https://codex.wordpress.org/Data_Validation#Database",
+        "https://make.wordpress.org/core/2012/12/12/php-warning-missing-argument-2-for-wpdb-prepare/",
+        "https://ottopress.com/2013/better-know-a-vulnerability-sql-injection/",
+        "https://developer.wordpress.org/reference/classes/wpdb/prepare/",
+        "https://core.trac.wordpress.org/ticket/54042",
+        "https://developer.wordpress.org/reference/functions/_n/",
+        "https://developer.wordpress.org/reference/functions/__/",
+        "https://developer.wordpress.org/reference/functions/get_post_time/",
+        "https://developer.wordpress.org/reference/functions/get_post_modified_time/",
+        "https://www.php.net/manual/en/function.error-reporting.php",
+        "https://developer.wordpress.org/plugins/plugin-basics/best-practices/#folder-structure",
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/",
+        "https://wordpress.org/plugins/about/validator/",
+        "https://wordpress.org/plugins/readme.txt",
+        "https://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses",
+        "https://en.wikipedia.org/wiki/Software_versioning",
+        "https://semver.org/",
+        "https://developer.wordpress.org/plugins/http-api/",
+        "https://developer.wordpress.org/reference/hooks/http_api_curl/",
+        "https://developer.wordpress.org/reference/functions/wp_register_script/",
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_script/",
+        "https://developer.wordpress.org/reference/functions/wp_add_inline_script/",
+        "https://developer.wordpress.org/reference/functions/wp_register_style/",
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_style/",
+        "https://developer.wordpress.org/reference/functions/wp_add_inline_style/",
+        "https://make.wordpress.org/core/2021/02/23/introducing-script-attributes-related-functions-in-wordpress-5-7/",
+        "https://developer.wordpress.org/reference/hooks/admin_enqueue_scripts/",
+        "https://developer.wordpress.org/reference/hooks/admin_print_scripts/",
+        "https://developer.wordpress.org/reference/hooks/admin_print_styles/",
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_script/#default-scripts-and-js-libraries-included-and-registered-by-wordpress",
+        "https://meta.trac.wordpress.org/browser/sites/trunk/api.wordpress.org/public_html/core/credits/wp-59.php#L739",
+        "https://make.wordpress.org/polyglots/",
+        "https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#text-domains",
+        "https://make.wordpress.org/core/2024/03/05/introducing-plugin-dependencies-in-wordpress-6-5/",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#4-code-must-be-mostly-human-readable",
+        "https://www.gnu.org/licenses/license-list.html",
+        "https://www.gnu.org/licenses/gpl-faq.html#AllCompatibility",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#4-code-must-be-mostly-human-readable"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/": [
+        "https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?ssl=1",
+        "https://he.wordpress.org/plugins/",
+        "https://ar.wordpress.org/plugins/",
+        "https://wordpress.org/plugins/bbpress/",
+        "https://ar.wordpress.org/plugins/bbpress/",
+        "https://wordpress.org/extend/plugins/hello-dolly/",
+        "https://wordpress.org/plugins/pluginception/",
+        "https://i0.wp.com/developer.wordpress.org/files/2015/05/akismet1.png?ssl=1",
+        "https://i0.wp.com/developer.wordpress.org/files/2015/05/auto-generated-icons.jpg?ssl=1",
+        "#banner-filenames"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/": [
+        "https://wordpress.org/plugins/readme.txt",
+        "https://generatewp.com/plugin-readme/",
+        "https://wordpress.org/plugins/developers/readme-validator/",
+        "https://wpreadme.com/",
+        "https://core.trac.wordpress.org/ticket/48520",
+        "https://semver.org/",
+        "https://wordpress.org/support/article/embeds/",
+        "https://daringfireball.net/projects/markdown/",
+        "https://developer.wordpress.org/plugins/plugin-basics/header-requirements/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/": [
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/#plugin-ownership",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/#plugin-ownership",
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/": [
+        "https://make.wordpress.org/core/handbook/testing/reporting-security-vulnerabilities/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/": [
+        "https://wordpress.org/about/security/",
+        "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/",
+        "https://semver.org",
+        "https://make.wordpress.org/core/2013/10/25/the-definitive-guide-to-disabling-auto-updates-in-wordpress-3-7/"
+    ],
+    "https://developer.wordpress.org/plugins/rest-api/": [],
+    "https://developer.wordpress.org/plugins/rest-api/rest-api-overview/": [],
+    "https://developer.wordpress.org/plugins/rest-api/routes-endpoints/": [],
+    "https://developer.wordpress.org/plugins/rest-api/requests/": [
+        "https://developer.wordpress.org/reference/classes/wp_rest_request/"
+    ],
+    "https://developer.wordpress.org/plugins/rest-api/responses-2/": [
+        "https://developer.wordpress.org/reference/classes/wp_rest_response/",
+        "https://developer.wordpress.org/reference/classes/wp_error/"
+    ],
+    "https://developer.wordpress.org/plugins/rest-api/schema/": [
+        "http://json-schema.org/",
+        "https://spacetelescope.github.io/understanding-json-schema/index.html"
+    ],
+    "https://developer.wordpress.org/plugins/rest-api/controller-classes/": [],
+    "https://developer.wordpress.org/plugins/wordpress-org/special-user-roles-capabilities/": [
+        "https://i0.wp.com/developer.wordpress.org/files/2021/02/Commit.jpg?ssl=1",
+        "https://i0.wp.com/developer.wordpress.org/files/2021/02/Support.jpg?ssl=1"
+    ],
+    "https://developer.wordpress.org/plugins/javascript/heartbeat-api/": [],
+    "https://developer.wordpress.org/plugins/wordpress-org/alerts-and-warnings/": [
+        "https://i0.wp.com/developer.wordpress.org/files/2018/02/approved.jpg?ssl=1",
+        "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/"
+    ],
+    "https://developer.wordpress.org/plugins/wordpress-org/compliance-disclaimers/": [
+        "https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#9-developers-and-their-plugins-must-not-do-anything-illegal-dishonest-or-morally-offensive",
+        "https://wordpress.org/about/accessibility/"
+    ],
+    "https://developer.wordpress.org/plugins/privacy/": [
+        "https://www.iso.org/standard/45123.html",
+        "https://privacy.blog",
+        "https://wordpress.org/about/privacy/"
+    ],
+    "https://developer.wordpress.org/plugins/privacy/suggesting-text-for-the-site-privacy-policy/": [
+        "%1$s"
+    ],
+    "https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-exporter-to-your-plugin/": [],
+    "https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/": [],
+    "https://developer.wordpress.org/plugins/privacy/privacy-related-options-hooks-and-capabilities/": [],
+    "https://developer.wordpress.org/plugins/wordpress-org/using-the-forums/": [
+        "https://wordpress.org/support/guidelines/"
+    ],
+    "https://developer.wordpress.org/plugins/plugin-basics/determining-plugin-and-content-directories/": [
+        "https://developer.wordpress.org/reference/functions/plugins_url/",
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_script/",
+        "https://developer.wordpress.org/reference/functions/wp_enqueue_style/",
+        "https://developer.wordpress.org/reference/functions/home_url/",
+        "http://www.example.com",
+        "https://developer.wordpress.org/reference/functions/site_url/",
+        "http://www.example.com",
+        "http://www.example.com/wordpress",
+        "https://developer.wordpress.org/reference/functions/admin_url/",
+        "http://www.example.com/wp-admin",
+        "https://developer.wordpress.org/reference/functions/includes_url/",
+        "http://www.example.com/wp-includes",
+        "https://developer.wordpress.org/reference/functions/content_url/",
+        "http://www.example.com/wp-content",
+        "https://developer.wordpress.org/reference/functions/plugins_url/",
+        "http://www.example.com/wp-content/plugins",
+        "https://developer.wordpress.org/reference/functions/wp_upload_dir/",
+        "http://www.example.com/wp-content/uploads"
+    ],
+    "https://developer.wordpress.org/plugins/": [
+        "https://developer.wordpress.org/plugin/intro/",
+        "https://developer.wordpress.org/plugins/plugin-basics/",
+        "https://developer.wordpress.org/plugin/security/",
+        "https://developer.wordpress.org/plugin/hooks/",
+        "https://developer.wordpress.org/plugins/privacy/",
+        "https://developer.wordpress.org/plugin/administration-menus/",
+        "https://developer.wordpress.org/plugin/shortcodes/",
+        "https://developer.wordpress.org/plugin/settings/",
+        "https://developer.wordpress.org/plugin/metadata/",
+        "https://developer.wordpress.org/plugins/post-types/",
+        "https://developer.wordpress.org/plugins/taxonomies/",
+        "https://developer.wordpress.org/plugin/users/",
+        "https://developer.wordpress.org/plugin/http-api/",
+        "https://developer.wordpress.org/plugin/javascript/",
+        "https://developer.wordpress.org/plugin/cron/",
+        "https://developer.wordpress.org/plugin/internationalization/",
+        "https://developer.wordpress.org/plugin/wordpress-org/",
+        "https://developer.wordpress.org/plugin/developer-tools/",
+        "https://make.wordpress.org/docs"
+    ],
+    "https://developer.wordpress.org/plugins/intro/": [
+        "https://wordpress.org/plugins/hello-dolly/",
+        "https://developer.wordpress.org/plugins/the-basics/header-requirements/",
+        "https://developer.wordpress.org/plugins/hooks/"
+    ],
+    "https://developer.wordpress.org/plugins/intro/what-is-a-plugin/": [
+        "http://en.wikipedia.org/wiki/PHPDoc#DocBlock",
+        "https://wordpress.org/plugins/hello-dolly/",
+        "https://plugins.trac.wordpress.org/browser/hello-dolly/trunk/hello.php",
+        "http://en.wikipedia.org/wiki/Hello,_Dolly!_(song)"
+    ]
+}
