@@ -12,6 +12,7 @@ $cli_options = getopt(
 	[
 		'update',
 		'sitemaps',
+		'content-links',
 	] 
 );
 
@@ -49,15 +50,6 @@ $content_types = [
 	// 'wp-parser-method',
 ];
 
-if ( isset( $cli_options['sitemaps'] ) ) {
-	$sitemap_urls = $wp_developer->get_sitemap_urls();
-
-	file_put_contents( 
-		__DIR__ . '/docs/sitemaps/developer.wordpress.org.json', 
-		json_encode( $sitemap_urls, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES ) 
-	);
-}
-
 $handbooks_md = [];
 foreach ( $content_types as $content_type ) {
 	$content_md = [];
@@ -85,6 +77,18 @@ file_put_contents(
 	sprintf( '%s/docs/wp-handbooks.md', __DIR__ ), 
 	implode( "\n\n---\n\n", $handbooks_md )
 );
+
+if ( isset( $cli_options['content-links'] ) ) {
+	foreach ( $content_types as $content_type ) {
+		$links = $wp_developer->get_link_urls_in_content_types( [ $content_type ] );
+		$wp_developer->save_json( sprintf( 'links/post-type-%s.json', $content_type ), $links );
+	}
+}
+
+if ( isset( $cli_options['sitemaps'] ) ) {
+	$sitemap_urls = $wp_developer->get_sitemap_urls();
+	$wp_developer->save_json( 'sitemaps.json', $sitemap_urls );
+}
 
 /**
  * WordPress.org/documentation parser.
@@ -121,11 +125,14 @@ foreach ( $content_types as $content_type ) {
 	);
 }
 
+if ( isset( $cli_options['content-links'] ) ) {
+	foreach ( $content_types as $content_type ) {
+		$links = $wp_org->get_link_urls_in_content_types( [ $content_type ] );
+		$wp_org->save_json( sprintf( 'links/post-type-%s.json', $content_type ), $links );
+	}
+}
+
 if ( isset( $cli_options['sitemaps'] ) ) {
 	$sitemap_urls = $wp_org->get_sitemap_urls();
-
-	file_put_contents( 
-		__DIR__ . '/docs/sitemaps/wordpress.org-documentation.json', 
-		json_encode( $sitemap_urls, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES ) 
-	);
+	$wp_org->save_json( 'sitemaps.json', $sitemap_urls );
 }

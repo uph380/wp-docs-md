@@ -389,10 +389,7 @@ class WP_API_Client {
 		foreach ( $this->get_json_files_for_content_types( $content_types ) as $json_file ) {
 			$post = $this->get_json( $json_file );
 	
-			$links = array_merge(
-				$links,
-				$this->get_link_urls_in_content( $post['content']['rendered'] )
-			);
+			$links[ $post['link'] ] = $this->get_link_urls_in_content( $post['content']['rendered'] );
 		}
 	
 		return $links;
