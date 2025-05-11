@@ -1,3 +1,18 @@
+Table of Contents:
+
+- [Markdown Style Guide](#coding-standards/styleguide)
+- [Best Practices](#coding-standards)
+- [WordPress Coding Standards](#coding-standards/wordpress-coding-standards)
+- [Accessibility Coding Standards](#coding-standards/wordpress-coding-standards/accessibility)
+- [CSS Coding Standards](#coding-standards/wordpress-coding-standards/css)
+- [HTML Coding Standards](#coding-standards/wordpress-coding-standards/html)
+- [JavaScript Coding Standards](#coding-standards/wordpress-coding-standards/javascript)
+- [PHP Coding Standards](#coding-standards/wordpress-coding-standards/php)
+- [Inline Documentation Standards](#coding-standards/inline-documentation-standards)
+- [JavaScript Documentation Standards](#coding-standards/inline-documentation-standards/javascript)
+- [PHP Documentation Standards](#coding-standards/inline-documentation-standards/php)
+- [Changelog](#coding-standards/changelog)
+
 # Markdown Style Guide <a name="coding-standards/styleguide" />
 
 Source: https://developer.wordpress.org/coding-standards/styleguide/
