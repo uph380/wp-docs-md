@@ -451,7 +451,9 @@ Source: https://developer.wordpress.org/rest-api/reference/block-directory-items
 
 ## Schema
 
-The schema defines all the fields that exist within a block directory item record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context. | `name` | The block name, in namespace/block-name format.  JSON data type: string  Context: `view` |
+The schema defines all the fields that exist within a block directory item record. Any response from these endpoints can be expected to contain the fields below unless the `\_filter` query parameter is used or the schema field only appears in a specific context.
+
+| `name` | The block name, in namespace/block-name format.  JSON data type: string  Context: `view` |
 |---|---|
 | `title` | The block title, in human readable format.  JSON data type: string  Context: `view` |
 | `description` | A short description of the block, in human readable format.  JSON data type: string  Context: `view` |
@@ -462,23 +464,25 @@ The schema defines all the fields that exist within a block directory item recor
 | `author_block_rating` | The average rating of blocks published by the same author.  JSON data type: number  Context: `view` |
 | `author_block_count` | The number of blocks published by the same author.  JSON data type: integer  Context: `view` |
 | `author` | The WordPress.org username of the block author.  JSON data type: string  Context: `view` |
-| `icon` | The block icon.  JSON data type: string, Format: uri  Context: `view` |
-| `last_updated` | The date when the block was last updated.  JSON data type: string, Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Context: `view` |
+| `icon` | The block icon.  JSON data type: string,    Format: uri  Context: `view` |
+| `last_updated` | The date when the block was last updated.  JSON data type: string,    Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Context: `view` |
 | `humanized_updated` | The date when the block was last updated, in fuzzy human readable format.  JSON data type: string  Context: `view` |
-
- 
 
 ## List Block Directory Items
 
- Query this endpoint to retrieve a collection of block directory items. The response you receive can be controlled and filtered using the URL query parameters below. ### Definition
+ Query this endpoint to retrieve a collection of block directory items. The response you receive can be controlled and filtered using the URL query parameters below.
 
- `GET /wp/v2/block-directory/search`### Example Request
+### Definition
 
- `$ curl https://example.com/wp-json/wp/v2/block-directory/search` 
+ `GET /wp/v2/block-directory/search`
+
+### Example Request
+
+ `$ curl https://example.com/wp-json/wp/v2/block-directory/search`
 
 ### Arguments
 
- | `context` | Scope under which the request is made; determines fields present in response.  Default: `view`   One of: `view` |
+| `context` | Scope under which the request is made; determines fields present in response.  Default: `view`   One of: `view` |
 |---|---|
 | `page` | Current page of the collection.  Default: `1` |
 | `per_page` | Maximum number of items to be returned in result set.  Default: `10` |
@@ -2420,39 +2424,19 @@ The schema defines all the fields that exist within a template record. Any respo
 
 Source: https://developer.wordpress.org/rest-api/
 
-The WordPress REST API provides an interface for applications to interact with your WordPress site by sending and receiving data as [JSON](https://en.wikipedia.org/wiki/JSON) (JavaScript Object Notation) objects. It is the foundation of the [WordPress Block Editor](#block-editor), and can likewise enable your theme, plugin or custom application to present new, powerful interfaces for managing and publishing your site content.
-
-Using the WordPress REST API you can create a plugin to provide an entirely new admin experience for WordPress, build a brand new interactive front-end experience, or bring your WordPress content into completely separate applications.
-
-The REST API is a developer-oriented feature of WordPress. It provides data access to the content of your site, and implements the same authentication restrictions — content that is public on your site is generally publicly accessible via the REST API, while private content, password-protected content, internal users, custom post types, and metadata is only available with authentication or if you specifically set it to be so. If you are not a developer, the most important thing to understand about the API is that it enables the block editor and modern plugin interfaces without compromising the security or privacy of your site.
+The WordPress REST API provides an interface for applications to interact with your WordPress site by sending and receiving data as [JSON](https://en.wikipedia.org/wiki/JSON) (JavaScript Object Notation) objects. It is the foundation of the [WordPress Block Editor](#block-editor), and can likewise enable your theme, plugin or custom application to present new, powerful interfaces for managing and publishing your site content. Using the WordPress REST API you can create a plugin to provide an entirely new admin experience for WordPress, build a brand new interactive front-end experience, or bring your WordPress content into completely separate applications. The REST API is a developer-oriented feature of WordPress. It provides data access to the content of your site, and implements the same authentication restrictions — content that is public on your site is generally publicly accessible via the REST API, while private content, password-protected content, internal users, custom post types, and metadata is only available with authentication or if you specifically set it to be so. If you are not a developer, the most important thing to understand about the API is that it enables the block editor and modern plugin interfaces without compromising the security or privacy of your site.
 
 ## What Is A REST API?
 
-An API is an Application Programming Interface. REST, standing for “REpresentational State Transfer,” is a set of concepts for modeling and accessing your application’s data as interrelated objects and collections. The WordPress REST API provides REST endpoints (URLs) representing the posts, pages, taxonomies, and other built-in WordPress data types. Your application can send and receive JSON data to these endpoints to query, modify and create content on your site. JSON is an open standard data format that is lightweight and human-readable, and looks like Objects do in JavaScript. When you request content from or send content to the API, the response will also be returned in JSON. Because JSON is widely supported in many programming languages, developers can build WordPress applications in client-side JavaScript (like the block editor), as mobile apps, or as desktop or command line tools.
+An API is an Application Programming Interface. REST, standing for “REpresentational State Transfer,” is a set of concepts for modeling and accessing your application’s data as interrelated objects and collections. The WordPress REST API provides REST endpoints (URLs) representing the posts, pages, taxonomies, and other built-in WordPress data types. Your application can send and receive JSON data to these endpoints to query, modify and create content on your site. JSON is an open standard data format that is lightweight and human-readable, and looks like Objects do in JavaScript. When you request content from or send content to the API, the response will also be returned in JSON. Because JSON is widely supported in many programming languages, developers can build WordPress applications in client-side JavaScript (like the block editor), as mobile apps, or as desktop or command line tools. 
 
 The REST API is just one of many APIs provided by WordPress. You can find the [documentation on these additional APIs here](https://codex.wordpress.org/WordPress_APIs).
 
 ## Using the WordPress REST API
 
-WordPress already provides a rich set of tools and interfaces for building sites, and you should not feel pressured to use the REST API if your site is already working the way you expect. You do not need to use the REST API to build a WordPress theme or plugin.
+WordPress already provides a rich set of tools and interfaces for building sites, and you should not feel pressured to use the REST API if your site is already working the way you expect. You do not need to use the REST API to build a WordPress theme or plugin. However, if you do wish to write your theme, plugin, or external application as a client-side JavaScript application, or a standalone program in a language other than PHP, then your application will need a structured way to access content within your WordPress site. Any programming language which can make HTTP requests and interpret JSON can use the REST API to interact with WordPress, from PHP, Node.js, Go, and Java, to Swift, Kotlin, and beyond. Even if you’re using vanilla JavaScript or jQuery within a theme or plugin the REST API provides a more predictable and structured way to interact with your site’s content than [`admin-ajax`](https://codex.wordpress.org/AJAX_in_Plugins), enabling you to spend less time accessing the data you need and more time creating better user experiences. If you want a structured, extensible, and simple way to get data in and out of WordPress, you probably want to use the REST API. For all of its simplicity the REST API can feel quite complex at first, so in this handbook we will attempt to break it down into smaller components to explain each part of the full puzzle. ## Next Steps
 
-However, if you do wish to write your theme, plugin, or external application as a client-side JavaScript application, or a standalone program in a language other than PHP, then your application will need a structured way to access content within your WordPress site. Any programming language which can make HTTP requests and interpret JSON can use the REST API to interact with WordPress, from PHP, Node.js, Go, and Java, to Swift, Kotlin, and beyond.
-
-Even if you’re using vanilla JavaScript or jQuery within a theme or plugin the REST API provides a more predictable and structured way to interact with your site’s content than [`admin-ajax`](https://codex.wordpress.org/AJAX_in_Plugins), enabling you to spend less time accessing the data you need and more time creating better user experiences.
-
-If you want a structured, extensible, and simple way to get data in and out of WordPress, you probably want to use the REST API.
-
-For all of its simplicity the REST API can feel quite complex at first, so in this handbook we will attempt to break it down into smaller components to explain each part of the full puzzle.
-
-## Next Steps
-
-Familiarize yourself with the [key technical concepts](#rest-api/key-concepts) behind how the REST API functions.
-
-Learn more about how to interact with API resources and query for specific data in the [Using the REST API](#rest-api/using-the-rest-api) section.
-
-Once you’re comfortable with the default workings of the default routes and methods, discover how to add new data to the API or enhance and manipulate existing response objects in the [Extending the REST API](#rest-api/extending-the-rest-api) section.
-
-For a comprehensive overview of the resources and routes available by default, review the [API reference](#rest-api/reference).
+Familiarize yourself with the [key technical concepts](#rest-api/key-concepts) behind how the REST API functions. Learn more about how to interact with API resources and query for specific data in the [Using the REST API](#rest-api/using-the-rest-api) section. Once you’re comfortable with the default workings of the default routes and methods, discover how to add new data to the API or enhance and manipulate existing response objects in the [Extending the REST API](#rest-api/extending-the-rest-api) section. For a comprehensive overview of the resources and routes available by default, review the [API reference](#rest-api/reference).
 
 ---
 
@@ -2462,7 +2446,21 @@ Source: https://developer.wordpress.org/rest-api/using-the-rest-api/authenticati
 
 ## Cookie Authentication
 
-Cookie authentication is the standard authentication method included with WordPress. When you log in to your dashboard, this sets up the cookies correctly for you, so plugin and theme developers need only to have a logged-in user. However, the REST API includes a technique called [nonces](#apis/security/nonces) to avoid [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) issues. This prevents other sites from forcing you to perform actions without explicitly intending to do so. This requires slightly special handling for the API. For developers using the built-in Javascript API, this is handled automatically for you. This is the recommended way to use the API for plugins and themes. Custom data models can extend `wp.api.models.Base` to ensure this is sent correctly for any custom requests. For developers making manual Ajax requests, the nonce will need to be passed with each request. The API uses nonces with the action set to `wp_rest`. These can then be passed to the API via the `_wpnonce` data parameter (either POST data or in the query for GET requests), or via the `X-WP-Nonce` header. If no nonce is provided the API will set the current user to 0, turning the request into an **unauthenticated request**, even if you’re logged into WordPress. Note: Until recently, most software had spotty support for `DELETE` requests. For instance, PHP doesn’t transform the request body of a `DELETE` request into a super global. As such, supplying the nonce as a header is the most reliable approach. It is important to keep in mind that this authentication method relies on WordPress cookies. As a result this method is only applicable when the REST API is used inside of WordPress and the current user is logged in. In addition, the current user must have the appropriate capability to perform the action being performed. As an example, this is how the built-in Javascript client creates the nonce: ```php
+Cookie authentication is the standard authentication method included with WordPress. When you log in to your dashboard, this sets up the cookies correctly for you, so plugin and theme developers need only to have a logged-in user.
+
+However, the REST API includes a technique called [nonces](#apis/security/nonces) to avoid [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) issues. This prevents other sites from forcing you to perform actions without explicitly intending to do so. This requires slightly special handling for the API.
+
+For developers using the built-in Javascript API, this is handled automatically for you. This is the recommended way to use the API for plugins and themes. Custom data models can extend `wp.api.models.Base` to ensure this is sent correctly for any custom requests.
+
+For developers making manual Ajax requests, the nonce will need to be passed with each request. The API uses nonces with the action set to `wp_rest`. These can then be passed to the API via the `_wpnonce` data parameter (either POST data or in the query for GET requests), or via the `X-WP-Nonce` header. If no nonce is provided the API will set the current user to 0, turning the request into an **unauthenticated request**, even if you’re logged into WordPress.
+
+Note: Until recently, most software had spotty support for `DELETE` requests. For instance, PHP doesn’t transform the request body of a `DELETE` request into a super global. As such, supplying the nonce as a header is the most reliable approach.
+
+It is important to keep in mind that this authentication method relies on WordPress cookies. As a result this method is only applicable when the REST API is used inside of WordPress and the current user is logged in. In addition, the current user must have the appropriate capability to perform the action being performed.
+
+As an example, this is how the built-in Javascript client creates the nonce:
+
+```php
 <?php
 wp_localize_script( 'wp-api', 'wpApiSettings', array(
     'root' => esc_url_raw( rest_url() ),
@@ -2471,7 +2469,9 @@ wp_localize_script( 'wp-api', 'wpApiSettings', array(
 
 ```
 
-This is then used in the base model: ```js
+This is then used in the base model:
+
+```js
 options.beforeSend = function(xhr) {
     xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce);
 
@@ -2482,7 +2482,9 @@ options.beforeSend = function(xhr) {
 
 ```
 
-Here is an example of editing the title of a post, using jQuery AJAX: ```js
+Here is an example of editing the title of a post, using jQuery AJAX:
+
+```js
 $.ajax( {
     url: wpApiSettings.root + 'wp/v2/posts/1',
     method: 'POST',
@@ -2498,18 +2500,28 @@ $.ajax( {
 
 ```
 
-Note that you do not need to verify that the nonce is valid inside your custom end point. This is automatically done for you in `rest_cookie_check_errors()`. ## Basic Authentication with Application Passwords
+Note that you do not need to verify that the nonce is valid inside your custom end point. This is automatically done for you in `rest_cookie_check_errors()`.
 
-As of 5.6, WordPress has shipped with [Application Passwords](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/), which can be generated from an Edit User page (wp-admin -&gt; Users -&gt; Edit User). The credentials can be passed along to REST API requests served over https:// using [Basic Auth](https://ec.haxx.se/http/http-auth) / [RFC 7617](https://tools.ietf.org/html/rfc7617) — [here’s the documentation for how to use it with cURL](https://ec.haxx.se/http/http-auth). For a simple command-line script example, just swap out USERNAME, PASSWORD, and HOSTNAME in this with their respective values: ```
+## Basic Authentication with Application Passwords
+
+As of 5.6, WordPress has shipped with [Application Passwords](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/), which can be generated from an Edit User page (wp-admin -&gt; Users -&gt; Edit User).
+
+The credentials can be passed along to REST API requests served over https:// using [Basic Auth](https://ec.haxx.se/http/http-auth) / [RFC 7617](https://tools.ietf.org/html/rfc7617) — [here’s the documentation for how to use it with cURL](https://ec.haxx.se/http/http-auth).
+
+For a simple command-line script example, just swap out USERNAME, PASSWORD, and HOSTNAME in this with their respective values:
+
+```
 curl --user "USERNAME:PASSWORD" https://HOSTNAME/wp-json/wp/v2/users?context=edit
 
 ```
 
 ## Authentication Plugins
 
-Plugins may be added to support alternative modes of authentication that will work from remote applications. Some example plugins are [OAuth 1.0a Server](https://wordpress.org/plugins/rest-api-oauth1/) and [JSON Web Tokens](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/). 
+Plugins may be added to support alternative modes of authentication that will work from remote applications. Some example plugins are [OAuth 1.0a Server](https://wordpress.org/plugins/rest-api-oauth1/) and [JSON Web Tokens](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/).
 
-There’s also a [Basic Authentication](https://github.com/WP-API/Basic-Auth) plugin. Note that this plugin requires sending your username and password with every request, and should only be used for development and testing i.e. not in a production environment. Using Application Passwords (see above) is preferred.
+There’s also a [Basic Authentication](https://github.com/WP-API/Basic-Auth) plugin.
+
+Note that this plugin requires sending your username and password with every request, and should only be used for development and testing i.e. not in a production environment. Using Application Passwords (see above) is preferred.
 
 ---
 
@@ -2519,17 +2531,9 @@ Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/routes-a
 
 ## Overview
 
-The REST API provides us a way to match URIs to various resources in our WordPress install. By default, if you have pretty permalinks enabled, the WordPress REST API “lives” at `/wp-json/`. At our WordPress site `https://ourawesomesite.com`, we can access the REST API's index by making a`GET`request to`https://ourawesomesite.com/wp-json/`. The index provides information regarding what routes are available for that particular WordPress install, along with what HTTP methods are supported and what endpoints are registered.
+The REST API provides us a way to match URIs to various resources in our WordPress install. By default, if you have pretty permalinks enabled, the WordPress REST API “lives” at `/wp-json/`. At our WordPress site `https://ourawesomesite.com`, we can access the REST API's index by making a`GET`request to`https://ourawesomesite.com/wp-json/`. The index provides information regarding what routes are available for that particular WordPress install, along with what HTTP methods are supported and what endpoints are registered. ## Routes vs Endpoints
 
-## Routes vs Endpoints
-
-Endpoints are functions available through the API. This can be things like retrieving the API index, updating a post, or deleting a comment. Endpoints perform a specific function, taking some number of parameters and return data to the client.
-
-A route is the “name” you use to access endpoints, used in the URL. A route can have multiple endpoints associated with it, and which is used depends on the HTTP verb.
-
-For example, with the URL `http://example.com/wp-json/wp/v2/posts/123`:
-
-- The “route” is `wp/v2/posts/123` – The route doesn’t include `wp-json` because `wp-json` is the base path for the API itself.
+Endpoints are functions available through the API. This can be things like retrieving the API index, updating a post, or deleting a comment. Endpoints perform a specific function, taking some number of parameters and return data to the client. A route is the “name” you use to access endpoints, used in the URL. A route can have multiple endpoints associated with it, and which is used depends on the HTTP verb. For example, with the URL `http://example.com/wp-json/wp/v2/posts/123`: - The “route” is `wp/v2/posts/123` – The route doesn’t include `wp-json` because `wp-json` is the base path for the API itself.
 - This route has 3 endpoints: 
     - `GET` triggers a `get_item` method, returning the post data to the client.
     - `PUT` triggers an `update_item` method, taking the data to update, and returning the updated post data.
@@ -2539,9 +2543,7 @@ On sites without pretty permalinks, the route is instead added to the URL as the
 
 ## Creating Endpoints
 
-If we wanted to create an endpoint that would return the phrase “Hello World, this is the WordPress REST API” when it receives a GET request, we would first need to register the route for that endpoint. To register routes you should use the `register_rest_route()` function. It needs to be called on the `rest_api_init` action hook. `register_rest_route()` handles all of the mapping for routes to endpoints. Let’s try to create a “Hello World, this is the WordPress REST API” route.
-
-```php
+If we wanted to create an endpoint that would return the phrase “Hello World, this is the WordPress REST API” when it receives a GET request, we would first need to register the route for that endpoint. To register routes you should use the `register_rest_route()` function. It needs to be called on the `rest_api_init` action hook. `register_rest_route()` handles all of the mapping for routes to endpoints. Let’s try to create a “Hello World, this is the WordPress REST API” route. ```php
 /**
  * This is our callback function that embeds our phrase in a WP_REST_Response
  */
@@ -2567,45 +2569,19 @@ add_action( 'rest_api_init', 'prefix_register_example_routes' );
 
 ```
 
-The first argument passed into `register_rest_route()` is the namespace, which provides us a way to group our routes. The second argument passed in is the resource path, or resource base. For our example, the resource we are retrieving is the “Hello World, this is the WordPress REST API” phrase. The third argument is an array of options. We specify what methods the endpoint can use and what callback should happen when the endpoint is matched (more things can be done but these are the fundamentals).
+The first argument passed into `register_rest_route()` is the namespace, which provides us a way to group our routes. The second argument passed in is the resource path, or resource base. For our example, the resource we are retrieving is the “Hello World, this is the WordPress REST API” phrase. The third argument is an array of options. We specify what methods the endpoint can use and what callback should happen when the endpoint is matched (more things can be done but these are the fundamentals). The third argument also allows us to provide a permissions callback, which can restrict access for the endpoint to only certain users. The third argument also offers a way to register arguments for the endpoint so that requests can modify the response of our endpoint. We will get into those concepts in the endpoints section of this guide. When we go to `https://ourawesomesite.com/wp-json/hello-world/v1/phrase` we can now see our REST API greeting us kindly. Let’s take a look at routes a bit more in depth. ## Routes
 
-The third argument also allows us to provide a permissions callback, which can restrict access for the endpoint to only certain users. The third argument also offers a way to register arguments for the endpoint so that requests can modify the response of our endpoint. We will get into those concepts in the endpoints section of this guide.
+Routes in the REST API are represented by URIs. The route itself is what is tacked onto the end of `https://ourawesomesite.com/wp-json`. The index route for the API is`/`which is why`https://ourawesomesite.com/wp-json/` returns all of the available information for the API. All routes should be built onto this route, the `wp-json` portion can be changed, but in general, it is advised to keep it the same. We want to make sure that our routes are unique. For instance we could have a route for books like this: `/books`. Our books route would now live at `https://ourawesomesite.com/wp-json/books`. However, this is not a good practice as we would end up polluting potential routes for the API. What if another plugin we wanted to register a books route as well? We would be in big trouble in that case, as the two routes would conflict with each other and only one could be used. The fourth parameter to`[register\_rest\_route()](#reference/functions/register_rest_route) ` is a boolean for whether the route should override an existing route. The override parameter does not really solve our problem either, as both routes could override or we would want to use both routes for different things. This is where using namespaces for our routes comes in. ### Namespaces
 
-When we go to `https://ourawesomesite.com/wp-json/hello-world/v1/phrase` we can now see our REST API greeting us kindly. Let’s take a look at routes a bit more in depth.
-
-## Routes
-
-Routes in the REST API are represented by URIs. The route itself is what is tacked onto the end of `https://ourawesomesite.com/wp-json`. The index route for the API is`/`which is why`https://ourawesomesite.com/wp-json/` returns all of the available information for the API. All routes should be built onto this route, the `wp-json` portion can be changed, but in general, it is advised to keep it the same.
-
-We want to make sure that our routes are unique. For instance we could have a route for books like this: `/books`. Our books route would now live at `https://ourawesomesite.com/wp-json/books`. However, this is not a good practice as we would end up polluting potential routes for the API. What if another plugin we wanted to register a books route as well? We would be in big trouble in that case, as the two routes would conflict with each other and only one could be used. The fourth parameter to`[register\_rest\_route()](#reference/functions/register_rest_route) ` is a boolean for whether the route should override an existing route.
-
-The override parameter does not really solve our problem either, as both routes could override or we would want to use both routes for different things. This is where using namespaces for our routes comes in.
-
-### Namespaces
-
-It is extremely important to add namespaces to your routes. The “core” endpoints use the `wp/v2` namespace.
+It is extremely important to add namespaces to your routes. The “core” endpoints use the `wp/v2` namespace. 
 
 **Do not place anything into the `wp` namespace unless you are making endpoints with the intention of merging them into core.**
 
-There are some key things to take notice of in the core endpoint namespace. The first part of the namespace is `wp`, which represents the vendor name; WordPress. For our plugins we will want to come up with unique names for what we call the vendor portion of the namespace. In the example above we used `hello-world`.
+There are some key things to take notice of in the core endpoint namespace. The first part of the namespace is `wp`, which represents the vendor name; WordPress. For our plugins we will want to come up with unique names for what we call the vendor portion of the namespace. In the example above we used `hello-world`. Following the vendor portion is the version portion of the namespace. The “core” endpoints utilize `v2` to represent version 2 of the WordPress REST API. If you are writing a plugin, you can maintain backwards compatibility of your REST API endpoints by simply creating new endpoints and bumping up the version number you provide. This way both the original `v1` and `v2` endpoints can be accessed. The part of the route that follows the namespace is the resource path. ### Resource Paths
 
-Following the vendor portion is the version portion of the namespace. The “core” endpoints utilize `v2` to represent version 2 of the WordPress REST API. If you are writing a plugin, you can maintain backwards compatibility of your REST API endpoints by simply creating new endpoints and bumping up the version number you provide. This way both the original `v1` and `v2` endpoints can be accessed.
+The resource path should signify what resource the endpoint is associated with. In the example we used above, we used the word `phrase` to signify that the resource we are interacting with is a phrase. To avoid any collisions, each resource path we register should also be unique within a namespace. Resource paths should be used to define different resource routes within a given namespace. Let’s say we have a plugin that handles some basic eCommerce functionality. We will have two main resource types orders, and products. Orders are a request for product(s) but they are not the product themselves. The same concept applies to products. Although these resources are related they are not the same thing and each should live in a separate resource paths. Our routes will end up looking something like this for our eCommerce plugin: `/my-shop/v1/orders` and `/my-shop/v1/products`. Using routes like this, we would want each to return a collection of orders or products. What if we wanted to grab a specific product by ID, we would need to use path variables in our routes. ### Path Variables
 
-The part of the route that follows the namespace is the resource path.
-
-### Resource Paths
-
-The resource path should signify what resource the endpoint is associated with. In the example we used above, we used the word `phrase` to signify that the resource we are interacting with is a phrase. To avoid any collisions, each resource path we register should also be unique within a namespace. Resource paths should be used to define different resource routes within a given namespace.
-
-Let’s say we have a plugin that handles some basic eCommerce functionality. We will have two main resource types orders, and products. Orders are a request for product(s) but they are not the product themselves. The same concept applies to products. Although these resources are related they are not the same thing and each should live in a separate resource paths. Our routes will end up looking something like this for our eCommerce plugin: `/my-shop/v1/orders` and `/my-shop/v1/products`.
-
-Using routes like this, we would want each to return a collection of orders or products. What if we wanted to grab a specific product by ID, we would need to use path variables in our routes.
-
-### Path Variables
-
-Path variables enable us to add dynamic routes. To expand on our eCommerce routes, we could register a route to grab individual products.
-
-```php
+Path variables enable us to add dynamic routes. To expand on our eCommerce routes, we could register a route to grab individual products. ```php
 /**
  * This is our callback function to return our products.
  *
@@ -2677,17 +2653,9 @@ add_action( 'rest_api_init', 'prefix_register_product_routes' );
 
 ```
 
-The above example covers a lot. The important part to note is that in the second route we register, we add on a path variable `/(?P<id>[\d]+)` to our resource path `/products`. The path variable is a regular expression. In this case it uses `[\d]+` to signify that should be any numerical character at least once. If you are using numeric IDs for your resources, then this is a great example of how to use a path variable. When using path variables, we now have to be careful around what can be matched as it is user input.
+The above example covers a lot. The important part to note is that in the second route we register, we add on a path variable `/(?P<id>[\d]+)` to our resource path `/products`. The path variable is a regular expression. In this case it uses `[\d]+` to signify that should be any numerical character at least once. If you are using numeric IDs for your resources, then this is a great example of how to use a path variable. When using path variables, we now have to be careful around what can be matched as it is user input. The regex luckily will filter out anything that is not numerical. However, what if the product for the requested ID doesn’t exist. We need to do error handling. You can see the basic way we are handling errors in the code example above. When you return a `WP_Error` in your endpoint callbacks the API server will automatically handle serving the error to the client. Although this section is about routes, we have covered quite a bit about endpoints. Endpoints and routes are interrelated, but they definitely have distinctions. ## Endpoints
 
-The regex luckily will filter out anything that is not numerical. However, what if the product for the requested ID doesn’t exist. We need to do error handling. You can see the basic way we are handling errors in the code example above. When you return a `WP_Error` in your endpoint callbacks the API server will automatically handle serving the error to the client.
-
-Although this section is about routes, we have covered quite a bit about endpoints. Endpoints and routes are interrelated, but they definitely have distinctions.
-
-## Endpoints
-
-Endpoints are the destination that a route needs to map to. For any given route, you could have a number of different endpoints registered to it. We will expand on our fictitious eCommerce plugin, to better show the distinction between routes and endpoints. We are going to create two endpoints that exist at the `/wp-json/my-shop/v1/products/` route. One endpoint uses the HTTP verb `GET` to get products, and the other endpoint uses the HTTP verb `POST` to create a new product.
-
-```php
+Endpoints are the destination that a route needs to map to. For any given route, you could have a number of different endpoints registered to it. We will expand on our fictitious eCommerce plugin, to better show the distinction between routes and endpoints. We are going to create two endpoints that exist at the `/wp-json/my-shop/v1/products/` route. One endpoint uses the HTTP verb `GET` to get products, and the other endpoint uses the HTTP verb `POST` to create a new product. ```php
 /**
  * This is our callback function to return our products.
  *
@@ -2739,43 +2707,21 @@ add_action( 'rest_api_init', 'prefix_register_product_routes' );
 
 ```
 
-Depending on what HTTP Method we use for the route `/wp-json/my-shop/v1/products`, we are matched to a different endpoint and a different callback is fired. When we use `POST` we trigger the `prefix_create_product()` callback, and when we use `GET` we trigger the `prefix_get_products()` callback.
+Depending on what HTTP Method we use for the route `/wp-json/my-shop/v1/products`, we are matched to a different endpoint and a different callback is fired. When we use `POST` we trigger the `prefix_create_product()` callback, and when we use `GET` we trigger the `prefix_get_products()` callback. There are a number of different HTTP methods and the REST API can make use of any of them. ### HTTP Methods
 
-There are a number of different HTTP methods and the REST API can make use of any of them.
-
-### HTTP Methods
-
-HTTP methods are sometimes referred to as HTTP verbs. They are simply just different ways to communicate via HTTP. The main ones used by the WordPress REST API are:
-
-- `GET` should be used for retrieving data from the API.
+HTTP methods are sometimes referred to as HTTP verbs. They are simply just different ways to communicate via HTTP. The main ones used by the WordPress REST API are: - `GET` should be used for retrieving data from the API.
 - `POST` should be used for creating new resources (i.e users, posts, taxonomies).
 - `PUT` should be used for updating resources.
 - `DELETE` should be used for deleting resources.
 - `OPTIONS` should be used to provide context about our resources.
 
-It is important to note that these methods are not supported by every client, as they were introduced in HTTP 1.1. Luckily, the API provides a workaround for these unfortunate cases. If you want to delete a resource but can’t send a `DELETE` request, then you can use the `_method` parameter or the `X-HTTP-Method-Override` header in your request. How this works is you will send a `POST` request to `https://ourawesomesite.com/wp-json/my-shop/v1/products/1?\_method=DELETE`. Now you will have deleted product number 1, even though your client could not send the proper HTTP method in the request, or maybe there was a firewall in place that blocks out DELETE requests.
+It is important to note that these methods are not supported by every client, as they were introduced in HTTP 1.1. Luckily, the API provides a workaround for these unfortunate cases. If you want to delete a resource but can’t send a `DELETE` request, then you can use the `_method` parameter or the `X-HTTP-Method-Override` header in your request. How this works is you will send a `POST` request to `https://ourawesomesite.com/wp-json/my-shop/v1/products/1?\_method=DELETE`. Now you will have deleted product number 1, even though your client could not send the proper HTTP method in the request, or maybe there was a firewall in place that blocks out DELETE requests. The HTTP method, in combination with the route and callbacks, are what make up the core of an endpoint. ### Callbacks
 
-The HTTP method, in combination with the route and callbacks, are what make up the core of an endpoint.
+There are currently only two types of callbacks for endpoints supported by the REST API; `callback` and `permission_callback`. The main callback should handle the interaction with the resource. The permissions callback should handle what users have access to the endpoint. You can add additional callbacks by adding additional information when registering an endpoint. You can then hook into `rest_pre_dispatch`, `rest_dispatch_request`, or `rest_post_dispatch` hooks to fire your new custom callbacks. #### Endpoint Callback
 
-### Callbacks
+The main callback for a delete endpoint should only delete the resource and return a copy of it in the response. The main callback for a creation endpoint should only create the resource and return a response matching the newly created data. An update callback should only modify resources that actually exist. A reading callback should only retrieve data that already exists. It is important to take into account the concept of idempotence. Idempotence, in the context of a REST API, means that if you make the same request to an endpoint the server will process the request the same way. Imagine if our read endpoint was not idempotent. Whenever we made a request to it the state of our server would be modified by the request, even though we were only trying to get data. This could be catastrophic. Any time someone fetched data from your server something would change internally. It is important to make sure that read, update, and delete endpoints do not have nasty side effects and just stick to what they are intended to do. In a REST API, the concept of idempotence is tied to HTTP methods instead of endpoint callbacks. Any callback using `GET`, `HEAD`, `TRACE`, `OPTIONS`, `PUT`, or `DELETE`, should not produce any side effects. `POST` requests are not idempotent, and are typically used for creating resources. If you created an idempotent creation method then you would only ever create one resource because when you make the same request there would be no more side effects to the server. For creating, if you make the same request over and over the server should generate new resources each time. To restrict usage of endpoints we need to register a permissions callback. #### Permissions Callback
 
-There are currently only two types of callbacks for endpoints supported by the REST API; `callback` and `permission_callback`. The main callback should handle the interaction with the resource. The permissions callback should handle what users have access to the endpoint. You can add additional callbacks by adding additional information when registering an endpoint. You can then hook into `rest_pre_dispatch`, `rest_dispatch_request`, or `rest_post_dispatch` hooks to fire your new custom callbacks.
-
-#### Endpoint Callback
-
-The main callback for a delete endpoint should only delete the resource and return a copy of it in the response. The main callback for a creation endpoint should only create the resource and return a response matching the newly created data. An update callback should only modify resources that actually exist. A reading callback should only retrieve data that already exists. It is important to take into account the concept of idempotence.
-
-Idempotence, in the context of a REST API, means that if you make the same request to an endpoint the server will process the request the same way. Imagine if our read endpoint was not idempotent. Whenever we made a request to it the state of our server would be modified by the request, even though we were only trying to get data. This could be catastrophic. Any time someone fetched data from your server something would change internally. It is important to make sure that read, update, and delete endpoints do not have nasty side effects and just stick to what they are intended to do.
-
-In a REST API, the concept of idempotence is tied to HTTP methods instead of endpoint callbacks. Any callback using `GET`, `HEAD`, `TRACE`, `OPTIONS`, `PUT`, or `DELETE`, should not produce any side effects. `POST` requests are not idempotent, and are typically used for creating resources. If you created an idempotent creation method then you would only ever create one resource because when you make the same request there would be no more side effects to the server. For creating, if you make the same request over and over the server should generate new resources each time.
-
-To restrict usage of endpoints we need to register a permissions callback.
-
-#### Permissions Callback
-
-Permissions callbacks are extremely important for security with the WordPress REST API. If you have any private data that should not be displayed publicly, then you need to have permissions callbacks registered for your endpoints. Below is an example of how to register permissions callbacks.
-
-```php
+Permissions callbacks are extremely important for security with the WordPress REST API. If you have any private data that should not be displayed publicly, then you need to have permissions callbacks registered for your endpoints. Below is an example of how to register permissions callbacks. ```php
 /**
  * This is our callback function that embeds our resource in a WP_REST_Response
  */
@@ -2816,13 +2762,9 @@ add_action( 'rest_api_init', 'prefix_register_example_routes' );
 
 ```
 
-If you try out this endpoint without any Authentication enabled then you will also be returned the error response, preventing you from seeing the data. Authentication is a huge topic and eventually a portion of this chapter will be created to show you how to create your own authentication processes.
+If you try out this endpoint without any Authentication enabled then you will also be returned the error response, preventing you from seeing the data. Authentication is a huge topic and eventually a portion of this chapter will be created to show you how to create your own authentication processes. ### Arguments
 
-### Arguments
-
-When making requests to an endpoint you might need to specify extra parameters to change the response. These extra parameters can be added while registering endpoints. Let’s look at an example of how to use arguments with an endpoint.
-
-```php
+When making requests to an endpoint you might need to specify extra parameters to change the response. These extra parameters can be added while registering endpoints. Let’s look at an example of how to use arguments with an endpoint. ```php
 /**
  * This is our callback function that embeds our resource in a WP_REST_Response
  */
@@ -2885,17 +2827,9 @@ add_action( 'rest_api_init', 'prefix_register_example_routes' );
 
 ```
 
-We have now specified a `filter` argument for this example. We can specify the argument as a query parameter when we request the endpoint. If we make a `GET` request to `https://ourawesomesitem.com/my-colors/v1/colors?filter=blue`, we will be returned only the blue colors in our collection. You could also pass these as body parameters in the request body, instead of in the query string. To understand the distinction between query parameters and body parameters you should read about the HTTP spec. Query parameters live in the query string tacked onto the URL and body parameters are directly embedded in the body of an HTTP request.
+We have now specified a `filter` argument for this example. We can specify the argument as a query parameter when we request the endpoint. If we make a `GET` request to `https://ourawesomesitem.com/my-colors/v1/colors?filter=blue`, we will be returned only the blue colors in our collection. You could also pass these as body parameters in the request body, instead of in the query string. To understand the distinction between query parameters and body parameters you should read about the HTTP spec. Query parameters live in the query string tacked onto the URL and body parameters are directly embedded in the body of an HTTP request. We have created an argument for our endpoint, but how do we verify that the argument is a string and tell whether it matches the value red, green, or blue. To do this we need to specify a validation callback for our argument. #### Validation
 
-We have created an argument for our endpoint, but how do we verify that the argument is a string and tell whether it matches the value red, green, or blue. To do this we need to specify a validation callback for our argument.
-
-#### Validation
-
-Validation and sanitization are extremely important for security in the API. The validate callback (in WP 4.6+), fires before the sanitize callback. You should use the `validate_callback` for your arguments to verify whether the input you are receiving is valid. The `sanitize_callback` should be used to transform the argument input or clean out unwanted parts out of the argument, before the argument is processed by the main callback.
-
-In the example above, we need to verify that the `filter` parameter is a string, and it matches the value red, green, or blue. Let’s look at what the code looks like after adding in a `validate_callback`.
-
-```php
+Validation and sanitization are extremely important for security in the API. The validate callback (in WP 4.6+), fires before the sanitize callback. You should use the `validate_callback` for your arguments to verify whether the input you are receiving is valid. The `sanitize_callback` should be used to transform the argument input or clean out unwanted parts out of the argument, before the argument is processed by the main callback. In the example above, we need to verify that the `filter` parameter is a string, and it matches the value red, green, or blue. Let’s look at what the code looks like after adding in a `validate_callback`. ```php
 /**
  * This is our callback function that embeds our resource in a WP_REST_Response
  */
@@ -2987,9 +2921,7 @@ add_action( 'rest_api_init', 'prefix_register_example_routes' );
 
 #### Sanitizing
 
-In the above example, we do not need to use a `sanitize_callback`, because we are restricting input to only values in our enum. If we did not have strict validation and accepted any string as a parameter, we would definitely need to register a `sanitize_callback`. What if we wanted to update a content field and the user entered something like `alert('ZOMG Hacking you');`. The field value could potentially be an executable script. To strip out unwanted data or to transform data into a desired format we need to register a `sanitize_callback` for our arguments. Here is an example of how to use WordPress’s `sanitize_text_field()` for a sanitize callback:
-
-```php
+In the above example, we do not need to use a `sanitize_callback`, because we are restricting input to only values in our enum. If we did not have strict validation and accepted any string as a parameter, we would definitely need to register a `sanitize_callback`. What if we wanted to update a content field and the user entered something like `alert('ZOMG Hacking you');`. The field value could potentially be an executable script. To strip out unwanted data or to transform data into a desired format we need to register a `sanitize_callback` for our arguments. Here is an example of how to use WordPress’s `sanitize_text_field()` for a sanitize callback: ```php
 /**
  * This is our callback function that embeds our resource in a WP_REST_Response.
  *
@@ -3083,7 +3015,11 @@ Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/controll
 
 ## Overview
 
-To register a new REST route, you must specify a number of callback functions to control endpoint behavior such as how a request is fulfilled, how permissions checks are applied, and how the schema for your resource gets generated. While it is possible to declare all of these methods in an ordinary PHP file without any wrapping namespace or class, all functions declared in that manner coexist in the same global scope. If you decide to use a common function name for your endpoint logic like `get_items()` and another plugin (or another endpoint in your own plugin) also registers a function with that same name, PHP will fail with a fatal error because the function `get_items()` is being declared twice. You can avoid this issue by naming your callback functions using a unique prefix such as `myplugin_myendpoint_` to avoid any potential conflics: ```php
+To register a new REST route, you must specify a number of callback functions to control endpoint behavior such as how a request is fulfilled, how permissions checks are applied, and how the schema for your resource gets generated. While it is possible to declare all of these methods in an ordinary PHP file without any wrapping namespace or class, all functions declared in that manner coexist in the same global scope. If you decide to use a common function name for your endpoint logic like `get_items()` and another plugin (or another endpoint in your own plugin) also registers a function with that same name, PHP will fail with a fatal error because the function `get_items()` is being declared twice.
+
+You can avoid this issue by naming your callback functions using a unique prefix such as `myplugin_myendpoint_` to avoid any potential conflics:
+
+```php
 function myplugin_myendpoint_register_routes() { /* ... */ }
 function myplugin_myendpoint_get_item() { /* ... */ }
 function myplugin_myendpoint_get_item_schema() { /* ... */ }
@@ -3093,7 +3029,11 @@ add_action( 'rest_api_init', 'myplugin_myendpoint_register_routes' );
 
 ```
 
-You may already be familiar with this approach because it is commonly used within theme `functions.php` files. However these prefixes are unnecessarily verbose, and several better options exist to group and encapsulate your endpoint’s logic in a more maintainable way. WordPress currently requires PHP 5.6 or greater. PHP 5.6 supports [namespaces](https://www.php.net/manual/en/language.namespaces.rationale.php), which provide an easy way to encapsulate your endpoint’s functionality. By declaring a `namespace` at the top of your endpoint’s PHP file, all methods within that namespace will be declared within that namespace and will no longer conflict with global functions. You may then use shorter, more-readable names for your endpoint callbacks. ```php
+You may already be familiar with this approach because it is commonly used within theme `functions.php` files. However these prefixes are unnecessarily verbose, and several better options exist to group and encapsulate your endpoint’s logic in a more maintainable way.
+
+WordPress currently requires PHP 5.6 or greater. PHP 5.6 supports [namespaces](https://www.php.net/manual/en/language.namespaces.rationale.php), which provide an easy way to encapsulate your endpoint’s functionality. By declaring a `namespace` at the top of your endpoint’s PHP file, all methods within that namespace will be declared within that namespace and will no longer conflict with global functions. You may then use shorter, more-readable names for your endpoint callbacks.
+
+```php
 namespace MyPlugin\API\MyEndpoint;
 
 function register_routes() { /* ... */ }
@@ -3105,9 +3045,15 @@ add_action( 'rest_api_init', __NAMESPACE__ . '\\register_routes' );
 
 ```
 
-While these shorter function names are simpler to work with, they don’t provide any other benefits over declaring global functions. For this reason the core REST API endpoints within WordPress are all implemented using a *controller class*. The remainder of this page details how to write your own controller class and explains the advantages of doing so. ## Controllers
+While these shorter function names are simpler to work with, they don’t provide any other benefits over declaring global functions. For this reason the core REST API endpoints within WordPress are all implemented using a *controller class*.
 
-A controller receives input (a `WP_REST_Request` object, in the case of the WordPress REST API) and generates response output as `WP_REST_Response` objects. Let’s look at an example controller class: ```php
+The remainder of this page details how to write your own controller class and explains the advantages of doing so.
+
+## Controllers
+
+A controller receives input (a `WP_REST_Request` object, in the case of the WordPress REST API) and generates response output as `WP_REST_Response` objects. Let’s look at an example controller class:
+
+```php
 class My_REST_Posts_Controller {
 
     // Here initialize our namespace and resource name.
@@ -3320,20 +3266,44 @@ add_action( 'rest_api_init', 'prefix_register_my_rest_routes' );
 
 ## Benefits of Classes
 
-This class contains all the same components you may have written using simple functions. The structure of a class gives us a convenient way to refer to related methods using the `$this->method_name()` syntax, but unlike a namespace the class also permits us to cache values and share logic. In the `get_item_schema` method, note that we store the generated schema on the class as `$this->schema`. Class properties make it easy to cache these sorts of generated values. The introduction of schema caching in WordPress 5.3 increased the speed of some core REST API collection responses by up to 40%, so you should definitely consider following this pattern in your own controllers. ## Class Inheritance &amp; [WP\_REST\_Controller](#reference/classes/wp_rest_controller)
+This class contains all the same components you may have written using simple functions. The structure of a class gives us a convenient way to refer to related methods using the `$this->method_name()` syntax, but unlike a namespace the class also permits us to cache values and share logic.
 
-We’ve seen above how classes solve the global-function encapsulation issue, and how a class instance can be used to cache complex values to speed up response processing. The other major advantage of classes is the way in which class inheritance lets you share logic between multiple endpoints. Our example class here did not extend any base class, but within WordPress core all endpoint controllers extend a single `abstract` controller class called `WP_REST_Controller`. Extending this class gives you access to a number of useful methods, including but not limited to: - [`prepare_response_for_collection()`](#reference/classes/wp_rest_controllerprepare_response_for_collection/): Prepare a response for insertion into a collection.
+In the `get_item_schema` method, note that we store the generated schema on the class as `$this->schema`. Class properties make it easy to cache these sorts of generated values. The introduction of schema caching in WordPress 5.3 increased the speed of some core REST API collection responses by up to 40%, so you should definitely consider following this pattern in your own controllers.
+
+## Class Inheritance &amp; [WP\_REST\_Controller](#reference/classes/wp_rest_controller)
+
+We’ve seen above how classes solve the global-function encapsulation issue, and how a class instance can be used to cache complex values to speed up response processing. The other major advantage of classes is the way in which class inheritance lets you share logic between multiple endpoints.
+
+Our example class here did not extend any base class, but within WordPress core all endpoint controllers extend a single `abstract` controller class called `WP_REST_Controller`. Extending this class gives you access to a number of useful methods, including but not limited to:
+
+- [`prepare_response_for_collection()`](#reference/classes/wp_rest_controllerprepare_response_for_collection/): Prepare a response for insertion into a collection.
 - [`add_additional_fields_to_object()`](#reference/classes/wp_rest_controlleradd_additional_fields_to_object/): append any registered REST fields to your prepared response object.
 - [`get_fields_for_response()`](#reference/classes/wp_rest_controllerget_fields_for_response/): inspect the `_fields` query parameter to determine which response fields have been requested.
 - [`get_context_param()`](#reference/classes/wp_rest_controllerget_context_param/): Retrieve the `context` parameter.
 - [`filter_response_by_context()`](#reference/classes/wp_rest_controllerfilter_response_by_context/): Filters the response shape based on the provided context parameter.
 - [`get_collection_params()`](#reference/classes/wp_rest_controllerget_collection_params/): return a basic set of parameter definitions useful for collection endpoints.
 
-Endpoint-specific methods like `get_item`, `register_routes`, and `update_item_permissions_check` are not fully implemented by the abstract class, and must be defined in your own class. Visit the [`WP_REST_Controller` class reference page](#reference/classes/wp_rest_controller#methods) for a complete list of this controller’s methods. It is important to note that `WP_REST_Controller` is implemented as an `abstract` class and only contains logic that is clearly needed in multiple classes. Inheritance couples your class to the base class it extends, and poorly-considered inheritance trees can make your endpoints much harder to maintain. As an example, if you wrote a controller class for a posts endpoint (like the example above) and wanted to support custom post types as well, you should **NOT** extend your `My_REST_Posts_Controller` like this: `class My_CPT_REST_Controller extends My_REST_Posts_Controller`. Instead, you should either create an entirely separate base controller class for the shared logic, or make `My_REST_Posts_Controller` handle all available post types. Endpoint logic is subject to changing business requirements, and you don’t want to have to change a number of unrelated controllers every time you update your base posts controller. In most cases you will want to create a base controller class as either an `interface` or `abstract class` which each of your endpoint controllers can implement or extend, or to extend one of the core WordPress REST classes directly. ## Internal WordPress REST API Classes
+Endpoint-specific methods like `get_item`, `register_routes`, and `update_item_permissions_check` are not fully implemented by the abstract class, and must be defined in your own class.
 
-The WordPress REST API follows a deliberate design pattern for its internal classes, which may be categorized as either *infrastructure* or *endpoint* classes. Endpoint classes encapsulate the functional logic necessary to perform [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations on WordPress resources. WordPress exposes many REST API endpoints (such as [`WP_REST_Posts_Controller`](#reference/classes/wp_rest_posts_controller)), but as discussed above all endpoints extend from a common base controller class: - [`WP_REST_Controller`](#reference/classes/wp_rest_controller): The base class for all WordPress core endpoints. This class is designed to represent a consistent pattern for manipulating WordPress resources. When interacting with an endpoint that implements `WP_REST_Controller`, a HTTP client can expect each endpoint to behave in a consistent way.
+Visit the [`WP_REST_Controller` class reference page](#reference/classes/wp_rest_controller#methods) for a complete list of this controller’s methods.
 
-Infrastructure classes support the endpoint classes. They handle the logic for the WordPress REST API without performing any data transformation. The WordPress REST API implements three key infrastructure classes: - [`WP_REST_Server`](#reference/classes/wp_rest_server): The main controller for the WordPress REST API. Routes are registered to the server within WordPress. When `WP_REST_Server` is called upon to serve a request, it determines which route is to be called, and passes the route callback a `WP_REST_Request` object. `WP_REST_Server` also handles authentication, and can perform request validation and permissions checks.
+It is important to note that `WP_REST_Controller` is implemented as an `abstract` class and only contains logic that is clearly needed in multiple classes. Inheritance couples your class to the base class it extends, and poorly-considered inheritance trees can make your endpoints much harder to maintain.
+
+As an example, if you wrote a controller class for a posts endpoint (like the example above) and wanted to support custom post types as well, you should **NOT** extend your `My_REST_Posts_Controller` like this: `class My_CPT_REST_Controller extends My_REST_Posts_Controller`. Instead, you should either create an entirely separate base controller class for the shared logic, or make `My_REST_Posts_Controller` handle all available post types. Endpoint logic is subject to changing business requirements, and you don’t want to have to change a number of unrelated controllers every time you update your base posts controller.
+
+In most cases you will want to create a base controller class as either an `interface` or `abstract class` which each of your endpoint controllers can implement or extend, or to extend one of the core WordPress REST classes directly.
+
+## Internal WordPress REST API Classes
+
+The WordPress REST API follows a deliberate design pattern for its internal classes, which may be categorized as either *infrastructure* or *endpoint* classes.
+
+Endpoint classes encapsulate the functional logic necessary to perform [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations on WordPress resources. WordPress exposes many REST API endpoints (such as [`WP_REST_Posts_Controller`](#reference/classes/wp_rest_posts_controller)), but as discussed above all endpoints extend from a common base controller class:
+
+- [`WP_REST_Controller`](#reference/classes/wp_rest_controller): The base class for all WordPress core endpoints. This class is designed to represent a consistent pattern for manipulating WordPress resources. When interacting with an endpoint that implements `WP_REST_Controller`, a HTTP client can expect each endpoint to behave in a consistent way.
+
+Infrastructure classes support the endpoint classes. They handle the logic for the WordPress REST API without performing any data transformation. The WordPress REST API implements three key infrastructure classes:
+
+- [`WP_REST_Server`](#reference/classes/wp_rest_server): The main controller for the WordPress REST API. Routes are registered to the server within WordPress. When `WP_REST_Server` is called upon to serve a request, it determines which route is to be called, and passes the route callback a `WP_REST_Request` object. `WP_REST_Server` also handles authentication, and can perform request validation and permissions checks.
 - [`WP_REST_Request`](#reference/classes/wp_rest_request): An object to represent the nature of the request. This object includes request details like request headers, parameters, and method, as well as the route. It can also perform request validation and sanitization.
 - [`WP_REST_Response`](#reference/classes/wp_rest_response): An object to represent the nature of the response. This class extends `WP_HTTP_Response`, which includes headers, body, and status, and provides helper methods like `add_link()` for adding linked media, and `query_navigation_headers()` for getting query navigtion headers.
 
@@ -4885,7 +4855,9 @@ WordPress sites can have a lot of content—far more than you’d want to pull d
 
 ## Pagination Parameters
 
-Any API response which contains multiple resources supports several common query parameters to handle paging through the response data: - `?page=`: specify the page of results to return. 
+Any API response which contains multiple resources supports several common query parameters to handle paging through the response data:
+
+- `?page=`: specify the page of results to return. 
     - For example, `/wp/v2/posts?page=2` is the second page of posts results
     - By retrieving `/wp/v2/posts`, then `/wp/v2/posts?page=2`, and so on, you may access every available post through the API, one page at a time.
 - `?per_page=`: specify the number of records to return in one request, specified as an integer from 1 to 100. 
@@ -4894,14 +4866,20 @@ Any API response which contains multiple resources supports several common query
     - For example, `/wp/v2/posts?offset=6` will use the default number of posts per page, but start at the 6th post in the collection
     - `?per_page=5&page=4` is equivalent to `?per_page=5&offset=15`
 
-Large queries can hurt site performance, so `per_page` is **capped at 100 records**. If you wish to retrieve more than 100 records, for example to build a client-side list of all available categories, you may make multiple API requests and combine the results within your application. 
+Large queries can hurt site performance, so `per_page` is **capped at 100 records**. If you wish to retrieve more than 100 records, for example to build a client-side list of all available categories, you may make multiple API requests and combine the results within your application.
 
-To determine how many pages of data are available, the API returns two header fields with every paginated response: - `X-WP-Total`: the total number of records in the collection
+To determine how many pages of data are available, the API returns two header fields with every paginated response:
+
+- `X-WP-Total`: the total number of records in the collection
 - `X-WP-TotalPages`: the total number of pages encompassing all available records
 
-By inspecting these header fields you can determine how much more data is available within the API. ## Ordering Results
+By inspecting these header fields you can determine how much more data is available within the API.
 
-In addition to the pagination query parameters detailed above, several other parameters control the order of the returned results: - `?order=`: control whether results are returned in ascending or descending order 
+## Ordering Results
+
+In addition to the pagination query parameters detailed above, several other parameters control the order of the returned results:
+
+- `?order=`: control whether results are returned in ascending or descending order 
     - Valid values are `?order=asc` (for ascending order) and `?order=desc` (for descending order).
     - All native collections are returned in descending order by default.
 - `?orderby=`: control the field by which the collection is sorted 
@@ -5359,16 +5337,14 @@ Source: https://developer.wordpress.org/rest-api/reference/posts/
 
 ## Schema
 
-The schema defines all the fields that exist within a post record. Any response from these endpoints can be expected to contain the fields below unless the `\_filter` query parameter is used or the schema field only appears in a specific context.
-
-| `date` | The date the post was published, in the site's timezone.  JSON data type: string or null,    Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Context: `view`, `edit`, `embed` |
+The schema defines all the fields that exist within a post record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context. | `date` | The date the post was published, in the site's timezone.  JSON data type: string or null, Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Context: `view`, `edit`, `embed` |
 |---|---|
-| `date_gmt` | The date the post was published, as GMT.  JSON data type: string or null,    Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Context: `view`, `edit` |
+| `date_gmt` | The date the post was published, as GMT.  JSON data type: string or null, Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Context: `view`, `edit` |
 | `guid` | The globally unique identifier for the post.  JSON data type: object  Read only  Context: `view`, `edit` |
 | `id` | Unique identifier for the post.  JSON data type: integer  Read only  Context: `view`, `edit`, `embed` |
-| `link` | URL to the post.  JSON data type: string,    Format: uri  Read only  Context: `view`, `edit`, `embed` |
-| `modified` | The date the post was last modified, in the site's timezone.  JSON data type: string,    Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Read only  Context: `view`, `edit` |
-| `modified_gmt` | The date the post was last modified, as GMT.  JSON data type: string,    Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Read only  Context: `view`, `edit` |
+| `link` | URL to the post.  JSON data type: string, Format: uri  Read only  Context: `view`, `edit`, `embed` |
+| `modified` | The date the post was last modified, in the site's timezone.  JSON data type: string, Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Read only  Context: `view`, `edit` |
+| `modified_gmt` | The date the post was last modified, as GMT.  JSON data type: string, Format: datetime ([details](https://core.trac.wordpress.org/ticket/41032))  Read only  Context: `view`, `edit` |
 | `slug` | An alphanumeric identifier for the post unique to its type.  JSON data type: string  Context: `view`, `edit`, `embed` |
 | `status` | A named status for the post.  JSON data type: string  Context: `view`, `edit`   One of: `publish`, `future`, `draft`, `pending`, `private` |
 | `type` | Type of post.  JSON data type: string  Read only  Context: `view`, `edit`, `embed` |
@@ -5389,21 +5365,19 @@ The schema defines all the fields that exist within a post record. Any response 
 | `categories` | The terms assigned to the post in the category taxonomy.  JSON data type: array  Context: `view`, `edit` |
 | `tags` | The terms assigned to the post in the post\_tag taxonomy.  JSON data type: array  Context: `view`, `edit` |
 
+ 
+
 ## List Posts
 
- Query this endpoint to retrieve a collection of posts. The response you receive can be controlled and filtered using the URL query parameters below.
+ Query this endpoint to retrieve a collection of posts. The response you receive can be controlled and filtered using the URL query parameters below. ### Definition
 
-### Definition
+ `GET /wp/v2/posts`### Example Request
 
- `GET /wp/v2/posts`
-
-### Example Request
-
- `$ curl https://example.com/wp-json/wp/v2/posts`
+ `$ curl https://example.com/wp-json/wp/v2/posts` 
 
 ### Arguments
 
-| `context` | Scope under which the request is made; determines fields present in response.  Default: `view`   One of: `view`, `embed`, `edit` |
+ | `context` | Scope under which the request is made; determines fields present in response.  Default: `view`   One of: `view`, `embed`, `edit` |
 |---|---|
 | `page` | Current page of the collection.  Default: `1` |
 | `per_page` | Maximum number of items to be returned in result set.  Default: `10` |
@@ -5422,104 +5396,106 @@ The schema defines all the fields that exist within a post record. Any response 
 | `search_columns` | Array of column names to be searched. |
 | `slug` | Limit result set to posts with one or more specific slugs. |
 | `status` | Limit result set to posts assigned one or more statuses.  Default: `publish` |
-| `tax_relation` | Limit result set based on relationship between multiple taxonomies.    One of: `AND`, `OR` |
+| `tax_relation` | Limit result set based on relationship between multiple taxonomies. One of: `AND`, `OR` |
 | `categories` | Limit result set to items with specific terms assigned in the categories taxonomy. |
 | `categories_exclude` | Limit result set to items except those with specific terms assigned in the categories taxonomy. |
 | `tags` | Limit result set to items with specific terms assigned in the tags taxonomy. |
 | `tags_exclude` | Limit result set to items except those with specific terms assigned in the tags taxonomy. |
 | `sticky` | Limit result set to items that are sticky. |
 
+ 
+
 ## Create a Post
 
 ### Arguments
 
-| `<a href="#schema-date">date</a>` | The date the post was published, in the site's timezone. |
+ | `<a href="#schema-date">date</a>` | The date the post was published, in the site's timezone. |
 |---|---|
 | `<a href="#schema-date_gmt">date_gmt</a>` | The date the post was published, as GMT. |
 | `<a href="#schema-slug">slug</a>` | An alphanumeric identifier for the post unique to its type. |
-| `<a href="#schema-status">status</a>` | A named status for the post.    One of: `publish`, `future`, `draft`, `pending`, `private` |
+| `<a href="#schema-status">status</a>` | A named status for the post. One of: `publish`, `future`, `draft`, `pending`, `private` |
 | `<a href="#schema-password">password</a>` | A password to protect access to the content and excerpt. |
 | `<a href="#schema-title">title</a>` | The title for the post. |
 | `<a href="#schema-content">content</a>` | The content for the post. |
 | `<a href="#schema-author">author</a>` | The ID for the author of the post. |
 | `<a href="#schema-excerpt">excerpt</a>` | The excerpt for the post. |
 | `<a href="#schema-featured_media">featured_media</a>` | The ID of the featured media for the post. |
-| `<a href="#schema-comment_status">comment_status</a>` | Whether or not comments are open on the post.    One of: `open`, `closed` |
-| `<a href="#schema-ping_status">ping_status</a>` | Whether or not the post can be pinged.    One of: `open`, `closed` |
-| `<a href="#schema-format">format</a>` | The format for the post.    One of: `standard`, `aside`, `chat`, `gallery`, `link`, `image`, `quote`, `status`, `video`, `audio` |
+| `<a href="#schema-comment_status">comment_status</a>` | Whether or not comments are open on the post. One of: `open`, `closed` |
+| `<a href="#schema-ping_status">ping_status</a>` | Whether or not the post can be pinged. One of: `open`, `closed` |
+| `<a href="#schema-format">format</a>` | The format for the post. One of: `standard`, `aside`, `chat`, `gallery`, `link`, `image`, `quote`, `status`, `video`, `audio` |
 | `<a href="#schema-meta">meta</a>` | Meta fields. |
 | `<a href="#schema-sticky">sticky</a>` | Whether or not the post should be treated as sticky. |
 | `<a href="#schema-template">template</a>` | The theme file to use to display the post. |
 | `<a href="#schema-categories">categories</a>` | The terms assigned to the post in the category taxonomy. |
 | `<a href="#schema-tags">tags</a>` | The terms assigned to the post in the post\_tag taxonomy. |
 
+ 
+
 ### Definition
 
- `POST /wp/v2/posts`
+ `POST /wp/v2/posts` 
 
 ## Retrieve a Post
 
 ### Definition &amp; Example Request
 
- `GET /wp/v2/posts/<id>`
-
- Query this endpoint to retrieve a specific post record.
-
- `$ curl https://example.com/wp-json/wp/v2/posts/<id>`
+ `GET /wp/v2/posts/<id>` Query this endpoint to retrieve a specific post record. `$ curl https://example.com/wp-json/wp/v2/posts/<id>` 
 
 ### Arguments
 
-| `id` | Unique identifier for the post. |
+ | `id` | Unique identifier for the post. |
 |---|---|
 | `context` | Scope under which the request is made; determines fields present in response.  Default: `view`   One of: `view`, `embed`, `edit` |
 | `password` | The password for the post if it is password protected. |
+
+ 
 
 ## Update a Post
 
 ### Arguments
 
-| `<a href="#schema-id">id</a>` | Unique identifier for the post. |
+ | `<a href="#schema-id">id</a>` | Unique identifier for the post. |
 |---|---|
 | `<a href="#schema-date">date</a>` | The date the post was published, in the site's timezone. |
 | `<a href="#schema-date_gmt">date_gmt</a>` | The date the post was published, as GMT. |
 | `<a href="#schema-slug">slug</a>` | An alphanumeric identifier for the post unique to its type. |
-| `<a href="#schema-status">status</a>` | A named status for the post.    One of: `publish`, `future`, `draft`, `pending`, `private` |
+| `<a href="#schema-status">status</a>` | A named status for the post. One of: `publish`, `future`, `draft`, `pending`, `private` |
 | `<a href="#schema-password">password</a>` | A password to protect access to the content and excerpt. |
 | `<a href="#schema-title">title</a>` | The title for the post. |
 | `<a href="#schema-content">content</a>` | The content for the post. |
 | `<a href="#schema-author">author</a>` | The ID for the author of the post. |
 | `<a href="#schema-excerpt">excerpt</a>` | The excerpt for the post. |
 | `<a href="#schema-featured_media">featured_media</a>` | The ID of the featured media for the post. |
-| `<a href="#schema-comment_status">comment_status</a>` | Whether or not comments are open on the post.    One of: `open`, `closed` |
-| `<a href="#schema-ping_status">ping_status</a>` | Whether or not the post can be pinged.    One of: `open`, `closed` |
-| `<a href="#schema-format">format</a>` | The format for the post.    One of: `standard`, `aside`, `chat`, `gallery`, `link`, `image`, `quote`, `status`, `video`, `audio` |
+| `<a href="#schema-comment_status">comment_status</a>` | Whether or not comments are open on the post. One of: `open`, `closed` |
+| `<a href="#schema-ping_status">ping_status</a>` | Whether or not the post can be pinged. One of: `open`, `closed` |
+| `<a href="#schema-format">format</a>` | The format for the post. One of: `standard`, `aside`, `chat`, `gallery`, `link`, `image`, `quote`, `status`, `video`, `audio` |
 | `<a href="#schema-meta">meta</a>` | Meta fields. |
 | `<a href="#schema-sticky">sticky</a>` | Whether or not the post should be treated as sticky. |
 | `<a href="#schema-template">template</a>` | The theme file to use to display the post. |
 | `<a href="#schema-categories">categories</a>` | The terms assigned to the post in the category taxonomy. |
 | `<a href="#schema-tags">tags</a>` | The terms assigned to the post in the post\_tag taxonomy. |
 
+ 
+
 ### Definition
 
- `POST /wp/v2/posts/<id>`
+ `POST /wp/v2/posts/<id>`### Example Request
 
-### Example Request
-
- `$ curl -X POST https://example.com/wp-json/wp/v2/posts/<id> -d '{"title":"My New Title"}'<br></br>`
+ `$ curl -X POST https://example.com/wp-json/wp/v2/posts/<id> -d '{"title":"My New Title"}'` 
 
 ## Delete a Post
 
 ### Arguments
 
-| `id` | Unique identifier for the post. |
+ | `id` | Unique identifier for the post. |
 |---|---|
 | `force` | Whether to bypass Trash and force deletion. |
 
+ 
+
 ### Definition
 
- `DELETE /wp/v2/posts/<id>`
-
-### Example Request
+ `DELETE /wp/v2/posts/<id>`### Example Request
 
  `$ curl -X DELETE https://example.com/wp-json/wp/v2/posts/<id>`
 
@@ -6894,69 +6870,35 @@ The API includes a number of global parameters (also called “meta-parameters�
 
 ## `_fields`
 
-A REST resource like a Post contains a large quantity of data: basic information such as content, title, and author ID, but also [registered metadata and fields](#rest-api/extending-the-rest-api/modifying-responses), media information, and links to other resources. Your application may not need all of this information on every request.
-
-To instruct WordPress to return only a subset of the fields in a response, you may use the `_fields` query parameter. If for example you are building an archive view and only need the ID, title, permalink, author and excerpt for a collection of posts, you can restrict the response to only those properties with this fields query:
-
-```
+A REST resource like a Post contains a large quantity of data: basic information such as content, title, and author ID, but also [registered metadata and fields](#rest-api/extending-the-rest-api/modifying-responses), media information, and links to other resources. Your application may not need all of this information on every request. To instruct WordPress to return only a subset of the fields in a response, you may use the `_fields` query parameter. If for example you are building an archive view and only need the ID, title, permalink, author and excerpt for a collection of posts, you can restrict the response to only those properties with this fields query: ```
 /wp/v2/posts?_fields=author,id,excerpt,title,link
 
 ```
 
-You may alternatively provide that same list using query parameter array syntax instead of a comma-separated list:
-
-```
+You may alternatively provide that same list using query parameter array syntax instead of a comma-separated list: ```
 /wp/v2/posts?_fields[]=author&_fields[]=id&_fields[]=excerpt&_fields[]=title&_fields[]=link
 
 ```
 
-When `_fields` is provided then WordPress will skip unneeded fields when generating your response object, avoiding potentially expensive internal computation or queries for data you don’t need. This also means the JSON object returned from the REST API will be smaller, requiring less time to download and less time to parse on your client device.
-
-Carefully design your queries to pull in only the needed properties from each resource to make your application faster to use and more efficient to run.
-
-As of WordPress 5.3 the `_fields` parameter supports nested properties. This can be useful if you have registered many meta keys, permitting you to request the value for only one of the registered meta properties:
-
-```
+When `_fields` is provided then WordPress will skip unneeded fields when generating your response object, avoiding potentially expensive internal computation or queries for data you don’t need. This also means the JSON object returned from the REST API will be smaller, requiring less time to download and less time to parse on your client device. Carefully design your queries to pull in only the needed properties from each resource to make your application faster to use and more efficient to run. As of WordPress 5.3 the `_fields` parameter supports nested properties. This can be useful if you have registered many meta keys, permitting you to request the value for only one of the registered meta properties: ```
 ?_fields=meta.one-of-many-keys
 
 ```
 
-Only the meta value with the key `one-of-many-keys` will be returned, and others will be excluded.
-
-You can also request specific deeply-nested properties within a complex meta object:
-
-```
+Only the meta value with the key `one-of-many-keys` will be returned, and others will be excluded. You can also request specific deeply-nested properties within a complex meta object: ```
 ?_fields=meta.key_name.nested_prop.deeply_nested_prop,meta.key_name.other_nested_prop
 
 ```
 
 ## `_embed`
 
-Most resources include links to related resources. For example, a post can link to the parent post, or to comments on the post. To reduce the number of HTTP requests required, clients may wish to fetch a resource as well as the linked resources. The `_embed` parameter indicates to the server that the response should include these embedded resources.
+Most resources include links to related resources. For example, a post can link to the parent post, or to comments on the post. To reduce the number of HTTP requests required, clients may wish to fetch a resource as well as the linked resources. The `_embed` parameter indicates to the server that the response should include these embedded resources. Embed mode is enabled if the `_embed` parameter is passed in the query string (GET parameter). This parameter does not require a value (i.e. `?_embed` is valid), however can be passed “1” as a value if required by a client library. As of WordPress 5.4, the resources to embed can be limited by passing a list of link relation names to the `_embed` parameter. For example, `/wp/v2/posts?_embed=author,wp:term` will only embed the post’s author and the lists of terms associated with the post. Resources in embed mode will contain an additional `_embedded` key next to the `_links` key containing the linked resources. Only links with the `embeddable` parameter set to `true` will be embedded. In order to use `_embed` together with `_fields`, add `_embedded` as well as `_links` to the fields, for instance, `/wp-json/wp/v2/posts/_embed=author,wp:term&_fields=title,author,_links,_embedded`. For more about linking and embedding, see the [Linking and Embedding](#rest-api/linking-and-embedding) page. ## `_method` (or `X-HTTP-Method-Override` header)
 
-Embed mode is enabled if the `_embed` parameter is passed in the query string (GET parameter). This parameter does not require a value (i.e. `?_embed` is valid), however can be passed “1” as a value if required by a client library.
+Some servers and clients cannot correctly process some HTTP methods that the API makes use of. For example, all deletion requests on resources use the `DELETE` method, but some clients do not provide the ability to send this method. To ensure compatibility with these servers and clients, the API supports a method override. This can be passed either via a `_method` parameter or the `X-HTTP-Method-Override` header, with the value set to the HTTP method to use. 
 
-As of WordPress 5.4, the resources to embed can be limited by passing a list of link relation names to the `_embed` parameter. For example, `/wp/v2/posts?_embed=author,wp:term` will only embed the post’s author and the lists of terms associated with the post.
+Clients should only ever send a method override parameter or header with POST requests. Using the method override with GET requests may cause the request to be incorrectly cached. 
 
-Resources in embed mode will contain an additional `_embedded` key next to the `_links` key containing the linked resources. Only links with the `embeddable` parameter set to `true` will be embedded.
-
-In order to use `_embed` together with `_fields`, add `_embedded` as well as `_links` to the fields, for instance, `/wp-json/wp/v2/posts/_embed=author,wp:term&_fields=title,author,_links,_embedded`.
-
-For more about linking and embedding, see the [Linking and Embedding](#rest-api/linking-and-embedding) page.
-
-## `_method` (or `X-HTTP-Method-Override` header)
-
-Some servers and clients cannot correctly process some HTTP methods that the API makes use of. For example, all deletion requests on resources use the `DELETE` method, but some clients do not provide the ability to send this method.
-
-To ensure compatibility with these servers and clients, the API supports a method override. This can be passed either via a `_method` parameter or the `X-HTTP-Method-Override` header, with the value set to the HTTP method to use.
-
-Clients should only ever send a method override parameter or header with POST requests. Using the method override with GET requests may cause the request to be incorrectly cached.
-
-A `POST` to `/wp-json/wp/v2/posts/42?_method=DELETE` would be translated to a `DELETE` to the `wp/v2/posts/42` route.
-
-Similarly, the following POST request would become a DELETE:
-
-```
+A `POST` to `/wp-json/wp/v2/posts/42?_method=DELETE` would be translated to a `DELETE` to the `wp/v2/posts/42` route. Similarly, the following POST request would become a DELETE: ```
 POST /wp-json/wp/v2/posts/42 HTTP/1.1
 Host: example.com
 X-HTTP-Method-Override: DELETE
@@ -6965,18 +6907,11 @@ X-HTTP-Method-Override: DELETE
 
 ## `_envelope`
 
-Similarly to `_method`, some servers, clients, and proxies do not support accessing the full response data. The API supports passing an `_envelope` parameter, which sends all response data in the body, including headers and status code.
+Similarly to `_method`, some servers, clients, and proxies do not support accessing the full response data. The API supports passing an `_envelope` parameter, which sends all response data in the body, including headers and status code. Envelope mode is enabled if the `_envelope` parameter is passed in the query string (GET parameter). This parameter does not require a value (i.e. `?_envelope` is valid), but can be passed “1” as a value if required by a client library. 
 
-Envelope mode is enabled if the `_envelope` parameter is passed in the query string (GET parameter). This parameter does not require a value (i.e. `?_envelope` is valid), but can be passed “1” as a value if required by a client library.
+For future compatibility, other values should not be passed. 
 
-  
-For future compatibility, other values should not be passed.  
-
-Enveloped responses include a “fake” HTTP 200 response code with no additional headers (apart from Content-Type) that should ensure the response correctly passes through intermediaries.
-
-For example, given the following response to a `GET` to `wp/v2/users/me`:
-
-```
+Enveloped responses include a “fake” HTTP 200 response code with no additional headers (apart from Content-Type) that should ensure the response correctly passes through intermediaries. For example, given the following response to a `GET` to `wp/v2/users/me`: ```
 HTTP/1.1 302 Found
 Location: http://example.com/wp-json/wp/v2/users/42
 
@@ -6987,9 +6922,7 @@ Location: http://example.com/wp-json/wp/v2/users/42
 
 ```
 
-The equivalent enveloped response (with a `GET` to `wp/v2/users/me?_envelope`) would be:
-
-```
+The equivalent enveloped response (with a `GET` to `wp/v2/users/me?_envelope`) would be: ```
 HTTP/1.1 200 OK
 
 {
@@ -7006,17 +6939,12 @@ HTTP/1.1 200 OK
 
 ## `_jsonp`
 
-The API natively supports [JSONP](https://en.wikipedia.org/wiki/JSONP) responses to allow cross-domain requests for legacy browsers and clients. This parameter takes a JavaScript callback function which will be prepended to the data. This URL can then be loaded via a `<script>` tag.
+The API natively supports [JSONP](https://en.wikipedia.org/wiki/JSONP) responses to allow cross-domain requests for legacy browsers and clients. This parameter takes a JavaScript callback function which will be prepended to the data. This URL can then be loaded via a `<script>` tag. The callback function can contain any alphanumeric, `_` (underscore), or `.` (period) character. Callbacks which contain invalid characters will receive a HTTP 400 error response, and the callback will not be called. 
 
-The callback function can contain any alphanumeric, `_` (underscore), or `.` (period) character. Callbacks which contain invalid characters will receive a HTTP 400 error response, and the callback will not be called.
-
-  
 Modern browsers can use [Cross-Origin Resource Sharing (CORS)](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) preflight requests for cross-domain requests, but JSONP can be used to ensure support with all browsers. - [Browser Support](http://caniuse.com/#feat=cors)
 - [MDN Article on CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 
-For example:
-
-```html
+For example: ```html
 <script>
 function receiveData( data ) {
   // Do something with the data here.
@@ -7952,23 +7880,9 @@ Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/
 
 ## Guides
 
-[Modifying responses](#rest-api/extending-the-rest-api/modifying-responses): add fields to REST API response objects using `register_meta` or `register_rest_field`
+[Modifying responses](#rest-api/extending-the-rest-api/modifying-responses): add fields to REST API response objects using `register_meta` or `register_rest_field`[Adding Endpoints](#rest-api/extending-the-rest-api/adding-custom-endpoints): create custom REST API endpoints for your plugin or application [Working with Custom Content Types](#rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types): learn how to interact with your [custom post types](#plugins/post-types) and [custom taxonomies](#plugins/post-types) through the REST API ## Resources
 
-[Adding Endpoints](#rest-api/extending-the-rest-api/adding-custom-endpoints): create custom REST API endpoints for your plugin or application
-
-[Working with Custom Content Types](#rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types): learn how to interact with your [custom post types](#plugins/post-types) and [custom taxonomies](#plugins/post-types) through the REST API
-
-## Resources
-
-[Defining your API Schema](#rest-api/extending-the-rest-api/schema): define the schema for your REST API resources and their arguments
-
-[Glossary](#rest-api/glossary): get up to speed with phrases used throughout our documentation
-
-[Routes &amp; Endpoints](#rest-api/extending-the-rest-api/routes-and-endpoints): dive deeper into the nuances of REST API routes and the endpoints they provide
-
-[Controller Classes](#rest-api/extending-the-rest-api/controller-classes): discover how to structure and extend REST API endpoint controller classes
-
-[Frequently Asked Questions](#rest-api/frequently-asked-questions): see some of the most frequent inquiries about the REST API and learn how to solve common problems
+[Defining your API Schema](#rest-api/extending-the-rest-api/schema): define the schema for your REST API resources and their arguments [Glossary](#rest-api/glossary): get up to speed with phrases used throughout our documentation [Routes &amp; Endpoints](#rest-api/extending-the-rest-api/routes-and-endpoints): dive deeper into the nuances of REST API routes and the endpoints they provide [Controller Classes](#rest-api/extending-the-rest-api/controller-classes): discover how to structure and extend REST API endpoint controller classes [Frequently Asked Questions](#rest-api/frequently-asked-questions): see some of the most frequent inquiries about the REST API and learn how to solve common problems
 
 ---
 
@@ -7980,9 +7894,15 @@ This page provides solutions to some common questions and problems that may aris
 
 ## Can I disable the REST API?
 
-You should not disable the REST API; doing so will break WordPress Admin functionality that depends on the API being active. However, you may use a filter to require that API consumers be authenticated, which effectively prevents anonymous external access. See below for more information. ## Require Authentication for All Requests
+You should not disable the REST API; doing so will break WordPress Admin functionality that depends on the API being active. However, you may use a filter to require that API consumers be authenticated, which effectively prevents anonymous external access. See below for more information.
 
-You can require authentication for all REST API requests by adding an `is_user_logged_in` check to the [`rest_authentication_errors`](#reference/hooks/rest_authentication_errors) filter. Note: The incoming callback parameter can be either `null`, a `WP_Error`, or a boolean. The type of the parameter indicates the state of authentication: - `null`: no authentication check has yet been performed, and the hook callback may apply custom authentication logic.
+## Require Authentication for All Requests
+
+You can require authentication for all REST API requests by adding an `is_user_logged_in` check to the [`rest_authentication_errors`](#reference/hooks/rest_authentication_errors) filter.
+
+Note: The incoming callback parameter can be either `null`, a `WP_Error`, or a boolean. The type of the parameter indicates the state of authentication:
+
+- `null`: no authentication check has yet been performed, and the hook callback may apply custom authentication logic.
 - boolean: indicates a previous authentication method check was performed. Boolean `true` indicates the request was successfully authenticated, and boolean `false` indicates authentication failed.
 - `WP_Error`: Some kind of error was encountered.
 
@@ -8013,7 +7933,9 @@ add_filter( 'rest_authentication_errors', function( $result ) {
 
 ## Can I make API requests from PHP within a plugin?
 
-Yes, you can! Use [rest\_do\_request](#reference/functions/rest_do_request) to make API requests internally within other WordPress code: ```php
+Yes, you can! Use [rest\_do\_request](#reference/functions/rest_do_request) to make API requests internally within other WordPress code:
+
+```php
 $request = new WP_REST_Request( 'GET', '/wp/v2/posts' );
 // Set one or more request query parameters
 $request->set_param( 'per_page', 20 );
@@ -8023,14 +7945,18 @@ $response = rest_do_request( $request );
 
 ## How do I use the \_embed parameter on internal requests?
 
-Setting the `_embed` param on the request object won’t work. ```php
+Setting the `_embed` param on the request object won’t work.
+
+```php
 $request = new WP_REST_Request( 'GET', '/wp/v2/posts' );
 $request->set_param( '_embed', 1 );
 $response = rest_do_request( $request );
 
 ```
 
-Instead, manually call the [`WP_REST_Server::response_to_data`](#reference/classes/wp_rest_server) function. ```php
+Instead, manually call the [`WP_REST_Server::response_to_data`](#reference/classes/wp_rest_server) function.
+
+```php
 $request = new WP_REST_Request( 'GET', '/wp/v2/posts' );
 $response = rest_do_request( $request );
 $data = rest_get_server()->response_to_data( $response, true );
@@ -8040,23 +7966,37 @@ var_dump( $data['_embedded'] );
 
 ## What happened to the `?filter=` query parameter?
 
-When the REST API was merged into WordPress core the `?filter` query parameter was removed to prevent future compatibility and maintenance issues. The ability to pass arbitrary [WP\_Query](#reference/classes/wp_query) arguments to the API using a `?filter` query parameter was necessary at the genesis of the REST API project, but most API response filtering functionality has been superseded by more robust query parameters like `?categories=`, `?slug=` and `?per_page=`. First-party query parameters should be used whenever possible. However, the [rest-filter](https://github.com/wp-api/rest-filter) plugin restores the ability to pass arbitrary `?filter` values in API request if needed. ## Query parameters are not working
+When the REST API was merged into WordPress core the `?filter` query parameter was removed to prevent future compatibility and maintenance issues. The ability to pass arbitrary [WP\_Query](#reference/classes/wp_query) arguments to the API using a `?filter` query parameter was necessary at the genesis of the REST API project, but most API response filtering functionality has been superseded by more robust query parameters like `?categories=`, `?slug=` and `?per_page=`.
 
-If you find that query parameters such as `?page=2` or `?_embed` are not having any effect, your server may not be properly configured to detect them. If you are using Nginx to serve your website, look for a `try_files` line in your site configuration. If it looks like this: ```
+First-party query parameters should be used whenever possible. However, the [rest-filter](https://github.com/wp-api/rest-filter) plugin restores the ability to pass arbitrary `?filter` values in API request if needed.
+
+## Query parameters are not working
+
+If you find that query parameters such as `?page=2` or `?_embed` are not having any effect, your server may not be properly configured to detect them. If you are using Nginx to serve your website, look for a `try_files` line in your site configuration. If it looks like this:
+
+```
 try_files $uri $uri/ /index.php$args;
 
 ```
 
-change it to this: ```
+change it to this:
+
+```
 try_files $uri $uri/ /index.php$is_args$args;
 
 ```
 
-Adding `$is_args` (which will print a ? character if query arguments are found) will allow WordPress to properly receive and interpret the query parameters. ## Why is Authentication not working?
+Adding `$is_args` (which will print a ? character if query arguments are found) will allow WordPress to properly receive and interpret the query parameters.
 
-If you’re finding that you are sending Authentication headers but the request is not being accepted, and you are using a CGI environment, your webserver may be stripping the headers. Please try adding the appropriate configuration below to remedy this. ### Apache
+## Why is Authentication not working?
 
-Add the following to a configuration file or .htaccess: ```
+If you’re finding that you are sending Authentication headers but the request is not being accepted, and you are using a CGI environment, your webserver may be stripping the headers. Please try adding the appropriate configuration below to remedy this.
+
+### Apache
+
+Add the following to a configuration file or .htaccess:
+
+```
 <IfModule mod_setenvif>
   SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 </IfModule>
@@ -8065,14 +8005,20 @@ Add the following to a configuration file or .htaccess: ```
 
 ### Nginx
 
-Add the following to your server configurations fastcgi section: ```
+Add the following to your server configurations fastcgi section:
+
+```
 fastcgi_pass_header Authorization;
 
 ```
 
 ## Why is the REST API not verifying the incoming Origin header? Does this expose my site to CSRF attacks?
 
-Cross-Origin Resource Sharing (CORS) is a mechanism which allows a website to control which Origins (originating external sites) are allowed to access your site’s data. CORS prevents against a particular type of attack known as Cross-Site Request Forgery, or CSRF. However, WordPress has an existing CSRF protection mechanism which uses [nonces](#plugins/security/nonces). Tightening CORS restrictions would prevent some authentication methods, so the WordPress REST API uses nonces for CSRF protection instead of CORS. Because the WordPress REST API does not verify the Origin header of incoming requests, public REST API endpoints may therefore be accessed from any site. This is an [intentional design decision](https://core.trac.wordpress.org/changeset/40600), but if you wish to prevent your site from being accessed from unknown origins you may unhook the default [`rest_send_cors_headers` function](#reference/functions/rest_send_cors_headers) from the [`rest_pre_serve_request` filter hook](#reference/hooks/rest_pre_serve_request), then hook in your own function to that same filter to specify stricter CORS headers.
+Cross-Origin Resource Sharing (CORS) is a mechanism which allows a website to control which Origins (originating external sites) are allowed to access your site’s data. CORS prevents against a particular type of attack known as Cross-Site Request Forgery, or CSRF. However, WordPress has an existing CSRF protection mechanism which uses [nonces](#plugins/security/nonces). Tightening CORS restrictions would prevent some authentication methods, so the WordPress REST API uses nonces for CSRF protection instead of CORS.
+
+Because the WordPress REST API does not verify the Origin header of incoming requests, public REST API endpoints may therefore be accessed from any site.
+
+This is an [intentional design decision](https://core.trac.wordpress.org/changeset/40600), but if you wish to prevent your site from being accessed from unknown origins you may unhook the default [`rest_send_cors_headers` function](#reference/functions/rest_send_cors_headers) from the [`rest_pre_serve_request` filter hook](#reference/hooks/rest_pre_serve_request), then hook in your own function to that same filter to specify stricter CORS headers.
 
 ---
 

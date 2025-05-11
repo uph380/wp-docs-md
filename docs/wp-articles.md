@@ -1,4 +1,4 @@
-# Create a search page <a id="documentation/article/create-a-search-page" />
+# Create a search page <a name="documentation/article/create-a-search-page" />
 
 Source: https://wordpress.org/documentation/article/create-a-search-page/
 
@@ -23,7 +23,7 @@ Follow these steps to create a search page.
 
 ---
 
-# Twenty Seventeen <a id="documentation/article/twenty-seventeen" />
+# Twenty Seventeen <a name="documentation/article/twenty-seventeen" />
 
 Source: https://wordpress.org/documentation/article/twenty-seventeen/
 
@@ -175,7 +175,7 @@ Get tips for theming with Twenty Seventeen from [this post on make.wordpress.org
 
 ---
 
-# FAQ Installation <a id="documentation/article/faq-installation" />
+# FAQ Installation <a name="documentation/article/faq-installation" />
 
 Source: https://wordpress.org/documentation/article/faq-installation/
 
@@ -410,7 +410,7 @@ See also:
 
 ---
 
-# First steps with WordPress (Classic Editor) <a id="documentation/article/first-steps-with-wordpress-classic" />
+# First steps with WordPress (Classic Editor) <a name="documentation/article/first-steps-with-wordpress-classic" />
 
 Source: https://wordpress.org/documentation/article/first-steps-with-wordpress-classic/
 
@@ -567,7 +567,7 @@ The exciting thing about WordPress is that there are few limits. Thousands of pe
 
 ---
 
-# Write posts (Classic Editor) <a id="documentation/article/write-posts-classic-editor" />
+# Write posts (Classic Editor) <a name="documentation/article/write-posts-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/write-posts-classic-editor/
 
@@ -719,7 +719,7 @@ See also [Administration Screens](/support/article/administration-screens/).
 
 ---
 
-# Create pages <a id="documentation/article/create-pages" />
+# Create pages <a name="documentation/article/create-pages" />
 
 Source: https://wordpress.org/documentation/article/create-pages/
 
@@ -882,7 +882,7 @@ Despite the dynamic nature of Pages, many people refer to them as being static. 
 
 ---
 
-# Media Library screen <a id="documentation/article/media-library-screen" />
+# Media Library screen <a name="documentation/article/media-library-screen" />
 
 Source: https://wordpress.org/documentation/article/media-library-screen/
 
@@ -1076,7 +1076,7 @@ After one or more Media are *selected*, and after a *Bulk* Action is specified, 
 
 ---
 
-# Comments in WordPress <a id="documentation/article/comments-in-wordpress" />
+# Comments in WordPress <a name="documentation/article/comments-in-wordpress" />
 
 Source: https://wordpress.org/documentation/article/comments-in-wordpress/
 
@@ -1173,7 +1173,7 @@ From the Posts/Pages screen, check the boxes next to the posts or Pages on which
 
 ---
 
-# Users Your Profile screen <a id="documentation/article/users-your-profile-screen" />
+# Users Your Profile screen <a name="documentation/article/users-your-profile-screen" />
 
 Source: https://wordpress.org/documentation/article/users-your-profile-screen/
 
@@ -1229,7 +1229,7 @@ Remember to click this button to save the changes you have made to your Profile 
 
 ---
 
-# Administration Screens <a id="documentation/article/administration-screens" />
+# Administration Screens <a name="documentation/article/administration-screens" />
 
 Source: https://wordpress.org/documentation/article/administration-screens/
 
@@ -1522,7 +1522,7 @@ The [Settings Permalinks Screen](/support/article/settings-permalinks-screen/) c
 
 ---
 
-# Dashboard screen <a id="documentation/article/dashboard-screen" />
+# Dashboard screen <a name="documentation/article/dashboard-screen" />
 
 Source: https://wordpress.org/documentation/article/dashboard-screen/
 
@@ -1586,7 +1586,7 @@ Plugin or theme developers can make new Dashboard widgets available through the 
 
 ---
 
-# Appearance Menus Screen <a id="documentation/article/appearance-menus-screen" />
+# Appearance Menus Screen <a name="documentation/article/appearance-menus-screen" />
 
 Source: https://wordpress.org/documentation/article/appearance-menus-screen/
 
@@ -1725,7 +1725,7 @@ Cancel the configuration of the menu item
 
 ---
 
-# Get started with WordPress <a id="documentation/article/get-started-with-wordpress" />
+# Get started with WordPress <a name="documentation/article/get-started-with-wordpress" />
 
 Source: https://wordpress.org/documentation/article/get-started-with-wordpress/
 
@@ -1849,7 +1849,7 @@ Now that you’re a full-fledged WordPress user, [consider contributing](https:/
 
 ---
 
-# Manage Plugins <a id="documentation/article/manage-plugins" />
+# Manage Plugins <a name="documentation/article/manage-plugins" />
 
 Source: https://wordpress.org/documentation/article/manage-plugins/
 
@@ -2120,7 +2120,7 @@ You can get started with the WordPress plugin development using the resources in
 
 ---
 
-# Manage WordPress widgets <a id="documentation/article/manage-wordpress-widgets" />
+# Manage WordPress widgets <a name="documentation/article/manage-wordpress-widgets" />
 
 Source: https://wordpress.org/documentation/article/manage-wordpress-widgets/
 
@@ -2235,7 +2235,7 @@ You may add multiple RSS Widgets for incoming feeds to your WordPress sidebar an
 
 ---
 
-# Work with themes <a id="documentation/article/work-with-themes" />
+# Work with themes <a name="documentation/article/work-with-themes" />
 
 Source: https://wordpress.org/documentation/article/work-with-themes/
 
@@ -2345,7 +2345,7 @@ Whichever the case, you are welcome to join the [Themes Team](https://make.wordp
 
 ---
 
-# FAQ My site was hacked <a id="documentation/article/faq-my-site-was-hacked" />
+# FAQ My site was hacked <a name="documentation/article/faq-my-site-was-hacked" />
 
 Source: https://wordpress.org/documentation/article/faq-my-site-was-hacked/
 
@@ -2546,7 +2546,7 @@ $` svn diff /path/to/filename`
 
 ---
 
-# Password Best Practices <a id="documentation/article/password-best-practices" />
+# Password Best Practices <a name="documentation/article/password-best-practices" />
 
 Source: https://wordpress.org/documentation/article/password-best-practices/
 
@@ -2632,7 +2632,7 @@ A common method of brute force hacking is to use a “dictionary” of common us
 
 ---
 
-# Assign custom fields <a id="documentation/article/assign-custom-fields" />
+# Assign custom fields <a name="documentation/article/assign-custom-fields" />
 
 Source: https://wordpress.org/documentation/article/assign-custom-fields/
 
@@ -2684,7 +2684,7 @@ You may install a plugin that manages custom fields by searching “[custom fiel
 
 ---
 
-# What is Post Type? <a id="documentation/article/what-is-post-type" />
+# What is Post Type? <a name="documentation/article/what-is-post-type" />
 
 Source: https://wordpress.org/documentation/article/what-is-post-type/
 
@@ -2752,7 +2752,7 @@ You might find that in some cases you want to include custom posts into your mai
 
 ---
 
-# Updating WordPress <a id="documentation/article/updating-wordpress" />
+# Updating WordPress <a name="documentation/article/updating-wordpress" />
 
 Source: https://wordpress.org/documentation/article/updating-wordpress/
 
@@ -2851,7 +2851,7 @@ If you have some knowledge of unix shells you should check out [wp-cli](https://
 
 ---
 
-# WordPress Glossary <a id="documentation/article/wordpress-glossary" />
+# WordPress Glossary <a name="documentation/article/wordpress-glossary" />
 
 Source: https://wordpress.org/documentation/article/wordpress-glossary/
 
@@ -4147,7 +4147,7 @@ More glossaries with collection of blogging terms, acronyms and abbreviations.
 
 ---
 
-# Search Engine Optimization <a id="documentation/article/search-engine-optimization" />
+# Search Engine Optimization <a name="documentation/article/search-engine-optimization" />
 
 Source: https://wordpress.org/documentation/article/search-engine-optimization/
 
@@ -4278,7 +4278,7 @@ There is some debate over whether listing the link relations actually effect sea
 
 ---
 
-# Administer your Blog <a id="documentation/article/administer-your-blog" />
+# Administer your Blog <a name="documentation/article/administer-your-blog" />
 
 Source: https://wordpress.org/documentation/article/administer-your-blog/
 
@@ -4355,7 +4355,7 @@ As the administrator or site owner, there are a few more tasks you should add to
 
 ---
 
-# What are smilies? <a id="documentation/article/what-are-smilies" />
+# What are smilies? <a name="documentation/article/what-are-smilies" />
 
 Source: https://wordpress.org/documentation/article/what-are-smilies/
 
@@ -4482,7 +4482,7 @@ For more on CSS in WordPress, you might want to [start here](https://codex.wordp
 
 ---
 
-# Use keyboard shortcuts (Classic Editor) <a id="documentation/article/keyboard-shortcuts-classic-editor" />
+# Use keyboard shortcuts (Classic Editor) <a name="documentation/article/keyboard-shortcuts-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/keyboard-shortcuts-classic-editor/
 
@@ -4566,7 +4566,7 @@ You can also perform an action on multiple comments at once. First, you’ll nee
 
 ---
 
-# Embeds <a id="documentation/article/embeds" />
+# Embeds <a name="documentation/article/embeds" />
 
 Source: https://wordpress.org/documentation/article/embeds/
 
@@ -4693,7 +4693,7 @@ WordPress can embed content from the services listed below:
 
 ---
 
-# Audio Shortcode <a id="documentation/article/audio-shortcode" />
+# Audio Shortcode <a name="documentation/article/audio-shortcode" />
 
 Source: https://wordpress.org/documentation/article/audio-shortcode/
 
@@ -4781,7 +4781,7 @@ Default: “none”
 
 ---
 
-# Video shortcode <a id="documentation/article/video-shortcode" />
+# Video shortcode <a name="documentation/article/video-shortcode" />
 
 Source: https://wordpress.org/documentation/article/video-shortcode/
 
@@ -4879,7 +4879,7 @@ Default: \[Media file width\]
 
 ---
 
-# Image size and quality <a id="documentation/article/image-size-and-quality" />
+# Image size and quality <a name="documentation/article/image-size-and-quality" />
 
 Source: https://wordpress.org/documentation/article/image-size-and-quality/
 
@@ -4948,7 +4948,7 @@ When you have fine-tuned your small sized image or new thumbnail, export the ima
 
 ---
 
-# Hosting WordPress <a id="documentation/article/hosting-wordpress" />
+# Hosting WordPress <a name="documentation/article/hosting-wordpress" />
 
 Source: https://wordpress.org/documentation/article/hosting-wordpress/
 
@@ -4982,7 +4982,7 @@ Hosting is a commodity these days and with a little digging, it’s easy to find
 
 ---
 
-# Post Status <a id="documentation/article/post-status" />
+# Post Status <a name="documentation/article/post-status" />
 
 Source: https://wordpress.org/documentation/article/post-status/
 
@@ -5077,7 +5077,7 @@ add_action( 'init', 'custom_post_status' );
 
 ---
 
-# Twenty Sixteen <a id="documentation/article/twenty-sixteen" />
+# Twenty Sixteen <a name="documentation/article/twenty-sixteen" />
 
 Source: https://wordpress.org/documentation/article/twenty-sixteen/
 
@@ -5178,7 +5178,7 @@ Linking to any of the following sites will automatically display its icon in you
 
 ---
 
-# Introduction to Plugins <a id="documentation/article/introduction-to-plugins" />
+# Introduction to Plugins <a name="documentation/article/introduction-to-plugins" />
 
 Source: https://wordpress.org/documentation/article/introduction-to-plugins/
 
@@ -5213,7 +5213,7 @@ See all of the features in Akismet here: [\#pluginsakismet/](#pluginsakismet/)
 
 ---
 
-# Taxonomies <a id="documentation/article/taxonomies" />
+# Taxonomies <a name="documentation/article/taxonomies" />
 
 Source: https://wordpress.org/documentation/article/taxonomies/
 
@@ -5235,7 +5235,7 @@ Depending on whether your theme and plugins allow it, you can also extend the fu
 
 ---
 
-# Troubleshoot login issues <a id="documentation/article/troubleshoot-login-issues" />
+# Troubleshoot login issues <a name="documentation/article/troubleshoot-login-issues" />
 
 Source: https://wordpress.org/documentation/article/troubleshoot-login-issues/
 
@@ -5272,7 +5272,7 @@ Be sure to give [details of your server setup](#documentation/article/finding-se
 
 ---
 
-# FAQ Troubleshooting <a id="documentation/article/faq-troubleshooting" />
+# FAQ Troubleshooting <a name="documentation/article/faq-troubleshooting" />
 
 Source: https://wordpress.org/documentation/article/faq-troubleshooting/
 
@@ -5479,7 +5479,7 @@ There are various resources that will help you find more help with WordPress, in
 
 ---
 
-# Pages screen <a id="documentation/article/pages-screen" />
+# Pages screen <a name="documentation/article/pages-screen" />
 
 Source: https://wordpress.org/documentation/article/pages-screen/
 
@@ -5574,7 +5574,7 @@ After one or more Pages are *selected*, and after a *Bulk* Action is specified, 
 
 ---
 
-# Create a Favicon <a id="documentation/article/create-a-favicon" />
+# Create a Favicon <a name="documentation/article/create-a-favicon" />
 
 Source: https://wordpress.org/documentation/article/create-a-favicon/
 
@@ -5612,7 +5612,7 @@ Follow the steps below to use Site Icon to set up a favicon for your site.
 
 ---
 
-# Create a static front page <a id="documentation/article/create-a-static-front-page" />
+# Create a static front page <a name="documentation/article/create-a-static-front-page" />
 
 Source: https://wordpress.org/documentation/article/create-a-static-front-page/
 
@@ -5642,7 +5642,7 @@ Connect to your site home page: you should now see the Page you selected.
 
 ---
 
-# Use Gravatars <a id="documentation/article/use-gravatars" />
+# Use Gravatars <a name="documentation/article/use-gravatars" />
 
 Source: https://wordpress.org/documentation/article/use-gravatars/
 
@@ -5692,7 +5692,7 @@ If you want to use Gravatar’s Hovercard feature, like on WordPress.com, you ca
 
 ---
 
-# Settings Writing screen <a id="documentation/article/settings-writing-screen" />
+# Settings Writing screen <a name="documentation/article/settings-writing-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-writing-screen/
 
@@ -5739,7 +5739,7 @@ Click the **Save Changes** button to ensure any changes you have made to your Se
 
 ---
 
-# Settings Reading screen <a id="documentation/article/settings-reading-screen" />
+# Settings Reading screen <a name="documentation/article/settings-reading-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-reading-screen/
 
@@ -5807,7 +5807,7 @@ User-agent: *<br></br>Disallow: /
 
 ---
 
-# Settings General screen <a id="documentation/article/settings-general-screen" />
+# Settings General screen <a name="documentation/article/settings-general-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-general-screen/
 
@@ -5875,7 +5875,7 @@ Click the **Save Changes** button to ensure any changes you have made to your Se
 
 ---
 
-# Pages Add New screen <a id="documentation/article/pages-add-new-screen" />
+# Pages Add New screen <a name="documentation/article/pages-add-new-screen" />
 
 Source: https://wordpress.org/documentation/article/pages-add-new-screen/
 
@@ -5937,7 +5937,7 @@ Page order to sort the list of Pages.
 
 ---
 
-# Reset your password <a id="documentation/article/reset-your-password" />
+# Reset your password <a name="documentation/article/reset-your-password" />
 
 Source: https://wordpress.org/documentation/article/reset-your-password/
 
@@ -6082,7 +6082,7 @@ If the other solutions listed above won’t work, then try the Emergency Passwor
 
 ---
 
-# Settings Discussion screen <a id="documentation/article/settings-discussion-screen" />
+# Settings Discussion screen <a name="documentation/article/settings-discussion-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-discussion-screen/
 
@@ -6171,7 +6171,7 @@ Click the **Save Changes** button to ensure any changes you have made to your Se
 
 ---
 
-# Inserting images into posts and pages (Classic Editor) <a id="documentation/article/inserting-images-into-posts-and-pages-classic" />
+# Inserting images into posts and pages (Classic Editor) <a name="documentation/article/inserting-images-into-posts-and-pages-classic" />
 
 Source: https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/
 
@@ -6267,7 +6267,7 @@ At any time, you can edit the image settings by clicking on the **Edit Image** b
 
 ---
 
-# Settings Media screen <a id="documentation/article/settings-media-screen" />
+# Settings Media screen <a name="documentation/article/settings-media-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-media-screen/
 
@@ -6309,7 +6309,7 @@ Click the **Save Changes** button to ensure any changes you have made to your Se
 
 ---
 
-# The WordPress Gallery (Classic Editor) <a id="documentation/article/the-wordpress-gallery-classic-editor" />
+# The WordPress Gallery (Classic Editor) <a name="documentation/article/the-wordpress-gallery-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/the-wordpress-gallery-classic-editor/
 
@@ -6487,7 +6487,7 @@ Comma-separated attachment IDs that exclude specific images from these attachmen
 
 ---
 
-# Settings Permalinks screen <a id="documentation/article/settings-permalinks-screen" />
+# Settings Permalinks screen <a name="documentation/article/settings-permalinks-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-permalinks-screen/
 
@@ -6540,7 +6540,7 @@ For information on how to make [.htaccess](/support/article/glossary/#htaccess) 
 
 ---
 
-# Customize date and time format <a id="documentation/article/customize-date-and-time-format" />
+# Customize date and time format <a name="documentation/article/customize-date-and-time-format" />
 
 Source: https://wordpress.org/documentation/article/customize-date-and-time-format/
 
@@ -6671,7 +6671,7 @@ Saturday 25th of February 2017
 
 ---
 
-# Write code in your posts (Classic Editor) <a id="documentation/article/write-code-in-your-posts-classic-editor" />
+# Write code in your posts (Classic Editor) <a name="documentation/article/write-code-in-your-posts-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/write-code-in-your-posts-classic-editor/
 
@@ -6807,7 +6807,7 @@ If you consistently use a lot of formulas, functions, and programming code in yo
 
 ---
 
-# Sticky Posts (Classic Editor) <a id="documentation/article/sticky-posts-classic-editor" />
+# Sticky Posts (Classic Editor) <a name="documentation/article/sticky-posts-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/sticky-posts-classic-editor/
 
@@ -6835,7 +6835,7 @@ If you are a user of WordPress Version 3.x or 4.x, or Classic Editor, then follo
 
 ---
 
-# What is an excerpt? (Classic Editor) <a id="documentation/article/what-is-an-excerpt-classic-editor" />
+# What is an excerpt? (Classic Editor) <a name="documentation/article/what-is-an-excerpt-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/what-is-an-excerpt-classic-editor/
 
@@ -6857,7 +6857,7 @@ If Excerpt is empty, WordPress automatically creates an excerpt using the first 
 
 ---
 
-# Introduction to Blogging <a id="documentation/article/introduction-to-blogging" />
+# Introduction to Blogging <a name="documentation/article/introduction-to-blogging" />
 
 Source: https://wordpress.org/documentation/article/introduction-to-blogging/
 
@@ -6919,7 +6919,7 @@ Starting a new blog is complex and can put many people off. Some may get off to 
 
 ---
 
-# Use automated installation <a id="documentation/article/use-automated-installation" />
+# Use automated installation <a name="documentation/article/use-automated-installation" />
 
 Source: https://wordpress.org/documentation/article/use-automated-installation/
 
@@ -6982,7 +6982,7 @@ Here’s how to install WordPress using Installatron.com:
 
 ---
 
-# Posts screen <a id="documentation/article/posts-screen" />
+# Posts screen <a name="documentation/article/posts-screen" />
 
 Source: https://wordpress.org/documentation/article/posts-screen/
 
@@ -7087,7 +7087,7 @@ After one or more Posts are *selected*, and after a *Bulk* Action is specified, 
 
 ---
 
-# Set blog content visibility (Classic Editor) <a id="documentation/article/content-visibility-classic-editor" />
+# Set blog content visibility (Classic Editor) <a name="documentation/article/content-visibility-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/content-visibility-classic-editor/
 
@@ -7145,7 +7145,7 @@ Alternatively, you could use the `.htaccess` to restrict who can visit your web 
 
 ---
 
-# Use Images <a id="documentation/article/use-images" />
+# Use Images <a name="documentation/article/use-images" />
 
 Source: https://wordpress.org/documentation/article/use-images/
 
@@ -7196,7 +7196,7 @@ Further reading:
 
 ---
 
-# Twenty Fifteen <a id="documentation/article/twenty-fifteen" />
+# Twenty Fifteen <a name="documentation/article/twenty-fifteen" />
 
 Source: https://wordpress.org/documentation/article/twenty-fifteen/
 
@@ -7314,7 +7314,7 @@ You can also select a gradient option for certain blocks that fit the theme colo
 
 ---
 
-# Customizer <a id="documentation/article/customizer" />
+# Customizer <a name="documentation/article/customizer" />
 
 Source: https://wordpress.org/documentation/article/customizer/
 
@@ -7444,7 +7444,7 @@ A panel that lets you add CSS code which will override the current theme.
 
 ---
 
-# Learn about WordPress origins and version history <a id="documentation/article/learn-about-wordpress-and-version-history" />
+# Learn about WordPress origins and version history <a name="documentation/article/learn-about-wordpress-and-version-history" />
 
 Source: https://wordpress.org/documentation/article/learn-about-wordpress-and-version-history/
 
@@ -7618,7 +7618,7 @@ There are also various post launch versions with improvements for security, bug 
 
 ---
 
-# Customize permalinks <a id="documentation/article/customize-permalinks" />
+# Customize permalinks <a name="documentation/article/customize-permalinks" />
 
 Source: https://wordpress.org/documentation/article/customize-permalinks/
 
@@ -7764,7 +7764,7 @@ If you want to choose which category shows up in the permalink, you can use one 
 
 ---
 
-# FAQ Work with WordPress <a id="documentation/article/faq-work-with-wordpress" />
+# FAQ Work with WordPress <a name="documentation/article/faq-work-with-wordpress" />
 
 Source: https://wordpress.org/documentation/article/faq-work-with-wordpress/
 
@@ -8213,7 +8213,7 @@ See:
 
 ---
 
-# WordPress Privacy <a id="documentation/article/wordpress-privacy" />
+# WordPress Privacy <a name="documentation/article/wordpress-privacy" />
 
 Source: https://wordpress.org/documentation/article/wordpress-privacy/
 
@@ -8289,7 +8289,7 @@ Some plugins, especially in the case of forms and email subscription services, s
 
 ---
 
-# Roles and Capabilities <a id="documentation/article/roles-and-capabilities" />
+# Roles and Capabilities <a name="documentation/article/roles-and-capabilities" />
 
 Source: https://wordpress.org/documentation/article/roles-and-capabilities/
 
@@ -8910,7 +8910,7 @@ Note that the capabilities of Administrators **differs** between single site and
 
 ---
 
-# What&#8217;s the difference between WordPress.org and WordPress.com? <a id="documentation/article/difference-between-wordpress-org-and-wordpress-com" />
+# What&#8217;s the difference between WordPress.org and WordPress.com? <a name="documentation/article/difference-between-wordpress-org-and-wordpress-com" />
 
 Source: https://wordpress.org/documentation/article/difference-between-wordpress-org-and-wordpress-com/
 
@@ -8952,7 +8952,7 @@ WordPress.com offers [multi-site](https://developer.wordpress.org/advanced-admin
 
 ---
 
-# Twenty Nineteen <a id="documentation/article/twenty-nineteen" />
+# Twenty Nineteen <a name="documentation/article/twenty-nineteen" />
 
 Source: https://wordpress.org/documentation/article/twenty-nineteen/
 
@@ -9050,7 +9050,7 @@ You can also read [the theme’s changelog](#documentation/article/twenty-ninete
 
 ---
 
-# First steps with WordPress (Block Editor) <a id="documentation/article/first-steps-with-wordpress-block-editor" />
+# First steps with WordPress (Block Editor) <a name="documentation/article/first-steps-with-wordpress-block-editor" />
 
 Source: https://wordpress.org/documentation/article/first-steps-with-wordpress-block-editor/
 
@@ -9231,7 +9231,7 @@ The exciting thing about WordPress is that there are few limits. Thousands of pe
 
 ---
 
-# What is an excerpt? (Block Editor) <a id="documentation/article/what-is-an-excerpt-block-editor" />
+# What is an excerpt? (Block Editor) <a name="documentation/article/what-is-an-excerpt-block-editor" />
 
 Source: https://wordpress.org/documentation/article/what-is-an-excerpt-block-editor/
 
@@ -9255,7 +9255,7 @@ If Excerpt is empty, WordPress automatically creates an excerpt using the first 
 
 ---
 
-# Set blog content visibility (Block Editor) <a id="documentation/article/content-visibility-block-editor" />
+# Set blog content visibility (Block Editor) <a name="documentation/article/content-visibility-block-editor" />
 
 Source: https://wordpress.org/documentation/article/content-visibility-block-editor/
 
@@ -9311,7 +9311,7 @@ Alternatively, you could use the `.htaccess` to restrict who can visit your web 
 
 ---
 
-# The WordPress Gallery (Block Editor) <a id="documentation/article/the-wordpress-gallery-block-editor" />
+# The WordPress Gallery (Block Editor) <a name="documentation/article/the-wordpress-gallery-block-editor" />
 
 Source: https://wordpress.org/documentation/article/the-wordpress-gallery-block-editor/
 
@@ -9377,7 +9377,7 @@ Within the visual editor, the image gallery is displayed as a series of thumbnai
 
 ---
 
-# Inserting images into posts and pages (Block Editor) <a id="documentation/article/inserting-images-into-posts-and-pages-block-editor" />
+# Inserting images into posts and pages (Block Editor) <a name="documentation/article/inserting-images-into-posts-and-pages-block-editor" />
 
 Source: https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/
 
@@ -9535,7 +9535,7 @@ In the “Additional CSS class(es0 section you can one or more CSS class(es) to 
 
 ---
 
-# WordPress Semantics <a id="documentation/article/wordpress-semantics" />
+# WordPress Semantics <a name="documentation/article/wordpress-semantics" />
 
 Source: https://wordpress.org/documentation/article/wordpress-semantics/
 
@@ -9607,7 +9607,7 @@ The final set of *jargon* relates to **helping** you with WordPress. First and f
 
 ---
 
-# Toolbar <a id="documentation/article/toolbar" />
+# Toolbar <a name="documentation/article/toolbar" />
 
 Source: https://wordpress.org/documentation/article/toolbar/
 
@@ -9627,7 +9627,7 @@ The toolbar can be turned on/off from the **Toolbar** option in [Administration]
 
 ---
 
-# Dashboard Updates screen <a id="documentation/article/dashboard-updates-screen" />
+# Dashboard Updates screen <a name="documentation/article/dashboard-updates-screen" />
 
 Source: https://wordpress.org/documentation/article/dashboard-updates-screen/
 
@@ -9792,7 +9792,7 @@ or
 
 ---
 
-# Posts Categories screen <a id="documentation/article/posts-categories-screen" />
+# Posts Categories screen <a name="documentation/article/posts-categories-screen" />
 
 Source: https://wordpress.org/documentation/article/posts-categories-screen/
 
@@ -9898,7 +9898,7 @@ This Screen is displayed by clicking on a Categories’ **Name** in the Table of
 
 ---
 
-# Posts Tags screen <a id="documentation/article/posts-tags-screen" />
+# Posts Tags screen <a name="documentation/article/posts-tags-screen" />
 
 Source: https://wordpress.org/documentation/article/posts-tags-screen/
 
@@ -10003,7 +10003,7 @@ This Screen is displayed by clicking on a Tags’ **Name** in the Table of Tags 
 
 ---
 
-# Media Add New screen <a id="documentation/article/media-add-new-screen" />
+# Media Add New screen <a name="documentation/article/media-add-new-screen" />
 
 Source: https://wordpress.org/documentation/article/media-add-new-screen/
 
@@ -10047,7 +10047,7 @@ Uploading via the Browser uploader:
 
 ---
 
-# Comments screen <a id="documentation/article/comments-screen" />
+# Comments screen <a name="documentation/article/comments-screen" />
 
 Source: https://wordpress.org/documentation/article/comments-screen/
 
@@ -10160,7 +10160,7 @@ Once a comment is edited this Screen display and allows the user to change the c
 
 ---
 
-# Appearance Widgets Screen (Classic Editor) <a id="documentation/article/appearance-widgets-screen-classic-editor" />
+# Appearance Widgets Screen (Classic Editor) <a name="documentation/article/appearance-widgets-screen-classic-editor" />
 
 Source: https://wordpress.org/documentation/article/appearance-widgets-screen-classic-editor/
 
@@ -10280,7 +10280,7 @@ If the current active Theme is not widget compatible, meaning the theme is not c
 
 ---
 
-# Appearance Theme File Editor Screen <a id="documentation/article/appearance-theme-file-editor-screen" />
+# Appearance Theme File Editor Screen <a name="documentation/article/appearance-theme-file-editor-screen" />
 
 Source: https://wordpress.org/documentation/article/appearance-theme-file-editor-screen/
 
@@ -10312,7 +10312,7 @@ Remember to click this button to save the changes you have made to the file. Aft
 
 ---
 
-# Plugins screen <a id="documentation/article/plugins-screen" />
+# Plugins screen <a name="documentation/article/plugins-screen" />
 
 Source: https://wordpress.org/documentation/article/plugins-screen/
 
@@ -10424,7 +10424,7 @@ Note: If deletion is unsuccessful The message *Plugin could not be deleted due t
 
 ---
 
-# Plugins Add New screen <a id="documentation/article/plugins-add-new-screen" />
+# Plugins Add New screen <a name="documentation/article/plugins-add-new-screen" />
 
 Source: https://wordpress.org/documentation/article/plugins-add-new-screen/
 
@@ -10493,7 +10493,7 @@ WordPress has the ability to display and easily install a user’s favorite plug
 
 ---
 
-# Users screen <a id="documentation/article/users-screen" />
+# Users screen <a name="documentation/article/users-screen" />
 
 Source: https://wordpress.org/documentation/article/users-screen/
 
@@ -10589,7 +10589,7 @@ The Edit Users Screen is similar to editing your profile.
 
 ---
 
-# Users Add New screen <a id="documentation/article/users-add-new-screen" />
+# Users Add New screen <a name="documentation/article/users-add-new-screen" />
 
 Source: https://wordpress.org/documentation/article/users-add-new-screen/
 
@@ -10614,7 +10614,7 @@ In this Screen, you may add new Users to your site. If the **Anyone can register
 
 ---
 
-# Tools screen <a id="documentation/article/tools-screen" />
+# Tools screen <a name="documentation/article/tools-screen" />
 
 Source: https://wordpress.org/documentation/article/tools-screen/
 
@@ -10626,7 +10626,7 @@ Use this to convert categories to tags or tags to categories. Selecting this wil
 
 ---
 
-# Tools Import screen <a id="documentation/article/tools-import-screen" />
+# Tools Import screen <a name="documentation/article/tools-import-screen" />
 
 Source: https://wordpress.org/documentation/article/tools-import-screen/
 
@@ -10670,7 +10670,7 @@ Import posts, comments, custom fields, pages, and categories from a WordPress ex
 
 ---
 
-# Tools Export Personal Data screen <a id="documentation/article/tools-export-personal-data-screen" />
+# Tools Export Personal Data screen <a name="documentation/article/tools-export-personal-data-screen" />
 
 Source: https://wordpress.org/documentation/article/tools-export-personal-data-screen/
 
@@ -10794,7 +10794,7 @@ In the `.zip` file, one `index.html` file exists. To see the data double click t
 
 ---
 
-# Tools Erase Personal Data screen <a id="documentation/article/tools-erase-personal-data-screen" />
+# Tools Erase Personal Data screen <a name="documentation/article/tools-erase-personal-data-screen" />
 
 Source: https://wordpress.org/documentation/article/tools-erase-personal-data-screen/
 
@@ -10891,7 +10891,7 @@ To confirm what data will be erased by this tool, Go to **Tools** &gt; **Export 
 
 ---
 
-# Tools Network screen <a id="documentation/article/tools-network-screen" />
+# Tools Network screen <a name="documentation/article/tools-network-screen" />
 
 Source: https://wordpress.org/documentation/article/tools-network-screen/
 
@@ -11033,7 +11033,7 @@ Visit the Administration &gt; Network Admin &gt; Settings Screen to configure ne
 
 ---
 
-# Become a WordPress contributor <a id="documentation/article/become-a-wordpress-contributor" />
+# Become a WordPress contributor <a name="documentation/article/become-a-wordpress-contributor" />
 
 Source: https://wordpress.org/documentation/article/become-a-wordpress-contributor/
 
@@ -11117,7 +11117,7 @@ Just remember, every contribution counts, no matter what it looks like. It takes
 
 ---
 
-# Tools Export screen <a id="documentation/article/tools-export-screen" />
+# Tools Export screen <a name="documentation/article/tools-export-screen" />
 
 Source: https://wordpress.org/documentation/article/tools-export-screen/
 
@@ -11151,7 +11151,7 @@ Once you’ve saved the download file, you can use Administration &gt; Tools &gt
 
 ---
 
-# Revisions <a id="documentation/article/revisions" />
+# Revisions <a name="documentation/article/revisions" />
 
 Source: https://wordpress.org/documentation/article/revisions/
 
@@ -11205,7 +11205,7 @@ Currently revision comparison “diffs” are rendered in Text (or HTML) view; p
 
 ---
 
-# How WordPress processes Post Content <a id="documentation/article/how-wordpress-processes-post-content" />
+# How WordPress processes Post Content <a name="documentation/article/how-wordpress-processes-post-content" />
 
 Source: https://wordpress.org/documentation/article/how-wordpress-processes-post-content/
 
@@ -11278,7 +11278,7 @@ There are a variety of Plugins to change the filtering process WordPress uses by
 
 ---
 
-# Use character entities <a id="documentation/article/use-character-entities" />
+# Use character entities <a name="documentation/article/use-character-entities" />
 
 Source: https://wordpress.org/documentation/article/use-character-entities/
 
@@ -11359,7 +11359,7 @@ As you have seen, there are a many uses for *character entities* within your sit
 
 ---
 
-# WordPress Housekeeping <a id="documentation/article/wordpress-housekeeping" />
+# WordPress Housekeeping <a name="documentation/article/wordpress-housekeeping" />
 
 Source: https://wordpress.org/documentation/article/wordpress-housekeeping/
 
@@ -11444,7 +11444,7 @@ In the article, [Lessons: WordPress Site Maintenance](/support/article/wordpress
 
 ---
 
-# WordPress site maintenance <a id="documentation/article/wordpress-site-maintenance" />
+# WordPress site maintenance <a name="documentation/article/wordpress-site-maintenance" />
 
 Source: https://wordpress.org/documentation/article/wordpress-site-maintenance/
 
@@ -11547,7 +11547,7 @@ We’ve put together a sample calendar for your site maintenance to help you sch
 
 ---
 
-# Weblog client <a id="documentation/article/weblog-client" />
+# Weblog client <a name="documentation/article/weblog-client" />
 
 Source: https://wordpress.org/documentation/article/weblog-client/
 
@@ -11632,7 +11632,7 @@ Your XML-RPC server/path are as described here:
 
 ---
 
-# Protect posts with password <a id="documentation/article/protect-posts-with-password" />
+# Protect posts with password <a name="documentation/article/protect-posts-with-password" />
 
 Source: https://wordpress.org/documentation/article/protect-posts-with-password/
 
@@ -11792,7 +11792,7 @@ See [https://developer.wordpress.org/reference/hooks/post\_password\_expires/](h
 
 ---
 
-# What are Emoji? <a id="documentation/article/what-are-emoji" />
+# What are Emoji? <a name="documentation/article/what-are-emoji" />
 
 Source: https://wordpress.org/documentation/article/what-are-emoji/
 
@@ -11895,7 +11895,7 @@ Beyond the standard emoticon-type “smileys”, (e.g. 😃 or 😢) there are h
 
 ---
 
-# Use image and file attachments <a id="documentation/article/use-image-and-file-attachments" />
+# Use image and file attachments <a name="documentation/article/use-image-and-file-attachments" />
 
 Source: https://wordpress.org/documentation/article/use-image-and-file-attachments/
 
@@ -11945,7 +11945,7 @@ Themes may use various template tags to display post attachments or utilize the 
 
 ---
 
-# Comment moderation <a id="documentation/article/comment-moderation" />
+# Comment moderation <a name="documentation/article/comment-moderation" />
 
 Source: https://wordpress.org/documentation/article/comment-moderation/
 
@@ -12000,7 +12000,7 @@ Once you start receiving comments on your site, you can check the status of comm
 
 ---
 
-# Understand comment spam <a id="documentation/article/understand-comment-spam" />
+# Understand comment spam <a name="documentation/article/understand-comment-spam" />
 
 Source: https://wordpress.org/documentation/article/understand-comment-spam/
 
@@ -12054,7 +12054,7 @@ I have disabled trackbacks, but trackbacks continue to be postedIf you have unch
 
 ---
 
-# WordPress Block Editor <a id="documentation/article/wordpress-block-editor" />
+# WordPress Block Editor <a name="documentation/article/wordpress-block-editor" />
 
 Source: https://wordpress.org/documentation/article/wordpress-block-editor/
 
@@ -12257,7 +12257,7 @@ Uploading media item from openverse category uploads to the media library as wel
 
 ---
 
-# Blocks list <a id="documentation/article/blocks-list" />
+# Blocks list <a name="documentation/article/blocks-list" />
 
 Source: https://wordpress.org/documentation/article/blocks-list/
 
@@ -12608,7 +12608,7 @@ The following blocks have been deprecated.
 
 ---
 
-# Paragraph block <a id="documentation/article/paragraph-block" />
+# Paragraph block <a name="documentation/article/paragraph-block" />
 
 Source: https://wordpress.org/documentation/article/paragraph-block/
 
@@ -12772,7 +12772,7 @@ The Additional CSS class(es) enables you to write custom CSS class(es) to the Gr
 
 ---
 
-# Image block <a id="documentation/article/image-block" />
+# Image block <a name="documentation/article/image-block" />
 
 Source: https://wordpress.org/documentation/article/image-block/
 
@@ -12970,7 +12970,7 @@ The advanced tab also lets you add a CSS class to your block, allowing you to wr
 
 ---
 
-# Gallery block <a id="documentation/article/gallery-block" />
+# Gallery block <a name="documentation/article/gallery-block" />
 
 Source: https://wordpress.org/documentation/article/gallery-block/
 
@@ -13247,7 +13247,7 @@ The advanced tab also lets you add a CSS class to your block, allowing you to wr
 
 ---
 
-# List block <a id="documentation/article/list-block" />
+# List block <a name="documentation/article/list-block" />
 
 Source: https://wordpress.org/documentation/article/list-block/
 
@@ -13425,7 +13425,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Heading block <a id="documentation/article/heading-block" />
+# Heading block <a name="documentation/article/heading-block" />
 
 Source: https://wordpress.org/documentation/article/heading-block/
 
@@ -13569,7 +13569,7 @@ The “Additional CSS class(es)” lets you add CSS class(es) to your block, all
 
 ---
 
-# Cover block <a id="documentation/article/cover-block" />
+# Cover block <a name="documentation/article/cover-block" />
 
 Source: https://wordpress.org/documentation/article/cover-block/
 
@@ -13774,7 +13774,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Quote block <a id="documentation/article/quote-block" />
+# Quote block <a name="documentation/article/quote-block" />
 
 Source: https://wordpress.org/documentation/article/quote-block/
 
@@ -13916,7 +13916,7 @@ The **Advanced** tab lets you add HTML anchor and CSS class(es) to your block.
 
 ---
 
-# Audio Block <a id="documentation/article/audio-block" />
+# Audio Block <a name="documentation/article/audio-block" />
 
 Source: https://wordpress.org/documentation/article/audio-block/
 
@@ -14038,7 +14038,7 @@ If you try to upload a file type that is not supported, the editor will display 
 
 ---
 
-# File block <a id="documentation/article/file-block" />
+# File block <a name="documentation/article/file-block" />
 
 Source: https://wordpress.org/documentation/article/file-block/
 
@@ -14245,7 +14245,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Video block  <a id="documentation/article/video-block" />
+# Video block  <a name="documentation/article/video-block" />
 
 Source: https://wordpress.org/documentation/article/video-block/
 
@@ -14406,7 +14406,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Code Block <a id="documentation/article/code-block" />
+# Code Block <a name="documentation/article/code-block" />
 
 Source: https://wordpress.org/documentation/article/code-block/
 
@@ -14553,7 +14553,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Classic Block <a id="documentation/article/classic-block" />
+# Classic Block <a name="documentation/article/classic-block" />
 
 Source: https://wordpress.org/documentation/article/classic-block/
 
@@ -14606,7 +14606,7 @@ While most blocks have specific options in the editor sidebar in addition to the
 
 ---
 
-# Custom HTML <a id="documentation/article/custom-html" />
+# Custom HTML <a name="documentation/article/custom-html" />
 
 Source: https://wordpress.org/documentation/article/custom-html/
 
@@ -14646,7 +14646,7 @@ While most blocks have specific options in the editor sidebar in addition to the
 
 ---
 
-# Preformatted block <a id="documentation/article/preformatted-block" />
+# Preformatted block <a name="documentation/article/preformatted-block" />
 
 Source: https://wordpress.org/documentation/article/preformatted-block/
 
@@ -14761,7 +14761,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Pullquote block <a id="documentation/article/pullquote-block" />
+# Pullquote block <a name="documentation/article/pullquote-block" />
 
 Source: https://wordpress.org/documentation/article/pullquote-block/
 
@@ -14904,7 +14904,7 @@ The “Additional CSS class(es)” lets you add CSS class(es) to your block, all
 
 ---
 
-# Verse block <a id="documentation/article/verse-block" />
+# Verse block <a name="documentation/article/verse-block" />
 
 Source: https://wordpress.org/documentation/article/verse-block/
 
@@ -15036,7 +15036,7 @@ The “Additional CSS class(es)” lets you add CSS class(es) to your block, all
 
 ---
 
-# Columns block <a id="documentation/article/columns-block" />
+# Columns block <a name="documentation/article/columns-block" />
 
 Source: https://wordpress.org/documentation/article/columns-block/
 
@@ -15189,7 +15189,7 @@ For details, refer to this support article: [Layout settings overview](#document
 
 ---
 
-# (Deprecated)Button Block <a id="documentation/article/button-block" />
+# (Deprecated)Button Block <a name="documentation/article/button-block" />
 
 Source: https://wordpress.org/documentation/article/button-block/
 
@@ -15199,7 +15199,7 @@ The *button block* has been deprecated since WordPress 5.4. Please use the [*but
 
 ---
 
-# More block <a id="documentation/article/more-block" />
+# More block <a name="documentation/article/more-block" />
 
 Source: https://wordpress.org/documentation/article/more-block/
 
@@ -15283,7 +15283,7 @@ This option is disabled by default. This feature is helpful if you would like to
 
 ---
 
-# Separator block <a id="documentation/article/separator-block" />
+# Separator block <a name="documentation/article/separator-block" />
 
 Source: https://wordpress.org/documentation/article/separator-block/
 
@@ -15394,7 +15394,7 @@ When selecting one of the three styles available, this field is pre-populated wi
 
 ---
 
-# Page Break block <a id="documentation/article/page-break-block" />
+# Page Break block <a name="documentation/article/page-break-block" />
 
 Source: https://wordpress.org/documentation/article/page-break-block/
 
@@ -15448,7 +15448,7 @@ Every block has specific options in the editor sidebar in addition to the option
 
 ---
 
-# Spacer block <a id="documentation/article/spacer-block" />
+# Spacer block <a name="documentation/article/spacer-block" />
 
 Source: https://wordpress.org/documentation/article/spacer-block/
 
@@ -15561,7 +15561,7 @@ The “Additional CSS class(es)” lets you add CSS class(es) to your block, all
 
 ---
 
-# Media &amp; Text block <a id="documentation/article/media-text-block" />
+# Media &amp; Text block <a name="documentation/article/media-text-block" />
 
 Source: https://wordpress.org/documentation/article/media-text-block/
 
@@ -15713,7 +15713,7 @@ The advanced tab gives you two options. You can add anchor text to be able to li
 
 ---
 
-# Shortcode block <a id="documentation/article/shortcode-block" />
+# Shortcode block <a name="documentation/article/shortcode-block" />
 
 Source: https://wordpress.org/documentation/article/shortcode-block/
 
@@ -15788,7 +15788,7 @@ The “Additional CSS class(es)” lets you add CSS class(es) to your block, all
 
 ---
 
-# Archives Block <a id="documentation/article/archives-block" />
+# Archives Block <a name="documentation/article/archives-block" />
 
 Source: https://wordpress.org/documentation/article/archives-block/
 
@@ -15908,7 +15908,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Categories List Block <a id="documentation/article/categories-list-block" />
+# Categories List Block <a name="documentation/article/categories-list-block" />
 
 Source: https://wordpress.org/documentation/article/categories-list-block/
 
@@ -16019,7 +16019,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Latest Comments block <a id="documentation/article/latest-comments-block" />
+# Latest Comments block <a name="documentation/article/latest-comments-block" />
 
 Source: https://wordpress.org/documentation/article/latest-comments-block/
 
@@ -16111,7 +16111,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Latest Posts block <a id="documentation/article/latest-posts-block" />
+# Latest Posts block <a name="documentation/article/latest-posts-block" />
 
 Source: https://wordpress.org/documentation/article/latest-posts-block/
 
@@ -16204,7 +16204,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Settings Privacy screen <a id="documentation/article/settings-privacy-screen" />
+# Settings Privacy screen <a name="documentation/article/settings-privacy-screen" />
 
 Source: https://wordpress.org/documentation/article/settings-privacy-screen/
 
@@ -16246,7 +16246,7 @@ if ( function_exists( 'the_privacy_policy_link' ) ) {
 
 ---
 
-# Appearance Themes Screen <a id="documentation/article/appearance-themes-screen" />
+# Appearance Themes Screen <a name="documentation/article/appearance-themes-screen" />
 
 Source: https://wordpress.org/documentation/article/appearance-themes-screen/
 
@@ -16347,7 +16347,7 @@ If your host offers the cPanel control panel, and the Theme files are in a .zip 
 
 ---
 
-# Edit Media <a id="documentation/article/edit-media" />
+# Edit Media <a name="documentation/article/edit-media" />
 
 Source: https://wordpress.org/documentation/article/edit-media/
 
@@ -16514,7 +16514,7 @@ When cropping your image, these keyboard combinations can ‘fine-tune’ the si
 
 ---
 
-# FAQ I make changes and nothing happens <a id="documentation/article/faq-i-make-changes-and-nothing-happens" />
+# FAQ I make changes and nothing happens <a name="documentation/article/faq-i-make-changes-and-nothing-happens" />
 
 Source: https://wordpress.org/documentation/article/faq-i-make-changes-and-nothing-happens/
 
@@ -16602,7 +16602,7 @@ At this point, it’s time to complete the following steps:
 
 ---
 
-# Table block <a id="documentation/article/table-block" />
+# Table block <a name="documentation/article/table-block" />
 
 Source: https://wordpress.org/documentation/article/table-block/
 
@@ -16765,7 +16765,7 @@ For details, refer to this support article: [Border settings overview](#document
 
 ---
 
-# Why should I use HTTPS <a id="documentation/article/why-should-i-use-https" />
+# Why should I use HTTPS <a name="documentation/article/why-should-i-use-https" />
 
 Source: https://wordpress.org/documentation/article/why-should-i-use-https/
 
@@ -16791,7 +16791,7 @@ In turn, you don’t want browsers suggesting you might be that kind of shady si
 
 ---
 
-# Page Jumps <a id="documentation/article/page-jumps" />
+# Page Jumps <a name="documentation/article/page-jumps" />
 
 Source: https://wordpress.org/documentation/article/page-jumps/
 
@@ -16842,7 +16842,7 @@ If you want to jump to another page’s anchor, then specify URL with HTML Ancho
 
 ---
 
-# Adding a new block <a id="documentation/article/adding-a-new-block" />
+# Adding a new block <a name="documentation/article/adding-a-new-block" />
 
 Source: https://wordpress.org/documentation/article/adding-a-new-block/
 
@@ -16979,7 +16979,7 @@ For information on how to move blocks, check out this article: [Moving blocks.](
 
 ---
 
-# Twenty Twenty <a id="documentation/article/twenty-twenty" />
+# Twenty Twenty <a name="documentation/article/twenty-twenty" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty/
 
@@ -17116,7 +17116,7 @@ You can also read [the theme’s changelog](#documentation/article/twenty-twenty
 
 ---
 
-# Twenty Twenty changelog <a id="documentation/article/twenty-twenty-changelog" />
+# Twenty Twenty changelog <a name="documentation/article/twenty-twenty-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-changelog/
 
@@ -17370,7 +17370,7 @@ Initial Release.
 
 ---
 
-# RSS block <a id="documentation/article/rss-block" />
+# RSS block <a name="documentation/article/rss-block" />
 
 Source: https://wordpress.org/documentation/article/rss-block/
 
@@ -17524,7 +17524,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Facebook embed <a id="documentation/article/facebook-embed" />
+# Facebook embed <a name="documentation/article/facebook-embed" />
 
 Source: https://wordpress.org/documentation/article/facebook-embed/
 
@@ -17626,7 +17626,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# YouTube embed <a id="documentation/article/youtube-embed" />
+# YouTube embed <a name="documentation/article/youtube-embed" />
 
 Source: https://wordpress.org/documentation/article/youtube-embed/
 
@@ -17746,7 +17746,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Twitter embed <a id="documentation/article/twitter-embed" />
+# Twitter embed <a name="documentation/article/twitter-embed" />
 
 Source: https://wordpress.org/documentation/article/twitter-embed/
 
@@ -17865,7 +17865,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Calendar Block <a id="documentation/article/calendar-block" />
+# Calendar Block <a name="documentation/article/calendar-block" />
 
 Source: https://wordpress.org/documentation/article/calendar-block/
 
@@ -17936,7 +17936,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# WordPress embed <a id="documentation/article/wordpress-embed" />
+# WordPress embed <a name="documentation/article/wordpress-embed" />
 
 Source: https://wordpress.org/documentation/article/wordpress-embed/
 
@@ -18023,7 +18023,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# TED embed <a id="documentation/article/ted-embed" />
+# TED embed <a name="documentation/article/ted-embed" />
 
 Source: https://wordpress.org/documentation/article/ted-embed/
 
@@ -18119,7 +18119,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Instagram embed <a id="documentation/article/instagram-embed" />
+# Instagram embed <a name="documentation/article/instagram-embed" />
 
 Source: https://wordpress.org/documentation/article/instagram-embed/
 
@@ -18214,7 +18214,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Spotify embed <a id="documentation/article/spotify-embed" />
+# Spotify embed <a name="documentation/article/spotify-embed" />
 
 Source: https://wordpress.org/documentation/article/spotify-embed/
 
@@ -18325,7 +18325,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# SoundCloud embed <a id="documentation/article/soundcloud-embed" />
+# SoundCloud embed <a name="documentation/article/soundcloud-embed" />
 
 Source: https://wordpress.org/documentation/article/soundcloud-embed/
 
@@ -18430,7 +18430,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Slideshare embed <a id="documentation/article/slideshare-embed" />
+# Slideshare embed <a name="documentation/article/slideshare-embed" />
 
 Source: https://wordpress.org/documentation/article/slideshare-embed/
 
@@ -18524,7 +18524,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Kickstarter embed <a id="documentation/article/kickstarter-embed" />
+# Kickstarter embed <a name="documentation/article/kickstarter-embed" />
 
 Source: https://wordpress.org/documentation/article/kickstarter-embed/
 
@@ -18616,7 +18616,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Flickr embed <a id="documentation/article/flickr-embed" />
+# Flickr embed <a name="documentation/article/flickr-embed" />
 
 Source: https://wordpress.org/documentation/article/flickr-embed/
 
@@ -18735,7 +18735,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# SmugMug embed <a id="documentation/article/smugmug-embed" />
+# SmugMug embed <a name="documentation/article/smugmug-embed" />
 
 Source: https://wordpress.org/documentation/article/smugmug-embed/
 
@@ -18839,7 +18839,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Animoto Embed <a id="documentation/article/animoto-embed" />
+# Animoto Embed <a name="documentation/article/animoto-embed" />
 
 Source: https://wordpress.org/documentation/article/animoto-embed/
 
@@ -18923,7 +18923,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Crowdsignal embed <a id="documentation/article/crowdsignal-embed" />
+# Crowdsignal embed <a name="documentation/article/crowdsignal-embed" />
 
 Source: https://wordpress.org/documentation/article/crowdsignal-embed/
 
@@ -19037,7 +19037,7 @@ The “Advanced” tab lets you add CSS class(es) to your block.
 
 ---
 
-# ReverbNation embed <a id="documentation/article/reverbnation-embed" />
+# ReverbNation embed <a name="documentation/article/reverbnation-embed" />
 
 Source: https://wordpress.org/documentation/article/reverbnation-embed/
 
@@ -19132,7 +19132,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# MixCloud embed <a id="documentation/article/mixcloud-embed" />
+# MixCloud embed <a name="documentation/article/mixcloud-embed" />
 
 Source: https://wordpress.org/documentation/article/mixcloud-embed/
 
@@ -19251,7 +19251,7 @@ The Toggle switch turns on or off the resize functionality for smaller devices. 
 
 ---
 
-# TikTok embed <a id="documentation/article/tiktok-embed" />
+# TikTok embed <a name="documentation/article/tiktok-embed" />
 
 Source: https://wordpress.org/documentation/article/tiktok-embed/
 
@@ -19345,7 +19345,7 @@ The Toggle switch turns on or off the resize functionality for smaller devices. 
 
 ---
 
-# Issuu embed <a id="documentation/article/issuu-embed" />
+# Issuu embed <a name="documentation/article/issuu-embed" />
 
 Source: https://wordpress.org/documentation/article/issuu-embed/
 
@@ -19438,7 +19438,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Plugin and themes auto-updates <a id="documentation/article/plugins-themes-auto-updates" />
+# Plugin and themes auto-updates <a name="documentation/article/plugins-themes-auto-updates" />
 
 Source: https://wordpress.org/documentation/article/plugins-themes-auto-updates/
 
@@ -19518,7 +19518,7 @@ To check if WordPress Cron tasks are running correctly, go to Tools &gt; Site He
 
 ---
 
-# WordPress.tv embed <a id="documentation/article/wordpress-tv-embed-block" />
+# WordPress.tv embed <a name="documentation/article/wordpress-tv-embed-block" />
 
 Source: https://wordpress.org/documentation/article/wordpress-tv-embed-block/
 
@@ -19635,7 +19635,7 @@ The Toggle switch turns on or off the resize functionality for smaller devices. 
 
 ---
 
-# Screencast embed <a id="documentation/article/screencast-block" />
+# Screencast embed <a name="documentation/article/screencast-block" />
 
 Source: https://wordpress.org/documentation/article/screencast-block/
 
@@ -19725,7 +19725,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Dailymotion embed <a id="documentation/article/dailymotion-embed" />
+# Dailymotion embed <a name="documentation/article/dailymotion-embed" />
 
 Source: https://wordpress.org/documentation/article/dailymotion-embed/
 
@@ -19823,7 +19823,7 @@ The “Advanced” tab lets you add CSS class(es) to your block.
 
 ---
 
-# Scribd embed <a id="documentation/article/scribd-embed" />
+# Scribd embed <a name="documentation/article/scribd-embed" />
 
 Source: https://wordpress.org/documentation/article/scribd-embed/
 
@@ -19934,7 +19934,7 @@ The “Advanced” tab lets you add CSS class(es) to your block.
 
 ---
 
-# Speaker Deck embed <a id="documentation/article/speaker-deck-embed" />
+# Speaker Deck embed <a name="documentation/article/speaker-deck-embed" />
 
 Source: https://wordpress.org/documentation/article/speaker-deck-embed/
 
@@ -20034,7 +20034,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# VideoPress embed <a id="documentation/article/videopress-embed" />
+# VideoPress embed <a name="documentation/article/videopress-embed" />
 
 Source: https://wordpress.org/documentation/article/videopress-embed/
 
@@ -20134,7 +20134,7 @@ The **Advanced** tab lets you add a CSS class to your block, allowing you to wri
 
 ---
 
-# Block Directory <a id="documentation/article/block-directory" />
+# Block Directory <a name="documentation/article/block-directory" />
 
 Source: https://wordpress.org/documentation/article/block-directory/
 
@@ -20215,7 +20215,7 @@ In this video shows you how the Block Directory works. It’s starts at 3:00 tim
 
 ---
 
-# Tag Cloud block <a id="documentation/article/tag-cloud-block" />
+# Tag Cloud block <a name="documentation/article/tag-cloud-block" />
 
 Source: https://wordpress.org/documentation/article/tag-cloud-block/
 
@@ -20352,7 +20352,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Block Patterns <a id="documentation/article/block-pattern" />
+# Block Patterns <a name="documentation/article/block-pattern" />
 
 Source: https://wordpress.org/documentation/article/block-pattern/
 
@@ -20465,7 +20465,7 @@ New Block Patterns will be continuously added and existing Block Patterns may be
 
 ---
 
-# Moving blocks <a id="documentation/article/moving-blocks" />
+# Moving blocks <a name="documentation/article/moving-blocks" />
 
 Source: https://wordpress.org/documentation/article/moving-blocks/
 
@@ -20506,7 +20506,7 @@ The *Move to* option can be found by selecting a block and clicking the three-do
 
 ---
 
-# How to use the View feature <a id="documentation/article/how-to-use-the-preview-function" />
+# How to use the View feature <a name="documentation/article/how-to-use-the-preview-function" />
 
 Source: https://wordpress.org/documentation/article/how-to-use-the-preview-function/
 
@@ -20539,7 +20539,7 @@ In the Site Editor, you will see the following drop-down menu with the options *
 
 ---
 
-# Cloudup Embed <a id="documentation/article/cloudup-embed" />
+# Cloudup Embed <a name="documentation/article/cloudup-embed" />
 
 Source: https://wordpress.org/documentation/article/cloudup-embed/
 
@@ -20632,7 +20632,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Imgur embed <a id="documentation/article/imgur-embed" />
+# Imgur embed <a name="documentation/article/imgur-embed" />
 
 Source: https://wordpress.org/documentation/article/imgur-embed/
 
@@ -20737,7 +20737,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Reddit embed <a id="documentation/article/reddit-embed" />
+# Reddit embed <a name="documentation/article/reddit-embed" />
 
 Source: https://wordpress.org/documentation/article/reddit-embed/
 
@@ -20856,7 +20856,7 @@ The *Advanced* section lets you add a CSS class to your block, allowing you to w
 
 ---
 
-# Synced Patterns (Reusable blocks) <a id="documentation/article/reusable-blocks" />
+# Synced Patterns (Reusable blocks) <a name="documentation/article/reusable-blocks" />
 
 Source: https://wordpress.org/documentation/article/reusable-blocks/
 
@@ -20918,7 +20918,7 @@ In this demo, we insert Synced Patterns in the three ways described above (Block
 
 ---
 
-# Group block <a id="documentation/article/group-block" />
+# Group block <a name="documentation/article/group-block" />
 
 Source: https://wordpress.org/documentation/article/group-block/
 
@@ -21073,7 +21073,7 @@ The option to control block spacing and padding is enabled for the Group block. 
 
 ---
 
-# Twenty Twenty-One <a id="documentation/article/twenty-twenty-one" />
+# Twenty Twenty-One <a name="documentation/article/twenty-twenty-one" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-one/
 
@@ -21346,7 +21346,7 @@ You can also [read the theme’s changelog](#documentation/article/twenty-twenty
 
 ---
 
-# Social Icons block <a id="documentation/article/social-icons" />
+# Social Icons block <a name="documentation/article/social-icons" />
 
 Source: https://wordpress.org/documentation/article/social-icons/
 
@@ -21626,7 +21626,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Tumblr embed <a id="documentation/article/tumblr-embed" />
+# Tumblr embed <a name="documentation/article/tumblr-embed" />
 
 Source: https://wordpress.org/documentation/article/tumblr-embed/
 
@@ -21721,7 +21721,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Page/Post Settings sidebar <a id="documentation/article/page-post-settings-sidebar" />
+# Page/Post Settings sidebar <a name="documentation/article/page-post-settings-sidebar" />
 
 Source: https://wordpress.org/documentation/article/page-post-settings-sidebar/
 
@@ -21902,7 +21902,7 @@ The settings sidebar in the [Site Editor](#documentation/article/site-editor) (*
 
 ---
 
-# Search block <a id="documentation/article/search-block" />
+# Search block <a name="documentation/article/search-block" />
 
 Source: https://wordpress.org/documentation/article/search-block/
 
@@ -22057,7 +22057,7 @@ The Advanced tab lets you add CSS class(es) to your block. This will allow you t
 
 ---
 
-# More options <a id="documentation/article/more-options" />
+# More options <a name="documentation/article/more-options" />
 
 Source: https://wordpress.org/documentation/article/more-options/
 
@@ -22147,7 +22147,7 @@ Creating a group block will allow you to handle all the nested blocks in one goS
 
 ---
 
-# Buttons block <a id="documentation/article/buttons-block" />
+# Buttons block <a name="documentation/article/buttons-block" />
 
 Source: https://wordpress.org/documentation/article/buttons-block/
 
@@ -22360,7 +22360,7 @@ Based on which style you choose for the button block, WordPress automatically ad
 
 ---
 
-# Where to find WordPress help <a id="documentation/article/where-to-find-wordpress-help" />
+# Where to find WordPress help <a name="documentation/article/where-to-find-wordpress-help" />
 
 Source: https://wordpress.org/documentation/article/where-to-find-wordpress-help/
 
@@ -22502,7 +22502,7 @@ The best way to find accurate and concise WordPress information is to get it dir
 
 ---
 
-# Twenty Twenty-One changelog <a id="documentation/article/twenty-twenty-one-changelog" />
+# Twenty Twenty-One changelog <a name="documentation/article/twenty-twenty-one-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-one-changelog/
 
@@ -22720,7 +22720,7 @@ Initial Release.
 
 ---
 
-# Use keyboard shortcuts (Block Editor) <a id="documentation/article/keyboard-shortcuts-block-editor" />
+# Use keyboard shortcuts (Block Editor) <a name="documentation/article/keyboard-shortcuts-block-editor" />
 
 Source: https://wordpress.org/documentation/article/keyboard-shortcuts-block-editor/
 
@@ -23059,7 +23059,7 @@ You can collapse all other nested groups except the one you have selected by pre
 
 ---
 
-# WordPress Versions <a id="documentation/article/wordpress-versions" />
+# WordPress Versions <a name="documentation/article/wordpress-versions" />
 
 Source: https://wordpress.org/documentation/article/wordpress-versions/
 
@@ -24118,7 +24118,7 @@ Changelog:
 
 ---
 
-# Vimeo embed <a id="documentation/article/vimeo-embed" />
+# Vimeo embed <a name="documentation/article/vimeo-embed" />
 
 Source: https://wordpress.org/documentation/article/vimeo-embed/
 
@@ -24212,7 +24212,7 @@ The Toggle switch turns on or off the resize functionality for smaller devices. 
 
 ---
 
-# Trackbacks and Pingbacks <a id="documentation/article/trackbacks-and-pingbacks" />
+# Trackbacks and Pingbacks <a name="documentation/article/trackbacks-and-pingbacks" />
 
 Source: https://wordpress.org/documentation/article/trackbacks-and-pingbacks/
 
@@ -24269,7 +24269,7 @@ Back on your blog, scroll down from the editor to the **Trackbacks** module and 
 
 ---
 
-# Site Health screen <a id="documentation/article/site-health-screen" />
+# Site Health screen <a name="documentation/article/site-health-screen" />
 
 Source: https://wordpress.org/documentation/article/site-health-screen/
 
@@ -24467,7 +24467,7 @@ The Filesystem Permissions section shows whether WordPress is able to write to t
 
 ---
 
-# Template Editor <a id="documentation/article/template-editor" />
+# Template Editor <a name="documentation/article/template-editor" />
 
 Source: https://wordpress.org/documentation/article/template-editor/
 
@@ -24744,7 +24744,7 @@ Changelog:
 
 ---
 
-# Block-based Widgets Editor <a id="documentation/article/block-based-widgets-editor" />
+# Block-based Widgets Editor <a name="documentation/article/block-based-widgets-editor" />
 
 Source: https://wordpress.org/documentation/article/block-based-widgets-editor/
 
@@ -24803,7 +24803,7 @@ Demonstration of the block-based Widgets Editor and blocks in Customizer experie
 
 ---
 
-# Query Loop block <a id="documentation/article/query-loop-block" />
+# Query Loop block <a name="documentation/article/query-loop-block" />
 
 Source: https://wordpress.org/documentation/article/query-loop-block/
 
@@ -24995,7 +24995,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# List view <a id="documentation/article/list-view" />
+# List view <a name="documentation/article/list-view" />
 
 Source: https://wordpress.org/documentation/article/list-view/
 
@@ -25075,7 +25075,7 @@ There is an alternative next to the List View called “Outline”. The outline 
 
 ---
 
-# Block Pattern Directory <a id="documentation/article/block-pattern-directory" />
+# Block Pattern Directory <a name="documentation/article/block-pattern-directory" />
 
 Source: https://wordpress.org/documentation/article/block-pattern-directory/
 
@@ -25132,7 +25132,7 @@ Reporting will not be
 
 ---
 
-# Preferences overview <a id="documentation/article/preferences-overview" />
+# Preferences overview <a name="documentation/article/preferences-overview" />
 
 Source: https://wordpress.org/documentation/article/preferences-overview/
 
@@ -25212,7 +25212,7 @@ This section covers preference settings when you are in the [Site Editor](#docum
 
 ---
 
-# Supported Versions <a id="documentation/article/supported-versions" />
+# Supported Versions <a name="documentation/article/supported-versions" />
 
 Source: https://wordpress.org/documentation/article/supported-versions/
 
@@ -25234,7 +25234,7 @@ For the full list of WordPress Versions, refer to [WordPress\_Versions](#documen
 
 ---
 
-# Block themes <a id="documentation/article/block-themes" />
+# Block themes <a name="documentation/article/block-themes" />
 
 Source: https://wordpress.org/documentation/article/block-themes/
 
@@ -25299,7 +25299,7 @@ Block themes are built for the newer functionality in WordPress and allow you to
 
 ---
 
-# Template Part block <a id="documentation/article/template-part-block" />
+# Template Part block <a name="documentation/article/template-part-block" />
 
 Source: https://wordpress.org/documentation/article/template-part-block/
 
@@ -25385,7 +25385,7 @@ Changelog
 
 ---
 
-# Styles overview <a id="documentation/article/styles-overview" />
+# Styles overview <a name="documentation/article/styles-overview" />
 
 Source: https://wordpress.org/documentation/article/styles-overview/
 
@@ -25753,7 +25753,7 @@ To revert back to the theme styles you had, before making changes, click on the 
 
 ---
 
-# Navigation block <a id="documentation/article/navigation-block" />
+# Navigation block <a name="documentation/article/navigation-block" />
 
 Source: https://wordpress.org/documentation/article/navigation-block/
 
@@ -25958,7 +25958,7 @@ The advanced tab lets you accomplish a few things:
 
 ---
 
-# Site Editor <a id="documentation/article/site-editor" />
+# Site Editor <a name="documentation/article/site-editor" />
 
 Source: https://wordpress.org/documentation/article/site-editor/
 
@@ -26194,7 +26194,7 @@ When you’re in the Site Editor, you might want to change the preview of the te
 
 ---
 
-# Dimension Settings overview <a id="documentation/article/dimension-controls-overview" />
+# Dimension Settings overview <a name="documentation/article/dimension-controls-overview" />
 
 Source: https://wordpress.org/documentation/article/dimension-controls-overview/
 
@@ -26329,7 +26329,7 @@ The following is a demonstration of various settings in action with the Post Fea
 
 ---
 
-# Twenty Twenty-Two changelog <a id="documentation/article/twenty-twenty-two-changelog" />
+# Twenty Twenty-Two changelog <a name="documentation/article/twenty-twenty-two-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-two-changelog/
 
@@ -26416,7 +26416,7 @@ Initial Release.
 
 ---
 
-# Twenty Twenty-Two <a id="documentation/article/twenty-twenty-two" />
+# Twenty Twenty-Two <a name="documentation/article/twenty-twenty-two" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-two/
 
@@ -26491,7 +26491,7 @@ Read more about the Twenty Twenty-Two theme [in the introduction post](https://m
 
 ---
 
-# Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks) <a id="documentation/article/comparing-patterns-template-parts-and-reusable-blocks" />
+# Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks) <a name="documentation/article/comparing-patterns-template-parts-and-reusable-blocks" />
 
 Source: https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks/
 
@@ -26550,7 +26550,7 @@ When it’s less about content and more about wanting to repeat a design or layo
 
 ---
 
-# Term Description block <a id="documentation/article/term-description-block" />
+# Term Description block <a name="documentation/article/term-description-block" />
 
 Source: https://wordpress.org/documentation/article/term-description-block/
 
@@ -26641,7 +26641,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Archive Title Block <a id="documentation/article/archive-title-block" />
+# Archive Title Block <a name="documentation/article/archive-title-block" />
 
 Source: https://wordpress.org/documentation/article/archive-title-block/
 
@@ -26754,7 +26754,7 @@ The Advanced tab lets you add CSS class(es) to your block. This will allow you t
 
 ---
 
-# Post Featured Image block <a id="documentation/article/post-featured-image-block" />
+# Post Featured Image block <a name="documentation/article/post-featured-image-block" />
 
 Source: https://wordpress.org/documentation/article/post-featured-image-block/
 
@@ -26906,7 +26906,7 @@ Block settings here have a little more options than in a post or page editor, su
 
 ---
 
-# Post Title block <a id="documentation/article/post-title-block" />
+# Post Title block <a name="documentation/article/post-title-block" />
 
 Source: https://wordpress.org/documentation/article/post-title-block/
 
@@ -27022,7 +27022,7 @@ When you are using a theme that supports the Site Editor, you can hide the post 
 
 ---
 
-# Excerpt block <a id="documentation/article/post-excerpt-block" />
+# Excerpt block <a name="documentation/article/post-excerpt-block" />
 
 Source: https://wordpress.org/documentation/article/post-excerpt-block/
 
@@ -27158,7 +27158,7 @@ Dimension controls are used to control how groups of blocks are placed alongside
 
 ---
 
-# Categories block <a id="documentation/article/categories-block" />
+# Categories block <a name="documentation/article/categories-block" />
 
 Source: https://wordpress.org/documentation/article/categories-block/
 
@@ -27254,7 +27254,7 @@ You can also add CSS class(es) to your block. This will allow you to write custo
 
 ---
 
-# Post Tags block <a id="documentation/article/post-tags-block" />
+# Post Tags block <a name="documentation/article/post-tags-block" />
 
 Source: https://wordpress.org/documentation/article/post-tags-block/
 
@@ -27365,7 +27365,7 @@ You can also add CSS class(es) to your block. This will allow you to write custo
 
 ---
 
-# Post Date block <a id="documentation/article/post-date-block" />
+# Post Date block <a name="documentation/article/post-date-block" />
 
 Source: https://wordpress.org/documentation/article/post-date-block/
 
@@ -27498,7 +27498,7 @@ Padding and Margin can be quite useful for blocks like Post Date that are used i
 
 ---
 
-# Content block <a id="documentation/article/post-content-block" />
+# Content block <a name="documentation/article/post-content-block" />
 
 Source: https://wordpress.org/documentation/article/post-content-block/
 
@@ -27617,7 +27617,7 @@ For details refer to this support article: [Border settings overview](#documenta
 
 ---
 
-# Submit your Block Pattern to the Directory <a id="documentation/article/submit-your-block-pattern-to-the-directory" />
+# Submit your Block Pattern to the Directory <a name="documentation/article/submit-your-block-pattern-to-the-directory" />
 
 Source: https://wordpress.org/documentation/article/submit-your-block-pattern-to-the-directory/
 
@@ -27735,7 +27735,7 @@ Changelog:
 
 ---
 
-# Pinterest embed <a id="documentation/article/pinterest-embed" />
+# Pinterest embed <a name="documentation/article/pinterest-embed" />
 
 Source: https://wordpress.org/documentation/article/pinterest-embed/
 
@@ -27825,7 +27825,7 @@ In the Advanced tab, located in the block settings sidebar, you can add addition
 
 ---
 
-# Site Title block <a id="documentation/article/site-title-block" />
+# Site Title block <a name="documentation/article/site-title-block" />
 
 Source: https://wordpress.org/documentation/article/site-title-block/
 
@@ -27926,7 +27926,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Site Tagline block <a id="documentation/article/site-tagline-block" />
+# Site Tagline block <a name="documentation/article/site-tagline-block" />
 
 Source: https://wordpress.org/documentation/article/site-tagline-block/
 
@@ -28016,7 +28016,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Embed block <a id="documentation/article/embed-block" />
+# Embed block <a name="documentation/article/embed-block" />
 
 Source: https://wordpress.org/documentation/article/embed-block/
 
@@ -28097,7 +28097,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Wolfram embed <a id="documentation/article/wolfram-embed" />
+# Wolfram embed <a name="documentation/article/wolfram-embed" />
 
 Source: https://wordpress.org/documentation/article/wolfram-embed/
 
@@ -28209,7 +28209,7 @@ In the Advanced tab, you can add additional CSS class(es) to your block. This al
 
 ---
 
-# Work with blocks <a id="documentation/article/work-with-blocks" />
+# Work with blocks <a name="documentation/article/work-with-blocks" />
 
 Source: https://wordpress.org/documentation/article/work-with-blocks/
 
@@ -28365,7 +28365,7 @@ Changelog:
 
 ---
 
-# Additional guide to using the Site Editor <a id="documentation/article/additional-guide-to-using-the-site-editor" />
+# Additional guide to using the Site Editor <a name="documentation/article/additional-guide-to-using-the-site-editor" />
 
 Source: https://wordpress.org/documentation/article/additional-guide-to-using-the-site-editor/
 
@@ -28434,7 +28434,7 @@ Fore more details, refer [Styles Overview](#documentation/article/styles-overvie
 
 ---
 
-# Read More block <a id="documentation/article/read-more-block" />
+# Read More block <a name="documentation/article/read-more-block" />
 
 Source: https://wordpress.org/documentation/article/read-more-block/
 
@@ -28536,7 +28536,7 @@ The Advanced section lets you add CSS classes to use a custom style for the sele
 
 ---
 
-# Site Logo block <a id="documentation/article/site-logo-block" />
+# Site Logo block <a name="documentation/article/site-logo-block" />
 
 Source: https://wordpress.org/documentation/article/site-logo-block/
 
@@ -28685,7 +28685,7 @@ The Styles tab has the following options:
 
 ---
 
-# Comment Date Block <a id="documentation/article/comment-date-block" />
+# Comment Date Block <a name="documentation/article/comment-date-block" />
 
 Source: https://wordpress.org/documentation/article/comment-date-block/
 
@@ -28757,7 +28757,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Comment  Author Name Block <a id="documentation/article/comment-author-name-block" />
+# Comment  Author Name Block <a name="documentation/article/comment-author-name-block" />
 
 Source: https://wordpress.org/documentation/article/comment-author-name-block/
 
@@ -28835,7 +28835,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Comments Pagination block <a id="documentation/article/comment-pagination-block" />
+# Comments Pagination block <a name="documentation/article/comment-pagination-block" />
 
 Source: https://wordpress.org/documentation/article/comment-pagination-block/
 
@@ -28998,7 +28998,7 @@ The **Advanced** tab lets you add CSS class(es) to your block. This will allow y
 
 ---
 
-# Comment Content Block <a id="documentation/article/comment-content-block" />
+# Comment Content Block <a name="documentation/article/comment-content-block" />
 
 Source: https://wordpress.org/documentation/article/comment-content-block/
 
@@ -29077,7 +29077,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Comment Reply Link block <a id="documentation/article/comment-reply-link-block" />
+# Comment Reply Link block <a name="documentation/article/comment-reply-link-block" />
 
 Source: https://wordpress.org/documentation/article/comment-reply-link-block/
 
@@ -29145,7 +29145,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Comment Edit Link block <a id="documentation/article/comment-edit-link-block" />
+# Comment Edit Link block <a name="documentation/article/comment-edit-link-block" />
 
 Source: https://wordpress.org/documentation/article/comment-edit-link-block/
 
@@ -29219,7 +29219,7 @@ The “Advanced” tab lets you add CSS class(es) to your block. This will allow
 
 ---
 
-# Comment Template block <a id="documentation/article/comment-template-block" />
+# Comment Template block <a name="documentation/article/comment-template-block" />
 
 Source: https://wordpress.org/documentation/article/comment-template-block/
 
@@ -29314,7 +29314,7 @@ The *Comment Template* block only has Advanced settings in the block settings pa
 
 ---
 
-# Post Author Biography block <a id="documentation/article/post-author-biography-block" />
+# Post Author Biography block <a name="documentation/article/post-author-biography-block" />
 
 Source: https://wordpress.org/documentation/article/post-author-biography-block/
 
@@ -29394,7 +29394,7 @@ The advanced tab lets you add a CSS class to your block, allowing you to write c
 
 ---
 
-# Border &amp; Shadow Settings overview <a id="documentation/article/border-settings-overview" />
+# Border &amp; Shadow Settings overview <a name="documentation/article/border-settings-overview" />
 
 Source: https://wordpress.org/documentation/article/border-settings-overview/
 
@@ -29490,7 +29490,7 @@ This powerful set of tools allows for some neat ways to decorate everything from
 
 ---
 
-# Colors Settings overview <a id="documentation/article/colors-settings-overview" />
+# Colors Settings overview <a name="documentation/article/colors-settings-overview" />
 
 Source: https://wordpress.org/documentation/article/colors-settings-overview/
 
@@ -29592,7 +29592,7 @@ To illustrate the above settings, below is an example of how to add custom color
 
 ---
 
-# Layout Settings overview <a id="documentation/article/layout-settings-overview" />
+# Layout Settings overview <a name="documentation/article/layout-settings-overview" />
 
 Source: https://wordpress.org/documentation/article/layout-settings-overview/
 
@@ -29671,7 +29671,7 @@ You can read more about the new Block Editor features and improvements [in this 
 
 ---
 
-# Typography Settings overview <a id="documentation/article/typography-settings-overview" />
+# Typography Settings overview <a name="documentation/article/typography-settings-overview" />
 
 Source: https://wordpress.org/documentation/article/typography-settings-overview/
 
@@ -29831,7 +29831,7 @@ To see the power of these settings in action, here’s an example of using them 
 
 ---
 
-# Twenty Twenty-Three <a id="documentation/article/twenty-twenty-three" />
+# Twenty Twenty-Three <a name="documentation/article/twenty-twenty-three" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-three/
 
@@ -29899,7 +29899,7 @@ Read more about the Twenty Twenty-Three theme in [the introduction post](#docume
 
 ---
 
-# Amazon Kindle Embed <a id="documentation/article/amazon-kindle-embed" />
+# Amazon Kindle Embed <a name="documentation/article/amazon-kindle-embed" />
 
 Source: https://wordpress.org/documentation/article/amazon-kindle-embed/
 
@@ -29980,7 +29980,7 @@ The Advanced tab lets you add CSS class(es) to your block. This will allow you t
 
 ---
 
-# Search Results Title block <a id="documentation/article/search-results-title-block" />
+# Search Results Title block <a name="documentation/article/search-results-title-block" />
 
 Source: https://wordpress.org/documentation/article/search-results-title-block/
 
@@ -30069,7 +30069,7 @@ The Advanced section lets you add CSS classes to use a custom style for the Sear
 
 ---
 
-# Post Author block <a id="documentation/article/post-author-block" />
+# Post Author block <a name="documentation/article/post-author-block" />
 
 Source: https://wordpress.org/documentation/article/post-author-block/
 
@@ -30171,7 +30171,7 @@ The *Additional CSS class(es)* lets you add CSS class(es) to your block, allowin
 
 ---
 
-# Post Comments Form block <a id="documentation/article/post-comments-form-block" />
+# Post Comments Form block <a name="documentation/article/post-comments-form-block" />
 
 Source: https://wordpress.org/documentation/article/post-comments-form-block/
 
@@ -30250,7 +30250,7 @@ The **Advanced** tab lets you add CSS class(es) to your block. This will allow y
 
 ---
 
-# Comments Title block <a id="documentation/article/comments-title-block" />
+# Comments Title block <a name="documentation/article/comments-title-block" />
 
 Source: https://wordpress.org/documentation/article/comments-title-block/
 
@@ -30355,7 +30355,7 @@ The **Advanced** section allows you to add CSS class(es) to the **Comments Title
 
 ---
 
-# Post Template block <a id="documentation/article/post-template-block" />
+# Post Template block <a name="documentation/article/post-template-block" />
 
 Source: https://wordpress.org/documentation/article/post-template-block/
 
@@ -30424,7 +30424,7 @@ The **Advanced** settings tab lets you add additional CSS classe(s) that allows 
 
 ---
 
-# Row block <a id="documentation/article/row-block" />
+# Row block <a name="documentation/article/row-block" />
 
 Source: https://wordpress.org/documentation/article/row-block/
 
@@ -30546,7 +30546,7 @@ The Advanced section lets you add CSS class(es) to your block. This will allow y
 
 ---
 
-# Pocket Casts embed <a id="documentation/article/pocket-casts-embed" />
+# Pocket Casts embed <a name="documentation/article/pocket-casts-embed" />
 
 Source: https://wordpress.org/documentation/article/pocket-casts-embed/
 
@@ -30625,7 +30625,7 @@ When you turn the toggle switch off, the *Pocket Casts Embed* block may not pres
 
 ---
 
-# Stack block <a id="documentation/article/stack-block" />
+# Stack block <a name="documentation/article/stack-block" />
 
 Source: https://wordpress.org/documentation/article/stack-block/
 
@@ -30751,7 +30751,7 @@ The **Additional CSS class(es)** lets you add CSS class(es) to your block, allow
 
 ---
 
-# Posts List block <a id="documentation/article/posts-list-block" />
+# Posts List block <a name="documentation/article/posts-list-block" />
 
 Source: https://wordpress.org/documentation/article/posts-list-block/
 
@@ -30775,7 +30775,7 @@ Refer to this article for a more detailed guide for the [Query Loop block](#docu
 
 ---
 
-# Custom Link block <a id="documentation/article/custom-link-block" />
+# Custom Link block <a name="documentation/article/custom-link-block" />
 
 Source: https://wordpress.org/documentation/article/custom-link-block/
 
@@ -30862,7 +30862,7 @@ The **Advanced** section has the **Additional CSS classes(es)** option. You can 
 
 ---
 
-# Page List block <a id="documentation/article/page-list-block" />
+# Page List block <a name="documentation/article/page-list-block" />
 
 Source: https://wordpress.org/documentation/article/page-list-block/
 
@@ -30960,7 +30960,7 @@ For details refer to this support article: [Border settings overview](#documenta
 
 ---
 
-# Pagination block <a id="documentation/article/pagination-block" />
+# Pagination block <a name="documentation/article/pagination-block" />
 
 Source: https://wordpress.org/documentation/article/pagination-block/
 
@@ -31111,7 +31111,7 @@ The **Advanced** tab lets you add CSS class(es) to your block. This will allow y
 
 ---
 
-# Post Navigation Link block <a id="documentation/article/post-navigation-link-block" />
+# Post Navigation Link block <a name="documentation/article/post-navigation-link-block" />
 
 Source: https://wordpress.org/documentation/article/post-navigation-link-block/
 
@@ -31197,7 +31197,7 @@ The **Advanced** tab lets you add CSS class(es) to your block. This will allow y
 
 ---
 
-# Submenu block <a id="documentation/article/submenu-block" />
+# Submenu block <a name="documentation/article/submenu-block" />
 
 Source: https://wordpress.org/documentation/article/submenu-block/
 
@@ -31270,7 +31270,7 @@ The link settings section contains the following options:
 
 ---
 
-# Comments block <a id="documentation/article/comments-block" />
+# Comments block <a name="documentation/article/comments-block" />
 
 Source: https://wordpress.org/documentation/article/comments-block/
 
@@ -31380,7 +31380,7 @@ Use this feature to select an HTML element in the *Comments* block.
 
 ---
 
-# Position Settings overview <a id="documentation/article/position-settings-overview" />
+# Position Settings overview <a name="documentation/article/position-settings-overview" />
 
 Source: https://wordpress.org/documentation/article/position-settings-overview/
 
@@ -31430,7 +31430,7 @@ A common use case for the sticky positioning option is having a header that stic
 
 ---
 
-# Post Author Name block <a id="documentation/article/post-author-name-block" />
+# Post Author Name block <a name="documentation/article/post-author-name-block" />
 
 Source: https://wordpress.org/documentation/article/post-author-name-block/
 
@@ -31496,7 +31496,7 @@ The advanced section lets you add CSS classes to use a custom style for the sele
 
 ---
 
-# Twenty Twenty-Three Changelog <a id="documentation/article/twenty-twenty-three-changelog" />
+# Twenty Twenty-Three Changelog <a name="documentation/article/twenty-twenty-three-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-three-changelog/
 
@@ -31561,7 +31561,7 @@ Initial Release.
 
 ---
 
-# More rich text editing options <a id="documentation/article/more-text-editing-overview" />
+# More rich text editing options <a name="documentation/article/more-text-editing-overview" />
 
 Source: https://wordpress.org/documentation/article/more-text-editing-overview/
 
@@ -31641,7 +31641,7 @@ For example, the *Clear unknown formatting* option might appear when you have co
 
 ---
 
-# Distraction Free mode <a id="documentation/article/distraction-free-mode" />
+# Distraction Free mode <a name="documentation/article/distraction-free-mode" />
 
 Source: https://wordpress.org/documentation/article/distraction-free-mode/
 
@@ -31690,7 +31690,7 @@ Because this mode is built for writing, you can create new paragraphs by hitting
 
 ---
 
-# Next Post block <a id="documentation/article/next-post-block" />
+# Next Post block <a name="documentation/article/next-post-block" />
 
 Source: https://wordpress.org/documentation/article/next-post-block/
 
@@ -31792,7 +31792,7 @@ For details refer to this support article: [Typography settings overview](#docum
 
 ---
 
-# Home Link block <a id="documentation/article/home-link-block" />
+# Home Link block <a name="documentation/article/home-link-block" />
 
 Source: https://wordpress.org/documentation/article/home-link-block/
 
@@ -31872,7 +31872,7 @@ The **Advanced** section has the **Additional CSS classes(es)** option. You can 
 
 ---
 
-# Previous Post block <a id="documentation/article/previous-post-block" />
+# Previous Post block <a name="documentation/article/previous-post-block" />
 
 Source: https://wordpress.org/documentation/article/previous-post-block/
 
@@ -31979,7 +31979,7 @@ For details, refer to this support article: [Typography settings overview](#supp
 
 ---
 
-# Block Error: Unexpected or Invalid Content <a id="documentation/article/block-error-unexpected-or-invalid-content" />
+# Block Error: Unexpected or Invalid Content <a name="documentation/article/block-error-unexpected-or-invalid-content" />
 
 Source: https://wordpress.org/documentation/article/block-error-unexpected-or-invalid-content/
 
@@ -32045,7 +32045,7 @@ The third option is to convert to a Custom HTML block, this is the same function
 
 ---
 
-# Avatar Block <a id="documentation/article/avatar-block" />
+# Avatar Block <a name="documentation/article/avatar-block" />
 
 Source: https://wordpress.org/documentation/article/avatar-block/
 
@@ -32154,7 +32154,7 @@ Border settings provide options to control the width and radius on each side of 
 
 ---
 
-# Site Editor Pages <a id="documentation/article/site-editor-pages" />
+# Site Editor Pages <a name="documentation/article/site-editor-pages" />
 
 Source: https://wordpress.org/documentation/article/site-editor-pages/
 
@@ -32293,7 +32293,7 @@ To go back to the page, you can use the back button above the editor:
 
 ---
 
-# Post Modified Date block <a id="documentation/article/post-modified-date-block" />
+# Post Modified Date block <a name="documentation/article/post-modified-date-block" />
 
 Source: https://wordpress.org/documentation/article/post-modified-date-block/
 
@@ -32414,7 +32414,7 @@ For details, refer to this support article: [Dimension settings overview](#docum
 
 ---
 
-# Details block <a id="documentation/article/details-block" />
+# Details block <a name="documentation/article/details-block" />
 
 Source: https://wordpress.org/documentation/article/details-block/
 
@@ -32519,7 +32519,7 @@ For details refer to this support article: [Border settings overview](#documenta
 
 ---
 
-# Editor Command Palette <a id="documentation/article/site-editor-command-palette" />
+# Editor Command Palette <a name="documentation/article/site-editor-command-palette" />
 
 Source: https://wordpress.org/documentation/article/site-editor-command-palette/
 
@@ -32599,7 +32599,7 @@ It is possible to extend the Command Palette by registering your own commands. Y
 
 ---
 
-# Site Editor navigation <a id="documentation/article/site-editor-navigation" />
+# Site Editor navigation <a name="documentation/article/site-editor-navigation" />
 
 Source: https://wordpress.org/documentation/article/site-editor-navigation/
 
@@ -32652,7 +32652,7 @@ You can also save them by clicking `cmd+s` in Mac or `ctrl+s` in Windows.
 
 ---
 
-# Site Editor Patterns <a id="documentation/article/site-editor-patterns" />
+# Site Editor Patterns <a name="documentation/article/site-editor-patterns" />
 
 Source: https://wordpress.org/documentation/article/site-editor-patterns/
 
@@ -32715,7 +32715,7 @@ There are two links at the bottom of the Site Editor Pattern section:
 
 ---
 
-# Footnotes block <a id="documentation/article/footnotes-block" />
+# Footnotes block <a name="documentation/article/footnotes-block" />
 
 Source: https://wordpress.org/documentation/article/footnotes-block/
 
@@ -32755,7 +32755,7 @@ The Footnotes block has been improved with more design flexibility in this relea
 
 ---
 
-# Filters Settings overview <a id="documentation/article/filters-settings-overview" />
+# Filters Settings overview <a name="documentation/article/filters-settings-overview" />
 
 Source: https://wordpress.org/documentation/article/filters-settings-overview/
 
@@ -32798,7 +32798,7 @@ The filter is currently avaliable in the following blocks:
 
 ---
 
-# Link control <a id="documentation/article/link-editing" />
+# Link control <a name="documentation/article/link-editing" />
 
 Source: https://wordpress.org/documentation/article/link-editing/
 
@@ -32835,7 +32835,7 @@ This toggle option is also available when you open the link editing panel. Open 
 
 ---
 
-# Twenty Twenty-Four <a id="documentation/article/twenty-twenty-four" />
+# Twenty Twenty-Four <a name="documentation/article/twenty-twenty-four" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-four/
 
@@ -32962,7 +32962,7 @@ Read more about the Twenty Twenty-Four theme in [the introduction post](https://
 
 ---
 
-# Twenty Twenty-Four changelog <a id="documentation/article/twenty-twenty-four-changelog" />
+# Twenty Twenty-Four changelog <a name="documentation/article/twenty-twenty-four-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-four-changelog/
 
@@ -33005,7 +33005,7 @@ Initial Release.
 
 ---
 
-# Login-out block <a id="documentation/article/login-out-block" />
+# Login-out block <a name="documentation/article/login-out-block" />
 
 Source: https://wordpress.org/documentation/article/login-out-block/
 
@@ -33074,7 +33074,7 @@ The **Advanced** section has the **Additional CSS classes(es)** option. You can 
 
 ---
 
-# Twenty Eleven changelog <a id="documentation/article/twenty-eleven-changelog" />
+# Twenty Eleven changelog <a name="documentation/article/twenty-eleven-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-eleven-changelog/
 
@@ -33462,7 +33462,7 @@ Initial release.
 
 ---
 
-# Twenty Fifteen changelog <a id="documentation/article/twenty-fifteen-changelog" />
+# Twenty Fifteen changelog <a name="documentation/article/twenty-fifteen-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-fifteen-changelog/
 
@@ -33732,7 +33732,7 @@ Initial Release.
 
 ---
 
-# Twenty Fourteen changelog <a id="documentation/article/twenty-fourteen-changelog" />
+# Twenty Fourteen changelog <a name="documentation/article/twenty-fourteen-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-fourteen-changelog/
 
@@ -34073,7 +34073,7 @@ Initial release.
 
 ---
 
-# Twenty Nineteen changelog <a id="documentation/article/twenty-nineteen-changelog" />
+# Twenty Nineteen changelog <a name="documentation/article/twenty-nineteen-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-nineteen-changelog/
 
@@ -34326,7 +34326,7 @@ Initial Release.
 
 ---
 
-# Twenty Seventeen changelog <a id="documentation/article/twenty-seventeen-changelog" />
+# Twenty Seventeen changelog <a name="documentation/article/twenty-seventeen-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-seventeen-changelog/
 
@@ -34620,7 +34620,7 @@ Initial Release.
 
 ---
 
-# Twenty Sixteen changelog <a id="documentation/article/twenty-sixteen-changelog" />
+# Twenty Sixteen changelog <a name="documentation/article/twenty-sixteen-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-sixteen-changelog/
 
@@ -34861,7 +34861,7 @@ Initial Release.
 
 ---
 
-# Twenty Ten changelog <a id="documentation/article/twenty-ten-changelog" />
+# Twenty Ten changelog <a name="documentation/article/twenty-ten-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-ten-changelog/
 
@@ -35195,7 +35195,7 @@ Initial release.
 
 ---
 
-# Twenty Thirteen changelog <a id="documentation/article/twenty-thirteen-changelog" />
+# Twenty Thirteen changelog <a name="documentation/article/twenty-thirteen-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-thirteen-changelog/
 
@@ -35518,7 +35518,7 @@ Initial release.
 
 ---
 
-# Twenty Twelve changelog <a id="documentation/article/twenty-twelve-changelog" />
+# Twenty Twelve changelog <a name="documentation/article/twenty-twelve-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twelve-changelog/
 
@@ -35830,7 +35830,7 @@ Initial release.
 
 ---
 
-# Twenty Ten <a id="documentation/article/twenty-ten" />
+# Twenty Ten <a name="documentation/article/twenty-ten" />
 
 Source: https://wordpress.org/documentation/article/twenty-ten/
 
@@ -35930,7 +35930,7 @@ You can also read [the theme’s changelog](#documentation/article/twenty-ten-ch
 
 ---
 
-# Twenty Eleven <a id="documentation/article/twenty-eleven" />
+# Twenty Eleven <a name="documentation/article/twenty-eleven" />
 
 Source: https://wordpress.org/documentation/article/twenty-eleven/
 
@@ -36014,7 +36014,7 @@ You can also read [the theme’s changelog](#documentation/article/twenty-eleven
 
 ---
 
-# Twenty Twelve <a id="documentation/article/twenty-twelve" />
+# Twenty Twelve <a name="documentation/article/twenty-twelve" />
 
 Source: https://wordpress.org/documentation/article/twenty-twelve/
 
@@ -36084,7 +36084,7 @@ You can also read [the theme’s changelog.](#documentation/article/twenty-twelv
 
 ---
 
-# The Font Library <a id="documentation/article/the-font-library" />
+# The Font Library <a name="documentation/article/the-font-library" />
 
 Source: https://wordpress.org/documentation/article/the-font-library/
 
@@ -36151,7 +36151,7 @@ On the next panel, choose the font and any of the other font characteristics: si
 
 ---
 
-# Grid block <a id="documentation/article/grid-block" />
+# Grid block <a name="documentation/article/grid-block" />
 
 Source: https://wordpress.org/documentation/article/grid-block/
 
@@ -36273,7 +36273,7 @@ For details refer to this support article: [Border settings overview](#documenta
 
 ---
 
-# Twenty Twenty-Five <a id="documentation/article/twenty-twenty-five" />
+# Twenty Twenty-Five <a name="documentation/article/twenty-twenty-five" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-five/
 
@@ -36431,7 +36431,7 @@ Read more about the Twenty Twenty-Five theme in [the introduction post](https://
 
 ---
 
-# Twenty Twenty-Five changelog <a id="documentation/article/twenty-twenty-five-changelog" />
+# Twenty Twenty-Five changelog <a name="documentation/article/twenty-twenty-five-changelog" />
 
 Source: https://wordpress.org/documentation/article/twenty-twenty-five-changelog/
 
@@ -36455,7 +36455,7 @@ Initial Release.
 
 ---
 
-# Query Total block <a id="documentation/article/query-total-block" />
+# Query Total block <a name="documentation/article/query-total-block" />
 
 Source: https://wordpress.org/documentation/article/query-total-block/
 

@@ -15071,192 +15071,6 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/api-fetch <a id="block-editor/reference-guides/packages/packages-api-fetch" />
-
-Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-api-fetch/
-
-Utility to make WordPress REST API requests. It’s a wrapper around `window.fetch`.
-
-## Installation
-
-Install the module
-
-```bash
-npm install @wordpress/api-fetch --save
-
-```
-
-*This package assumes that your code will run in an **ES2015+** environment. If you’re using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code.*
-
-## Usage
-
-### GET
-
-```js
-import apiFetch from '@wordpress/api-fetch';
-
-apiFetch( { path: '/wp/v2/posts' } ).then( ( posts ) => {
-    console.log( posts );
-} );
-
-```
-
-### GET with Query Args
-
-```js
-import apiFetch from '@wordpress/api-fetch';
-import { addQueryArgs } from '@wordpress/url';
-
-const queryParams = { include: [1,2,3] }; // Return posts with ID = 1,2,3.
-
-apiFetch( { path: addQueryArgs( '/wp/v2/posts', queryParams ) } ).then( ( posts ) => {
-    console.log( posts );
-} );
-
-```
-
-### POST
-
-```js
-apiFetch( {
-    path: '/wp/v2/posts/1',
-    method: 'POST',
-    data: { title: 'New Post Title' },
-} ).then( ( res ) => {
-    console.log( res );
-} );
-
-```
-
-### Options
-
-`apiFetch` supports and passes through all [options of the `fetch` global](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch).
-
-Additionally, the following options are available:
-
-#### `path` (`string`)
-
-Shorthand to be used in place of `url`, appended to the REST API root URL for the current site.
-
-#### `url` (`string`)
-
-Absolute URL to the endpoint from which to fetch.
-
-#### `parse` (`boolean`, default `true`)
-
-Unlike `fetch`, the `Promise` return value of `apiFetch` will resolve to the parsed JSON result. Disable this behavior by passing `parse` as `false`.
-
-#### `data` (`object`)
-
-Sent on `POST` or `PUT` requests only. Shorthand to be used in place of `body`, accepts an object value to be stringified to JSON.
-
-### Aborting a request
-
-Aborting a request can be achieved through the use of [`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) in the same way as you would when using the native `fetch` API.
-
-For legacy browsers that don’t support `AbortController`, you can either:
-
-- Provide your own polyfill of `AbortController` if you still want it to be abortable.
-- Ignore it as shown in the example below.
-
-**Example**
-
-```js
-const controller =
-    typeof AbortController === 'undefined' ? undefined : new AbortController();
-
-apiFetch( { path: '/wp/v2/posts', signal: controller?.signal } ).catch(
-    ( error ) => {
-        // If the browser doesn't support AbortController then the code below will never log.
-        // However, in most cases this should be fine as it can be considered to be a progressive enhancement.
-        if ( error.name === 'AbortError' ) {
-            console.log( 'Request has been aborted' );
-        }
-    }
-);
-
-controller?.abort();
-
-```
-
-### Middlewares
-
-the `api-fetch` package supports middlewares. Middlewares are functions you can use to wrap the `apiFetch` calls to perform any pre/post process to the API requests.
-
-**Example**
-
-```js
-import apiFetch from '@wordpress/api-fetch';
-
-apiFetch.use( ( options, next ) => {
-    const start = Date.now();
-    const result = next( options );
-    result.then( () => {
-        console.log( 'The request took ' + ( Date.now() - start ) + 'ms' );
-    } );
-    return result;
-} );
-
-```
-
-### Built-in middlewares
-
-The `api-fetch` package provides built-in middlewares you can use to provide a `nonce` and a custom `rootURL`.
-
-**Nonce middleware**
-
-```js
-import apiFetch from '@wordpress/api-fetch';
-
-const nonce = 'nonce value';
-apiFetch.use( apiFetch.createNonceMiddleware( nonce ) );
-
-```
-
-The function returned by `createNonceMiddleware` includes a `nonce` property corresponding to the actively used nonce. You may also assign to this property if you have a fresh nonce value to use.
-
-**Root URL middleware**
-
-```js
-import apiFetch from '@wordpress/api-fetch';
-
-const rootURL = 'http://my-wordpress-site/wp-json/';
-apiFetch.use( apiFetch.createRootURLMiddleware( rootURL ) );
-
-```
-
-### Custom fetch handler
-
-The `api-fetch` package uses `window.fetch` for making the requests but you can use a custom fetch handler by using the `setFetchHandler` method. The custom fetch handler will receive the `options` passed to the `apiFetch` calls.
-
-**Example**
-
-The example below uses a custom fetch handler for making all the requests with [`axios`](https://github.com/axios/axios).
-
-```js
-import apiFetch from '@wordpress/api-fetch';
-import axios from 'axios';
-
-apiFetch.setFetchHandler( ( options ) => {
-    const { url, path, data, method } = options;
-
-    return axios( {
-        url: url || path,
-        method,
-        data,
-    } );
-} );
-
-```
-
-## Contributing to this package
-
-This is an individual package that’s part of the Gutenberg project. The project is organized as a monorepo. It’s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to [npm](https://www.npmjs.com/) and used by [WordPress](https://make.wordpress.org/core/) as well as other software projects.
-
-To find out more about contributing to this package or Gutenberg as a whole, please read the project’s main [contributor guide](https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md).
-
----
-
 # @wordpress/autop <a id="block-editor/reference-guides/packages/packages-autop" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-autop/
@@ -29676,60 +29490,6 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/library-export-default-webpack-plugin <a id="block-editor/reference-guides/packages/packages-library-export-default-webpack-plugin" />
-
-Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-library-export-default-webpack-plugin/
-
-> **DEPRECATED for webpack v5**: please use [`output.library.export`](https://webpack.js.org/configuration/output/#outputlibraryexport) instead.
-
-Webpack plugin for exporting `default` property for selected libraries which use ES6 Modules. Implementation is based on the Webpack’s core plugin [ExportPropertyMainTemplatePlugin](https://github.com/webpack/webpack/blob/51b0df77e4f366163730ee465f01458bfad81f34/lib/ExportPropertyMainTemplatePlugin.js). The only difference is that this plugin allows to include all entry point names where the default export of your entry point will be assigned to the library target.
-
-## Installation
-
-Install the module
-
-```shell
-npm install @wordpress/library-export-default-webpack-plugin --save
-```
-
-**Note**: This package requires Node.js 12.0.0 or later. It is not compatible with older versions. It works only with webpack v4.
-
-## Usage
-
-Construct an instance of `LibraryExportDefaultPlugin` in your Webpack configurations plugins entry, passing an array where values correspond to the entry point name.
-
-The following example selects `boo` entry point to be updated by the plugin. When compiled, the built file will ensure that `default` value exported for the chunk will be assigned to the global variable `wp.boo`. `foo` chunk will remain untouched.
-
-```js
-const LibraryExportDefaultPlugin = require( '@wordpress/library-export-default-webpack-plugin' );
-
-module.exports = {
-    // ...
-
-    entry: {
-        boo: './packages/boo',
-        foo: './packages/foo',
-    },
-
-    output: {
-        filename: 'build/[name].js',
-        path: __dirname,
-        library: [ 'wp', '[name]' ],
-        libraryTarget: 'this',
-    },
-
-    plugins: [ new LibraryExportDefaultPlugin( [ 'boo' ] ) ],
-};
-```
-
-## Contributing to this package
-
-This is an individual package that’s part of the Gutenberg project. The project is organized as a monorepo. It’s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to [npm](https://www.npmjs.com/) and used by [WordPress](https://make.wordpress.org/core/) as well as other software projects.
-
-To find out more about contributing to this package or Gutenberg as a whole, please read the project’s main [contributor guide](https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md).
-
----
-
 # @wordpress/list-reusable-blocks <a id="block-editor/reference-guides/packages/packages-list-reusable-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-list-reusable-blocks/
@@ -29740,14 +29500,20 @@ Package used to add import/export links to the listing page of the reusable bloc
 
 ## Installation
 
-Install the module ```bash
+Install the module
+
+```bash
 npm install @wordpress/list-reusable-blocks --save
 
 ```
 
-*This package assumes that your code will run in an **ES2015+** environment. If you’re using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code.*## Contributing to this package
+*This package assumes that your code will run in an **ES2015+** environment. If you’re using an environment that has limited or no support for such language features and APIs, you should include [the polyfill shipped in `@wordpress/babel-preset-default`](https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill) in your code.*
 
-This is an individual package that’s part of the Gutenberg project. The project is organized as a monorepo. It’s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to [npm](https://www.npmjs.com/) and used by [WordPress](https://make.wordpress.org/core/) as well as other software projects. To find out more about contributing to this package or Gutenberg as a whole, please read the project’s main [contributor guide](https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md).
+## Contributing to this package
+
+This is an individual package that’s part of the Gutenberg project. The project is organized as a monorepo. It’s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to [npm](https://www.npmjs.com/) and used by [WordPress](https://make.wordpress.org/core/) as well as other software projects.
+
+To find out more about contributing to this package or Gutenberg as a whole, please read the project’s main [contributor guide](https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md).
 
 ---
 
@@ -51342,13 +51108,17 @@ Position of the popover element. See [the `popper` docs](https://popper.js.org/d
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/search-control/
 
-SearchControl components let users display a search control. Check out the [Storybook page](https://wordpress.github.io/gutenberg/?path=/docs/components-searchcontrol--docs) for a visual exploration of this component.
+SearchControl components let users display a search control.
+
+Check out the [Storybook page](https://wordpress.github.io/gutenberg/?path=/docs/components-searchcontrol--docs) for a visual exploration of this component.
 
 ## Development guidelines
 
 ### Usage
 
-Render a user interface to input the name of an additional css class. ```jsx
+Render a user interface to input the name of an additional css class.
+
+```jsx
 import { useState } from 'react';
 import { __ } from '@wordpress/i18n';
 import { SearchControl } from '@wordpress/components';
@@ -51370,58 +51140,88 @@ function MySearchControl( { className, setState } ) {
 
 ### Props
 
-The set of props accepted by the component will be specified below. Props not included in this set will be applied to the input element. #### label
+The set of props accepted by the component will be specified below.  
+Props not included in this set will be applied to the input element.
 
-The accessible label for the input. A label should always be provided as an accessibility best practice, even when a placeholder is defined and `hideLabelFromVision` is `true`. - Type: `String`
+#### label
+
+The accessible label for the input.
+
+A label should always be provided as an accessibility best practice, even when a placeholder is defined  
+and `hideLabelFromVision` is `true`.
+
+- Type: `String`
 - Required: No
 - Default: `__( 'Search' )`
 
 #### placeholder
 
-If this property is added, a specific placeholder will be used for the input. - Type: `String`
+If this property is added, a specific placeholder will be used for the input.
+
+- Type: `String`
 - Required: No
 - Default: `__( 'Search' )`
 
 #### value
 
-The current value of the input. - Type: `String`
+The current value of the input.
+
+- Type: `String`
 - Required: No
 
 #### className
 
-The class that will be added to the classes of the wrapper div. - Type: `String`
+The class that will be added to the classes of the wrapper div.
+
+- Type: `String`
 - Required: No
 
 #### onChange
 
-A function that receives the value of the input. - Type: `function`
+A function that receives the value of the input.
+
+- Type: `function`
 - Required: Yes
 
 #### onClose
 
-*Note: this prop is deprecated.*When an `onClose` callback is provided, the search control will render a close button that will trigger the given callback. Use this if you want the button to trigger your own logic to close the search field entirely, rather than just clearing the input value. - Type: `function`
+*Note: this prop is deprecated.*
+
+When an `onClose` callback is provided, the search control will render a close button that will trigger the given callback.
+
+Use this if you want the button to trigger your own logic to close the search field entirely, rather than just clearing the input value.
+
+- Type: `function`
 - Required: No
 
 #### help
 
-If this property is added, a help text will be generated using help property as the content. - Type: `String|Element`
+If this property is added, a help text will be generated using help property as the content.
+
+- Type: `String|Element`
 - Required: No
 
 #### hideLabelFromVision
 
-If true, the label will not be visible, but will be read by screen readers. Defaults to `true`. - Type: `Boolean`
+If true, the label will not be visible, but will be read by screen readers. Defaults to `true`.
+
+- Type: `Boolean`
 - Required: No
 - Default: `true`
 
 #### \_\_nextHasNoMarginBottom
 
-Start opting into the new margin-free styles that will become the default in a future version. - Type: `Boolean`
+Start opting into the new margin-free styles that will become the default in a future version.
+
+- Type: `Boolean`
 - Required: No
 - Default: `false`
 
 #### `size`: `'default'` | `'compact'`
 
-The size of the component. - Required: No
+The size of the component.
+
+- Required: No
 - Default: `'default'`
 
 ## Related components
@@ -62238,533 +62038,6 @@ Returns an action object used to signal that widget saving is unlocked.
 *Returns*
 
 - `Object`: Action object
-
----
-
-# The Keyboard Shortcuts Data <a id="block-editor/reference-guides/data/data-core-keyboard-shortcuts" />
-
-Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-keyboard-shortcuts/
-
-Namespace: `core/keyboard-shortcuts`.
-
-## Selectors
-
-### getAllShortcutKeyCombinations
-
-Returns the shortcuts that include aliases for a given shortcut name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-import { createInterpolateElement } from '@wordpress/element';
-import { sprintf } from '@wordpress/i18n';
-
-const ExampleComponent = () => {
-    const allShortcutKeyCombinations = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getAllShortcutKeyCombinations(
-                'core/editor/next-region'
-            ),
-        []
-    );
-
-    return (
-        allShortcutKeyCombinations.length > 0 && (
-            <ul>
-                { allShortcutKeyCombinations.map(
-                    ( { character, modifier }, index ) => (
-                        <li key={ index }>
-                            { createInterpolateElement(
-                                sprintf(
-                                    'Character: %s / Modifier: %s',
-                                    character,
-                                    modifier
-                                ),
-                                {
-                                    code: ,
-                                }
-                            ) }
-                        </li>
-                    )
-                ) }
-            </ul>
-        )
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Shortcut name.
-
-*Returns*
-
-- `WPShortcutKeyCombination[]`: Key combinations.
-
-### getAllShortcutRawKeyCombinations
-
-Returns the raw representation of all the keyboard combinations of a given shortcut name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-import { createInterpolateElement } from '@wordpress/element';
-import { sprintf } from '@wordpress/i18n';
-
-const ExampleComponent = () => {
-    const allShortcutRawKeyCombinations = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getAllShortcutRawKeyCombinations(
-                'core/editor/next-region'
-            ),
-        []
-    );
-
-    return (
-        allShortcutRawKeyCombinations.length > 0 && (
-            <ul>
-                { allShortcutRawKeyCombinations.map(
-                    ( shortcutRawKeyCombination, index ) => (
-                        <li key={ index }>
-                            { createInterpolateElement(
-                                sprintf(
-                                    ' %s',
-                                    shortcutRawKeyCombination
-                                ),
-                                {
-                                    code: ,
-                                }
-                            ) }
-                        </li>
-                    )
-                ) }
-            </ul>
-        )
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Shortcut name.
-
-*Returns*
-
-- `string[]`: Shortcuts.
-
-### getCategoryShortcuts
-
-Returns the shortcut names list for a given category name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-
-const ExampleComponent = () => {
-    const categoryShortcuts = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getCategoryShortcuts( 'block' ),
-        []
-    );
-
-    return (
-        categoryShortcuts.length > 0 && (
-            <ul>
-                { categoryShortcuts.map( ( categoryShortcut ) => (
-                    <li key={ categoryShortcut }>{ categoryShortcut }</li>
-                ) ) }
-            </ul>
-        )
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Category name.
-
-*Returns*
-
-- `string[]`: Shortcut names.
-
-### getShortcutAliases
-
-Returns the aliases for a given shortcut name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-import { createInterpolateElement } from '@wordpress/element';
-import { sprintf } from '@wordpress/i18n';
-const ExampleComponent = () => {
-    const shortcutAliases = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getShortcutAliases(
-                'core/editor/next-region'
-            ),
-        []
-    );
-
-    return (
-        shortcutAliases.length > 0 && (
-            <ul>
-                { shortcutAliases.map( ( { character, modifier }, index ) => (
-                    <li key={ index }>
-                        { createInterpolateElement(
-                            sprintf(
-                                'Character: %s / Modifier: %s',
-                                character,
-                                modifier
-                            ),
-                            {
-                                code: ,
-                            }
-                        ) }
-                    </li>
-                ) ) }
-            </ul>
-        )
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Shortcut name.
-
-*Returns*
-
-- `WPShortcutKeyCombination[]`: Key combinations.
-
-### getShortcutDescription
-
-Returns the shortcut description given its name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-const ExampleComponent = () => {
-    const shortcutDescription = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getShortcutDescription(
-                'core/editor/next-region'
-            ),
-        []
-    );
-
-    return shortcutDescription ? (
-        <div>{ shortcutDescription }</div>
-    ) : (
-        <div>{ __( 'No description.' ) }</div>
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Shortcut name.
-
-*Returns*
-
-- `?string`: Shortcut description.
-
-### getShortcutKeyCombination
-
-Returns the main key combination for a given shortcut name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-import { createInterpolateElement } from '@wordpress/element';
-import { sprintf } from '@wordpress/i18n';
-const ExampleComponent = () => {
-    const { character, modifier } = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getShortcutKeyCombination(
-                'core/editor/next-region'
-            ),
-        []
-    );
-
-    return (
-        <div>
-            { createInterpolateElement(
-                sprintf(
-                    'Character: %s / Modifier: %s',
-                    character,
-                    modifier
-                ),
-                {
-                    code: ,
-                }
-            ) }
-        </div>
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Shortcut name.
-
-*Returns*
-
-- `WPShortcutKeyCombination?`: Key combination.
-
-### getShortcutRepresentation
-
-Returns a string representing the main key combination for a given shortcut name.
-
-*Usage*
-
-```js
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect } from '@wordpress/data';
-import { sprintf } from '@wordpress/i18n';
-
-const ExampleComponent = () => {
-    const { display, raw, ariaLabel } = useSelect( ( select ) => {
-        return {
-            display: select( keyboardShortcutsStore ).getShortcutRepresentation(
-                'core/editor/next-region'
-            ),
-            raw: select( keyboardShortcutsStore ).getShortcutRepresentation(
-                'core/editor/next-region',
-                'raw'
-            ),
-            ariaLabel: select(
-                keyboardShortcutsStore
-            ).getShortcutRepresentation(
-                'core/editor/next-region',
-                'ariaLabel'
-            ),
-        };
-    }, [] );
-
-    return (
-        <ul>
-            <li>{ sprintf( 'display string: %s', display ) }</li>
-            <li>{ sprintf( 'raw string: %s', raw ) }</li>
-            <li>{ sprintf( 'ariaLabel string: %s', ariaLabel ) }</li>
-        </ul>
-    );
-};
-
-```
-
-*Parameters*
-
-- *state* `Object`: Global state.
-- *name* `string`: Shortcut name.
-- *representation* `keyof FORMATTING_METHODS`: Type of representation (display, raw, ariaLabel).
-
-*Returns*
-
-- `?string`: Shortcut representation.
-
-## Actions
-
-### registerShortcut
-
-Returns an action object used to register a new keyboard shortcut.
-
-*Usage*
-
-```js
-import { useEffect } from 'react';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-
-const ExampleComponent = () => {
-    const { registerShortcut } = useDispatch( keyboardShortcutsStore );
-
-    useEffect( () => {
-        registerShortcut( {
-            name: 'custom/my-custom-shortcut',
-            category: 'my-category',
-            description: __( 'My custom shortcut' ),
-            keyCombination: {
-                modifier: 'primary',
-                character: 'j',
-            },
-        } );
-    }, [] );
-
-    const shortcut = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getShortcutKeyCombination(
-                'custom/my-custom-shortcut'
-            ),
-        []
-    );
-
-    return shortcut ? (
-        <p>{ __( 'Shortcut is registered.' ) }</p>
-    ) : (
-        <p>{ __( 'Shortcut is not registered.' ) }</p>
-    );
-};
-
-```
-
-*Parameters*
-
-- *config* `WPShortcutConfig`: Shortcut config.
-
-*Returns*
-
-- `Object`: action.
-
-### unregisterShortcut
-
-Returns an action object used to unregister a keyboard shortcut.
-
-*Usage*
-
-```js
-import { useEffect } from 'react';
-import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
-import { useSelect, useDispatch } from '@wordpress/data';
-import { __ } from '@wordpress/i18n';
-
-const ExampleComponent = () => {
-    const { unregisterShortcut } = useDispatch( keyboardShortcutsStore );
-
-    useEffect( () => {
-        unregisterShortcut( 'core/editor/next-region' );
-    }, [] );
-
-    const shortcut = useSelect(
-        ( select ) =>
-            select( keyboardShortcutsStore ).getShortcutKeyCombination(
-                'core/editor/next-region'
-            ),
-        []
-    );
-
-    return shortcut ? (
-        <p>{ __( 'Shortcut is not unregistered.' ) }</p>
-    ) : (
-        <p>{ __( 'Shortcut is unregistered.' ) }</p>
-    );
-};
-
-```
-
-*Parameters*
-
-- *name* `string`: Shortcut name.
-
-*Returns*
-
-- `Object`: action.
-
----
-
-# Preferences <a id="block-editor/reference-guides/data/data-core-preferences" />
-
-Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-preferences/
-
-Namespace: `core/preferences`.
-
-## Selectors
-
-### get
-
-Returns a boolean indicating whether a prefer is active for a particular scope.
-
-*Parameters*
-
-- *state* `Object`: The store state.
-- *scope* `string`: The scope of the feature (e.g. core/edit-post).
-- *name* `string`: The name of the feature.
-
-*Returns*
-
-- `*`: Is the feature enabled?
-
-## Actions
-
-### set
-
-Returns an action object used in signalling that a preference should be set to a value
-
-*Parameters*
-
-- *scope* `string`: The preference scope (e.g. core/edit-post).
-- *name* `string`: The preference name.
-- *value* `*`: The value to set.
-
-*Returns*
-
-- `Object`: Action object.
-
-### setDefaults
-
-Returns an action object used in signalling that preference defaults should be set.
-
-*Parameters*
-
-- *scope* `string`: The preference scope (e.g. core/edit-post).
-- *defaults* `Object<string, *>`: A key/value map of preference names to values.
-
-*Returns*
-
-- `Object`: Action object.
-
-### setPersistenceLayer
-
-Sets the persistence layer.
-
-When a persistence layer is set, the preferences store will:
-
-- call `get` immediately and update the store state to the value returned.
-- call `set` with all preferences whenever a preference changes value.
-
-`setPersistenceLayer` should ideally be dispatched at the start of an application’s lifecycle, before any other actions have been dispatched to the preferences store.
-
-*Parameters*
-
-- *persistenceLayer* `WPPreferencesPersistenceLayer`: The persistence layer.
-
-*Returns*
-
-- `Object`: Action object.
-
-### toggle
-
-Returns an action object used in signalling that a preference should be toggled.
-
-*Parameters*
-
-- *scope* `string`: The preference scope (e.g. core/edit-post).
-- *name* `string`: The preference name.
 
 ---
 

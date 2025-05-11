@@ -1340,37 +1340,27 @@ Source: https://developer.wordpress.org/themes/basics/linking-theme-files-direct
 
 ## Linking to Core Theme Files
 
-As you’ve learned, WordPress themes are built from a number of different template files. At the very least this will usually include a `sidebar.php`, `header.php` and `footer.php`. These are called using [Template Tags](#themes/basics/template-tags "Template Tags"), for example:
-
-- [get\_header()](#reference/functions/get_header) ;
+As you’ve learned, WordPress themes are built from a number of different template files. At the very least this will usually include a `sidebar.php`, `header.php` and `footer.php`. These are called using [Template Tags](#themes/basics/template-tags "Template Tags"), for example: - [get\_header()](#reference/functions/get_header) ;
 - [get\_footer()](#reference/functions/get_footer) ;
 - [get\_sidebar()](#reference/functions/get_sidebar) ;
 
-You can create custom versions of these files can be called as well by naming the file `sidebar-{your_custom_template}.php`, `header-{your_custom_template}.php` and `footer-{your_custom_template}.php`. You can then use Template Tags with the custom template name as the only parameter, like this:
-
-```php
+You can create custom versions of these files can be called as well by naming the file `sidebar-{your_custom_template}.php`, `header-{your_custom_template}.php` and `footer-{your_custom_template}.php`. You can then use Template Tags with the custom template name as the only parameter, like this: ```php
 get_header( 'your_custom_template' );
+
 get_footer( 'your_custom_template' );
+
 get_sidebar( 'your_custom_template' );
 ```
 
-WordPress creates pages by assembling various files. Aside from the standard files for the header, footer and sidebar, you can create custom template files and call them at any location in the page using [get\_template\_part()](#reference/functions/get_template_part) . To create a custom template file in your theme give the file an appropriate name and use the same custom template system as with the header, sidebar and footer files:
-
-```php
+WordPress creates pages by assembling various files. Aside from the standard files for the header, footer and sidebar, you can create custom template files and call them at any location in the page using [get\_template\_part()](#reference/functions/get_template_part) . To create a custom template file in your theme give the file an appropriate name and use the same custom template system as with the header, sidebar and footer files: ```php
 slug-template.php
 ```
 
-For example, if you would like to create a custom template to handle your post content you could create a template file called `content.php` and then add a specific content layout for product content by extending the file name to `content-product.php`. You would then load this template file in your theme like this:
-
-```php
+For example, if you would like to create a custom template to handle your post content you could create a template file called `content.php` and then add a specific content layout for product content by extending the file name to `content-product.php`. You would then load this template file in your theme like this: ```php
 get_template_part( 'content', 'product' );
 ```
 
-If you want to add more organization to your templates, you can place them in their own directories within your theme directory. For example, suppose you add a couple more *content* templates for *profiles* and *locations*, and group them in their own directory called `content-templates`.
-
-The theme hierarchy for your theme called `my-theme` might look like the following. `style.css` and `page.php` are included for context.
-
-- themes
+If you want to add more organization to your templates, you can place them in their own directories within your theme directory. For example, suppose you add a couple more *content* templates for *profiles* and *locations*, and group them in their own directory called `content-templates`. The theme hierarchy for your theme called `my-theme` might look like the following. `style.css` and `page.php` are included for context. - themes
 - my-theme
 - content-templates
 - content-location.php
@@ -1378,62 +1368,46 @@ The theme hierarchy for your theme called `my-theme` might look like the followi
 - content-profile.php
 - style.css
 
-To include your content templates, prepend the directory names to the `slug` argument like this:
-
-```php
+To include your content templates, prepend the directory names to the `slug` argument like this: ```php
 get_template_part( 'content-templates/content', 'location' );
+
 get_template_part( 'content-templates/content', 'product' );
+
 get_template_part( 'content-templates/content', 'profile' );
 ```
 
 ## Linking to Theme Directories
 
-To link to the theme’s directory, you can use the following function:
+To link to the theme’s directory, you can use the following function: - [get\_theme\_file\_uri()](#reference/functions/get_theme_file_uri) ;
 
-- [get\_theme\_file\_uri()](#reference/functions/get_theme_file_uri) ;
-
-If you are not using a child theme, this function will return the full URI to your theme’s main folder. You can use this to reference sub-folders and files in your theme like this:
-
-```php
+If you are not using a child theme, this function will return the full URI to your theme’s main folder. You can use this to reference sub-folders and files in your theme like this: ```php
 echo get_theme_file_uri( 'images/logo.png' );
 ```
 
-If you are using a child theme then this function will return the URI of the file in your child theme if it exists. If the file cannot be found in your child theme, the function will return the URI of the file in the parent theme. This is particularly important to keep in mind when distributing a theme or in any other case where a child theme may or may not be active.
+If you are using a child theme then this function will return the URI of the file in your child theme if it exists. If the file cannot be found in your child theme, the function will return the URI of the file in the parent theme. This is particularly important to keep in mind when distributing a theme or in any other case where a child theme may or may not be active. To access the path to a file in your theme’s directories, you can use the following function: - [get\_theme\_file\_path()](#reference/functions/get_theme_file_path) ;
 
-To access the path to a file in your theme’s directories, you can use the following function:
-
-- [get\_theme\_file\_path()](#reference/functions/get_theme_file_path) ;
-
-Like [get\_theme\_file\_uri()](#reference/functions/get_theme_file_uri) , this will access the path of the file in the child theme if it exists. If the file cannot be found in the child theme, the function will access the path to the file in the parent theme.
-
-In a child theme, you can link to a file URI or path in the parent theme’s directories using the following functions:
-
-- [get\_parent\_theme\_file\_uri()](#reference/functions/get_parent_theme_file_uri) ;
+Like [get\_theme\_file\_uri()](#reference/functions/get_theme_file_uri) , this will access the path of the file in the child theme if it exists. If the file cannot be found in the child theme, the function will access the path to the file in the parent theme. In a child theme, you can link to a file URI or path in the parent theme’s directories using the following functions: - [get\_parent\_theme\_file\_uri()](#reference/functions/get_parent_theme_file_uri) ;
 - [get\_parent\_theme\_file\_path()](#reference/functions/get_parent_theme_file_path) ;
 
-As with `get_theme_file_uri(),` you can reference sub-folders and files like this:
-
-```php
+As with `get_theme_file_uri(),` you can reference sub-folders and files like this: ```php
 echo get_parent_theme_file_uri( 'images/logo.png' );
+
 //or
+
 echo get_parent_theme_file_path( 'images/logo.png' );
 ```
 
-Take care when referencing files that may not be present, as these functions will return the URI or file path whether the file exists or not. If the file is missing, these functions will return a broken link.
+Take care when referencing files that may not be present, as these functions will return the URI or file path whether the file exists or not. If the file is missing, these functions will return a broken link. 
 
- The functions [get\_theme\_file\_uri()](#reference/functions/get_theme_file_uri) , [get\_theme\_file\_path()](#reference/functions/get_theme_file_path) , [get\_parent\_theme\_file\_uri()](#reference/functions/get_parent_theme_file_uri) , [get\_parent\_theme\_file\_path()](#reference/functions/get_parent_theme_file_path) were introduced in WordPress 4.7. For previous WordPress versions, use [get\_template\_directory\_uri()](#reference/functions/get_template_directory_uri) , [get\_template\_directory()](#reference/functions/get_template_directory) , [get\_stylesheet\_directory\_uri()](#reference/functions/get_stylesheet_directory_uri) , [get\_stylesheet\_directory()](#reference/functions/get_stylesheet_directory) .
-
-Take note that the newer 4.7 functions run the older functions anyway as part of the checking process so it makes sense to use the newer functions when possible.
+ The functions [get\_theme\_file\_uri()](#reference/functions/get_theme_file_uri) , [get\_theme\_file\_path()](#reference/functions/get_theme_file_path) , [get\_parent\_theme\_file\_uri()](#reference/functions/get_parent_theme_file_uri) , [get\_parent\_theme\_file\_path()](#reference/functions/get_parent_theme_file_path) were introduced in WordPress 4.7. For previous WordPress versions, use [get\_template\_directory\_uri()](#reference/functions/get_template_directory_uri) , [get\_template\_directory()](#reference/functions/get_template_directory) , [get\_stylesheet\_directory\_uri()](#reference/functions/get_stylesheet_directory_uri) , [get\_stylesheet\_directory()](#reference/functions/get_stylesheet_directory) . Take note that the newer 4.7 functions run the older functions anyway as part of the checking process so it makes sense to use the newer functions when possible.
 
 ## Dynamic Linking in Templates
 
-Regardless of your permalink settings, you can link to a page or post dynamically by referring to its unique numerical ID (seen in several pages in the admin interface) with
-
-```php
+Regardless of your permalink settings, you can link to a page or post dynamically by referring to its unique numerical ID (seen in several pages in the admin interface) with ```php
 <a href="<?php echo get_permalink($ID); ?>">This is a link</a>
 ```
 
-This is a convenient way to create page menus as you can later change page slugs without breaking links, as IDs will stay the same. However, this might increase database queries.
+ This is a convenient way to create page menus as you can later change page slugs without breaking links, as IDs will stay the same. However, this might increase database queries.
 
 ---
 
@@ -18205,58 +18179,41 @@ Source: https://developer.wordpress.org/themes/functionality/media/audio/
 
 ## Audio
 
-You can directly embed audio files and play them back using a simple shortcode **\[audio\]**. Supported file types are mp3, ogg, wma, m4a and wav.
+You can directly embed audio files and play them back using a simple shortcode **\[audio\]**. Supported file types are mp3, ogg, wma, m4a and wav. ### Audio shortcode
 
-### Audio shortcode
-
-Following shortcode displays audio player that loads music.mp3 file:
-
-```php
+Following shortcode displays audio player that loads music.mp3 file: ```php
 [[audio src="music.mp3"]]
 ```
 
-To use the shortcode from template file, use do\_shortcode function. When music.mp3 file was stored in (theme\_directory)/sounds directory, insert following code into your template file:
+To use the shortcode from template file, use do\_shortcode function. When music.mp3 file was stored in (theme\_directory)/sounds directory, insert following code into your template file: ```php
+$music_file = get_template_directory_uri() . "/sounds/music.mp3"; 
 
-```php
-$music_file = get_template_directory_uri() . "/sounds/music.mp3";
 echo do_shortcode('[[audio mp3=' . $music_file . ']]');
 ```
 
-The shortcode creates the audio player as shown in the screenshot below.
+The shortcode creates the audio player as shown in the screenshot below. ![Audio player](https://i0.wp.com/developer.wordpress.org/files/2014/10/audio_shortcode_basic.jpg?resize=558%2C66&ssl=1)### Loop and Autoplay
 
-![Audio player](https://i0.wp.com/developer.wordpress.org/files/2014/10/audio_shortcode_basic.jpg?resize=558%2C66&ssl=1)
+The following basic options are supported: #### loop
 
-### Loop and Autoplay
-
-The following basic options are supported:
-
-#### loop
-
-Allows for the looping of media.
-
-- “off” – Do not loop the media. Default.
+Allows for the looping of media. - “off” – Do not loop the media. Default.
 - “on” – Media will loop to beginning when finished and automatically continue playing.
 
 #### autoplay
 
-Causes the media to automatically play as soon as the media file is ready.
-
-- 0 – Do not automatically play the media. Default.
+Causes the media to automatically play as soon as the media file is ready. - 0 – Do not automatically play the media. Default.
 - 1 – Media will play as soon as it is ready.
 
-The following example starts playing music immediately after the page load and loops.
-
-```php
+The following example starts playing music immediately after the page load and loops. ```php
 echo do_shortcode('[[audio mp3=' . $music_file . ' loop = "on" autoplay = 1]]');
 ```
 
 ### Styling
 
-If you want to change the look &amp; feel of audio player, you can do so by targeting the default class name of “wp-audio-shortcode”. If you insert following code into your style.css, half width of audio player will be displayed.
-
-```css
+If you want to change the look &amp; feel of audio player, you can do so by targeting the default class name of “wp-audio-shortcode”. If you insert following code into your style.css, half width of audio player will be displayed. ```css
 .wp-audio-shortcode {
+
   width: 50%;
+
 }
 ```
 
@@ -18270,9 +18227,7 @@ If you want to change the look &amp; feel of audio player, you can do so by targ
 
 ### References
 
-For more technical details such as the internal library that enables this function, refer to
-
-- <https://make.wordpress.org/core/2013/04/08/audio-video-support-in-core/>.
+For more technical details such as the internal library that enables this function, refer to - <https://make.wordpress.org/core/2013/04/08/audio-video-support-in-core/>.
 - [Audio Shortcode](https://codex.wordpress.org/Audio_Shortcode)
 - [Function do\_shortcode()](#reference/functions/do_shortcode)
 
@@ -18602,9 +18557,7 @@ The look and feel of the front page of the site is based upon the choices of the
 
 ## Template Hierarchy of Custom Front Page
 
-On the site front page, WordPress will always use the front-page.php template file, if it exists. If front-page.php does not exist, WordPress will determine which template file to use, depending on the user configuration of [Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") &gt;Front page displays, as follows:
-
-- **A static page:** WordPress uses the [Static Page](https://codex.wordpress.org/Template_Hierarchy#Page_display "Template Hierarchy") template hierarchy: 
+On the site front page, WordPress will always use the front-page.php template file, if it exists. If front-page.php does not exist, WordPress will determine which template file to use, depending on the user configuration of [Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") &gt;Front page displays, as follows: - **A static page:** WordPress uses the [Static Page](https://codex.wordpress.org/Template_Hierarchy#Page_display "Template Hierarchy") template hierarchy: 
     1. [Custom Page Template](https://codex.wordpress.org/Page_Templates#Custom_Page_Template "Page Templates")
     2. page-{id}.php
     3. page-{slug}.php
@@ -18616,95 +18569,87 @@ On the site front page, WordPress will always use the front-page.php template fi
 
 ### Custom Site Front Page Template
 
-To create a custom site front page template, include either of the following in the Theme:
-
-- front-page.php
+To create a custom site front page template, include either of the following in the Theme: - front-page.php
 - A [Custom Page Template](https://codex.wordpress.org/Page_Templates#Custom_Page_Template "Page Templates") (e.g. template-featured.php for featured content)
 
 ### Custom Blog Posts Index Page Template
 
-To create a custom blog posts index template, include the following in the Theme:
+To create a custom blog posts index template, include the following in the Theme: - home.php
 
-- home.php
-
-Use only the home.php template file for the blog posts index. Do not use a Custom Page Template (such as template-blog.php) for two reasons:
-
-1. When the static front page feature is configured properly, WordPress will not use a Custom Page Template to display the blog posts index, even if a Custom Page Template is assigned to the page designated as the “Posts page”. WordPress will *only* use either home.php or index.php.
+Use only the home.php template file for the blog posts index. Do not use a Custom Page Template (such as template-blog.php) for two reasons: 1. When the static front page feature is configured properly, WordPress will not use a Custom Page Template to display the blog posts index, even if a Custom Page Template is assigned to the page designated as the “Posts page”. WordPress will *only* use either home.php or index.php.
 2. When the Custom Page Template is assigned to a static page other than the one designated as the “Posts page,” the blog posts index loop pagination will not work properly.
 
 ## Contextual Conditional Tags
 
 ### is\_front\_page
 
-The [Conditional Tag](https://codex.wordpress.org/Conditional_Tags "Conditional Tags") [is\_front\_page()](https://codex.wordpress.org/Function_Reference/is_front_page) checks if the site front page is being displayed. Returns true when the site front page is being displayed, regardless of whether ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “Your latest posts” or “A static page”.
+The [Conditional Tag](https://codex.wordpress.org/Conditional_Tags "Conditional Tags") [is\_front\_page()](https://codex.wordpress.org/Function_Reference/is_front_page) checks if the site front page is being displayed. Returns true when the site front page is being displayed, regardless of whether ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “Your latest posts” or “A static page”. ### is\_home
 
-### is\_home
-
-The [Conditional Tag](https://codex.wordpress.org/Conditional_Tags "Conditional Tags") [is\_home()](https://codex.wordpress.org/Function_Reference/is_home) checks if the blog posts index is being displayed. Returns true when the blog posts index is being displayed: when the site front page is being displayed and ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “Your latest posts”, or when ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “A static page” and the “Posts Page” value is the current [Page](https://codex.wordpress.org/Pages "Pages") being displayed.
-
-When the site front page is being displayed and ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “Your latest posts”, both[is\_front\_page()](#reference/functions/is_front_page)  and [is\_home()](#reference/functions/is_home)  will return true.
+The [Conditional Tag](https://codex.wordpress.org/Conditional_Tags "Conditional Tags") [is\_home()](https://codex.wordpress.org/Function_Reference/is_home) checks if the blog posts index is being displayed. Returns true when the blog posts index is being displayed: when the site front page is being displayed and ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “Your latest posts”, or when ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “A static page” and the “Posts Page” value is the current [Page](https://codex.wordpress.org/Pages "Pages") being displayed. When the site front page is being displayed and ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “Your latest posts”, both[is\_front\_page()](#reference/functions/is_front_page)  and [is\_home()](#reference/functions/is_home)  will return true.
 
 ## Configuration of front-page.php
 
-If it exists, the front-page.php template file is used on the site’s front page regardless of whether ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “A static page” or “Your latest posts,” the Theme will need to account for both options, so that the site front page will display either a static page or the blog posts index. There are a few methods to do so.
+If it exists, the front-page.php template file is used on the site’s front page regardless of whether ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is set to “A static page” or “Your latest posts,” the Theme will need to account for both options, so that the site front page will display either a static page or the blog posts index. There are a few methods to do so. ### Conditional display within front-page.php
 
-### Conditional display within front-page.php
-
-One way to allow front-page.php to account for both options for ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is to add a conditional inside of front-page.php itself, using [get\_option( 'show\_on\_front' )](https://codex.wordpress.org/Option_Reference#Reading "Option Reference"), [get\_home\_template()](https://codex.wordpress.org/Function_Reference/get_home_template "Function Reference/get home template"), and[get\_page\_template()](https://codex.wordpress.org/Function_Reference/get_page_template "Function Reference/get page template").
-
-Method 1: including custom content directly within front-page.php:
-
-```php
+One way to allow front-page.php to account for both options for ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Front page displays’ is to add a conditional inside of front-page.php itself, using [get\_option( 'show\_on\_front' )](https://codex.wordpress.org/Option_Reference#Reading "Option Reference"), [get\_home\_template()](https://codex.wordpress.org/Function_Reference/get_home_template "Function Reference/get home template"), and[get\_page\_template()](https://codex.wordpress.org/Function_Reference/get_page_template "Function Reference/get page template"). Method 1: including custom content directly within front-page.php: ```php
 if ( 'posts' == get_option( 'show_on_front' ) ) {
+
     include( get_home_template() );
+
 } else {
+
     // Custom content markup goes here
+
 }
 ```
 
-  
-Method 2: including any page template:  
-```php
+Method 2: including any page template: ```php
 if ( 'posts' == get_option( 'show_on_front' ) ) {
+
     include( get_home_template() );
+
 } else {
+
     include( get_page_template() );
+
 }
 ```
 
 ### Filtering frontpage\_template
 
-Another way to allow the site front page to display either a static page/custom content or the blog posts index, without adding conditional code within front-page.php, is to [filter frontpage\_template](https://codex.wordpress.org/Function_Reference/get_query_template "Function Reference/get query template"), by adding a filter callback to functions.php:
-
-```php
+Another way to allow the site front page to display either a static page/custom content or the blog posts index, without adding conditional code within front-page.php, is to [filter frontpage\_template](https://codex.wordpress.org/Function_Reference/get_query_template "Function Reference/get query template"), by adding a filter callback to functions.php: ```php
 function themeslug_filter_front_page_template( $template ) {
+
     return is_home() ? '' : $template;
+
 }
+
 add_filter( 'frontpage_template', 'themeslug_filter_front_page_template' );
 ```
 
-  
 This method causes WordPress to bypass the front-page.php template file altogether when the blog posts index is being displayed. ## Adding custom query loops to front-page.php
 
-If the front-page.php template file includes a default [WordPress Loop](https://codex.wordpress.org/The_Loop "The Loop"), like so:
-
-```php
+If the front-page.php template file includes a default [WordPress Loop](https://codex.wordpress.org/The_Loop "The Loop"), like so: ```php
 &lt;?php
+
 if ( have_posts() ) : while ( have_posts() ) : the_post();
+
     // do something
+
 endwhile; else:
+
     // no posts found
+
 endif;
 ```
 
-  
-That loop applies to the post content of the static page assigned to ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Posts page’. To display custom loops (latest blog posts, custom/featured content, etc.), add secondary loop queries using calls to [WP\_Query](https://codex.wordpress.org/Class_Reference/WP_Query "Class Reference/WP Query"). For example, to show the 3 latest blog posts:
-
-```php
+That loop applies to the post content of the static page assigned to ‘[Settings](https://codex.wordpress.org/Administration_Panels#Reading "Administration Panels") &gt; [Reading](https://codex.wordpress.org/Settings_Reading_SubPanel "Settings Reading SubPanel") -&gt;Posts page’. To display custom loops (latest blog posts, custom/featured content, etc.), add secondary loop queries using calls to [WP\_Query](https://codex.wordpress.org/Class_Reference/WP_Query "Class Reference/WP Query"). For example, to show the 3 latest blog posts: ```php
 $latest_blog_posts = new WP_Query( array( 'posts_per_page' =&gt; 3 ) );
 
 if ( $latest_blog_posts-&gt;have_posts() ) : while ( $latest_blog_posts-&gt;have_posts() ) : $latest_blog_posts-&gt;the_post();
+
     // Loop output goes here
+
 endwhile; endif;
 ```
 

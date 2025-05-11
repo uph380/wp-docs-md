@@ -1120,17 +1120,11 @@ That’s it. Make sure you remember to delete the file once you’re done with i
 
 Source: https://developer.wordpress.org/advanced-administration/server/wordpress-in-directory/
 
-Many people want WordPress to power their website’s root (e.g. https://example.com) but they don’t want all of the WordPress files cluttering up their root directory. WordPress allows you to install it into a subdirectory, but have your website served from the website root.
-
-As of [Version 3.5](https://wordpress.org/documentation/wordpress-version/version-3-5/), Multisite users may use all of the functionality listed below. If you are running a version of WordPress older than 3.5, please update before installing a Multisite WordPress install on a subdirectory.
-
-**Note to theme/plugin developers:** this will not separate your code from WordPress. Themes and plugins will still reside under `wp-content` folder.
+Many people want WordPress to power their website’s root (e.g. https://example.com) but they don’t want all of the WordPress files cluttering up their root directory. WordPress allows you to install it into a subdirectory, but have your website served from the website root. As of [Version 3.5](https://wordpress.org/documentation/wordpress-version/version-3-5/), Multisite users may use all of the functionality listed below. If you are running a version of WordPress older than 3.5, please update before installing a Multisite WordPress install on a subdirectory. **Note to theme/plugin developers:** this will not separate your code from WordPress. Themes and plugins will still reside under `wp-content` folder.
 
 ## Moving a Root install to its own directory
 
-Let’s say you’ve installed WordPress at `example.com`. Now you have two different methods to move WordPress installations into subdirectory:
-
-1. Without change of SITE-URL (remains `example.com`)
+Let’s say you’ve installed WordPress at `example.com`. Now you have two different methods to move WordPress installations into subdirectory: 1. Without change of SITE-URL (remains `example.com`)
 2. With change in SITE-URL (it will redirect to `example.com/subdirectory`)
 
 ## Method I (Without URL change)
@@ -1152,15 +1146,11 @@ RewriteRule ^(/)?$ my_subdir/index.php [L]
 
 ```
 
-That’s all 🙂
-
-## Method II (With URL change)
+That’s all 🙂 ## Method II (With URL change)
 
 ### Moving process
 
-*(p.s. If you’ve already installed WP in subdirectory, some steps might be already done automatically).*
-
-1. Create the new location for the core WordPress files to be stored—we will use `/wordpress` in our examples. On Linux, use `mkdir wordpress` from your `www` directory. You’ll probably want to use `chown apache:apache` on the `wordpress` directory you created.
+*(p.s. If you’ve already installed WP in subdirectory, some steps might be already done automatically).*1. Create the new location for the core WordPress files to be stored—we will use `/wordpress` in our examples. On Linux, use `mkdir wordpress` from your `www` directory. You’ll probably want to use `chown apache:apache` on the `wordpress` directory you created.
 2. Go to the [General](https://wordpress.org/documentation/article/administration-screens/#settings-configuration-settings) screen.
 3. In **WordPress address (URL):** set the address of your main WordPress core files. Example: `https://example.com/wordpress`.
 4. In **Site address (URL):** set root directory’s URL. Example: `https://example.com`.
@@ -1174,24 +1164,16 @@ That’s all 🙂
 
 ### .htaccess modification
 
-In some cases, some people like to install separate versions in a subdirectory (such as `/2010`, `/2011`, `/latest` and etc..), and want that website (by default) used the latest version, then Install WordPress in a subdirectory, such as `/my_subdir` and in your root folder’s .htaccess file add the following (just change the words as you need):
-
-```
+In some cases, some people like to install separate versions in a subdirectory (such as `/2010`, `/2011`, `/latest` and etc..), and want that website (by default) used the latest version, then Install WordPress in a subdirectory, such as `/my_subdir` and in your root folder’s .htaccess file add the following (just change the words as you need): ```
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(www.)?example.com$
 RewriteRule ^(/)?$ my_subdir\[L\]
 
 ```
 
-Now when users to go your root domain (`example.com`), it will automatically redirect to the subdirectory you specified.
+Now when users to go your root domain (`example.com`), it will automatically redirect to the subdirectory you specified. Note: This code comes from Site 5’s post here: [How to Redirect Your Domain to a Subfolder Using .htaccess](https://qa.site5.com/advanced/how-to-redirect-your-domain-to-a-subfolder-using-htaccess/). ## Moving Specific WordPress Folders
 
-Note: This code comes from Site 5’s post here: [How to Redirect Your Domain to a Subfolder Using .htaccess](https://qa.site5.com/advanced/how-to-redirect-your-domain-to-a-subfolder-using-htaccess/).
-
-## Moving Specific WordPress Folders
-
-The following links explains how to change specific directories within WordPress:
-
-- [Moving wp-content folder](https://wordpress.org/documentation/article/editing-wp-config-php/#moving-wp-content-folder)
+The following links explains how to change specific directories within WordPress: - [Moving wp-content folder](https://wordpress.org/documentation/article/editing-wp-config-php/#moving-wp-content-folder)
 - [Moving Plugin Folder](https://wordpress.org/documentation/article/editing-wp-config-php/#moving-plugin-folder)
 - [Moving Themes Folder](https://wordpress.org/documentation/article/editing-wp-config-php/#moving-themes-folder)
 - [Moving Uploads Folder](https://wordpress.org/documentation/article/editing-wp-config-php/#moving-uploads-folder)
@@ -7128,36 +7110,74 @@ The author assumes (but hasn’t checked) that if the user has stored cookies/to
 
 Source: https://developer.wordpress.org/advanced-administration/security/brute-force/
 
-Unlike hacks that focus on vulnerabilities in software, a Brute Force Attack aims at being the simplest kind of method to gain access to a site: it tries usernames and passwords, over and over again, until it gets in. Often deemed ‘inelegant’, they can be very successful when people use passwords like ‘123456’ and usernames like ‘admin.’ They are, in short, an attack on the weakest link in any website’s security… you. Due to the nature of these attacks, you may find your server’s memory goes through the roof, causing performance problems. This is because the number of http requests (that is the number of times someone visits your site) is so high that servers run out of memory. This sort of attack is not endemic to WordPress, it happens with every webapp out there, but WordPress is popular and thus a frequent target.
+Unlike hacks that focus on vulnerabilities in software, a Brute Force Attack aims at being the simplest kind of method to gain access to a site: it tries usernames and passwords, over and over again, until it gets in. Often deemed ‘inelegant’, they can be very successful when people use passwords like ‘123456’ and usernames like ‘admin.’
+
+They are, in short, an attack on the weakest link in any website’s security… you.
+
+Due to the nature of these attacks, you may find your server’s memory goes through the roof, causing performance problems. This is because the number of http requests (that is the number of times someone visits your site) is so high that servers run out of memory.
+
+This sort of attack is not endemic to WordPress, it happens with every webapp out there, but WordPress is popular and thus a frequent target.
 
 ### Throttling Multiple Login Attempts
 
-One of the most common kinds of attacks targeting internet services is brute force login attacks. With this form of attack, a malicious party tries to guess WordPress usernames and passwords. The attacker needs only the URL of a user site to perform an attack. Software is readily available to perform these attacks using botnets, making increasingly complex passwords easier to find. The best protection against this kind of attack is to set and recommend and/or enforce strong passwords for WordPress users. It is also recommended for hosts to throttle login attempts at the network and server level when possible. It’s helpful to throttle both maximum logins per site over time, and maximum attempts per IP over time across server or infrastructure to mitigate bot password brute-force attacks. This can be done at the plugin level as well, but not without incurring the additional resource utilization caused during these attacks. ### Protect Yourself
+One of the most common kinds of attacks targeting internet services is brute force login attacks. With this form of attack, a malicious party tries to guess WordPress usernames and passwords. The attacker needs only the URL of a user site to perform an attack. Software is readily available to perform these attacks using botnets, making increasingly complex passwords easier to find.
 
-A common attack point on WordPress is to hammer the `wp-login.php` file over and over until they get in or the server dies. You can do some things to protect yourself. #### Don’t use the ‘admin’ username
+The best protection against this kind of attack is to set and recommend and/or enforce strong passwords for WordPress users.
 
-The majority of attacks assume people are using the username ‘admin’ due to the fact that early versions of WordPress defaulted to this. If you are still using this username, make a new account, transfer all the posts to that account, and change ‘admin’ to a subscriber (or delete it entirely). You can also use the plugin [Change Username](https://wordpress.org/plugins/change-username/) to change your username. #### Good Passwords
+It is also recommended for hosts to throttle login attempts at the network and server level when possible. It’s helpful to throttle both maximum logins per site over time, and maximum attempts per IP over time across server or infrastructure to mitigate bot password brute-force attacks. This can be done at the plugin level as well, but not without incurring the additional resource utilization caused during these attacks.
 
-The goal with your password is to make it hard for other people to guess and hard for a brute force attack to succeed. Many automatic password generators are available that can be used to create secure passwords. WordPress also features a password strength meter which is shown when changing your password in WordPress. Use this when changing your password to ensure its strength is adequate. Things to avoid when choosing a password: - Any permutation of your own real name, username, company name, or name of your website.
+### Protect Yourself
+
+A common attack point on WordPress is to hammer the `wp-login.php` file over and over until they get in or the server dies. You can do some things to protect yourself.
+
+#### Don’t use the ‘admin’ username
+
+The majority of attacks assume people are using the username ‘admin’ due to the fact that early versions of WordPress defaulted to this. If you are still using this username, make a new account, transfer all the posts to that account, and change ‘admin’ to a subscriber (or delete it entirely).
+
+You can also use the plugin [Change Username](https://wordpress.org/plugins/change-username/) to change your username.
+
+#### Good Passwords
+
+The goal with your password is to make it hard for other people to guess and hard for a brute force attack to succeed. Many automatic password generators are available that can be used to create secure passwords.
+
+WordPress also features a password strength meter which is shown when changing your password in WordPress. Use this when changing your password to ensure its strength is adequate.
+
+Things to avoid when choosing a password:
+
+- Any permutation of your own real name, username, company name, or name of your website.
 - A word from a dictionary, in any language.
 - A short password.
 - Any numeric-only or alphabetic-only password (a mixture of both is best).
 
-A strong password is necessary not just to protect your blog content. A hacker who gains access to your administrator account is able to install malicious scripts that can potentially compromise your entire server. To further increase the strength of your password, you can enable [Two Step Authentication](#advanced-administration/security/mfa) to further protect your blog. #### Plugins
+A strong password is necessary not just to protect your blog content. A hacker who gains access to your administrator account is able to install malicious scripts that can potentially compromise your entire server.
 
-There are many [plugins available to limit the number of login attempts](https://wordpress.org/plugins/tags/brute-force) made on your site. Alternatively, there are also many [plugins you can use to block people from accessing wp-admin](https://wordpress.org/plugins/search.php?q=admin+rename) altogether. ### Protect Your Server
+To further increase the strength of your password, you can enable [Two Step Authentication](#advanced-administration/security/mfa) to further protect your blog.
 
-If you decide to lock down wp-login.php or wp-admin, you may find you get a 404 or 401 error when accessing those pages. To avoid that, you will need to add the following to your .htaccess file. ```
+#### Plugins
+
+There are many [plugins available to limit the number of login attempts](https://wordpress.org/plugins/tags/brute-force) made on your site. Alternatively, there are also many [plugins you can use to block people from accessing wp-admin](https://wordpress.org/plugins/search.php?q=admin+rename) altogether.
+
+### Protect Your Server
+
+If you decide to lock down wp-login.php or wp-admin, you may find you get a 404 or 401 error when accessing those pages. To avoid that, you will need to add the following to your .htaccess file.
+
+```
 ErrorDocument 401 default  
 
 ```
 
-You can have the 401 point to 401.html, but the point is to aim it at *not* WordPress. For Nginx you can use the `error_page` directive but must supply an absolute url. ```
+You can have the 401 point to 401.html, but the point is to aim it at *not* WordPress.
+
+For Nginx you can use the `error_page` directive but must supply an absolute url.
+
+```
 error_page  401  https://example.com/forbidden.html;  
 
 ```
 
-On IIS web servers you can use the `httpErrors` element in your web.config, set `errorMode="custom"`: ```
+On IIS web servers you can use the `httpErrors` element in your web.config, set `errorMode="custom"`:
+
+```
 <httpErrors errorMode="Custom">  
     <error statusCode="401"
     subStatusCode="2"
@@ -7170,7 +7190,15 @@ On IIS web servers you can use the `httpErrors` element in your web.config, set 
 
 #### Password Protect wp-login.php
 
-Password protecting your wp-login.php file (and wp-admin folder) can add an extra layer to your server. Because password protecting wp-admin can break any plugin that uses ajax on the front end, it’s usually sufficient to just protect wp-login.php. To do this, you will need to create a .htpasswd file. Many hosts have tools to do this for you, but if you have to do it manually, you can use this [htpasswd generator](https://hostingcanada.org/htpasswd-generator/). Much like your .htaccess file (which is a file that is only an extension), .htpasswd will also have no prefix. You can either put this file outside of your public web folder (i.e. not in /public\_html/ or /domain.com/, depending on your host), or you *can* put it in the same folder, but you’ll want to do some extra security work in your .htaccess file if you do. Speaking of which, once you’ve uploaded the .htpasswd file, you need to tell .htaccess where it’s at. Assuming you’ve put .htpasswd in your user’s home directory and your htpasswd username is mysecretuser, then you put this in your .htaccess: ```
+Password protecting your wp-login.php file (and wp-admin folder) can add an extra layer to your server. Because password protecting wp-admin can break any plugin that uses ajax on the front end, it’s usually sufficient to just protect wp-login.php.
+
+To do this, you will need to create a .htpasswd file. Many hosts have tools to do this for you, but if you have to do it manually, you can use this [htpasswd generator](https://hostingcanada.org/htpasswd-generator/). Much like your .htaccess file (which is a file that is only an extension), .htpasswd will also have no prefix.
+
+You can either put this file outside of your public web folder (i.e. not in /public\_html/ or /domain.com/, depending on your host), or you *can* put it in the same folder, but you’ll want to do some extra security work in your .htaccess file if you do.
+
+Speaking of which, once you’ve uploaded the .htpasswd file, you need to tell .htaccess where it’s at. Assuming you’ve put .htpasswd in your user’s home directory and your htpasswd username is mysecretuser, then you put this in your .htaccess:
+
+```
 # Stop Apache from serving .ht* files
 <Files ~ "^\\.ht">  
     Order allow,deny
@@ -7187,7 +7215,11 @@ Password protecting your wp-login.php file (and wp-admin folder) can add an extr
 
 ```
 
-The actual location of AuthUserFile depends on your server, and the ‘require user’ will change based on what username you pick. If you are using Nginx you can password protect your wp-login.php file using the [HttpAuthBasicModule](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html). This block should be inside your server block. ```
+The actual location of AuthUserFile depends on your server, and the ‘require user’ will change based on what username you pick.
+
+If you are using Nginx you can password protect your wp-login.php file using the [HttpAuthBasicModule](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html). This block should be inside your server block.
+
+```
 location /wp-login.php {
     auth_basic "Administrator Login";
     auth_basic_user_file .htpasswd;
@@ -7195,18 +7227,42 @@ location /wp-login.php {
 
 ```
 
-The filename path is relative to directory of nginx configuration file nginx.conf The file should be in the following format: ```
+The filename path is relative to directory of nginx configuration file nginx.conf
+
+The file should be in the following format:
+
+```
 user:pass
 user2:pass2
 user3:pass3
 
 ```
 
-Unfortunately there is no easy way of configuring a password protected wp-login.php on Windows Server IIS. If you use a .htaccess processor like Helicon Ape, you can use the .htaccess example mentioned above. Otherwise you’d have to ask your hosting provider to set up Basic Authentication. All passwords must be encoded by function `crypt(3)`. You can use an online [htpasswd generator](https://hostingcanada.org/htpasswd-generator/) to encrypt your password. #### Throttle Multiple Login Attempts
+Unfortunately there is no easy way of configuring a password protected wp-login.php on Windows Server IIS. If you use a .htaccess processor like Helicon Ape, you can use the .htaccess example mentioned above. Otherwise you’d have to ask your hosting provider to set up Basic Authentication.
 
-One of the most common kinds of attacks targeting internet services is brute force login attacks. With this form of attack, a malicious party tries to guess WordPress usernames and passwords. The attacker needs only the URL of a user site to perform an attack. Software is readily available to perform these attacks using botnets, making increasingly complex passwords easier to find. The best protection against this kind of attack is to set and recommend and/or enforce strong passwords for WordPress users. It is also recommended for hosts to throttle login attempts at the network and server level when possible. It’s helpful to throttle both maximum logins per site over time, and maximum attempts per IP over time across server or infrastructure to mitigate bot password brute-force attacks. This can be done at the plugin level as well, but not without incurring the additional resource utilization caused during these attacks. #### Limit Access to wp-login.php by IP
+All passwords must be encoded by function `crypt(3)`. You can use an online [htpasswd generator](https://hostingcanada.org/htpasswd-generator/) to encrypt your password.
 
-If you are the only person who needs to login to your Admin area and you have a fixed IP address, you can deny wp-login.php (and thus the wp-admin/ folder) access to everyone but yourself via an .htaccess or web.config file. This is often referred to as an *IP whitelist*. **Note:** Beware your ISP or computer may be changing your IP address frequently, this is called dynamic IP addressing, rather than fixed IP addressing. This could be used for a variety of reasons, such as saving money. If you suspect this to be the case, find out out how change your computer’s settings, or contact your ISP to obtain a fixed address, in order to use this procedure. In all examples you have to replace 203.0.113.15 with your IP address. Your Internet Provider can help you to establish your IP address. Or you can use an online service such as [What Is My IP](https://www.whatismyip.com/). Examples for multiple IP addresses are also provided. They’re ideal if you use more than one internet provider, if you have a small pool of IP addresses or when you have a couple of people that are allowed access to your site’s Dashboard. Create a file in a plain text editor called .htaccess and add: ```
+#### Throttle Multiple Login Attempts
+
+One of the most common kinds of attacks targeting internet services is brute force login attacks. With this form of attack, a malicious party tries to guess WordPress usernames and passwords. The attacker needs only the URL of a user site to perform an attack. Software is readily available to perform these attacks using botnets, making increasingly complex passwords easier to find.
+
+The best protection against this kind of attack is to set and recommend and/or enforce strong passwords for WordPress users.
+
+It is also recommended for hosts to throttle login attempts at the network and server level when possible. It’s helpful to throttle both maximum logins per site over time, and maximum attempts per IP over time across server or infrastructure to mitigate bot password brute-force attacks. This can be done at the plugin level as well, but not without incurring the additional resource utilization caused during these attacks.
+
+#### Limit Access to wp-login.php by IP
+
+If you are the only person who needs to login to your Admin area and you have a fixed IP address, you can deny wp-login.php (and thus the wp-admin/ folder) access to everyone but yourself via an .htaccess or web.config file. This is often referred to as an *IP whitelist*.
+
+**Note:** Beware your ISP or computer may be changing your IP address frequently, this is called dynamic IP addressing, rather than fixed IP addressing. This could be used for a variety of reasons, such as saving money. If you suspect this to be the case, find out out how change your computer’s settings, or contact your ISP to obtain a fixed address, in order to use this procedure.
+
+In all examples you have to replace 203.0.113.15 with your IP address. Your Internet Provider can help you to establish your IP address. Or you can use an online service such as [What Is My IP](https://www.whatismyip.com/).
+
+Examples for multiple IP addresses are also provided. They’re ideal if you use more than one internet provider, if you have a small pool of IP addresses or when you have a couple of people that are allowed access to your site’s Dashboard.
+
+Create a file in a plain text editor called .htaccess and add:
+
+```
 # Block access to wp-login.php.
 <Files wp-login.php>
     order deny,allow
@@ -7216,7 +7272,9 @@ If you are the only person who needs to login to your Admin area and you have a 
 
 ```
 
-You can add more than one allowed IP address using: ```
+You can add more than one allowed IP address using:
+
+```
 # Block access to wp-login.php.
 <Files wp-login.php>
     order deny,allow  
@@ -7228,7 +7286,9 @@ You can add more than one allowed IP address using: ```
 
 ```
 
-Are you using Apache 2.4 and Apache module [mod\_authz\_host](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html)? Then you have to use a slightly different syntax: ```
+Are you using Apache 2.4 and Apache module [mod\_authz\_host](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html)? Then you have to use a slightly different syntax:
+
+```
 # Block access to wp-login.php.
 <Files wp-login.php>
     Require ip 203.0.113.15
@@ -7236,7 +7296,9 @@ Are you using Apache 2.4 and Apache module [mod\_authz\_host](https://httpd.apac
 
 ```
 
-If you want to add more than one IP address, you can use: ```
+If you want to add more than one IP address, you can use:
+
+```
 # Block access to wp-login.php.
 <Files wp-login.php>
     Require ip 203.0.113.15 203.0.113.16 203.0.113.17
@@ -7246,7 +7308,9 @@ If you want to add more than one IP address, you can use: ```
 
 ```
 
-For Nginx you can add a location block inside your server block that works the same as the Apache example above. ```
+For Nginx you can add a location block inside your server block that works the same as the Apache example above.
+
+```
 error_page  403  https://example.com/forbidden.html;
 location /wp-login.php {
     allow   203.0.113.15
@@ -7257,7 +7321,11 @@ location /wp-login.php {
 
 ```
 
-Note that the order of the deny/allow is of the utmost importance. You might be tempted to think that you can switch the access directives order and everything will work. In fact it doesn’t. Switching the order in the above example has the result of denying access to all addresses. Again, on IIS web servers you can use a web.config file to limit IP addresses that have access. It’s best to add this in an additional `<location` directive. ```
+Note that the order of the deny/allow is of the utmost importance. You might be tempted to think that you can switch the access directives order and everything will work. In fact it doesn’t. Switching the order in the above example has the result of denying access to all addresses.
+
+Again, on IIS web servers you can use a web.config file to limit IP addresses that have access. It’s best to add this in an additional `<location` directive.
+
+```
 <location path="wp-admin">
     <system.webServer>
         <security>
@@ -7275,7 +7343,9 @@ Note that the order of the deny/allow is of the utmost importance. You might be 
 
 #### Deny Access to No Referrer Requests
 
-Extended from [Combatting Comment Spam](https://codex.wordpress.org/Combating_Comment_Spam/Denying_Access#Deny_Access_to_No_Referrer_Requests), you can use this to prevent anyone who isn’t submitting the login form from accessing it: ```
+Extended from [Combatting Comment Spam](https://codex.wordpress.org/Combating_Comment_Spam/Denying_Access#Deny_Access_to_No_Referrer_Requests), you can use this to prevent anyone who isn’t submitting the login form from accessing it:
+
+```
 # Stop spam attack logins and comments
 <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -7288,7 +7358,9 @@ Extended from [Combatting Comment Spam](https://codex.wordpress.org/Combating_Co
 
 ```
 
-Nginx – Deny Access to No Referrer Requests ```
+Nginx – Deny Access to No Referrer Requests
+
+```
 location ~* (wp-comments-posts|wp-login)\\.php$ {
     if ($http_referer !~ ^(https://example.com) ) {
         return 405;
@@ -7297,7 +7369,9 @@ location ~* (wp-comments-posts|wp-login)\\.php$ {
 
 ```
 
-Windows Server IIS – Deny access to no referrer requests: ```
+Windows Server IIS – Deny access to no referrer requests:
+
+```
 <rule name="block_comments_without_referer" patternSyntax="ECMAScript" stopProcessing="true">
 <match url="(.*)" ignoreCase="true" />
     <conditions logicalGrouping="MatchAll">
@@ -7310,15 +7384,35 @@ Windows Server IIS – Deny access to no referrer requests: ```
 
 ```
 
-Change example.com to your domain. If you’re using Multisite with mapped domains, you’ll want to change example.com to `(example.com|example.net|example.org)` and so on. If you are using Jetpack comments, don’t forget to add jetpack.wordpress.com as referrer: `(example.com|jetpack\.wordpress\com)`#### ModSecurity
+Change example.com to your domain. If you’re using Multisite with mapped domains, you’ll want to change example.com to `(example.com|example.net|example.org)` and so on. If you are using Jetpack comments, don’t forget to add jetpack.wordpress.com as referrer: `(example.com|jetpack\.wordpress\com)`
 
-If you use ModSecurity, you can follow the advice from [Frameloss – Stopping brute force logins against WordPress](https://web.archive.org/web/20230113232859/https://www.frameloss.org/2011/07/29/stopping-brute-force-logins-against-wordpress/). This requires root level access to your server, and may need the assistance of your webhost. If you’re using ModSecurity 2.7.3, you can add the rules into your .htaccess file instead. #### Fail2Ban
+#### ModSecurity
 
-Fail2ban is a Python daemon that runs in the background. It checks the logfiles that are generated by Apache (or SSH for example), and on certain events can add a firewall rule. It uses a so called filter with a regular expression. If that regular expression happens for example 5 times in 5 minutes, it can block that IP address for 60 minutes (or any other set of numbers). Installing and setting up Fail2ban requires root access. #### Blocklists
+If you use ModSecurity, you can follow the advice from [Frameloss – Stopping brute force logins against WordPress](https://web.archive.org/web/20230113232859/https://www.frameloss.org/2011/07/29/stopping-brute-force-logins-against-wordpress/). This requires root level access to your server, and may need the assistance of your webhost.
 
-It appears that most brute force attacks are from hosts from Russia, Kazachstan and Ukraine. You can choose to block ip-addresses that originate from these countries. There are blocklists available on the internet that you can download. With some shell-scripting, you can then load blockrules with iptables. You have to be aware that you are blocking legitimate users as well as attackers. Make sure you can support and explain that decision to your customers. Besides blocklists per country, there are lists with ip-addresses of well-known spammers. You can also use these to block them with iptables. It’s good to update these lists regularly. Setting up of blocklists and iptables requires root access. #### Cloud/Proxy Services
+If you’re using ModSecurity 2.7.3, you can add the rules into your .htaccess file instead.
 
-Services like CloudFlare and Sucuri CloudProxy can also help mitigate these attacks by blocking the IPs before they reach your server. ### See Also
+#### Fail2Ban
+
+Fail2ban is a Python daemon that runs in the background. It checks the logfiles that are generated by Apache (or SSH for example), and on certain events can add a firewall rule. It uses a so called filter with a regular expression. If that regular expression happens for example 5 times in 5 minutes, it can block that IP address for 60 minutes (or any other set of numbers).
+
+Installing and setting up Fail2ban requires root access.
+
+#### Blocklists
+
+It appears that most brute force attacks are from hosts from Russia, Kazachstan and Ukraine. You can choose to block ip-addresses that originate from these countries. There are blocklists available on the internet that you can download. With some shell-scripting, you can then load blockrules with iptables.
+
+You have to be aware that you are blocking legitimate users as well as attackers. Make sure you can support and explain that decision to your customers.
+
+Besides blocklists per country, there are lists with ip-addresses of well-known spammers. You can also use these to block them with iptables. It’s good to update these lists regularly.
+
+Setting up of blocklists and iptables requires root access.
+
+#### Cloud/Proxy Services
+
+Services like CloudFlare and Sucuri CloudProxy can also help mitigate these attacks by blocking the IPs before they reach your server.
+
+### See Also
 
 - [Sucuri: Protecting Against WordPress Brute Force Attacks](https://blog.sucuri.net/2013/04/protecting-against-wordpress-brute-force-attacks.html)
 - [How to: Protect WordPress from brute-force XML-RPC attacks](https://www.saotn.org/how-to-wordpress-protection-from-brute-force-xml-rpc-attacks/)
