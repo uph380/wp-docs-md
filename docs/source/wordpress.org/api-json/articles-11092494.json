@@ -1,0 +1,109 @@
+{
+    "id": 11092494,
+    "date": "2019-01-21T04:10:09",
+    "date_gmt": "2019-01-21T04:10:09",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11092494"
+    },
+    "modified": "2023-01-16T12:19:00",
+    "modified_gmt": "2023-01-16T12:19:00",
+    "slug": "toolbar",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/toolbar/",
+    "title": {
+        "rendered": "Toolbar"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Toolbar</strong> is an area of the screen just above the site that  lists useful administration screen links such as add a new post or edit  your profile. </p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2019/01/admin_bar-1024x26.png\" alt=\"Admin Bar\" class=\"wp-image-11092506\" width=\"768\" height=\"20\" srcset=\"https://wordpress.org/documentation/files/2019/01/admin_bar-1024x26.png 1024w, https://wordpress.org/documentation/files/2019/01/admin_bar-300x8.png 300w, https://wordpress.org/documentation/files/2019/01/admin_bar-768x20.png 768w, https://wordpress.org/documentation/files/2019/01/admin_bar.png 1259w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" /><figcaption>Toolbar</figcaption></figure>\n\n\n\n<p>The Toolbar contains links to information about WordPress, as well as\n quick-links to create new posts, pages and links, add new users, review\n comments, and alerts to available updates to plugins and themes on your\n site.\n</p>\n\n\n\n<p>The toolbar can be turned on/off from the <strong>Toolbar</strong> option in <a href=\"/support/article/administration-screens/\">Administration</a> &gt; <a href=\"/support/article/administration-screens/#users-your-blogging-family\">Users</a> &gt; <a href=\"/support/article/users-your-profile-screen/\">Your Profile</a>, but It is no longer possible to hide the Toolbar when viewing the <a href=\"/support/article/administration-screens/\">Administration Screens</a>. </p>\n\n\n\n<hr class=\"wp-block-separator\" />\n\n\n\n<p><strong>Note:</strong> If you have turned the Toolbar on in your profile  settings, but still don&#8217;t see it on the front end of your site, it may  be that your theme does not call <a href=\"https://codex.wordpress.org/Function_Reference/wp_footer\"> </a>wp_footer() in its footer.php file, or the Toolbar may be disabled by a plugin. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\"><li> <a href=\"http://generatewp.com/toolbar/\">WordPress Toolbar Generator</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Toolbar is an area of the screen just above the site that lists useful administration screen links such as add a new post or edit your profile. The Toolbar contains links to information about WordPress, as well as quick-links to create new posts, pages and links, add new users, review comments, and alerts to [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11092494",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11092494",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11092494"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11092494/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355382,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11092494/revisions/16355382"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11092494"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11092494"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

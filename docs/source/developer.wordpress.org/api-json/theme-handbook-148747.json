@@ -1,0 +1,97 @@
+{
+    "id": 148747,
+    "date": "2023-09-05T07:14:59",
+    "date_gmt": "2023-09-05T07:14:59",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=148747"
+    },
+    "modified": "2024-04-25T10:51:56",
+    "modified_gmt": "2024-04-25T10:51:56",
+    "slug": "theme-security-issues",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/theme-security/theme-security-issues/",
+    "title": {
+        "rendered": "Theme security issues"
+    },
+    "content": {
+        "rendered": "\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Please do not report security issues with WordPress Core to the themes team. To report an issue with WordPress itself, <a href=\"https://make.wordpress.org/core/handbook/testing/reporting-security-vulnerabilities/\">follow the directions for reporting security vulnerabilities.</a></div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">If you have found a <b>plugin</b> with a security issue, please read <a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/\">Reporting Plugin Security Issues</a></div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">How to report a theme</h2>\n\n\n\n<p>If you find a theme with a security issue, please&nbsp;<strong>do not</strong>&nbsp;post about it publicly anywhere. Even if there\u2019s a report filed on one of the official security tracking sites, bringing more awareness to the security issue tends to increase people being hacked, and rarely speeds up the fixing.</p>\n\n\n\n<p>To report a theme that is in the WordPress.org theme directory, please go to the theme&#8217;s directory listing (For example, <a href=\"https://wordpress.org/themes/twentytwentythree/\">https://wordpress.org/themes/twentytwentythree/</a>) and use the &#8220;<strong>Report this theme</strong>&#8221; button in the sidebar, and complete the form.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/make.wordpress.org/themes/files/2023/09/report_theme.jpg?ssl=1\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/themes/files/2023/09/report_theme.jpg?ssl=1\" alt=\"\" class=\"wp-image-23133\" /></a></figure>\n\n\n\n<p><br><br>You can also send reports of security issues to <code>themes@wordpress.org</code>. Include the following:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>a clear and concise description of the issue</li>\n\n\n\n<li>a link to the specific theme</li>\n\n\n\n<li>whether or not you have validated the security issue yourself</li>\n\n\n\n<li><strong>optional</strong>&nbsp;\u2013 links to any public disclosures on 3rd party sites</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">For developers</h2>\n\n\n\n<h3 class=\"wp-block-heading\">What to do when you receive a request to update your theme</h3>\n\n\n\n<p>If your theme has been reported and the Themes Team decides that action needs to be taken, you will receive an email from the Themes Team with information and instructions.<br>&#8211; You may be asked to solve an issue within a specific time frame. This depends on the severity of the issue.<br>&#8211; The Themes Team may need to suspend your theme to prevent new downloads until the issue is resolved.<br><strong><br>You must reply to the email if you have any questions, need more information, or need more time.</strong></p>\n\n\n\n<p>Test your theme update carefully and submit it through the <a href=\"https://wordpress.org/themes/upload/\" data-type=\"link\" data-id=\"https://wordpress.org/themes/upload/\">upload form on the theme directory page</a>.</p>\n\n\n\n<p><a href=\"https://make.wordpress.org/themes/handbook/review/theme-suspension/\" data-type=\"link\" data-id=\"https://make.wordpress.org/themes/handbook/review/theme-suspension/\">Learn more about how the Themes team works with theme suspensions and delisting</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Resources</h3>\n\n\n\n<p>To learn more about theme security, please see the <a href=\"https://developer.wordpress.org/apis/security/\" data-type=\"link\" data-id=\"https://developer.wordpress.org/apis/security/\">Security chapter of the common APIs handbook</a>.</p>\n\n\n\n<figure class=\"wp-block-embed is-type-wp-embed is-provider-wordpress-developer-resources wp-block-embed-wordpress-developer-resources\"><div class=\"wp-block-embed__wrapper\">\nhttps://developer.wordpress.org/themes/theme-security/common-vulnerabilities\n</div></figure>\n\n\n\n<figure class=\"wp-block-embed is-type-wp-embed is-provider-make-wordpress-themes wp-block-embed-make-wordpress-themes\"><div class=\"wp-block-embed__wrapper\">\n<blockquote class=\"wp-embedded-content\" data-secret=\"1ser0ZEDEl\"><a href=\"https://make.wordpress.org/themes/2015/05/19/a-guide-to-writing-secure-themes-part-1-introduction/\">A Guide to Writing Secure Themes &#8211; Part 1: Introduction</a></blockquote><iframe loading=\"lazy\" class=\"wp-embedded-content\" sandbox=\"allow-scripts\" security=\"restricted\" style=\"position: absolute; clip: rect(1px, 1px, 1px, 1px);\" title=\"&#8220;A Guide to Writing Secure Themes &#8211; Part 1: Introduction&#8221; &#8212; Make WordPress Themes\" src=\"https://make.wordpress.org/themes/2015/05/19/a-guide-to-writing-secure-themes-part-1-introduction/embed/#?secret=ci4rw7BIdO#?secret=1ser0ZEDEl\" data-secret=\"1ser0ZEDEl\" width=\"500\" height=\"282\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>\n</div></figure>\n\n\n\n<figure class=\"wp-block-embed is-type-wp-embed is-provider-make-wordpress-themes wp-block-embed-make-wordpress-themes\"><div class=\"wp-block-embed__wrapper\">\n<blockquote class=\"wp-embedded-content\" data-secret=\"6h2NnVjkDr\"><a href=\"https://make.wordpress.org/themes/2015/05/26/a-guide-to-writing-secure-themes-part-2-validation/\">A Guide to Writing Secure Themes &#8211; Part 2: Validation</a></blockquote><iframe loading=\"lazy\" class=\"wp-embedded-content\" sandbox=\"allow-scripts\" security=\"restricted\" style=\"position: absolute; clip: rect(1px, 1px, 1px, 1px);\" title=\"&#8220;A Guide to Writing Secure Themes &#8211; Part 2: Validation&#8221; &#8212; Make WordPress Themes\" src=\"https://make.wordpress.org/themes/2015/05/26/a-guide-to-writing-secure-themes-part-2-validation/embed/#?secret=aebFHLiAe9#?secret=6h2NnVjkDr\" data-secret=\"6h2NnVjkDr\" width=\"500\" height=\"282\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>\n</div></figure>\n\n\n\n<figure class=\"wp-block-embed is-type-wp-embed is-provider-make-wordpress-themes wp-block-embed-make-wordpress-themes\"><div class=\"wp-block-embed__wrapper\">\n<blockquote class=\"wp-embedded-content\" data-secret=\"f69sm9RMpC\"><a href=\"https://make.wordpress.org/themes/2015/06/02/a-guide-to-writing-secure-themes-part-3-sanitization/\">A Guide to Writing Secure Themes &#8211; Part 3: Sanitization</a></blockquote><iframe loading=\"lazy\" class=\"wp-embedded-content\" sandbox=\"allow-scripts\" security=\"restricted\" style=\"position: absolute; clip: rect(1px, 1px, 1px, 1px);\" title=\"&#8220;A Guide to Writing Secure Themes &#8211; Part 3: Sanitization&#8221; &#8212; Make WordPress Themes\" src=\"https://make.wordpress.org/themes/2015/06/02/a-guide-to-writing-secure-themes-part-3-sanitization/embed/#?secret=ON0CuhWzyC#?secret=f69sm9RMpC\" data-secret=\"f69sm9RMpC\" width=\"500\" height=\"282\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>\n</div></figure>\n\n\n\n<figure class=\"wp-block-embed is-type-wp-embed is-provider-make-wordpress-themes wp-block-embed-make-wordpress-themes\"><div class=\"wp-block-embed__wrapper\">\n<blockquote class=\"wp-embedded-content\" data-secret=\"2vz1Dnjqtx\"><a href=\"https://make.wordpress.org/themes/2015/06/09/a-guide-to-writing-secure-themes-part-4-securing-post-meta/\">A Guide to Writing Secure Themes &#8211; Part 4: Securing Post Meta</a></blockquote><iframe loading=\"lazy\" class=\"wp-embedded-content\" sandbox=\"allow-scripts\" security=\"restricted\" style=\"position: absolute; clip: rect(1px, 1px, 1px, 1px);\" title=\"&#8220;A Guide to Writing Secure Themes &#8211; Part 4: Securing Post Meta&#8221; &#8212; Make WordPress Themes\" src=\"https://make.wordpress.org/themes/2015/06/09/a-guide-to-writing-secure-themes-part-4-securing-post-meta/embed/#?secret=IOJUIfxiux#?secret=2vz1Dnjqtx\" data-secret=\"2vz1Dnjqtx\" width=\"500\" height=\"282\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>\n</div></figure>\n",
+        "protected": false
+    },
+    "author": 14467238,
+    "featured_media": 0,
+    "parent": 11394,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148747",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148747",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14467238"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148747/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153591,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148747/revisions/153591"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11394"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148747"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

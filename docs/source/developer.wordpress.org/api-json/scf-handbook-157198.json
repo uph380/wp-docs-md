@@ -1,0 +1,91 @@
+{
+    "id": 157198,
+    "date": "2025-02-21T04:17:14",
+    "date_gmt": "2025-02-21T04:17:14",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/time-picker/"
+    },
+    "modified": "2025-02-21T04:17:28",
+    "modified_gmt": "2025-02-21T04:17:28",
+    "slug": "time-picker",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/time-picker/",
+    "title": {
+        "rendered": "Time Picker Field"
+    },
+    "content": {
+        "rendered": "<p>The Time Picker field provides an interface for selecting time values with customizable display and increment options.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Time selection</li>\n<li>Format options</li>\n<li>Step intervals</li>\n<li>Range limits</li>\n<li>Display customization</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Display Format &#8211; Time format</li>\n<li>Return Format &#8211; Data format</li>\n<li>Time Increment &#8211; Minute steps</li>\n<li>Placeholder &#8211; Helper text</li>\n<li>Default Value &#8211; Preset time</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157198",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157198",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157198/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157217,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157198/revisions/157217"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157198"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 125334,
+    "date": "2019-06-18T21:19:25",
+    "date_gmt": "2019-06-18T21:19:25",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125334"
+    },
+    "modified": "2019-06-19T04:48:50",
+    "modified_gmt": "2019-06-19T04:48:50",
+    "slug": "handbook",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/",
+    "title": {
+        "rendered": "Common APIs Handbook"
+    },
+    "content": {
+        "rendered": "\n<p>This handbook serves as a clearinghouse for documentation on all APIs present within the WordPress software as well as APIs available from the WordPress.org ecosystem.</p>\n",
+        "protected": false
+    },
+    "author": 3606,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125334",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125334",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/3606"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125334/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125337,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125334/revisions/125337"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125334"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

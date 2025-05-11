@@ -1,0 +1,109 @@
+{
+    "id": 13173607,
+    "date": "2020-07-27T06:18:03",
+    "date_gmt": "2020-07-27T06:18:03",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13173607"
+    },
+    "modified": "2024-06-08T18:42:45",
+    "modified_gmt": "2024-06-08T18:42:45",
+    "slug": "scribd-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/scribd-embed/",
+    "title": {
+        "rendered": "Scribd embed"
+    },
+    "content": {
+        "rendered": "\n\n\n<p>By using the <em>Scribd embed block</em>, you can embed various articles, e-books, or research papers into your posts and pages. You don\u2019t need a Scribd account to embed an article, although what you are embedding needs to be public.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"701\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1.png\" alt=\"A test article from Scribd, using the Scribed Embed block.\" class=\"wp-image-15942846\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1.png 1000w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1-300x210.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1-768x538.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\">Example of an Embedded Scribd article</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Steps to embed an article from Scribd</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>On the Scribd app, click on the article that you want to embed in your post/page &amp; click on the \u201cEmbed\u201d option</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-2-1-1024x636.png\" alt=\"A test article shown in Scribd with &quot;Embed&quot; highlighted.\" class=\"wp-image-15942854\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>After clicking on the \u201cEmbed\u201d option, a pop-up will appear with several options:</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-3.png\" alt=\"The pop up Embed panel with options.\" class=\"wp-image-15942856\" style=\"width:349px;height:389px\" width=\"349\" height=\"389\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-3.png 882w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-3-269x300.png 269w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-3-768x858.png 768w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></figure>\n\n\n\n<p>It contains several options for you to choose from. Here you can choose the size of your article/e-book, choose the page number it starts from, as well as see a preview of your document.</p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>After altering the options in the pop-up as per your needs, copy the URL on the top of this pop-up</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"677\" height=\"176\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-4.png\" alt=\"Close up on the embed pop up for the &quot;copy link&quot; option.\" class=\"wp-image-15942861\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-4.png 677w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-4-300x78.png 300w\" sizes=\"auto, (max-width: 677px) 100vw, 677px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Add a Scribd Embed block to your page or post by clicking on the&nbsp;<strong>(+)</strong>&nbsp;Block Inserter&nbsp;icon and selecting the&nbsp;<em><em>Scribd</em>&nbsp;block</em>.. Alternatively, you can type&nbsp;<code>/scribd</code>&nbsp;and press <kbd>enter</kbd>.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-5-1.png\" alt=\"Searching for the Scribd embed block using a slash command.\" class=\"wp-image-15942866\" style=\"width:300px\" width=\"300\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>Paste the URL copied from the Scribd Embed option in the text box.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-6-1024x441.png\" alt=\"Pasting a link into the Scribd block and clicking embed.\" class=\"wp-image-15942874\" style=\"width:355px;height:152px\" width=\"355\" height=\"152\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-6-1024x441.png 1024w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-6-300x129.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-6-768x331.png 768w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-6.png 1402w\" sizes=\"auto, (max-width: 355px) 100vw, 355px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"6\">\n<li>Click the \u201cEmbed\u201d button. If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-7.png\" alt=\"Preview of the embedded Scribd article within the WordPress editor.\" class=\"wp-image-15942876\" style=\"width:340px;height:411px\" width=\"340\" height=\"411\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-7.png 827w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-7-248x300.png 248w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-7-768x929.png 768w\" sizes=\"auto, (max-width: 340px) 100vw, 340px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d</em></p>\n\n\n\n<p>In that case, you\u2019ll have two choices: Try again with a different URL or Convert to a link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-8-1.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-15942879\" style=\"width:343px;height:189px\" width=\"343\" height=\"189\" /></figure>\n\n\n\n<p>7. Click on \u201cPreview\u201d to see how it will look on the front-end</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"701\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1.png\" alt=\"Preview of the embedded Scribd article on the front end of the site.\" class=\"wp-image-15942846\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1.png 1000w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1-300x210.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-1-768x538.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Scribd embed shows four buttons:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"288\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-9.png\" alt=\"Block Toolbar with options available for the Scribd Block.\" class=\"wp-image-15942883\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-9.png 800w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-9-300x108.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-9-768x276.png 768w\" sizes=\"auto, (max-width: 800px) 100vw, 800px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.&nbsp;</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-10.png\" alt=\"Options to transform the Scribd block to Paragraph, Columns or Group.\" class=\"wp-image-15942890\" style=\"width:344px;height:170px\" width=\"344\" height=\"170\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-10.png 1000w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-10-300x148.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-10-768x379.png 768w\" sizes=\"auto, (max-width: 344px) 100vw, 344px\" /></figure>\n\n\n\n<p>You can transform a Scribd embed into a Paragraph, Group, or Column. Transforming it into a Group would give you the ability to change the background color and other settings of the Scribd embed, as shown below:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-11.png\" alt=\"Example of transforming Scribd block to group and updating the background and text color of the group.\" class=\"wp-image-15942891\" style=\"width:349px;height:221px\" width=\"349\" height=\"221\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-11.png 1000w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-11-300x191.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-11-768x488.png 768w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment&nbsp;</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-12.png\" alt=\"Alignment options for the Scribd block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-15942902\" style=\"width:367px;height:334px\" width=\"367\" height=\"334\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-12.png 734w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-12-300x273.png 300w\" sizes=\"auto, (max-width: 367px) 100vw, 367px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Wide width</strong> &#8211; Increase the width of the block beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the Scribd block to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left</strong> &#8211; Make the Scribd block left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Scribd block alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the Scribd block align right</li>\n</ul>\n\n\n\n<p><em>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.&nbsp;</em></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Scribd Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-13.png\" alt=\"Editing the Scribd block URL via the &quot;edit&quot; option.\" class=\"wp-image-15942897\" style=\"width:356px;height:151px\" width=\"356\" height=\"151\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-13.png 1000w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-13-300x127.png 300w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-13-768x326.png 768w\" sizes=\"auto, (max-width: 356px) 100vw, 356px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options:</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings<strong>&nbsp;</strong></h2>\n\n\n\n<p>Besides the Advanced section, the Scribd embed has only one other setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media Settings</strong></p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"538\" height=\"272\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-15.png\" alt=\"Media settings for the Scribd embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-15942923\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-15.png 538w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-15-300x152.png 300w\" sizes=\"auto, (max-width: 538px) 100vw, 538px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"542\" height=\"282\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-16.png\" alt=\"Media settings for the Scribd embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-15942925\" srcset=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-16.png 542w, https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-16-300x156.png 300w\" sizes=\"auto, (max-width: 542px) 100vw, 542px\" /></figure>\n</div>\n</div>\n\n\n\n<p>Via the&nbsp;<em>Media Settings</em>&nbsp;you can control the behavior of your embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong>&nbsp;This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong>&nbsp;This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add  CSS class(es) to your block.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Scribd-Embed-HelpHub-SS-17-2-1.png\" alt=\"Additional CSS Class(es) option for the Scribd Embed block.\" class=\"wp-image-15942932\" style=\"width:276px;height:155px\" width=\"276\" height=\"155\" /></figure>\n\n\n\n<p>The \u201cAdditional CSS class(es)\u201d lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-23\n<ul class=\"wp-block-list\">\n<li>Updated with images from WordPress 6.0</li>\n\n\n\n<li>Added new \u201cTransform to\u201d setting (Column)</li>\n\n\n\n<li>Added &#8220;Edit as HTML&#8221;, \u201cLock\u201d, and &#8220;Add to Reusable Blocks&#8221; information under More Options</li>\n\n\n\n<li>Added Media Settings documentation</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-11-27\n<ul class=\"wp-block-list\">\n<li>added WP 5.6 images</li>\n\n\n\n<li>Removed items from  <strong>More Options</strong> and <strong>Advanced </strong></li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-19\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-11\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.5</li>\n\n\n\n<li>Embedded VideoPress video</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>By using the Scribd embed block, you can embed various articles, e-books, or research papers into your posts and pages. You don\u2019t need a Scribd account to embed an article, although what you are embedding needs to be public. Steps to embed an article from Scribd It contains several options for you to choose from. [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13173607",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173607",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13173607"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173607/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360389,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173607/revisions/16360389"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13173607"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13173607"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

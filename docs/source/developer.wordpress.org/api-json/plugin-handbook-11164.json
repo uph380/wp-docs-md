@@ -1,0 +1,97 @@
+{
+    "id": 11164,
+    "date": "2014-10-19T18:15:12",
+    "date_gmt": "2014-10-19T18:15:12",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11164"
+    },
+    "modified": "2025-03-20T00:30:43",
+    "modified_gmt": "2025-03-20T00:30:43",
+    "slug": "hooking-wp-cron-into-the-system-task-scheduler",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/",
+    "title": {
+        "rendered": "Hooking WP-Cron Into the System Task Scheduler"
+    },
+    "content": {
+        "rendered": "\n<p>As previously mentioned, WP-Cron does not run continuously, which can be an issue if there are critical tasks that must run on time. There is an easy solution for this. Simply set up your system&#8217;s task scheduler to run on the intervals you desire (or at the specific time needed). The easiest solution is to use a tool to make a web request to the <code>wp-cron.php</code> file.</p>\n\n\n\n<p>After scheduling the task on your system, there is one more step to complete. WordPress will continue to run WP-Cron on each page load. This is no longer necessary and will contribute to extra resource usage on your server. WP-Cron can be disabled in the <code>wp-config.php</code> file. Open the <code>wp-config.php</code> file for editing and add the following line:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">define( 'DISABLE_WP_CRON', true );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Windows</h2>\n\n\n\n<p>Windows calls their time based scheduling system the Task Scheduler. It can be accessed via the <strong>Administrative Tools</strong> in the control panel.</p>\n\n\n\n<p>How you setup the task varies with server setup. One method is to use PowerShell and a Basic Task. After creating a Basic Task the following command can be used to call the WordPress Cron script.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"powershell\" class=\"language-powershell\">powershell \"Invoke-WebRequest http://YOUR_SITE_URL/wp-cron.php\"</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">MacOS and Linux</h2>\n\n\n\n<p>Mac OS X and Linux both use cron as their time based scheduling system. It is typically access from the terminal with the <code>crontab -e</code> command. It should be noted that tasks will be run as a regular user or as root depending on the system user running the command.</p>\n\n\n\n<p>Cron has a specific syntax that needs to be followed and contains the following parts:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Minute</li>\n\n\n\n<li>Hour</li>\n\n\n\n<li>Day of month</li>\n\n\n\n<li>Month</li>\n\n\n\n<li>Day of week</li>\n\n\n\n<li>Command to execute</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"500\" height=\"250\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/plugin-wp-cron-cron-scheduling.png?resize=500%2C250&#038;ssl=1\" alt=\"\" class=\"wp-image-11813\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/plugin-wp-cron-cron-scheduling.png?w=500&amp;ssl=1 500w, https://i0.wp.com/developer.wordpress.org/files/2014/10/plugin-wp-cron-cron-scheduling.png?resize=300%2C150&amp;ssl=1 300w\" sizes=\"auto, (max-width: 500px) 100vw, 500px\" /></figure>\n\n\n\n<p>If a command should be run regardless of one of the time sections an asterisk (*) should be used. For example if you wanted to run a command every 15 minutes regardless of the hour, day, or month it would look like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">*/15 * * * * command</code></pre>\n\n\n\n<p>Many servers have <code>wget</code> installed and this is an easy tool to call the WordPress Cron script.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">wget --delete-after http://YOUR_SITE_URL/wp-cron.php</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Note: without &#8211;delete-after option, wget would save the output of the HTTP GET request.</div></div>\n\n\n\n\n<p>A daily call to your site&#8217;s WordPress Cron that triggers at midnight every night could look similar to:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">0 0 * * * wget --delete-after http://YOUR_SITE_URL/wp-cron.php</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11157,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11164",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11164",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 29,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11164/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157402,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11164/revisions/157402"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11164"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

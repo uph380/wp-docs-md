@@ -1,0 +1,109 @@
+{
+    "id": 10813566,
+    "date": "2018-10-25T01:19:26",
+    "date_gmt": "2018-10-25T01:19:26",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10813566"
+    },
+    "modified": "2023-10-24T15:06:20",
+    "modified_gmt": "2023-10-24T15:06:20",
+    "slug": "manage-wordpress-widgets",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/manage-wordpress-widgets/",
+    "title": {
+        "rendered": "Manage WordPress widgets"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-pale-cyan-blue-background-color has-background\">This article covers &#8220;Classic Widgets&#8221;. If you are using the newer block-based widgets, please check <a href=\"https://wordpress.org/documentation/article/block-based-widgets-editor/\">this article</a>.</p>\n\n\n\n<p>WordPress widgets add content and functionality to the widget area. The widget area is a pre-defined area by the theme, typically located in the sidebar or footer, but varies from theme to theme. Examples are the default widgets that come with WordPress; for Categories, Tag cloud, Search, etc. Plugins will often add their own widgets.</p>\n\n\n\n<p>Widgets were originally designed to provide a simple and easy-to-use way of giving design and structure control of the WordPress Theme to the user, which is now available on properly &#8220;widgetized&#8221; WordPress Themes to include the header, footer, and elsewhere in the WordPress design and structure.</p>\n\n\n\n<p>Widgets require no code experience or expertise. They can be added, removed, and rearranged on the <strong>Theme Customizer</strong> or <strong>Appearance &gt; Widgets</strong> in the WordPress Administration Screens.</p>\n\n\n\n<p>Some WordPress Widgets offer customization and options such as forms to fill out, includes or excludes of data and information, optional images, and other customization features.</p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/block-based-widgets-editor/\">Block-based Widgets Editor</a> explains how to use the updated Widgets experience with blocks. </p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/appearance-widgets-screen/\">Appearance Widgets Screen</a> explains how to use the various Widgets that come with WordPress in the Classic experience.</p>\n\n\n\n<p>Plugins that come bundled with widgets can be found in the <a href=\"https://wordpress.org/extend/plugins/\">WordPress Plugin Directory</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Installing Widgets</h2>\n\n\n\n<p>WordPress comes pre-packaged with a variety of <a href=\"/support/article/glossary/#widget\">Widgets</a>.&nbsp;If those are insufficient for your needs you can install new ones by searching the <a href=\"https://wordpress.org/extend/plugins/\">WordPress Plugin Directory</a> which is accessible from the WordPress Administration <strong>Plugins &gt; Add New</strong> Screen.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Displaying Widgets</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Existing Widgets in Existing Widget Areas</h3>\n\n\n\n<p>Before you can add a Widget you must verify that the Theme you&#8217;re using supports Widgets (more specifically: <a href=\"/support/article/glossary/#widget-area\">Widget Area</a>).&nbsp;You can do so by simply navigating to the Appearance menu and looking for a sub menu titled &#8220;Widgets&#8221;.</p>\n\n\n\n<p>If your Theme supports Theme Customizer then you can use the following Steps. In Theme Customizer, the live preview of changes is available.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1214\" height=\"663\" src=\"https://wordpress.org/documentation/files/2018/10/appearance-customize-widgets.png\" alt=\"\" class=\"wp-image-10813568\" srcset=\"https://wordpress.org/documentation/files/2018/10/appearance-customize-widgets.png 1214w, https://wordpress.org/documentation/files/2018/10/appearance-customize-widgets-300x164.png 300w, https://wordpress.org/documentation/files/2018/10/appearance-customize-widgets-1024x559.png 1024w, https://wordpress.org/documentation/files/2018/10/appearance-customize-widgets-768x419.png 768w\" sizes=\"auto, (max-width: 1214px) 100vw, 1214px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to <strong>Appearance &gt; Customize</strong> in the WordPress Administration Screens.</li>\n\n\n\n<li>Click the <strong>Widget</strong> menu in the Theme Customizer to access to the Widget Customize Screen.</li>\n\n\n\n<li>Click the <strong>down arrow</strong> of Widget Area to list the already registered Widgets.</li>\n\n\n\n<li>Click Add a Widget button at the bottom of sidebar. It shows the list of available widgets.</li>\n\n\n\n<li>Click a widget you want to add. The widgets should be added in the sidebar.</li>\n\n\n\n<li>Preview your site and you should see the content from your new Widget.</li>\n\n\n\n<li>To arrange the Widgets within the Sidebar, drag and drop the widgets in the order you want or click Reorder link and click up arrow and down allow of each widget and click Done after the arrange operation.</li>\n\n\n\n<li>To customize the Widget features, click the <strong>down arrow</strong> in the right to expand the Widget&#8217;s interface.</li>\n\n\n\n<li>To remove the widget, click <strong>Remove</strong> from Widget&#8217;s interface in above step.</li>\n</ol>\n\n\n\n<p>If your Theme does not support Theme Customizer then you can use the following conventional steps:</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1121\" height=\"699\" src=\"https://wordpress.org/documentation/files/2018/10/designwidget-2.png\" alt=\"\" class=\"wp-image-10813570\" srcset=\"https://wordpress.org/documentation/files/2018/10/designwidget-2.png 1121w, https://wordpress.org/documentation/files/2018/10/designwidget-2-300x187.png 300w, https://wordpress.org/documentation/files/2018/10/designwidget-2-1024x639.png 1024w, https://wordpress.org/documentation/files/2018/10/designwidget-2-768x479.png 768w\" sizes=\"auto, (max-width: 1121px) 100vw, 1121px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to <strong>Appearance &gt; Widgets</strong> in the WordPress Administration Screens.</li>\n\n\n\n<li>Choose a Widget and either drag it to the sidebar where you wish it to appear, or click the widget, (select a destination sidebar if your theme has more than one) and click the Add Widget button. There might be more than one sidebar option, so begin with the first one. Once in place, WordPress automatically updates the Theme.</li>\n\n\n\n<li>Preview the site. You should find that the &#8220;default&#8221; sidebar elements are now gone and only the new addition is visible.</li>\n\n\n\n<li>Return to the Widgets Screen to continue adding Widgets.</li>\n\n\n\n<li>To arrange the Widgets within the sidebar or Widget area, click and drag it into place.</li>\n\n\n\n<li>To customize the Widget features, click the down arrow in the upper right corner to expand the Widget&#8217;s interface.</li>\n\n\n\n<li>To save the Widget&#8217;s customization, click Save.</li>\n\n\n\n<li>To remove the Widget, click Delete.</li>\n</ol>\n\n\n\n<p>If you want to remove the widget but save its setting for possible future use, just drag it into the Inactive Widgets area. You can add them back anytime from there. This is especially helpful when you switch to a theme with fewer or different widget areas.</p>\n\n\n\n<p>When changing themes, there is often some variation in the number and setup of widget areas/sidebars and sometimes these conflicts make the transition a bit less smooth. If you changed themes and seem to be missing widgets, scroll down on the screen to the Inactive Widgets area, where all of your widgets and their settings will have been saved.</p>\n\n\n\n<p>Enabling Accessibility Mode, via Screen Options, allows you to use Add and Edit buttons instead of using drag and drop.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Widget Areas</h3>\n\n\n\n<p>While widget areas typically occur in webpage sidebars, a theme can place widget areas anywhere on a page. For example, besides the usual sidebar locations, the <a href=\"/support/article/twenty-seventeen/\">Twenty Seventeen</a> theme has a widget area in the footer of every page.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using Text Widgets</h2>\n\n\n\n<p>The Text Widget is one of the most commonly used WordPress Widgets that comes with every WordPress installation. It allows users to add text, video, images, custom lists, and more to their WordPress sites.</p>\n\n\n\n<p>To use the WordPress Text Widget:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to <strong>Appearance &gt; Customize</strong> in the WordPress Administration Screens and click the <strong>Widget</strong> menu in the Theme Customizer. Or Go to <strong>Appearance &gt; Widgets</strong> in the WordPress Administration Screens.</li>\n\n\n\n<li>Open the sidebar to which you wish to add the Text Widget.</li>\n\n\n\n<li>Find the Text Widget in the list of Widgets.</li>\n\n\n\n<li>Click and drag the Widget to the spot you wish it to appear.</li>\n</ol>\n\n\n\n<p>To open and edit the Text Widget:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Click the down arrow to the right of the Text Widget title.</li>\n\n\n\n<li>Set the Text Widget Title (optional).</li>\n\n\n\n<li>Add the text or HTML code to the box or edit what is currently there.</li>\n\n\n\n<li>Choose the option to <strong>Automatically add paragraphs</strong> to wrap each block of text in an HTML paragraph tag (recommended for text).</li>\n\n\n\n<li>Click Save to save the Text Widget.</li>\n\n\n\n<li>Click Close to close the Text Widget.</li>\n\n\n\n<li>Switch tabs in your browser and preview the results and make changes if necessary.</li>\n</ol>\n\n\n\n<p>The Text Widget can hold a variety of HTML, XHTML, and multimedia links and players such as video and object embeds.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Adding Code to the Text Widget</h3>\n\n\n\n<p>Basic HTML, embeds, and JavaScript are added easily to the WordPress Text Widget. Most embed codes from social sharing sites for multimedia will work in a WordPress Text Widget. However, active code and programming languages such as PHP will not work as the Widget will strip out code it cannot display.</p>\n\n\n\n<p>To add active code to the Text Widget, use one of the many WordPress Plugins from the <a href=\"https://wordpress.org/plugins/\">WordPress Plugin Directory</a> that override WordPress restrictions on using PHP in posts. Check that they will work on Widgets as some will not.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using RSS Widgets</h2>\n\n\n\n<p>The RSS Widget allows you to integrate an external feed source for content into a Widget area of your site, such as your Twitter account, Facebook posts, Google+ posts, or other blogs.</p>\n\n\n\n<p>The RSS Widget displays the most recently published content from any source with an active feed. This is an ideal way of integrating outside content into your site.</p>\n\n\n\n<p>By default, WordPress RSS Widget displays the post title or the first 100 or so characters of a Tweet or long untitled post. These are either in the form of a link or features a link to the original source depending upon the feed&#8217;s design and structure.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Enter the RSS feed URL in the first box, copied from the source page for the content you wish to include in your sidebar or other widgetized space.</li>\n\n\n\n<li>Give the feed a title: This is optional and gives you the chance to showcase the source of the content.</li>\n\n\n\n<li>How many items would you like to display?: By default, 10 are show, but you can choose from 1-20 posts.</li>\n\n\n\n<li>Display item content?: This allows you to show an excerpt of the content not just the title.</li>\n\n\n\n<li>Display item author if available?: If you wish to give credit to the original author of the content, check this to display the author.</li>\n\n\n\n<li>Display item date?: If available, the date of the original content will be shown.</li>\n</ol>\n\n\n\n<p>You may add multiple RSS Widgets for incoming feeds to your WordPress sidebar and other widgetized areas of your site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a style=\", sans-serif\" href=\"https://wordpress.org/development/2006/03/widgets-plugin/\">WordPress Widgets Announcement (historical reference)</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>This article covers &#8220;Classic Widgets&#8221;. If you are using the newer block-based widgets, please check this article. WordPress widgets add content and functionality to the widget area. The widget area is a pre-defined area by the theme, typically located in the sidebar or footer, but varies from theme to theme. Examples are the default widgets [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10813566",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10813566",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10813566"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10813566/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359052,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10813566/revisions/16359052"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10813566"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10813566"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 149176,
+    "date": "2023-10-17T19:25:01",
+    "date_gmt": "2023-10-17T19:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/"
+    },
+    "modified": "2024-01-16T20:27:16",
+    "modified_gmt": "2024-01-16T20:27:16",
+    "slug": "get-started-with-create-block",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/",
+    "title": {
+        "rendered": "Get started with create-block"
+    },
+    "content": {
+        "rendered": "<p>Custom blocks for the Block Editor in WordPress are typically registered using plugins and are defined through a specific set of files. The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/\"><code>@wordpress/create-block</code></a> package is an officially supported tool to scaffold the structure of files needed to create and register a block. It generates all the necessary code to start a project and integrates a modern JavaScript build setup (using <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/\"><code>wp-scripts</code></a>) with no configuration required.</p>\n<p>The package is designed to help developers quickly set up a block development environment following WordPress best practices.</p>\n<h2>Quick start</h2>\n<h3>Installation</h3>\n<p>Start by ensuring you have Node.js and <code>npm</code> installed on your computer. Review the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/nodejs-development-environment/\">Node.js development environment</a> guide if not.</p>\n<p>You can use <code>create-block</code> to scaffold a block just about anywhere and then <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/\">use <code>wp-env</code></a> from the inside of the generated plugin folder. This will create a local WordPress development environment with your new block plugin installed and activated.</p>\n<p>If you have your own <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/#local-wordpress-environment\">local WordPress development environment</a> already set up, navigate to the <code>plugins/</code> folder using the terminal.</p>\n<p>Run the following command to scaffold an example block plugin:</p>\n<pre><code class=\"language-bash\">npx @wordpress/create-block@latest todo-list\ncd todo-list\n</code></pre>\n<p>The <code>slug</code> provided (<code>todo-list</code>) defines the folder name for the scaffolded plugin and the internal block name.</p>\n<p>Navigate to the Plugins page of our local WordPress installation and activate the &#8220;Todo List&#8221; plugin. The example block will then be available in the Editor.</p>\n<h3>Basic usage</h3>\n<p>The <code>create-block</code> assumes you will use modern JavaScript (ESNext and JSX) to build your block. This requires a build step to compile the code into a format that browsers can understand. Luckily, the <code>wp-scripts</code> package handles this process for you. Refer to the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts\">Get started with wp-scripts</a> for an introduction to this package.</p>\n<p>When <code>create-block</code> scaffolds the block, it installs <code>wp-scripts</code> and adds the most common scripts to the block&#8217;s <code>package.json</code> file. By default, those include:</p>\n<pre><code class=\"language-json\">{\n    \"scripts\": {\n        \"build\": \"wp-scripts build\",\n        \"format\": \"wp-scripts format\",\n        \"lint:css\": \"wp-scripts lint-style\",\n        \"lint:js\": \"wp-scripts lint-js\",\n        \"packages-update\": \"wp-scripts packages-update\",\n        \"plugin-zip\": \"wp-scripts plugin-zip\",\n        \"start\": \"wp-scripts start\"\n    }\n}\n</code></pre>\n<p>These scripts can then be run using the command <code>npm run {script name}</code>. The two scripts you will use most often are <code>start</code> and <code>build</code> since they handle the build step.</p>\n<p>When working on your block, use the <code>npm run start</code> command. This will start a development server and automatically rebuild the block whenever any code change is detected.</p>\n<p>When you are ready to deploy your block, use the <code>npm run build</code> command. This optimizes your code and makes it production-ready.</p>\n<p>See the <code>wp-scripts</code> <a href=\"https://developer.wordpress.org/block-editor/packages/packages-scripts/\">package documentation</a> for more details about each available script.</p>\n<h2>Alternate implementations</h2>\n<h3>Interactive mode</h3>\n<p>For developers who prefer a more guided experience, the <code>create-block</code> package provides an interactive mode. Instead of manually specifying all options upfront, like the <code>slug</code> in the above example, this mode will prompt you for inputs step-by-step.</p>\n<p>To use this mode, run the command:</p>\n<pre><code class=\"language-bash\">npx @wordpress/create-block@latest\n</code></pre>\n<p>Follow the prompts to configure your block settings interactively.</p>\n<h3>Quick start mode using options</h3>\n<p>If you&#8217;re already familiar with the <code>create-block</code> <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/#options\">options</a> and want a more streamlined setup, you can use quick start mode. This allows you to pass specific options directly in the command line, eliminating the need for interactive prompts.</p>\n<p>For instance, to quickly create a block named &#8220;my-block&#8221; with a namespace of &#8220;my-plugin&#8221; that is a Dynamic block, use this command:</p>\n<pre><code class=\"language-bash\">npx @wordpress/create-block@latest --namespace=\"my-plugin\" --slug=\"my-block\" --variant=\"dynamic\"\n</code></pre>\n<h3>Using templates</h3>\n<p>The <code>create-block</code> package also supports the use of templates, enabling you to create blocks based on predefined configurations and structures. This is especially useful when you have a preferred block structure or when you&#8217;re building multiple blocks with similar configurations.</p>\n<p>To use a template, specify the <code>--template</code> option followed by the template name or path:</p>\n<pre><code class=\"language-bash\">npx @wordpress/create-block --template=\"my-custom-template\"\n</code></pre>\n<p>Templates must be set up in advance so the <code>create-block</code> package knows where to find them. Learn more in the <code>create-block</code> <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/#template\">documentation</a>, and review the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/packages-create-block-external-template/\">External Project Templates</a> guide.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://learn.wordpress.org/tutorial/using-the-create-block-tool/\">Using the create-block tool</a> (Learn WordPress tutorial)</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/\">@wordpress/create-block</a> (Official documentation)</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/\">@wordpress/scripts</a> (Official documentation)</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134336,
+    "menu_order": 5,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149176",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/149176",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/149176/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151659,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/149176/revisions/151659"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134336"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149176"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

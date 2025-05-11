@@ -1,0 +1,97 @@
+{
+    "id": 11207,
+    "date": "2014-10-19T19:07:35",
+    "date_gmt": "2014-10-19T19:07:35",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11207"
+    },
+    "modified": "2022-11-17T06:08:56",
+    "modified_gmt": "2022-11-17T06:08:56",
+    "slug": "checking-user-capabilities",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/security/checking-user-capabilities/",
+    "title": {
+        "rendered": "Checking User Capabilities"
+    },
+    "content": {
+        "rendered": "\n<p>If your plugin allows users to submit data\u2014be it on the Admin or the Public side\u2014it should check for User Capabilities.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"user-roles-and-capabilities\">User Roles and Capabilities</h2>\n\n\n\n<p>The most important step in creating an efficient security layer is having a user permission system in place. WordPress provides this in the form of <a href=\"https://developer.wordpress.org/plugins/users/roles-and-capabilities/\">User Roles and Capabilities</a>.</p>\n\n\n\n<p>Every user logged into WordPress is automatically assigned specific User capabilities depending on their User role.</p>\n\n\n\n<p><strong>User roles</strong> is just a fancy way of saying which group the user belongs to. Each group has a specific set of predefined capabilities.</p>\n\n\n\n<p>For example, the main user of your website will have the User role of an Administrator while other users might have roles like Editor or Author. You could have more than one user assigned to a role, i.e. there might be two Administrators for a website.</p>\n\n\n\n<p><strong>User capabilities</strong> are the specific permissions that you assign to each user or to a User role.</p>\n\n\n\n<p>For example, Administrators have the &#8220;manage_options&#8221; capability which allows them to view, edit and save options for the website. Editors on the other hand lack this capability which will prevent them from interacting with options.</p>\n\n\n\n<p>These capabilities are then checked at various points within the Admin. Depending on the capabilities assigned to a role; menus, functionality, and other aspects of the WordPress experience may be added or removed.</p>\n\n\n\n<p><strong>As you build a plugin, make sure to run your code only when the current user has the necessary capabilities.</strong></p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"hierarchy\">Hierarchy</h3>\n\n\n\n<p>The higher the user role, the more capabilities the user has. Each user role inherits the previous roles in the hierarchy.</p>\n\n\n\n<p>For example, the &#8220;Administrator&#8221;, which is the highest user role on a single site installation, inherits the following roles and their capabilities: &#8220;Subscriber&#8221;, &#8220;Contributor&#8221;, &#8220;Author&#8221; and &#8220;Editor&#8221;.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"examples\">Examples</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"no-restrictions\">No Restrictions</h3>\n\n\n\n<p>The example below creates a link on the frontend which gives the ability to trash posts.&nbsp;Because this code does not check user capabilities, <strong>it allows any visitor to the site to trash posts!</strong></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Generate a Delete link based on the homepage url.\n *\n * @param string $content   Existing content.\n *\n * @return string|null\n */\nfunction wporg_generate_delete_link( $content ) {\n\t// Run only for single post page.\n\tif ( is_single() &amp;&amp; in_the_loop() &amp;&amp; is_main_query() ) {\n\t\t// Add query arguments: action, post.\n\t\t$url = add_query_arg(\n\t\t\t[\n\t\t\t\t'action' =&gt; 'wporg_frontend_delete',\n\t\t\t\t'post'   =&gt; get_the_ID(),\n\t\t\t], home_url()\n\t\t);\n\n\t\treturn $content . ' &lt;a href=\"' . esc_url( $url ) . '\"&gt;' . esc_html__( 'Delete Post', 'wporg' ) . '&lt;/a&gt;';\n\t}\n\n\treturn null;\n}\n\n\n/**\n * Request handler\n */\nfunction wporg_delete_post() {\n\tif ( isset( $_GET['action'] ) &amp;&amp; 'wporg_frontend_delete' === $_GET['action'] ) {\n\n\t\t// Verify we have a post id.\n\t\t$post_id = ( isset( $_GET['post'] ) ) ? ( $_GET['post'] ) : ( null );\n\n\t\t// Verify there is a post with such a number.\n\t\t$post = get_post( (int) $post_id );\n\t\tif ( empty( $post ) ) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Delete the post.\n\t\twp_trash_post( $post_id );\n\n\t\t// Redirect to admin page.\n\t\t$redirect = admin_url( 'edit.php' );\n\t\twp_safe_redirect( $redirect );\n\n\t\t// We are done.\n\t\tdie;\n\t}\n}\n\n\n/**\n * Add the delete link to the end of the post content.\n */\nadd_filter( 'the_content', 'wporg_generate_delete_link' );\n\n/**\n * Register our request handler with the init hook.\n */\nadd_action( 'init', 'wporg_delete_post' );\n</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"restricted-to-a-specific-capability\">Restricted to a Specific Capability</h3>\n\n\n\n<p>The example above allows any visitor to the site to click on the &#8220;Delete&#8221; link and trash the post. However, we only want Editors and above to be able to click on the &#8220;Delete&#8221; link.</p>\n\n\n\n<p>To accomplish this, we will check that the current user has the capability <code>edit_others_posts</code>, which only Editors or above would have:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Generate a Delete link based on the homepage url.\n *\n * @param string $content   Existing content.\n *\n * @return string|null\n */\nfunction wporg_generate_delete_link( $content ) {\n\t// Run only for single post page.\n\tif ( is_single() &amp;&amp; in_the_loop() &amp;&amp; is_main_query() ) {\n\t\t// Add query arguments: action, post.\n\t\t$url = add_query_arg(\n\t\t\t[\n\t\t\t\t'action' =&gt; 'wporg_frontend_delete',\n\t\t\t\t'post'   =&gt; get_the_ID(),\n\t\t\t], home_url()\n\t\t);\n\n\t\treturn $content . ' &lt;a href=\"' . esc_url( $url ) . '\"&gt;' . esc_html__( 'Delete Post', 'wporg' ) . '&lt;/a&gt;';\n\t}\n\n\treturn null;\n}\n\n\n/**\n * Request handler\n */\nfunction wporg_delete_post() {\n\tif ( isset( $_GET['action'] ) &amp;&amp; 'wporg_frontend_delete' === $_GET['action'] ) {\n\n\t\t// Verify we have a post id.\n\t\t$post_id = ( isset( $_GET['post'] ) ) ? ( $_GET['post'] ) : ( null );\n\n\t\t// Verify there is a post with such a number.\n\t\t$post = get_post( (int) $post_id );\n\t\tif ( empty( $post ) ) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Delete the post.\n\t\twp_trash_post( $post_id );\n\n\t\t// Redirect to admin page.\n\t\t$redirect = admin_url( 'edit.php' );\n\t\twp_safe_redirect( $redirect );\n\n\t\t// We are done.\n\t\tdie;\n\t}\n}\n\n\n/**\n * Add delete post ability\n */\nadd_action('plugins_loaded', 'wporg_add_delete_post_ability');\n \nfunction wporg_add_delete_post_ability() {    \n    if ( current_user_can( 'edit_others_posts' ) ) {\n        /**\n         * Add the delete link to the end of the post content.\n         */\n        add_filter( 'the_content', 'wporg_generate_delete_link' );\n      \n        /**\n         * Register our request handler with the init hook.\n         */\n        add_action( 'init', 'wporg_delete_post' );\n    }\n}</code></pre>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10933,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11207",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11207",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 22,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11207/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144335,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11207/revisions/144335"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10933"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11207"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

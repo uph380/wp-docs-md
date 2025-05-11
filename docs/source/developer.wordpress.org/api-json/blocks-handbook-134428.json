@@ -1,0 +1,91 @@
+{
+    "id": 134428,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-more-menu-item/"
+    },
+    "modified": "2024-10-30T16:55:53",
+    "modified_gmt": "2024-10-30T16:55:53",
+    "slug": "plugin-more-menu-item",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-more-menu-item/",
+    "title": {
+        "rendered": "PluginMoreMenuItem"
+    },
+    "content": {
+        "rendered": "<p>This slot will add a new item to the More Tools &amp; Options section.</p>\n<h2>Example</h2>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { PluginMoreMenuItem } from '@wordpress/editor';\nimport { image } from '@wordpress/icons';\n\nconst MyButtonMoreMenuItemTest = () =&gt; (\n    &lt;PluginMoreMenuItem\n        icon={ image }\n        onClick={ () =&gt; {\n            alert( 'Button Clicked' );\n        } }\n    &gt;\n        More Menu Item\n    &lt;/PluginMoreMenuItem&gt;\n);\n\nregisterPlugin( 'more-menu-item-test', { render: MyButtonMoreMenuItemTest } );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/plugin-more-menu-item.png?ssl=1\" alt=\"Location\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 97,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134428",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134428",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134428/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153579,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134428/revisions/153579"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134428"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 152083,
+    "date": "2024-02-06T03:36:19",
+    "date_gmt": "2024-02-06T03:36:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=152083"
+    },
+    "modified": "2024-02-06T03:38:01",
+    "modified_gmt": "2024-02-06T03:38:01",
+    "slug": "testing",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/testing/",
+    "title": {
+        "rendered": "Testing"
+    },
+    "content": {
+        "rendered": "\n<p>Whether you are planning to share your WordPress theme with a broad audience or aiming for a specific platform, this article will help you get your theme ready for release. It focuses on general theme testing to ensure your theme\u2019s quality and compatibility across various environments.&nbsp;</p>\n\n\n\n<p>Expanding on the principles from previous sections, this article covers things like code quality, compatibility, and responsiveness. By the end, your theme will be ready to use on a live site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Testing environment</h2>\n\n\n\n<p>When building your theme, it is good practice to test from within some type of development environment. In this section, you will get an overview of a couple of methods that you can explore further on your own.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Local environment</h3>\n\n\n\n<p>A local development environment provides a controlled space for developing and testing your theme without impacting your live site. Some of the available options are listed in the <a href=\"https://developer.wordpress.org/themes/getting-started/tools-and-setup/\">Tools and Setup</a> documentation.</p>\n\n\n\n<p>When developing locally, you should always have debugging enabled. Check out the <a href=\"https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/\">Debugging</a> documentation for information on debugging techniques and tools that will help you handle errors and optimize your theme development process.</p>\n\n\n\n<h3 class=\"wp-block-heading\">WordPress Playground</h3>\n\n\n\n<p><a href=\"https://wordpress.org/playground/\">WordPress Playground</a> is another option for testing. It operates entirely in the browser, providing a controlled space for testing.</p>\n\n\n\n<p>Here is a look at the default Twenty Twenty-Four theme running in Playground:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1055\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?resize=2048%2C1055&#038;ssl=1\" alt=\"Screenshot of a default setup on the WordPress Playground, showing the homepage of the Twenty Twenty-Four theme. There is a top bar for managing the setup.\" class=\"wp-image-152162\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?resize=1024%2C528&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?resize=768%2C396&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/02/wordpress-playground.webp?resize=1536%2C791&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>To become more familiar with using this platform, please refer to the official <a href=\"https://wordpress.github.io/wordpress-playground/\">WordPress Playground documentation</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Theme Unit Test Data</h2>\n\n\n\n<p>When developing a WordPress theme, ensuring that it can handle a variety of content is fundamental. To assist in this process, WordPress provides a set of <a href=\"https://github.com/WordPress/theme-test-data/blob/master/themeunittestdata.wordpress.xml\">Theme Unit Test Data</a> via an importable XML file. To be clear, this is just one part of a larger theme testing process.</p>\n\n\n\n<p>The test data is a collection of posts, pages, comments, and media that you can import into your WordPress installation. By testing with this data, you can check how your theme handles edge cases, such as extremely long titles, images of varying sizes, nested comments, and a mix of HTML elements.</p>\n\n\n\n<p>To test your theme with the Theme Unit Test Data, you need to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Download the data:</strong> Get the latest version from the <a href=\"https://github.com/WordPress/theme-test-data/blob/master/themeunittestdata.wordpress.xml\">GitHub repository</a>.</li>\n\n\n\n<li><strong>Import the data:</strong> Use the <a href=\"https://wordpress.org/plugins/wordpress-importer/\">WordPress Importer</a> tool to import the data into your WordPress environment.</li>\n</ul>\n\n\n\n<p>Once you\u2019ve imported the content into your test install, examine how each piece of content is displayed. Pay special attention to areas where your theme might be prone to issues. Also be sure to view your theme on various devices and screen sizes to make sure the content is displayed as expected.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Tools and resources</h2>\n\n\n\n<p>When testing your theme, it is important to use tools that will check every aspect of your theme for potential issues.&nbsp;</p>\n\n\n\n<p>The <a href=\"https://wordpress.org/plugins/theme-check/\">Theme Check Plugin</a> evaluates your theme against the <a href=\"https://make.wordpress.org/themes/handbook/review/required/\">Theme Review Guidelines</a> before submitting to the official directory. Even if not submitting to the directory, it can also be useful for making sure your theme meets some baseline standards.</p>\n\n\n\n<p>Some other WordPress plugins you should include in your testing suite are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/plugins/debug-bar/\">Debug Bar</a>: Adds an admin bar to your WordPress admin and provides a central location for debugging.</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/query-monitor/\">Query Monitor</a>: Allows debugging of database queries, API requests, and AJAX used to generate theme pages and functionality.</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/log-deprecated-notices/\">Log Deprecated Notices</a>: Logs incorrect function usage, deprecated file usage, and deprecated function usage in your theme.</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/monster-widget/\">Monster Widget</a>: Consolidates the core WordPress widgets into a single widget, making it easier to test them all at once (<em>classic themes only</em>).</li>\n</ul>\n\n\n\n<p>For effective cross-browser compatibility testing of block themes, it is important to use the developer tools available with modern browsers, such as:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://www.mozilla.org/firefox/developer/\">Firefox: Developer Edition</a></li>\n\n\n\n<li><a href=\"https://developer.chrome.com/docs/devtools\">Chrome DevTools</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Functional testing</h2>\n\n\n\n<p>Testing your theme\u2019s compatibility with basic WordPress features is necessary. This step ensures that your theme not only looks good but also works with WordPress\u2019s core functionality.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Testing basic WordPress features</h3>\n\n\n\n<p>It is important that your theme works with core features and behaves as expected. The following are some of the basic features to test:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Posts and pages:</strong>\n<ul class=\"wp-block-list\">\n<li>Create a variety of posts and pages using the block editor. Experiment with different types of content, including text, images, and videos.</li>\n\n\n\n<li>Pay attention to how all standard blocks (paragraphs, images, headings, lists, etc.) are displayed. Are they aligning correctly? Is the spacing consistent?</li>\n</ul>\n</li>\n\n\n\n<li><strong>Block settings:</strong>\n<ul class=\"wp-block-list\">\n<li>Test the settings of each block to ensure they function as intended. For instance, when you change the alignment of an image or the color of a heading, does the theme reflect these changes accurately?</li>\n</ul>\n</li>\n\n\n\n<li><strong>Responsiveness:</strong>\n<ul class=\"wp-block-list\">\n<li>Check how these elements adapt to different screen sizes. Ensure the layout remains intuitive and user-friendly on mobile devices.</li>\n</ul>\n</li>\n\n\n\n<li><strong>Comments:</strong>\n<ul class=\"wp-block-list\">\n<li>Look at the comments section of your posts. Are comments and replies displaying correctly?</li>\n\n\n\n<li>Ensure that threaded comments are displayed in a nested format, making it easy to follow conversations.</li>\n\n\n\n<li>Test the comment block in the block editor. Does it integrate well with your theme? Are there styling or functionality issues?</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>If you\u2019re building a block theme, as this handbook recommends, you should also test these features:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Site Editor:</strong> Test the Site Editor and make sure that you can edit templates and template parts like headers and footers.</li>\n\n\n\n<li><strong>Styles interface:</strong> Check the functionality of the Styles interface, where you can customize colors, typography, and layout settings that apply across your theme.</li>\n\n\n\n<li><strong>Navigation block:</strong> Pay special attention to the Navigation block. Test its responsiveness, the ease of adding menu items, sub-menu functionality, and alignment options.</li>\n\n\n\n<li><strong>Template editing:</strong> Explore the Template Editor for creating and modifying templates for specific posts or pages.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Accessibility testing</h2>\n\n\n\n<p>Ensuring accessibility is a key aspect of responsible theme development.</p>\n\n\n\n<p>You should strive to make sure your theme meets the <a href=\"https://make.wordpress.org/accessibility/handbook/\">WordPress Accessibility Guidelines</a>. This includes aspects like keyboard navigation, screen reader compatibility, and proper use of ARIA roles.</p>\n\n\n\n<p>Tools like <a href=\"https://www.deque.com/axe/\">aXe</a> and <a href=\"https://wave.webaim.org/\">WAVE</a> are invaluable in identifying potential accessibility issues. Regularly use them during development to find and fix any problems. This proactive approach helps in creating a theme that is accessible to all users, regardless of how they navigate the web.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Performance testing</h2>\n\n\n\n<p>You should also ensure that your theme is not unnecessarily loading too many resources. For this, you can use tools like <a href=\"https://pagespeed.web.dev/\">PageSpeed Insights</a> to check your theme\u2019s performance. These types of tools provide information on how quickly your theme loads and offers suggestions for improvement.</p>\n\n\n\n<p>When shipping media or other assets with your theme, be sure that they are optimized. This includes but is not limited to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Images/Media:</strong> Ensure media items bundled with your theme are correctly sized, in the most appropriate format, and compressed to reduce load times.</li>\n\n\n\n<li><strong>CSS and JavaScript files:</strong> Make sure to include minified assets that will be loaded by the browser.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 50,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152083",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152083",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152083/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152186,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152083/revisions/152186"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152083"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

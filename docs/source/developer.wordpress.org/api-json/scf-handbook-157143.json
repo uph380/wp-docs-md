@@ -1,0 +1,91 @@
+{
+    "id": 157143,
+    "date": "2025-02-21T04:17:08",
+    "date_gmt": "2025-02-21T04:17:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-value-functions-file/"
+    },
+    "modified": "2025-02-21T05:46:12",
+    "modified_gmt": "2025-02-21T05:46:12",
+    "slug": "acf-value-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-value-functions-file/",
+    "title": {
+        "rendered": "Acf Value Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_reference()</code></h2>\n<p>acf_get_reference</p>\n<ul>\n<li>Retrieves the field key for a given field name and post_id.</li>\n<li>@date    26/1/18</li>\n<li>@since ACF 5.6.5</li>\n<li>@param   string $field_name The name of the field. eg &#8216;sub_heading&#8217;.</li>\n<li>@param mixed  $post_id    The post_id of which the value is saved against.</li>\n<li>@return string The field key.</li>\n</ul>\n<h2><code>acf_get_value()</code></h2>\n<p>Retrieves the value for a given field and post_id.</p>\n<ul>\n<li>@date    28/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   integer|string $post_id The post id.</li>\n<li>@param array          $field   The field array.</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_format_value()</code></h2>\n<p>Returns a formatted version of the provided value.</p>\n<ul>\n<li>@since   ACF 5.0.0</li>\n<li>@param mixed          $value       The field value.</li>\n<li>@param integer|string $post_id     The post id.</li>\n<li>@param array          $field       The field array.</li>\n<li>@param boolean        $escape_html Ask the field for a HTML safe version of it&#8217;s output.</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_update_value()</code></h2>\n<p>acf_update_value</p>\n<ul>\n<li>Updates the value for a given field and post_id.</li>\n<li>@date    28/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   mixed        $value   The new value.</li>\n<li>@param (int|string) $post_id The post id.</li>\n<li>@param array        $field   The field array.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_update_values()</code></h2>\n<p>acf_update_values</p>\n<ul>\n<li>Updates an array of values.</li>\n<li>@date    26/2/19</li>\n<li>@since ACF 5.7.13</li>\n<li>@param   array values The array of values.</li>\n<li>@param (int|string)                     $post_id The post id.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_flush_value_cache()</code></h2>\n<p>acf_flush_value_cache</p>\n<ul>\n<li>Deletes all cached data for this value.</li>\n<li>@date    22/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   (int|string) $post_id    The post id.</li>\n<li>@param string       $field_name The field name.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_delete_value()</code></h2>\n<p>acf_delete_value</p>\n<ul>\n<li>Deletes the value for a given field and post_id.</li>\n<li>@date    28/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   (int|string) $post_id The post id.</li>\n<li>@param array        $field   The field array.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_preview_value()</code></h2>\n<p>acf_preview_value</p>\n<ul>\n<li>Return a human friendly &#8216;preview&#8217; for a given field value.</li>\n<li>@date    28/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   mixed        $value   The new value.</li>\n<li>@param (int|string) $post_id The post id.</li>\n<li>@param array        $field   The field array.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_log_invalid_field_notice()</code></h2>\n<p>Potentially log an error if a field doesn&#8217;t exist when we expect it to.</p>\n<ul>\n<li>@param array  $field    An array representing the field that a value was requested for.</li>\n<li>@param string $function The function that noticed the problem.</li>\n<li>@return void</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157143",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157143",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157143/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157318,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157143/revisions/157318"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157143"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

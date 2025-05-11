@@ -1,0 +1,91 @@
+{
+    "id": 157156,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/revisions-file/"
+    },
+    "modified": "2025-02-21T05:46:10",
+    "modified_gmt": "2025-02-21T05:46:10",
+    "slug": "revisions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/revisions-file/",
+    "title": {
+        "rendered": "Revisions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_save_post_revision()</code></h2>\n<p>This function will copy meta from a post to it&#8217;s latest revision</p>\n<ul>\n<li>@type    function</li>\n<li>@date 26/09/2016</li>\n<li>@since ACF 5.4.0</li>\n<li>@param   $post_id (int)</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_get_post_latest_revision()</code></h2>\n<p>This function will return the latest revision for a given post</p>\n<ul>\n<li>@type    function</li>\n<li>@date 25/06/2016</li>\n<li>@since ACF 5.3.8</li>\n<li>@param   $post_id (int)</li>\n<li>@return $post_id (int)</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157156",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157156",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157156/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157305,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157156/revisions/157305"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157156"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

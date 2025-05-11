@@ -1,0 +1,91 @@
+{
+    "id": 153715,
+    "date": "2024-05-06T11:25:01",
+    "date_gmt": "2024-05-06T11:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/iapi-about/"
+    },
+    "modified": "2025-01-06T18:49:06",
+    "modified_gmt": "2025-01-06T18:49:06",
+    "slug": "iapi-about",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/iapi-about/",
+    "title": {
+        "rendered": "About the Interactivity API"
+    },
+    "content": {
+        "rendered": "<p>The Interactivity API is <strong>a <a href=\"#why-a-standard\">standard</a> system of <a href=\"#why-directives\">directives</a>, based on declarative code, for <a href=\"#api-goals\">adding frontend interactivity to blocks</a></strong>.</p>\n<p><strong>Directives extend HTML with special attributes</strong> that tell the Interactivity API to attach a specified behavior to a DOM element or even to transform it. For those familiar with <a href=\"https://alpinejs.dev/\">Alpine.js</a>, it\u2019s a similar approach but explicitly designed to work seamlessly with WordPress.</p>\n<h2>API Goals</h2>\n<p>The main goal of the Interactivity API is to <strong>provide a standard and simple way to handle the frontend interactivity of Gutenberg blocks</strong>.</p>\n<p>A standard makes it <strong>easier for developers to create rich, interactive user experiences</strong>, from simple cases like counters or popups to more complex features like instant page navigation, instant search, or carts and checkouts.</p>\n<p>All these user experiences are technically possible right now without the Interactivity API. However, the more complex the user experience and the more blocks interact with each other, the harder it becomes for developers to build and maintain sites. There are a lot of challenges they have to figure out themselves. The API aims to provide out-of-the-box means for supporting these kinds of interactions.</p>\n<p>To address this challenge the following requirements/goals for the Interactivity API were defined:</p>\n<ul>\n<li><strong>Block-first and PHP-first</strong>: The API must work well with PHP and the current block system, including dynamic blocks, widely extended in WordPress. It must support server-side rendering. Server-rendered HTML and client-hydrated HTML must be exactly the same. This is important for SEO and the user experience.</li>\n<li><strong>Backward compatible</strong>: The API must be compatible with WordPress hooks, which could, for example, modify server-rendered HTML. It must also be compatible with internationalization and existing JS libraries on the site (such as jQuery).</li>\n<li><strong>Optional and gradual adoption</strong>: Related to the previous point, the API must remain optional. It should be possible to adopt it gradually, meaning that interactive blocks not using this API can coexist with those using it.</li>\n<li><strong>Declarative and reactive</strong>: The API must use declarative code, listen to changes in the data, and update only the parts of the DOM that depend on that data.</li>\n<li><strong>Performant</strong>: The runtime must be fast and lightweight to ensure the best user experience.</li>\n<li><strong>Extensible</strong>: In the same way WordPress focuses on extensibility, this new system must provide extensibility patterns to cover most use cases.</li>\n<li><strong>Atomic and composable</strong>: Having small reusable parts that can be combined to create more complex systems is required to create flexible and scalable solutions.</li>\n<li><strong>Compatible with the existing block development tooling</strong>: The API must be integrated with the existing block-building tools without requiring additional tooling or configuration by the developer.</li>\n</ul>\n<p>Apart from all these requirements, integrating <strong>client-side navigation</strong> on top of any solution should be easy and performant. Client-side navigation is the process of navigating between site pages without reloading the entire page, which is one of the most impressive user experiences demanded by web developers. For that reason, this functionality should be compatible with this new system.</p>\n<h2>Why directives?</h2>\n<p>Directives are the result of deep <a href=\"https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/iapi-faq/#what-approaches-have-been-considered-instead-of-using-directives\">research into different possibilities and approaches</a>. We\u2019ve found that this design covers the requirements most effectively.</p>\n<h3>Block-first and PHP-friendly</h3>\n<p>The API is designed for the world of blocks and takes WordPress history of being closely attached to web standards to heart.</p>\n<p>As directives are HTML attributes, they are perfect for dynamic blocks and PHP.</p>\n<p><em>Dynamic block example</em></p>\n<pre><code class=\"language-html\">&lt;div\n  data-wp-interactive='wpmovies'\n  &lt;?php echo wp_interactivity_data_wp_context( array( 'isOpen' =&gt; false ) ); ?&gt;\n  data-wp-watch=\"callbacks.logIsOpen\"\n&gt;\n  &lt;button\n    data-wp-on--click=\"actions.toggle\"\n    data-wp-bind--aria-expanded=\"context.isOpen\"\n    aria-controls=\"p-1\"\n  &gt;\n    Toggle\n  &lt;/button&gt;\n\n  &lt;p id=\"p-1\" data-wp-bind--hidden=\"!context.isOpen\"&gt;\n    This element is now visible!\n  &lt;/p&gt;\n&lt;/div&gt;\n</code></pre>\n<p>As you can see, directives like <a href=\"https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/api-reference/#wp-on\"><code>data-wp-on--click</code></a> or <a href=\"https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/api-reference/#wp-bind\"><code>data-wp-bind--hidden</code></a> are added as custom HTML attributes. WordPress can process this HTML on the server, handling the directives\u2019 logic and creating the appropriate markup.</p>\n<h3>Backward compatible</h3>\n<p>As the Interactivity API works perfectly with server-side rendering, you can use all the WordPress APIs, including:</p>\n<ul>\n<li><strong>WordPress filters and actions</strong>: You can keep using WordPress hooks to modify the HTML or even to modify directives. Additionally, existing hooks will keep working as expected.</li>\n<li><strong>Core Translation API</strong>: e.g. <code>__()</code> and <code>_e()</code>. You can use it to translate the text in the HTML (as you normally would) and even use those APIs on the server side of your directives. </li>\n</ul>\n<h3>Optional and gradual adoption</h3>\n<p>The Interactivity API pipeline promotes <strong>progressive enhancement</strong> by building on top of WordPress\u2019s solid foundation and patterns.</p>\n<p>For example, blocks with directives can coexist with other (interactive or non-interactive) blocks. This means that if there are other blocks on the page using other frameworks like jQuery, everything will work as expected.</p>\n<div class=\"callout callout-warning\">\n  Full-page client-side navigation with the Interactivity API will be an exception to this compatibility with other libraries rule. See <a href=\"#client-side-navigation\">Client-side navigation</a> for more details.\n</div>\n<h3>Declarative and reactive</h3>\n<p>The Interactivity API follows an approach similar to other popular JS frameworks by separating state, actions, and callbacks and defining them declaratively. Why declaratively?</p>\n<p>Declarative code describes <strong>what</strong> a program should do, while imperative code describes <strong>how</strong> the program should do it. Using a declarative approach, the UI automatically updates in response to changes in the underlying data. With an imperative approach, you must manually update the UI whenever the data changes. Compare the two code examples:</p>\n<p><em>Imperative code</em></p>\n<pre><code class=\"language-html\">&lt;button id=\"toggle-button\"&gt;Toggle Element&lt;/button&gt;\n&lt;p&gt;This element is now visible!&lt;/p&gt;\n&lt;script&gt;\n  const button = document.getElementById(\"toggle-button\");\n\n  button.addEventListener(\"click\", () =&gt; {\n    const element = document.getElementById(\"element\");\n    if(element) {\n      element.remove();\n    } else {\n      const newElement = document.createElement(\"p\");\n      newElement.textContent = \"This element is visible\";\n      document.body.appendChild(newElement);\n    }\n});\n&lt;/script&gt;\n</code></pre>\n<p><em>Declarative code</em></p>\n<p>This is the same use case shared above but serves as an example of declarative code using this new system. The JavaScript logic is defined in the <code>view.js</code> file of the block, and add the directives to the markup in the <code>render.php</code>.</p>\n<pre><code class=\"language-js\">// view.js file\n\nimport { store, getContext } from \"@wordpress/interactivity\";\n\nstore( 'wpmovies', {\n  actions: {\n    toggle: () =&gt; {\n      const context = getContext();\n      context.isOpen = !context.isOpen;\n    },\n  },\n});\n</code></pre>\n<pre><code class=\"language-php\">&lt;!-- Render.php file --&gt;\n\n&lt;div\n  data-wp-interactive='wpmovies'\n  &lt;?php echo wp_interactivity_data_wp_context( array( 'isOpen' =&gt; true ) ); ?&gt;\n&gt;\n  &lt;button\n    data-wp-on--click=\"actions.toggle\"\n    data-wp-bind--aria-expanded=\"context.isOpen\"\n    aria-controls=\"p-1\"\n  &gt;\n    Toggle\n  &lt;/button&gt;\n\n  &lt;p id=\"p-1\" data-wp-bind--hidden=\"!context.isOpen\"&gt;\n    This element is now visible!\n  &lt;/p&gt;\n&lt;/div&gt;\n</code></pre>\n<p>Using imperative code may be easier when creating simple user experiences, but it becomes much more difficult as applications become more complex. The Interactivity API must cover all use cases, from the simplest to the most challenging. That\u2019s why a declarative approach using directives better fits the Interactivity API.</p>\n<h3>Performant</h3>\n<p>The API has been designed to be as performant as possible:</p>\n<ul>\n<li><strong>The runtime code needed for the directives is just ~10 KB</strong>, and it only needs to be loaded once for all the blocks.</li>\n<li><strong>The scripts will load without blocking the page rendering</strong>.</li>\n</ul>\n<h3>Extensible</h3>\n<p>Directives can be added, removed, or modified directly from the HTML. For example, users could use the <a href=\"https://developer.wordpress.org/reference/hooks/render_block/\"><code>render_block</code> filter</a> to modify the HTML and its behavior.</p>\n<h3>Atomic and composable</h3>\n<p>Each directive controls a small part of the DOM, and you can combine multiple directives to create rich, interactive user experiences.</p>\n<h3>Compatible with the existing block development tooling</h3>\n<p>The API works out of the box with standard block-building tools like <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/\"><code>wp-scripts</code></a>. The only requirement for <code>wp-scripts</code> to properly build the <a href=\"https://make.wordpress.org/core/2024/03/04/script-modules-in-6-5/\">Script Modules</a> using the Interactivity API is the use of the &#8211;experimental-modules flag for both <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/#build\"><code>build</code></a> and <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/#start\"><code>start</code></a> scripts.</p>\n<h3>Client-side navigation</h3>\n<p>The Interactivity API comes with built-in primitives for adding client-side navigation to your site. This functionality is completely optional, but it opens the possibility to create these user experiences without having to opt out of the WordPress rendering system.</p>\n<div class=\"callout callout-info\">\n  Full-page client-side navigation with the Interactivity API is still a work in progress (see <a href=\"https://github.com/WordPress/gutenberg/issues/60951\">#60951</a>). Still, it is expected that all the interactive blocks will have to use the Interactivity API to enable full-page client-side navigation with the Interactivity API. Only in this case, the Interactivity API won&#8217;t be fully compatible with other libraries (such as jQuery).\n</div>\n<p>It also pairs very well with the <a href=\"https://developer.chrome.com/docs/web-platform/view-transitions/\">View Transitions API</a> allowing developers to animate page transitions easily.</p>\n<h2>Why a standard?</h2>\n<p>Blocks using the Interactivity API and interactive blocks using other approaches like jQuery can coexist, and everything will work as expected. However, the Interactivity API comes with some benefits for your interactive blocks:</p>\n<ul>\n<li><strong>Blocks can communicate with each other easily</strong>. With a standard, this communication is handled by default. When different blocks use different approaches to frontend interactivity, inter-block communication becomes more complex and almost impossible when different developers create blocks.</li>\n<li><strong>Composability and compatibility</strong>: You can combine interactive blocks, and nest them in structures with defined behaviors. Thanks to following the same standard, they are fully cross-compatible. If each block used a different approach to interactivity, they would likely break.</li>\n<li><strong>Fewer KBs will be sent to the browser</strong>. If each plugin author uses a different JS framework, more code will be loaded in the front end. If all the blocks use the same one, the code is reused.</li>\n<li>If all the blocks on a page use this standard, <strong>site-wide features like client-side navigation can be enabled</strong>.</li>\n</ul>\n<p>Additionally, with a standard, <strong>WordPress can absorb the maximum amount of complexity from the developer</strong> because it will handle most of what\u2019s needed to create an interactive block.</p>\n<p><em>Complexities absorbed by the standard</em></p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" alt=\"Two columns table comparing some aspects with and without a standard. Without a standard, block developers have to take care of everything, while having a standard. Totally handled by the standard: Tooling, hydration, integrating it with WordPress, SSR of the interactive parts, inter-block communication, and frontend performance. Partially handled: Security, accessibility, and best practices. Developer responsibility: Block logic. In the without a standard column, everything is under the developer responsibility.\"  src=\"https://i0.wp.com/make.wordpress.org/core/files/2023/03/standard-graph.png?ssl=1\"></p>\n<p>With this absorption, less knowledge is required to create interactive blocks, and developers have fewer decisions to worry about.</p>\n<p>By adopting a standard, learning from other interactive blocks is simpler, and fosters collaboration and code reusability. As a result, the development process is leanier and friendlier to less experienced developers.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 153605,
+    "menu_order": 91,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-153715",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153715",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153715/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156165,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153715/revisions/156165"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153605"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=153715"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

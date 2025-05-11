@@ -1,0 +1,91 @@
+{
+    "id": 157148,
+    "date": "2025-02-21T04:17:08",
+    "date_gmt": "2025-02-21T04:17:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/deprecated-file/"
+    },
+    "modified": "2025-02-21T05:46:11",
+    "modified_gmt": "2025-02-21T05:46:11",
+    "slug": "deprecated-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/deprecated-file/",
+    "title": {
+        "rendered": "Deprecated Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_render_field_wrap_label()</code></h2>\n<p>acf_render_field_wrap_label</p>\n<ul>\n<li>Renders the field&#8217;s label.</li>\n<li>@date    19/9/17</li>\n<li>@since ACF 5.6.3</li>\n<li>@deprecated 5.6.5</li>\n<li>@param   array $field The field array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_render_field_wrap_description()</code></h2>\n<p>acf_render_field_wrap_description</p>\n<ul>\n<li>Renders the field&#8217;s instructions.</li>\n<li>@date    19/9/17</li>\n<li>@since ACF 5.6.3</li>\n<li>@deprecated 5.6.5</li>\n<li>@param   array $field The field array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_fields_by_id()</code></h2>\n<p>Returns and array of fields for the given $parent_id.</p>\n<ul>\n<li>@date    27/02/2014</li>\n<li>@since ACF 5.0.0.</li>\n<li>@deprecated 5.7.11</li>\n<li>@param   integer $parent_id The parent ID.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_update_option()</code></h2>\n<p>acf_update_option</p>\n<ul>\n<li>A wrapper for the WP update_option but provides logic for a &#8216;no&#8217; autoload</li>\n<li>@date    4/01/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@deprecated 5.7.11</li>\n<li>@param   string $option   The option name.</li>\n<li>@param string $value    The option value.</li>\n<li>@param string $autoload An optional autoload value.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_get_field_reference()</code></h2>\n<p>acf_get_field_reference</p>\n<ul>\n<li>Finds the field key for a given field name and post_id.</li>\n<li>@date    26/1/18</li>\n<li>@since ACF 5.6.5</li>\n<li>@deprecated 5.6.8</li>\n<li>@param   string $field_name The name of the field. eg &#8216;sub_heading&#8217;</li>\n<li>@param mixed  $post_id    The post_id of which the value is saved against</li>\n<li>@return string  $reference  The field key</li>\n</ul>\n<h2><code>acf_get_dir()</code></h2>\n<p>acf_get_dir</p>\n<ul>\n<li>Returns the plugin url to a specified file.</li>\n<li>@date    28/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@deprecated 5.6.8</li>\n<li>@param   string $filename The specified file.</li>\n<li>@return string</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157148",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157148",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157148/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157313,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157148/revisions/157313"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157148"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

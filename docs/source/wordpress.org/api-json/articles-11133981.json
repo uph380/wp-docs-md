@@ -1,0 +1,109 @@
+{
+    "id": 11133981,
+    "date": "2019-01-26T16:06:44",
+    "date_gmt": "2019-01-26T16:06:44",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11133981"
+    },
+    "modified": "2023-01-11T13:43:30",
+    "modified_gmt": "2023-01-11T13:43:30",
+    "slug": "appearance-theme-file-editor-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/appearance-theme-file-editor-screen/",
+    "title": {
+        "rendered": "Appearance Theme File Editor Screen"
+    },
+    "content": {
+        "rendered": "\n<p>Among the many user editable files in a standard WordPress installation are a Theme&#8217;s Template and Stylesheet files.  The <strong>Appearance Theme File Editor Screen</strong> allows you to edit those Theme files.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2019/01/appearance-editor.png\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"554\" src=\"https://wordpress.org/documentation/files/2019/01/appearance-editor-1024x554.png\" alt=\"appearance-editor\" class=\"wp-image-11134004\" srcset=\"https://wordpress.org/documentation/files/2019/01/appearance-editor-1024x554.png 1024w, https://wordpress.org/documentation/files/2019/01/appearance-editor-300x162.png 300w, https://wordpress.org/documentation/files/2019/01/appearance-editor-768x416.png 768w, https://wordpress.org/documentation/files/2019/01/appearance-editor.png 1096w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></a><figcaption>Appearance Editor</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"edit-themes\">Edit Themes</h3>\n\n\n\n<p>The built-in Theme File Editor allows you to view or change (see next paragraph) any code kept in a Theme Template or Stylesheet files.  The particular file contents are displayed in the large text (or edit) box that dominates this Screen. </p>\n\n\n\n<p>If a specific file is writable, changes can be made, and saved.  If a file is not writable, the message <strong>You need to make this file writable before you can save your changes. </strong>You need to change the File Permissions before changes can be saved. </p>\n\n\n\n<p>The name of the Theme file being edited is displayed at the top  of the text box. If the full text of the file cannot be viewed, a  scroll bar to the right of the text box is provided.  Since Theme files are pure text, no images or pictures can be inserted into the text box.</p>\n\n\n\n<p><strong>Select theme to edit</strong>&nbsp;   </p>\n\n\n\n<p>From this pull-down box, select the Theme that needs to be edited and click the Select button on the right. Once the Select button is clicked that Themes Template and Styles files will be listed on the right side of the text box and the Stylesheet (style.css) file for that Theme will be placed in the text box.</p>\n\n\n\n<p><strong>Theme Files</strong>&nbsp; </p>\n\n\n\n<p>Listed to the right of the large text box is a list of the Theme Template or Stylesheet files that can be edited. Click on any of the file links to place the text of that file in the edit box. </p>\n\n\n\n<p>Be very careful editing PHP files of your current theme. The editor does not make backup copies. If you introduce an error that  crashes your site, you cannot use the editor to fix the problem. In such  a case, use FTP  to either upload a functional backup of the problem file or change the folder name of the current theme so WordPress is forced to use a different theme. </p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"update-file\">Update File</h3>\n\n\n\n<p>Remember to click this button to save the changes you have made to the file. After clicking this button you should see a splash message  at the top of the screen saying File Edited Successfully.  If you don&#8217;t see that message, then your changes are not saved! Note that if a file is not writeable the Update File button will not be available.</p>\n\n\n\n<p><strong>Note:</strong> Changing files in this manner is not recommended. If you update the theme all of your changes will be lost. The best way to avoid this is through the use of a <a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\">child theme</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Among the many user editable files in a standard WordPress installation are a Theme&#8217;s Template and Stylesheet files. The Appearance Theme File Editor Screen allows you to edit those Theme files. Edit Themes The built-in Theme File Editor allows you to view or change (see next paragraph) any code kept in a Theme Template or [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11133981",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11133981",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11133981"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11133981/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355085,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11133981/revisions/16355085"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11133981"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11133981"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

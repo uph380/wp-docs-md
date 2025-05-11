@@ -1,0 +1,97 @@
+{
+    "id": 11318,
+    "date": "2014-10-22T20:22:27",
+    "date_gmt": "2014-10-22T20:22:27",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11318"
+    },
+    "modified": "2022-10-29T04:28:39",
+    "modified_gmt": "2022-10-29T04:28:39",
+    "slug": "sidebars",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/sidebars/",
+    "title": {
+        "rendered": "Sidebars"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What are Sidebars</h2>\n\n\n\n<p>A sidebar is any widgetized area of your theme. Widget areas are places in your theme where users can add their own widgets.&nbsp;You do not need to include a sidebar in your theme, but including a sidebar&nbsp;means users can add content to the widget areas through the Customizer or the Widgets Admin Panel.</p>\n\n\n\n<p>Widgets can be employed for a variety of purposes, ranging from listing recent posts to conducting live chats.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">The name &#8220;sidebars&#8221; comes from a time when widget areas were normally created in a long strip to the lefthand or righthand side of a blog. Today, sidebars have evolved beyond their original name. They can be included anywhere on your website. Think of a sidebar as <strong>any area that contains widgets</strong>.</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Registering a Sidebar</h2>\n\n\n\n<p>To use sidebars, you must register them in <code>functions.php</code>.</p>\n\n\n\n<p>To begin, <code>register_sidebar()</code>&nbsp;has several parameters that should always be defined regardless of whether they are marked as optional. These include x, y, and z.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>name</strong> &#8211; your name for the sidebar. This is the name users will see in the Widgets panel.</li>\n\n\n\n<li><strong>id</strong> &#8211; must be lowercase. You will call this in your theme using the <code>dynamic_sidebar</code> function.</li>\n\n\n\n<li><strong>description</strong> &#8211; A description of the sidebar. This will also be shown in the admin Widgets panel.</li>\n\n\n\n<li><strong>class</strong> &#8211; The CSS class name to assign to the widget&#8217;s HTML.</li>\n\n\n\n<li><strong>before_widget</strong> &#8211; HTML that is placed before every widget.</li>\n\n\n\n<li><strong>after_widget</strong> &#8211; HTML that is placed after every widget. Should be used to close tags from <code>before_widget</code>.</li>\n\n\n\n<li><strong>before_title</strong> &#8211; HTML that is placed before the title of each widget, such as a header tag.</li>\n\n\n\n<li><strong>after_title</strong> &#8211; HTML that is placed after every title. Should be used to close tags from <code>before_title</code>.</li>\n</ul>\n\n\n\n<p>To register a sidebar we use <code>register_sidebar</code> and the <code>widgets_init</code> function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction themename_widgets_init() {\n\tregister_sidebar( array(\n\t\t'name'          =&gt; __( 'Primary Sidebar', 'theme_name' ),\n\t\t'id'            =&gt; 'sidebar-1',\n\t\t'before_widget' =&gt; '&lt;aside id=\"%1$s\" class=\"widget %2$s\"&gt;',\n\t\t'after_widget'  =&gt; '&lt;/aside&gt;',\n\t\t'before_title'  =&gt; '&lt;h3 class=\"widget-title\"&gt;',\n\t\t'after_title'   =&gt; '&lt;/h3&gt;',\n\t) );\n\tregister_sidebar( array(\n\t\t'name'          =&gt; __( 'Secondary Sidebar', 'theme_name' ),\n\t\t'id'            =&gt; 'sidebar-2',\n\t\t'before_widget' =&gt; '&lt;ul&gt;&lt;li id=\"%1$s\" class=\"widget %2$s\"&gt;',\n\t\t'after_widget'  =&gt; '&lt;/li&gt;&lt;/ul&gt;',\n\t\t'before_title'  =&gt; '&lt;h3 class=\"widget-title\"&gt;',\n\t\t'after_title'   =&gt; '&lt;/h3&gt;',\n\t) );\n}</code></pre>\n\n\n\n<p>Registering a sidebar tells WordPress that you&#8217;re creating a&nbsp;new widget area in <strong>Appearance &gt; Widgets</strong> that users can drag their widgets to. There are two functions for registering sidebars:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/register_sidebar/\" rel=\"function\">register_sidebar()</a> </li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/register_sidebars/\" rel=\"function\">register_sidebars()</a> </li>\n</ul>\n\n\n\n<p>The first lets you register one sidebar and the second lets you register multiple sidebars.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> It is recommended that you register sidebars individually as it allows you to give unique and descriptive names to each sidebar. </div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<p>For widget areas in header and footer, it makes sense to name them &#8220;Header Widget Area&#8221; and &#8220;Footer Widget Area&#8221;, &nbsp;rather than &#8220;Sidebar 1&#8221; and &#8220;Sidebar 2&#8221; (which is the default). This&nbsp;provides&nbsp;a useful description&nbsp;of&nbsp;where the sidebar is located.</p>\n\n\n\n<p>The following code, added to <code>functions.php</code> registers a sidebar:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nadd_action( 'widgets_init', 'my_register_sidebars' );\nfunction my_register_sidebars() {\n\t/* Register the 'primary' sidebar. */\n\tregister_sidebar(\n\t\tarray(\n\t\t\t'id'            =&gt; 'primary',\n\t\t\t'name'          =&gt; __( 'Primary Sidebar' ),\n\t\t\t'description'   =&gt; __( 'A short description of the sidebar.' ),\n\t\t\t'before_widget' =&gt; '&lt;div id=\"%1$s\" class=\"widget %2$s\"&gt;',\n\t\t\t'after_widget'  =&gt; '&lt;/div&gt;',\n\t\t\t'before_title'  =&gt; '&lt;h3 class=\"widget-title\"&gt;',\n\t\t\t'after_title'   =&gt; '&lt;/h3&gt;',\n\t\t)\n\t);\n\t/* Repeat register_sidebar() code for additional sidebars. */\n}</code></pre>\n\n\n\n<p>The code does the following:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>register_sidebar</code> &#8211; tells WordPress that you&#8217;re registering a sidebar</li>\n\n\n\n<li><code>'name' =&gt; __( 'Primary Widget Area', 'mytheme' ),</code> &#8211; is the widget area&#8217;s name that will appear in Appearance &gt; Widgets</li>\n\n\n\n<li><code>'id' =&gt; 'sidebar-1'</code> &#8211; assigns an ID to the sidebar. WordPress uses &#8216;id&#8217;&nbsp;to assign widgets to a specific sidebar.</li>\n\n\n\n<li><code>before_widget</code>/<code>after_widget</code> &#8211; a wrapper element for widgets assigned to the sidebar. The \u201c%1$s\u201d and \u201c%2$s\u201d should always be left in <code>id</code> and <code>class</code> respectively so that plugins can make use of them. By default, WordPress sets these as list items but in the above example they have been altered to div.</li>\n\n\n\n<li><code>before_title</code>/<code>after_title</code> &#8211; the wrapper elements for the widget&#8217;s title. By default, WordPress sets it to h2 but using h3 makes it more semantic.</li>\n</ul>\n\n\n\n<p>Once your sidebar is registered, you can display it in your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Displaying Sidebars in your Theme</h2>\n\n\n\n<p>Now that your sidebars are registered, you will want to display them &nbsp;in &nbsp;your theme. To do this, there are two steps:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Create the&nbsp;<code>sidebar.php</code>&nbsp;template file and display the sidebar using the <code>dynamic_sidebar</code> function</li>\n\n\n\n<li>Load in your theme using the <code>get_sidebar</code> function</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Create a Sidebar Template File</h3>\n\n\n\n<p>A sidebar template contains the code for your sidebar. WordPress recognizes the file &nbsp;<code>sidebar.php</code>&nbsp; and any template file with the name <code>sidebar-{name}.php</code>. &nbsp;This means that you can organize your files with each sidebar in its own template file.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Example:</h3>\n\n\n\n<p>1. Create <code>sidebar-primary.php</code></p>\n\n\n\n<p>2. Add the following code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div id=\"sidebar-primary\" class=\"sidebar\"&gt;\n\t&lt;?php dynamic_sidebar( 'primary' ); ?&gt;\n&lt;/div&gt;</code></pre>\n\n\n\n<p>Note that <code>dynamic_sidebar</code> takes a single parameter of <code>$index</code>, which can be either the sidebar&#8217;s name or id.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Load your Sidebar</h3>\n\n\n\n<p>To load your sidebar in your theme, use the&nbsp;<code>get_sidebar</code> function. This should be inserted into the template file where you want the sidebar to display. To load the default <code>sidebar.php</code> use the following:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php get_sidebar(); ?&gt;</code></pre>\n\n\n\n<p>To display the Primary sidebar, pass the <code>$name</code> parameter to the function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php get_sidebar( 'primary' ); ?&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Customizing your Sidebar</h2>\n\n\n\n<p>There are lots of ways that you can customize your sidebars. Here are some examples:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Display Default Sidebar Content</h3>\n\n\n\n<p>You may wish to display content if the user hasn&#8217;t added any widgets to the sidebar yet. To do this, you use the <code>is_sidebar_active()</code> function to check to see if the sidebar has any widgets. This accepts the <code>$index</code> parameter which should be the ID of the sidebar that you wish to check.</p>\n\n\n\n<p>This code checks to see if the sidebar is active, if not it displays some content:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div id=\"sidebar-primary\" class=\"sidebar\"&gt;\n\t&lt;?php if ( is_active_sidebar( 'primary' ) ) : ?&gt;\n\t\t&lt;?php dynamic_sidebar( 'primary' ); ?&gt;\n\t&lt;?php else : ?&gt;\n\t\t&lt;!-- Time to add some widgets! --&gt;\n\t&lt;?php endif; ?&gt;\n&lt;/div&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Display Default Widgets</h3>\n\n\n\n<p>You may want your sidebar to be populated with some widgets by default. For example, display the Search, Archive, and Meta Widgets. &nbsp;To do this you would use:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div id=\"primary\" class=\"sidebar\"&gt;\n\n\t&lt;?php do_action( 'before_sidebar' ); ?&gt;\n\n\t&lt;?php if ( ! dynamic_sidebar( 'sidebar-primary' ) ) : ?&gt;\n\n\t\t&lt;aside id=\"search\" class=\"widget widget_search\"&gt;\n\t\t\t&lt;?php get_search_form(); ?&gt;\n\t\t&lt;/aside&gt;&lt;!-- #search --&gt;\n\n\t\t&lt;aside id=\"archives\" class\"widget\"&gt;\n\t\t\t&lt;h3 class=\"widget-title\"&gt;&lt;?php _e( 'Archives', 'shape' ); ?&gt;&lt;/h3&gt;\n\t\t\t&lt;ul&gt;\n\t\t\t\t&lt;?php wp_get_archives( array( 'type' =&gt; 'monthly' ) ); ?&gt;\n\t\t\t&lt;/ul&gt;\n\t\t&lt;/aside&gt;&lt;!-- #archives --&gt;\n\n\t\t&lt;aside id=\"meta\" class=\"widget\"&gt;\n\t\t\t&lt;h3 class=\"widget-title\"&gt;&lt;?php _e( 'Meta', 'shape' ); ?&gt;&lt;/h3&gt;\n\t\t\t&lt;ul&gt;\n\t\t\t\t&lt;?php wp_register(); ?&gt;\n\t\t\t\t&lt;li&gt;&lt;?php wp_loginout(); ?&gt;&lt;/li&gt;\n\t\t\t\t&lt;?php wp_meta(); ?&gt;\n\t\t\t&lt;/ul&gt;\n\t\t&lt;/aside&gt;&lt;!-- #meta --&gt;\n\n\t&lt;?php endif; ?&gt;\n\n&lt;/div&gt;&lt;!-- #primary --&gt;</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11318",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11318",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 36,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11318/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143712,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11318/revisions/143712"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11318"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 157164,
+    "date": "2025-02-21T04:17:10",
+    "date_gmt": "2025-02-21T04:17:10",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/admin-tools-file/"
+    },
+    "modified": "2025-02-21T05:52:31",
+    "modified_gmt": "2025-02-21T05:52:31",
+    "slug": "admin-tools-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/admin/admin-tools-file/",
+    "title": {
+        "rendered": "Admin Tools Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_register_admin_tool()</code></h2>\n<p>Alias of acf()-&gt;admin_tools-&gt;register_tool()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   ACF_Admin_Tool $class The tool class.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_admin_tools_url()</code></h2>\n<ul>\n<li>This function will return the admin URL to the tools page</li>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@return  string The URL to the tools page.</li>\n</ul>\n<h2><code>acf_get_admin_tool_url()</code></h2>\n<p>This function will return the admin URL to the tools page</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   string $tool The tool name.</li>\n<li>@return string The URL to a particular tool&#8217;s page.</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 7879583,
+    "featured_media": 0,
+    "parent": 157165,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157164",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157164",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7879583"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157164/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157300,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157164/revisions/157300"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157165"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157164"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

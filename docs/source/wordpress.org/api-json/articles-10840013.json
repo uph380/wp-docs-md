@@ -1,0 +1,109 @@
+{
+    "id": 10840013,
+    "date": "2018-11-02T03:29:14",
+    "date_gmt": "2018-11-02T03:29:14",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840013"
+    },
+    "modified": "2023-01-16T10:55:49",
+    "modified_gmt": "2023-01-16T10:55:49",
+    "slug": "search-engine-optimization",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/search-engine-optimization/",
+    "title": {
+        "rendered": "Search Engine Optimization"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress, straight out of the box, comes ready to embrace search engines. Its features and functions guide a search engine through the posts, pages, and categories to help the search engine crawl your site and gather the information it needs to include your site within its database.</p>\n\n\n\n<p>WordPress comes with several built in search optimization tools, including the ability to use <a href=\"/support/article/glossary#htaccess\">.htaccess</a> to create apparently static <a href=\"/support/article/glossary/#url\">URLs</a> called <a href=\"/support/article/using-permalinks/\">permalinks</a>, <a href=\"/support/article/glossary/#blogroll\">blogrolling</a>, and <a href=\"/support/article/glossary/#pingback\">pinging</a>. There are also a number of third party <a href=\"/support/article/plugins/\">plugins</a> and hacks which can be used for search engine optimization (SEO).</p>\n\n\n\n<p>However, once you start using various <a href=\"/support/article/using-themes/\">WordPress Themes</a> and <a href=\"https://codex.wordpress.org/Blog_Design_and_Layout\">customizing WordPress</a> to meet your own needs, you may break some of those useful search engine friendly features. To maintain your WordPress site&#8217;s optimal friendliness towards search engine spiders and crawlers, here are a few tips:</p>\n\n\n\n<p><strong>Good, Clean Code </strong></p>\n\n\n\n<p>Make sure your site&#8217;s code <a href=\"https://codex.wordpress.org/Validating_a_Website\">validates</a>. Errors in your code may prevent a search engine from moving through the site successfully.</p>\n\n\n\n<p><strong>Content Talks </strong></p>\n\n\n\n<p>Search engines can&#8217;t &#8220;see&#8221; a site. They can only &#8220;read&#8221; a site. Looks do not talk to a search engine. What &#8220;talks&#8221; to a search engine are the words, the content, the material in your site that explains, shares, informs, educates, and babbles. Make sure you have quality <strong>word</strong> content for a search engine to examine and compare with all the parts and pieces to give you a good &#8220;score&#8221;.</p>\n\n\n\n<p><strong>Write Your Content with Searchers in Mind </strong></p>\n\n\n\n<p>How do you find information on the Internet? If you are writing something that you want to be &#8220;found&#8221; on the Internet, think about the words and phrases someone would use to find your information. Use them more than once as you write, but not in every sentence. Learn how search engines scan your content, evaluate it, and categorize it so you can help yourself get in good favor with search engines.</p>\n\n\n\n<p><strong>Content First </strong></p>\n\n\n\n<p>A search engine enters your site and, for the most part, ignores the styles and <a href=\"https://codex.wordpress.org/CSS\">CSS</a>. It just plows through the site gathering content and information. Most WordPress Themes are designed with the content as close to the top of the unstyled page as possible, keeping sidebars and footers towards the bottom. Few search engines scan more than the first third of the page before moving on. Make sure your Theme puts the content near the top.</p>\n\n\n\n<p><strong>Keywords, Links, and Titles Meet Content </strong></p>\n\n\n\n<p>Search engines do not evaluate your site on how pretty it is, but they do evaluate the words and put them through a sifter, giving credit to certain words and combinations of words. Words found within your document are compared to words found within your links and titles. The more that match, the better your &#8220;score.&#8221;</p>\n\n\n\n<p><strong>Content in Links and Images </strong></p>\n\n\n\n<p>Your site may not have much text, mostly photographs and links, but you have places in which to add textual content. Search engines look for <code>alt</code> and <code>title</code> in link and image tags. While these have a bigger purpose of making your site more accessible, having good descriptions and words in these attributes helps provide more content for search engines to digest.</p>\n\n\n\n<p><strong>Link Popularity </strong></p>\n\n\n\n<p>It is not how good your site is, it is how good the sites are that link to you. This still holds weight with search engine favoritism. It&#8217;s about who links to you. <a href=\"/support/article/glossary/#blogroll\">Blogrolls</a>, <a href=\"/support/article/glossary/#pingback\">pingbacks</a>, and <a href=\"/support/article/glossary/#trackback\">trackbacks</a> are all built into WordPress. These help you link to other people, which gives them credit, but it also helps them link to you, connecting the &#8220;links.&#8221; The number of incoming links your site has that have been recognized by Google can be checked by typing <code>link:www.yoursite.com</code> into Google (other search engines have similar functions). Other ways to generate incoming links to your site include:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Add your site&#8217;s url to your signature on forum posts on other sites.</li><li>Submit your site to directories (see below).</li><li>Note: Leaving comments on blogs will not help with this, since all modern blogging tools use the <a href=\"https://codex.wordpress.org/Nofollow\">rel=&#8221;nofollow&#8221;</a> attribute. Don&#8217;t be a <a href=\"https://codex.wordpress.org/Comment_Spam\">comment spammer</a>.</li></ul>\n\n\n\n<p><strong>Good Navigation Links </strong></p>\n\n\n\n<p>A search engine crawls through your site, moving from page to page. <a href=\"https://codex.wordpress.org/Good_Navigation_Links\">Good navigational links</a> to the categories, archives, and various pages on your site will invite a search engine to move gracefully from one page to another, following the connecting links and visiting most of your site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Get the Blog Indexed in Google Search</h2>\n\n\n\n<p>Before getting to the details on how you can get Google to recognize you, we need to first understand these three terms:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>The Googlebot: This is the software used to search that is used by Google to gather new information that has been uploaded online so that it can be fed on Google pages. Once information that you had uploaded is picked up by this software, then it can be found on Google pages.</li><li>Crawling: This is the process where the above named software, Googlebot, roams from site to site detecting any new information to be uploaded on Google. This software works by going through new links that have been uploaded recently and which are generating a lot of traffic.</li><li>Indexing: Once the information has been gathered by the Googlebot through the process called crawling, it is processed through another process called indexing. It is through this process that the quality of content is determined so that they can be placed appropriately on Google pages. The question now is, how exactly does Googlebot find this information? Firstly, it starts by siting the web pages that it had cited in the previous search. It then detects new pages associated with those old ones or just new ones all together. More details on the same would be found on Search Console help for those who are interested in the same. Any new information is cited with the help of sitemaps and links that lead to those articles.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Search Engine Site Submissions</h2>\n\n\n\n<p>There are many resources that will &#8220;help&#8221; you submit your site to search engines. Some are free, some for a fee. Or you can manually submit your site to search engines yourself. Whatever method you choose to use, once your site has been <a href=\"https://codex.wordpress.org/Validating_a_Website\">checked for errors</a> and is ready to go, search engines will welcome your WordPress site.</p>\n\n\n\n<p>Here are some tips for successful site submissions:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Make sure you have content for search engines to scan. In general, have more than 10 posts on your site to give the search engines something to examine and evaluate.</li><li>Do not submit your site to the same search engine more than once a month or longer, depending upon their criteria, not your anxiousness to be listed.</li><li>Have ready to type, or copy and paste, the title of the site, and the categories your site may belong to in a search engine directory.</li><li>Have a list of your website&#8217;s various &#8220;addresses/URLs&#8221; ready. You can submit your root directory as well as specific categories and feeds to search engines, expanding your search engine coverage.</li><li>Keep a list of the various search engines and directories you submit to so you do not accidentally resubmit too soon, and you can keep track of how they include you among their pages and results.</li></ul>\n\n\n\n<p><strong>Directory Sites</strong></p>\n\n\n\n<p>It is also useful for traffic generation and search optimization purposes to submit your site to directories. Both comprehensive directory sites and those specific to the subject or localisation of your site can be used.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Search Engine Optimization Resources</h2>\n\n\n\n<p>While WordPress comes ready for search engines, the following are more resources and information you may want to know about preparing and maintaining your site for search engines&#8217; robots and crawlers.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Meta Tags</h3>\n\n\n\n<p><a href=\"https://codex.wordpress.org/Meta Tags in WordPress\">Meta Tags</a> contain information that describes your site&#8217;s purpose, description, and keywords used within your site. The meta tags are stored within the <code>head</code> of your <code>header.php</code> template file. By default, they are not included in WordPress, but you can manually include them and the article on <a href=\"https://codex.wordpress.org/Meta Tags in WordPress\">Meta Tags in WordPress</a> takes you through the process of adding meta tags to your WordPress site.</p>\n\n\n\n<p>The WordPress <a href=\"/support/article/custom-fields/\">Custom Fields</a> option can also be used to include keywords and descriptions for <a href=\"/support/article/writing-posts/\">posts</a> and <a href=\"/support/article/pages/\">Pages</a>. There are also several WordPress Plugins that can also help you to add meta tags and keyword descriptions to your site found within the <a href=\"https://wordpress.org/plugins/\">Official WordPress Plugin Directory</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Robots.txt Optimization</h3>\n\n\n\n<p>Search Engines read a file at <code>yourdomain.com/robots.txt</code> to get information on what they should and shouldn&#8217;t check.</p>\n\n\n\n<p>Adding entries to robots.txt to help SEO is popular misconception. Google says you are welcome to use robots.txt to block parts of your site but these days prefers you don&#8217;t. Use page-level noindex tags instead, to tackle low-quality parts of your site. Since 2009, Google has been evermore vocal in its advice to avoid blocking JS &amp; CSS files, and Google&#8217;s Search Quality Team has been evermore active in promoting a policy of transparency by webmasters, to help Google verify we&#8217;re not &#8220;cloaking&#8221; or linking to unsightly spam on blocked pages. Therefore the ideal robots file disallows nothing whatsoever, and may link to an XML Sitemap if an accurate one has been constructed (which itself is rare though!).</p>\n\n\n\n<p>WordPress by default only blocks a couple of JS files but is nearly compliant with Google&#8217;s guidance here.</p>\n\n\n\n<h4 class=\"wp-block-heading\">See also:</h4>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.google.com/support/webmasters/bin/topic.py?topic=8843\">How Google Crawls My Site</a></li><li><a href=\"http://www.google.com/support/webmasters/bin/answer.py?answer=40360\">How do I use a robots.txt file to control access to my site?</a></li><li><a href=\"http://yoast.com/example-robots-txt-wordpress/\">WordPress Robots.txt example and explanation from Yoast</a></li><li><a href=\"https://www.askapache.com/seo/seo-with-robotstxt/\">Using robots.txt for SEO</a></li><li><a href=\"http://www.markwilson.co.uk/blog/2007/04/removing-duplicate-search-engine-content-using-robotstxt.htm\">Removing duplicate search engine content using robots.txt</a></li><li><a href=\"http://en.wikipedia.org/wiki/Robots.txt\">wikipedia &#8211; Robots.txt</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Feed Submissions</h3>\n\n\n\n<p>WordPress comes built-in with various <a href=\"https://codex.wordpress.org/WordPress Feeds\">feeds</a>, allowing your site to be viewed by various feed readers. Many search engines are now accepting feed submissions, and there are many site which specialize in directories of feeds and feed services.</p>\n\n\n\n<p>To submit your site&#8217;s feeds, you need to know the link to the various feeds your site provides. The article <a href=\"https://codex.wordpress.org/WordPress Feeds\">WordPress Feeds</a> lists the various links of the feeds that come built into WordPress.</p>\n\n\n\n<p>For information on customizing these links, see the article on <a href=\"https://codex.wordpress.org/Customizing Feeds\">Customizing Feeds</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Permalinks</h3>\n\n\n\n<p><a href=\"/support/article/introduction-to-blogging/#pretty-permalinks\">Permalinks</a> are enhancements to your existing URLs which can improve search engine optimization by presenting your post, page, and archive URLs as something like <code>&lt;nowiki&gt;http://example.com/2003/05/23/my-cheese-sandwich/&lt;/nowiki&gt;</code> rather than <code>&lt;nowiki&gt;http://example.com/index.php?p=423&lt;/nowiki&gt;</code>. See <a href=\"https://codex.wordpress.org/Using Permalinks\">Using Permalinks</a> for more information.</p>\n\n\n\n<p>As search engines use links and the <code>title</code> as part of their information gathering, links to posts and articles within your site gain importance with Permalinks.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Sitemaps</h3>\n\n\n\n<p>A <em>sitemap</em> or &#8220;site map&#8221; is a single page listing of all the posts on your website. It is intended for your visitors to get a good overview on what your site is about and to find a blog post quickly but it also has great benefits in the search engines as a good link is always pointing to all your blog posts. By having a link to your sitemap on all your sites pages both visitors and search engines will easily get to it and find all your posts.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Google Sitemaps</h3>\n\n\n\n<p>As of June 2005, Google is now accepting <strong>sitemaps</strong> of your site as part of their website submissions. Google needs to have this sitemap formatted in a special way using XML. You can find more information about <a href=\"https://www.google.com/webmasters/tools/home?hl=en\">Google&#8217;s Sitemap Submissions</a> from Google, and the discussion on the <a href=\"/support/forums\">WordPress Forum</a> about <a href=\"https://wordpress.org/support/topic/35465\">WordPress and Google Site maps</a>.</p>\n\n\n\n<p>Some utilities have been created to help the WordPress user to create a Google site map of their site for submission to Google. For more information on these and Google sitemaps:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://sitemaps.blogspot.com/\">Inside Google Sitemaps (Official Google Blog)</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Link Relationships</h3>\n\n\n\n<p>There is some debate over whether listing the link relations actually effect search engine ranking however it is simple to implement.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.w3.org/TR/REC-html40/struct/links.html#h-12.1.2\">World Wide Web Consortium (W3C)</a><a href=\"http://www.internetconsultancy.pro/on-page-seo-checklist/\"></a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress, straight out of the box, comes ready to embrace search engines. Its features and functions guide a search engine through the posts, pages, and categories to help the search engine crawl your site and gather the information it needs to include your site within its database. WordPress comes with several built in search optimization [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        21,
+        73
+    ],
+    "class_list": [
+        "post-10840013",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-installation",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840013",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840013"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840013/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355341,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840013/revisions/16355341"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840013"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840013"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

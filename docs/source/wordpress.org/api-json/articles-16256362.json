@@ -1,0 +1,109 @@
+{
+    "id": 16256362,
+    "date": "2022-12-02T21:52:55",
+    "date_gmt": "2022-12-02T21:52:55",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16256362"
+    },
+    "modified": "2024-06-08T18:30:52",
+    "modified_gmt": "2024-06-08T18:30:52",
+    "slug": "posts-list-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/posts-list-block/",
+    "title": {
+        "rendered": "Posts List block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <strong>Posts List block </strong>is a variation of the <strong><a href=\"https://wordpress.org/documentation/article/query-loop-block/\" data-type=\"helphub_article\" data-id=\"14633622\">Query Loop block</a></strong> that lets you display posts based on various query parameters and visual configurations. It has various integrated block patterns to help you quickly set up the block appearance and layout.</p>\n\n\n\n<p>To add a <strong>Posts List block</strong>, click the <strong>Add block </strong>button and select the <strong>Posts List</strong> block. Alternatively, type <kbd>/posts list </kbd>in a new paragraph block and press <kbd>Enter</kbd>.</p>\n\n\n\n<p>Refer to this article for <a href=\"https://wordpress.org/documentation/article/wordpress-editor/#adding-a-block\">detailed instructions on adding blocks</a>.</p>\n\n\n\n<p>Note that once the block is added, you will see a placeholder for the block with the option to choose a block pattern or to start blank. However, note that on the block settings panel and the list view, the Posts List block is registered as a <a href=\"https://wordpress.org/documentation/article/query-loop-block/\" data-type=\"helphub_article\" data-id=\"14633622\">Query Loop block</a>.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/zQ57WGdj7MNrNhhBRIGG9KDayEg9ZvqDmbd-GVL4qCO6aM_kZC0UoWGAl-awWy57wJid9WOfJtJHDMLoNwwSI3e9wiCLtAtRw4b78oWEn04KtSSE4MPK-PbA6M8IN904gdjEY5aAgs853_4D8G5VunV-i86IOzRIqhrgNV97y7s3X8k3U_D2NyBz-0olgg\" alt=\"Adding a Posts List block\" /></figure>\n\n\n\n<p>The Posts List block has the same setup process and configuration options as the Query Loop block.</p>\n\n\n\n<p>Refer to this article for a more detailed guide for the <a href=\"https://wordpress.org/documentation/article/query-loop-block/\">Query Loop block</a>.</p>\n\n\n\n<p></p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"has-medium-font-size wp-block-heading\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-12-02</li>\n</ul>\n\n\n\n<p></p>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Posts List block is a variation of the Query Loop block that lets you display posts based on various query parameters and visual configurations. It has various integrated block patterns to help you quickly set up the block appearance and layout. To add a Posts List block, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16256362",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16256362",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16256362"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16256362/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360374,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16256362/revisions/16360374"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16256362"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16256362"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

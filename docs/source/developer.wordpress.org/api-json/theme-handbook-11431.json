@@ -1,0 +1,97 @@
+{
+    "id": 11431,
+    "date": "2014-10-23T20:18:29",
+    "date_gmt": "2014-10-23T20:18:29",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11431"
+    },
+    "modified": "2021-07-20T18:15:51",
+    "modified_gmt": "2021-07-20T18:15:51",
+    "slug": "writing-documentation",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/releasing-your-theme/writing-documentation/",
+    "title": {
+        "rendered": "Writing Documentation"
+    },
+    "content": {
+        "rendered": "<p>Documentation is important for themes as it provides a way for users to understand what a theme does and does not support. Likewise, documenting the code of your theme will make it easier for other theme developers to customize your theme, likely with a <a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\">child theme</a>.</p>\n<p>Here&#8217;s a list of <strong>requirements</strong> and <strong>recommendations\u00a0</strong>for your theme&#8217;s documentation.</p>\n<ul>\n<li>Themes are <strong>required</strong> to provide end-user documentation of any design limitations or extraordinary installation/setup instructions.</li>\n<li>Themes are <strong>required</strong> to include a <a href=\"https://wordpress.org/plugins/about/readme.txt\">readme.txt file</a>, using the plugin directory&#8217;s readme.txt markdown format. New themes need to follow this rule as of October 25th, 2018. Old themes have a 6 months grace time from this date. Since WordPress 5.8 theme <a href=\"https://core.trac.wordpress.org/ticket/48520\">readme files are not parsed for requirements</a>. This means that headers <code>Requires PHP</code> and <code>Requires at least</code> are going to be parsed from theme&#8217;s <code>style.css</code> file.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5823,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11431",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11431",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11431/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 136524,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11431/revisions/136524"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11431"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

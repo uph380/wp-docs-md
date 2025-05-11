@@ -1,0 +1,91 @@
+{
+    "id": 134463,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/focusable-iframe/"
+    },
+    "modified": "2024-10-30T16:55:46",
+    "modified_gmt": "2024-10-30T16:55:46",
+    "slug": "focusable-iframe",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/focusable-iframe/",
+    "title": {
+        "rendered": "FocusableIframe"
+    },
+    "content": {
+        "rendered": "<p><strong>Deprecated</strong></p>\n<p><code>&lt;FocusableIframe /&gt;</code> is a component rendering an <code>iframe</code> element enhanced to support focus events. By default, it is not possible to detect when an iframe is focused or clicked within. This enhanced component uses a technique which checks whether the target of a window <code>blur</code> event is the iframe, inferring that this has resulted in the focus of the iframe. It dispatches an emulated <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/FocusEvent\"><code>FocusEvent</code></a> on the iframe element with event bubbling, so a parent component binding its own <code>onFocus</code> event will account for focus transitioning within the iframe.</p>\n<h2>Usage</h2>\n<p>Use as you would a standard <code>iframe</code>. You may pass <code>onFocus</code> directly as the callback to be invoked when the iframe receives focus, or on an ancestor component since the event will bubble.</p>\n<pre><code class=\"language-jsx\">import { FocusableIframe } from '@wordpress/components';\n\nconst MyFocusableIframe = () =&gt; (\n    &lt;FocusableIframe\n        src=\"/my-iframe-url\"\n        onFocus={ () =&gt; console.log( 'iframe is focused' ) }\n    /&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<p>Any props aside from those listed below will be passed to the <code>FocusableIframe</code> will be passed through to the underlying <code>iframe</code> element.</p>\n<h3><code>onFocus</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Callback to invoke when iframe receives focus. Passes an emulated <code>FocusEvent</code> object as the first argument.</p>\n<h3><code>iframeRef</code></h3>\n<ul>\n<li>Type: <code>React.Ref</code></li>\n<li>Required: No</li>\n</ul>\n<p>If a reference to the underlying DOM element is needed, pass <code>iframeRef</code> as the result of a <code>React.createRef</code> called from your component.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 153,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134463",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134463",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134463/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151866,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134463/revisions/151866"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134463"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 135800,
+    "date": "2021-05-06T10:24:48",
+    "date_gmt": "2021-05-06T10:24:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-dropdown-menu/"
+    },
+    "modified": "2024-10-30T17:10:03",
+    "modified_gmt": "2024-10-30T17:10:03",
+    "slug": "toolbar-dropdown-menu",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-dropdown-menu/",
+    "title": {
+        "rendered": "ToolbarDropdownMenu"
+    },
+    "content": {
+        "rendered": "<p>ToolbarDropdownMenu can be used to add actions to a toolbar, usually inside a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/\">Toolbar</a> or <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar-group/\">ToolbarGroup</a> when used to create general interfaces. If you&#8217;re using it to add controls to your custom block, you should consider using <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/\">BlockControls</a>.</p>\n<p>It has similar features to the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/dropdown-menu/\">DropdownMenu</a> component. Using <code>ToolbarDropdownMenu</code> will ensure that keyboard interactions in a toolbar are consistent with the <a href=\"https://www.w3.org/TR/wai-aria-practices/#toolbar\">WAI-ARIA toolbar pattern</a>.</p>\n<h2>Usage</h2>\n<p>To create general interfaces, you&#8217;ll want to render ToolbarButton in a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/\">Toolbar</a> component.</p>\n<pre><code class=\"language-jsx\">import { Toolbar, ToolbarDropdownMenu } from '@wordpress/components';\nimport {\n    more,\n    arrowLeft,\n    arrowRight,\n    arrowUp,\n    arrowDown,\n} from '@wordpress/icons';\n\nfunction MyToolbar() {\n    return (\n        &lt;Toolbar label=\"Options\"&gt;\n            &lt;ToolbarDropdownMenu\n                icon={ more }\n                label=\"Select a direction\"\n                controls={ [\n                    {\n                        title: 'Up',\n                        icon: arrowUp,\n                        onClick: () =&gt; console.log( 'up' ),\n                    },\n                    {\n                        title: 'Right',\n                        icon: arrowRight,\n                        onClick: () =&gt; console.log( 'right' ),\n                    },\n                    {\n                        title: 'Down',\n                        icon: arrowDown,\n                        onClick: () =&gt; console.log( 'down' ),\n                    },\n                    {\n                        title: 'Left',\n                        icon: arrowLeft,\n                        onClick: () =&gt; console.log( 'left' ),\n                    },\n                ] }\n            /&gt;\n        &lt;/Toolbar&gt;\n    );\n}\n</code></pre>\n<h3>Inside BlockControls</h3>\n<p>If you&#8217;re working on a custom block and you want to add controls to the block toolbar, you should use <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/\">BlockControls</a> instead.</p>\n<pre><code class=\"language-jsx\">import { BlockControls } from '@wordpress/block-editor';\nimport { Toolbar, ToolbarDropdownMenu } from '@wordpress/components';\nimport {\n    more,\n    arrowLeft,\n    arrowRight,\n    arrowUp,\n    arrowDown,\n} from '@wordpress/icons';\n\nfunction Edit() {\n    return (\n        &lt;BlockControls group=\"block\"&gt;\n            &lt;ToolbarDropdownMenu\n                icon={ more }\n                label=\"Select a direction\"\n                controls={ [\n                    {\n                        title: 'Up',\n                        icon: arrowUp,\n                        onClick: () =&gt; console.log( 'up' ),\n                    },\n                    {\n                        title: 'Right',\n                        icon: arrowRight,\n                        onClick: () =&gt; console.log( 'right' ),\n                    },\n                    {\n                        title: 'Down',\n                        icon: arrowDown,\n                        onClick: () =&gt; console.log( 'down' ),\n                    },\n                    {\n                        title: 'Left',\n                        icon: arrowLeft,\n                        onClick: () =&gt; console.log( 'left' ),\n                    },\n                ] }\n            /&gt;\n        &lt;/BlockControls&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<p>This component accepts <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/dropdown-menu/#props\">the same API of the DropdownMenu</a> component.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 219,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135800",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135800",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135800/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152137,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135800/revisions/152137"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135800"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

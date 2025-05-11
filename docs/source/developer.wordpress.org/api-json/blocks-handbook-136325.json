@@ -1,0 +1,91 @@
+{
+    "id": 136325,
+    "date": "2021-06-10T13:54:47",
+    "date_gmt": "2021-06-10T13:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/card-divider/"
+    },
+    "modified": "2024-10-30T17:10:00",
+    "modified_gmt": "2024-10-30T17:10:00",
+    "slug": "card-divider",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/card-divider/",
+    "title": {
+        "rendered": "CardDivider"
+    },
+    "content": {
+        "rendered": "<p><code>CardDivider</code> renders an optional divider within a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/card/card/\"><code>Card</code></a>. It is typically used to divide multiple <code>CardBody</code> components from each other.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Card, CardBody, CardDivider } from '@wordpress/components';\n\nconst Example = () =&gt; (\n    &lt;Card&gt;\n        &lt;CardBody&gt;...&lt;/CardBody&gt;\n        &lt;CardDivider /&gt;\n        &lt;CardBody&gt;...&lt;/CardBody&gt;\n    &lt;/Card&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<h3>Inherited props</h3>\n<p><code>CardDivider</code> inherits all of the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/divider/#props\"><code>Divider</code> props</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 122,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136325",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136325",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136325/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151727,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136325/revisions/151727"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136325"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

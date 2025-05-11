@@ -1,0 +1,109 @@
+{
+    "id": 16357811,
+    "date": "2023-08-08T10:00:00",
+    "date_gmt": "2023-08-08T10:00:00",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16357811"
+    },
+    "modified": "2024-06-08T18:25:37",
+    "modified_gmt": "2024-06-08T18:25:37",
+    "slug": "post-modified-date-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-modified-date-block/",
+    "title": {
+        "rendered": "Post Modified Date block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>Use the Post Modified Date block to display the date the post was last modified. This block is primarily used in a <a href=\"https://wordpress.org/documentation/article/template-editor/\" data-type=\"link\" data-id=\"https://wordpress.org/documentation/article/template-editor/\">template</a> or nested inside a <a href=\"https://wordpress.org/documentation/article/query-loop-block/\">query loop</a> block.</p>\n\n\n\n<p>On the front of your website, this block only shows if you have modified the content after  publishing. This means you can combine it with the <a href=\"https://wordpress.org/documentation/article/post-date-block/\" data-type=\"link\" data-id=\"https://wordpress.org/documentation/article/post-date-block/\">Post Date block</a> to show the publishing date and the last modified date.</p>\n\n\n\n<p>To add a Post Modified Date block, click the <strong>Block Inserter</strong> icon when editing the page template. Search for the Post Modified Date block. Click on it to add the block to your page template. </p>\n\n\n\n<p>You can also type /post mod and hit enter in a new paragraph block to quickly add the Post Modified Date block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"784\" height=\"406\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-modified-date-slash-inserter.png\" alt=\"How to add Post Modified Date block quickly\" class=\"wp-image-16357817\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-modified-date-slash-inserter.png 784w, https://wordpress.org/documentation/files/2023/07/63-post-modified-date-slash-inserter-300x155.png 300w, https://wordpress.org/documentation/files/2023/07/63-post-modified-date-slash-inserter-768x398.png 768w\" sizes=\"auto, (max-width: 784px) 100vw, 784px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Refer to this article for&nbsp;<a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">detailed instructions on adding blocks</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Post Modified Date block shows five buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>Change date</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"564\" height=\"136\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar.png\" alt=\"Post Modified Date block toolbar\" class=\"wp-image-16357821\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar.png 564w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-300x72.png 300w\" sizes=\"auto, (max-width: 564px) 100vw, 564px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"746\" height=\"408\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-transform.png\" alt=\"The &quot;Transform to&quot; dropdown menu with options to wrap the block inside a column or group.\" class=\"wp-image-16357823\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-transform.png 746w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-transform-300x164.png 300w\" sizes=\"auto, (max-width: 746px) 100vw, 746px\" /></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to place the Post Modified Date block in a \u201cGroup\u201d block or \u201cColumns\u201d block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Drag icon</h3>\n\n\n\n<p>To drag and drop the block to a new location, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move arrows</h3>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on moving a block within the editor can be found&nbsp;<a href=\"https://wordpress.org/documentation/article/moving-blocks/\">here</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Change text alignment</h3>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"632\" height=\"408\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-text-alignment.png\" alt=\"The block toolbar has a dropdown menu with options to align text to the left, center, and right.\" class=\"wp-image-16357830\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-text-alignment.png 632w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-text-alignment-300x194.png 300w\" sizes=\"auto, (max-width: 632px) 100vw, 632px\" /></figure>\n\n\n\n<p>Click the \u201cChange alignment\u201d button in the Block toolbar to display the alignment drop-down. You can align the block text to the left, make it center-aligned or align it to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Change date</h3>\n\n\n\n<p>Click the &#8220;Change date&#8221; button in the Block toolbar to display a modal with date settings.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"604\" height=\"228\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date.png\" alt=\"The &quot;Change date&quot; option in the block toolbar is next to the text alignment option and uses the pen icon.\" class=\"wp-image-16357834\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date.png 604w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date-300x113.png 300w\" sizes=\"auto, (max-width: 604px) 100vw, 604px\" /></figure>\n\n\n\n<p>You can select the publishing date and time through the input fields and options or select the date from the calendar. You can use the arrow buttons to change the month.<br>Click anywhere outside the modal, press the <kbd>Escape</kbd> key, or click on the button with the X to close the modal.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"578\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date-modal-578x1024.png\" alt=\"The publishing date modal has a close button at the top right corner and input fields for time, am or pm, month, day and year.\nBelow the input field is a monthly calendar.\" class=\"wp-image-16357835\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date-modal-578x1024.png 578w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date-modal-169x300.png 169w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-toolbar-change-date-modal.png 580w\" sizes=\"auto, (max-width: 578px) 100vw, 578px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by three vertical dots<strong> </strong>on the far right of the toolbar gives you more features such as the ability to duplicate, remove, or edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p>Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\" data-type=\"helphub_article\" data-id=\"13748329\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>In addition to the block toolbar, every block has specific options in the editor sidebar.</p>\n\n\n\n<p><em>If you do not see the sidebar, click the \u2018settings\u2019 icon next to the Save button.</em></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"548\" height=\"920\" src=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-settings.png\" alt=\"The block sidebar settings tab.\" class=\"wp-image-16357840\" srcset=\"https://wordpress.org/documentation/files/2023/07/63-post-date-block-settings.png 548w, https://wordpress.org/documentation/files/2023/07/63-post-date-block-settings-179x300.png 179w\" sizes=\"auto, (max-width: 548px) 100vw, 548px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Format</h3>\n\n\n\n<p>Toggle &#8220;Default format&#8221; off to select a different format. Choose from seven different formats, or add a custom format:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>2022-01-24</li>\n\n\n\n<li>1/24/2022</li>\n\n\n\n<li>1/24/2022 11:00 PM</li>\n\n\n\n<li>Jan 24, 2022</li>\n\n\n\n<li>Jan 24, 2022 11:00 PM</li>\n\n\n\n<li>January 24, 2022</li>\n\n\n\n<li>Jan 24</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Link to post</h3>\n\n\n\n<p>Choose whether or not the date should link to the post.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Display the last modified date</h3>\n\n\n\n<p>This setting is enabled by default for the Post Modified Date block. Turn this off to use the Post date block instead.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Styles</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The block provides color settings to change the text color, background color, and link color.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>The block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The<strong> </strong>block provides dimension settings options to add padding and margin.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a>.</p>\n\n\n\n<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-08-08</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the list of Blocks Use the Post Modified Date block to display the date the post was last modified. This block is primarily used in a template or nested inside a query loop block. On the front of your website, this block only shows if you have modified the content after publishing. This [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16357811",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357811",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16357811"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 60,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357811/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360368,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357811/revisions/16360368"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16357811"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16357811"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

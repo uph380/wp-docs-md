@@ -1,0 +1,91 @@
+{
+    "id": 134581,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-npm-package-json-lint-config/"
+    },
+    "modified": "2024-10-30T16:55:19",
+    "modified_gmt": "2024-10-30T16:55:19",
+    "slug": "packages-npm-package-json-lint-config",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-npm-package-json-lint-config/",
+    "title": {
+        "rendered": "@wordpress/npm-package-json-lint-config"
+    },
+    "content": {
+        "rendered": "<p>WordPress <a href=\"https://github.com/tclindner/npm-package-json-lint\">npm-package-json-lint</a> shareable configuration.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-shell\">$ npm install @wordpress/npm-package-json-lint-config\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Usage</h2>\n<p>Add this to your <code>package.json</code> file:</p>\n<pre><code class=\"language-json\">\"npmpackagejsonlint\": {\n    \"extends\": \"@wordpress/npm-package-json-lint-config\",\n},\n</code></pre>\n<p>Or to a <code>.npmpackagejsonlintrc.json</code> file in the root of your repo:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": \"@wordpress/npm-package-json-lint-config\"\n}\n</code></pre>\n<p>To add, modify, or override any <a href=\"https://github.com/tclindner/npm-package-json-lint/wiki\">npm-package-json-lint</a> rules add this to your <code>package.json</code> file:</p>\n<pre><code class=\"language-json\">\"npmpackagejsonlint\": {\n    \"extends\": \"@wordpress/npm-package-json-lint-config\",\n    \"rules\": {\n        \"valid-values-author\": [\n            \"error\",\n            [\n                \"WordPress\"\n            ]\n        ]\n    }\n},\n</code></pre>\n<p>Or to a <code>.npmpackagejsonlintrc.json</code> file in the root of your repo:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": \"@wordpress/npm-package-json-lint-config\",\n    \"rules\": {\n        \"require-publishConfig\": \"error\",\n        \"valid-values-author\": [ \"error\", [ \"WordPress\" ] ]\n    }\n}\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 300,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134581",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134581",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134581/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153844,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134581/revisions/153844"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134581"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11429,
+    "date": "2014-10-23T20:17:12",
+    "date_gmt": "2014-10-23T20:17:12",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11429"
+    },
+    "modified": "2023-06-08T02:51:32",
+    "modified_gmt": "2023-06-08T02:51:32",
+    "slug": "theme-review-guidelines",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/releasing-your-theme/theme-review-guidelines/",
+    "title": {
+        "rendered": "Theme Review Guidelines"
+    },
+    "content": {
+        "rendered": "\n<p>The <a title=\"https://make.wordpress.org/themes\" href=\"https://make.wordpress.org/themes\">WordPress Themes Team</a> provides and maintains the theme review guidelines as part of their task as WordPress Contributors and Developers for the <a href=\"https://wordpress.org/themes/\">WordPress Theme Directory</a>. Some of these guidelines are required before themes are included in the theme directory. Other guidelines are recommendations for best practices in developing your theme and making it available to as many people as possible. This handbook uses both recommendations and requirements from the theme review guidelines to ensure the theme you develop is accessible to everyone.</p>\n\n\n\n<p>The requirements for being included in the WordPress.org theme directory can be found <a href=\"https://make.wordpress.org/themes/handbook/review/required/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Get Involved</h2>\n\n\n\n<p>The WordPress Themes Team is <a href=\"https://make.wordpress.org/themes/handbook/get-involved/become-a-reviewer/\">open to anyone</a>\u00a0and is a great way to get a better understanding of how themes are developed.\u00a0To become a member of the WordPress Themes Team, read through the <a href=\"https://make.wordpress.org/themes/\">WordPress Themes Team&#8217;s site</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5823,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11429",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11429",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11429/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 147619,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11429/revisions/147619"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11429"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

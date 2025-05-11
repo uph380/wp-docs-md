@@ -1,0 +1,109 @@
+{
+    "id": 11298894,
+    "date": "2019-03-11T13:55:30",
+    "date_gmt": "2019-03-11T13:55:30",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11298894"
+    },
+    "modified": "2024-08-07T20:48:00",
+    "modified_gmt": "2024-08-07T20:48:00",
+    "slug": "faq-i-make-changes-and-nothing-happens",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/faq-i-make-changes-and-nothing-happens/",
+    "title": {
+        "rendered": "FAQ I make changes and nothing happens"
+    },
+    "content": {
+        "rendered": "\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p><strong>Important:</strong> Please note that this is not a support page. If you seek help with your specific problem, please refer to the\u00a0<a href=\"https://wordpress.org/support/welcome/\">Support forums</a>.</p></div></div>\n\n\n\n<p>After you make a few changes in your WordPress content or your design, you may notice that nothing has changed.</p>\n\n\n\n<p>A number of common factors can cause this behavior, such as: browser caching, server-side caching, caching plugins, and making changes in the incorrect location in the file system.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The Browser Cache</h2>\n\n\n\n<p>Sometimes when you first visit a web page, it takes a while to load. But then the next page you visit within that site doesn&#8217;t take quite so long. This is because &#8211; in an effort to be helpful &#8211; your web browser stores the web page information on your computer. In the future, the web browser reloads the web page data from your computer, not from the actual site. The place where this web page data is stored is called the&nbsp;<strong>cache</strong>. The cache is an essential way to optimize your web browsing experience.</p>\n\n\n\n<p>Sometimes a problem can arise when you make a small change to your site, and the browser doesn&#8217;t recognize it as a significant change. Since the browser hasn&#8217;t registered your adjustment as an actual change, it opts to reload the exact same page that you previously looked at. The solution in this case is to clear or empty your&nbsp;<strong>browser&#8217;s cache</strong>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Clearing the Browser Cache</h3>\n\n\n\n<p>Normally, to see the changes on your page, you click the&nbsp;<strong>Refresh</strong>&nbsp;button on the browser toolbar or press the F5 key on your keyboard. In many cases, this simply reloads the page without clearing the browser&#8217;s cache. Here are some techniques to wipe clean the browser&#8217;s cache, so that you will see the changes when your page reloads.</p>\n\n\n\n<p>The way you clear the browser cache depends on the particular browser you are using. Here is how you clear the cache on a few common browsers:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Chrome</strong>&nbsp;&#8211;&nbsp;<a href=\"https://support.google.com/chrome/answer/95582?hl=en\">How to delete your Chrome cache, history, and other browser data</a></li>\n\n\n\n<li><strong>Safari</strong>&nbsp;&#8211; <a href=\"https://support.apple.com/guide/safari/clear-your-browsing-history-sfri47acf5d6/12.0/mac/10.14\">Clear your browsing history in Safari on Mac</a></li>\n\n\n\n<li><strong>Firefox</strong>\u00a0&#8211;\u00a0<a href=\"https://support.mozilla.org/en-US/kb/how-clear-firefox-cache\">How to clear the F</a>i<a href=\"https://support.mozilla.org/en-US/kb/how-clear-firefox-cache\">refox cache</a></li>\n\n\n\n<li><strong>Internet Explorer</strong>&nbsp;&#8211; <a href=\"https://support.microsoft.com/en-us/help/260897/how-to-delete-the-contents-of-the-temporary-internet-files-folder\">How to delete the contents of the Temporary Internet Files folder</a></li>\n\n\n\n<li><strong>Microsoft Edge</strong> &#8211; <a href=\"https://support.microsoft.com/en-us/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4\">View and delete browser history in Microsoft Edge</a></li>\n\n\n\n<li><strong>Opera</strong>\u00a0&#8211;\u00a0<a href=\"http://help.opera.com/Windows/12.10/en/cache.html\">How to clear the Opera cache</a></li>\n</ul>\n\n\n\n<p>In addition to clearing the cache, each browser may have a way of stopping or minimizing the caching of web pages. Using this technique will definitely slow down your web page viewing, and it isn&#8217;t a perfect solution, because some caching may still occur. However, in a small way it does still help. Check your internet browser&#8217;s help files for specifics on how to turn off the cache feature.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Server-side Caching</h2>\n\n\n\n<p>Be aware that some web hosting services use caching plugins on the backend without letting the user know explicitly. You may be able to turn this off via your webhost&#8217;s configuration panel. Just to be sure, you can ask a webhost support member if any caching plugins are used, and request to have them turned off if needed.</p>\n\n\n\n<p>This situation may also occur if you are using a managed WordPress hosting plan. Many managed WordPress hosting plans use server-side caching. If you are using a managed WordPress service from your hosting provider and you are seeing this issue, you may want to see if they have an option to manually flush the cache. In many cases, your changes will immediately show up after flushing the cache.</p>\n\n\n\n<p>If you are using a caching HTTP reverse proxy such as Varnish on your web server, edits to your files may not appear right away. Edits may become visible after some length of time when the cached version expires. You many need to tune your caching system in order to eliminate this issue.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A WordPress Cache Plugin</h2>\n\n\n\n<p>Some WordPress plugins also add cache functionality to your WordPress site. This helps your site load faster, because WordPress can retrieve the pages of your blog from the cache instead of generating them all over again.</p>\n\n\n\n<p>Any good cache plugin will clear the cache when a post, page, or comment is published. However, if you make other changes (e.g. to your theme), the cache may not be cleared and the old version will still appear. In this case, check the plugin&#8217;s instructions to find out how to clear its cache.</p>\n\n\n\n<p>Note that WordPress does&nbsp;<em>not</em>&nbsp;come with a cache by default, so the above would only apply if you installed a cache plugin yourself.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Check Your Source</h2>\n\n\n\n<p>Sometimes even the very best web page designers, developers, and programmers make a mistake. It&#8217;s the little details that can mess things up. Let&#8217;s look at some of the most commonly overlooked details that happen when you aren&#8217;t paying attention.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Check the Address</h3>\n\n\n\n<p>Is the name and folder for the file you &#8220;fixed&#8221; the same as the one you are viewing? Look at the following two addresses (URLs).</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>wordpress/wp-content/themes/yourtheme/style.css</li>\n\n\n\n<li>test/wordpress/wp-content/themes/yourtheme/style.css</li>\n</ul>\n\n\n\n<p>In this case, you can probably see the difference, but when viewed in an address bar or in a text editor, you might miss the word&nbsp;test&nbsp;that specifies a specific folder location.</p>\n\n\n\n<p>Pay very close attention to the difference between&nbsp;style1.css&nbsp;and&nbsp;stylel.css&nbsp;if you are using different style names, too. The first filename is&nbsp;style&nbsp;followed by the digit one, while the second filename is&nbsp;style&nbsp;followed by a lowercase L. If you are working with different but similar files, make sure you give them distinctive names like&nbsp;style-red.css&nbsp;and&nbsp;style-800.css&nbsp;so you can clearly see the difference.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Check the Template</h3>\n\n\n\n<p>If you&#8217;re editing a template, are you sure that the page you&#8217;re viewing is being generated from that template? Remember that many templates contain very similar text. For example, a post header may appear on a single post page, an index page, a search page, or an archive page, to name a few.</p>\n\n\n\n<p>See&nbsp;<a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a>&nbsp;if you&#8217;re having trouble figuring out which template is in use.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Check Your Upload</h3>\n\n\n\n<p>When you make a change to a file, it is often on your computer&#8217;s hard drive, and you have to upload the file to your host server in order to view it on the internet. Did you actually upload it? Did you put it in the right folder? Is it really there? When overwriting the exact same file, it doesn&#8217;t always do a complete overwrite, so consider deleting the original from the host server and then uploading a new version, to make sure that the correct file is there in its entirety.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Test Yourself</h3>\n\n\n\n<p>Let&#8217;s say that:&nbsp;<br>a) You&#8217;re working with the correct file, and&nbsp;<br>b) It&#8217;s in the right place with the right name, but you still can&#8217;t see the changes you&#8217;ve made.</p>\n\n\n\n<p>At this point, it&#8217;s time to complete the following steps:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Make a backup of the file you are working on and check that the backup is in a safe place.</li>\n\n\n\n<li>Make a big change (such as setting the background in your&nbsp;style.css&nbsp;as&nbsp;#ff0000&nbsp;or even red).</li>\n\n\n\n<li>View the changed web page in your browser. Make sure you clear the cache, to be sure you have the new version.</li>\n\n\n\n<li>If nothing changes, delete the file (and only that file) from the server and try to view the file again. If nothing continues to change, you and WordPress are looking at completely different files. It&#8217;s time to get out your detective hat and start figuring out what is happening and where your files went.</li>\n\n\n\n<li>Check your URL settings in your options panel and also in the database. If this issue still continues to be unsolvable, make a post about it on the&nbsp;<a href=\"https://wordpress.org/support/forums/\">WordPress Forum</a>, and let the experts step in to help.</li>\n</ol>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>After you make a few changes in your WordPress content or your design, you may notice that nothing has changed. A number of common factors can cause this behavior, such as: browser caching, server-side caching, caching plugins, and making changes in the incorrect location in the file system. The Browser Cache Sometimes when you first [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        77,
+        74
+    ],
+    "class_list": [
+        "post-11298894",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-faqs",
+        "category-wordpress-overview"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11298894",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11298894"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11298894/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360762,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11298894/revisions/16360762"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11298894"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11298894"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

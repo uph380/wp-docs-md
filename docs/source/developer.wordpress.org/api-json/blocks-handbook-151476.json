@@ -1,0 +1,91 @@
+{
+    "id": 151476,
+    "date": "2024-01-08T18:40:01",
+    "date_gmt": "2024-01-08T18:40:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/static-dynamic-rendering/"
+    },
+    "modified": "2024-08-16T09:24:37",
+    "modified_gmt": "2024-08-16T09:24:37",
+    "slug": "static-dynamic-rendering",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/static-dynamic-rendering/",
+    "title": {
+        "rendered": "Static or Dynamic rendering of a block"
+    },
+    "content": {
+        "rendered": "<p>A block&#8217;s front-end markup can either be dynamically generated server-side upon request (dynamic blocks) or statically generated during the save process in the Block Editor (static blocks). This article explores each method.</p>\n<div class=\"callout callout-tip\">\nThe post <a href=\"https://developer.wordpress.org/news/2023/02/27/static-vs-dynamic-blocks-whats-the-difference/\">Static vs. dynamic blocks: What\u2019s the difference?</a> provides a great introduction to this topic.\n</div>\n<h2>Static rendering</h2>\n<p>Blocks with &#8220;static rendering&#8221; produce front-end output that is fixed and stored in the database upon saving. These blocks rely solely on their <code>save</code> function to define their <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/markup-representation-block/\">HTML markup</a>, which remains unchanged unless manually edited in the Block Editor.</p>\n<p>If a block does not use a dynamic rendering method\u2014meaning it doesn&#8217;t generate content on the fly via PHP when the page loads\u2014it&#8217;s considered a &#8220;static block.&#8221;</p>\n<p>The diagram below illustrates how static block content is saved in the database and then retrieved and rendered as HTML on the front end.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/static-rendering.png?ssl=1\" alt=\"Blocks with static rendering diagram\" /></p>\n<h3>How to define static rendering for a block</h3>\n<p>The <code>save</code> function, which can be defined when <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/#registration-of-the-block-with-javascript-client-side\">registering a block on the client</a>, specifies the block&#8217;s HTML structure that gets saved in the database whenever you save the block in the Editor. This saved HTML is then used to display the block on the front end.</p>\n<p>Blocks in WordPress are encapsulated within special comment tags that serve as unique <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/markup-representation-block/\">block delimiters</a>. However, only the HTML defined in the static block&#8217;s <code>save</code> function\u2014excluding these delimiters\u2014is rendered.</p>\n<details>\n<summary><strong>View an example of static rendering in the Preformatted block</strong></summary>\n<p>\nThe following <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/preformatted/save.js\"><code>save</code> function</a> for the <a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/preformatted\">Preformatted</a> core block looks like this:</p>\n<pre><code class=\"language-js\">import { RichText, useBlockProps } from '@wordpress/block-editor';\n\nexport default function save( { attributes } ) {\n    const { content } = attributes;\n\n    return (\n        &lt;pre { ...useBlockProps.save() }&gt;\n            &lt;RichText.Content value={ content } /&gt;\n        &lt;/pre&gt;\n    );\n}\n</code></pre>\n<p>The function generates the following markup representation of the block when <code>attributes.content</code> has the value <code>\"This is some preformatted text\"</code>:</p>\n<pre><code class=\"language-html\">&lt;!-- wp:preformatted --&gt;\n&lt;pre class=\"wp-block-preformatted\"&gt;This is some preformatted text&lt;/pre&gt;\n&lt;!-- /wp:preformatted --&gt;\n</code></pre>\n<p>On the front end, the block will return the following markup. Notice how the delimiters are no longer present.</p>\n<pre><code class=\"language-html\">&lt;pre class=\"wp-block-preformatted\"&gt;This is some preformatted text&lt;/pre&gt;\n</code></pre>\n</details>\n<p></p>\n<p>Dynamic blocks, which we&#8217;ll explore in the following section, can specify an initial HTML structure through a <code>save</code> function, similar to static blocks. However, dynamic blocks primarily rely on server-side rendering to generate their content. If, for any reason, the dynamic rendering isn&#8217;t available\u2014perhaps due to the block&#8217;s plugin being deactivated\u2014the system will fall back to using the HTML structure saved in the database to display the block on the front end.</p>\n<p>For a practical demonstration of how this works, refer to the <a href=\"https://developer.wordpress.org/block-editor/getting-started/tutorial/\">Building your first block</a> tutorial. Specifically, the <a href=\"https://developer.wordpress.org/block-editor/getting-started/tutorial/#adding-static-rendering\">Adding static rendering</a> section illustrates how a block can have both a saved HTML structure and dynamic rendering capabilities.</p>\n<div class=\"callout callout-info\">\nWordPress provides mechanisms like the <a href=\"https://developer.wordpress.org/reference/functions/render_block/\"><code>render_block</code></a> and the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks/\"><code>render_callback</code></a> function to alter the saved HTML of a block before it appears on the front end. These tools offer developers the capability to customize block output dynamically, catering to complex and interactive user experiences.\n</div>\n<p>Additional examples of WordPress blocks that use static rendering, meaning their output is fixed at the time of saving and doesn&#8217;t rely on server-side processing, include:</p>\n<ul>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/separator/save.js\">Separator</a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/spacer/save.js\">Spacer</a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/button/save.js\">Button</a></li>\n</ul>\n<h2>Dynamic rendering</h2>\n<p>Blocks with &#8220;dynamic rendering&#8221; are designed to generate their content and structure in real-time when requested on the front end. Unlike static blocks, which have a fixed HTML structure saved in the database, &#8220;dynamic blocks&#8221; rely on server-side processing to construct their output dynamically, making them highly versatile and suitable for content that needs to be updated frequently or is dependent on external data.</p>\n<p>The diagram below illustrates how the representation of a dynamic block is saved in the database and then retrieved and dynamically rendered as HTML on the front end.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/dynamic-rendering.png?ssl=1\" alt=\"Blocks with dynamic rendering diagram\" /></p>\n<p>There are some common use cases for dynamic blocks:</p>\n<ol>\n<li><strong>Blocks where content should change even if a post has not been updated:</strong> An example is the <a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/latest-posts\">Latest Posts</a> block, which will automatically update whenever a new post is published.</li>\n<li><strong>Blocks where updates to the markup should be immediately shown on the front end:</strong> If you update the structure of a block by adding a new class, adding an HTML element, or changing the layout in any other way, using a dynamic block ensures those changes are applied immediately on all occurrences of that block across the site. Without dynamic blocks, similar updates could trigger <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#validation\">validation errors</a> in the Block Editor.</li>\n</ol>\n<h3>How to define dynamic rendering for a block</h3>\n<p>A block can define dynamic rendering in two main ways:</p>\n<ol>\n<li>Using the <code>render_callback</code> argument that can be passed to the <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/#registration-of-the-block-with-php-server-side\"><code>register_block_type()</code></a> function.</li>\n<li>Using a separate PHP file usually named <code>render.php</code>. This file&#8217;s path should be defined using the <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-json/#files-for-the-blocks-behavior-output-or-style\"><code>render</code></a> property in the <code>block.json</code> file.</li>\n</ol>\n<p>Both of these methods receive the following data:</p>\n<ul>\n<li><code>$attributes</code>: The array of attributes for the block.</li>\n<li><code>$content</code>: The markup of the block as stored in the database, if any.</li>\n<li><code>$block</code>: The instance of the <a href=\"https://developer.wordpress.org/reference/classes/wp_block/\">WP_Block</a> class that represents the rendered block (<a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/\">metadata of the block</a>).</li>\n</ul>\n<details>\n<summary><strong>View an example of dynamic rendering in the Site Title block</strong></summary>\n<p></p>\n<p>The <a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/site-title\">Site Title</a> block uses the following <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/site-title/index.php\"><code>render_callback</code></a>:</p>\n<pre><code class=\"language-php\">function render_block_core_site_title( $attributes ) {\n    $site_title = get_bloginfo( 'name' );\n    if ( ! $site_title ) {\n        return;\n    }\n\n    $tag_name = 'h1';\n    $classes  = empty( $attributes['textAlign'] ) ? &apos;&apos; : \"has-text-align-{$attributes['textAlign']}\";\n    if ( isset( $attributes['style']['elements']['link']['color']['text'] ) ) {\n        $classes .= ' has-link-color';\n    }\n\n    if ( isset( $attributes['level'] ) ) {\n        $tag_name = 0 === $attributes['level'] ? 'p' : 'h' . (int) $attributes['level'];\n    }\n\n    if ( $attributes['isLink'] ) {\n        $aria_current = is_home() || ( is_front_page() &amp;&amp; 'page' === get_option( 'show_on_front' ) ) ? ' aria-current=\"page\"' : &apos;&apos;;\n        $link_target  = ! empty( $attributes['linkTarget'] ) ? $attributes['linkTarget'] : '_self';\n\n        $site_title = sprintf(\n            '&lt;a href=\"%1$s\" target=\"%2$s\" rel=\"home\"%3$s&gt;%4$s&lt;/a&gt;',\n            esc_url( home_url() ),\n            esc_attr( $link_target ),\n            $aria_current,\n            esc_html( $site_title )\n        );\n    }\n    $wrapper_attributes = get_block_wrapper_attributes( array( 'class' =&gt; trim( $classes ) ) );\n\n    return sprintf(\n        '&lt;%1$s %2$s&gt;%3$s&lt;/%1$s&gt;',\n        $tag_name,\n        $wrapper_attributes,\n        // already pre-escaped if it is a link.\n        $attributes['isLink'] ? $site_title : esc_html( $site_title )\n    );\n}\n</code></pre>\n<p>However, there is no <code>save</code> function defined for this block, as you can see from its <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/site-title/index.js\"><code>index.js</code></a> file, which means the markup representation of the block in the database looks like this:</p>\n<pre><code class=\"language-html\">&lt;!-- wp:site-title /--&gt;\n</code></pre>\n<p>On the front end, the <code>render_callback</code> is used to dynamically render the markup for the block depending on the specific values on the server at the time the block is requested. These values include the current site title, URL, link target, etc.</p>\n<pre><code>&lt;h1 class=\"wp-block-site-title\"&gt;&lt;a href=\"https://www.wp.org\" target=\"_self\" rel=\"home\"&gt;My WordPress Website&lt;/a&gt;&lt;/h1&gt;\n</code></pre>\n</details>\n<p></p>\n<h3>HTML representation of dynamic blocks in the database (<code>save</code>)</h3>\n<p>For dynamic blocks, the <code>save</code> callback function can return just <code>null</code>, which tells the editor to save only the block delimiter comment (along with any existing <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">block attributes</a>) to the database. These attributes are then passed into the server-side rendering callback, which will determine how to display the block on the front end of your site.</p>\n<p>When <code>save</code> is <code>null</code>, the Block Editor will skip the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#validation\">block markup validation process</a>, avoiding issues with frequently changing markup.</p>\n<p>Blocks with dynamic rendering can also save an HTML representation of the block as a backup. If you provide a server-side rendering callback, the HTML representing the block in the database will be replaced with the output of your callback but will be rendered if your block is deactivated (the plugin that registers the block is uninstalled), or your render callback is removed.</p>\n<p>In some cases, the block saves an HTML representation of the block and uses a dynamic rendering to fine-tune this markup if some conditions are met. Some examples of core blocks using this approach are:</p>\n<ul>\n<li>The <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/cover\">Cover</a> block <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/cover/save.js\">saves</a> a full HTML representation of the block in the database. This markup is processed via a <a href=\"https://github.com/WordPress/gutenberg/blob/22741661998834e69db74ad863705ee2ce97b446/packages/block-library/src/cover/index.php#L74\"><code>render_callback</code></a>, which <a href=\"https://github.com/WordPress/gutenberg/blob/22741661998834e69db74ad863705ee2ce97b446/packages/block-library/src/cover/index.php#L16\">dynamically injects</a> the featured image if the &#8220;Use featured image&#8221; setting is enabled.</li>\n<li>The <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image\">Image</a> block also <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image/save.js\">saves</a> its HTML representation in the database. This markup is processed via a <a href=\"https://github.com/WordPress/gutenberg/blob/22741661998834e69db74ad863705ee2ce97b446/packages/block-library/src/image/index.php#L363\"><code>render_callback</code></a>, which <a href=\"https://github.com/WordPress/gutenberg/blob/22741661998834e69db74ad863705ee2ce97b446/packages/block-library/src/image/index.php#L18\">adds additional attributes</a> to the markup if specific conditions are met.</li>\n</ul>\n<p>If you are using <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks/\">InnerBlocks</a> in a dynamic block, you will need to save the <code>InnerBlocks</code> in the <code>save</code> callback function using <code>&lt;InnerBlocks.Content/&gt;</code>.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/news/2023/02/27/static-vs-dynamic-blocks-whats-the-difference/\">Static vs. dynamic blocks: What\u2019s the difference?</a> | Developer Blog</li>\n<li><a href=\"https://developer.wordpress.org/news/2023/03/10/block-deprecation-a-tutorial/\">Block deprecation \u2013 a tutorial</a> | Developer Blog</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 150294,
+    "menu_order": 16,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-151476",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151476",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151476/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154844,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151476/revisions/154844"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150294"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=151476"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

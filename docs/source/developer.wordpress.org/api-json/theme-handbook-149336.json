@@ -1,0 +1,97 @@
+{
+    "id": 149336,
+    "date": "2023-11-21T14:53:06",
+    "date_gmt": "2023-11-21T14:53:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149336"
+    },
+    "modified": "2023-12-14T21:05:41",
+    "modified_gmt": "2023-12-14T21:05:41",
+    "slug": "main-stylesheet",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/core-concepts/main-stylesheet/",
+    "title": {
+        "rendered": "Main Stylesheet (style.css)"
+    },
+    "content": {
+        "rendered": "\n<p>As described in <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">Theme Structure</a>, WordPress requires that all themes include a <code>style.css</code> file. Its most important function is to \u201cregister\u201d the theme with WordPress through configuration data at the top of the file. Many themes also use it to serve CSS to the front-end (and even the editor).</p>\n\n\n\n<p>In this document, you will learn how to configure your theme data via the <code>style.css</code> file header.</p>\n\n\n\n<h2 class=\"wp-block-heading\">File Header</h2>\n\n\n\n<p>The <code>style.css</code> file header is used to configure data about the theme. WordPress uses this information to determine how some features work and displays some of this data under the <strong>Appearance &gt; Themes</strong> screen for users.</p>\n\n\n\n<p>Here is a look at what the theme details overlay looks like for the default Twenty Twenty-Three theme:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1002\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?resize=2048%2C1002&#038;ssl=1\" alt=\"WordPress themes screen with the Twenty Twenty-Three modal overlay over the screen. It shows the theme screenshot, description, and metadata.\" class=\"wp-image-149338\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?resize=300%2C147&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?resize=1024%2C501&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?resize=768%2C376&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-theme-details.jpg?resize=1536%2C752&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>Most of that information is pulled directly from the <code>style.css</code> file header. It is one of the most vital parts of creating a WordPress theme.</p>\n\n\n\n<p>When determining which themes are available to activate, WordPress searches through each folder under <code>/wp-content/themes</code>, looking for a <code>style.css</code> file. If one is found, it pulls the first 8kb of data from the file and determines if there is a file header with standard fields defined.</p>\n\n\n\n<p>In themes, this is merely a CSS comment block with some standard keys and values defined.</p>\n\n\n\n<p>Suppose you were creating a theme with the folder name of <code>fabled-sunset</code>. WordPress would look for your theme\u2019s <code>style.css</code> in the following location:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>wp-content/</code>\n<ul class=\"wp-block-list\">\n<li><code>themes/</code>\n<ul class=\"wp-block-list\">\n<li><code>fabled-sunset/</code>\n<ul class=\"wp-block-list\">\n<li><code>style.css</code></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>For WordPress to recognize your theme, you would at least need the <code>Theme Name</code> field defined at the top of <code>style.css</code> like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">/**\n * Theme Name: Fabled Sunset\n */</code></pre>\n\n\n\n<p>This is the minimum required header field for a valid theme. Of course, you\u2019ll want to add much more information about your theme.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Header fields</h3>\n\n\n\n<p>There are many supported fields, and you will likely use most of them in your themes. Here is a quick look at a theme\u2019s <code>style.css</code> file header with each of the fields configured:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">/**\n * Theme Name:        Fabled Sunset\n * Theme URI:         https://example.com/fabled-sunset\n * Description:       Custom theme description...\n * Version:           1.0.0\n * Author:            Your Name\n * Author URI:        https://example.com\n * Tags:              block-patterns, full-site-editing\n * Text Domain:       fabled-sunset\n * Domain Path:       /assets/lang\n * Tested up to:      6.4\n * Requires at least: 6.2\n * Requires PHP:      7.4\n * License:           GNU General Public License v2.0 or later\n * License URI:       https://www.gnu.org/licenses/gpl-2.0.html\n */</code></pre>\n\n\n\n<p>The following list outlines what each of these fields does.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>While the <code>Theme Name</code> is the only field required to work with WordPress, you must also include some other fields when submitting a theme to the WordPress theme directory. These fields are marked with <strong>*</strong> below.</p></div></div>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Theme Name*:</strong> A unique name for your theme.</li>\n\n\n\n<li><strong>Theme URI:</strong> The URL of a public web page where users can find more information about the theme.</li>\n\n\n\n<li><strong>Description*:</strong> A description of the theme, which will be displayed when viewing a theme\u2019s details in the WordPress admin and other places. It is also used for themes submitted to the WordPress theme directory.</li>\n\n\n\n<li><strong>Version*:</strong> The version of the theme, written in <code>X.X</code> or <code>X.X.X</code> format.</li>\n\n\n\n<li><strong>Author*: </strong>&nbsp;Your name or the name of the organization who developed the theme. For themes submitted to the theme directory, it is recommended to use the WordPress.org username.</li>\n\n\n\n<li><strong>Author URI:</strong> The URL of the individual or organization who created the theme.</li>\n\n\n\n<li><strong>Tags:</strong> A comma-separated list of features the theme supports. The Theme Review Handbook has a <a href=\"https://make.wordpress.org/themes/handbook/review/required/theme-tags/\">list of valid tags</a> for submission to the theme directory, but third-party sites may use a different system.</li>\n\n\n\n<li><strong>Text Domain*:</strong> The string used for the textdomain for translations.</li>\n\n\n\n<li><strong>Domain Path:</strong> A relative path to where theme translations are stored. WordPress uses this field when the theme is disabled to detect translations. Defaults to <code>/languages</code>.</li>\n\n\n\n<li><strong>Tested up to*: </strong>The last WordPress version the theme has been tested up to, written in <code>X.X</code> format (e.g., <code>6.</code>4, <code>6.2.1</code>, etc.).</li>\n\n\n\n<li><strong>Requires at least*: </strong>The oldest WordPress version the theme will work with, written in <code>X.X</code> format (e.g., <code>6.3</code>, <code>6.2.1</code>, etc.).</li>\n\n\n\n<li><strong>Requires PHP*: </strong>The oldest PHP version the theme will work with, written in <code>X.X</code> format (e.g., <code>8.0</code>, <code>7.4</code>, etc.).</li>\n\n\n\n<li><strong>License*: </strong>The license for the theme.</li>\n\n\n\n<li><strong>License URI*:</strong> The URL of the theme\u2019s license.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Child theme header fields</h3>\n\n\n\n<p>When building a child theme, there is one additional supported field: <strong>Template</strong>. This is used to designate the parent theme\u2019s folder.</p>\n\n\n\n<p>If the fictional \u201cFabled Sunset\u201d theme listed above was the parent of your child theme named \u201cGrand Sunrise,\u201d your <code>style.css</code> header fields would look similar to this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">/**\n * Theme Name: Grand Sunrise\n * Template:   fabled-sunset\n * ...other header fields\n */</code></pre>\n\n\n\n<p>The <code>Template</code> field must match the parent theme\u2019s folder name exactly (relative to the <code>wp-content/themes</code> directory) for this to work. Otherwise, WordPress will not be able to appropriately match them.</p>\n\n\n\n<p>You can <a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\">learn more about child themes</a> in the Advanced Topics chapter.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Custom header fields</h3>\n\n\n\n<p>Some third-party marketplaces or systems may also make use of custom header fields. These are not officially supported by WordPress, but they are definitely allowed and should not negatively impact how the theme works within WordPress.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Custom CSS</h2>\n\n\n\n<p>The <code>style.css</code> file is not merely a configuration file. You can also use it to write custom CSS code to alter the design of your theme, assuming the file is properly loaded.</p>\n\n\n\n<p>With block themes, most or all of the design is ideally handled through the <code>theme.json</code> file, which you will learn about in the <a href=\"https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/\">Global Settings and Styles</a> documentation.</p>\n\n\n\n<p>But there are times when you will want or need to add custom CSS. You can learn more about this in the <a href=\"https://developer.wordpress.org/themes/core-concepts/including-assets/\">Including Assets</a> documentation.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 149331,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149336",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149336",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149336/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150262,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149336/revisions/150262"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149336"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

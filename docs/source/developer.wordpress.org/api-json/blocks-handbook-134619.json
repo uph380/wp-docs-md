@@ -1,0 +1,91 @@
+{
+    "id": 134619,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/architecture/data-flow/"
+    },
+    "modified": "2025-01-07T18:34:11",
+    "modified_gmt": "2025-01-07T18:34:11",
+    "slug": "data-flow",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/architecture/data-flow/",
+    "title": {
+        "rendered": "Data Flow and Data Format"
+    },
+    "content": {
+        "rendered": "<h2>The format</h2>\n<p>A block editor post is the proper block-aware representation of a post: a collection of semantically consistent descriptions of what each block is and what its essential data is. This representation only ever exists in memory. It is the <a href=\"https://en.wikipedia.org/wiki/Chase_(printing)\">chase</a> in the typesetter&#8217;s workshop, ever-shifting as <a href=\"https://en.wikipedia.org/wiki/Sort_(typesetting)\">sorts</a> are attached and repositioned.</p>\n<p>A block editor post is not the artifact it produces, namely the <code>post_content</code>. The latter is the printed page, optimized for the reader but retaining its invisible markings for later editing.</p>\n<p>The input and output of the block editor is a tree of block objects with the current format:</p>\n<pre><code class=\"language-js\">const value = [ block1, block2, block3 ];\n</code></pre>\n<h3>The block object</h3>\n<p>Each block object has an id, a set of attributes and potentially a list of child blocks.</p>\n<pre><code class=\"language-js\">const block = {\n    clientId, // unique string identifier.\n    type, // The block type (paragraph, image...)\n    attributes, // (key, value) set of attributes representing the direct properties/content of the current block.\n    innerBlocks, // An array of child blocks or inner blocks.\n};\n</code></pre>\n<p>Note the attributes keys and types, the allowed inner blocks are defined by the block type. For example, the core quote block has a <code>cite</code> string attribute representing the cite content while a heading block has a numeric <code>level</code> attribute, representing the level of the heading (1 to 6).</p>\n<p>During the lifecycle of the block in the editor, the block object can receive extra metadata:</p>\n<ul>\n<li><code>isValid</code>: A boolean representing whether the block is valid or not;</li>\n<li><code>originalContent</code>: The original HTML serialization of the block.</li>\n</ul>\n<p><strong>Examples</strong></p>\n<pre><code class=\"language-js\">// A simple paragraph block.\nconst paragraphBlock1 = {\n    clientId: '51828be1-5f0d-4a6b-8099-f4c6f897e0a3',\n    type: 'core/paragraph',\n    attributes: {\n        content: 'This is the &lt;strong&gt;content&lt;/strong&gt; of the paragraph block',\n        dropCap: true,\n    },\n};\n\n// A separator block.\nconst separatorBlock = {\n    clientId: '51828be1-5f0d-4a6b-8099-f4c6f897e0a4',\n    type: 'core/separator',\n    attributes: {},\n};\n\n// A columns block with a paragraph block on each column.\nconst columnsBlock = {\n    clientId: '51828be1-5f0d-4a6b-8099-f4c6f897e0a7',\n    type: 'core/columns',\n    attributes: {},\n    innerBlocks: [\n        {\n            clientId: '51828be1-5f0d-4a6b-8099-f4c6f897e0a5',\n            type: 'core/column',\n            attributes: {},\n            innerBlocks: [ paragraphBlock1 ],\n        },\n        {\n            clientId: '51828be1-5f0d-4a6b-8099-f4c6f897e0a6',\n            type: 'core/column',\n            attributes: {},\n            innerBlocks: [ paragraphBlock2 ],\n        },\n    ],\n};\n</code></pre>\n<h2>Serialization and parsing</h2>\n<p><img decoding=\"async\" src=\"https://docs.google.com/drawings/d/1iuownt5etcih7rMMvPvh0Mny8zUA1Z28saxjxaWmfJ0/pub?w=1234&amp;h=453\" alt=\"Diagram\" /></p>\n<p>This data model, however, is something that lives in memory while editing a post. It&#8217;s not visible to the page viewer when rendered, just like a printed page has no trace of the structure of the letters that produced it in the press.</p>\n<p>Since the whole WordPress ecosystem has an expectation for receiving HTML when rendering or editing a post, the block editor transforms its data into something that can be saved in <code>post_content</code> through serialization. This assures that there&#8217;s a single source of truth for the content, and that this source remains readable and compatible with all the tools that interact with WordPress content at the present. Were we to store the object tree separately, we would face the risk of <code>post_content</code> and the tree getting out of sync and the problem of data duplication in both places.</p>\n<p>Thus, the serialization process converts the block tree into HTML using HTML comments as explicit block delimiters\u2014which can contain the attributes in non-HTML form. This is the act of printing invisible marks on the printed page that leave a trace of the original structured intention.</p>\n<p>This is one end of the process. The other is how to recreate the collection of blocks whenever a post is to be edited again. A formal grammar defines how the serialized representation of a block editor post should be loaded, just as some basic rules define how to turn the tree into an HTML-like string. The block editor&#8217;s posts aren&#8217;t designed to be edited by hand; they aren&#8217;t designed to be edited as HTML documents because the block editor posts aren&#8217;t HTML in essence.</p>\n<p>They just happen, incidentally, to be stored inside of <code>post_content</code> in a way in which they require no transformation in order to be viewable by any legacy system. It&#8217;s true that loading the stored HTML into a browser without the corresponding machinery might degrade the experience, and if it included dynamic blocks of content, the dynamic elements may not load, server-generated content may not appear, and interactive content may remain static. However, it at least protects against not being able to view block editor posts on themes and installations that are blocks-unaware, and it provides the most accessible way to the content. In other words, the post remains mostly intact even if the saved HTML is rendered as is.</p>\n<h3>Delimiters and parsing expression grammar</h3>\n<p>We chose instead to try to find a way to keep the formality, explicitness, and unambiguity in the existing HTML syntax. Within the HTML there were a number of options.</p>\n<p>Of these options, a novel approach was suggested: by storing data in HTML comments, we would know that we wouldn&#8217;t break the rest of the HTML in the document, that browsers should ignore it, and that we could simplify our approach to parsing the document.</p>\n<p>Unique to HTML comments is the fact that they cannot legitimately exist in ambiguous places, such as inside of HTML attributes like <code>&lt;img alt='data-id=\"14\"'&gt;</code>. Comments are also quite permissive. Whereas HTML attributes are complicated to parse properly, comments are quite easily described by a leading <code>&lt;!--</code> followed by anything except <code>--</code> until the first <code>--&gt;</code>. This simplicity and permissiveness means that the parser can be implemented in several ways without needing to understand HTML properly, and we have the liberty to use more convenient syntax inside of the comment\u2014we only need to escape double-hyphen sequences. We take advantage of this in how we store block attributes: as JSON literals inside the comment.</p>\n<p>After running this through the parser, we&#8217;re left with a simple object we can manipulate idiomatically, and we don&#8217;t have to worry about escaping or unescaping the data. It&#8217;s handled for us through the serialization process. Because the comments are so different from other HTML tags and because we can perform a first-pass to extract the top-level blocks, we don&#8217;t actually depend on having fully valid HTML!</p>\n<p>This has dramatic implications for how simple and performant we can make our parser. These explicit boundaries also protect damage in a single block from bleeding into other blocks or tarnishing the entire document. It also allows the system to identify unrecognized blocks before rendering them.</p>\n<p><em>N.B.:</em> The defining aspects of blocks are their semantics and the isolation mechanism they provide: in other words, their identity. On the other hand, where their data is stored is a more liberal aspect. Blocks support more than just static local data (via JSON literals inside the HTML comment or within the block&#8217;s HTML), and more mechanisms (<em>e.g.</em>, global blocks or otherwise resorting to storage in complementary <code>WP_Post</code> objects) are expected. See <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">attributes</a> for details.</p>\n<h3>The anatomy of a serialized block</h3>\n<p>When blocks are saved to the content after the editing session, its attributes\u2014depending on the nature of the block\u2014are serialized to these explicit comment delimiters.</p>\n<pre><code class=\"language-html\">&lt;!-- wp:image --&gt;\n&lt;figure class=\"wp-block-image\"&gt;&lt;img src=\"source.jpg\" alt=\"\" /&gt;&lt;/figure&gt;\n&lt;!-- /wp:image --&gt;\n</code></pre>\n<p>A purely dynamic block that is to be server-rendered before display could look like this:</p>\n<pre><code class=\"language-html\">&lt;!-- wp:latest-posts {\"postsToShow\":4,\"displayPostDate\":true} /--&gt;\n</code></pre>\n<h2>The data lifecycle</h2>\n<p>In summary, the block editor workflow parses the saved document to an in-memory tree of blocks, using token delimiters to help. During editing, all manipulations happen within the block tree. The process ends by serializing the blocks back to the <code>post_content</code>.</p>\n<p>The workflow process relies on a serialization/parser pair to persist posts. Hypothetically, the post data structure could be stored using a plugin or retrieved from a remote JSON file to be converted to the block tree.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134617,
+    "menu_order": 356,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134619",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134619",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134619/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151763,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134619/revisions/151763"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134619"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

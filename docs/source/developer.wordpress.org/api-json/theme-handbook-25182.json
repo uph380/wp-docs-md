@@ -1,0 +1,97 @@
+{
+    "id": 25182,
+    "date": "2017-01-15T09:56:07",
+    "date_gmt": "2017-01-15T09:56:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25182"
+    },
+    "modified": "2024-06-05T16:04:01",
+    "modified_gmt": "2024-06-05T16:04:01",
+    "slug": "feedback",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/credits/feedback/",
+    "title": {
+        "rendered": "Feedback"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Giving Feedback</h2>\n\n\n\n<p>We welcome suggestions to improve the article, whether it is to add new topics or to rectify mistakes, you&#8217;re invited to help.</p>\n\n\n\n<p>You can do so in the following ways</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Connect to <a href=\"https://make.wordpress.org/chat/\">Slack</a> and join <a href=\"https://wordpress.slack.com/messages/docs/\">#docs</a> and make your suggestion there, one of the Documentation Team members will help</li>\n\n\n\n<li>Join the <a href=\"https://make.wordpress.org/docs/\">Documentation Team</a> as an editor and edit away!</li>\n\n\n\n<li>Open a ticket in the <a href=\"https://github.com/WordPress/Documentation-Issue-Tracker\">Documentation Issue Tracker repository</a> on GitHub with the <a href=\"https://github.com/WordPress/Documentation-Issue-Tracker/labels/themes\">&#8220;themes&#8221; label</a>.</li>\n</ul>\n\n\n\n<p>In-page feedback forms are currently planned for the handbooks.</p>\n",
+        "protected": false
+    },
+    "author": 7715176,
+    "featured_media": 0,
+    "parent": 10877,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25182",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25182",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7715176"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25182/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153897,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25182/revisions/153897"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/10877"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25182"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

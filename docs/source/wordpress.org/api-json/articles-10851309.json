@@ -1,0 +1,109 @@
+{
+    "id": 10851309,
+    "date": "2018-11-06T03:26:33",
+    "date_gmt": "2018-11-06T03:26:33",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851309"
+    },
+    "modified": "2024-06-08T18:44:50",
+    "modified_gmt": "2024-06-08T18:44:50",
+    "slug": "settings-permalinks-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-permalinks-screen/",
+    "title": {
+        "rendered": "Settings Permalinks screen"
+    },
+    "content": {
+        "rendered": "\n<p><strong>Permalinks</strong> are the permanent URLs to your individual pages and blog posts, as well as your category and tag archives. A permalink is the web address used to link to your content. The URL to each post should be permanent&nbsp;and never change \u2014 hence the name permalink.</p>\n\n\n\n<p>The <strong>Settings Permalinks Screen</strong> allows you to choose your default permalink structure. You can choose from common settings or create custom URL structures. You must click the <strong>Save Changes</strong> button at the bottom of the screen for the new settings to take effect.</p>\n\n\n\n<p>By default, WordPress uses web URLs that have day and name in them; however, WordPress offers you the ability to create a custom URL structure for your permalinks and archives. This can improve the aesthetics, usability, and forward compatibility of your links.</p>\n\n\n\n<p>For an introduction to Permalinks, read the&nbsp;<a href=\"/support/article/introduction-to-blogging/#pretty-permalinks\">Pretty Permalinks</a>&nbsp;section of&nbsp;<a href=\"/support/article/introduction-to-blogging/\">Introduction to Blogging</a>. For a more in-depth description of the way this structure is specified, see the <a href=\"https://wordpress.org/documentation/article/using-permalinks/\">Using Permalinks</a> article.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://wordpress.org/documentation/files/2022/11/wordpress-permalink-settings.png\"><img loading=\"lazy\" decoding=\"async\" width=\"868\" height=\"740\" src=\"https://wordpress.org/documentation/files/2022/11/wordpress-permalink-settings.png\" alt=\"WordPress permalink settings screen\" class=\"wp-image-16215694\" srcset=\"https://wordpress.org/documentation/files/2022/11/wordpress-permalink-settings.png 868w, https://wordpress.org/documentation/files/2022/11/wordpress-permalink-settings-300x256.png 300w, https://wordpress.org/documentation/files/2022/11/wordpress-permalink-settings-768x655.png 768w\" sizes=\"auto, (max-width: 868px) 100vw, 868px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Customize Permalink structure</h2>\n\n\n\n<p>A <a href=\"/support/article/using-permalinks/#structure-tags-1\" data-type=\"URL\" data-id=\"/support/article/using-permalinks/#structure-tags-1\">number of tags are available</a>, and here are some examples to get you started.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Common settings<strong> </strong></h3>\n\n\n\n<p>Check one of the radio buttons corresponding to the correct Permalink Structure for your blog.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Plain</strong>&nbsp;&#8211; An example of the default structure is <strong>http://www.sample.com/?p=123</strong></li>\n\n\n\n<li><strong>Day and name</strong> &#8211; An example of the day and name based structure is <strong>http://www.sample.com/2008/03/31/sample-post/</strong><br /></li>\n\n\n\n<li><strong>Month and name</strong> &#8211; An example of the month and name based structure is <strong>http://www.sample.com/2008/03/sample-post/</strong><br /></li>\n\n\n\n<li><strong>Numeric</strong> &#8211; An example of the numeric structure is <strong>http://www.sample.com/archives/123</strong><br /></li>\n\n\n\n<li><strong>Post name</strong> &#8211; An example of the post name structure is <strong>http://www.sample.com/sample-post</strong><br /></li>\n\n\n\n<li><strong>Custom structure</strong> &#8211; In the box specify the custom structure you desire to use. One example is <strong>/archives/%year%/%monthnum%/%day%/%postname%/</strong>. Look at the <a href=\"/support/article/using-permalinks/#structure-tags\">Permalink Structure Tags</a>.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Optional<strong> </strong></h3>\n\n\n\n<p>You may enter custom bases for your category and tag URLs here. For example, using <strong>/topics/</strong> as your category base would make your category links like <strong>http://example.org/topics/uncategorized/</strong>. If you leave these blank the defaults will be used. Again, see the <a href=\"/support/article/using-permalinks/#structure-tags\">Permalink Structure Tags</a>.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Category base</strong> &#8211; Enter a custom prefix for your category URLs here.<br /></li>\n\n\n\n<li><strong>Tag base</strong> &#8211; Enter a custom prefix for your tag URLs here.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Save Changes</h3>\n\n\n\n<p>Click the <strong>Save Changes</strong> button to ensure any changes you have made to your Settings are saved to your database. Once you click the button, a confirmation text box will appear at the top of the page telling you your settings have been saved. </p>\n\n\n\n<p>After you&#8217;ve clicked this button, you should receive one of two messages depending on whether your <a href=\"/support/article/glossary/#htaccess\">.htaccess</a> file is writeable. </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>If <a href=\"/support/article/glossary/#htaccess\">.htaccess</a> is writeable, you will get a message that says &#8220;<strong>Permalink structure updated.</strong>&#8221; You&#8217;re all set; WordPress has been able to do everything for you automatically.</li>\n\n\n\n<li>If&nbsp;<a href=\"https://wp-helphub.com/support/article/glossary/#htaccess\">.htaccess</a>&nbsp;is&nbsp;<em>not</em>&nbsp;writeable, you will see a message at the top of the screen that says \u201c<strong>You should update your .htaccess now.</strong>\u201c. Near the bottom of the screen you will see \u201c<strong>If your .htaccess file were writable, we could do this automatically, but it isn\u2019t so these are the mod_rewrite rules you should have in your&nbsp;<a href=\"https://wp-helphub.com/support/article/glossary/#htaccess\">.htaccess</a>&nbsp;file. Click in the field and press CTRL + a to select all.</strong>\u201d This means you\u2019ll have to do one extra step yourself. In the text box at the bottom of the Screen, WordPress displays several lines of&nbsp;<a href=\"/support/article/glossary/#mod_rewrite\">rewrite</a>&nbsp;rules associated with the Permalink Structure you designated above. You need to manually copy everything in this text box into your&nbsp;<a href=\"https://wp-helphub.com/support/article/glossary/#htaccess\">.htaccess</a>&nbsp;file to make your new Permalinks work.</li>\n</ul>\n\n\n\n<p>For information on how to make <a href=\"/support/article/glossary/#htaccess\">.htaccess</a> writeable, see <a href=\"https://codex.wordpress.org/Changing File Permissions\">Changing File Permissions</a>.</p>\n\n\n\n<p><strong>Note</strong>: Visiting the Permalinks screen triggers a flush of rewrite rules. There is no need to save just to flush the rewrite rules.</p>\n\n\n\n<p><strong>Note</strong>: If you&#8217;re writing your <a href=\"/support/article/glossary/#htaccess\">.htaccess</a> file on your own local computer, remember, some operating systems do not allow the creation of a file named &#8220;<code>.htaccess</code>&#8221; because of the initial dot (&#8220;<strong><code>.</code></strong>&#8220;). You can always name the file without the initial dot or with a standard extension (e.g. &#8220;<code>htaccess.txt</code>&#8220;). Once the file is uploaded to your weblog&#8217;s directory, rename it with your <a href=\"/support/article/glossary/#ftp\">FTP</a> software. Most <a href=\"/support/article/ftp-clients/\">FTP Clients</a> should provide you a way to rename files this.</p>\n\n\n\n<p><strong>Also Note</strong>: Files that begin with a dot (&#8220;<strong><code>.</code></strong>&#8220;) like &#8220;<code>.htaccess</code>&#8221; are hidden on most servers by default. Consult the user guide or FAQ of the FTP software you use to find out how to have the software display these hidden files, and also how to use the software to change file permissions, rename files, etc. For more information on all of this see <a href=\"https://codex.wordpress.org/Changing File Permissions\">Changing File Permissions</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Permalinks are the permanent URLs to your individual pages and blog posts, as well as your category and tag archives. A permalink is the web address used to link to your content. The URL to each post should be permanent&nbsp;and never change \u2014 hence the name permalink. The Settings Permalinks Screen allows you to choose [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10851309",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851309",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851309"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851309/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360396,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851309/revisions/16360396"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851309"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851309"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

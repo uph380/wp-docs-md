@@ -1,0 +1,97 @@
+{
+    "id": 37624,
+    "date": "2018-05-17T16:31:14",
+    "date_gmt": "2018-05-17T16:31:14",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=37624"
+    },
+    "modified": "2022-11-17T06:09:04",
+    "modified_gmt": "2022-11-17T06:09:04",
+    "slug": "adding-the-personal-data-exporter-to-your-plugin",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-exporter-to-your-plugin/",
+    "title": {
+        "rendered": "Adding the Personal Data Exporter to Your Plugin"
+    },
+    "content": {
+        "rendered": "\n<p>In WordPress 4.9.6, new tools were added to make compliance easier with laws like the European Union&#8217;s General Data Protection Regulation, or GDPR for short. Among the tools added is a Personal Data Export tool which supports exporting all the personal data for a given user in a ZIP file. In addition to the personal data stored in things like WordPress comments, plugins can also hook into the exporter feature to export the personal data they collect, whether it be in something like postmeta or even an entirely new Custom Post Type (CPT).</p>\n\n\n\n<p>The &#8220;key&#8221; for all the exports is the user&#8217;s email address &#8211; this was chosen because it supports exporting personal data for both full-fledged registered users and also unregistered users (e.g. like a logged out commenter).</p>\n\n\n\n<p>However, since assembling a personal data export could be an intensive process and will likely contain sensitive data, we don&#8217;t want to just generate it and email it to the requestor without confirming the request, so the admin-facing user interface starts all requests by having the admin enter the username or email address making the request and then sends then a link to click to confirm their request.</p>\n\n\n\n<p>Once a request has been confirmed, the admin can generate and download or directly email the personal data export ZIP file for the user, or do the export anyways if the need arises. Inside the ZIP file the user receives, they will find a &#8220;mini website&#8221; with an index HTML page containing their personal data organized in groups (e.g. a group for comments, etc. )</p>\n\n\n\n<p>Whether the admin downloads the personal data export ZIP file or sends it directly to the requestor, the way the personal data export is assembled is identical &#8211; and relies on hooking &#8220;exporter&#8221; callbacks to do the dirty work of collecting all the data for the export. When the admin clicks on the download or email link, an AJAX loop begins that iterates over all the exporters registered in the system, one at a time. In addition to exporters built into core, plugins can register their own exporter callbacks.</p>\n\n\n\n<p>The exporter callback interface is designed to be as simple as possible. A exporter callback receives the email address we are working with and a page parameter as well. The page parameter (which starts at 1) is used to avoid plugins potentially causing timeouts by attempting to export all the personal data they&#8217;ve collected at once. A well behaved plugin will limit the amount of data it attempts to erase per page (e.g. 100 posts, 200 comments, etc.)</p>\n\n\n\n<p>The exporter callback replies with whatever data it has for that email address and page and whether it is done or not. If a exporter callback reports that it is not done, it will be called again (in a separate request) with the page parameter incremented by 1. Exporter callbacks are expected to return an array of items for the export. Each item contains an a group identifier for the group of which<br>the item is a part (e.g. comments, posts, orders, etc.), an optional group label (translated), an item identifier (e.g. comment-133) and then an array of name, value pairs containing the data to be exported for that item.</p>\n\n\n\n<p>It is noteworthy that the value could be a media path, in which case a link to the media file will be added to the index HTML page in the export.</p>\n\n\n\n<p>When all the exporters have been called to completion, WordPress first assembles an &#8220;index&#8221; HTML document that serves as the heart of the export report. If a plugin reports additional data for an item that WordPress or another plugin has already added, all the data for that item will be presented together.</p>\n\n\n\n<p>Exports are cached on the server for 3 days and then deleted.</p>\n\n\n\n<p>A plugin can register one or more exporters, but most plugins will only need one. Let\u2019s work on a hypothetical plugin which adds location data for the commenter to comments.</p>\n\n\n\n<p>First, let&#8217;s assume the plugin has used `add_comment_meta` to add location data using `meta_key`s of `latitude` and `longitude`</p>\n\n\n\n<p>The first thing the plugin needs to do is to create an exporter function that accepts an email address and a page, e.g.:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Export user meta for a user using the supplied email.\n *\n * @param string $email_address   email address to manipulate\n * @param int    $page            pagination\n *\n * @return array\n */\nfunction wporg_export_user_data_by_email( $email_address, $page = 1 ) {\n\t$number = 500; // Limit us to avoid timing out\n\t$page   = (int) $page;\n\n\t$export_items = array();\n\n\t$comments = get_comments(\n\t\tarray(\n\t\t\t'author_email' =&gt; $email_address,\n\t\t\t'number'       =&gt; $number,\n\t\t\t'paged'        =&gt; $page,\n\t\t\t'order_by'     =&gt; 'comment_ID',\n\t\t\t'order'        =&gt; 'ASC',\n\t\t)\n\t);\n\n\tforeach ( (array) $comments as $comment ) {\n\t\t$latitude  = get_comment_meta( $comment-&gt;comment_ID, 'latitude', true );\n\t\t$longitude = get_comment_meta( $comment-&gt;comment_ID, 'longitude', true );\n\n\t\t// Only add location data to the export if it is not empty.\n\t\tif ( ! empty( $latitude ) ) {\n\t\t\t// Most item IDs should look like postType-postID. If you don't have a post, comment or other ID to work with,\n\t\t\t// use a unique value to avoid having this item's export combined in the final report with other items\n\t\t\t// of the same id.\n\t\t\t$item_id = \"comment-{$comment-&gt;comment_ID}\";\n\n\t\t\t// Core group IDs include 'comments', 'posts', etc. But you can add your own group IDs as needed\n\t\t\t$group_id = 'comments';\n\n\t\t\t// Optional group label. Core provides these for core groups. If you define your own group, the first\n\t\t\t// exporter to include a label will be used as the group label in the final exported report.\n\t\t\t$group_label = __( 'Comments', 'text-domain' );\n\n\t\t\t// Plugins can add as many items in the item data array as they want.\n\t\t\t$data = array(\n\t\t\t\tarray(\n\t\t\t\t\t'name'  =&gt; __( 'Commenter Latitude', 'text-domain' ),\n\t\t\t\t\t'value' =&gt; $latitude,\n\t\t\t\t),\n\t\t\t\tarray(\n\t\t\t\t\t'name'  =&gt; __( 'Commenter Longitude', 'text-domain' ),\n\t\t\t\t\t'value' =&gt; $longitude,\n\t\t\t\t),\n\t\t\t);\n\n\t\t\t$export_items[] = array(\n\t\t\t\t'group_id'    =&gt; $group_id,\n\t\t\t\t'group_label' =&gt; $group_label,\n\t\t\t\t'item_id'     =&gt; $item_id,\n\t\t\t\t'data'        =&gt; $data,\n\t\t\t);\n\t\t}\n\t}\n\n\t// Tell core if we have more comments to work on still.\n\t$done = count( $comments ) &gt; $number;\n\treturn array(\n\t\t'data' =&gt; $export_items,\n\t\t'done' =&gt; $done,\n\t);\n}</code></pre>\n\n\n\n<p>The next thing the plugin needs to do is to register the callback by filtering the exporter array using the `wp_privacy_personal_data_exporters` filter.</p>\n\n\n\n<p>When registering you provide a friendly name for the export (to aid in debugging &#8211; this friendly name is not shown to anyone at this time) and the callback, e.g.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Registers all data exporters.\n *\n * @param array $exporters\n *\n * @return mixed\n */\nfunction wporg_register_user_data_exporters( $exporters ) {\n\t$exporters['my-plugin-slug'] = array(\n\t\t'exporter_friendly_name' =&gt; __( 'Comment Location Plugin', 'text-domain' ),\n\t\t'callback'               =&gt; 'my_plugin_exporter',\n\t);\n\treturn $exporters;\n}\n\nadd_filter( 'wp_privacy_personal_data_exporters', 'wporg_register_user_data_exporters' );</code></pre>\n\n\n\n<p>And that&#8217;s all there is to it! Your plugin will now provide data for the export!</p>\n",
+        "protected": false
+    },
+    "author": 11423746,
+    "featured_media": 0,
+    "parent": 37615,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-37624",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37624",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/11423746"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37624/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144349,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37624/revisions/144349"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37615"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=37624"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

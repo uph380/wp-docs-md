@@ -1,0 +1,91 @@
+{
+    "id": 134572,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-preset-default/"
+    },
+    "modified": "2024-10-30T16:55:21",
+    "modified_gmt": "2024-10-30T16:55:21",
+    "slug": "packages-jest-preset-default",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-preset-default/",
+    "title": {
+        "rendered": "@wordpress/jest-preset-default"
+    },
+    "content": {
+        "rendered": "<p>Default <a href=\"https://jestjs.io/\">Jest</a> preset for WordPress development.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/jest-preset-default --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Setup</h2>\n<h3>Via <code>jest.config.json</code> or <code>jest</code> field in <code>package.json</code></h3>\n<pre><code class=\"language-json\">{\n    \"preset\": \"@wordpress/jest-preset-default\"\n}\n</code></pre>\n<h3>Usage</h3>\n<h4>Brief explanations of options included</h4>\n<ul>\n<li><code>moduleNameMapper</code> &#8211; all <code>css</code> and <code>scss</code> files containing CSS styles will be stubbed out.</li>\n<li><code>modulePaths</code> &#8211; the root dir of the project is used as a location to search when resolving modules.</li>\n<li><code>setupFiles</code> &#8211; runs code before each test which sets up global variables required in the testing environment.</li>\n<li><code>setupFilesAfterEnv</code> &#8211; runs code which adds improved support for <code>Console</code> object and <code>React</code> components to the testing framework before each test.</li>\n<li><code>testEnvironment</code> &#8211; enabled the <code>jsdom</code> environment for all tests by default.</li>\n<li><code>testMatch</code> &#8211; searches for tests in <code>/test/</code> and <code>/__tests__/</code> subfolders, and also matches all files with a <code>.test.*</code> suffix. It detects test files with a <code>.js</code>, <code>.jsx</code>, <code>.ts</code> or <code>.tsx</code> suffix. Compared to default Jest configuration, it doesn&#8217;t match files with the <code>.spec.*</code> suffix.</li>\n<li><code>testPathIgnorePatterns</code> &#8211; excludes <code>node_modules</code> and <code>vendor</code> directories from searching for test files.</li>\n<li><code>transform</code> &#8211; keeps the default <a href=\"https://github.com/facebook/jest/tree/HEAD/packages/babel-jest\">babel-jest</a> transformer.</li>\n</ul>\n<h4>Using enzyme</h4>\n<p>Historically, this package used to use <code>enzyme</code>, but support was dropped in favor of <code>@testing-library/react</code>, primary reason being unblocking the upgrade to React 18.</p>\n<p>If you wish to use <code>enzyme</code>, you can still use it by manually providing the React 17 adapter, by following the steps below.</p>\n<p>To install the enzyme dependency, run:</p>\n<pre><code class=\"language-bash\">npm install --save enzyme\n</code></pre>\n<p>To install the React 17 adapter dependency, run:</p>\n<pre><code class=\"language-bash\">npm install --save @wojtekmaj/enzyme-adapter-react-17\n</code></pre>\n<p>To use the React 17 adapter, use this in your <a href=\"https://jestjs.io/docs/configuration#setupfilesafterenv-array\"><code>setupFilesAfterEnv</code></a> configuration:</p>\n<pre><code class=\"language-javascript\">// It \"mocks\" enzyme, so that we can delay loading of\n// the utility functions until enzyme is imported in tests.\n// Props to @gdborton for sharing this technique in his article:\n// https://medium.com/airbnb-engineering/unlocking-test-performance-migrating-from-mocha-to-jest-2796c508ec50.\nlet mockEnzymeSetup = false;\n\njest.mock( 'enzyme', () =&gt; {\n    const actualEnzyme = jest.requireActual( 'enzyme' );\n    if ( ! mockEnzymeSetup ) {\n        mockEnzymeSetup = true;\n\n        // Configure enzyme 3 for React, from docs: http://airbnb.io/enzyme/docs/installation/index.html\n        const Adapter = jest.requireActual(\n            '@wojtekmaj/enzyme-adapter-react-17'\n        );\n        actualEnzyme.configure( { adapter: new Adapter() } );\n    }\n    return actualEnzyme;\n} );\n</code></pre>\n<p>If you also use snapshot tests with <code>enzyme</code>, you might want to add support for serializing them, through the <code>enzyme-to-json</code> package.</p>\n<p>To install the dependency, run:</p>\n<pre><code class=\"language-bash\">npm install --save enzyme-to-json\n</code></pre>\n<p>Finally, you should add <code>enzyme-to-json/serializer</code> to the array of <a href=\"https://jestjs.io/docs/configuration#snapshotserializers-arraystring\"><code>snapshotSerializers</code></a>:</p>\n<pre><code class=\"language-javascript\">{\n    snapshotSerializers: [ 'enzyme-to-json/serializer' ];\n}\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 292,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134572",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134572",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134572/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153846,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134572/revisions/153846"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134572"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

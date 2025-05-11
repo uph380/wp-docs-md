@@ -1,0 +1,109 @@
+{
+    "id": 11245009,
+    "date": "2019-02-25T12:45:04",
+    "date_gmt": "2019-02-25T12:45:04",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11245009"
+    },
+    "modified": "2023-07-04T20:01:03",
+    "modified_gmt": "2023-07-04T20:01:03",
+    "slug": "how-wordpress-processes-post-content",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/how-wordpress-processes-post-content/",
+    "title": {
+        "rendered": "How WordPress processes Post Content"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress processes text entered in the&nbsp;<a href=\"https://wordpress.org/documentation/article/administration-screens/#add-new-post\">Write Post Screen</a>&nbsp;multiple times before the text is finally displayed on a web page within your WordPress blog. The processing of the text filters out the unwanted code and conforms the text to a form that the browser can interpret. Without attention to detail and familiarity with WordPress&#8217;s post content filtering, this can cause unwanted changes.</p>\n\n\n\n<p>The majority of the conversion and filters are found in the&nbsp;<code><a href=\"https://core.trac.wordpress.org/browser/tags/5.1.0/src/wp-includes/formatting.php#L0\">wp-includes/formatting.php</a></code>&nbsp;file.</p>\n\n\n\n<p>Some typical problems some users have with these filtering and processing functions are:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Empty paragraphs, closing span tags, and line break (BR) elements are removed upon saving.</li>\n\n\n\n<li>Classes are removed from elements.</li>\n\n\n\n<li>DIV elements are converted to P elements.</li>\n\n\n\n<li>Javascripts and code are converted to displayable code rather than actionable code. See&nbsp;<a href=\"https://codex.wordpress.org/Using_Javascript\">Using Javascript</a>&nbsp;for information on how to incorporate Javascript into a blog post.</li>\n</ol>\n\n\n\n<p>The following is step-by-step list of how WordPress processes post content text before the final version is displayed.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Visual Editor</h2>\n\n\n\n<p>Not all WordPress bloggers use Visual Editor, but if you do, it will change various codes upon saving an entry to prepare it for publishing.</p>\n\n\n\n<h2 class=\"wp-block-heading\">wpautop() WordPress Function</h2>\n\n\n\n<p><a href=\"https://codex.wordpress.org/Function_Reference/wpautop\"><code>wpautop()</code></a>&nbsp;is a core WordPress&nbsp;<a href=\"https://developer.wordpress.org/reference/\">function</a>&nbsp;that automatically processes, fixes, and modifies the text of a post.</p>\n\n\n\n<p>It puts in line breaks, paragraph tags, opens and closes tags that aren&#8217;t opened and closed, and cleans up duplicate HTML tags.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Texturize</h2>\n\n\n\n<p>Texturize (<a href=\"https://codex.wordpress.org/Function_Reference/wptexturize\">wptexturize()</a>) is a text filter enabled by default that modifies posted text or comments to present a more readable and visually attractive output.</p>\n\n\n\n<p>While it creates aesthetically pleasant text, it might create difficulties when posting code examples in a programming language. In such situations modification of the text is not desirable because it might create syntactically incorrect code.</p>\n\n\n\n<p>A few examples include:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">\"quoted text\" becomes \u201cquoted text\u201d\n'quoted text' becomes \u2018quoted text\u2019\n          --- becomes \u2014\n           -- becomes \u2013\n          ... becomes \u2026\n          (c) becomes \u00a9\n          (r) becomes \u00ae\n         (tm) becomes \u2122\n           '' becomes \u201d\n           `` becomes \u201c\n  president's becomes president\u2019s\n  presidents' becomes presidents\u2019\n          12' becomes 12\u2032\n          12\" becomes 12\u2033\n          2x4 becomes 2\u00d74\n</pre>\n\n\n\n<h2 class=\"wp-block-heading\">Convert Smilies</h2>\n\n\n\n<p>The&nbsp;<code>convert_smilies()</code>&nbsp;function converts combinations of characters into&nbsp;<a href=\"/support/article/using-smilies/\">smilies or emoticons</a>&nbsp;within the post, page, and comment text. For example, if smilies are enabled, WordPress will recognize&nbsp;&#8220;:&#8221; and &#8220;D&#8221; (:D) and turn it into a smiling face ( \ud83d\ude00 ).</p>\n\n\n\n<p>The key to making smilies work is to put a space before and after the keystroke combination. If placed up against the text, it will not convert.</p>\n\n\n\n<p>If conversion of smilies is not desired, turn it off through the&nbsp;<strong>Settings &gt; Writing</strong>&nbsp;panel.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Convert Characters</h2>\n\n\n\n<p>The&nbsp;<code>formatting.php</code>&nbsp;code file contains numerous functions which help publish character entities, accents, and non-English characters to a form recognizable by the web browser.</p>\n\n\n\n<p>Generally, these work excellently, however, your browser may not recognize various language characters unless that language is activated in your web browser. See your browser&#8217;s documentation for more information on adding language character recognition to your browser.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Methods to Prevent Processing</h2>\n\n\n\n<p>There are a variety of Plugins to change the filtering process WordPress uses by default. It is highly recommended that you do not change the core programming but use WordPress Plugins to change all or some of the content processing. See the&nbsp;<a href=\"https://wordpress.org/plugins/\">WordPress Plugins Directory</a>&nbsp;for various Plugins that change the post content filtering process.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress processes text entered in the&nbsp;Write Post Screen&nbsp;multiple times before the text is finally displayed on a web page within your WordPress blog. The processing of the text filters out the unwanted code and conforms the text to a form that the browser can interpret. Without attention to detail and familiarity with WordPress&#8217;s post content [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-11245009",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11245009",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11245009"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11245009/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357600,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11245009/revisions/16357600"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11245009"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11245009"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 135813,
+    "date": "2021-05-07T17:24:48",
+    "date_gmt": "2021-05-07T17:24:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/divider/"
+    },
+    "modified": "2024-10-30T17:10:02",
+    "modified_gmt": "2024-10-30T17:10:02",
+    "slug": "divider",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/divider/",
+    "title": {
+        "rendered": "Divider"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>Divider</code> is a layout component that separates groups of related content.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import {\n    __experimentalDivider as Divider,\n    __experimentalText as Text,\n    __experimentalVStack as VStack,\n} from `@wordpress/components`;\n\nfunction Example() {\n    return (\n        &lt;VStack spacing={4}&gt;\n            &lt;Text&gt;Some text here&lt;/Text&gt;\n            &lt;Divider /&gt;\n            &lt;Text&gt;Some more text here&lt;/Text&gt;\n        &lt;/VStack&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>margin</code>: <code>number</code></h3>\n<p>Adjusts all margins on the inline dimension.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginEnd</code>: <code>number</code></h3>\n<p>Adjusts the inline-end margin.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginStart</code>: <code>number</code></h3>\n<p>Adjusts the inline-start margin.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>orientation</code>: <code>horizontal | vertical</code></h3>\n<p>Divider&#8217;s orientation. When using inside a flex container, you may need to make sure the divider is <code>stretch</code> aligned in order for it to be visible.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>horizontal</code></li>\n</ul>\n<h3>Inherited props</h3>\n<p><code>Divider</code> also inherits all of the <a href=\"https://ariakit.org/reference/separator#optional-props\"><code>Separator</code> props</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 141,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135813",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135813",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135813/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152179,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135813/revisions/152179"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135813"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

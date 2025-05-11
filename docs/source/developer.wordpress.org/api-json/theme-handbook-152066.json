@@ -1,0 +1,97 @@
+{
+    "id": 152066,
+    "date": "2024-01-26T16:43:00",
+    "date_gmt": "2024-01-26T16:43:00",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=152066"
+    },
+    "modified": "2024-01-29T09:14:17",
+    "modified_gmt": "2024-01-29T09:14:17",
+    "slug": "debugging",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/debugging/",
+    "title": {
+        "rendered": "Debugging"
+    },
+    "content": {
+        "rendered": "\n<p>Debugging is the practice of finding and fixing errors in any software that you build. And it is an essential part of WordPress theme development, regardless of whether you are building a block or classic theme.&nbsp;</p>\n\n\n\n<p>WordPress provides some tools out of the box, but there are also plugins that you can use to enhance the experience. You\u2019ll learn about some of these methods in this article, but you should also study the <a href=\"https://wordpress.org/documentation/article/debugging-in-wordpress/\">Debugging in WordPress</a> documentation in the Common APIs handbook.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Debugging constants</h2>\n\n\n\n<p>When creating themes from within a development environment, you should always enable debugging to ensure that your theme is not creating notices or errors. WordPress offers several constants, which you can set in your installation\u2019s <code>wp-config.php</code> file.</p>\n\n\n\n<p>If you open the <code>wp-config.php</code> file, scroll down until you locate this code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * For developers: WordPress debugging mode.\n *\n * Change this to true to enable the display of notices during development.\n * It is strongly recommended that plugin and theme developers use WP_DEBUG\n * in their development environments.\n *\n * For information on other constants that can be used for debugging,\n * visit the documentation.\n *\n * @link https://wordpress.org/documentation/article/debugging-in-wordpress/\n */\ndefine( 'WP_DEBUG', false );</code></pre>\n\n\n\n<p>This is where you will configure any debugging constants outlined in the sections below.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">WP_DEBUG</h3>\n\n\n\n<p>The <code>WP_DEBUG</code> constant is the only one defined in a default WordPress installation\u2019s <code>wp-config.php</code> file. In a standard install, it is set to <code>false</code>, but it is set to <code>true</code> if you are running a development copy of WordPress.</p>\n\n\n\n<p>The <code>WP_DEBUG</code> PHP constant is used to trigger the built-in \u201cdebug\u201d mode on your WordPress installation. This allows you to view errors in your theme. It should be used in conjunction with all of the other debugging constants listed in the next sections.</p>\n\n\n\n<p>You should see this line in your <code>wp-config.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">define( 'WP_DEBUG', false );</code></pre>\n\n\n\n<p>To enable debugging, make sure it is set to <code>true</code>, as shown here:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">define( 'WP_DEBUG', true );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">WP_DISABLE_FATAL_ERROR_HANDLER</h3>\n\n\n\n<p>WordPress 5.2 <a href=\"https://make.wordpress.org/core/2019/04/16/fatal-error-recovery-mode-in-5-2/\">introduced a fatal error handler</a> to ensure that users do not get locked out of their site when a theme or plugin causes a fatal error. This is a great feature in production/live sites. But it can be problematic in development, preventing you from fully diagnosing errors.</p>\n\n\n\n<p>For this reason, in development, you should disable this to make sure things are broken until you can fix them. Define this constant in your <code>wp-config.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">WP_DEBUG_DISPLAY</h3>\n\n\n\n<p><code>WP_DEBUG_DISPLAY</code> is used to control whether debug messages display within the HTML of your WordPress site. By default, when <code>WP_DEBUG</code> is enabled, debugging messages will be shown on the screen. So, you can safely not define <code>WP_DEBUG_DISPLAY</code> during development.</p>\n\n\n\n<p>If you want to disable on-screen debugging messages, you can set <code>WP_DEBUG_DISPLAY</code> to <code>false</code> in your&nbsp; <code>wp-config.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">define( 'WP_DEBUG_DISPLAY', false );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">WP_DEBUG_LOG</h3>\n\n\n\n<p>The <code>WP_DEBUG_LOG</code> constant is an optional feature that you can set to log errors to a <code>debug.log</code> file in your site\u2019s <code>/wp-content</code> directory. By default, this is disabled.</p>\n\n\n\n<p>Generally, if you turn off on-screen debugging messages via <code>WP_DEBUG_DISPLAY</code>, then you will want to opt for storing these messages in the debug log.</p>\n\n\n\n<p>To enable logging, define the <code>WP_DEBUG_LOG</code> constant as <code>true</code> in your <code>wp-config.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">define( 'WP_DEBUG_LOG', true );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Plugins</h2>\n\n\n\n<p>There are several plugins that are helpful when debugging your theme. Each is hosted in the WordPress Plugin Directory:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/plugins/debug-bar/\"><strong>Debug Bar</strong></a><strong>:</strong> Provides a central location for debugging in your WordPress toolbar.</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/query-monitor/\"><strong>Query Monitor</strong></a><strong>:</strong> Enables debugging of database queries, PHP errors, hooks and actions, block editor blocks, enqueued scripts and stylesheets, HTTP API calls, and more.</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/log-deprecated-notices/\"><strong>Log Deprecated Notices</strong></a><strong>:</strong> Logs incorrect and deprecated function and file usages in your theme.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152066",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152066",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152066/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152130,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152066/revisions/152130"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152066"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

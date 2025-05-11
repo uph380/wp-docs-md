@@ -1,0 +1,109 @@
+{
+    "id": 16357504,
+    "date": "2023-06-27T13:49:30",
+    "date_gmt": "2023-06-27T13:49:30",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16357504"
+    },
+    "modified": "2023-06-27T14:19:07",
+    "modified_gmt": "2023-06-27T14:19:07",
+    "slug": "block-error-unexpected-or-invalid-content",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/block-error-unexpected-or-invalid-content/",
+    "title": {
+        "rendered": "Block Error: Unexpected or Invalid Content"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Error overview </h2>\n\n\n\n<p>If you&#8217;re encountering this error message in the Block Editor, it typically means that there is a problem with the content you&#8217;re trying to insert or edit within a block. Usually, the error is displayed when the affected block contains content that has a formatting problem, this could happen because of a number of reasons explained in this article.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"152\" src=\"https://wordpress.org/documentation/files/2023/06/Screenshot-2023-06-23-at-16.41.16-1024x152.png\" alt=\"Picture displaying a block error \" class=\"wp-image-16357484\" srcset=\"https://wordpress.org/documentation/files/2023/06/Screenshot-2023-06-23-at-16.41.16-1024x152.png 1024w, https://wordpress.org/documentation/files/2023/06/Screenshot-2023-06-23-at-16.41.16-300x44.png 300w, https://wordpress.org/documentation/files/2023/06/Screenshot-2023-06-23-at-16.41.16-768x114.png 768w, https://wordpress.org/documentation/files/2023/06/Screenshot-2023-06-23-at-16.41.16.png 1308w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p><strong>More Options</strong></p>\n\n\n\n<p>As with other blocks, the affected blocks also include the <strong>More options</strong> menu in the block toolbar. You can access these options by clicking on the ellipses (three dots) in the block toolbar as shown below. The <strong>Copy Block</strong> option allows you to copy the block and its content to a clipboard, you can paste this content elsewhere in the editor or even on a different post/page.</p>\n\n\n\n<p><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about the More Options settings and how to make use of them</a></p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"823\" src=\"https://wordpress.org/documentation/files/2023/06/more-options-block-error-1024x823.png\" alt=\"More options for the affected block \" class=\"wp-image-16357485\" srcset=\"https://wordpress.org/documentation/files/2023/06/more-options-block-error-1024x823.png 1024w, https://wordpress.org/documentation/files/2023/06/more-options-block-error-300x241.png 300w, https://wordpress.org/documentation/files/2023/06/more-options-block-error-768x617.png 768w, https://wordpress.org/documentation/files/2023/06/more-options-block-error.png 1334w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Possible reasons a block displays an error</h2>\n\n\n\n<h3 class=\"wp-block-heading\">The option to edit the block using HTML&nbsp;</h3>\n\n\n\n<p>A block\u2019s toolbar provides an option to edit your block\u2019s HTML code.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"450\" src=\"https://wordpress.org/documentation/files/2023/06/edit-as-html-1024x450.png\" alt=\"Showing the option to edit a block as HTML option\" class=\"wp-image-16357486\" srcset=\"https://wordpress.org/documentation/files/2023/06/edit-as-html-1024x450.png 1024w, https://wordpress.org/documentation/files/2023/06/edit-as-html-300x132.png 300w, https://wordpress.org/documentation/files/2023/06/edit-as-html-768x338.png 768w, https://wordpress.org/documentation/files/2023/06/edit-as-html-1536x675.png 1536w, https://wordpress.org/documentation/files/2023/06/edit-as-html.png 1624w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>In this case, the error can be displayed when there is a syntax error. For example, adding two &lt;p&gt; opening tags before a closing tag &lt;/p&gt; on a Paragraph block or using the wrong syntax for adding a link as shown below.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/06/edit-visually-video.mov\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Unexpected HTML formatting</h3>\n\n\n\n<p>This can occur when the block editor detects a mismatch between the expected markup and the actual HTML content within a block. This error typically happens when HTML is manually added or copied into a block, and the block editor doesn&#8217;t recognize it as valid content for that specific block type.&nbsp;</p>\n\n\n\n<p>For example, adding Javascript to a block that isn\u2019t the <a href=\"https://wordpress.org/documentation/article/custom-html/\">Custom HTML Block</a> or in the case shown below, adding inline CSS to a paragraph block. Style attributes aren\u2019t expected by the block so it will return an error.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/06/unexpected-html-formatting.mov\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Plugin or Theme conflict</h3>\n\n\n\n<p>It\u2019s possible that a theme or plugin is interfering with the editor. Maybe your site isn&#8217;t up-to-date, you didn\u2019t configure some important settings properly or there is some code conflicting with the blocks on the page. However, whatever the reason may be, you will need to do some troubleshooting to solve this kind of problem.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\">Ways to solve the error</h2>\n\n\n\n<p>The block will give you several options to fix the error: Attempt Block Recovery, and an ellipsis (three-dot) button containing the options Resolve, Convert to HTML, and Convert to Classic Block.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"520\" src=\"https://wordpress.org/documentation/files/2023/06/resolve-the-error-1024x520.png\" alt=\"\" class=\"wp-image-16357489\" srcset=\"https://wordpress.org/documentation/files/2023/06/resolve-the-error-1024x520.png 1024w, https://wordpress.org/documentation/files/2023/06/resolve-the-error-300x152.png 300w, https://wordpress.org/documentation/files/2023/06/resolve-the-error-768x390.png 768w, https://wordpress.org/documentation/files/2023/06/resolve-the-error.png 1334w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>You will have to be mindful of why you are receiving the error, in some cases these options will not be helpful for example when you have the wrong Syntax or you try to add Javascript or PHP code.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Attempt Block Recovery</h3>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"361\" src=\"https://wordpress.org/documentation/files/2023/06/attempt-block-recovery--1024x361.png\" alt=\"\" class=\"wp-image-16357490\" srcset=\"https://wordpress.org/documentation/files/2023/06/attempt-block-recovery--1024x361.png 1024w, https://wordpress.org/documentation/files/2023/06/attempt-block-recovery--300x106.png 300w, https://wordpress.org/documentation/files/2023/06/attempt-block-recovery--768x271.png 768w, https://wordpress.org/documentation/files/2023/06/attempt-block-recovery-.png 1328w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Attempt Block Recovery button will restore the block as it was before the error appeared. This option will automatically remove the custom code and revert the block back to its previous safe state.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Resolve</h3>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"336\" src=\"https://wordpress.org/documentation/files/2023/06/Resolve-1024x336.png\" alt=\"\" class=\"wp-image-16357491\" srcset=\"https://wordpress.org/documentation/files/2023/06/Resolve-1024x336.png 1024w, https://wordpress.org/documentation/files/2023/06/Resolve-300x98.png 300w, https://wordpress.org/documentation/files/2023/06/Resolve-768x252.png 768w, https://wordpress.org/documentation/files/2023/06/Resolve.png 1294w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>When you click on the ellipsis (three dots) button you will see more options, the first option is Resolve. When you choose to Resolve the block error, you will be provided with two options each with its own possible outcome.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Convert to HTML</h4>\n\n\n\n<p>On the left side, you have the option to convert the block to a Custom HTML Block, this will convert the invalid content directly into an HTML block and keep any HTML customization made. You can read more about <a href=\"https://wordpress.org/documentation/article/custom-html/\">the Custom HTML block</a> in this guide.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Convert to Block</h4>\n\n\n\n<p>On the right side, you can convert the HTML code to Blocks,&nbsp; changes that will be made when that is done will be clearly displayed.</p>\n\n\n\n<p>In the example below, converting the block to a Custom HTML block will keep the inline CSS added to change the font color to pink which would normally be stripped off by the Paragraph block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"251\" src=\"https://wordpress.org/documentation/files/2023/06/resolve-options-1024x251.png\" alt=\"\" class=\"wp-image-16357492\" srcset=\"https://wordpress.org/documentation/files/2023/06/resolve-options-1024x251.png 1024w, https://wordpress.org/documentation/files/2023/06/resolve-options-300x74.png 300w, https://wordpress.org/documentation/files/2023/06/resolve-options-768x189.png 768w, https://wordpress.org/documentation/files/2023/06/resolve-options-1536x377.png 1536w, https://wordpress.org/documentation/files/2023/06/resolve-options-2048x503.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Convert to HTML</h3>\n\n\n\n<p>The third option is to convert to a Custom HTML block, this is the same function as the Convert to HTML option which is part of the Resolve option above.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"388\" height=\"254\" src=\"https://wordpress.org/documentation/files/2023/06/convert-to-html-block.png\" alt=\"\" class=\"wp-image-16357494\" srcset=\"https://wordpress.org/documentation/files/2023/06/convert-to-html-block.png 388w, https://wordpress.org/documentation/files/2023/06/convert-to-html-block-300x196.png 300w\" sizes=\"auto, (max-width: 388px) 100vw, 388px\" /></figure>\n\n\n\n<p></p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/06/convert-to-html.mov\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Convert to Classic Block</h3>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"386\" height=\"252\" src=\"https://wordpress.org/documentation/files/2023/06/convert-to-classic-block.png\" alt=\"\" class=\"wp-image-16357496\" srcset=\"https://wordpress.org/documentation/files/2023/06/convert-to-classic-block.png 386w, https://wordpress.org/documentation/files/2023/06/convert-to-classic-block-300x196.png 300w\" sizes=\"auto, (max-width: 386px) 100vw, 386px\" /></figure>\n\n\n\n<p>You can convert the invalid content into a <a href=\"https://wordpress.org/plugins/classic-editor/\">Classic Block</a>,&nbsp; this block contains the same options from the Classic Editor. The changes you would have made will be kept similar to converting the Custom HMTL block. You can go over <a href=\"https://wordpress.org/documentation/article/write-posts-classic-editor/\">our Classic Editor guide</a> for an explanation of each of the options shown for the Classic Block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/06/convert-to-classic-block.mov\"></video></figure>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Error overview If you&#8217;re encountering this error message in the Block Editor, it typically means that there is a problem with the content you&#8217;re trying to insert or edit within a block. Usually, the error is displayed when the affected block contains content that has a formatting problem, this could happen because of a number [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-16357504",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357504",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16357504"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357504/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357514,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357504/revisions/16357514"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16357504"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16357504"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

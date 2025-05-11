@@ -1,0 +1,85 @@
+{
+    "id": 41426,
+    "date": "2019-04-25T20:55:50",
+    "date_gmt": "2019-04-25T20:55:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/"
+    },
+    "modified": "2024-01-16T20:30:02",
+    "modified_gmt": "2024-01-16T20:30:02",
+    "slug": "wordpress-coding-standards",
+    "status": "publish",
+    "type": "wpcs-handbook",
+    "link": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/",
+    "title": {
+        "rendered": "WordPress Coding Standards"
+    },
+    "content": {
+        "rendered": "<p>The purpose of the WordPress Coding Standards is to create a baseline for collaboration and review within various aspects of the WordPress open source project and community, from core code to themes to plugins.</p>\n<p>The WordPress community developed the standards contained in this section of the handbook, and those standards are part of the best practices that developers and core contributors are recommended to follow.</p>\n<h2>Why have coding standards?</h2>\n<p>Coding standards help avoid common coding errors, improve the readability of code, and simplify modification. They ensure that files within the project appear as if they were created by a single person.</p>\n<p>Following the standards means anyone will be able to understand a section of code and modify it, if needed, without regard to when it was written or by whom.</p>\n<p>If you are planning to contribute to WordPress core, you need to familiarize yourself with these standards, as any code you submit will need to comply with them.</p>\n<h2>Language-specific Standards</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/\">CSS Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/html/\">HTML Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/\">JavaScript Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/\">PHP Coding Standards</a></li>\n</ul>\n<h2>Accessibility Standards</h2>\n<p>WordPress is committed to meeting the <a href=\"https://www.w3.org/TR/WCAG20/\">Web Content Accessibility Guidelines (WCAG) at level AA</a> for all new and updated code. We&#8217;ve provided a <a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/\">quick guide to common accessibility issues</a> you should be aware of when creating patches or feature plug-ins.</p>\n<h2>Where do the coding standards _not_ apply?</h2>\n<p>Third-party libraries are not subject to these standards, even when integrated with the primary project. This includes instances like WordPress core, where multiple third-party libraries are incorporated into its codebase.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41426",
+        "wpcs-handbook",
+        "type-wpcs-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41426",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/wpcs-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41426/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150307,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41426/revisions/150307"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41426"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 148848,
+    "date": "2023-09-18T12:40:01",
+    "date_gmt": "2023-09-18T12:40:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/"
+    },
+    "modified": "2024-12-16T18:19:06",
+    "modified_gmt": "2024-12-16T18:19:06",
+    "slug": "get-started-with-wp-env",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/",
+    "title": {
+        "rendered": "Get started with wp-env"
+    },
+    "content": {
+        "rendered": "<p>The <a href=\"https://www.npmjs.com/package/@wordpress/env\">@wordpress/env</a> package (<code>wp-env</code>) lets you set up a local WordPress environment (site) for building and testing plugins and themes, without any additional configuration.</p>\n<p>Before following this guide, install <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/#node-js-development-tools\">Node.js development tools</a> if you have not already done so.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/wp-env-diagram.png?ssl=1\" alt=\"wp-env basics diagram\" /></p>\n<h2>Quick start</h2>\n<ol>\n<li>Download, install, and start <a href=\"https://www.docker.com/products/docker-desktop\">Docker Desktop</a> following the instructions for your operating system.</li>\n<li>Run <code>npm -g install @wordpress/env</code> in the terminal to install <code>wp-env</code> globally.</li>\n<li>In the terminal, navigate to an existing plugin directory, theme directory, or a new working directory.</li>\n<li>Run <code>wp-env start</code> in the terminal to start the local WordPress environment.</li>\n<li>After the script runs, navigate to <code>http://localhost:8888/wp-admin</code> and log into the WordPress dashboard using username <code>admin</code> and password <code>password</code>.</li>\n</ol>\n<h2>Set up Docker Desktop</h2>\n<p>The <code>wp-env</code> tool uses <a href=\"https://www.docker.com/\">Docker</a> to create a virtual machine that runs the local WordPress site. The Docker Desktop application is free for small businesses, personal use, education, and non-commercial open-source projects. See their <a href=\"https://docs.docker.com/desktop/faqs/general/#do-i-need-to-pay-to-use-docker-desktop\">FAQ</a> for more information.</p>\n<p>Use the links below to download and install Docker Desktop for your operating system.</p>\n<ul>\n<li><a href=\"https://docs.docker.com/desktop/install/mac-install/\">Docker Desktop for Mac</a></li>\n<li><a href=\"https://docs.docker.com/desktop/install/windows-install/\">Docker Desktop for Windows</a></li>\n<li><a href=\"https://docs.docker.com/desktop/install/linux-install/\">Docker Desktop for Linux</a></li>\n</ul>\n<p>If you are using a version of Ubuntu prior to 20.04.1, see the additional <a href=\"#ubuntu-docker-setup\">troubleshooting notes</a> below.</p>\n<p>After successful installation, start the Docker Desktop application and follow the prompts to get set up. You should generally use the recommended (default) settings, and creating a Docker account is optional.</p>\n<h2>Install and run <code>wp-env</code></h2>\n<p>The <code>wp-env</code> tool is used to create a local WordPress environment with Docker. So, after you have set up Docker Desktop, open the terminal and install the <code>wp-env</code> by running the command:</p>\n<pre><code class=\"language-sh\">npm -g install @wordpress/env\n</code></pre>\n<p>This will install the <code>wp-env</code> globally, allowing the tool to be run from any directory. To confirm it&#8217;s installed and available, run <code>wp-env --version</code>, and the version number should appear.</p>\n<p>Next, navigate to an existing plugin directory, theme directory, or a new working directory in the terminal and run:</p>\n<pre><code class=\"language-sh\">wp-env start\n</code></pre>\n<p>Once the script completes, you can access the local environment at: <code>http://localhost:8888</code>. Log into the WordPress dashboard using username <code>admin</code> and password <code>password</code>.</p>\n<div class=\"callout callout-tip\">\n    Some projects, like Gutenberg, include their own specific <code>wp-env</code> configurations, and the documentation might prompt you to run <code>npm run wp-env start</code> instead.\n</div>\n<p>For more information on controlling the Docker environment, see the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-env/\">@wordpress/env package</a> readme.</p>\n<h3>Where to run <code>wp-env</code></h3>\n<p>The <code>wp-env</code> tool can run from practically anywhere. When using the script while developing a single plugin, <code>wp-env start</code> can mount and activate the plugin automatically when run from the directory containing the plugin. This also works for themes when run from the directory in which you are developing the theme.</p>\n<p>A generic WordPress environment will be created if you run <code>wp-env start</code> from a directory that is not a plugin or theme. The script will display the following warning, but ignore if this is your intention.</p>\n<pre><code>!! Warning: could not find a .wp-env.json configuration file and could not determine if 'DIR' is a WordPress installation, a plugin, or a theme.\n</code></pre>\n<p>You can also use the <code>.wp-env.json</code> configuration file to create an environment that works with multiple plugins and/or themes. See the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-env/#wp-envjson\">@wordpress/env package</a> readme for more configuration details.</p>\n<h3>Uninstall or reset <code>wp-env</code></h3>\n<p>Here are a few instructions if you need to start over or want to remove what was installed.</p>\n<ul>\n<li>If you just want to reset and clean the WordPress database, run <code>wp-env clean all</code></li>\n<li>To remove the local environment completely for a specific project, run <code>wp-env destroy</code></li>\n<li>To globally uninstall the <code>wp-env</code> tool, run <code>npm -g uninstall @wordpress/env</code></li>\n</ul>\n<h2>Troubleshooting</h2>\n<h3>Common errors</h3>\n<p>When using <code>wp-env</code>, it&#8217;s common to get the error: <code>Error while running docker-compose command</code></p>\n<ul>\n<li>Check that Docker Desktop is started and running.</li>\n<li>Check Docker Desktop dashboard for logs, restart, or remove existing virtual machines.</li>\n<li>Then try rerunning <code>wp-env start</code>.</li>\n</ul>\n<p>If you see the error: <code>Host is already in use by another container</code></p>\n<ul>\n<li>The container you are attempting to start is already running, or another container is. You can stop an existing container by running <code>wp-env stop</code> from the directory that you started it in.</li>\n<li>If you do not remember the directory where you started <code>wp-env</code>, you can stop all containers by running <code>docker stop $(docker ps -q)</code>. This will stop all Docker containers, so use with caution.</li>\n<li>Then try rerunning <code>wp-env start</code>.</li>\n</ul>\n<h3>Ubuntu Docker setup</h3>\n<p>If you are using a version of Ubuntu prior to 20.04.1, you may encounter errors when setting up a local WordPress environment with <code>wp-env</code>.</p>\n<p>To resolve this, start by following the <a href=\"https://docs.docker.com/install/linux/docker-ce/ubuntu/\">installation guide</a> from Docker. <code>docker-compose</code> is also required, which you may need to install separately. Refer to the <a href=\"https://docs.docker.com/compose/install/\">Docker compose documentation</a>.</p>\n<p>Once Docker and <code>wp-env</code> are installed, and assuming <code>wp-env</code> is configured globally, try running <code>wp-env start</code> in a directory. If you run into this error:</p>\n<pre><code>ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?\n\nIf it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.\n</code></pre>\n<p>First, make sure Docker is running. You can check by running <code>ps -ef | grep docker</code>, which should return something like:</p>\n<pre><code>/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock\n</code></pre>\n<p>If Docker is not running, try starting the service by running <code>sudo systemctl start docker.service</code>.</p>\n<p>If Docker is running, then it is not listening to how the WordPress environment is trying to communicate. Try adding the following service override file to include listening on <code>tcp</code>. See <a href=\"https://docs.docker.com/config/daemon/remote-access/\">this Docker documentation</a> on how to configure remote access for Docker daemon.</p>\n<pre><code># /etc/systemd/system/docker.service.d/override.conf\n[Service]\nExecStart=\nExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2376\n</code></pre>\n<p>Restart the service from the command-line:</p>\n<pre><code>sudo systemctl daemon-reload\nsudo systemctl restart docker.service\n</code></pre>\n<p>After restarting the services, set the environment variable <code>DOCKER_HOST</code> and try starting <code>wp-env</code> with:</p>\n<pre><code>export DOCKER_HOST=tcp://127.0.0.1:2376\nwp-env start\n</code></pre>\n<p>Your environment should now be set up at <code>http://localhost:8888</code>.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://www.npmjs.com/package/@wordpress/env\">@wordpress/env</a> (Official documentation)</li>\n<li><a href=\"https://docs.docker.com/desktop\">Docker Desktop</a> (Official documentation)</li>\n<li><a href=\"https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/\">Quick and easy local WordPress development with wp-env</a> (WordPress Developer Blog)</li>\n<li><a href=\"https://make.wordpress.org/core/2020/03/03/wp-env-simple-local-environments-for-wordpress/\">wp-env: Simple Local Environments for WordPress</a> (Make WordPress Core Blog)</li>\n<li><a href=\"https://excalidraw.com/#json=8Tp55B-R6Z6-pNGtmenU6,_DeBR1IBxuHNIKPTVEaseA\"><code>wp-env</code> Basics diagram</a> (Excalidraw)</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134336,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148848",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148848",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148848/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156105,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148848/revisions/156105"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134336"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148848"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

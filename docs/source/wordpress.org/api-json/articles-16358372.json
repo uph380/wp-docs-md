@@ -1,0 +1,109 @@
+{
+    "id": 16358372,
+    "date": "2023-08-08T10:03:00",
+    "date_gmt": "2023-08-08T10:03:00",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16358372"
+    },
+    "modified": "2023-12-05T10:31:01",
+    "modified_gmt": "2023-12-05T10:31:01",
+    "slug": "site-editor-patterns",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/site-editor-patterns/",
+    "title": {
+        "rendered": "Site Editor Patterns"
+    },
+    "content": {
+        "rendered": "\n<p>Since WordPress version 6.3, it is possible create and manage your site&#8217;s <a href=\"https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks/\">Patterns and template parts</a> via the Site Editor&#8217;s sidebar. You can learn about the Site Editor in this support article: <a href=\"https://wordpress.org/documentation/article/site-editor/\" data-type=\"link\" data-id=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">The Site Editor Patterns menu is <strong>only</strong> available when you install and activate a <a href=\"https://wordpress.org/documentation/article/block-themes/\">Block theme</a> on your site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Working with patterns</h2>\n\n\n\n<p>Navigate to <strong>Appearance &gt; Editor &gt; Navigation</strong> to access your Patterns and template parts.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-how-to-access-1.mp4\"></video></figure>\n\n\n\n<p>Please note that template parts are now listed under <strong>Patterns</strong>.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"602\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-rename-1024x602.png\" alt=\"Notice letting users know that Template Parts can now be found under the &quot;Patterns&quot; section. The message reads:\n\n&quot;Looking for template parts? Find them under &quot;Patterns&quot;.\" class=\"wp-image-16358382\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-rename-1024x602.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-rename-300x176.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-rename-768x452.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-rename-1536x903.png 1536w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-rename-2048x1204.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Looking for template parts? Find them under &#8220;Patterns&#8221;.</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">My patterns</h2>\n\n\n\n<p>The first item in the Patterns section is <strong>My patterns</strong>. This section lists all the custom patterns you added to your site yourself. They can be filtered by <a href=\"https://wordpress.org/documentation/article/reusable-blocks/\" data-type=\"helphub_article\" data-id=\"13363440\"><strong>Synced</strong></a> or <strong>Standard</strong> (non-synced).</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-filter-my-patterns-1.mp4\"></video></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">If you have a lot of Patterns, the <strong>Command Palette</strong> is another great find them. Learn more about the <a href=\"https://wordpress.org/support/article/site-editor-command-palette\">Command Palette here</a>.</p>\n\n\n\n<p>If you click on the <strong>Actions</strong> (ellipsis) button next to each pattern, you will see options to rename, duplicate or delete that pattern.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"513\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-edit-1024x513.png\" alt=\"Contextual menu inside &quot;My Patterns&quot; to rename, duplicate or delete a pattern.\" class=\"wp-image-16358395\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-edit-1024x513.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-edit-300x150.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-edit-768x385.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-edit.png 1476w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>You can edit any pattern just by clicking on the pattern itself, on the right-hand side of your screen.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-edit-patterns.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Theme patterns</h2>\n\n\n\n<p>Underneath My patterns, you can find regular patterns that come bundled with your theme. These patterns <strong>cannot be edited directly</strong>. Instead, you can click on the <strong>Actions</strong> (ellipsis) button and click <strong>Copy to My patterns</strong> to create an editable copy of that pattern. This copy will be listed under <strong>My patterns</strong>.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"560\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-copy-1024x560.png\" alt=\"Contextual menu inside &quot;Patterns&quot; to create a copy of that pattern.\" class=\"wp-image-16358397\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-copy-1024x560.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-copy-300x164.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-copy-768x420.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-copy.png 1524w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Template parts</h2>\n\n\n\n<p>The next type of pattern you will find are <strong>Template parts</strong>. Template parts are <strong>included with block themes</strong> and are typically used on multiple templates across your site.</p>\n\n\n\n<p>If you click on the <strong>Actions</strong> (ellipsis) button, you will see an option to <strong>duplicate</strong> that Template part and a second option to <strong>clear customizations</strong>. If you choose this option, the Template part will be reset to the content, layout, and styles it had when you block theme was first installed. </p>\n\n\n\n<p>Finally, you can edit the Template part by clicking on it directly. </p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"533\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-template-parts-1024x533.png\" alt=\"Contextual menu inside a &quot;Template part&quot; to create a duplicate or clear customizations.\" class=\"wp-image-16358404\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-template-parts-1024x533.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-template-parts-300x156.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-template-parts-768x399.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-template-parts-1536x799.png 1536w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-template-parts-2048x1065.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Create new patterns</h2>\n\n\n\n<p>There is a <strong>create patterns</strong> (<strong>+</strong>) icon next to the Patterns sidebar title you can click on to create new patterns. If you click on it, you will see two options: <strong>Create pattern </strong>and<strong> Create template part</strong>.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"553\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-create-patterns-1024x553.png\" alt=\"Plus sign icon to create new patterns.\" class=\"wp-image-16358403\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-create-patterns-1024x553.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-create-patterns-300x162.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-create-patterns-768x415.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-create-patterns.png 1070w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">You can learn more about the difference between <a href=\"https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks/\">Patterns and template parts here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Manage all patterns and template parts</h2>\n\n\n\n<p>There are two links at the bottom of the Site Editor Pattern section: </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Manage all my patterns</li>\n\n\n\n<li>Manage all template parts</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"755\" src=\"https://wordpress.org/documentation/files/2023/08/Screen-Shot-on-2023-08-04-at-135943-1024x755.png\" alt=\"Link showing how to access the Manage all my patterns and template parts sections.\" class=\"wp-image-16358401\" srcset=\"https://wordpress.org/documentation/files/2023/08/Screen-Shot-on-2023-08-04-at-135943-1024x755.png 1024w, https://wordpress.org/documentation/files/2023/08/Screen-Shot-on-2023-08-04-at-135943-300x221.png 300w, https://wordpress.org/documentation/files/2023/08/Screen-Shot-on-2023-08-04-at-135943-768x566.png 768w, https://wordpress.org/documentation/files/2023/08/Screen-Shot-on-2023-08-04-at-135943-1536x1132.png 1536w, https://wordpress.org/documentation/files/2023/08/Screen-Shot-on-2023-08-04-at-135943.png 1606w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>If you click on them, you will be redirected to an wp-admin view. This view can be convenient if you want to import patterns or apply bulk actions. </p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"505\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-all-patterns-1024x505.png\" alt=\"Patterns listed in the wp-admin interface. The &quot;Import from JSON&quot; and &quot;Bulk actions&quot; options are highlighted.\" class=\"wp-image-16358400\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-patterns-all-patterns-1024x505.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-all-patterns-300x148.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-all-patterns-768x378.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-all-patterns-1536x757.png 1536w, https://wordpress.org/documentation/files/2023/08/site-editor-patterns-all-patterns-2048x1009.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul style=\"background-color:#e5f5fa\" class=\"has-background wp-block-list\">\n<li>Updated 2023-08-24\n<ul class=\"wp-block-list\">\n<li>Updated formatting</li>\n\n\n\n<li>Updated category and subcategory</li>\n\n\n\n<li>Fixed some typos</li>\n</ul>\n</li>\n\n\n\n<li>Created 2023-08-08</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Since WordPress version 6.3, it is possible create and manage your site&#8217;s Patterns and template parts via the Site Editor&#8217;s sidebar. You can learn about the Site Editor in this support article: Site Editor. The Site Editor Patterns menu is only available when you install and activate a Block theme on your site. Working with [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        94
+    ],
+    "class_list": [
+        "post-16358372",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-site-editor"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358372",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16358372"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358372/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359266,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358372/revisions/16359266"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16358372"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16358372"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

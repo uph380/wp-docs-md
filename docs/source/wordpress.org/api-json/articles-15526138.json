@@ -1,0 +1,109 @@
+{
+    "id": 15526138,
+    "date": "2022-04-05T02:17:02",
+    "date_gmt": "2022-04-05T02:17:02",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15526138"
+    },
+    "modified": "2024-06-08T19:28:42",
+    "modified_gmt": "2024-06-08T19:28:42",
+    "slug": "site-tagline-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/site-tagline-block/",
+    "title": {
+        "rendered": "Site Tagline block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>Use the Site Tagline block to display the tagline of the site on the page or to edit the site tagline.</p>\n\n\n\n<div class=\"callout callout-info\" style=\"background: #e5f5fa;border-left: 5px solid #00a0d2;padding: 1.5em 3em 1.6em 3.7em;margin-bottom: 1.5em\"><p><em><strong>Note:</strong> </em>Updating this block and saving the template will apply the changes wherever the Site Tagline is used including the browser title bar, search results and the Tagline text field in Settings &gt; General.</p></div>\n\n\n\n<p></p>\n\n\n\n<p>To add a Site Tagline block, click the <strong>Block Inserter</strong> icon when editing the page template. Search for the Site Tagline<strong> </strong>block. Click on it to add the block to your page template.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><em><strong>Note:</strong>&nbsp;</em>The Site Tagline block is primarily used when editing the Template files in the&nbsp;<a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/04/Screen-Recording-2022-04-04-at-1.24.32-PM.mp4\"></video><figcaption class=\"wp-element-caption\"><em>Video showing how to add the Site Tagline block</em></figcaption></figure>\n\n\n\n<p></p>\n\n\n\n<p>You can also type /site-tagline and hit enter in a new paragraph block to add the Site Tagline block quickly.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-1.27.46-PM.png\" alt=\"How to add Site Tagline block quickly\" class=\"wp-image-15526180\" style=\"width:323px;height:125px\" width=\"323\" height=\"125\" srcset=\"https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-1.27.46-PM.png 646w, https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-1.27.46-PM-300x116.png 300w\" sizes=\"auto, (max-width: 323px) 100vw, 323px\" /><figcaption class=\"wp-element-caption\">How to add Site Tagline block quickly</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Site Tagline block shows five buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-7.01.18-PM.png\" alt=\"Site Tagline Block Toolbar\" class=\"wp-image-15526721\" style=\"width:349px;height:78px\" width=\"349\" height=\"78\" srcset=\"https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-7.01.18-PM.png 456w, https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-7.01.18-PM-300x67.png 300w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /><figcaption class=\"wp-element-caption\">Site Tagline Block Toolbar</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/01-site-tagline.jpg\" alt=\"Transform options for Site Tagline Block\" class=\"wp-image-15526722\" style=\"width:346px;height:213px\" width=\"346\" height=\"213\" srcset=\"https://wordpress.org/documentation/files/2022/04/01-site-tagline.jpg 604w, https://wordpress.org/documentation/files/2022/04/01-site-tagline-300x185.jpg 300w\" sizes=\"auto, (max-width: 346px) 100vw, 346px\" /><figcaption class=\"wp-element-caption\">Transform options for Site Tagline Block</figcaption></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to convert the Site Title block into a \u201cGroup\u201d block or \u201cColumns\u201d block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Drag icon</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/04-site-tagline.jpg\" alt=\"Drag icon in the Site Tagline Block\" class=\"wp-image-15526725\" style=\"width:344px;height:77px\" width=\"344\" height=\"77\" srcset=\"https://wordpress.org/documentation/files/2022/04/04-site-tagline.jpg 456w, https://wordpress.org/documentation/files/2022/04/04-site-tagline-300x67.jpg 300w\" sizes=\"auto, (max-width: 344px) 100vw, 344px\" /><figcaption class=\"wp-element-caption\">Drag icon in the Site Tagline Block</figcaption></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move arrows</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/05-site-tagline.jpg\" alt=\"Move arrows in the Site Tagline Block\" class=\"wp-image-15526728\" style=\"width:344px;height:77px\" width=\"344\" height=\"77\" srcset=\"https://wordpress.org/documentation/files/2022/04/05-site-tagline.jpg 456w, https://wordpress.org/documentation/files/2022/04/05-site-tagline-300x67.jpg 300w\" sizes=\"auto, (max-width: 344px) 100vw, 344px\" /><figcaption class=\"wp-element-caption\">Move arrows in the Site Tagline Block</figcaption></figure>\n\n\n\n<p>The left and right arrow icons can be used to move the block left or right inside the group of nested blocks.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change text alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/03-site-title-1.jpg\" alt=\"Change text alignment for the Site Tagline Block\" class=\"wp-image-15525857\" style=\"width:252px;height:294px\" width=\"252\" height=\"294\" /><figcaption class=\"wp-element-caption\">Change text alignment for the Site Tagline Block</figcaption></figure>\n\n\n\n<p>Click the \u201cChange alignment\u201d button in the Block toolbar to display the alignment drop-down. You can align the block text to the left, make it center-aligned or align it to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">More option</h3>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>In addition to the block toolbar, every block has specific options in the editor sidebar.</p>\n\n\n\n<p><em>If you do not see the sidebar, click the \u2018cog\u2019 icon next to the Save button.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/jZSpLikF6gQlLVXlAQpHTWdgtIAx806aQr0kVO6mmHZFQP9RtamgTziBHCuN91Fry9Xn65LHmJGjAkYYpWGvPLkRf-ONojLj3SUJgRcwHPLjblBQifZgKIuK4cbGmW1dym8ZdCxR\" alt=\"How to turn on the Block Settings sidebar\" style=\"width:349px;height:70px\" width=\"349\" height=\"70\" /><figcaption class=\"wp-element-caption\">How to turn on the Block Settings sidebar</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-6.55.47-PM-455x1024.png\" alt=\"Block Settings in the Site Tagline Block\" class=\"wp-image-15526736\" style=\"width:199px;height:447px\" width=\"199\" height=\"447\" srcset=\"https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-6.55.47-PM-455x1024.png 455w, https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-6.55.47-PM-133x300.png 133w, https://wordpress.org/documentation/files/2022/04/Screen-Shot-2022-04-04-at-6.55.47-PM.png 554w\" sizes=\"auto, (max-width: 199px) 100vw, 199px\" /><figcaption class=\"wp-element-caption\">Block Settings in the Site Tagline Block</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color </h3>\n\n\n\n<p>You can customize the text color and background color for the Site Tagline block.<em> </em>The color options available will vary based on the theme. Pick a color from the suggestions, or add a custom color using the color picker or by adding a color code.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/vGd1bPidVEXdbHGSIQXoK_PJsIlt2uxxSNBruY4CYExWqpxY19xNxdJR1gWrU8DI0u8TUnckQaBp-MDl4431435PIQWztwspNaJJiDouBJ5K9bfsXUVWWfBNgOVfZV0r45EG1vA6\" alt=\"Color Settings in the Site Tagline Block\" style=\"width:346px;height:198px\" width=\"346\" height=\"198\" /><figcaption class=\"wp-element-caption\">Color Settings in the Site Tagline Block</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography </h3>\n\n\n\n<p>Typography settings allow you to change a block\u2019s font size, appearance, line height, letter casing, and spacing.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/CVHlVnyeEA0rpYTkGKmMi02-xpYqnyIHxl3Xap3Vo7PKjJcYWjzJ_PJ-fC8_NtRNCJPgsppRBLtKMDi4ARc0cHnHTTMVerzpHCwh13_0t6a3skdaeEckV9pQurl80YTkVrpuiKOo\" alt=\"Typography Settings in the Site Tagline Block\" style=\"width:331px;height:424px\" width=\"331\" height=\"424\" /><figcaption class=\"wp-element-caption\">Typography Settings in the Site Tagline Block</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions </h3>\n\n\n\n<p>Dimension controls are used to control how groups of blocks are placed alongside one another, by changing the values for padding, margin, and other dimensions</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/17-post-excerpt.png\" alt=\"Dimension settings in the Site Tagline block\" class=\"wp-image-15473697\" style=\"width:343px;height:253px\" width=\"343\" height=\"253\" srcset=\"https://wordpress.org/documentation/files/2022/03/17-post-excerpt.png 550w, https://wordpress.org/documentation/files/2022/03/17-post-excerpt-300x221.png 300w\" sizes=\"auto, (max-width: 343px) 100vw, 343px\" /><figcaption class=\"wp-element-caption\">Dimension settings in the Site Tagline block</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Learn more about dimension controls.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Advanced</h2>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/HCaeEAd-xkijY3husAGN8FkRfOokz6h-mLa1vQoT11JIf366WEE4Y3jtoy6CTOJGTpBZELgZPdIewg2ug8pURV5XtFciGwLHJiNwleOvlGte5WnWTug0SYe4p-qBR54_8oR1NwHM\" alt=\"Advanced option in the selected Block\" style=\"width:337px;height:180px\" width=\"337\" height=\"180\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-04-04</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks Use the Site Tagline block to display the tagline of the site on the page or to edit the site tagline. Note: Updating this block and saving the template will apply the changes wherever the Site Tagline is used including the browser title bar, search results and the Tagline [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15526138",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15526138",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15526138"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15526138/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360403,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15526138/revisions/16360403"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15526138"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15526138"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

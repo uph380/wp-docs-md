@@ -1,0 +1,91 @@
+{
+    "id": 145014,
+    "date": "2023-03-02T02:55:01",
+    "date_gmt": "2023-03-02T02:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/"
+    },
+    "modified": "2025-01-07T18:34:07",
+    "modified_gmt": "2025-01-07T18:34:07",
+    "slug": "e2e",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/",
+    "title": {
+        "rendered": "End-to-End Testing"
+    },
+    "content": {
+        "rendered": "<p>This living document serves to prescribe instructions and best practices for writing end-to-end (E2E) tests with Playwright in the Gutenberg project.</p>\n<div class=\"callout callout-info\">\n<p>See the dedicated guide if you&#8217;re working with the previous Jest + Puppeteer framework. See the <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/docs/contributors/code/e2e/migration.md\">migration guide</a> if you&#8217;re migrating tests from Jest + Puppeteer.\n</div>\n<h2>Running tests</h2>\n<pre><code class=\"language-bash\"># Run all available tests.\nnpm run test:e2e\n\n# Run in headed mode.\nnpm run test:e2e -- --headed\n\n# Run tests with specific browsers (`chromium`, `firefox`, or `webkit`).\nnpm run test:e2e -- --project=webkit --project=firefox\n\n# Run a single test file.\nnpm run test:e2e -- &lt;path_to_test_file&gt; # E.g., npm run test:e2e -- site-editor/title.spec.js\n\n# Debugging.\nnpm run test:e2e -- --debug\n</code></pre>\n<p>If you&#8217;re developing in Linux, it currently requires testing Webkit browsers in headed mode. If you don&#8217;t want to or can&#8217;t run it with the GUI (e.g. if you don&#8217;t have a graphic interface), prepend the command with <a href=\"https://manpages.ubuntu.com/manpages/xenial/man1/xvfb-run.1.html\"><code>xvfb-run</code></a> to run it in a virtual environment.</p>\n<pre><code class=\"language-bash\"># Run all available tests.\nxvfb-run npm run test:e2e\n\n# Only run webkit tests.\nxvfb-run -- npm run test:e2e -- --project=webkit\n</code></pre>\n<p>If you&#8217;re already editing in VS Code, you may find the <a href=\"https://playwright.dev/docs/getting-started-vscode\">Playwright extension</a> helpful for running, writing and debugging tests.</p>\n<h2>Best practices</h2>\n<p>Read the <a href=\"https://playwright.dev/docs/best-practices\">best practices</a> guide for Playwright.</p>\n<h3>Forbid <code>$</code>, use <code>locator</code> instead</h3>\n<p>In fact, any API that returns <code>ElementHandle</code> is <a href=\"https://playwright.dev/docs/api/class-page#page-query-selector\">discouraged</a>. This includes <code>$</code>, <code>$$</code>, <code>$eval</code>, <code>$$eval</code>, etc. <a href=\"https://playwright.dev/docs/api/class-locator\"><code>Locator</code></a> is a much better API and can be used with playwright&#8217;s <a href=\"https://playwright.dev/docs/api/class-locatorassertions\">assertions</a>. This also works great with Page Object Model since that locator is lazy and doesn&#8217;t return a promise.</p>\n<h3>Use accessible selectors</h3>\n<p>Use <a href=\"https://playwright.dev/docs/locators#locate-by-role\"><code>getByRole</code></a> to construct the query wherever possible. It enables us to write accessible queries without having to rely on internal implementations.</p>\n<pre><code class=\"language-js\">// Select a button which includes the accessible name \"Hello World\" (case-insensitive).\npage.getByRole( 'button', { name: 'Hello World' } );\n</code></pre>\n<p>It can also be chained to perform complex queries:</p>\n<pre><code class=\"language-js\">// Select an option with a name \"Buttons\" under the \"Block Library\" region.\npage.getByRole( 'region', { name: 'Block Library' } )\n    .getByRole( 'option', { name: 'Buttons' } )\n</code></pre>\n<p>See the <a href=\"https://playwright.dev/docs/locators\">official documentation</a> for more info on how to use them.</p>\n<h3>Selectors are strict by default</h3>\n<p>To encourage better practices for querying elements, selectors are <a href=\"https://playwright.dev/docs/api/class-browser#browser-new-page-option-strict-selectors\">strict</a> by default, meaning that it will throw an error if the query returns more than one element.</p>\n<h3>Don&#8217;t overload test-utils, inline simple utils</h3>\n<p><code>e2e-test-utils</code> are too bloated with too many utils. Most of them are simple enough to be inlined directly in tests. With the help of accessible selectors, simple utils are easier to write now. For utils that only take place on a certain page, use Page Object Model instead (with an exception of clearing states with <code>requestUtils</code> which are better placed in <code>e2e-test-utils</code>). Otherwise, only create an util if the action is complex and repetitive enough.</p>\n<h3>Favor Page Object Model over utils</h3>\n<p>As mentioned above, <a href=\"https://playwright.dev/docs/pom\">Page Object Model</a> is the preferred way to create reusable utility functions on a certain page.</p>\n<p>The rationale behind using a POM is to group utils under namespaces to be easier to discover and use. In fact, <code>PageUtils</code> in the <code>e2e-test-utils-playwright</code> package is also a POM, which avoids the need for global variables, and utils can reference each other with <code>this</code>.</p>\n<h3>Restify actions to clear or set states</h3>\n<p>It&#8217;s slow to set states manually before or after tests, especially when they&#8217;re repeated multiple times between tests. It&#8217;s recommended to set them via API calls. Use <code>requestUtils.rest</code> and <code>requestUtils.batchRest</code> instead to call the <a href=\"https://developer.wordpress.org/rest-api/reference/\">REST API</a> (and add them to <code>requestUtils</code> if needed). We should still add a test for manually setting them, but that should only be tested once.</p>\n<h3>Avoid global variables</h3>\n<p>Previously in our Jest + Puppeteer E2E tests, <code>page</code> and <code>browser</code> are exposed as global variables. This makes it harder to work with when we have multiple pages/tabs in the same test, or if we want to run multiple tests in parallel. <code>@playwright/test</code> has the concept of <a href=\"https://playwright.dev/docs/test-fixtures\">fixtures</a> which allows us to inject <code>page</code>, <code>browser</code>, and other parameters into the tests.</p>\n<h3>Make explicit assertions</h3>\n<p>We can insert as many assertions in one test as needed. It&#8217;s better to make explicit assertions whenever possible. For instance, if we want to assert that a button exists before clicking on it, we can do <code>expect( locator ).toBeVisible()</code> before performing <code>locator.click()</code>. This makes the tests flow better and easier to read</p>\n<h2>Common pitfalls</h2>\n<h3><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/docs/contributors/code/e2e/overusing-snapshots.md\">Overusing snapshots</a></h3>\n<h2>Cross-browser testing</h2>\n<p>By default, tests are only run in chromium. You can <em>tag</em> tests to run them in different browsers. Use <code>@browser</code> anywhere in the test title to run it in that browser. Tests will always run in chromium by default, append <code>-chromium</code> to disable testing in chromium. Available browsers are <code>chromium</code>, <code>firefox</code>, and <code>webkit</code>.</p>\n<pre><code class=\"language-js\">test( 'I will run in @firefox and @webkit (and chromium by default)', async ( { page } ) =&gt; {\n    // ...\n} );\n\ntest( 'I will only run in @firefox but not -chromium', async ( { page } ) =&gt; {\n    // ...\n} );\n\ntest.describe( 'Grouping tests (@webkit, -chromium)', () =&gt; {\n    test( 'I will only run in webkit', async ( { page } ) =&gt; {\n        // ...\n    } );\n} );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135100,
+    "menu_order": 374,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145014",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145014",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145014/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155937,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145014/revisions/155937"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135100"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145014"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 129274,
+    "date": "2020-07-13T13:01:39",
+    "date_gmt": "2020-07-13T13:01:39",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=129274"
+    },
+    "modified": "2022-11-17T06:09:11",
+    "modified_gmt": "2022-11-17T06:09:11",
+    "slug": "advanced",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/making-http-requests/advanced/",
+    "title": {
+        "rendered": "Advanced"
+    },
+    "content": {
+        "rendered": "\n<p>Here are some advanced usage of the HTTP API.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Other methods</h2>\n\n\n\n<p>GET and POST are the most commonly used methods when making a HTTP request, but there are many others, such as DELETE, PUT, PATCH, OPTIONS, etc.</p>\n\n\n\n<p>The WordPress HTTP API does not have one specific helper function for each method, but rest assured that the great people developing WordPress already thought of that and lovingly provided <code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_request/\">wp_remote_request()</a></code>. This function takes the same two parameters as <code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_get/\">wp_remote_get()</a></code>, and allows you to specify the HTTP method as well. What data you need to pass along is up to your method.</p>\n\n\n\n<p>To send a DELETE method, for example, you may have something similar to the following:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$args     = array(\n\t'method' =&gt; 'DELETE',\n);\n$response = wp_remote_request( 'http://some-api.com/object/to/delete', $args );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Options</h2>\n\n\n\n<p>As you probably noticed by now, all the helper functions take a second <code>$args</code> parameter that allows you to set additional options to your request.</p>\n\n\n\n<p>For example, <code>timeout</code> allows for setting the time in seconds, before the connection is dropped and an error is returned. The <code>httpversion</code>&nbsp;argument sets the HTTP version and defaults to \u20181.0\u2019, however depending on the service you are interacting with you may need to set this to \u20181.1\u2019.</p>\n\n\n\n<p>Check <code><a href=\"https://developer.wordpress.org/reference/classes/WP_Http/request/\">WP_Http::request()</a></code> method documentation for all available options and what they do.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Headers</h2>\n\n\n\n<p>It can be pretty important, and sometimes required by the API, to check a resource status using HEAD before retrieving it. On high traffic APIs, GET is often limited to number of requests per minute or hour. There is no need to even attempt a GET request unless the HEAD request shows that the data on the API has been updated.</p>\n\n\n\n<p>Going back to the GitHub example, here are are few headers to watch out for. Most of these headers are standard, but you should always check the API docs to ensure you understand which headers are named what, and their purpose.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>x-ratelimit-limit</code> &#8211; Number of requests allowed in a time period</li><li><code>x-ratelimit-remaining</code> &#8211; Number of remaining available requests in time period</li><li><code>content-length</code> &#8211; How large the content is in bytes. Can be useful to warn the user if the content is fairly large</li><li><code>last-modified</code> &#8211; When the resource was last modified. Highly useful to caching tools</li><li><code>cache-control</code> &#8211; How should the client handle caching</li></ul>\n\n\n\n<p>The following will check the HEAD value of my GitHub user account:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$response = wp_remote_head( 'https://api.github.com/users/wordpress' );</code></pre>\n\n\n\n<p><code>$response</code> should look similar to:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">Array(\n\t[headers] =&gt; Array\n\t\t(\n\t\t[server] =&gt; nginx\n\t\t[date] =&gt; Fri, 05 Oct 2012 05:21:26 GMT\n\t\t[content-type] =&gt; application/json; charset=utf-8\n\t\t[connection] =&gt; close\n\t\t[status] =&gt; 200 OK\n\t\t[vary] =&gt; Accept\n\t\t[x-ratelimit-remaining] =&gt; 4982\n\t\t[content-length] =&gt; 594\n\t\t[last-modified] =&gt; Fri, 05 Oct 2012 04:39:58 GMT\n\t\t[etag] =&gt; \"5d5e6f7a09462d6a2b473fb616a26d2a\"\n\t\t[x-github-media-type] =&gt; github.beta\n\t\t[cache-control] =&gt; public, s-maxage=60, max-age=60\n\t\t[x-content-type-options] =&gt; nosniff\n\t\t[x-ratelimit-limit] =&gt; 5000\n\t)\n    [body] =&gt;\n    [response] =&gt; Array\n\t\t(\n\t\t[preserved_text 39a8515bd2dce2aa06ee8a2a6656b1de /] =&gt; 200\n\t\t[message] =&gt; OK\n\t)\n    [cookies] =&gt; Array(\n\t)\n\t[filename] =&gt;\n)</code></pre>\n\n\n\n<p><br>All of the same helper functions can be used on this function as with the previous two. The exception here being that HEAD never returns a body, so that element will always be empty.</p>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 129278,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129274",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129274",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129274/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144363,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129274/revisions/144363"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129274"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10840565,
+    "date": "2018-11-18T03:28:38",
+    "date_gmt": "2018-11-18T03:28:38",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840565"
+    },
+    "modified": "2023-07-05T13:07:32",
+    "modified_gmt": "2023-07-05T13:07:32",
+    "slug": "introduction-to-plugins",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/introduction-to-plugins/",
+    "title": {
+        "rendered": "Introduction to Plugins"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Introduction</h2>\n\n\n\n<p><em>Plugins are ways to extend and add to the functionality that already exists in WordPress</em>.</p>\n\n\n\n<p>The core of WordPress is designed to be lean and lightweight, to maximize flexibility and minimize code bloat. Plugins offer custom functions and features so that each user can tailor their site to their specific needs.</p>\n\n\n\n<p>For instructions and information on downloading, installing, upgrading, troubleshooting, and managing your WordPress Plugins, see <a href=\"https://codex.wordpress.org/Managing_Plugins\">Managing Plugins</a>. If you want to develop your own plugin, there is a comprehensive list of resources in <a href=\"https://codex.wordpress.org/Plugin_Resources\">Plugin Resources</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Plugin Repositories</h2>\n\n\n\n<p>WordPress Plugins are available from several sources. The most popular and official source for WordPress Plugins is the WordPress.org repo.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/plugins/\">Official WordPress Plugins Repository</a></li>\n</ul>\n\n\n\n<p>Just to note, not all WordPress Plugins make it into the above repository. Search the web for &#8220;WordPress Plugin&#8221; and the keywords for the type of functionality you are seeking. There is bound to be a solution out there for you.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Default Plugins</h2>\n\n\n\n<p>The following two plugins are included with WordPress core:&nbsp;<a href=\"https://codex.wordpress.org/Akismet\">Akismet</a> checks your comments against the Akismet web service to see if they look like spam or not. You can review the spam it catches under &#8220;Manage&#8221; and it automatically deletes old spam after 15 days.</p>\n\n\n\n<p>See all of the features in Akismet here: <a href=\"https://wordpress.org/plugins/akismet/\">https://wordpress.org/plugins/akismet/</a></p>\n\n\n\n<p><strong>Hello Dolly</strong>          This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong. Hello, Dolly. This is, by the way, the world&#8217;s first official WordPress Plugin. When enabled you will randomly see a lyric from &#8220;Hello, Dolly&#8221; in the upper right of your <a href=\"https://codex.wordpress.org/Administration_Screens\">Administration Screens</a> on every page.     </p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-07-05 \n<ul class=\"wp-block-list\">\n<li>Removed developer jargon and old links to Codex</li>\n</ul>\n</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Introduction Plugins are ways to extend and add to the functionality that already exists in WordPress. The core of WordPress is designed to be lean and lightweight, to maximize flexibility and minimize code bloat. Plugins offer custom functions and features so that each user can tailor their site to their specific needs. For instructions and [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-10840565",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840565",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840565"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840565/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357606,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840565/revisions/16357606"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840565"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840565"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

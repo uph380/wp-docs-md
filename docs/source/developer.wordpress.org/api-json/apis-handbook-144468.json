@@ -1,0 +1,97 @@
+{
+    "id": 144468,
+    "date": "2022-11-20T19:56:10",
+    "date_gmt": "2022-11-20T19:56:10",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=144468"
+    },
+    "modified": "2023-05-31T11:36:28",
+    "modified_gmt": "2023-05-31T11:36:28",
+    "slug": "sanitizing",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/security/sanitizing/",
+    "title": {
+        "rendered": "Sanitizing Data"
+    },
+    "content": {
+        "rendered": "\n<p>Untrusted data comes from many sources (users, third party sites, even your own database!) and all of it needs to be checked before it&#8217;s used.</p>\n\n\n\n<p>Remember: Even admins are users, and users will enter incorrect data, either on purpose or accidentally. It\u2019s your job to protect them from themselves.</p>\n\n\n\n<p><em>Sanitizing</em> input is the process of securing/cleaning/filtering input data. Validation is preferred over sanitization because validation is more specific. But when &#8220;more specific&#8221; isn&#8217;t possible, sanitization is the next best thing.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Example</h2>\n\n\n\n<p>Let\u2019s say we have an input field named <code>title</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;input id=\"title\" type=\"text\" name=\"title\"&gt;</code></pre>\n\n\n\n<p>We can&#8217;t use Validation here because the text field is too general: it can be anything at all. So we sanitize the input data with the <code>sanitize_text_field()</code> function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$title = sanitize_text_field( $_POST['title'] );\nupdate_post_meta( $post-&gt;ID, 'title', $title );</code></pre>\n\n\n\n<p>Behind the scenes, <code>sanitize_text_field()</code> does the following:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Checks for invalid UTF-8</li>\n\n\n\n<li>Converts single less-than characters (&lt;) to entity</li>\n\n\n\n<li>Strips all tags</li>\n\n\n\n<li>Removes line breaks, tabs and extra white space</li>\n\n\n\n<li>Strips octets</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Sanitization functions</h2>\n\n\n\n<p>There are many functions that will help you sanitize your data.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_email/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_email()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_file_name/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_file_name()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_hex_color/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_hex_color()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_hex_color_no_hash/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_hex_color_no_hash()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_html_class/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_html_class()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_key/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_key()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_meta/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_meta()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_mime_type/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_mime_type()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_option/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_option()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_sql_orderby/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_sql_orderby()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_term/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_term()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_term_field/\" data-type=\"URL\" data-id=\"https://developer.wordpress.org/reference/functions/sanitize_term_field/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_term_field()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_text_field/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_text_field()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_textarea_field/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_textarea_field()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_title/\" data-type=\"URL\" data-id=\"https://developer.wordpress.org/reference/functions/sanitize_title/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_title()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_title_for_query/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_title_for_query()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_title_with_dashes/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_title_with_dashes()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_user/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_user()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/sanitize_url/\" target=\"_blank\" rel=\"noreferrer noopener\">sanitize_url()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_kses/\" target=\"_blank\" rel=\"noreferrer noopener\">wp_kses()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_kses_post/\" target=\"_blank\" rel=\"noreferrer noopener\">wp_kses_post()</a></code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 7756733,
+    "featured_media": 0,
+    "parent": 144458,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-144468",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144468",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7756733"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144468/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 147547,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144468/revisions/147547"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144458"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=144468"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

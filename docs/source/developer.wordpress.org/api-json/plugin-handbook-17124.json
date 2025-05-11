@@ -1,0 +1,97 @@
+{
+    "id": 17124,
+    "date": "2015-05-05T22:53:32",
+    "date_gmt": "2015-05-05T22:53:32",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=17124"
+    },
+    "modified": "2025-01-31T16:39:24",
+    "modified_gmt": "2025-01-31T16:39:24",
+    "slug": "plugin-assets",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/",
+    "title": {
+        "rendered": "How Your Plugin Assets Work"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>assets</code>&nbsp;folder in your plugin is where you can store images (like plugin headers, icons, and screenshots) used on your plugin&#8217;s display page.</p>\n\n\n\n<p>All files&nbsp;should be placed into the <code>assets</code> directory of your SVN directory and will work for all versions of your plugin. This is a top level directory, just like <code>trunk</code>. You would <strong>not</strong> place the screenshots into <code>trunk/assets</code>&nbsp;or <code>tags/1.0/assets</code>.</p>\n\n\n\n<p>All images are served through a CDN and cached heavily, so it may take a some time to update when changed or added. Please give the proxy some time to retrieve your images and cache them before reporting it\u2019s not working. It should only take a few minutes, but 6 hours is not unheard of when the servers are under high load (like the week before and during a release of a major version of WordPress).</p>\n\n\n\n<h2 class=\"wp-block-heading\">Default Image Sizes</h2>\n\n\n\n<p>Image sizes should be the same as implied by the names. That is,&nbsp;<code>banner-772x250.png</code>&nbsp;should be 772 pixels wide by 250 pixels high. Similarly,&nbsp;<code>icon-256x256.png</code>&nbsp;should be a 256&#215;256 square.</p>\n\n\n\n<p>We have <strong>not</strong> defined any new banner sizes so please don&#8217;t try to be clever and rename yours thinking they&#8217;ll work. They simply won&#8217;t show. Similarly, don&#8217;t make your images larger (or smaller) and use the existing names. Things will look terrible.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Plugin Headers</h2>\n\n\n\n<p>Plugin headers are those images you see at the top of a plugin page:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"472\" src=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?resize=1024%2C472&#038;ssl=1\" alt=\"\" class=\"wp-image-154002\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?resize=1024%2C472&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?resize=300%2C138&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?resize=768%2C354&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?resize=1536%2C708&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2015/05/Screenshot-2024-07-02-at-12.50.04%E2%80%AFPM.png?w=1910&amp;ssl=1 1910w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>When designing your header image, keep in mind the use of international plugin directories. Some of these, like <a href=\"https://he.wordpress.org/plugins/\">Hebrew</a> and <a href=\"https://ar.wordpress.org/plugins/\">Arabic</a>, use Right-To-Left (RTL) languages. Ideally, design your banner such that the elements included in the image can be positioned from right to left or from left to right. You can create a different image for RTL pages, with <code>-rtl</code>&nbsp;in the name.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"banner-filenames\">Filenames</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Normal Banner: <code>banner-772x250.(jpg|png)</code></li>\n\n\n\n<li>Normal Banner (Localized):&nbsp;<code>banner-772x250-(rtl|es|es_ES).(jpg|png)</code></li>\n\n\n\n<li>High-DPI (Retina): <code>banner-1544x500.(jpg|png)</code></li>\n\n\n\n<li>High-DPI (Retina Localized): <code>banner-1544x500-(rtl|es|es_ES).(jpg|png)</code></li>\n</ul>\n\n\n\n<p>Images can be localised to a specific language, or for all RTL languages.<br>The locale can be specified as a full locale (<code>es_ES</code>) or as a partial locale (<code>es</code>), if the language is RTL and a locale-specific image isn&#8217;t provided, the <code>rtl</code> image will be checked for.<br>Do not duplicate English images into RTL and locale-specific files without making alterations, the English variant will be used instead.</p>\n\n\n\n<p>For example of an RTL image, look at bbPress <a href=\"https://wordpress.org/plugins/bbpress/\">in English</a> and then <a href=\"https://ar.wordpress.org/plugins/bbpress/\">in Arabic</a>.</p>\n\n\n\n<p>For an example of Retina images, <a href=\"https://wordpress.org/extend/plugins/hello-dolly/\">check out Hello Dolly</a> or <a href=\"https://wordpress.org/plugins/pluginception/\">Pluginception</a>.&nbsp;You <em>cannot</em> use the retina image alone, it only works as an &#8220;add-on&#8221; to the 772&#215;250 image. The larger &#8216;retina&#8217; image is only used on displays that can show the higher detail.</p>\n\n\n\n<p>4MB is the maximum size for headers images, but smaller is better.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Plugin Icons</h2>\n\n\n\n<p>Plugin icons are square images that show on the side of the plugin in searches on WordPress.org but also on the back-end of WordPress.org.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/akismet1.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"651\" height=\"235\" src=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/akismet1.png?resize=651%2C235&#038;ssl=1\" alt=\"Akismet with it's Plugin Icon\" class=\"wp-image-17127\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/akismet1.png?w=651&amp;ssl=1 651w, https://i0.wp.com/developer.wordpress.org/files/2015/05/akismet1.png?resize=300%2C108&amp;ssl=1 300w\" sizes=\"auto, (max-width: 651px) 100vw, 651px\" /></a></figure>\n\n\n\n<p>In addition to JPG and PNG formats, you can also use&nbsp;<strong>SVG</strong>. Vectors are perfect for icons, as they can be scaled to any size and the file itself is small.&nbsp;If you chose to use SVGs, you <em>must</em> also use a PNG icon as a fallback, otherwise your plugin icon will not display properly in older browsers or on Facebook.</p>\n\n\n\n<p>If you do not use an icon, an auto-generated one will be made for you. Some examples are the circled icons below:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/auto-generated-icons.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"798\" height=\"332\" src=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/auto-generated-icons.jpg?resize=798%2C332&#038;ssl=1\" alt=\"Example of auto-generated icons\" class=\"wp-image-30345\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2015/05/auto-generated-icons.jpg?w=798&amp;ssl=1 798w, https://i0.wp.com/developer.wordpress.org/files/2015/05/auto-generated-icons.jpg?resize=300%2C125&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2015/05/auto-generated-icons.jpg?resize=768%2C320&amp;ssl=1 768w\" sizes=\"auto, (max-width: 798px) 100vw, 798px\" /></a></figure>\n\n\n\n<p>1MB is the maximum file size for icons, but as with headers, the smaller the better.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filenames</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Normal: <code>icon-128x128.(png|jpg|gif)</code></li>\n\n\n\n<li>High-DPI (Retina): <code>icon-256x256.(png|jpg|gif)</code></li>\n\n\n\n<li>SVG:&nbsp;<code>icon.svg</code></li>\n</ul>\n\n\n\n<p>There are no plans to change these sizes.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Screenshots</h2>\n\n\n\n<p>Screenshots show on the main page of your plugin, and are used to illustrate aspects of the plugin admin dashboard or live examples. There should be <strong>one</strong> screenshot for every line in your <code>readme.txt</code> file. The content of the lines&nbsp;will become the captions of the screenshots on your plugin&#8217;s page.</p>\n\n\n\n<p>For example: <code>1. This is a monkey</code></p>\n\n\n\n<p>That would show the caption &#8216;This is a monkey&#8217; under the first screenshot. Presumably of a monkey.</p>\n\n\n\n<p>Screenshots&nbsp;<em>must</em> be local to display. Links to external files won&#8217;t work.</p>\n\n\n\n<p>10MB is maximum file size for screenshots, but as always, the smaller the better.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filenames</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>screenshot-1.(png|jpg)</code></li>\n\n\n\n<li><code>screenshot-2.(png|jpg)</code></li>\n</ul>\n\n\n\n<p>All filenames should be lowercase; uppercase names won&#8217;t work.</p>\n\n\n\n<p>Screenshots can be localized <a href=\"#banner-filenames\" data-type=\"internal\" data-id=\"#banner-filenames\">similar to banners</a>, the following filenames would take priority over the above English names when the plugin is viewed in German:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>screenshot-1<strong>-de</strong>.(png|jpg)</code></li>\n\n\n\n<li><code>screenshot-2<strong>-de</strong>.(png|jpg)</code></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Issues</h2>\n\n\n\n<p>If you find your images are downloading when people click on them from your WordPress.org Plugin Directory page, you&#8217;ll need to make a change in how you upload them via SVN. It&#8217;s due to how some images are sent with the <code>Content-Type application/octet-stream</code>.</p>\n\n\n\n<p>To fix it, run this command:</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">svn propset svn:mime-type image/png *.png\nsvn propset svn:mime-type image/jpeg *.jpg</code></pre>\n\n\n\n<p>Alternatively, plugin authors can set this in their ~/.subversion/config file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">*.png = svn:mime-type=image/png\n*.jpg = svn:mime-type=image/jpeg</code></pre>\n\n\n\n<p>That&#8217;ll apply to only new files though. Fixing already-committed files will require the command above.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-17124",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/17124",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 41,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/17124/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156267,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/17124/revisions/156267"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=17124"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

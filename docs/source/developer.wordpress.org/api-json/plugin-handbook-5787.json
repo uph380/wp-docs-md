@@ -1,0 +1,91 @@
+{
+    "id": 5787,
+    "date": "2014-07-30T22:18:07",
+    "date_gmt": "2014-07-30T22:18:07",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=5787"
+    },
+    "modified": "2023-12-14T20:46:46",
+    "modified_gmt": "2023-12-14T20:46:46",
+    "slug": "intro",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/intro/",
+    "title": {
+        "rendered": "Introduction to Plugin Development"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the Plugin Developer Handbook. Whether you\u2019re writing your first plugin or your fiftieth, we hope this resource helps you write the best plugin possible.</p>\n\n\n\n<p>The Plugin Developer Handbook covers a variety of topics \u2014 everything from what should be in the plugin header, to security best practices, to tools you can use to build your plugin. It\u2019s also a work in progress \u2014 if you find something missing or incomplete, please notify the documentation team in slack and we&#8217;ll make it better together.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why We Make Plugins</h2>\n\n\n\n<p>If there\u2019s one cardinal rule in WordPress development, it\u2019s this: <strong>Don\u2019t touch WordPress core</strong>. This means that you don\u2019t edit core WordPress files to add functionality to your site. This is because WordPress overwrites core files with each update. Any functionality you want to add or modify should be done using plugins.</p>\n\n\n\n<p>WordPress plugins can be as simple or as complicated as you need them to be, depending on what you want to do. The simplest plugin is a single PHP file. The <a title=\"Hello Dolly Plugin\" href=\"https://wordpress.org/plugins/hello-dolly/\">Hello Dolly</a> plugin is an example of such a plugin. The plugin PHP file just needs a <a href=\"https://developer.wordpress.org/plugins/the-basics/header-requirements/\">Plugin Header</a>, a couple of PHP functions, and some <a href=\"https://developer.wordpress.org/plugins/hooks/\">hooks</a> to attach your functions to.</p>\n\n\n\n<p>Plugins allow you to greatly extend the functionality of WordPress without touching WordPress core itself.</p>\n",
+        "protected": false
+    },
+    "author": 3606,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 2,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5787",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5787",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/3606"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 22,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5787/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129179,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5787/revisions/129179"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5787"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

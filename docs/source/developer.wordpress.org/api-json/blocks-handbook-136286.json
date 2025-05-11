@@ -1,0 +1,91 @@
+{
+    "id": 136286,
+    "date": "2021-05-28T19:54:48",
+    "date_gmt": "2021-05-28T19:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/base-field/"
+    },
+    "modified": "2023-02-09T10:15:18",
+    "modified_gmt": "2023-02-09T10:15:18",
+    "slug": "base-field",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/base-field/",
+    "title": {
+        "rendered": "BaseField"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>BaseField</code> is an internal (i.e., not exported in the <code>index.js</code>) primitive component used for building more complex fields like <code>TextField</code>. It provides error handling and focus styles for field components. It does <em>not</em> handle layout of the component aside from wrapping the field in a <code>Flex</code> wrapper.</p>\n<h2>Usage</h2>\n<p><code>BaseField</code> is primarily used as a hook rather than a component:</p>\n<pre><code class=\"language-js\">function useExampleField( props ) {\n    const { as = 'input', ...baseProps } = useBaseField( props );\n\n    const inputProps = {\n        as,\n        // more cool stuff here\n    };\n\n    return { inputProps, ...baseProps };\n}\n\nfunction ExampleField( props, forwardRef ) {\n    const { preFix, affix, disabled, inputProps, ...baseProps } =\n        useExampleField( props );\n\n    return (\n        &lt;View { ...baseProps } disabled={ disabled }&gt;\n            { preFix }\n            &lt;View autocomplete=\"off\" { ...inputProps } disabled={ disabled } /&gt;\n            { affix }\n        &lt;/View&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>disabled</code>: <code>boolean</code></h3>\n<p>Whether the field is disabled.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>hasError</code>: <code>boolean</code></h3>\n<p>Renders an error style around the component.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isInline</code>: <code>boolean</code></h3>\n<p>Renders a component that can be inlined in some text.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isSubtle</code>: <code>boolean</code></h3>\n<p>Renders a subtle variant of the component.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 107,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136286",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136286",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136286/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144584,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136286/revisions/144584"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136286"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

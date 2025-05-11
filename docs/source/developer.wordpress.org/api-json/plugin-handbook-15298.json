@@ -1,0 +1,97 @@
+{
+    "id": 15298,
+    "date": "2015-04-09T19:13:43",
+    "date_gmt": "2015-04-09T19:13:43",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=15298"
+    },
+    "modified": "2022-11-17T06:09:02",
+    "modified_gmt": "2022-11-17T06:09:02",
+    "slug": "security",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/internationalization/security/",
+    "title": {
+        "rendered": "Internationalization Security"
+    },
+    "content": {
+        "rendered": "\n<p>Security is often overlooked when talking about internationalization, but there are a few important things to keep in mind.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Check for Spam and Other Malicious Strings</h3>\n\n\n\n<p>When a translator submits a localization to you, always check to make sure they didn\u2019t include spam or other malicious words in their translation. You can use <a href=\"https://translate.google.com/\">Google Translate</a>&nbsp;to translate their translation back into your native language so that you can easily compare the original and translated strings.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Escape Internationalized Strings</h3>\n\n\n\n<p>You can&#8217;t trust that a translator will only add benign text to their localization; if they want to, they could add malicious JavaScript or other code instead. To protect against that, it&#8217;s important to treat internationalized strings like you would any other untrusted input.</p>\n\n\n\n<p>If you&#8217;re outputting the strings, then they should be escaped.</p>\n\n\n\n<p><span style=\"background-color: #dd3d36;padding: 3px;color: white\">Insecure:</span></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">_e( 'The REST API content endpoints were added in WordPress 4.7.', 'your-text-domain' ); </code></pre>\n\n\n\n<p><span style=\"background-color: #7ad03a;padding: 3px\">Secure:</span></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">esc_html_e( 'The REST API content endpoints were added in WordPress 4.7.', 'your-text-domain' );</code></pre>\n\n\n\n<p>Alternatively, some people choose to rely on a translation verification mechanism, rather than adding escaping to their code. One example of a verification mechanism is <a href=\"https://make.wordpress.org/polyglots/handbook/glossary/#project-translation-editor\">the editor roles</a> that the WordPress Polyglots team uses for <a href=\"https://translate.wordpress.org\">translate.wordpress.org</a>. This ensures that any translation submitted by an untrusted contributor has been verified by a trusted editor before being accepted.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Use Placeholders for URLs</h3>\n\n\n\n<p>Don\u2019t include URLs in internationalized strings,&nbsp;because a malicious translator could change them to point to a different URL. Instead, use placeholders for <a href=\"http://php.net/manual/en/function.printf.php\">printf()</a> or&nbsp;<a href=\"http://us3.php.net/manual/en/function.sprintf.php\">sprintf()</a>.</p>\n\n\n\n<p><span style=\"background-color: #dd3d36;padding: 3px;color: white\">Insecure:</span></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">_e(\n\t'Please &lt;a href=\"https://login.wordpress.org/register\"&gt; register for a WordPress.org account&lt;/a&gt;.',\n\t'your-text-domain'\n);</code></pre>\n\n\n\n<p><span style=\"background-color: #7ad03a;padding: 3px\">Secure:</span></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">printf(\n\tesc_html__( 'Please %1$s register for a WordPress.org account %2$s.', 'your-text-domain' ),\n\t'&lt;a href=\"https://login.wordpress.org/register\"&gt;',\n\t'&lt;/a&gt;'\n);</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Compile Your Own .mo Binaries</h3>\n\n\n\n<p>Often translators will send the compiled .mo file along with the plaintext .po file, but you should discard their .mo file and compile your own, because&nbsp;you have no way of knowing whether or not it was compiled from the corresponding .po file, or a different one. If it was compiled against a different one, then it could contain spam and other malicious strings without your knowledge.</p>\n\n\n\n<p>Using PoEdit to generate the binary&nbsp;will override the headers in the .po file, so instead it\u2019s better to&nbsp;compile it from the command line:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">msgfmt -cv -o /path/to/output.mo /path/to/input.po</code></pre>\n",
+        "protected": false
+    },
+    "author": 6250429,
+    "featured_media": 0,
+    "parent": 11173,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-15298",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15298",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/6250429"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15298/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144345,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15298/revisions/144345"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11173"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=15298"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

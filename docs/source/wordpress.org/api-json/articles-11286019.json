@@ -1,0 +1,109 @@
+{
+    "id": 11286019,
+    "date": "2019-03-07T13:00:12",
+    "date_gmt": "2019-03-07T13:00:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11286019"
+    },
+    "modified": "2024-06-06T17:19:24",
+    "modified_gmt": "2024-06-06T17:19:24",
+    "slug": "latest-comments-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/latest-comments-block/",
+    "title": {
+        "rendered": "Latest Comments block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>The <em>Latest Comments</em> block displays the most recent comments readers have left on your blog, including the users and blog posts. This block is useful to show the recent activities and ongoing discussion on your blog.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1999\" height=\"930\" src=\"https://wordpress.org/documentation/files/2023/04/latest-comment-block.png\" alt=\"The Latest Comments block on the editor\" class=\"wp-image-16356660\" srcset=\"https://wordpress.org/documentation/files/2023/04/latest-comment-block.png 1999w, https://wordpress.org/documentation/files/2023/04/latest-comment-block-300x140.png 300w, https://wordpress.org/documentation/files/2023/04/latest-comment-block-1024x476.png 1024w, https://wordpress.org/documentation/files/2023/04/latest-comment-block-768x357.png 768w, https://wordpress.org/documentation/files/2023/04/latest-comment-block-1536x715.png 1536w\" sizes=\"auto, (max-width: 1999px) 100vw, 1999px\" /></figure>\n\n\n\n<p>Additional options for this block include to display the commenter&#8217;s avatar, comment date, and comment excerpt. Read the <strong>Block settings</strong> section to learn more about this.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1430\" height=\"676\" src=\"https://wordpress.org/documentation/files/2023/04/latest-comment.gif\" alt=\"A demonstration of adding and configuring the latest comments block\" class=\"wp-image-16356661\" /></figure>\n\n\n\n<p>It can be added to any template, template part, page, and widget area. Click the block inserter icon (<strong>+</strong>) to open the block inserter pop-up window and choose the <em>Latest Comments</em> block.</p>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/latest-comments</kbd> to quickly insert a<em> Latest Comments</em> block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/keyboard-input-latest-comment.png\" alt=\"Adding the Latest Comments block using keyboard input\" class=\"wp-image-16356662\" width=\"474\" height=\"279\" srcset=\"https://wordpress.org/documentation/files/2023/04/keyboard-input-latest-comment.png 632w, https://wordpress.org/documentation/files/2023/04/keyboard-input-latest-comment-300x177.png 300w\" sizes=\"auto, (max-width: 474px) 100vw, 474px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Every block has unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor.The <em>Latest Comments </em>block shows the following buttons:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/toolbar.png\" alt=\"The Latest Comments block toolbar\" class=\"wp-image-16356663\" width=\"324\" height=\"83\" srcset=\"https://wordpress.org/documentation/files/2023/04/toolbar.png 432w, https://wordpress.org/documentation/files/2023/04/toolbar-300x76.png 300w\" sizes=\"auto, (max-width: 324px) 100vw, 324px\" /></figure>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<p>When you click the <strong>Transform </strong>button, you can convert the <em>Latest Comments</em> block into another block type using the existing content.You can transform the <em>Latest Comments</em> block into <em>Columns</em> or <em>Group</em> blocks.</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-11.12.17-AM.png\" alt=\"Transform tool in the Latest Comments block\" class=\"wp-image-15878507\" width=\"461\" height=\"278\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-11.12.17-AM.png 614w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-11.12.17-AM-300x181.png 300w\" sizes=\"auto, (max-width: 461px) 100vw, 461px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Block-moving tools</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-11.14.47-AM-2.png\" alt=\"Block moving tools in the Latest comments block\" class=\"wp-image-15878513\" width=\"317\" height=\"78\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down the editor. Use the six dots icon to drag and drop the <em>Latest Comments</em> block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change alignment </h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><a href=\"https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-3.png\"><img loading=\"lazy\" decoding=\"async\" width=\"1332\" height=\"690\" src=\"https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-3.png\" alt=\"Alignment controls for the latest comments block\" class=\"wp-image-15863328\" srcset=\"https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-3.png 1332w, https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-3-300x155.png 300w, https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-3-1024x530.png 1024w, https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-3-768x398.png 768w\" sizes=\"auto, (max-width: 1332px) 100vw, 1332px\" /></a></figure>\n\n\n\n<p>Use the <strong>Align </strong>button<strong><em> </em></strong>to change the <em>Latest Comments</em> block\u2019s position inside the block editor. Choose one of the following block alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None </strong>\u2013 the default option.</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 increase the width of the block beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> \u2013 extend the block to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left</strong> \u2013 make the block left-aligned.</li>\n\n\n\n<li><strong>Align center</strong> \u2013 make the block alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>\u2013 make the block right-aligned.</li>\n</ul>\n\n\n\n<p>The \u201cWide width\u201d and \u201cFull width\u201d alignment settings must be enabled by your WordPress theme.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Options </h3>\n\n\n\n<p>The <strong>Options </strong>button on a block toolbar gives you more features to customize the block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings </strong>button next to the <strong>Publish </strong>button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/block-settings-icon.png\" alt=\"The settings icon on the editor\" class=\"wp-image-16356664\" width=\"485\" height=\"77\" srcset=\"https://wordpress.org/documentation/files/2023/04/block-settings-icon.png 646w, https://wordpress.org/documentation/files/2023/04/block-settings-icon-300x47.png 300w\" sizes=\"auto, (max-width: 485px) 100vw, 485px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Latest comments settings </h3>\n\n\n\n<p>The <em>Latest Comments</em> settings let you to choose whether to display the avatar, the date, and/or the excerpt. They are all on by default. You may also adjust the number of comments to display within the block by using the slider tool or inserting the number in the available field.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/latest-comment-settings.png\" alt=\"The Latest Comments block settings panel\" class=\"wp-image-16356665\" width=\"337\" height=\"504\" srcset=\"https://wordpress.org/documentation/files/2023/04/latest-comment-settings.png 530w, https://wordpress.org/documentation/files/2023/04/latest-comment-settings-200x300.png 200w\" sizes=\"auto, (max-width: 337px) 100vw, 337px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The <em>Latest Comments</em> block provides dimension settings options to change padding and margin size.</p>\n\n\n\n<p>Dimensions settings can be accessed by opening the <strong>Styles </strong>section.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/latest-comment-style.png\" alt=\"The styles tab on the Latest Comments block settings panel\" class=\"wp-image-16356666\" width=\"338\" height=\"473\" srcset=\"https://wordpress.org/documentation/files/2023/04/latest-comment-style.png 542w, https://wordpress.org/documentation/files/2023/04/latest-comment-style-215x300.png 215w\" sizes=\"auto, (max-width: 338px) 100vw, 338px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimensions Settings Overview</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><a href=\"https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-6.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-6.png\" alt=\"The advanced section lets you add a CSS class to your block.\" class=\"wp-image-15863334\" width=\"498\" height=\"245\" srcset=\"https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-6.png 664w, https://wordpress.org/documentation/files/2019/03/Latest-Comments-HelpHub-SS-6-300x147.png 300w\" sizes=\"auto, (max-width: 498px) 100vw, 498px\" /></a></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-04-11\n<ul class=\"wp-block-list\">\n<li>Screenshots for 6.2</li>\n\n\n\n<li>Revised formatting</li>\n\n\n\n<li>Added Dimensions settings support</li>\n</ul>\n</li>\n\n\n\n<li>Updates 2022-11-27\n<ul class=\"wp-block-list\">\n<li>Removed redadunt content </li>\n\n\n\n<li>Aligned images for mobile view </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-08\n<ul class=\"wp-block-list\">\n<li>Screenshots for 6.1</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-01\n<ul class=\"wp-block-list\">\n<li>Screenshots for 6.0</li>\n\n\n\n<li>Added transform and block moving tools info</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-07-27\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.9</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks The Latest Comments block displays the most recent comments readers have left on your blog, including the users and blog posts. This block is useful to show the recent activities and ongoing discussion on your blog. Additional options for this block include to display the commenter&#8217;s avatar, comment date, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-11286019",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11286019",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11286019"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11286019/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360330,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11286019/revisions/16360330"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11286019"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11286019"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

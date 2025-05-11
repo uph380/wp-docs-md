@@ -1,0 +1,97 @@
+{
+    "id": 25470,
+    "date": "2017-03-05T10:24:11",
+    "date_gmt": "2017-03-05T10:24:11",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25470"
+    },
+    "modified": "2022-11-17T06:09:03",
+    "modified_gmt": "2022-11-17T06:09:03",
+    "slug": "custom-backgrounds",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/custom-backgrounds/",
+    "title": {
+        "rendered": "Custom Backgrounds"
+    },
+    "content": {
+        "rendered": "\n<p>Custom Backgrounds is a theme feature that provides for customization of the background color and image.<br>Theme developer needs 2 steps to implement it.</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Enable Custom Background &#8211; <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\" rel=\"function\">add_theme_support()</a> </li><li>Display Custom Background &#8211; <a href=\"https://developer.wordpress.org/reference/functions/wp_head/\" rel=\"function\">wp_head()</a>  and <a href=\"https://developer.wordpress.org/reference/functions/body_class/\" rel=\"function\">body_class()</a> </li></ol>\n\n\n\n<h2 class=\"wp-block-heading\">Enable Custom Backgrounds</h2>\n\n\n\n<p>Use <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\" rel=\"function\">add_theme_support()</a>  in the <code>functions.php</code> file to enable custom backgrounds.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_theme_support( 'custom-background' );</code></pre>\n\n\n\n<p><br>You can specify default parameters. In below example using default &#8216;#0000ff&#8217; background color (blue) with &#8216;wapuu.jpg&#8217; background image that was stored under the /images folder.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$args = array(\n    'default-color' =&gt; '0000ff',\n    'default-image' =&gt; get_template_directory_uri() . '/images/wapuu.jpg',\n);\nadd_theme_support( 'custom-background', $args );</code></pre>\n\n\n\n<p><br>By calling <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\" rel=\"function\">add_theme_support()</a> , Customizer displays &#8216;Background Image&#8217; menu and &#8216;Background Color&#8217; section in Colors menu.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Display Custom Backgrounds</h2>\n\n\n\n<p>In general, invokes <a href=\"https://developer.wordpress.org/reference/functions/wp_head/\" rel=\"function\">wp_head()</a>  and <a href=\"https://developer.wordpress.org/reference/functions/body_class/\" rel=\"function\">body_class()</a>  in <code>header.php</code> file to display the custom backgrounds.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n    &lt;?php wp_head(); ?&gt;\n&lt;/head&gt;\n&lt;body &lt;?php body_class(); ?&gt;&gt;</code></pre>\n\n\n\n<p><a href=\"https://developer.wordpress.org/reference/functions/wp_head/\" rel=\"function\">wp_head()</a>  generates an extra style sheet in-line with the HTML headers, usually right before the end of the document&#8217;s HEAD element. The extra style sheet overrides the background values from the theme&#8217;s style sheet.<br>In our example, following code will be generated in the HTML. Notice that body tag includes &#8220;custom-background &#8221; class.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en-US\" class=\"no-js\"&gt;\n\n&lt;head&gt;\n\t...\n&lt;style type=\"text/css\" id=\"custom-background-css\"&gt;\nbody.custom-background {\n  background-image: url(\"http://example.com/wordpress/wp-content/themes/my-first-theme/images/wapuu.jpg\");\n  background-position: left top;\n  background-size: auto;\n  background-repeat: repeat;\n  background-attachment: scroll;\n}\n&lt;/style&gt;\n\t...\n&lt;/head&gt;\n\n&lt;body class=\"home page-template-default page page-id-211 logged-in admin-bar no-customize-support custom-background\"&gt;\n\n\t...</code></pre>\n\n\n\n<p>Now you&#8217;ll see repeated background images</p>\n\n\n\n<figure class=\"wp-block-image\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"733\" height=\"302\" src=\"https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_1.jpg?resize=733%2C302&#038;ssl=1\" alt=\"\" class=\"wp-image-25475\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_1.jpg?w=733&amp;ssl=1 733w, https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_1.jpg?resize=300%2C124&amp;ssl=1 300w\" sizes=\"auto, (max-width: 733px) 100vw, 733px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Another default example</h2>\n\n\n\n<p>This is another example of default value set.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$another_args = array(\n    'default-color'      =&gt; '0000ff',\n    'default-image'      =&gt; get_template_directory_uri() . '/images/wapuu.jpg',\n    'default-position-x' =&gt; 'right',\n    'default-position-y' =&gt; 'top',\n    'default-repeat'     =&gt; 'no-repeat',\n);\nadd_theme_support( 'custom-background', $another_args );</code></pre>\n\n\n\n<p><br>This will show single image at the top right corner as below.</p>\n\n\n\n<figure class=\"wp-block-image\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"735\" height=\"310\" src=\"https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_2.jpg?resize=735%2C310&#038;ssl=1\" alt=\"\" class=\"wp-image-25476\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_2.jpg?w=735&amp;ssl=1 735w, https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_2.jpg?resize=300%2C127&amp;ssl=1 300w\" sizes=\"auto, (max-width: 735px) 100vw, 735px\" /></figure>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> Even if we specified the &#8216;default-color&#8217; as &#8216;#0000ff&#8217; (blue), the background color is not blue. Setting the default-image parameter will instantly cause that value to become the effective Custom Background, whereas setting the default-color has no effect. It is just set as default background color in Color menu of Customizer, and enhanced when Administrator save it.</p>\n<p><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-25474\" src=\"https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_3.jpg?resize=520%2C486&#038;ssl=1\" alt=\"\" width=\"520\" height=\"486\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_3.jpg?w=520&amp;ssl=1 520w, https://i0.wp.com/developer.wordpress.org/files/2017/03/custom_background_3.jpg?resize=300%2C280&amp;ssl=1 300w\" sizes=\"auto, (max-width: 520px) 100vw, 520px\" /><br />\n</div></div>\n\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25470",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25470",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25470/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144347,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25470/revisions/144347"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25470"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

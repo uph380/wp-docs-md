@@ -1,0 +1,109 @@
+{
+    "id": 16020083,
+    "date": "2022-09-19T01:12:41",
+    "date_gmt": "2022-09-19T01:12:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16020083"
+    },
+    "modified": "2024-06-08T17:52:48",
+    "modified_gmt": "2024-06-08T17:52:48",
+    "slug": "post-author-biography-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-author-biography-block/",
+    "title": {
+        "rendered": "Post Author Biography block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Post Author Biography </em>block allows you to embed a user&#8217;s biography from the <strong>About Yourself</strong> section in <strong>Users</strong> &gt; <strong>Profile</strong> into your page or post.</p>\n\n\n\n<p>In order to add a <em><em>Post Author Biography </em></em>block, click on the <strong>Block Inserter</strong>&nbsp;(+) icon.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189547412-1a3230b9-73a0-4a19-8909-de5af84824b3.gif\" alt=\"Adding a Post Author Biography Block using the Block Inserter\" /></figure>\n\n\n\n<p>You can also type <kbd>/Post Author Biography</kbd> and hit <kbd>enter</kbd> in a new paragraph block to add one quickly</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189547524-ddbb07dd-7137-44de-a9f8-2d30a12d879b.png\" alt=\"Use the slash command /Post Author Biography to insert a Post Author Biography block\" width=\"334\" height=\"118\" /></figure>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Every block comes with unique toolbar icons and block-specific user controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189547607-08f9f752-3423-41a8-95ec-cc01990c06da.png\" alt=\"The block toolbar in the Post Author Biography block\" width=\"352\" height=\"149\" /></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<p>You can transform the&nbsp;<em><em><em>Post Author Biography </em></em>block</em> into a Group or Columns. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.43.50-PM.png\" alt=\"Transform option in the Post Author Biography block\" class=\"wp-image-16020159\" width=\"377\" height=\"197\" srcset=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.43.50-PM.png 818w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.43.50-PM-300x157.png 300w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.43.50-PM-768x402.png 768w\" sizes=\"auto, (max-width: 377px) 100vw, 377px\" /></figure>\n\n\n\n<p><strong>Drag icon</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.45.47-PM.png\" alt=\"Drag icon n the Post Author Biography block\" class=\"wp-image-16020161\" width=\"358\" height=\"95\" srcset=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.45.47-PM.png 470w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.45.47-PM-300x80.png 300w\" sizes=\"auto, (max-width: 358px) 100vw, 358px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p><strong>Move handles</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-5.46.16-PM-1.png\" alt=\"Move handles in the Post Author Biography block\" class=\"wp-image-16020163\" /></figure>\n\n\n\n<p>The up and down arrow icons can be used to move a block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>Change alignment</strong></p>\n\n\n\n<p>When you select your <em>Post Author Biography block</em>, a toolbar will appear where you can change the block&#8217;s text alignment.</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189547718-1cc3c64f-4b52-41f0-ab53-0b857857f541.png\" alt=\"The Post Author Biography block with Align text right selected.\" width=\"361\" height=\"114\" /></figure>\n\n\n\n<p>Choose between the options to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align text left</strong></li>\n\n\n\n<li><strong>Align text center</strong></li>\n\n\n\n<li><strong>Align text right</strong></li>\n</ul>\n\n\n\n<p></p>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar.&nbsp;<em>If you do not see the sidebar, simply click the &#8216;cog&#8217; icon.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-23-at-9.39.34-AM.png\" alt=\"Cog icon to display the Block sidebar\" class=\"wp-image-15765217\" width=\"381\" height=\"96\" srcset=\"https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-23-at-9.39.34-AM.png 492w, https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-23-at-9.39.34-AM-300x76.png 300w\" sizes=\"auto, (max-width: 381px) 100vw, 381px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color </h3>\n\n\n\n<p>The <em>Color settings</em> let you set custom text and background colors.</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189548028-abbd0302-50ba-4a64-aa93-2baa39265bcb.png\" alt=\"The Post Author Biography block can be customized in terms of custom text and background colors\" width=\"360\" height=\"210\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Typography </h3>\n\n\n\n<p>On this tab, you can change the <strong>Font size</strong>, <strong>Font family</strong>, <strong>Appearance</strong>, <strong>Line height</strong>, <strong>Letter case</strong> and <strong>Letter spacing</strong>.</p>\n\n\n\n<p>To access all the typography options click on the 3-dot icon in the right corner of the <em>Typography</em> tab. Click <strong>Reset all</strong> to reset all the Typography settings you made.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-6.07.48-PM-1.png\" alt=\"Typography settings tab\" class=\"wp-image-16020176\" width=\"256\" height=\"338\" srcset=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-6.07.48-PM-1.png 552w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-17-at-6.07.48-PM-1-227x300.png 227w\" sizes=\"auto, (max-width: 256px) 100vw, 256px\" /></figure>\n\n\n\n<p>Typography settings  for <strong>Font size</strong> let you set custom text sizes. You can choose from the set of available options- <em>Small</em>, <em>Medium</em>, <em>Large</em>, <em>Extra Large</em> or set custom settings. You can also change the units from PX, REM and EM.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189548140-8d9aa240-404b-4c0c-8b36-c045c9a9a449.png\" alt=\"Font Size in the Typography settings in the Post Author Biography block\" width=\"349\" height=\"178\" /></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189548145-d3c1faa2-41a1-432c-bff7-35edb6a6a01a.png\" alt=\"Custom Typography settings in the Post Author Biography block\" width=\"373\" height=\"180\" /></figure>\n\n\n\n<p></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions </h3>\n\n\n\n<p>Click on the 3-dot icon in the right top corner in the <em>Dimensions</em>&nbsp;settings to explore all the Dimensions Settings for the entire button block. For the <em>Post Author Biography</em> block, you set dimensions for margin, padding, or both.</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189548280-368ce88b-db39-4cea-8bf7-31f8adec8073.png\" alt=\"Click the 3-dot icon in the right top corner to explore all the Dimension settings and reset the changes made for the Dimension controls.\" width=\"355\" height=\"264\" /></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189548268-400c9326-4bad-40ee-a93c-567ad4935e2b.png\" alt=\"The Post Author Biography block can be customized in terms of margin, padding, or both.\" width=\"369\" height=\"278\" /></figure>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Learn more about dimension controls.</a></p>\n\n\n\n<p><strong>Advanced </strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/113307503/189548222-6af5931c-d5a6-41ec-bc79-bb31a01a4370.png\" alt=\"The advanced section lets you add HTML anchor and a CSS class to your block.\" width=\"374\" height=\"218\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h4 class=\"has-medium-font-size wp-block-heading\">Changelog:</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-09-18</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Post Author Biography block allows you to embed a user&#8217;s biography from the About Yourself section in Users &gt; Profile into your page or post. In order to add a Post Author Biography block, click on the Block Inserter&nbsp;(+) icon. You can also type /Post Author Biography [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16020083",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16020083",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16020083"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16020083/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360360,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16020083/revisions/16360360"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16020083"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16020083"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

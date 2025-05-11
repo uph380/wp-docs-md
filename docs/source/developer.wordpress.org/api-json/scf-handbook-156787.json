@@ -1,0 +1,91 @@
+{
+    "id": 156787,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/date-picker/"
+    },
+    "modified": "2025-02-21T04:18:00",
+    "modified_gmt": "2025-02-21T04:18:00",
+    "slug": "date-picker",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/date-picker/",
+    "title": {
+        "rendered": "Date Picker Field"
+    },
+    "content": {
+        "rendered": "<p>The Date Picker field provides a calendar interface for selecting dates. It offers a user-friendly way to input and format dates consistently across your content.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Interactive calendar interface</li>\n<li>Customizable date formats</li>\n<li>Week starts on any day</li>\n<li>Restrict date ranges</li>\n<li>Multiple display formats</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Display Format &#8211; How the date appears to editors</li>\n<li>Return Format &#8211; How the date is stored/returned</li>\n<li>Week Starts On &#8211; Set first day of week</li>\n<li>First Day &#8211; Configure week start day</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156787",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156787",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156787/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156932,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156787/revisions/156932"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156787"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

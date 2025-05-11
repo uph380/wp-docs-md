@@ -1,0 +1,97 @@
+{
+    "id": 149092,
+    "date": "2023-10-17T14:39:12",
+    "date_gmt": "2023-10-17T14:39:12",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149092"
+    },
+    "modified": "2023-10-17T14:39:12",
+    "modified_gmt": "2023-10-17T14:39:12",
+    "slug": "use-root-padding-aware-alignments",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/use-root-padding-aware-alignments/",
+    "title": {
+        "rendered": "Use Root Padding Aware Alignments"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.useRootPaddingAwareAlignments</code> property can be one of the most confusing settings in <code>theme.json</code>. It is not tied to an interface option. Nor is it used for registering presets. Instead, it\u2019s for configuring where WordPress places your theme\u2019s horizontal padding styles.</p>\n\n\n\n<p>This means it works in conjunction with <code>styles.spacing.padding</code> in <code>theme.json</code>. You can find out more about general styling in the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles\">Styles documentation</a>, but you\u2019ll learn how this specific style works alongside this setting here.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What is root padding?</h2>\n\n\n\n<p>Before understanding how the <code>settings.useRootPaddingAwareAlignments</code> property works, you must first understand what root padding is.</p>\n\n\n\n<p>Root padding is the padding that is applied to a web page\u2019s \u201croot\u201d element. In the case of WordPress themes, this is the <code>&lt;body&gt;</code> element. To customize the spacing for the root element, you must target the <code>styles.spacing.padding</code> element in <code>theme.json</code>.</p>\n\n\n\n<p>Take the following <code>theme.json</code> snippet, for example. It adds <code>0</code> for top and bottom padding and <code>2rem</code> for left and right padding:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\t\n\t\"styles\": {\n\t\t\"spacing\": {\n\t\t\t\"padding\": {\n\t\t\t\t\"top\": \"0\",\n\t\t\t\t\"bottom\": \"0\",\n\t\t\t\t\"left\": \"2rem\",\n\t\t\t\t\"right\": \"2rem\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>By default, this will add <code>2rem</code> of padding on the left and right sides of the <code>&lt;body&gt;</code> (root) element.</p>\n\n\n\n<p>As shown in this screenshot, there is horizontal padding at the root, and a full-width Cover block stretches until it hits that padding:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1024\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?resize=2048%2C1024&#038;ssl=1\" alt=\"WordPress site header with a Cover block background. It has padding to the left and right of it so that it doesn't stretch the full width of the screen.\" class=\"wp-image-149093\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?resize=300%2C150&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?resize=1024%2C512&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?resize=768%2C384&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding.jpg?resize=1536%2C768&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>This is the CSS that WordPress outputs based on the above <code>theme.json</code> code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\tpadding-top: 0;\n\tpadding-right: 2rem;\n\tpadding-bottom: 0;\n\tpadding-left: 2rem;\n}</code></pre>\n\n\n\n<p>But\u2014and this is where things can look odd to seasoned designers\u2014when <code>settings.useRootPaddingAwareAlignments</code> is enabled, the \u201croot\u201d padding is no longer applied to the root element. It is applied to container blocks like Group.\u00a0</p>\n\n\n\n<p>You\u2019ll learn more about why this happens in the next section. The main goal right now is to understand that root padding is traditionally applied to the <code>&lt;body&gt;</code> element, and that is what most theme authors would expect.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>For root padding aware alignments, WordPress is only concerned with the horizontal (left and right) padding. So the vertical (top and bottom) padding is not relevant to this documentation.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Enabling root padding aware alignments</h2>\n\n\n\n<p>By default, WordPress will apply root padding to the <code>&lt;body&gt;</code> element. If this makes sense for your theme\u2019s design, you don\u2019t need to do anything else.</p>\n\n\n\n<p><em>But what if you want to let full-width items stretch to the edges of the screen </em><strong><em>and</em></strong><em> have padding on the root element?&nbsp;</em></p>\n\n\n\n<p>When compared to the first screenshot, notice how the Cover block stretches to edges of the screen but there is padding still applied to the nested blocks here:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"510\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?resize=1024%2C510&#038;ssl=1\" alt=\"WordPress site header with a Cover block background that stretches the full width of the screen.\" class=\"wp-image-149094\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?resize=1024%2C510&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?resize=300%2C149&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?resize=768%2C382&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?resize=1536%2C764&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2023/10/root-padding-aware.jpg?w=2048&amp;ssl=1 2048w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>This is a common design pattern, and there are several ways to stretch elements beyond their containers in CSS. But WordPress has a standard approach that would work with any theme.</p>\n\n\n\n<p>That\u2019s where <code>settings.useRootPaddingAwareAlignments</code> comes in. When this property is set to <code>true</code>, it puts the root padding on container elements instead of <code>&lt;body&gt;</code>. This must also be combined with a <code>styles.spacing.padding</code> object, particularly with horizontal padding applied.</p>\n\n\n\n<p>Try this code in your <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"useRootPaddingAwareAlignments\": true\n\t},\t\n\t\"styles\": {\n\t\t\"spacing\": {\n\t\t\t\"padding\": {\n\t\t\t\t\"top\": \"0\",\n\t\t\t\t\"bottom\": \"0\",\n\t\t\t\t\"left\": \"2rem\",\n\t\t\t\t\"right\": \"2rem\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>There is no right or wrong way to handle root padding. It is a situational setting where you must decide which option is best for your theme\u2019s design.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How does this work?</h3>\n\n\n\n<p>It\u2019s not particularly vital to know how WordPress handles all of this under the hood, but sometimes you might just want a deeper understanding of what\u2019s going on.</p>\n\n\n\n<p>When you enable <code>settings.useRootPaddingAwareAlignments</code>, as shown in the last <code>theme.json</code> example, WordPress will generate two new bits of CSS. The first is that it defines some CSS custom properties for the root padding:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--style--root--padding-top: 0;\n\t--wp--style--root--padding-right: 2rem;\n\t--wp--style--root--padding-bottom: 0;\n\t--wp--style--root--padding-left: 2rem;\n}</code></pre>\n\n\n\n<p>The second is that it adds a <code>.has-global-padding</code> class:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.has-global-padding {\n\tpadding-right: var(--wp--style--root--padding-right);\n\tpadding-left: var(--wp--style--root--padding-left);\n}</code></pre>\n\n\n\n<p>This class is then given to container blocks with constrained layouts (for example, Group blocks with the <strong>Layout &gt; Inner blocks use content width</strong> option enabled):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;div class=\"wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained\"&gt;\n\t&lt;!-- nested blocks... --&gt;\n&lt;/div&gt;</code></pre>\n\n\n\n<p>Beyond that, WordPress adds inline CSS to stretch nested wide and full-width blocks beyond their parent block\u2019s width (including the additional padding that\u2019s added to the width).</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149092",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149092",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149092/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149095,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149092/revisions/149095"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149092"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

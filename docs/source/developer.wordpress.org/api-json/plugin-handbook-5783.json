@@ -1,0 +1,91 @@
+{
+    "id": 5783,
+    "date": "2014-07-30T22:13:44",
+    "date_gmt": "2014-07-30T22:13:44",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=5783"
+    },
+    "modified": "2023-12-14T20:46:11",
+    "modified_gmt": "2023-12-14T20:46:11",
+    "slug": "plugin-handbook",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/",
+    "title": {
+        "rendered": "Plugin Handbook"
+    },
+    "content": {
+        "rendered": "\n<p><em>Welcome to the WordPress Plugin Developer Handbook; are you ready to jump right in to the world of WordPress plugins?</em></p>\n\n\n\n<p>The Plugin Developer Handbook is a resource for all things WordPress plugins. Whether you\u2019re new to WordPress plugin development, or you\u2019re an experienced plugin developer, you should be able to find the answer to many of your plugin-related questions right here.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>If you&#8217;re new to plugin development, start by reading the <a href=\"https://developer.wordpress.org/plugin/intro/\">introduction</a> and then move on to <a href=\"https://developer.wordpress.org/plugins/plugin-basics/\">the basics</a>.</li>\n\n\n\n<li>The info in <a href=\"https://developer.wordpress.org/plugin/security/\">plugin security</a> will introduce best practices for security related stuff.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugin/hooks/\">Hooks</a> are what make your plugin interact with WordPress, and how you can let other developers interact with your plugin.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/privacy/\">Privacy</a> will help you understand about handling sensitive data.</li>\n\n\n\n<li>To find out more about WordPress&#8217; built-in functionality that you can use in your plugin, check out <a href=\"https://developer.wordpress.org/plugin/administration-menus/\">Administration Menus</a>, <a href=\"https://developer.wordpress.org/plugin/shortcodes/\">Shortcodes</a>, <a href=\"https://developer.wordpress.org/plugin/settings/\">Settings</a>, <a href=\"https://developer.wordpress.org/plugin/metadata/\">Metadata</a>, <a href=\"https://developer.wordpress.org/plugins/post-types/\">Custom Post Types</a>, <a href=\"https://developer.wordpress.org/plugins/taxonomies/\">Taxonomies</a>, and <a href=\"https://developer.wordpress.org/plugin/users/\">Users</a>.</li>\n\n\n\n<li>Learn about getting data using the <a href=\"https://developer.wordpress.org/plugin/http-api/\">HTTP API</a>.</li>\n\n\n\n<li>If you&#8217;re using <a href=\"https://developer.wordpress.org/plugin/javascript/\">JavaScript, jQuery or Ajax</a> in your plugin, you&#8217;ll find the information you need in that section.</li>\n\n\n\n<li>To learn about time-based WordPress tasks, check out the <a href=\"https://developer.wordpress.org/plugin/cron/\">Cron</a> chapter.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugin/internationalization/\">Internationalization</a> is how you get your plugin ready for use in locales other than your own.</li>\n\n\n\n<li>When all that is done, you can prepare your plugin for inclusion in the <a href=\"https://developer.wordpress.org/plugin/wordpress-org/\">Plugin Directory</a></li>\n\n\n\n<li>Finally: some <a href=\"https://developer.wordpress.org/plugin/developer-tools/\">developer tools</a> you might find useful.</li>\n</ul>\n\n\n\n<p>The WordPress Plugin Developer Handbook is created by the WordPress community, for the WordPress community. We are always looking for more contributors; if you\u2019re interested, stop by the <a href=\"https://make.wordpress.org/docs\">docs team blog</a> to find out more about getting involved.</p>\n",
+        "protected": false
+    },
+    "author": 3606,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5783",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5783",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/3606"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5783/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152382,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5783/revisions/152382"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5783"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

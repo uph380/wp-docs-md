@@ -1,0 +1,109 @@
+{
+    "id": 13155027,
+    "date": "2020-07-24T07:53:23",
+    "date_gmt": "2020-07-24T07:53:23",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13155027"
+    },
+    "modified": "2023-01-13T21:25:33",
+    "modified_gmt": "2023-01-13T21:25:33",
+    "slug": "plugins-themes-auto-updates",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/plugins-themes-auto-updates/",
+    "title": {
+        "rendered": "Plugin and themes auto-updates"
+    },
+    "content": {
+        "rendered": "\n<p>To keep your WordPress site secure, you should always update your plugins and themes to the&nbsp;latest version.</p>\n\n\n\n<p>When a new version of a plugin or theme is available, an alert bubble is displayed in your WordPress Admin Menu and the corresponding theme or plugin is highlighted on Themes and Plugins Screens.</p>\n\n\n\n<p>There are several places where you can manage themes or plugins updates:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>WordPress, Plugins, Themes and Translations updates can be managed on the Updates Screen located in Dashboard &gt; Updates sub menu.</li><li>Themes updates can be managed on the Appearance Screen.</li><li>Plugins updates can be managed on the Plugins Screen.</li></ul>\n\n\n\n<br style=\"clear:both\">\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-bubbles.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"389\" src=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-bubbles-1024x389.png\" alt=\"\" class=\"wp-image-13155144\" srcset=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-bubbles-1024x389.png 1024w, https://wordpress.org/documentation/files/2020/07/helphub-updates-bubbles-300x114.png 300w, https://wordpress.org/documentation/files/2020/07/helphub-updates-bubbles-768x292.png 768w, https://wordpress.org/documentation/files/2020/07/helphub-updates-bubbles.png 1362w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></a></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e7eff4\"><strong>Since <a href=\"https://wordpress.org/documentation/wordpress-version/version-5-5/\">WordPress 5.5</a>, websites Administrators can manually opt-in for automatic updates theme by theme and plugin by plugin.</strong></p>\n\n\n\n<h2 class=\"wp-block-heading\">Enable auto-updates for themes</h2>\n\n\n\n<p>On the Appearance Screen, click on a theme thumbnail. In the theme modal, right below the author of the theme, an &#8220;Enable auto-updates&#8221; action link is available. Click on this action link to enable auto-updates for this specific theme.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://wordpress.org/documentation/files/2020/07/helphub-update-theme-enable.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\" decoding=\"async\" width=\"855\" height=\"412\" src=\"https://wordpress.org/documentation/files/2020/07/helphub-update-theme-enable.png\" alt=\"\" class=\"wp-image-13155302\" srcset=\"https://wordpress.org/documentation/files/2020/07/helphub-update-theme-enable.png 855w, https://wordpress.org/documentation/files/2020/07/helphub-update-theme-enable-300x145.png 300w, https://wordpress.org/documentation/files/2020/07/helphub-update-theme-enable-768x370.png 768w\" sizes=\"auto, (max-width: 855px) 100vw, 855px\" /></a></figure>\n\n\n\n<p>Once enabled, auto-updates can be disabled at any time, using the same toggle link.</p>\n\n\n\n<p>Themes auto-updates have to be enabled/disabled theme by theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Enable auto-updates for plugins</h2>\n\n\n\n<p>Navigate to Plugins Screen. For each plugin, there is an &#8220;Automatic update&#8221; column with an action link used to enable/disable auto-updates plugin by plugin.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://wordpress.org/documentation/files/2020/07/helphub-update-plugins-enable-1.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"368\" src=\"https://wordpress.org/documentation/files/2020/07/helphub-update-plugins-enable-1-1024x368.png\" alt=\"\" class=\"wp-image-13155406\" srcset=\"https://wordpress.org/documentation/files/2020/07/helphub-update-plugins-enable-1-1024x368.png 1024w, https://wordpress.org/documentation/files/2020/07/helphub-update-plugins-enable-1-300x108.png 300w, https://wordpress.org/documentation/files/2020/07/helphub-update-plugins-enable-1-768x276.png 768w, https://wordpress.org/documentation/files/2020/07/helphub-update-plugins-enable-1.png 1193w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></a></figure>\n\n\n\n<p>Click on this action link to enable auto-updates for each specific plugin.</p>\n\n\n\n<p>Once enabled, auto-updates can be disabled at any time, using the same toggle link.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Bulk enable/disable plugins auto-updates</h3>\n\n\n\n<p>Plugins auto-updates can be bulk enabled or disabled for several plugin at one time by using the bulk action selector. Select plugins using the checkbox located in the first column of the plugins list table and use the bulk action selector located on the top of the table to enable or disable auto-updates. Then click on the &#8220;Apply&#8221; button to bulk enable/disable auto-updates for the selected items.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2020/07/helphub-update-bulk-plugins.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">When do Themes and Plugins auto-updates happen?</h2>\n\n\n\n<p>By default WordPress runs auto-updates twice per day. If updates are available for plugins or themes with auto-updates enabled, the time until the next scheduled update will be displayed below the enable/disable auto-updates action link.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-plugins-time-1.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"256\" src=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-plugins-time-1-1024x256.png\" alt=\"\" class=\"wp-image-13156265\" srcset=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-plugins-time-1-1024x256.png 1024w, https://wordpress.org/documentation/files/2020/07/helphub-updates-plugins-time-1-300x75.png 300w, https://wordpress.org/documentation/files/2020/07/helphub-updates-plugins-time-1-768x192.png 768w, https://wordpress.org/documentation/files/2020/07/helphub-updates-plugins-time-1.png 1151w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></a></figure>\n\n\n\n<p>The time until next auto-updates is also displayed in the Dashboard &gt; Updates Screen for both Themes and Plugins:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-both-time.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\" decoding=\"async\" width=\"911\" height=\"383\" src=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-both-time.png\" alt=\"\" class=\"wp-image-13156282\" srcset=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-both-time.png 911w, https://wordpress.org/documentation/files/2020/07/helphub-updates-both-time-300x126.png 300w, https://wordpress.org/documentation/files/2020/07/helphub-updates-both-time-768x323.png 768w\" sizes=\"auto, (max-width: 911px) 100vw, 911px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Email notifications after plugins and themes auto-update attempts</h2>\n\n\n\n<p>By default WordPress sends email notifications to website owners to inform them that plugins and themes were automatically updated. These email notifications are sent when:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>One or more plugins or themes successfully auto-updated</li><li>One or more plugins or themes failed to auto-update</li><li>Some plugins or themes were successfully auto-updated, and some of them failed</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Advices &amp; Troubleshooting</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Perform regular automatic backups of your website</h3>\n\n\n\n<p>Before enabling auto-updates on your plugins and themes, you may want to make sure you&#8217;re able to rollback to a previous version of your website in case things go wrong.</p>\n\n\n\n<p>Various plugins exist to take automatic scheduled backups of your WordPress database and files. This helps to manage your backup collection easily. You can find automatic backup plugins in the&nbsp;<strong>Plugin Browser</strong>&nbsp;on the WordPress Administration Screens or through the&nbsp;<a href=\"https://wordpress.org/plugins/\">WordPress Plugin Directory</a>.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/plugins/tags/backup\">List of Backup Plugins</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Auto-updates are not available</h3>\n\n\n\n<p>If auto-updates controls are not available on your Plugins/Themes Admin Screens, please check you are running WordPress version 5.5 or more. Plugins and themes auto-updates were introduced in WP 5.5.</p>\n\n\n\n<p>If you are running WordPress 5.5 or more and those controls are still unavailable, it probably means the feature was partially or completely deactivated by your hosting company or by a plugin.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Auto-updates are not working</h3>\n\n\n\n<p>Depending on your server, your installation or on the plugins your website is running, auto-updates scheduling may not work correctly. Indeed, they rely on WordPress Cron tasks to actually perform the update.</p>\n\n\n\n<p>To check if WordPress Cron tasks are running correctly, go to Tools &gt; Site Health and search for any error message.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"743\" height=\"392\" src=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-site-health-error.png\" alt=\"\" class=\"wp-image-13157956\" srcset=\"https://wordpress.org/documentation/files/2020/07/helphub-updates-site-health-error.png 743w, https://wordpress.org/documentation/files/2020/07/helphub-updates-site-health-error-300x158.png 300w\" sizes=\"auto, (max-width: 743px) 100vw, 743px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">More resources</h2>\n\n\n\n<ul class=\"wp-block-list\"><li>Developer note: <a href=\"https://make.wordpress.org/core/2020/07/15/controlling-plugin-and-theme-auto-updates-ui-in-wordpress-5-5/\">Controlling plugin and theme auto-update interface in WordPress 5.5</a></li><li>Plugins and Themes auto-updates <a href=\"https://make.wordpress.org/core/2020/05/02/merge-announcement-plugins-themes-auto-updates/\">core merge announcement</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>To keep your WordPress site secure, you should always update your plugins and themes to the&nbsp;latest version. When a new version of a plugin or theme is available, an alert bubble is displayed in your WordPress Admin Menu and the corresponding theme or plugin is highlighted on Themes and Plugins Screens. There are several places [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        33,
+        73
+    ],
+    "class_list": [
+        "post-13155027",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-maintenance",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13155027",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13155027"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13155027/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355295,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13155027/revisions/16355295"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13155027"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13155027"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

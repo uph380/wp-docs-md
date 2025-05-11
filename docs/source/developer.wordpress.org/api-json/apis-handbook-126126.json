@@ -1,0 +1,97 @@
+{
+    "id": 126126,
+    "date": "2019-11-03T15:47:18",
+    "date_gmt": "2019-11-03T15:47:18",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=126126"
+    },
+    "modified": "2022-11-17T06:09:09",
+    "modified_gmt": "2022-11-17T06:09:09",
+    "slug": "internationalization-guidelines",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/internationalization/internationalization-guidelines/",
+    "title": {
+        "rendered": "Internationalization Guidelines"
+    },
+    "content": {
+        "rendered": "\n<p>In this article, you will learn when and how to use all available i18n functions and the best practices for writing your strings.</p>\n\n\n\n<p>The recommendations in this article applies both for your PHP and your javascript code. You can see all the available functions for each language in the <a href=\"https://developer.wordpress.org/apis/handbook/internationalization/internationalization-functions/\">I18n functions</a> page. The functions available for javascript will also be highlighted.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Basic strings</h2>\n\n\n\n<p>The most commonly used function is <code><a href=\"https://developer.wordpress.org/reference/functions/__/\">__()</a></code>. It returns the translation of its argument:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">__( 'Blog Options', 'my-theme' );</code></pre>\n\n\n\n<p>Another simple one is <code><a href=\"https://developer.wordpress.org/reference/functions/_e/\">_e()</a></code>, which outputs the translation of its argument. Instead of writing:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">echo __( 'WordPress is the best!', 'my-theme' );</code></pre>\n\n\n\n<p>you can use the shorter:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_e( 'WordPress is the best!', 'my-theme' );</code></pre>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><code>__()</code>is also available for javascript</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Variables</h2>\n\n\n\n<p>If you are using variables in strings, similar to the example below, you need to use placeholders.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">echo 'Your city is $city.'</code></pre>\n\n\n\n<p>Use the <code>printf</code> family of functions. Especially helpful are <code><a href=\"http://php.net/printf\">printf</a></code> and <code><a href=\"http://php.net/sprintf\">sprintf</a></code>. For example:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">printf(\n    /* translators: %s: Name of a city */\n    __( 'Your city is %s.', 'my-theme' ),\n    $city\n);</code></pre>\n\n\n\n<p>Notice that the string for translation is the template <code>\"Your city is %s.\"</code>, which is the same in both the source and at run-time.</p>\n\n\n\n<p>If you have more than one placeholder in a string, it is recommended that you use <a href=\"http://www.php.net/manual/en/function.sprintf.php#example-4829\">argument swapping</a>. In this case, single quotes <code>(')</code> are mandatory : double quotes <code>(\")</code> tell php to interpret the <code>$s</code> as the <code>s</code> variable, which is not what we want.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">printf(\n    /* translators: 1: Name of a city 2: ZIP code */\n    __( 'Your city is %1$s, and your zip code is %2$s.', 'my-theme' ),\n    $city,\n    $zipcode\n);</code></pre>\n\n\n\n<p>Here the zip code is displayed after the city name. In some languages, displaying the zip code and city in opposite order is more appropriate. Using <var>%s</var> prefix, as in the above example, allows for this. A translation can be written:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">printf(\n    /* translators: 1:ZIP code 2:Name of a city */\n    __( 'Your zip code is %2$s, and your city is %1$s.', 'my-theme' ),\n    $city,\n    $zipcode\n);</code></pre>\n\n\n\n<p><code>sprintf</code> is also available for javascript translations:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"js\" class=\"language-js\">const zipCodeMessage = sprintf(\n    /* translators: 1:ZIP code 2:Name of a city */\n    __( 'Your zip code is %2$s, and your city is %1$s.', 'my-theme'),\n    city,\n    zipcode\n);</code></pre>\n\n\n\n<p>The following example tells you what not to do<br>\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">This is incorrect.</div></div>\n</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">// This is incorrect do not use.\n_e( \"Your city is $city.\", 'my-theme' );</code></pre>\n\n\n\n<p>The strings for translation are extracted from the source without executing the PHP associated with it. For example: The variable <code>$city</code> may be Vancouver, so your string will read <code>\"Your city is Vancouver\"</code> when the template is run but gettext won\u2019t know what is inside the PHP variable in advance.</p>\n\n\n\n<p>As the value of the variable is unknown when your string is translated, it would require the translator to know every case for the variable <code>$country</code>. This is not ideal, and it is best to remove dynamic content and allow translators to focus on static content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Plurals</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Basic Pluralization</h3>\n\n\n\n<p>If you have a string that changes when the number of items changes. In English you have <code>\"One comment\"</code> and <code>\"Two comments\"</code>. In other languages, you can have multiple plural forms. To handle this in WordPress, you can use the <code><a href=\"https://developer.wordpress.org/reference/functions/_n/\">_n()</a></code> function.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">printf(\n    _n(\n        '%s comment',\n        '%s comments',\n        get_comments_number(),\n        'my-theme'\n    ),\n    number_format_i18n( get_comments_number() )\n);</code></pre>\n\n\n\n<p><code>_n()</code> accepts 4 arguments:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>singular &#8211; the singular form of the string&nbsp;(note that it can be used for numbers other than one in some languages, so <code>'%s item'</code> should be used instead of <code>'One item'</code>)</li><li>plural &#8211; the plural form of the string</li><li>count &#8211; the number of objects, which will determine whether the singular or the plural form should be returned (there are languages, which have far more than 2 forms)</li><li>text domain &#8211; the theme&#8217;s text domain</li></ul>\n\n\n\n<p>The return value of the functions is the correct translated form, corresponding to the given count.</p>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">`<a href=\"https://developer.wordpress.org/reference/functions/_n/\" rel=\"function\">_n()</a>  is also available for javascript</div></div>\n\n\n\n\n<h3 class=\"wp-block-heading\">Pluralization done later</h3>\n\n\n\n<p>You first set the plural strings with <code><a href=\"https://developer.wordpress.org/reference/functions/_n_noop/\">_n_noop()</a></code> or <code><a href=\"https://developer.wordpress.org/reference/functions/_nx_noop/\">_nx_noop()</a></code>.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">$comments_plural = _n_noop(\n    '%s comment.',\n    '%s comments.'\n);</code></pre>\n\n\n\n<p>At a later point in the code, you can use <code><a href=\"https://developer.wordpress.org/reference/functions/translate_nooped_plural/\">translate_nooped_plural()</a></code> to load the strings.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">printf(\n    translate_nooped_plural(\n        $comments_plural,\n        get_comments_number(),\n        'my-theme'\n    ),\n    number_format_i18n( get_comments_number() )\n);</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Disambiguation by context</h2>\n\n\n\n<p>Sometimes a term is used in more than one context and must be translated separately in other languages, even though the same word is used for each context in English. For example, the word <code>Post</code> can be used both as a verb <code>\"Click here to post your comment\"</code> and as a noun <code>\"Edit this Post\"</code>. In such cases the <code><a href=\"https://developer.wordpress.org/reference/functions/_x/\">_x()</a></code> or <code><a href=\"https://developer.wordpress.org/reference/functions/_ex/\">_ex</a>()</code> function should be used. It is similar to <code>__()</code> and <code>_e()</code>, but it has an additional argument &#8212; the context:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_x( 'Post', 'noun', 'my-theme' );\n_x( 'post', 'verb', 'my-theme' );</code></pre>\n\n\n\n<p>Using this method in both cases, we get the string Comment for the original version. However, translators will see two Comment strings for translation, each in a different context.</p>\n\n\n\n<p>Taking an example from the German version of WordPress as an illustration: Post is Beitr\u00e4ge. The corresponding verb form in German is beitragen.</p>\n\n\n\n<p>Note that similar to <code>__()</code>, <code>_x()</code> has an <code>echo</code> version: <code>_ex()</code>. The previous example could be written as:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_ex( 'Post', 'noun', 'my-theme' );\n_ex( 'post', 'verb', 'my-theme' );</code></pre>\n\n\n\n<p>Use the one you feel enhances legibility and ease of coding.</p>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><code>_x() and _nx()</code>are also available for javascript</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Descriptions</h2>\n\n\n\n<p>You can add a clarifying comment in the source code, so translators know how to translate a string like <code>__( 'g:i:s a' )</code> . It must start with the word <code>translators:</code>,&nbsp;in all lowercase, and be the last PHP comment before the gettext call. Here is an example:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">/* translators: draft saved date format, see http://php.net/date */\n$saved_date_format = __( 'g:i:s a' );</code></pre>\n\n\n\n<p>Multi-line example:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/*\n * translators: Replace with a city related to your locale.\n * Test that it matches the expected location and has upcoming\n * events before including it. If no cities related to your\n * locale have events, then use a city related to your locale\n * that would be recognizable to most users.\n */\n?&gt;\n&lt;input placeholder=\"&lt;?php esc_attr_e( 'Cincinnati' ); ?&gt;\" id=\"location\" type=\"text\" name=\"location\" /&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Newline characters</h2>\n\n\n\n<p>Gettext doesn&#8217;t like <code>r</code> (ASCII code: 13) in translatable strings, so avoid it and use <code>n</code> instead.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Empty strings</h2>\n\n\n\n<p>The empty string is reserved for internal Gettext usage, and you must not try to internationalize the empty string. It also doesn&#8217;t make any sense because translators won&#8217;t have context.</p>\n\n\n\n<p>If you have a valid use-case to internationalize an empty string, add context to both help translators and be in peace with the Gettext system.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Escaping strings</h2>\n\n\n\n<p>It is good to escape all of your strings, preventing translators from running malicious code. There are a few escape functions that are integrated with internationalization functions.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;a title=\"&lt;?php esc_attr_e( 'Skip to content', 'my-theme' ); ?&gt;\" class=\"screen-reader-text skip-link\" href=\"#content\" &gt;\n  &lt;?php _e( 'Skip to content', 'my-theme' ); ?&gt;\n&lt;/a&gt;</code></pre>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;label for=\"nav-menu\"&gt;\n  &lt;?php esc_html_e( 'Select Menu:', 'my-theme' ); ?&gt;\n&lt;/label&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Best Practices for writing strings</h2>\n\n\n\n<p>Here are the best practices for writing strings</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Use decent English style &#8211; minimize slang and abbreviations.</li><li>Use entire sentences &#8211; in most languages, word order is different than English.</li><li>Split at paragraphs &#8211; merge related sentences, but do not include a whole page of text in one string.</li><li>Do not leave leading or trailing whitespace in a translatable phrase.</li><li>Assume strings can double in length when translated.</li><li>Avoid unusual markup and unusual control characters &#8211; do not include tags that surround your text.</li><li>Do not put unnecessary HTML markup into the translated string.</li><li>Do not leave URLs for translation, unless they could have a version in another language.</li><li>Add the variables as placeholders to the string as in some languages the placeholders change position.</li></ul>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">printf(\n    __( 'Search results for: %s', 'my-theme' ),\n    get_search_query()\n);</code></pre>\n\n\n\n<ul class=\"wp-block-list\"><li>Use format strings instead of string concatenation &#8211; translate phrases and not words &#8211; </li></ul>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">printf(\n    __( 'Your city is %1$s, and your zip code is %2$s.', 'my-theme' ),\n    $city,\n    $zipcode\n);</code></pre>\n\n\n\n<p>is always better than</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">__( 'Your city is ', 'my-theme' ) . $city . __( ', and your zip code is ', 'my-theme' ) . $zipcode;</code></pre>\n\n\n\n<ul class=\"wp-block-list\"><li>Try to use the same words and symbols to prevent translating multiple similar strings (e.g. don&#8217;t do the following) </li></ul>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">__( 'Posts:', 'my-theme' ); and __( 'Posts', 'my-theme' );</code></pre>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 126023,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-126126",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126126",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126126/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144360,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126126/revisions/144360"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126023"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=126126"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

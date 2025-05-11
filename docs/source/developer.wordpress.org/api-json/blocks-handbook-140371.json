@@ -1,0 +1,91 @@
+{
+    "id": 140371,
+    "date": "2022-03-24T01:09:48",
+    "date_gmt": "2022-03-24T01:09:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/border-control/"
+    },
+    "modified": "2024-10-30T17:09:50",
+    "modified_gmt": "2024-10-30T17:09:50",
+    "slug": "border-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/border-control/",
+    "title": {
+        "rendered": "BorderControl"
+    },
+    "content": {
+        "rendered": "<p>An input control for a border&#8217;s color, style, and width.</p>\n<h2>Development guidelines</h2>\n<p>The <code>BorderControl</code> brings together internal sub-components which allow users to<br />\nset the various properties of a border. The first sub-component, a<br />\n<code>BorderDropdown</code> contains options representing border color and style. The<br />\nborder width is controlled via a <code>UnitControl</code> and an optional <code>RangeControl</code>.</p>\n<p>Border radius is not covered by this control as it may be desired separate to<br />\ncolor, style, and width. For example, the border radius may be absorbed under<br />\na &#8220;shape&#8221; abstraction.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { BorderControl } from '@wordpress/components';\nimport { __ } from '@wordpress/i18n';\n\nconst colors = [\n    { name: 'Blue 20', color: '#72aee6' },\n    // ...\n];\n\nconst MyBorderControl = () =&gt; {\n    const [ border, setBorder ] = useState();\n\n    return (\n        &lt;BorderControl\n            __next40pxDefaultSize\n            colors={ colors }\n            label={ __( 'Border' ) }\n            onChange={ setBorder }\n            value={ border }\n        /&gt;\n    );\n};\n</code></pre>\n<p>If you&#8217;re using this component outside the editor, you can<br />\n<a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/#popovers-and-tooltips\">ensure <code>Tooltip</code> positioning</a><br />\nfor the <code>BorderControl</code>&#8216;s color and style options, by rendering your<br />\n<code>BorderControl</code> with a <code>Popover.Slot</code> further up the element tree and within a<br />\n<code>SlotFillProvider</code> overall.</p>\n<h2>Props</h2>\n<h3><code>colors</code>: <code>( PaletteObject | ColorObject )[]</code></h3>\n<p>An array of color definitions. This may also be a multi-dimensional array where<br />\ncolors are organized by multiple origins.</p>\n<p>Each color may be an object containing a <code>name</code> and <code>color</code> value.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>[]</code></li>\n</ul>\n<h3><code>disableCustomColors</code>: <code>boolean</code></h3>\n<p>This toggles the ability to choose custom colors.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>disableUnits</code>: <code>boolean</code></h3>\n<p>This controls whether unit selection should be disabled.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>enableAlpha</code>: <code>boolean</code></h3>\n<p>This controls whether the alpha channel will be offered when selecting<br />\ncustom colors.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>enableStyle</code>: <code>boolean</code></h3>\n<p>This controls whether to support border style selection.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>hideLabelFromVision</code>: <code>boolean</code></h3>\n<p>Provides control over whether the label will only be visible to screen readers.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>isCompact</code>: <code>boolean</code></h3>\n<p>This flags the <code>BorderControl</code> to render with a more compact appearance. It<br />\nrestricts the width of the control and prevents it from expanding to take up<br />\nadditional space.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>label</code>: <code>string</code></h3>\n<p>If provided, a label will be generated using this as the content.</p>\n<p><em>Whether it is visible only to screen readers is controlled via<br />\n<code>hideLabelFromVision</code>.</em></p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onChange</code>: <code>( value?: Object ) =&gt; void</code></h3>\n<p>A callback function invoked when the border value is changed via an interaction<br />\nthat selects or clears, border color, style, or width.</p>\n<p><em>Note: the value may be <code>undefined</code> if a user clears all border properties.</em></p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>shouldSanitizeBorder</code>: <code>boolean</code></h3>\n<p>If opted into, sanitizing the border means that if no width or color have been<br />\nselected, the border style is also cleared and <code>undefined</code> is returned as the<br />\nnew border value.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>size</code>: <code>string</code></h3>\n<p>Size of the control.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>default</code></li>\n<li>Allowed values: <code>default</code>, <code>__unstable-large</code></li>\n</ul>\n<h3><code>value</code>: <code>Object</code></h3>\n<p>An object representing a border or <code>undefined</code>. Used to set the current border<br />\nconfiguration for this component.</p>\n<p>Example:</p>\n<pre><code class=\"language-js\"> {\n    color: '#72aee6',\n    style: 'solid',\n    width: '2px,\n}\n</code></pre>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>width</code>: <code>CSSProperties[ 'width' ]</code></h3>\n<p>Controls the visual width of the <code>BorderControl</code>. It has no effect if the<br />\n<code>isCompact</code> prop is set to <code>true</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>withSlider</code>: <code>boolean</code></h3>\n<p>Flags whether this <code>BorderControl</code> should also render a <code>RangeControl</code> for<br />\nadditional control over a border&#8217;s width.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>__next40pxDefaultSize</code>: <code>boolean</code></h3>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 117,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140371",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140371",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140371/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155617,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140371/revisions/155617"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140371"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

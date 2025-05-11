@@ -1,0 +1,97 @@
+{
+    "id": 11285,
+    "date": "2014-10-22T01:31:26",
+    "date_gmt": "2014-10-22T01:31:26",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11285"
+    },
+    "modified": "2022-11-17T06:08:58",
+    "modified_gmt": "2022-11-17T06:08:58",
+    "slug": "template-tags",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/template-tags/",
+    "title": {
+        "rendered": "Template Tags"
+    },
+    "content": {
+        "rendered": "\n<p>Template tags are used within themes to <strong>retrieve content from your database</strong>. The content could be anything from a blog title to a complete sidebar. Template tags are the preferred method to pull content into your theme because:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>they can print dynamic content;</li><li>they can be used in multiple theme files; and</li><li>they separate the theme into smaller, more understandable, sections.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">What is a Template Tag?</h2>\n\n\n\n<p>A template tag is simply a piece of code that tells WordPress to get something from the database. It is broken up into three components:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>A PHP code tag</li><li>A WordPress function</li><li>Optional parameters</li></ul>\n\n\n\n<p>You can use a template tag to call another theme file or some information from the database.</p>\n\n\n\n<p>For example, the template tag <code><a href=\"https://developer.wordpress.org/reference/functions/get_header/\">get_header()</a></code>&nbsp;tells WordPress to get the <code>header.php</code> file and include it in the current theme file. Similarly, <code><a href=\"https://developer.wordpress.org/reference/functions/get_footer/\">get_footer()</a></code>&nbsp;tells WordPress to get the footer.php file.</p>\n\n\n\n<p>There are also other kinds of template tags:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code><a href=\"https://developer.wordpress.org/reference/functions/the_title/\">the_title()</a></code> \u2013 tells WordPress to get the title of the page or post from the database and include it.</li><li><code><a href=\"https://developer.wordpress.org/reference/functions/bloginfo/\">bloginfo( 'name' )</a></code> \u2013&nbsp;tells WordPress to get the blog title out of the database and include it in the template file.</li></ul>\n\n\n\n<p>If you look closely at the last&nbsp;example, you will also see that there is a parameter between the parenthesis.&nbsp;Parameters let you do two things:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>ask for specific pieces of information and</li><li>format the information in a certain way.</li></ol>\n\n\n\n<p><a href=\"#parameters\">Parameters are covered extensively below</a>, but it&#8217;s useful to be aware that you can send WordPress-specific instructions for how you want the data presented.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why Use Template Tags</h2>\n\n\n\n<p>By encapsulating all of the code for a particular chunk of content, template tags make it very easy to include various pieces of a template in&nbsp;a theme file and also to maintain the theme.</p>\n\n\n\n<p>It is far easier to create one&nbsp;<code>header.php</code> file and have all of your theme templates like <code>single.php</code>, <code>page.php</code>, <code>front-page.php</code>, etc. reference that one theme file using <code><a href=\"https://developer.wordpress.org/reference/functions/get_header/\">get_header()</a></code>&nbsp;than&nbsp;copying and pasting the code into each theme file. It also makes maintenance easier.&nbsp;Whenever you make a change in your <code>header.php</code> file, the change is automatically carried over into all of your other theme files.</p>\n\n\n\n<p>Another reason to use template tags is to display&nbsp;dynamic data,&nbsp;i.e.&nbsp;data from the database. In your header, you could manually include the <code>title</code> tag, like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"xml\" class=\"language-xml\">&lt;title&gt;My Personal Website&lt;/title&gt;</code></pre>\n\n\n\n<p>However, doing this means manually editing your theme any time you want to change the title of your website. Instead, it&#8217;s easier to include the <code><a href=\"https://developer.wordpress.org/reference/functions/bloginfo/\">bloginfo( 'name' )</a></code>&nbsp;template tag, which automatically fetch the site title&nbsp;from the database. Now, you can change the title of your site in WordPress, rather than having to hard code your theme templates.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to Use Template Tags</h2>\n\n\n\n<p>Using template tags is very simple. In any template file you can use a template tag by simply printing one line of php code to call the template tag. Printing the header.php file is as simple as:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">get_header();</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Parameters</h3>\n\n\n\n<p>Some template tags let you pass parameters. Parameters are extra pieces of information that determine what is retrieved from the database.</p>\n\n\n\n<p>For example, the&nbsp;<code><a title=\"bloginfo template tag\" href=\"https://developer.wordpress.org/reference/functions/bloginfo/\">bloginfo()</a></code>&nbsp;template tag allows you to give it a parameter telling WordPress the specific piece of information you want. To print the blog name, you just pass along the parameter &#8220;name,&#8221; like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">bloginfo( 'name' );</code></pre>\n\n\n\n<p>To print the version of WordPress that the blog is running on, you would pass a parameter of &#8220;version&#8221;:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">bloginfo( 'version' );</code></pre>\n\n\n\n<p>For each template tag, the parameters differ. A list of the parameters and what they can do can be found on specific template tag pages&nbsp;located throughout the <a href=\"https://developer.wordpress.org/reference/\">code reference</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Template Tags Within the Loop</h3>\n\n\n\n<p>Many template tags work within the <a href=\"https://developer.wordpress.org/themes/basics/the-loop/\">WordPress Loop</a>. This means that they are included in the template files as part of the php &#8220;loop&#8221; that generates the pages users&nbsp;see based upon the instructions inside of the loop.</p>\n\n\n\n<p>The WordPress loop begins with:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( have_posts() ) :\n\twhile ( have_posts() ) :\n\t\tthe_post();</code></pre>\n\n\n\n<p>Template tags that work within the loop must be in the middle area, before the ending section of the loop below:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">\tendwhile;\nelse :\n\t_e( 'Sorry, no posts matched your criteria.', 'devhub' );\nendif;</code></pre>\n\n\n\n<p>Some of template tags that need to be inside of the loop include</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/the_content/\" rel=\"function\">the_content()</a> </li><li><a href=\"https://developer.wordpress.org/reference/functions/the_excerpt/\" rel=\"function\">the_excerpt()</a> </li><li><a href=\"https://developer.wordpress.org/reference/functions/next_post/\" rel=\"function\">next_post()</a> </li><li><a href=\"https://developer.wordpress.org/reference/functions/previous_post/\" rel=\"function\">previous_post()</a> </li></ul>\n\n\n\n<p>The main reason why some functions require the loop is because they require the global post object to be set.</p>\n\n\n\n<p>If the template tag you want to use doesn&#8217;t have to be within the loop</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/wp_list_cats/\" rel=\"function\">wp_list_cats()</a> </li><li><a href=\"https://developer.wordpress.org/reference/functions/wp_list_pages/\" rel=\"function\">wp_list_pages()</a> </li></ul>\n\n\n\n<p>then you can put it in any file you&#8217;d like, for instance in the sidebar, header, or footer template files.</p>\n\n\n\n<p>These are functions that typically do not require the global post object.</p>\n\n\n\n<h2 class=\"wp-block-heading\">See Also</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/themes/basics/conditional-tags/\">Conditional Tags</a></li><li><a href=\"https://developer.wordpress.org/themes/references/list-of-template-tags/\">Complete list of Template Tags</a></li><li><a href=\"_wp_link_placeholder\" data-wplink-edit=\"true\">Plugin API Hooks</a></li></ul>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11285",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11285",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 26,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11285/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144339,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11285/revisions/144339"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11285"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

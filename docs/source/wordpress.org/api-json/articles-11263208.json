@@ -1,0 +1,109 @@
+{
+    "id": 11263208,
+    "date": "2019-03-01T13:16:40",
+    "date_gmt": "2019-03-01T13:16:40",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11263208"
+    },
+    "modified": "2023-04-14T12:20:02",
+    "modified_gmt": "2023-04-14T12:20:02",
+    "slug": "use-image-and-file-attachments",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/use-image-and-file-attachments/",
+    "title": {
+        "rendered": "Use image and file attachments"
+    },
+    "content": {
+        "rendered": "\n<p>In WordPress you can upload, store, and display a variety of file types (media). The most common file types are image, video and audio files, but other file types such as document files, spreadsheet files, and code samples (amongst others) can also be managed within WordPress.</p>\n\n\n\n<p>Media can be uploaded via the <a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\" data-type=\"helphub_article\" data-id=\"11113655\">Media Add New Screen</a>\u00a0or\u00a0<a href=\"https://wordpress.org/documentation/article/media-library-screen/\" data-type=\"helphub_article\" data-id=\"10776428\">Media Library Screen</a>\u00a0in the admin area, or via quick links on the edit screen.</p>\n\n\n\n<p>In order to upload media, you may need to ensure that the correct\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/server/file-permissions/\">file permissions</a>\u00a0are set for the wp-content directory in your WordPress installation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Edit Screen Links</h2>\n\n\n\n<p>By default, above the post editing area is a link to Upload/Insert media in to the post.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Attachment to a Post</h2>\n\n\n\n<p>If a media file is uploaded within the edit screen, it will automatically be attached to the current post being edited. If it is uploaded via the <br> <a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">Media Add New Screen</a>&nbsp;or&nbsp;<a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media Library Screen</a> it will be unattached, but may become attached to a post when it is inserted into post. There also is an option on the <a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media Library Screen</a> to attach unattached media items.</p>\n\n\n\n<p>Note that media items are also &#8216;Posts&#8217; in their own right and can be displayed as such via the WordPress&nbsp;<a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a>. Themes can make use of this to loop over media items or create galleries.</p>\n\n\n\n<p>If the parent post of an attached media item is deleted, the media item will become attached to the deleted post&#8217;s parent if it exists or if it doesn&#8217;t exist, the media item will become unattached and is open for re-attachment to another post.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Inserting in a Post</h2>\n\n\n\n<p>Once a media file has been uploaded, it may be\u00a0<a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\" data-type=\"helphub_article\" data-id=\"11032274\">inserted in to a post</a>.</p>\n\n\n\n<p>When the media file is inserted you can choose to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Link directly to the media file</li>\n\n\n\n<li>Link to the attachment post, in which case the file will be served via the WordPress&nbsp;<a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a></li>\n\n\n\n<li>Not link to the media file (e.g. in the case of images, the image file will still be embedded in the page, but not linked to allow the browser to display the image file by itself)</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Usage in Themes</h2>\n\n\n\n<p>Themes may use various template tags to display post attachments or utilize the\u00a0<a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">attachment.php</a>\u00a0file to customize the display of attachments. A\u00a0<a href=\"https://developer.wordpress.org/themes/functionality/media/galleries/#gallery-shortcode\">shortcode</a>\u00a0tag is also available to display a gallery of images attached to a post.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Further reading</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/use-images/\">Use Images</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/image-size-and-quality/\">Image Size and Quality</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings Media Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media library screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">Media Add New Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/edit-media/\">Edit Media</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\">Inserting Images into Posts and Pages (Block Editor)</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/\">Inserting Images into Posts and Pages (Classic Editor)</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>In WordPress you can upload, store, and display a variety of file types (media). The most common file types are image, video and audio files, but other file types such as document files, spreadsheet files, and code samples (amongst others) can also be managed within WordPress. Media can be uploaded via the Media Add New [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        87,
+        78
+    ],
+    "class_list": [
+        "post-11263208",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-media",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11263208",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11263208"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11263208/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356727,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11263208/revisions/16356727"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11263208"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11263208"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

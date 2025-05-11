@@ -1,0 +1,91 @@
+{
+    "id": 134480,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/isolated-event-container/"
+    },
+    "modified": "2024-10-30T16:55:42",
+    "modified_gmt": "2024-10-30T16:55:42",
+    "slug": "isolated-event-container",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/isolated-event-container/",
+    "title": {
+        "rendered": "IsolatedEventContainer"
+    },
+    "content": {
+        "rendered": "<p><strong>Deprecated</strong></p>\n<p>This is a container that prevents certain events from propagating outside of the container. This is used to wrap<br />\nUI elements such as modals and popovers where the propagated event can cause problems. The event continues to work<br />\ninside the component.</p>\n<p>For example, a <code>mousedown</code> event in a modal container can propagate to the surrounding DOM, causing UI outside of the<br />\nmodal to be interacted with.</p>\n<p>The current isolated events are:</p>\n<ul>\n<li>mousedown &#8211; This prevents UI interaction with other <code>mousedown</code> event handlers, such as selection</li>\n</ul>\n<h2>Usage</h2>\n<p>Creates a custom component that won&#8217;t propagate <code>mousedown</code> events outside of the component.</p>\n<pre><code class=\"language-jsx\">import { IsolatedEventContainer } from '@wordpress/components';\n\nconst MyModal = () =&gt; {\n    return (\n        &lt;IsolatedEventContainer\n            className=\"component-some_component\"\n            onClick={ clickHandler }\n        &gt;\n            &lt;p&gt;This is an isolated component&lt;/p&gt;\n        &lt;/IsolatedEventContainer&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<p>All props are passed as-is to the <code>&lt;IsolatedEventContainer /&gt;</code></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 174,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134480",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134480",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134480/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151854,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134480/revisions/151854"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134480"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 149058,
+    "date": "2023-10-17T14:35:01",
+    "date_gmt": "2023-10-17T14:35:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149058"
+    },
+    "modified": "2023-10-17T19:31:52",
+    "modified_gmt": "2023-10-17T19:31:52",
+    "slug": "custom",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/custom/",
+    "title": {
+        "rendered": "Custom"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.custom</code> property is unique among other settings in <code>theme.json</code>. As its name implies, it is a custom property. This means that you get to decide how to use it. Essentially, it provides a method for creating CSS custom properties that you might need elsewhere in your theme.</p>\n\n\n\n<p>In this document, you will learn what the <code>custom</code> property is for and how you can use it in your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Overview of the custom setting</h2>\n\n\n\n<p>The <code>settings.custom</code> property accepts a single object, and this object can be used to store other values. The individual object values must be valid CSS values or an object with nested key/value pairs.</p>\n\n\n\n<p>Here is an example snippet from <code>theme.json</code> with no custom values set:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {}\n\t}\n}</code></pre>\n\n\n\n<p>The great thing about the <code>settings.custom</code> object is that you can use it to create your own CSS custom properties. When you add a key and value to the object, WordPress will automatically generate the CSS custom property, assign the value, and load it for you.</p>\n\n\n\n<p>The generated CSS custom property will follow this pattern: <code>--wp--custom--{key}--{value}</code>.</p>\n\n\n\n<p>Suppose you wanted to use the key of <code>fruit</code> and give it a value of <code>apple</code>. Add this to your <code>theme.json</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {\n\t\t\t\"fruit\": \"apple\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>WordPress will then generate this CSS:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--custom--fruit: apple;\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">How CSS custom properties are generated</h2>\n\n\n\n<p>As you learned above, the <code>settings.custom.fruit</code> key name will generate the <code>--wp--custom--fruit</code> variable in CSS. But there are other cases too.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Automatic hyphenation</h3>\n\n\n\n<p>WordPress will automatically hyphenate camel-cased names. For example, <code>lineHeight</code> in the following example will become <code>line-height</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {\n\t\t\t\"lineHeight\": \"1.4em\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>This will create the following CSS:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--custom--line-height: 1.4em;\n}</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Numbers are handled the same as uppercase letters when used as a key. For example, a key of <code>abc123</code> will become <code>abc-1-2-3</code> in the resulting CSS.</p></div></div>\n\n\n\n<h3 class=\"wp-block-heading\">Nested properties</h3>\n\n\n\n<p>Building off the above example, suppose you wanted to create several line-height CSS custom properties for use in your theme. For this, you might want to create an object under <code>settings.custom.lineHeight</code> instead of a single value.</p>\n\n\n\n<p>Add the following to your <code>theme.json</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {\n\t\t\t\"lineHeight\": {\n\t\t\t\t\"xs\": \"1\",\n\t\t\t\t\"sm\": \"1.25\",\n\t\t\t\t\"md\": \"1.5\",\n\t\t\t\t\"lg\": \"1.75\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>WordPress will automatically use this nested structure when generating the CSS custom property names.</p>\n\n\n\n<p>This will generate this CSS:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--custom--line-height--xs: 1;\n\t--wp--custom--line-height--sm: 1.25;\n\t--wp--custom--line-height--md: 1.5;\n\t--wp--custom--line-height--lg: 1.75;\n}</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>There is no limit to the amount of nesting you can do, but keep in mind that the more you nest, the longer your CSS custom property names become.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Practical usage</h2>\n\n\n\n<p>What you use the <code>settings.custom</code> property for is entirely up to you. At its core, all it really does is generate CSS custom properties, which don\u2019t do anything on their own. Custom properties must also be used in CSS.</p>\n\n\n\n<p>In the previous <code>theme.json</code> example above, you created a set of line-heights. There are a number of ways you can put these into practical use.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Use in theme.json styles</h3>\n\n\n\n<p>In the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles\">Styles documentation</a>, you will learn how to apply styles to the root element, elements, and blocks via <code>theme.json</code>. This will be one of the primary use cases for integrating with <code>settings.custom</code>.</p>\n\n\n\n<p>Suppose you wanted to register the same set of line-heights from above and make use of them. Maybe you want to set the root element to the <code>md</code> line-height and Paragraph blocks to <code>lg</code>. You can access each line-height property via <code>var:custom|line-height|md</code> and <code>var:custom|line-height|lg</code>, respectively.</p>\n\n\n\n<p>Use this code in your <code>theme.json</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {\n\t\t\t\"lineHeight\": {\n\t\t\t\t\"xs\": \"1\",\n\t\t\t\t\"sm\": \"1.25\",\n\t\t\t\t\"md\": \"1.5\",\n\t\t\t\t\"lg\": \"1.75\"\n\t\t\t}\n\t\t}\n\t},\n\t\"styles\": {\n\t\t\"typography\": {\n\t\t\t\"lineHeight\": \"var:custom|line-height|md\"\n\t\t}\n\t\t\"blocks\": {\n\t\t\t\"core/paragraph\": {\n\t\t\t\t\"typography\": {\n\t\t\t\t\t\"lineHeight\": \"var:custom|line-height|lg\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>You can also reference the values via their CSS custom properties. For example, instead of using <code>var:custom|line-height|md</code>, use <code>var( --wp--custom--line-height--md )</code>.</p>\n\n\n\n<p>Remember, you will learn more about styling via <code>theme.json</code> from the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/\">Styles documentation</a>. You can use what you learn there to combine with the techniques outlined here.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Use in CSS</h3>\n\n\n\n<p>There are times when you might need to reference the generated CSS custom properties directly in CSS, such as your <code>style.css</code> file. To do this, you must use the CSS custom property name.</p>\n\n\n\n<p>Suppose you needed to target a class with the name of <code>.example-class</code> and to give it the <code>sm</code> line-height that you\u2019ve registered. Use this code in your CSS:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.example-class {\n\tline-height: var( --wp--custom--line-height--sm );\n}</code></pre>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149058",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149058",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149058/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149178,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149058/revisions/149178"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149058"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 23185,
+    "date": "2016-12-06T19:36:31",
+    "date_gmt": "2016-12-06T19:36:31",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23185"
+    },
+    "modified": "2024-01-16T20:30:16",
+    "modified_gmt": "2024-01-16T20:30:16",
+    "slug": "glossary",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/glossary/",
+    "title": {
+        "rendered": "Glossary"
+    },
+    "content": {
+        "rendered": "<p>New to REST APIs? Get up to speed with phrases used throughout our documentation.</p>\n<h2 id=\"controller\">Controller</h2>\n<p><a href=\"http://en.wikipedia.org/wiki/Model-view-controller\">Model-View-Controller</a> is a standard pattern in software development. If you aren&#8217;t already familiar with it, you should do a bit of reading to get up to speed.</p>\n<p>Within WP-API, we&#8217;ve adopted the controller concept to have a standard pattern for the classes representing our resource endpoints. All resource endpoints extend <code>WP_REST_Controller</code> to ensure they implement common methods.</p>\n<h2 id=\"head-get-post-put-and-delete-requests\">HEAD, GET, POST, PUT, and DELETE Requests</h2>\n<p>These &#8220;HTTP verbs&#8221; represent the <em>type</em> of action a HTTP client might perform against a resource. For instance, <code>GET</code> requests are used to fetch a Post&#8217;s data, whereas <code>DELETE</code> requests are used to delete a Post. They&#8217;re collectively called &#8220;HTTP verbs&#8221; because they&#8217;re standardized across the web.</p>\n<p>If you&#8217;re familiar with WordPress functions, a <code>GET</code> request is the equivalent of <code>wp_remote_get()</code>, and a <code>POST</code> request is the same as <code>wp_remote_post()</code>.</p>\n<h2 id=\"http-client\">HTTP Client</h2>\n<p>The phrase &#8220;HTTP Client&#8221; refers to the tool you use to interact with WP-API. You might use <a href=\"https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en\">Postman</a> (Chrome) or <a href=\"https://github.com/nathan-osman/REST-Easy\">REST Easy</a> (Firefox) to test requests in your browser, or <a href=\"https://github.com/jakubroztocil/httpie\">httpie</a> to test requests at the commandline.</p>\n<p>WordPress itself provides a HTTP Client in the <a href=\"https://developer.wordpress.org/plugins/http-api/\"><code>WP_HTTP</code> class</a> and related functions (e.g. <code>wp_remote_get()</code>). This can be used to access one WordPress site from another.</p>\n<h2 id=\"resource\">Resource</h2>\n<p>A &#8220;Resource&#8221; is a <em>discrete entity</em> within WordPress. You may know these resources already as Posts, Pages, Comments, Users, Terms, and so on. WP-API permits HTTP clients to perform CRUD operations against resources (CRUD stands for Create, Read, Update, and Delete).</p>\n<p>Pragmatically, here&#8217;s how you&#8217;d typically interact with WP-API resources:</p>\n<ul>\n<li><code>GET /wp-json/wp/v2/posts</code> to get a collection of Posts. This is roughly equivalent to using <code>WP_Query</code>.</li>\n<li><code>GET /wp-json/wp/v2/posts/123</code> to get a single Post with ID 123. This is roughly equivalent to using <code>get_post()</code>.</li>\n<li><code>POST /wp-json/wp/v2/posts</code> to create a new Post. This is roughly equivalent to using <code>wp_insert_post()</code>.</li>\n<li><code>DELETE /wp-json/wp/v2/posts/123</code> to delete Post with ID 123. This is roughly equivalent to <code>wp_delete_post()</code>.</li>\n</ul>\n<h2 id=\"routes--endpoints\">Routes / Endpoints</h2>\n<p>Endpoints are functions available through the API. This can be things like retrieving the API index, updating a post, or deleting a comment. Endpoints perform a specific function, taking some number of parameters and return data to the client.</p>\n<p>A route is the &#8220;name&#8221; you use to access endpoints, used in the URL. A route can have multiple endpoints associated with it, and which is used depends on the HTTP verb.</p>\n<p>For example, with the URL `http://example.com/wp-json/wp/v2/posts/123`:</p>\n<ul>\n<li>The &#8220;route&#8221; is <code>wp/v2/posts/123</code> &#8211; The route doesn&#8217;t include <code>wp-json</code> because <code>wp-json</code> is the base path for the API itself.</li>\n<li>This route has 3 endpoints:\n<ul>\n<li><code>GET</code> triggers a <code>get_item</code> method, returning the post data to the client.</li>\n<li><code>PUT</code> triggers an <code>update_item</code> method, taking the data to update, and returning the updated post data.</li>\n<li><code>DELETE</code> triggers a <code>delete_item</code> method, returning the now-deleted post data to the client.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Note:</strong> On sites without pretty permalinks, the route is instead added to the URL as the <code>rest_route</code> parameter. For the above example, the full URL would then be `http://example.com/?rest_route=wp/v2/posts/123`</p>\n<h2 id=\"schema\">Schema</h2>\n<p>A &#8220;schema&#8221; is a representation of the format for WP-API&#8217;s response data. For instance, the Post schema communicates that a request to get a Post will return <code>id</code>, <code>title</code>, <code>content</code>, <code>author</code>, and other fields. Our schemas also indicate the type each field is, provide a human-readable description, and show which contexts the field will be returned in.</p>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 7,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23185",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23185",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23185/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 147317,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23185/revisions/147317"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23185"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

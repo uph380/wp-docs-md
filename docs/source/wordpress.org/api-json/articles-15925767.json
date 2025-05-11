@@ -1,0 +1,109 @@
+{
+    "id": 15925767,
+    "date": "2022-08-17T20:28:46",
+    "date_gmt": "2022-08-17T20:28:46",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15925767"
+    },
+    "modified": "2024-06-06T13:47:33",
+    "modified_gmt": "2024-06-06T13:47:33",
+    "slug": "comment-edit-link-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comment-edit-link-block/",
+    "title": {
+        "rendered": "Comment Edit Link block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Comment Edit Link</em> block<em> </em>displays a link to edit the comment in the WordPress Dashboard. This block is located inside a Comment Query Loop block and lets you customize the appearance of the <em>Edit</em> link. The Edit link is only visible to users who have permission to edit the comments. </p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/Etn_Cdnm_ZqltESNqnhwzEgs2ciR4963Z2Z_mGsAMJ3gBIgHziRpaFGz50hp1YND2012SWa2esensjMgu8WbmHfi-DQUo1h7zEjIFmV9ueOirM_xYaXZU-wS1rbILCyaD4KNky87uTo42U7hxhYlAvM\" alt=\"Comment Edit Link Block\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">You can only insert the <em>Comment Edit Link </em>block inside a Comment Template block within the Comment Query Loop block.&nbsp;</p>\n\n\n\n<p>Click the (+) icon inside the comment template block to open the block inserter pop-up window and search for the <em>Comment Edit Link</em> block.</p>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/comment-edit-link </kbd>to quickly insert a <em>Comment Edit Link </em>block inside a Comment Template block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/9i0Qm7O0PH2pmIspNc1-riYInA2dIYY2FXUX-g3lzahToaO58fkcbg4Q-7RTvYJrd_GpEDuRYW4aaHr-8oThNBRYPiQa4RU0JjPPJVbpvHtuZjMFiEJEi949XcJ-lvsjW3Jr6IknbY7Ayew6bkmq8H4\" alt=\"How to quickly add Comment Edit Link Block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/JiTw2U4ihM-oYWUCzSmRGAnXORmMeJrJPOoAQigl-AIyKRAXZgZFq7WbW9IcdFn7-8BaYo4aQ_7poTIhBT6vuThuHbkJjKZU_MivwTdp70roKQeaHYfGmkf1sn7mXn_tHhm-90YKyPbJsd0qSWj_Xes\" alt=\"Block toolbar in the Comment Edit Link Block\" /></figure>\n\n\n\n<p>The block toolbar contains the tools to customize each block. The <em>Comment Edit Link</em> block\u2019s toolbar consists of the following tools:</p>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<p>You can transform a <em>Comment Edit Link</em> block into a Columns block, or a Group block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/_S0k29y0Jml0J0lbegtBGx1O592x8hz4zviRDnip27li6j3ZwLfPZSFPPUmevdME8FPA4iHnsr9M1VOYRJltB1TKvPyNhXJR0dOQntUkB7HHroYTKllUV_XL3BbSs2xXS5ejfnkm3jafqGXph7AtTI4\" alt=\"Transform tool in the Comment Edit Link Block\" /></figure>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/2INT3sQI5ucaBnGfcka60CaNHv_9E_XB83tSE8QOgI0rNpuh1evCA_o5f9Ys2_zWso4O8mxH7bxoHOxZ68wbq3QIO1XE1AXKlcqrhGIRbsfTNUvGWHAem8APjeTSg5OrKD5Xum7qETw7o4-zTY-lrdM\" alt=\"Block moving tool in the Comment Edit Link Block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <em>Comment Edit Link</em> block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p><strong>Change text alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/vU6R-1ERLgGvB6ge4VWxviFFxUTNz5z2STAVfNU4WreWxLTg1Shvoqwr8t8NkBcv-ksDTgNJLOoHpYV9SDpzN2bEPGY9RKm23gC6v1JNJh7uhW43YnOpna3PWo1bIpcgeliG8nTIJfZCJwKz6bH0Jqw\" alt=\"Change test alignment in the Comment Edit Link Block\" /></figure>\n\n\n\n<p>Text alignment options let you align the Edit button towards the left, center, or right.</p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by <strong>three vertical dots on the far right of the toolbar</strong> gives you more features such as the ability to duplicate, remove, or edit your block as HTML.&nbsp;</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/sSMTBA3_o6Epdt04MxDbEhH6GGCry5XMczTjrk2d9c6_SS1YTfC6koOgjIrrRCWI4iFMVHeJcfFOo5FZNAECdYqu-WEQBLwr2Fmv8XM9eWQx1p9YokxXhpaZ-M_PLqvut4NIRiUBemVmyvbkn1S9wWk\" alt=\"The cog icon in the Comment Edit Link Block to show the Block settings\" /></figure>\n\n\n\n<p>Here are the options for the <em>Comment Edit Link</em> block:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Link </h3>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/GB8DUreZ0U2QeMREMvH5Ie35YD8p-Pbfiscm1WsSum-lNd2do0PSS8tqgtgrt3bx1tgl9QOUwtsVMQ9TRC6UfHLf4Gqi1dOwnlSjnRoPpTwQ9mvDVsYphVxhlODyYk29rZ8Gd-jYzqwmPI7y8Mifi_c\" alt=\"Link settings in the Comment Edit Link Block\" /></figure>\n\n\n\n<p>In the Link Settings section, you can enable the <em>open in new tab</em> option, and if enabled, will open the link editing page in a new tab.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Color </h3>\n\n\n\n<p>The Comment Edit Link block lets you customize the background and link color.&nbsp;</p>\n\n\n\n<p>Click on any of the options to change the color. Choose from the default color or click the upper rectangle area to pick a custom color using the color picker.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/GtRXsjbMRTO6BdBGAYKtqsbJgLkAbODDg_H3eb4gYti7xUADJo-5QNE2eyMuZEH3tOtv8haERkT7C-r0HKFtOQ2IuoOjq2QMuk-lNozU6CT5z-NaVqRFD_FdDhIqxd3mTKSoQF7fcfVU5dF4fa5Mo5o\" alt=\"Color settings in the Comment Edit Link Block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography </h3>\n\n\n\n<p>Typography settings allow you to change a block\u2019s font size, appearance, line height, letter casing, and spacing.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/4CtOEYvzro1vUIM76cwJ4HrVVbso67QPopgXC1pmfcWy3FLOI8jOHufiY_0QHzOvBFh_0CTSe7MRmXwdYo9Jwrr6l5uonKsbLVIlFHVq6_VI3golex0N7vIzUrnW1pXCWVM9CsAdzaC3gfSF2h5Udcw\" alt=\"Typography settings in the Comment Edit Link Block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<p><strong>Advanced settings</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/Jr-mF6xUU5zInmiQUD9AbqdU21aZK5xSbxLbw72MlqkHhYZxs8MR54v_ihX9q6mWDXBC1uBEybi7CvOUWI0DdmLDqfNE0vaMVQVpeyGdrk1rf-knIf7i3G4hb2Ov_X7TWQ70rksIoncXm6y5dFL4vE8\" alt=\"Advance settings in the Comment Edit Link Block\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-08-17</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Comment Edit Link block displays a link to edit the comment in the WordPress Dashboard. This block is located inside a Comment Query Loop block and lets you customize the appearance of the Edit link. The Edit link is only visible to users who have permission to [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15925767",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15925767",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15925767"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15925767/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360294,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15925767/revisions/16360294"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15925767"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15925767"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

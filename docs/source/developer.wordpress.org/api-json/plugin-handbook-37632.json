@@ -1,0 +1,97 @@
+{
+    "id": 37632,
+    "date": "2018-05-17T16:30:38",
+    "date_gmt": "2018-05-17T16:30:38",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=37632"
+    },
+    "modified": "2020-04-23T17:45:17",
+    "modified_gmt": "2020-04-23T17:45:17",
+    "slug": "privacy-related-options-hooks-and-capabilities",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/privacy/privacy-related-options-hooks-and-capabilities/",
+    "title": {
+        "rendered": "Privacy Related Options, Hooks and Capabilities"
+    },
+    "content": {
+        "rendered": "\n<p>The privacy tools were originally introduced in WordPress 4.9.6. These tools are designed to allow (and encourage) developers to use them as part of the Privacy Exporter, Privacy Eraser and the Privacy Policy Guide.</p>\n\n\n\n<p>Since then, several newer hooks have been introduced to expand on the available capabilities. These hooks allow developers to include additional personal data in export and erasure requests, and introduce suggested content for the privacy policy guide. </p>\n\n\n\n<p>Along with the ability to control these tools, there are several new filters for use with the request and confirmation emails, enabling finer-grained controls over these notifications.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Options</h2>\n\n\n\n<p><code>wp_page_for_privacy_policy</code> &#8211; contains the page ID of a site&#8217;s privacy page</p>\n\n\n\n<h2 class=\"wp-block-heading\">Actions</h2>\n\n\n\n<p><code>user_request_action_confirmed</code> &#8211; fired when a user confirms a privacy request</p>\n\n\n\n<p><code>wp_privacy_delete_old_export_files</code> &#8211; a scheduled action used to prune old exports from the personal data exports folder</p>\n\n\n\n<p><code>wp_privacy_personal_data_erased</code> &#8211; fired after the last page of the last eraser is complete</p>\n\n\n\n<p><code>wp_privacy_personal_data_export_file</code> &#8211; used to create a personal data export file as part of the export flow</p>\n\n\n\n<p><code>wp_privacy_personal_data_export_file_created</code> &#8211; fires after a personal data export file has been created</p>\n\n\n\n<h2 class=\"wp-block-heading\">Filters</h2>\n\n\n\n<p><code>privacy_policy_url</code> &#8211; filters the URL of the privacy policy page.</p>\n\n\n\n<p><code>the_privacy_policy_link</code> &#8211; filters the privacy policy page link HTML.</p>\n\n\n\n<p><code>wp_get_default_privacy_policy_content</code> &#8211; filters the default content suggested for inclusion through the privacy policy guide.</p>\n\n\n\n<p><code>user_request_action_confirmed_message</code> &#8211; allows modifying the action confirmation message displayed to the user</p>\n\n\n\n<p><code>user_request_action_description</code> &#8211; filters the user action description.</p>\n\n\n\n<p><code>user_request_action_email_content</code> &#8211; filters the text of the email sent when an account action is attempted.</p>\n\n\n\n<p><code>user_request_action_email_headers</code> &#8211; filters the headers of the email sent when an account action is attempted.</p>\n\n\n\n<p><code>user_request_action_email_subject</code> &#8211; filters the subject of the email sent when an account action is attempted.</p>\n\n\n\n<p><code>user_request_confirmed_email_content</code> &#8211; filters the body of the user request confirmation email.</p>\n\n\n\n<p><code>user_request_confirmed_email_headers</code> &#8211; filters the headers of the user request confirmation email.</p>\n\n\n\n<p><code>user_request_confirmed_email_subject</code> &#8211; filters the subject of the user request confirmation email.</p>\n\n\n\n<p><code>user_request_confirmed_email_to</code> &#8211; filters the recipient of the data request confirmation notification.</p>\n\n\n\n<p><code>user_request_key_expiration</code> &#8211; filters the expiration time of confirmation keys for user requests.</p>\n\n\n\n<p><code>wp_privacy_additional_user_profile_data</code> &#8211; filter to extend the user\u2019s profile data for the privacy exporter.</p>\n\n\n\n<p><code>wp_privacy_export_expiration</code> &#8211; controls how old export files are allowed to get, default is 3 days</p>\n\n\n\n<p><code>wp_privacy_personal_data_email_content</code> &#8211; allows modifying the email message send to users with their personal data export file link</p>\n\n\n\n<p><code>wp_privacy_personal_data_email_headers</code> &#8211; filters the headers of the email sent with a personal data export file.</p>\n\n\n\n<p><code>wp_privacy_personal_data_email_subject</code> &#8211; filters the subject of the email sent when an export request is completed.</p>\n\n\n\n<p><code>wp_privacy_personal_data_email_to</code> &#8211; filters the recipient of the personal data export email notification.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> <code>wp_privacy_personal_data_email_to</code> should be used with great caution to avoid sending the data export link to the wrong recipient email address(es).</div></div>\n\n\n\n\n<p><code>wp_privacy_personal_data_erasers</code> &#8211; supports registration of core and plugin personal data erasers</p>\n\n\n\n<p><code>wp_privacy_personal_data_erasure_page</code> &#8211; Filters a page of personal data eraser data. Allows the erasure response to be consumed by destinations in addition to Ajax.</p>\n\n\n\n<p><code>wp_privacy_personal_data_exporters</code> &#8211; supports registration of core and plugin personal data exporters</p>\n\n\n\n<p><code>wp_privacy_personal_data_export_page</code> &#8211; filters a page of personal data exporter data. Used to build the export report. Allows the export response to be consumed by destinations in addition to Ajax.</p>\n\n\n\n<p><code>wp_privacy_anonymize_data</code> &#8211; filters the anonymous data for each type.</p>\n\n\n\n<p><code>wp_privacy_exports_dir</code> &#8211; filters the directory used to store personal data export files.</p>\n\n\n\n<p><code>wp_privacy_exports_url</code> &#8211; filters the URL of the directory used to store personal data export files.</p>\n\n\n\n<p><code>user_confirmed_action_email_content</code> &#8211; Filters the body of the user request confirmation email. The email is sent to an administrator when an user request is confirmed.</p>\n\n\n\n<p><code>user_erasure_fulfillment_email_to</code> &#8211; Filters the recipient of the data erasure fulfillment notification.</p>\n\n\n\n<p><code>user_erasure_complete_email_subject</code> &#8211; Filters the subject of the email sent when an erasure request is completed.</p>\n\n\n\n<p><code>user_confirmed_action_email_content</code> &#8211; Filters the body of the data erasure fulfillment notification. The email is sent to a user when a their data erasure request is fulfilled by an administrator.</p>\n\n\n\n<p><code>user_erasure_complete_email_headers</code> &#8211; Filters the headers of the data erasure fulfillment notification.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Capabilities</h2>\n\n\n\n<p>Access to the privacy tools is controlled by a few new capabilities. Administrators (on non-multisite installations) have these capabilities by default. These capabilities are:</p>\n\n\n\n<p><code>erase_others_personal_data</code> &#8211; determines if the Erase Personal Data sub-menu is available under Tools</p>\n\n\n\n<p><code>export_others_personal_data</code> &#8211; determines if the Export Personal Data sub-menu is available under Tools</p>\n\n\n\n<p><code>manage_privacy_options</code> &#8211; determines if the Privacy sub-menu is available under Settings</p>\n",
+        "protected": false
+    },
+    "author": 11423746,
+    "featured_media": 0,
+    "parent": 37615,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-37632",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37632",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/11423746"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 27,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37632/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 128499,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37632/revisions/128499"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37615"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=37632"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

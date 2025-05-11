@@ -1,0 +1,109 @@
+{
+    "id": 11285981,
+    "date": "2019-03-07T12:59:29",
+    "date_gmt": "2019-03-07T12:59:29",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11285981"
+    },
+    "modified": "2025-04-15T17:00:02",
+    "modified_gmt": "2025-04-15T17:00:02",
+    "slug": "archives-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/archives-block/",
+    "title": {
+        "rendered": "Archives Block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>Use the <em>Archives </em>block to display a date archive of your posts.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1999\" height=\"1096\" src=\"https://wordpress.org/documentation/files/2023/02/archive-block.png\" alt=\"The archive block in the site editor\" class=\"wp-image-16355646\" srcset=\"https://wordpress.org/documentation/files/2023/02/archive-block.png 1999w, https://wordpress.org/documentation/files/2023/02/archive-block-300x164.png 300w, https://wordpress.org/documentation/files/2023/02/archive-block-1024x561.png 1024w, https://wordpress.org/documentation/files/2023/02/archive-block-768x421.png 768w, https://wordpress.org/documentation/files/2023/02/archive-block-1536x842.png 1536w\" sizes=\"auto, (max-width: 1999px) 100vw, 1999px\" /></figure>\n\n\n\n<p>To add the <em>Archives </em>block to a page, click the <strong>block inserter</strong> (+) icon to open the block inserter pop-up window and choose the <em>Archives</em> block.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1424\" height=\"596\" src=\"https://wordpress.org/documentation/files/2023/02/adding-archive-block.gif\" alt=\"A demonstration of adding the archive block\" class=\"wp-image-16355648\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/archives</kbd> to quickly insert an <em>Archives</em> block.&nbsp;</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"434\" height=\"118\" src=\"https://wordpress.org/documentation/files/2023/02/toolbar-1.png\" alt=\"Archive block toolbar\" class=\"wp-image-16355649\" style=\"width:326px;height:89px\" srcset=\"https://wordpress.org/documentation/files/2023/02/toolbar-1.png 434w, https://wordpress.org/documentation/files/2023/02/toolbar-1-300x82.png 300w\" sizes=\"auto, (max-width: 434px) 100vw, 434px\" /></figure>\n\n\n\n<p>Every block comes with unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The <em>Archives</em> block shows five buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<p class=\"has-large-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"666\" height=\"460\" src=\"https://wordpress.org/documentation/files/2023/02/transform-3.png\" alt=\"\" class=\"wp-image-16355650\" style=\"width:500px;height:345px\" srcset=\"https://wordpress.org/documentation/files/2023/02/transform-3.png 666w, https://wordpress.org/documentation/files/2023/02/transform-3-300x207.png 300w\" sizes=\"auto, (max-width: 666px) 100vw, 666px\" /></figure>\n\n\n\n<p>Click on the <strong>Transform</strong> button to convert the <em>Archives</em> block into a <em>Group</em>, <em>Columns</em> or <em>Calendar</em> block.</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Drag icon</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"430\" height=\"122\" src=\"https://wordpress.org/documentation/files/2023/02/drag.png\" alt=\"Drag and drop block moving tools on the toolbar\" class=\"wp-image-16355651\" style=\"width:323px;height:92px\" srcset=\"https://wordpress.org/documentation/files/2023/02/drag.png 430w, https://wordpress.org/documentation/files/2023/02/drag-300x85.png 300w\" sizes=\"auto, (max-width: 430px) 100vw, 430px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Move arrows</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"436\" height=\"120\" src=\"https://wordpress.org/documentation/files/2023/02/arrows.png\" alt=\"Arrow icons on the toolbar to move the block upwards or downwards\" class=\"wp-image-16355652\" style=\"width:327px;height:90px\" srcset=\"https://wordpress.org/documentation/files/2023/02/arrows.png 436w, https://wordpress.org/documentation/files/2023/02/arrows-300x83.png 300w\" sizes=\"auto, (max-width: 436px) 100vw, 436px\" /></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Change block alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"718\" height=\"638\" src=\"https://wordpress.org/documentation/files/2023/02/align-1.png\" alt=\"Block alignment options on the toolbar\" class=\"wp-image-16355653\" style=\"width:539px;height:479px\" srcset=\"https://wordpress.org/documentation/files/2023/02/align-1.png 718w, https://wordpress.org/documentation/files/2023/02/align-1-300x267.png 300w\" sizes=\"auto, (max-width: 718px) 100vw, 718px\" /></figure>\n\n\n\n<p>Use the change alignment tool to align the <em>Archive </em>block. Choose one of the following options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None \u2013 </strong>leaves the block the current size.</li>\n\n\n\n<li><strong>Wide width \u2013 </strong>increase the width of the block beyond the content size.</li>\n\n\n\n<li><strong>Full width \u2013 </strong>extend the block to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left \u2013 </strong>aligns the block left.</li>\n\n\n\n<li><strong>Align center \u2013 </strong>aligns the block to the center.</li>\n\n\n\n<li><strong>Align right \u2013 </strong>aligns the block right.</li>\n</ul>\n\n\n\n<p>The \u201cWide width\u201d and \u201cFull width\u201d alignment settings must be enabled by your WordPress theme.&nbsp;</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Options</strong></p>\n\n\n\n<p>The Options button on a block toolbar gives you more features to customize the block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings</strong> icon next to the <strong>Publish </strong>button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"606\" height=\"90\" src=\"https://wordpress.org/documentation/files/2023/02/settings-icon.png\" alt=\"Block settings icon on the site editor\" class=\"wp-image-16355639\" srcset=\"https://wordpress.org/documentation/files/2023/02/settings-icon.png 606w, https://wordpress.org/documentation/files/2023/02/settings-icon-300x45.png 300w\" sizes=\"auto, (max-width: 606px) 100vw, 606px\" /></figure>\n\n\n\n<p class=\"has-large-font-size\"><strong>Settings</strong></p>\n\n\n\n<p>The settings section provides four possible options:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"542\" height=\"788\" src=\"https://wordpress.org/documentation/files/2023/02/archive-settings.png\" alt=\"Archive block settings\" class=\"wp-image-16355655\" style=\"width:271px;height:394px\" srcset=\"https://wordpress.org/documentation/files/2023/02/archive-settings.png 542w, https://wordpress.org/documentation/files/2023/02/archive-settings-206x300.png 206w\" sizes=\"auto, (max-width: 542px) 100vw, 542px\" /></figure>\n\n\n\n<p><strong>Display as dropdown</strong> \u2013 display the archives as a dropdown, rather than the default bulleted list.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"448\" height=\"226\" src=\"https://wordpress.org/documentation/files/2023/02/display-dropdown.png\" alt=\"Drop-down display on the archive block\" class=\"wp-image-16355656\" style=\"width:336px;height:170px\" srcset=\"https://wordpress.org/documentation/files/2023/02/display-dropdown.png 448w, https://wordpress.org/documentation/files/2023/02/display-dropdown-300x151.png 300w\" sizes=\"auto, (max-width: 448px) 100vw, 448px\" /></figure>\n\n\n\n<p><strong>Show label</strong> \u2013 displays the archives label on top of the dropdown list. It can only be enabled together with the <em>Display as dropdown </em>option.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"464\" height=\"274\" src=\"https://wordpress.org/documentation/files/2023/02/label.png\" alt=\"The archive block with the label shown\" class=\"wp-image-16355657\" style=\"width:348px;height:206px\" srcset=\"https://wordpress.org/documentation/files/2023/02/label.png 464w, https://wordpress.org/documentation/files/2023/02/label-300x177.png 300w\" sizes=\"auto, (max-width: 464px) 100vw, 464px\" /></figure>\n\n\n\n<p><strong>Show post count</strong> \u2013 shows posts count.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"456\" height=\"254\" src=\"https://wordpress.org/documentation/files/2023/02/post-count.png\" alt=\"The archive block with the post count displayed\" class=\"wp-image-16355658\" style=\"width:342px;height:191px\" srcset=\"https://wordpress.org/documentation/files/2023/02/post-count.png 456w, https://wordpress.org/documentation/files/2023/02/post-count-300x167.png 300w\" sizes=\"auto, (max-width: 456px) 100vw, 456px\" /></figure>\n\n\n\n<p><strong>Group by</strong> \u2013 sets and groups the posts by year, month, week, and day.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"color\">Color </h3>\n\n\n\n<p>Text and background colors can be set on a per-block basis, allowing you to call attention to important content. Using the Color settings, you can customize the block by adding text, background, and link colors.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading has-large-font-size\">Typography</h3>\n\n\n\n<p>The <em>Archives</em> block<em> </em>provides typography settings to change the font family, size, appearance, line height, letter case, letter spacing, and decoration.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The <em>Archive</em> block provides dimension settings options to change padding and margin size.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"556\" height=\"386\" src=\"https://wordpress.org/documentation/files/2023/02/dimensions-settings.png\" alt=\"Dimensions settings\" class=\"wp-image-16355643\" style=\"width:417px;height:290px\" srcset=\"https://wordpress.org/documentation/files/2023/02/dimensions-settings.png 556w, https://wordpress.org/documentation/files/2023/02/dimensions-settings-300x208.png 300w\" sizes=\"auto, (max-width: 556px) 100vw, 556px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Border</h3>\n\n\n\n<p>The <em>Archive</em> block provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Advanced settings</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"534\" height=\"284\" src=\"https://wordpress.org/documentation/files/2023/02/css-2.png\" alt=\"The advanced section lets you add a CSS class to your block.\" class=\"wp-image-16355659\" srcset=\"https://wordpress.org/documentation/files/2023/02/css-2.png 534w, https://wordpress.org/documentation/files/2023/02/css-2-300x160.png 300w\" sizes=\"auto, (max-width: 534px) 100vw, 534px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2025-04-15 (props to <a href=\"https://profiles.wordpress.org/n8finch/\">@n8finch</a>)\n<ul class=\"wp-block-list\">\n<li>Add color and border block support.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-02-07\n<ul class=\"wp-block-list\">\n<li>Updated screenshots</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-21\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-01\n<ul class=\"wp-block-list\">\n<li>Added screenshots and updated content for 6.0</li>\n\n\n\n<li>Added ALT tags for images</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks Use the Archives block to display a date archive of your posts.&nbsp; To add the Archives block to a page, click the block inserter (+) icon to open the block inserter pop-up window and choose the Archives block. You can also use the keyboard shortcut /archives to quickly insert [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-11285981",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285981",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11285981"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285981/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365546,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285981/revisions/16365546"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11285981"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11285981"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

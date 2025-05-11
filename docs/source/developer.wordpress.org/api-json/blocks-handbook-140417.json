@@ -1,0 +1,91 @@
+{
+    "id": 140417,
+    "date": "2022-03-31T17:39:47",
+    "date_gmt": "2022-03-31T17:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control-option-base/"
+    },
+    "modified": "2024-10-30T17:09:50",
+    "modified_gmt": "2024-10-30T17:09:50",
+    "slug": "toggle-group-control-option-base",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control-option-base/",
+    "title": {
+        "rendered": "ToggleGroupControlOptionBase"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>ToggleGroupControlOptionBase</code> is a form component and is meant to be used as an internal, generic component for any children of <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toggle-group-control/toggle-group-control/\"><code>ToggleGroupControl</code></a>.</p>\n<h2>Props</h2>\n<h3><code>children</code>: <code>ReactNode</code></h3>\n<p>The children elements.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>value</code>: <code>string | number</code></h3>\n<p>The value of the <code>ToggleGroupControlOptionBase</code>.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>showTooltip</code>: <code>boolean</code></h3>\n<p>Whether to show a tooltip when hovering over the option. The tooltip will only show if a label for it is provided using the <code>aria-label</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 214,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140417",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140417",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140417/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151691,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140417/revisions/151691"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140417"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

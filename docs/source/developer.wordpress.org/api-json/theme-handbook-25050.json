@@ -1,0 +1,91 @@
+{
+    "id": 25050,
+    "date": "2017-01-11T13:05:43",
+    "date_gmt": "2017-01-11T13:05:43",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25050"
+    },
+    "modified": "2023-12-14T20:59:02",
+    "modified_gmt": "2023-12-14T20:59:02",
+    "slug": "references",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/references/",
+    "title": {
+        "rendered": "References"
+    },
+    "content": {
+        "rendered": "\n<p>This section contains lists of <a href=\"https://developer.wordpress.org/themes/references/list-of-template-tags/\">Template Tags</a> and <a href=\"https://developer.wordpress.org/themes/references/list-of-conditional-tags/\">Conditional Tags</a>.</p>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/references/list-of-template-tags/\">Template Tags</a> are used in your Template Files to display information dynamically or otherwise customize your site.</p>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/references/list-of-conditional-tags/\">Conditional Tags</a> are a boolean data type that can be used in your Template Files to alter the display of content depending on the conditions that the current page matches.</p>\n",
+        "protected": false
+    },
+    "author": 7715176,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 110,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25050",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25050",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7715176"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25050/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 126981,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25050/revisions/126981"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25050"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

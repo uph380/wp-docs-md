@@ -1,0 +1,91 @@
+{
+    "id": 125646,
+    "date": "2019-08-12T08:22:59",
+    "date_gmt": "2019-08-12T08:22:59",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125646"
+    },
+    "modified": "2022-11-21T16:08:44",
+    "modified_gmt": "2022-11-21T16:08:44",
+    "slug": "metadata",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/metadata/",
+    "title": {
+        "rendered": "Metadata"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Overview</h2>\n\n\n\n<p>The&nbsp;<strong>Metadata API</strong>&nbsp;is a simple and standarized way for retrieving and manipulating metadata of various WordPress object types. </p>\n\n\n\n<p>Metadata for an object is a represented by a simple key-value pair. </p>\n\n\n\n<p>Objects may contain multiple metadata entries that share the same key and differ only in their value.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<p>Add/Delete Metadata:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/add_metadata/\">add_metadata()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/delete_metadata/\">delete_metadata()</a></li></ul>\n\n\n\n<p>Get/Update Metadata:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/get_metadata/\">get_metadata()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/update_metadata/\">update_metadata()</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Database Requirements</h2>\n\n\n\n<p>This function assumes that a dedicated MySQL table exists for the <code>$meta_type</code> you specify. Some desired <code>$meta_types</code> do not come with pre-installed WordPress tables, and so they must be created manually.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Default Meta Tables</h3>\n\n\n\n<p>Assuming a prefix of&nbsp;<code>wp_</code>, WordPress&#8217;s included meta tables are:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>wp_commentmeta</code>:&nbsp;Metadata for specific comments.</li><li><code>wp_postmeta</code>:&nbsp;Metadata for pages, posts, and all other post types.</li><li><code>wp_usermeta</code>:&nbsp;Metadata for users.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Meta Table Structure</h3>\n\n\n\n<p>To store data for meta types not included in the above table list, a new table needs to be created. All meta tables require four columns.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>meta_id</code>&nbsp;&#8211; BIGINT(20):&nbsp;unsigned,&nbsp;auto_increment,&nbsp;not null, primary key.</li><li><code>object_id</code> &#8211;&nbsp;BIGINT(20):&nbsp;unsigned,&nbsp;not null.<br>Replace&nbsp;<em>object</em>&nbsp;with the singular name of the content type being used.<br>For instance, this column might be named&nbsp;post_id&nbsp;or&nbsp;term_id.<br>Although this column is used like a foreign key, it should not be defined as one.</li><li><code>meta_key</code> &#8211;&nbsp;VARCHAR(255): The key of your custom meta data.</li><li><code>meta_value</code> &#8211;&nbsp;LONGTEXT: The value of your custom meta data.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Source File</h2>\n\n\n\n<p>Metadata API&nbsp;is located in&nbsp;<code><a href=\"https://core.trac.wordpress.org/browser/tags/5.2.1/src/wp-includes/meta.php#L0\">wp-includes/meta.php</a></code>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Related</h2>\n\n\n\n<p><strong><strong>Metadata API</strong></strong>:&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/add_metadata/\">add_metadata()</a>,&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/get_metadata/\">get_metadata()</a>,&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/update_metadata/\">update_metadata()</a>,&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/delete_metadata/\">delete_metadata()</a>.</p>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125646",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125646",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125646/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 126893,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125646/revisions/126893"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125646"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

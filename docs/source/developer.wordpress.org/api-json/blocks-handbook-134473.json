@@ -1,0 +1,91 @@
+{
+    "id": 134473,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/with-filters/"
+    },
+    "modified": "2024-10-30T16:55:43",
+    "modified_gmt": "2024-10-30T16:55:43",
+    "slug": "with-filters",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/with-filters/",
+    "title": {
+        "rendered": "WithFilters"
+    },
+    "content": {
+        "rendered": "<p><code>withFilters</code> is a part of <a href=\"https://github.com/WordPress/gutenberg/issues/3330\">Native Gutenberg Extensibility</a>. It is also a React <a href=\"https://facebook.github.io/react/docs/higher-order-components.html\">higher-order component</a>.</p>\n<p>Wrapping a component with <code>withFilters</code> provides a filtering capability controlled externally by the <code>hookName</code>.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { withFilters } from '@wordpress/components';\nimport { addFilter } from '@wordpress/hooks';\n\nconst MyComponent = ( { title } ) =&gt; &lt;h1&gt;{ title }&lt;/h1&gt;;\n\nconst ComponentToAppend = () =&gt; &lt;div&gt;Appended component&lt;/div&gt;;\n\nfunction withComponentAppended( FilteredComponent ) {\n    return ( props ) =&gt; (\n        &lt;&gt;\n            &lt;FilteredComponent { ...props } /&gt;\n            &lt;ComponentToAppend /&gt;\n        &lt;/&gt;\n    );\n}\n\naddFilter(\n    'MyHookName',\n    'my-plugin/with-component-appended',\n    withComponentAppended\n);\n\nconst MyComponentWithFilters = withFilters( 'MyHookName' )( MyComponent );\n</code></pre>\n<p><code>withFilters</code> expects a string argument which provides a hook name. It returns a function which can then be used in composing your component. The hook name allows plugin developers to customize or completely override the component passed to this higher-order component using <code>wp.hooks.addFilter</code> method.</p>\n<p>It is also possible to override props by implementing a higher-order component which works as follows:</p>\n<pre><code class=\"language-jsx\">import { withFilters } from '@wordpress/components';\nimport { addFilter } from '@wordpress/hooks';\n\nconst MyComponent = ( { hint, title } ) =&gt; (\n    &lt;&gt;\n        &lt;h1&gt;{ title }&lt;/h1&gt;\n        &lt;p&gt;{ hint }&lt;/p&gt;\n    &lt;/&gt;\n);\n\nfunction withHintOverridden( FilteredComponent ) {\n    return ( props ) =&gt; (\n        &lt;FilteredComponent { ...props } hint=\"Overridden hint\" /&gt;\n    );\n}\n\naddFilter( 'MyHookName', 'my-plugin/with-hint-overridden', withHintOverridden );\n\nconst MyComponentWithFilters = withFilters( 'MyHookName' )( MyComponent );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 167,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134473",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134473",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134473/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151860,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134473/revisions/151860"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134473"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

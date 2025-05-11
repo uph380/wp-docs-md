@@ -1,0 +1,91 @@
+{
+    "id": 25312,
+    "date": "2017-01-18T21:04:02",
+    "date_gmt": "2017-01-18T21:04:02",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=25312"
+    },
+    "modified": "2024-01-16T20:30:16",
+    "modified_gmt": "2024-01-16T20:30:16",
+    "slug": "extending-the-rest-api",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/extending-the-rest-api/",
+    "title": {
+        "rendered": "Extending the REST API"
+    },
+    "content": {
+        "rendered": "<h2>Guides</h2>\n\n<a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/modifying-responses/\">Modifying responses</a>: add fields to REST API response objects using <code>register_meta</code> or <code>register_rest_field</code>\n\n<a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-custom-endpoints/\">Adding Endpoints</a>:\u00a0create custom REST API endpoints for your plugin or application\n\n<a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types/\">Working with Custom Content Types</a>: learn how to interact with your <a href=\"https://developer.wordpress.org/plugins/post-types/\">custom post types</a> and <a href=\"https://developer.wordpress.org/plugins/post-types/\">custom taxonomies</a> through\u00a0the REST API\n\n<h2>Resources</h2>\n\n<a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/\">Defining your API Schema</a>:\u00a0define the schema for your\u00a0REST API\u00a0resources and their arguments\n\n<a href=\"https://developer.wordpress.org/rest-api/glossary/\">Glossary</a>: get up to speed with phrases used throughout our\u00a0documentation\n\n<a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/routes-and-endpoints/\">Routes &amp; Endpoints</a>: dive deeper into the nuances of REST API routes and the endpoints they provide\n\n<a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/controller-classes/\">Controller Classes</a>: discover how to structure and extend REST\u00a0API endpoint controller classes\n\n<a href=\"https://developer.wordpress.org/rest-api/frequently-asked-questions/\">Frequently Asked Questions</a>: see some of the most frequent inquiries about the REST API and learn how to solve common problems\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 5,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25312",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25312",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25312/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151997,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25312/revisions/151997"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25312"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

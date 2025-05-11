@@ -1,0 +1,109 @@
+{
+    "id": 16356477,
+    "date": "2023-05-23T15:32:12",
+    "date_gmt": "2023-05-23T15:32:12",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16356477"
+    },
+    "modified": "2023-08-08T08:49:00",
+    "modified_gmt": "2023-08-08T08:49:00",
+    "slug": "more-text-editing-overview",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/more-text-editing-overview/",
+    "title": {
+        "rendered": "More rich text editing options"
+    },
+    "content": {
+        "rendered": "\n<p>The&nbsp;<strong>More options</strong>&nbsp;menu in the Rich Text toolbar gives you additional options to customize your text. You can access these additional options by clicking on the <strong>arrow</strong> icon in the toolbar.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/08/rich-editing-options.png\" alt=\"Block Toolbar for the paragraph block with an emphasis on the &quot;more rich text options&quot; drop down.\" class=\"wp-image-16358452\" style=\"width:458px;height:360px\" width=\"458\" height=\"360\" /><figcaption class=\"wp-element-caption\">Block toolbar with the drop-down for <strong>More rich text options</strong></figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Footnote</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top\"><div class=\"wp-block-media-text__content\">\n<p>The <em>Footnote</em> option will insert notes in your text. These notes will link to a new block that will be added at the bottom of your page. You will able to add the content of your notes in that new block and links will be added automatically.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Read more about the Footnotes block <a href=\"https://wordpress.org/documentation/article/footnotes-block\">here</a>.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"972\" height=\"932\" src=\"https://wordpress.org/documentation/files/2023/08/footnote-block.png\" alt=\"\" class=\"wp-image-16358454 size-full\" srcset=\"https://wordpress.org/documentation/files/2023/08/footnote-block.png 972w, https://wordpress.org/documentation/files/2023/08/footnote-block-300x288.png 300w, https://wordpress.org/documentation/files/2023/08/footnote-block-768x736.png 768w\" sizes=\"auto, (max-width: 972px) 100vw, 972px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Highlight</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center\" style=\"grid-template-columns:auto 54%\"><div class=\"wp-block-media-text__content\">\n<p>Using the<em> highlight </em>option allows you to change the color of the selected text and its background.</p>\n</div><figure class=\"wp-block-media-text__media\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/05/paragraph-block-highlights-1.jpg\" alt=\"The Highlight option opens a new modal with two tabs: One for text color and one for background.\nEach tab has a color picker and a color palette to choose from.\nBelow the palette there is a button for clearing the color selection.\" class=\"wp-image-15614416 size-full\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Inline code </h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center\" style=\"grid-template-columns:auto 54%\"><div class=\"wp-block-media-text__content\">\n<p>Use the <em>inline code</em> feature to format code snippets within your text differently. The <em>inline code </em>formatting also prevents the code to be executed instead of displayed.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"928\" height=\"248\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-18-at-7.11.38-PM.png\" alt=\"The inline code option changes the font family of the text and adds a light grey background color to distinguish it from other text content.\" class=\"wp-image-12695537 size-full\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-18-at-7.11.38-PM.png 928w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-18-at-7.11.38-PM-300x80.png 300w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-18-at-7.11.38-PM-768x205.png 768w\" sizes=\"auto, (max-width: 928px) 100vw, 928px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Inline image</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile\"><div class=\"wp-block-media-text__content\">\n<p>The <em>inline image </em>feature allows you to add an image from your media library to your text. It has an option to enter the desired pixel width for your image.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"297\" height=\"133\" src=\"https://wordpress.org/documentation/files/2020/08/paragraph_10.png\" alt=\"When you select the inline image in a Rich Text, the editor opens a modal with an option to enter the image width.\" class=\"wp-image-13300034 size-full\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Keyboard input</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center\"><div class=\"wp-block-media-text__content\">\n<p>Using the <em>keyboard Input</em> option allows you to add the <code>&lt;kbd&gt;</code> tag to selected text.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"898\" height=\"864\" src=\"https://wordpress.org/documentation/files/2023/08/keyboard-input.png\" alt=\"The keyboard input option changes the font family of the text to distinguish it from other text content.\" class=\"wp-image-16358455 size-full\" srcset=\"https://wordpress.org/documentation/files/2023/08/keyboard-input.png 898w, https://wordpress.org/documentation/files/2023/08/keyboard-input-300x289.png 300w, https://wordpress.org/documentation/files/2023/08/keyboard-input-768x739.png 768w\" sizes=\"auto, (max-width: 898px) 100vw, 898px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Language</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top\" style=\"grid-template-columns:auto 40%\"><div class=\"wp-block-media-text__content\">\n<p>User the <em>Language </em>option to specify the language for the selected text. You will need to the languages abbreviation (es, en, fr, de) and specify the text direction (Left to Right or Right to Left).</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"596\" height=\"500\" src=\"https://wordpress.org/documentation/files/2023/08/rich-text-language.png\" alt=\"Language option settings: Language &amp; Text Direction\" class=\"wp-image-16358456 size-full\" srcset=\"https://wordpress.org/documentation/files/2023/08/rich-text-language.png 596w, https://wordpress.org/documentation/files/2023/08/rich-text-language-300x252.png 300w\" sizes=\"auto, (max-width: 596px) 100vw, 596px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Strikethrough</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center\" style=\"grid-template-columns:auto 40%\"><div class=\"wp-block-media-text__content\">\n<p>Using the <em>strikethrough</em> option adds a line through the selected text.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"172\" height=\"120\" src=\"https://wordpress.org/documentation/files/2020/08/paragraph_9-1.png\" alt=\"The strikethrough option adds a horizontal line across the selected text.\" class=\"wp-image-13300036 size-full\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Subscript</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center\" style=\"grid-template-columns:auto 29%\"><div class=\"wp-block-media-text__content\">\n<p>The <em>subscript</em> option allows you to add subscript to the selected text.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"209\" height=\"113\" src=\"https://wordpress.org/documentation/files/2020/08/paragraph_8.png\" alt=\"The subscript option changes the position of the selected text so that it is positioned lower than other text content.\" class=\"wp-image-13299980 size-full\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Superscript</h2>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center\" style=\"grid-template-columns:auto 31%\"><div class=\"wp-block-media-text__content\">\n<p>The <em>superscript </em>option allows you to add superscript to the selected text.</p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"241\" height=\"90\" src=\"https://wordpress.org/documentation/files/2020/08/paragraph_9.png\" alt=\"The superscript option changes the position of the selected text so that it is above other text content.\" class=\"wp-image-13299991 size-full\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Clear unknown formatting</h2>\n\n\n\n<p>In certain situations, you may come across an option in the block toolbar to&nbsp;<em>Clear unknown formatting</em>. This option will only appear if WordPress detects unrecognized formatting in a block. Choosing the&nbsp;<em>Clear unknown formatting</em>&nbsp;option will remove any unrecognized code that is affecting your content. That said, It is not necessary to clear the unknown formatting in order to apply other rich text editing.</p>\n\n\n\n<p>For example, the&nbsp;<em>Clear unknown formatting</em>&nbsp;option might appear when you have copied and pasted content from a document editor such as Google Docs or Microsoft Word, or if you have used the&nbsp;<em>Edit as HTML</em>&nbsp;option in the&nbsp;<a href=\"https://wordpress.org/documentation/article/more-options/\">More options</a>&nbsp;menu.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://user-images.githubusercontent.com/53484448/240368109-1c4594a5-6418-45f2-b800-75e96843636a.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/53484448/240368109-1c4594a5-6418-45f2-b800-75e96843636a.png\" alt=\"the user is mousing over the Clear Unknown Formatting option in the block toolbar. The text that is selected says 'This text was copied in to WordPress from another location and has some unusual formatting applied.' and it is italicised.\" /></a></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-08-08\n<ul class=\"wp-block-list\">\n<li>Added Footnotes &amp; Languages</li>\n\n\n\n<li>Updated Screenshots</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-06-08 with additional section for the new <em>Clear unknown formatting</em> option and added Changelog.</li>\n\n\n\n<li>Created 2023-05-23</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The&nbsp;More options&nbsp;menu in the Rich Text toolbar gives you additional options to customize your text. You can access these additional options by clicking on the arrow icon in the toolbar. Footnote The Footnote option will insert notes in your text. These notes will link to a new block that will be added at the bottom [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-16356477",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356477",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16356477"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 18,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356477/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358451,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356477/revisions/16358451"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16356477"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16356477"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

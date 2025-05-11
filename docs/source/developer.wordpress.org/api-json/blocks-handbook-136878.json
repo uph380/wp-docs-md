@@ -1,0 +1,91 @@
+{
+    "id": 136878,
+    "date": "2021-08-10T23:54:48",
+    "date_gmt": "2021-08-10T23:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel/"
+    },
+    "modified": "2024-11-29T15:34:09",
+    "modified_gmt": "2024-11-29T15:34:09",
+    "slug": "tools-panel",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel/",
+    "title": {
+        "rendered": "ToolsPanel"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early<br />\nimplementation subject to drastic and breaking changes.\n</div>\n<p>\nThese panels provide progressive discovery options for their children. For<br />\nexample the controls provided via block supports.</p>\n<h2>Development guidelines</h2>\n<p>The <code>ToolsPanel</code> creates a container with a header including a<br />\ndropdown menu. The menu is generated automatically from the panel&#8217;s children<br />\nmatching the <code>ToolsPanelItem</code> component type.</p>\n<p>Each menu item allows for the display of the corresponding child to be<br />\ntoggled on or off. The control&#8217;s <code>onSelect</code> and <code>onDeselect</code> callbacks are fired<br />\nallowing for greater control over the child e.g. resetting block attributes when<br />\na block support control is toggled off.</p>\n<p>Whether a child control is initially displayed or not is dependent upon<br />\nif there has previously been a value set or the child has been flagged as<br />\ndisplaying by default through the <code>isShownByDefault</code> prop. Determining whether a<br />\nchild has a value is done via the <code>hasValue</code> function provided through the<br />\nchild&#8217;s props.</p>\n<p>Components that are not wrapped within a <code>ToolsPanelItem</code> are still rendered<br />\nhowever they will not be represented within, or controlled by, the <code>ToolsPanel</code><br />\nmenu. An example scenario that benefits from this could be displaying<br />\nintroduction or help text within a panel.</p>\n<h3>ToolsPanel Layout</h3>\n<p>The <code>ToolsPanel</code> has a two-column grid layout. By default, <code>ToolsPanelItem</code><br />\ncomponents within the panel are styled to span both columns as this fits the<br />\nmajority of use-cases. Most non-control elements, such as help text, will be<br />\nrendered as children of the related control&#8217;s <code>ToolsPanelItem</code> and not require<br />\nadditional styling.</p>\n<p>Suppose an element is related to multiple controls (e.g. a contrast checker), or<br />\nthe panel itself (e.g. a panel description). In that case, these will be<br />\nrendered into the panel without a wrapping <code>ToolsPanelItem</code>. They&#8217;ll then only<br />\nspan a single column by default. If this is undesirable, those elements will<br />\nlikely need a small style tweak, e.g. <code>grid-column: 1 / -1;</code></p>\n<p>The usage example below will illustrate a non-<code>ToolsPanelItem</code> description<br />\nparagraph, controls that should display in a single row, and others spanning<br />\nboth columns.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">/**\n * External dependencies\n */\nimport styled from '@emotion/styled';\n\n/**\n * WordPress dependencies\n */\nimport {\n    BoxControl,\n    __experimentalToolsPanel as ToolsPanel,\n    __experimentalToolsPanelItem as ToolsPanelItem,\n    __experimentalUnitControl as UnitControl,\n} from '@wordpress/components';\nimport { __ } from '@wordpress/i18n';\n\nconst PanelDescription = styled.div`\n    grid-column: span 2;\n`;\n\nconst SingleColumnItem = styled( ToolsPanelItem )`\n    grid-column: span 1;\n`;\n\nexport function DimensionPanel() {\n    const [ height, setHeight ] = useState();\n    const [ width, setWidth ] = useState();\n    const [ padding, setPadding ] = useState();\n    const [ margin, setMargin ] = useState();\n\n    const resetAll = () =&gt; {\n        setHeight( undefined );\n        setWidth( undefined );\n        setPadding( undefined );\n        setMargin( undefined );\n    };\n\n    return (\n        &lt;ToolsPanel label={ __( 'Dimensions' ) } resetAll={ resetAll }&gt;\n            &lt;PanelDescription&gt;\n                Select dimensions or spacing related settings from the menu for\n                additional controls.\n            &lt;/PanelDescription&gt;\n            &lt;SingleColumnItem\n                hasValue={ () =&gt; !! height }\n                label={ __( 'Height' ) }\n                onDeselect={ () =&gt; setHeight( undefined ) }\n                isShownByDefault\n            &gt;\n                &lt;UnitControl\n                    __next40pxDefaultSize\n                    label={ __( 'Height' ) }\n                    onChange={ setHeight }\n                    value={ height }\n                /&gt;\n            &lt;/SingleColumnItem&gt;\n            &lt;SingleColumnItem\n                hasValue={ () =&gt; !! width }\n                label={ __( 'Width' ) }\n                onDeselect={ () =&gt; setWidth( undefined ) }\n                isShownByDefault\n            &gt;\n                &lt;UnitControl\n                    __next40pxDefaultSize\n                    label={ __( 'Width' ) }\n                    onChange={ setWidth }\n                    value={ width }\n                /&gt;\n            &lt;/SingleColumnItem&gt;\n            &lt;ToolsPanelItem\n                hasValue={ () =&gt; !! padding }\n                label={ __( 'Padding' ) }\n                onDeselect={ () =&gt; setPadding( undefined ) }\n            &gt;\n                &lt;BoxControl\n                    __next40pxDefaultSize\n                    label={ __( 'Padding' ) }\n                    onChange={ setPadding }\n                    values={ padding }\n                    allowReset={ false }\n                /&gt;\n            &lt;/ToolsPanelItem&gt;\n            &lt;ToolsPanelItem\n                hasValue={ () =&gt; !! margin }\n                label={ __( 'Margin' ) }\n                onDeselect={ () =&gt; setMargin( undefined ) }\n            &gt;\n                &lt;BoxControl\n                    __next40pxDefaultSize\n                    label={ __( 'Margin' ) }\n                    onChange={ setMargin }\n                    values={ margin }\n                    allowReset={ false }\n                /&gt;\n            &lt;/ToolsPanelItem&gt;\n        &lt;/ToolsPanel&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>hasInnerWrapper</code>: <code>boolean</code></h3>\n<p>Flags that the items in this ToolsPanel will be contained within an inner<br />\nwrapper element allowing the panel to lay them out accordingly.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>dropdownMenuProps</code>: <code>{}</code></h3>\n<p>The popover props to configure panel&#8217;s <code>DropdownMenu</code>.</p>\n<ul>\n<li>Type: <code>DropdownMenuProps</code></li>\n<li>Required: No</li>\n</ul>\n<h3><code>headingLevel</code>: <code>1 | 2 | 3 | 4 | 5 | 6 | '1' | '2' | '3' | '4' | '5' | '6'</code></h3>\n<p>The heading level of the panel&#8217;s header.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>2</code></li>\n</ul>\n<h3><code>label</code>: <code>string</code></h3>\n<p>Text to be displayed within the panel&#8217;s header and as the <code>aria-label</code> for the<br />\npanel&#8217;s dropdown menu.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>panelId</code>: <code>string | null</code></h3>\n<p>If a <code>panelId</code> is set, it is passed through the <code>ToolsPanelContext</code> and used<br />\nto restrict panel items. When a <code>panelId</code> is set, items can only register<br />\nthemselves if the <code>panelId</code> is explicitly <code>null</code> or the item&#8217;s <code>panelId</code> matches<br />\nexactly.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>resetAll</code>: <code>( filters?: ResetAllFilter[] ) =&gt; void</code></h3>\n<p>A function to call when the <code>Reset all</code> menu option is selected. As an argument, it receives an array containing the <code>resetAllFilter</code> callbacks of all the valid registered <code>ToolsPanelItems</code>.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>shouldRenderPlaceholderItems</code>: <code>boolean</code></h3>\n<p>Advises the <code>ToolsPanel</code> that all of its <code>ToolsPanelItem</code> children should render<br />\nplaceholder content (instead of <code>null</code>) when they are toggled off and hidden.</p>\n<p>Note that placeholder items won&#8217;t apply the <code>className</code> that would be<br />\nnormally applied to a visible <code>ToolsPanelItem</code> via the <code>className</code> prop.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 225,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136878",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136878",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136878/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155912,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136878/revisions/155912"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136878"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

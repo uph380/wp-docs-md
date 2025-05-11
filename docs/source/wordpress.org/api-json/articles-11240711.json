@@ -1,0 +1,109 @@
+{
+    "id": 11240711,
+    "date": "2019-02-24T01:21:12",
+    "date_gmt": "2019-02-24T01:21:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11240711"
+    },
+    "modified": "2024-06-08T20:03:31",
+    "modified_gmt": "2024-06-08T20:03:31",
+    "slug": "tools-export-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tools-export-screen/",
+    "title": {
+        "rendered": "Tools Export screen"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Tools <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Export</h2>\n\n\n\n<p>Exporting your WordPress data (posts, pages, custom post types,  comments, custom fields, categories, tags, custom taxonomies, and users)  is sometimes necessary and useful.  If you are moving to a new host or just want a backup of your site data, then Exporting your site is the answer.  Once the export file is created, that file can be used for import by the <a href=\"/support/articles/tools-import-screen/\">Tools Import Screen.  </a></p>\n\n\n\n<p>The <strong>Tools Export Screen</strong> is quite simple&#8211;just specify the desired Filters, if any, you wish to apply, and then click the Download Export File button to save that file to your local computer. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11154843\"><img loading=\"lazy\" decoding=\"async\" width=\"981\" height=\"415\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/tools-export-screen.png?fit=981%2C415&amp;ssl=1\" alt=\"\" class=\"wp-image-11154843\" srcset=\"https://wordpress.org/documentation/files/2019/01/tools-export-screen.png 981w, https://wordpress.org/documentation/files/2019/01/tools-export-screen-300x127.png 300w, https://wordpress.org/documentation/files/2019/01/tools-export-screen-768x325.png 768w\" sizes=\"auto, (max-width: 981px) 100vw, 981px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Export</h2>\n\n\n\n<p>When you click the Download Export File button, WordPress will create an XML file for you to save to your computer.\n</p>\n\n\n\n<p>This format, which is called and WordPress eXtended RSS or WXR\nfile, will contain your posts, pages, custom post types, comments,\ncustom fields, categories, tags, custom taxonomies, and users.\n</p>\n\n\n\n<p>Once you\u2019ve saved the download file, you can use Administration &gt; Tools &gt; Import &gt; WordPress at another WordPress site to import this data</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filters and Other Options</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>All content</strong> &#8211; export all of your posts, pages, comments, custom fields, terms, navigation menus, and custom posts.</li><li><strong>Posts</strong> &#8211; check this radio button to expose additional filtering when exporting posts.</li><li>Categories &#8211; select only one category with this pulldown or leave at All Categories.</li><li>Authors &#8211; select a specific author from the pulldown or leave at All Authors.</li><li>Date range &#8211; select both the starting and ending post date to include in export.</li><li>Status &#8211; select the post status (e.g. Published) to export or leave at All Status.</li><li>Pages &#8211; check this radio button to expose additional filtering when exporting pages.</li><li>Authors &#8211; select a specific author from the pulldown or leave at All Authors.</li><li>Date range &#8211; select both the starting and ending page date to include in export.</li><li>Status &#8211; select the page status (e.g. Published) to export or leave at All Status.</li><li>Download Export File &#8211; click this button and the file,  with any filters selected, will be created and you will be asked to save that file to your local computer.</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Tools \u2192 Export Exporting your WordPress data (posts, pages, custom post types, comments, custom fields, categories, tags, custom taxonomies, and users) is sometimes necessary and useful. If you are moving to a new host or just want a backup of your site data, then Exporting your site is the answer. Once the export file is [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11240711",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11240711",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11240711"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11240711/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360423,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11240711/revisions/16360423"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11240711"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11240711"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

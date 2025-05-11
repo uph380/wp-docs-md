@@ -1,0 +1,91 @@
+{
+    "id": 157189,
+    "date": "2025-02-21T04:17:13",
+    "date_gmt": "2025-02-21T04:17:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/separator/separator-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:30",
+    "modified_gmt": "2025-02-21T04:17:30",
+    "slug": "separator-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/separator/separator-tutorial/",
+    "title": {
+        "rendered": "Using the Separator Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Separator field</li>\n<li>Configure options:\n<ul>\n<li>Set label text</li>\n<li>Add instructions</li>\n<li>Style wrapper</li>\n<li>Position field</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Content Organization\n<ul>\n<li>Section breaks</li>\n<li>Field grouping</li>\n<li>Visual hierarchy</li>\n</ul>\n</li>\n<li>Form Structure\n<ul>\n<li>Content sections</li>\n<li>Logical breaks</li>\n<li>Visual spacing</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Use clear labels</li>\n<li>Keep consistent styling</li>\n<li>Consider spacing</li>\n<li>Group related fields</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157188,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157189",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157189",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157189/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157226,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157189/revisions/157226"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157188"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157189"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

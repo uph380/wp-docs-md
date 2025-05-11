@@ -1,0 +1,97 @@
+{
+    "id": 10957,
+    "date": "2014-09-17T21:58:21",
+    "date_gmt": "2014-09-17T21:58:21",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10957"
+    },
+    "modified": "2022-11-17T07:15:09",
+    "modified_gmt": "2022-11-17T07:15:09",
+    "slug": "top-level-menus",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/administration-menus/top-level-menus/",
+    "title": {
+        "rendered": "Top-Level Menus"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Add a Top-Level Menu</h2>\n\n\n\n<p>To add a new Top-level menu to WordPress Administration, use the <a href=\"https://developer.wordpress.org/reference/functions/add_menu_page/\" rel=\"function\">add_menu_page()</a>  function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_menu_page(\n    string $page_title,\n    string $menu_title,\n    string $capability,\n    string $menu_slug,\n    callable $function = &apos;&apos;,\n    string $icon_url = &apos;&apos;,\n    int $position = null\n);</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Example</h3>\n\n\n\n<p>Lets say we want to add a new Top-level menu called &#8220;WPOrg&#8221;.</p>\n\n\n\n<p><strong>The first step</strong> will be creating a function which will output the HTML. In this function we will perform the necessary security checks and render the options we&#8217;ve registered using the <a href=\"https://developer.wordpress.org/plugins/settings/\">Settings API</a>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"></p>\n<p>We recommend wrapping your HTML using a <code>&lt;div&gt;</code> with a class of <code>wrap</code>.</p>\n<p></div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_options_page_html() {\n    ?&gt;\n    &lt;div class=\"wrap\"&gt;\n      &lt;h1&gt;&lt;?php echo esc_html( get_admin_page_title() ); ?&gt;&lt;/h1&gt;\n      &lt;form action=\"options.php\" method=\"post\"&gt;\n        &lt;?php\n        // output security fields for the registered setting \"wporg_options\"\n        settings_fields( 'wporg_options' );\n        // output setting sections and their fields\n        // (sections are registered for \"wporg\", each field is registered to a specific section)\n        do_settings_sections( 'wporg' );\n        // output save settings button\n        submit_button( __( 'Save Settings', 'textdomain' ) );\n        ?&gt;\n      &lt;/form&gt;\n    &lt;/div&gt;\n    &lt;?php\n}</code></pre>\n\n\n\n<p><strong>The second step</strong> will be registering our WPOrg menu. The registration needs to occur during the <code>admin_menu</code> action hook.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'admin_menu', 'wporg_options_page' );\nfunction wporg_options_page() {\n    add_menu_page(\n        'WPOrg',\n        'WPOrg Options',\n        'manage_options',\n        'wporg',\n        'wporg_options_page_html',\n        plugin_dir_url(__FILE__) . 'images/icon_wporg.png',\n        20\n    );\n}</code></pre>\n\n\n\n<p>For a list of parameters and what each do please see the <a href=\"https://developer.wordpress.org/reference/functions/add_menu_page/\" rel=\"function\">add_menu_page()</a>  in the reference.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using a PHP File for HTML</h3>\n\n\n\n<p>The best practice for portable code would be to create a Callback that requires/includes your PHP file.</p>\n\n\n\n<p>For the sake of completeness and helping you understand legacy code, we will show another way: passing a <code>PHP file path</code> as the <code>$menu_slug</code> parameter with an <code>null</code> <code>$function</code> parameter.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'admin_menu', 'wporg_options_page' );\nfunction wporg_options_page() {\n    add_menu_page(\n        'WPOrg',\n        'WPOrg Options',\n        'manage_options',\n        plugin_dir_path(__FILE__) . 'admin/view.php',\n        null,\n        plugin_dir_url(__FILE__) . 'images/icon_wporg.png',\n        20\n    );\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Remove a Top-Level Menu</h2>\n\n\n\n<p>To remove a registered menu from WordPress Administration, use the <a href=\"https://developer.wordpress.org/reference/functions/remove_menu_page/\" rel=\"function\">remove_menu_page()</a>  function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">remove_menu_page(\n    string $menu_slug\n);</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nRemoving menus won&#8217;t prevent users accessing them directly.<br />This should never be used as a way to restrict <a href=\"https://developer.wordpress.org/plugins/users/roles-and-capabilities/\">user capabilities</a>.<br />\n</div></div>\n\n\n\n\n<h3 class=\"wp-block-heading\">Example</h3>\n\n\n\n<p>Lets say we want to remove the &#8220;Tools&#8221; menu from.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'admin_menu', 'wporg_remove_options_page', 99 );\nfunction wporg_remove_options_page() {\n    remove_menu_page( 'tools.php' );\n}</code></pre>\n\n\n\n<p>Make sure that the menu have been registered with the <code>admin_menu</code> hook before attempting to remove, specify a higher priority number for <a href=\"https://developer.wordpress.org/reference/functions/add_action/\" rel=\"function\">add_action()</a> .</p>\n\n\n\n<h2 class=\"wp-block-heading\">Submitting forms</h2>\n\n\n\n<p>To process the submissions of forms on options pages, you will need two things:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Use the URL of the page as the <code>action</code> attribute of the form.</li>\n\n\n\n<li>Add a hook with the slug, returned by <code>add_menu_page</code>.</li>\n</ol>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nYou only need to follow those steps if you are manually creating forms in the back-end. The <a href=\"https://developer.wordpress.org/plugins/settings/\">Settings API</a> is the recommended way to do this.<br />\n</div></div>\n\n\n\n\n<h3 class=\"wp-block-heading\">Form action attribute</h3>\n\n\n\n<p>Use the <code>$menu_slug</code> parameter of the options page as the first parameter of  <code><a href=\"https://developer.wordpress.org/reference/functions/menu_page_url/\">menu_page_url()</a></code>. By the function will automatically escape URL and echo it by default, so you can directly use it within the <code>&lt;form&gt;</code> tag:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;form action=\"&lt;?php menu_page_url( 'wporg' ) ?&gt;\" method=\"post\"&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Processing the form</h3>\n\n\n\n<p>The <code>$function</code> you specify while adding the page will only be called once it is time to display the page, which makes it inappropriate if you need to send headers (ex. redirects) back to the browser.</p>\n\n\n\n<p><code>add_menu_page</code> returns a <code>$hookname</code>, and WordPress triggers the <code>\"load-$hookname\"</code> action before any HTML output. You can use this to assign a function, which could process the form.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\n<code>\"load-$hookname\"</code> will be executed every time before an options page will be displayed, even when the form is not being submitted.<br />\n</div></div>\n\n\n\n\n<p>With the return parameter and action in mind, the example from above would like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'admin_menu', 'wporg_options_page' );\nfunction wporg_options_page() {\n\t$hookname = add_menu_page(\n\t\t'WPOrg',\n\t\t'WPOrg Options',\n\t\t'manage_options',\n\t\t'wporg',\n\t\t'wporg_options_page_html',\n\t\tplugin_dir_url(__FILE__) . 'images/icon_wporg.png',\n\t\t20\n\t);\n\n\tadd_action( 'load-' . $hookname, 'wporg_options_page_submit' );\n}</code></pre>\n\n\n\n<p>You can program <code>wporg_options_page_submit</code> according to your needs, but keep in mind that you must manually perform all necessary checks, including:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Whether the form is being submitted (<code>'POST' === $_SERVER['REQUEST_METHOD']</code>).</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/security/nonces/\">CSRF verification</a></li>\n\n\n\n<li>Validation</li>\n\n\n\n<li>Sanitization</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10955,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10957",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10957",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 34,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10957/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144429,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10957/revisions/144429"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10955"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10957"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

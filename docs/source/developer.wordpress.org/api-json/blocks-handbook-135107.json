@@ -1,0 +1,91 @@
+{
+    "id": 135107,
+    "date": "2021-03-10T02:39:47",
+    "date_gmt": "2021-03-10T02:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/design/the-block/"
+    },
+    "modified": "2025-01-07T18:34:10",
+    "modified_gmt": "2025-01-07T18:34:10",
+    "slug": "the-block",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/design/the-block/",
+    "title": {
+        "rendered": "Blocks are the Interface"
+    },
+    "content": {
+        "rendered": "<p>At the core of Gutenberg lies the concept of the block. From a technical point of view, blocks both raise the level of abstraction from a single document to a collection of meaningful elements, and they replace ambiguity\u2014inherent in HTML\u2014with explicit structure.</p>\n<p>From a user perspective, blocks allow any kind of content, media, or functionality to be directly added to their site in a more consistent and usable way. The \u201cadd block\u201d button gives the user access to an entire library of options all in one place, rather than having to hunt through menus or know shortcodes.</p>\n<p>But most importantly, Gutenberg is built on the principle of <em>direct manipulation</em>, which means that the primary options for how an element is displayed are controlled <em>in the context of the block itself</em>. This is a big shift from the traditional WordPress model, where options that were often buried deep in layers of navigation menus controlled the elements on a page through indirect mechanisms.</p>\n<p>So, for example, a user can add an image, write its caption, change its width and layout, add a link around it, all from within the block interface in the canvas. The same principle should apply to more complex blocks, like a &#8220;navigation menu&#8221;, with the user being able to add, edit, move, and finalize the full presentation of their navigation.</p>\n<ul>\n<li>Users only need to learn one interface \u2014 the block \u2014 to add and edit everything on their site. Users shouldn\u2019t have to write shortcodes, custom HTML, or understand hidden mechanisms to embed content.</li>\n<li>Gutenberg makes core features more discoverable, reducing hard-to-find \u201cMystery meat.\u201d WordPress supports a large number of blocks and 30+ embeds. Let\u2019s increase their visibility.</li>\n</ul>\n<h2>Building blocks</h2>\n<p>What does this mean for designers and developers? The block structure plus the principle of direct manipulation mean thinking differently about how to design and develop WordPress components. Let\u2019s take another look at the architecture of a block:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/cldup.com/LQrPNubkJY.png?ssl=1\" alt=\"Gutenberg Blueprint\" /></p>\n<h3>The primary interface for a block is the content area of the block.</h3>\n<p>The placeholder content in the content area of the block can be thought of as a guide or interface for users to follow a set of instructions or \u201cfill in the blanks\u201d (more on placeholders later). Since the content area represents what will actually appear on the site, interaction here hews closest to the principle of direct manipulation and will be most intuitive to the user. This should be thought of as the primary interface for adding and manipulating content and adjusting how it is displayed.</p>\n<h3>The block toolbar is the place for critical options that can\u2019t be incorporated into placeholder UI.</h3>\n<p>Basic block settings won\u2019t always make sense in the context of the placeholder / content UI. As a secondary option, options that are critical to the functionality of a block can live in the block toolbar. The block toolbar is one step removed from direct manipulation, but is still highly contextual and visible on all screen sizes, so it is a great secondary option.</p>\n<h3>The Settings Sidebar should only be used for advanced, tertiary controls.</h3>\n<p>The Settings Sidebar is not visible by default on a small / mobile screen, and may also be collapsed even in a desktop view. Therefore, it should not be relied on for anything that is necessary for the basic operation of the block. Pick good defaults, make important actions available in the block toolbar, and think of the sidebar as something that only power users may discover.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134990,
+    "menu_order": 390,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135107",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135107",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135107/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154006,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135107/revisions/154006"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134990"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135107"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

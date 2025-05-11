@@ -1,0 +1,91 @@
+{
+    "id": 157192,
+    "date": "2025-02-21T04:17:14",
+    "date_gmt": "2025-02-21T04:17:14",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/taxonomy/"
+    },
+    "modified": "2025-02-21T04:17:30",
+    "modified_gmt": "2025-02-21T04:17:30",
+    "slug": "taxonomy",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/taxonomy/",
+    "title": {
+        "rendered": "Taxonomy Field"
+    },
+    "content": {
+        "rendered": "<p>The Taxonomy field creates an interface for selecting taxonomy terms. It supports multiple selection methods and term management.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Term selection</li>\n<li>Multiple display types</li>\n<li>Term creation</li>\n<li>Hierarchical support</li>\n<li>Load on demand</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Taxonomy &#8211; Choose taxonomy</li>\n<li>Appearance &#8211; Select UI style</li>\n<li>Allow Create &#8211; Enable term creation</li>\n<li>Load Terms &#8211; Auto-load options</li>\n<li>Save Terms &#8211; Term relationships</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157192",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157192",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157192/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157223,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157192/revisions/157223"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157192"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

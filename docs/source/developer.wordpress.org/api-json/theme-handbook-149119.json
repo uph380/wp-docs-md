@@ -1,0 +1,97 @@
+{
+    "id": 149119,
+    "date": "2023-10-17T14:41:28",
+    "date_gmt": "2023-10-17T14:41:28",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149119"
+    },
+    "modified": "2023-12-14T21:39:00",
+    "modified_gmt": "2023-12-14T21:39:00",
+    "slug": "styles-reference",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/styles-reference/",
+    "title": {
+        "rendered": "Styles Reference"
+    },
+    "content": {
+        "rendered": "\n<p>This is a reference to the available style properties that you can apply to the root element (global), individual elements, and individual blocks in <code>theme.json</code>. Please review the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/applying-styles/\">Applying Styles</a> documentation to learn how to apply styles to your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Border</h2>\n\n\n\n<p>There are two methods for working with the <code>border</code> style property. The first is to target all sides of a block or element with the properties shown in the table:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>border.radius</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius\"><code>border-radius</code></a></td></tr><tr><td><code>border.color</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/border-color\"><code>border-color</code></a></td></tr><tr><td><code>border.style</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/border-style\"><code>border-style</code></a></td></tr><tr><td><code>border.width</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/border-width\"><code>border-width</code></a></td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"border\": {\n\t\t\t\"color\": \"#000000\",\n\t\t\t\"style\": \"solid\",\n\t\t\t\"width\": \"1px\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>The second method is to specifically target the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> sides:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>border.&lt;side&gt;.color</code></td><td>string, object</td><td><code>border-&lt;side&gt;-color</code></td></tr><tr><td><code>border.&lt;side&gt;.style</code></td><td>string, object</td><td><code>border-&lt;side&gt;-style</code></td></tr><tr><td><code>border.&lt;side&gt;.width</code></td><td>string, object</td><td><code>border-&lt;side&gt;-width</code></td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"border\": {\n\t\t\t\"top\": {\n\t\t\t\t\"color\": \"#000000\",\n\t\t\t\t\"style\": \"solid\",\n\t\t\t\t\"width\": \"1px\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Color</h2>\n\n\n\n<p>The <code>color</code> style property lets you define the default text, background, and link colors for a block or element:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>color.text</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/color\"><code>color</code></a></td></tr><tr><td><code>color.background-color</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/background-color\"><code>background-color</code></a></td></tr><tr><td><code>color.link</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/color\"><code>color</code></a> (applied to nested <code>&lt;a&gt;</code> elements)</td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"blocks\": {\n\t\t\t\"core/group\": {\n\t\t\t\t\"color\": {\n\t\t\t\t\t\"text\": \"#000000\",\n\t\t\t\t\t\"background\": \"#ffffff\",\n\t\t\t\t\t\"link\": \"#777777\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Dimensions</h2>\n\n\n\n<p>The <code>dimensions</code> style property lets you define the minimum height for a block or element:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>dimensions.minHeight</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/min-height\"><code>min-height</code></a></td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"blocks\": {\n\t\t\t\"core/cover\": {\n\t\t\t\t\"dimensions\": {\n\t\t\t\t\t\"minHeight\": \"50vh\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Filter</h2>\n\n\n\n<p>The <code>filter</code> style property lets you define filters for a block or element. Currently, you can set a default duotone filter:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>filter.duotone</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/filter\"><code>filter</code></a></td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"blocks\": {\n\t\t\t\"core/image\": {\n\t\t\t\t\"filter\": {\n\t\t\t\t\t\"duotone\": \"var(--wp--preset--duotone--default-filter)\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Shadow</h2>\n\n\n\n<p>The <code>shadow</code> style property lets you define the default box-shadow style for a block or element:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>shadow</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow\"><code>box-shadow</code></a></td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"blocks\": {\n\t\t\t\"core/heading\": {\n\t\t\t\t\"shadow\": \"0 1px 2px 0 rgb(0 0 0 / 0.05)\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Spacing</h2>\n\n\n\n<p>The <code>spacing</code> style property lets you define the default gap, margin, and padding for a block or element:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>blockGap</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top\"><code>margin-top</code></a>, <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/gap\"><code>gap</code></a></td></tr><tr><td><code>margin.&lt;side&gt;</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/margin\"><code>margin-&lt;side&gt;</code></a></td></tr><tr><td><code>padding.&lt;side&gt;</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/padding\"><code>padding-&lt;side&gt;</code></a></td></tr></tbody></table></figure>\n\n\n\n<p>You can define any or all of the sides (<code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>) for the <code>margin</code> and <code>padding</code> style properties.</p>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"spacing\": {\n\t\t\t\"blockGap\": \"2rem\",\n\t\t\t\"margin\": {\n\t\t\t\t\"top\": \"2rem\",\n\t\t\t\t\"bottom\": \"2rem\"\n\t\t\t},\n\t\t\t\"padding\": {\n\t\t\t\t\"left\": \"2rem\",\n\t\t\t\t\"right\": \"2rem\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Typography</h2>\n\n\n\n<p>The <code>typography</code> style property lets you define default font and text-related styles for a block or element:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>fontFamily</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-family\"><code>font-family</code></a></td></tr><tr><td><code>fontSize</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-size\"><code>font-size</code></a></td></tr><tr><td><code>fontStyle</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-style\"><code>font-style</code></a></td></tr><tr><td><code>fontWeight</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight\"><code>font-weight</code></a></td></tr><tr><td><code>letterSpacing</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing\"><code>letter-spacing</code></a></td></tr><tr><td><code>lineHeight</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/line-height\"><code>line-height</code></a></td></tr><tr><td><code>textColumns</code></td><td>string</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/columns\"><code>columns</code></a></td></tr><tr><td><code>textDecoration</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration\"><code>text-decoration</code></a></td></tr><tr><td><code>writingMode</code></td><td>string, object</td><td><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode\"><code>writing-mode</code></a></td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"blocks\": {\n\t\t\t\"core/paragraph\": {\n\t\t\t\t\"typography\": {\n\t\t\t\t\t\"fontFamily\": \"Georgia, serif\",\n\t\t\t\t\t\"fontSize\": \"1.25rem\",\n\t\t\t\t\t\"fontStyle\": \"normal\",\n\t\t\t\t\t\"fontWeight\": \"500\",\n\t\t\t\t\t\"letterSpacing\": \"0\",\n\t\t\t\t\t\"lineHeight\": \"1.6\",\n\t\t\t\t\t\"textDecoration\": \"none\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">CSS</h2>\n\n\n\n<p>The <code>css</code> property lets you write custom CSS directly in <code>theme.json</code> for a block or element:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>CSS Property</th></tr></thead><tbody><tr><td><code>css</code></td><td>string</td><td>\u2014</td></tr></tbody></table></figure>\n\n\n\n<p>Example usage in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"blocks\": {\n\t\t\t\"core/gallery\": {\n\t\t\t\t\"css\": \"--wp--style--gallery-gap-default: 1rem;\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>For an in-depth look at how to use the <code>css</code> style property, read <a href=\"https://developer.wordpress.org/news/2023/04/per-block-css-with-theme-json/\">Per-block CSS with <code>theme.json</code></a> on the WordPress Developer Blog.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148909,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149119",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149119",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149119/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150481,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149119/revisions/150481"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148909"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149119"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 156778,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/accordion/accordion-tutorial/"
+    },
+    "modified": "2025-02-21T04:18:02",
+    "modified_gmt": "2025-02-21T04:18:02",
+    "slug": "accordion-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/accordion/accordion-tutorial/",
+    "title": {
+        "rendered": "Using the Accordion Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add an Accordion field</li>\n<li>Configure basic settings:\n<ul>\n<li>Set a clear section title</li>\n<li>Choose if it should be open by default</li>\n<li>Decide if multiple sections can be open</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Organizing Content Sections\n<ul>\n<li>Group related fields together</li>\n<li>Use clear section names</li>\n<li>Consider the editing workflow</li>\n</ul>\n</li>\n<li>Creating Form Sections\n<ul>\n<li>Basic Information</li>\n<li>Detailed Content</li>\n<li>Settings/Configuration</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Keep section names concise but descriptive</li>\n<li>Don&#8217;t nest accordions too deeply</li>\n<li>Consider using endpoints to create clear breaks</li>\n<li>Group related fields logically</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156777,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156778",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156778",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156778/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156941,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156778/revisions/156941"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156777"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156778"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

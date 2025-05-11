@@ -1,0 +1,97 @@
+{
+    "id": 19213,
+    "date": "2016-04-04T18:28:10",
+    "date_gmt": "2016-04-04T18:28:10",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=19213"
+    },
+    "modified": "2024-10-12T19:05:46",
+    "modified_gmt": "2024-10-12T19:05:46",
+    "slug": "take-over-an-existing-plugin",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/",
+    "title": {
+        "rendered": "Take Over an Existing Plugin"
+    },
+    "content": {
+        "rendered": "\n<p>People cease development on their plugins for a variety of reasons. Instead of letting those plugins stagnate, we encourage people to instead list them for adoption by another, more active, developer.</p>\n\n\n\n<p>In adopting a plugin, you are promising to be responsible for all future development, and to ensure the plugin (and you) comply with all <a href=\"https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/\">plugin guidelines</a>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Not all requests will be approved, even following a successful review.</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\" id=\"the-adoption-process\">The Adoption Process</h2>\n\n\n\n<p>There are two ways a plugin can be adopted. </p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>You ask the developer directly, they say yes and add you</li>\n\n\n\n<li>You ask the Plugin Review team to assist you</li>\n</ol>\n\n\n\n<p>Since you&#8217;re reading this, you likely are working on the second method, so keep reading. You will be expected to have followed <strong>all</strong> the steps herein.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">\n<p>In some specific situations, the Plugin Review team might also consider donating the plugin to a different user if the original plugin author gets blocked.</p>\n</div></div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"1-check-the-plugin-status\">1. Check the Plugin Status</h3>\n\n\n\n<p>If the plugin is open and active, give it a full review on your own before you go any further. Make sure you feel comfortable and capable of maintaining the code long term.</p>\n\n\n\n<p>If a plugin is closed because it was <strong>unused</strong>, you can skip the rest of this and email <code>plugins@wordpress.org</code> right away and attach your version of the proposed plugin. </p>\n\n\n\n<p>If the plugin was closed for security issues, we require <strong>all</strong> those issues to be resolved, so put your best foot forward and demonstrate you have the impetus to find and fix those issues.</p>\n\n\n\n<p>Closed plugins are <em>less</em> likely to be able to be adopted, as the nature of their closures may be more complex and intricate. If a plugin was closed for license issues, for example, we may not be permitted to reopen it for anyone except the license holders.</p>\n\n\n\n<p>Larger plugins (100k users or more) are also less likely to be adopted, as that is a not-insignificant userbase, and we need to be sure you really are capable of managing a plugin of that size.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"2-contact-the-original-developer\">2. Contact the Original Developer</h3>\n\n\n\n<p>You <em>must</em> attempt to contact the original developer, as they can <a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/#plugin-ownership\">give you access to the plugin</a>. We recommend trying:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>email</li>\n\n\n\n<li>leaving a comment on the plugin support page</li>\n\n\n\n<li>opening a GitHub issue</li>\n</ul>\n\n\n\n<p>We expect you to make all reasonable efforts to reach out to them. If the plugin page says the plugin has no active developer, then you&#8217;re fine.</p>\n\n\n\n<p>If you&nbsp;<em>do</em> get in touch with the developer, ask them to <a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/#plugin-ownership\">transfer ownership to you</a>. They can do this on their own and, once it&#8217;s done, you may manage the plugin. If they have issues, have them contact the plugin team via email and we will assist them.</p>\n\n\n\n<p>If there&#8217;s no way to get in touch, or they don&#8217;t reply, move to step 3.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"3-update-the-code\">3. Update The Code</h3>\n\n\n\n<p>Even if the plugin has been given to you by the developer, you must review the code from the top down to make sure it&#8217;s safe, secure, and meets our current <a href=\"https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/\">guidelines</a>.</p>\n\n\n\n<p>Your update must include editing the readme to ensure it documents the new ownership (and preferably when it takes place), removing all links to their site/support resources, as well as updating the copyright information to include you. Remember, copyright is additive. You keep the old and add yours on.</p>\n\n\n\n<p>If your plugin is a major upgrade, you <em>must</em> provide an upgrade path. Just wanting a name-slug is not sufficient reason to take over a plugin. We care deeply about our users, and violating their trust in us by breaking their existing sites with your upgrades is to be avoided at all costs.</p>\n\n\n\n<p>Remember you need to <em>increase</em> the version number so people are prompted to upgrade to your new version.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"4-submit-your-code-for-review\">4. Submit Your Code for Review</h3>\n\n\n\n<p>If you still can&#8217;t get in touch with the original developer, you&#8217;ll need to ask the Plugin Review Team for help.</p>\n\n\n\n<p>Once you&#8217;ve finished updating the code, email <code>plugins@wordpress.org</code> explaining how you tried to contact the original developer and with your code attached as a zip. If you can&#8217;t email zips, then upload it to some file service (Google Drive, Dropbox, etc) or provide a link to your code repository (Github, Bitbucket, etc). Make sure the link is public!</p>\n\n\n\n<p>After we receive your version of the code as a zip, we will review it and test it. At this point, you will go through a <em>normal</em> review process. That is, we will treat you like any new plugin and we will check the whole plugin for security and guidelines. Even if those issues are found in the original plugin, you will be required to fix them.</p>\n\n\n\n<p>At this stage, some plugins are determined to have existing security flaws. We may close those plugins, depending on the nature of the issues, and you will be trusted to not publicly disclose those issues.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"5-we-contact-the-original-developer\">5. We Contact the Original Developer</h3>\n\n\n\n<p>Once we feel the code is acceptable, and that you are capable of sustaining that specific plugin in a secure manner that adheres to our guidelines, we will contact the original developer on your behalf and give them your information, explaining that you want to take over development.</p>\n\n\n\n<p>We&#8217;ll do everything we can to ensure the original plugin author has been notified, but sometimes that&#8217;s just not possible.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"6-wait-patiently\">6. Wait Patiently</h3>\n\n\n\n<p>We give the original developer 30 days (1 month) to reply to our inquiry. Should they reply and deny the request, we will honour their decision and ask you to convert the plugin into a forked version. We do our best to respect them as much as we respect you as a developer, and honor their wishes with their work.</p>\n\n\n\n<p>If they approve it, we will assist in transitioning the plugin to your account.</p>\n\n\n\n<p>If they don&#8217;t reply, and you&#8217;ve made it this far, we will likely transfer the plugin to you.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"7-update-the-plugin\">7. Update the Plugin</h3>\n\n\n\n<p>In order to <em>safely</em> update the plugin, we will close it before we add you. You will then be required to update via SVN. Once that&#8217;s done, we&#8217;ll double check everything is correct and reopen it. The plugin will now be yours.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"frequently-asked-questions\">Frequently Asked Questions</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"will-old-reviews-support-posts-be-removed\">Will old reviews/support posts be removed?</h3>\n\n\n\n<p>No. You inherit the good and the bad.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"do-i-have-to-keep-the-original-developer-on\">Do I have to keep the original developer on?</h3>\n\n\n\n<p>No. You can (and in fact should) remove commit access from anyone who is not actively maintaining the plugin. However. Per copyright restrictions, you must retain their credit in the code. We recommend you also leave them listed as a contributor.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"the-original-developer-is-dead-does-that-change-anything\">The original developer is dead. Does that change anything?</h3>\n\n\n\n<p>Yes, but not how you&#8217;re thinking. You (obviously) can skip asking them for permissions first, but we actually reach out to the developers&#8217; coworkers and teams to see if they want to continue maintaining the plugin. In some cases, a developer will ask us to permanently close their plugins in the event of their death. We respect their wishes.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"why-was-my-request-denied\">Why was my request denied?</h3>\n\n\n\n<p>In cases where we deny an adoption, it&#8217;s usually for the following reasons.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The requesting developer does not have the experience we feel the plugin requires</li>\n\n\n\n<li>The requested plugin is deemed high-risk</li>\n\n\n\n<li>The existing developer is a company or legal entity who owns the trademark</li>\n\n\n\n<li>The plugin has legal issues preventing us from from any transfers</li>\n\n\n\n<li>The requesting developer has had multiple guideline\u00a0infractions</li>\n\n\n\n<li>The original developer asked us not to</li>\n</ul>\n\n\n\n<p>If we don&#8217;t feel comfortable handing over a plugin, we will inform you as soon as possible. </p>\n\n\n\n<p>There are rare cases where the plugin has already been given to new owners, but they have not yet deployed code. In general, if you\u2019re told that a specific plugin is not available, there is a long history concerning the plugin preventing us from permitting takeover. In those cases, we recommend you submit your plugin as a fork.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-19213",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/19213",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/19213/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155505,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/19213/revisions/155505"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=19213"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

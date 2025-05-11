@@ -1,0 +1,109 @@
+{
+    "id": 11285951,
+    "date": "2019-03-07T12:42:01",
+    "date_gmt": "2019-03-07T12:42:01",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11285951"
+    },
+    "modified": "2024-06-08T19:26:45",
+    "modified_gmt": "2024-06-08T19:26:45",
+    "slug": "shortcode-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/shortcode-block/",
+    "title": {
+        "rendered": "Shortcode block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>A&nbsp;shortcode&nbsp;is a WordPress-specific code that lets you do nifty things with very little effort. Shortcodes can embed files or create objects that would normally require lots of complicated, ugly code in just one line.&nbsp;<strong>Shortcode = shortcut</strong>.</p>\n\n\n\n<p>The&nbsp;<em>shortcode block</em>&nbsp;can be added to a page by clicking on the Add Block button. It can be found in&nbsp;<em>Widgets</em>&nbsp;section. Alternatively, you can type /shortcode and press enter.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2020/09/adding-a-shortcode.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/09/adding-a-shortcode.png\" alt=\"Add shortcodes with a slash command.\n\" class=\"wp-image-13370678\" width=\"345\" height=\"133\" srcset=\"https://wordpress.org/documentation/files/2020/09/adding-a-shortcode.png 918w, https://wordpress.org/documentation/files/2020/09/adding-a-shortcode-300x116.png 300w, https://wordpress.org/documentation/files/2020/09/adding-a-shortcode-768x297.png 768w\" sizes=\"auto, (max-width: 345px) 100vw, 345px\" /></a><figcaption class=\"wp-element-caption\">Add shortcodes with a slash command.<br></figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p><br>In this video, you can see how you can use the short block and the different settings to modify how your content will appear.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls loop muted src=\"https://wordpress.org/documentation/files/2020/10/how-shortcode-block-works.mp4\"></video><figcaption class=\"wp-element-caption\">How the shortcode block works</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"block-toolbar\"><br>Block Toolbar</h2>\n\n\n\n<p>Unlike other common blocks, the&nbsp;<em>shortcode block</em>&nbsp;does not include any specific settings in the block toolbar or editor sidebar.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings-1024x486.png\" alt=\"Shortcode Block Editor Sidebar\" class=\"wp-image-13370595\" width=\"358\" height=\"169\" srcset=\"https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings-1024x486.png 1024w, https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings-300x142.png 300w, https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings-768x364.png 768w, https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings-1536x729.png 1536w, https://wordpress.org/documentation/files/2020/09/shortcode-with-no-extra-settings.png 1920w\" sizes=\"auto, (max-width: 358px) 100vw, 358px\" /></a><figcaption class=\"wp-element-caption\">Shortcode Block Editor Sidebar</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Writing Your Shortcode</strong></p>\n\n\n\n<p>You may type your shortcode into the box provided or paste it from the&nbsp;available shortcodes.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><a href=\"https://wordpress.org/documentation/files/2020/09/write-shortcode-here-5.5-images.png\"><img loading=\"lazy\" decoding=\"async\" width=\"773\" height=\"421\" src=\"https://wordpress.org/documentation/files/2020/09/write-shortcode-here-5.5-images.png\" alt=\"Image showing where to add the shortcode \" class=\"wp-image-13370594\" srcset=\"https://wordpress.org/documentation/files/2020/09/write-shortcode-here-5.5-images.png 773w, https://wordpress.org/documentation/files/2020/09/write-shortcode-here-5.5-images-300x163.png 300w, https://wordpress.org/documentation/files/2020/09/write-shortcode-here-5.5-images-768x418.png 768w\" sizes=\"auto, (max-width: 773px) 100vw, 773px\" /></a><figcaption class=\"wp-element-caption\">The shortcode block interface.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"block-settings\">Block Settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar. <em>If you do not see the sidebar, simply click the &#8216;cog&#8217; icon next to the Publish button.</em></p>\n\n\n\n<p>As you can see, the <em>shortcode block</em> doesn&#8217;t include specific settings in the block settings.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/09/block-settings-1024x471.png\" alt=\"Block settings for the shortcode block\" class=\"wp-image-13370720\" width=\"349\" height=\"160\" srcset=\"https://wordpress.org/documentation/files/2020/09/block-settings-1024x471.png 1024w, https://wordpress.org/documentation/files/2020/09/block-settings-300x138.png 300w, https://wordpress.org/documentation/files/2020/09/block-settings-768x353.png 768w, https://wordpress.org/documentation/files/2020/09/block-settings-1536x707.png 1536w, https://wordpress.org/documentation/files/2020/09/block-settings.png 1626w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></figure>\n\n\n\n<p>You can transform a <em>shortcode block</em> into a group or into a columns, so you can further apply custom settings to the block.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"856\" height=\"265\" src=\"https://wordpress.org/documentation/files/2022/02/shortcode-transform-v5.9.jpg\" alt=\"\" class=\"wp-image-15328792\" srcset=\"https://wordpress.org/documentation/files/2022/02/shortcode-transform-v5.9.jpg 856w, https://wordpress.org/documentation/files/2022/02/shortcode-transform-v5.9-300x93.jpg 300w, https://wordpress.org/documentation/files/2022/02/shortcode-transform-v5.9-768x238.jpg 768w\" sizes=\"auto, (max-width: 856px) 100vw, 856px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Color </strong></p>\n\n\n\n<p>Text and background colors can be set on a per-block basis, allowing you to call attention to important content.</p>\n\n\n\n<p>Via the \u201cCustom Color\u201d link you can further modify the color choice.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<p>Accessibility parameters are built into the new editor to warn you when the text may become illegible for persons with reading impairments.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/6752710/152538651-2a906364-0488-4f56-a81e-72864e18b490.jpg\" alt=\"Settings for the group block\" /></figure>\n\n\n\n<p class=\"has-large-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>In the advanced panel of the block options, you\u2019ll see options for HTML Anchor and Additional CSS Class.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-22-at-12.07.36-PM.png\" alt=\"Advanced settings for the shortcode\" width=\"282\" height=\"332\" /></figure>\n\n\n\n<p>\u201cHTML anchor\u201d allows you to&nbsp;<a href=\"https://wordpress.org/documentation/article/page-jumps/\">make a unique web address</a>&nbsp;for a particular Heading block. Then, you\u2019ll be able to link directly to the Heading block of your page.</p>\n\n\n\n<p>The \u201cAdditional CSS class(es)\u201d lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-large-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-27\n<ul class=\"wp-block-list\">\n<li>Added alt text to images </li>\n\n\n\n<li>Removed redundant content </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-02-04\n<ul class=\"wp-block-list\">\n<li>Updated 5.9 screenshot</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-09-07\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshot</li>\n\n\n\n<li>Added block settings</li>\n\n\n\n<li>Added changelog</li>\n\n\n\n<li>Added more options </li>\n\n\n\n<li>Added go to list block</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks A&nbsp;shortcode&nbsp;is a WordPress-specific code that lets you do nifty things with very little effort. Shortcodes can embed files or create objects that would normally require lots of complicated, ugly code in just one line.&nbsp;Shortcode = shortcut. The&nbsp;shortcode block&nbsp;can be added to a page by clicking on the Add [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-11285951",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285951",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11285951"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285951/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360400,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285951/revisions/16360400"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11285951"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11285951"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

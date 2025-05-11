@@ -1,0 +1,91 @@
+{
+    "id": 134526,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-plugin-import-jsx-pragma/"
+    },
+    "modified": "2025-01-29T11:34:12",
+    "modified_gmt": "2025-01-29T11:34:12",
+    "slug": "packages-babel-plugin-import-jsx-pragma",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-plugin-import-jsx-pragma/",
+    "title": {
+        "rendered": "@wordpress/babel-plugin-import-jsx-pragma"
+    },
+    "content": {
+        "rendered": "<p>Babel transform plugin for automatically injecting an import to be used as the pragma for the <a href=\"https://babeljs.io/docs/babel-plugin-transform-react-jsx\">React JSX Transform plugin</a>.</p>\n<p><a href=\"https://reactjs.org/docs/jsx-in-depth.html\">JSX</a> is merely a syntactic sugar for a function call, typically to <code>React.createElement</code> when used with <a href=\"https://reactjs.org/\">React</a>. As such, it requires that the function referenced by this transform be within the scope of the file where the JSX occurs. In a typical React project, this means React must be imported in any file where JSX exists.</p>\n<p><strong>Babel Plugin Import JSX Pragma</strong> automates this process by introducing the necessary import automatically wherever JSX exists, allowing you to use JSX in your code without thinking to ensure the transformed function is within scope. It respects existing import statements, as well as scope variable declarations.</p>\n<h2>Installation</h2>\n<p>Install the module to your project using <a href=\"https://www.npmjs.com/\">npm</a>.</p>\n<pre><code class=\"language-bash\">npm install @wordpress/babel-plugin-import-jsx-pragma\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Usage</h2>\n<p>Refer to the <a href=\"https://babeljs.io/docs/plugins\">Babel Plugins documentation</a> if you don&#8217;t yet have experience working with Babel plugins.</p>\n<p>Include <code>@wordpress/babel-plugin-import-jsx-pragma</code> (and <a href=\"https://babeljs.io/docs/babel-plugin-transform-react-jsx/\">@babel/plugin-transform-react-jsx</a>) as plugins in your Babel configuration. If you don&#8217;t include both you will receive errors when encountering JSX tokens.</p>\n<pre><code class=\"language-js\">// .babelrc.js\nmodule.exports = {\n    plugins: [\n        '@wordpress/babel-plugin-import-jsx-pragma',\n        '@babel/plugin-transform-react-jsx',\n    ],\n};\n</code></pre>\n<p><em>Note:</em> <code>@wordpress/babel-plugin-import-jsx-pragma</code> is included in <code>@wordpress/babel-preset-default</code> (default preset for WordPress development) starting from <code>v4.0.0</code>. If you are using this preset, you shouldn&#8217;t include this plugin in your Babel config.</p>\n<h2>Options</h2>\n<p>As the <code>@babel/plugin-transform-react-jsx</code> plugin offers options to customize the <code>pragma</code> to which the transform references, there are equivalent options to assign for customizing the imports generated.</p>\n<p>For example, if you are using the <code>react</code> package, you may want to use the following configuration:</p>\n<pre><code class=\"language-js\">// .babelrc.js\nmodule.exports = {\n    plugins: [\n        [\n            '@wordpress/babel-plugin-import-jsx-pragma',\n            {\n                scopeVariable: 'createElement',\n                scopeVariableFrag: 'Fragment',\n                source: 'react',\n                isDefault: false,\n            },\n        ],\n        [\n            '@babel/plugin-transform-react-jsx',\n            {\n                pragma: 'createElement',\n                pragmaFrag: 'Fragment',\n            },\n        ],\n    ],\n};\n</code></pre>\n<h3><code>scopeVariable</code></h3>\n<p><em>Type:</em> String</p>\n<p>Name of variable required to be in scope for use by the JSX pragma. For the default pragma of React.createElement, the React variable must be within scope.</p>\n<h3><code>scopeVariableFrag</code></h3>\n<p><em>Type:</em> String</p>\n<p>Name of variable required to be in scope for <code>&lt;&gt;&lt;/&gt;</code> <code>Fragment</code> JSX. Named <code>&lt;Fragment /&gt;</code> elements<br />\nexpect Fragment to be in scope and will not add the import.</p>\n<h3><code>source</code></h3>\n<p><em>Type:</em> String</p>\n<p>The module from which the scope variable is to be imported when missing.</p>\n<h3><code>isDefault</code></h3>\n<p><em>Type:</em> Boolean</p>\n<p>Whether the scopeVariable is the default import of the source module. Note that this has no impact<br />\non <code>scopeVariableFrag</code>.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 239,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134526",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134526",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134526/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156238,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134526/revisions/156238"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134526"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

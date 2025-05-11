@@ -1,0 +1,85 @@
+{
+    "id": 145853,
+    "date": "2023-03-28T04:02:42",
+    "date_gmt": "2023-03-28T04:02:42",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/advanced-administration/multisite/"
+    },
+    "modified": "2024-01-16T20:30:06",
+    "modified_gmt": "2024-01-16T20:30:06",
+    "slug": "multisite",
+    "status": "publish",
+    "type": "adv-admin-handbook",
+    "link": "https://developer.wordpress.org/advanced-administration/multisite/",
+    "title": {
+        "rendered": "WordPress Multisite / Network"
+    },
+    "content": {
+        "rendered": "<p>WordPress Multisite is a feature of WordPress that enables you to create several instances of WordPress managed within one installation. You need to have rewrites enabled to use multisite. Check the <a href=\"https://developer.wordpress.org/advanced-administration/multisite/prepare-network/#server-requirements\">server requirements</a> for details.</p>\n<p>One can use a multisite for a variety of purposes. Multisite is, for example, used by business sites that share some resources, such as the theme or plugins, and have different content for their regions.</p>\n<p>The content in a Multisite has its own unique tables in the database, only the user table is shared between the instances.</p>\n<p>You can create a multisite that works with subdirectories (&#8220;path-based&#8221;) or use domains or subdomains (&#8220;domain-based&#8221;). For how to map the domains, see <a href=\"https://developer.wordpress.org/advanced-administration/multisite/domain-mapping/\">WordPress Multisite Domain Mapping</a></p>\n<h2>Changelog</h2>\n<ul>\n<li>2023-05-19: First content.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 50,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145853",
+        "adv-admin-handbook",
+        "type-adv-admin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145853",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/adv-admin-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145853/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151941,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145853/revisions/151941"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145853"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

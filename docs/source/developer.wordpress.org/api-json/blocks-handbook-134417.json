@@ -1,0 +1,91 @@
+{
+    "id": 134417,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-annotations/"
+    },
+    "modified": "2024-01-29T20:55:14",
+    "modified_gmt": "2024-01-29T20:55:14",
+    "slug": "block-annotations",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-annotations/",
+    "title": {
+        "rendered": "Annotations"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\n<strong>Note:</strong> This API is experimental, that means it is subject to non-backward compatible changes or removal in any future version.\n</div>\n<p>Annotations are a way to highlight a specific piece in a post created with the block editor. Examples of this include commenting on a piece of text and spellchecking. Both can use the annotations API to mark a piece of text.</p>\n<h2>API</h2>\n<p>To see the API for yourself the easiest way is to have a block that is at least 200 characters long without formatting and putting the following in the console:</p>\n<pre><code class=\"language-js\">wp.data.dispatch( 'core/annotations' ).addAnnotation( {\n    source: 'my-annotations-plugin',\n    blockClientId: wp.data.select( 'core/block-editor' ).getBlockOrder()[ 0 ],\n    richTextIdentifier: 'content',\n    range: {\n        start: 50,\n        end: 100,\n    },\n} );\n</code></pre>\n<p>The start and the end of the range should be calculated based only on the text of the relevant <code>RichText</code>. For example, in the following HTML position 0 will refer to the position before the capital S:</p>\n<pre><code class=\"language-html\">&lt;strong&gt;Strong text&lt;/strong&gt;\n</code></pre>\n<p>To help with determining the correct positions, the <code>wp.richText.create</code> method can be used. This will split a piece of HTML into text and formats.</p>\n<p>All available properties can be found in the API documentation of the <code>addAnnotation</code> action.</p>\n<p>The property <code>richTextIdentifier</code> is the identifier of the RichText instance the annotation applies to. This is necessary because blocks may have multiple rich text instances that are used to manage data for different attributes, so you need to pass this in order to highlight text within the correct one.</p>\n<p>For example the Paragraph block only has a single RichText instance, with the identifier <code>content</code>. The quote block type has 2 RichText instances, so if you wish to highlight text in the citation, you need to pass <code>citation</code> as the <code>richTextIdentifier</code> when adding an annotation. To target the quote content, you need to use the identifier <code>value</code>. Refer to the source code of the block type to find the correct identifier.</p>\n<h2>Block annotation</h2>\n<p>It is also possible to annotate a block completely. In that case just provide the <code>selector</code> property and set it to <code>block</code>. The default <code>selector</code> is <code>range</code>, which can be used for text annotation.</p>\n<pre><code class=\"language-js\">wp.data.dispatch( 'core/annotations' ).addAnnotation( {\n    source: 'my-annotations-plugin',\n    blockClientId: wp.data.select( 'core/block-editor' ).getBlockOrder()[ 0 ],\n    selector: 'block',\n} );\n</code></pre>\n<p>This doesn&#8217;t provide any styling out of the box, so you have to provide some CSS to make sure your annotation is shown:</p>\n<pre><code class=\"language-css\">.is-annotated-by-my-annotations-plugin {\n    outline: 1px solid black;\n}\n</code></pre>\n<h2>Text annotation</h2>\n<p>The text annotation is controlled by the <code>start</code> and <code>end</code> properties. Simple <code>start</code> and <code>end</code> properties don&#8217;t work for HTML, so these properties are assumed to be offsets within the <code>rich-text</code> internal structure. For simplicity you can think about this as if all HTML would be stripped out and then you calculate the <code>start</code> and the <code>end</code> of the annotation.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134406,
+    "menu_order": 59,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134417",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134417",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134417/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151899,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134417/revisions/151899"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134417"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

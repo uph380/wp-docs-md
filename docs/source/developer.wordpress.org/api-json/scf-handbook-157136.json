@@ -1,0 +1,91 @@
+{
+    "id": 157136,
+    "date": "2025-02-21T04:17:07",
+    "date_gmt": "2025-02-21T04:17:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-internal-post-type-functions-file/"
+    },
+    "modified": "2025-02-21T05:46:13",
+    "modified_gmt": "2025-02-21T05:46:13",
+    "slug": "acf-internal-post-type-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-internal-post-type-functions-file/",
+    "title": {
+        "rendered": "Acf Internal Post Type Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_internal_post_type_instance()</code></h2>\n<p>Gets an instance of an ACF_Internal_Post_Type.</p>\n<ul>\n<li>@param string $post_type The ACF internal post type to get the instance for.</li>\n<li>@return ACF_Internal_Post_Type|bool The internal post type class instance, or false on failure.</li>\n</ul>\n<h2><code>acf_get_internal_post_type()</code></h2>\n<p>Get an ACF CPT object as an array</p>\n<ul>\n<li>@param integer $id        The post ID being queried.</li>\n<li>@param string  $post_type The post type being queried.</li>\n<li>@return array|false The post type object.</li>\n</ul>\n<h2><code>acf_get_raw_internal_post_type()</code></h2>\n<p>Retrieves raw internal post type data for the given identifier.</p>\n<ul>\n<li>@since   ACF 6.1</li>\n<li>@param   integer|string $id        The post ID.</li>\n<li>@param string         $post_type The post type name.</li>\n<li>@return array|false The internal post type array.</li>\n</ul>\n<h2><code>acf_get_internal_post_type_post()</code></h2>\n<p>Gets a post object from an ACF internal post type.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param integer|string $id        The post ID, key, or name.</li>\n<li>@param string         $post_type The post type name.</li>\n<li>@return object|boolean The post object, or false on failure.</li>\n</ul>\n<h2><code>acf_is_internal_post_type_key()</code></h2>\n<p>Returns true if the given identifier is a ACF internal post type key.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param string $id        The identifier.</li>\n<li>@param string $post_type The ACF post type the key is for.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_validate_internal_post_type()</code></h2>\n<p>Validates an ACF internal post type.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $internal_post_type The internal post type array.</li>\n<li>@param string $post_type_name     The post type name.</li>\n<li>@return array|boolean</li>\n</ul>\n<h2><code>acf_translate_internal_post_type()</code></h2>\n<p>Translates the settings for an ACF internal post type.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $internal_post_type The ACF post array.</li>\n<li>@param string $post_type          The post type name.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_internal_post_type_posts()</code></h2>\n<p>Returns and array of ACF posts for the given $filter.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param string $post_type The ACF post type to get posts for.</li>\n<li>@param array  $filter    An array of args to filter results by.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_raw_internal_post_type_posts()</code></h2>\n<p>Returns an array of raw/unvalidated ACF post data.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param string $post_type The ACF post type to get post data for.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_filter_internal_post_type_posts()</code></h2>\n<p>Returns a filtered array of ACF posts based on the given $args.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $posts     An array of ACF posts.</li>\n<li>@param array  $args      An array of args to filter by.</li>\n<li>@param string $post_type The ACF post type of the posts being filtered.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_update_internal_post_type()</code></h2>\n<p>Updates a internal post type in the database.</p>\n<ul>\n<li>@since   ACF 6.1</li>\n<li>@param array  $internal_post_type Array of data to be saved.</li>\n<li>@param string $post_type_name     The internal post type being updated.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_flush_internal_post_type_cache()</code></h2>\n<p>Deletes all caches for the provided ACF post.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $post      The ACF post array.</li>\n<li>@param string $post_type The ACF post type the cache is being cleared for.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_delete_internal_post_type()</code></h2>\n<p>Deletes an internal post type from the database.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param integer|string $id             The internal post type ID, key or name.</li>\n<li>@param string         $post_type_name The post type to be deleted.</li>\n<li>@return boolean True if field group was deleted.</li>\n</ul>\n<h2><code>acf_trash_internal_post_type()</code></h2>\n<p>Trashes an internal post type.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param integer|string $id             The internal post type ID, key, or name.</li>\n<li>@param string         $post_type_name The post type being trashed.</li>\n<li>@return boolean True if post was trashed.</li>\n</ul>\n<h2><code>acf_untrash_internal_post_type()</code></h2>\n<p>Restores an ACF post from the trash.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param integer|string $id             The internal post type ID, key, or name.</li>\n<li>@param string         $post_type_name The post type being untrashed.</li>\n<li>@return boolean True if post was untrashed.</li>\n</ul>\n<h2><code>acf_is_internal_post_type()</code></h2>\n<p>Returns true if the given params match an ACF post.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $post      The ACF post array.</li>\n<li>@param string $post_type The ACF post type.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_duplicate_internal_post_type()</code></h2>\n<p>Duplicates an ACF post.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param integer|string $id          The field_group ID, key or name.</li>\n<li>@param integer        $new_post_id Optional ID to override.</li>\n<li>@param string         $post_type   The post type of the post being duplicated.</li>\n<li>@return array|boolean The new ACF post, or false on failure.</li>\n</ul>\n<h2><code>acf_update_internal_post_type_active_status()</code></h2>\n<p>Activates or deactivates an ACF post.</p>\n<ul>\n<li>@param integer|string $id        The field_group ID, key or name.</li>\n<li>@param boolean        $activate  True if the post should be activated.</li>\n<li>@param string         $post_type The post type being activated/deactivated.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_get_internal_post_type_edit_link()</code></h2>\n<p>Checks if the current user can edit the field group and returns the edit url.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param integer $post_id   The ACF post ID.</li>\n<li>@param string  $post_type The ACF post type to get the edit link for.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_prepare_internal_post_type_for_export()</code></h2>\n<p>Returns a modified field group ready for export.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $post      The ACF post array.</li>\n<li>@param string $post_type The post type of the ACF post being exported.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_export_internal_post_type_as_php()</code></h2>\n<p>Exports an ACF post as PHP.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $post      The ACF post array.</li>\n<li>@param string $post_type The post type of the ACF post being exported.</li>\n<li>@return string|boolean</li>\n</ul>\n<h2><code>acf_prepare_internal_post_type_for_import()</code></h2>\n<p>Prepares an ACF post for the import process.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $post      The ACF post array.</li>\n<li>@param string $post_type The post type of the ACF post being imported.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_import_internal_post_type()</code></h2>\n<p>Imports an ACF post into the database.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param array  $post      The ACF post array.</li>\n<li>@param string $post_type The post type of the ACF post being imported.</li>\n<li>@return array The imported post.</li>\n</ul>\n<h2><code>acf_determine_internal_post_type()</code></h2>\n<p>Tries to determine the ACF post type for the provided key.</p>\n<ul>\n<li>@param string $key The key to check.</li>\n<li>@return string|boolean</li>\n</ul>\n<h2><code>acf_is_valid_internal_post_type_key()</code></h2>\n<p>Check if the provided key is an identifiable ACF post type.</p>\n<ul>\n<li>@since ACF 6.2.8</li>\n<li>@param string $key The key to check.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_internal_post_object_contains_valid_key()</code></h2>\n<p>Check if the provided post type object contains a valid internal post type key.</p>\n<ul>\n<li>@since ACF 6.2.8</li>\n<li>@param array $internal_post_type The post type object array to check it&#8217;s key.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_get_combined_post_type_settings_tabs()</code></h2>\n<p>Returns an array of tabs for the post type advanced settings.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_combined_taxonomy_settings_tabs()</code></h2>\n<p>Returns an array of tabs for the taxonomy advanced settings.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_combined_options_page_settings_tabs()</code></h2>\n<p>Returns an array of tabs for the options page advanced settings</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_post_type_from_screen_value()</code></h2>\n<p>Converts an _acf_screen or hook value into a post type.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param string $screen The ACF screen being viewed.</li>\n<li>@return string The post type matching the screen or hook value.</li>\n</ul>\n<h2><code>acf_validate_internal_post_type_values()</code></h2>\n<p>Calls the ajax validator for a post type</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param string $post_type The post type being validated.</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_add_internal_post_type_validation_error()</code></h2>\n<p>Adds a validation error for ACF internal post types.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@param string $name      The name of the input.</li>\n<li>@param string $message   An optional error message to display.</li>\n<li>@param string $post_type Optional post type the error message is for.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_post_type_from_request_args()</code></h2>\n<p>Gets an ACF post type from request args and verifies nonce based on action.</p>\n<ul>\n<li>@since ACF 6.1.5</li>\n<li>@param string $action The action being performed.</li>\n<li>@return array|boolean</li>\n</ul>\n<h2><code>acf_get_taxonomy_from_request_args()</code></h2>\n<p>Gets an ACF taxonomy from request args and verifies nonce based on action.</p>\n<ul>\n<li>@since ACF 6.1.5</li>\n<li>@param string $action The action being performed.</li>\n<li>@return array|boolean</li>\n</ul>\n<h2><code>acf_get_ui_options_page_from_request_args()</code></h2>\n<p>Gets an ACF options page from request args and verifies nonce based on action.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param string $action The action being performed.</li>\n<li>@return array|boolean</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157136",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157136",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157136/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157325,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157136/revisions/157325"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157136"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

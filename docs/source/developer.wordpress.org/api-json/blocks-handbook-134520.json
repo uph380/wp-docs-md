@@ -1,0 +1,91 @@
+{
+    "id": 134520,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/visually-hidden/"
+    },
+    "modified": "2024-10-30T16:55:34",
+    "modified_gmt": "2024-10-30T16:55:34",
+    "slug": "visually-hidden",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/visually-hidden/",
+    "title": {
+        "rendered": "VisuallyHidden"
+    },
+    "content": {
+        "rendered": "<p><code>VisuallyHidden</code> is a component used to render text intended to be visually hidden, but will show for alternate devices, for example a screen reader.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { VisuallyHidden } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;VisuallyHidden&gt;\n            &lt;label&gt;Code is Poetry&lt;/label&gt;\n        &lt;/VisuallyHidden&gt;\n    );\n}\n</code></pre>\n<h2>Best practices</h2>\n<p>The element that <code>VisuallyHidden</code> renders has the style <code>position: absolute</code>. When using this component be careful of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context\">stacking context</a>. Even though <code>VisuallyHidden</code> isn&#8217;t visible, it can still affect layout. An example of this is that <code>VisuallyHidden</code> may ignore <code>overflow</code> styles of ancestor elements because it instead adopts the <code>overflow</code> of its stacking context. One known side-effect can be an unexpected scrollbar appearing. To fix this kind of issue, introduce a stacking context on a more immediate parent of <code>VisuallyHidden</code>. Adding <code>position: relative</code> is often an easy way to do this.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 232,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134520",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134520",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134520/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151830,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134520/revisions/151830"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134520"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

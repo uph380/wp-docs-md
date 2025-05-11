@@ -1,0 +1,91 @@
+{
+    "id": 125666,
+    "date": "2019-08-12T08:32:37",
+    "date_gmt": "2019-08-12T08:32:37",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125666"
+    },
+    "modified": "2022-11-21T16:11:18",
+    "modified_gmt": "2022-11-21T16:11:18",
+    "slug": "xml-rpc",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/xml-rpc/",
+    "title": {
+        "rendered": "XML-RPC"
+    },
+    "content": {
+        "rendered": "\n<p>XML-RPC API that supersedes the legacy Blogger, MovableType, and metaWeblog APIs. Some&nbsp;clients&nbsp;also exist for different programming languages.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Components</h2>\n\n\n\n<ul class=\"wp-block-list\"><li>Posts\u00a0(for posts, pages, and custom post types) &#8211; Added in\u00a0<a href=\"/support/wordpress-version/version-3-4/\">WordPress 3.4</a><ul><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getpost/\">wp.getPost</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getposts/\">wp.getPosts</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_newpost/\">wp.newPost</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_editpost/\">wp.editPost</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_deletepost/\">wp.deletePost</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getposttype/\">wp.getPostType</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getposttypes/\">wp.getPostTypes</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getpostformats/\">wp.getPostFormats</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getpoststatuslist/\">wp.getPostStatusList</a></li></ul></li></ul>\n\n\n\n<p></p>\n\n\n\n<ul class=\"wp-block-list\"><li>Taxonomies&nbsp;(for categories, tags, and custom taxonomies) &#8211; Added in&nbsp;<a href=\"https://developer.wordpress.org/support/wordpress-version/version-3-4/\">WordPress 3.4</a><ul><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_gettaxonomy/\">wp.getTaxonomy</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_gettaxonomies/\">wp.getTaxonomies</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getterm/\">wp.getTerm</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getterms/\">wp.getTerms</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_newterm/\">wp.newTerm</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_editterm/\">wp.editTerm</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_deleteterm/\">wp.deleteTerm</a></li></ul></li><li>Media&nbsp;&#8211; Added in&nbsp;<a href=\"https://developer.wordpress.org/support/wordpress-version/version-3-4/\">WordPress 3.1</a><ul><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getmediaitem/\">wp.getMediaItem</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getmedialibrary/\">wp.getMediaLibrary</a></li><li>wp.uploadFile</li></ul></li><li>Comments&nbsp;&#8211; Added in&nbsp;<a href=\"https://developer.wordpress.org/support/wordpress-version/version-3-4/\">WordPress 2.7</a><ul><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getcommentcount/\">wp.getCommentCount</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getcomment/\">wp.getComment</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getcomments/\">wp.getComments</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_newcomment/\">wp.newComment</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_editcomment/\">wp.editComment</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_deletecomment/\">wp.deleteComment</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getcommentstatuslist/\">wp.getCommentStatusList</a></li></ul></li><li>Options &#8211; Added in&nbsp;<a href=\"https://developer.wordpress.org/support/wordpress-version/version-2-6/\">WordPress 2.6</a><ul><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getoptions/\">wp.getOptions</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_setoptions/\">wp.setOptions</a></li></ul></li><li>Users &#8211; Added in&nbsp;<a href=\"https://developer.wordpress.org/support/wordpress-version/version-3-5/\">WordPress 3.5</a><ul><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getusersblogs/\">wp.getUsersBlogs</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getuser/\">wp.getUser</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getusers/\">wp.getUsers</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getprofile/\">wp.getProfile</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_editprofile/\">wp.editProfile</a></li><li><a href=\"https://developer.wordpress.org/reference/classes/wp_xmlrpc_server/wp_getauthors/\">wp.getAuthors</a></li></ul></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Obsolete Components</h2>\n\n\n\n<ul class=\"wp-block-list\"><li>Categories&nbsp;&#8211; use&nbsp;Taxonomies&nbsp;instead, with&nbsp;taxonomy=&#8217;category&#8217;<ul><li>wp.getCategories</li><li>wp.suggestCategories</li><li>wp.newCategory</li><li>wp.deleteCategory</li></ul></li><li>Tags&nbsp;&#8211; use&nbsp;Taxonomies&nbsp;instead, with&nbsp;taxonomy=&#8217;post_tag&#8217;<ul><li>wp.getTags</li></ul></li><li>Pages&nbsp;&#8211; use&nbsp;Posts&nbsp;instead, with&nbsp;post_type=&#8217;page&#8217;<ul><li>wp.getPage</li><li>wp.getPages</li><li>wp.getPageList</li><li>wp.newPage</li><li>wp.editPage</li><li>wp.deletePage</li><li>wp.getPageStatusList</li><li>wp.getPageTemplates</li></ul></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Clients</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://github.com/zachfeldman/rubypress\">rubypress</a>:&nbsp;WordPress XML-RPC client for Ruby projects. Mirrors this documentation closely, full test suite built in</li><li><a href=\"http://letrunghieu.github.io/wordpress-xmlrpc-client/\">wordpress-xmlrpc-client</a>:&nbsp;PHP client with full test suite. This library implement WordPress API closely to this documentation.</li><li><a href=\"http://abrudtkuhl.github.io/WordPressSharp/\">WordPressSharp</a>: XML-RPC Client for C#.net</li><li><a href=\"https://wordpress.org/plugins/jetpack\">plugins/jetpack</a>: Jetpack by WordPress.com enables a JSON API for sites that run the plugin</li><li><a href=\"https://wordpress.org/plugins/json-api/\">plugins/json-api</a>: WordPress JSON api</li></ul>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 160,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125666",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125666",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125666/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 136405,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125666/revisions/136405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125666"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

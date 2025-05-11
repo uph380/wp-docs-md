@@ -1,0 +1,91 @@
+{
+    "id": 134490,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/panel/"
+    },
+    "modified": "2024-10-30T16:55:40",
+    "modified_gmt": "2024-10-30T16:55:40",
+    "slug": "panel",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/panel/",
+    "title": {
+        "rendered": "Panel"
+    },
+    "content": {
+        "rendered": "<p>Panels expand and collapse multiple sections of content.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/panel.png?ssl=1\" alt=\"\" /></p>\n<h2>Design guidelines</h2>\n<h3>Anatomy</h3>\n<p>A Panel is a single section of content that can be expanded or collapsed as needed.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/panel-anatomy.png?ssl=1\" alt=\"Panel anatomy\" /></p>\n<ol>\n<li>Panel</li>\n<li>Body</li>\n<li>Divider</li>\n</ol>\n<h3>Usage</h3>\n<p>Panels show and hide details of list items by expanding and collapsing list content vertically. Panels help users see only the content they need.</p>\n<h4>When to use Panels</h4>\n<p>Use Panels when it\u2019s helpful to:</p>\n<ul>\n<li>See an overview of multiple, related sections of content.</li>\n<li>Show and hide those sections as needed.</li>\n<li>Hide information that is lower priority that users don\u2019t need to see all the time.</li>\n<li>View more than one section at a time.</li>\n</ul>\n<p>Consider an alternative component when:</p>\n<ul>\n<li>There\u2019s crucial information or error messages that require immediate action.</li>\n<li>You need to quickly switch between only a few sections (consider using Tabs instead).</li>\n</ul>\n<h3>Behavior</h3>\n<h4>Expand and collapse</h4>\n<p>Show and hide details of existing panel items by expanding and collapsing list content vertically.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/panel-expand.gif?ssl=1\" alt=\"\" /></p>\n<p>Collapsible panels are indicated with a caret icon that is flipped when expanded. Carets are preferable over a plus or arrow icon, because a plus indicates addition, and arrows are closely related to navigation.</p>\n<p>Panels should be expanded by default if the content is important or essential. Panels that are open by default should appear at the top.</p>\n<h2>Development guidelines</h2>\n<p>The <code>Panel</code> creates a container with a header that can take collapsible <code>PanelBody</code> components to easily create a user friendly interface for affecting state and attributes.</p>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { Panel, PanelBody, PanelRow } from '@wordpress/components';\nimport { more } from '@wordpress/icons';\n\nconst MyPanel = () =&gt; (\n    &lt;Panel header=\"My Panel\"&gt;\n        &lt;PanelBody title=\"My Block Settings\" icon={ more } initialOpen={ true }&gt;\n            &lt;PanelRow&gt;My Panel Inputs and Labels&lt;/PanelRow&gt;\n        &lt;/PanelBody&gt;\n    &lt;/Panel&gt;\n);\n</code></pre>\n<h3>Sub-Components</h3>\n<h4>Panel</h4>\n<h5>Props</h5>\n<h6><code>header</code>: <code>string</code></h6>\n<p>The text that will be rendered as the title of the panel. Text will be rendered inside an<br />\n<code>&lt;h2&gt;</code> tag.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>className</code>: <code>string</code></h6>\n<p>The CSS class to apply to the wrapper element.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>children</code>: <code>React.ReactNode</code></h6>\n<p>The content to display within the panel row.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<hr />\n<h4>PanelBody</h4>\n<p>The <code>PanelBody</code> creates a collapsible container that can be toggled open or closed.</p>\n<h5>Props</h5>\n<h6><code>title</code>: <code>string</code></h6>\n<p>Title text. It shows even when the component is closed.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>opened</code>: <code>boolean</code></h6>\n<p>When set to <code>true</code>, the component will remain open regardless of the <code>initialOpen</code> prop and the<br />\npanel will be prevented from being closed.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>className</code>: <code>string</code></h6>\n<p>The CSS class to apply to the wrapper element.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>icon</code>: <code>JSX.Element</code></h6>\n<p>An icon to be shown next to the title.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>onToggle</code>: <code>( next: boolean ) =&gt; void;</code></h6>\n<p>A function that is called any time the component is toggled from its closed state to its<br />\nopened state, or vice versa.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>noop</code></li>\n</ul>\n<h6><code>initialOpen</code>: <code>boolean</code></h6>\n<p>Whether or not the panel will start open.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h6><code>children</code>: <code>| React.ReactNode | ( ( props: { opened: boolean } ) =&gt; React.ReactNode )</code></h6>\n<p>The content to display in the <code>PanelBody</code>. If a function is provided for this prop, it will receive an object with the <code>opened</code> prop as an argument.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>buttonProps</code>: <code>WordPressComponentProps&lt;Omit&lt; ButtonAsButtonProps, 'icon' &gt;, 'button', false&gt;</code></h6>\n<p>Props that are passed to the <code>Button</code> component in title within the <code>PanelBody</code>.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>{}</code></li>\n</ul>\n<h6><code>scrollAfterOpen</code>: <code>boolean</code></h6>\n<p>Scrolls the content into view when visible. This improves the UX when multiple <code>PanelBody</code><br />\ncomponents are stacked in a scrollable container.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<hr />\n<h4>PanelRow</h4>\n<p><code>PanelRow</code> is a generic container for rows within a <code>PanelBody</code>. It is a flex container with a top margin for spacing.</p>\n<h5>Props</h5>\n<h6><code>className</code>: <code>string</code></h6>\n<p>The CSS class to apply to the wrapper element.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>children</code>: <code>React.ReactNode</code></h6>\n<p>The content to display within the panel row.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h5>Ref</h5>\n<p>PanelRow accepts a forwarded ref that will be added to the wrapper div. Usage:</p>\n<p><code>&lt;PanelRow className=\"edit-post-post-schedule\" ref={ panelRowRef }&gt;</code></p>\n<hr />\n<h4>PanelHeader</h4>\n<p><code>PanelHeader</code> renders the header for the <code>Panel</code>. This is used by the <code>Panel</code> component under the hood, so it does not typically need to be used.</p>\n<h5>Props</h5>\n<h6><code>label</code>: <code>string</code></h6>\n<p>The text that will be rendered as the title of the <code>Panel</code>. Will be rendered in an <code>&lt;h2&gt;</code> tag.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>children</code>: <code>React.ReactNode</code></h6>\n<p>The content to display within the panel row.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To divide related sections of content accessed by a horizontal menu, use <code>TabPanel</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 187,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134490",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134490",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134490/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151151,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134490/revisions/151151"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134490"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

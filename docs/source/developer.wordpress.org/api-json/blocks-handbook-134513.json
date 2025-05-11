@@ -1,0 +1,91 @@
+{
+    "id": 134513,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-group/"
+    },
+    "modified": "2024-10-30T16:55:35",
+    "modified_gmt": "2024-10-30T16:55:35",
+    "slug": "toolbar-group",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-group/",
+    "title": {
+        "rendered": "ToolbarGroup"
+    },
+    "content": {
+        "rendered": "<p>A ToolbarGroup can be used to create subgroups of controls inside a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/toolbar/\">Toolbar</a>.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Toolbar, ToolbarGroup, ToolbarButton } from '@wordpress/components';\nimport { paragraph, formatBold, formatItalic, link } from '@wordpress/icons';\n\nfunction MyToolbar() {\n    return (\n        &lt;Toolbar label=\"Options\"&gt;\n            &lt;ToolbarGroup&gt;\n                &lt;ToolbarButton icon={ paragraph } label=\"Paragraph\" /&gt;\n            &lt;/ToolbarGroup&gt;\n            &lt;ToolbarGroup&gt;\n                &lt;ToolbarButton icon={ formatBold } label=\"Bold\" /&gt;\n                &lt;ToolbarButton icon={ formatItalic } label=\"Italic\" /&gt;\n                &lt;ToolbarButton icon={ link } label=\"Link\" /&gt;\n            &lt;/ToolbarGroup&gt;\n        &lt;/Toolbar&gt;\n    );\n}\n</code></pre>\n<h3>Props</h3>\n<p>ToolbarGroup will pass all HTML props to the underlying element.</p>\n<h2>Related components</h2>\n<ul>\n<li>ToolbarGroup may contain <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/toolbar-button/\">ToolbarButton</a> and <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/toolbar-item/\">ToolbarItem</a> as children.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 220,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134513",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134513",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134513/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151834,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134513/revisions/151834"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134513"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134507,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/text-control/"
+    },
+    "modified": "2024-11-18T21:55:10",
+    "modified_gmt": "2024-11-18T21:55:10",
+    "slug": "text-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/text-control/",
+    "title": {
+        "rendered": "TextControl"
+    },
+    "content": {
+        "rendered": "<p>TextControl components let users enter and edit text.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/TextControl.png?ssl=1\" alt=\"Unfilled and filled TextControl components\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use TextControls</h4>\n<p>TextControls are best used for free text entry. If you have a set of predefined options you want users to select from, it\u2019s best to use a more constrained component, such as a SelectControl, RadioControl, CheckboxControl, or RangeControl.</p>\n<p>Because TextControls are single-line fields, they are not suitable for collecting long responses. For those, use a text area instead.</p>\n<p>TextControls should:</p>\n<ul>\n<li>Stand out and indicate that users can input information.</li>\n<li>Have clearly differentiated states (selected/unselected, active/inactive).</li>\n<li>Make it easy to understand the requested information and to address any errors.</li>\n<li>Have visible labels; placeholder text is not an acceptable replacement for a label as it vanishes when users start typing.</li>\n</ul>\n<h3>Anatomy</h3>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/TextControl-Anatomy.png?ssl=1\" alt=\"Features of a TextControl component with numbered labels\" /></p>\n<ol>\n<li>Label</li>\n<li>Input container</li>\n<li>Input text</li>\n</ol>\n<h4>Label text</h4>\n<p>Label text is used to inform users as to what information is requested for a text field. Every text field should have a label. Label text should be above the input field, and always visible.</p>\n<h4>Containers</h4>\n<p>Containers improve the discoverability of text fields by creating contrast between the text field and surrounding content.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/TextControl-Do.png?ssl=1\" alt=\"A TextControl with a stroke around the container to clearly indicate the input area\" /></p>\n<p><strong>Do</strong><br />\nA stroke around the container clearly indicates that users can input information.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/TextControl-Dont.png?ssl=1\" alt=\"A TextControl without a clear visual marker to indicate the input area\" /></p>\n<p><strong>Don\u2019t</strong><br />\nDon\u2019t use unclear visual markers to indicate a text field.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<p>Render a user interface to input the name of an additional css class.</p>\n<pre><code class=\"language-js\">import { useState } from 'react';\nimport { TextControl } from '@wordpress/components';\n\nconst MyTextControl = () =&gt; {\n    const [ className, setClassName ] = useState( &apos;&apos; );\n\n    return (\n        &lt;TextControl\n            __nextHasNoMarginBottom\n            __next40pxDefaultSize\n            label=\"Additional CSS Class\"\n            value={ className }\n            onChange={ ( value ) =&gt; setClassName( value ) }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<p>The set of props accepted by the component will be specified below.<br />\nProps not included in this set will be applied to the input element.</p>\n<h4>label</h4>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>hideLabelFromVision</h4>\n<p>If true, the label will only be visible to screen readers.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h4>help</h4>\n<p>If this property is added, a help text will be generated using help property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>type</h4>\n<p>Type of the input element to render. Defaults to &#8220;text&#8221;.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: &#8220;text&#8221;</li>\n</ul>\n<h4>value</h4>\n<p>The current value of the input.</p>\n<ul>\n<li>Type: <code>String | Number</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>className</h4>\n<p>The class that will be added with &#8220;components-base-control&#8221; to the classes of the wrapper div.<br />\nIf no className is passed only components-base-control is used.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>onChange</h4>\n<p>A function that receives the value of the input.</p>\n<ul>\n<li>Type: <code>function</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>__next40pxDefaultSize</h4>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To offer users more constrained options for input, use SelectControl, RadioControl, CheckboxControl, or RangeControl.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 209,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134507",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134507",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134507/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155766,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134507/revisions/155766"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134507"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

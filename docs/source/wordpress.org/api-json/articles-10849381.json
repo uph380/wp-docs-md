@@ -1,0 +1,109 @@
+{
+    "id": 10849381,
+    "date": "2018-11-05T14:10:36",
+    "date_gmt": "2018-11-05T14:10:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10849381"
+    },
+    "modified": "2024-06-08T18:43:51",
+    "modified_gmt": "2024-06-08T18:43:51",
+    "slug": "settings-general-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-general-screen/",
+    "title": {
+        "rendered": "Settings General screen"
+    },
+    "content": {
+        "rendered": "\n<p>This Settings General Screen is the default Screen in the <a href=\"/support/article/administration-screens/#settings-configuration-settings\">Settings Administration Screen</a> and controls some of the most basic configuration settings for your site:  your site&#8217;s title and location, who may register an account at your site, and how dates and times are calculated and displayed.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/11/760px-options-general.png\"><img loading=\"lazy\" decoding=\"async\" width=\"760\" height=\"681\" src=\"https://wordpress.org/documentation/files/2018/11/760px-options-general.png\" alt=\"\" class=\"wp-image-10849397\" srcset=\"https://wordpress.org/documentation/files/2018/11/760px-options-general.png 760w, https://wordpress.org/documentation/files/2018/11/760px-options-general-300x269.png 300w\" sizes=\"auto, (max-width: 760px) 100vw, 760px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">General Settings</h2>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Site title</strong></h3>\n\n\n\n<p>Enter the name of your site (or blog) here.  Most themes will display this title, at the top of every page, and in the reader&#8217;s browser titlebar.  WordPress also uses this title as the identifying name for your <a href=\"/support/article/introduction-to-blogging/#syndication\">Syndication</a> feeds.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Tagline</strong></h3>\n\n\n\n<p>In a few words, explain what your site is about. Your sites&#8217; slogan, or tagline, might be entered here. A tagline is short phrase, or sentence, used to convey the essence of the site and is often funny or eye-catching. The default tagline is an empty string.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>WordPress Address (URL)</strong></h3>\n\n\n\n<p>Enter the full URL of the directory containing your WordPress core application files (e.g., wp-config.php, wp-admin, wp-content, and wp-includes). For example, if you installed WordPress into a directory called &#8220;blog&#8221;, then the WordPress address would be <code>http://example.net/blog</code> (where example.net is your domain). If you installed WordPress into your web root, this address will be the root URL <code>http://example.net</code>. WordPress will trim a slash (<code>/</code>) from the end. If you defined the <strong>WP_SITEURL</strong> constant in your <a href=\"https://codex.wordpress.org/Editing_wp-config.php#WordPress_address_.28URL.29\"><code>wp-config.php</code></a> file, that value will appear in this field and you will not be able to make changes to it from the WordPress administration screen.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Site Address (URL)</strong></h3>\n\n\n\n<p>Enter the address you want people to type in their browser to reach your WordPress site.  This is the directory where WordPress&#8217;s main <code>index.php</code> file is installed. The <em>Site address (URL)</em> is identical to the <em>WordPress address (URL)</em> (above) unless you are <a href=\"/support/article/giving-wordpress-its-own-directory/\">giving WordPress its own directory</a>. WordPress will trim a slash (<code>/</code>) from the end. If you defined the <strong>WP_HOME</strong> constant in your <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Blog_address_.28URL.29\"><code>wp-config.php</code></a> file, that value will appear in this field and you will not be able to make changes to it from the WordPress administration screen.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"email-address\"><strong>E-mail Address</strong></h3>\n\n\n\n<p>Enter the e-mail address to which you want WordPress to send messages regarding the administration and maintenance of your WordPress site. For example, if you allow new users to register as a member of your site (see Membership below), then a notification will be sent through e-mail to this address. In addition, if the option, <strong>An administrator must always approve the comment</strong>, is set in <a href=\"/support/article/administration-screens/\">Administration</a> &gt; <a href=\"/support/article/administration-screens/#discussion\">Settings</a> &gt; <a href=\"/support/article/settings-discussion-screen/\">Discussion</a>, this e-mail address will receive notification that the comment is being held for moderation.  Please note this is different than the address you supplied for the <strong>admin</strong> user account; the <strong>admin</strong> account e-mail address is sent an e-mail only when someone submits a comment to a post by <strong>admin</strong>. The address you enter here will never be displayed on the site. You can send messages to multiple admins by using an email address which forwards email to multiple recipients.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Membership</strong></h3>\n\n\n\n<p><strong>Anyone can register</strong> &#8211; Check this checkbox if you want anyone to be able to register an account on your site.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>New User Default Role</strong></h3>\n\n\n\n<p>This drop-down box allows you to select the default <a href=\"/support/article/roles-and-capabilities/\">Role</a> that is assigned to new users.  This Default <a href=\"/support/article/roles-and-capabilities/\">Role</a> will be assigned to newly registered members or users added via the <a href=\"/support/article/administration-screens/\">Administration</a> &gt; <a href=\"/support/article/administration-screens/#users-your-blogging-family\">Users </a> &gt; <a href=\"https://codex.wordpress.org/Users_Screen\">Users Screen</a>. Valid choices are <a href=\"/support/article/roles-and-capabilities/#administrator\">Administrator</a>, <a href=\"/support/article/roles-and-capabilities/#editor\">Editor</a>, <a href=\"/support/article/roles-and-capabilities/#author\">Author</a>, <a href=\"/support/article/roles-and-capabilities/#contributor\">Contributor</a>, or <a href=\"/support/article/roles-and-capabilities/#subscriber\">Subscriber</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Site Language</strong></h3>\n\n\n\n<p>The WordPress dashboard language.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Timezone </strong></h3>\n\n\n\n<p>From the drop-down box, choose a city in the same timezone as you. For example, under America, select New York if you reside in the Eastern Timezone of the United States that honors daylight savings times. If you can&#8217;t identify a city in your timezone, select one of the <strong>Etc GMT</strong> settings that represents the number of hours by which your time differs from <a href=\"https://en.wikipedia.org/wiki/Greenwich_Mean_Time\">Greenwich Mean Time</a>. Click the <strong>Save Changes</strong> button and the <a href=\"https://en.wikipedia.org/wiki/Coordinated_Universal_Time\">UTC time</a> and &#8220;Local time&#8221; will display to confirm the correct Timezone was selected.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Date Format</strong></h3>\n\n\n\n<p>The format in which to display dates on your site. The Date Format setting is intended to be used by theme designers in displaying dates on your site, but does not control how the date is displayed in the Administrative Screens (e.g. Manage Posts). Click the <strong>Save Changes</strong> button and the &#8220;Output&#8221; example below will show the current date in the format entered. See <a href=\"/support/article/formatting-date-and-time/\">Formatting Date and Time</a> for some of the formats available.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Time Format</strong></h3>\n\n\n\n<p>The format in which to display times on your site. The Time Format setting is intended to be used by theme designers in displaying time on your site, but does not control how the time is displayed in the Administrative Screens (e.g. Write Post edit of timestamp). Click the <strong>Save Changes</strong> button and the &#8220;Output&#8221; example below will show the current time in the format entered. See <a href=\"/support/article/formatting-date-and-time/\">Formatting Date and Time</a> for some of the formats available.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><strong>Week Starts On</strong></h3>\n\n\n\n<p>Select your preferred start date for WordPress calendars from the drop-down box. Monday is the default setting for this drop-down, meaning a monthly calendar will show Monday in the first column. If you want your calendar to show Sunday as the first column, then select Sunday from the drop-down.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Save Changes</h3>\n\n\n\n<p>Click the <strong>Save Changes</strong> button to ensure any changes you have made to your Settings are saved to your database. Once you click the button, a confirmation text box will appear at the top of the page telling you your settings have been saved.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-light-grey-1-background-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-extra-large-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-08-24\n<ul class=\"wp-block-list\">\n<li>Spacing/typos</li>\n\n\n\n<li>Tagline default of empty string added</li>\n</ul>\n</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>This Settings General Screen is the default Screen in the Settings Administration Screen and controls some of the most basic configuration settings for your site: your site&#8217;s title and location, who may register an account at your site, and how dates and times are calculated and displayed. General Settings Site title Enter the name of [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10849381",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10849381",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10849381"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10849381/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360394,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10849381/revisions/16360394"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10849381"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10849381"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

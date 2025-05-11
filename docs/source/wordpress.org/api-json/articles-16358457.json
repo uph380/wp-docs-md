@@ -1,0 +1,109 @@
+{
+    "id": 16358457,
+    "date": "2023-08-08T07:28:08",
+    "date_gmt": "2023-08-08T07:28:08",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16358457"
+    },
+    "modified": "2024-06-06T16:55:02",
+    "modified_gmt": "2024-06-06T16:55:02",
+    "slug": "footnotes-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/footnotes-block/",
+    "title": {
+        "rendered": "Footnotes block"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress 6.3 introduces a new feature to insert and display footnotes. This option can be found on the toolbar of individual blocks under the <a href=\"https://wordpress.org/documentation/article/more-text-editing-overview/\" data-type=\"helphub_article\" data-id=\"16356477\">Rich Editing</a> option.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"972\" height=\"932\" src=\"https://wordpress.org/documentation/files/2023/08/footnote-block.png\" alt=\"Overview of how to insert Footnotes.\" class=\"wp-image-16358454\" style=\"width:452px;height:433px\" srcset=\"https://wordpress.org/documentation/files/2023/08/footnote-block.png 972w, https://wordpress.org/documentation/files/2023/08/footnote-block-300x288.png 300w, https://wordpress.org/documentation/files/2023/08/footnote-block-768x736.png 768w\" sizes=\"auto, (max-width: 972px) 100vw, 972px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Adding the Footnotes Block</h2>\n\n\n\n<p>The Footnotes block will be added to your page or post as soon as you insert your first note using the Rich Text option. This new block works like other blocks and it can be moved around and removed. </p>\n\n\n\n<p>From 6.4, the Footnotes block can be removed, a provision has been made to make re-insertion easier. Additionally, the footnotes block is now displayed in the inserter for improved discoverability. It will show even if anchors are not yet inserted into the content. This modification str\u0435amlin\u0435s and improv\u0435s th\u0435 discov\u0435rability of th\u0435 Footnot\u0435s block, with th\u0435 wider goal of cr\u0435ating a mor\u0435 us\u0435r-fri\u0435ndly \u0435xp\u0435ri\u0435nc\u0435. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"696\" height=\"566\" src=\"https://wordpress.org/documentation/files/2023/08/footnotes-inserter.png\" alt=\"The footnotes block can be added manually.\" class=\"wp-image-16358461\" style=\"width:349px;height:284px\" srcset=\"https://wordpress.org/documentation/files/2023/08/footnotes-inserter.png 696w, https://wordpress.org/documentation/files/2023/08/footnotes-inserter-300x244.png 300w\" sizes=\"auto, (max-width: 696px) 100vw, 696px\" /></figure>\n\n\n\n<p>The text in the placeholder is a starting point, future refinements may include instructions on how to insert anchors.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"433\" src=\"https://wordpress.org/documentation/files/2023/08/footnotes-block-empty-1024x433.png\" alt=\"An empty footnotes block\" class=\"wp-image-16358459\" style=\"width:631px;height:267px\" srcset=\"https://wordpress.org/documentation/files/2023/08/footnotes-block-empty-1024x433.png 1024w, https://wordpress.org/documentation/files/2023/08/footnotes-block-empty-300x127.png 300w, https://wordpress.org/documentation/files/2023/08/footnotes-block-empty-768x325.png 768w, https://wordpress.org/documentation/files/2023/08/footnotes-block-empty.png 1356w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>The user experience was enhanced in the most recent update by giving placeholder instructions for scenarios where the Footnotes block is not available for custom post types. This enhancement seeks to provide users with clearer guidance by providing instructions when the Footnotes block is missing in specified instances.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"803\" height=\"232\" src=\"https://wordpress.org/documentation/files/2023/12/image.png\" alt=\"Footnotes block placeholder when it's not available on custom post types\" class=\"wp-image-16359303\" srcset=\"https://wordpress.org/documentation/files/2023/12/image.png 803w, https://wordpress.org/documentation/files/2023/12/image-300x87.png 300w, https://wordpress.org/documentation/files/2023/12/image-768x222.png 768w\" sizes=\"auto, (max-width: 803px) 100vw, 803px\" /></figure>\n\n\n\n<p>Adding Footnote blocks to templates is also not possible at the moment but it is <a href=\"https://github.com/WordPress/gutenberg/issues/52554\">being explored</a>. </p>\n\n\n\n<p>Attempting to remove a Footnotes block triggers a warning regarding its removal and its impact. It advises that footnote references in the content area will continue to show if the block is removed. The user is required to confirm the deletion request before the block is deleted.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"651\" src=\"https://wordpress.org/documentation/files/2023/12/image-3-1024x651.png\" alt=\"The prompt when attempting to remove a footnotes block\" class=\"wp-image-16359306\" srcset=\"https://wordpress.org/documentation/files/2023/12/image-3-1024x651.png 1024w, https://wordpress.org/documentation/files/2023/12/image-3-300x191.png 300w, https://wordpress.org/documentation/files/2023/12/image-3-768x488.png 768w, https://wordpress.org/documentation/files/2023/12/image-3-1536x976.png 1536w, https://wordpress.org/documentation/files/2023/12/image-3.png 1596w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Adding individual notes</h2>\n\n\n\n<p>To add new notes, highlight some text and open the &#8220;Rich Text&#8221; menu. Then select the &#8220;Footnotes&#8221; option. </p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/footnotes-demo.mp4\"></video></figure>\n\n\n\n<p>Notes are automatically linked to the original text and include a &#8220;go back&#8221; link for convenience.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/footnotes-public-view.mp4\"></video></figure>\n\n\n\n<p>If you move your blocks around after having added notes, the numbers and order of the notes will be automatically updated to match the changes you made. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Customize the Footnotes Block</h2>\n\n\n\n<p>The Footnotes block has been improved with more design flexibility in this release. The block now has settings for <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">typography</a>, <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">dimensions</a>, and <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">border</a> control. <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color</a> support has been adjusted, with link and text now being the default, rather than background and text. These modifications attempt to give users more flexibility when it comes to modifying the Footnotes block.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"292\" height=\"553\" src=\"https://wordpress.org/documentation/files/2023/12/image-1.png\" alt=\"Footnote block settings options\" class=\"wp-image-16359304\" srcset=\"https://wordpress.org/documentation/files/2023/12/image-1.png 292w, https://wordpress.org/documentation/files/2023/12/image-1-158x300.png 158w\" sizes=\"auto, (max-width: 292px) 100vw, 292px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"491\" src=\"https://wordpress.org/documentation/files/2023/12/image-2-1024x491.png\" alt=\"Footnote block text color settings\" class=\"wp-image-16359305\" srcset=\"https://wordpress.org/documentation/files/2023/12/image-2-1024x491.png 1024w, https://wordpress.org/documentation/files/2023/12/image-2-300x144.png 300w, https://wordpress.org/documentation/files/2023/12/image-2-768x368.png 768w, https://wordpress.org/documentation/files/2023/12/image-2-1536x736.png 1536w, https://wordpress.org/documentation/files/2023/12/image-2-2048x982.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading has-extra-large-font-size\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-12-12\n<ul class=\"wp-block-list\">\n<li>Updating content for WordPress 6.4</li>\n</ul>\n</li>\n\n\n\n<li>Created 2023-08-08</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress 6.3 introduces a new feature to insert and display footnotes. This option can be found on the toolbar of individual blocks under the Rich Editing option. Adding the Footnotes Block The Footnotes block will be added to your page or post as soon as you insert your first note using the Rich Text option. [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        85
+    ],
+    "class_list": [
+        "post-16358457",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-text-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358457",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16358457"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358457/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360315,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358457/revisions/16360315"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16358457"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16358457"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

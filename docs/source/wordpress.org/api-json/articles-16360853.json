@@ -1,0 +1,109 @@
+{
+    "id": 16360853,
+    "date": "2024-11-12T21:47:35",
+    "date_gmt": "2024-11-12T21:47:35",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16360853"
+    },
+    "modified": "2025-04-15T14:23:54",
+    "modified_gmt": "2025-04-15T14:23:54",
+    "slug": "twenty-twenty-five-changelog",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-twenty-five-changelog/",
+    "title": {
+        "rendered": "Twenty Twenty-Five changelog"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\" id=\"Version_1.2\">Version 1.2</h2>\n\n\n\n<p>Released: April 15, 2025 with <a href=\"https://wordpress.org/documentation/wordpress-version/version-6-8/\">WordPress 6.8</a></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Improve text strings for patterns and templates. <a href=\"https://core.trac.wordpress.org/ticket/62482\">#62482</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"Version_1.1\">Version 1.1</h2>\n\n\n\n<p>Released: February 11, 2025</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Pin a <code>theme.json</code> schema version to Twenty Twenty-Five (<a href=\"https://core.trac.wordpress.org/ticket/62455\">#62455</a>)</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"Version_1.0\">Version 1.0</h2>\n\n\n\n<p>Released: November 12, 2024</p>\n\n\n\n<p>Initial Release.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Version 1.2 Released: April 15, 2025 with WordPress 6.8 Version 1.1 Released: February 11, 2025 Version 1.0 Released: November 12, 2024 Initial Release.</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        82
+    ],
+    "class_list": [
+        "post-16360853",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360853",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16360853"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360853/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365550,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360853/revisions/16365550"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16360853"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16360853"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

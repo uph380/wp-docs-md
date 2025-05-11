@@ -1,0 +1,97 @@
+{
+    "id": 11616,
+    "date": "2014-10-28T18:22:36",
+    "date_gmt": "2014-10-28T18:22:36",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11616"
+    },
+    "modified": "2022-11-17T06:39:53",
+    "modified_gmt": "2022-11-17T06:39:53",
+    "slug": "jquery",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/javascript/jquery/",
+    "title": {
+        "rendered": "jQuery"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Using jQuery</h2>\n\n\n\n<p>Your jQuery script runs on the user&#8217;s browser after your WordPress webpage is received. A basic jQuery statement has two parts: a selector that determines which HTML elements the code applies to, and an action or event, which determines what the code does or what it reacts to. The basic event statement looks like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">jQuery.(selector).event(function);</code></pre>\n\n\n\n<p>When an event, such as a mouse click, occurs in an HTML element selected by the selector, the function that is defined inside the final set of parentheses is executed.</p>\n\n\n\n<p>All the following code examples are based on this HTML page content. Assume it appears on your plugin&#8217;s admin settings screen, defined by the file <code>myplugin_settings.php</code>. It is a simple table with radio buttons next to each title.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;form id=\"radioform\"&gt;\n\t&lt;table&gt;\n\t\t&lt;tbody&gt;\n\t\t&lt;tr&gt;\n\t\t\t&lt;td&gt;&lt;input class=\"pref\" checked=\"checked\" name=\"book\" type=\"radio\" value=\"Sycamore Row\" /&gt;Sycamore Row&lt;/td&gt;\n\t\t\t&lt;td&gt;John Grisham&lt;/td&gt;\n\t\t&lt;/tr&gt;\n\t\t&lt;tr&gt;\n\t\t\t&lt;td&gt;&lt;input class=\"pref\" name=\"book\" type=\"radio\" value=\"Dark Witch\" /&gt;Dark Witch&lt;/td&gt;\n\t\t\t&lt;td&gt;Nora Roberts&lt;/td&gt;\n\t\t&lt;/tr&gt;\n\t\t&lt;/tbody&gt;\n\t&lt;/table&gt;\n&lt;/form&gt;</code></pre>\n\n\n\n<p>The output could look something like this on your settings page.</p>\n\n\n\n<figure class=\"wp-block-image alignleft\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/docs/files/2013/11/pdh-ajax-example.png?ssl=1\" alt=\"sample table\" class=\"wp-image-2914\" /></figure>\n\n\n\n<p>In the <a title=\"AJAX\" href=\"https://developer.wordpress.org/plugin/javascript/ajax/\">article on AJAX</a>, we will build an AJAX exchange that saves the user selection in usermeta and adds the number of posts tagged with the selected title. Not a very practical application, but it illustrates all the important steps. jQuery code can either reside in an external file or be output to the page inside a <tt>&lt;script&gt;</tt> block. We will focus on the external file variation because passing values from PHP requires special attention. The same code can be output to the page if that seems more expedient to you.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Selector and Event</h4>\n\n\n\n<p>The selector is the same form as CSS selectors: <tt>\".class\"</tt> or <tt>\"#id\"</tt>. There&#8217;s many <a title=\"jQuery Reference\" href=\"http://api.jquery.com/category/selectors/\">more forms</a>, but these are the two you will frequently use. In our example, we will use class <tt>\".pref\"</tt>. There&#8217;s also a slew of possible <a title=\"jQuery Reference\" href=\"http://api.jquery.com/category/events/\">events</a>, one you will likely use a lot is <em>&#8216;click&#8217;</em>. In our example we will use <em>&#8216;change&#8217;</em> to capture a radio button selection. Be aware that jQuery events are often named somewhat differently than those with JavaScript. So far, after we add in an empty anonymous function, our example statement looks like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">$.(\".pref\").change(function(){\n\t/*do stuff*/\n});</code></pre>\n\n\n\n<p>This code will &#8220;do stuff&#8221; when any element of the &#8220;pref&#8221; class changes.</p>\n\n\n\n<div style=\"border: 1px solid #CCC;background: #F1F1F1;padding: 0.7em 1em\"><strong>Note:</strong> This code snippet, and all examples on this page, are for illustrating the use of AJAX. The code is not suitable for production environments because related operations such as <a title=\"Handbook Chapter\" href=\"../../plugin-security/securing-input/\">sanitization</a>, <a title=\"Handbook Chapter\" href=\"../../plugin-security/user-capabilities-nonces/#nonces\">security</a>, <a title=\"External Site\" href=\"http://www.sitepoint.com/error-handling-in-php/\">error handling</a>, and <a title=\"Handbook Chapter\" href=\"../internationalization/\">internationalization</a> have been intentionally omitted. Be sure to always address these important operations in your production code.</div>\n",
+        "protected": false
+    },
+    "author": 1130752,
+    "featured_media": 0,
+    "parent": 11151,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11616",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11616",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/1130752"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11616/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144399,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11616/revisions/144399"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11151"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11616"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

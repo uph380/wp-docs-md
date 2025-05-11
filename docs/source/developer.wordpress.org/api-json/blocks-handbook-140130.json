@@ -1,0 +1,91 @@
+{
+    "id": 140130,
+    "date": "2022-02-09T01:54:48",
+    "date_gmt": "2022-02-09T01:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/data-basics/1-data-basics-setup/"
+    },
+    "modified": "2025-04-17T03:15:31",
+    "modified_gmt": "2025-04-17T03:15:31",
+    "slug": "1-data-basics-setup",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/data-basics/1-data-basics-setup/",
+    "title": {
+        "rendered": "Setup"
+    },
+    "content": {
+        "rendered": "<p>We will build the application as a WordPress plugin, which means you need to have WordPress itself installed. One way to do this is by following the instructions on the <a href=\"https://developer.wordpress.org/block-editor/contributors/code/getting-started-with-code-contribution/\">Getting Started</a> page. Once your setup is complete, you can follow along with the rest of this tutorial.</p>\n<p>Also, this tutorial will lean heavily on Redux concepts such as state, actions, and selectors. If you are not familiar with them, you may want to start by reviewing <a href=\"https://redux.js.org/introduction/getting-started\">Getting Started With Redux</a>.</p>\n<h2>Creating a plugin</h2>\n<p>We&#8217;ll do all the development inside of a WordPress plugin. Let&#8217;s start by creating a <code>wp-content/plugins/my-first-gutenberg-app</code> directory in your local WordPress environment. We will need to create four files inside that directory:</p>\n<ul>\n<li>my-first-gutenberg-app.php \u2013 to create a new admin page</li>\n<li>src/index.js \u2013 for our JavaScript application</li>\n<li>src/style.css \u2013 for the minimal stylesheet</li>\n<li>package.json \u2013 for the build process</li>\n</ul>\n<p>Go ahead and create these files using the following snippets:</p>\n<p><strong>src/index.js:</strong></p>\n<pre><code class=\"language-js\">import { createRoot } from 'react-dom';\nimport './style.css';\n\nfunction MyFirstApp() {\n    return &lt;span&gt;Hello from JavaScript!&lt;/span&gt;;\n}\n\nconst root = createRoot( document.getElementById( 'my-first-gutenberg-app' ) );\nwindow.addEventListener(\n    'load',\n    function () {\n        root.render(\n            &lt;MyFirstApp /&gt;,\n        );\n    },\n    false\n);\n</code></pre>\n<p><strong>src/style.css:</strong></p>\n<pre><code class=\"language-css\">.toplevel_page_my-first-gutenberg-app #wpcontent {\n    background: #fff;\n    height: 1000px;\n}\nbutton .components-spinner {\n    width: 15px;\n    height: 15px;\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-left: 0;\n}\n.form-buttons {\n    display: flex;\n}\n.my-gutenberg-form .form-buttons {\n    margin-top: 20px;\n    margin-left: 1px;\n}\n.form-error {\n    color: #cc1818;\n}\n.form-buttons button {\n    margin-right: 4px;\n}\n.form-buttons .components-spinner {\n    margin-top: 0;\n}\n#my-first-gutenberg-app {\n    max-width: 500px;\n}\n#my-first-gutenberg-app ul,\n#my-first-gutenberg-app ul li {\n    list-style-type: disc;\n}\n#my-first-gutenberg-app ul {\n    padding-left: 20px;\n}\n#my-first-gutenberg-app .components-search-control__input {\n    height: 36px;\n    margin-left: 0;\n}\n\n#my-first-gutenberg-app .list-controls {\n    display: flex;\n    width: 100%;\n}\n\n#my-first-gutenberg-app .list-controls .components-search-control {\n    flex-grow: 1;\n    margin-right: 8px;\n}\n</code></pre>\n<p><strong>my-first-gutenberg-app.php:</strong></p>\n<pre><code class=\"language-php\">&lt;?php\n/**\n * Plugin Name: My first Gutenberg App\n *\n */\n\nfunction my_admin_menu() {\n    // Create a new admin page for our app.\n    add_menu_page(\n        __( 'My first Gutenberg app', 'gutenberg' ),\n        __( 'My first Gutenberg app', 'gutenberg' ),\n        'manage_options',\n        'my-first-gutenberg-app',\n        function () {\n            echo '\n            &lt;h2&gt;Pages&lt;/h2&gt;\n            &lt;div id=\"my-first-gutenberg-app\"&gt;&lt;/div&gt;\n        ';\n        },\n        'dashicons-schedule',\n        3\n    );\n}\n\nadd_action( 'admin_menu', 'my_admin_menu' );\n\nfunction load_custom_wp_admin_scripts( $hook ) {\n    // Load only on ?page=my-first-gutenberg-app.\n    if ( 'toplevel_page_my-first-gutenberg-app' !== $hook ) {\n        return;\n    }\n\n    // Load the required WordPress packages.\n\n    // Automatically load imported dependencies and assets version.\n    $asset_file = include plugin_dir_path( __FILE__ ) . 'build/index.asset.php';\n\n    // Enqueue CSS dependencies.\n    foreach ( $asset_file['dependencies'] as $style ) {\n        wp_enqueue_style( $style );\n    }\n\n    // Load our app.js.\n    wp_register_script(\n        'my-first-gutenberg-app',\n        plugins_url( 'build/index.js', __FILE__ ),\n        $asset_file['dependencies'],\n        $asset_file['version']\n    );\n    wp_enqueue_script( 'my-first-gutenberg-app' );\n\n    // Load our style.css.\n    wp_register_style(\n        'my-first-gutenberg-app',\n        plugins_url( 'build/style-index.css', __FILE__ ),\n        array(),\n        $asset_file['version']\n    );\n    wp_enqueue_style( 'my-first-gutenberg-app' );\n}\n\nadd_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_scripts' );\n</code></pre>\n<p><strong>package.json:</strong></p>\n<pre><code class=\"language-json\">{\n  \"name\": \"09-code-data-basics-esnext\",\n  \"version\": \"1.1.0\",\n  \"private\": true,\n  \"description\": \"My first Gutenberg App\",\n  \"author\": \"The WordPress Contributors\",\n  \"license\": \"GPL-2.0-or-later\",\n  \"keywords\": [\n    \"WordPress\",\n    \"block\"\n  ],\n  \"homepage\": \"https://github.com/WordPress/gutenberg-examples/\",\n  \"repository\": \"git+https://github.com/WordPress/gutenberg-examples.git\",\n  \"bugs\": {\n    \"url\": \"https://github.com/WordPress/gutenberg-examples/issues\"\n  },\n  \"main\": \"build/index.js\",\n  \"devDependencies\": {\n    \"@wordpress/scripts\": \"^24.0.0\"\n  },\n  \"scripts\": {\n    \"build\": \"wp-scripts build\",\n    \"format\": \"wp-scripts format\",\n    \"lint:js\": \"wp-scripts lint-js\",\n    \"packages-update\": \"wp-scripts packages-update\",\n    \"start\": \"wp-scripts start\"\n  }\n}\n</code></pre>\n<h2>Setting up the build pipeline</h2>\n<p>This tutorial will proceed assuming the reader is familiar with ESNext syntax and the concept of build tools (like webpack). If that sounds confusing, you may want to review the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/\">Getting started with JavaScript Build Setup</a> first.</p>\n<p>To install the build tool, navigate to the plugin directory using your terminal and run <code>npm install</code>.</p>\n<p>Once all the dependencies are in place, all that&#8217;s left is to run <code>npm start</code> and voila! A watcher will run in the terminal. You can then edit away in your text editor; after each save, it will automatically build.</p>\n<h2>Testing if it worked</h2>\n<p>If you now go to the Plugins page, you should see a plugin called <strong>My first Gutenberg App</strong>. Go ahead and activate it. A new menu item labeled <em>My first Gutenberg app</em> should show up. Once you click it, you will see a page that says <em>Hello from JavaScript!</em>:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/how-to-guides/data-basics/media/setup/hello-from-js.jpg?ssl=1\" alt=\"\" /></p>\n<p>Congratulations! You are now ready to start building the app!</p>\n<h2>What&#8217;s next?</h2>\n<ul>\n<li>Previous part: <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/\">Introduction</a></li>\n<li>Next part: <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/2-building-a-list-of-pages/\">Building a basic list of pages</a></li>\n<li>(optional) Review the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/data-basics-59c8f8\">finished app</a> in the block-development-examples repository</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 140129,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140130",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140130",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140130/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157549,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140130/revisions/157549"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140129"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140130"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

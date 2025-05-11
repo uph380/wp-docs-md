@@ -1,0 +1,109 @@
+{
+    "id": 14641368,
+    "date": "2021-07-08T23:00:09",
+    "date_gmt": "2021-07-08T23:00:09",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=14641368"
+    },
+    "modified": "2024-10-23T20:06:53",
+    "modified_gmt": "2024-10-23T20:06:53",
+    "slug": "list-view",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/list-view/",
+    "title": {
+        "rendered": "List view"
+    },
+    "content": {
+        "rendered": "\n<p>List View is a new tool to help you navigate between layers of content and nested blocks. It\u2019s currently visible in the Top Toolbar and will remain open as you navigate through your content. This makes it easy to move between the exact pieces of content you want to alter, whether that\u2019s an individual Paragraph&nbsp;block&nbsp;at the very end of a post or a Columns block that contains a beautiful selection of products to choose from. Think of it as the ultimate tool to navigate block complexity, select exactly what you need, and easily view all of the blocks that make up your content at once. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-use-list-view\">How to use List View</h2>\n\n\n\n<h3 class=\"wp-block-heading\">How to find List View</h3>\n\n\n\n<p>You can find List View in the top toolbar of the editor:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"892\" height=\"202\" src=\"https://wordpress.org/documentation/files/2023/06/Screen-Shot-on-2023-06-14-at-105448.png\" alt=\"The list view button on the editor\" class=\"wp-image-16357344\" style=\"width:450px;height:101px\" srcset=\"https://wordpress.org/documentation/files/2023/06/Screen-Shot-on-2023-06-14-at-105448.png 892w, https://wordpress.org/documentation/files/2023/06/Screen-Shot-on-2023-06-14-at-105448-300x68.png 300w, https://wordpress.org/documentation/files/2023/06/Screen-Shot-on-2023-06-14-at-105448-768x174.png 768w\" sizes=\"auto, (max-width: 892px) 100vw, 892px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to open and close List View</h3>\n\n\n\n<p>To open list view, select the Document Overview icon as shown above. This will cause the view to open and stay open until you close it once more. You can close List View by either selecting the &#8220;x&#8221; or by selecting the Document Overview icon once more.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"706\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-open-close.gif\" alt=\"Screencast displaying how to open and close the list view\" class=\"wp-image-16355968\" style=\"width:512px;height:undefinedpx\" /></figure>\n\n\n\n<p>Since WordPress 6.4 version, list view will show image previews for <a href=\"https://wordpress.org/documentation/article/image-block/\" data-type=\"helphub_article\" data-id=\"11284838\">Image</a> and <a href=\"https://wordpress.org/documentation/article/gallery-block/\" data-type=\"helphub_article\" data-id=\"11284896\">Gallery</a> blocks.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"575\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2024/01/list-view-media-preview-575x1024.png\" alt=\"List view displaying image previews for Image and Gallery blocks.\" class=\"wp-image-16359514\" style=\"width:440px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2024/01/list-view-media-preview-575x1024.png 575w, https://wordpress.org/documentation/files/2024/01/list-view-media-preview-168x300.png 168w, https://wordpress.org/documentation/files/2024/01/list-view-media-preview.png 694w\" sizes=\"auto, (max-width: 575px) 100vw, 575px\" /><figcaption class=\"wp-element-caption\">List view displaying image previews for Image and Gallery blocks.</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to select blocks</h3>\n\n\n\n<p>List View allows you to both see all of your content at once and select any block you&#8217;d like. To select a block and bring it into focus, click on the name of the block in List View. This will select that layer of content for you to then customize to your liking. </p>\n\n\n\n<h3 class=\"wp-block-heading\">How to select multiple blocks</h3>\n\n\n\n<p>You can select multiple blocks at one in the List View by holding down the &#8220;shift&#8221; key and clicking on them.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"706\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-select-multiple-blocks.gif\" alt=\"Screencast of the list view displaying how to select multiple blocks.\" class=\"wp-image-16355967\" style=\"width:512px;height:undefinedpx\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to drag and drop blocks</h3>\n\n\n\n<p>After opening List View, select the block or section of blocks you want to drag and drop. After selecting, you can then drag and drop the content wherever you&#8217;d like within the List View sidebar. You are not able to drag and drop within the Editor itself. </p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"512\" height=\"402\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-move-blocks.gif\" alt=\"Selecting multiple blocks on the list view\" class=\"wp-image-16355970\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to make changes to individual blocks</h3>\n\n\n\n<p>Each block within List View has a three dot menu that you can click on to take further action on the block itself. You can also select a block and delete it with ease using your keyboard controls. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1116\" height=\"970\" src=\"https://wordpress.org/documentation/files/2024/04/image.png\" alt=\"Opening the menu list for any block on the list view\" class=\"wp-image-16360079\" style=\"width:549px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2024/04/image.png 1116w, https://wordpress.org/documentation/files/2024/04/image-300x261.png 300w, https://wordpress.org/documentation/files/2024/04/image-1024x890.png 1024w, https://wordpress.org/documentation/files/2024/04/image-768x668.png 768w\" sizes=\"auto, (max-width: 1116px) 100vw, 1116px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to collapse sections</h3>\n\n\n\n<p>Next to each section of blocks, you&#8217;ll see an arrow icon that you can click to collapse or expand sections of blocks. This is helpful if you&#8217;re trying to navigate between complex content in order to more readily focus on different sections. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"798\" src=\"https://wordpress.org/documentation/files/2021/12/Screen-Shot-2021-12-21-at-3.45.27-PM.png\" alt=\"The arrow icon next to each block to collapse or expand block\" class=\"wp-image-15185912\" style=\"width:350px;height:399px\" srcset=\"https://wordpress.org/documentation/files/2021/12/Screen-Shot-2021-12-21-at-3.45.27-PM.png 700w, https://wordpress.org/documentation/files/2021/12/Screen-Shot-2021-12-21-at-3.45.27-PM-263x300.png 263w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to help distinguish between blocks</h3>\n\n\n\n<p>If a block has an ID/anchor set, it\u2019s displayed in List View so it\u2019s easier to distinguish between other blocks and reference as you want. Here\u2019s an example with a&nbsp;<code>IDname</code>&nbsp;anchor:</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"804\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-block-id-html-anchor-1024x804.png\" alt=\"The ID or anchor set for a block on the list view\" class=\"wp-image-16355976\" style=\"width:512px;height:undefinedpx\" srcset=\"https://wordpress.org/documentation/files/2023/03/list-view-block-id-html-anchor-1024x804.png 1024w, https://wordpress.org/documentation/files/2023/03/list-view-block-id-html-anchor-300x235.png 300w, https://wordpress.org/documentation/files/2023/03/list-view-block-id-html-anchor-768x603.png 768w, https://wordpress.org/documentation/files/2023/03/list-view-block-id-html-anchor.png 1124w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Locked Blocks</h3>\n\n\n\n<p>If a block has been <a href=\"https://wordpress.org/documentation/article/more-options/#lock\">locked</a>, a small icon will show next to its name in the list view.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"846\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-locked-block-1024x846.png\" alt=\"Screenshot of the list view with a locked quote block.\" class=\"wp-image-16355974\" style=\"width:512px;height:undefinedpx\" srcset=\"https://wordpress.org/documentation/files/2023/03/list-view-locked-block-1024x846.png 1024w, https://wordpress.org/documentation/files/2023/03/list-view-locked-block-300x248.png 300w, https://wordpress.org/documentation/files/2023/03/list-view-locked-block-768x634.png 768w, https://wordpress.org/documentation/files/2023/03/list-view-locked-block.png 1240w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"demonstration-of-list-view\">Template Parts &amp; Synced Patterns</h2>\n\n\n\n<p><a href=\"https://wordpress.org/documentation/article/template-part-block/\">Template parts</a> and <a href=\"https://wordpress.org/documentation/article/reusable-blocks/\">synced patterns</a> are highlighted in purple to distinguish them from regular blocks. This highlight/outline is visible in the editor area and in the list view itself.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"787\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-template-parts-reusable-blocks-1024x787.png\" alt=\"Screenshot of the list view with template parts and reusable blocks being highlighted in purple.\" class=\"wp-image-16355979\" style=\"width:512px;height:undefinedpx\" srcset=\"https://wordpress.org/documentation/files/2023/03/list-view-template-parts-reusable-blocks-1024x787.png 1024w, https://wordpress.org/documentation/files/2023/03/list-view-template-parts-reusable-blocks-300x231.png 300w, https://wordpress.org/documentation/files/2023/03/list-view-template-parts-reusable-blocks-768x590.png 768w, https://wordpress.org/documentation/files/2023/03/list-view-template-parts-reusable-blocks-1536x1181.png 1536w, https://wordpress.org/documentation/files/2023/03/list-view-template-parts-reusable-blocks.png 1574w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"demonstration-of-list-view\">Outline Section</h2>\n\n\n\n<p>There is an alternative next to the List View called &#8220;Outline&#8221;. The outline displays the follow post information:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Number of characters.</li>\n\n\n\n<li>Number of words.</li>\n\n\n\n<li>Time to read.</li>\n\n\n\n<li>Heading structure.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"886\" src=\"https://wordpress.org/documentation/files/2023/03/list-view-outline-1024x886.png\" alt=\"The outline tab on the list view\" class=\"wp-image-16355972\" style=\"width:512px;height:undefinedpx\" srcset=\"https://wordpress.org/documentation/files/2023/03/list-view-outline-1024x886.png 1024w, https://wordpress.org/documentation/files/2023/03/list-view-outline-300x260.png 300w, https://wordpress.org/documentation/files/2023/03/list-view-outline-768x665.png 768w, https://wordpress.org/documentation/files/2023/03/list-view-outline.png 1308w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"demonstration-of-list-view\">Demonstration of List View</h2>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2021/12/List-View.mov\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"resources\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://make.wordpress.org/core/2021/06/09/core-editor-improvement-improve-your-workflow-with-list-view/\">Improve your workflow with List View</a></li>\n</ul>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<p class=\"has-medium-font-size\"><strong>Changelog:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>2024-04-16\n<ul class=\"wp-block-list\">\n<li>Updated a screenshot and alt texts</li>\n</ul>\n</li>\n\n\n\n<li>2024-01-25\n<ul class=\"wp-block-list\">\n<li>Add media previews to list view for gallery and image blocks</li>\n</ul>\n</li>\n\n\n\n<li>2023-08-08\n<ul class=\"wp-block-list\">\n<li>WordPress 6.3 renamed Reusable Block to Patterns</li>\n</ul>\n</li>\n\n\n\n<li>2021-07-09 Created</li>\n\n\n\n<li>2023-06-14 Updated to reflect how the &#8220;info&#8221; section is now inside the list view.</li>\n\n\n\n<li>2023-07-17\n<ul class=\"wp-block-list\">\n<li>WordPress 6.3 renamed Reusable Block to (Synced) Patterns</li>\n</ul>\n</li>\n</ul>\n</div>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>List View is a new tool to help you navigate between layers of content and nested blocks. It\u2019s currently visible in the Top Toolbar and will remain open as you navigate through your content. This makes it easy to move between the exact pieces of content you want to alter, whether that\u2019s an individual Paragraph&nbsp;block&nbsp;at [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-14641368",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14641368",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=14641368"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14641368/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365174,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14641368/revisions/16365174"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=14641368"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=14641368"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10851254,
+    "date": "2018-11-06T03:14:27",
+    "date_gmt": "2018-11-06T03:14:27",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851254"
+    },
+    "modified": "2024-06-06T17:21:33",
+    "modified_gmt": "2024-06-06T17:21:33",
+    "slug": "inserting-images-into-posts-and-pages-classic",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/",
+    "title": {
+        "rendered": "Inserting images into posts and pages (Classic Editor)"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Overview</h2>\n\n\n\n<p>When creating or editing a WordPress page or blog post, you can easily add images at any time using the WordPress Media Uploader tool. Here\u2019s how to add an image, step-by-step, using the media uploader:</p>\n\n\n\n<h2 class=\"wp-block-heading\">Step 1 \u2013 Placing your cursor</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://wordpress.org/documentation/files/2018/11/add-image-insert-cursor.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"502\" height=\"182\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/add-image-insert-cursor.png?fit=502%2C182&amp;ssl=1\" alt=\"Cursor at beginning of a paragraph\" class=\"wp-image-10851261\" srcset=\"https://wordpress.org/documentation/files/2018/11/add-image-insert-cursor.png 502w, https://wordpress.org/documentation/files/2018/11/add-image-insert-cursor-300x109.png 300w\" sizes=\"auto, (max-width: 502px) 100vw, 502px\" /></a><figcaption class=\"wp-element-caption\">Placing cursor where the image should appear</figcaption></figure>\n\n\n\n<p>In order to add an image to your page or post, you must first insert your cursor in the place in the text where you want the image to appear. By placing your cursor within your text, you can add images inline with your content. You can also place your cursor on a blank line if you want the image to appear by itself instead.<br>\n<br>\n<em>Tip: It\u2019s a good idea to <strong>place your cursor on the left margin of your text</strong>, even if you want the image to appear on the right. That\u2019s because there is a special setting called Alignment that allows you to control whether the image appears on the right or the left side of the text. It even controls how text flows around the image automatically.</em></p>\n\n\n\n<h2 class=\"wp-block-heading\">Step 2 \u2013 Click the Add Media button</h2>\n\n\n\n<p>Once you\u2019ve placed your cursor on the line where you want your image to appear, click on the Add Media button to launch the media uploader interface, and then select the Insert Media option from the list of actions in the left side of the media uploader window.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/add-media-button.png?fit=568%2C193&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"568\" height=\"193\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/add-media-button.png?fit=568%2C193&amp;ssl=1\" alt=\"Add Media button circled\" class=\"wp-image-10851264\" srcset=\"https://wordpress.org/documentation/files/2018/11/add-media-button.png 568w, https://wordpress.org/documentation/files/2018/11/add-media-button-300x102.png 300w\" sizes=\"auto, (max-width: 568px) 100vw, 568px\" /></a><figcaption class=\"wp-element-caption\">&#8220;Add Media&#8221; button above editor</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Step 3 \u2013 Add or Select Your Image</h2>\n\n\n\n<p>You can add or select the image you want to add to your page or post by choosing from either of the following options in the center of the media uploader window:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Upload Files:</strong> Upload the image you want to use from your computer by dragging it into the upload area.</li>\n\n\n\n<li><strong>Media Library:</strong> Select from any previously uploaded images in the media library by clicking on the one you wish to add to your page or post.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://wordpress.org/documentation/files/2018/11/media-uploader.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"1004\" height=\"724\" src=\"https://wordpress.org/documentation/files/2018/11/media-uploader.png\" alt=\"\" class=\"wp-image-10851274\" srcset=\"https://wordpress.org/documentation/files/2018/11/media-uploader.png 1004w, https://wordpress.org/documentation/files/2018/11/media-uploader-300x216.png 300w, https://wordpress.org/documentation/files/2018/11/media-uploader-768x554.png 768w\" sizes=\"auto, (max-width: 1004px) 100vw, 1004px\" /></a></figure>\n\n\n\n<p>Once you have selected or uploaded the image you want to add, You will see a checkbox next to the thumbnail confirming your selection, and see information about it displayed in the Attachment Details pane on the right hand side of the media uploader interface.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Step 4 \u2013 Attachment Details</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i1.wp.com/wordpress.org/documentation/files/2018/11/attachement-details.png?fit=376%2C464&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"376\" height=\"464\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2018/11/attachement-details.png?fit=376%2C464&amp;ssl=1\" alt=\"Attachment details pane with: title, caption, alt text, and description\" class=\"wp-image-10851288\" srcset=\"https://wordpress.org/documentation/files/2018/11/attachement-details.png 376w, https://wordpress.org/documentation/files/2018/11/attachement-details-243x300.png 243w\" sizes=\"auto, (max-width: 376px) 100vw, 376px\" /></a><figcaption class=\"wp-element-caption\">Attachment details</figcaption></figure>\n\n\n\n<p>The <strong>Attachment Details</strong> pane displays a small un-cropped thumbnail of the image, as well as important information such as the filename, date uploaded, and image dimensions in pixels.</p>\n\n\n\n<p>There are also action links that allow you to <strong>Edit Image</strong>, which takes you to the page, or to <strong>Delete Permanently</strong> to remove the image from your site.</p>\n\n\n\n<p>In addition, you can edit the following media information:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Title:</strong> The title of this media.</li>\n\n\n\n<li><strong>Caption:</strong> The caption for this image. The text you enter here will be displayed below the image.</li>\n\n\n\n<li><strong>Alternate Text:</strong> Enter the Alt text for the image, e.g. \u201cThe Mona Lisa\u201d to describe the media.</li>\n\n\n\n<li><strong>Description:</strong> A description for this particular media.</li>\n</ul>\n\n\n\n<p>For more information on these media settings, see the <a href=\"https://wordpress.org/documentation/article/edit-media/\">Edit Media</a> page.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Step 5 \u2013 Attachment Display Settings</h2>\n\n\n\n<figure class=\"wp-block-image alignright\"><a href=\"https://i1.wp.com/wordpress.org/documentation/files/2018/11/attachment-display-settings.png?fit=298%2C221&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"298\" height=\"221\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2018/11/attachment-display-settings.png?fit=298%2C221&amp;ssl=1\" alt=\"Attachment display settings: alignment, link to, and size\" class=\"wp-image-10851286\" /></a><figcaption class=\"wp-element-caption\">Attachment display settings</figcaption></figure>\n\n\n\n<p>The <strong>Attachment Display Settings</strong> pane controls how the image is displayed when viewed on the site.</p>\n\n\n\n<p>You have options to set how you would like the image aligned on the page (in relation to the text and margins) and what the link behavior of the image will be, In addition you can set what size image you would like to display on your page.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Image Alignment</h3>\n\n\n\n<p>The <strong>Alignment</strong> setting allows you to determine where you would like the image to appear in your content area and how it interacts with any text on the page. You have the following image alignment options to choose from:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Left:</strong> Aligns the image on the left hand margin, and any text that is on the page wraps (or flows) around the image to the available space on the right.</li>\n\n\n\n<li><strong>Right:</strong> Aligns the image on the right hand margin, and any text that is on the page wraps (or flows) around the image to the available space on the left.</li>\n\n\n\n<li><strong>Center:</strong> Aligns the image to the center of the page, with no text displayed around it.</li>\n\n\n\n<li><strong>None:</strong> Inserts the image in to the page with no alignment</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/750px-image-alignment-4up.png?fit=750%2C566&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"750\" height=\"566\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/750px-image-alignment-4up.png?fit=750%2C566&amp;ssl=1\" alt=\"Different image alignments\" class=\"wp-image-10851277\" srcset=\"https://wordpress.org/documentation/files/2018/11/750px-image-alignment-4up.png 750w, https://wordpress.org/documentation/files/2018/11/750px-image-alignment-4up-300x226.png 300w\" sizes=\"auto, (max-width: 750px) 100vw, 750px\" /></a><figcaption class=\"wp-element-caption\">Aligning images using editor controls</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Image Link</h3>\n\n\n\n<p>The Link To settings determine the URL/web address to which the image will be linked when clicked on by a visitor to your site. You can specify the following image link settings:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Attachment Page:</strong> Links your inserted image to its WordPress media attachment page.</li>\n\n\n\n<li><strong>Media File:</strong> Links your inserted image directly to the original, full-size version of the file.</li>\n\n\n\n<li><strong>Custom URL:</strong> Allows you to set a custom link URL for your inserted image to link to when clicked.</li>\n\n\n\n<li><strong>None:</strong> This setting will remove the link completely, rendering the image \u201cun-clickable\u201d.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Image Size</h3>\n\n\n\n<p>The Size settings determine the size of the image you are adding to your site. By default WordPress creates a range of four image size for you to choose from:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Thumbnail:</strong> Displays a small thumbnail-sized version of your image on the page/post. Note, by default the Thumbnail size is a square, so some cropping of your original image may occur.</li>\n\n\n\n<li><strong>Medium:</strong> Displays a medium-sized version of your image on the page/post. This is a good size to use with Left/Right alignments, as it leaves sufficient space for legible text to either side.</li>\n\n\n\n<li><strong>Large</strong>: Displays a large-sized version of your image on the page/post. Note: WordPress will determine the width of the content column of your theme, and display the largest possible image for that space.</li>\n\n\n\n<li><strong>Full Size:</strong> Displays a full-sized version of your image on the page/post. Note: WordPress will determine the width of the content column of your theme, and display the largest possible image for that space. If your original image is larger than this column width, the full size of the image may not be displayed.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/750px-image-sizes-3up.png?fit=750%2C265&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"750\" height=\"265\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/750px-image-sizes-3up.png?fit=750%2C265&amp;ssl=1\" alt=\"Different image sizes\" class=\"wp-image-10851280\" srcset=\"https://wordpress.org/documentation/files/2018/11/750px-image-sizes-3up.png 750w, https://wordpress.org/documentation/files/2018/11/750px-image-sizes-3up-300x106.png 300w\" sizes=\"auto, (max-width: 750px) 100vw, 750px\" /></a><figcaption class=\"wp-element-caption\">Different image sizes</figcaption></figure>\n\n\n\n<p>You can visit the <strong><a href=\"https://wordpress.org/documentation/article/settings-media-screen/\" data-type=\"helphub_article\" data-id=\"10851282\">Settings &gt; Media</a></strong> section of your WordPress dashboard to customize the above image sizes.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 5 \u2013 Inserting the image</h3>\n\n\n\n<figure class=\"wp-block-image alignright\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/400px-re-edit-image.png?fit=400%2C235&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"235\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/400px-re-edit-image.png?fit=400%2C235&amp;ssl=1\" alt=\"Selecting the edit image option whenever hovering over an image\" class=\"wp-image-10851284\" srcset=\"https://wordpress.org/documentation/files/2018/11/400px-re-edit-image.png 400w, https://wordpress.org/documentation/files/2018/11/400px-re-edit-image-300x176.png 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></a><figcaption class=\"wp-element-caption\">Edit image option</figcaption></figure>\n\n\n\n<p>Once you have determined your image settings, click on the blue Insert into post or Insert into the page button, to add the image to your page or post. After the image uploader window closes, you will see the image in the text editor window, including a preview of the alignment of the image, if you have specified an image alignment.</p>\n\n\n\n<p>At any time, you can edit the image settings by clicking on the <strong>Edit Image</strong> button in the upper left hand corner. You can remove the image from your page/post by clicking on the <strong>Remove Image</strong> button.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Further reading</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">Media Add New Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/edit-media/\">Edit Media</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media library screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings Media Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-images/\">Use Images</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-image-and-file-attachments/\">Use image and file attachments</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/image-size-and-quality/\">Image Size and Quality</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\">Inserting Images into Posts and Pages (Block Editor)</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Overview When creating or editing a WordPress page or blog post, you can easily add images at any time using the WordPress Media Uploader tool. Here\u2019s how to add an image, step-by-step, using the media uploader: Step 1 \u2013 Placing your cursor In order to add an image to your page or post, you must [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        87,
+        78
+    ],
+    "class_list": [
+        "post-10851254",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-media",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851254",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851254"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851254/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360334,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851254/revisions/16360334"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851254"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851254"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

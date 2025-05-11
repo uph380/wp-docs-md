@@ -1,0 +1,97 @@
+{
+    "id": 149367,
+    "date": "2023-11-21T15:03:36",
+    "date_gmt": "2023-11-21T15:03:36",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149367"
+    },
+    "modified": "2023-12-14T21:06:17",
+    "modified_gmt": "2023-12-14T21:06:17",
+    "slug": "global-settings-and-styles",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/",
+    "title": {
+        "rendered": "Global Settings and Styles"
+    },
+    "content": {
+        "rendered": "\n<p>As you learned in <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">Theme Structure</a>, <code>theme.json</code> is a standard file that WordPress looks for in your theme. While it is not technically required for a block theme, it is almost always necessary to configure various settings and styles for your theme.</p>\n\n\n\n<p>This documentation is a quick introduction on what <code>theme.json</code> is and how it works. However, it is such a massive topic that there is a dedicated chapter that explores everything you can do with it: <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\">Global Settings and Styles</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What is theme.json?</h2>\n\n\n\n<p><code>theme.json</code> is a configuration file that tells WordPress what settings you want to enable, how to style specific elements and blocks, and which templates and template parts to register.</p>\n\n\n\n<p>Some of the things you can do with <code>theme.json</code> are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Enable or disable features like drop caps, padding, margin, and line-height.</li>\n\n\n\n<li>Add a color palette, gradients, duotones, and shadows.</li>\n\n\n\n<li>Configure typographical features like font families, sizes, and more.</li>\n\n\n\n<li>Add CSS custom properties.</li>\n\n\n\n<li>Register custom templates and assign parts to template part areas.</li>\n</ul>\n\n\n\n<p>Your <code>theme.json</code> configuration will be reflected in what you see in places like the post, template, and site editors in the WordPress admin. Custom styles, in particular, will be reflected in the <strong>Styles</strong> interface:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress Site Editor viewing a Single Post template. On the right, the Buttons block is highlighted in the Styles interface.\" class=\"wp-image-149368\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/global-styles-site-editor.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">theme.json structure</h2>\n\n\n\n<p>A <code>theme.json</code> file can be as little as a few lines of code, such as this example that enables the appearance tools for blocks:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"$schema\": \"https://schemas.wp.org/trunk/theme.json\",\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"appearanceTools\": true\n\t}\n}</code></pre>\n\n\n\n<p>Or it can be a massively complex file that spans 1,000s of lines of code. How many of the features you want to configure is entirely up to you.</p>\n\n\n\n<p>The starting point is understanding the top-level properties that can be configured. Here is an outline of what this looks like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"$schema\": \"https://schemas.wp.org/trunk/theme.json\",\n\t\"version\": 2,\n\t\"settings\": {},\n\t\"styles\": {},\n\t\"customTemplates\": {},\n\t\"templateParts\": {},\n\t\"patterns\": []\n}</code></pre>\n\n\n\n<p>Here are what each of these properties define:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>$schema</code>:</strong> Used for defining the supported JSON schema, which will integrate with many code editors to give you on-the-fly hints and error reporting.</li>\n\n\n\n<li><strong><code>version</code>:</strong> The <code>theme.json</code> schema version you are building for. The latest version is 2 and can always be found in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/\"><code>theme.json</code> Living Reference</a>, a document that lists the most up-to-date properties you can set.</li>\n\n\n\n<li><strong><code>settings</code>:</strong> Used to define your block controls and color palettes, font sizes, and more.</li>\n\n\n\n<li><strong><code>styles</code>:</strong> Used to apply colors, font sizes, custom CSS, and more to the website and blocks.</li>\n\n\n\n<li><strong><code>customTemplates</code>:</strong> Metadata for custom templates defined in your theme\u2019s <code>/templates</code> folder.</li>\n\n\n\n<li><strong><code>templateParts</code>:</strong> Metadata for template parts defined in your theme\u2019s\u00a0 <code>/parts</code> folder.</li>\n\n\n\n<li><strong><code>patterns</code>:</strong> An array of pattern slugs to be registered from the <a href=\"https://wordpress.org/patterns/\">Pattern Directory</a>.</li>\n</ul>\n\n\n\n<p>You will learn more about these properties and their sub-properties in the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\">Global Settings and Styles</a> chapter.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Settings and styles hierarchy</h2>\n\n\n\n<p>The <code>theme.json</code> file in your theme is only one level in a hierarchy of setting and style configurations for a website. This means it can be overridden under certain circumstances.</p>\n\n\n\n<p>The order of this hierarchy from lowest to highest is:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>WordPress <code>theme.json</code>:</strong> WordPress has its own <code>theme.json</code> file that defines the default settings and styles.</li>\n\n\n\n<li><strong>Theme <code>theme.json</code>:</strong> Anything you define in your theme\u2019s <code>theme.json</code> file overrides the WordPress defaults.</li>\n\n\n\n<li><strong>Child theme <code>theme.json</code>:</strong> If active, a child theme\u2019s <code>theme.json</code> takes priority over the main or \u201cparent\u201d theme.</li>\n\n\n\n<li><strong>User configuration:</strong> Users can further customize how their site works under <strong>Appearance &gt; Editor</strong> in the WordPress admin, and the JSON data is saved in their site\u2019s database. Their choice takes priority over all other levels in the hierarchy.</li>\n</ul>\n\n\n\n<p>There are also filter hooks available that let plugin and theme authors override the values dynamically. To learn more about these, check out <a href=\"https://developer.wordpress.org/news/2023/07/how-to-modify-theme-json-data-using-server-side-filters/\">How to modify theme.json data using server-side filters</a> from the WordPress Developer Blog.</p>\n\n\n\n<p>The important thing to remember is that anything configured in your <code>theme.json</code> file may not take priority in the hierarchy.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 149331,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149367",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149367",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149367/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149369,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149367/revisions/149369"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149367"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

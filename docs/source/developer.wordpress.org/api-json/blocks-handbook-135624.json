@@ -1,0 +1,91 @@
+{
+    "id": 135624,
+    "date": "2021-04-21T15:39:48",
+    "date_gmt": "2021-04-21T15:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/"
+    },
+    "modified": "2024-10-30T16:55:04",
+    "modified_gmt": "2024-10-30T16:55:04",
+    "slug": "block-patterns",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/",
+    "title": {
+        "rendered": "Patterns"
+    },
+    "content": {
+        "rendered": "<p>Block Patterns are predefined block layouts available from the patterns tab of the block inserter. Once inserted into content, the blocks are ready for additional or modified content and configuration.</p>\n<h2>Block patterns</h2>\n<h3>register_block_pattern</h3>\n<p>The editor comes with several core block patterns. Theme and plugin authors can register additional custom block patterns using the <code>register_block_pattern</code> helper function.</p>\n<p>The <code>register_block_pattern</code> helper function receives two arguments.<br />\n&#8211;   <code>title</code>: A machine-readable title with a naming convention of <code>namespace/title</code>.<br />\n&#8211;   <code>properties</code>: An array describing properties of the pattern.</p>\n<p>The properties available for block patterns are:</p>\n<ul>\n<li><code>title</code> (required): A human-readable title for the pattern.</li>\n<li><code>content</code> (required): Block HTML Markup for the pattern.</li>\n<li><code>description</code> (optional): A visually hidden text used to describe the pattern in the inserter. A description is optional but it is strongly encouraged when the title does not fully describe what the pattern does. The description will help users discover the pattern while searching.</li>\n<li><code>categories</code> (optional): An array of registered pattern categories used to group block patterns. Block patterns can be shown on multiple categories. A category must be registered separately in order to be used here.</li>\n<li><code>keywords</code> (optional): An array of aliases or keywords that help users discover the pattern while searching.</li>\n<li><code>viewportWidth</code> (optional): An integer specifying the intended width of the pattern to allow for a scaled preview of the pattern in the inserter.</li>\n<li><code>blockTypes</code> (optional): An array of block types that the pattern is intended to be used with. Each value needs to be the declared block&#8217;s <code>name</code>.</li>\n<li><code>postTypes</code> (optional): An array of post types that the pattern is restricted to be used with. The pattern will only be available when editing one of the post types passed on the array. For all the other post types, the pattern is not available at all.</li>\n<li><code>templateTypes</code> (optional): An array of template types where the pattern makes sense, for example, <code>404</code> if the pattern is for a 404 page, <code>single-post</code> if the pattern is for showing a single post.</li>\n<li><code>inserter</code> (optional): By default, all patterns will appear in the inserter. To hide a pattern so that it can only be inserted programmatically, set the <code>inserter</code> to <code>false</code>.</li>\n<li><code>source</code> (optional): A string that denotes the source of the pattern. For a plugin registering a pattern, pass the string <code>plugin</code>. For a theme, pass the string <code>theme</code>.</li>\n</ul>\n<p>The following code sample registers a block pattern named <code>my-plugin/my-awesome-pattern</code>:</p>\n<pre><code class=\"language-php\">register_block_pattern(\n    'my-plugin/my-awesome-pattern',\n    array(\n        'title'       =&gt; __( 'Two buttons', 'my-plugin' ),\n        'description' =&gt; _x( 'Two horizontal buttons, the left button is filled in, and the right button is outlined.', 'Block pattern description', 'my-plugin' ),\n        'content'     =&gt; \"&lt;!-- wp:buttons {\\\"align\\\":\\\"center\\\"} --&gt;\\n&lt;div class=\\\"wp-block-buttons aligncenter\\\"&gt;&lt;!-- wp:button {\\\"backgroundColor\\\":\\\"very-dark-gray\\\",\\\"borderRadius\\\":0} --&gt;\\n&lt;div class=\\\"wp-block-button\\\"&gt;&lt;a class=\\\"wp-block-button__link has-background has-very-dark-gray-background-color no-border-radius\\\"&gt;\" . esc_html__( 'Button One', 'my-plugin' ) . \"&lt;/a&gt;&lt;/div&gt;\\n&lt;!-- /wp:button --&gt;\\n\\n&lt;!-- wp:button {\\\"textColor\\\":\\\"very-dark-gray\\\",\\\"borderRadius\\\":0,\\\"className\\\":\\\"is-style-outline\\\"} --&gt;\\n&lt;div class=\\\"wp-block-button is-style-outline\\\"&gt;&lt;a class=\\\"wp-block-button__link has-text-color has-very-dark-gray-color no-border-radius\\\"&gt;\" . esc_html__( 'Button Two', 'my-plugin' ) . \"&lt;/a&gt;&lt;/div&gt;\\n&lt;!-- /wp:button --&gt;&lt;/div&gt;\\n&lt;!-- /wp:buttons --&gt;\",\n    )\n);\n</code></pre>\n<p>Note that <code>register_block_pattern()</code> should be called from a handler attached to the <code>init</code> hook.</p>\n<pre><code class=\"language-php\">function my_plugin_register_my_patterns() {\n  register_block_pattern( ... );\n}\n\nadd_action( 'init', 'my_plugin_register_my_patterns' );\n</code></pre>\n<h2>Unregistering block patterns</h2>\n<h3>unregister_block_pattern</h3>\n<p>The <code>unregister_block_pattern</code> helper function allows a previously registered block pattern to be unregistered from a theme or plugin and receives one argument.</p>\n<ul>\n<li><code>title</code>: The name of the block pattern to be unregistered.</li>\n</ul>\n<p>The following code sample unregisters the block pattern named <code>my-plugin/my-awesome-pattern</code>:</p>\n<pre><code class=\"language-php\">unregister_block_pattern( 'my-plugin/my-awesome-pattern' );\n</code></pre>\n<p><em>Note:</em></p>\n<p><code>unregister_block_pattern()</code> should be called from a handler attached to the init hook.</p>\n<pre><code class=\"language-php\">function my_plugin_unregister_my_patterns() {\n  unregister_block_pattern( ... );\n}\n\nadd_action( 'init', 'my_plugin_unregister_my_patterns' );\n</code></pre>\n<h2>Block pattern categories</h2>\n<p>Block patterns can be grouped using categories. The block editor comes with bundled categories you can use on your custom block patterns. You can also register your own block pattern categories.</p>\n<h3>register_block_pattern_category</h3>\n<p>The <code>register_block_pattern_category</code> helper function receives two arguments.</p>\n<ul>\n<li><code>title</code>: A machine-readable title for the block pattern category.</li>\n<li><code>properties</code>: An array describing properties of the pattern category.</li>\n</ul>\n<p>The properties of the pattern categories include:</p>\n<ul>\n<li><code>label</code> (required): A human-readable label for the pattern category.</li>\n</ul>\n<p>The following code sample registers the category named <code>hero</code>:</p>\n<pre><code class=\"language-php\">register_block_pattern_category(\n    'hero',\n    array( 'label' =&gt; __( 'Hero', 'my-plugin' ) )\n);\n</code></pre>\n<p><em>Note:</em></p>\n<p><code>register_block_pattern_category()</code> should be called from a handler attached to the init hook.</p>\n<p>The category will not show under Patterns unless a pattern has been assigned to that category.</p>\n<pre><code class=\"language-php\">function my_plugin_register_my_pattern_categories() {\n  register_block_pattern_category( ... );\n}\n\nadd_action( 'init', 'my_plugin_register_my_pattern_categories' );\n</code></pre>\n<h3>unregister_block_pattern_category</h3>\n<p>The <code>unregister_block_pattern_category</code> helper function allows for a previously registered block pattern category to be unregistered from a theme or plugin and receives one argument.</p>\n<ul>\n<li><code>title</code>: The name of the block pattern category to be unregistered.</li>\n</ul>\n<p>The following code sample unregisters the category named <code>hero</code>:</p>\n<pre><code class=\"language-php\">unregister_block_pattern_category( 'hero' );\n</code></pre>\n<p><em>Note:</em></p>\n<p><code>unregister_block_pattern_category()</code> should be called from a handler attached to the init hook.</p>\n<pre><code class=\"language-php\">function my_plugin_unregister_my_pattern_categories() {\n  unregister_block_pattern_category( ... );\n}\n\nadd_action( 'init', 'my_plugin_unregister_my_pattern_categories' );\n</code></pre>\n<h2>Block patterns contextual to block types and pattern transformations</h2>\n<p>It is possible to attach a block pattern to one or more block types. This adds the block pattern as an available transform for that block type.</p>\n<p>Currently, these transformations are available only to simple blocks (blocks without inner blocks). In order for a pattern to be suggested, <strong>every selected block must be present in the block pattern</strong>.</p>\n<p>For instance:</p>\n<pre><code class=\"language-php\">register_block_pattern(\n    'my-plugin/powered-by-wordpress',\n    array(\n        'title'      =&gt; __( 'Powered by WordPress', 'my-plugin' ),\n        'blockTypes' =&gt; array( 'core/paragraph' ),\n        'content'    =&gt; '&lt;!-- wp:paragraph {\"backgroundColor\":\"black\",\"textColor\":\"white\"} --&gt;\n        &lt;p class=\"has-white-color has-black-background-color has-text-color has-background\"&gt;Powered by WordPress&lt;/p&gt;\n        &lt;!-- /wp:paragraph --&gt;',\n    )\n);\n</code></pre>\n<p>The above code registers a block pattern named <code>my-plugin/powered-by-wordpress</code> and shows the pattern in the &#8220;transform menu&#8221; of paragraph blocks. The transformation result will keep the paragraph&#8217;s existing content and apply the other attributes &#8211; in this case, the background and text color.</p>\n<p>As mentioned above, pattern transformations for simple blocks can also work if we have selected multiple blocks and there are matching contextual patterns to these blocks. Let&#8217;s see an example of a pattern where two block types are attached.</p>\n<pre><code class=\"language-php\">register_block_pattern(\n    'my-plugin/powered-by-wordpress',\n    array(\n        'title'      =&gt; __( 'Powered by WordPress', 'my-plugin' ),\n        'blockTypes' =&gt; array( 'core/paragraph', 'core/heading' ),\n        'content'    =&gt; '&lt;!-- wp:group --&gt;\n                        &lt;div class=\"wp-block-group\"&gt;\n                        &lt;!-- wp:heading {\"fontSize\":\"large\"} --&gt;\n                        &lt;h2 class=\"has-large-font-size\"&gt;&lt;span style=\"color:#ba0c49\" class=\"has-inline-color\"&gt;Hi everyone&lt;/span&gt;&lt;/h2&gt;\n                        &lt;!-- /wp:heading --&gt;\n                        &lt;!-- wp:paragraph {\"backgroundColor\":\"black\",\"textColor\":\"white\"} --&gt;\n                        &lt;p class=\"has-white-color has-black-background-color has-text-color has-background\"&gt;Powered by WordPress&lt;/p&gt;\n                        &lt;!-- /wp:paragraph --&gt;\n                        &lt;/div&gt;&lt;!-- /wp:group --&gt;',\n    )\n);\n</code></pre>\n<p>In the above example, if we select <strong>one of the two</strong> block types, either a paragraph or a heading block, this pattern will be suggested by transforming the selected block using its content and will also add the remaining blocks from the pattern. If, on the other hand, we multi-select one paragraph and one heading block, both blocks will be transformed.</p>\n<p>Blocks can also use these contextual block patterns in other places. For instance, when inserting a new Query Loop block, the user is provided with a list of all patterns attached to the block.</p>\n<h2>Semantic block patterns</h2>\n<p>In block themes, you can also mark block patterns as &#8220;header&#8221; or &#8220;footer&#8221; patterns (template part areas). We call these &#8220;semantic block patterns&#8221;. These patterns are shown to the user when inserting or replacing header or footer template parts.</p>\n<p>Example:</p>\n<pre><code class=\"language-php\">&lt;?php\nregister_block_pattern(\n    'my-plugin/my-header',\n    array(\n        'title'      =&gt; __( 'My Header', 'my-plugin' ),\n        'categories' =&gt; array( 'header' ),\n        // Assigning the pattern the \"header\" area.\n        'blockTypes' =&gt; array( 'core/template-part/header' ),\n        'content'    =&gt; 'Content of my block pattern',\n    )\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134406,
+    "menu_order": 67,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135624",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135624",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135624/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151599,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135624/revisions/151599"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135624"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

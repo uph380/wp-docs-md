@@ -1,0 +1,91 @@
+{
+    "id": 134471,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/with-constrained-tabbing/"
+    },
+    "modified": "2024-11-18T21:55:14",
+    "modified_gmt": "2024-11-18T21:55:14",
+    "slug": "with-constrained-tabbing",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/with-constrained-tabbing/",
+    "title": {
+        "rendered": "WithConstrainedTabbing"
+    },
+    "content": {
+        "rendered": "<p><code>withConstrainedTabbing</code> is a React <a href=\"https://facebook.github.io/react/docs/higher-order-components.html\">higher-order component</a> adding the ability to constrain keyboard navigation with the Tab key within a component. For accessibility reasons, some UI components need to constrain Tab navigation, for example modal dialogs or similar UI. Use of this component is recommended only in cases where a way to navigate away from the wrapped component is implemented by other means, usually by pressing the Escape key or using a specific UI control, e.g. a &#8220;Close&#8221; button.</p>\n<h2>Usage</h2>\n<p>Wrap your original component with <code>withConstrainedTabbing</code>.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport {\n    withConstrainedTabbing,\n    TextControl,\n    Button,\n} from '@wordpress/components';\n\nconst ConstrainedTabbing = withConstrainedTabbing(\n    ( { children } ) =&gt; children\n);\n\nconst MyComponentWithConstrainedTabbing = () =&gt; {\n    const [ isConstrainedTabbing, setIsConstrainedTabbing ] = useState( false );\n    let form = (\n        &lt;form&gt;\n            &lt;TextControl\n                __next40pxDefaultSize\n                __nextHasNoMarginBottom\n                label=\"Input 1\"\n                onChange={ () =&gt; {} }\n            /&gt;\n            &lt;TextControl\n                __next40pxDefaultSize\n                __nextHasNoMarginBottom\n                label=\"Input 2\"\n                onChange={ () =&gt; {} }\n            /&gt;\n        &lt;/form&gt;\n    );\n    if ( isConstrainedTabbing ) {\n        form = &lt;ConstrainedTabbing&gt;{ form }&lt;/ConstrainedTabbing&gt;;\n    }\n\n    const toggleConstrain = () =&gt; {\n        setIsConstrainedTabbing( ( state ) =&gt; ! state );\n    };\n\n    return (\n        &lt;div&gt;\n            { form }\n            &lt;Button variant=\"secondary\" onClick={ toggleConstrain }&gt;\n                { isConstrainedTabbing ? 'Disable' : 'Enable' } constrain\n                tabbing\n            &lt;/Button&gt;\n        &lt;/div&gt;\n    );\n};\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 165,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134471",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134471",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134471/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155768,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134471/revisions/155768"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134471"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

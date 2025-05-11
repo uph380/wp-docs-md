@@ -1,0 +1,91 @@
+{
+    "id": 134493,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/query-controls/"
+    },
+    "modified": "2025-03-03T11:34:12",
+    "modified_gmt": "2025-03-03T11:34:12",
+    "slug": "query-controls",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/query-controls/",
+    "title": {
+        "rendered": "QueryControls"
+    },
+    "content": {
+        "rendered": "<h2>Development Guidelines</h2>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { QueryControls } from '@wordpress/components';\n\nconst QUERY_DEFAULTS = {\n    category: 1,\n    categories: [\n        {\n            id: 1,\n            name: 'Category 1',\n            parent: 0,\n        },\n        {\n            id: 2,\n            name: 'Category 1b',\n            parent: 1,\n        },\n        {\n            id: 3,\n            name: 'Category 2',\n            parent: 0,\n        },\n    ],\n    maxItems: 20,\n    minItems: 1,\n    numberOfItems: 10,\n    order: 'asc',\n    orderBy: 'title',\n};\n\nconst MyQueryControls = () =&gt; {\n    const [ query, setQuery ] = useState( QUERY_DEFAULTS );\n    const { category, categories, maxItems, minItems, numberOfItems, order, orderBy } = query;\n\n    const updateQuery = ( newQuery ) =&gt; {\n        setQuery( { ...query, ...newQuery } );\n    };\n\n    return (\n        &lt;QueryControls\n            { ...{ maxItems, minItems, numberOfItems, order, orderBy } }\n            onOrderByChange={ ( newOrderBy ) =&gt; updateQuery( { orderBy: newOrderBy } ) }\n            onOrderChange={ ( newOrder ) =&gt; updateQuery( { order: newOrder } ) }\n            categoriesList={ categories }\n            selectedCategoryId={ category }\n            onCategoryChange={ ( newCategory ) =&gt; updateQuery( { category: newCategory } ) }\n            onNumberOfItemsChange={ ( newNumberOfItems ) =&gt;\n                updateQuery( { numberOfItems: newNumberOfItems } )\n            }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Multiple category selector</h3>\n<p>The <code>QueryControls</code> component now supports multiple category selection, to replace the single category selection available so far. To enable it use the component with the new props instead: <code>categorySuggestions</code> in place of <code>categoriesList</code> and the <code>selectedCategories</code> array instead of <code>selectedCategoryId</code> like so:</p>\n<pre><code class=\"language-jsx\">const QUERY_DEFAULTS = {\n    orderBy: 'title',\n    order: 'asc',\n    selectedCategories: [\n        {\n            id: 1,\n            value: 'Category 1',\n            parent: 0,\n        },\n        {\n            id: 2,\n            value: 'Category 1b',\n            parent: 1,\n        },\n    ],\n    categories: {\n        'Category 1': {\n            id: 1,\n            name: 'Category 1',\n            parent: 0,\n        },\n        'Category 1b': {\n            id: 2,\n            name: 'Category 1b',\n            parent: 1,\n        },\n        'Category 2': {\n            id: 3,\n            name: 'Category 2',\n            parent: 0,\n        },\n    },\n    numberOfItems: 10,\n};\n\nconst MyQueryControls = () =&gt; {\n    const [ query, setQuery ] = useState( QUERY_DEFAULTS );\n    const { orderBy, order, selectedCategories, categories, numberOfItems } = query;\n\n    const updateQuery = ( newQuery ) =&gt; {\n        setQuery( { ...query, ...newQuery } );\n    };\n\n    return (\n        &lt;QueryControls\n            { ...{ orderBy, order, numberOfItems } }\n            onOrderByChange={ ( newOrderBy ) =&gt; updateQuery( { orderBy: newOrderBy } ) }\n            onOrderChange={ ( newOrder ) =&gt; updateQuery( { order: newOrder } ) }\n            categorySuggestions={ categories }\n            selectedCategories={ selectedCategories }\n            onCategoryChange={ ( category ) =&gt; updateQuery( { selectedCategories: category } ) }\n            onNumberOfItemsChange={ ( newNumberOfItems ) =&gt;\n                updateQuery( { numberOfItems: newNumberOfItems } )\n            }\n        /&gt;\n    );\n};\n</code></pre>\n<p>The format of the categories list also needs to be updated to match the expected type for the category suggestions.</p>\n<h3>Props</h3>\n<h4><code>authorList</code>: <code>Author[]</code></h4>\n<p>An array of the authors to select from.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>categoriesList</code>: <code>Category[]</code></h4>\n<p>An array of categories. When passed in conjunction with the <code>onCategoryChange</code> prop, it causes the component to render UI that allows selecting one category at a time.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>categorySuggestions</code>: <code>Record&lt; Category[ 'name' ], Category &gt;</code></h4>\n<p>An object of categories with the category name as the key. When passed in conjunction with the <code>onCategoryChange</code> prop, it causes the component to render UI that enables multiple selection.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>maxItems</code>: <code>number</code></h4>\n<p>The maximum number of items.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: 100</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>minItems</code>: <code>number</code></h4>\n<p>The minimum number of items.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: 1</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>numberOfItems</code>: <code>number</code></h4>\n<p>The selected number of items to retrieve via the query.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>onAuthorChange</code>: <code>( newAuthor: string ) =&gt; void</code></h4>\n<p>A function that receives the new author value. If not specified, the author controls are not rendered.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>onCategoryChange</code>: <code>( newCategory: string ) =&gt; void | FormTokenFieldProps[ 'onChange' ]</code></h4>\n<p>A function that receives the new category value. If not specified, the category controls are not rendered.<br />\nThe function&#8217;s signature changes depending on whether multiple category selection is enabled or not.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>onNumberOfItemsChange</code>: <code>( newNumber?: number ) =&gt; void</code></h4>\n<p>A function that receives the new number of items. If not specified, then the number of items range control is not rendered.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>onOrderChange</code>: <code>( newOrder: 'asc' | 'desc' ) =&gt; void</code></h4>\n<p>A function that receives the new order value. If this prop or the <code>onOrderByChange</code> prop are not specified, then the order controls are not rendered.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>onOrderByChange</code>: <code>( newOrderBy: 'date' | 'title' ) =&gt; void</code></h4>\n<p>A function that receives the new orderby value. If this prop or the <code>onOrderChange</code> prop are not specified, then the order controls are not rendered.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>order</code>: <code>'asc' | 'desc'</code></h4>\n<p>The order in which to retrieve posts.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>orderBy</code>: <code>'date' | 'title' | 'menu_order'</code></h4>\n<p>The meta key by which to order posts.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>orderByOptions</code>: <code>OrderByOption[]</code></h4>\n<p>The meta key by which to order posts.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>selectedAuthorId</code>: <code>number</code></h4>\n<p>The selected author ID.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>selectedCategories</code>: <code>Category[]</code></h4>\n<p>The selected categories for the <code>categorySuggestions</code> prop.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>selectedCategoryId</code>: <code>number</code></h4>\n<p>The selected category for the <code>categoriesList</code> prop.</p>\n<ul>\n<li>Required: No</li>\n<li>Platform: Web</li>\n</ul>\n<h4><code>__next40pxDefaultSize</code>: <code>boolean</code></h4>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 191,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134493",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134493",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134493/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157348,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134493/revisions/157348"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134493"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

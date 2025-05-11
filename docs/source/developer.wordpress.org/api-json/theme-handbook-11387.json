@@ -1,0 +1,97 @@
+{
+    "id": 11387,
+    "date": "2014-10-23T16:48:10",
+    "date_gmt": "2014-10-23T16:48:10",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11387"
+    },
+    "modified": "2024-01-26T16:44:55",
+    "modified_gmt": "2024-01-26T16:44:55",
+    "slug": "child-themes",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/child-themes/",
+    "title": {
+        "rendered": "Child Themes"
+    },
+    "content": {
+        "rendered": "\n<p>Child themes are extensions of a parent theme. They allow you to modify an existing theme without directly editing that theme\u2019s code. They are often something as simple as a few minor color changes, but they can also be complex and include custom overrides of the parent theme.</p>\n\n\n\n<p>In this article, you will learn what parent and child themes are, how to create your own modifications via child themes, and what pieces of a parent theme that can be overridden.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What are parent and child themes?</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Parent themes</h3>\n\n\n\n<p>All themes\u2014unless they are specifically a child theme\u2014are technically parent themes. Basically, this means that they are complete themes that can be installed and activated in WordPress.&nbsp;</p>\n\n\n\n<p>Parent themes must have all of the required files, as outlined in the <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">Theme Structure</a> documentation. Beyond that, you don\u2019t have to do anything special for your theme to <em>become a parent theme.</em></p>\n\n\n\n<h3 class=\"wp-block-heading\">Child themes</h3>\n\n\n\n<p>A child theme includes everything from its parent theme by default. This includes the design and any of its functionality. But it can also be used to make customizations to the parent theme without directly modifying the parent theme\u2019s files. This means that you (or your child theme\u2019s users) can still receive updates to the parent theme without losing those modifications.</p>\n\n\n\n<p>Child themes:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Make your modifications portable and replicable.</li>\n\n\n\n<li>Keep customizations separate from the parent theme.</li>\n\n\n\n<li>Allow parent themes to be updated without losing your modifications.</li>\n\n\n\n<li>Save on development time since you\u2019re only writing the code you need.</li>\n\n\n\n<li>Are a great way to start your journey toward developing full themes.</li>\n</ul>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>It\u2019s worth noting that making extensive customizations from within a child theme can eventually become a management headache. For these more extensive projects, it is often better to fork the original theme and create a full/parent theme of your own. This is something you will need to decide on a case-by-case basis.</p></div></div>\n\n\n\n<h3 class=\"wp-block-heading\">What about grandchild themes?</h3>\n\n\n\n<p>This is not currently possible. There are only two levels to the standard theme hierarchy: parent and child theme.</p>\n\n\n\n<p>However, when building block themes, there are other levels to what is presented on the front end of a site (they are just not a part of the theme layer):</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>WordPress itself (default <code>theme.json</code>)</li>\n\n\n\n<li>Parent theme</li>\n\n\n\n<li>Child theme</li>\n\n\n\n<li>User customizations (can override <code>theme.json</code>, templates, and patterns)</li>\n</ul>\n\n\n\n<p>In a way, the user customization layer works as a \u201cgrandchild\u201d theme of sorts. The big difference is that the changes are stored in the database instead of the filesystem.</p>\n\n\n\n<p>Outside of that, there is no standard method of creating an installable grandchild theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to create a child theme</h2>\n\n\n\n<p>Let\u2019s try creating a child theme of the default <a href=\"https://wordpress.org/themes/twentytwentyfour/\">Twenty Twenty-Four</a> theme bundled with WordPress.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Create a child theme folder</h3>\n\n\n\n<p>First, your child theme needs a name. This can be whatever you want your theme to be called, but for this guide, let\u2019s name it \u201cGrand Sunrise.\u201d</p>\n\n\n\n<p>Now create a new folder in your <code>wp-content/themes</code> directory with a kebab-case version of your theme name: <code>grand-sunrise</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Create a style.css</h3>\n\n\n\n<p>Now you\u2019ll need to create a file named <code>style.css</code>. It is the one absolutely necessary file for a child theme to exist. All <code>style.css</code> files must contain a File Header and the required header fields, as outlined in the <a href=\"https://developer.wordpress.org/themes/core-concepts/main-stylesheet/\">Main Stylesheet</a> documentation (please review this doc if you have not already done so).</p>\n\n\n\n<p>As noted in the Main Stylesheet documentation, there is an additional field necessary to declare a theme as a child theme. You must add the <code>Template</code> header field to the <code>style.css</code> File Header:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">/**\n * Theme Name: Grand Sunrise\n * Template:   twentytwentyfour\n * ...other header fields\n */</code></pre>\n\n\n\n<p>There is one caveat to the <code>Template</code> field. It must be a 100% match of the folder name of the parent theme, relative to the <code>wp-content/themes</code> folder. In this case, we know that the Twenty Twenty-Four theme folder is located at <code>wp-content/themes/twentytwentyfour</code>. Therefore, the <code>Template</code> value must be <code>twentytwentyfour</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Install and activate child theme</h3>\n\n\n\n<p>If you are not already working within a development environment with your theme in the <code>wp-content/themes</code> folder, you\u2019ll need to move it there now. Depending on your setup, you have several options, but the easiest is to create a ZIP file of your theme and upload it to your test site via <strong>Appearance &gt; Themes &gt; Add New</strong> in your WordPress admin.</p>\n\n\n\n<p>For more information on how to add a theme to a WordPress, read <a href=\"https://wordpress.org/documentation/article/work-with-themes/#adding-new-themes\">Adding New Themes</a> from the WordPress Documentation site.</p>\n\n\n\n<p>Once your theme is installed, visit <strong>Appearance &gt; Themes</strong> in your WordPress admin and locate your theme. Click the <strong>Activate</strong> link as shown in this screenshot:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1055\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?resize=2048%2C1055&#038;ssl=1\" alt=\"WordPress Appearance &gt; Themes screen showing the popup overlay of an empty child theme.\" class=\"wp-image-152104\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?resize=1024%2C528&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?resize=768%2C396&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/01/child-theme-activate.jpg?resize=1536%2C791&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>It won\u2019t look any different from your parent theme right now because you haven\u2019t customized it yet. But you have successfully created a child theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Customizing your child theme</h2>\n\n\n\n<p>When customizing your child theme, all the functionality documented throughout this handbook is fully available to you. But there are a few considerations you should keep in mind, which you\u2019ll learn about in the following sections.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Loading style.css</h3>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>This is an optional step and often not needed for block themes because their style handling is generally done via <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\"><code>theme.json</code></a>. But it is often necessary if you are building a classic theme. Regardless, you only need to perform this step if you want to ensure that any CSS code in <code>style.css</code> is loaded.</p></div></div>\n\n\n\n<p>Before proceeding with this section, be sure to review the <a href=\"https://developer.wordpress.org/themes/core-concepts/including-assets/\">Including Assets</a> documentation, which covers how to load <code>style.css</code> in more detail. In that documentation, you will learn how to enqueue stylesheets via the <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_style/\"><code>wp_enqueue_style()</code></a> function on the appropriate hook (note that child themes are loaded before their parent themes).</p>\n\n\n\n<p>The ideal method of enqueueing stylesheets is when a parent theme loads both its own <code>style.css</code> and the child theme\u2019s <code>style.css</code>. But not all themes do this. Therefore, you must examine the code of the parent theme to see which stylesheets it is enqueueing. This is different for every theme, and there are no hard rules.</p>\n\n\n\n<p>If the parent theme loads both stylesheets, the child theme does not need to do anything. Its stylesheet will be automatically loaded.</p>\n\n\n\n<p>In the case of the Twenty Twenty-Four theme, it doesn\u2019t load a stylesheet at all. So you would have to load your <code>style.css</code> via <code>functions.php</code> as shown in this code snippet:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'wp_enqueue_scripts', 'grand_sunrise_enqueue_styles' );\n\nfunction grand_sunrise_enqueue_styles() {\n\twp_enqueue_style( \n\t\t'grand-sunrise-style', \n\t\tget_stylesheet_uri()\n\t);\n}</code></pre>\n\n\n\n<p>If the parent theme you are using only loads its own stylesheet, you would also use the above code to load your child theme\u2019s <code>style.css</code>.</p>\n\n\n\n<p>If the parent theme loads only the active theme\u2019s stylesheet, such as via <code>get_stylesheet_uri()</code>, then it will load the child theme\u2019s stylesheet. In this case, you may want to also enqueue the parent theme\u2019s stylesheet via <code>functions.php</code>, and your code would look like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'wp_enqueue_scripts', 'grand_sunrise_enqueue_styles' );\n\nfunction grand_sunrise_enqueue_styles() {\n\twp_enqueue_style( \n\t\t'grand-sunrise-parent-style', \n\t\tget_parent_theme_file_uri( 'style.css' )\n\t);\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Templates, parts, and patterns</h3>\n\n\n\n<p>When building a child theme, you have the option to overwrite any template, part, or pattern that exists in the parent theme by adding a file of the same name in your child theme. <em>Note: patterns must also have the same registered <code>Slug</code> field.</em></p>\n\n\n\n<p>You can also add brand new templates, parts, and patterns to your child theme, even if they don\u2019t exist in the parent. To learn more about these features, refer to these articles in the handbook:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/templates/\">Templates</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/features/block-patterns/\">Patterns</a></li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Using functions.php</h3>\n\n\n\n<p>Unlike templates and patterns, the <code>functions.php</code> file of a child theme does not override the <code>functions.php</code> file in the parent theme. In fact, they are both loaded, with the child being loaded immediately before the parent.</p>\n\n\n\n<p>In that way, the <code>functions.php</code> of a child theme provides a smart, trouble-free method of modifying the functionality of a parent theme or WordPress.\u00a0</p>\n\n\n\n<p>Suppose that you wanted to add a PHP function to your theme. The fastest way would be to open its <code>functions.php</code> file and put the function there. But that\u2019s not considered a good practice\u2014<strong>the next time your theme is updated, your function will disappear!</strong></p>\n\n\n\n<p>It\u2019s much better to create a child theme and add your custom code to your child theme\u2019s <code>functions.php</code> file. The function will do the exact same job from there too, with the advantage that it will not be affected by future updates of the parent theme.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Do not copy code directly from the <code>functions.php</code> of a parent theme into your child theme. That will likely lead to fatal errors because of duplicate function names.</p></div></div>\n\n\n\n<p>To learn more about <code>functions.php</code>, check out the <a href=\"https://developer.wordpress.org/themes/core-concepts/custom-functionality/\">Custom Functionality</a> documentation.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Referencing or including other files</h3>\n\n\n\n<p>Sometimes you need to include or use custom files in your theme. When doing so, you need to make sure that you\u2019re using the function that will give you the correct directory path or URI based on your child theme\u2019s directory.</p>\n\n\n\n<p>For example, if you wanted to include another PHP file via your <code>functions.php</code>, you would use the <a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_path/\"><code>get_theme_file_path()</code></a> function. Here is a code snippet that shows including a <code>functions-helpers.php</code> file from an <code>/inc</code> folder in your child theme:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">require_once get_theme_file_path( 'inc/functions-helpers.php' );</code></pre>\n\n\n\n<p>To learn more about including files, read the <a href=\"https://developer.wordpress.org/themes/core-concepts/custom-functionality/\">Custom Functionality</a> documentation.</p>\n\n\n\n<p>When you need to reference a file by its URL, such as an image or stylesheet, you must use a different function: <a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_uri/\"><code>get_theme_file_uri()</code></a>. Let\u2019s look at an example of using a file named <code>bunny.jpg</code> from your theme\u2019s <code>/assets/images</code> folder in an <code>&lt;img&gt;</code> HTML tag:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php $image = get_theme_file_uri( 'assets/images/bunny.jpg' ); ?&gt;\n\n&lt;img src=\"&lt;?php echo esc_url( $image ); ?&gt;\" alt=\"\" /&gt;</code></pre>\n\n\n\n<p>You can find out more about including scripts, styles, images, and other assets from the <a href=\"https://developer.wordpress.org/themes/core-concepts/including-assets/\">Including Assets</a> documentation.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Internationalization</h3>\n\n\n\n<p>Like parent themes, child themes can also be internationalized and made to work in any language. To learn more, read the <a href=\"https://developer.wordpress.org/themes/advanced-topics/internationalization/\">Internationalization</a> documentation in the Theme Handbook.</p>\n\n\n\n<p>The biggest changes, as noted in the Internationalization documentation, are that you must create a unique text domain and use <a href=\"https://developer.wordpress.org/reference/functions/load_child_theme_textdomain/\"><code>load_child_theme_textdomain()</code></a> instead of <a href=\"https://developer.wordpress.org/reference/functions/load_theme_textdomain/\"><code>load_theme_textdomain()</code></a> when manually loading translations.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11387",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11387",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 47,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11387/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152105,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11387/revisions/152105"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11387"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

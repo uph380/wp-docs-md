@@ -1,0 +1,91 @@
+{
+    "id": 25329,
+    "date": "2017-01-19T19:30:03",
+    "date_gmt": "2017-01-19T19:30:03",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=25329"
+    },
+    "modified": "2024-01-16T20:30:16",
+    "modified_gmt": "2024-01-16T20:30:16",
+    "slug": "frequently-asked-questions",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/frequently-asked-questions/",
+    "title": {
+        "rendered": "Frequently Asked Questions"
+    },
+    "content": {
+        "rendered": "<p>This page provides solutions to some common questions and problems that may arise while using the API. If your question is not explained here it may have been answered in the <a href=\"https://wordpress.org/support/topic-tag/rest-api\">WordPress support forums</a>.</p>\n<h2>Can I disable the REST API?</h2>\n<p>You should not disable the REST API; doing so will break WordPress Admin functionality that depends on the API being active. However, you may use a filter to require that API consumers be authenticated, which effectively prevents anonymous external access. See below for more information.</p>\n<h2>Require Authentication for All Requests</h2>\n<p>You can require authentication for all REST API requests by adding an <code>is_user_logged_in</code> check to the <a href=\"https://developer.wordpress.org/reference/hooks/rest_authentication_errors/\"><code>rest_authentication_errors</code></a> filter.</p>\n<p>Note: The incoming callback parameter can be either <code>null</code>, a <code>WP_Error</code>, or a boolean. The type of the parameter indicates the state of authentication:</p>\n<ul>\n<li><code>null</code>: no authentication check has yet been performed, and the hook callback may apply custom authentication logic.</li>\n<li>boolean: indicates a previous authentication method check was performed. Boolean <code>true</code> indicates the request was successfully authenticated, and boolean <code>false</code> indicates authentication failed.</li>\n<li><code>WP_Error</code>: Some kind of error was encountered.</li>\n</ul>\n<pre><code class=\"language-php\">add_filter( 'rest_authentication_errors', function( $result ) {\n    // If a previous authentication check was applied,\n    // pass that result along without modification.\n    if ( true === $result || is_wp_error( $result ) ) {\n        return $result;\n    }\n\n    // No authentication has been performed yet.\n    // Return an error if user is not logged in.\n    if ( ! is_user_logged_in() ) {\n        return new WP_Error(\n            'rest_not_logged_in',\n            __( 'You are not currently logged in.' ),\n            array( 'status' =&gt; 401 )\n        );\n    }\n\n    // Our custom authentication check should have no effect\n    // on logged-in requests\n    return $result;\n});\n</code></pre>\n<h2>Can I make\u00a0API requests\u00a0from PHP within a plugin?</h2>\n<p>Yes, you can! Use <a href=\"https://developer.wordpress.org/reference/functions/rest_do_request/\">rest_do_request</a> to\u00a0make API requests internally\u00a0within other WordPress code:</p>\n<pre><code class=\"language-php\">$request = new WP_REST_Request( 'GET', '/wp/v2/posts' );\n// Set one or more request query parameters\n$request-&gt;set_param( 'per_page', 20 );\n$response = rest_do_request( $request );\n</code></pre>\n<h2>How do I use the _embed parameter on internal requests?</h2>\n<p>Setting the <code>_embed</code> param on the request object won&#8217;t work.</p>\n<pre><code class=\"language-php\">$request = new WP_REST_Request( 'GET', '/wp/v2/posts' );\n$request-&gt;set_param( '_embed', 1 );\n$response = rest_do_request( $request );\n</code></pre>\n<p>Instead, manually call the <a href=\"https://developer.wordpress.org/reference/classes/wp_rest_server/\"><code>WP_REST_Server::response_to_data</code></a> function.</p>\n<pre><code class=\"language-php\">$request = new WP_REST_Request( 'GET', '/wp/v2/posts' );\n$response = rest_do_request( $request );\n$data = rest_get_server()-&gt;response_to_data( $response, true );\nvar_dump( $data['_embedded'] );\n</code></pre>\n<h2>What happened to the <code>?filter=</code> query parameter?</h2>\n<p>When the REST API was merged into WordPress core the <code>?filter</code> query parameter was removed to prevent future compatibility and maintenance issues. The ability to pass arbitrary <a href=\"https://developer.wordpress.org/reference/classes/wp_query/\" rel=\"class\">WP_Query</a> arguments to the API using a <code>?filter</code> query parameter was necessary at the genesis of the REST API project, but most API response filtering functionality has been superseded by more robust query parameters like <code>?categories=</code>, <code>?slug=</code> and <code>?per_page=</code>.</p>\n<p>First-party query parameters should be used whenever possible. However, the <a href=\"https://github.com/wp-api/rest-filter\">rest-filter</a> plugin restores the ability to pass arbitrary <code>?filter</code> values in API request if needed.</p>\n<h2>Query parameters are not working</h2>\n<p>If you find that query parameters such as <code>?page=2</code> or <code>?_embed</code> are not\u00a0having any effect, your server may not be properly configured to detect them. If you are using Nginx to serve your website, look for a <code>try_files</code> line in your site configuration. If it looks like this:</p>\n<pre><code>try_files $uri $uri/ /index.php$args;\n</code></pre>\n<p>change it to this:</p>\n<pre><code>try_files $uri $uri/ /index.php$is_args$args;\n</code></pre>\n<p>Adding <code>$is_args</code> (which will print a ? character if query arguments are found) will allow WordPress to properly receive and interpret the query parameters.</p>\n<h2>Why is Authentication not working?</h2>\n<p>If you&#8217;re finding that you are sending Authentication headers but the request is not being accepted, and you are using a CGI environment, your webserver may be stripping the headers. Please try adding the appropriate configuration below to remedy this.</p>\n<h3>Apache</h3>\n<p>Add the following to a configuration file or .htaccess:</p>\n<pre><code>&lt;IfModule mod_setenvif&gt;\n  SetEnvIf Authorization \"(.*)\" HTTP_AUTHORIZATION=$1\n&lt;/IfModule&gt;\n</code></pre>\n<h3>Nginx</h3>\n<p>Add the following to your server configurations fastcgi section:</p>\n<pre><code>fastcgi_pass_header Authorization;\n</code></pre>\n<h2>Why is the REST API not verifying the incoming Origin header? Does this expose my site to CSRF attacks?</h2>\n<p>Cross-Origin Resource Sharing (CORS) is a mechanism which allows a website to control which Origins (originating external sites) are allowed to access your site&#8217;s data. CORS prevents against a particular type of attack known as Cross-Site Request Forgery, or CSRF. However, WordPress has an existing CSRF protection mechanism which uses <a href=\"https://developer.wordpress.org/plugins/security/nonces/\">nonces</a>. Tightening CORS restrictions would prevent some authentication methods, so the WordPress REST API uses nonces for CSRF protection instead of CORS.</p>\n<p>Because the WordPress REST API does not verify the Origin header of incoming requests, public REST API endpoints may therefore be accessed from any site.</p>\n<p>This is an <a href=\"https://core.trac.wordpress.org/changeset/40600\">intentional design decision</a>, but if you wish to prevent your site from being accessed from unknown origins you may unhook the default <a href=\"https://developer.wordpress.org/reference/functions/rest_send_cors_headers/\"><code>rest_send_cors_headers</code> function</a> from the <a href=\"https://developer.wordpress.org/reference/hooks/rest_pre_serve_request/\"><code>rest_pre_serve_request</code> filter hook</a>, then hook in your own function to that same filter to specify stricter CORS headers.</p>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25329",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25329",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 26,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25329/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151995,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25329/revisions/151995"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25329"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

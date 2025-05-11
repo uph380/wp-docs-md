@@ -1,0 +1,109 @@
+{
+    "id": 15113575,
+    "date": "2022-01-05T22:49:50",
+    "date_gmt": "2022-01-05T22:49:50",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15113575"
+    },
+    "modified": "2023-04-14T14:44:14",
+    "modified_gmt": "2023-04-14T14:44:14",
+    "slug": "block-themes",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/block-themes/",
+    "title": {
+        "rendered": "Block themes"
+    },
+    "content": {
+        "rendered": "\n<p>As of WordPress 5.9, block themes are now a part of the WordPress ecosystem as a new type of theme built with and for blocks. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"what-is-a-block-theme\">What is a block theme?</h2>\n\n\n\n<p>A block theme is a theme that uses blocks for all parts of a site, including navigation menus, header, content, and site footer. These themes are built for the newest features coming to WordPress that allow you to edit and customize all parts of your site. This allows you to switch up key parts of your theme without ever needing to change themes. </p>\n\n\n\n<p>With a block theme, you can place and edit blocks outside your content using the <a href=\"https://wordpress.org/documentation/article/template-editor/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/template-editor/\">Template Editor</a> or <a href=\"https://wordpress.org/documentation/article/site-editor/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>. You can use blocks in templates provided by a theme or plugin. For example, an archive page or a 404 page. You can also create custom templates.</p>\n\n\n\n<p>For general information about themes, see the support article <a href=\"https://wordpress.org/documentation/article/using-themes/#what-is-a-theme\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/using-themes/#what-is-a-theme\">What is a theme?</a></p>\n\n\n\n<p><strong>How do this impact widgets and widget areas?</strong></p>\n\n\n\n<p>Instead of widgets, a block theme relies on blocks. This means that you can place blocks anywhere you might have previously wanted widgets to appear.</p>\n\n\n\n<p><strong>How does this impact the Customizer?</strong></p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/appearance-customize-screen/\">Customizer</a> is not available in block themes unless you are using a plugin or theme that requires it to be activated. This is because you can make the same changes you might make with the Customizer with blocks. For example, there are now blocks for the site title, tagline, and site logo. You can also select colors for your website in the <a href=\"https://wordpress.org/documentation/article/styles-overview/\" data-type=\"helphub_article\" data-id=\"15127782\">Styles</a> setting by going to <strong>Administration Screen</strong> &gt; <strong>Appearance</strong> &gt; <strong>Editor (beta). </strong></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-find-block-themes\">How to find block themes</h2>\n\n\n\n<p>You can find block themes in the <a href=\"https://wordpress.org/themes/tags/full-site-editing/\" data-type=\"URL\" data-id=\"https://wordpress.org/themes/tags/full-site-editing/\">WordPress theme directory</a> by selecting <strong>Block Themes</strong> in the toolbar. This automatically takes you to a filtered view of all themes with Full Site Editing functionality.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-14-at-9.17.12-PM-1-1024x159.png\" alt=\"Visual of the theme directory with an emphasis on the block themes tab. \" class=\"wp-image-15827009\" /><figcaption class=\"wp-element-caption\">Themes Directory &#8211; Block Themes</figcaption></figure>\n\n\n\n<p>For general information about how to get new themes, see the support article <a href=\"https://wordpress.org/documentation/article/using-themes/#get-new-themes\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/using-themes/#get-new-themes\">Get new themes</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"what-options-are-available-with-block-themes-styles-templates-template-parts\">What options are available with block themes?</h2>\n\n\n\n<p>After activating a block theme, more tools and features will be available to you including the following:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/site-editor/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/site-editor/\" target=\"_blank\">Site Editor</a>: an editor that allows you to edit all parts of your site, navigate between templates, and more.</li>\n\n\n\n<li><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/styles-overview/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/styles-overview/\" target=\"_blank\">Styles</a>: a feature that allows you to customize your site, including individual blocks, as much as you\u2019d like with different colors, typography, layouts, and more. </li>\n\n\n\n<li><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/template-editor/\" target=\"_blank\">Templates</a>: edit, create, and manage templates that a page or post uses.</li>\n\n\n\n<li><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/template-part-block/\" target=\"_blank\">Template parts</a>: a way to organize and display groups of blocks as part of a block template mainly for site structure, like Headers and Footers.</li>\n\n\n\n<li>Theme blocks including the <a href=\"https://wordpress.org/documentation/article/navigation-block/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/navigation-block/\">Navigation Block</a>, <a href=\"https://wordpress.org/documentation/article/query-loop-block/\">Query Loop block</a>, and more. </li>\n</ul>\n\n\n\n<p>Using these options you can create the desired look and feel of your site without switching themes as often. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"when-should-i-use-a-block-theme\">When should I use a block theme?</h2>\n\n\n\n<p>Block themes were introduced in WordPress since the 5.9 release. If you like exploring new things, enjoy building content with the <a href=\"https://wordpress.org/documentation/article/wordpress-editor/\" data-type=\"helphub_article\" data-id=\"11284616\">block editor</a> and like to have full control over all parts of your site, block themes are a great solution for you. </p>\n\n\n\n<p>If you&#8217;re comfortable doing so, it might help to <a href=\"https://wordpress.org/documentation/article/test-driving-wordpress/\">set up a test site</a> to try out a block theme first to see if it will work for you. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-are-block-themes-different-from-classic-themes\">How are block themes different from classic themes?</h2>\n\n\n\n<p>Block themes are built for the newer functionality in WordPress and allow you to use blocks to edit all parts of your site, including easier ways to quickly customize everything from your background colors to font sizes for all Heading blocks etc. Comparatively, classic themes are built with PHP templates, functions.php and more that include features like Widgets, a dedicated Menus section, the Customizer, and more. Classic themes do not work with the <a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"resource-links\">Resource Links</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Learn WordPress course on <a href=\"https://learn.wordpress.org/course/simple-site-design-with-full-site-editing/\">Simple Site Design with Full Site Editing</a></li>\n\n\n\n<li>Build <a href=\"https://developer.wordpress.org/themes/block-themes/\">a block theme</a></li>\n</ul>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Update 2023-04-24\n<ul class=\"wp-block-list\">\n<li>Add link to building a block theme</li>\n</ul>\n</li>\n\n\n\n<li>Update 2022-07-14\n<ul class=\"wp-block-list\">\n<li>Add section on how to find block themes</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-01-05</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>As of WordPress 5.9, block themes are now a part of the WordPress ecosystem as a new type of theme built with and for blocks. What is a block theme? A block theme is a theme that uses blocks for all parts of a site, including navigation menus, header, content, and site footer. These themes [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-15113575",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15113575",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15113575"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15113575/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356736,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15113575/revisions/16356736"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15113575"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15113575"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

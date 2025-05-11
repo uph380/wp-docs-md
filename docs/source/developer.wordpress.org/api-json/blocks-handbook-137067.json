@@ -1,0 +1,91 @@
+{
+    "id": 137067,
+    "date": "2021-09-23T10:39:48",
+    "date_gmt": "2021-09-23T10:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/navigator/"
+    },
+    "modified": "2024-10-30T17:09:57",
+    "modified_gmt": "2024-10-30T17:09:57",
+    "slug": "navigator",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/navigator/",
+    "title": {
+        "rendered": "Navigator"
+    },
+    "content": {
+        "rendered": "<p><code>Navigator</code> is a collection components that allow rendering nested views/panels/menus (via the <code>Navigator.Screen</code> component) and navigate between them (via the <code>Navigator.Button</code> and <code>Navigator.BackButton</code> components).</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Navigator } from '@wordpress/components';\n\nconst MyNavigation = () =&gt; (\n    &lt;Navigator initialPath=\"/\"&gt;\n        &lt;Navigator.Screen path=\"/\"&gt;\n            &lt;p&gt;This is the home screen.&lt;/p&gt;\n            &lt;Navigator.Button path=\"/child\"&gt;\n                Navigate to child screen.\n            &lt;/Navigator.Button&gt;\n        &lt;/Navigator.Screen&gt;\n        &lt;Navigator.Screen path=\"/child\"&gt;\n            &lt;p&gt;This is the child screen.&lt;/p&gt;\n            &lt;Navigator.BackButton&gt;Go back&lt;/Navigator.BackButton&gt;\n        &lt;/Navigator.Screen&gt;\n    &lt;/Navigator&gt;\n);\n</code></pre>\n<h3>Hierarchical <code>path</code>s</h3>\n<p><code>Navigator</code> assumes that screens are organized hierarchically according to their <code>path</code>, which should follow a URL-like scheme where each path segment starts with and is separated by the <code>/</code> character.</p>\n<p><code>Navigator</code> will treat &#8220;back&#8221; navigations as going to the parent screen \u2014 it is, therefore, the responsibility of the consumer of the component to create the correct screen hierarchy.</p>\n<p>For example:</p>\n<ul>\n<li><code>/</code> is the root of all paths. There should always be a screen with <code>path=\"/\"</code>;</li>\n<li><code>/parent/child</code> is a child of <code>/parent</code>;</li>\n<li><code>/parent/child/grand-child</code> is a child of <code>/parent/child</code>;</li>\n<li><code>/parent/:param</code> is a child of <code>/parent</code> as well;</li>\n<li>if the current screen has a <code>path=\"/parent/child/grand-child\"</code>, when going &#8220;back&#8221; <code>Navigator</code> will try to recursively navigate the path hierarchy until a matching screen (or the root <code>/</code>) is found.</li>\n</ul>\n<h3>Height and animations</h3>\n<p>Due to how <code>Navigator.Screen</code> animations work, it is recommended that the <code>Navigator</code> component is assigned a <code>height</code> to prevent some potential UI jumps while moving across screens.</p>\n<h3>Individual components</h3>\n<p><code>Navigator</code> is comprised of four individual components:</p>\n<ul>\n<li><code>Navigator</code>: a wrapper component and context provider. It holds the main logic for hiding and showing screens.</li>\n<li><code>Navigator.Screen</code>: represents a single view/screen/panel;</li>\n<li><code>Navigator.Button</code>: renders a button that allows navigating to a different <code>Navigator.Screen</code>;</li>\n<li><code>Navigator.BackButton</code>: renders a button that allows navigating to the parent <code>Navigator.Screen</code> (see the section above about hierarchical paths).</li>\n</ul>\n<p>For advanced usages, consumers can use the <code>useNavigator</code> hook.</p>\n<h4><code>Navigator</code></h4>\n<h5>Props</h5>\n<h6><code>initialPath</code>: <code>string</code></h6>\n<p>The initial active path.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h6><code>children</code>: <code>string</code></h6>\n<p>The children elements.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>Navigator.Screen</code></h4>\n<h5>Props</h5>\n<h6><code>path</code>: <code>string</code></h6>\n<p>The screen&#8217;s path, matched against the current path stored in the navigator.</p>\n<p><code>Navigator</code> assumes that screens are organized hierarchically according to their <code>path</code>, which should follow a URL-like scheme where each path segment starts with and is separated by the <code>/</code> character.</p>\n<p><code>Navigator</code> will treat &#8220;back&#8221; navigations as going to the parent screen \u2014 it is, therefore, the responsibility of the consumer of the component to create the correct screen hierarchy.</p>\n<p>For example:</p>\n<ul>\n<li><code>/</code> is the root of all paths. There should always be a screen with <code>path=\"/\"</code>.</li>\n<li><code>/parent/child</code> is a child of <code>/parent</code>.</li>\n<li><code>/parent/child/grand-child</code> is a child of <code>/parent/child</code>.</li>\n<li><code>/parent/:param</code> is a child of <code>/parent</code> as well.</li>\n<li>if the current screen has a <code>path</code> with value <code>/parent/child/grand-child</code>, when going &#8220;back&#8221; <code>Navigator</code> will try to recursively navigate the path hierarchy until a matching screen (or the root <code>/</code>) is found.</p>\n</li>\n<li>\n<p>Required: Yes</p>\n</li>\n</ul>\n<h6><code>children</code>: <code>string</code></h6>\n<p>The children elements.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>Navigator.Button</code></h4>\n<h5>Props</h5>\n<h6><code>path</code>: <code>string</code></h6>\n<p>The path of the screen to navigate to. The value of this prop needs to be <a href=\"https://html.spec.whatwg.org/multipage/syntax.html#attributes-2\">a valid value for an HTML attribute</a>.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h6><code>attributeName</code>: <code>string</code></h6>\n<p>The HTML attribute used to identify the <code>Navigator.Button</code>, which is used by <code>Navigator</code> to restore focus.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>id</code></li>\n</ul>\n<h6><code>children</code>: <code>string</code></h6>\n<p>The children elements.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6>Inherited props</h6>\n<p><code>Navigator.Button</code> also inherits all of the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/#props\"><code>Button</code> props</a>, except for <code>href</code> and <code>target</code>.</p>\n<h4><code>Navigator.BackButton</code></h4>\n<h5>Props</h5>\n<h6><code>children</code>: <code>string</code></h6>\n<p>The children elements.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6>Inherited props</h6>\n<p><code>Navigator.BackButton</code> also inherits all of the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/#props\"><code>Button</code> props</a>, except for <code>href</code> and <code>target</code>.</p>\n<h4><code>useNavigator</code></h4>\n<p>You can retrieve a <code>navigator</code> instance by using the <code>useNavigator</code> hook.</p>\n<h5>Props</h5>\n<p>The <code>navigator</code> instance has a few properties:</p>\n<h6><code>goTo</code>: <code>( path: string, options: NavigateOptions ) =&gt; void</code></h6>\n<p>The <code>goTo</code> function allows navigating to a given path. The second argument can augment the navigation operations with different options.</p>\n<p>The available options are:</p>\n<ul>\n<li><code>focusTargetSelector</code>: <code>string</code>. An optional property used to specify the CSS selector used to restore focus on the matching element when navigating back;</li>\n<li><code>isBack</code>: <code>boolean</code>. An optional property used to specify whether the navigation should be considered as backwards (thus enabling focus restoration when possible, and causing the animation to be backwards too);</li>\n<li><code>skipFocus</code>: <code>boolean</code>. An optional property used to opt out of <code>Navigator</code>&#8216;s focus management, useful when the consumer of the component wants to manage focus themselves;</li>\n</ul>\n<h6><code>goBack</code>: <code>( path: string, options: NavigateOptions ) =&gt; void</code></h6>\n<p>The <code>goBack</code> function allows navigating to the parent screen. Parent/child navigation only works if the paths you define are hierarchical (see note above).</p>\n<p>When a match is not found, the function will try to recursively navigate the path hierarchy until a matching screen (or the root <code>/</code>) is found.</p>\n<p>The available options are the same as for the <code>goTo</code> method, except for the <code>isBack</code> property, which is not available for the <code>goBack</code> method.</p>\n<h6><code>location</code>: <code>NavigatorLocation</code></h6>\n<p>The <code>location</code> object represents the current location, and has a few properties:</p>\n<ul>\n<li><code>path</code>: <code>string</code>. The path associated to the location.</li>\n<li><code>isBack</code>: <code>boolean</code>. A flag that is <code>true</code> when the current location was reached by navigating backwards.</li>\n<li><code>isInitial</code>: <code>boolean</code>. A flag that is <code>true</code> only for the initial location.</li>\n</ul>\n<h6><code>params</code>: <code>Record&lt; string, string | string[] &gt;</code></h6>\n<p>The parsed record of parameters from the current location. For example if the current screen path is <code>/product/:productId</code> and the location is <code>/product/123</code>, then <code>params</code> will be <code>{ productId: '123' }</code>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 184,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-137067",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137067",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137067/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155364,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137067/revisions/155364"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=137067"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

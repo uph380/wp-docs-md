@@ -1,0 +1,91 @@
+{
+    "id": 134382,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/feature-flags/"
+    },
+    "modified": "2025-01-11T04:34:15",
+    "modified_gmt": "2025-01-11T04:34:15",
+    "slug": "feature-flags",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/feature-flags/",
+    "title": {
+        "rendered": "Feature Flags"
+    },
+    "content": {
+        "rendered": "<p>&#8216;Feature flags&#8217; are variables that allow you to prevent specific code in the Gutenberg project from being shipped to WordPress core, and to run certain experimental features only in the plugin.</p>\n<h2>Introducing <code>globalThis.IS_GUTENBERG_PLUGIN</code></h2>\n<p>The <code>globalThis.IS_GUTENBERG_PLUGIN</code> is an environment variable whose value &#8216;flags&#8217; whether code is running within the Gutenberg plugin.</p>\n<p>When the codebase is built for the plugin, this variable will be set to <code>true</code>. When building for WordPress core, it will be set to <code>false</code> or <code>undefined</code>.</p>\n<h2>Basic usage</h2>\n<h3>Exporting features</h3>\n<p>A plugin-only function or constant should be exported using the following ternary syntax:</p>\n<pre><code class=\"language-js\">function myPluginOnlyFeature() {\n    // implementation\n}\n\nexport const pluginOnlyFeature = globalThis.IS_GUTENBERG_PLUGIN\n    ? myPluginOnlyFeature\n    : undefined;\n</code></pre>\n<p>In the above example, the <code>pluginOnlyFeature</code> export will be <code>undefined</code> in non-plugin environments such as WordPress core.</p>\n<h3>Importing features</h3>\n<p>If you&#8217;re attempting to import and call a plugin-only feature, be sure to wrap the function call in an <code>if</code> statement to avoid an error:</p>\n<pre><code class=\"language-js\">import { pluginOnlyFeature } from '@wordpress/foo';\n\nif ( globalThis.IS_GUTENBERG_PLUGIN ) {\n    pluginOnlyFeature();\n}\n</code></pre>\n<h2>How it works</h2>\n<p>During the webpack build, instances of <code>globalThis.IS_GUTENBERG_PLUGIN</code> will be replaced using webpack&#8217;s <a href=\"https://webpack.js.org/plugins/define-plugin/\">define plugin</a>.</p>\n<p>For example, in the following code \u2013</p>\n<pre><code class=\"language-js\">if ( globalThis.IS_GUTENBERG_PLUGIN ) {\n    pluginOnlyFeature();\n}\n</code></pre>\n<p>\u2013 the variable <code>globalThis.IS_GUTENBERG_PLUGIN</code> will be replaced with the boolean <code>true</code> during the plugin-only build:</p>\n<pre><code class=\"language-js\">if ( true ) {\n    // Webpack has replaced `globalThis.IS_GUTENBERG_PLUGIN` with `true`\n    pluginOnlyFeature();\n}\n</code></pre>\n<p>This ensures that code within the body of the <code>if</code> statement will always be executed.</p>\n<p>In WordPress core, the <code>globalThis.IS_GUTENBERG_PLUGIN</code> variable is replaced with <code>undefined</code>. The built code looks like this:</p>\n<pre><code class=\"language-js\">if ( undefined ) {\n    // Webpack has replaced `globalThis.IS_GUTENBERG_PLUGIN` with `undefined`\n    pluginOnlyFeature();\n}\n</code></pre>\n<p><code>undefined</code> evaluates to <code>false</code> so the plugin-only feature will not be executed.</p>\n<h3>Dead code elimination</h3>\n<p>For production builds, webpack <a href=\"https://en.wikipedia.org/wiki/Minification_(programming)\">&#8216;minifies&#8217;</a> the code, removing as much unnecessary JavaScript as it can.</p>\n<p>One of the steps involves something known as &#8216;dead code elimination&#8217;. For example, when the following code is encountered, webpack determines that the surrounding <code>if</code> statement is unnecessary:</p>\n<pre><code class=\"language-js\">if ( true ) {\n    pluginOnlyFeature();\n}\n</code></pre>\n<p>The condition will always evaluate to <code>true</code>, so webpack removes it, leaving behind the code that was in the body:</p>\n<pre><code class=\"language-js\">pluginOnlyFeature(); // The `if` condition block has been removed. Only the body remains.\n</code></pre>\n<p>Similarly, when building for WordPress core, the condition in the following <code>if</code> statement always resolves to false:</p>\n<pre><code class=\"language-js\">if ( undefined ) {\n    pluginOnlyFeature();\n}\n</code></pre>\n<p>In this case, the minification process will remove the entire <code>if</code> statement including the body, ensuring plugin-only code is not included in WordPress core build.</p>\n<h2>Frequently asked questions</h2>\n<h3>Why shouldn&#8217;t I assign the result of an expression involving <code>IS_GUTENBERG_PLUGIN</code> to a variable, e.g. <code>const isMyFeatureActive = ! Object.is( undefined, globalThis.IS_GUTENBERG_PLUGIN )</code>?</h3>\n<p>Introducing complexity may prevent webpack&#8217;s minifier from identifying and therefore eliminating dead code. Therefore it is recommended to use the examples in this document to ensure your feature flag functions as intended. For further details, see the <a href=\"#dead-code-elimination\">Dead Code Elimination</a> section.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 42,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134382",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134382",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134382/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156195,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134382/revisions/156195"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134382"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134456,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/draggable/"
+    },
+    "modified": "2024-10-30T16:55:47",
+    "modified_gmt": "2024-10-30T16:55:47",
+    "slug": "draggable",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/draggable/",
+    "title": {
+        "rendered": "Draggable"
+    },
+    "content": {
+        "rendered": "<p><code>Draggable</code> is a Component that provides a way to set up a cross-browser (including IE) customizable drag image and the transfer data for the drag event. It decouples the drag handle and the element to drag: use it by wrapping the component that will become the drag handle and providing the DOM ID of the element to drag.</p>\n<p>Note that the drag handle needs to declare the <code>draggable=\"true\"</code> property and bind the <code>Draggable</code>s <code>onDraggableStart</code> and <code>onDraggableEnd</code> event handlers to its own <code>onDragStart</code> and <code>onDragEnd</code> respectively. <code>Draggable</code> takes care of the logic to setup the drag image and the transfer data, but is not concerned with creating an actual DOM element that is draggable.</p>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3><code>appendToOwnerDocument</code>: <code>boolean</code></h3>\n<p>Whether to append the cloned element to the <code>ownerDocument</code> body. By default, elements sourced by id are appended to the element&#8217;s wrapper.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>elementId</code>: <code>string</code></h3>\n<p>The HTML id of the element to clone on drag.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>onDragEnd</code>: <code>( event: DragEvent ) =&gt; void</code></h3>\n<p>A function called when dragging ends. This callback receives the <code>event</code> object from the <code>dragend</code> event as its first parameter.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>noop</code></li>\n</ul>\n<h3><code>onDragOver</code>: <code>( event: DragEvent ) =&gt; void</code></h3>\n<p>A function called when the element being dragged is dragged over a valid drop target. This callback receives the <code>event</code> object from the <code>dragover</code> event as its first parameter.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>noop</code></li>\n</ul>\n<h3><code>onDragStart</code>: <code>( event: DragEvent ) =&gt; void</code></h3>\n<p>A function called when dragging starts. This callback receives the <code>event</code> object from the <code>dragstart</code> event as its first parameter.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>noop</code></li>\n</ul>\n<h3><code>transferData</code>: <code>unknown</code></h3>\n<p>Arbitrary data object attached to the drag and drop event.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Draggable, Panel, PanelBody } from '@wordpress/components';\nimport { Icon, more } from '@wordpress/icons';\n\nconst MyDraggable = () =&gt; (\n    &lt;div id=\"draggable-panel\"&gt;\n        &lt;Panel header=\"Draggable panel\"&gt;\n            &lt;PanelBody&gt;\n                &lt;Draggable elementId=\"draggable-panel\" transferData={ {} }&gt;\n                    { ( { onDraggableStart, onDraggableEnd } ) =&gt; (\n                        &lt;div\n                            className=\"example-drag-handle\"\n                            draggable\n                            onDragStart={ onDraggableStart }\n                            onDragEnd={ onDraggableEnd }\n                        &gt;\n                            &lt;Icon icon={ more } /&gt;\n                        &lt;/div&gt;\n                    ) }\n                &lt;/Draggable&gt;\n            &lt;/PanelBody&gt;\n        &lt;/Panel&gt;\n    &lt;/div&gt;\n);\n</code></pre>\n<p>In case you want to call your own <code>dragstart</code> / <code>dragend</code> event handlers as well, you can pass them to <code>Draggable</code> and it&#8217;ll take care of calling them after their own:</p>\n<pre><code class=\"language-jsx\">import { Draggable, Panel, PanelBody } from '@wordpress/components';\nimport { Icon, more } from '@wordpress/icons';\n\nconst MyDraggable = ( { onDragStart, onDragEnd } ) =&gt; (\n    &lt;div id=\"draggable-panel\"&gt;\n        &lt;Panel header=\"Draggable panel\"&gt;\n            &lt;PanelBody&gt;\n                &lt;Draggable\n                    elementId=\"draggable-panel\"\n                    transferData={ {} }\n                    onDragStart={ onDragStart }\n                    onDragEnd={ onDragEnd }\n                &gt;\n                    { ( { onDraggableStart, onDraggableEnd } ) =&gt; (\n                        &lt;div\n                            className=\"example-drag-handle\"\n                            draggable\n                            onDragStart={ onDraggableStart }\n                            onDragEnd={ onDraggableEnd }\n                        &gt;\n                            &lt;Icon icon={ more } /&gt;\n                        &lt;/div&gt;\n                    ) }\n                &lt;/Draggable&gt;\n            &lt;/PanelBody&gt;\n        &lt;/Panel&gt;\n    &lt;/div&gt;\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 142,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134456",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134456",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134456/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151871,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134456/revisions/151871"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134456"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

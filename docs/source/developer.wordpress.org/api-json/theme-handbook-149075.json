@@ -1,0 +1,97 @@
+{
+    "id": 149075,
+    "date": "2023-10-17T14:37:45",
+    "date_gmt": "2023-10-17T14:37:45",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149075"
+    },
+    "modified": "2023-10-17T14:37:45",
+    "modified_gmt": "2023-10-17T14:37:45",
+    "slug": "shadow",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/shadow/",
+    "title": {
+        "rendered": "Shadow"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.shadow</code> property in <code>theme.json</code> currently lets you create custom shadow presets. As of WordPress 6.3, it contains no settings for enabling or disabling UI elements.</p>\n\n\n\n<p>Shadow, in this case, refers specifically to the <code>box-shadow</code> CSS feature and is unrelated to <code>text-shadow</code>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Shadow settings</h2>\n\n\n\n<p>The <code>settings.shadow</code> property contains two settings that you can configure:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>defaultPresets</code>:</strong> A boolean value for enabling or disabling the default WordPress shadow presets. Defaults to <code>true</code>.</li>\n\n\n\n<li><code><strong>presets</strong></code>: An array of objects for registering custom shadows for use in your theme or by users.</li>\n</ul>\n\n\n\n<p>Here is a look at the default shadow property in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"shadow\": {\n\t\t\t\"defaultPresets\": true,\n\t\t\t\"presets\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Natural\",\n\t\t\t\t\t\"slug\": \"natural\",\n\t\t\t\t\t\"shadow\": \"6px 6px 9px rgba(0, 0, 0, 0.2)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Deep\",\n\t\t\t\t\t\"slug\": \"deep\",\n\t\t\t\t\t\"shadow\": \"12px 12px 50px rgba(0, 0, 0, 0.4)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Sharp\",\n\t\t\t\t\t\"slug\": \"sharp\",\n\t\t\t\t\t\"shadow\": \"6px 6px 0px rgba(0, 0, 0, 0.2)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Outlined\",\n\t\t\t\t\t\"slug\": \"outlined\",\n\t\t\t\t\t\"shadow\": \"6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Crisp\",\n\t\t\t\t\t\"slug\": \"crisp\",\n\t\t\t\t\t\"shadow\": \"6px 6px 0px rgba(0, 0, 0, 1)\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>As you can see, WordPress registers several default presets that you can use directly in your block styles or that users can select from the interface:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Natural</li>\n\n\n\n<li>Deep</li>\n\n\n\n<li>Sharp</li>\n\n\n\n<li>Outline</li>\n\n\n\n<li>Crisp</li>\n</ul>\n\n\n\n<p>Like all presets, WordPress will generate a CSS custom property for each registered shadow. Shadow presets are named <code>--wp--preset--shadow--{$slug}</code>.</p>\n\n\n\n<p>Here is an example of the CSS generated for the default shadow presets:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);\n\t--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);\n\t--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);\n\t--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);\n\t--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Disabling core WordPress shadows</h2>\n\n\n\n<p>The default shadows available in core will not match the design of every theme. Typically, they will only work well for themes with a white or very light gray background. If your theme uses a different color, you will almost always want to remove these.</p>\n\n\n\n<p>But there may be other reasons to disable the defaults. Perhaps you want to limit users to only the shadows that you\u2019ve specifically designed for your theme or simply not like their design.</p>\n\n\n\n<p>Whatever the reason, you can remove them by setting <code>settings.shadow.defaultPresets</code> to <code>false</code> in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"shadow\": {\n\t\t\t\"defaultPresets\": false\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Adding custom shadow presets</h2>\n\n\n\n<p>WordPress lets you register any number of custom shadows. You can add them via the <code>settings.shadow.presets</code> property, which is an array used for storing shadow objects. Each object in this array should contain three values:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>name</code>:</strong> A human-readable name or label for the shadow that can be translated.</li>\n\n\n\n<li><strong><code>slug</code>:</strong> A machine-readable slug for the shadow, which is used to build its associated CSS\u00a0 custom property.</li>\n\n\n\n<li><strong><code>shadow</code>:</strong> A valid CSS value for the <code>box-shadow</code> CSS property.</li>\n</ul>\n\n\n\n<p>Try your hand at registering a few shadows of your own. You can use this <code>theme.json</code> code to get started, which contains several shadow examples:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"$schema\": \"https://schemas.wp.org/trunk/theme.json\",\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"shadow\": {\n\t\t\t\"presets\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Small\",\n\t\t\t\t\t\"slug\": \"sm\",\n\t\t\t\t\t\"shadow\": \"0 1px 2px 0 rgb(0 0 0 / 0.05)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Medium\",\n\t\t\t\t\t\"slug\": \"md\",\n\t\t\t\t\t\"shadow\": \"0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Large\",\n\t\t\t\t\t\"slug\": \"lg\",\n\t\t\t\t\t\"shadow\": \"0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"XL\",\n\t\t\t\t\t\"slug\": \"xl\",\n\t\t\t\t\t\"shadow\": \"0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"2XL\",\n\t\t\t\t\t\"slug\": \"2-xl\",\n\t\t\t\t\t\"shadow\": \"0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Inner\",\n\t\t\t\t\t\"slug\": \"inner\",\n\t\t\t\t\t\"shadow\": \"inset 0 2px 4px 0 rgb(0 0 0 / 0.05)\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>Currently, this only shows a shadow option for the core Button block in the user interface. This control can be accessed via\u00a0 <strong>Appearance &gt; Editor &gt; Styles &gt; Style Book</strong> in the WordPress admin. From there, select the <strong>Button</strong> block and locate the <strong>Shadow</strong> option in the <strong>Effects</strong> tab, as shown here:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress Style Book screen with the Button block highlighted. It has a gray drop-shadow.\" class=\"wp-image-149076\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/shadow-ui-buttons.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>It\u2019s possible for third-party blocks to also utilize shadow presets and show them in the interface in the post, template, or site editors.</p>\n\n\n\n<p>Like other presets, you can also use your custom shadows (or core WordPress shadows) in <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles\"><code>theme.json</code> Styles</a>.</p>\n\n\n\n<p>For a deeper dive into this feature, read <a href=\"https://developer.wordpress.org/news/2023/01/using-the-box-shadow-feature-for-themes/\">Using the box-shadow feature for themes</a> on the WordPress Developer Blog.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149075",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149075",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149075/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149077,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149075/revisions/149077"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149075"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

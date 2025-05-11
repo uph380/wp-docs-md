@@ -1,0 +1,97 @@
+{
+    "id": 130891,
+    "date": "2020-08-12T14:40:06",
+    "date_gmt": "2020-08-12T14:40:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=130891"
+    },
+    "modified": "2024-11-24T13:24:37",
+    "modified_gmt": "2024-11-24T13:24:37",
+    "slug": "add-your-plugin-to-the-block-directory",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/add-your-plugin-to-the-block-directory/",
+    "title": {
+        "rendered": "Add Your Plugin to the Block Directory"
+    },
+    "content": {
+        "rendered": "\n<p>There are two main directory listings of block related plugins.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Plugins that are <strong>only</strong> blocks</li>\n\n\n\n<li>Plugins that contain blocks</li>\n</ul>\n\n\n\n<p>A plugin can be listed in both, however there will be no benefit to your plugin SEO or ranking due to either. The only benefit to being a plugin that is only a block is that you gain the ability to be added to the Block Directory in the Block Editor itself, for immediate installation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Only Plugins</h2>\n\n\n\n<p>Block Only plugins are plugins that <strong>only</strong> contain blocks.</p>\n\n\n\n<p>Block Plugins are required to be much smaller and more minimalist than a regular WordPress plugin in order to be safely installed with a single click. That means as well as keeping to the regular <a href=\"https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/\">plugin guidelines</a> you\u2019ll also need to follow some additional rules. In particular, you should stick to mostly JavaScript code and keep PHP to the bare minimum; and not add any UI or other code outside of the Gutenberg editor.</p>\n\n\n\n<p>If you\u2019re a committer of a block plugin that does meet the criteria for adding it to the <a href=\"https://wordpress.org/plugins/browse/block/\">Block Directory</a> as confirmed by the Checker tool, you can then add it yourself <a href=\"https://wordpress.org/plugins/developers/block-plugin-validator/\">using the Block Checker tool</a>:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"308\" src=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/Screen-Shot-2020-07-10-at-1.29.25-pm.png?resize=1024%2C308&#038;ssl=1\" alt=\"Block checker tool interface with a &quot;Add Plugin Name to the Block Directory&quot; button\" class=\"wp-image-130892\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/Screen-Shot-2020-07-10-at-1.29.25-pm.png?resize=1024%2C308&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2020/08/Screen-Shot-2020-07-10-at-1.29.25-pm.png?resize=300%2C90&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2020/08/Screen-Shot-2020-07-10-at-1.29.25-pm.png?resize=768%2C231&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2020/08/Screen-Shot-2020-07-10-at-1.29.25-pm.png?w=1428&amp;ssl=1 1428w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<p>Likewise you can remove it at any time using that same tool if you notice problems or would prefer it wasn\u2019t included.</p>\n\n\n\n<p><strong>Helpful tools:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/22831/files?short_path=c4d2c28#diff-c4d2c286eac33acdc7571032a984e0ca\">Block Creation tutorial</a> &#8211; how to write a block plugin</li>\n\n\n\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/23545/files?short_path=555f1c3#diff-555f1c31856d86ed5ff0d492b5a127c1\">Block Submission tutorial</a> &#8211; tips and suggestions for ensuring your block is ready for the Block Directory</li>\n\n\n\n<li><a href=\"https://make.wordpress.org/plugins/2020/07/11/you-can-now-add-your-own-plugins-to-the-block-directory/\">Block Checker tool</a> &#8211; validate plugin for inclusion</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Plugins Containing Blocks</h2>\n\n\n\n<p>Many older plugins, as well as larger and more complex plugins, may contain blocks. They also will contain other features, like widgets. An example of this sort of plugin would be Jetpack or Yoast SEO. While they have a large number of features, they also contain some blocks.</p>\n\n\n\n<p>If you\u2019ve written a plugin that introduces or improves blocks, or know of a plugin that does, <strong>email us at <a href=\"mailto:plugins@wordpress.org\">plugins@wordpress.org</a></strong> and request your plugin be added. At that time, your plugin will be reviewed to confirm this request, but also to ensure you meet all current guideline standards. </p>\n\n\n\n<p>Before you email, please make certain your plugin is compatible with the latest version of WordPress and that it is free from all security issues. If there are security or guideline issues in your plugin, it may be closed pending your corrections.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-130891",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/130891",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/130891/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155827,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/130891/revisions/155827"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=130891"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

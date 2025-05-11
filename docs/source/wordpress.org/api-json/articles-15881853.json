@@ -1,0 +1,109 @@
+{
+    "id": 15881853,
+    "date": "2022-08-02T16:51:03",
+    "date_gmt": "2022-08-02T16:51:03",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15881853"
+    },
+    "modified": "2024-06-06T13:51:10",
+    "modified_gmt": "2024-06-06T13:51:10",
+    "slug": "comment-pagination-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comment-pagination-block/",
+    "title": {
+        "rendered": "Comments Pagination block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>The <em>Comments Pagination</em> block is part of the Comments block that displays paginated navigation to the previous or next comment sections.<br>By default, a <em>Comments Pagination</em> block is included when you insert a Comments block. However, you can still add this block manually.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/sTzynovJCxljQDiQxMsz3XHMdoIeL4Mrg-kdgzbdYd5lzk3saa8nSuxGZDVEyjN9IcnVNFOyFKmIAjL5DrsyaISfr__-syuTUITuTJwZKKkMqpsa3Xn9V6LlJUYt1LbY7otKQpm9BERsuAwik9ZuGXE\" alt=\"Comment Pagination block inside Comment Query loop block\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">You can only insert the\u00a0<em><em>Comments Pagination </em>block</em>\u00a0inside a Comments block.\u00a0</p>\n\n\n\n<p>To add the block, select the Comments block and hover your mouse over a blank space. Click the (+) icon to open the block inserter pop-up window. Look for the <em>Comments Pagination</em> block using the search bar and click on the block icon to add it to the Comments block.</p>\n\n\n\n<p>Alternatively, add a Paragraph block within the Comments block and type /comments-pagination to insert the <em>Comments Pagination</em> block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/j-NpDR2bFNY62AIZxRt1HNteB_6AXpZ0pwVmkmtQfGq-_XvkJVGB1G930OPzsST0JX3by3EhMKZHBon_4-vARCwjK2CQkN6JxKDe2EzDeYUPUEzXuK1gznJgyZX3JmzIplLR_9CgZzEjpFgAakV9gYs\" alt=\"How to quickly add Comment Pagination block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>The <em>block toolbar</em> contains tools to customize each block on the editor quickly. The <em>Comments Pagination</em> block has the following tools:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Select comments block</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"535\" height=\"82\" src=\"https://wordpress.org/documentation/files/2023/10/image-12.png\" alt=\"\" class=\"wp-image-16359073\" srcset=\"https://wordpress.org/documentation/files/2023/10/image-12.png 535w, https://wordpress.org/documentation/files/2023/10/image-12-300x46.png 300w\" sizes=\"auto, (max-width: 535px) 100vw, 535px\" /></figure>\n\n\n\n<p>The Select Comments tool lets highlight the <em>Comment Pagination</em>\u2019s parent block, which is the Comments block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<p>You can transform a <em>Comment Pagination block</em> into a Columns, or a Group block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"618\" height=\"372\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.07.57-AM.png\" alt=\"Transform option in the Comment Pagination block\" class=\"wp-image-15881980\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.07.57-AM.png 618w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.07.57-AM-300x181.png 300w\" sizes=\"auto, (max-width: 618px) 100vw, 618px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Block-moving tools</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/buPpmqfO1kC-v-stPXiIMtdHZ7_b2yz0GmqJXYIhrJnkkKkxMzu85qBNA8hhdA7k1_wbX8qkraJlPGUNvDi4-pIdZYLASCLad4TKCPRGlpDUukcpiaQa2Dt8vfD6S8n8tI49OWkVyQ02NJuI47oXdlg\" alt=\"Block moving tools for Comment Pagination block\" /></figure>\n\n\n\n<p>The block-moving tools allow you to move the block up and down the editor. Use the six dots icon to drag and drop the <em>Comments Pagination</em> block and place it anywhere on the Comments block. Alternatively, click on the up and down arrows to move the block up or down.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\"></a><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change items justification</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/u81nvB-lY7_3t3Csfjcn1J1rz6ST8I8LkZeRvcSHP1p6V9ygJl0sp3zvGBOT6hq4juygGv3Sgo__n_3vnWaq8FYL-OG4UWjxnClfk0bxXFMQ79Z8tjEX0ckbqKwvrI0JvClq9Nr4pSVpetj8xfQmoZY\" alt=\"Change items justification for Comment Pagination block\" /></figure>\n\n\n\n<p>The <em>change items justification </em>tool lets you change the horizontal placement of the items inside the <em>Comment Pagination</em> block. There are four options to choose from:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><em>Justify items left</em> will move the items towards the left side of the block.</li>\n\n\n\n<li><em>Justify items center </em>will move the items towards the center of the block.</li>\n\n\n\n<li><em>Justify items right </em>will move the items towards the right side of the block.</li>\n\n\n\n<li><em>Space between items</em> will distribute all items across the block and automatically adjust the space between them.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Change vertical alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/oEO-xx87FLlILJLkrI2VIFINKFo7U7Hnhax6hxKVgeY3Jl-huePtFQQgTfQYnieWeYNzSA-T2yWsDXK5ILY4Ys70h9y_KxAURwZ9y23e9b_aSvjj6YNDvJkY3ALJvJmVcFlFr0JrnDonpWbL6TBamCc\" alt=\"Change vertical alignment for Comment Pagination block\" /></figure>\n\n\n\n<p>The <em>change vertical alignment </em>tool lets you choose the vertical position of the items inside the <em>Comments Pagination</em> block. You can choose between top, middle, and bottom vertical alignment.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Change alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/WlcJZ5iv_Mwu7boFiQhbWceOlR-3vFuvSmdqxREGpcxOPhqE8AF-hNmcTmX2YzLqP0wf2b1MO8pmlhgefFkiJt6s5zP3bk6P-1bV-RDwbx7qXbda7MZEPbadT0pRB1J7FGc1ksqvsebvOH6-lyToBuA\" alt=\"Change alignment for Comment Pagination block\" /></figure>\n\n\n\n<p>Unlike the previous alignment tools, the <em>change alignment</em> tool is used for the <em>Comments Pagination</em> block\u2019s position inside the Comments block. Choose one of the following block alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Align left</li>\n\n\n\n<li>Align center</li>\n\n\n\n<li>Align right</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/sqYhXqgsw6bb4PL1mKfa9ZC1d9Ilszv5xxZPEWNiH3Uh6ofU9O17ptCXCiAq1XGJe5A-Eoee9XT-jqd15U4VjI1EiYn2SJmHhi6ts94OqtUqjU2U5ubBrSA4wsP25jc36YfICf6u8mh9rykfXH_ikS4\" alt=\"More options in the Comment Pagination block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<p>Here are the options for the <em>Comments Pagination</em> block:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Layout </h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/xyRbSZaW4SZIkPrRIAyb5I21L7re158JEhfBX8AORYCbG9TfaHEHIY6Gcbxxv5JqKYYfYk-wk4pfCBDYE27nLUF1x4kqgTmdaw6k0zh49k9fZQW4BpJxI1XzKQ5x9c13_sw3Y1hmw8fmZo3hi66ujqE\" alt=\"Layout settings in the Comment Pagination block\" /></figure>\n\n\n\n<p>In the layout section, you will find the following customization options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><em>Justification</em> settings are similar to the tools in the block toolbar.</li>\n\n\n\n<li><em>Orientation</em> lets you choose to display the pagination items horizontally or vertically.</li>\n\n\n\n<li><em>Allow to wrap to multiple lines </em>toggle button lets you display the pagination items in multiple lines when needed.&nbsp;</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Settings</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/RZChEyXHtW1lttqJYGl30l2GsUzp8XsZEZ1hAwMBe3r704D5elTC9DsF2WCUFKVCJhnmNiky053f7o3AtMwJsxuyiuMQAVlOwJ8vi-oRCGJZnLFhMopTfaOIPXgW3plM7KUDusn7opPWWYQCdH8B06o\" alt=\"More settings in the Comment Pagination block\" /></figure>\n\n\n\n<p>The settings section shows three options for a decorative arrow to the next and previous comments link. Here are the options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Arrow</li>\n\n\n\n<li>Chevron</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Color </h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/ErO0QlOri2SFKenPnZIw9Pxwh4CrVOcXVE3dnl33uGURG4CFmv8tDHOS9vohbNM7fCgeKbmynMKbp4xrYle2ApqV7XdONf5Aa4qdWqvRm8nJihuEiorn331qJlxFbdJvk_LA9DNl_CZBYrccSYTK25c\" alt=\"Color settings in the Comment Pagination block\" /></figure>\n\n\n\n<p>The color section lets you customize the text, background, and link color for the Comments Pagination block. Click on any of the options to change the color, and a pop-up to pick a color will appear. Choose from the default color or click the upper rectangle area to pick a custom color using the color picker.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"439\" height=\"197\" src=\"https://wordpress.org/documentation/files/2023/10/image-11.png\" alt=\"Typography tool for the comment pagination block\" class=\"wp-image-16359072\" srcset=\"https://wordpress.org/documentation/files/2023/10/image-11.png 439w, https://wordpress.org/documentation/files/2023/10/image-11-300x135.png 300w\" sizes=\"auto, (max-width: 439px) 100vw, 439px\" /></figure>\n\n\n\n<p>The Typography settings enable you to customize the font and text appearance of the content within the <em>Comments Pagination </em>block. The settings have various options, such as font size, font style, font family, and letter spacing.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Learn more about the Typography settings.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/HCaeEAd-xkijY3husAGN8FkRfOokz6h-mLa1vQoT11JIf366WEE4Y3jtoy6CTOJGTpBZELgZPdIewg2ug8pURV5XtFciGwLHJiNwleOvlGte5WnWTug0SYe4p-qBR54_8oR1NwHM\" alt=\"Advanced option in the selected Block\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Comments Pagination inner blocks </h2>\n\n\n\n<p>The <em>Comments Pagination</em> block consists of the following three inner blocks (which can\u2019t be inserted on their own):</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Comments Previous Page block</li>\n\n\n\n<li>Comments Page Numbers block</li>\n\n\n\n<li>Comments Next Page block</li>\n</ul>\n\n\n\n<p>The Comments Previous Page block<em> </em>displays the previous posts page link. </p>\n\n\n\n<p>The Comments Page Numbers<strong> </strong>block<em> </em>displays a list of page numbers for pagination. </p>\n\n\n\n<p>The Comments Next Page block<em> </em>displays the next posts page link.</p>\n\n\n\n<p>All these blocks are located inside a Comments block and lets you customize the appearance of the pagination.</p>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Block toolbar</h3>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/obuYjvx1KSSDFe2c9imB-BgV6u5JOc2RVF96eDUdVPuyu0QcUwX9QzR-jwBzTJMWdP3kDg_dAnt9T_PiRqA1nxPprAVxFpqSYSMK-irpkY6D0Um46tn8QdNnsEh3wyeHrgvfIkWI_B031pyngH3a2hg2iX_T-ephDimhV5nGMjZFjlZJd2da6WQhvB1cfA\" alt=\"Block toolbar in the pagination inner blocks\" /></figure>\n\n\n\n<p>The block toolbar for all the <em>Comments Pagination</em> inner blocks &#8211; Comments Previous Page, Comments Page Numbers, and Comments Next Page contains the tools to customize each block. </p>\n\n\n\n<h4 class=\"wp-block-heading has-heading-4-font-size\">Block-moving tools</h4>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/y6UZKcK3fQ2cTrfpkFPYFDKCO260m1rTcA-mN_BbZ_T93v6bA7UP1QzqbcofcOA74MRKGJZjbfN3N8p-1mYeCatHgtQV9aE2AFZAhl267X3DjJF87wJDXUjY6Vqswo6cJNXJnu8uVRwOFNgN3xOo7HAY-8OWxT8JtZfkOsgylojXwy9WZ8Gu17Hy8lGjnQ\" alt=\"Block moving tool in the pagination inner blocks\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<h4 class=\"wp-block-heading has-heading-4-font-size\">More options</h4>\n\n\n\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/HRMGJi6sjO1SW7GdEeCSl3VT7lWefoirk8blSldtUM0o-4WaEhEfSgDNm-7E34ppArtvNxVwgV51KyUkWTaoLDDQK50D7_jVT7ggaW3Gmy32jR-wn4B1pJCxQrioQWG5lVZ-1SvYxtZ6457eBG8M3gzCGlel0bGJ4lQBEkhsBOJnZqiYvqq1w2V8yutkYg\" width=\"256\" height=\"65\">&nbsp;</p>\n\n\n\n<p>Page Numbers, Next Page and Previous page blocks share the same functionality for more block options button. Click on the three dots icon to show more options and a drop-down menu will appear.</p>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Block settings</h3>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings</strong> panel icon next to the <strong>Publish</strong> or <strong>Update</strong> button.</p>\n\n\n\n<p>Here are the options for the <em>Comments Pagination</em> inner blocks.</p>\n\n\n\n<h4 class=\"wp-block-heading has-heading-4-font-size\">Color</h4>\n\n\n\n<p>The <em>Comments Pagination</em> inner blocks &#8211; Comments Previous Page, Comments Page Numbers, and Comments Next Page<strong> </strong>provides color settings option to add background color.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<h4 class=\"wp-block-heading has-heading-4-font-size\">Typography</h4>\n\n\n\n<p>The <em>Comments Pagination</em> inner blocks &#8211; Comments Previous Page, Comments Page Numbers, and Comments Next Page provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<h4 class=\"wp-block-heading has-heading-4-font-size\">Advanced</h4>\n\n\n\n<p>The <strong>Advanced</strong> tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles for the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-11-at-11.26.17-AM-1.png\" alt=\"Advanced tab with additional CSS\" class=\"wp-image-16190554\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-01-23\n<ul class=\"wp-block-list\">\n<li>Updated content for WordPress 6.4</li>\n\n\n\n<li>Fixed block names</li>\n\n\n\n<li>Added a new section for Comments Pagination inner blocks</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-08-02</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks The Comments Pagination block is part of the Comments block that displays paginated navigation to the previous or next comment sections.By default, a Comments Pagination block is included when you insert a Comments block. However, you can still add this block manually. You can only insert the\u00a0Comments Pagination block\u00a0inside [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15881853",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15881853",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15881853"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15881853/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360297,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15881853/revisions/16360297"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15881853"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15881853"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

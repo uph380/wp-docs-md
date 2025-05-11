@@ -1,0 +1,97 @@
+{
+    "id": 11031,
+    "date": "2014-09-24T00:23:33",
+    "date_gmt": "2014-09-24T00:23:33",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11031"
+    },
+    "modified": "2020-08-29T16:04:46",
+    "modified_gmt": "2020-08-29T16:04:46",
+    "slug": "settings-api",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/settings/settings-api/",
+    "title": {
+        "rendered": "Settings API"
+    },
+    "content": {
+        "rendered": "\n<p>The Settings API, added in WordPress 2.7, allows admin pages containing settings forms to be managed semi-automatically. It lets you define settings pages, sections within those pages and fields within the sections.</p>\n\n\n\n<p>New settings pages can be registered along with sections and fields inside them. Existing settings pages can also be added to by registering new settings sections or fields inside of them.</p>\n\n\n\n<p>Organizing registration and validation of fields still requires some effort from developers, but avoids a lot of complex debugging of underlying options management.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nWhen using the Settings API, the form POST to <code>wp-admin/options.php</code> which provides fairly strict capabilities checking. Users will need the <code>manage_options</code> capability (and in Multisite will have to be a Super Admin) to submit the form.<br />\n</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Why Use the Setting API?</h2>\n\n\n\n<p>A developer <em>could</em> ignore this API and write their own settings page without it. That begs the question, what benefit does this API bring to the table? Following is a quick rundown of some of the benefits.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Visual Consistency</h3>\n\n\n\n<p>Using the API to generate your interface elements guarantees that your settings page will look like the rest of the administrative content. Your interface will follow the same styleguide and look like it belongs, and thanks to the talented team of WordPress designers, it&#8217;ll look awesome!</p>\n\n\n\n<h3 class=\"wp-block-heading\">Robustness (Future-Proofing!)</h3>\n\n\n\n<p>Since the API is part of WordPress Core, any updates will automatically consider your plugin&#8217;s settings page. If you make your own interface without using Setting API, WordPress Core updates are more likely to break your customizations. There is also a wider audience testing and maintaining that API code, so it will tend to be more stable.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Less Work!</h3>\n\n\n\n<p>Of course the most immediate benefit is that the WordPress API does a lot of work for you under the hood. Here are a few examples of things the Settings API does besides applying an awesome-looking, integrated design.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Handling Form Submissions &#8211;</strong> Let WordPress handle retrieving and storing your $_POST submissions.</li><li><strong>Include Security Measures &#8211;</strong> You get extra security measures such as nonces, etc. for free.</li><li><strong>Sanitizing Data &#8211;</strong> You get access to the same methods that the rest of WordPress uses for ensuring strings are safe to use.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><th>Setting Register/Unregister</th><th>Add Field/Section</th></tr><tr><td><tt><a href=\"https://developer.wordpress.org/reference/functions/register_setting/\" rel=\"function\">register_setting()</a> </tt><br><tt><a href=\"https://developer.wordpress.org/reference/functions/unregister_setting/\" rel=\"function\">unregister_setting()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/add_settings_section/\" rel=\"function\">add_settings_section()</a> </tt><br><tt><a href=\"https://developer.wordpress.org/reference/functions/add_settings_field/\" rel=\"function\">add_settings_field()</a> </tt></td></tr></tbody></table></figure>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><th>Options Form Rendering</th><th>Errors</th></tr><tr><td><tt><a href=\"https://developer.wordpress.org/reference/functions/settings_fields/\" rel=\"function\">settings_fields()</a> </tt><br><tt><a href=\"https://developer.wordpress.org/reference/functions/do_settings_sections/\" rel=\"function\">do_settings_sections()</a> </tt><br><tt><a href=\"https://developer.wordpress.org/reference/functions/do_settings_fields/\" rel=\"function\">do_settings_fields()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/add_settings_error/\" rel=\"function\">add_settings_error()</a> </tt><br><tt><a href=\"https://developer.wordpress.org/reference/functions/get_settings_errors/\" rel=\"function\">get_settings_errors()</a> </tt><br><tt><a href=\"https://developer.wordpress.org/reference/functions/settings_errors/\" rel=\"function\">settings_errors()</a> </tt></td></tr></tbody></table></figure>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11025,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11031",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11031",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11031/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 131018,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11031/revisions/131018"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11031"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

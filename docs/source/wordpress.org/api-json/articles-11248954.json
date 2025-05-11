@@ -1,0 +1,109 @@
+{
+    "id": 11248954,
+    "date": "2019-03-17T01:48:54",
+    "date_gmt": "2019-03-17T01:48:54",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11248954"
+    },
+    "modified": "2024-06-09T10:24:19",
+    "modified_gmt": "2024-06-09T10:24:19",
+    "slug": "wordpress-site-maintenance",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/wordpress-site-maintenance/",
+    "title": {
+        "rendered": "WordPress site maintenance"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-white-color has-deep-blueberry-background-color has-text-color has-background has-link-color wp-elements-89407259ecdc93d26f85dc0cffcfce4a\"><strong>Important:</strong> Please note that this is not a support page. If you seek help with your specific problem, please refer to the&nbsp;<a href=\"https://wordpress.org/support/welcome/\">Support forums</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Getting a WordPress Tune Up</h2>\n\n\n\n<p>To keep WordPress working healthy, there is some site maintenance we recommend you do frequently.</p>\n\n\n\n<p>Begin by creating a calendar of WordPress Maintenance procedures to remind yourself to get a maintenance job on your WordPress site on a regular basis.</p>\n\n\n\n<p>In the article on&nbsp;<a href=\"/support/article/wordpress-housekeeping/\">WordPress Housekeeping</a>, tips and resources are given to clean house in WordPress. These include cleaning out old plugins, upgrading WordPress, and other helpful tips for cleaning up and optimizing your WordPress Site.</p>\n\n\n\n<p>To ensure you keep your WordPress site up-to-date and working in prime condition, consider adding these Housekeeping steps to your calendar, typically every three to six months.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Update WordPress</h2>\n\n\n\n<p>WordPress is quickly growing and expanding as more features and functions are included and perfected. It is recommended that you check in with WordPress for updates and upgrades at least every three months, six months at the most. Check&nbsp;<a href=\"https://wordpress.org/\">WordPress org</a>&nbsp;and&nbsp;<a href=\"https://wordpress.org/download/\">Download WordPress</a>&nbsp;for information on the latest version available.</p>\n\n\n\n<p><strong>Note:</strong>&nbsp;For WordPress 3.7+, minor and security updates are automatically applied in the background process.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Check for Dead Links</h2>\n\n\n\n<p>One of the most complained about aspect of using the Internet is the&nbsp;<em>dead link</em>. This is a link on a page or search engine that goes nowhere. It results in the 4<strong>04 Page Error &#8211; Page Not Found</strong>. These can come from links to external sites that have changed their address or closed, or it can come from internal links. When you&nbsp;<a href=\"https://codex.wordpress.org/Linking_Posts_Pages_and_Categories\">link between posts</a>&nbsp;in your post articles, you might have misspelled a&nbsp;<a href=\"/support/article/using-permalinks/\">permalink address</a>&nbsp;or put in the wrong post-ID, resulting in a&nbsp;<strong>page not found</strong>&nbsp;on your site. If you&#8217;ve recently made a change in your permalink structure, you might have some&nbsp;<strong>404 page errors</strong>&nbsp;that might need cleaning up.</p>\n\n\n\n<p>Add to your WordPress maintenance list regularly scheduled visits to your site&#8217;s statistic logs to check on reports of&nbsp;<strong>404 errors</strong>&nbsp;on your site, and take time to run a links check on your external, and internal, links to make sure everything is still connected. Dependent upon the site and number of links on your site, you should check your site for dead links every six months to a year.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"http://validator.w3.org/checklink\">W3C free check link free utility</a></li>\n\n\n\n<li><a href=\"http://www.anybrowser.com/linkchecker.html\">AnyBrowser\u2019s Link Checker</a></li>\n\n\n\n<li><a href=\"http://www.htmlhelp.com/tools/valet/\">HTMLHelp Valet Link Checker</a></li>\n\n\n\n<li><a href=\"http://www.squarefree.com/bookmarklets/pagelinks.html\">Squarefree\u2019s Bookmarklets &#8211; javascripts for checking links</a></li>\n\n\n\n<li><a href=\"http://tools.keepni.com/\">KeepNI\u2019s link check (14 day evaluation, $299.00 US)</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Check In With WordPress</h2>\n\n\n\n<p>The WordPress&nbsp;<a href=\"/support/article/administration-screens/#dashboard-information-central\">Dashboard</a>, part of the&nbsp;<a href=\"/support/article/administration-screens/\">Administration Screens</a>, help to keep you up-to-date on the WordPress Community and activities, but check the&nbsp;<a href=\"https://wordpress.org/\">WordPress</a>&nbsp;website to find out if there have been any upgrades, news, events, or information you may need to know as a WordPress user.</p>\n\n\n\n<p>If you aren&#8217;t an active participant in the&nbsp;<a href=\"https://wordpress.org/support/forums\">WordPress Forums</a>, check in once in a while to see what is going on and what topics are being discussed. There might be a topic that might interest you or news you should know.</p>\n\n\n\n<p>Also visit the&nbsp;<a href=\"/support\">WordPress Documentation</a>&nbsp;here to find out if there is new documentation, events, information, or resources that will help you better run and manage your WordPress site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Delete Spam Comments</h2>\n\n\n\n<p>If you are using one of the many different Comment Spam WordPress Plugins with your WordPress blog, spam can collect in your database. Comment spam is stored in the database as a &#8220;just in case&#8221; so you can restore a comment incorrectly marked at comment spam. It also serves as a resource to track down recurrent comment spammers, if you need to.</p>\n\n\n\n<p>In general, while some plugins will delete comment spam from your database after a specific period of time, not all do. These entries are dead-weight and unnecessary, and they can accumulate. To delete all current comment spam entries run this query on your WordPress database with&nbsp;<a href=\"/support/article/phpmyadmin/\">phpMyAdmin</a>&nbsp;in the SQL page:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">DELETE FROM wp_comments WHERE comment_approved = 'spam'</pre>\n\n\n\n<h2 class=\"wp-block-heading\">Back It Up</h2>\n\n\n\n<p>Make it a part of your regularly scheduled maintenance to backup your WordPress site, both on the website host server and on your computer. For detailed information see&nbsp;<a href=\"/support/article/wordpress-backups/\">WordPress Backups</a>. Consider scheduling this, depending upon the volume of new posts or articles you add to your site, three to twelve times a year.</p>\n\n\n\n<p><a href=\"/support/article/backing-up-your-database/\">Backing Up Your Database</a>&nbsp;describes how to save a backup copy of your database tables that contain all your blog data, and <a href=\"/support/article/restoring-your-database-from-backup/\">Restoring Your Database From Backup</a>&nbsp;guides you through the process of restoring data using one of your backups should you ever have to do so.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Update Your Site</h2>\n\n\n\n<p>If you haven&#8217;t been adding posts or articles lately, make a schedule to remind you to add new material on a regular basis. If you have, then take a look at what you&#8217;ve posted in the past and maybe do a little checking for proper grammar, bad spelling, information that needs updating, rewriting and editing a little, checking for any adjustments that should be made to make the information you&#8217;ve released to the public better.</p>\n\n\n\n<p>Website looks change with time and maybe you are tired of your old look. It might need a little tweaking to improve its presentation and performance, or maybe it&#8217;s time for a new&nbsp;<a href=\"/support/article/using-themes/\">WordPress Theme</a>.</p>\n\n\n\n<p>Schedule site updates, depending upon how frequently you post new posts and articles, about every six months so your site will stay fresh and alive.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Validate Again</h2>\n\n\n\n<p>Make it a website maintenance policy to&nbsp;<a href=\"https://codex.wordpress.org/Validation\">validate your site</a>&nbsp;after making any code or style sheet changes. This way, you can keep on top of guaranteeing users won&#8217;t run into problems and trouble that might be brewing under the surface.</p>\n\n\n\n<p>You can also regularly schedule validation tests on your site to keep it in top working condition and keep up with any changes or deprecations of the&nbsp;<a href=\"https://codex.wordpress.org/CSS\">CSS</a>&nbsp;and HTML standards. Typically, this should be done about once a year or when you make significant modifications to your site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Other Maintenance Tasks</h2>\n\n\n\n<p>For the serious blogger or website administrator, there are some site maintenance tasks you should do to keep up with your site based on site statistics data so that it improves hit ratio from search engine. Here are some suggestions to keep your site in top shape.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Check Your Website Statistics&nbsp;: Who is visiting, where they are visiting from, which pages are the most visited&#8230;check in regularly with your website statistics to find out where the action is on your site, where the dead links are, and where users are coming from. This information can help you better fine tune your site to meet the needs of your users and increase your web visibility. You should check site statistics at least monthly if you have an active site.</li>\n\n\n\n<li>Check Your Linkability&nbsp;: There are many&nbsp;<em>link popularity</em>&nbsp;tools on the Internet that will check to see who is linking to you. This is part of the puzzle that search engines use to rank your site. Dependent upon your site&#8217;s activity and need to grow in search engine rankings, this should be done monthly, or at least three times a year.</li>\n\n\n\n<li>Site Submissions&nbsp;: If you have a desire to make your site rise in search engine rankings, regularly schedule activity surrounding your site&#8217;s submissions to search engines and attracting new users. Take care to limit your submissions to the same search engine too frequently, as that can penalize you, but check in with your site submissions once or twice a year at a minimum.</li>\n\n\n\n<li>Update Advertising&nbsp;: If you have included advertising in your site, check with your advertisers on a regular basis to make sure they haven&#8217;t changed their techniques, pricing, and process. Dependent upon site activity, this could be as often as once a month or several times a year.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Site Maintenance Calendar</h3>\n\n\n\n<p>We&#8217;ve put together a sample calendar for your site maintenance to help you schedule time to keep your WordPress site tuned up and running smoothly.</p>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td>January</td><td>Upgrade or Update WordPress<br>Check in with WordPress<br>Add New Content</td></tr><tr><td>February</td><td>Add New Content<br>Check for new Plugins<br>Clean out Plugins<br>Backup Database and Site<br>Check Site Statistics<br>Check Site&#8217;s Link Popularity and Search Engine Ranking</td></tr><tr><td>March</td><td>Clean up and/or Try New Theme<br>Check in with WordPress<br>Add New Content</td></tr><tr><td>April</td><td>Clean Out Graphics and Photographs<br>Add New Content<br>Backup Database and Site<br>Check Site Statistics<br>Submit Site to Search Engines</td></tr><tr><td>May</td><td>Check for Dead Links<br>Check in with WordPress<br>Add New Content</td></tr><tr><td>June</td><td>Backup Database and Site<br>Add New Content<br>Check Site Statistics<br>Check Site&#8217;s Link Popularity and Search Engine Ranking<br>Check Advertising</td></tr><tr><td>July</td><td>Upgrade or Update WordPress<br>Check in with WordPress<br>Add New Content</td></tr><tr><td>August</td><td>Check for New Plugins<br>Clean Out Old Plugins<br>Backup Database and Site<br>Add New Content<br>Check Site Statistics</td></tr><tr><td>September</td><td>Clean or Renew Themes<br>Check in with WordPress<br>Add New Content<br>Submit Site to Search Engines<br>Check Advertising</td></tr><tr><td>October</td><td>Backup Database and Site<br>Validate Web Pages and CSS<br>Optimize Web Pages and CSS<br>Add New Content<br>Check Site Statistics</td></tr><tr><td>November</td><td>Check in with WordPress<br>Add New Content<br>Check Site&#8217;s Link Popularity and Search Engine Ranking</td></tr><tr><td>December</td><td>Backup Database and Site<br>Check Site Statistics<br>Add New Content<br>Check Advertising</td></tr></tbody></table></figure>\n\n\n\n<p class=\"has-white-color has-deep-blueberry-background-color has-text-color has-background has-link-color wp-elements-89407259ecdc93d26f85dc0cffcfce4a\"><strong>Important:</strong> Please note that this is not a support page. If you seek help with your specific problem, please refer to the&nbsp;<a href=\"https://wordpress.org/support/welcome/\">Support forums</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Important: Please note that this is not a support page. If you seek help with your specific problem, please refer to the&nbsp;Support forums. Getting a WordPress Tune Up To keep WordPress working healthy, there is some site maintenance we recommend you do frequently. Begin by creating a calendar of WordPress Maintenance procedures to remind yourself [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        33,
+        73
+    ],
+    "class_list": [
+        "post-11248954",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-maintenance",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11248954",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11248954"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11248954/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360460,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11248954/revisions/16360460"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11248954"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11248954"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

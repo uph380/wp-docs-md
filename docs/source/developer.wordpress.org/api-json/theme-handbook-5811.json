@@ -1,0 +1,97 @@
+{
+    "id": 5811,
+    "date": "2014-07-31T23:47:40",
+    "date_gmt": "2014-07-31T23:47:40",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5811"
+    },
+    "modified": "2023-12-14T21:02:53",
+    "modified_gmt": "2023-12-14T21:02:53",
+    "slug": "your-first-theme",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/classic-themes/your-first-theme/",
+    "title": {
+        "rendered": "Your First Theme"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Block Theme</h2>\n\n\n\n<p>This section is for a <a href=\"https://developer.wordpress.org/themes/block-themes/\">block theme</a>.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Required Files</h3>\n\n\n\n<p>The <em>only </em>files needed for a block theme is,&nbsp;&nbsp;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>index.html</strong>, which is the main template to display your list of posts. Index.html needs to be placed inside a folder called templates.</li>\n\n\n\n<li><strong>style.css</strong> file to style content.\u00a0\u00a0</li>\n\n\n\n<li><strong>theme.json</strong> file to set style properties in a structured way.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"158\" src=\"https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?resize=1024%2C158&#038;ssl=1\" alt=\"Required Files Block Theme\" class=\"wp-image-144504\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?resize=1024%2C158&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?resize=300%2C46&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?resize=768%2C118&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?resize=1536%2C236&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2022/11/required-files-block-themes.png?w=1598&amp;ssl=1 1598w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p></p>\n\n\n\n<p>For advanced block theme development, you can add templates and template parts. For example,\u00a0</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>You can create a templates directory inside the theme folder and put your templates there. Templates examples,\n<ul class=\"wp-block-list\">\n<li>index.html&nbsp;</li>\n\n\n\n<li>archive.html</li>\n\n\n\n<li>single.html&nbsp;</li>\n\n\n\n<li>page.html&nbsp;</li>\n</ul>\n</li>\n\n\n\n<li>You can create a parts directory inside the theme folder and put template parts. Template parts examples,\n<ul class=\"wp-block-list\">\n<li>header.html&nbsp;</li>\n\n\n\n<li>footer.html</li>\n\n\n\n<li>sidebar.html\u00a0</li>\n</ul>\n</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2022/11/my-first-fse-theme.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2022/11/my-first-fse-theme.png?resize=389%2C425&#038;ssl=1\" alt=\"\" class=\"wp-image-144505\" width=\"389\" height=\"425\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2022/11/my-first-fse-theme.png?w=778&amp;ssl=1 778w, https://i0.wp.com/developer.wordpress.org/files/2022/11/my-first-fse-theme.png?resize=275%2C300&amp;ssl=1 275w, https://i0.wp.com/developer.wordpress.org/files/2022/11/my-first-fse-theme.png?resize=768%2C838&amp;ssl=1 768w\" sizes=\"auto, (max-width: 389px) 100vw, 389px\" /></a></figure>\n\n\n\n<p>As you know the required files for block themes, now let\u2019s create your first block theme.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 1 \u2013 Create a theme folder</h3>\n\n\n\n<p>First, create a new folder on your computer, and name it <strong>my-first-theme</strong>. This is where all of your theme\u2019s files will go.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 2 \u2013 Create a style.css file</h3>\n\n\n\n<p>You can use any basic text editor on your computer to create a new file called <strong>style.css</strong>.</p>\n\n\n\n<p>If you\u2019re on a Windows-based machine use Notepad for now and if you\u2019re using a Mac then use TextEdit.</p>\n\n\n\n<p>Copy and paste the following code into your newly created <strong>style.css</strong> file:</p>\n\n\n<p>/*<br />\nTheme Name: My First WordPress Theme<br />\n*/</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 3 \u2013 Create a theme.json file</h3>\n\n\n\n<p>Create the theme.json file in the root folder, and copy and paste the following code:</p>\n\n\n<p>{<br />\n        &#8220;version&#8221;: 2,<br />\n\t&#8220;settings&#8221;: {<br />\n\t\t&#8220;layout&#8221;: {<br />\n\t\t\t&#8220;contentSize&#8221;: &#8220;840px&#8221;,<br />\n\t\t\t&#8220;wideSize&#8221;: &#8220;1100px&#8221;<br />\n\t\t}<br />\n\t}<br />\n}</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 4 &#8211; Add index.html inside the templates folder</h3>\n\n\n\n<p>Inside your theme directory, create a templates folder. Inside the templates folder creates an <strong>index.html</strong> file.\u00a0</p>\n\n\n\n<p>Now, your theme structure should look like this,</p>\n\n\n<p>templates/</p>\n<p>   index.html</p>\n<p>style.css</p>\n<p>theme.json</p>\n\n\n\n<p>Your block theme is now ready. You can install and activate the theme. First, make the ZIP file of your theme directory. The ZIP file will be like, <strong>my-first-theme.zip</strong>\u00a0</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 5 \u2013 Install and activate your theme</h3>\n\n\n\n<p>Now, go to your WordPress admin panel and <strong>Appearance &gt; Themes &gt; Add New &gt; Upload</strong>. Upload the my-first-theme.zip and click on install and then activate.</p>\n\n\n\n<p>Congratulations &#8211; you\u2019ve made your first WordPress block theme.&nbsp;</p>\n\n\n\n<p>To know more about block themes, you can download the default Twenty Twenty-Three theme and use it as a reference.\u00a0</p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n\n\n\n<h2 class=\"wp-block-heading\">Classic Theme</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1731\" height=\"649\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-01.jpg?resize=1731%2C649&#038;ssl=1\" alt=\"getting-started-your-first-theme-01\" class=\"wp-image-11260\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-01.jpg?w=1731&amp;ssl=1 1731w, https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-01.jpg?resize=300%2C112&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-01.jpg?resize=1024%2C383&amp;ssl=1 1024w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Required Files</h3>\n\n\n\n<p>As mentioned earlier in the &#8220;<a href=\"https://developer.wordpress.org/themes/getting-started/what-is-a-theme/\">What is a Theme</a>&#8221; section, the <em>only</em> files needed for a WordPress theme to work out of the box are an <code>index.php</code> file to display your list of posts and a <code>style.css</code> file to style the content.</p>\n\n\n\n<p>Once you get&nbsp;into more advanced development territory and your themes grow in size and complexity, you&#8217;ll find it easier to break your theme into many separate files (called <a title=\"Template Files\" href=\"https://developer.wordpress.org/themes/basics/template-files/\">template files</a>) instead. For example, most WordPress themes will also include:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>header.php</code></li>\n\n\n\n<li><code>index.php</code></li>\n\n\n\n<li><code>sidebar.php</code></li>\n\n\n\n<li><code>footer.php</code></li>\n</ul>\n\n\n\n<p>We will cover creating separate files later in this handbook, but for now let&#8217;s get your first theme launched!</p>\n\n\n\n<p>(Note: The following steps assume you have already completed the &#8220;<a title=\"Setting up a Development Environment\" href=\"https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/\">Setting up a Development Environment</a>&#8221; section.)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 1 &#8211; Create&nbsp;a theme folder</h3>\n\n\n\n<p>First, create a new folder on your computer, and name it <em>my-first-theme</em>. This is where all of your theme&#8217;s files will go.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 2 &#8211; Create&nbsp;a style.css file</h3>\n\n\n\n<p>You can use any basic text editor on your computer to create a new file called style.css.</p>\n\n\n\n<p>If you&#8217;re on a Windows-based machine use <a href=\"http://en.wikipedia.org/wiki/Notepad_(software)\" rel=\"noreferrer\">Notepad</a> for now and if you&#8217;re using a Mac then use <a href=\"http://en.wikipedia.org/wiki/TextEdit\" rel=\"noreferrer\">TextEdit</a>.</p>\n\n\n\n<p>Copy and paste the following code into your newly created <code>style.css</code> file:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/*\nTheme Name: My First WordPress Theme\n*/\n\nbody {\nbackground: #21759b;\n}</code></pre>\n\n\n\n<p><a href=\"https://gist.github.com/philiparthurmoore/0496a9b659c12280666d\" rel=\"noreferrer\">Reference Gist</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 3 &#8211; Create an&nbsp;index.php file</h3>\n\n\n\n<p>Now create a file named <code>index.php</code> and put it into your theme&#8217;s folder, adding the following code to it:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;meta charset=\"&lt;?php bloginfo( 'charset' ); ?&gt;\"&gt;\n&lt;title&gt;&lt;?php wp_title( '|', true, 'right' ); ?&gt;&lt;/title&gt;\n&lt;link rel=\"stylesheet\" href=\"&lt;?php echo esc_url( get_stylesheet_uri() ); ?&gt;\" type=\"text/css\" /&gt;\n&lt;?php wp_head(); ?&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;h1&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/h1&gt;\n&lt;h2&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/h2&gt;\n\n&lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;\n\n&lt;h3&gt;&lt;?php the_title(); ?&gt;&lt;/h3&gt;\n\n&lt;?php the_content(); ?&gt;\n&lt;?php wp_link_pages(); ?&gt;\n&lt;?php edit_post_link(); ?&gt;\n\n&lt;?php endwhile; ?&gt;\n\n&lt;?php\nif ( get_next_posts_link() ) {\nnext_posts_link();\n}\n?&gt;\n&lt;?php\nif ( get_previous_posts_link() ) {\nprevious_posts_link();\n}\n?&gt;\n\n&lt;?php else: ?&gt;\n\n&lt;p&gt;No posts found. :(&lt;/p&gt;\n\n&lt;?php endif; ?&gt;\n&lt;?php wp_footer(); ?&gt;\n&lt;/body&gt;\n&lt;/html&gt;</code></pre>\n\n\n\n<p><a href=\"https://gist.github.com/philiparthurmoore/b1f47c15d3eb2c573924\" rel=\"noreferrer\">Reference Gist</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 4 &#8211; Install&nbsp;Your Theme</h3>\n\n\n\n<p>Copy your new theme into the&nbsp;<code>wp-content/themes</code>&nbsp;folder on your development environment and activate it for review and testing.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 5 &#8211; Activate Your Theme</h3>\n\n\n\n<p>Now that you&#8217;ve installed&nbsp;your theme, go to <strong>Admin &gt; Appearance &gt; Themes</strong>&nbsp;to activate it.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"616\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-02.png?resize=1024%2C616&#038;ssl=1\" alt=\"getting-started-your-first-theme-02\" class=\"wp-image-11261\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-02.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-02.png?resize=300%2C180&amp;ssl=1 300w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Using Your First Theme</h3>\n\n\n\n<p><strong>Congratulations \u2013 you&#8217;ve just made your first WordPress theme!</strong></p>\n\n\n\n<p>If you activate your new theme and view it within a browser, you should see something like this:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full wp-image-11262\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"908\" height=\"321\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-03.png?resize=908%2C321&#038;ssl=1\" alt=\"Here's how Your First Theme looks on the front end.\" class=\"wp-image-11262\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-03.png?w=908&amp;ssl=1 908w, https://i0.wp.com/developer.wordpress.org/files/2014/07/getting-started-your-first-theme-03.png?resize=300%2C106&amp;ssl=1 300w\" sizes=\"auto, (max-width: 908px) 100vw, 908px\" /><figcaption class=\"wp-element-caption\">Here&#8217;s how Your First Theme looks on the front end.</figcaption></figure>\n\n\n\n<p>Okay, so it&#8217;s not the <em>prettiest</em> theme yet, but it&#8217;s a terrific start!</p>\n\n\n\n<h2 class=\"wp-block-heading\">What have we learned?</h2>\n\n\n\n<p>Although your first theme may be missing the&nbsp;functionality and design elements that are found in other themes, the basic building blocks of a WordPress theme, as we have just created above, are all the same.</p>\n\n\n\n<p>Remember that the key here is <em>not</em> to get caught up in how all those other things are done <em>now</em>, but to understand the guiding principles behind making WordPress themes that will stand the test of time, no matter how the code changes or the template file structure changes over time.</p>\n\n\n\n<p>All&nbsp;websites, regardless of how they are created underneath the hood, need common elements: headers, primary content areas, menus, sidebars, footers, and the like. You&#8217;ll find that making WordPress themes is really just another way of crafting&nbsp;a website.</p>\n\n\n\n<p>From this most basic theme, you&#8217;ll start learning about the building blocks that you put together to create a more complex theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Up Next</h2>\n\n\n\n<p>In <a title=\"Chapter 2: Theme Basics\" href=\"https://developer.wordpress.org/themes/basics/\">Chapter 2: Theme Basics</a>, we&#8217;ll dive further into themes and discuss the templates and other files that&nbsp;make up most themes, along with the PHP used to make dynamic&nbsp;themes, including:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Template Tags</li>\n\n\n\n<li>The Loop</li>\n\n\n\n<li>Theme Functions</li>\n\n\n\n<li>Conditional Tags</li>\n\n\n\n<li>and more</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 138748,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5811",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5811",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5811/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144939,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5811/revisions/144939"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/138748"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5811"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 151404,
+    "date": "2023-12-27T20:55:01",
+    "date_gmt": "2023-12-27T20:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/filters-and-hooks/"
+    },
+    "modified": "2024-05-17T20:24:36",
+    "modified_gmt": "2024-05-17T20:24:36",
+    "slug": "filters-and-hooks",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/filters-and-hooks/",
+    "title": {
+        "rendered": "Filters and hooks"
+    },
+    "content": {
+        "rendered": "<p>The Editor provides numerous filters and hooks that allow you to modify the editing experience. Here are a few.</p>\n<h2>Editor settings</h2>\n<p>One of the most common ways to modify the Editor is through the <a href=\"https://developer.wordpress.org/reference/hooks/block_editor_settings_all/\"><code>block_editor_settings_all</code></a> PHP filter, which is applied before settings are sent to the initialized Editor.</p>\n<p>The <code>block_editor_settings_all</code> hook passes two parameters to the callback function:</p>\n<ul>\n<li><code>$settings</code> \u2013 An array of <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/#editor-settings\">configurable settings</a> for the Editor.</li>\n<li><code>$context</code> \u2013 An instance of <a href=\"https://developer.wordpress.org/reference/classes/wp_block_editor_context/\"><code>WP_Block_Editor_Context</code></a>, an object that contains information about the current Editor.</li>\n</ul>\n<p>The following example disables the Code Editor for users who cannot activate plugins (Administrators). Add this to a plugin or your theme&#8217;s <code>functions.php</code> file to test it.</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_restrict_code_editor' );\n\nfunction example_restrict_code_editor( $settings ) {\n    $can_active_plugins = current_user_can( 'activate_plugins' );\n\n    // Disable the Code Editor for users that cannot activate plugins (Administrators).\n    if ( ! $can_active_plugins ) {\n        $settings[ 'codeEditingEnabled' ] = false;\n    }\n\n    return $settings;\n}\n</code></pre>\n<p>For more examples, check out the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/\">Editor Hooks</a> documentation that includes the following use cases:</p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/#set-a-default-image-size\">Set a default image size</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/#disable-openverse\">Disable Openverse</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/#disable-the-font-library\">Disable the Font Library</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/#disable-block-inspector-tabs\">Disable block inspector tabs</a></li>\n</ul>\n<h2>Server-side theme.json filters</h2>\n<p>The theme.json file is a great way to control interface options, but it only allows for global or block-level modifications, which can be limiting in some scenarios.</p>\n<p>For instance, in the previous section, color and typography controls were disabled globally using theme.json. But let&#8217;s say you want to enable color settings for users who are Administrators.</p>\n<p>To provide more flexibility, WordPress 6.1 introduced server-side filters allowing you to customize theme.json data at four different data layers.</p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/reference/hooks/wp_theme_json_data_default/\"><code>wp_theme_json_data_default</code></a> &#8211; Hooks into the default data provided by WordPress</li>\n<li><a href=\"https://developer.wordpress.org/reference/hooks/wp_theme_json_data_blocks/\"><code>wp_theme_json_data_blocks</code></a> &#8211; Hooks into the data provided by blocks.</li>\n<li><a href=\"https://developer.wordpress.org/reference/hooks/wp_theme_json_data_theme/\"><code>wp_theme_json_data_theme</code></a> &#8211; Hooks into the data provided by the current theme.</li>\n<li><a href=\"https://developer.wordpress.org/reference/hooks/wp_theme_json_data_user/\"><code>wp_theme_json_data_user</code></a> &#8211; Hooks into the data provided by the user.</li>\n</ul>\n<p>In the following example, the data from the current theme&#8217;s theme.json file is updated using the <code>wp_theme_json_data_theme</code> filter. Color controls are restored if the current user is an Administrator.</p>\n<pre><code class=\"language-php\">// Disable color controls for all users except Administrators.\nfunction example_filter_theme_json_data_theme( $theme_json ){\n    $is_administrator = current_user_can( 'edit_theme_options' );\n\n    if ( $is_administrator ) {\n        $new_data = array(\n            'version'  =&gt; 2,\n            'settings' =&gt; array(\n                'color' =&gt; array(\n                    'background'       =&gt; true,\n                    'custom'           =&gt; true,\n                    'customDuotone'    =&gt; true,\n                    'customGradient'   =&gt; true,\n                    'defaultGradients' =&gt; true,\n                    'defaultPalette'   =&gt; true,\n                    'text'             =&gt; true,\n                ),\n            ),\n        );\n    }\n\n    return $theme_json-&gt;update_with( $new_data );\n}\nadd_filter( 'wp_theme_json_data_theme', 'example_filter_theme_json_data_theme' );\n</code></pre>\n<p>The filter receives an instance of the <code>WP_Theme_JSON_Data class</code> with the data for the respective layer. Then, you pass new data in a valid theme.json-like structure to the <code>update_with( $new_data )</code> method. A theme.json version number is required in <code>$new_data</code>.</p>\n<h2>Client-side (Editor) filters</h2>\n<p>WordPress 6.2 introduced a new client-side filter allowing you to modify block-level <a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/#settings\">theme.json settings</a> before the Editor is rendered.</p>\n<p>The filter is called <code>blockEditor.useSetting.before</code> and can be used in the JavaScript code as follows:</p>\n<pre><code class=\"language-js\">import { addFilter } from '@wordpress/hooks';\n\n/**\n * Limit the Column block's spacing options to pixels.\n */\naddFilter(\n    'blockEditor.useSetting.before',\n    'example/useSetting.before',\n    ( settingValue, settingName, clientId, blockName ) =&gt; {\n        if ( blockName === 'core/column' &amp;&amp; settingName === 'spacing.units' ) {\n            return [ 'px' ];\n        }\n        return settingValue;\n    }\n);\n</code></pre>\n<p>This example will restrict the available spacing units for the Column block to just pixels. As discussed above, a similar restriction could be applied using theme.json filters or directly in a theme\u2019s theme.json file using block-level settings.</p>\n<p>However, the <code>blockEditor.useSetting.before</code> filter is unique because it allows you to modify settings according to the block\u2019s location, neighboring blocks, the current user\u2019s role, and more. The possibilities for customization are extensive.</p>\n<p>In the following example, text color controls are disabled for the Heading block whenever the block is placed inside of a Media &amp; Text block.</p>\n<pre><code class=\"language-js\">import { select } from  '@wordpress/data';\nimport { addFilter } from '@wordpress/hooks';\n\n/**\n * Disable text color controls on Heading blocks when placed inside of Media &amp; Text blocks.\n */\naddFilter(\n    'blockEditor.useSetting.before',\n    'example/useSetting.before',\n    ( settingValue, settingName, clientId, blockName ) =&gt; {\n        if ( blockName === 'core/heading' ) {\n            const { getBlockParents, getBlockName } = select( 'core/block-editor' );\n            const blockParents = getBlockParents( clientId, true );\n            const inMediaText = blockParents.some( ( ancestorId ) =&gt; getBlockName( ancestorId ) === 'core/media-text' );\n\n            if ( inMediaText &amp;&amp; settingName === 'color.text' ) {\n                return false;\n            }\n        }\n\n        return settingValue;\n    }\n);\n</code></pre>\n<h2>Block Filters</h2>\n<p>Beyond curating the Editor itself, there are many ways that you can modify individual blocks. Perhaps you want to disable particular block supports like background color or define which settings should be displayed by default on specific blocks.</p>\n<p>One of the most commonly used filters is <a href=\"https://developer.wordpress.org/reference/hooks/block_type_metadata/\"><code>block_type_metadata</code></a>. It allows you to filter the raw metadata loaded from a block&#8217;s <code>block.json</code> file when a block type is registered on the server with PHP.</p>\n<p>The filter takes one parameter:</p>\n<ul>\n<li><code>$metadata</code> (<code>array</code>) \u2013 metadata loaded from <code>block.json</code> for registering a block type.</li>\n</ul>\n<p>The <code>$metadata</code> array contains everything you might want to know about a block, from its description and <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">attributes</a> to block <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/\">supports</a>.</p>\n<p>In the following example, background color and gradient support are disabled for Heading blocks.</p>\n<pre><code class=\"language-php\">function example_disable_heading_background_color_and_gradients( $metadata ) {\n\n    // Only apply the filter to Heading blocks.\n    if ( ! isset( $metadata['name'] ) || 'core/heading' !== $metadata['name'] ) {\n        return $metadata;\n    }\n\n    // Check if 'supports' key exists.\n    if ( isset( $metadata['supports'] ) &amp;&amp; isset( $metadata['supports']['color'] ) ) {\n\n        // Remove Background color and Gradients support.\n        $metadata['supports']['color']['background'] = false;\n        $metadata['supports']['color']['gradients']  = false;\n    }\n\n    return $metadata;\n}\nadd_filter( 'block_type_metadata', 'example_disable_heading_background_color_and_gradients' );\n</code></pre>\n<p>You can learn more about the available block filters in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/\">Block Filters</a> documentation.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/news/2023/07/05/how-to-modify-theme-json-data-using-server-side-filters/\">How to modify theme.json data using server-side filters</a> (WordPress Developer Blog)</li>\n<li><a href=\"https://developer.wordpress.org/news/2023/05/24/curating-the-editor-experience-with-client-side-filters/\">Curating the Editor experience with client-side filters</a> (WordPress Developer Blog)</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 141559,
+    "menu_order": 39,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-151404",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151404",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151404/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153787,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151404/revisions/153787"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/141559"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=151404"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

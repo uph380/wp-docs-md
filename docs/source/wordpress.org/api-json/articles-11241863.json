@@ -1,0 +1,109 @@
+{
+    "id": 11241863,
+    "date": "2019-02-24T14:24:18",
+    "date_gmt": "2019-02-24T14:24:18",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11241863"
+    },
+    "modified": "2023-04-14T14:28:37",
+    "modified_gmt": "2023-04-14T14:28:37",
+    "slug": "revisions",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/revisions/",
+    "title": {
+        "rendered": "Revisions"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Description</h2>\n\n\n\n<p>The WordPress revisions system stores a record of each saved draft or published update. The revision system allows you to see what changes were made in each revision by dragging a slider (or using the Next/Previous buttons). The display indicates what has changed in each revision &#8211; what was added, what remained unchanged, and what was removed. Lines added or removed are highlighted, and individual character changes get additional highlighting. Click the &#8216;Restore This Revision&#8217; button to restore a revision.</p>\n\n\n\n<p>The revisions page also includes a &#8216;compare any two revisions&#8217; mode that allows you to compare any two individual revisions. In this mode, the slider has two handles, one representing the revision you are comparing from and one representing the revision you are comparing to. Drag the handles to see what has changed between any two specific revisions.&nbsp;<strong>Note:</strong>&nbsp;the &#8216;Restore This Revision&#8217; button&nbsp;<em>always restores the revision you are comparing to</em>.</p>\n\n\n\n<p>To return to the post edit screen without restoring a revision, click on the post title at the top of the page.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Autosaves</h2>\n\n\n\n<p>There is only ever a maximum of one&nbsp;<a href=\"/support/article/glossary#autosave\">autosave&nbsp;</a>per user for any given post. New autosaves overwrite old autosaves. This means that no, your tables do not grow by one row every 60 seconds. In multi-user settings, one autosave is stored for each user.</p>\n\n\n\n<p>Autosaves are enabled for all posts and pages but do not overwrite published content. Autosaves are stored as a special type of revision; they do not overwrite the actual post. In fact, whether your power goes out, your browser crashes, or you lose your internet connection, when you go back to edit that post, WP will toss up a warning telling you that it has a backup of your post and a link to restore the backup. When reviewing revisions, autosaves are clearly marked.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Revision Options</h2>\n\n\n\n<p>Limit the number of posts revisions that WordPress stores in the database.</p>\n\n\n\n<p>The&nbsp;<a href=\"https://codex.wordpress.org/Plugin_API/Filter_Reference/wp_revisions_to_keep\">wp_revisions_to_keep</a>&nbsp;filter allows developers to easily alter how many revisions are kept for a given post.</p>\n\n\n\n<p>Alternately, the limit can be set in wp-config.php:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">define( 'WP_POST_REVISIONS', 3 );\n</pre>\n\n\n\n<p>WP_POST_REVISIONS:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>true (default), -1: store every revision</li>\n\n\n\n<li>false, 0: do not store any revisions (except the one autosave per post)</li>\n\n\n\n<li>(int) &gt; 0: store that many revisions (+1 autosave per user) per post. Old revisions are automatically deleted when the post is updated again.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Revision Storage Method</h2>\n\n\n\n<p>Revisions are stored in the posts table.</p>\n\n\n\n<p>Revisions are stored as children of their associated post (the same thing we do for attachments). They are given a post_status of &#8216;inherit&#8217;, a post_type of &#8216;revision&#8217;, and a post_name of {parent ID}- revision(-#) for regular revisions and {parent ID}-autosave for autosaves.</p>\n\n\n\n<p>By default, WP keeps track of the changes to title, author, content, excerpt.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Revision Management</h2>\n\n\n\n<p>Deleting: There is an API function to delete revisions, but there is no UI. That can certainly change.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Displaying Rendered Revisions</h2>\n\n\n\n<p>Currently revision comparison &#8220;diffs&#8221; are rendered in Text (or HTML) view; proposed filters would allow plugin developers to customize diff encoding/rendering. (see Trac ticket&nbsp;<a href=\"https://core.trac.wordpress.org/ticket/24908\">#24908</a>)</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Description The WordPress revisions system stores a record of each saved draft or published update. The revision system allows you to see what changes were made in each revision by dragging a slider (or using the Next/Previous buttons). The display indicates what has changed in each revision &#8211; what was added, what remained unchanged, and [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-11241863",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11241863",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11241863"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11241863/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356734,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11241863/revisions/16356734"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11241863"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11241863"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

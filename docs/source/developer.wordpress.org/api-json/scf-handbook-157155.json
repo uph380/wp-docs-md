@@ -1,0 +1,91 @@
+{
+    "id": 157155,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/loop-file/"
+    },
+    "modified": "2025-02-21T05:46:10",
+    "modified_gmt": "2025-02-21T05:46:10",
+    "slug": "loop-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/loop-file/",
+    "title": {
+        "rendered": "Loop Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_add_loop()</code></h2>\n<p>alias of acf()-&gt;loop-&gt;add_loop()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 6/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_update_loop()</code></h2>\n<p>alias of acf()-&gt;loop-&gt;update_loop()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 6/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_get_loop()</code></h2>\n<p>alias of acf()-&gt;loop-&gt;get_loop()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 6/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_remove_loop()</code></h2>\n<p>alias of acf()-&gt;loop-&gt;remove_loop()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 6/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157155",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157155",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157155/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157306,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157155/revisions/157306"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157155"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

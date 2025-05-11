@@ -1,0 +1,91 @@
+{
+    "id": 134458,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/dropdown-menu/"
+    },
+    "modified": "2024-10-30T16:55:47",
+    "modified_gmt": "2024-10-30T16:55:47",
+    "slug": "dropdown-menu",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/dropdown-menu/",
+    "title": {
+        "rendered": "DropdownMenu"
+    },
+    "content": {
+        "rendered": "<p>The DropdownMenu displays a list of actions (each contained in a MenuItem, MenuItemsChoice, or MenuGroup) in a compact way. It appears in a Popover after the user has interacted with an element (a button or icon) or when they perform a specific action.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/DropdownMenuExample.png?ssl=1\" alt=\"An expanded DropdownMenu, containing a list of MenuItems.\" /></p>\n<h2>Anatomy</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/DropdownMenuAnatomy.png?ssl=1\" alt=\"Anatomy of a DropdownMenu.\" /></p>\n<ol>\n<li>Popover: a container component in which the DropdownMenu is wrapped.</li>\n<li>Parent button: the icon or button that is used to toggle the display of the Popover containing the DropdownMenu.</li>\n<li>MenuItem: the list items within the DropdownMenu.</li>\n</ol>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use a DropdownMenu</h4>\n<p>Use a DropdownMenu when you want users to:</p>\n<ul>\n<li>Choose an action or change a setting from a list, AND</li>\n<li>Only see the available choices contextually.</li>\n</ul>\n<p>If you need to display all the available options at all times, consider using a Toolbar instead.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/DropdownMenuDo.png?ssl=1\" alt=\"Use a DropdownMenu to display a list of actions after the user interacts with an icon.\" /></p>\n<p><strong>Do</strong><br />\nUse a DropdownMenu to display a list of actions after the user interacts with an icon.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/DropdownMenuDont.png?ssl=1\" alt=\"Don\u2019t use a DropdownMenu for important actions that should always be visible. Use a Toolbar instead.\" /></p>\n<p><strong>Don\u2019t</strong><br />\nDon\u2019t use a DropdownMenu for frequently used actions. Use a Toolbar instead.</p>\n<h4>Behavior</h4>\n<p>Generally, the parent button should have a triangular icon to the right of the icon or text to indicate that interacting with it will show a DropdownMenu. In rare cases where the parent button directly indicates that there&#8217;ll be more content (through the use of an ellipsis or &#8220;More&#8221; label), this can be omitted.</p>\n<p>The parent button should retain the same visual styling regardless of whether the DropdownMenu is displayed or not.</p>\n<h4>Placement</h4>\n<p>The DropdownMenu should typically appear directly below, or below and to the left of, the parent button. If there isn\u2019t enough space below to display the full DropdownMenu, it can be displayed instead above the parent button.</p>\n<h2>Development guidelines</h2>\n<p>DropdownMenu is a React component to render an expandable menu of buttons. It is similar in purpose to a <code>&lt;select&gt;</code> element, with the distinction that it does not maintain a value. Instead, each option behaves as an action button.</p>\n<h3>Usage</h3>\n<p>Render a Dropdown Menu with a set of controls:</p>\n<pre><code class=\"language-jsx\">import { DropdownMenu } from '@wordpress/components';\nimport {\n    more,\n    arrowLeft,\n    arrowRight,\n    arrowUp,\n    arrowDown,\n} from '@wordpress/icons';\n\nconst MyDropdownMenu = () =&gt; (\n    &lt;DropdownMenu\n        icon={ more }\n        label=\"Select a direction\"\n        controls={ [\n            {\n                title: 'Up',\n                icon: arrowUp,\n                onClick: () =&gt; console.log( 'up' ),\n            },\n            {\n                title: 'Right',\n                icon: arrowRight,\n                onClick: () =&gt; console.log( 'right' ),\n            },\n            {\n                title: 'Down',\n                icon: arrowDown,\n                onClick: () =&gt; console.log( 'down' ),\n            },\n            {\n                title: 'Left',\n                icon: arrowLeft,\n                onClick: () =&gt; console.log( 'left' ),\n            },\n        ] }\n    /&gt;\n);\n</code></pre>\n<p>Alternatively, specify a <code>children</code> function which returns elements valid for use in a DropdownMenu: <code>MenuItem</code>, <code>MenuItemsChoice</code>, or <code>MenuGroup</code>.</p>\n<pre><code class=\"language-jsx\">import { DropdownMenu, MenuGroup, MenuItem } from '@wordpress/components';\nimport { more, arrowUp, arrowDown, trash } from '@wordpress/icons';\n\nconst MyDropdownMenu = () =&gt; (\n    &lt;DropdownMenu icon={ more } label=\"Select a direction\"&gt;\n        { ( { onClose } ) =&gt; (\n            &lt;&gt;\n                &lt;MenuGroup&gt;\n                    &lt;MenuItem icon={ arrowUp } onClick={ onClose }&gt;\n                        Move Up\n                    &lt;/MenuItem&gt;\n                    &lt;MenuItem icon={ arrowDown } onClick={ onClose }&gt;\n                        Move Down\n                    &lt;/MenuItem&gt;\n                &lt;/MenuGroup&gt;\n                &lt;MenuGroup&gt;\n                    &lt;MenuItem icon={ trash } onClick={ onClose }&gt;\n                        Remove\n                    &lt;/MenuItem&gt;\n                &lt;/MenuGroup&gt;\n            &lt;/&gt;\n        ) }\n    &lt;/DropdownMenu&gt;\n);\n</code></pre>\n<h3>Props</h3>\n<p>The component accepts the following props:</p>\n<h4><code>icon</code>: <code>string | null</code></h4>\n<p>The <a href=\"https://developer.wordpress.org/resource/dashicons/\">Dashicon</a> icon slug to be shown in the collapsed menu button.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>\"menu\"</code></li>\n</ul>\n<p>See also: <a href=\"https://developer.wordpress.org/resource/dashicons/\">https://developer.wordpress.org/resource/dashicons/</a></p>\n<h4><code>label</code>: <code>string</code></h4>\n<p>A human-readable label to present as accessibility text on the focused collapsed menu button.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>controls:</code> <code>DropdownOption[] | DropdownOption[][]</code></h4>\n<p>An array or nested array of objects describing the options to be shown in the expanded menu.</p>\n<p>Each object should include an <code>icon</code> <a href=\"https://developer.wordpress.org/resource/dashicons/\">Dashicon</a> slug string, a human-readable <code>title</code> string, <code>isDisabled</code> boolean flag and an <code>onClick</code> function callback to invoke when the option is selected.</p>\n<p>A valid DropdownMenu must specify a <code>controls</code> or <code>children</code> prop, or both.<br />\n&#8211;   Required: No</p>\n<h4><code>children</code>: <code>( callbackProps: DropdownCallbackProps ) =&gt; ReactNode</code></h4>\n<p>A <a href=\"https://reactjs.org/docs/render-props.html#using-props-other-than-render\">function render prop</a> which should return an element or elements valid for use in a DropdownMenu: <code>MenuItem</code>, <code>MenuItemsChoice</code>, or <code>MenuGroup</code>. Its first argument is a props object including the same values as given to a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/dropdown/#rendercontent\"><code>Dropdown</code>&#8216;s <code>renderContent</code></a> (<code>isOpen</code>, <code>onToggle</code>, <code>onClose</code>).</p>\n<p>A valid DropdownMenu must specify a <code>controls</code> or <code>children</code> prop, or both.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<p>See also: <a href=\"https://developer.wordpress.org/resource/dashicons/\">https://developer.wordpress.org/resource/dashicons/</a></p>\n<h4><code>className</code>: <code>string</code></h4>\n<p>A class name to apply to the dropdown menu&#8217;s toggle element wrapper.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>popoverProps</code>: <code>DropdownProps[ 'popoverProps' ]</code></h4>\n<p>Properties of <code>popoverProps</code> object will be passed as props to the nested <code>Popover</code> component.<br />\nUse this object to modify props available for the <code>Popover</code> component that are not already exposed in the <code>DropdownMenu</code> component, e.g.: the direction in which the popover should open relative to its parent node set with <code>position</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>toggleProps</code>: <code>ToggleProps</code></h4>\n<p>Properties of <code>toggleProps</code> object will be passed as props to the nested <code>Button</code> component in the <code>renderToggle</code> implementation of the <code>Dropdown</code> component used internally.<br />\nUse this object to modify props available for the <code>Button</code> component that are not already exposed in the <code>DropdownMenu</code> component, e.g.: the tooltip text displayed on hover set with <code>tooltip</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>menuProps</code>: <code>NavigableContainerProps</code></h4>\n<p>Properties of <code>menuProps</code> object will be passed as props to the nested <code>NavigableMenu</code> component in the <code>renderContent</code> implementation of the <code>Dropdown</code> component used internally.<br />\nUse this object to modify props available for the <code>NavigableMenu</code> component that are not already exposed in the <code>DropdownMenu</code> component, e.g.: the orientation of the menu set with <code>orientation</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>disableOpenOnArrowDown</code>: <code>boolean</code></h4>\n<p>In some contexts, the arrow down key used to open the dropdown menu might need to be disabled\u2014for example when that key is used to perform another action.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>defaultOpen</code>: <code>boolean</code></h3>\n<p>The open state of the dropdown menu when initially rendered. Use when you do not need to control its open state. It will be overridden by the <code>open</code> prop if it is specified on the component&#8217;s first render.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>open</code>: <code>boolean</code></h3>\n<p>The controlled open state of the dropdown menu. Must be used in conjunction with <code>onToggle</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onToggle</code>: <code>( willOpen: boolean ) =&gt; void</code></h3>\n<p>A callback invoked when the state of the dropdown changes from open to closed and vice versa.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 144,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134458",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134458",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134458/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151157,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134458/revisions/151157"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134458"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

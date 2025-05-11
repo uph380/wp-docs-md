@@ -1,0 +1,91 @@
+{
+    "id": 134431,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-pre-publish-panel/"
+    },
+    "modified": "2024-10-30T16:55:53",
+    "modified_gmt": "2024-10-30T16:55:53",
+    "slug": "plugin-pre-publish-panel",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-pre-publish-panel/",
+    "title": {
+        "rendered": "PluginPrePublishPanel"
+    },
+    "content": {
+        "rendered": "<p>This slot allows for injecting items into the bottom of the pre-publish panel that appears to confirm publishing after the user clicks &#8220;Publish&#8221;.</p>\n<h2>Example</h2>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { PluginPrePublishPanel } from '@wordpress/editor';\n\nconst PluginPrePublishPanelTest = () =&gt; (\n    &lt;PluginPrePublishPanel&gt;\n        &lt;p&gt;Pre Publish Panel&lt;/p&gt;\n    &lt;/PluginPrePublishPanel&gt;\n);\n\nregisterPlugin( 'pre-publish-panel-test', {\n    render: PluginPrePublishPanelTest,\n} );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/plugin-pre-publish-panel.png?ssl=1\" alt=\"Prepublish panel\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 100,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134431",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134431",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134431/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153705,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134431/revisions/153705"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134431"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

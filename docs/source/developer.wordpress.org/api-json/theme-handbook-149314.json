@@ -1,0 +1,97 @@
+{
+    "id": 149314,
+    "date": "2023-11-21T14:36:49",
+    "date_gmt": "2023-11-21T14:36:49",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149314"
+    },
+    "modified": "2023-12-14T21:03:05",
+    "modified_gmt": "2023-12-14T21:03:05",
+    "slug": "reading-this-handbook",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/getting-started/reading-this-handbook/",
+    "title": {
+        "rendered": "Reading This Handbook"
+    },
+    "content": {
+        "rendered": "\n<p>The goal of this handbook is to walk you through the basics of modern WordPress theme development in its early chapters. Then, work through more advanced topics with each chapter that follows.&nbsp;</p>\n\n\n\n<p>The quickest way to learn theme development is to simply read this handbook from beginning to end and follow along with its examples.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Requirements</h2>\n\n\n\n<p>The biggest requirement for building a WordPress theme is a willingness to learn. You are here reading this handbook, so let\u2019s check that one off the list of requirements.</p>\n\n\n\n<p>WordPress theming has changed many times over the years. Today, the pathway for creating one is much lower than it was in the past. You can absolutely create a theme with no coding knowledge. But you will find it much easier to familiarize yourself with a few web languages.&nbsp;</p>\n\n\n\n<p>You will see HTML, CSS, PHP, JSON, and JavaScript within the handbook, so it helps to be able to easily recognize what language you are looking at. HTML and CSS are foundational pieces of the web, so those should be prioritized over others.&nbsp;</p>\n\n\n\n<p>The following are external resources that you can use to learn more, but there are 1,000s of guides and tutorials around the web:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML\">MDN Web Docs: HTML</a></li>\n\n\n\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS\">MDN Web Docs: CSS</a></li>\n\n\n\n<li><a href=\"https://www.php.net/docs.php\">PHP official documentation</a></li>\n\n\n\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON\">MDN Web Docs: JSON</a></li>\n\n\n\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Learn/JavaScript\">MDN Web Docs: JavaScript</a></li>\n</ul>\n\n\n\n<p>You can get pretty far into theme building via the WordPress user interface, at least by modifying and exporting an existing block theme. But you\u2019ll want to pick up a few more skills to build more advanced features, or to truly create a theme from scratch.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Your next steps</h2>\n\n\n\n<h3 class=\"wp-block-heading\">For newcomers</h3>\n\n\n\n<p>It is time to truly embark on your journey into learning theme development. It is an exciting moment, so get ready for an adventure.</p>\n\n\n\n<p><strong>Setting things up: </strong>if this is your first time building a theme, or if you just want a refresher on the basics of theme development, your next stop should be the <a href=\"https://developer.wordpress.org/themes/getting-started/tools-and-setup/\">Tools and Setup</a> page. This will help you set up your development environment and determine which tools you need to start off on the right foot.</p>\n\n\n\n<p><strong>Getting off to a quick start: </strong>once you\u2019re set up, check out the <a href=\"https://developer.wordpress.org/themes/getting-started/quick-start-guide/\">Quick-start guide</a>, which is aimed at giving you a taste of what\u2019s to come. It will walk you through setting up a theme to work with.</p>\n\n\n\n<p><strong>Understanding the basics: </strong>once you have everything set up and running, move onto the <a href=\"https://developer.wordpress.org/themes/core-concepts/\">Core Concepts</a> chapter. There, you will learn the foundational principles behind creating WordPress themes.</p>\n\n\n\n<p>Afterward, just keep working through each chapter of the handbook.</p>\n\n\n\n<h3 class=\"wp-block-heading\">For seasoned theme authors</h3>\n\n\n\n<p>Even if you\u2019ve been creating themes for years, it never hurts to give the full handbook a reading from time to time. It is regularly updated, so there may be new content that you haven\u2019t seen before.</p>\n\n\n\n<p>Feel free to hop around to find the specific topic you need using the handbook\u2019s navigation links. Whatever the case, the Theme Handbook is here to help you discover a solution.</p>\n\n\n\n<p><em>Feeling pretty hardcore? </em>Jump over to the <a href=\"https://developer.wordpress.org/themes/advanced-topics/\">Advanced Topics</a> chapter.&nbsp;</p>\n\n\n\n<p><em>Can\u2019t remember the naming format for a particular template? </em>Find it in the <a href=\"https://developer.wordpress.org/themes/templates/template-hierarchy/\">Template Hierarchy</a> docs.</p>\n\n\n\n<p><em>Need to brush up on <code>theme.json</code>? </em>No problem. Check out the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\">Global Settings and Styles</a> documentation.\u00a0</p>\n\n\n\n<p>You can also find theming tutorials and walk-throughs under the <a href=\"https://developer.wordpress.org/news/category/themes/\">Themes category</a> on the WordPress Developer blog if you can\u2019t find the topic you\u2019re looking for in the handbook.</p>\n\n\n\n<h3 class=\"wp-block-heading\">For classic themes documentation</h3>\n\n\n\n<p>While some of the content in most chapters will apply to classic themes, the docs are primarily geared toward modern block theming. However, there is a dedicated <a href=\"https://developer.wordpress.org/themes/classic-themes/\">Classic Themes</a> chapter if you need to locate documentation on a specific classic feature.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to read code examples</h2>\n\n\n\n<p>Throughout the handbook, you will see code examples, and this section is aimed at helping you understand how to read them.</p>\n\n\n\n<p>The handbook will use a consistent \u201cnamespace\u201d or \u201cprefix\u201d throughout its pages, generally seen as <code>theme_slug</code> or <code>theme-slug</code>.\u00a0 This namespace is meant to be replaced in your theme with one that is unique to it.\u00a0</p>\n\n\n\n<p><em>But how do you know what your namespace is?</em> The most straightforward way is to use your theme\u2019s name. If your theme is titled <strong>Fabled Sunset</strong>, you would convert it to the appropriate format for the use case. For example, it would become <code>fabled_sunset</code> when used in a PHP function name or <code>fabled-sunset</code> as a handle/slug/ID.</p>\n\n\n\n<p>The practice of \u201cnamespacing\u201d code is decades old. Essentially, a namespace is an identifier for a group of objects created so that they do not conflict with objects in other namespaces.</p>\n\n\n\n<p>WordPress has a vast ecosystem of plugins and themes. Each needs a way to distinguish itself from the others. Without unique namespaces, it would get a bit chaotic and errors would arise.&nbsp;</p>\n\n\n\n<p>For example, if your theme declared a custom function named <code>get_post()</code> instead of <code>fabled_sunset_get_post()</code>, your site would fail with a fatal error because WordPress already has a function with this name:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1760\" height=\"824\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?resize=1760%2C824&#038;ssl=1\" alt=\"Screenshot of an error message stating that you cannot redeclare the get_post() function, which was already declared.\" class=\"wp-image-149315\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?w=1760&amp;ssl=1 1760w, https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?resize=300%2C140&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?resize=1024%2C479&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?resize=768%2C360&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/fatal-error.jpg?resize=1536%2C719&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>Avoiding these types of errors is the primary reason the handbook will include namespaced or prefixed code examples.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Namespacing examples</h3>\n\n\n\n<p>Using the fictional theme name <strong>Fabled Sunset</strong>, let\u2019s look at some examples of formatting your namespace. Don\u2019t worry if you don\u2019t understand these yet or if you do not know anything about code. This is only meant to help you read the handbook.</p>\n\n\n\n<p><strong>Usage in script and style handles:</strong></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n// theme-slug-editor becomes:\nwp_enqueue_script( 'fabled-sunset-editor', ... );\n\n// theme-slug-main becomes:\nwp_enqueue_style( 'fabled-sunset-main', ... );</code></pre>\n\n\n\n<p><strong>Usage in text domains (used for translations):</strong></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n// theme-slug becomes:\nesc_html_e( 'Hello, world!', 'fabled-sunset' );</code></pre>\n\n\n\n<p><strong>Usage in PHP Functions:</strong></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n// theme_slug_func() becomes:\nfunction fabled_sunset_func() {\n\t// ...\n}</code></pre>\n\n\n\n<p><strong>Usage in PHP classes:</strong></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n// Theme_Slug_Class() becomes:\nclass Fabled_Sunset_Class() {\n\t// ...\n}</code></pre>\n\n\n\n<p>As you read through the handbook, you will learn when to use each case. For now, just know that you should always replace the example namespace with one that is unique to your project.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>The WordPress Coding Standards <a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#namespace-declarations\">encourages the use of PHP\u2019s built-in namespaces</a>. The same guideline would apply: use your theme\u2019s name to create your namespace. In this case, the namespace for the example theme would be <code>Fabled_Sunset</code> or <code>FabledSunset</code>. The Theme Handbook uses a prefixed style for PHP function and class names, as shown above. This is primarily because it is simpler for showing one-off code examples.</p></div></div>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5794,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149314",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149314",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149314/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149316,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149314/revisions/149316"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5794"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149314"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

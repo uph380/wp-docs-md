@@ -1,0 +1,85 @@
+{
+    "id": 156763,
+    "date": "2025-02-20T08:04:06",
+    "date_gmt": "2025-02-20T08:04:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/concepts/"
+    },
+    "modified": "2025-02-21T04:16:05",
+    "modified_gmt": "2025-02-21T04:16:05",
+    "slug": "concepts",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/concepts/",
+    "title": {
+        "rendered": "Core Concepts"
+    },
+    "content": {
+        "rendered": "<p>This section covers the fundamental concepts and architecture of Secure Custom Fields.</p>\n<h2>In This Section</h2>\n<ul>\n<li><a href=\"architecture\">Architecture</a> &#8211; Understanding SCF&#8217;s internal structure</li>\n<li><a href=\"security\">Security</a> &#8211; Security principles and best practices</li>\n</ul>\n<h2>Overview</h2>\n<p>Secure Custom Fields is built on several core concepts that ensure security, flexibility, and extensibility. Understanding these concepts will help you make the most of the plugin.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156763",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156763",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156763/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157126,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156763/revisions/157126"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156763"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

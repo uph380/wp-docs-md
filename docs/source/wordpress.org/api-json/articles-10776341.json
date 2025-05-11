@@ -1,0 +1,109 @@
+{
+    "id": 10776341,
+    "date": "2018-10-12T22:28:58",
+    "date_gmt": "2018-10-12T22:28:58",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10776341"
+    },
+    "modified": "2023-01-12T14:52:06",
+    "modified_gmt": "2023-01-12T14:52:06",
+    "slug": "faq-installation",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/faq-installation/",
+    "title": {
+        "rendered": "FAQ Installation"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Installation</h2>\n\n\n\n<h3 class=\"wp-block-heading\">How do I install WordPress?</h3>\n\n\n\n<p>Under most circumstances, installing WordPress is a very simple process and takes less than five minutes to complete. Many web hosts offer tools to automatically install WordPress for you. If you prefer a manual installation you can take a look at the <a href=\"/support/article/how-to-install-wordpress/\">Installation Guide</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How do I find a good host for my WordPress website?</h3>\n\n\n\n<p>Any host that supports the <a href=\"https://wordpress.org/about/requirements/\">requirements for WordPress</a> can be used for hosting your website. If you&#8217;re not sure if your host can run WordPress the best thing to do would be to contact them and ask if they meet the requirements for running WordPress. You can find a list with some good hosts <a href=\"https://wordpress.org/hosting/\">here</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How do I install using cPanel / cPanel X?</h3>\n\n\n\n<p>If you want to perform a manual installation using cPanel you can follow the guide on <a href=\"/support/article/using-cpanel/\">using cPanel</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How do I configure the wp-config.php file?</h3>\n\n\n\n<p>The wp-config.php file is one of the most important files of your website. It&#8217;s located in the root of your WordPress installation and contains most of the website&#8217;s configuration details. Editing this file can be done in any plain-text editor. Usually this isn&#8217;t necessary unless you&#8217;re installing WordPress manually.<br />See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/editing-wp-config-php/\">Editing wp-config.php</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">What are the requirements for installing WordPress?</h3>\n\n\n\n<p>The current requirements for running WordPress can be found on the <a href=\"https://wordpress.org/about/requirements/\">requirements page at WordPress.org</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How do I get WordPress to use my language?</h3>\n\n\n\n<p>If you want to change the language that WordPress is using, you can select your preferred language in the <a href=\"/support/article/administration-screens/\">Administration Screen</a>. To do this you can go the <a href=\"/support/article/administration-screens/#settings-configuration-settings\">Settings</a> &gt; <a href=\"/support/article/settings-general-screen/\">General</a>, and choose your preferred language from Site Language dropdown menu.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Do I need to create a database?</h3>\n\n\n\n<p>Yes. WordPress requires access to a <a href=\"https://www.mysql.com/\">MySQL </a> or <a href=\"https://mariadb.org/\">MariaDB</a> database to store information. So you&#8217;ll need a database.<br />\nYou should create a new database if:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>You have not already created one on the server</li><li>Your generous host offers you more than one database, and you wish to have a separate database for the website you are setting up.</li></ol>\n\n\n\n<p>It is not essential to create a new database for each WordPress installation.</p>\n\n\n\n<ul class=\"wp-block-list\"><li>If you are using the same database for multiple WordPress installations, take care to edit the <a href=\"/advanced-topics/editing-wp-config-php/\">wp-</a><a href=\"/support/article/editing-wp-config-php/\">config.php</a> file ensuring that each installation has a unique database prefix.</li><li>If you are setting up a new database for a new website, edit <a href=\"/advanced-topics/editing-wp-config-php/\">wp-</a><a href=\"/support/article/editing-wp-config-php/\">config.php</a>, and be sure to get the database name, and other details correct.</li></ul>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/how-to-install-wordpress/#detailed-instructions\">Installation, Detailed Instructions</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Why is my website showing a 403 Error?</h3>\n\n\n\n<p>If the following (or similar) message appears after uploading your website a couple of things can be happening:</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\"><p>You are not authorized to view this page. You might not have permission to view this directory or page using the credentials you  supplied. If you believe you should be able  to view this directory or page, please try  to contact the Web site by using any e-mail  address or phone number that may be listed  on the personal.fredsmith.com home page. You can click Search to look for information on the Internet. HTTP Error 403 &#8211; Forbidden</p></blockquote>\n\n\n\n<p>If your account is hosted on a Apache based server the following things can be happening:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>server permissions aren&#8217;t allowing the request from being executed</li><li>your index.php isn&#8217;t configured to be an allowed directory index</li><li>the underlying filesystem isn&#8217;t allowing Apache access to the files requested</li></ul>\n\n\n\n<p>If you have checked all these settings and everything seems to be set up correctly you&#8217;d best contact your hosting provider for support.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Can I rename the WordPress folder?</h3>\n\n\n\n<p>If you have <strong>not already installed</strong> WordPress, you can rename the folder with the WordPress files, before, or even after uploading the files.</p>\n\n\n\n<p>If you have WordPress <strong>installed already</strong>, and you want to rename the folder, login to your website as an administrator and change the following settings in <a href=\"/support/article/administration-screens/#settings-configuration-settings\">Settings</a> &gt; <a href=\"/support/article/settings-general-screen/\">General</a>:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>WordPress Address (URL):</li><li>Site Address (URL):</li></ul>\n\n\n\n<p>Once you have done this, you can rename the directory or folder with the WordPress files in it.</p>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/moving-wordpress/\">Moving WordPress</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Why is my upload directory \u201cC:apachehtdocswordpress\u201d?</h3>\n\n\n\n<p>When you specified the upload path, you used backslashes.</p>\n\n\n\n<p>Use forward slashes \u201c/\u201d to specify the path to the directory.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Can I install WordPress on Windows Server?</h3>\n\n\n\n<p>Yes you can! As long as you have PHP installed you shouldn&#8217;t have any trouble getting started with WordPress. Both Apache and Microsoft IIS are capable of serving your WordPress website.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Advanced Installation</h2>\n\n\n\n<h3 class=\"wp-block-heading\">How do I install WordPress with the files in different directories?</h3>\n\n\n\n<p>This also answers the questions:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>How can I have my blog in one folder but my index at root?</li><li>How can I have people see my blog at www.example.com but keep all the files in <code>www.example.com/wordpress</code>?</li><li>How do I install WordPress in a different directory than where the index.php resides?</li></ul>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/giving-wordpress-its-own-directory/\">Giving WordPress Its Own Directory</a></li><li><a href=\"/support/article/moving-wordpress/\">Moving WordPress</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">How can I hide my blog from people?</h3>\n\n\n\n<p>Whether you are testing a new version of WordPress, setting up a new blog or have some other reason to limit access, the following information may help you keep unwanted visitors out.</p>\n\n\n\n<p><strong>Apache</strong></p>\n\n\n\n<p>There is no guaranteed way to do this. You can use the <strong>.htaccess</strong> file (which also contains your permalink code) to check for certain IP addresses and prevent them from viewing your site. This will only stop the IP address, not the person, so if they have access to an allowed IP address, they can get to your page. One tutorial for this is located at <a href=\"http://www.clockwatchers.com/htaccess_intro.html\">Clockwatchers.com</a></p>\n\n\n\n<p>An <strong>.htaccess</strong> file can also be used to prevent others from &#8220;hot-linking&#8221; to your images (bandwidth theft) or to set up a password protected blog.</p>\n\n\n\n<p><strong>Apache Basic Authentication</strong></p>\n\n\n\n<p>To require a password to access your site using <strong>.htaccess</strong> and <strong>.htpasswd</strong>.</p>\n\n\n\n<p>Tools that help you create the files necessary to password protect your site: <a href=\"http://www.htaccesstools.com/htpasswd-generator/\">Htpasswd generator</a>, <a href=\"http://makeawebsitehub.com/htaccess-generator/\">htaccess Tools</a> and <a href=\"http://www.clockwatchers.com/htaccess_tool.html\"> Clockwatchers.com .htaccess And .htpasswd Tools</a></p>\n\n\n\n<p><em>Note:</em> When your site is accessed the password is encoded weakly using Base64 and can be easily intercepted and decoded.</p>\n\n\n\n<p><strong>Search Engines: Spiders and Bots</strong></p>\n\n\n\n<p>Search Engines will index your site and cache your content. If you do not want this to happen, you can go to the Settings &gt; Reading from Administration Screen, and Click Check the &#8216;Discourage search engines from indexing this site&#8217; box to ask search engines not to index this site.<br />\nNote: It is up to search engines to honor your request.<br />\nYou may use a file called <strong>robots.txt</strong>. More details can be found at <a href=\"http://www.affilorama.com/site-building/robots-txt\"> Affilorama.com</a> and elsewhere on the web.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How can I solve login problems?</h3>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/login-trouble/\">Login Trouble</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">How can I get WordPress working when I&#8217;m behind a reverse proxy?</h3>\n\n\n\n<p>In some setups, it&#8217;s necessary to use something other than the HTTP_HOST header to generate URLs. Reverse proxies take the original request and send it to one of a group of servers. To do so, it overwrites the HTTP_HOST with the internal server&#8217;s domain. When that domain is not publicly accessible, at best your images might not load correctly, at worst, you&#8217;ll be stuck in a redirect loop. To fix this, figure out which header has the right domain name and add a line to your wp-config.php file that overwrites HTTP_HOST with the correct hostname.</p>\n\n\n\n<p>If you need to use SERVER_NAME, add this line to wp-config.php:</p>\n\n\n<pre class=\"brush: php; title: ; notranslate\" title=\"\">$_SERVER&#x5B;&#039;HTTP_HOST&#039;] = $_SERVER&#x5B;&#039;SERVER_NAME&#039;];</pre>\n\n\n\n<p>If you need to use HTTP_X_FORWARDED_HOST, add this line to wp-config.php:</p>\n\n\n<pre class=\"brush: php; title: ; notranslate\" title=\"\">$_SERVER&#x5B;&#039;HTTP_HOST&#039;] = $_SERVER&#x5B;&#039;HTTP_X_FORWARDED_HOST&#039;];</pre>\n\n\n\n<h2 class=\"wp-block-heading\">FTP</h2>\n\n\n\n<h3 class=\"wp-block-heading\">How do I FTP?</h3>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/using-filezilla/\">Using FileZilla</a> and <a href=\"/support/article/ftp-clients/\">FTP Clients</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">How do I use FileZilla?</h3>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/using-filezilla/\">Using FileZilla</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">How do I upload the files and folders?</h3>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/documentation/article/using-filezilla/\">Using FileZilla</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">How do I CHMOD files?</h3>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/documentation/article/changing-file-permissions/\">Changing File Permissions</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">MySQL or MariaDB</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Do I really need MySQL/MariaDB?</h3>\n\n\n\n<p>Yes. You certainly need the <a href=\"/support/article/glossary/#mysql\">MySQL</a> or <a href=\"/support/article/glossary/#mariadb\">MariaDB</a> database servers to power your WordPress blog. In fact, WordPress only supports the <a href=\"/support/article/glossary/#mysql\">MySQL</a> and <a href=\"/support/article/glossary/#mariadb\">MariaDB</a> database servers.<br />\nSee also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/about/requirements/\">Requirements for WordPress</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Can I use a database other than MySQL/MariaDB?</h3>\n\n\n\n<p>No. Other databases are not supported at the moment.</p>\n\n\n\n<p>There are several other excellent database storage engines, such as PostgreSQL and SQLite that WordPress is interested in supporting in the future. Supporting multiple databases is trickier than it sounds and is not under active development, although there are plenty of architectural discussions about the best approach to take. Approaches for increasing the number of supported databases are discussed at <a href=\"https://codex.wordpress.org/Using Alternative Databases\">Using Alternative Databases</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Why does WordPress use MySQL/MariaDB?</h3>\n\n\n\n<p><a href=\"/support/article/glossary/#mysql\">MySQL</a> and <a href=\"/support/article/glossary/#mariadb\">MariaDB</a> are extremely fast. It is also the most widely available database server in the world. Open-source and free, <a href=\"/support/article/glossary/#mysql\">MySQL</a> and <a href=\"/support/article/glossary/#mariadb\">MariaDB</a> are supported by thousands of low-cost <a href=\"/support/article/glossary/#linux\">Linux</a> (and Windows!) hosts, which means a very low barrier to entry for anyone wanting to start a WordPress (or database-driven) website. <a href=\"http://www.mysql.com/documentation/\">MySQL&#8217;s documentation</a> is useful, cogent and thorough. (Note: it may be intimidating if you are new to all this.) Add to all that the fact that users are able to directly manipulate <a href=\"/support/article/glossary/#mysql\">MySQL</a> and <a href=\"/support/article/glossary/#mariadb\">MariaDB</a> with <a href=\"/support/article/phpmyadmin/\">phpMyAdmin</a>, developed expressly for that purpose, and it is obvious that <a href=\"/support/article/glossary/#mysql\">MySQL</a> and <a href=\"/support/article/glossary/#mariadb\">MariaDB</a> are the best choice.</p>\n\n\n\n<h2 class=\"wp-block-heading\">PHP</h2>\n\n\n\n<h3 class=\"wp-block-heading\">What is phpMyAdmin?</h3>\n\n\n\n<p>phpMyAdmin is a tool written in PHP intended to handle the administration of MySQL/MariaDB over the Web.</p>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/phpmyadmin/\">phpMyAdmin</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Do I need to know PHP to use WordPress ?</h3>\n\n\n\n<p>No. The only time you would modify your WordPress blog with <a href=\"/support/article/glossary/#php\">PHP</a> would be when integrating some of the <a href=\"/support/article/plugins/\">plugins</a>. In most cases clear instructions are given within a text file that accompanies the <a href=\"/support/article/plugins/\">plugin</a>. Other than that, you will not be changing any of the PHP files.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Will WordPress run in PHP Safe Mode?</h3>\n\n\n\n<p>Most definitely! There are no known issues with any version of WordPress when <a href=\"/support/article/glossary/#php\">PHP</a> is running in Safe Mode.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Do I really need PHP?</h3>\n\n\n\n<p>Yes. You certainly need <a href=\"/support/article/glossary/#php\">PHP</a> to power your WordPress blog. <a href=\"/support/article/glossary/#php\">PHP</a> is the scripting language that drives all of WordPress, and without <a href=\"/support/article/glossary/#php\">PHP</a>, your server will not be able to interpret the pages that create your weblog. For supported PHP version, refer <a href=\"https://wordpress.org/about/requirements/\">Requirements for WordPress</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How do I find out which version of PHP I have?</h3>\n\n\n\n<p>To get information about your server, you can use the <a href=\"http://php.net/phpinfo\"><em>phpinfo()</em></a> function. This will also give you information about your <a href=\"/support/article/glossary/#apache\">Apache</a> and <a href=\"/support/article/glossary/#php\">PHP</a> version and <a href=\"/support/article/glossary/#mod_rewrite\"> mod_rewrite</a>.</p>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/documentation/article/finding-server-info/\">Finding Server Info</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Importing</h2>\n\n\n\n<h3 class=\"wp-block-heading\">How can I import posts from my current weblog which uses a different blogging tool such as b2, Movable Type MT, Blogger, etc.?</h3>\n\n\n\n<p>See also:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/importing-content/\">Importing Content</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Installation How do I install WordPress? Under most circumstances, installing WordPress is a very simple process and takes less than five minutes to complete. Many web hosts offer tools to automatically install WordPress for you. If you prefer a manual installation you can take a look at the Installation Guide. How do I find a [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        77,
+        74
+    ],
+    "class_list": [
+        "post-10776341",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-faqs",
+        "category-wordpress-overview"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10776341",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10776341"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10776341/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355187,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10776341/revisions/16355187"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10776341"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10776341"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

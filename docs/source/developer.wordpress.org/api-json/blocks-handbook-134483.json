@@ -1,0 +1,91 @@
+{
+    "id": 134483,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-item/"
+    },
+    "modified": "2024-10-30T16:55:41",
+    "modified_gmt": "2024-10-30T16:55:41",
+    "slug": "menu-item",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-item/",
+    "title": {
+        "rendered": "MenuItem"
+    },
+    "content": {
+        "rendered": "<p>MenuItem is a component which renders a button intended to be used in combination with the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/dropdown-menu/\">DropdownMenu component</a>.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { MenuItem } from '@wordpress/components';\n\nconst MyMenuItem = () =&gt; {\n    const [ isActive, setIsActive ] = useState( true );\n\n    return (\n        &lt;MenuItem\n            icon={ isActive ? 'yes' : 'no' }\n            isSelected={ isActive }\n            onClick={ () =&gt; setIsActive( ( state ) =&gt; ! state ) }\n        &gt;\n            Toggle\n        &lt;/MenuItem&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<p>MenuItem supports the following props. Any additional props are passed through to the underlying <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/\">Button</a>.</p>\n<h3><code>children</code></h3>\n<ul>\n<li>Type: <code>Element</code></li>\n<li>Required: No</li>\n</ul>\n<p>Element to render as child of button.</p>\n<h3><code>disabled</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Refer to documentation for <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/#disabled-boolean\">Button&#8217;s <code>disabled</code> prop</a>.</p>\n<h3><code>info</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Text to use as description for button text.</p>\n<p>Refer to documentation for <a href=\"#label\"><code>label</code></a>.</p>\n<h3><code>icon</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Refer to documentation for <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/icon-button/#icon\">Button&#8217;s <code>icon</code> prop</a>.</p>\n<h3><code>iconPosition</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>'right'</code></li>\n</ul>\n<p>Determines where to display the provided <code>icon</code>.</p>\n<h3><code>isSelected</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Whether or not the menu item is currently selected. <code>isSelected</code> is only taken into account when the <code>role</code> prop is either <code>\"menuitemcheckbox\"</code> or <code>\"menuitemradio\"</code>.</p>\n<h3><code>shortcut</code></h3>\n<ul>\n<li>Type: <code>string</code> or <code>object</code></li>\n<li>Required: No</li>\n</ul>\n<p>If shortcut is a string, it is expecting the display text. If shortcut is an object, it will accept the properties of <code>display</code> (string) and <code>ariaLabel</code> (string).</p>\n<h3><code>role</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Require: No</li>\n<li>Default: <code>'menuitem'</code></li>\n</ul>\n<p><a href=\"https://www.w3.org/TR/wai-aria-1.1/#aria-checked\">Aria Spec</a>. If you need to have selectable menu items use menuitemradio for single select, and menuitemcheckbox for multiselect.</p>\n<h3><code>suffix</code></h3>\n<ul>\n<li>Type: <code>Element</code></li>\n<li>Required: No</li>\n</ul>\n<p>Allows for markup other than icons or shortcuts to be added to the menu item.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 179,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134483",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134483",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134483/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151851,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134483/revisions/151851"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134483"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 11157,
+    "date": "2014-10-19T18:08:57",
+    "date_gmt": "2014-10-19T18:08:57",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11157"
+    },
+    "modified": "2023-12-14T20:53:37",
+    "modified_gmt": "2023-12-14T20:53:37",
+    "slug": "cron",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/cron/",
+    "title": {
+        "rendered": "Cron"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What is WP-Cron</h2>\n\n\n\n<p>WP-Cron is how WordPress handles scheduling time-based tasks in WordPress. Several WordPress core features, such as checking for updates and publishing scheduled post, utilize WP-Cron. The &#8220;Cron&#8221; part of the name comes from the cron time-based task scheduling system that is available on UNIX systems.</p>\n\n\n\n<p>WP-Cron works by checking, on every page load, a list of scheduled tasks to see what needs to be run. Any tasks due to run will be called during that page load. </p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">WP-Cron does not run constantly as the system cron does; it is only triggered on page load.</div></div>\n\n\n\n\n<p>Scheduling errors could occur if you schedule a task for 2:00PM and no page loads\u00a0occur until 5:00PM.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why use WP-Cron</h2>\n\n\n\n<ul class=\"wp-block-list\"><li>WordPress core and many plugins need a scheduling system to perform time-based tasks. However, many\u00a0hosting services are shared and do not provide\u00a0access to the system scheduler.</li><li>Using the WordPress API is a simpler method for setting scheduled tasks than going outside of WordPress to the system scheduler.</li><li>With the system scheduler, if the time passes and the task did not run, it will not be re-attempted. With WP-Cron, all scheduled tasks are put into a queue and will run at the next opportunity (meaning the next page load). So while you can&#8217;t be 100% sure <em>when</em> your task will run, you can be 100% sure that it will run <em>eventually</em>.</li></ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 16,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11157",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 127240,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157/revisions/127240"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11157"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

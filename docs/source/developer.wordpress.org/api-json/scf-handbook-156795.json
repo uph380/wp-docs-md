@@ -1,0 +1,91 @@
+{
+    "id": 156795,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/flexible-content/"
+    },
+    "modified": "2025-02-21T04:17:58",
+    "modified_gmt": "2025-02-21T04:17:58",
+    "slug": "flexible-content",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/flexible-content/",
+    "title": {
+        "rendered": "Flexible Content Field"
+    },
+    "content": {
+        "rendered": "<p>The Flexible Content field provides a flexible content builder interface. It allows users to create dynamic layouts by selecting from predefined content block types and arranging them in any order.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Dynamic layout builder</li>\n<li>Multiple layout types</li>\n<li>Drag and drop ordering</li>\n<li>Nested content structures</li>\n<li>Customizable templates</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Layouts &#8211; Define available content block types</li>\n<li>Button Label &#8211; Customize the &#8220;Add Row&#8221; text</li>\n<li>Min/Max Layouts &#8211; Limit number of blocks</li>\n<li>Layout Settings &#8211; Configure each layout type</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156795",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156795",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156795/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156924,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156795/revisions/156924"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156795"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

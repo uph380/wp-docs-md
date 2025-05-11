@@ -1,0 +1,85 @@
+{
+    "id": 134616,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/"
+    },
+    "modified": "2025-01-07T18:34:11",
+    "modified_gmt": "2025-01-07T18:34:11",
+    "slug": "explanations",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/",
+    "title": {
+        "rendered": "Explanations"
+    },
+    "content": {
+        "rendered": "<h2><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/\">Architecture</a></h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/\">Key Concepts</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/data-flow/\">Data Format And Data Flow</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/modularity/\">Modularity and WordPress Packages</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/performance/\">Block Editor Performance</a>.</li>\n<li>What are the decision decisions behind the Data Module?</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/automated-testing/\">Why is Puppeteer the tool of choice for end-to-end tests?</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/modularity/#whats-the-difference-between-the-different-editor-packages-whats-the-purpose-of-each-package\">What\u2019s the difference between the different editor packages? What\u2019s the purpose of each package?</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/full-site-editing-templates/\">Template and template parts flows</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 353,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134616",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134616",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134616/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153920,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134616/revisions/153920"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134616"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

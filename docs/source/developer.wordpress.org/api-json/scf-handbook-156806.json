@@ -1,0 +1,91 @@
+{
+    "id": 156806,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/image/image-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:55",
+    "modified_gmt": "2025-02-21T04:17:55",
+    "slug": "image-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/image/image-tutorial/",
+    "title": {
+        "rendered": "Using the Image Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add an Image field</li>\n<li>Configure options:\n<ul>\n<li>Set preview size</li>\n<li>Choose library type</li>\n<li>Configure size limits</li>\n<li>Set return format</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Content Images\n<ul>\n<li>Featured images</li>\n<li>Article photos</li>\n<li>Profile pictures</li>\n</ul>\n</li>\n<li>Design Elements\n<ul>\n<li>Background images</li>\n<li>Logo uploads</li>\n<li>Banner images</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Set appropriate size limits</li>\n<li>Consider image dimensions</li>\n<li>Use meaningful preview sizes</li>\n<li>Plan for responsive display</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156805,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156806",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156806",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156806/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156913,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156806/revisions/156913"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156805"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156806"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

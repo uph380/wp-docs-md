@@ -1,0 +1,91 @@
+{
+    "id": 145015,
+    "date": "2023-03-02T02:55:01",
+    "date_gmt": "2023-03-02T02:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/migration/"
+    },
+    "modified": "2025-01-07T18:34:07",
+    "modified_gmt": "2025-01-07T18:34:07",
+    "slug": "migration",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/migration/",
+    "title": {
+        "rendered": "Migration guide"
+    },
+    "content": {
+        "rendered": "<p>This document outlines a typical flow of migrating a Jest + Puppeteer test to Playwright. Note that the migration process is also a good opportunity to refactor or rewrite parts of the tests. Please read the <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/docs/contributors/code/e2e/README.md#best-practices\">best practices</a> guide before starting the migration.</p>\n<h2>Migration steps for tests</h2>\n<ol>\n<li>Choose a test suite to migrate in <code>packages/e2e-tests/specs</code>, rename <code>.test.js</code> into <code>.spec.js</code> and put it in the same folder structure inside <code>test/e2e/specs</code>.</li>\n<li>Require the test helpers from <code>@wordpress/e2e-test-utils-playwright</code>:<br />\n<code>js<br />\nconst { test, expect } = require( '@wordpress/e2e-test-utils-playwright' );</code></li>\n<li>Change all occurrences of <code>describe</code>, <code>beforeAll</code>, <code>beforeEach</code>, <code>afterEach</code> and <code>afterAll</code> with the <code>test.</code> prefix. For instance, <code>describe</code> turns into <code>test.describe</code>.</li>\n<li>Use the <a href=\"https://playwright.dev/docs/test-fixtures\">fixtures API</a> to require previously global variables like <code>page</code> and <code>browser</code>.</li>\n<li>Delete all the imports of <code>e2e-test-utils</code>. Instead, use the fixtures API to directly get the <code>admin</code>, <code>editor</code>, <code>pageUtils</code> and <code>requestUtils</code>. (However, <code>admin</code>, <code>editor</code> and <code>pageUtils</code> are not allowed in <code>beforeAll</code> and <code>afterAll</code>, rewrite them using <code>requestUtils</code> instead.)</li>\n<li>If there&#8217;s a missing util, try to inline the operations directly in the test if there are only a few steps. If you think it deserves to be implemented as a test util, then follow the <a href=\"#migration-steps-for-test-utils\">guide</a> below.</li>\n<li>Manually migrate other details in the tests following the proposed <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/docs/contributors/code/e2e/README.md#best-practices\">best practices</a>. Note that even though the differences in the API of Playwright and Puppeteer are similar, some manual changes are still required.</li>\n</ol>\n<h2>Migration steps for test utils</h2>\n<p>Before migrating a test utility function, think twice about whether it&#8217;s necessary. Playwright offers a lot of readable and powerful APIs which make a lot of the utils obsolete. Try implementing the same thing inline directly in the test first. Only follow the below guide if that doesn&#8217;t work for you. Some examples of utils that deserve to be implemented in the <code>e2e-test-utils-playwright</code> package include complex browser APIs (like <code>pageUtils.dragFiles</code> and <code>pageUtils.pressKeys</code>) and APIs that set states (<code>requestUtils.*</code>).</p>\n<div class=\"callout callout-info\">\nThe <code>e2e-test-utils-playwright</code> package is not meant to be a drop-in replacement of the Jest + Puppeteer&#8217;s <code>e2e-test-utils</code> package. Some utils are only created to ease the migration process, but they are not necessarily required.\n</div>\n<p>Playwright utilities are organized a little differently from those in the <code>e2e-test-utils</code> package. The <code>e2e-test-utils-playwright</code> package has the following folders that utils are divided up into:<br />\n&#8211; <code>admin</code> &#8211; Utilities related to WordPress admin or WordPress admin&#8217;s user interface (e.g. <code>visitAdminPage</code>).<br />\n&#8211; <code>editor</code> &#8211; Utilities for the block editor (e.g. <code>clickBlockToolbarButton</code>).<br />\n&#8211; <code>pageUtils</code> &#8211; General utilities for interacting with the browser (e.g. <code>pressKeys</code>).<br />\n&#8211; <code>requestUtils</code> &#8211; Utilities for making REST API requests (e.g. <code>activatePlugin</code>). These utilities are used for setup and teardown of tests.</p>\n<ol>\n<li>Copy the existing file in <code>e2e-test-utils</code> and paste it in the <code>admin</code>, <code>editor</code>, <code>page</code> or <code>request</code> folder in <code>e2e-test-utils-playwright</code> depending on the type of util.</li>\n<li>Update any parts of the util that need to be rewritten:\n<ul>\n<li>The <code>page</code> and <code>browser</code> variables are available in <code>admin</code>, <code>editor</code> and <code>pageUtils</code> as <code>this.page</code> and <code>this.browser</code>.</li>\n<li>All the other utils in the same class are available in <code>this</code> and bound to the same instance. You can remove any <code>import</code> statements and use <code>this</code> to access them.</li>\n<li>Consider updating the util to use TypeScript if you&#8217;re comfortable doing so.</li>\n</ul>\n</li>\n<li>Import the newly migrated util in <code>index.ts</code> and put it inside the <code>Admin</code>/<code>Editor</code>/<code>PageUtils</code>/<code>RequestUtils</code> class as an instance field.</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 145014,
+    "menu_order": 375,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145015",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145015",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145015/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151669,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145015/revisions/151669"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145014"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145015"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

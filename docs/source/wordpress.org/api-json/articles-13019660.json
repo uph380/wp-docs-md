@@ -1,0 +1,109 @@
+{
+    "id": 13019660,
+    "date": "2020-06-25T19:16:20",
+    "date_gmt": "2020-06-25T19:16:20",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13019660"
+    },
+    "modified": "2024-06-06T17:19:16",
+    "modified_gmt": "2024-06-06T17:19:16",
+    "slug": "kickstarter-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/kickstarter-embed/",
+    "title": {
+        "rendered": "Kickstarter embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the Kickstarter Embed block, you can embed Kickstarter projects into your posts and pages. You don\u2019t need a Kickstarter account to be able to embed projects.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Embedded Kickstarter Project:</strong></p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/10/Kickstarter-Embed-Block-HelpHub-Oct-2022.mp4\"></video></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to Embed Kickstarter Projects:</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><strong>Find the Project you want to embed on Kickstarter.com, and click &#8220;Share this project&#8221;</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/190143517-e71e8c26-d3b9-4f58-a0af-1076185e813b-1024x476.png\" alt=\"Finding the Share this project option for a Kickstarter project.\" class=\"wp-image-16143478\" style=\"width:362px;height:168px\" width=\"362\" height=\"168\" srcset=\"https://wordpress.org/documentation/files/2022/10/190143517-e71e8c26-d3b9-4f58-a0af-1076185e813b-1024x476.png 1024w, https://wordpress.org/documentation/files/2022/10/190143517-e71e8c26-d3b9-4f58-a0af-1076185e813b-300x140.png 300w, https://wordpress.org/documentation/files/2022/10/190143517-e71e8c26-d3b9-4f58-a0af-1076185e813b-768x357.png 768w, https://wordpress.org/documentation/files/2022/10/190143517-e71e8c26-d3b9-4f58-a0af-1076185e813b.png 1301w\" sizes=\"auto, (max-width: 362px) 100vw, 362px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li><strong>Click the &#8220;Embed&#8221; link to copy the URL</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"427\" src=\"https://wordpress.org/documentation/files/2022/10/190144113-e751fd55-ec34-4912-b2a0-979edb053d91-1024x427.png\" alt=\"Finding the Embed option for a Kickstarter project.\" class=\"wp-image-16143651\" srcset=\"https://wordpress.org/documentation/files/2022/10/190144113-e751fd55-ec34-4912-b2a0-979edb053d91-1024x427.png 1024w, https://wordpress.org/documentation/files/2022/10/190144113-e751fd55-ec34-4912-b2a0-979edb053d91-300x125.png 300w, https://wordpress.org/documentation/files/2022/10/190144113-e751fd55-ec34-4912-b2a0-979edb053d91-768x320.png 768w, https://wordpress.org/documentation/files/2022/10/190144113-e751fd55-ec34-4912-b2a0-979edb053d91.png 1439w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li><strong>Find the &#8220;Project short link&#8221; and copy the URL</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"899\" height=\"715\" src=\"https://wordpress.org/documentation/files/2022/10/190144482-7124d0a9-5404-4767-95a8-fc7ccc7f26bd.png\" alt=\"Finding the Project short link for a Kickstarter project.\" class=\"wp-image-16143475\" srcset=\"https://wordpress.org/documentation/files/2022/10/190144482-7124d0a9-5404-4767-95a8-fc7ccc7f26bd.png 899w, https://wordpress.org/documentation/files/2022/10/190144482-7124d0a9-5404-4767-95a8-fc7ccc7f26bd-300x239.png 300w, https://wordpress.org/documentation/files/2022/10/190144482-7124d0a9-5404-4767-95a8-fc7ccc7f26bd-768x611.png 768w\" sizes=\"auto, (max-width: 899px) 100vw, 899px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li><strong>Add a Kickstarter Embed Block to your post/page</strong><br><br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/190140940-575488eb-ba0e-466d-9ad8-88c7277f4fa4.png\" alt=\"Kickstarter option in the WordPress block list.\" class=\"wp-image-16143654\" style=\"width:303px;height:656px\" width=\"303\" height=\"656\" srcset=\"https://wordpress.org/documentation/files/2022/10/190140940-575488eb-ba0e-466d-9ad8-88c7277f4fa4.png 384w, https://wordpress.org/documentation/files/2022/10/190140940-575488eb-ba0e-466d-9ad8-88c7277f4fa4-139x300.png 139w\" sizes=\"auto, (max-width: 303px) 100vw, 303px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li><strong>Paste the Kickstarter Project link from step 3</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"681\" height=\"395\" src=\"https://wordpress.org/documentation/files/2020/08/kickstarter-embed-block-with-project-link-v5.5.png\" alt=\"Kickstarter URL option for the Kickstarter Embed block.\" class=\"wp-image-13269904\" srcset=\"https://wordpress.org/documentation/files/2020/08/kickstarter-embed-block-with-project-link-v5.5.png 681w, https://wordpress.org/documentation/files/2020/08/kickstarter-embed-block-with-project-link-v5.5-300x174.png 300w\" sizes=\"auto, (max-width: 681px) 100vw, 681px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"6\">\n<li><strong>Click the \u201cEmbed\u201d button</strong></li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1012\" height=\"664\" src=\"https://wordpress.org/documentation/files/2022/10/190145964-784eeec4-6a0f-4942-a90c-94e86a41c02b.png\" alt=\"Embed preview for the Kickstarter embed block.\" class=\"wp-image-16143659\" srcset=\"https://wordpress.org/documentation/files/2022/10/190145964-784eeec4-6a0f-4942-a90c-94e86a41c02b.png 1012w, https://wordpress.org/documentation/files/2022/10/190145964-784eeec4-6a0f-4942-a90c-94e86a41c02b-300x197.png 300w, https://wordpress.org/documentation/files/2022/10/190145964-784eeec4-6a0f-4942-a90c-94e86a41c02b-768x504.png 768w\" sizes=\"auto, (max-width: 1012px) 100vw, 1012px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: Try again with a different URL or convert to link.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"823\" height=\"464\" src=\"https://wordpress.org/documentation/files/2022/10/190147876-8a8f9884-9f59-42f1-8396-b3cb011d5b93.png\" alt=\"Error message shown with invalid URL for the Kickstarter Embed block.\" class=\"wp-image-16143661\" srcset=\"https://wordpress.org/documentation/files/2022/10/190147876-8a8f9884-9f59-42f1-8396-b3cb011d5b93.png 823w, https://wordpress.org/documentation/files/2022/10/190147876-8a8f9884-9f59-42f1-8396-b3cb011d5b93-300x169.png 300w, https://wordpress.org/documentation/files/2022/10/190147876-8a8f9884-9f59-42f1-8396-b3cb011d5b93-768x433.png 768w\" sizes=\"auto, (max-width: 823px) 100vw, 823px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<figure class=\"wp-block-image alignright size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/190148041-4b98700b-8292-4ecd-9d5f-a6d397aba1bc.png\" alt=\"Block toolbar for the Kickstarter Embed block.\" class=\"wp-image-16143662\" style=\"width:242px;height:60px\" width=\"242\" height=\"60\" /></figure>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Kickstarter embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-2.16.02-PM-1.png\" alt=\"Transform options for the Kickstarter Embed block.\" class=\"wp-image-16143667\" style=\"width:316px;height:185px\" width=\"316\" height=\"185\" /></figure>\n\n\n\n<p>You can transform a Kickstarter embed to a Group. This would give you the ability to change the background and text color around the Kickstarter embed.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"535\" src=\"https://wordpress.org/documentation/files/2022/10/190149437-dcecc11c-3ce1-42a0-912d-063dad5ed147-1024x535.png\" alt=\"Group settings for the Kickstarter Embed block.\" class=\"wp-image-16143670\" srcset=\"https://wordpress.org/documentation/files/2022/10/190149437-dcecc11c-3ce1-42a0-912d-063dad5ed147-1024x535.png 1024w, https://wordpress.org/documentation/files/2022/10/190149437-dcecc11c-3ce1-42a0-912d-063dad5ed147-300x157.png 300w, https://wordpress.org/documentation/files/2022/10/190149437-dcecc11c-3ce1-42a0-912d-063dad5ed147-768x401.png 768w, https://wordpress.org/documentation/files/2022/10/190149437-dcecc11c-3ce1-42a0-912d-063dad5ed147-1536x803.png 1536w, https://wordpress.org/documentation/files/2022/10/190149437-dcecc11c-3ce1-42a0-912d-063dad5ed147.png 1596w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change Alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image alignright size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/190149945-0fd42fad-3095-4048-a44f-31f6f59d6ea8.png\" alt=\"Alignment options for the Kickstarter Embed block.\" class=\"wp-image-16143673\" style=\"width:296px;height:289px\" width=\"296\" height=\"289\" srcset=\"https://wordpress.org/documentation/files/2022/10/190149945-0fd42fad-3095-4048-a44f-31f6f59d6ea8.png 409w, https://wordpress.org/documentation/files/2022/10/190149945-0fd42fad-3095-4048-a44f-31f6f59d6ea8-300x293.png 300w\" sizes=\"auto, (max-width: 296px) 100vw, 296px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the Kickstarter embed post-left-aligned.</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Kickstarter embed post alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the Kickstarter embed post-align-right.</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the Kickstarter embed post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the Kickstarter embed post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Kickstarter embed URL in the embed block. To overwrite the existing URL and click on the &#8220;Embed&#8221; button.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"681\" height=\"395\" src=\"https://wordpress.org/documentation/files/2020/08/kickstarter-embed-block-with-project-link-v5.5-1.png\" alt=\"Edit URL for the Kickstarter Embed Block.\" class=\"wp-image-13269929\" srcset=\"https://wordpress.org/documentation/files/2020/08/kickstarter-embed-block-with-project-link-v5.5-1.png 681w, https://wordpress.org/documentation/files/2020/08/kickstarter-embed-block-with-project-link-v5.5-1-300x174.png 300w\" sizes=\"auto, (max-width: 681px) 100vw, 681px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options</strong></p>\n\n\n\n<p>The More Options menu represented by three vertical dots on the far right of the toolbar gives you more features such as the ability to duplicate, remove, or edit your block as HTML.\u00a0</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<h3 class=\"wp-block-heading has-medium-font-size\">Media Settings</h3>\n\n\n\n<figure class=\"wp-block-gallery aligncenter has-nested-images columns-default is-cropped wp-block-gallery-8 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"406\" height=\"182\" data-id=\"12996503\" src=\"https://wordpress.org/documentation/files/2020/06/media-settings.png\" alt=\"Media settings for the Kickstarter Embed Block set to resizing off.\" class=\"wp-image-12996503\" srcset=\"https://wordpress.org/documentation/files/2020/06/media-settings.png 406w, https://wordpress.org/documentation/files/2020/06/media-settings-300x134.png 300w\" sizes=\"auto, (max-width: 406px) 100vw, 406px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"408\" height=\"197\" data-id=\"12996537\" src=\"https://wordpress.org/documentation/files/2020/06/media-settings-2-1.png\" alt=\"Media settings for the Kickstarter Embed Block set to resizing on.\" class=\"wp-image-12996537\" srcset=\"https://wordpress.org/documentation/files/2020/06/media-settings-2-1.png 408w, https://wordpress.org/documentation/files/2020/06/media-settings-2-1-300x145.png 300w\" sizes=\"auto, (max-width: 408px) 100vw, 408px\" /></figure>\n</figure>\n\n\n\n<p>Via the Media Settings, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p>\u201cOff:\u201d This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p>\u201cOn:\u201d This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"349\" height=\"191\" src=\"https://wordpress.org/documentation/files/2020/06/advanced.png\" alt=\"Advanced options for the Kickstarter Embed block.\" class=\"wp-image-12996547\" srcset=\"https://wordpress.org/documentation/files/2020/06/advanced.png 349w, https://wordpress.org/documentation/files/2020/06/advanced-300x164.png 300w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></figure>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-23\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-10-28</li>\n\n\n\n<li>Updated 2020-08-17\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshots</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-06-25</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Kickstarter Embed block, you can embed Kickstarter projects into your posts and pages. You don\u2019t need a Kickstarter account to be able to embed projects. Embedded Kickstarter Project: Steps to Embed Kickstarter Projects: Detailed instructions on adding blocks If it\u2019s a link that can be successfully [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13019660",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13019660",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13019660"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13019660/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360329,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13019660/revisions/16360329"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13019660"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13019660"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

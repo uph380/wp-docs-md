@@ -1,0 +1,109 @@
+{
+    "id": 16357507,
+    "date": "2023-06-27T13:34:53",
+    "date_gmt": "2023-06-27T13:34:53",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16357507"
+    },
+    "modified": "2023-06-27T14:16:32",
+    "modified_gmt": "2023-06-27T14:16:32",
+    "slug": "avatar-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/avatar-block/",
+    "title": {
+        "rendered": "Avatar Block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>Use the <em>Avatar</em> block to display the user&#8217;s profile picture on any post, page, or template. Although the block can be added anywhere, the most common use is in the single post template to display the author. Another use case is in the <em>Query Loop </em>block<strong> </strong>to include the post author&#8217;s avatar in the query.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"773\" height=\"184\" src=\"https://wordpress.org/documentation/files/2023/05/image-22.png\" alt=\"Adding the avatar block to the post meta\" class=\"wp-image-16356899\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-22.png 773w, https://wordpress.org/documentation/files/2023/05/image-22-300x71.png 300w, https://wordpress.org/documentation/files/2023/05/image-22-768x183.png 768w\" sizes=\"auto, (max-width: 773px) 100vw, 773px\" /></figure>\n\n\n\n<p>To add the <em>Avatar </em>block, click the<strong>&nbsp;Add block</strong>&nbsp;button to open the block inserter pop-up window and choose the&nbsp;<em>Avatar </em>block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"365\" height=\"307\" src=\"https://wordpress.org/documentation/files/2023/05/image-23.png\" alt=\"Using the block inserter to add the avatar block\" class=\"wp-image-16356900\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-23.png 365w, https://wordpress.org/documentation/files/2023/05/image-23-300x252.png 300w\" sizes=\"auto, (max-width: 365px) 100vw, 365px\" /></figure>\n\n\n\n<p>If you want to add one in the <em>Query Loop</em> block, be sure to add it inside the <em>Post Template</em> block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"724\" height=\"622\" src=\"https://wordpress.org/documentation/files/2023/05/image-24.png\" alt=\"Adding an avatar block in a query loop block\" class=\"wp-image-16356901\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-24.png 724w, https://wordpress.org/documentation/files/2023/05/image-24-300x258.png 300w\" sizes=\"auto, (max-width: 724px) 100vw, 724px\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut&nbsp;<kbd>/avatar</kbd>&nbsp;to quickly insert an <em>Avatar</em>&nbsp;block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Every block comes with unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor. To view the block toolbar, click on the <em>Avatar </em>block, and the toolbar will be displayed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"309\" height=\"66\" src=\"https://wordpress.org/documentation/files/2023/05/image-29.png\" alt=\"The block toolbar for the avatar block\" class=\"wp-image-16356906\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-29.png 309w, https://wordpress.org/documentation/files/2023/05/image-29-300x64.png 300w\" sizes=\"auto, (max-width: 309px) 100vw, 309px\" /></figure>\n\n\n\n<p>There are six buttons on the <em>Avatar</em> block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Align</li>\n\n\n\n<li>Duotone filter</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"396\" height=\"237\" src=\"https://wordpress.org/documentation/files/2023/05/image-30.png\" alt=\"The transform options for the avatar block\" class=\"wp-image-16356907\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-30.png 396w, https://wordpress.org/documentation/files/2023/05/image-30-300x180.png 300w\" sizes=\"auto, (max-width: 396px) 100vw, 396px\" /></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to convert the&nbsp;<em>Avatar </em>block into a \u201cGroup\u201d or \u201cColumns\u201d block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Drag icon</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"312\" height=\"69\" src=\"https://wordpress.org/documentation/files/2023/05/image-31.png\" alt=\"The drag icon on the avatar block toolbar\" class=\"wp-image-16356908\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-31.png 312w, https://wordpress.org/documentation/files/2023/05/image-31-300x66.png 300w\" sizes=\"auto, (max-width: 312px) 100vw, 312px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move arrows</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"309\" height=\"69\" src=\"https://wordpress.org/documentation/files/2023/05/image-33.png\" alt=\"The move arrows on the avatar block toolbar\" class=\"wp-image-16356910\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-33.png 309w, https://wordpress.org/documentation/files/2023/05/image-33-300x67.png 300w\" sizes=\"auto, (max-width: 309px) 100vw, 309px\" /></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Align</h3>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"508\" height=\"299\" src=\"https://wordpress.org/documentation/files/2023/05/image-36.png\" alt=\"The align options for the avatar block toolbar\" class=\"wp-image-16356913\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-36.png 508w, https://wordpress.org/documentation/files/2023/05/image-36-300x177.png 300w\" sizes=\"auto, (max-width: 508px) 100vw, 508px\" /></figure>\n\n\n\n<p>Use the change alignment tool to align the&nbsp;<em>Avatar </em>block. The following is a list of the block align options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong></li>\n\n\n\n<li><strong>Align left</strong>&nbsp;\u2013 make the block left-aligned.</li>\n\n\n\n<li><strong>Align center</strong>&nbsp;\u2013 make the block alignment centered.</li>\n\n\n\n<li><strong>Align right&nbsp;</strong>\u2013 make the block right aligned.</li>\n</ul>\n\n\n\n<p>Note that the align option is only available if the <em>Avatar</em> block is inside a container block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Duotone filter</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"311\" height=\"67\" src=\"https://wordpress.org/documentation/files/2023/05/image-34.png\" alt=\"The duotone filter on the avatar block toolbar\" class=\"wp-image-16356911\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-34.png 311w, https://wordpress.org/documentation/files/2023/05/image-34-300x65.png 300w\" sizes=\"auto, (max-width: 311px) 100vw, 311px\" /></figure>\n\n\n\n<p>The duotone filter lets you create a two-tone color effect without losing your original image.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/image-35.png\" alt=\"Using the duotone filter for the avatar block\" class=\"wp-image-16356912\" width=\"403\" height=\"456\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-35.png 632w, https://wordpress.org/documentation/files/2023/05/image-35-265x300.png 265w\" sizes=\"auto, (max-width: 403px) 100vw, 403px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Options</h3>\n\n\n\n<p>The Options button on a block toolbar gives you more features to customize a specific button.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the&nbsp;<strong>Settings&nbsp;</strong>button next to the&nbsp;<strong>Publish&nbsp;</strong>button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/settings.png\" alt=\"The settings button at the top right corner of editor\" class=\"wp-image-16355810\" width=\"460\" height=\"77\" srcset=\"https://wordpress.org/documentation/files/2023/03/settings.png 613w, https://wordpress.org/documentation/files/2023/03/settings-300x50.png 300w\" sizes=\"auto, (max-width: 460px) 100vw, 460px\" /></figure>\n\n\n\n<p>The block settings panel consists of two tabs \u2013 <strong>Settings </strong>and <strong>Styles</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"415\" height=\"244\" src=\"https://wordpress.org/documentation/files/2023/05/image-37.png\" alt=\"The avatar block settings panel\" class=\"wp-image-16356914\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-37.png 415w, https://wordpress.org/documentation/files/2023/05/image-37-300x176.png 300w\" sizes=\"auto, (max-width: 415px) 100vw, 415px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Settings</h3>\n\n\n\n<p>You can adjust various settings and add additional CSS classes for the <em>Avatar</em> block. The panel is divided into <strong>Settings </strong>and <strong>Advanced</strong> sections.</p>\n\n\n\n<p><strong>Settings</strong></p>\n\n\n\n<p>Here are the options available in the <strong>Settings</strong> section:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"343\" height=\"400\" src=\"https://wordpress.org/documentation/files/2023/05/image-38.png\" alt=\"The avatar block setting options\" class=\"wp-image-16356915\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-38.png 343w, https://wordpress.org/documentation/files/2023/05/image-38-257x300.png 257w\" sizes=\"auto, (max-width: 343px) 100vw, 343px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Image size</strong> \u2013 lets you adjust the avatar image size in pixels. There are two ways to do this: the first is by using the slider to fine-tune the size, and the other is by using the pixel field to specify the image size in pixels.</li>\n\n\n\n<li><strong>Link to user profile </strong>\u2013 enable this toggle option if you want to link the avatar image to the user profile page.</li>\n\n\n\n<li><strong>Open in new tab</strong> \u2013 enable this toggle option if you want to open the user profile page in a new tab. This option is only available if you enable the <strong>Link to user profile</strong> option.</li>\n\n\n\n<li><strong>User</strong> \u2013 select a specific user to be displayed on the <em>Avatar</em> block. If left empty, the block will use the post or page author.</li>\n</ul>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>In the <strong>Advanced</strong> section, you will see a field to add additional CSS classes to customize the appearance of the <em>Avatar</em> block. There&#8217;s also the <strong>Apply globally</strong> button if you want to apply the selected block&#8217;s settings to all <em>Avatar </em>blocks on your website.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"339\" height=\"352\" src=\"https://wordpress.org/documentation/files/2023/05/image-39.png\" alt=\"The advanced section on the avatar block's settings panel\" class=\"wp-image-16356916\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-39.png 339w, https://wordpress.org/documentation/files/2023/05/image-39-289x300.png 289w\" sizes=\"auto, (max-width: 339px) 100vw, 339px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Styles</h3>\n\n\n\n<p>The <em>Avatar</em> block has two styles settings \u2013 <strong>dimensions</strong> and <strong>border</strong>.</p>\n\n\n\n<p><strong>Dimensions</strong></p>\n\n\n\n<p>The&nbsp;<em>Avatar </em>block provides dimension settings options to change padding and margin size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Learn more about dimension controls.</a></p>\n\n\n\n<p><strong>Border</strong></p>\n\n\n\n<p>Border settings provide options to control the width and radius on each side of the button.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Learn more about border settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading has-extra-large-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-06-27</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks Use the Avatar block to display the user&#8217;s profile picture on any post, page, or template. Although the block can be added anywhere, the most common use is in the single post template to display the author. Another use case is in the Query Loop block to include the [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16357507",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357507",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16357507"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357507/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358180,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357507/revisions/16358180"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16357507"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16357507"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

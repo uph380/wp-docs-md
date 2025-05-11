@@ -1,0 +1,91 @@
+{
+    "id": 134406,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/block-api/"
+    },
+    "modified": "2024-10-30T16:55:58",
+    "modified_gmt": "2024-10-30T16:55:58",
+    "slug": "block-api",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/block-api/",
+    "title": {
+        "rendered": "Block API Reference"
+    },
+    "content": {
+        "rendered": "<p>Blocks are the fundamental element of the editor. They are the primary way in which plugins and themes can register their own functionality and extend the capabilities of the editor.</p>\n<p>The following sections will walk you through the existing block APIs:</p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-annotations/\">Annotations</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/\">API Versions</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">Attributes</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-bindings/\">Bindings</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-context/\">Context</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-deprecation/\">Deprecation</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/\">Edit and Save</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/\">Metadata in block.json</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/\">Patterns</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/\">Registration</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-selectors/\">Selectors</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/\">Styles</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/\">Supports</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-transforms/\">Transformations</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-templates/\">Templates</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/\">Variations</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134405,
+    "menu_order": 58,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134406",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155623,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406/revisions/155623"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134406"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 153616,
+    "date": "2024-04-30T17:42:08",
+    "date_gmt": "2024-04-30T17:42:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=153616"
+    },
+    "modified": "2024-04-30T17:42:08",
+    "modified_gmt": "2024-04-30T17:42:08",
+    "slug": "patterns",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/patterns/",
+    "title": {
+        "rendered": "Patterns"
+    },
+    "content": {
+        "rendered": "\n<p>Patterns are one of the most useful tools for theme development, allowing you to reuse groups of blocks across a wide variety of scenarios. Over time, you will likely use patterns more than any other theme feature available in WordPress.</p>\n\n\n\n<p>In this chapter, you will learn what patterns are and dive into the various use cases where you will apply them in your themes. This will include everything from providing insertable layouts to your theme users to running PHP for loading assets and even more.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the following links to locate a specific topic within this chapter. It\u2019s best to read them in order, but if you are already familiar with the basic tenets of pattern development, feel free to jump to the topic that you\u2019re looking for.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/patterns/introduction-to-patterns/\"><strong>Introduction to Patterns</strong></a><strong>:</strong> Provides an overview of what patterns are and how they work, giving you a foundation for later articles in the chapter.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/patterns/registering-patterns/\"><strong>Registering Patterns</strong></a><strong>:</strong> A guide on registering/unregistering patterns and pattern categories for your theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/patterns/using-php-in-patterns/\"><strong>Using PHP in Patterns</strong></a><strong>:</strong> How and why to use PHP in your themes, including practical applications like internationalizing text and including media.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/patterns/usage-in-templates/\"><strong>Usage in Templates</strong></a><strong>:</strong> How to include patterns in templates and why you should use them over templates in many cases.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/patterns/block-type-patterns/\"><strong>Block Type Patterns</strong></a><strong>:</strong> A walkthrough of creating block-specific patterns that offer a more elegant experience for your theme users.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/patterns/starter-patterns/\"><strong>Starter Patterns</strong></a><strong>:</strong> Building custom patterns as starting points for creating starting points for your theme users to build their pages and templates.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/patterns/patterns-and-block-locking/\"><strong>Patterns and Block Locking</strong></a><strong>:</strong> How to use the Block Locking API to curate the editing experience for your theme users.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 50,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-153616",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153616",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153616/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153617,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153616/revisions/153617"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=153616"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 11113655,
+    "date": "2021-07-02T17:19:36",
+    "date_gmt": "2021-07-02T17:19:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11113655"
+    },
+    "modified": "2024-06-06T18:21:21",
+    "modified_gmt": "2024-06-06T18:21:21",
+    "slug": "media-add-new-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/media-add-new-screen/",
+    "title": {
+        "rendered": "Media Add New screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Media Add New Screen</strong> allows you\n to upload Media (Images, video, files, etc.) for later use in your\nposts and pages.  This screen allows you to both add single items as\nwell as perform bulk uploads, if you wish to add more than one media\nitem to your Media Library.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Upload New Media</h3>\n\n\n\n<p>Uploading media from your local computer into the Media Library is\nquite simple.  Two &#8216;uploader&#8217; methods, Multi-File Uploader and Browser\nUploader, are provided.  The Multi-File Uploader is the primary method\nfor adding media to the Media Library, but if doesn&#8217;t work then click\nthe &#8220;Browser Uploader&#8221; link to use the Browser Uploader.\n</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><a href=\"https://wordpress.org/documentation/article/media-add-new-screen/media-upload-16/\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"482\" src=\"https://wordpress.org/documentation/files/2021/06/media-upload-1024x482.png\" alt=\"Media Upload Screen\" class=\"wp-image-14597362\" srcset=\"https://wordpress.org/documentation/files/2021/06/media-upload-1024x482.png 1024w, https://wordpress.org/documentation/files/2021/06/media-upload-300x141.png 300w, https://wordpress.org/documentation/files/2021/06/media-upload-768x361.png 768w, https://wordpress.org/documentation/files/2021/06/media-upload.png 1222w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></a><figcaption class=\"wp-element-caption\">Media Upload screen</figcaption></figure>\n\n\n\n<p>\n\nYou will also see a message displayed at the bottom of your view that indicates maximum upload size for files, as set by your hosting provider.\n\n</p>\n\n\n\n<h4 class=\"wp-block-heading\">Multi-File Uploader</h4>\n\n\n\n<figure class=\"wp-block-image alignright is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2019/04/add-media-bulk-upload.png\" alt=\"\" class=\"wp-image-11477226\" width=\"342\" height=\"241\" srcset=\"https://wordpress.org/documentation/files/2019/04/add-media-bulk-upload.png 683w, https://wordpress.org/documentation/files/2019/04/add-media-bulk-upload-300x212.png 300w\" sizes=\"auto, (max-width: 342px) 100vw, 342px\" /><figcaption class=\"wp-element-caption\">Multi-File Upload</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Drag-and-Drop</strong> &#8211; If you are using a web browser that supports HTML5 then you will see an active upload area (indicated by a dashed border) where you can &#8220;drag-and-drop&#8221; files from your computer to this area to upload them to the Media Library.  You can upload files one at a time, or you can add multiple media items by dragging and dropping a group of files in this area.</li>\n\n\n\n<li>Select Files &#8211; If drag-and-drop is not working for you, click on the Select Files button, which will launch a file browser that allows you to find and select (by clicking) the files you want to upload.  Multiple files can also be selected by holding down the Ctrl key (Cmd key on a Mac) and clicking on each file you wish to upload.  After all the files are selected, click on the Open button to begin uploading.  </li>\n</ul>\n\n\n\n<p>As your files are uploaded, a status bar will be displayed next to each one to indicate progress.</p>\n\n\n\n<p></p>\n\n\n\n<div class=\"wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top\" style=\"grid-template-columns:45% auto\"><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"827\" height=\"627\" src=\"https://wordpress.org/documentation/files/2021/06/media-copy-link-1.png\" alt=\"Copy URL to clipboard\" class=\"wp-image-14597384 size-full\" srcset=\"https://wordpress.org/documentation/files/2021/06/media-copy-link-1.png 827w, https://wordpress.org/documentation/files/2021/06/media-copy-link-1-300x227.png 300w, https://wordpress.org/documentation/files/2021/06/media-copy-link-1-768x582.png 768w\" sizes=\"auto, (max-width: 827px) 100vw, 827px\" /></figure><div class=\"wp-block-media-text__content\">\n<p class=\"has-normal-font-size\">When the uploading is complete, a thumbnail of the media is displayed. Once your upload is complete, you may click on the Edit link to edit and save the information about that media files (see the <a href=\"https://wordpress.org/documentation/article/edit-media\">Edit Media</a> page for more information) if you wish.</p>\n\n\n\n<p class=\"has-normal-font-size\">You may also click on the \u2018Copy URL to clipboard\u2019 button to copy the URL of the file you uploaded.</p>\n</div></div>\n\n\n\n<h4 class=\"wp-block-heading\">Browser Uploader</h4>\n\n\n\n<p>Uploading via the Browser uploader:\n</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Browse</strong> &#8211; Click this button, and then from the  File Upload window, find and click the file to upload, then click the  Open button.  The Media file name will be placed in the text box to the  left of the Browse button.</li>\n\n\n\n<li><strong>Upload</strong> &#8211; Once a Media file name is displayed in the text box  to the right of the Browse button, click the Upload button to upload  that Media.  At that point the Media Library Screen is displayed.</li>\n\n\n\n<li><strong>Cancel</strong> &#8211; If the Upload is not working or is taking a prolonged period of time, click the Cancel button to cancel the Upload process.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Further reading</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/edit-media/\">Edit Media</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media library screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings Media Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/image-size-and-quality/\">Image Size and Quality</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-images/\">Use Images</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-image-and-file-attachments/\">Use image and file attachments</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\">Inserting Images into Posts and Pages (Block Editor)</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/\">Inserting Images into Posts and Pages (Classic Editor)</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Media Add New Screen allows you to upload Media (Images, video, files, etc.) for later use in your posts and pages. This screen allows you to both add single items as well as perform bulk uploads, if you wish to add more than one media item to your Media Library. Upload New Media Uploading [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11113655",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11113655",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11113655"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11113655/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360340,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11113655/revisions/16360340"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11113655"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11113655"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

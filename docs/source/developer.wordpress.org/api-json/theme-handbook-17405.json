@@ -1,0 +1,97 @@
+{
+    "id": 17405,
+    "date": "2015-06-11T18:42:12",
+    "date_gmt": "2015-06-11T18:42:12",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=17405"
+    },
+    "modified": "2022-10-29T01:37:23",
+    "modified_gmt": "2022-10-29T01:37:23",
+    "slug": "attachment-template-files",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/template-files-section/attachment-template-files/",
+    "title": {
+        "rendered": "Attachment Template Files"
+    },
+    "content": {
+        "rendered": "\n<p>Attachments are a special post type&nbsp;that holds information about a file uploaded through the WordPress media upload system, such as its description and name, which can display through&nbsp;several <b>post type &#8211; attachment</b> template files.</p>\n\n\n\n<p>For&nbsp;images, as an example, the attachment post type links to metadata information, about the size of the images, the thumbnails generated, the location of the image files, the HTML alt text, and even information obtained from EXIF data embedded in the images.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Utilizing attachment templates to gain additional metadata information for uploads, help with SEO efforts. </div></div>\n\n\n\n\n<p>As shown in the <a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/#visual-overview\">template hierarchy</a>,&nbsp;you are able to display your&nbsp;attachments through several template&nbsp;files in order of fallback:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><code>MIME_type.php</code> and a <code>subtype.php</code><br>It can be any MIME type (For example: <code>image.php</code>, <code>video.php</code>, <code>application.php</code>). For text/plain, the following path is used (in order):\n<ol class=\"wp-block-list\">\n<li><code>text_plain.php</code></li>\n\n\n\n<li><code>plain.php</code></li>\n\n\n\n<li><code>text.php</code></li>\n</ol>\n</li>\n\n\n\n<li><code>attachment.php</code></li>\n\n\n\n<li><code>single-attachment.php</code></li>\n\n\n\n<li><code>single.php</code></li>\n\n\n\n<li><code>singular.php</code></li>\n\n\n\n<li><code>index.php</code></li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">MIME_type.php</h2>\n\n\n\n<p>Attachments are served by template files based on their mime-type. As an example, if your attachment is an image, your can customize how they&nbsp;display through the creation of an&nbsp;<code>image.php</code>&nbsp;template file. All images with the <code>post_mime_type</code> of image/* will render though your&nbsp;<code>image.php</code> template file.</p>\n\n\n\n<p>Attachments&nbsp;also support the use of a mime <code>subtype.php</code>&nbsp;file. To continue with the image example, you can further customize your theme to support not only an <code>image.php</code>&nbsp;file but a <code>jpg.php</code> subtype file.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Attachment.php</h2>\n\n\n\n<p>An attachment page (<code>attachment.php</code>) is a single post page with the post type of attachment, generated through the creation of an attachment.php. Just like a <a href=\"https://developer.wordpress.org/themes/template-files-section/post-template-files/#single-php\">single post page</a>, which is dedicated to your article, the attachment page provides a dedicated page in attachments in your theme.</p>\n\n\n\n<p>Creation of attachment page is as simple as creating an attachment.php&nbsp;file. The attachment.php file&nbsp;then contains code similar to the single.php&nbsp;post page.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div class=\"entry-attachment\"&gt;\n\t&lt;?php\n\t$image_size = apply_filters( 'wporg_attachment_size', 'large' );\n\techo wp_get_attachment_image( get_the_ID(), $image_size );\n\t?&gt;\n\n\t&lt;?php if ( has_excerpt() ) : ?&gt;\n\t\t&lt;div class=\"entry-caption\"&gt;\n\t\t\t&lt;?php the_excerpt(); ?&gt;\n\t\t&lt;/div&gt;&lt;!-- .entry-caption --&gt;\n\t&lt;?php endif; ?&gt;\n&lt;/div&gt;&lt;!-- .entry-attachment --&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_attachment_template/\" data-type=\"URL\" data-id=\"https://developer.wordpress.org/reference/functions/get_attachment_template/\">get_attachment_template()</a> : Retrieve path of attachment template in current or parent template.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 14167654,
+    "featured_media": 0,
+    "parent": 17401,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-17405",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17405",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17405/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143692,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17405/revisions/143692"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17401"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wporg/v1/users/lizkaraffa"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=17405"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

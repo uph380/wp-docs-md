@@ -1,0 +1,91 @@
+{
+    "id": 134580,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-notices/"
+    },
+    "modified": "2024-10-30T16:55:20",
+    "modified_gmt": "2024-10-30T16:55:20",
+    "slug": "packages-notices",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-notices/",
+    "title": {
+        "rendered": "@wordpress/notices"
+    },
+    "content": {
+        "rendered": "<p>State management for notices.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/notices\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>Usage</h2>\n<p>When imported, the notices module registers a data store on the <code>core/notices</code> namespace. In WordPress, this is accessed from <code>wp.data.dispatch( 'core/notices' )</code>.</p>\n<p>For more information about consuming from a data store, refer to <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/data/README.md#data-access-and-manipulation\">the <code>@wordpress/data</code> documentation on <em>Data Access and Manipulation</em></a>.</p>\n<p>For a full list of actions and selectors available in the <code>core/notices</code> namespace, refer to the <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/docs/reference-guides/data/data-core-notices.md\"><em>Notices Data</em> Handbook page</a>.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 299,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134580",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134580",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134580/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151794,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134580/revisions/151794"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134580"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

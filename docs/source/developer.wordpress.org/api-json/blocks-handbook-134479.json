@@ -1,0 +1,91 @@
+{
+    "id": 134479,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/input-control/"
+    },
+    "modified": "2024-12-12T00:04:14",
+    "modified_gmt": "2024-12-12T00:04:14",
+    "slug": "input-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/input-control/",
+    "title": {
+        "rendered": "InputControl"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p>InputControl components let users enter and edit text. This is an experimental component intended to (in time) merge with or replace <a href=\"../text-control\">TextControl</a>.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-js\">import { __experimentalInputControl as InputControl } from '@wordpress/components';\nimport { useState } from 'react';\n\nconst Example = () =&gt; {\n    const [ value, setValue ] = useState( &apos;&apos; );\n\n    return (\n        &lt;InputControl\n            __next40pxDefaultSize\n            value={ value }\n            onChange={ ( nextValue ) =&gt; setValue( nextValue ?? &apos;&apos; ) }\n        /&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<h3>disabled</h3>\n<p>If true, the <code>input</code> will be disabled.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3>isPressEnterToChange</h3>\n<p>If true, the <code>ENTER</code> key press is required in order to trigger an <code>onChange</code>. If enabled, a change is also triggered when tabbing away (<code>onBlur</code>).</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3>hideLabelFromVision</h3>\n<p>If true, the label will only be visible to screen readers.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h3>label</h3>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>labelPosition</h3>\n<p>The position of the label (<code>top</code>, <code>side</code>, <code>bottom</code>, or <code>edge</code>).</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>onChange</h3>\n<p>A function that receives the value of the input.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: Yes</li>\n</ul>\n<h3>prefix</h3>\n<p>Renders an element on the left side of the input.</p>\n<ul>\n<li>Type: <code>React.ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<h3>size</h3>\n<p>Adjusts the size of the input.<br />\nSizes include: <code>default</code>, <code>small</code></p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: <code>default</code></li>\n</ul>\n<h3>suffix</h3>\n<p>Renders an element on the right side of the input.</p>\n<ul>\n<li>Type: <code>React.ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<h3>type</h3>\n<p>Type of the input element to render. Defaults to &#8220;text&#8221;.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: &#8220;text&#8221;</li>\n</ul>\n<h3>value</h3>\n<p>The current value of the input.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>__next40pxDefaultSize</h3>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 173,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134479",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134479",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134479/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156086,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134479/revisions/156086"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134479"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

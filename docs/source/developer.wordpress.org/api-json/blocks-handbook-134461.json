@@ -1,0 +1,91 @@
+{
+    "id": 134461,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/flex/"
+    },
+    "modified": "2024-10-30T16:55:46",
+    "modified_gmt": "2024-10-30T16:55:46",
+    "slug": "flex",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/flex/",
+    "title": {
+        "rendered": "Flex"
+    },
+    "content": {
+        "rendered": "<p><code>Flex</code> is a primitive layout component that adaptively aligns child content horizontally or vertically. <code>Flex</code> powers components like <code>HStack</code> and <code>VStack</code>.</p>\n<h2>Usage</h2>\n<p><code>Flex</code> is used with any of it&#8217;s two sub-components, <code>FlexItem</code> and <code>FlexBlock</code>.</p>\n<pre><code class=\"language-jsx\">import { Flex, FlexBlock, FlexItem } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;Flex&gt;\n            &lt;FlexItem&gt;\n                &lt;p&gt;Code&lt;/p&gt;\n            &lt;/FlexItem&gt;\n            &lt;FlexBlock&gt;\n                &lt;p&gt;Poetry&lt;/p&gt;\n            &lt;/FlexBlock&gt;\n        &lt;/Flex&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>align</code>: <code>CSSProperties['alignItems']</code></h3>\n<p>Aligns children using CSS Flexbox <code>align-items</code>. Vertically aligns content if the <code>direction</code> is <code>row</code>, or horizontally aligns content if the <code>direction</code> is <code>column</code>.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>center</code></li>\n</ul>\n<h3><code>direction</code>: <code>ResponsiveCSSValue&lt;CSSProperties['flexDirection']&gt;</code></h3>\n<p>The direction flow of the children content can be adjusted with <code>direction</code>. <code>column</code> will align children vertically and <code>row</code> will align children horizontally.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>row</code></li>\n</ul>\n<h3><code>expanded</code>: <code>boolean</code></h3>\n<p>Expands to the maximum available width (if horizontal) or height (if vertical).</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>gap</code>: <code>number</code></h3>\n<p>Spacing in between each child can be adjusted by using <code>gap</code>. The value of <code>gap</code> works as a multiplier to the library&#8217;s grid system (base of <code>4px</code>).</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>2</code></li>\n</ul>\n<h3><code>justify</code>: <code>CSSProperties['justifyContent']</code></h3>\n<p>Horizontally aligns content if the <code>direction</code> is <code>row</code>, or vertically aligns content if the <code>direction</code> is <code>column</code>.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>space-between</code></li>\n</ul>\n<h3><code>wrap</code>: <code>boolean</code></h3>\n<p>Determines if children should wrap.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 151,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134461",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134461",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134461/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152623,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134461/revisions/152623"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134461"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

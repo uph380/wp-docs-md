@@ -1,0 +1,97 @@
+{
+    "id": 152151,
+    "date": "2024-02-06T03:34:22",
+    "date_gmt": "2024-02-06T03:34:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=152151"
+    },
+    "modified": "2024-02-06T03:39:27",
+    "modified_gmt": "2024-02-06T03:39:27",
+    "slug": "publishing-themes",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/publishing-themes/",
+    "title": {
+        "rendered": "Publishing Themes"
+    },
+    "content": {
+        "rendered": "\n<p>Once you have made it through the earlier documentation in this handbook and finally built your first theme, you may also want to share it with others.</p>\n\n\n\n<p>In this article, you will learn how to package your theme for release and publish it for other WordPress users to install on their own websites. This documentation will focus on submitting themes to the official <a href=\"https://wordpress.org/themes/\">WordPress Theme Directory</a>, but it will also cover some other options.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Packaging your theme for release</h2>\n\n\n\n<p>As you approach the exciting milestone of releasing your theme into the WordPress Theme Directory, this article will guide you through the necessary steps and requirements. The instructions provided here build upon the foundational knowledge shared in this handbook, ensuring your theme is ready for its debut in the directory.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 1: Check for required theme files</h3>\n\n\n\n<p>The journey to releasing your block theme begins with a simple yet necessary step\u2014verifying that you have all the <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">essential theme files</a>. For a block theme, this includes, but is not limited to, the <a href=\"https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/\"><code>theme.json</code></a>, <a href=\"https://developer.wordpress.org/themes/core-concepts/main-stylesheet/\"><code>style.css</code></a>, and various <a href=\"https://developer.wordpress.org/themes/core-concepts/templates/\">template files</a>. Ensuring these files are in place and correctly configured is fundamental to making it through the review process.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 2: Test your theme</h3>\n\n\n\n<p>Before submitting your theme, make sure to thoroughly <a href=\"https://developer.wordpress.org/themes/advanced-topics/testing/\">test your theme</a>. This includes not only the functionality and responsiveness of the theme but also its content presentation and block editor integration. Use diverse content types to assess how well your theme adapts and displays them, and ensure that there are no <a href=\"https://developer.wordpress.org/themes/advanced-topics/debugging/\">debugging issues</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 3: Follow the Theme Review Guidelines</h3>\n\n\n\n<p>Familiarize yourself with the latest <a href=\"https://make.wordpress.org/themes/handbook/review/required/\">Theme Review Guidelines</a>. This includes adhering to <a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/\">WordPress Coding Standards</a>, ensuring accessibility, and verifying that the theme supports essential WordPress features. Regular updates to these guidelines mean that staying informed is key to a smooth approval process.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 4: Prepare documentation</h3>\n\n\n\n<p>Proper documentation is a significant asset to your theme. It should detail the theme\u2019s features, customization options, and any unique aspects of its block editor integration. Clear documentation aids both the review process and the end-users in understanding and making the most of your theme.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 5: Submission and review process</h3>\n\n\n\n<p>With the above steps completed, you are ready to <a href=\"https://wordpress.org/themes/upload/\">submit your theme for review</a>. Before submission, make sure you read through the <a href=\"https://make.wordpress.org/themes/handbook/review/\">Review Process</a> guide.</p>\n\n\n\n<p>Upon submission, be prepared for interactions with the <a href=\"https://make.wordpress.org/themes/handbook/about/\">Themes Team</a>. They may request additional changes or clarifications to ensure your theme meets all the WordPress Theme Directory standards. Responding promptly and effectively to these requests will facilitate a smoother approval process.</p>\n\n\n\n<p>Packaging your block theme for release is a meticulous process that requires attention to detail and adherence to WordPress standards. By following these steps, you not only prepare your theme for a successful submission but also set the stage for a positive experience for its future users.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why host your theme on WordPress.org?</h2>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1270\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?resize=2048%2C1270&#038;ssl=1\" alt=\"Screenshot of the WordPress.org Theme Directory, showing a three-column grid of theme screenshots.\" class=\"wp-image-152152\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?resize=300%2C186&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?resize=1024%2C635&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?resize=768%2C476&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/01/theme-directory-block-themes.webp?resize=1536%2C953&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>Sharing your theme on the WordPress Theme Directory is more than just distribution; it is an opportunity to grow as a developer, receive valuable feedback, and contribute to the vibrant WordPress community.</p>\n\n\n\n<p>If you&#8217;re still unsure about distributing your theme through the official Theme Directory, here are some other reasons to do so:</p>\n\n\n\n<p><strong>Visibility and reach:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Global Audience:</strong> The WordPress Theme Directory is accessed by millions of users worldwide, providing a lot of potential exposure for your theme.</li>\n\n\n\n<li><strong>Search Engine Optimization:</strong> Being listed in the directory enhances your theme\u2019s findability via search engines, thanks to WordPress.org\u2019s strong SEO.</li>\n</ul>\n\n\n\n<p><strong>Trust and credibility:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Quality assurance:</strong> Themes in the WordPress directory are known for their quality, having passed a thorough review process.</li>\n\n\n\n<li><strong>User trust:</strong> Users tend to trust themes from the official directory, as they adhere to WordPress standards. This gives them more credibility than those hosted elsewhere.</li>\n</ul>\n\n\n\n<p><strong>Support and community engagement:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>User reviews:</strong> WordPress provides a ratings system that is enabled for all themes, allowing your users to give you feedback.</li>\n\n\n\n<li><strong>Support forums:</strong> All themes are integrated into the <a href=\"https://wordpress.org/support/forums/\">WordPress.org support forums</a>, giving you a free platform to reply to support queries.</li>\n</ul>\n\n\n\n<p><strong>Simplified update process:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Easy updates:</strong> Distributing through the directory simplifies the process of pushing updates to your users. They will be able to update your theme directly from their site&#8217;s admin.</li>\n\n\n\n<li><strong>Automatic notifications:</strong> Users are automatically notified about updates, increasing the likelihood of them using the latest, most secure version of your theme.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Other theme hosting options</h2>\n\n\n\n<p>The official WordPress Theme Directory is not the only option for hosting your theme if you plan to distribute it to the public, whether for free or at cost. Below, you\u2019ll learn about a few of the advantages and disadvantages of some alternatives.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Hosting your theme on a custom website</h3>\n\n\n\n<p>Self-distributing a WordPress theme offers significant control and branding opportunities. It allows for complete management over distribution and updates, direct revenue without intermediaries, and targeted marketing strategies.\u00a0</p>\n\n\n\n<p>But this approach means you have full responsibility for updates, user trust building, secure payment setups (if selling your theme), and comprehensive customer support.</p>\n\n\n\n<p>To successfully self-distribute, focus on creating a secure, user-friendly website, and employ reliable e-commerce solutions if you plan to charge for distribution of your theme. A strong marketing strategy is essential for visibility, while exceptional customer support and regular updates based on user feedback will enhance your theme\u2019s reputation. Navigating these challenges is important to create a successful presence outside the WordPress Theme Directory.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Hosting your theme on GitHub</h3>\n\n\n\n<p>Hosting your WordPress theme on <a href=\"https://github.com/\">GitHub</a> appeals to developers for its version control, collaboration features, and community engagement opportunities. It offers transparency and trust through open-source access, along with free hosting and effective issue tracking. Its developer-centric nature can limit exposure to non-technical audiences. It also lacks a direct update mechanism, posing challenges in user support (though, there are plugins that make updates possible).</p>\n\n\n\n<p>Best practices for GitHub hosting include maintaining clear documentation, engaging with the community, regular updates, and leveraging GitHub Pages. GitHub can be a powerful platform for collaborative theme development and distribution when used effectively.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Hosting your theme on third-party marketplaces</h3>\n\n\n\n<p>Hosting your WordPress theme on third-party marketplaces provides visibility and access to a diverse user base, from individual bloggers to enterprise clients. These platforms offer credibility through quality standards, marketing support, and potential for high financial returns due to their professional clientele. </p>\n\n\n\n<p>However, challenges include intense competition, fees and revenue sharing, adherence to marketplace guidelines, limited direct customer interaction, and dependence on the platform\u2019s policies.</p>\n\n\n\n<p>When hosting on third-party marketplaces, it is important to understand the audience, focus on creating high-quality theme, stay informed about marketplace policies, optimize your theme for visibility, and more. While navigating these marketplaces requires balancing their benefits and constraints, they can be a valuable avenue for distributing your WordPress theme to a large audience.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 80,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152151",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152151",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152151/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152153,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152151/revisions/152153"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152151"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

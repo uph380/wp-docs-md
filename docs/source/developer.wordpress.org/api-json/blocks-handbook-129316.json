@@ -1,0 +1,91 @@
+{
+    "id": 129316,
+    "date": "2020-06-16T22:19:43",
+    "date_gmt": "2020-06-16T22:19:43",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/triage/"
+    },
+    "modified": "2025-01-07T18:34:16",
+    "modified_gmt": "2025-01-07T18:34:16",
+    "slug": "triage",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/triage/",
+    "title": {
+        "rendered": "Triage"
+    },
+    "content": {
+        "rendered": "<p>To keep the repository healthy, it needs to be triaged regularly. <strong>Triage is the practice of reviewing existing issues and pull requests to make sure they\u2019re relevant, actionable, and have all the information they need</strong>. Anyone can help triage, although you\u2019ll need to be a member of the triage team for the Gutenberg repository to modify an issue\u2019s labels or edit its title.</p>\n<blockquote><p>\n  Besides this page, the <a href=\"https://learn.wordpress.org/tutorial/how-to-do-triage-on-github/\">How to do triage on GitHub</a> tutorial is another great resource to get introduced to triage\n</p></blockquote>\n<h2>Join the triage team</h2>\n<p>The triage team is an open group of people with a particular role of making sure triage is done consistently across the Gutenberg repo. There are various types of triage which happen:</p>\n<ul>\n<li>Regular self triage sessions done by members on their own time.</li>\n<li>Organized triage sessions done as a group at a set time. You can <a href=\"https://make.wordpress.org/meetings/\">review the meetings page</a> to find these triage sessions and appropriate slack channels.</li>\n<li>Focused triage sessions on a specific board, label or feature.</li>\n</ul>\n<p>These are the expectations of being a triage team member:</p>\n<ul>\n<li>You are expected to do some triage even if it is self triage at least once a week.</li>\n<li>As you can, try to join organized triage sessions.</li>\n<li>If you join the triage team to focus on a specific label or board, the expectation is that your focus will be there. Please make this known to fellow triage team members.</li>\n</ul>\n<p>If you would like to join this team, simply ask in #core-editor <a href=\"https://make.wordpress.org/chat/\">Slack</a> at any time.</p>\n<h2>Triage your first issues</h2>\n<p>To start simply choose from one of these filtered lists below. Note: You can find most of these filters by selecting the \u201cSort\u201d option from the <a href=\"https://github.com/wordpress/gutenberg/issues\">overall Issues page</a>.</p>\n<ul>\n<li><strong>All Gutenberg issues <a href=\"https://github.com/WordPress/gutenberg/issues?q=is%3Aopen+is%3Aissue+no%3Alabel+sort%3Aupdated-asc\">without an assigned label</a></strong>. Triaging by simply adding labels helps people focused on certain aspects of Gutenberg find relevant issues easier and start working on them.</li>\n<li><strong>All Gutenberg pull requests <a href=\"https://github.com/WordPress/gutenberg/pulls?q=is%3Aopen+is%3Apr+no%3Alabel\">without an assigned label</a></strong>. This requires a level of comfortability with code. For more guidance on which labels are best to use, please <a href=\"https://developer.wordpress.org/block-editor/contributors/repository-management/#pull-requests\">review this section on labeling pull requests</a> for contributors. You can also always check with the person authoring the pull request to make sure the labels match what they are intending to do.</li>\n<li><strong><a href=\"https://github.com/WordPress/gutenberg/issues?q=is%3Aopen+is%3Aissue+sort%3Aupdated-asc\">The least recently updated</a> Gutenberg issues</strong>. Triaging issues that are getting old and possibly out of date keeps important work from being overlooked.</li>\n<li><strong>All Gutenberg issues <a href=\"https://github.com/wordpress/gutenberg/issues?q=is%3Aissue+is%3Aopen+comments%3A0+\">with no comments</a></strong>. Triaging this list helps make sure all issues are acknowledged, and can help identify issues that may need more information or discussion before they are actionable.</li>\n<li><strong><a href=\"https://github.com/wordpress/gutenberg/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-asc\">The least commented</a> on Gutenberg issues</strong>. Triaging this list helps the community figure out what things might still need traction for certain proposals.</li>\n<li><strong><a href=\"https://github.com/wordpress/gutenberg/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc\">The most commented</a> on Gutenberg issues</strong>. If you feel comfortable chiming in and the conversation has stagnated, the best way to triage these kinds of issues is to summarize the discussion thus far and do your best to identify action items, blockers, etc. Triaging this list allows finding solutions to important and complex issues to move forward.</li>\n<li>You can also <strong>create your own custom set of filters on GitHub</strong>. If you have a filter you think might be useful for the community, feel free to submit a PR to add it to this list.</li>\n</ul>\n<h2>General triage process</h2>\n<p>When triaging, either one of the lists above or issues in general, work through issues one-by-one. Here are some steps you can perform for each issue:</p>\n<ol>\n<li>First <strong>search for duplicates</strong>. If the issue is duplicate, close it by commenting with \u201cDuplicate of #\u201d and add any relevant new details to the existing issue. (Don\u2019t forget to search for duplicates among closed issues as well!).</li>\n<li>If the <strong>issue is missing labels, add some</strong> to better categorize it (requires proper permissions given after joining the triage team). A good starting place when adding labels is to apply one of the labels prefixed [Type] (e.g. [Type] Enhancement or [Type] Bug) to indicate what kind of issue it is. After that consider adding more descriptive labels. If the issue concerns a particular core block, add one of the labels prefixed [Block]. Or if the issue affects a particular feature there are [Feature] labels. Finally, there are labels that affect particular interest areas, like Accessibility and Internationalization. You can view all possible labels <a href=\"https://github.com/WordPress/gutenberg/labels\">here</a>.</li>\n<li>If the <strong>title doesn\u2019t communicate the issue clearly enough, edit it for clarity</strong> (requires proper permissions). Specifically, we\u2019d recommend having the main feature the issue relates to in the beginning of the title (<a href=\"https://github.com/WordPress/gutenberg/issues/6193\">example</a>) and for the title to generally be as succinct yet descriptive as possible (<a href=\"https://github.com/WordPress/gutenberg/issues/6193\">example</a>).</li>\n<li>If it\u2019s a <strong>bug report, test to confirm the report or add the <code>Needs Testing</code> label</strong>. If there is not enough information to confirm the report, add the <code>[Status] Needs More Info</code> label and ask for the details needed. It\u2019s particularly beneficial when a bug report has steps for reproduction so ask the reporter to add those if they\u2019re missing.</li>\n<li><strong>Remove the <code>[Status] Needs More Info</code> when is no longer needed</strong>, for example if the author of the issue has responded with enough details.</li>\n<li><strong>Close the inactive <code>[Status] Needs More Info</code> issues with a note</strong> if the author didn&#8217;t respond in 2+ weeks.</li>\n<li>If there was a conversation on the issue but <strong>no actionable steps identified, follow up with the participants to see what\u2019s actionable</strong>. Make sure to @ each participant when responding in a comment.</li>\n<li>If you feel comfortable triaging the issue further, then you can also:\n<ul>\n<li>Check that the bug report is valid by debugging it to see if you can track down the technical specifics.</li>\n<li>Check if the issue is missing some detail and see if you can fill in those details. For instance, if a bug report is missing visual detail, it\u2019s helpful to reproduce the issue locally and upload a screenshot or GIF.</li>\n<li>Consider adding the Good First Issue label if you believe this is a relatively easy issue for a first-time contributor to try to solve.</li>\n</ul>\n</li>\n</ol>\n<p><strong>Commonly used labels</strong></p>\n<p>Generally speaking, the following labels are very useful for triaging issues and will likely be the ones you use the most consistently. You can view all possible labels <a href=\"https://github.com/WordPress/gutenberg/labels\">here</a>.</p>\n<table>\n<thead>\n<tr>\n<th>Label</th>\n<th>Reason</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>[Type] Bug</code></td>\n<td>When an intended feature is broken.</td>\n</tr>\n<tr>\n<td><code>[Type] Enhancement</code></td>\n<td>When someone is suggesting an enhancement to a current feature.</td>\n</tr>\n<tr>\n<td><code>[Type] Help Request</code></td>\n<td>When someone is asking for general help with setup/implementation.</td>\n</tr>\n<tr>\n<td><code>Needs Technical Feedback</code></td>\n<td>When you see new features or API changes proposed.</td>\n</tr>\n<tr>\n<td><code>Needs More Info</code></td>\n<td>When it\u2019s not clear what the issue is or it would help to provide additional details.</td>\n</tr>\n<tr>\n<td><code>Needs Testing</code></td>\n<td>When a new issue needs to be confirmed or old bugs seem like they are no longer relevant.</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Determining priority labels</strong></p>\n<p>If you have enough knowledge about the report at hand and feel confident in doing so, you can consider adding priority. Note that it\u2019s on purpose that no priority label infers a normal level.</p>\n<table>\n<thead>\n<tr>\n<th>Label</th>\n<th>Reason</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Priority: High</code></td>\n<td>Fits one of the current focuses and is causing a major broken experience (including flow, visual bugs and blocks).</td>\n</tr>\n<tr>\n<td><code>Priority: Low</code></td>\n<td>Enhancements that aren\u2019t part of focuses, niche bugs, problems with old browsers.</td>\n</tr>\n</tbody>\n</table>\n<h2>Closing issues</h2>\n<p>Issues are closed for the following reasons:</p>\n<ul>\n<li>A PR and/or latest release resolved the reported issue.</li>\n<li>Duplicate of a current report.</li>\n<li>Help request that is best handled in the WordPress.org forums.</li>\n<li>An issue that&#8217;s not able to be replicated.</li>\n<li>An issue that needs more information that the author of the issue hasn&#8217;t responded to for 2+ weeks.</li>\n<li>An item that is determined as unable to be fixed or is working as intended.</li>\n</ul>\n<h2>Specific triages</h2>\n<h3>Release specific triage</h3>\n<p>Here are some guidelines to follow when doing triage specifically around the time of a release. This is important to differentiate compared to general triage so problematic, release blocking bugs are properly identified and solutions are found.</p>\n<ul>\n<li><strong>If a bug is introduced in a release candidate (RC) and it&#8217;s going to break many workflows</strong>, add it to the version milestone and flag in the <a href=\"https://wordpress.slack.com/archives/C02QB2JS7\">#core-editor</a> channel in WordPress.org slack.</li>\n<li><strong>If a bug was introduced in the most recent version, and a next RC hasn\u2019t yet happened</strong>, ideally the developers can push to fix it prior to RC! The amount of push for a fix should scale proportional to the potential of breakage. In this case, add to the RC milestone and, if deemed urgent, ping in the <a href=\"https://wordpress.slack.com/archives/C02QB2JS7\">#core-editor</a> channel in WordPress.org slack.</li>\n<li><strong>If a bug wasn\u2019t introduced in the most recent version</strong>, do not add a milestone. Instead, use labels like <code>[Priority] High</code> if it\u2019s a pressing issue, and if needed you can call attention to it in the weekly core meetings.</li>\n</ul>\n<h3>Design specific triage</h3>\n<p>Along with the general triage flows listed previously, there are some specific additions to the flows for more design-centric triage for design minded folks participating in triage.</p>\n<ul>\n<li>PR testing and reviews: this should be your first stop for daily self triage.</li>\n<li>Label <code>Needs Design Feedback</code>: check if the issue does need design feedback and, if possible, give it. You can organize this by priority, project boards or by least commented. Once there are enough opinions, please remove this label and decide on next steps (ie adding the Needs Design label).</li>\n<li>Label  <code>Needs Design</code>: Does it really need a design? Does this fit a focus? If it has a design mark as <code>Needs Design Feedback</code> to better categorize the issue.</li>\n</ul>\n<p>Reminders:</p>\n<ul>\n<li>Ask for screenshots as needed.</li>\n<li>Ask for iterations and note any changes before merging.</li>\n<li>If the issue isn\u2019t in a board, check to see if it doesn\u2019t fit in a specific focus.</li>\n<li>If the issue/pull has not been prioritized yet, consider adding a priority label to help move the issue forward.</li>\n</ul>\n<p>For more detailed information about weekly design triage and to join in, please <a href=\"https://make.wordpress.org/design/handbook/workflows/weekly-gutenberg-design-triage/\">review this guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135089,
+    "menu_order": 393,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129316",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/129316",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/129316/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156156,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/129316/revisions/156156"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129316"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

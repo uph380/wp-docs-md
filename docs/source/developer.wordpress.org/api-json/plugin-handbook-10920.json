@@ -1,0 +1,97 @@
+{
+    "id": 10920,
+    "date": "2014-09-16T17:20:20",
+    "date_gmt": "2014-09-16T17:20:20",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10920"
+    },
+    "modified": "2024-02-20T10:38:03",
+    "modified_gmt": "2024-02-20T10:38:03",
+    "slug": "uninstall-methods",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/",
+    "title": {
+        "rendered": "Uninstall Methods"
+    },
+    "content": {
+        "rendered": "\n<p>Your plugin may need to do some clean-up when it is uninstalled from a site.</p>\n\n\n\n<p>A plugin is considered uninstalled if a user has deactivated the plugin, and then clicks the delete link within the WordPress Admin.</p>\n\n\n\n<p>When your plugin is uninstalled, you&#8217;ll want to clear out any plugin options and/or settings specific to the plugin, and/or other database entities such as tables.</p>\n\n\n\n<p>Less experienced developers sometimes make the mistake of using the deactivation hook for this purpose.</p>\n\n\n\n<p>This table illustrates the differences between deactivation and uninstall.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><th>Scenario</th><th>Deactivation Hook</th><th>Uninstall Hook</th></tr><tr><th>Flush Cache/Temp</th><td>Yes</td><td>No</td></tr><tr><th>Flush Permalinks</th><td>Yes</td><td>No</td></tr><tr><th>Remove Options from {$<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\" rel=\"class\">wpdb</a>-&gt;prefix}_options</th><td>No</td><td>Yes</td></tr><tr><th>Remove Tables from <a href=\"https://developer.wordpress.org/reference/classes/wpdb/\" rel=\"class\">wpdb</a></th><td>No</td><td>Yes</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Method 1: <code>register_uninstall_hook</code></h2>\n\n\n\n<p>To set up an uninstall hook, use the <a href=\"https://developer.wordpress.org/reference/functions/register_uninstall_hook/\" rel=\"function\">register_uninstall_hook()</a>  function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">register_uninstall_hook(\n\t__FILE__,\n\t'pluginprefix_function_to_run'\n);</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Method 2: <code>uninstall.php</code></h2>\n\n\n\n<p>To use this method you need to create an <code>uninstall.php</code> file inside the root folder of your plugin. This magic file is run automatically when the users deletes the plugin.</p>\n\n\n\n<p>For example: <code>/plugin-name/uninstall.php</code></p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nAlways check for the constant <code>WP_UNINSTALL_PLUGIN</code> in <code>uninstall.php</code> before doing anything. This protects against direct access.</p>\n<p>The constant will be defined by WordPress during the <code>uninstall.php</code> invocation.</p>\n<p>The constant is <strong>NOT</strong> defined when uninstall is performed by <a href=\"https://developer.wordpress.org/reference/functions/register_uninstall_hook/\" rel=\"function\">register_uninstall_hook()</a> .<br />\n</div></div>\n\n\n\n\n<p>Here is an example deleting option entries and dropping a database table:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// if uninstall.php is not called by WordPress, die\nif ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {\n    die;\n}\n\n$option_name = 'wporg_option';\n\ndelete_option( $option_name );\n\n// for site options in Multisite\ndelete_site_option( $option_name );\n\n// drop a custom database table\nglobal $wpdb;\n$wpdb-&gt;query( \"DROP TABLE IF EXISTS {$wpdb-&gt;prefix}mytable\" );</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nIn Multisite, looping through all blogs to delete options can be very resource intensive.<br />\n</div></div>\n\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10903,
+    "menu_order": 5,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10920",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10920",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10920/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 146018,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10920/revisions/146018"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10903"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10920"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134421,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/"
+    },
+    "modified": "2024-10-30T16:55:55",
+    "modified_gmt": "2024-10-30T16:55:55",
+    "slug": "editor-filters",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/",
+    "title": {
+        "rendered": "Editor Hooks"
+    },
+    "content": {
+        "rendered": "<p>WordPress exposes several APIs that allow you to modify the editor experience.</p>\n<h2>Editor settings</h2>\n<p>One of the most common ways to modify the Editor is through the <a href=\"https://developer.wordpress.org/reference/hooks/block_editor_settings_all/\"><code>block_editor_settings_all</code></a> PHP filter, which is applied before settings are sent to the initialized Editor. This filter allows plugin and theme authors extensive control over how the Editor behaves.</p>\n<div class=\"callout callout-warning\">\n    Before WordPress 5.8, this hook was known as <code>block_editor_settings</code>, which is now deprecated. If you need to support older versions of WordPress, you might need a way to detect which filter should be used. You can check if <code>block_editor_settings</code> is safe to use by seeing if the <code>WP_Block_Editor_Context</code> class exists, which was introduced in 5.8.\n</div>\n<p>The <code>block_editor_settings_all</code> hook passes two parameters to the callback function:</p>\n<ul>\n<li><code>$settings</code> \u2013 An array of configurable settings for the Editor.</li>\n<li><code>$context</code> \u2013 An instance of <a href=\"https://developer.wordpress.org/reference/classes/wp_block_editor_context/\"><code>WP_Block_Editor_Context</code></a>, an object that contains information about the current Editor.</li>\n</ul>\n<p>The following example modifies the maximum upload file size. Add this to a plugin or your theme&#8217;s <code>functions.php</code> file to test it.</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_filter_block_editor_settings_when_post_provided', 10, 2 );\n\nfunction example_filter_block_editor_settings_when_post_provided( $editor_settings, $editor_context ) {\n    if ( ! empty( $editor_context-&gt;post ) ) {\n        $editor_settings['maxUploadFileSize'] = 12345;\n    }\n    return $editor_settings;\n}\n</code></pre>\n<p>There are dozens of editor settings, too many to list in this documentation article, but here are a few examples of what you can do with the <code>block_editor_settings_all</code> filter.</p>\n<div class=\"callout callout-info\">\n    To view all available settings, open the Editor and then open the console in your browser&#8217;s <a href=\"https://developer.wordpress.org/advanced-administration/debug/debug-javascript/#open-the-developer-tools\">Developer Tools</a>. Enter the command <code>wp.data.select( 'core/block-editor' ).getSettings()</code> to display the current values for all Editor settings.\n</div>\n<h3>Restrict code editor access</h3>\n<p>The <code>codeEditingEnabled</code>, which defaults to <code>true</code>, controls whether the user can access the code editor <strong>in addition</strong> to the visual editor. There may be instances where you don&#8217;t want certain users to be able to access this view.</p>\n<p>If this setting is set to <code>false</code>, the user will not be able to switch between visual and code editor. The option in the settings menu will not be available, and the keyboard shortcut for switching editor types will not fire. Here&#8217;s an example:</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_restrict_code_editor' );\n\nfunction example_restrict_code_editor( $settings ) {\n    $can_active_plugins = current_user_can( 'activate_plugins' );\n\n    // Disable the Code Editor for users that cannot activate plugins (Administrators).\n    if ( ! $can_active_plugins ) {\n        $settings[ 'codeEditingEnabled' ] = false;\n    }\n\n    return $settings;\n}\n</code></pre>\n<h3>Restrict visual editor access</h3>\n<p>Similar to the <code>codeEditingEnabled</code> setting, <code>richEditingEnabled</code> allows you to control who can access the visual editor. If <code>true</code>, the user can edit the content using the visual editor.</p>\n<p>The setting defaults to the returned value of the <a href=\"https://developer.wordpress.org/reference/functions/user_can_richedit/\"><code>user_can_richedit</code></a> function. It checks whether the user can access the visual editor and whether the user&#8217;s browser supports it.</p>\n<h3>Set a default image size</h3>\n<p>Images are set to the <code>large</code> image size by default in the Editor. You can modify this using the <code>imageDefaultSize</code> setting, which is especially useful if you have configured your own custom image sizes. The following example changes the default image size to <code>medium</code>.</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_set_default_image_size' );\n\nfunction example_set_default_image_size( $settings ) {\n    $settings['imageDefaultSize'] = 'medium';\n    return $settings;\n}\n</code></pre>\n<h3>Disable Openverse</h3>\n<p>The <a href=\"https://openverse.org/\">Openverse</a> integration is enabled for all WordPress sites by default and is controlled by the <code>enableOpenverseMediaCategory</code> setting. To disable Openverse, apply the following filter:</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_disable_openverse' );\n\nfunction example_disable_openverse( $settings ) {\n    $settings['enableOpenverseMediaCategory'] = false;\n    return $settings;\n}\n</code></pre>\n<h3>Disable the Font Library</h3>\n<p>The Font Library allows users to install new fonts on their site, which is enabled by default and is controlled by the <code>fontLibraryEnabled</code> setting. To disable the Font Library, apply the following filter:</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_disable_font_library' );\n\nfunction example_disable_font_library( $settings ) {\n    $settings['fontLibraryEnabled'] = false;\n    return $settings;\n}\n</code></pre>\n<h3>Disable block inspector tabs</h3>\n<p>Most blocks display <a href=\"https://make.wordpress.org/core/2023/03/07/introduction-of-block-inspector-tabs/\">two tabs</a> in the Inspector, one for Settings and another for Styles. You can disable these tabs using the <code>blockInspectorTabs</code> setting.</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_disable_inspector_tabs_by_default' );\n\nfunction example_disable_inspector_tabs_by_default( $settings ) {\n    $settings['blockInspectorTabs'] = array( 'default' =&gt; false );\n    return $settings;\n}\n</code></pre>\n<p>You can also modify which blocks have inspector tabs. Here&#8217;s an example that disables tabs for a specific block.</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', 'example_disable_tabs_for_my_custom_block' );\n\nfunction example_disable_tabs_for_my_custom_block( $settings ) {\n    $current_tab_settings = _wp_array_get( $settings, array( 'blockInspectorTabs' ), array() );\n    $settings['blockInspectorTabs'] = array_merge(\n        $current_tab_settings,\n        array( 'my-plugin/my-custom-block' =&gt; false )\n    );\n\n    return $settings;\n}\n</code></pre>\n<h2>Block Directory</h2>\n<p>The Block Directory allows users to install new block plugins directly in the Editor from the WordPress.org <a href=\"https://wordpress.org/plugins/browse/block/\">Plugin Directory</a>. You can disable this functionality by removing the action that enqueues it, which is <code>wp_enqueue_editor_block_directory_assets</code>. To do so, use <a href=\"https://developer.wordpress.org/reference/functions/remove_action/\"><code>remove_action</code></a> like this:</p>\n<pre><code class=\"language-php\">remove_action( 'enqueue_block_editor_assets', 'wp_enqueue_editor_block_directory_assets' );\n</code></pre>\n<h2>Block patterns</h2>\n<p>Remote patterns, such as those from the WordPress.org <a href=\"https://wordpress.org/patterns/\">Pattern Directory</a>, are available to users by default in the Editor. This functionality is controlled by <code>should_load_remote_block_patterns</code>, which defaults to <code>true</code>. You can disable remote patterns by setting the filter to false (<code>__return_false</code>).</p>\n<pre><code class=\"language-php\">add_filter( 'should_load_remote_block_patterns', '__return_false' );\n</code></pre>\n<h2>Editor features</h2>\n<p>The following filters are available to extend features in the Editor.</p>\n<h3><code>editor.PostFeaturedImage.imageSize</code></h3>\n<p>You can use this filter to modify the image size displayed in the Post Featured Image component. It defaults to <code>'post-thumbnail'</code> and will fail back to the <code>full</code> image size when the specified image size doesn&#8217;t exist in the media object. It&#8217;s modeled after the <code>admin_post_thumbnail_size</code> filter in the Classic Editor.</p>\n<pre><code class=\"language-js\">import { addFilter } from '@wordpress/hooks';\n\nconst withImageSize = function ( size, mediaId, postId ) {\n    return 'large';\n};\n\naddFilter(\n    'editor.PostFeaturedImage.imageSize',\n    'my-plugin/with-image-size',\n    withImageSize\n);\n</code></pre>\n<h3><code>editor.PostPreview.interstitialMarkup</code></h3>\n<p>You can also filter the interstitial message shown when generating previews. Here&#8217;s an example:</p>\n<pre><code class=\"language-js\">import { addFilter } from '@wordpress/hooks';\n\nconst customPreviewMessage = function () {\n    return '&lt;b&gt;Post preview is being generated!&lt;/b&gt;';\n};\n\naddFilter(\n    'editor.PostPreview.interstitialMarkup',\n    'my-plugin/custom-preview-message',\n    customPreviewMessage\n);\n</code></pre>\n<h3><code>media.crossOrigin</code></h3>\n<p>This filter is used to set or modify the <code>crossOrigin</code> attribute for foreign-origin media elements (i.e., <code>&lt;audio&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;video&gt;</code>). See this <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin\">article</a> for more information on the <code>crossOrigin</code> attribute, its values, and how it applies to each element.</p>\n<p>One example of it in action is in the Image block&#8217;s transform feature to allow cross-origin images to be used in a <code>&lt;canvas&gt;</code>. Here&#8217;s an example:</p>\n<pre><code class=\"language-js\">import { addFilter } from '@wordpress/hooks';\n\naddFilter(\n    'media.crossOrigin',\n    'my-plugin/with-cors-media',\n    // The callback accepts a second `mediaSrc` argument which references\n    // the url to actual foreign media, useful if you want to decide\n    // the value of crossOrigin based upon it.\n    ( crossOrigin, mediaSrc ) =&gt; {\n        if ( mediaSrc.startsWith( 'https://example.com' ) ) {\n            return 'use-credentials';\n        }\n        return crossOrigin;\n    }\n);\n</code></pre>\n<h2>Editor REST API preload paths</h2>\n<p>You can use <a href=\"https://developer.wordpress.org/reference/hooks/block_editor_rest_api_preload_paths/\"><code>block_editor_rest_api_preload_paths</code></a> to filter the array of REST API paths that will be used to preload common data to use with the block editor. Here&#8217;s an example:</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_rest_api_preload_paths', 'example_filter_block_editor_rest_api_preload_paths_when_post_provided', 10, 2 );\n\nfunction example_filter_block_editor_rest_api_preload_paths_when_post_provided( $preload_paths, $editor_context ) {\n    if ( ! empty( $editor_context-&gt;post ) ) {\n        array_push( $preload_paths, array( '/wp/v2/blocks', 'OPTIONS' ) );\n    }\n    return $preload_paths;\n}\n</code></pre>\n<h2>Logging errors</h2>\n<p>A JavaScript error in a part of the UI shouldn&#8217;t break the whole app. To solve this problem for users, React library uses the concept of an <a href=\"https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary\">&#8220;error boundary&#8221;</a>. Error boundaries are React components that catch JavaScript errors anywhere in their child component tree and display a fallback UI instead of the component tree that crashed.</p>\n<p>The <code>editor.ErrorBoundary.errorLogged</code> action allows you to hook into the <a href=\"https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary\">Error Boundaries</a> and gives you access to the error object.</p>\n<p>You can use this action to get hold of the error object handled by the boundaries. For example, you may want to send them to an external error-tracking tool. Here&#8217;s an example:</p>\n<pre><code class=\"language-js\">import { addAction } from '@wordpress/hooks';\n\naddAction(\n    'editor.ErrorBoundary.errorLogged',\n    'mu-plugin/error-capture-setup',\n    ( error ) =&gt; {\n        // Error is the exception's error object. \n        // You can console.log it or send it to an external error-tracking tool.\n        console.log ( error );\n    }\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134419,
+    "menu_order": 78,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134421",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134421",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134421/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154489,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134421/revisions/154489"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134419"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134421"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 149345,
+    "date": "2023-11-21T14:56:16",
+    "date_gmt": "2023-11-21T14:56:16",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149345"
+    },
+    "modified": "2023-12-16T17:30:07",
+    "modified_gmt": "2023-12-16T17:30:07",
+    "slug": "custom-functionality",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/core-concepts/custom-functionality/",
+    "title": {
+        "rendered": "Custom Functionality (functions.php)"
+    },
+    "content": {
+        "rendered": "\n<p>This document will introduce you to the <code>functions.php</code> file. It is one of the optional standard files you first learned about in <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">Theme Structure</a>. Both block and classic themes can utilize it.</p>\n\n\n\n<p>The following will introduce you to the core concepts around using PHP within <code>functions.php</code>, but it will not teach you the PHP programming language itself. You can visit the official <a href=\"https://www.php.net/\">PHP documentation</a> for more information on how to write your own PHP code.</p>\n\n\n\n<p>Throughout the handbook, you will encounter more examples where you will add custom functionality, so getting the basics down is important. You can jump into more advanced PHP examples in the <a href=\"https://developer.wordpress.org/themes/features/\">Features</a>, <a href=\"https://developer.wordpress.org/themes/advanced-topics/\">Advanced Topics</a>, and <a href=\"https://developer.wordpress.org/themes/classic-themes/\">Classic Themes</a> chapters.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What is functions.php?</h2>\n\n\n\n<p>The <code>functions.php</code> essentially acts like a WordPress plugin, letting you add custom PHP functions, classes, interfaces, and more. It opens up the entirety of the PHP programming language to your theme.</p>\n\n\n\n<p>WordPress automatically loads the <code>functions.php</code> file (if it exists) as soon as it loads the theme on all page views on both the admin and front-end of the website. So it provides you with a lot of power to build unique features around WordPress.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Just because you <em>can</em> build plugin-like features in a theme doesn\u2019t mean you always should, particularly if you are distributing your theme to others to use. If you are creating features that should be available regardless of the site\u2019s design, <strong>it is best practice to put the code in a plugin</strong>. The rule of thumb is that themes should only deal with the site\u2019s design.</p></div></div>\n\n\n\n<p>While all themes can have a custom <code>functions.php</code> file, WordPress will only load the currently active theme\u2019s.</p>\n\n\n\n<p>The only caveat to that rule is when a child theme is active. In that case, WordPress loads the child theme\u2019s <code>functions.php</code> just before loading the parent theme\u2019s <code>functions.php</code>. You can learn more about <a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\">child themes</a> in the Advanced Topics chapter.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Common uses for functions.php</h2>\n\n\n\n<p>Because the <code>functions.php</code> file lets you write any PHP, you will often see themes with wildly different code, organizational systems, naming conventions, and more. The deeper your understanding of PHP, the easier it will be to follow the code from other themes.</p>\n\n\n\n<p>The following are some uses you will often find in a theme\u2019s <code>functions.php</code> file.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Adding actions or filters to hooks</h3>\n\n\n\n<p>Hooks are the entry point to extending WordPress\u2019 functionality, providing you with a way to inject custom code or filter data. Think of them as a way for themes (and plugins) to communicate directly with WordPress.</p>\n\n\n\n<p>WordPress\u2019 hooks system offers two different methods for executing your code during the page loading process:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/plugins/hooks/actions/\"><strong>Action hooks</strong></a> allow you to run a custom action callback and \u201cact on\u201d the information that it receives.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/hooks/filters/\"><strong>Filter hooks</strong></a> let you filter data via a custom filter callback and manipulate it.</li>\n</ul>\n\n\n\n<p>Technically, hooks are a part of the Plugin API, and you can <a href=\"https://developer.wordpress.org/plugins/hooks/\">read the documentation</a> on them in the Plugin Handbook.</p>\n\n\n\n<p>Despite being in the Plugin API, hooks are also extremely useful in the context of themes. Like plugins, you should always run your code on a hook so that it performs its functionality at the appropriate point in the load process.</p>\n\n\n\n<p>Throughout this handbook, you will see examples of adding features or functionality from <code>functions.php</code>, and these examples will always use a hook. Familiarizing yourself with their documentation will make it easier to understand PHP code in the handbook.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Theme setup function</h3>\n\n\n\n<p>One common use case for many themes is adding a setup function, which is generally used to register theme-supported features with WordPress. This is almost always executed on the <code>after_setup_theme</code> action hook, which is the first hook available after a theme\u2019s <code>functions.php</code> file has been loaded.</p>\n\n\n\n<p>To test this, open your theme\u2019s <code>functions.php</code> file (create one if it doesn\u2019t exist), and add the following PHP code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nadd_action( 'after_setup_theme', 'theme_slug_setup' );\n\nfunction theme_slug_setup() {\n\tadd_theme_support( 'wp-block-styles' );\n}</code></pre>\n\n\n\n<p>This code adds support for WordPress\u2019 more-opinionated block styles to your theme. You do not have to use this; it is merely serving as an example of what a setup function might look like.</p>\n\n\n\n<p>Setup functions are more common in classic themes. When using a block theme, the theme is often automatically opted into the features needed. You can find a list of theme-supported features here:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\">Function Reference: <code>add_theme_support()</code></a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/\">Block Editor Handbook: Theme Support</a></li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Loading scripts and styles</h3>\n\n\n\n<p>If you are familiar with HTML, you will likely have come across adding JavaScript via the <code>&lt;script&gt;</code> tag or stylesheets via the <code>&lt;link rel=\u201dstylesheet\u201d/&gt;</code> or <code>&lt;style&gt;</code>&nbsp; tags.</p>\n\n\n\n<p>WordPress provides helper functions and specific action hooks for loading scripts and styles. This ensures that they are injected at the appropriate place in the document output. WordPress creates the appropriate HTML markup for you.</p>\n\n\n\n<p>You can learn more about loading scripts and styles in the <a href=\"https://developer.wordpress.org/themes/core-conepts/including-assets/\">Including Assets</a> documentation.</p>\n\n\n\n<p>It is not uncommon when building block themes to have no need of including additional scripts/styles. Some themes rely entirely on <a href=\"https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/\">Global Settings and Styles</a> for the front-end design.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Including other PHP files</h2>\n\n\n\n<p>WordPress will automatically load your theme\u2019s <code>functions.php</code> for you, but you are not limited to only adding custom PHP code in that file. You can load other files with PHP interfaces, classes, traits, and functions from elsewhere in your theme.</p>\n\n\n\n<p>As you learned in <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">Theme Structure</a>, some themes include a custom folder named <code>/inc</code> (or any custom folder) to store custom PHP files. Let\u2019s assume you had an <code>/inc/helpers.php</code> file for custom helper functions, you could load it via <code>functions.php</code> using the <code>get_parent_theme_file_path()</code> function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">include get_parent_theme_file_path( 'inc/helpers.php' );</code></pre>\n\n\n\n<p>Generally speaking, you should use this function to get the correct directory path to any PHP file you need to load.</p>\n\n\n\n<p>Alternatively, if you wanted to allow a child theme to override the file with a fallback to the parent theme, you could use <code>get_theme_file_path()</code> instead:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">include get_theme_file_path( 'inc/helpers.php' );</code></pre>\n\n\n\n<p>It\u2019s not standard practice to let child theme\u2019s override files with PHP functions or classes, but there are use cases where it\u2019s needed.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Avoid closing ?&gt; tags at the end of files</h2>\n\n\n\n<p>This section could otherwise be titled \u201cHow to avoid the dreaded WordPress <em>white screen of death</em>.\u201d</p>\n\n\n\n<p>There are various reasons that you might see a broken site with nothing but a white screen. One of those reasons is when the <code>functions.php</code> file (or any PHP file) has whitespace following its closing <code>?&gt;</code> tag like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n// some code...\n?&gt;\n </code></pre>\n\n\n\n<p>Many editor configurations will automatically add an extra line at the end of files (a common development practice). When you add a closing <code>?&gt;</code> tag at the end of the file, it can be easy to miss this extra whitespace, which may cause the \u201cwhite screen of death\u201d in some environments.</p>\n\n\n\n<p>The easiest way to avoid this issue is to leave the closing <code>?&gt;</code> tag out altogether, which is perfectly valid PHP and standard practice. The above code should be written as:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n// some code...\n </code></pre>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 149331,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149345",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149345",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149345/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151171,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149345/revisions/151171"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149345"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

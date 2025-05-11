@@ -1,0 +1,109 @@
+{
+    "id": 10845825,
+    "date": "2018-11-04T08:09:36",
+    "date_gmt": "2018-11-04T08:09:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10845825"
+    },
+    "modified": "2024-06-08T17:51:25",
+    "modified_gmt": "2024-06-08T17:51:25",
+    "slug": "pages-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/pages-screen/",
+    "title": {
+        "rendered": "Pages screen"
+    },
+    "content": {
+        "rendered": "\n<p>The Pages Screen provides the facility to manage all the <a href=\"/support/article/pages/\">Pages</a> in a blog. Via this Screen, Pages can be edited, deleted, and viewed. Filtering, and searching, also makes it easy to quickly find Pages matching certain criteria.</p>\n\n\n\n<p>Several powerful features allow Pages to be edited in bulk (en masse) allowing fields such as Author, Parent, Template, Comments Allowed, Status, and Pings Allowed, to be changed for a whole batch of Pages. In addition, a Quick Edit feature provides an easy method to change a multitude of values, such as Title, Slug, Date, and Author, for a given Page.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1325\" height=\"675\" src=\"https://wordpress.org/documentation/files/2018/11/managepages-enV4.4.2.png\" alt=\"\" class=\"wp-image-10845840\" srcset=\"https://wordpress.org/documentation/files/2018/11/managepages-enV4.4.2.png 1325w, https://wordpress.org/documentation/files/2018/11/managepages-enV4.4.2-300x153.png 300w, https://wordpress.org/documentation/files/2018/11/managepages-enV4.4.2-1024x522.png 1024w, https://wordpress.org/documentation/files/2018/11/managepages-enV4.4.2-768x391.png 768w\" sizes=\"auto, (max-width: 1325px) 100vw, 1325px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Pages Screen</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Table of Pages</h3>\n\n\n\n<p>A table lists all of your Pages, by row. The Pages are listed with the newest Page first.</p>\n\n\n\n<p>The table of Pages contains the following columns:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[ ]</strong> \u2013 This checkbox, when clicked (checked), &#8216;selects&#8217; that particular Page to be processed by a Bulk Action.</li><li><strong>Title</strong> &#8211; This is the Page&#8217;s Title displayed as a link. Click the Title link to allow this Page to be edited in the Edit Page screen. Next to the Title, if a Page is of a Draft, Pending, or Password Protected nature, text will display showing that.</li><li><strong>&#8220;ID&#8221;</strong> &#8211; This is not a column in the Table, but by hovering the mouse over the Page Title, the Page ID is revealed as part of the URL displayed in the browser status bar (in Firefox the status bar is displayed at the bottom of the screen). A Page&#8217;s ID number is the unique number WordPress&#8217; database uses to identify individual Pages.</li><li><strong>Author</strong> &#8211; Displayed in the form of a link, this is the <a href=\"https://codex.wordpress.org/Users_Screen\">author</a> who wrote the Page. Clicking the author link causes all the Pages authored by that user to be displayed in the Table of Pages (thus allowing a Bulk Action to be applied to all Pages for a given author).</li><li><strong>comment bubble</strong> &#8211; A comment bubble is the column heading, and each Page row has comment bubble with the number of comments for that Page. If a Pages has any comments, then the number comments is displayed in a blue bubble. Clicking on a blue comment bubble causes the <a href=\"https://codex.wordpress.org/Comments_Screen\">Comments Screen</a> to be displayed to allow moderation of those comments.</li><li><strong>Date</strong> &#8211; The Date column for each Page shows the Date &#8216;Published&#8217; for Published Pages and the Date &#8216;Last Modified&#8217; for other Pages.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Sortable Columns</h4>\n\n\n\n<p>Some column headings, such as the Title, Author, and Date, can be clicked to sort the Table of Pages in ascending or descending order. Hover over the column title, for example Title, to see the up-arrow or down-arrow. Click the heading to change the sort order.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Page Navigation</h4>\n\n\n\n<p>Under the Screen Options, the number of Pages displayed per page is determined. If more then one page of Pages is available, two double-arrow boxes to move to the first and last page are provided. Also two single-arrow boxes are displayed to move one page backward or forward. Finally, a box showing the current page number can be used to enter a page to directly display.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Screen Options</h4>\n\n\n\n<p>The <a href=\"/support/article/administration-screens/#screen-options\">Screen Options</a> allow you to choose which columns are displayed, or not displayed, in the underlying Table. Clicking on the Screen Options tab shows a list of the columns with a check-box next to each column. Check the box for each column you want displayed in the Table, or uncheck the box to not display that column. In addition, the number of Pages per page can be set. Click the Screen Options tab again to close the Screen Options.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Search</h4>\n\n\n\n<p>Above the Table, to the right, is a search box where you can enter a word, or series of words, and click the &#8220;Search Pages&#8221; button to search and display all the Pages meeting your search words.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filtering Options</h3>\n\n\n\n<p>At the top of this Screen are links such as All, Published, Pending Review, Draft, Private, that when clicked, will cause just the Pages of that type to be displayed in the underlying Table.</p>\n\n\n\n<p>Below that, and to the right of the <a href=\"#actions\">Bulk Actions</a> <a href=\"#apply\">Apply button</a>, are one other filter option:</p>\n\n\n\n<p><strong>Show all dates</strong></p>\n\n\n\n<p>This dropdown allows you to select, by date, which Pages are displayed in the <a href=\"#table-of-pages\">Table of Pages</a>. By default, &#8220;Show all dates&#8221; is selected and all of your Posts are displayed.</p>\n\n\n\n<p><strong>Filter</strong></p>\n\n\n\n<p>Clicking this button applies the settings you select in the dropdowns.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Selection, Actions, and Apply</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Selection</h4>\n\n\n\n<p>This Screen allows Bulk Actions to be performed on one or more Pages selected in the Table. For Bulk Actions to be performed on multiple Pages at once, those Pages must be first <strong>selected</strong> via one of these methods:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Select one Page at a time</strong> &#8211; To select a Page, the checkbox to the left of the Page entry must be checked (clicked). It is possible to keep selecting more Pages by checking their respective checkbox.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Actions</h4>\n\n\n\n<p>Actions describe the process to be performed on particular Pages. There are two styles of Actions that will be referred to as <em>Bulk Actions</em> and <em>Immediate Actions</em>. The following describes these Actions:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Bulk Actions</strong> &#8211; These Actions can be performed on one, or more Pages, at one time, if those Pages have been previously <a href=\"/support/article/pages-screen/#Selection\">selected</a>. Bulk Actions are available, when appropriate, as choices in the Bulk Actions pulldown box, above the Table. The only Bulk Actions allowed are Edit and Delete.</li></ul>\n\n\n\n<p>The available Actions are described below:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Edit</strong> &#8211; This Action can be either an &#8220;Immediate Action&#8221; or a &#8220;Bulk Action&#8221;. The Immediate Action, initiated by click on the Title or clicking on the Edit option just below the Title, causes the Edit Pages screen to display. Edit is also available as a Bulk Action for the selected Pages, so see the Bulk Edit section for details on the Bulk Editing process.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Bulk Edit</h5>\n\n\n\n<p>The Bulk Edit Pages &#8216;screen&#8217; is displayed below the Table Of Pages header once, one, or more, Pages have been <a href=\"#selection\">selected</a>, and the <a href=\"#action\">Bulk Action</a> of Edit is <a href=\"/support/article/pages-screen/#Apply\">Applied</a>. Bulk Edit allows the fields Author, Parent, Template, Comments Allowed, Status, and Pings Allowed, to be changed for all the selected Pages.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Cancel</strong> &#8211; Click Cancel to cancel and abort the Bulk Edit of these Pages.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Quick Edit</h5>\n\n\n\n<p>Quick Edit is an Immediate Action performed on one Page by clicking the Quick Edit link under the Page Title in the Table of Pages. Quick Edit is just an in-line edit that allows you to change the following items&#8211;Title, Slug, Date, Author, Password or Private page box, Parent, Order, Template, Allow Comments, Allow Pings, Status.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Cancel</strong> &#8211; Click Cancel to cancel and abort the Edit of this Page.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Editing Individual Pages</h5>\n\n\n\n<p>This mode is essentially the same as the <a href=\"/support/article/pages-add-new-screen/\">Pages Add New Screen</a> so see that Screen for the specific details of writing a Page. The only difference is that the button to save your work is called &#8220;<strong>Update</strong>&#8221; instead of &#8220;<strong>Publish</strong>&#8220;.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Apply</h4>\n\n\n\n<p>After one or more Pages are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected Pages.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Apply</strong> &#8211; Click the Apply button to execute the Bulk Action, specified in the Actions pulldown, on the selected Pages. Remember, prior to executing Actions, one or more Pages must be <strong>selected</strong>, as described before.</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Pages Screen provides the facility to manage all the Pages in a blog. Via this Screen, Pages can be edited, deleted, and viewed. Filtering, and searching, also makes it easy to quickly find Pages matching certain criteria. Several powerful features allow Pages to be edited in bulk (en masse) allowing fields such as Author, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10845825",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10845825",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10845825"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10845825/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360352,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10845825/revisions/16360352"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10845825"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10845825"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

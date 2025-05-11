@@ -1,0 +1,91 @@
+{
+    "id": 5794,
+    "date": "2014-07-31T22:38:07",
+    "date_gmt": "2014-07-31T22:38:07",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5794"
+    },
+    "modified": "2023-12-14T20:50:59",
+    "modified_gmt": "2023-12-14T20:50:59",
+    "slug": "getting-started",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/getting-started/",
+    "title": {
+        "rendered": "Getting Started"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the Getting Started documentation. This chapter is primarily intended to introduce you to navigating the handbook itself, learning what WordPress themes are, and helping you get your first WordPress block theme up and running.</p>\n\n\n\n<p>While this chapter primarily focuses on readers who are new to theme development altogether, it is also meant as a resource for seasoned themers who are learning how to build block themes for the first time.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the following links to locate a topic within this chapter. Each article will walk you through the steps of navigating this handbook and getting a base understanding of how WordPress themes work:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/getting-started/what-is-a-theme/\"><strong>What Is a Theme?</strong></a><strong>:</strong> An introduction to what WordPress themes are and an explanation of the various types of themes.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/getting-started/who-is-this-handbook-for/\"><strong>Who Is This Handbook For?</strong></a><strong>:</strong> Explains who this handbook is for and why you might want to read it.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/getting-started/reading-this-handbook/\"><strong>Reading This Handbook</strong></a><strong>:</strong> Offers learning pathways for navigating the handbook based on skill level and provides an introduction on reading code samples.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/getting-started/tools-and-setup/\"><strong>Tools and Setup</strong></a><strong>:</strong> Gives an overview of all the tools that are required to create WordPress themes and offers recommendations on other useful apps and programs to consider.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/getting-started/quick-start-guide/\"><strong>Quick-Start Guide</strong></a><strong>:</strong> A step-by-step guide for getting your first basic theme up and running for those new to block theme development.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5794",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5794",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5794/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150242,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5794/revisions/150242"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5794"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 156824,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/range/range-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:51",
+    "modified_gmt": "2025-02-21T04:17:51",
+    "slug": "range-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/range/range-tutorial/",
+    "title": {
+        "rendered": "Using the Range Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Range field</li>\n<li>Configure options:\n<ul>\n<li>Set min/max values</li>\n<li>Configure step size</li>\n<li>Add prepend/append text</li>\n<li>Set default value</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Numeric Ranges\n<ul>\n<li>Volume controls</li>\n<li>Percentage settings</li>\n<li>Scale selections</li>\n</ul>\n</li>\n<li>Visual Settings\n<ul>\n<li>Opacity levels</li>\n<li>Size adjustments</li>\n<li>Intensity controls</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Set intuitive ranges</li>\n<li>Use clear min/max values</li>\n<li>Consider step granularity</li>\n<li>Add helpful labels</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156823,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156824",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156824",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156824/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156895,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156824/revisions/156895"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156823"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156824"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

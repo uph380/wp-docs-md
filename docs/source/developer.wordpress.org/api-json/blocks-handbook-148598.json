@@ -1,0 +1,91 @@
+{
+    "id": 148598,
+    "date": "2023-08-15T00:25:01",
+    "date_gmt": "2023-08-15T00:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-patterns/"
+    },
+    "modified": "2025-01-06T18:49:07",
+    "modified_gmt": "2025-01-06T18:49:07",
+    "slug": "packages-patterns",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-patterns/",
+    "title": {
+        "rendered": "@wordpress/patterns"
+    },
+    "content": {
+        "rendered": "<blockquote><p>\n  <strong>Note</strong><br />\n  This package is currently only used internally by the Gutenberg project to manage the creation and editing of user patterns using the <code>wp_block</code> CPT in the context of the block editor. The likes of the <code>PatternsMenuItems</code> component expect to be rendered within a <code>BlockEditorProvider</code> in order to work.\n</p></blockquote>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/patterns --save\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>Components</h2>\n<p>This package doesn&#8217;t currently have any publicly exported components.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 302,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148598",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148598",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148598/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156167,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148598/revisions/156167"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148598"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

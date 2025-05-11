@@ -1,0 +1,109 @@
+{
+    "id": 10798336,
+    "date": "2018-10-20T04:19:26",
+    "date_gmt": "2018-10-20T04:19:26",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10798336"
+    },
+    "modified": "2024-06-06T14:01:27",
+    "modified_gmt": "2024-06-06T14:01:27",
+    "slug": "dashboard-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/dashboard-screen/",
+    "title": {
+        "rendered": "Dashboard screen"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Dashboard <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Home</h2>\n\n\n\n<p>From the Dashboard Screen, you can quickly access your site&#8217;s content and get glimpses into other areas of the WordPress community.</p>\n\n\n\n<p>The Dashboard screen presents information in blocks called <strong>widgets</strong>. By default, WordPress delivers five widgets on this page: <a href=\"#at-a-glance\">At a Glance</a>, <a href=\"#activity\">Activity</a>, <a href=\"#quickdraft\">Quick Draft</a>, <a href=\"#wordpress-events-and-news\">WordPress Events and News</a>, and <a href=\"#welcome\">Welcome</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Default Dashboard Widgets</h2>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" decoding=\"async\" width=\"500\" height=\"334\" src=\"https://wordpress.org/documentation/files/2018/10/500px-dashboard.png\" alt=\"\" class=\"wp-image-10798341\" srcset=\"https://wordpress.org/documentation/files/2018/10/500px-dashboard.png 500w, https://wordpress.org/documentation/files/2018/10/500px-dashboard-300x200.png 300w\" sizes=\"auto, (max-width: 500px) 100vw, 500px\" /><figcaption>Dashboard Screen</figcaption></figure></div>\n\n\n\n<p>The following dashboard widgets are included by default with WordPress:</p>\n\n\n\n<h3 class=\"wp-block-heading\">At a Glance</h3>\n\n\n\n<p>The At a Glance widget provides a summary of the number of posts, pages, and comments on your site. Each of these content types are displayed in the form of a link and, when clicked upon, direct you to the specific area to manage that content.</p>\n\n\n\n<p>A statement at the bottom of this widget tells you what WordPress version you&#8217;re running on, as well as the current theme that you have activated on your site.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Activity</h3>\n\n\n\n<p>This widget shows the upcoming scheduled posts, recently published posts, and the most recent comments on your posts&#8211;and allows you to moderate them.</p>\n\n\n\n<p>A list of the most recent comments on your blog is detailed in this widget. Each comment that is listed has a link to the related post title&#8211;clicking this link allows you to edit the post. Hovering the mouse over each comment activates a menu of choices: to approve (or unapprove) the comment, edit the comment, reply to the comment, mark the comment as spam, or delete the comment.</p>\n\n\n\n<h3 class=\"wp-block-heading\">QuickDraft</h3>\n\n\n\n<p>The QuickDraft widget allows you to quickly and easily write a new draft. Enter a post title, upload/insert media, enter the post content, add tags, and click the <strong>Publish</strong> button or click the <strong>Save Draft</strong> button. It&#8217;s that easy!</p>\n\n\n\n<h3 class=\"wp-block-heading\">WordPress Events and News</h3>\n\n\n\n<p>This Dashboard widget lists upcoming local events and the latest news from the official <a href=\"https://www.wordpress.org/development/\">WordPress blog</a>.</p>\n\n\n\n<p>Here you can find out an upcoming event near you, or, what <a href=\"https://wordpress.org/about/\">WordPress developers</a> have been up to recently, and you can also keep up with the latest WordPress related news. In addition to software developments&#8211;such as version announcements and security notices&#8211;news about the WordPress community in general is periodically posted.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Welcome</h3>\n\n\n\n<p>The Welcome widget shows links for some of the most common tasks when setting up a new site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Screen Options</h2>\n\n\n\n<p>The Screen Options panel allows you to choose which widgets are displayed or not displayed.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"71\" src=\"https://wordpress.org/documentation/files/2018/10/700px-screenoptions.png\" alt=\"\" class=\"wp-image-10798344\" srcset=\"https://wordpress.org/documentation/files/2018/10/700px-screenoptions.png 700w, https://wordpress.org/documentation/files/2018/10/700px-screenoptions-300x30.png 300w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /><figcaption>Screen Options</figcaption></figure></div>\n\n\n\n<p>When you click on the Screen Options tab, the resulting panel shows the various Dashboard widgets, with a checkbox next to each widget. Check the box to display a specific widget, or uncheck the box to hide that widget.</p>\n\n\n\n<p>Click the Screen Options tab again to close the Screen Options panel.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Expanding, Collapsing, and Rearranging Widgets</h2>\n\n\n\n<p>Each widget can be expanded or contracted by clicking on the widget title bar.</p>\n\n\n\n<p>Widgets can be moved by hovering the mouse cursor over the widget title bar. When the mouse cursor changes to four arrows, hold the left mouse button down, drag the widget to where you want to place it, and then release the mouse button (this cursor motion is called drag and drop).</p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding new Dashboard Widgets</h2>\n\n\n\n<p>Plugin or theme developers can make new Dashboard widgets available through the plugin (or functions.php) code. For more information, see the <a href=\"https://codex.wordpress.org/Dashboard Widgets API\">Dashboard Widgets API</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Dashboard \u2192 Home From the Dashboard Screen, you can quickly access your site&#8217;s content and get glimpses into other areas of the WordPress community. The Dashboard screen presents information in blocks called widgets. By default, WordPress delivers five widgets on this page: At a Glance, Activity, Quick Draft, WordPress Events and News, and Welcome. Default [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10798336",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10798336",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10798336"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10798336/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360303,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10798336/revisions/16360303"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10798336"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10798336"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

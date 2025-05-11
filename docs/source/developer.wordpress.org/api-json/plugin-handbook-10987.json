@@ -1,0 +1,97 @@
+{
+    "id": 10987,
+    "date": "2014-09-18T03:07:36",
+    "date_gmt": "2014-09-18T03:07:36",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10987"
+    },
+    "modified": "2022-11-17T06:08:46",
+    "modified_gmt": "2022-11-17T06:08:46",
+    "slug": "basic-shortcodes",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/shortcodes/basic-shortcodes/",
+    "title": {
+        "rendered": "Basic Shortcodes"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Add a Shortcode</h2>\n\n\n\n<p>It is possible to add your own shortcodes by using the Shortcode API. The process involves registering a callback <code>$func</code> to a shortcode <code>$tag</code> using <code>add_shortcode()</code>.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_shortcode(\n    string $tag,\n    callable $func\n);</code></pre>\n\n\n\n<p><code>[wporg]</code> is your new shortcode. The use of the shortcode will trigger the <code>wporg_shortcode</code> callback function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_shortcode('wporg', 'wporg_shortcode');\nfunction wporg_shortcode( $atts = [], $content = null) {\n    // do something to $content\n    // always return\n    return $content;\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Remove a Shortcode</h2>\n\n\n\n<p>It is possible to remove shortcodes by using the Shortcode API. The process involves removing a registered <code>$tag</code> using <a href=\"https://developer.wordpress.org/reference/functions/remove_shortcode/\" rel=\"function\">remove_shortcode()</a> .</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">remove_shortcode(\n    string $tag\n);</code></pre>\n\n\n\n<p>Make sure that the shortcode have been registered before attempting to remove. Specify a higher priority number for <a href=\"https://developer.wordpress.org/reference/functions/add_action/\" rel=\"function\">add_action()</a>  or hook into an action hook that is run later.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Check if a Shortcode Exists</h2>\n\n\n\n<p>To check whether a shortcode has been registered use <code>shortcode_exists()</code>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10983,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10987",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10987",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10987/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144314,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10987/revisions/144314"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10983"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10987"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

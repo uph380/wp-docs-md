@@ -1,0 +1,109 @@
+{
+    "id": 16360148,
+    "date": "2024-08-13T02:57:20",
+    "date_gmt": "2024-08-13T02:57:20",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16360148"
+    },
+    "modified": "2024-08-14T05:56:25",
+    "modified_gmt": "2024-08-14T05:56:25",
+    "slug": "twenty-twelve",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-twelve/",
+    "title": {
+        "rendered": "Twenty Twelve"
+    },
+    "content": {
+        "rendered": "\n<p>The&nbsp;<a href=\"https://wordpress.org/themes/twentytwelve/\">Twenty Twelve</a>&nbsp;is the default theme for WordPress in 2012, designed by&nbsp;<a href=\"https://profiles.wordpress.org/drewstrojny/\">Drew Strojny</a>.</p>\n\n\n\n<p>The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.</p>\n\n\n\n<p>The theme has three patterns and three widget areas: Two on the front page and one sidebar.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"880\" height=\"660\" src=\"https://wordpress.org/documentation/files/2024/04/Twenty_Twelve_Theme.png\" alt=\"Screenshot of Twenty Twelve with a light grey body background, white content background, and dark grey text.\nThe horizontal main menu is below the site title, and the content and footer is displayed in two columns.\" class=\"wp-image-16360150\" srcset=\"https://wordpress.org/documentation/files/2024/04/Twenty_Twelve_Theme.png 880w, https://wordpress.org/documentation/files/2024/04/Twenty_Twelve_Theme-300x225.png 300w, https://wordpress.org/documentation/files/2024/04/Twenty_Twelve_Theme-768x576.png 768w\" sizes=\"auto, (max-width: 880px) 100vw, 880px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Quick Specs</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>The main column width is 625px except in the full-width layout where it\u2019s 960px; sidebar width is 250px.</li>\n\n\n\n<li>Featured image width is 624px (height is flexible)\u2014these images are displayed on displayed on \u201cstandard\u201d posts; posts without a specific format such as image, aside, link, or quote.</li>\n\n\n\n<li>The suggested header image dimensions are 960px by 250px (width, height). However, both are flexible so you can upload a smaller cropped image if you wish. The width is limited to 2000px.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Colors</h2>\n\n\n\n<p>Twenty Twelve uses the following color palette:</p>\n\n\n\n<p class=\"has-white-color has-text-color has-background has-link-color wp-elements-abb2be24b4e0430fb48b7aa420f7ebd8\" style=\"background-color:#21759b\">Blue #21759b</p>\n\n\n\n<p class=\"has-white-color has-text-color has-background has-link-color wp-elements-8b25be370fb8f2f01cb5a47770a7a6a4\" style=\"background-color:#444444\">Dark Gray #444</p>\n\n\n\n<p class=\"has-black-color has-text-color has-background has-link-color wp-elements-0e9cdfbd65c4f3f4a0d19a74190221f7\" style=\"background-color:#9f9f9f\">Medium Gray #9f9f9f</p>\n\n\n\n<p class=\"has-black-color has-text-color has-background has-link-color wp-elements-5c074d024c1e1b09796e429340f17638\" style=\"background-color:#e6e6e6\">Light Gray #e6e6e6</p>\n\n\n\n<p class=\"has-black-color has-white-background-color has-text-color has-background has-link-color wp-elements-2f6f7a56997d79b1a3b594991116d9bc\">White #ffffff</p>\n\n\n\n<p>You can change the header text color and the background color in the Colors panel in the <a href=\"https://wordpress.org/documentation/article/customizer/\">Customizer</a>:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"340\" height=\"520\" src=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-customizer-color.png\" alt=\"The Colors panel in the Customizer has two color selection options. One for the color in the site header, and one for the background color of the site.\" class=\"wp-image-16360654\" srcset=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-customizer-color.png 340w, https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-customizer-color-196x300.png 196w\" sizes=\"auto, (max-width: 340px) 100vw, 340px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Templates</h2>\n\n\n\n<p>Twenty Twelve has two optional page templates: A front page template and a full width page template with no sidebar.<br>Both templates hide the sidebar, and the front page template also hides the comments area.<br>You can set the page template by editing the page, opening the Page panel, and clicking on the template name.<br>The templates are available for pages, not for posts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Post formats</h2>\n\n\n\n<p>Twenty Twelve supports standard, aside, image, link, quote, and status <a href=\"https://developer.wordpress.org/advanced-administration/wordpress/post-formats/\">post formats</a>.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"643\" height=\"135\" src=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-aside.png\" alt=\"\" class=\"wp-image-16360659\" srcset=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-aside.png 643w, https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-aside-300x63.png 300w\" sizes=\"auto, (max-width: 643px) 100vw, 643px\" /><figcaption class=\"wp-element-caption\">On archive pages, the aside post format has a light blue background and a left border.</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"655\" height=\"69\" src=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-link.png\" alt=\"\" class=\"wp-image-16360661\" srcset=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-link.png 655w, https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-link-300x32.png 300w\" sizes=\"auto, (max-width: 655px) 100vw, 655px\" /><figcaption class=\"wp-element-caption\">On archive pages, the link post format is styled with a grey bold text and a right aligned decorative text that says &#8220;link&#8221; in uppercase letters.</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Patterns</h2>\n\n\n\n<p>The theme has three custom <a href=\"https://wordpress.org/documentation/article/block-pattern/\" data-type=\"helphub_article\" data-id=\"13271532\">patterns</a>: Floating images gallery, left-aligned large quote, and left-aligned image and paragraph.<br>You can access the patterns from the Block Editor.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Click the + icon to add a new block.</li>\n\n\n\n<li>Click on the&nbsp;Patterns&nbsp;tab.</li>\n\n\n\n<li>Select&nbsp;Twenty Twelve&nbsp;from the list of categories.</li>\n\n\n\n<li>Click on the pattern you wish to insert and the pattern is inserted in the document at the location of your cursor.</li>\n</ol>\n\n\n\n<p>Floating images gallery</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"540\" src=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-gallery.jpg\" alt=\"An image gallery with three columns. The left column contains one small vertically centered image. The middle column contains one small image and one larger vertically oriented image.\nThe third column contains a single large image.\" class=\"wp-image-16360640\" srcset=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-gallery.jpg 700w, https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-gallery-300x231.jpg 300w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /></figure>\n\n\n\n<p>Left-aligned large quote</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"500\" src=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-quote.png\" alt=\"A quote with bold text in a dark grey text color. Below the quote is a cite that is in italic and uses a thinner font weight.\" class=\"wp-image-16360642\" srcset=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-quote.png 700w, https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-quote-300x214.png 300w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /></figure>\n\n\n\n<p>Left-aligned image and paragraph</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"518\" src=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-left-aligned-image-and-text.jpg\" alt=\"A pattern with two columns, with an image at the top of the left column, and text in the right column.\nThe text starts with a drop cap.\" class=\"wp-image-16360645\" srcset=\"https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-left-aligned-image-and-text.jpg 700w, https://wordpress.org/documentation/files/2024/07/Twenty-Twelve-pattern-left-aligned-image-and-text-300x222.jpg 300w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Support &amp; resources</h2>\n\n\n\n<p>Get community help with Twenty Twelve in its&nbsp;<a href=\"https://wordpress.org/support/theme/twentytwelve/\">forum</a>.</p>\n\n\n\n<p>You can also read&nbsp;<a href=\"https://wordpress.org/documentation/article/twenty-twelve-changelog/\" data-type=\"helphub_article\" data-id=\"16359717\">the theme&#8217;s changelog.</a></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The&nbsp;Twenty Twelve&nbsp;is the default theme for WordPress in 2012, designed by&nbsp;Drew Strojny. The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, styling for post formats on both index and single views, and an optional no-sidebar page template. Make [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 12,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        82
+    ],
+    "class_list": [
+        "post-16360148",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360148",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16360148"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 50,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360148/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360768,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360148/revisions/16360768"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16360148"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16360148"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

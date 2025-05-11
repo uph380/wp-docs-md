@@ -1,0 +1,97 @@
+{
+    "id": 23077,
+    "date": "2016-12-06T17:29:38",
+    "date_gmt": "2016-12-06T17:29:38",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23077"
+    },
+    "modified": "2024-01-16T20:30:20",
+    "modified_gmt": "2024-01-16T20:30:20",
+    "slug": "pagination",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/",
+    "title": {
+        "rendered": "Pagination"
+    },
+    "content": {
+        "rendered": "<p>WordPress sites can have a lot of content\u2014far more than you&#8217;d want to pull down in a single request. The API endpoints default to providing a limited number of items per request, the same way that a WordPress site will default to 10 posts per page in archive views.</p>\n<h2>Pagination Parameters</h2>\n<p>Any API response which contains multiple resources supports several common query parameters to handle paging through the response data:</p>\n<ul>\n<li><code>?page=</code>: specify the page of results to return.\n<ul>\n<li>For example, <code>/wp/v2/posts?page=2</code> is the second page of posts results</li>\n<li>By retrieving <code>/wp/v2/posts</code>, then <code>/wp/v2/posts?page=2</code>, and so on, you may access every available post through the API, one page at a time.</li>\n</ul>\n</li>\n<li><code>?per_page=</code>: specify the number of records to return in one request, specified as an integer from 1 to 100.\n<ul>\n<li>For example, <code>/wp/v2/posts?per_page=1</code> will return only the first post in the collection</li>\n</ul>\n</li>\n<li><code>?offset=</code>: specify an arbitrary offset at which to start retrieving posts\n<ul>\n<li>For example, <code>/wp/v2/posts?offset=6</code> will use the default number of posts per page, but start at the 6th post in the collection</li>\n<li><code>?per_page=5&amp;page=4</code> is equivalent to <code>?per_page=5&amp;offset=15</code></li>\n</ul>\n</li>\n</ul>\n<p>\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><p>\nLarge queries can hurt site performance, so <code>per_page</code> is <strong>capped at 100 records</strong>. If you wish to retrieve more than 100 records, for example to build a client-side list of all available categories, you may make multiple API requests and combine the results within your application.</p>\n</div></div>\n</p>\n<p>To determine how many pages of data are available, the API returns two header fields with every paginated response:</p>\n<ul>\n<li><code>X-WP-Total</code>: the total number of records in the collection</li>\n<li><code>X-WP-TotalPages</code>: the total number of pages encompassing all available records</li>\n</ul>\n<p>By inspecting these header fields you can determine how much more data is available within the API.</p>\n<h2>Ordering Results</h2>\n<p>In addition to the pagination query parameters detailed above, several other parameters control the order of the returned results:</p>\n<ul>\n<li><code>?order=</code>: control whether results are returned in ascending or descending order\n<ul>\n<li>Valid values are <code>?order=asc</code> (for ascending order) and <code>?order=desc</code> (for descending order).</li>\n<li>All native collections are returned in descending order by default.</li>\n</ul>\n</li>\n<li><code>?orderby=</code>: control the field by which the collection is sorted\n<ul>\n<li>The valid values for <code>orderby</code> will vary depending on the queried resource; for the <code>/wp/v2/posts</code> collection, the valid values are &#8220;date,&#8221; &#8220;relevance,&#8221; &#8220;id,&#8221; &#8220;include,&#8221; &#8220;title,&#8221; and &#8220;slug&#8221;</li>\n<li>See the <a href=\"https://developer.wordpress.org/rest-api/reference\">REST API reference</a> for the values supported by other collections</li>\n<li>All collections with dated resources default to <code>orderby=date</code></li>\n</ul>\n</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 24962,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23077",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23077",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23077/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125421,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23077/revisions/125421"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24962"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23077"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

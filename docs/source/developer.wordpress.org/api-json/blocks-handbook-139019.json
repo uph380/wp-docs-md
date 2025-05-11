@@ -1,0 +1,91 @@
+{
+    "id": 139019,
+    "date": "2022-01-18T14:54:48",
+    "date_gmt": "2022-01-18T14:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/react-native/internationalization-guide/"
+    },
+    "modified": "2025-01-07T18:34:08",
+    "modified_gmt": "2025-01-07T18:34:08",
+    "slug": "internationalization-guide",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/react-native/internationalization-guide/",
+    "title": {
+        "rendered": "React Native Internationalization Guide"
+    },
+    "content": {
+        "rendered": "<p>The native version of the editor references two types of string:<br />\n1. Strings used in web and native platforms.<br />\n2. Strings used only in the native platform.</p>\n<p>Regarding the first type, these strings are translated following the same process described for the web version in <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/docs/how-to-guides/internationalization.md\">this guide</a>, however for the latter, it&#8217;s required to provide your own translations.</p>\n<h2>Extract strings only used in the native platform</h2>\n<p>In order to identify these strings, you can use the script <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/react-native-editor/bin/extract-used-strings.js\"><code>extract-used-strings</code></a> located in <code>packages/react-native-editor/bin/extract-used-strings.js</code> to generate a JSON object that contains all the strings referenced including the platforms where they are used, as well as the files that reference it. Here you can see the format:</p>\n<pre><code> {\n    \"gutenberg\": {\n      \"&lt;string&gt;\": {\n        \"string\": String value.\n        \"stringPlural\": String value with its plural form. [optional]\n        \"comments\": Comments for translators. [default value is an empty string]\n        \"reference\": Array containing the paths of the source files that reference the string.\n        \"platforms\": Array containing the platforms where the string is being used, values are \"android\" | \"ios\" | \"web\".\n      },\n      ...\n    },\n    \"other-domain-plugin\": {\n      ...\n    },\n    ...\n}\n</code></pre>\n<p>This command also supports passing extra plugins, in case the React Native bundle of the editor is generated including other plugins.</p>\n<p>It&#8217;s important to note that the JSON object contains all used strings, so in order to identify the ones only used in the native platform, it\u2019s required to provide your own script/process to extract them. This can easily be done by going through the strings and filtering out the ones that include the &#8220;web&#8221; platform.</p>\n<h3>NPM command</h3>\n<p>Extract used strings:</p>\n<pre><code class=\"language-sh\">npm run native i18n:extract-used-strings -- \"$PWD/used-strings.json\"\n</code></pre>\n<p><em><strong>NOTE:</strong> We need to pass absolute paths, otherwise it uses <code>packages/react-native-editor</code> as root path for relative paths.</em></p>\n<p>Extract used strings including extra plugins:</p>\n<pre><code class=\"language-sh\">npm run native i18n:extract-used-strings -- \"$PWD/used-strings.json\" \"domain-plugin-1\" &lt;PLUGIN-1_SOURCE_PATH&gt; \"domain-plugin-2\" &lt;PLUGIN-2_SOURCE_PATH&gt; ...\n</code></pre>\n<h2>Providing own translations (for strings only used in native platform)</h2>\n<p>Once you have the list of used strings in the native platform, the strings have to be translated, however, this process is out of the scope of the native version so you have to provide your own translations.</p>\n<p>The process for injecting the translations data into the editor is via the <code>translations</code> initial prop which is passed to the editor during its initialization:<br />\n&#8211; <a href=\"https://github.com/WordPress/gutenberg/blob/72854b4d6b09bd7fb7f996a5c55dd3cc0613ddf8/packages/react-native-bridge/android/react-native-bridge/src/main/java/org/wordpress/mobile/WPAndroidGlue/GutenbergProps.kt#L34\">Android reference</a><br />\n&#8211; <a href=\"https://github.com/WordPress/gutenberg/blob/72854b4d6b09bd7fb7f996a5c55dd3cc0613ddf8/packages/react-native-bridge/ios/GutenbergBridgeDataSource.swift#L39-L43\">iOS reference</a></p>\n<p>The mechanism for integrating the provided translations to the mobile client, via the mentioned <code>translations</code> initial prop, is not described here, as it&#8217;s specific to the mobile client and could be achieved in different ways. Nevertheless, it&#8217;s important that they&#8217;re provided by the mentioned initial prop, as the editor is in charge of merging them with the translations already included in the editor.</p>\n<p><strong>NOTE:</strong> Keep in mind that those strings that match with ones already included in the editor will be overridden.</p>\n<h2>Fetch translations (for strings used in web and native platforms)</h2>\n<p>A translation file is basically a JSON object that contains key-value items with the translation for each individual string. This content is fetched from <a href=\"https://translate.wordpress.org/\">translate.wordpress.org</a> that holds translations for WordPress and a list of different plugins like Gutenberg.</p>\n<p>These files can be cached under a folder and optimized. Additionally, an index file is generated that acts as the entry point to import and fetches the plugin translations.</p>\n<p>Fetched translations contain all the translatable plugin strings, including those not used in the native version of the editor. The file sizes, however, can be reduced by filtering out the strings not referenced in the used strings JSON file.</p>\n<p>By default, when installing dependencies, un-optimized translations might be downloaded for Gutenberg and located in the <code>i18n-cache</code> folder if the cache is not present.</p>\n<p>The strings included in these translation files are imported in the editor upon its initialization (<a href=\"https://github.com/WordPress/gutenberg/blob/154918b5770ac07c851169eaa35961c636eac5ba/packages/react-native-editor/src/index.js#L43-L49\">reference</a>) and will be merged with the extra translations provided by the <code>translations</code> initial prop.</p>\n<h3>NPM command</h3>\n<p>Fetch un-optimized translations:</p>\n<pre><code class=\"language-sh\">npm run native i18n:fetch-translations -- \"gutenberg\" &lt;OUTPUT_PATH&gt;\n</code></pre>\n<p><em><strong>NOTE:</strong> We need to pass absolute paths, otherwise it uses <code>packages/react-native-editor</code> as root path  for relative paths.</em></p>\n<p>Fetch optimized translations:</p>\n<pre><code class=\"language-sh\">npm run native i18n:fetch-translations -- \"gutenberg\" &lt;OUTPUT_PATH&gt; &lt;USED_STRINGS_FILE&gt;\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 137772,
+    "menu_order": 385,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-139019",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/139019",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/139019/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151700,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/139019/revisions/151700"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137772"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=139019"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

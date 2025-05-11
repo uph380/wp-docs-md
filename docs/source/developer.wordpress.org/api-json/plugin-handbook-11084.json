@@ -1,0 +1,91 @@
+{
+    "id": 11084,
+    "date": "2014-09-24T19:19:17",
+    "date_gmt": "2014-09-24T19:19:17",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11084"
+    },
+    "modified": "2023-12-14T20:50:39",
+    "modified_gmt": "2023-12-14T20:50:39",
+    "slug": "users",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/users/",
+    "title": {
+        "rendered": "Users"
+    },
+    "content": {
+        "rendered": "\n<p>A <em>User</em> is an access account with corresponding capabilities within the WordPress installation. Each\u00a0WordPress user has, at the bare minimum, a username, password and email address.</p>\n\n\n\n<p>Once a user account is created, that user\u00a0may log in using the WordPress Admin (or programmatically) to access WordPress functions and data. WordPress stores the Users in the <code>users</code> table.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Roles and Capabilities</h2>\n\n\n\n<p>Users are assigned\u00a0<a rel=\"noreferrer noopener\" href=\"https://developer.wordpress.org/plugins/users/roles-and-capabilities/#roles\" target=\"_blank\">roles</a>, and each role has a set of <a rel=\"noreferrer noopener\" href=\"https://developer.wordpress.org/plugins/users/roles-and-capabilities/#capabilities\" target=\"_blank\">capabilities</a>.</p>\n\n\n\n<p>You can create new\u00a0roles with their own set of capabilities. Custom capabilities can\u00a0also be created and assigned to existing roles or new roles.</p>\n\n\n\n<p>In WordPress, developers can take advantage of user roles to limit the set of actions an account can perform.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The Principle of Least Privileges</h2>\n\n\n\n<p>WordPress adheres to the principal of least privileges, the practice of giving a user <em>only</em> the\u00a0privileges that\u00a0are essential for performing the desired work. You should follow this lead when possible by creating roles where appropriate and checking capabilities before performing sensitive tasks. </p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 13,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11084",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11084",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 26,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11084/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 128477,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11084/revisions/128477"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11084"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

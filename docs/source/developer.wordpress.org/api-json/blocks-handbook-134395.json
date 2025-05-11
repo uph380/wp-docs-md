@@ -1,0 +1,91 @@
+{
+    "id": 134395,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/platform/"
+    },
+    "modified": "2024-01-29T20:55:16",
+    "modified_gmt": "2024-01-29T20:55:16",
+    "slug": "platform",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/platform/",
+    "title": {
+        "rendered": "Development Platform"
+    },
+    "content": {
+        "rendered": "<p>The Gutenberg Project is not only building a better editor for WordPress, but also creating a platform to build upon. This platform consists of a set of JavaScript packages and tools that you can use in your web application. <a href=\"https://www.npmjs.com/org/wordpress\">View the list of packages available on npm</a>.</p>\n<h2>UI components</h2>\n<p>The <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/\">WordPress Components package</a> contains a set of UI components you can use in your project. See the <a href=\"https://wordpress.github.io/gutenberg/\">WordPress Storybook site</a> for an interactive guide to the available components and settings.</p>\n<p>Here is a quick example, how to use components in your project.</p>\n<p>Install the dependency:</p>\n<pre><code class=\"language-bash\">npm install --save @wordpress/components\n</code></pre>\n<p>Usage in React:</p>\n<pre><code class=\"language-jsx\">import { Button } from '@wordpress/components';\n\nfunction MyApp() {\n    return &lt;Button&gt;Hello Button&lt;/Button&gt;;\n}\n</code></pre>\n<p>Many components include CSS to add style, you will need to include for the components to appear correctly. The component stylesheet can be found in <code>node_modules/@wordpress/components/build-style/style.css</code>, you can link directly or copy and include it in your project.</p>\n<h2>Development scripts</h2>\n<p>The <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-scripts/\"><code>@wordpress/scripts</code> package</a> is a collection of reusable scripts for JavaScript development \u2014 includes scripts for building, linting, and testing \u2014 all with no additional configuration files.</p>\n<p>Here is a quick example, on how to use <code>wp-scripts</code> tool in your project.</p>\n<p>Install the dependency:</p>\n<pre><code class=\"language-bash\">npm install --save-dev @wordpress/scripts\n</code></pre>\n<p>You can then add a scripts section to your package.json file, for example:</p>\n<pre><code class=\"language-json\">    \"scripts\": {\n        \"build\": \"wp-scripts build\",\n        \"format\": \"wp-scripts format\",\n        \"lint:js\": \"wp-scripts lint-js\",\n        \"start\": \"wp-scripts start\"\n    }\n</code></pre>\n<p>You can then use <code>npm run build</code> to build your project with all the default webpack settings already configured, likewise for formatting and linting. The <code>start</code> command is used for development mode. See the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-scripts/\"><code>@wordpress/scripts</code> package</a> for full documentation.</p>\n<p>For more info, see the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/\">Getting Started with JavaScript tutorial</a> in the Block Editor Handbook.</p>\n<h2>Block Editor</h2>\n<p>The <a href=\"https://developer.wordpress.org/block-editor/packages/packages-block-editor/\"><code>@wordpress/block-editor</code> package</a> allows you to create and use standalone block editors.</p>\n<p>You can learn more by reading the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/platform/custom-block-editor/\">tutorial &#8220;Building a custom block editor&#8221;</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 27,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134395",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134395",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134395/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151905,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134395/revisions/151905"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134395"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

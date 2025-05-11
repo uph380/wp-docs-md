@@ -1,0 +1,91 @@
+{
+    "id": 145864,
+    "date": "2023-03-28T04:02:42",
+    "date_gmt": "2023-03-28T04:02:42",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/advanced-administration/security/logging-in/"
+    },
+    "modified": "2024-01-16T20:30:05",
+    "modified_gmt": "2024-01-16T20:30:05",
+    "slug": "logging-in",
+    "status": "publish",
+    "type": "adv-admin-handbook",
+    "link": "https://developer.wordpress.org/advanced-administration/security/logging-in/",
+    "title": {
+        "rendered": "Your password"
+    },
+    "content": {
+        "rendered": "<p>Creating an extension <a href=\"https://wordpress.org/documentation/article/resetting-your-password/\">of this post about resetting your password</a>, but placing all technical details here.</p>\n<p><a href=\"https://github.com/WordPress/Documentation-Issue-Tracker/issues/79\">See this issue on github on sections to take over</a> with the following note:<br />\n&#8211; promote WP CLI above the other options, for being the safest.</p>\n<h2>Changelog</h2>\n<ul>\n<li>2022-09-27: Adding the bare essentials.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 145863,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145864",
+        "adv-admin-handbook",
+        "type-adv-admin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145864",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/adv-admin-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145864/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151934,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145864/revisions/151934"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145863"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145864"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

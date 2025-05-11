@@ -1,0 +1,109 @@
+{
+    "id": 11124205,
+    "date": "2019-01-24T00:33:36",
+    "date_gmt": "2019-01-24T00:33:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11124205"
+    },
+    "modified": "2023-01-11T17:06:05",
+    "modified_gmt": "2023-01-11T17:06:05",
+    "slug": "comments-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comments-screen/",
+    "title": {
+        "rendered": "Comments screen"
+    },
+    "content": {
+        "rendered": "\n<p>In the <strong>Comments Screen</strong> you can edit or delete content found in comments to your posts, and you can mark comments as spam, send comments to the trash,  and reply to comments.  A number of rules can be defined about who can  write comments, and how comments are moderated.  These rules are managed  via Administration &gt; Settings &gt; Discussion. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11124210\"><img loading=\"lazy\" decoding=\"async\" width=\"1171\" height=\"329\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/01/comments-screen.png?fit=1171%2C329&amp;ssl=1\" alt=\"\" class=\"wp-image-11124210\" srcset=\"https://wordpress.org/documentation/files/2019/01/comments-screen.png 1171w, https://wordpress.org/documentation/files/2019/01/comments-screen-300x84.png 300w, https://wordpress.org/documentation/files/2019/01/comments-screen-1024x288.png 1024w, https://wordpress.org/documentation/files/2019/01/comments-screen-768x216.png 768w\" sizes=\"auto, (max-width: 1171px) 100vw, 1171px\" /></a><figcaption>Comments Screen</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Comments</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Table of Comments</h3>\n\n\n\n<p>The Table of Comments displays all the comments, with the most recent  comment displayed first.  </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[ ]</strong> \u2013 This checkbox, when clicked (checked), &#8216;selects&#8217; that particular comment to be processed by a Bulk Action.</li><li><strong>Gravatar</strong> &#8211; This is a picture or gravatar of the comment author.  </li><li><strong>Author</strong> &#8211; This is the name of the comment author.  Below the  comment author name is the comment author&#8217;s email address that can be  clicked to begin an email to that address.  Below the email address is  the commenter\u2019s web-site in the form of a URL that can be click to visit  that commenter\u2019s web-site.  Below the email address is commenter\u2019s IP  address in the form of a link.  Clicking that IP address link causes all  the comments originated by that IP address to be displayed thus  allowing a Bulk Action to be applied to all comments from that address.</li><li><strong>Comment</strong> &#8211; The first item in this column is the comment date  and time presented as a link.  Click the date and time will take you to  that comment on your live site. Below the date and time is the actual  comment that was submitted. Hovering over any comment gives you  Immediate Actions that can be performed on that comment.</li><li><strong>In Response To</strong> &#8211; There are three elements. The text is the  name of the post that inspired the comment, and links to the post editor  for that entry. The View Post link leads to that post on your live  site. The small bubble with the number in it shows the number of  approved comments that post has received. If the bubble is gray, you  have moderated all comments for that post. If it is blue, there are  pending comments. Clicking the bubble will filter the comments screen to  show only comments on that post.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Sortable Columns</h4>\n\n\n\n<p>Some column headings, such as the Author, and In Response To, can be\nclicked to sort the Table of Comments in ascending or descending order.\n Hover over the column title, for example Author, to see the up-arrow or\n down-arrow.  Click the heading to change the sort order.\n</p>\n\n\n\n<h4 class=\"wp-block-heading\">Page Navigation</h4>\n\n\n\n<p>Under the Screen Options, the number of Comments displayed per page\nis determined.  If more then one page of Comments is available, two\ndouble-arrow boxes to move to the first and last page are provided.\nAlso two single-arrow boxes are displayed to move one page backward or\nforward.  Finally, a box showing the current page number can be used to\nenter a page to directly display.\n</p>\n\n\n\n<h4 class=\"wp-block-heading\">Screen Options</h4>\n\n\n\n<p>The Screen Options  allow you to choose which columns are displayed, or not displayed, in  the underlying Table.  Clicking on the Screen Options tab shows a list  of the columns with a check-box next to each column.  Check the box for  each column you want displayed in the Table, or uncheck the box to not  display that column.  In addition, the number of items you want  displayed in the table can be set.  Choose 1 to 999.  Click the Screen  Options tab again to close the Screen Options. </p>\n\n\n\n<h4 class=\"wp-block-heading\">Search</h4>\n\n\n\n<p>Above the Table, to the right, is a search box where you can enter a\nword, or series of words, and click the &#8220;Search Comments&#8221; button to\nsearch and display all the comments meeting your search words.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filtering Options</h3>\n\n\n\n<p>At the top of this Screen are links such as All, Pending, Approved,\nSpam, and Trash, that when clicked, will cause just the comments of that\n type to be displayed in the underlying Table.\n</p>\n\n\n\n<p>Below that and to the right of the Bulk Actions Apply button, is another filter option:</p>\n\n\n\n<p><strong>Show all comment types</strong></p>\n\n\n\n<p>This drop-down allows you to select, by type, which Posts are displayed in the Table of Comments.   By default, &#8220;Show all comment types&#8221; is selected and all of the  comments are displayed.  Besides all comment types, this pull-down offers  the ability to filter just comments or just pings. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Selection, Actions, and Apply</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Selection</h4>\n\n\n\n<p>\nThis Screen allows Bulk Actions to be performed on one or more\ncomments selected in the Table.  For Bulk Actions to be performed on\nmultiple comments at once, those comments must be first <strong>selected</strong> via one of these methods:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Select one comment at a time</strong> &#8211; To select a comment, the\ncheckbox to the left of the comment entry must be checked (clicked).  It\n is possible to keep selecting more comments by checking their\nrespective checkbox.</li><li><strong>Select all comments in given Table</strong> &#8211; All comments in a given\ntable can be selected by checking the checkbox in the Table&#8217;s title, or\nfooter bar.  Of course, unchecking the header or footer title bar\ncheckbox will cause all entries in that Table to be unchecked (NOT\nselected). </li><li><strong>Reverse Selection</strong> &#8211; A Reverse Selection means checked items\nbecome unchecked, and unchecked items become checked. A Reverse\nSelection is accomplished by holding the Shift key on the keyboard and\nclicking the header or footer title bar checkbox.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Actions</h4>\n\n\n\n<p>\nActions describe the process to be performed on particular\ncomments.  There are two styles of Actions that will be referred to as <em>Bulk Actions</em> and <em>Immediate Actions</em>.  The following describes these Actions:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Bulk Actions</strong> &#8211; These Actions can be performed on one, or more comments, at one time, if those comments have been previously selected.  Bulk Actions are available, when appropriate, as choices in the Bulk  Actions pull-down box, above the Table.  The Bulk Actions allowed are  Unapprove, Approve, Mark as Spam, and Move to Trash.   </li><li><strong>Immediate Actions</strong> &#8211; Immediate Actions are performed  immediately, on an individual comment.  When the mouse cursor is moved  over (hover) a comment, in the Comment column, under the comment itself  the Immediate Actions of Unapprove, Reply, Quick Edit, Edit, Spam, and  Trash appear as links.  Click one of those links to initiate the  corresponding Immediate Action.</li></ul>\n\n\n\n<p>\nThe available Actions are described below:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Approve/Unapprove</strong> &#8211; This Action is shared by one link.   If a comment is currently in an approved state then this link shows as  Unapprove (in orange), but if the comment is Unapproved this link shows  as Approve (in green).  Clicking the Approve or Unapprove link changes  the comment to the opposite status.  Both Approve and Unapprove are  available as Bulk Actions.</li><li><strong>Reply</strong> &#8211; Available only as an Immediate Action.  Clicking  action cause the Reply to Comment edit window to display below the  current comment and a reply to that comment can be made and sent when  the Reply button is clicked. </li><li><strong>Quick Edit</strong> &#8211; Quick Edit is an &#8220;Immediate Action&#8221; that allows a quick in-line edit of the comment.  See the Quick Edit section for details on this Action.</li><li><strong>Edit</strong> &#8211; This Action, an Immediate Action, initiated by click on the Edit option just below the comment, causes the Comments Edit Screen to display. </li><li><strong>Spam</strong> &#8211; This Action, shown in red, marks the comment as spam.   Spam is available both as a Bulk Action, and an Immediate Action.  See  the Spam section for details on this Action.</li><li><strong>Trash</strong> &#8211; This Action, shown in red, sends the comment to the  trash bin.  Comments sent to the Trash later be restored or deleted  permanently.  Trash is available both as a Bulk Action, and an Immediate  Action.  See the Trash section for details on this Action.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Quick Edit</h5>\n\n\n\n<p>\nQuick Edit is an Immediate Action performed on one comment by\nclicking the Quick Edit link, under the comment in the Table of\nComments.  Quick Edit is just an in-line edit that allows you to change\nthe following items&#8211;Name of commenter, Email of commenter, URL of\ncommenter, and the comment.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Cancel</strong> &#8211; Click Cancel to cancel and abort the Edit of this comment.</li><li><strong>Update Comment</strong> &#8211; Click Update Comment to save the Edits made to this comment.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Spam</h5>\n\n\n\n<p> Once a comment has been marked as Spam,  that comment and other Spam comments can be accessed via the Spam  Filtering link above the Table of Comments.  Once those Spam comments  are accessed via that Filter link, then each Spam comment can be  Unspammed or can be Deleted Permanently.  In addition an Empty Spam  button can be clicked and all comments that are marked as Spam are  deleted permanently.  The Empty Spam button deletes all Spam comments  even if the comments are not selected. </p>\n\n\n\n<h5 class=\"wp-block-heading\">Trash</h5>\n\n\n\n<p> Once a comment as be sent to the Trash,  that and other Trashed comments can be accessed via the Trash Filtering  link above the Table of Comments.  Each of the Trashed comments can be  Restored to the previous state before that comment was sent to the  Trash.  In addition, an Empty Trash button can be clicked and all  comments in the Trash are deleted permanently.  The Empty Trash button  deletes all Trash comments even if the comments are not selected. </p>\n\n\n\n<h4 class=\"wp-block-heading\">Apply</h4>\n\n\n\n<p>\nAfter one or more comments are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected comments.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Apply</strong> &#8211; Click the Apply button to execute the  Bulk Action, specified in the Actions pull-down, on the selected  comments.  Remember, prior to executing Actions, one or more comments  must be <strong>selected</strong>, as described before.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Edit Comment</h2>\n\n\n\n<p>Once a comment is edited this Screen display and allows the user to change the comment and the status of the comment. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11124216\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"381\" src=\"https://wordpress.org/documentation/files/2019/01/comments-edit-screen-1024x381.png\" alt=\"\" class=\"wp-image-11124216\" srcset=\"https://wordpress.org/documentation/files/2019/01/comments-edit-screen-1024x381.png 1024w, https://wordpress.org/documentation/files/2019/01/comments-edit-screen-300x112.png 300w, https://wordpress.org/documentation/files/2019/01/comments-edit-screen-768x286.png 768w, https://wordpress.org/documentation/files/2019/01/comments-edit-screen.png 1169w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></a><figcaption>Edit Comment Screen</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Author</strong>\n<ul><li><strong>Name</strong> &#8211; The name given by the author of the comment.</li><li><strong>E-mail</strong> &#8211; The e-mail address given by the author of the comment.</li><li><strong>URL</strong> &#8211; The web-site URL given by the author of the comment.</li></ul></li><li><strong>Comment</strong>\n<ul><li><strong>Edit Comment box</strong> &#8211; The edit box containing the content where changes can be made to said text.</li></ul></li><li><strong>Status</strong>\n<ul><li><strong>Approved</strong> &#8211; Radio button to mark this comment as approved.</li><li><strong>Pending</strong> &#8211; Radio button to mark this comment as pending (unapproved).</li><li><strong>Spam</strong> &#8211; Radio button to mark this comment as spam.</li><li><strong>Submitted on</strong> &#8211; Click the Edit button to edit the date and time this comment was submitted.</li></ul></li><li><strong>Actions</strong>\n<ul><li><strong>View Comment</strong> &#8211; Views the entire comment and post as displayed on the blog.  </li><li><strong>Move to Trash</strong> &#8211; Click this link to send this comment to the Trash where it later can be restored or deleted permanently.</li><li><strong>Update</strong> &#8211; Allows you to save the changes to the comment and return to the Table of Comments.</li></ul></li></ul>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>In the Comments Screen you can edit or delete content found in comments to your posts, and you can mark comments as spam, send comments to the trash, and reply to comments. A number of rules can be defined about who can write comments, and how comments are moderated. These rules are managed via Administration [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11124205",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11124205",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11124205"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11124205/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355131,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11124205/revisions/16355131"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11124205"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11124205"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

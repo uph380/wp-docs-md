@@ -1,0 +1,91 @@
+{
+    "id": 10933,
+    "date": "2014-09-16T17:33:49",
+    "date_gmt": "2014-09-16T17:33:49",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10933"
+    },
+    "modified": "2023-12-14T20:48:40",
+    "modified_gmt": "2023-12-14T20:48:40",
+    "slug": "security",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/security/",
+    "title": {
+        "rendered": "Plugin Security"
+    },
+    "content": {
+        "rendered": "\n<p>This content has been moved to the <a href=\"https://developer.wordpress.org/apis/security/\">Security page</a> in the Common APIs Handbook.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10933",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10933",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 31,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10933/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144621,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10933/revisions/144621"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10933"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

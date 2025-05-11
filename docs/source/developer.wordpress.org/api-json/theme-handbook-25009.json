@@ -1,0 +1,97 @@
+{
+    "id": 25009,
+    "date": "2017-01-10T03:22:43",
+    "date_gmt": "2017-01-10T03:22:43",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25009"
+    },
+    "modified": "2018-03-15T13:25:34",
+    "modified_gmt": "2018-03-15T13:25:34",
+    "slug": "javascriptunderscore-js-rendered-custom-controls",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/customize-api/javascriptunderscore-js-rendered-custom-controls/",
+    "title": {
+        "rendered": "JavaScript/Underscore.js-Rendered Custom Controls"
+    },
+    "content": {
+        "rendered": "<p>WordPress 4.1 also added support for rendering JavaScript-heavy and/or high-quantity controls entirely with JavaScript. This allows for more dynamic behavior, especially related to dynamically-added controls. The core Color and Media controls currently leverage this API, and all core Controls will eventually use it in the future. The PHP-based control API is not going away, but in the future most controls will likely use the new API since it provides a faster experience for users and developers. Similar\u00a0APIs for JS-templated Sections and Panels were introduced WordPress 4.3; however, there remain some gaps in the ease of dynamically-creating objects in JS as of WordPress 4.7, see <a href=\"https://core.trac.wordpress.org/ticket/30741\">#30741</a>.</p>\n<h2>Registered Control Types</h2>\n<p>In order to introduce a concept of having one template for multiple Customizer controls of the same type, we needed to introduce a\u00a0way to register\u00a0a type of control with the Customize Manager. Previously, custom control objects were only encountered when custom controls were added using <code><a href=\"https://developer.wordpress.org/reference/classes/wp_customize_manager/add_control/\">WP_Customize_Manager::add_control()</a></code>. But detecting added control types to render one template per type wouldn&#8217;t allow new controls to be created dynamically if no other instances of that type were loaded.\u00a0<code><a href=\"https://developer.wordpress.org/reference/classes/wp_customize_manager/register_control_type/\">WP_Customize_Manager::register_control_type()</a>\u00a0solves this:</code></p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">add_action( 'customize_register', 'prefix_customize_register' );\nfunction prefix_customize_register( $wp_customize ) {\n  // Define a custom control class, WP_Customize_Custom_Control.\n  // Register the class so that its JS template is available in the Customizer.\n  $wp_customize-&gt;register_control_type( 'WP_Customize_Custom_Control' );\n}</code></pre></p>\n<p>All registered control types have their templates printed to the customizer by <code>WP_Customize_Manager::print_control_templates()</code>.</p>\n<h2>Sending PHP Control Data to JavaScript</h2>\n<p>While Customizer control data has always been passed to the control JS models, and this has always been able to be extended, you&#8217;re much more likely to need to send data down when working with JS templates. Anything that you would want access to in <code>render_content()</code> in PHP will need to be exported to JavaScript to be accessible in your control template. <code>WP_Customize_Control</code> exports the following control class variables by default:</p>\n<ul>\n<li><code>type</code></li>\n<li><code>label</code></li>\n<li><code>description</code></li>\n<li><code>active</code> (boolean state)</li>\n</ul>\n<p>You can add additional parameters specific to your custom control by overriding <code><a href=\"https://developer.wordpress.org/reference/classes/wp_customize_control/to_json/\">WP_Customize_Control::to_json()</a></code> in your custom control subclass. In most cases, you&#8217;ll want to call the parent class&#8217; <code>to_json()</code> method also, to ensure that all core variables are exported as well. Here&#8217;s an example from the core color control:</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">public function to_json() {\n  parent::to_json();\n  $this-&gt;json['statuses'] = $this-&gt;statuses;\n  $this-&gt;json['defaultValue'] = $this-&gt;setting-&gt;default;\n}</code></pre></p>\n<h2>JS/Underscore Templating</h2>\n<p>Once you&#8217;ve registered your custom control class as a control type and exported any custom class variables, you can create the template that will render the control UI. You&#8217;ll override\u00a0<code><a href=\"https://developer.wordpress.org/reference/classes/wp_customize_control/content_template/\">WP_Customize_Control::content_template()</a></code> (empty by default) as a replacement for <code><a href=\"https://developer.wordpress.org/reference/classes/wp_customize_control/render_content/\">WP_Customize_Control::render_content()</a></code>. Render content is still called, so be sure to override it with an empty function in your subclass as well.</p>\n<p>Underscore-style custom control templates are very similar to PHP. As more and more of WordPress core becomes JavaScript-driven, these templates are becoming increasingly more common. Some sample template code in core can be found in <a href=\"https://core.trac.wordpress.org/browser/trunk/src/wp-includes/media-template.php\" target=\"_blank\" rel=\"noopener noreferrer\">media</a>, <a href=\"https://core.trac.wordpress.org/browser/trunk/src/wp-admin/includes/revision.php#L260\" target=\"_blank\" rel=\"noopener noreferrer\">revisions</a>, the <a href=\"https://core.trac.wordpress.org/browser/trunk/src/wp-admin/themes.php#L293\" target=\"_blank\" rel=\"noopener noreferrer\">theme browser</a>, and even <a href=\"https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentyfifteen/inc/customizer.php#L266\" target=\"_blank\" rel=\"noopener noreferrer\">in the Twenty Fifteen theme</a>, where a JS template is used to both save the color scheme data and instantly preview color scheme changes in the Customizer. The best way to learn how these templates work is to study similar code in core and, accordingly, here is a brief example:</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">class WP_Customize_Color_Control extends WP_Customize_Control {\n  public $type = 'color';\n// ...\n  /**\n   * Render a JS template for the content of the color picker control.\n   */\n  public function content_template() {\n    ?&gt;\n    &lt;# var defaultValue = &apos;&apos;;\n    if ( data.defaultValue ) {\n      if ( '#' !== data.defaultValue.substring( 0, 1 ) ) {\n        defaultValue = '#' + data.defaultValue;\n      } else {\n        defaultValue = data.defaultValue;\n      }\n      defaultValue = ' data-default-color=' + defaultValue; // Quotes added automatically.\n    } #&gt;\n    &lt;label&gt;\n      &lt;# if ( data.label ) { #&gt;\n        &lt;span class=&quot;customize-control-title&quot;&gt;{{{ data.label }}}&lt;/span&gt;\n      &lt;# } #&gt;\n      &lt;# if ( data.description ) { #&gt;\n        &lt;span class=&quot;description customize-control-description&quot;&gt;{{{ data.description }}}&lt;/span&gt;\n      &lt;# } #&gt;\n      &lt;div class=&quot;customize-control-content&quot;&gt;\n        &lt;input class=&quot;color-picker-hex&quot; type=&quot;text&quot; maxlength=&quot;7&quot; placeholder=&quot;&lt;?php esc_attr_e( 'Hex Value' ); ?&gt;&quot; {{ defaultValue }} /&gt;\n      &lt;/div&gt;\n    &lt;/label&gt;\n    &lt;?php\n  }\n}</code></pre></p>\n<p>In the above template for the core custom color control, you can see that after the closing PHP tag, we have a JS template. <code></code> notation is used around statements to be evaluated &#8211; in most cases, this is used for conditionals. All of the control instance data that we exported to JS is stored in the `data` object, and we can print a variable using double (escaped) or triple (unescaped) brace notation <code>{{ }}</code>. As I said before, the best way to get the hang of writing controls like this is to read through existing examples. <a href=\"https://core.trac.wordpress.org/browser/trunk/src/wp-includes/class-wp-customize-control.php#L639\" target=\"_blank\" rel=\"noopener noreferrer\"><code>WP_Customize_Upload_Control</code> </a>was recently <a href=\"https://core.trac.wordpress.org/changeset/30309\" target=\"_blank\" rel=\"noopener noreferrer\">updated to leverage this API</a> as well, integrating nicely with the way the media manager is implemented, and squeezing a ton of functionality out of a minimal amount of code. If you want some really good practice, try converting some of the other core controls to use this API &#8211; and submit patches to core too, of course!</p>\n<h2>Putting the pieces together</h2>\n<p>Here&#8217;s a summary of what&#8217;s needed to leverage the new API in a custom customizer control subclass:</p>\n<ol>\n<li>Make your <tt>render_content()</tt> function empty (but it does need to exist to override the default one).</li>\n<li>Create a new function, <tt>content_template()</tt>, and put the old contents of <tt>render_content()</tt> there.</li>\n<li>Add any custom class variables that are needed for the control to be exported to the JavaScript in the browser\u00a0(the JSON data)\u00a0by modifying the\u00a0<tt>to_json()</tt> function (see <tt><a href=\"https://developer.wordpress.org/reference/classes/wp_customize_color_control/\">WP_Customize_Color_Control</a></tt> for an example).</li>\n<li>Convert the PHP from <tt>render_content()</tt> into a JS template, using <tt></tt> around JS statements to evaluate and\u00a0<tt>{{ }}</tt> around variables to print. PHP class variables are available in the data object; for example, the label can be printed with <tt>{{ data.label }}</tt>.</li>\n<li><strong>Register the custom control class/type</strong>. This critical step tells the Customizer to print the template for this control. This is distinct from just printing templates for all controls that were added because the ideas are that many instances of this control type could be rendered from one template, and that any registered control types would be available for dynamic control-creation in the future. Just do something like <tt>$wp_customize-&gt;register_control_type( '<a href=\"https://developer.wordpress.org/reference/classes/wp_customize_color_control/\" rel=\"class\">WP_Customize_Color_Control</a>' );</tt>.</li>\n</ol>\n<p>The PHP-only parts of the Customize API are still fully supported and perfectly fine to use. But\u00a0given long term goals for making the customizer more flexible for doing things like switching themes in the customizer without a pageload, it is strongly encouraged to use\u00a0JS/Underscore\u00a0templates\u00a0for all custom\u00a0customizer objects where feasible.</p>\n",
+        "protected": false
+    },
+    "author": 9362879,
+    "featured_media": 0,
+    "parent": 11390,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25009",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25009",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/9362879"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25009/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 40118,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25009/revisions/40118"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11390"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25009"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

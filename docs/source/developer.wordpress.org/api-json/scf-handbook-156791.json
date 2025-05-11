@@ -1,0 +1,91 @@
+{
+    "id": 156791,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/email/"
+    },
+    "modified": "2025-02-21T04:17:59",
+    "modified_gmt": "2025-02-21T04:17:59",
+    "slug": "email",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/email/",
+    "title": {
+        "rendered": "Email Field"
+    },
+    "content": {
+        "rendered": "<p>The Email field provides a specialized input for email addresses. It includes built-in validation to ensure proper email format and can be configured with custom display options.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Email format validation</li>\n<li>Custom placeholder text</li>\n<li>Prepend/append text options</li>\n<li>Required field validation</li>\n<li>Multiple email support</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Default Value &#8211; Set a default email address</li>\n<li>Placeholder &#8211; Custom placeholder text</li>\n<li>Prepend &#8211; Add text before the input</li>\n<li>Append &#8211; Add text after the input</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156791",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156791",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156791/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156928,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156791/revisions/156928"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156791"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

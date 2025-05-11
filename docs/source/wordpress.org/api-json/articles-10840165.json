@@ -1,0 +1,109 @@
+{
+    "id": 10840165,
+    "date": "2018-11-02T05:03:51",
+    "date_gmt": "2018-11-02T05:03:51",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840165"
+    },
+    "modified": "2023-06-14T13:56:18",
+    "modified_gmt": "2023-06-14T13:56:18",
+    "slug": "hosting-wordpress",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/hosting-wordpress/",
+    "title": {
+        "rendered": "Hosting WordPress"
+    },
+    "content": {
+        "rendered": "\n<p>To get your WordPress up and running, you\u2019re going to need a web server. Most hosting providers have the technical specifications required for WordPress.</p>\n\n\n\n<p>In general, hosting providers offer:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><em>Generic</em>&nbsp;hosting, meant for different web applications (including WordPress, but also other software as well)</li>\n\n\n\n<li><em>WordPress-specific</em>&nbsp;hosting</li>\n</ul>\n\n\n\n<p>WordPress-specific hosting providers offer a platform designed for installing WordPress, or even pre-installed WordPress. They may also offer additional features such as backups, updates or developer tools.</p>\n\n\n\n<p>See the subsection\u00a0<a href=\"https://wordpress.org/documentation/article/hosting-wordpress/#hosting-providers\">Hosting providers</a>\u00a0for more information and provider suggestions.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Technical requirements</h2>\n\n\n\n<p>Please refer to&nbsp;<a href=\"https://wordpress.org/about/requirements/\">this page</a>&nbsp;with the recommended server software. The page is updated with the latest minimum requirements to run WordPress. You\u2019ll also find a pre-written letter you can use to contact a potential hosting provider.</p>\n\n\n\n<p>If your server is not configured properly, your site may not function as intended, or you won\u2019t be able to install WordPress. This is why ensuring your server meets the technical requirements is essential.</p>\n\n\n\n<p>If you are new to WordPress, it may be a good idea to have your site hosted by a provider with experience in WordPress hosting.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Hosting providers</h2>\n\n\n\n<p>Hosting is a commodity these days and with a little digging, it\u2019s easy to find a hosting provider that fulfils the aforementioned requirements. If you\u2019re looking for hosting suggestions, have a look at the following resources:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/hosting/\">WordPress Recommended Hosts</a>&nbsp;\u2013 these hosting service providers support WordPress, in more ways than one.</li>\n\n\n\n<li>Searching the WordPress\u00a0<a href=\"https://wordpress.org/support/forums/\">support forums</a>\u00a0for recommendations.</li>\n\n\n\n<li>Chat with your local community WordPress&nbsp;<a href=\"https://www.meetup.com/\">meetup</a>&nbsp;members and ask what they think!</li>\n\n\n\n<li>Chat with the Make WordPress community via&nbsp;<a href=\"https://make.wordpress.org/chat/\">Slack</a>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>To get your WordPress up and running, you\u2019re going to need a web server. Most hosting providers have the technical specifications required for WordPress. In general, hosting providers offer: WordPress-specific hosting providers offer a platform designed for installing WordPress, or even pre-installed WordPress. They may also offer additional features such as backups, updates or developer [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        21,
+        73
+    ],
+    "class_list": [
+        "post-10840165",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-installation",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840165",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840165"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840165/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357349,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840165/revisions/16357349"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840165"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840165"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

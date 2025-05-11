@@ -1,0 +1,109 @@
+{
+    "id": 10851376,
+    "date": "2018-11-06T04:28:03",
+    "date_gmt": "2018-11-06T04:28:03",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851376"
+    },
+    "modified": "2023-01-11T20:08:19",
+    "modified_gmt": "2023-01-11T20:08:19",
+    "slug": "what-is-an-excerpt-classic-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/what-is-an-excerpt-classic-editor/",
+    "title": {
+        "rendered": "What is an excerpt? (Classic Editor)"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What is an excerpt</h2>\n\n\n\n<p>Excerpt is an optional text associated to a Post. Most of the time, it is used as the <strong>Post summary</strong>.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"710\" height=\"235\" src=\"https://wordpress.org/documentation/files/2018/11/WordPress-Excerpt-editor.jpg\" alt=\"WordPress Excerpt metabox\" class=\"wp-image-10851380\" srcset=\"https://wordpress.org/documentation/files/2018/11/WordPress-Excerpt-editor.jpg 710w, https://wordpress.org/documentation/files/2018/11/WordPress-Excerpt-editor-300x99.jpg 300w\" sizes=\"auto, (max-width: 710px) 100vw, 710px\" /><figcaption>WordPress excerpt metabox</figcaption></figure>\n\n\n\n<p>Not finding the Excerpt editing box? Check your Post&#8217;s <strong>Screen Options</strong>.</p>\n\n\n\n<p>Regarding the Theme you are using on your site, Excerpts can be displayed on different pages (search results, archives, etc.).</p>\n\n\n\n<p>If Excerpt is empty, WordPress automatically creates an excerpt using the first 55 words of the post.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to display excerpts on the posts page</h2>\n\n\n\n<ol class=\"wp-block-list\"><li>Go to <strong>Settings &gt; Reading</strong>.</li><li>Scroll to <strong>For each article in a feed, show</strong>.</li><li>Select <strong>Summary</strong>.</li></ol>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>What is an excerpt Excerpt is an optional text associated to a Post. Most of the time, it is used as the Post summary. Not finding the Excerpt editing box? Check your Post&#8217;s Screen Options. Regarding the Theme you are using on your site, Excerpts can be displayed on different pages (search results, archives, etc.). [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10851376",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851376",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851376"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851376/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355171,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851376/revisions/16355171"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851376"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851376"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

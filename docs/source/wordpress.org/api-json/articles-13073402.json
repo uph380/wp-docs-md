@@ -1,0 +1,109 @@
+{
+    "id": 13073402,
+    "date": "2020-07-05T12:56:12",
+    "date_gmt": "2020-07-05T12:56:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13073402"
+    },
+    "modified": "2024-06-08T19:54:39",
+    "modified_gmt": "2024-06-08T19:54:39",
+    "slug": "tiktok-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tiktok-embed/",
+    "title": {
+        "rendered": "TikTok embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the TikTok Embed block, you can include a TikTok video into your post/page. You don\u2019t need a TikTok account to embed a video, although the video should be public.</p>\n\n\n\n<p>Embedded TikTok video</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"395\" height=\"918\" src=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-22.png\" alt=\"Screenshot of  TikTok \" class=\"wp-image-13073792\" srcset=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-22.png 395w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-22-129x300.png 129w\" sizes=\"auto, (max-width: 395px) 100vw, 395px\" /></figure>\n\n\n\n<p><strong>Steps to embed a video from TikTok</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Find your video link on TikTok</li>\n</ol>\n\n\n\n<p>In the web player select the video and click on the link icon to copy the link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"947\" height=\"529\" src=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-1-1.png\" alt=\"The correct URL to copy to use the embed block\" class=\"wp-image-13073796\" srcset=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-1-1.png 947w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-1-1-300x168.png 300w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-1-1-768x429.png 768w\" sizes=\"auto, (max-width: 947px) 100vw, 947px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Add a TikTok embed block to your page/post</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/image24-2.png\" alt=\"Adding the TikTok embed block\" class=\"wp-image-13237857\" width=\"365\" height=\"139\" srcset=\"https://wordpress.org/documentation/files/2020/08/image24-2.png 486w, https://wordpress.org/documentation/files/2020/08/image24-2-300x114.png 300w\" sizes=\"auto, (max-width: 365px) 100vw, 365px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the link into the text box and click on the \u201cEmbed\u201d button</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"698\" height=\"289\" src=\"https://wordpress.org/documentation/files/2020/08/image2-1.png\" alt=\"Embed option for the TikTok block to paste the URL.\" class=\"wp-image-13237862\" srcset=\"https://wordpress.org/documentation/files/2020/08/image2-1.png 698w, https://wordpress.org/documentation/files/2020/08/image2-1-300x124.png 300w\" sizes=\"auto, (max-width: 698px) 100vw, 698px\" /></figure>\n\n\n\n<p>If the embed is successful, you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"660\" height=\"879\" src=\"https://wordpress.org/documentation/files/2020/08/image28.png\" alt=\"Preview of the embedded TikTok video within the WordPress editor.\" class=\"wp-image-13237864\" srcset=\"https://wordpress.org/documentation/files/2020/08/image28.png 660w, https://wordpress.org/documentation/files/2020/08/image28-225x300.png 225w\" sizes=\"auto, (max-width: 660px) 100vw, 660px\" /></figure>\n\n\n\n<p>If you use an URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"696\" height=\"383\" src=\"https://wordpress.org/documentation/files/2020/08/image4.png\" alt=\"Embed option for the TikTok block to paste the URL.\" class=\"wp-image-13237867\" srcset=\"https://wordpress.org/documentation/files/2020/08/image4.png 696w, https://wordpress.org/documentation/files/2020/08/image4-300x165.png 300w\" sizes=\"auto, (max-width: 696px) 100vw, 696px\" /></figure>\n\n\n\n<p>You will have two choices: Try again with a different URL or convert it to a link.</p>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click on \u201cPreview\u201d to see how it will look on the front-end</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-6-1.png\" alt=\"Preview of the embedded TikTok video within the WordPress editor.\" class=\"wp-image-13073806\" width=\"337\" height=\"725\" srcset=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-6-1.png 443w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-6-1-139x300.png 139w\" sizes=\"auto, (max-width: 337px) 100vw, 337px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the \u201cMover\u201d and \u201cDrag &amp; Drop Handle\u201d, the Block Toolbar for the TikTok Embed block shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change Alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/image3-1.png\" alt=\"Block Toolbar with options available for the TikTok Block.\" class=\"wp-image-13237871\" width=\"314\" height=\"191\" srcset=\"https://wordpress.org/documentation/files/2020/08/image3-1.png 314w, https://wordpress.org/documentation/files/2020/08/image3-1-300x182.png 300w\" sizes=\"auto, (max-width: 314px) 100vw, 314px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"378\" height=\"244\" src=\"https://wordpress.org/documentation/files/2020/08/image12-1.png\" alt=\"Options to transform the TikTok block to Paragraph, Columns or Group.\" class=\"wp-image-13237872\" srcset=\"https://wordpress.org/documentation/files/2020/08/image12-1.png 378w, https://wordpress.org/documentation/files/2020/08/image12-1-300x194.png 300w\" sizes=\"auto, (max-width: 378px) 100vw, 378px\" /></figure>\n\n\n\n<p>You can transform a TikTok embed into a Group. This would give you the ability to change the background color around the TikTok embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"519\" src=\"https://wordpress.org/documentation/files/2020/08/image1-1-1024x519.png\" alt=\"Editor view of a TikTok embed as a group with Color Settings controls\" class=\"wp-image-13237873\" srcset=\"https://wordpress.org/documentation/files/2020/08/image1-1-1024x519.png 1024w, https://wordpress.org/documentation/files/2020/08/image1-1-300x152.png 300w, https://wordpress.org/documentation/files/2020/08/image1-1-768x389.png 768w, https://wordpress.org/documentation/files/2020/08/image1-1.png 1057w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of a TikTok embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"670\" height=\"1026\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2020/07/pasted-image-0-10-1.png?fit=669%2C1024&amp;ssl=1\" alt=\"TikTok embed with a gray background-color\" class=\"wp-image-13073813\" srcset=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-10-1.png 670w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-10-1-196x300.png 196w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-10-1-669x1024.png 669w\" sizes=\"auto, (max-width: 670px) 100vw, 670px\" /><figcaption class=\"wp-element-caption\">TikTok embed with a gray background-color</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"360\" height=\"329\" src=\"https://wordpress.org/documentation/files/2020/08/image26-1.png\" alt=\"Alignment options for the TikTok block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-13237876\" srcset=\"https://wordpress.org/documentation/files/2020/08/image26-1.png 360w, https://wordpress.org/documentation/files/2020/08/image26-1-300x274.png 300w\" sizes=\"auto, (max-width: 360px) 100vw, 360px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> \u2013 Make the TikTok post left aligned.</li>\n\n\n\n<li><strong>Align center</strong> \u2013 Make the TikTok post alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>\u2013 Make the TikTok post right aligned.</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> \u2013 Extend the TikTok post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the TikTok Embed URL in the embed block. Overwrite the existing URL and click on the \u201cEmbed\u201d button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"318\" src=\"https://wordpress.org/documentation/files/2020/08/image27-1.png\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" class=\"wp-image-13237922\" srcset=\"https://wordpress.org/documentation/files/2020/08/image27-1.png 700w, https://wordpress.org/documentation/files/2020/08/image27-1-300x136.png 300w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>Besides the Advanced section, the TikTok embed has only one setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media Settings</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"842\" height=\"190\" src=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1.png\" alt=\"Media settings for the embed block with the toggle OFF/ON for resizing on smaller devices.\" class=\"wp-image-13073819\" srcset=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1.png 842w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1-300x68.png 300w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1-768x173.png 768w\" sizes=\"auto, (max-width: 842px) 100vw, 842px\" /></figure>\n\n\n\n<p>Via the <em>Media Settings,</em> you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong> This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"396\" height=\"207\" src=\"https://wordpress.org/documentation/files/2020/07/image-77.png\" alt=\"Additional CSS Class(es) option for the TikTok Embed block.\" class=\"wp-image-13174232\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-77.png 396w, https://wordpress.org/documentation/files/2020/07/image-77-300x157.png 300w\" sizes=\"auto, (max-width: 396px) 100vw, 396px\" /></figure>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-11\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.5</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-05</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the TikTok Embed block, you can include a TikTok video into your post/page. You don\u2019t need a TikTok account to embed a video, although the video should be public. Embedded TikTok video Steps to embed a video from TikTok In the web player select the video and [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13073402",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13073402",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13073402"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13073402/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360420,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13073402/revisions/16360420"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13073402"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13073402"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

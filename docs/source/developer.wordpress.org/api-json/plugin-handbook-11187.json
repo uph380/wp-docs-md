@@ -1,0 +1,97 @@
+{
+    "id": 11187,
+    "date": "2014-10-19T18:50:14",
+    "date_gmt": "2014-10-19T18:50:14",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11187"
+    },
+    "modified": "2022-07-05T20:09:34",
+    "modified_gmt": "2022-07-05T20:09:34",
+    "slug": "planning-submitting-and-maintaining-plugins",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/planning-submitting-and-maintaining-plugins/",
+    "title": {
+        "rendered": "Planning, Submitting, and Maintaining Plugins"
+    },
+    "content": {
+        "rendered": "\n<p>You&#8217;ve written the next <a href=\"https://wordpress.org/plugins/hello-dolly/\">Hello Dolly</a> and you want the world to&nbsp;use it. What should you do?</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"1-test-once-and-test-again\">1. Test once and test again</h2>\n\n\n\n<p>With any luck, your plugin will be used by lots of people in many different situations and hosting environments. You&#8217;ll want to make sure you&#8217;ve tested your plugin to make sure it works in any situation and doesn&#8217;t frustrate your users.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"2-pick-a-good-name\">2. Pick a good name</h2>\n\n\n\n<p>A plugin name should reflect the uniqueness of you and your work. When you pick a name, make sure you&#8217;re not violating trademarks or stomping on someone else&#8217;s product names. If you&#8217;re not working for FaceRange (a fake company), you shouldn&#8217;t name your plugin &#8216;FaceRange&#8217;s Dancing Squirrels&#8217; after all. A much better name would be &#8216;Dancing Squirrels for FaceRange&#8217; for example. It can be hard to come up with a good name, so take your time. Your plugin URL cannot be changed after you submit it, but the display name can change a thousand times.</p>\n\n\n\n<p>Display names are generated from the headers in the main plugin file so mind your Ps and Qs.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"3-write-great-documentation\">3. Write great documentation</h2>\n\n\n\n<p>A <a href=\"https://wordpress.org/plugins/developers/#readme\">README.txt</a> file is the best place to start, as it&#8217;s a standard reference point for all plugins. You&#8217;ll want to make sure you include:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>A concise description of what your plugin actually does. If it does a lot, it might be better as two plugins.</li><li>Installation instructions, especially if there&#8217;s special configuration to be done. If a user needs to register with your service, make sure you link to it.</li><li>Directions on how to get support, and what you do and do not support.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"4-submit-your-plugin\">4. Submit your plugin</h2>\n\n\n\n<p>In order to submit a plugin, there are three steps:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Register on WordPress.org with a valid, regularly checked email address. If you are submitting a plugin on behalf of a company, use an <strong>official</strong> company email for verification.</li><li>Whitelist <code>plugins@wordpress.org</code> in your email client to ensure you receive email communications.</li><li><a href=\"https://wordpress.org/plugins/developers/add/\">Submit your plugin</a> with a brief overview of what it does and a complete, ready to go, zip of the plugin. The zip must be the complete version of your plugin, just like you would use to manually upload via the plugin installer.</li></ol>\n\n\n\n<p>Once a plugin is queued for review, we will review the code for any issues within 14 business days. Most of the issues can be avoided by following the guidelines. If we do find issues, we will contact the developer(s), and work towards a resolution.&nbsp;Once approved, you\u2019ll receive an email with details as to how to access to a <a href=\"https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/\">Subversion Repository</a> where you\u2019ll store your plugin.</p>\n\n\n\n<p>After&nbsp;you upload&nbsp;your plugin (and a <a href=\"https://wordpress.org/plugins/developers/#readme\">readme file</a>) in that repository via SVN, it will appear on the&nbsp;<a href=\"https://wordpress.org/plugins/\">plugin&nbsp;directory</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"5-push-out-the-first-version\">5. Push out the first version</h2>\n\n\n\n<p>The WordPress.org plugins directory is the easiest way for potential users to download and install your plugin. WordPress&#8217; integration with the plugin directory means your plugin can be updated by the user in a couple of clicks.</p>\n\n\n\n<p>When you&#8217;re ready to release&nbsp;your first version, you&#8217;ll want to <a href=\"https://wordpress.org/plugins/add/\">sign up</a>. After a review process is completed successfully,&nbsp;you&#8217;ll be granted a Subversion Repository for your&nbsp;code. We have documentation about <a href=\"https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/\">using SVN on WordPress.org</a>, which is a slightly different workflow than you may be familiar with if you use GIT.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"6-embrace-open-source\">6. Embrace open source</h2>\n\n\n\n<p>Open source is one of the most powerful ideas of our time because it empowers collaboration across borders. By encouraging contributions, you&#8217;re allowing others to love your code as much as you do. There are several options to open source your code:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a rel=\"noopener noreferrer\" href=\"http://github.com\" target=\"_blank\">Github</a> makes it simple\u00a0to get others involved with your project. Other developers and users can submit bug fixes or reports, feature requests, or brand new contributions easily. Github has a <a href=\"https://help.github.com/\">great documentation portal</a> and even an <a href=\"http://try.github.com/\">interactive demo</a> if you&#8217;ve never used Git before.<ul><li><a href=\"https://bitbucket.org/\">Bitbucket</a> and <a href=\"https://about.gitlab.com/\">Gitlab</a> are alternatives with similar features.</li></ul></li><li>The WordPress.org Plugin Directory provides and\u00a0requires you to use a <a rel=\"noopener noreferrer\" href=\"https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/\" target=\"_blank\">Subversion repository</a>.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"7-listen-to-your-users\">7. Listen to your users</h2>\n\n\n\n<p>You&#8217;ll often find that your users put your code through many more test cases than you could&#8217;ve imagined. This can be tremendously valuable feedback.</p>\n\n\n\n<p>Releasing your code through WordPress.org means your plugin automatically has a support forum. Use it! You can subscribe to receive new posts by email and respond to your users in a timely manner. They just want to love your plugin as much as you do.</p>\n\n\n\n<p>Jetpack has a post you can point to about <a href=\"http://jetpack.me/2011/11/18/how-to-write-a-great-bug-report/\">writing great bug reports</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"8-regularly-push-new-versions\">8. Regularly push new versions</h2>\n\n\n\n<p>The best plugins are the ones that keep iterating over time, pushing small changes along the way. Don&#8217;t let your hard work go stale by waiting too long to update. Keep in mind, constant upgrades can cause &#8216;Update Fatigue&#8217; and users will stop upgrading. Keeping a balance between too few&nbsp;updates and too many updates&nbsp;is important.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"9-rinse-and-repeat\">9. Rinse and repeat</h2>\n\n\n\n<p>Like in other parts of life, the best things come from patience and hard work.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11187",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11187",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 20,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11187/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 141567,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11187/revisions/141567"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11187"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

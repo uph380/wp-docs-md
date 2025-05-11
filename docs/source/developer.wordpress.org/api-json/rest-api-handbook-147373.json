@@ -1,0 +1,91 @@
+{
+    "id": 147373,
+    "date": "2023-04-26T10:55:33",
+    "date_gmt": "2023-04-26T10:55:33",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/wp_global_styles/"
+    },
+    "modified": "2024-01-16T20:30:12",
+    "modified_gmt": "2024-01-16T20:30:12",
+    "slug": "wp_global_styles",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/wp_global_styles/",
+    "title": {
+        "rendered": "Global_Styles"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a global_styles record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-id\">\n<td>\n                <code>id</code>\n            </td>\n<td>\n                ID of global styles config.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-styles\">\n<td>\n                <code>styles</code>\n            </td>\n<td>\n                Global styles.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-settings\">\n<td>\n                <code>settings</code>\n            </td>\n<td>\n                Global settings.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-title\">\n<td>\n                <code>title</code>\n            </td>\n<td>\n                Title of the global styles variation.</p>\n<p class=\"type\">\n                    JSON data type: object or string                </p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Global_Styles</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/global-styles/&lt;id&gt;</code></p>\n<p>        Query this endpoint to retrieve a specific global_styles record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/global-styles/&lt;id&gt;</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>id</code>\n                                    </td>\n<td>\n                                            The id of a template\n                                                                                                </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Update a Global_Styles</h2>\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code><a href=\"#schema-styles\">styles</a></code>\n                                    </td>\n<td>\n                                            Global styles.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-settings\">settings</a></code>\n                                    </td>\n<td>\n                                            Global settings.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-title\">title</a></code>\n                                    </td>\n<td>\n                                            Title of the global styles variation.\n                                                                                                </td>\n</tr>\n</table></div>\n<div class=\"secondary\">\n<h3>Definition</h3>\n<p>        <code>POST /wp/v2/global-styles/&lt;id&gt;</code></p>\n<h3>Example Request</h3>\n<p>        <code></code>\n    </div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147373",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147373",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147373/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151971,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147373/revisions/151971"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147373"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

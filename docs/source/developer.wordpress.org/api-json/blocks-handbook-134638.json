@@ -1,0 +1,91 @@
+{
+    "id": 134638,
+    "date": "2021-03-09T08:38:25",
+    "date_gmt": "2021-03-09T08:38:25",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/accessibility-testing/"
+    },
+    "modified": "2025-01-07T18:34:11",
+    "modified_gmt": "2025-01-07T18:34:11",
+    "slug": "accessibility-testing",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/accessibility-testing/",
+    "title": {
+        "rendered": "Accessibility Testing"
+    },
+    "content": {
+        "rendered": "<p>This is a guide on how to test accessibility on Gutenberg. This is a living document that can be improved over time with new approaches and techniques.</p>\n<h2>Getting started</h2>\n<p>Make sure you have set up your local environment following the instructions on <a href=\"https://developer.wordpress.org/block-editor/contributors/code/getting-started-with-code-contribution/\">Getting Started</a>.</p>\n<h2>Keyboard testing</h2>\n<p>In addition to mouse, make sure the interface is fully accessible for keyboard-only users. Try to interact with your changes using only the keyboard:</p>\n<ul>\n<li>Make sure interactive elements can receive focus using <kbd>Tab</kbd>, <kbd>Shift+Tab</kbd> or arrow keys.</li>\n<li>Buttons should be activable by pressing <kbd>Enter</kbd> and <kbd>Space</kbd>.</li>\n<li>Radio buttons and checkboxes should be checked by pressing <kbd>Space</kbd>, but not <kbd>Enter</kbd>.</li>\n</ul>\n<p>If the elements can be focused using arrow keys, but not <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd>, consider grouping them using one of the <a href=\"https://www.w3.org/TR/wai-aria-1.1/#composite\">WAI-ARIA composite subclass roles</a>, such as <a href=\"https://www.w3.org/TR/wai-aria-1.1/#toolbar\"><code>toolbar</code></a>, <a href=\"https://www.w3.org/TR/wai-aria-1.1/#menu\"><code>menu</code></a> and <a href=\"https://www.w3.org/TR/wai-aria-1.1/#listbox\"><code>listbox</code></a>.</p>\n<p>If the interaction is complex or confusing to you, consider that it&#8217;s also going to impact keyboard-only users.</p>\n<h2>Screen reader testing</h2>\n<p>According to the <a href=\"https://webaim.org/projects/screenreadersurvey8/#usage\">WebAIM: Screen Reader User Survey #8 Results</a>, these are the most common screen reader and browser combinations:</p>\n<table>\n<thead>\n<tr>\n<th>Screen Reader &amp; Browser</th>\n<th># of Respondents</th>\n<th>% of Respondents</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>JAWS with Chrome</td>\n<td>259</td>\n<td>21.4%</td>\n</tr>\n<tr>\n<td>NVDA with Firefox</td>\n<td>237</td>\n<td>19.6%</td>\n</tr>\n<tr>\n<td>NVDA with Chrome</td>\n<td>218</td>\n<td>18.0%</td>\n</tr>\n<tr>\n<td>JAWS with Internet Explorer</td>\n<td>139</td>\n<td>11.5%</td>\n</tr>\n<tr>\n<td>VoiceOver with Safari</td>\n<td>110</td>\n<td>9.1%</td>\n</tr>\n<tr>\n<td>JAWS with Firefox</td>\n<td>71</td>\n<td>5.9%</td>\n</tr>\n<tr>\n<td>VoiceOver with Chrome</td>\n<td>36</td>\n<td>3.0%</td>\n</tr>\n<tr>\n<td>NVDA with Internet Explorer</td>\n<td>14</td>\n<td>1.2%</td>\n</tr>\n<tr>\n<td>Other combinations</td>\n<td>126</td>\n<td>10.4%</td>\n</tr>\n</tbody>\n</table>\n<p>When testing with screen readers, try to use some of the combinations at the top of this list. For example, when testing with VoiceOver, it&#8217;s preferable to use Safari.</p>\n<h3>NVDA with Firefox</h3>\n<p><a href=\"https://www.nvaccess.org/about-nvda/\">NVDA</a> is a free screen reader for Windows and <a href=\"https://webaim.org/projects/screenreadersurvey8/#primary\">the most popular one</a>.</p>\n<p>After installing it, you can activate NVDA by opening the app as you would do with other programs. An icon will appear on the System Tray where you have access to more options. It&#8217;s recommended to enable the &#8220;Speech viewer&#8221; dialog so it&#8217;s easier to demonstrate what&#8217;s being announced by NVDA when you take screenshots.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/user-images.githubusercontent.com/3068563/108868727-428db880-75d5-11eb-84a9-2c0b749a22ad.png?w=640&#038;ssl=1\" alt=\"NVDA options with Speech viewer enabled\" ></p>\n<p>While in the Gutenberg editor, with NVDA activated, you can press <kbd>Insert+F7</kbd> to open the Elements List where you can find elements grouped by their types, such as links, headings, form fields, buttons and landmarks.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/user-images.githubusercontent.com/3068563/109054067-33356a80-76bc-11eb-83d4-e0c536c30d22.png?w=640&#038;ssl=1\" alt=\"NVDA Elements List dialog\" ></p>\n<p>Make sure the elements have proper labels and prefer to navigate through landmarks and then use <kbd>Tab</kbd> and arrow keys to move through the elements within the landmarks.</p>\n<h3>VoiceOver with Safari</h3>\n<p><a href=\"https://support.apple.com/guide/voiceover-guide/welcome/web\">VoiceOver</a> is the native screen reader on macOS. You can enable it on System Preferences &gt; Accessibility &gt; VoiceOver &gt; Enable VoiceOver or by quickly pressing Touch ID three times while holding the Command key.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/user-images.githubusercontent.com/3068563/107645175-2560fd80-6c57-11eb-9e07-365c798869d8.png?w=720&#038;ssl=1\" alt=\"macOS accessibility preferences panel\" ></p>\n<p>While in the Gutenberg editor, with VoiceOver activated, you can press <kbd>Control+Option+U</kbd> to open the Rotor and find more easily the different regions and elements on the page. This is also a good way to make sure elements are labelled correctly. If a name on this list doesn&#8217;t make sense, it should be improved.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/user-images.githubusercontent.com/3068563/107646280-8e954080-6c58-11eb-8481-72e051d73973.gif?w=640&#038;ssl=1\" alt=\"Navigating through form controls and landmarks using the VoiceOver Rotor\" ></p>\n<p>Prefer to select a region or another larger area to begin with instead of individual elements on the Rotor so you can better test the navigation within that region.</p>\n<p>Once you find the region you want to interact with, you can use <kbd>Control+Option</kbd> plus right or left arrow keys to move to the next or previous elements on the page. Then, follow the instructions that VoiceOver will announce.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135089,
+    "menu_order": 395,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134638",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134638",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134638/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151292,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134638/revisions/151292"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134638"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

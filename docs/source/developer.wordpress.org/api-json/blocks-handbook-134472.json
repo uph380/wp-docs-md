@@ -1,0 +1,91 @@
+{
+    "id": 134472,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/with-fallback-styles/"
+    },
+    "modified": "2024-10-30T16:55:44",
+    "modified_gmt": "2024-10-30T16:55:44",
+    "slug": "with-fallback-styles",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/with-fallback-styles/",
+    "title": {
+        "rendered": "WithFallbackStyles"
+    },
+    "content": {
+        "rendered": "<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { withFallbackStyles, Button } from '@wordpress/components';\n\nconst { getComputedStyle } = window;\n\nconst MyComponentWithFallbackStyles = withFallbackStyles(\n    ( node, ownProps ) =&gt; {\n        const buttonNode = node.querySelector( 'button' );\n        return {\n            fallbackBackgroundColor: getComputedStyle( buttonNode )\n                .backgroundColor,\n            fallbackTextColor: getComputedStyle( buttonNode ).color,\n        };\n    }\n)( ( { fallbackTextColor, fallbackBackgroundColor } ) =&gt; (\n    &lt;div&gt;\n        &lt;Button variant=\"primary\"&gt;My button&lt;/Button&gt;\n        &lt;div&gt;Text color: { fallbackTextColor }&lt;/div&gt;\n        &lt;div&gt;Background color: { fallbackBackgroundColor }&lt;/div&gt;\n    &lt;/div&gt;\n) );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 166,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134472",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134472",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134472/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151861,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134472/revisions/151861"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134472"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

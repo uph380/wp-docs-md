@@ -1,0 +1,91 @@
+{
+    "id": 134475,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/with-focus-return/"
+    },
+    "modified": "2024-11-18T21:55:14",
+    "modified_gmt": "2024-11-18T21:55:14",
+    "slug": "with-focus-return",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/with-focus-return/",
+    "title": {
+        "rendered": "WithFocusReturn"
+    },
+    "content": {
+        "rendered": "<p><code>withFocusReturn</code> is a higher-order component used typically in scenarios of short-lived elements (modals, dropdowns) where, upon the element&#8217;s unmounting, focus should be restored to the focused element which had initiated it being rendered.</p>\n<h2>Usage</h2>\n<h3><code>withFocusReturn</code></h3>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { withFocusReturn, TextControl, Button } from '@wordpress/components';\n\nconst EnhancedComponent = withFocusReturn( () =&gt; (\n    &lt;div&gt;\n        Focus will return to the previous input when this component is unmounted\n        &lt;TextControl\n            __nextHasNoMarginBottom\n            __next40pxDefaultSize\n            autoFocus={ true }\n            onChange={ () =&gt; {} }\n        /&gt;\n    &lt;/div&gt;\n) );\n\nconst MyComponentWithFocusReturn = () =&gt; {\n    const [ text, setText ] = useState( &apos;&apos; );\n    const unmount = () =&gt; {\n        document.activeElement.blur();\n        setText( &apos;&apos; );\n    };\n\n    return (\n        &lt;div&gt;\n            &lt;TextControl\n                __nextHasNoMarginBottom\n                __next40pxDefaultSize\n                placeholder=\"Type something\"\n                value={ text }\n                onChange={ ( value ) =&gt; setText( value ) }\n            /&gt;\n            { text &amp;&amp; &lt;EnhancedComponent /&gt; }\n            { text &amp;&amp; (\n                &lt;Button variant=\"secondary\" onClick={ unmount }&gt;\n                    Unmount\n                &lt;/Button&gt;\n            ) }\n        &lt;/div&gt;\n    );\n};\n</code></pre>\n<p><code>withFocusReturn</code> can optionally be called as a higher-order function creator. Provided an options object, a new higher-order function is returned.</p>\n<p>Currently, the following options are supported:</p>\n<h4><code>onFocusReturn</code></h4>\n<p>An optional function which allows the developer to customize the focus return behavior. A return value of <code>false</code> should be returned from this function to indicate that the default focus return behavior should be skipped.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p><em>Example:</em></p>\n<pre><code class=\"language-jsx\">function MyComponent() {\n    return &lt;textarea /&gt;;\n}\n\nconst EnhancedMyComponent = withFocusReturn( {\n    onFocusReturn() {\n        document.getElementById( 'other-input' ).focus();\n        return false;\n    },\n} )( MyComponent );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 169,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134475",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134475",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134475/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155767,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134475/revisions/155767"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134475"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

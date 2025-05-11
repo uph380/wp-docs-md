@@ -1,0 +1,97 @@
+{
+    "id": 11401,
+    "date": "2014-10-23T17:49:05",
+    "date_gmt": "2014-10-23T17:49:05",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11401"
+    },
+    "modified": "2024-02-23T14:50:33",
+    "modified_gmt": "2024-02-23T14:50:33",
+    "slug": "javascript-best-practices",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/javascript-best-practices/",
+    "title": {
+        "rendered": "JavaScript Best Practices"
+    },
+    "content": {
+        "rendered": "\n<p>Many themes use JavaScript to provide interactivity, animation or other enhancements. These best practices will help ensure your code works efficiently and does not cause conflicts with your content or plugins.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"use-included-libraries\">Use Included Libraries</h2>\n\n\n\n<p>There are many useful JavaScript libraries you may want to include when building your theme. Did you know that WordPress comes bundled with dozens of popular libraries? Check out this <a href=\"https://developer.wordpress.org/themes/basics/including-css-javascript/#default-scripts-included-and-registered-by-wordpress\" target=\"_blank\" rel=\"noreferrer noopener\">list of default scripts included with WordPress</a>.</p>\n\n\n\n<p>A common mistake made by beginning theme and plugin developers is to bundle their theme or plugin with their own version of the library. This may conflict with other plugins that enqueue the version bundled with WordPress. As a best practice, make your theme compatible with the version of your favorite library included with WordPress.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Do not try to use your own version of a JavaScript library that is already <a title=\"Default Scripts Included with WordPress\" href=\"https://developer.wordpress.org/themes/basics/including-css-javascript/#default-scripts-included-and-registered-by-wordpress\">bundled</a> with WordPress. Doing so may break core functionality and conflict with plugins.</div></div>\n\n\n\n\n<p>If you feel you MUST replace the WordPress version with one of your own&#8230; well&#8230; the answer is still: don&#8217;t do it.&nbsp; The versions of JavaScript libraries used by WordPress may include custom tweaks that WordPress needs to operate.&nbsp; Any time you override these libraries, you risk breaking your WordPress instance. Moreover, plugins created by other authors should be written to be compatible with WordPress&#8217;s version of these libraries as well. Adding your own version may (and often does!) conflict with plugins.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"standard-javascript\">Standard JavaScript</h2>\n\n\n\n<p>Javascript is growing in popularity for web developers, and it&#8217;s being used to accomplish for a variety of tasks. Here are some best practices to use when writing your JavaScript</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Avoid Global Variables</li>\n\n\n\n<li>Keep your JavaScript unobtrusive</li>\n\n\n\n<li>Use closures and the <a rel=\"noreferrer noopener\" href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules\" target=\"_blank\">module pattern</a></li>\n\n\n\n<li>Stick to a coding style. Use The <a rel=\"noreferrer noopener\" href=\"https://make.wordpress.org/core/handbook/coding-standards/javascript/\" target=\"_blank\">WordPress Javascript Coding Standard</a>.</li>\n\n\n\n<li>Validate and Lint Your Code &#8211; <a rel=\"noreferrer noopener\" href=\"http://JSLint.com\" target=\"_blank\">E</a><a href=\"http://JSLint.com\" target=\"_blank\" rel=\"noreferrer noopener\">S</a><a href=\"https://eslint.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Lint.com</a></li>\n\n\n\n<li>Ensure your site still works without JavaScript first &#8211; then add JavaScript to provide additional capabilities. This is a form of&nbsp;<a rel=\"noreferrer noopener\" href=\"http://en.wikipedia.org/wiki/Progressive_enhancement\" target=\"_blank\">Progressive Enhancement</a>.</li>\n\n\n\n<li>Lazy load assets that aren&#8217;t immediately required.</li>\n\n\n\n<li>Don&#8217;t use jQuery <em>if you don&#8217;t need to</em>&nbsp;\u2014&nbsp;There&#8217;s a great site that shows you how to do some common tasks with plain old JavaScript &#8211; <a href=\"http://youmightnotneedjquery.com\" target=\"_blank\" rel=\"noreferrer noopener\">you might not need jQuery</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"jquery\">jQuery</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"including-jquery-in-your-theme\">Including jQuery in your theme</h3>\n\n\n\n<p><a rel=\"noreferrer noopener\" href=\"http://www.jquery.com\" target=\"_blank\">jQuery</a> is a popular JavaScript library to make working with JavaScript easier and more reliable across browsers. If you use jQuery, be sure to <a href=\"https://developer.wordpress.org/themes/basics/including-css-javascript/\" data-type=\"URL\" data-id=\"https://developer.wordpress.org/themes/basics/including-css-javascript/\">follow the handbook guidelines on including JavaScript</a>. Giving your theme&#8217;s enqueued .js files a dependency array of <code>array( 'jquery' )</code> ensures that the jQuery script has been downloaded and loaded before your theme&#8217;s code.</p>\n\n\n\n<h4 class=\"wp-block-heading\" id=\"using\">Using $</h4>\n\n\n\n<p>Because the copy of jQuery included in WordPress loads in <code><a href=\"https://api.jquery.com/jQuery.noConflict/\">noConflict()</a></code> mode, use this wrapper code in your theme&#8217;s .js files to map &#8220;$&#8221; to &#8220;jQuery&#8221;:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">( function( $ ) {\n// Your code goes here\n} )( jQuery );</code></pre>\n\n\n\n<p>This wrapper (called an Immediately Invoked Function Expression, or IIFE) lets you pass in a variable\u2014jQuery\u2014on the bottom line, and give it the name &#8220;$&#8221; internally. Within this wrapper you may use <code>$</code> to select elements as normal.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"selectors\">Selectors</h3>\n\n\n\n<p>Every time you select an element with jQuery, it performs a query through your document&#8217;s markup. These queries are very fast, but they do take time\u2014you can make your site respond faster by re-using your jQuery objects instead of using a new query. So instead of repeating selectors:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">// Anti-pattern\n$('.post img').addClass('theme-image');\n$('.post img').on('click', function() { ... });</code></pre>\n\n\n\n<p>it is recommended to <strong>cache your selectors</strong> so you can re-use the returned element without having to repeat the lookup process:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">var $postImage = $('.post img');\n// All image tags within posts can now be accessed through $postImage\n$postImage.addClass('theme-image');\n$postImage.on('click', function() { ... });</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"event-handling\">Event Handling</h3>\n\n\n\n<p>When you use jQuery methods like <code>.bind</code> or <code>.click</code>, jQuery creates a new browser event object to handle processing the requested event. Each new event created takes a small amount of memory, but the amount of memory required goes up the more events you bind. If you have a page with a hundred anchor tags and wanted to fire a `logClick` event handler whenever a user clicked a link, it is very easy to write code like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">// Anti-pattern\n$('a').click( logClick );</code></pre>\n\n\n\n<p>This works, but under the hood you have asked jQuery to create a new event handler for every link on your page.</p>\n\n\n\n<p><strong>Event delegation</strong> is a way to accomplish the same effect with less overhead. Because events in jQuery &#8220;bubble&#8221;\u2014that is, a click event will fire on a link, then on the link&#8217;s surrounding <code>&lt;p&gt;</code> tag, then on the <code>div</code> container, and so on up to the <code>document</code> object itself\u2014we can put a single event handler higher up in the page structure, and still catch the click events for all of those links:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">// Bind one handler at the document level, which is triggered\n// whenever there is a \"click\" event originating from an \"a\" tag\n$(document).on('click', 'a', logClick);</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 310,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11401",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11401",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 23,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11401/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152495,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11401/revisions/152495"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11401"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

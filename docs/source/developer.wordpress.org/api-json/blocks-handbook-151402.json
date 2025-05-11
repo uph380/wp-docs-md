@@ -1,0 +1,91 @@
+{
+    "id": 151402,
+    "date": "2023-12-27T20:55:01",
+    "date_gmt": "2023-12-27T20:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/block-locking/"
+    },
+    "modified": "2024-01-29T21:09:33",
+    "modified_gmt": "2024-01-29T21:09:33",
+    "slug": "block-locking",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/block-locking/",
+    "title": {
+        "rendered": "Block Locking API"
+    },
+    "content": {
+        "rendered": "<p>The Block Locking API allows you to restrict actions on specific blocks within the Editor. This API can be used to prevent users from moving, removing, or editing certain blocks, ensuring layout consistency and content integrity.</p>\n<h2>Lock the ability to move or remove specific blocks</h2>\n<p>Users can lock and unlock blocks via the Editor. The locking UI has options for preventing blocks from being moved within the content canvas or removed:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/Locking%20interface.png?ssl=1\" alt=\"Image of locking interface\" /></p>\n<p>Keep in mind that you can apply locking options to blocks nested inside of a containing block by turning on the &#8220;Apply to all blocks inside&#8221; option. However, you cannot mass lock blocks otherwise.</p>\n<h2>Lock the ability to edit certain blocks</h2>\n<p>Alongside the ability to lock moving or removing blocks, the <a href=\"https://github.com/WordPress/gutenberg/pull/44739\">Navigation Block</a> and <a href=\"https://github.com/WordPress/gutenberg/pull/39950\">Reusable block</a> have an additional capability: lock the ability to edit the contents of the block. This locks the ability to make changes to any blocks inside of either block type.</p>\n<h2>Apply block locking to patterns or templates</h2>\n<p>When building patterns or templates, theme authors can use these same UI tools to set the default locked state of blocks. For example, a theme author could lock various pieces of a header. Keep in mind that by default, users with editing access can unlock these blocks. <a href=\"https://gist.github.com/annezazu/acee30f8b6e8995e1b1a52796e6ef805\">Here\u2019s an example of a pattern</a> with various blocks locked in different ways and here\u2019s more context on <a href=\"https://make.wordpress.org/core/2022/02/09/core-editor-improvement-curated-experiences-with-locking-apis-theme-json/\">creating a template with locked blocks</a>. You can build these patterns in the Editor itself, including adding locking options, before following the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/\">documentation to register them</a>.</p>\n<h2>Apply content-only editing in patterns or templates</h2>\n<p>This functionality was introduced in WordPress 6.1. In contrast to block locking, which disables the ability to move or remove blocks, content-only editing is both designed for use at the pattern or template level and hides all design tools, while still allowing for the ability to edit the content of the blocks. This provides a great way to simplify the interface for users and preserve a design. When this option is added, the following changes occur:</p>\n<ul>\n<li>Non-content child blocks (containers, spacers, columns, etc) are hidden from list view, un-clickable on the canvas, and entirely un-editable.</li>\n<li>The Inspector will display a list of all child &#8216;content&#8217; blocks. Clicking a block in this list reveals its settings panel. </li>\n<li>The main List View only shows content blocks, all at the same level regardless of actual nesting.</li>\n<li>Children blocks within the overall content locked container are automatically move / remove locked.</li>\n<li>Additional child blocks cannot be inserted, further preserving the design and layout.</li>\n<li>There is a link in the block toolbar to \u2018Modify\u2019 that a user can toggle on/off to have access to the broader design tools. Currently, it&#8217;s not possibly to programmatically remove this option.</li>\n</ul>\n<p>This option can be applied to Columns, Cover, and Group blocks as well as third-party blocks that have the templateLock attribute in its block.json. To adopt this functionality, you need to use <code>\"templateLock\":\"contentOnly\"</code>. <a href=\"https://gist.github.com/annezazu/d62acd2514cea558be6cea97fe28ff3c\">Here&#8217;s an example of a pattern</a> with this functionality in place. For more information, please <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-templates/#locking\">review the relevant documentation</a>.</p>\n<p>Note: There is no UI in place to manage content locking and it must be managed at the code level.</p>\n<h2>Change permissions to control locking ability</h2>\n<p>Agencies and plugin authors can offer an even more curated experience by limiting which users have <a href=\"https://make.wordpress.org/core/2022/05/05/block-locking-settings-in-wordpress-6-0/\">permission to lock and unlock blocks</a>. By default, anyone who is an administrator will have access to lock and unlock blocks.</p>\n<p>Developers can add a filter to the <a href=\"https://developer.wordpress.org/reference/hooks/block_editor_settings_all/\">block_editor_settings_all</a> hook to configure permissions around locking blocks.  The hook passes two parameters to the callback function:</p>\n<ul>\n<li><code>$settings</code> &#8211; An array of configurable settings for the Editor.</li>\n<li><code>$context</code> &#8211; An instance of <a href=\"https://developer.wordpress.org/reference/classes/wp_block_editor_context/\" rel=\"class\">WP_Block_Editor_Context</a>, an object that contains information about the current Editor.</li>\n</ul>\n<p>Specifically, developers can alter the <code>$settings['canLockBlocks']</code> value by setting it to <code>true</code> or <code>false</code>, typically by running through one or more conditional checks.</p>\n<p>The following example disables block locking permissions for all users when editing a page:</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', function( $settings, $context ) {\n    if ( $context-&gt;post &amp;&amp; 'page' === $context-&gt;post-&gt;post_type ) {\n        $settings['canLockBlocks'] = false;\n    }\n\n    return $settings;\n}, 10, 2 );\n</code></pre>\n<p>Another common use case may be to only allow users who can edit the visual design of the site (theme editing) to lock or unlock blocks. Now, the best option would be to test against the <code>edit_theme_options</code> capability, as shown in the following code snippet:</p>\n<pre><code class=\"language-php\">add_filter( 'block_editor_settings_all', function( $settings ) {\n    $settings['canLockBlocks'] = current_user_can( 'edit_theme_options' );\n\n    return $settings;\n} );\n</code></pre>\n<p>Developers may use any type of conditional check to determine who can lock/unlock blocks. This is merely a small sampling of what is possible via the filter hook.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 141559,
+    "menu_order": 36,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-151402",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151402",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151402/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151409,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151402/revisions/151409"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/141559"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=151402"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 157160,
+    "date": "2025-02-21T04:17:10",
+    "date_gmt": "2025-02-21T04:17:10",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/scf-api/"
+    },
+    "modified": "2025-02-21T04:17:39",
+    "modified_gmt": "2025-02-21T04:17:39",
+    "slug": "scf-api",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/scf-api/",
+    "title": {
+        "rendered": "API Reference"
+    },
+    "content": {
+        "rendered": "<p>The Secure Custom Fields API provides programmatic access to field data and plugin functionality.</p>\n<h2>Core Functions</h2>\n<h3>Field Operations</h3>\n<ul>\n<li>Get field values</li>\n<li>Update field data</li>\n<li>Delete field content</li>\n<li>Check field existence</li>\n</ul>\n<h3>Post Type Management</h3>\n<ul>\n<li>Register post types</li>\n<li>Modify post type settings</li>\n<li>Handle custom capabilities</li>\n<li>Manage taxonomies</li>\n</ul>\n<h2>Integration Points</h2>\n<ol>\n<li><strong>WordPress Core</strong>\n<ul>\n<li>Post type registration</li>\n<li>Taxonomy integration</li>\n<li>Capability handling</li>\n</ul>\n</li>\n<li><strong>Theme Integration</strong>\n<ul>\n<li>Template functions</li>\n<li>Conditional tags</li>\n<li>Layout helpers</li>\n</ul>\n</li>\n<li><strong>Plugin Compatibility</strong>\n<ul>\n<li>REST API support</li>\n<li>Cache integration</li>\n<li>Query modifications</li>\n</ul>\n</li>\n</ol>\n<h2>Best Practices</h2>\n<ol>\n<li>Always sanitize input</li>\n<li>Validate data types</li>\n<li>Use proper escaping</li>\n<li>Check capabilities</li>\n<li>Follow WordPress coding standards</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156768,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157160",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157160",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157160/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157248,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157160/revisions/157248"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156768"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157160"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

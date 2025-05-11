@@ -1,0 +1,91 @@
+{
+    "id": 134423,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/filters/autocomplete-filters/"
+    },
+    "modified": "2024-10-30T16:55:55",
+    "modified_gmt": "2024-10-30T16:55:55",
+    "slug": "autocomplete-filters",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/filters/autocomplete-filters/",
+    "title": {
+        "rendered": "Autocomplete"
+    },
+    "content": {
+        "rendered": "<p>The <code>editor.Autocomplete.completers</code> filter is for extending and overriding the list of autocompleters used by blocks.</p>\n<p>The <code>Autocomplete</code> component found in <code>@wordpress/block-editor</code> applies this filter. The <code>@wordpress/components</code> package provides the foundational <code>Autocomplete</code> component that does not apply such a filter, but blocks should generally use the component provided by <code>@wordpress/block-editor</code>.</p>\n<h3>Example</h3>\n<p>Here is an example of using the <code>editor.Autocomplete.completers</code> filter to add an acronym completer. You can find full documentation for the autocompleter interface with the <code>Autocomplete</code> component in the <code>@wordpress/components</code> package.</p>\n<pre><code class=\"language-jsx\">// Our completer\nconst acronymCompleter = {\n    name: 'acronyms',\n    triggerPrefix: '::',\n    options: [\n        { letters: 'FYI', expansion: 'For Your Information' },\n        { letters: 'AFAIK', expansion: 'As Far As I Know' },\n        { letters: 'IIRC', expansion: 'If I Recall Correctly' },\n    ],\n    getOptionKeywords( { letters, expansion } ) {\n        const expansionWords = expansion.split( /\\s+/ );\n        return [ letters, ...expansionWords ];\n    },\n    getOptionLabel: acronym =&gt; acronym.letters,\n    getOptionCompletion: ( { letters, expansion } ) =&gt; (\n        &lt;abbr title={ expansion }&gt;{ letters }&lt;/abbr&gt;,\n    ),\n};\n\n// Our filter function\nfunction appendAcronymCompleter( completers, blockName ) {\n    return blockName === 'my-plugin/foo' ?\n        [ ...completers, acronymCompleter ] :\n        completers;\n}\n\n// Adding the filter\nwp.hooks.addFilter(\n    'editor.Autocomplete.completers',\n    'my-plugin/autocompleters/acronym',\n    appendAcronymCompleter\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134419,
+    "menu_order": 81,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134423",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134423",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134423/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151896,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134423/revisions/151896"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134419"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134423"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

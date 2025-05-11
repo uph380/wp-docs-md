@@ -1,0 +1,97 @@
+{
+    "id": 11409,
+    "date": "2014-10-23T19:37:13",
+    "date_gmt": "2014-10-23T19:37:13",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11409"
+    },
+    "modified": "2024-01-26T16:47:24",
+    "modified_gmt": "2024-01-26T16:47:24",
+    "slug": "plugin-api-hooks",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/plugin-api-hooks/",
+    "title": {
+        "rendered": "Plugin API Hooks"
+    },
+    "content": {
+        "rendered": "\n<p>A theme should work well with WordPress plugins. Plugins add functionality by using actions and filters, which are collectively called hooks (see&nbsp;<a title=\"Plugin API\" href=\"https://codex.wordpress.org/Plugin_API\">Plugin API</a>&nbsp;for more information).</p>\n\n\n\n<p>Most hooks&nbsp;are executed internally by WordPress, so your theme does not need&nbsp;special tags for them to work. However,&nbsp;a few hooks&nbsp;need to be included in your theme templates. These hooks are fired by special Template Tags:</p>\n\n\n\n<dl>\n<dt><a title=\"Function Reference/wp head\" href=\"https://developer.wordpress.org/reference/functions/wp_head/\">wp_head()</a></dt>\n<dd>Goes at the end of&nbsp;the&nbsp;<tt>&lt;head&gt;</tt>&nbsp;element of a theme&#8217;s&nbsp;<i>header.php</i> template file.</dd>\n</dl>\n\n\n\n<dl>\n<dt><a title=\"Function Reference/wp head\" href=\"https://developer.wordpress.org/reference/functions/wp_body_open/\">wp_body_open()</a></dt>\n<dd>Goes at the begining of the <tt>&lt;body&gt;</tt>&nbsp;element of a theme&#8217;s&nbsp;<i>header.php</i> template file.</dd>\n</dl>\n\n\n\n<dl>\n<dt><a title=\"Function Reference/wp footer\" href=\"https://developer.wordpress.org/reference/functions/wp_footer/\">wp_footer()</a></dt>\n<dd>Goes in&nbsp;<i>footer.php</i>, just before the closing&nbsp;<tt>&lt;/body&gt;</tt>&nbsp;tag.</dd>\n</dl>\n\n\n\n<dl>\n<dt><a title=\"Function Reference/wp meta\" href=\"https://developer.wordpress.org/reference/functions/wp_meta/\">wp_meta()</a></dt>\n<dd>Typically goes in the&nbsp;<tt>&lt;li&gt;Meta&lt;/li&gt;</tt>&nbsp;section of a Theme&#8217;s menu or sidebar.</dd>\n</dl>\n\n\n\n<dl>\n<dt><a title=\"Function Reference/comment form\" href=\"https://developer.wordpress.org/reference/functions/comment_form/\">comment_form()</a></dt>\n<dd>Goes in&nbsp;<i>comments.php</i>&nbsp;directly before the file&#8217;s closing tag (<tt>&lt;/div&gt;</tt>).</dd>\n</dl>\n\n\n\n<p>Take a look at&nbsp;a core theme&#8217;s templates for examples of how these hooks are used.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 301,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11409",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11409",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11409/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138768,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11409/revisions/138768"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11409"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 25013,
+    "date": "2017-01-10T03:28:05",
+    "date_gmt": "2017-01-10T03:28:05",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25013"
+    },
+    "modified": "2022-11-01T02:18:59",
+    "modified_gmt": "2022-11-01T02:18:59",
+    "slug": "advanced-usage",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/customize-api/advanced-usage/",
+    "title": {
+        "rendered": "Advanced Usage"
+    },
+    "content": {
+        "rendered": "\n<p>The customize API is actively developed; this page contains additional more advanced topics. Additional discussion of advanced topics cab be found by searching the archives for the <a href=\"https://wordpress.slack.com/messages/core-customize/\">#core-customize</a>&nbsp;channel in <a href=\"https://chat.wordpress.org/\">Slack</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Allow Non-administrators to Access the Customizer</h2>\n\n\n\n<p>Customizer access is controlled by the customize meta capability (mapped to edit_theme_options by default), which is assigned only to administrators by default. This allows for wider use of the Customizer\u2019s extensive capability-access options, which are built into panels, sections, and settings. Additionally, this makes it possible to allow non-administrators to use the customizer for, for example, customizing posts. This change is an important step toward expanding the scope of the Customizer beyond themes.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction allow_users_who_can_edit_posts_to_customize( $caps, $cap, $user_id ) {\n\t$required_cap = 'edit_posts';\n\tif ( 'customize' === $cap &amp;&amp; user_can( $user_id, $required_cap ) ) {\n\t\t$caps = array( $required_cap );\n\t}\n\treturn $caps;\n}\nadd_filter( 'map_meta_cap', 'allow_users_who_can_edit_posts_to_customize', 10, 3 );</code></pre>\n\n\n\n<p>Note that it is currently necessary to manually add links to the Customizer in the admin menu, admin bar, or elsewhere if you are granting the customize meta capability to non-administrator users.</p>\n",
+        "protected": false
+    },
+    "author": 9362879,
+    "featured_media": 0,
+    "parent": 11390,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25013",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25013",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/9362879"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25013/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143723,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25013/revisions/143723"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11390"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25013"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

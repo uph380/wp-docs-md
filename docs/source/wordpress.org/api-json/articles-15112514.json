@@ -1,0 +1,109 @@
+{
+    "id": 15112514,
+    "date": "2021-11-29T14:24:01",
+    "date_gmt": "2021-11-29T14:24:01",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15112514"
+    },
+    "modified": "2023-09-01T15:23:55",
+    "modified_gmt": "2023-09-01T15:23:55",
+    "slug": "supported-versions",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/supported-versions/",
+    "title": {
+        "rendered": "Supported Versions"
+    },
+    "content": {
+        "rendered": "\n<p>The&nbsp;<a href=\"https://wordpress.org/support/forums\">WordPress Support Forums</a>&nbsp;and&nbsp;<a href=\"https://wordpress.org/documentation/\">WordPress Documentation</a>&nbsp;only provide support and documentation for officially released versions of WordPress, as downloaded from&nbsp;the <a href=\"https://wordpress.org/download/\">WordPress Download page</a> and related URLs.</p>\n\n\n\n<p>The\u00a0<strong>only current officially supported version</strong>\u00a0is the <a href=\"https://wordpress.org/download/releases/\" data-type=\"link\" data-id=\"https://wordpress.org/documentation/article/wordpress-versions/\">last major release</a> of WordPress. Previous major releases before this may or may not get security updates as serious exploits are discovered.</p>\n\n\n\n<p><strong>Beta versions, nightly builds, and Subversion check outs </strong><mark style=\"color:#ff0000\" class=\"has-inline-color\"><strong>are not supported</strong></mark><strong> on the WordPress.org support forums or on the WordPress Documentation.</strong></p>\n\n\n\n<p>If you are unable or unwilling to file bug reports, and help fix problems, please do not use anything other than the officially released versions.</p>\n\n\n\n<p>Some folks in&nbsp;<a href=\"https://make.wordpress.org/chat/\">WordPress Slack</a>&nbsp;might be familiar with unreleased versions, but it&#8217;ll be hit-or-miss, and no guarantee of support is provided.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"support-policy\">Support Policy</h2>\n\n\n\n<p>Security updates will be backported to older releases when possible, but there are no guarantee and no timeframe for older releases. There are no fixed period of support nor Long Term Support (LTS) version such as Ubuntu\u2019s. None of these are safe to use, except the latest series, which is actively maintained.</p>\n\n\n\n<p>For the full list of WordPress Versions, refer to&nbsp;<a href=\"https://wordpress.org/documentation/article/wordpress-versions/\" data-type=\"helphub_article\" data-id=\"14146007\">WordPress_Versions</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The&nbsp;WordPress Support Forums&nbsp;and&nbsp;WordPress Documentation&nbsp;only provide support and documentation for officially released versions of WordPress, as downloaded from&nbsp;the WordPress Download page and related URLs. The\u00a0only current officially supported version\u00a0is the last major release of WordPress. Previous major releases before this may or may not get security updates as serious exploits are discovered. Beta versions, nightly builds, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        75,
+        74
+    ],
+    "class_list": [
+        "post-15112514",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-about-wp",
+        "category-wordpress-overview"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15112514",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15112514"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15112514/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358853,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15112514/revisions/16358853"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15112514"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15112514"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

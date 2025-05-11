@@ -1,0 +1,91 @@
+{
+    "id": 148901,
+    "date": "2023-09-28T14:00:46",
+    "date_gmt": "2023-09-28T14:00:46",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=148901"
+    },
+    "modified": "2023-12-14T20:53:09",
+    "modified_gmt": "2023-12-14T20:53:09",
+    "slug": "global-settings-and-styles",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/",
+    "title": {
+        "rendered": "Global Settings and Styles (theme.json)"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the Global Settings and Styles documentation. In this chapter you will learn everything you need to know about configuring settings, styles, and more via your theme\u2019s <code>theme.json</code> file.</p>\n\n\n\n<p><code>theme.json</code> is a foundational piece of block theming. While it is not a strictly required file, you will need to work with it for nearly any theme project. It is useful for everything from configuring colors to defining default typography settings to applying front-end styles to your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the below links to find the topic you are looking for in this chapter. Each section of the chapter is set up to offer a straightforward learning path toward learning the ins-and-outs of <code>theme.json</code> for first-time themers. But if you are already familiar with the foundational concepts, feel free to skip ahead to the topic you want to learn more about.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/\"><strong>Introduction to <code>theme.json</code></strong></a><strong>:</strong> A walkthrough of setting up your <code>theme.json</code> file, introducing you to the foundational concepts for configuring global settings and styles for your theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/\"><strong>Settings</strong></a><strong>:</strong> Documentation for each of the standard and custom settings that you can configure via <code>theme.json</code>. Sub-pages document every available setting.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/\"><strong>Styles</strong></a><strong>:</strong> Learn how to use the standard design system to apply styles through <code>theme.json</code>, which also integrate with the user interface.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/custom-templates/\"><strong>Custom Templates</strong></a><strong>:</strong> How to register custom post, page, and CPT (custom post type) templates for your theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/template-parts/\"><strong>Template Parts</strong></a><strong>:</strong> How to register custom template parts that can be reused across your theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/patterns/\"><strong>Patterns</strong></a><strong>: </strong>How to bundle patterns from the official patterns repository with your theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/style-variations/\"><strong>Style Variations</strong></a><strong>:</strong> Documentation on creating custom <code>theme.json</code> style variations, giving your users alternative designs to choose from.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148901",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148901",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148901/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149257,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148901/revisions/149257"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148901"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

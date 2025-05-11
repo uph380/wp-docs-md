@@ -1,0 +1,109 @@
+{
+    "id": 10936999,
+    "date": "2018-12-01T12:38:34",
+    "date_gmt": "2018-12-01T12:38:34",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10936999"
+    },
+    "modified": "2023-05-23T14:30:02",
+    "modified_gmt": "2023-05-23T14:30:02",
+    "slug": "wordpress-privacy",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/wordpress-privacy/",
+    "title": {
+        "rendered": "WordPress Privacy"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">User Privacy and your WordPress site</h2>\n\n\n\n<p>Depending on your national or international privacy regulations (such as the European Union&#8217;s General Data Protection Regulation which may be applicable to you) you may be required to display a privacy policy disclosing your collection and sharing of personal data. Personal data includes things like your users&#8217; name, email, birthdate, phone number, IP address and other data that can be used to identify them.</p>\n\n\n\n<p>You may also be required to provide your users with the means to request a copy of the information you hold about them, or request its deletion.</p>\n\n\n\n<p>WordPress now includes several simple tools for site administrators to take these steps. These tools make it easier for you to inform your users through a transparent privacy notice about data that is collected on your site. It usually includes at least:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>What data you collect about them,</li>\n\n\n\n<li>Why and how you collect data,</li>\n\n\n\n<li>And what you do with that data (including with whom who you might share that data).</li>\n</ul>\n\n\n\n<p>These new tools also make it easier for users to request a copy of their data or its removal. The use of the new data privacy tools (whether required by law or not) will make it easier for you to protect your users&#8217; privacy.</p>\n\n\n\n<p>Please note: Every website is different. No two privacy notices will be alike, just as no two site administrators will have identical compliance journeys. Additionally, new regulations, as well as adaptations of existing ones, may alter your compliance journeys.&nbsp;<strong>We strongly encourage you to consider that safeguarding privacy is not a one-time responsibility.</strong>&nbsp;Taking steps to secure and protect your users&#8217; data is a continuous process both online and offline. These tools can help you with parts of that process, but they are not a compliance process in and of itself.&nbsp;<em>We strongly encourage you to check the regulations and expectations applicable to you and adjust your usage of these tools as needed.</em></p>\n\n\n\n<h2 class=\"wp-block-heading\">Privacy Settings</h2>\n\n\n\n<p>This tool makes it easier to select and build a Privacy Policy page. It will create a dedicated page (or adapt an existing one) and provide prompts and headers to kickstart the process.</p>\n\n\n\n<p>Site administrators can create this page by going to&nbsp;<em>Settings &gt; Privacy</em>, where the Privacy Policy page setting is managed.</p>\n\n\n\n<p>The prompts and headers provided in the tool by default are based on the expectations of Europe&#8217;s GDPR as a leading privacy standard. While this gives you a start to build on, your privacy policy is not constrained by this starter text.&nbsp;<em>It is your responsibility</em>&nbsp;to write a comprehensive privacy policy, to ensure that it reflects all national and international legal requirements on privacy, and to keep your policy current and accurate.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Privacy Policy Editing Helper</h3>\n\n\n\n<p>The&nbsp;<em>Editing Helper</em>&nbsp;feature is part of the new&nbsp;<em>Privacy Settings</em>&nbsp;tool. Drawing information from both WordPress core and a site&#8217;s themes and plugins, the Editing Helper pulls together a collected set of default texts which detail a site&#8217;s data collection and sharing, generating a starter text which you can use to complete your privacy policy.</p>\n\n\n\n<p>While you do not necessarily need to use this tool to build a Privacy Policy, we believe it is helpful because it provides information on how your WordPress site likely collects and processes data in core, theme and plugin code. It is important to consider these back-end uses of data: While not all sites will use all functions (for example, an administrator may choose not to enable comments on posts) nearly every site uses features such as analytics cookies, social media sharing buttons, or contact form plugins. Please add as many additional disclosures as is necessary to be fully transparent about how your site uses personal data.</p>\n\n\n\n<p><em>This tool ONLY collects policy help texts from WordPress and participating plugins.</em>&nbsp;Many sites will also embed third-party tools (such as email subscription services) which collect data in ways the the Editing Helper tool cannot detect, so the default template may not completely describe how your site might collect data about its user. Take the time to understand how your website actually collects your users&#8217; data, and be transparent about what actually happens with data on your website to your users.</p>\n\n\n\n<p>Further, theme and plugin developers are invited to learn how the Privacy Policy Editing Helper works, and to feed in the information about how your theme or plugin collects data into the privacy policy tool.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Export Personal Data tool</h2>\n\n\n\n<p>WordPress now includes a feature to to archive user data for export. This is different from the&nbsp;<em>Tools &gt; Export</em>&nbsp;tool which creates an archive file of posts, pages, or media; the new tool exports in captured elsewhere. You can use this tool by clicking on&nbsp;<em>Tools &gt; Export Personal Data</em>&nbsp;in your WordPress dashboard.</p>\n\n\n\n<p>This tool manages email export requests by your users. Following manual approval, it allows you to generate a (<code>.zip</code>format) file containing the personal data which exists about a user within your WordPress site.</p>\n\n\n\n<p><em>We strongly encourage you use the email validation feature built into the export tools. This confirmation process will help safeguard against abuse, such as malicious users pretending to be someone they are not.</em>&nbsp;As with the Erasure tool, the Erase Personal Data tool uses email validation to send a user&#8217;s request to an administrator. The administrator must manually approve the request to send the data in question to the user.</p>\n\n\n\n<p><em>As this tool ONLY gathers data from WordPress and participating plugins, you may need to go beyond to comply with export requests.</em>&nbsp;While it may give you a good start in providing your users with the information they have requested, every site administrator should understand what data they collect and process outside their WordPress site as a full site request may have more responsibility than simply using this export alone.</p>\n\n\n\n<p>While this tool&#8217;s scope covers much of the scope of WordPress user data, it likely does not include information that may be collected by your site using a third-party service, such as an analytics provider, newsletter subscription service, ad affiliate partner or embedded media.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Erase Personal Data tool</h2>\n\n\n\n<p>Similar to the Export Personal Data tool, WordPress now includes a tool to delete a user&#8217;s personal data upon verified request. You will find this feature under&nbsp;<em>Tools &gt; Erase Personal Data</em>&nbsp;in your WordPress dashboard.</p>\n\n\n\n<p><em>We strongly encourage you use the email validation feature built into the export tool. This confirmation process will help safeguard against abuse, such as malicious users pretending to be someone they are not.</em>&nbsp;As with the Export tool, the Erase Personal Data tool uses email validation to send a user&#8217;s request to an administrator. The administrator must manually approve the request to remove the data in question.</p>\n\n\n\n<p><em>Deleted data is permanently removed from the database.</em>&nbsp;Erasure requests cannot be reversed after they have been confirmed. Note that it does not remove the data from backups or archive files: When using the tool alongside automated backups or archives, we advise you to exercise caution when restoring user data from backups. When restoring an archived copy of your site, your requests for erasure should be respected.</p>\n\n\n\n<p><em>As this tool ONLY gathers data from WordPress and participating plugins, you may need to go beyond to comply with erasure requests.</em>&nbsp;While it may give you a good start in complying with your users&#8217; request to remvoe the information they have requested, every site administrator should understand what data they collect and process outside their WordPress site as a full site erasure request may have more responsibility than simply using this tool alone.</p>\n\n\n\n<p>In particular (as with the Export tool) it likely does not include information that may be collected by your site using a third-party service, such as an analytics provider, newsletter subscription service, ad affiliate partner or embedded media.</p>\n\n\n\n<p><em>When erasing user data, this tool does not automatically delete registered users and their profile data.</em>&nbsp;Administrators should perform that step themselves after successfully erasing personal data for a registered user. User deletion is available for each user in the&nbsp;<em>Users</em>&nbsp;menu in the Dashboard.</p>\n\n\n\n<p><em>It is also important to understand that personal data deletion requests are not absolute.</em>&nbsp;A site administrator is not obliged to delete data that they may be required to keep for other legal or statutory reasons. For example, you may be required to keep sales records for a certain number of years for tax purposes. You may also wish to keep a user&#8217;s records for security purposes, for example, if there is an ongoing investigation into abuse. These situations should be handled internally.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Consent of data collected</h2>\n\n\n\n<p>Under some privacy laws, you may also be required to have your users&#8217; active, clear, and unambiguous consent before collecting their personal data. Further, you may also be required to have your users&#8217; active, clear, and unambiguous consent before certain kinds of processing of personal data, if that processing isn&#8217;t otherwise necessary for your site.</p>\n\n\n\n<p>While WordPress.org does not yet have consent tools built,&nbsp;<a href=\"https://wordpress.org/plugins/tags/gdpr/\">there are various plugins available</a>&nbsp;to help in collecting consent to be compliant with the May 2018 GDPR compliance deadline. In addition, WordPress Core intends to add additional tools for WordPress theme and plugin developers for consent management in WordPress Sites.</p>\n\n\n\n<p>Some plugins, especially in the case of forms and email subscription services, suggest that you add a &#8220;required&#8221; consent field that says something like&nbsp;<a href=\"https://docs.gravityforms.com/wordpress-gravity-forms-and-gdpr-compliance/\"><em>&#8220;I consent to my submitted data being collected and stored&#8221;</em></a>&nbsp;if this is a requirement for your website.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>User Privacy and your WordPress site Depending on your national or international privacy regulations (such as the European Union&#8217;s General Data Protection Regulation which may be applicable to you) you may be required to display a privacy policy disclosing your collection and sharing of personal data. Personal data includes things like your users&#8217; name, email, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        34,
+        73
+    ],
+    "class_list": [
+        "post-10936999",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-security",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10936999",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10936999"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10936999/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357067,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10936999/revisions/16357067"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10936999"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10936999"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

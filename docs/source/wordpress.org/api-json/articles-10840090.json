@@ -1,0 +1,109 @@
+{
+    "id": 10840090,
+    "date": "2018-11-02T04:15:42",
+    "date_gmt": "2018-11-02T04:15:42",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840090"
+    },
+    "modified": "2023-04-11T20:23:16",
+    "modified_gmt": "2023-04-11T20:23:16",
+    "slug": "what-are-smilies",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/what-are-smilies/",
+    "title": {
+        "rendered": "What are smilies?"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What Are Smileys?</h2>\n\n\n\n<p>Smileys, also known as &#8220;emoticons&#8221;, are <em>glyphs</em> used to convey emotions in your writing. They are a great way to brighten up posts. \ud83d\ude42</p>\n\n\n\n<p>Text smileys are created by typing two or more punctuation marks. Some examples are:</p>\n\n\n\n<p><code>;-)</code> is equivalent to \ud83d\ude09</p>\n\n\n\n<p><code>:-)</code> is equivalent to \ud83d\ude42</p>\n\n\n\n<p><code>:-(</code> is equivalent to \ud83d\ude41</p>\n\n\n\n<p><code>:-?</code> is equivalent to \ud83d\ude15</p>\n\n\n\n<p>To learn more about emoticons and their history, see the <a href=\"http://en.wikipedia.org/wiki/Emoticons\">Wikipedia entry on Emoticons</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Smileys are not Emoji</h3>\n\n\n\n<p>Although smileys and emoji can both display smiley faces and such, emoji are a newer development and have a much wider range of images that can be displayed. (They are also created differently.) For more information on emoji and how to use them, see the <a href=\"https://codex.wordpress.org/Emoji\">Emoji</a> page.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How Does WordPress Handle Smileys?</h2>\n\n\n\n<p>By default, WordPress automatically converts text smileys to graphic images. When you type <code>;-)</code> in your post you see \ud83d\ude09 when you preview or publish your post.</p>\n\n\n\n<h2 class=\"wp-block-heading\">To Turn off Graphic Smileys</h2>\n\n\n\n<p>As of WordPress 4.3, the option to disable graphic smileys was removed from new installs. There is <a href=\"https://wordpress.org/plugins/keep-emoticons-as-text/\">a plugin</a> if you want to retain the option.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What Text Do I Type to Make Smileys?</h2>\n\n\n\n<p>Smiley images and the text used to produce them*:</p>\n\n\n\n<figure class=\"wp-block-table is-style-regular\"><table><tbody><tr><th>icon</th><th>text</th><th>text</th><th>full text</th><th>icon</th><th>full text</th></tr><tr><td>\ud83d\ude42</td><td><code>:)</code></td><td><code>:-)</code></td><td><code>:smile:</code></td><td>\ud83d\ude06</td><td><code>:lol:</code></td></tr><tr><td>\ud83d\ude00</td><td><code>:D</code></td><td><code>:-D</code></td><td><code>:grin:</code></td><td>\ud83d\ude33</td><td><code>:oops:</code></td></tr><tr><td>\ud83d\ude41</td><td><code>:(</code></td><td><code>:-(</code></td><td><code>:sad:</code></td><td>\ud83d\ude25</td><td><code>:cry:</code></td></tr><tr><td>\ud83d\ude2e</td><td><code>:o</code></td><td><code>:-o</code></td><td><code>:eek:</code></td><td>\ud83d\udc7f</td><td><code>:evil:</code></td></tr><tr><td>\ud83d\ude2f</td><td><code>8O</code></td><td><code>8-O</code></td><td><code>:shock:</code></td><td>\ud83d\ude08</td><td><code>:twisted:</code></td></tr><tr><td>\ud83d\ude15</td><td><code>:?</code></td><td><code>:-?</code></td><td><code>:???:</code></td><td>\ud83d\ude44</td><td><code>:roll:</code></td></tr><tr><td>\ud83d\ude0e</td><td><code>8)</code></td><td><code>8-)</code></td><td><code>:cool:</code></td><td>\u2757</td><td><code>:!:</code></td></tr><tr><td>\ud83d\ude21</td><td><code>:x</code></td><td><code>:-x</code></td><td><code>:mad:</code></td><td>\u2753</td><td><code>:?:</code></td></tr><tr><td>\ud83d\ude1b</td><td><code>:P</code></td><td><code>:-P</code></td><td><code>:razz:</code></td><td>\ud83d\udca1</td><td><code>:idea:</code></td></tr><tr><td>\ud83d\ude10</td><td><code>:|</code></td><td><code>:-|</code></td><td><code>:neutral:</code></td><td>\u27a1</td><td><code>:arrow:</code></td></tr><tr><td>\ud83d\ude09</td><td><code>;)</code></td><td><code>;-)</code></td><td><code>:wink:</code></td><td><img src=\"https://wordpress.org/documentation/wp-includes/images/smilies/mrgreen.png\" alt=\":mrgreen:\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></td><td><code>:mrgreen:</code></td></tr></tbody></table></figure>\n\n\n\n<p><em>* In some instances, multiple text options are available to display the same smiley.</em></p>\n\n\n\n<p>Category:Getting Started</p>\n\n\n\n<h2 class=\"wp-block-heading\">Troubleshooting Smileys</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Why Doesn&#8217;t it Work?</h3>\n\n\n\n<p>Smileys may have been disabled by your WordPress admin. Another possibility is the smiley image files have been deleted from <code>/wp-includes/images/smilies</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Why Doesn&#8217;t it Work for Me?</h3>\n\n\n\n<p><em>If smileys work for others at your site but not for you:</em></p>\n\n\n\n<p>Type a space before and after your smiley text. That prevents the smiley being accidentally included in the text around it. \ud83d\ude33</p>\n\n\n\n<p>Make sure not to use quotes or other punctuation marks before and after the smiley text. \ud83d\ude44</p>\n\n\n\n<h3 class=\"wp-block-heading\">Where Are My Smiley Images Kept?</h3>\n\n\n\n<p>The smiley or emoticon image graphics are found in the <code>/wp-includes/images/smilies</code> directory.</p>\n\n\n\n<p>Note that smileys is spelled &#8216;eys&#8217; in this documentation and the directory name for the smiley images is <em>&#8216;smilies</em>, spelled &#8216;ies&#8217;. \ud83d\ude2f</p>\n\n\n\n<h3 class=\"wp-block-heading\">How Can I Have Different Smiley Images Appear?</h3>\n\n\n\n<p>The easiest way is to filter the smilies.</p>\n\n\n\n<p>Upload the images you want with the same name to your server (say in wp-content/images/smilies) and put this in your theme&#8217;s function.php:</p>\n\n\n<pre class=\"brush: php; title: ; notranslate\" title=\"\">\nadd_filter( &#039;smilies_src&#039;, &#039;my_custom_smilies_src&#039;, 10, 3 );\nfunction my_custom_smilies_src( $img_src, $img, $siteurl )\n{\n        return $siteurl.&#039;/wp-content/images/smilies/&#039;.$img;\n}\n</pre>\n\n\n\n<p>That will replace http://example.com/wp-includes/images/smilies/icon_question.gif with http://example.com/wp-content/images/smilies/icon_question.gif</p>\n\n\n\n<h3 class=\"wp-block-heading\">Why are my Smiley Images Blank?</h3>\n\n\n\n<p>If you recently uploaded the images, it could be that the images have been uploaded in <strong><em>ASCII</em></strong> format by your FTP program. Re-upload the smileys ensuring that they are transferred in <strong><em>BINARY</em></strong> format.</p>\n\n\n\n<p>Some FTP programs have an <strong>auto-detect</strong> setting which will upload files in the correct format without user intervention. If you have such a setting, turn it on.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Smiley CSS</h2>\n\n\n\n<p>The smiley images in WordPress are automatically given a <a href=\"https://codex.wordpress.org/Glossary#CSS\">CSS</a> class of <strong>wp-smiley</strong> when they are displayed in a post. You can use this class to style your smileys differently from other post images.</p>\n\n\n\n<p>For example, it&#8217;s not uncommon to set up images in a post to appear on the left-hand side of the content with text flowing around the image. The CSS for that might look like this:</p>\n\n\n<pre class=\"brush: php; title: ; notranslate\" title=\"\">\n.post img {\n        float: left;\n}\n</pre>\n\n\n\n<p>This would typically affect all images in a post, <strong>including</strong> your smiley images. To <em>override</em> this so that smileys stay inline, you could add this to your CSS:</p>\n\n\n<pre class=\"brush: php; title: ; notranslate\" title=\"\">\nimg.wp-smiley {\n        float: none;\n}\n</pre>\n\n\n\n<p>For more on CSS in WordPress, you might want to <a href=\"https://codex.wordpress.org/CSS\">start here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">More Information on Smileys</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"http://en.wikipedia.org/wiki/Emoticon\">Wikipedia &#8211; Emoticon</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>What Are Smileys? Smileys, also known as &#8220;emoticons&#8221;, are glyphs used to convey emotions in your writing. They are a great way to brighten up posts. \ud83d\ude42 Text smileys are created by typing two or more punctuation marks. Some examples are: \ud83d\ude09 is equivalent to \ud83d\ude09 \ud83d\ude42 is equivalent to \ud83d\ude42 \ud83d\ude41 is equivalent to [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10840090",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840090",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840090"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840090/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356680,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840090/revisions/16356680"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840090"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840090"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

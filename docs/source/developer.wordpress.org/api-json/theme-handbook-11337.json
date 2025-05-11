@@ -1,0 +1,97 @@
+{
+    "id": 11337,
+    "date": "2014-10-22T21:21:13",
+    "date_gmt": "2014-10-22T21:21:13",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11337"
+    },
+    "modified": "2023-02-13T07:39:00",
+    "modified_gmt": "2023-02-13T07:39:00",
+    "slug": "post-types",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/post-types/",
+    "title": {
+        "rendered": "Post Types"
+    },
+    "content": {
+        "rendered": "\n<p>There are many different types of content in WordPress. These content types are normally described as Post Types, which may be a little confusing since it refers to all different types of content in WordPress. For example, a post is a specific Post Type, and so is a page.</p>\n\n\n\n<p>Internally, all of the Post Types are stored in the same place \u2014 in the wp_posts database table \u2014 but are differentiated by a database column called post_type.</p>\n\n\n\n<p>In addition to the default Post Types, you can also create Custom Post Types.</p>\n\n\n\n<p>The&nbsp;<a href=\"https://developer.wordpress.org/themes/basics/template-files/\">Template files</a>&nbsp;page briefly mentioned that different Post Types are displayed by different Template files. &nbsp;As the whole purpose of a Template file is to display content a certain way, the Post Types purpose is to categorize what type of content you are dealing with.&nbsp;Generally speaking, certain Post Types are tied to certain template files.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"default-post-types\">Default Post Types</h2>\n\n\n\n<p>There are several default Post Types readily available to users or internally used by the WordPress installation. The most common are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Post (Post Type: &#8216;post&#8217;)</li>\n\n\n\n<li>Page (Post Type: &#8216;page&#8217;)</li>\n\n\n\n<li>Attachment (Post Type: &#8216;attachment&#8217;)</li>\n\n\n\n<li>Revision (Post Type: &#8216;revision&#8217;)</li>\n\n\n\n<li>Navigation menu (Post Type: &#8216;nav_menu_item&#8217;)</li>\n\n\n\n<li>Block templates (Post Type: &#8216;wp_template&#8217;)</li>\n\n\n\n<li>Template parts (Post Type: &#8216;wp_template_part&#8217;)</li>\n</ul>\n\n\n\n<p>The Post Types above can be modified and removed by a plugin or theme, but it\u2019s not recommended that you remove built-in functionality for a widely-distributed theme or plugin.</p>\n\n\n\n<p>It&#8217;s out of the scope of this handbook to explain other post types in detail. However, it is important to note that you will interact with and build the functionality&nbsp;of <a href=\"https://developer.wordpress.org/themes/functionality/navigation-menus/\">navigation menus</a> and that will be detailed later in this handbook.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"post\">Post</h3>\n\n\n\n<p>Posts are used in blogs. They&nbsp;are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>displayed in reverse sequential order by time, with the newest post first</li>\n\n\n\n<li>have a date and time stamp</li>\n\n\n\n<li>may have the default <a href=\"https://developer.wordpress.org/themes/functionality/categories-tags-custom-taxonomies/\">taxonomies of categories and tags</a> applied</li>\n\n\n\n<li>are used for creating feeds</li>\n</ul>\n\n\n\n<p>The template files that display the Post post type are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>singl</code>e and&nbsp;<code>single-post</code></li>\n\n\n\n<li><code>category</code> and all its iterations</li>\n\n\n\n<li><code>tag</code> and all its iterations</li>\n\n\n\n<li><code>taxonomy</code> and all its iterations</li>\n\n\n\n<li><code>archive</code>&nbsp;and all its iterations</li>\n\n\n\n<li><code>author</code>&nbsp;and all its iterations</li>\n\n\n\n<li><code>date</code>&nbsp;and all its iterations</li>\n\n\n\n<li><code>search</code></li>\n\n\n\n<li><code>home</code></li>\n\n\n\n<li><code>index</code></li>\n</ul>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/template-files-section/post-template-files/\">Read more about Post Template Files in classic themes</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"page\">Page</h3>\n\n\n\n<p>Pages are a static Post Type, outside of the normal blog stream/feed. Their features are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>non-time dependent and without a time stamp</li>\n\n\n\n<li>are not organized using the categories and/or tags taxonomies</li>\n\n\n\n<li>can be organized in a hierarchical structure \u2014 i.e. pages can be parents/children of other pages</li>\n</ul>\n\n\n\n<p>The template files that display the Page&nbsp;post type are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>page</code> and all its iterations</li>\n\n\n\n<li><code>front-page</code></li>\n\n\n\n<li><code>search</code></li>\n\n\n\n<li><code>index</code></li>\n</ul>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/template-files-section/page-template-files/\">Read more about Page Template Files in classic themes</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"attachment\">Attachment</h3>\n\n\n\n<p>Attachments are commonly used to display images or media in content, and may also be used to link to relevant files. Their features are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>contain&nbsp;information (such as name or description) about files uploaded through the media upload system</li>\n\n\n\n<li>for images, this includes metadata information stored in the wp_postmeta table (including size, thumbnails, location, etc)</li>\n</ul>\n\n\n\n<p>The template files that display the Attachment&nbsp;post type are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>MIME_type</code></li>\n\n\n\n<li><code>attachment</code></li>\n\n\n\n<li><code>single-attachment</code></li>\n\n\n\n<li><code>single</code></li>\n\n\n\n<li><code>index</code></li>\n</ul>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/template-files-section/attachment-template-files/\">Read more about Attachment Template Files in classic themes</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"custom-post-types\">Custom Post Types</h2>\n\n\n\n<p>Using Custom Post Types, you can <strong>create your own post type</strong>. It is not recommend that you place this functionality in your theme. This type of functionality should be placed/created in a plugin. This ensures the portability of your user&#8217;s content, and that if the theme is changed the content stored in the Custom Post Types won&#8217;t disappear.</p>\n\n\n\n<p>You can learn more about <a href=\"https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/\">creating custom post types in the WordPress Plugin Developer Handbook</a>.</p>\n\n\n\n<p>While you generally won&#8217;t develop Custom Post Types in your theme, you may want to code ways to display Custom Post Types that were created by a plugin. &nbsp;The following templates can display Custom post types:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>single-{post-type}</code></li>\n\n\n\n<li><code>archive-{post-type}</code></li>\n\n\n\n<li><code>search</code></li>\n\n\n\n<li><code>index</code></li>\n</ul>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/template-files-section/custom-post-type-template-files/\">Read more about Custom Post Type Templates in classic themes</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11337",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11337",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 34,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11337/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144942,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11337/revisions/144942"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11337"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

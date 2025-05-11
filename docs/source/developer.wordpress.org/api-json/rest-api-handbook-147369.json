@@ -1,0 +1,91 @@
+{
+    "id": 147369,
+    "date": "2023-04-26T10:55:33",
+    "date_gmt": "2023-04-26T10:55:33",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/sidebars/"
+    },
+    "modified": "2024-01-16T20:30:12",
+    "modified_gmt": "2024-01-16T20:30:12",
+    "slug": "sidebars",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/sidebars/",
+    "title": {
+        "rendered": "Sidebars"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a sidebar record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-id\">\n<td>\n                <code>id</code>\n            </td>\n<td>\n                ID of sidebar.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                Unique name identifying the sidebar.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                Description of sidebar.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-class\">\n<td>\n                <code>class</code>\n            </td>\n<td>\n                Extra CSS class to assign to the sidebar in the Widgets interface.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-before_widget\">\n<td>\n                <code>before_widget</code>\n            </td>\n<td>\n                HTML content to prepend to each widget&#039;s HTML output when assigned to this sidebar. Default is an opening list item element.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-after_widget\">\n<td>\n                <code>after_widget</code>\n            </td>\n<td>\n                HTML content to append to each widget&#039;s HTML output when assigned to this sidebar. Default is a closing list item element.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-before_title\">\n<td>\n                <code>before_title</code>\n            </td>\n<td>\n                HTML content to prepend to the sidebar title when displayed. Default is an opening h2 element.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-after_title\">\n<td>\n                <code>after_title</code>\n            </td>\n<td>\n                HTML content to append to the sidebar title when displayed. Default is a closing h2 element.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-status\">\n<td>\n                <code>status</code>\n            </td>\n<td>\n                Status of sidebar.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n<p>                                    One of: <code>active</code>, <code>inactive</code>\n                            </td>\n</tr>\n<tr id=\"schema-widgets\">\n<td>\n                <code>widgets</code>\n            </td>\n<td>\n                Nested widgets.</p>\n<p class=\"type\">\n                    JSON data type: array               </p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Sidebar</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/sidebars</code></p>\n<p>        Query this endpoint to retrieve a specific sidebar record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/sidebars</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Sidebar</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/sidebars/&lt;id&gt;</code></p>\n<p>        Query this endpoint to retrieve a specific sidebar record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/sidebars/&lt;id&gt;</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>id</code>\n                                    </td>\n<td>\n                                            The id of a registered sidebar\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Update a Sidebar</h2>\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code><a href=\"#schema-widgets\">widgets</a></code>\n                                    </td>\n<td>\n                                            Nested widgets.\n                                                                                                </td>\n</tr>\n</table></div>\n<div class=\"secondary\">\n<h3>Definition</h3>\n<p>        <code>POST /wp/v2/sidebars/&lt;id&gt;</code></p>\n<h3>Example Request</h3>\n<p>        <code></code>\n    </div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147369",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147369",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147369/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151975,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147369/revisions/151975"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147369"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

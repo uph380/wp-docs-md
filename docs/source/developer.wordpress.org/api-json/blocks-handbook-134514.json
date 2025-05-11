@@ -1,0 +1,91 @@
+{
+    "id": 134514,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-item/"
+    },
+    "modified": "2024-10-30T16:55:35",
+    "modified_gmt": "2024-10-30T16:55:35",
+    "slug": "toolbar-item",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-item/",
+    "title": {
+        "rendered": "ToolbarItem"
+    },
+    "content": {
+        "rendered": "<p>A ToolbarItem is a generic headless component that can be used to make any custom component a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/\">Toolbar</a> item. It should be inside a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/\">Toolbar</a> or <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar-group/\">ToolbarGroup</a> when used to create general interfaces. If you&#8217;re using it to add controls to your custom block, you should consider using <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/\">BlockControls</a>.</p>\n<h2>Usage</h2>\n<h3><code>as</code> prop</h3>\n<p>You can use the <code>as</code> prop with a custom component or any HTML element.</p>\n<pre><code class=\"language-jsx\">import { Toolbar, ToolbarItem, Button } from '@wordpress/components';\n\nfunction MyToolbar() {\n    return (\n        &lt;Toolbar label=\"Options\"&gt;\n            &lt;ToolbarItem as={ Button }&gt;I am a toolbar button&lt;/ToolbarItem&gt;\n            &lt;ToolbarItem as=\"button\"&gt;I am another toolbar button&lt;/ToolbarItem&gt;\n        &lt;/Toolbar&gt;\n    );\n}\n</code></pre>\n<h3>render prop</h3>\n<p>You can pass children as function to get the ToolbarItem props and pass them to another component.</p>\n<pre><code class=\"language-jsx\">import { Toolbar, ToolbarItem, DropdownMenu } from '@wordpress/components';\nimport { table } from '@wordpress/icons';\n\nfunction MyToolbar() {\n    return (\n        &lt;Toolbar label=\"Options\"&gt;\n            &lt;ToolbarItem&gt;\n                { ( toolbarItemHTMLProps ) =&gt; (\n                    &lt;DropdownMenu\n                        icon={ table }\n                        toggleProps={ toolbarItemHTMLProps }\n                        label={ 'Edit table' }\n                        controls={ [] }\n                    /&gt;\n                ) }\n            &lt;/ToolbarItem&gt;\n        &lt;/Toolbar&gt;\n    );\n}\n</code></pre>\n<h3>Inside BlockControls</h3>\n<p>If you&#8217;re working on a custom block and you want to add controls to the block toolbar, you should use <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/\">BlockControls</a> instead. Optionally wrapping it with <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar-group/\">ToolbarGroup</a>.</p>\n<pre><code class=\"language-jsx\">import { BlockControls } from '@wordpress/block-editor';\nimport { ToolbarGroup, ToolbarItem, Button } from '@wordpress/components';\n\nfunction Edit() {\n    return (\n        &lt;BlockControls&gt;\n            &lt;ToolbarGroup&gt;\n                &lt;ToolbarItem as={ Button }&gt;I am a toolbar button&lt;/ToolbarItem&gt;\n            &lt;/ToolbarGroup&gt;\n        &lt;/BlockControls&gt;\n    );\n}\n</code></pre>\n<h2>Related components</h2>\n<ul>\n<li>ToolbarItem should be used inside <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar/\">Toolbar</a> or <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar-group/\">ToolbarGroup</a>.</li>\n<li>If you want a simple toolbar button, consider using <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/toolbar-button/\">ToolbarButton</a> instead.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 221,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134514",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134514",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134514/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152140,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134514/revisions/152140"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134514"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

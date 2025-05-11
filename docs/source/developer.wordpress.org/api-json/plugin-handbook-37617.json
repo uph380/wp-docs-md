@@ -1,0 +1,97 @@
+{
+    "id": 37617,
+    "date": "2018-05-17T16:30:52",
+    "date_gmt": "2018-05-17T16:30:52",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=37617"
+    },
+    "modified": "2022-11-17T06:09:04",
+    "modified_gmt": "2022-11-17T06:09:04",
+    "slug": "suggesting-text-for-the-site-privacy-policy",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/privacy/suggesting-text-for-the-site-privacy-policy/",
+    "title": {
+        "rendered": "Suggesting text for the site privacy policy"
+    },
+    "content": {
+        "rendered": "\n<p>Every plugin that collects, uses, or stores user data, or passes it to an external source or third party, should add a section of suggested text to the privacy policy postbox. This is best done with<code> wp_add_privacy_policy_content( $plugin_name, $policy_text )</code>. This will allow site administrators to pull that information into their site&#8217;s privacy policy.</p>\n\n\n\n<p>To make this simpler for the users, the text should address the questions provided in the default privacy policy:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>What personal data we collect and why we collect it<ul><li>Their own manually input information</li><li>WP: Contact forms</li><li>WP: Comments</li><li>WP: Cookies</li><li>WP: Third party embeds</li><li>Analytics</li></ul></li><li>Who we share your data with</li><li>How long we retain your data</li><li>What rights you have over your data</li><li>Where we send your data</li><li>Your contact information</li><li>How we protect your data</li><li>What data breach procedures we have in place</li><li>What third parties we receive data from</li><li>What automated decision making and/or profiling we do with user data</li><li>Any industry regulatory disclosure requirements</li></ul>\n\n\n\n<p>While not all of these questions will be applicable to all plugins, we recommend taking care with the sections on data sharing.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"code-example\">Code Example</h2>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">It is recommended to call wp_add_privacy_policy_content during the admin_init action. Calling it outside of an action hook can lead to problems, see ticket #44142 for details.</div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Supplemental information can be provided through the use of the specialized <code>.privacy-policy-tutorial</code> CSS class. Any content contained within HTML elements that have this CSS class applied will be omitted from the clipboard when the section content is copied.</div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Adds a privacy policy statement.\n */\nfunction wporg_add_privacy_policy_content() {\n\tif ( ! function_exists( 'wp_add_privacy_policy_content' ) ) {\n\t\treturn;\n\t}\n\t$content = '&lt;p class=\"privacy-policy-tutorial\"&gt;' . __( 'Some introductory content for the suggested text.', 'text-domain' ) . '&lt;/p&gt;'\n\t\t\t. '&lt;strong class=\"privacy-policy-tutorial\"&gt;' . __( 'Suggested Text:', 'my_plugin_textdomain' ) . '&lt;/strong&gt; '\n\t\t\t. sprintf(\n\t\t\t\t__( 'When you leave a comment on this site, we send your name, email address, IP address and comment text to example.com. Example.com does not retain your personal data. The example.com privacy policy is &lt;a href=\"%1$s\" target=\"_blank\"&gt;here&lt;/a&gt;.', 'text-domain' ),\n\t\t\t\t'https://example.com/privacy-policy'\n\t\t\t);\n\twp_add_privacy_policy_content( 'Example Plugin', wp_kses_post( wpautop( $content, false ) ) );\n}\n\nadd_action( 'admin_init', 'wporg_add_privacy_policy_content' );</code></pre>\n",
+        "protected": false
+    },
+    "author": 161792,
+    "featured_media": 0,
+    "parent": 37615,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-37617",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37617",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/161792"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37617/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144348,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37617/revisions/144348"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37615"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=37617"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

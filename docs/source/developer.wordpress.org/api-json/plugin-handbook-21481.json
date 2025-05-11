@@ -1,0 +1,97 @@
+{
+    "id": 21481,
+    "date": "2016-07-22T18:49:42",
+    "date_gmt": "2016-07-22T18:49:42",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=21481"
+    },
+    "modified": "2023-09-01T12:32:06",
+    "modified_gmt": "2023-09-01T12:32:06",
+    "slug": "plugin-security",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/plugin-security/",
+    "title": {
+        "rendered": "Managing Your Plugin&#8217;s Security"
+    },
+    "content": {
+        "rendered": "<p>The security of code in WordPress plugins is taken <a href=\"https://wordpress.org/about/security/\">very seriously</a>.</p>\n<p>\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><p>If you have found a plugin with a security issue, please read <a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/\">Reporting Plugin Security Issues</a></p>\n</div></div>\n</p>\n<p>When a plugin vulnerability is verified\u00a0by the WordPress Security Team, they contact the plugin author and direct them as to how to fix and release a secure version of the plugin. If there is a lack of response from the plugin author or if the vulnerability is severe, the plugin/theme is pulled from the public directory, and in some cases, fixed and updated directly by the Security Team.</p>\n<h2>Fixing Security Issues</h2>\n<p>When you receive a report of security issues in your plugins, it can be terrifying. First, don&#8217;t panic. Everyone makes mistakes. What matters most is fixing it safely and promptly.</p>\n<ol>\n<li>Make sure you understand the report. If you&#8217;re not sure what it means, ask for details. Even third-party reporters are usually willing to take the time to explain what&#8217;s wrong and direct you where to research a proper fix.</li>\n<li>Keep your changes as small as possible. This will make it much easier for you to review later on.</li>\n<li>Test your plugin. Make sure the security fix doesn&#8217;t break anything else. Make sure upgrading doesn&#8217;t cause weird errors. Keep <code>WP_DEBUG</code> on and log any errors.</li>\n<li>Document the issue in your change log. You don&#8217;t need to include details on exactly what happened, but do document that a security issue was resolved.</li>\n<li>Credit the reporter in your readme. This is just nice, and makes people more inclined to help you for free later on.</li>\n<li>Bump your version number. We recommend <a href=\"https://semver.org\">SemVer</a>, so a security release for version 3.9 of your plugin would change the version to 3.9.1 and so on.</li>\n</ol>\n<h2>Automatic Plugin Security Updates</h2>\n<p>Since WordPress 3.7, we have had the ability to\u00a0push automatic\u00a0<span class=\"hilite\">security</span> updates for plugins to fix critical vulnerabilities in plugins. Many sites have made use of the plugin automatic updates functionality, either by opting in directly through filters, or by using one of the many remote management services for WordPress that are available.</p>\n<p>In extreme situations, the Plugin Review\u00a0Team and the WordPress Security Team may determine a plugin issue is great enough that it must be updated for all users. This is exceptionally rare, as the potential for conflicts is high.</p>\n<p>&nbsp;</p>\n<p>The process of approving a plugin for an automatic update, and rolling it out to WordPress users, is highly manual. The security team reviews all code changes in the release, verifies the issue and the fix, and confirms the plugin is safe to trigger an update. Rolling out an automatic update requires modification and deployment of the API code. This is the same standard and process for a core <span class=\"hilite\">security</span> release.</p>\n<h3>Criteria</h3>\n<p>The current criteria we take into consideration for a <span class=\"hilite\">security</span> push is a simple list:</p>\n<ol>\n<li>Has the <span class=\"hilite\">security</span> team been made aware of the issue?</li>\n<li>How severe is the issue? What impact would it have on the <span class=\"hilite\">security</span> of a WordPress install, and the greater internet?</li>\n<li>Is the fix for the issue self-contained or does it add significant extra superfluous code?</li>\n<li>If multiple branches of the plugin are affected, has a release per branch been prepared?</li>\n<li>Can the update be <em>safely</em> installed automatically?</li>\n</ol>\n<p>These requirements are defined in a way that anyone should be able to tick each box.</p>\n<p>The first criterion \u2014 making the security team aware of the issue \u2014 is critical. Since it\u2019s a tightly controlled process, the WordPress <span class=\"hilite\">security</span> team needs to be notified as early as possible.\u00a0Letting us know is as simple as emailing us at <code>plugins@wordpress.org</code> with the details.</p>\n<p>The plugin and security teams will work with the plugin author (and the reporter, if different)\u00a0to study the vulnerability and its exact exposure, verify the proposed fix, and determine what versions will be released and when.</p>\n<p>&nbsp;</p>\n<h2>FAQ</h2>\n<h3>How do I request my plugin be automatically updated?</h3>\n<p>If you feel your plugin has a large enough user base or the issue is of great significance, email <code>plugin@wordpress.org</code>\u00a0<strong>before</strong> you push the code.\u00a0Include a patch of the changes for review in the email, and explain why you feel this should be automated.</p>\n<h3>Can I include changes besides the security related ones for automated updates?</h3>\n<p>With few exceptions, no. A security push should\u00a0<em>only</em> be security related. We prefer (and many times require) plugin releases which fix <strong>only</strong> the <span class=\"hilite\">security</span> issue, with minimal code changes and with no unrelated changes.</p>\n<p>This allows everyone\u00a0to review the changes quickly and to be far more confident in them. Also it means there is a minimal amount of disruption on the part of the users.</p>\n<h3>Why did plugin A get a automatic update, but plugin B didn\u2019t?</h3>\n<p>It\u2019s not bias from WordPress.org, it\u2019s just a throwback to the manual process we\u2019ve been using. If we\u2019re alerted to an issue, we\u2019ll work to handle it. If we find out several days later, the window of opportunity to get the fix rolled out has usually passed and it won\u2019t be as effective.</p>\n<h3>How can I disable automatic updates?</h3>\n<p>There are several options to disable this functionality. The article\u00a0for <a href=\"https://make.wordpress.org/core/2013/10/25/the-definitive-guide-to-disabling-auto-updates-in-wordpress-3-7/\">disabling core automatic updates</a>\u00a0applies here. Anything that disables all automatic update functionality will prevent plugin updates.\u00a0If you only wish to disable plugin updates, whether for all plugins or a single plugin, you can do so with a single filter call.</p>\n<h3>What if I can&#8217;t (or don&#8217;t want to) fix my code?</h3>\n<p>You don&#8217;t have to. Your plugin will remain closed and, after 2 or 3 months, the plugin page will report that it was closed for security issues. If you want to push a fix but keep the plugin closed, we can do that too. Just reply to the email and talk to us.</p>\n<h3>Do I only have to fix the reported issue?</h3>\n<p>Yes and no. You\u00a0<em>do\u00a0</em>have to fix the issues reported, but when you&#8217;re done, the\u00a0<em>entire</em> plugin is re-reviewed, and if more issues are found, you&#8217;ll be required to fix those as well. The ultimate goal is to make sure the reopened plugin is safe.</p>\n<h3>What if I have guideline issues?</h3>\n<p>This comes up when people are breaking other guidelines like including their own copy of jQuery or making undocumented external service calls. It depends on the severity of the other issues. If it&#8217;s just your own jQuery, we&#8217;ll likely let it be reopened and allow you to fix that at your own pace. If you&#8217;re logging all installs of your plugins, you&#8217;ll be required to correct that before we reopen the plugin.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-21481",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/21481",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/21481/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 37704,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/21481/revisions/37704"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=21481"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

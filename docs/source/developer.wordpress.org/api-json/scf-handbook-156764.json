@@ -1,0 +1,91 @@
+{
+    "id": 156764,
+    "date": "2025-02-20T08:04:06",
+    "date_gmt": "2025-02-20T08:04:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/architecture/"
+    },
+    "modified": "2025-02-21T04:16:05",
+    "modified_gmt": "2025-02-21T04:16:05",
+    "slug": "architecture",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/concepts/architecture/",
+    "title": {
+        "rendered": "Architecture"
+    },
+    "content": {
+        "rendered": "<p>This document explains the internal architecture of Secure Custom Fields.</p>\n<h2>Core Components</h2>\n<h3>1. Field Management System</h3>\n<ul>\n<li>Field type registration and validation</li>\n<li>Field rendering and display</li>\n<li>Data storage and retrieval</li>\n<li>Value sanitization and escaping</li>\n</ul>\n<h3>2. Post Type Management</h3>\n<ul>\n<li>Custom post type registration</li>\n<li>Advanced configuration options</li>\n<li>WordPress core integration</li>\n<li>Rewrite rules and permalinks</li>\n</ul>\n<h3>3. Security Layer</h3>\n<ul>\n<li>Input validation and sanitization</li>\n<li>Context-aware output escaping</li>\n<li>Permission and capability management</li>\n<li>Nonce verification</li>\n</ul>\n<h2>Plugin Structure</h2>\n<p>The plugin is organized into several key directories:</p>\n<h3>Core Directories</h3>\n<ul>\n<li><strong>includes/</strong> &#8211; Core functionality\n<ul>\n<li><strong>fields/</strong> &#8211; Field type definitions</li>\n<li><strong>admin/</strong> &#8211; Admin interface</li>\n<li><strong>api/</strong> &#8211; Public API</li>\n</ul>\n</li>\n<li><strong>assets/</strong> &#8211; JS, CSS, and images</li>\n</ul>\n<h3>Directory Responsibilities</h3>\n<ol>\n<li><strong>includes/</strong>\n<ul>\n<li>Core plugin functionality</li>\n<li>Field type handling</li>\n<li>Post type management</li>\n<li>API endpoints</li>\n</ul>\n</li>\n<li><strong>fields/</strong>\n<ul>\n<li>Individual field type classes</li>\n<li>Field validation logic</li>\n<li>Field rendering code</li>\n<li>Field storage handling</li>\n</ul>\n</li>\n<li><strong>admin/</strong>\n<ul>\n<li>Admin interface components</li>\n<li>Settings pages</li>\n<li>Field group management</li>\n<li>Post type configuration</li>\n</ul>\n</li>\n<li><strong>api/</strong>\n<ul>\n<li>Public API endpoints</li>\n<li>Integration points</li>\n<li>External access methods</li>\n</ul>\n</li>\n</ol>\n<h2>Loading Process</h2>\n<h3>1. Plugin Initialization</h3>\n<ul>\n<li>Load dependencies</li>\n<li>Set up autoloader</li>\n<li>Initialize core classes</li>\n</ul>\n<h3>2. WordPress Integration</h3>\n<ul>\n<li>Register post types</li>\n<li>Add hooks and filters</li>\n<li>Set up admin menus</li>\n</ul>\n<h3>3. Feature Registration</h3>\n<ul>\n<li>Register field types</li>\n<li>Set up API endpoints</li>\n<li>Initialize components</li>\n</ul>\n<h3>4. Admin Interface Setup</h3>\n<ul>\n<li>Load admin scripts</li>\n<li>Set up field management</li>\n<li>Configure settings pages</li>\n</ul>\n<h2>Data Flow</h2>\n<ol>\n<li><strong>Input Processing</strong>\n<ul>\n<li>Form submission</li>\n<li>API requests</li>\n<li>AJAX calls</li>\n</ul>\n</li>\n<li><strong>Data Validation</strong>\n<ul>\n<li>Type checking</li>\n<li>Format validation</li>\n<li>Security verification</li>\n</ul>\n</li>\n<li><strong>Storage</strong>\n<ul>\n<li>WordPress post meta</li>\n<li>Custom tables</li>\n<li>Caching</li>\n</ul>\n</li>\n<li><strong>Output</strong>\n<ul>\n<li>Template functions</li>\n<li>REST API responses</li>\n<li>Admin interface</li>\n</ul>\n</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156763,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156764",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156764",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156764/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156955,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156764/revisions/156955"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156763"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156764"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

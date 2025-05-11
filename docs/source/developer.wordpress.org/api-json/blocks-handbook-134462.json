@@ -1,0 +1,91 @@
+{
+    "id": 134462,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/focal-point-picker/"
+    },
+    "modified": "2024-10-30T16:55:46",
+    "modified_gmt": "2024-10-30T16:55:46",
+    "slug": "focal-point-picker",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/focal-point-picker/",
+    "title": {
+        "rendered": "FocalPointPicker"
+    },
+    "content": {
+        "rendered": "<p>Focal Point Picker is a component which creates a UI for identifying the most important visual point of an image. This component addresses a specific problem: with large background images it is common to see undesirable crops, especially when viewing on smaller viewports such as mobile phones. This component allows the selection of the point with the most important visual information and returns it as a pair of numbers between 0 and 1. This value can be easily converted into the CSS <code>background-position</code> attribute, and will ensure that the focal point is never cropped out, regardless of viewport.</p>\n<ul>\n<li>Example focal point picker value: <code>{ x: 0.5, y: 0.1 }</code></li>\n<li>Corresponding CSS: <code>background-position: 50% 10%;</code></li>\n</ul>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { FocalPointPicker } from '@wordpress/components';\n\nconst Example = () =&gt; {\n    const [ focalPoint, setFocalPoint ] = useState( {\n        x: 0.5,\n        y: 0.5,\n    } );\n\n    const url = '/path/to/image';\n\n    /* Example function to render the CSS styles based on Focal Point Picker value */\n    const style = {\n        backgroundImage: `url(${ url })`,\n        backgroundPosition: `${ focalPoint.x * 100 }% ${ focalPoint.y * 100 }%`,\n    };\n\n    return (\n        &lt;&gt;\n            &lt;FocalPointPicker\n              __nextHasNoMarginBottom\n                url={ url }\n                value={ focalPoint }\n                onDragStart={ setFocalPoint }\n                onDrag={ setFocalPoint }\n                onChange={ setFocalPoint }\n            /&gt;\n            &lt;div style={ style } /&gt;\n        &lt;/&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<h3><code>url</code></h3>\n<ul>\n<li>Type: <code>Text</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>URL of the image or video to be displayed</p>\n<h3><code>autoPlay</code></h3>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<p>Autoplays HTML5 video. This only applies to video sources (<code>url</code>).</p>\n<h3><code>value</code></h3>\n<ul>\n<li>Type: <code>Object</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>The focal point. Should be an object containing <code>x</code> and <code>y</code> params.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>Callback which is called when the focal point changes.</p>\n<h3><code>onDrag</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Callback which is called repetitively during drag operations.</p>\n<h3><code>onDragEnd</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Callback which is called at the end of drag operations.</p>\n<h3><code>onDragStart</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Callback which is called at the start of drag operations.</p>\n<h3><code>resolvePoint</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Function which is called before internal updates to the value state. It receives the upcoming value and may return a modified one.</p>\n<h3><code>__next40pxDefaultSize</code></h3>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<h3><code>__nextHasNoMarginBottom</code></h3>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 152,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134462",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134462",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134462/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154863,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134462/revisions/154863"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134462"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

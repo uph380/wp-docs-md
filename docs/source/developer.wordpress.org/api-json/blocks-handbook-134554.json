@@ -1,0 +1,91 @@
+{
+    "id": 134554,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-tests/"
+    },
+    "modified": "2025-01-06T18:49:13",
+    "modified_gmt": "2025-01-06T18:49:13",
+    "slug": "packages-e2e-tests",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-tests/",
+    "title": {
+        "rendered": "@wordpress/e2e-tests"
+    },
+    "content": {
+        "rendered": "<p>End-To-End (E2E) tests for WordPress.</p>\n<p><strong>Note that there&#8217;s currently an ongoing <a href=\"https://github.com/WordPress/gutenberg/issues/38851\">project</a> to migrate E2E tests to Playwright instead. This package is deprecated and will only accept bug fixes until fully migrated.</strong></p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/e2e-tests --save-dev\n</code></pre>\n<h2>Running tests</h2>\n<p>The following commands are available on the Gutenberg repo:</p>\n<pre><code class=\"language-json\">{\n    \"test:e2e\": \"wp-scripts test-e2e --config packages/e2e-tests/jest.config.js\",\n    \"test:e2e:debug\": \"wp-scripts --inspect-brk test-e2e --config packages/e2e-tests/jest.config.js --puppeteer-devtools\",\n    \"test:e2e:watch\": \"npm run test:e2e -- --watch\"\n}\n</code></pre>\n<h3>Run all available tests</h3>\n<pre><code class=\"language-bash\">npm run test:e2e\n</code></pre>\n<h3>Run all available tests and listen for changes.</h3>\n<pre><code class=\"language-bash\">npm run test:e2e:watch\n</code></pre>\n<h3>Run a specific test file</h3>\n<pre><code class=\"language-bash\">npm run test:e2e -- packages/e2e-test/&lt;path_to_test_file&gt;\n# Or, in order to watch for changes:\nnpm run test:e2e:watch -- packages/e2e-test/&lt;path_to_test_file&gt;\n</code></pre>\n<h3>Debugging</h3>\n<p>Makes e2e tests available to debug in a Chrome Browser.</p>\n<pre><code class=\"language-bash\">npm run test:e2e:debug\n</code></pre>\n<p>After running the command, tests will be available for debugging in Chrome by going to chrome://inspect/#devices and clicking <code>inspect</code> under the path to <code>/test-e2e.js</code>.</p>\n<h4>Debugging in <code>vscode</code></h4>\n<p>Debugging in a Chrome browser can be replaced with <code>vscode</code>&#8216;s debugger by adding the following configuration to <code>.vscode/launch.json</code>:</p>\n<pre><code class=\"language-json\">{\n    \"type\": \"node\",\n    \"request\": \"launch\",\n    \"name\": \"Debug current e2e test\",\n    \"program\": \"${workspaceFolder}/node_modules/@wordpress/scripts/bin/wp-scripts.js\",\n    \"args\": [\n        \"test-e2e\",\n        \"--config=${workspaceFolder}/packages/e2e-tests/jest.config.js\",\n        \"--verbose=true\",\n        \"--runInBand\",\n        \"--watch\",\n        \"${file}\"\n    ],\n    \"console\": \"integratedTerminal\",\n    \"internalConsoleOptions\": \"neverOpen\",\n    \"trace\": \"all\"\n}\n</code></pre>\n<p>This will run jest, targeting the spec file currently open in the editor. <code>vscode</code>&#8216;s debugger can now be used to add breakpoints and inspect tests as you would in Chrome DevTools.</p>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 272,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134554",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134554",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134554/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156175,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134554/revisions/156175"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134554"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

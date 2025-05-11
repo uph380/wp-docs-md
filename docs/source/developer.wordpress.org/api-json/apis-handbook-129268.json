@@ -1,0 +1,97 @@
+{
+    "id": 129268,
+    "date": "2020-07-13T13:01:28",
+    "date_gmt": "2020-07-13T13:01:28",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=129268"
+    },
+    "modified": "2020-07-13T13:05:56",
+    "modified_gmt": "2020-07-13T13:05:56",
+    "slug": "performance",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/making-http-requests/performance/",
+    "title": {
+        "rendered": "Performance"
+    },
+    "content": {
+        "rendered": "\n<p>When you make an HTTP request, your application has to wait for the external server to respond to the request and for all the data to be transferred over the network. This can be very time consuming, and your application performance might be heavily impacted.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Caching</h2>\n\n\n\n<p>That&#8217;s why you should always consider caching your API requests, so you don&#8217;t have to do them all the time. </p>\n\n\n\n<p>Caching the response means storing the response on your server so you can easily use it multiple times without the need of an HTTP request every time.</p>\n\n\n\n<p>For example, let&#8217;s say your site makes an HTTP request to Github to fetch your user&#8217;s stats and display it on your sidebar. If you don&#8217;t cache, every visitor in your site will trigger that API request and wait for github to response. And if you stop and think, they are all seeing the same information, because your stats don&#8217;t change so fast.</p>\n\n\n\n<p>In the other hand, if you use cache, only the first visitor will have to wait for Github to respond. All the next users will see the same information that was quickly grabbed from the local database.</p>\n\n\n\n<p>You can then define how often this information has to be updated. In other words, how often the cache has to be cleaned.</p>\n\n\n\n<p>There are multiple apporaches to caching. An easy one provided by WordPress is the <a href=\"https://developer.wordpress.org/apis/handbook/transients/\">Transient API</a>. Check it out!</p>\n\n\n\n<h2 class=\"wp-block-heading\">Check Headers</h2>\n\n\n\n<p>Many APIs allow you to make a HEAD request to check the status of things before actually retrieving the data you want. For example, you can make a HEAD request to check if there&#8217;s an update, before doing a GET request to actually fetch the data. This is a much faster request because it only responds a short piece of information.</p>\n\n\n\n<p>Check the Advanced &gt; Headers section for more information.</p>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 129278,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129268",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129268",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129268/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129284,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129268/revisions/129284"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129268"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

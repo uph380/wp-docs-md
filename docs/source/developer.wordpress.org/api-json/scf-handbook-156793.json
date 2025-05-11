@@ -1,0 +1,91 @@
+{
+    "id": 156793,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/file/"
+    },
+    "modified": "2025-02-21T04:17:58",
+    "modified_gmt": "2025-02-21T04:17:58",
+    "slug": "file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/file/",
+    "title": {
+        "rendered": "File Field"
+    },
+    "content": {
+        "rendered": "<p>The File field enables file uploads and management through the WordPress media library. It supports various file types and provides flexible display options for the selected files.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Media library integration</li>\n<li>File type restrictions</li>\n<li>Size limitations</li>\n<li>Custom return formats</li>\n<li>Preview capabilities</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Library &#8211; Restrict to uploaded or all files</li>\n<li>Return Format &#8211; Array, URL, or ID</li>\n<li>Preview Size &#8211; Thumbnail display size</li>\n<li>Min/Max Size &#8211; File size restrictions</li>\n<li>Allowed File Types &#8211; Restrict accepted formats</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156793",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156793",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156793/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156926,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156793/revisions/156926"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156793"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11202,
+    "date": "2014-10-19T19:01:31",
+    "date_gmt": "2014-10-19T19:01:31",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11202"
+    },
+    "modified": "2024-07-18T10:17:00",
+    "modified_gmt": "2024-07-18T10:17:00",
+    "slug": "helper-plugins",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/developer-tools/helper-plugins/",
+    "title": {
+        "rendered": "Helper Plugins"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Plugin Check</h2>\n\n\n\n<p>Plugin Check is a tool for testing whether your plugin meets the required standards for the WordPress.org plugin directory. With this plugin you will be able to run most of the checks used for new submissions, and check if your plugin meets the requirements.</p>\n\n\n\n<p>Additionally, the tool flags violations or concerns around plugin development best practices, from basic requirements like correct usage of internationalization functions to accessibility, performance, and security best practices.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/plugin-check/\">Visit Plugin Check</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Query Monitor</h2>\n\n\n\n<p>Query Monitor is a debugging plugin for anyone developing with WordPress. You can view debugging and performance information on database queries, hooks, conditionals, HTTP requests, redirects and more. It has some advanced features not available in other debugging plugins, including automatic AJAX debugging and the ability to narrow down things by plugin or theme.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/query-monitor/\">Visit Query Monitor</a></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11198,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11202",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11202",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11202/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154498,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11202/revisions/154498"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11198"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11202"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

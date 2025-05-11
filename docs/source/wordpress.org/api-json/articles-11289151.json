@@ -1,0 +1,109 @@
+{
+    "id": 11289151,
+    "date": "2019-03-08T07:00:45",
+    "date_gmt": "2019-03-08T07:00:45",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11289151"
+    },
+    "modified": "2023-01-11T13:44:29",
+    "modified_gmt": "2023-01-11T13:44:29",
+    "slug": "appearance-themes-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/appearance-themes-screen/",
+    "title": {
+        "rendered": "Appearance Themes Screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Appearance Themes Screen</strong> allows you to manage your Themes. That means you can install, preview, delete Themes, activate, and update Themes.\n</p>\n\n\n\n<p>A WordPress Theme is a collection of files that work together to  produce a graphical interface with an underlying unifying design for a  weblog. These files are called <strong>template files</strong>.  A Theme modifies the way the site is displayed, without modifying the  underlying software. Themes may include customized template files, image  files (*.jpg, *.gif), style sheets (*.css), custom Pages, as well as any necessary code files (*.php).  </p>\n\n\n\n<h3 class=\"wp-block-heading\">Manage Themes</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Current Theme</h4>\n\n\n\n<p>The current active Theme appears first in the upper left corner. Initially, as part of the WordPress installation process, the <a href=\"/themes/twentynineteen/\">WordPress Twenty Nineteen theme</a> is displayed as the active Theme. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11131496\"><img loading=\"lazy\" decoding=\"async\" width=\"1296\" height=\"308\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/01/themes-screen.png?fit=1296%2C308&amp;ssl=1\" alt=\"\" class=\"wp-image-11131496\" srcset=\"https://wordpress.org/documentation/files/2019/01/themes-screen.png 1296w, https://wordpress.org/documentation/files/2019/01/themes-screen-300x71.png 300w, https://wordpress.org/documentation/files/2019/01/themes-screen-1024x243.png 1024w, https://wordpress.org/documentation/files/2019/01/themes-screen-768x183.png 768w\" sizes=\"auto, (max-width: 1296px) 100vw, 1296px\" /></a><figcaption>Themes Screen</figcaption></figure>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"alignright is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2019/01/theme-twenty-ninteen.png\" alt=\"\" class=\"wp-image-11131506\" width=\"493\" height=\"286\" srcset=\"https://wordpress.org/documentation/files/2019/01/theme-twenty-ninteen.png 985w, https://wordpress.org/documentation/files/2019/01/theme-twenty-ninteen-300x174.png 300w, https://wordpress.org/documentation/files/2019/01/theme-twenty-ninteen-768x445.png 768w\" sizes=\"auto, (max-width: 493px) 100vw, 493px\" /></figure></div>\n\n\n\n<p>A small screenshot of the Theme is shown. If you roll over the image with your cursor, a &#8220;Theme Details&#8221; button appears. Click it and you&#8217;ll be provided with the name of the Theme, the Theme version, the Theme author, and a short description of the Theme. Additional buttons are below that activate specific current theme appearance screens that correspond to the menu picks on the left. </p>\n\n\n\n<p><strong>Update Available</strong></p>\n\n\n\n<p>If there is an update available for the Theme a message similar to this is displayed: &#8220;<strong>There is a new version of Coral Lite available.</strong>View Details or update now.&#8221; </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>View Details</strong>&nbsp;: click this link and a page from the WordPress Theme Directory will display the details of that specific version. </li><li><strong>Update now</strong>&nbsp;: click this link to install the Theme upgrade. Also don&#8217;t forget that Themes can be upgraded via the Administration &gt; Dashboard &gt; Updates Screen.</li></ul>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11131523\"><img loading=\"lazy\" decoding=\"async\" width=\"591\" height=\"298\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/01/themes-more-info.png?fit=591%2C298&amp;ssl=1\" alt=\"\" class=\"wp-image-11131523\" srcset=\"https://wordpress.org/documentation/files/2019/01/themes-more-info.png 591w, https://wordpress.org/documentation/files/2019/01/themes-more-info-300x151.png 300w\" sizes=\"auto, (max-width: 591px) 100vw, 591px\" /></a><figcaption>Theme Needing updates</figcaption></figure>\n\n\n\n<h4 class=\"wp-block-heading\">Available Themes</h4>\n\n\n\n<p>The remainder of the Manage Themes screen shows the other Themes that\n are installed. If there are more than 15 installed Themes then a page\nnavigation tool is displayed above and below the available Themes.\nFifteen Themes per page are displayed, so click the page number to\nnavigate to the next or previous page of Themes.\n</p>\n\n\n\n<p>As with the Current Theme image, a small screenshot of each Theme  is shown. Roll over the image to show &#8220;Theme Details&#8221;, &#8220;Activate&#8221;, and  &#8220;Live Preview&#8221; buttons. Click the &#8220;Theme Details&#8221; button to see, along  with the name of the Theme, the Theme version, and the Theme author, a  short description of the Theme. The Theme Details modal has buttons  displayed to Activate, Live Preview, and links to Delete, and if  available, upgrade the Theme.</p>\n\n\n\n<p><strong>Activate</strong></p>\n\n\n\n<p>Click this to make this Theme the Current Theme.</p>\n\n\n\n<p><strong>Live Preview</strong></p>\n\n\n\n<p>Click this link and you can preview how your blog will appear with this specific theme version.</p>\n\n\n\n<p><strong>Delete</strong></p>\n\n\n\n<p>Click this to delete the Theme completely. The Theme files and  folders will be completely deleted, so if you have made any  customizations to that Theme, they too will be deleted so please  consider backing up before deleting.</p>\n\n\n\n<p><strong>Update Available</strong></p>\n\n\n\n<p>Refer Current Theme section.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Install Themes</h3>\n\n\n\n<p>Themes can be installed in several ways:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> The automated Theme installer for Themes located in the WordPress Theme Directory</li><li> The upload method for any Theme that is located in a ZIP file on your local computer</li><li> The manual method via an FTP connection from your local machine to your host</li><li> The manual method via a hosting control panel such as cPanel</li></ul>\n\n\n\n<p>Each of these installation methods is described below.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Automated Theme installer</h4>\n\n\n\n<p>The automated Theme installer can be used to install any Theme in the&nbsp;<a href=\"https://wordpress.org/extend/themes/\">WordPress Theme Directory</a>. This is the easiest way to install a Theme.</p>\n\n\n\n<p>Visit Administration &gt; Appearance &gt; <strong>Themes</strong>, click the Add New button. You can find additional themes for your site from the <a href=\"/themes/\">WordPress Theme Directory</a>.  These themes are designed and developed by third parties, are available  free of charge, and are compatible with the license WordPress uses. </p>\n\n\n\n<p>Use one of three Search methods to find the desired Theme:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong> Filter search</strong> &#8211; at the top of the screen select one of three  filters, Featured, Popular, or Latest. When you find a theme you like,  you can preview it or install it.</li><li> <strong>Keyword search</strong> &#8211; Enter keyword, author, or tag. The search results will be updated as you type.</li><li> <strong>Attribute search</strong> &#8211; Click Feature Filter link to get more specific  and search by categorized criteria. Select multiple criteria and click  Apply Filters button.</li></ul>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11131546\"><img loading=\"lazy\" decoding=\"async\" width=\"739\" height=\"485\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/theme-features.png?fit=739%2C485&amp;ssl=1\" alt=\"\" class=\"wp-image-11131546\" srcset=\"https://wordpress.org/documentation/files/2019/01/theme-features.png 739w, https://wordpress.org/documentation/files/2019/01/theme-features-300x197.png 300w\" sizes=\"auto, (max-width: 739px) 100vw, 739px\" /></a><figcaption>Themes Features Search </figcaption></figure>\n\n\n\n<p>Once you have generated a list of themes, you can preview and install\n any of them. Click on the thumbnail of the theme you\u2019re interested in\npreviewing. It will open up in a full-screen Preview page to give you a\nbetter idea of how that theme will look.\n</p>\n\n\n\n<p>To install the theme so you can preview it with your site\u2019s  content and customize its theme options, click the &#8220;Install&#8221; button at  the top of the left-hand pane. The theme files will be downloaded to  your website automatically. When this is complete, the theme is now  available for activation, which you can do by clicking the &#8220;Activate&#8221;  link. Or you may click &#8220;Live Preview&#8221; or &#8220;Return to Theme Installer&#8221;.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11131564\"><img loading=\"lazy\" decoding=\"async\" width=\"410\" height=\"147\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/theme-add-upload-process.png?fit=410%2C147&amp;ssl=1\" alt=\"\" class=\"wp-image-11131564\" srcset=\"https://wordpress.org/documentation/files/2019/01/theme-add-upload-process.png 410w, https://wordpress.org/documentation/files/2019/01/theme-add-upload-process-300x108.png 300w\" sizes=\"auto, (max-width: 410px) 100vw, 410px\" /></a><figcaption>Installing a theme (Upload Method)</figcaption></figure>\n\n\n\n<h4 class=\"wp-block-heading\">Using the upload method</h4>\n\n\n\n<p>The upload method is another easy way to install a Theme. This can be  used to install any Theme that is in a ZIP file. All the Themes in the <a href=\"https://wordpress.org/extend/themes/\">WordPress Theme Directory</a> can be installed using this method. Download the ZIP file. First find the Theme you want to install. Other sources of Themes can be used and  the key is to download the Theme ZIP file to your local computer. Place  the file anywhere convenient. </p>\n\n\n\n<p>Visit Administration &gt; Appearance &gt; <strong>Themes</strong>, click the Add New button, then click the Upload Theme link. Click <strong>Browse</strong> button and specify the ZIP file you downloaded in above step and click Install Now. </p>\n\n\n\n<p>The Install Theme from uploaded file will display the results of the installation. Click the <strong>Activate</strong> link to make that the Current Theme. </p>\n\n\n\n<h4 class=\"wp-block-heading\">Using the FTP method</h4>\n\n\n\n<ol class=\"wp-block-list\"><li> Download the Theme files to your local computer. If the Theme  is in ZIP file archive and extract the ZIP file contents to a folder on  your local computer. You may need to preserve the directory structure in  the archive when extracting these files. Follow the guidelines provided  by your Theme author.</li><li> Using an FTP client to access your host web server. If necessary create a directory to contain your Theme in the /wp-content/themes directory provided by WordPress. For example, a Theme named <strong>Test</strong> should be in /wp-content/themes/test. Your Theme may provide this directory as part of the archive.</li><li> Upload the Theme files to the new directory on your host server.</li><li> Visit Administration &gt; Appearance &gt; <strong>Themes</strong>,  if necessary navigate to the page displaying that Theme, then click the Activate link to make the Theme, the Current Theme.</li></ol>\n\n\n\n<h4 class=\"wp-block-heading\">Installing with cPanel</h4>\n\n\n\n<p>If your host offers the cPanel control panel, and the Theme files are in a .zip or .gz archive follow these instructions.  </p>\n\n\n\n<ol class=\"wp-block-list\"><li> Download the Theme ZIP file to your local machine.</li><li> In cPanel File Manager, navigate to your Themes folder. If you have  WordPress installed in it&#8217;s own folder called wordpress, you would  navigate to &#8220;public_html/wordpress/wp-content/themes&#8221; and if WordPress  is installed in your web-root folder you would navigate to  &#8220;public_html/wp-content/themes&#8221;.</li><li> Once you&#8217;ve navigated to the Themes folder in cPanel File Manager,  click on Upload file(s) and upload that ZIP file you saved in Step 1.</li><li>Once the ZIP file is uploaded, click on the ZIP file name in cPanel,  then in the panel to the right, click on Extract File Contents, and  that ZIP file will be uncompressed.</li><li> Visit Administration &gt; Appearance &gt; <strong>Themes</strong>, if necessary navigate to the page displaying that Theme, then click the Activate link to make the Theme, the Current Theme.</li></ol>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Appearance Themes Screen allows you to manage your Themes. That means you can install, preview, delete Themes, activate, and update Themes. A WordPress Theme is a collection of files that work together to produce a graphical interface with an underlying unifying design for a weblog. These files are called template files. A Theme modifies [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11289151",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289151",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11289151"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289151/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355086,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289151/revisions/16355086"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11289151"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11289151"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

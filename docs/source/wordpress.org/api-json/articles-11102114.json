@@ -1,0 +1,109 @@
+{
+    "id": 11102114,
+    "date": "2019-01-22T16:30:00",
+    "date_gmt": "2019-01-22T16:30:00",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11102114"
+    },
+    "modified": "2024-06-06T14:01:35",
+    "modified_gmt": "2024-06-06T14:01:35",
+    "slug": "dashboard-updates-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/dashboard-updates-screen/",
+    "title": {
+        "rendered": "Dashboard Updates screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Dashboard Updates Screen</strong>\nprovides the links necessary to install a &#8216;core&#8217; WordPress upgrade\nautomatically, or to download the file necessary to complete a manual\nupgrade.\n</p>\n\n\n\n<p>In addition to the &#8216;core&#8217; update process, this Screen provides\nthe ability to upgrade all plugins and themes, active or inactive, that\nhave available updates. For installs that have set the language to a\nlanguage different from English (United States), you can also install\ntranslation updates.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11102166\"><img loading=\"lazy\" decoding=\"async\" width=\"1149\" height=\"592\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/dashboard-updates.png?fit=1149%2C592&amp;ssl=1\" alt=\"\" class=\"wp-image-11102166\" srcset=\"https://wordpress.org/documentation/files/2019/01/dashboard-updates.png 1149w, https://wordpress.org/documentation/files/2019/01/dashboard-updates-300x155.png 300w, https://wordpress.org/documentation/files/2019/01/dashboard-updates-1024x528.png 1024w, https://wordpress.org/documentation/files/2019/01/dashboard-updates-768x396.png 768w\" sizes=\"auto, (max-width: 1149px) 100vw, 1149px\" /></a><figcaption>Dashboard &gt; Updates when everything is up to date.</figcaption></figure>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Updates</h2>\n\n\n\n<h4 class=\"wp-block-heading\">No Upgrade is Available</h4>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>, if you are running the latest version of WordPress, you should see messages like this:</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><strong>Y</strong>o<strong>u have the latest version of WordPress. Future security updates will be applied automatically.</strong><br /><em>If you need to re-install version x.x, you can do so here or download the package and re-install manually:</em></p>\n\n\n\n<p><strong>Re-install now</strong> &#8211; Click to to reinstall the current version. You should receive the following messages if the upgrade proceeds successfully:</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Downloading update from\u00a0<a href=\"https://wordpress.org/wordpress-x.x.zip\">https://wordpress.org/wordpress-x.x.zip</a></em><br /><em>Unpacking the core update</em><br /><em>Verifying the unpacked files</em><br /><em>Installing the latest version</em><br /><em>Upgrading database</em><br /><em>WordPress upgraded successfully</em></p>\n\n\n\n<p><strong>Download x.x</strong> &#8211; Click this to download the zip file contain the latest version. </p>\n\n\n\n<h4 class=\"wp-block-heading\">An Upgrade is Available</h4>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>, and there is an WordPress upgrade available, you should see messages like this:</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Important: before upgrading, please backup your database and files.</em> </p>\n\n\n\n<p><strong>Upgrade Automatically</strong> &#8211; Press this button to  begin the automatic upgrade process. The following messages will display  during and upon completion of the upgrade:</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Downloading update from\u00a0<a href=\"https://wordpress.org/nightly-builds/wordpress-latest.zip\">https://wordpress.org/nightly-builds/wordpress-latest.zip</a></em><br /><em>Unpacking the core update</em><br /><em>Verifying the unpacked files</em><br /><em>Installing the latest version</em><br /><em>Upgrading database</em><br /><em>WordPress upgraded successfully</em></p>\n\n\n\n<p><strong>Download x.x</strong> &#8211; Click this to download the zip file contain the latest version.  </p>\n\n\n\n<h4 class=\"wp-block-heading\">Once an Update is Completed</h4>\n\n\n\n<p>After a successful upgrade is achieved, it is a good time to review any new features about the new Version just installed. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Plugins</h2>\n\n\n\n<h4 class=\"wp-block-heading\">No Plugins to Update</h4>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>, if your plugins (active and inactive) are at the latest versions, you should see this message: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Your plugins are all up to date.</em></p>\n\n\n\n<h4 class=\"wp-block-heading\">Update Plugins</h4>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>, if there are updates available for one or more plugins (active and inactive), this message displays: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>The following plugins have new versions available. Check the ones you want to update and then click &#8220;Update Plugins&#8221;.</em></p>\n\n\n\n<p><strong>Update Plugins</strong> &#8211; After checking Select All or one  or more plugins, click this button to begin the automatic upgrade  process. The following messages will display during and upon completion  of the upgrade. Messages for each plugin being updated will display.   This example shows Akismet being updated:</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>The update process is starting. This process may take awhile on some hosts, so please be patient. </em><br /><em>Enabling Maintenance mode\u2026</em><br /><strong>Updating Plugin Akismet</strong><em> </em><br /><em>Downloading update from <a href=\"/plugins/akismet/\">plugins</a>. </em><br /><em>Unpacking the update\u2026</em><br /><em>Installing the latest version. </em><br /><em>Removing the old version of the plugin\u2026</em><br /><em>Plugin upgraded successfully. </em><br /><em>Akismet updated successfully. Show/Hide Details.</em><br /><em>Disabling Maintenance mode. All updates have been completed.</em><strong>\u00a0</strong><br /><strong>Actions:\u00a0</strong><em>Return to Plugins page | Return to WordPress Updates.</em></p>\n\n\n\n<h2 class=\"wp-block-heading\">Themes</h2>\n\n\n\n<h3 class=\"wp-block-heading\">No Themes to Update</h3>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>, if your themes (active and inactive) are at the latest versions, you should see this message: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Your themes are all up to date.</em></p>\n\n\n\n<h4 class=\"wp-block-heading\">Update Themes</h4>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>, if there are updates available for one or more themes (active and inactive), this message displays: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>The following themes have new versions available. Check the ones you want to update and then click &#8220;Update Themes&#8221;.</em><br /><strong>\u00a0Please Note:</strong><em>\u00a0Any customization you have made to the Themes files will be lost. Please consider using child themes for modifications.</em></p>\n\n\n\n<p><strong>Update Themes</strong> &#8211; After checking Themes (to Select  All), or one or more themes, click this button to begin the automatic  upgrade process. The following messages will display during and upon  completion of the upgrade.  Messages for each theme being updated will  display. This example shows the WordPress Classic theme being updated:</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>The update process is starting. This process may take awhile on some hosts, so please be patient. </em><br /><em>Enabling Maintenance mode.\u00a0</em><br /><strong>Updating WordPress.\u00a0</strong><br /><em>Downloading update. </em><br /><em>Unpacking the update\u2026</em><br /><em>Installing the latest version\u2026</em><br /><em>Removing the old version of the theme\u2026</em><br /><em>Theme upgraded successfully. </em><br /><em>WordPress updated successfully. Show/Hide Details. </em><br /><em>Disabling Maintenance mode. </em><br /><em>All updates have been completed.</em><br /><strong>Actions:</strong><em>Return to Themes page | Return to WordPress Updates</em></p>\n\n\n\n<h2 class=\"wp-block-heading\">Translations</h2>\n\n\n\n<h4 class=\"wp-block-heading\">No Translations to Update</h4>\n\n\n\n<p>When visiting the <strong>Dashboard Updates Screen</strong>  on a WordPress install that is set to a different language then English  (United States), you should see this message if translations are all up  to date: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Your translations are all up to date.</em></p>\n\n\n\n<h4 class=\"wp-block-heading\">Update Translations</h4>\n\n\n\n<p>If there are new translations available, this message is displayed: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>New translations are available.</em></p>\n\n\n\n<p>Below this text will be a button with the text &#8220;Update translations&#8221;.\n</p>\n\n\n\n<p>When you click the update button, it will tell you which plugins are downloaded and installed. Plugins for WordPress Core will be installed in\u00a0<em>/wp-content/languages</em>, while the translations for plugins and themes will be installed in their subfolder under\u00a0<em>/wp-content/languages</em>. This example shows the translations for Twenty Fifteen anf Twenty Sixteen being updated for Dutch (nl_NL):</p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Updating translations</em><br /><em>Updating translation for Twenty Fifteen (nl_NL)\u2026</em><br /><em>Translation was successfully updated.</em><br /><em>Updating translation for Twenty Sixteen (nl_NL)\u2026</em><br /><em>Translation was successfully updated.</em><br /><strong>Actions:</strong><em>Return to WordPress Updates</em><br /><strong>Actions:</strong><em>Return to WordPress Updates</em></p>\n\n\n\n<h2 class=\"wp-block-heading\">Troubleshooting</h2>\n\n\n\n<p> <strong>Problem:</strong>  If one of the following messages is received after electing to do the Automatic Upgrade: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Downloading update . </em><br /><em>Download failed.: Could not open handle for fopen() to latest wordpress.</em><br /><em>I</em>n<em>stallation Failed</em></p>\n\n\n\n<p>or  </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>Download failed.: name lookup timed out </em><br /><em>Installation Failed</em> </p>\n\n\n\n<p><strong>Solution:</strong>  Confirm you are properly connected to the internet then do the Automatic Upgrade again. </p>\n\n\n\n<p><strong>Problem:</strong>  After doing the upgrade, and received <em>WordPress upgraded successfully</em> message, but the following message still displays: </p>\n\n\n\n<p class=\"has-background has-very-light-gray-background-color\"><em>An automated WordPress update has failed to complete &#8211; please attempt the update again now.</em> </p>\n\n\n\n<p><strong>Solution:</strong>  Delete the <strong>.maintenance</strong> file found in the WordPress root/base folder, then do the Upgrade again. </p>\n\n\n\n<p><strong>Problem:</strong>  After clicking on &#8220;automatic upgrade&#8221; you get a dialog box asking  for &#8220;Connection Information.&#8221;  And, no matter what you enter, you  continue to get errors. </p>\n\n\n\n<p><strong>Solution: </strong> Make sure that your entire wordpress directory is owned by the  username under which your Apache server runs.  For example, if your  server runs as https, and your files live in /var/wordpress do a &#8220;chown  -R apache.apache /var/wordpress.&#8221; Note that you might want to edit some  permissions for security purposes, in particular a chmod 640 on  wp-config.php, to protect access information to your database.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Related Articles</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/faq-installation/\">FAQ Installation</a></li><li><a href=\"/support/article/upgrading-wordpress-extended-instructions/#troubleshooting\">Troubleshooting about upgrading</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Dashboard Updates Screen provides the links necessary to install a &#8216;core&#8217; WordPress upgrade automatically, or to download the file necessary to complete a manual upgrade. In addition to the &#8216;core&#8217; update process, this Screen provides the ability to upgrade all plugins and themes, active or inactive, that have available updates. For installs that have [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11102114",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11102114",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11102114"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11102114/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360304,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11102114/revisions/16360304"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11102114"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11102114"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

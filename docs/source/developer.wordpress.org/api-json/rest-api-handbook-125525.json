@@ -1,0 +1,91 @@
+{
+    "id": 125525,
+    "date": "2019-07-21T18:13:30",
+    "date_gmt": "2019-07-21T18:13:30",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/themes/"
+    },
+    "modified": "2024-01-16T20:30:15",
+    "modified_gmt": "2024-01-16T20:30:15",
+    "slug": "themes",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/themes/",
+    "title": {
+        "rendered": "Themes"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a theme record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-stylesheet\">\n<td>\n                <code>stylesheet</code>\n            </td>\n<td>\n                The theme&#039;s stylesheet. This uniquely identifies the theme.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-template\">\n<td>\n                <code>template</code>\n            </td>\n<td>\n                The theme&#039;s template. If this is a child theme, this refers to the parent theme, otherwise this is the same as the theme&#039;s stylesheet.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-author\">\n<td>\n                <code>author</code>\n            </td>\n<td>\n                The theme author.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-author_uri\">\n<td>\n                <code>author_uri</code>\n            </td>\n<td>\n                The website of the theme author.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                A description of the theme.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-is_block_theme\">\n<td>\n                <code>is_block_theme</code>\n            </td>\n<td>\n                Whether the theme is a block-based theme.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                The name of the theme.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-requires_php\">\n<td>\n                <code>requires_php</code>\n            </td>\n<td>\n                The minimum PHP version required for the theme to work.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-requires_wp\">\n<td>\n                <code>requires_wp</code>\n            </td>\n<td>\n                The minimum WordPress version required for the theme to work.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-screenshot\">\n<td>\n                <code>screenshot</code>\n            </td>\n<td>\n                The theme&#039;s screenshot URL.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: uri\n                                    </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-tags\">\n<td>\n                <code>tags</code>\n            </td>\n<td>\n                Tags indicating styles and features of the theme.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-textdomain\">\n<td>\n                <code>textdomain</code>\n            </td>\n<td>\n                The theme&#039;s text domain.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-theme_supports\">\n<td>\n                <code>theme_supports</code>\n            </td>\n<td>\n                Features supported by this theme.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-theme_uri\">\n<td>\n                <code>theme_uri</code>\n            </td>\n<td>\n                The URI of the theme&#039;s webpage.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-version\">\n<td>\n                <code>version</code>\n            </td>\n<td>\n                The theme&#039;s current version.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-status\">\n<td>\n                <code>status</code>\n            </td>\n<td>\n                A named status for the theme.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n<p>                                    One of: <code>inactive</code>, <code>active</code>\n                            </td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Theme</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/themes</code></p>\n<p>        Query this endpoint to retrieve a specific theme record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/themes</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>status</code>\n                                    </td>\n<td>\n                                            Limit result set to themes assigned one or more statuses.\n                                                                                                </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Theme</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/themes/&lt;stylesheet&gt;?)</code></p>\n<p>        Query this endpoint to retrieve a specific theme record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/themes/&lt;stylesheet&gt;?)</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>stylesheet</code>\n                                    </td>\n<td>\n                                            The theme&#039;s stylesheet. This uniquely identifies the theme.\n                                                                                                </td>\n</tr>\n</table></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125525",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/125525",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/125525/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151990,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/125525/revisions/151990"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125525"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

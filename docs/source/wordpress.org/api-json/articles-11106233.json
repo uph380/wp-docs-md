@@ -1,0 +1,109 @@
+{
+    "id": 11106233,
+    "date": "2019-01-22T16:28:51",
+    "date_gmt": "2019-01-22T16:28:51",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11106233"
+    },
+    "modified": "2024-06-08T18:30:42",
+    "modified_gmt": "2024-06-08T18:30:42",
+    "slug": "posts-categories-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/posts-categories-screen/",
+    "title": {
+        "rendered": "Posts Categories screen"
+    },
+    "content": {
+        "rendered": "\n<p>Each post in WordPress is filed under one or more Categories. This\naids in navigation and allows posts to be grouped with others of similar\n content.\n</p>\n\n\n\n<p>Each Category may be assigned to a Category Parent, allowing you\nto set up a hierarchy within the Category structure.  In creating\nCategories, recognize that each Category Name must be unique.  Thus,\neven if two Categories have two different Parents, they must still have\ndifferent names.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11106269\"><img loading=\"lazy\" decoding=\"async\" width=\"1163\" height=\"618\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/categories-screen.png?fit=1163%2C618&amp;ssl=1\" alt=\"categories-screen\" class=\"wp-image-11106269\" srcset=\"https://wordpress.org/documentation/files/2019/01/categories-screen.png 1163w, https://wordpress.org/documentation/files/2019/01/categories-screen-300x159.png 300w, https://wordpress.org/documentation/files/2019/01/categories-screen-1024x544.png 1024w, https://wordpress.org/documentation/files/2019/01/categories-screen-768x408.png 768w\" sizes=\"auto, (max-width: 1163px) 100vw, 1163px\" /></a></figure>\n\n\n\n<p>Links to your Categories are, by default, shown in two different places on your blog&#8217;s home page if you are using the <a href=\"/themes/twentyseventeen/\">WordPress Twenty Seventeen theme</a>.   First, WordPress lists these Category as links in your sidebar.   Second, WordPress shows all the Categories to which a given post belongs  under that post.  When someone viewing your blog clicks on one of these  Category links, an archive page with all the posts belonging to that  Category will be displayed. </p>\n\n\n\n<p>This Screen allows you to create new Categories, edit or delete existing ones, and organize your Categories hierarchically. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Categories Screen</h2>\n\n\n\n<p>This Screen is divided into the Add New Category and Category Table sections.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Add New Category</h3>\n\n\n\n<p>This part of the Screen, which is conveniently linked to from the top of the Table of Categories,  allows you to create a new Category.  There are four pieces of  information associated with each new Category:  the name, slug, category  parent, and description. </p>\n\n\n\n<p><strong>Name:</strong>  To reiterate, the Category Name <em>must</em> be unique. </p>\n\n\n\n<p><strong>Slug:</strong>  The Category slug <em>must</em> be unique. The Category Slug is used  in the URL. For example, setting a Category Name of &#8220;Recipes&#8221; and a  Category Slug of &#8220;food&#8221; would show all &#8220;Recipes&#8221; posts with a URL like <strong>example.com/blog/food/</strong>. </p>\n\n\n\n<p><strong>Parent:</strong>  Use this drop-down if you want to make this Category a  sub-Category; you will select the sub-Category&#8217;s Parent here.  For  example, you may have a Category called &#8220;Photos&#8221; but want to add further  clarification about the subject of a particular &#8220;Photos&#8221; post.  You  could add &#8220;Oregon Coast&#8221; and &#8220;Ice Storm&#8221; as sub-Categories to the  &#8220;Photos&#8221; Category; &#8220;Photos&#8221; would be the Parent of these two new  sub-Categories. </p>\n\n\n\n<p>Sub-Categories show up on your blog&#8217;s page just like Categories,  except they will typically be nested under their Parent Categories.   When someone visits your site and clicks the &#8220;Photos&#8221; Category link, all  posts in &#8220;Photos&#8221; and <em>all its sub-Categories</em> will be displayed.  Clicking the &#8220;Oregon Coast&#8221; Category link <em>only</em>  displays those post in that sub-Category.  If you assign a post to a  sub-Category (e.g. &#8220;Oregon Coast&#8221;), you can choose to assign that post  to the sub-Category&#8217;s parent (&#8220;Photos&#8221;) or not.  Either way, all &#8220;Oregon  Coast&#8221; posts will show up in the &#8220;Photos&#8221; Category page.  The only  difference is that the list of Categories of which a particular post is  actually a member.  In the WordPress <a href=\"/themes/twentyseventeen/\">WordPress Twenty Seventeen theme</a>, this list is shown below the text of each post.  Please note  that when creating templates, you cannot match a child category based on  the parent (ie: if category &#8220;bar&#8221; has parent &#8220;foo&#8221;, a template file  named &#8220;category-foo.php&#8221; will not match any &#8220;bar&#8221; category posts.) </p>\n\n\n\n<p><strong>Description: </strong>  Category Descriptions are optional.  Some themes take advantage of  Category Descriptions, others do not, so having Descriptions may or may  not modify the way Categories are displayed for your site.  Even if  they are not used by your site&#8217;s theme, you may still find them useful  from an administration point of view.</p>\n\n\n\n<p><strong>Add New Category</strong>: The most important part of the Add New Category box.  Once you&#8217;ve  entered in all the information about your new Category, use this button  to save it. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Table of Categories</h3>\n\n\n\n<p>This table lists all of your categories by row.  Categories are\ndisplayed hierarchically and alphabetically;  subcategories are\ndisplayed beneath their parents and are prefaced by long dashes.  These\ndashed are <em>not</em> part of a Category&#8217;s name;  they are there only to show hierarchy.\n</p>\n\n\n\n<p>The table of categories contains the following columns:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[ ]</strong> &#8211; A checkbox that when clicked (checked), &#8216;selects&#8217; that particular Category to be deleted when the Delete Action is Applied. </li><li><strong>Name</strong> &#8211; The name of the Category.  (Each name must be unique)</li><li><strong>Description</strong> &#8211; Categories may have an optional description.   By default, the description is shown to viewers when they hover over the  category&#8217;s link.</li><li><strong>Slug</strong> \u2013 The slug of a Category. (Usually in lower case letters)</li><li><strong>Posts</strong> &#8211; The number of posts which are members of the Category. Click on the number in the Posts column to be directed to the All <a href=\"/support/articles/posts-screen\">Posts Screen</a> to manage the Posts in that Category.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Screen Options</h4>\n\n\n\n<p>The Screen Options  allow you to choose which columns are displayed, or not displayed, in  the underlying Table.  Clicking on the Screen Options tab shows a list  of the columns with a check-box next to each column.  Check the box for  each column you want displayed in the Table, or uncheck the box to not  display that column.  In addition, the number of Categories to display  in the Table of Categories can be set.  Click the Screen Options tab again to close the Screen Options. </p>\n\n\n\n<h4 class=\"wp-block-heading\">Search</h4>\n\n\n\n<p>Above the Table, to the right, is a search box where you can enter a\nword, or series of words, and click the &#8220;Search Categories&#8221; button to\nsearch and display all the Categories meeting your search words.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Selection, Actions, and Apply</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Selection</h4>\n\n\n\n<p>\nThis section allows Actions to be performed on one or more\nCategories displayed in the Table.  For Actions to be performed on\nmultiple Categories at once, those Categories must be first <strong>selected</strong> via one of these methods:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Select one Category at a time</strong> &#8211; To select a Category, the\n checkbox to the left of the Category entry must be checked (clicked).\nIt is possible to keep selecting more Categories by checking their\nrespective checkbox.</li><li><strong>Select all Categories in given Table</strong> &#8211; All Categories in a\ngiven table can be selected by checking the checkbox in the Table&#8217;s\ntitle, or footer bar.  Of course, unchecking the header or footer title\nbar checkbox will cause all entries in that Table to be unchecked (NOT\nselected). </li><li><strong>Reverse Selection</strong> &#8211; A Reverse Selection means checked items\nbecome unchecked, and unchecked items become checked. A Reverse\nSelection is accomplished by holding the Shift key on the keyboard and\nclicking the header or footer title bar checkbox.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Actions</h4>\n\n\n\n<p>\nActions describe the process to be performed on particular\nCategories.  There are two styles of Actions that will be referred to as\n <em>Bulk Actions</em> and <em>Immediate Actions</em>.  The follow describes these Actions:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Bulk Actions</strong> &#8211; These Actions can be performed on one, or more Categories, at one time, if those Categories have been previously selected.  Bulk Actions are available, when appropriate, as choices in the Actions  pull-down box, above each Table.  The only Bulk Action allowed is  Delete.   </li><li><strong>Immediate Actions</strong> &#8211; Immediate Actions are performed  immediately, on an individual Category.  Hovering the mouse cursor over  the Category row reveals the Edit, Quick Edit, Delete and View options  under the Name column in that Category row.  Clicking on a Category Name  will also initiate the Edit Action.</li></ul>\n\n\n\n<p>\nThe available Actions are described below:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Edit</strong> &#8211; This Immediate Action displays the Edit Category  Screen to edit the Category fields.  This Action can be initiated by  click on the Category Name or clicking on the Edit option just below the  Category Name.  </li><li><strong>Quick Edit</strong> &#8211; This Immediate Action initiates the Quick Edit of that Category.  </li><li><strong>Delete</strong> &#8211; This Action deletes the Category.  Delete is  available as a Bulk Action and an Immediate Action. Note:  Deleting a  category does not delete the posts in that Category, but the posts that  were assigned to the deleted Category are assigned to the <strong>Default Category</strong>, as defined in the Settings Writing Screen.  Note that the Default Category cannot be deleted.</li><li><strong>View</strong> &#8211; This Action, if supported by the active theme&#8217;s template, will display the Posts belonging to the Category. View is available only as an Immediate Action.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Apply</h4>\n\n\n\n<p>\nAfter one or more Categories are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected Categories.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Apply</strong> &#8211; Click the Apply button to execute the  Bulk Action, specified in the Actions pull-down, on the selected  Categories.  Remember, prior to executing Actions, one or more  Categories must be <strong>selected</strong>, as described before.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Quick Edit</h3>\n\n\n\n<p>The following fields can be change via the Quick Edit Action:</p>\n\n\n\n<p><strong>Category name</strong>: To reiterate, the Category name <em>must</em> be unique. Category slug  Again, the Category slug <em>must</em> be unique.</p>\n\n\n\n<p><strong>Cancel</strong>: Click this button to cancel any changes and return to the Table of Categories</p>\n\n\n\n<p><strong>Update Category</strong>: Once you&#8217;ve edited all the information about the Category, use this button to save the changes. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Edit Category</h3>\n\n\n\n<p>This Screen is displayed by clicking on a Categories&#8217; <strong>Name</strong> in the Table of Categories  or clicking on the Edit option just below the Category Name.  It is  possible to edit four pieces of information associated with each  Category:  the name, the slug, the parent, and the description.</p>\n\n\n\n<p><strong>Category name</strong> and <strong>Category Slug</strong>: Category name and Category Slug <em>must</em> be unique.  </p>\n\n\n\n<p><strong>Category Parent</strong>: Use this drop-down if you want to make this Category a  sub-Category; you will select the sub-Category&#8217;s Parent here.  For  example, you may have a Category called &#8220;Photos&#8221; but want to add further  clarification about the subject of a particular &#8220;Photos&#8221; post.  You  could add &#8220;Oregon Coast&#8221; and &#8220;Ice Storm&#8221; as sub-Categories to the  &#8220;Photos&#8221; Category; &#8220;Photos&#8221; would be the parent of these two new  sub-Categories.</p>\n\n\n\n<p><strong>Description</strong>: Category descriptions are optional.  Some themes take advantage of  Category descriptions, others do not, so having Descriptions may or may  not modify the way Categories are displayed for your site.  </p>\n\n\n\n<p><strong>Update</strong>: Once you&#8217;ve changed the Category information, use this button to save the changes.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Each post in WordPress is filed under one or more Categories. This aids in navigation and allows posts to be grouped with others of similar content. Each Category may be assigned to a Category Parent, allowing you to set up a hierarchy within the Category structure. In creating Categories, recognize that each Category Name must [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11106233",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11106233",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11106233"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11106233/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360373,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11106233/revisions/16360373"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11106233"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11106233"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

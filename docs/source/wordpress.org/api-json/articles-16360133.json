@@ -1,0 +1,109 @@
+{
+    "id": 16360133,
+    "date": "2024-08-13T03:10:22",
+    "date_gmt": "2024-08-13T03:10:22",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16360133"
+    },
+    "modified": "2024-08-14T05:55:51",
+    "modified_gmt": "2024-08-14T05:55:51",
+    "slug": "twenty-eleven",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-eleven/",
+    "title": {
+        "rendered": "Twenty Eleven"
+    },
+    "content": {
+        "rendered": "\n<p>The&nbsp;<a href=\"https://wordpress.org/themes/twentyeleven/\">Twenty Eleven</a>&nbsp;is the default theme for WordPress in 2011, introduced with <a href=\"https://wordpress.org/documentation/wordpress-version/version-3-2/\">WordPress version 3.2</a>.<br><br>This theme is best used for blogs, photologs, or tumblelogs as it supports all the available post formats: Standard, Aside, Image, Link, Quote, Gallery, and Status. Twenty Eleven also provides you with alternate color schemes (light and dark) and layouts (one or two columns). It has eight header images and five custom patterns.</p>\n\n\n\n<p>Twenty Eleven is the second annual theme for WordPress, developed by <a href=\"https://profiles.wordpress.org/iandstewart/\">Ian Stewart</a> and  <a href=\"https://profiles.wordpress.org/matveb/\">Mat\u00edas Ventura</a> based on the theme &#8220;Duster&#8221;.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"880\" height=\"660\" src=\"https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme.png\" alt=\"Screenshot of Twenty Eleven.\nThe theme has a light grey body background, white content background, and dark grey text.\nA full width image is displayed below the site title. Below the header image is a horizontal menu with black background and white text. The main section is split into two columns, with the content on the right and a narrow sidebar on the left.\" class=\"wp-image-16360135\" srcset=\"https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme.png 880w, https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme-300x225.png 300w, https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme-768x576.png 768w\" sizes=\"auto, (max-width: 880px) 100vw, 880px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Quick Specs</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>The maximum content width is 585px.</li>\n\n\n\n<li>The maximum sidebar width is 188px.</li>\n\n\n\n<li>The header image is 1000px by 288px (width, height).</li>\n\n\n\n<li>The maximum width for images on attachment pages is 848px.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Theme Options</h2>\n\n\n\n<p>Twenty Eleven has an options page under Appearance &gt; Theme options. The same options are available in the Customizer:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Dark or light color scheme</li>\n\n\n\n<li>Link color picker</li>\n\n\n\n<li>Layout selector with three options: Content on left, Content on right, and One-column, no sidebar.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1496\" height=\"1314\" src=\"https://wordpress.org/documentation/files/2024/04/twenty-eleven-theme-options.png\" alt=\"The theme options page in Twenty Eleven is a form with radio buttons where you can select the color scheme, link color, and default layout.\" class=\"wp-image-16360208\" srcset=\"https://wordpress.org/documentation/files/2024/04/twenty-eleven-theme-options.png 1496w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-theme-options-300x264.png 300w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-theme-options-1024x899.png 1024w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-theme-options-768x675.png 768w\" sizes=\"auto, (max-width: 1496px) 100vw, 1496px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"848\" src=\"https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme_Dark-1024x848.jpg\" alt=\"Screenshot of Twenty Eleven with the dark color scheme. The background is black with white and grey text with an orange accent color for the links.\" class=\"wp-image-16360215\" srcset=\"https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme_Dark-1024x848.jpg 1024w, https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme_Dark-300x248.jpg 300w, https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme_Dark-768x636.jpg 768w, https://wordpress.org/documentation/files/2024/04/Twenty_Eleven_Theme_Dark.jpg 1356w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Templates</h2>\n\n\n\n<p>Twenty Eleven has two optional page templates: Showcase and Sidebar.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The Showcase template shows the page content followed by a two column layout with the Showcase Sidebar widget area on the left, and the recent posts on the right. If the Showcase Sidebar widget area is empty, the template shows the latest asides.</li>\n\n\n\n<li>The Sidebar template uses a two column layout with the page content and the Main Sidebar widget area. You can change the position of the sidebar on the theme options page.</li>\n</ul>\n\n\n\n<p>You can set the page template by editing the page, opening the Page panel, and clicking on the template name. The templates are available for pages, not for posts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Post Formats</h2>\n\n\n\n<p>This short guide will explain what the available <a href=\"https://developer.wordpress.org/advanced-administration/wordpress/post-formats/\">Post Formats</a> are, how to select the post format, and show you how each post format is presented.</p>\n\n\n\n<h3 class=\"wp-block-heading\">What are the available Post Formats?</h3>\n\n\n\n<p>In addition to the Standard Format (regular blog posts) there are seven additional formats you can choose to publish. To clarify what the other Post Formats are:</p>\n\n\n\n<p>The&nbsp;<strong>Aside Format</strong>&nbsp;is for shorter posts of about 1 paragraph. Because they\u2019re shorter and meant to be digested quickly the title of the Aside post is hidden on Index pages.</p>\n\n\n\n<p>The&nbsp;<strong>Link Format</strong>&nbsp;looks a lot like the Aside post but if you\u2019re using the Twenty Eleven Ephemera Widget to display a list of your recent Aside and Link posts (found in Appearance <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Widgets) the title of your Link posts will point to the URL of the first link in your post instead of pointing back to the post on your blog.</p>\n\n\n\n<p>The&nbsp;<strong>Gallery Format</strong>&nbsp;is meant for posts using the Gallery shortcode. Gallery posts will show a thumbnail from your galleries on Index pages.</p>\n\n\n\n<p>The&nbsp;<strong>Status Format</strong>&nbsp;is for short personal updates. Each Status post will show the avatar of the post author alongside the content.</p>\n\n\n\n<p>If you have a post that\u2019s almost entirely a quote, the&nbsp;<strong>Quote Format</strong>&nbsp;will make those quotes stand out.</p>\n\n\n\n<p>The&nbsp;<strong>Video Format</strong>&nbsp;is meant for posting a single video, which will appear with minimal post meta above the post to help your video content shine.</p>\n\n\n\n<p>The&nbsp;<strong>Image Format</strong>&nbsp;is meant for posting one image and one image only. Here the post meta, seen below your post, is presented more like a caption for the post.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How do I select Post Formats?</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Navigate to &#8220;Posts &gt; Add New&#8221;.</li>\n\n\n\n<li>Add content according to the post format you want to publish per explanation above.</li>\n\n\n\n<li>Open the Posts panel in the right sidebar and select the format you want for this particular post.</li>\n\n\n\n<li>Publish your new post.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Patterns</h2>\n\n\n\n<p>The theme has five custom <a href=\"https://wordpress.org/documentation/article/block-pattern/\" data-type=\"helphub_article\" data-id=\"13271532\">patterns</a>: Image and Text Columns, Inline Quote, Follow Blog, About me, and Two columns of lists.</p>\n\n\n\n<p>You can access the patterns from the Block Editor.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Click the + icon to add a new block.</li>\n\n\n\n<li>Click on the&nbsp;Patterns&nbsp;tab.</li>\n\n\n\n<li>Select&nbsp;Twenty Eleven&nbsp;from the list of categories.</li>\n\n\n\n<li>Click on the pattern you wish to insert and the pattern is inserted in the document at the location of your cursor.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"520\" src=\"https://wordpress.org/documentation/files/2024/04/twenty-eleven-patterns-1024x520.png\" alt=\"A preview of the block patterns in Twenty Eleven.\" class=\"wp-image-16360211\" srcset=\"https://wordpress.org/documentation/files/2024/04/twenty-eleven-patterns-1024x520.png 1024w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-patterns-300x152.png 300w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-patterns-768x390.png 768w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-patterns-1536x780.png 1536w, https://wordpress.org/documentation/files/2024/04/twenty-eleven-patterns-2048x1040.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Support &amp; resources</h2>\n\n\n\n<p>Get community help with Twenty Eleven in its&nbsp;<a href=\"https://wordpress.org/support/theme/twentyeleven/\">forum</a>.</p>\n\n\n\n<p>You can also read&nbsp;<a href=\"https://wordpress.org/documentation/article/twenty-eleven-changelog/\">the theme&#8217;s changelog</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The&nbsp;Twenty Eleven&nbsp;is the default theme for WordPress in 2011, introduced with WordPress version 3.2. This theme is best used for blogs, photologs, or tumblelogs as it supports all the available post formats: Standard, Aside, Image, Link, Quote, Gallery, and Status. Twenty Eleven also provides you with alternate color schemes (light and dark) and layouts (one [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 11,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        82
+    ],
+    "class_list": [
+        "post-16360133",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360133",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16360133"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 35,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360133/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360852,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360133/revisions/16360852"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16360133"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16360133"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

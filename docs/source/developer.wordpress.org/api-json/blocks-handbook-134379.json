@@ -1,0 +1,91 @@
+{
+    "id": 134379,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks/"
+    },
+    "modified": "2024-01-29T20:55:16",
+    "modified_gmt": "2024-01-29T20:55:16",
+    "slug": "creating-dynamic-blocks",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks/",
+    "title": {
+        "rendered": "Creating dynamic blocks"
+    },
+    "content": {
+        "rendered": "<p>Dynamic blocks are blocks that build their structure and content on the fly when the block is rendered on the front end.</p>\n<p>There are two primary uses for dynamic blocks:</p>\n<ol>\n<li>Blocks where content should change even if a post has not been updated. One example from WordPress itself is the Latest Posts block. This block will update everywhere it is used when a new post is published.</li>\n<li>Blocks where updates to the code (HTML, CSS, JS) should be immediately shown on the front end of the website. For example, if you update the structure of a block by adding a new class, adding an HTML element, or changing the layout in any other way, using a dynamic block ensures those changes are applied immediately on all occurrences of that block across the site. (If a dynamic block is not used then when block code is updated Gutenberg&#8217;s <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#validation\">validation process</a> generally applies, causing users to see the validation message, &#8220;This block appears to have been modified externally&#8221;).</li>\n</ol>\n<p>For many dynamic blocks, the <code>save</code> callback function should be returned as <code>null</code>, which tells the editor to save only the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">block attributes</a> to the database. These attributes are then passed into the server-side rendering callback, so you can decide how to display the block on the front end of your site. When you return <code>null</code>, the editor will skip the block markup validation process, avoiding issues with frequently-changing markup.</p>\n<p>If you are using <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks/\">InnerBlocks</a> in a dynamic block you will need to save the <code>InnerBlocks</code> in the <code>save</code> callback function using <code>&lt;InnerBlocks.Content/&gt;</code></p>\n<p>You can also save an HTML representation of the block. If you provide a server-side rendering callback, this HTML will be replaced with the output of your callback, but will be rendered if your block is deactivated or your render callback is removed.</p>\n<p>Block attributes can be used for any content or setting you want to save for that block. In the first example above, with the latest posts block, the number of latest posts you want to show could be saved as an attribute. Or in the second example, attributes can be used for each piece of content you want to show in the front end &#8211; such as heading text, paragraph text, an image, a URL, etc.</p>\n<p>The following code example shows how to create a dynamic block that shows only the last post as a link.</p>\n<pre><code class=\"language-jsx\">import { registerBlockType } from '@wordpress/blocks';\nimport { useSelect } from '@wordpress/data';\nimport { useBlockProps } from '@wordpress/block-editor';\n\nregisterBlockType( 'gutenberg-examples/example-dynamic', {\n    apiVersion: 3,\n    title: 'Example: last post',\n    icon: 'megaphone',\n    category: 'widgets',\n\n    edit: () =&gt; {\n        const blockProps = useBlockProps();\n        const posts = useSelect( ( select ) =&gt; {\n            return select( 'core' ).getEntityRecords( 'postType', 'post' );\n        }, [] );\n\n        return (\n            &lt;div { ...blockProps }&gt;\n                { ! posts &amp;&amp; 'Loading' }\n                { posts &amp;&amp; posts.length === 0 &amp;&amp; 'No Posts' }\n                { posts &amp;&amp; posts.length &gt; 0 &amp;&amp; (\n                    &lt;a href={ posts[ 0 ].link }&gt;\n                        { posts[ 0 ].title.rendered }\n                    &lt;/a&gt;\n                ) }\n            &lt;/div&gt;\n        );\n    },\n} );\n</code></pre>\n<p>Because it is a dynamic block it doesn&#8217;t need to override the default <code>save</code> implementation on the client. Instead, it needs a server component. The contents in the front of your site depend on the function called by the <code>render_callback</code> property of <code>register_block_type</code>.</p>\n<pre><code class=\"language-php\">&lt;?php\n\n/**\n * Plugin Name: Gutenberg examples dynamic\n */\n\nfunction gutenberg_examples_dynamic_render_callback( $block_attributes, $content ) {\n    $recent_posts = wp_get_recent_posts( array(\n        'numberposts' =&gt; 1,\n        'post_status' =&gt; 'publish',\n    ) );\n    if ( count( $recent_posts ) === 0 ) {\n        return 'No posts';\n    }\n    $post = $recent_posts[ 0 ];\n    $post_id = $post['ID'];\n    return sprintf(\n        '&lt;a class=\"wp-block-my-plugin-latest-post\" href=\"%1$s\"&gt;%2$s&lt;/a&gt;',\n        esc_url( get_permalink( $post_id ) ),\n        esc_html( get_the_title( $post_id ) )\n    );\n}\n\nfunction gutenberg_examples_dynamic() {\n    // automatically load dependencies and version\n    $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');\n\n    wp_register_script(\n        'gutenberg-examples-dynamic',\n        plugins_url( 'build/block.js', __FILE__ ),\n        $asset_file['dependencies'],\n        $asset_file['version']\n    );\n\n    register_block_type( 'gutenberg-examples/example-dynamic', array(\n        'api_version' =&gt; 3,\n        'editor_script' =&gt; 'gutenberg-examples-dynamic',\n        'render_callback' =&gt; 'gutenberg_examples_dynamic_render_callback'\n    ) );\n\n}\nadd_action( 'init', 'gutenberg_examples_dynamic' );\n\n</code></pre>\n<p>There are a few things to notice:</p>\n<ul>\n<li>The <code>edit</code> function still shows a representation of the block in the editor&#8217;s context (this could be very different from the rendered version, it&#8217;s up to the block&#8217;s author)</li>\n<li>The built-in <code>save</code> function just returns <code>null</code> because the rendering is performed server-side.</li>\n<li>The server-side rendering is a function taking the block and the block inner content as arguments, and returning the markup (quite similar to shortcodes)</li>\n</ul>\n<p><strong>Note :</strong> For common customization settings including color, border, spacing customization and more, we will see on the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/block-supports-in-dynamic-blocks/\">next chapter</a> how you can rely on block supports to provide such functionality in an efficient way.</p>\n<h2>Live rendering in the block editor</h2>\n<p>Gutenberg 2.8 added the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-server-side-render/\"><code>&lt;ServerSideRender&gt;</code></a> block which enables rendering to take place on the server using PHP rather than in JavaScript.</p>\n<p><em>Server-side render is meant as a fallback; client-side rendering in JavaScript is always preferred (client rendering is faster and allows better editor manipulation).</em></p>\n<pre><code class=\"language-jsx\">import { registerBlockType } from '@wordpress/blocks';\nimport ServerSideRender from '@wordpress/server-side-render';\nimport { useBlockProps } from '@wordpress/block-editor';\n\nregisterBlockType( 'gutenberg-examples/example-dynamic', {\n    apiVersion: 3,\n    title: 'Example: last post',\n    icon: 'megaphone',\n    category: 'widgets',\n\n    edit: function ( props ) {\n        const blockProps = useBlockProps();\n        return (\n            &lt;div { ...blockProps }&gt;\n                &lt;ServerSideRender\n                    block=\"gutenberg-examples/example-dynamic\"\n                    attributes={ props.attributes }\n                /&gt;\n            &lt;/div&gt;\n        );\n    },\n} );\n</code></pre>\n<p>Note that this code uses the <code>wp-server-side-render</code> package but not <code>wp-data</code>. Make sure to update the dependencies in the PHP code. You can use wp-scripts to automatically build dependencies (see the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/basic-esnext-a2ab62\">block-development-examples repo</a> for PHP code setup).</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134374,
+    "menu_order": 24,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134379",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134379",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134379/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150193,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134379/revisions/150193"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134374"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134379"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

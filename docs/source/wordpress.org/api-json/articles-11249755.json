@@ -1,0 +1,107 @@
+{
+    "id": 11249755,
+    "date": "2024-03-12T10:39:55",
+    "date_gmt": "2024-03-12T10:39:55",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11249755"
+    },
+    "modified": "2024-06-09T09:51:04",
+    "modified_gmt": "2024-06-09T09:51:04",
+    "slug": "weblog-client",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/weblog-client/",
+    "title": {
+        "rendered": "Weblog client"
+    },
+    "content": {
+        "rendered": "\n<p>A Weblog Client is software you run on your local machine (desktop) that lets you post to your blog via&nbsp;<a href=\"https://codex.wordpress.org/XML-RPC_Support\">XML-RPC</a>. In some cases, the Weblog Client can even manage your weblog entries. You might think of Weblog Clients as the equivalent of email clients. Essentially, the Weblog Client allows you to write a post even if you are off-line; then, the next time you connect to the Internet, you can publish that post.</p>\n\n\n\n<p>For information on blogging by email, see&nbsp;<a href=\"https://codex.wordpress.org/Blog_by_Email\">Blog by Email</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Advantages</h2>\n\n\n\n<p>The advantages of using a weblog client include:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>The ability to write posts without having to go on-line</li><li>The ability to save drafts</li><li>A nicer interface</li><li>Fancy formatting features</li><li>Features like cross-posting to multiple blogs</li><li>Faster uploading and addition of photos</li><li>The ability to keep local backups</li></ol>\n\n\n\n<h2 class=\"wp-block-heading\">List of Client Software</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Windows</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.blogdesk.org/\">BlogDesk</a></li><li><a href=\"http://www.codingrobots.com/blogjet/\">BlogJet</a></li><li><a href=\"http://webstory.my/\">Chrysanth WebStory</a></li><li><a href=\"https://apps.wordpress.com/desktop/\">WordPress.com Desktop App</a>&nbsp;&#8211; supports self-hosted WordPress blogs via&nbsp;<a href=\"https://wordpress.org/plugins/jetpack/\">Jetpack</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Mac OS X</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://illuminex.com/ecto/\">Ecto</a></li><li><a href=\"http://www.red-sweater.com/marsedit/\">MarsEdit</a></li><li><a href=\"http://coherencelabs.com/typemetal/\">TypeMetal</a></li><li><a href=\"https://apps.wordpress.com/desktop/\">WordPress.com Desktop App</a>&nbsp;&#8211; supports self-hosted WordPress blogs via&nbsp;<a href=\"https://wordpress.org/plugins/jetpack/\">Jetpack</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Linux</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://launchpad.net/blogtk\">BloGTK</a></li><li><a href=\"http://sourceforge.net/projects/gscribble/\">GScribble</a></li><li><a href=\"https://apps.wordpress.com/desktop/\">WordPress.com Desktop App</a>&nbsp;&#8211; supports self-hosted WordPress blogs via&nbsp;<a href=\"https://wordpress.org/plugins/jetpack/\">Jetpack</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Browser-Based</h3>\n\n\n\n<p>Cross-platform browser-based clients. Also see&nbsp;<a href=\"https://addons.mozilla.org/en-US/firefox/tag/blogging\">Firefox Add-ons</a>&nbsp;and&nbsp;<a href=\"https://chrome.google.com/webstore/category/ext/10-blogging\">Chrome Extensions</a>.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.addtoany.com/\">AddToAny</a>\u00a0&#8211; Chrome and other browsers via bookmarklet(s)</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Mobile</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Android</h4>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://apps.wordpress.com/mobile/\">WordPress for Android</a></li><li><a href=\"http://code.google.com/p/postbot/\">PostBot</a></li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">BlackBerry</h4>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://sourceforge.net/projects/mopress/\">MoPress</a></li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">iOS</h4>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://apps.wordpress.com/mobile/\">WordPress for iOS</a></li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Nokia Phones</h4>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://maemo-wordpy.garage.maemo.org/\">MaStory</a>&nbsp;&#8211; Maemo/MeeGo only</li><li><a href=\"http://maemo.org/packages/view/wordpress/\">WordPress blogging client</a>&nbsp;&#8211; Maemo/MeeGo only</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Vim script</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.vim.org/scripts/script.php?script_id=2582\">blogit.vim</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Develop Your Own</h2>\n\n\n\n<p>You can always&nbsp;<a href=\"http://dentedreality.com.au/projects/phpbloggerapi/\">develop your own</a>.</p>\n\n\n\n<p>Your XML-RPC server/path are as described here:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>If you login to WordPress on&nbsp;http://example.com/wordpress/wp-login.php, then you have:<ul><li>Server:&nbsp;http://example.com/&nbsp;(some tools will just want the &#8216;example.com&#8217; hostname part)</li><li>Path:&nbsp;/wordpress/xmlrpc.php</li><li>complete URL (just in case):&nbsp;http://example.com/wordpress/xmlrpc.php</li></ul></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>A Weblog Client is software you run on your local machine (desktop) that lets you post to your blog via&nbsp;XML-RPC. In some cases, the Weblog Client can even manage your weblog entries. You might think of Weblog Clients as the equivalent of email clients. Essentially, the Weblog Client allows you to write a post even [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        92
+    ],
+    "class_list": [
+        "post-11249755",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-devhub"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11249755",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11249755"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11249755/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360450,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11249755/revisions/16360450"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11249755"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11249755"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

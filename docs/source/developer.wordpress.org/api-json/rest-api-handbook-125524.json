@@ -1,0 +1,97 @@
+{
+    "id": 125524,
+    "date": "2019-07-21T18:13:30",
+    "date_gmt": "2019-07-21T18:13:30",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/search-results/"
+    },
+    "modified": "2024-01-16T20:30:15",
+    "modified_gmt": "2024-01-16T20:30:15",
+    "slug": "search-results",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/search-results/",
+    "title": {
+        "rendered": "Search Results"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a search result record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-id\">\n<td>\n                <code>id</code>\n            </td>\n<td>\n                Unique identifier for the object.</p>\n<p class=\"type\">\n                    JSON data type: integer or string               </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-title\">\n<td>\n                <code>title</code>\n            </td>\n<td>\n                The title for the object.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-url\">\n<td>\n                <code>url</code>\n            </td>\n<td>\n                URL to the object.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: uri\n                                    </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-type\">\n<td>\n                <code>type</code>\n            </td>\n<td>\n                Object type.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>embed</code></p>\n<p>                                    One of: <code>post</code>, <code>term</code>, <code>post-format</code>\n                            </td>\n</tr>\n<tr id=\"schema-subtype\">\n<td>\n                <code>subtype</code>\n            </td>\n<td>\n                Object subtype.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>embed</code></p>\n<p>                                    One of: <code>post</code>, <code>page</code>, <code>category</code>, <code>post_tag</code>\n                            </td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>List Search Results</h2>\n<p>        Query this endpoint to retrieve a collection of search results. The response you receive can be controlled and filtered using the URL query parameters below.</p>\n<h3>Definition</h3>\n<p>        <code>GET /wp/v2/search</code></p>\n<h3>Example Request</h3>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/search</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code>page</code>\n                                    </td>\n<td>\n                                            Current page of the collection.</p>\n<p class=\"default\">\n                            Default: <code>1</code>\n                        </p>\n</td>\n</tr>\n<tr>\n<td>\n                                            <code>per_page</code>\n                                    </td>\n<td>\n                                            Maximum number of items to be returned in result set.</p>\n<p class=\"default\">\n                            Default: <code>10</code>\n                        </p>\n</td>\n</tr>\n<tr>\n<td>\n                                            <code>search</code>\n                                    </td>\n<td>\n                                            Limit results to those matching a string.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code>type</code>\n                                    </td>\n<td>\n                                            Limit results to items of an object type.</p>\n<p class=\"default\">\n                            Default: <code>post</code>\n                        </p>\n<p>                                                                One of: <code>post</code>, <code>term</code>, <code>post-format</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code>subtype</code>\n                                    </td>\n<td>\n                                            Limit results to items of one or more object subtypes.</p>\n<p class=\"default\">\n                            Default: <code>any</code>\n                        </p>\n</td>\n</tr>\n<tr>\n<td>\n                                            <code>exclude</code>\n                                    </td>\n<td>\n                                            Ensure result set excludes specific IDs.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code>include</code>\n                                    </td>\n<td>\n                                            Limit result set to specific IDs.\n                                                                                                </td>\n</tr>\n</table></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125524",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/125524",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/125524/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151991,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/125524/revisions/151991"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125524"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

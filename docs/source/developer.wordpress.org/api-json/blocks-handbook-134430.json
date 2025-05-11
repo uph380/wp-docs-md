@@ -1,0 +1,91 @@
+{
+    "id": 134430,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-status-info/"
+    },
+    "modified": "2024-10-30T16:55:53",
+    "modified_gmt": "2024-10-30T16:55:53",
+    "slug": "plugin-post-status-info",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-status-info/",
+    "title": {
+        "rendered": "PluginPostStatusInfo"
+    },
+    "content": {
+        "rendered": "<p>This slots allows for the insertion of items in the Summary panel of the document sidebar.</p>\n<h2>Example</h2>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { PluginPostStatusInfo } from '@wordpress/editor';\n\nconst PluginPostStatusInfoTest = () =&gt; (\n    &lt;PluginPostStatusInfo&gt;\n        &lt;p&gt;Post Status Info SlotFill&lt;/p&gt;\n    &lt;/PluginPostStatusInfo&gt;\n);\n\nregisterPlugin( 'post-status-info-test', { render: PluginPostStatusInfoTest } );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/plugin-post-status-info-location.png?ssl=1\" alt=\"Location in the Summary panel\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 99,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134430",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134430",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134430/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153562,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134430/revisions/153562"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134430"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 11185,
+    "date": "2014-10-19T18:48:25",
+    "date_gmt": "2014-10-19T18:48:25",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11185"
+    },
+    "modified": "2024-08-03T11:55:24",
+    "modified_gmt": "2024-08-03T11:55:24",
+    "slug": "wordpress-org",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/",
+    "title": {
+        "rendered": "The WordPress.org Plugin Directory"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress.org offers free hosting to anyone who wishes to develop a plugin in our directory.</p>\n\n\n\n<p>All plugins hosted here have access to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Monitor statistics (see also the&nbsp;<a href=\"https://codex.wordpress.org/WordPress.org_API#Plugins\">WordPress.org Plugin API</a>)</li>\n\n\n\n<li>Receive feedback and reviews from users</li>\n\n\n\n<li>Provide support via a free forum</li>\n</ul>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Make sure you review the&nbsp;<a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/\">Developer FAQ</a>!</div></div>\n\n\n\n\n<p>And make sure that you&#8217;ve reviewed the\u00a0<a href=\"https://developer.wordpress.org/plugins/wordpress-org/common-issues/\" data-type=\"plugin-handbook\" data-id=\"154554\">common issues</a>\u00a0that the Plugin Review Team typically encounters when reviewing plugins.</p>\n\n\n\n<p>If you require assistance with your hosting on WordPress.org, you can contact the plugin team via Slack in <code>#pluginreview</code>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"requirements\">Requirements</h2>\n\n\n\n<p>A brief overview:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Plugins must be compatible with the <a href=\"http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses\">GNU General Public License v2</a>&nbsp;or later. If a license is not specified, code will be considered &#8220;GPLv2 or later.&#8221;</li>\n\n\n\n<li>The provided&nbsp;<a href=\"http://subversion.tigris.org/\">Subversion</a> repository must be used for functional WordPress plugins only.</li>\n\n\n\n<li>Copyright and Trademark law must be respected.</li>\n\n\n\n<li>The plugin and developer must not do anything illegal, dishonest, or morally offensive. This includes spamming or harassment.</li>\n</ul>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">All plugins and developers must comply with our <a href=\"https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/\">Detailed Plugin Guidelines</a>.</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to\">How to &#8230;</h2>\n\n\n\n<p>If you&#8217;re just getting started, it helps to know how to submit your plugin, use SVN, and so on.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/planning-submitting-and-maintaining-plugins/\">&#8230; plan, submit, and maintain your plugin</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/\">&#8230; use SVN (aka Subversion)</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/\">&#8230; manage your readme.txt</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/the-basics/header-requirements/\">&#8230; write proper plugin headers</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/\">&#8230; use plugin assets (header images and icons)</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/\">&#8230; take over an existing plugin</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/using-the-forums/\">&#8230; use the support forums</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/special-user-roles-capabilities/\">&#8230; grant users special roles (contributor, supporter, committer, etc)</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/transferring-your-plugin-to-a-new-owner/\">&#8230; transfer your plugin to a new owner</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/add-your-plugin-to-the-block-directory/\">&#8230; add your plugin to the block directory</a></li>\n\n\n\n<li>.<a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-security/\">.. manage your plugin&#8217;s security</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/\">&#8230; report an insecure plugin</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 18,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11185",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 38,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154561,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185/revisions/154561"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11185"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

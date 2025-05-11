@@ -1,0 +1,109 @@
+{
+    "id": 11249807,
+    "date": "2019-02-28T22:26:41",
+    "date_gmt": "2019-02-28T22:26:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11249807"
+    },
+    "modified": "2023-01-16T12:49:12",
+    "modified_gmt": "2023-01-16T12:49:12",
+    "slug": "protect-posts-with-password",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/protect-posts-with-password/",
+    "title": {
+        "rendered": "Protect posts with password"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Post Visibility Settings</h2>\n\n\n\n<p>Once you publish a WordPress post (or Page), it is visible to the public (by default). In WordPress terms, this means a post with a\u00a0<em>Published</em>\u00a0status has a default visibility of\u00a0<em>Public</em>, based on the settings in the\u00a0<a href=\"/support/article/writing-posts/#post-field-descriptions\">Publish box</a>\u00a0of a\u00a0<a href=\"/support/article/administration-screens/#posts-make-some-content\">Edit Post Screen</a>.</p>\n\n\n\n<p>WordPress also offers two less public options for your post&#8217;s&nbsp;<a href=\"https://codex.wordpress.org/Content_Visibility\">Content Visibility</a>. Clicking the &#8220;Edit&#8221; link next to&nbsp;<strong>Visibility: Public</strong>&nbsp;reveals three radio buttons:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><em>Public</em>\u00a0is selected by default.</li><li>Checking\u00a0<em>Password protected</em>\u00a0reveals a text field for entering a password, that will be required to view that post.\u00a0<strong>The password is limited to 20 characters.</strong></li><li>Checking\u00a0<em>Private</em>\u00a0makes your post visible only to your site&#8217;s Users with the role of\u00a0<a href=\"/support/article/roles-and-capabilities/\">Administrator or Editor</a>.<a href=\"https://codex.wordpress.org/File:protected_edit.png\"></a>Visibility Settings</li></ul>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"alignright\"><img loading=\"lazy\" decoding=\"async\" width=\"295\" height=\"366\" src=\"https://wordpress.org/documentation/files/2019/02/protected_edit.png\" alt=\"\" class=\"wp-image-11261029\" srcset=\"https://wordpress.org/documentation/files/2019/02/protected_edit.png 295w, https://wordpress.org/documentation/files/2019/02/protected_edit-242x300.png 242w\" sizes=\"auto, (max-width: 295px) 100vw, 295px\" /></figure></div>\n\n\n\n<p>When you&#8217;re done editing the post&#8217;s visibility, click the &#8220;OK&#8221; button. You should now see your post&#8217;s new setting, e.g.,&nbsp;<strong>Visibility: Password Protected.</strong>Remember: a setting change does not take effect until you click the &#8220;Publish&#8221; button (or &#8220;Update&#8221; if the post is already published.)</p>\n\n\n\n<h2 class=\"wp-block-heading\">Finding or Changing a Password</h2>\n\n\n\n<p>Only an Administrator, Editor, or the post&#8217;s Author can change a post&#8217;s password or visibility setting. To do so, use the &#8220;Visibility: Edit&#8221; link again. These settings are also available using the post&#8217;s\u00a0Quick Edit\u00a0link in the All Posts Screen.</p>\n\n\n\n<p>The&nbsp;<strong>Visibility</strong>&nbsp;&#8220;Edit&#8221; link (or &#8220;Quick Edit&#8221;) is also a good way to reveal a forgotten post password.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Password Protected Posts</h2>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"alignright\"><a href=\"https://codex.wordpress.org/File:protected_password.png\"><img loading=\"lazy\" decoding=\"async\" width=\"292\" height=\"253\" src=\"https://wordpress.org/documentation/files/2019/02/protected_password.png\" alt=\"\" class=\"wp-image-11261046\" /></a></figure></div>\n\n\n\n<p>WordPress displays a password-protected post differently. It makes these changes to the post&#8217;s:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Title\u2013</strong>&nbsp;Adds the text &#8220;Protected: &#8221; before the post Title.</li><li><strong>Excerpt\u2013</strong>&nbsp;Instead of the post Excerpt, prints this text: &#8220;There is no excerpt because this is a protected post.&#8221;</li><li><strong>Content\u2013</strong>&nbsp;Instead of the post Content, prints a password form with this text: &#8220;This post is password protected. To view it please enter your password below:&#8221;</li></ul>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://codex.wordpress.org/File:protected_content.png\"><img loading=\"lazy\" decoding=\"async\" width=\"549\" height=\"272\" src=\"https://wordpress.org/documentation/files/2019/02/protected_content.png\" alt=\"\" class=\"wp-image-11261048\" srcset=\"https://wordpress.org/documentation/files/2019/02/protected_content.png 549w, https://wordpress.org/documentation/files/2019/02/protected_content-300x149.png 300w\" sizes=\"auto, (max-width: 549px) 100vw, 549px\" /></a></figure>\n\n\n\n<p>So, a password-protected post with a title of &#8220;My Post&#8221; would display like this:&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Password Protecting Many Posts and Pages</h3>\n\n\n\n<p>WordPress stores this password in a browser cookie so readers don&#8217;t have to re-enter passwords if they visit the same page multiple times. Furthermore, if multiple posts use the same password, the reader will only have to enter the password once to access every post (see caveat below).</p>\n\n\n\n<p>WordPress will only track one password at a time. Therefore, if two posts use two different passwords, entering the password for post A, then entering the password for post B means that revisiting post A (or any post which shares its password) will require the user to re-enter the password for post A.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Protect Custom Fields</h2>\n\n\n\n<p>WordPress does not print a password-protected post&#8217;s Content or Excerpt until the correct password is entered. But a post&#8217;s\u00a0<a href=\"/support/article/custom-fields/\">Custom Field(s)</a>\u00a0data is not protected, and can still show. To stop CFs from printing, wrap your\u00a0<a href=\"https://codex.wordpress.org/Function_Reference/get_post_meta\">get_post_meta</a>\u00a0calls (e.g., in\u00a0single.php\u00a0or\u00a0page.php) with a conditional statement using:\u00a0<a href=\"https://codex.wordpress.org/Function_Reference/post_password_required\">post_password_required</a>. This one WordPress function checks both whether your post requires a password and whether the correct password has been provided:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;?php\nif (&nbsp;! post_password_required() ) {\n    // Code to fetch and print CFs, such as:\n    $key_1_value_1 = get_post_meta( $post-&gt;ID, 'key_1', true );\n        echo $key_1_value_1;\n}\n?&gt;\n</pre>\n\n\n\n<p>The&nbsp;post_password_required&nbsp;function within in an&nbsp;if&nbsp;statement is also handy for other customizations, such as preventing password-protected posts from displaying in a list.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Customize the Protected Text</h2>\n\n\n\n<p>With&nbsp;<a href=\"https://codex.wordpress.org/Plugin_API/Filter_Reference\">WordPress Filters</a>&nbsp;you can: change the default text in the password form, change the default text for the password-protected post Excerpt, and insert the password form into the post Excerpt. To do so, add the following code to your custom plugin file.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Password Form Text</h3>\n\n\n\n<p>The password form displays this default message: &#8220;This post is password protected. To view it please enter your password below:&#8221; The following code will return the form with different text and different html structure \u2014 in this example the custom message is: &#8220;To view this protected post, enter the password below:&#8221;</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;?php\nfunction my_password_form() {\n    global $post;\n    $label = 'pwbox-'.( empty( $post-&gt;ID )&nbsp;? rand()&nbsp;: $post-&gt;ID );\n    $o = '&lt;form action=\"' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '\" method=\"post\"&gt;\n    ' . __( \"To view this protected post, enter the password below:\" ) . '\n    &lt;label for=\"' . $label . '\"&gt;' . __( \"Password:\" ) . ' &lt;/label&gt;&lt;input name=\"post_password\" id=\"' . $label . '\" type=\"password\" size=\"20\" maxlength=\"20\" /&gt;&lt;input type=\"submit\" name=\"Submit\" value=\"' . esc_attr__( \"Submit\" ) . '\" /&gt;\n    &lt;/form&gt;\n    ';\n    return $o;\n}\nadd_filter( 'the_password_form', 'my_password_form' );\n?&gt;\n</pre>\n\n\n\n<p>Please note: the&nbsp;my_password_form&nbsp;function must return a value: don&#8217;t use print or echo.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Password Size Limitation</h4>\n\n\n\n<p>Make sure to set the&nbsp;maxlength&nbsp;parameter to a value of 20 when replacing the password protection form as WordPress will only save the first 20 characters due to database constraints.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Protected Excerpt Text</h3>\n\n\n\n<p>The default Excerpt of a password-protected post is: &#8220;There is no excerpt because this is a protected post.&#8221; This code will replace that text with your own \u2014 HTML allowed:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;?php\nfunction my_excerpt_protected( $excerpt ) {\n    if ( post_password_required() )\n        $excerpt = '&lt;em&gt;[This is password-protected.]&lt;/em&gt;';\n    return $excerpt;\n}\nadd_filter( 'the_excerpt', 'my_excerpt_protected' );\n?&gt;\n</pre>\n\n\n\n<p>Replace &#8220;&lt;em&gt;[This is password-protected.]&lt;/em&gt;&#8221; with your custom password-protected Excerpt message.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Add the Password Form to the Excerpt</h3>\n\n\n\n<p>Another option for your protected Excerpts is to print out the password form instead of the Excerpt message. That way people enter the password right from an index or archive page. Then, when they click the Title link, they&#8217;ll see the Content. With the&nbsp;get_the_password_form&nbsp;function, you can make the password form be the Excerpt for a password-protected post:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;?php\nfunction my_excerpt_password_form( $excerpt ) {\n    if ( post_password_required() )\n        $excerpt = get_the_password_form();\n    return $excerpt;\n}\nadd_filter( 'the_excerpt', 'my_excerpt_password_form' );\n?&gt;\n</pre>\n\n\n\n<p>This will get the default WordPress password form and text or\u00a0<a href=\"#password-form-text\">any customizations</a>\u00a0you&#8217;ve made. For a better understanding of how\u00a0post_password_required()\u00a0and\u00a0get_the_password_form()\u00a0work, read their function definitions in\u00a0<code><a href=\"https://core.trac.wordpress.org/browser/tags/5.1.0/src/wp-includes/post-template.php#L0\">wp-includes/post-template.php</a></code>.</p>\n\n\n\n<p>In this same WordPress core file you&#8217;ll also find the&nbsp;the_excerpt&nbsp;and&nbsp;the_password_form&nbsp;filters, and the functions&nbsp;<a href=\"https://codex.wordpress.org/Function_Reference/get_the_excerpt\">get_the_excerpt()</a>,&nbsp;<a href=\"https://codex.wordpress.org/Function_Reference/get_the_title\">get_the_title()</a>, and&nbsp;<a href=\"https://codex.wordpress.org/Function_Reference/get_the_content\">get_the_content()</a>. These functions control how a post&#8217;s title, excerpt and content display, depending on its visibility setting.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Hiding Password Protected Posts</h2>\n\n\n\n<p>Sometimes, you don&#8217;t want your password protected posts to show up on other places around your site, like on the home page or archive pages. To effectively hide them from these pages without affecting your pagination, place the following code in your custom plugin file:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;?php\n\n// Filter to hide protected posts\nfunction exclude_protected($where) {\n\tglobal $wpdb;\n\treturn $where .= \" AND {$wpdb-&gt;posts}.post_password = '' \";\n}\n\n// Decide where to display them\nfunction exclude_protected_action($query) {\n\tif(&nbsp;!is_single() &amp;&amp;&nbsp;!is_page() &amp;&amp;&nbsp;!is_admin() ) {\n\t\tadd_filter( 'posts_where', 'exclude_protected' );\n\t}\n}\n\n// Action to queue the filter at the right time\nadd_action('pre_get_posts', 'exclude_protected_action');\n\n?&gt;\n</pre>\n\n\n\n<p>This code works in two parts: the first part effectively removes any password protected posts directly from any SQL query that WordPress is running, using the&nbsp;<a href=\"https://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where\">posts_where filter</a>. The second part adds this filter to all pages except single posts, pages, and admin pages.</p>\n\n\n\n<p>For more information on why pre_get_posts is the right action for this function, see the&nbsp;<a href=\"https://codex.wordpress.org/Plugin_API/Action_Reference/pre_get_posts\">pre_get_posts action reference</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Changing the cookie lifetime</h2>\n\n\n\n<p>See&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/post_password_expires/\">https://developer.wordpress.org/reference/hooks/post_password_expires/</a></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Post Visibility Settings Once you publish a WordPress post (or Page), it is visible to the public (by default). In WordPress terms, this means a post with a\u00a0Published\u00a0status has a default visibility of\u00a0Public, based on the settings in the\u00a0Publish box\u00a0of a\u00a0Edit Post Screen. WordPress also offers two less public options for your post&#8217;s&nbsp;Content Visibility. Clicking [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-11249807",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11249807",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11249807"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11249807/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355415,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11249807/revisions/16355415"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11249807"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11249807"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

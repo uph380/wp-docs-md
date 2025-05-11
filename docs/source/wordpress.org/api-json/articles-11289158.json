@@ -1,0 +1,109 @@
+{
+    "id": 11289158,
+    "date": "2021-07-02T17:14:37",
+    "date_gmt": "2021-07-02T17:14:37",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11289158"
+    },
+    "modified": "2024-10-23T20:17:23",
+    "modified_gmt": "2024-10-23T20:17:23",
+    "slug": "edit-media",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/edit-media/",
+    "title": {
+        "rendered": "Edit Media"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading is-style-default\">Overview</h2>\n\n\n\n<p>The&nbsp;<strong>Edit Media</strong>&nbsp;page is where you manage information about your media that is saved in the&nbsp;<a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media Library</a>. To reach the&nbsp;<strong>Edit Media</strong>&nbsp;page, go to&nbsp;<strong>Media &gt; Library</strong>&nbsp;and click the name of the media item or the&nbsp;<strong>Edit</strong>&nbsp;link that appears below the name on hover. You can also reach this page by clicking on the&nbsp;<strong>Edit</strong>&nbsp;link when&nbsp;<a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">adding new media</a>&nbsp;to your site.</p>\n\n\n\n<p>The data entered on the&nbsp;<strong>Edit Media</strong>&nbsp;page is often used by attachment pages and galleries if the theme or plugin chooses to display it, and the data is also used as the default values at the time an image is inserted into a page. Once the image has been inserted as an individual image, it becomes disconnected from the data in the media library and you can use the Image Details screen to update it on a per-image basis.</p>\n\n\n\n<p>In addition to managing meta data such as title, caption, alt text, and description, there are also added controls for performing basic media edits such as rotating, scaling, and cropping images. For more information see the&nbsp;<a href=\"https://wordpress.org/documentation/article/edit-media/#edit-image\">Edit Image</a>&nbsp;section.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"973\" src=\"https://wordpress.org/documentation/files/2023/06/edit-media-1024x973.png\" alt=\"Edit media page showing the options\" class=\"wp-image-16357568\" srcset=\"https://wordpress.org/documentation/files/2023/06/edit-media-1024x973.png 1024w, https://wordpress.org/documentation/files/2023/06/edit-media-300x285.png 300w, https://wordpress.org/documentation/files/2023/06/edit-media-768x730.png 768w, https://wordpress.org/documentation/files/2023/06/edit-media-1536x1460.png 1536w, https://wordpress.org/documentation/files/2023/06/edit-media.png 1854w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Edit media showing the options</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\"><a href=\"https://wordpress.org/documentation/article/edit-media/#edit-media-page\">Edit media page</a></h2>\n\n\n\n<p><strong>Title</strong></p>\n\n\n\n<p>The name of the media. A title is displayed in the File column of the&nbsp;<a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media Library Screen</a>&nbsp;and is often shown on attachment pages and galleries if themes or plugins are designed to display it.</p>\n\n\n\n<p><strong>Permalink</strong></p>\n\n\n\n<p>This is the URL of the media attachment page. There is also a link to view the attachment page. Next to this, there may be a button to edit the permalink\u2014if there isn\u2019t, you can change the permalink by activating \u2018Slug\u2019 from the screen options and changing the slug\u2019s value.</p>\n\n\n\n<p><strong>Edit image button</strong></p>\n\n\n\n<p>(Image files only) allows you to make edits such as rotate, scale, and crop.</p>\n\n\n\n<p><strong>Caption</strong></p>\n\n\n\n<p>A brief explanation of the media.</p>\n\n\n\n<p><strong>Alternate text</strong></p>\n\n\n\n<p>The alt text for the image, e.g. \u201cThe Mona Lisa\u201d to describe the media. Used for accessibility.</p>\n\n\n\n<p><strong>Description</strong></p>\n\n\n\n<p>An explanation of this particular media.</p>\n\n\n\n<p><strong>File URL</strong></p>\n\n\n\n<p>Read only display of a direct link to the media file.</p>\n\n\n\n<p><strong>Copy URL to clipboard:</strong></p>\n\n\n\n<p>Click to copy the URL of the file you are editing into the clipboard.&nbsp;</p>\n\n\n\n<p><strong>Download file</strong></p>\n\n\n\n<p>Makes it easier for users to download their uploaded media by providing a download link on the attachment details screen and in the media modal.</p>\n\n\n\n<p><strong>Save meta box</strong></p>\n\n\n\n<p>Displays information about your media, such as the upload date, web address, file name, type, size, and dimensions. Also includes actions to&nbsp;<strong>Delete Permanently</strong>&nbsp;or&nbsp;<strong>Update</strong>&nbsp;any change you have made.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><a href=\"https://wordpress.org/documentation/article/edit-media/#more-edit-media-options\">More edit media options</a></h3>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/edit-media-more-options/\"><img loading=\"lazy\" decoding=\"async\" width=\"693\" height=\"495\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/edit-media-more-options.png?fit=693%2C495&amp;ssl=1\" alt=\"Screen options in edit media page\" class=\"wp-image-11124159\" srcset=\"https://wordpress.org/documentation/files/2019/01/edit-media-more-options.png 693w, https://wordpress.org/documentation/files/2019/01/edit-media-more-options-300x214.png 300w\" sizes=\"auto, (max-width: 693px) 100vw, 693px\" /></a><figcaption class=\"wp-element-caption\">Screen options in Edit media page</figcaption></figure>\n\n\n\n<p><em><strong>Note:</strong>&nbsp;The following Meta Boxes may not be visible by default. You can enable them by clicking on the&nbsp;<strong>Screen Options</strong>&nbsp;tab at the top right of the&nbsp;<strong>Edit Media</strong>&nbsp;page.</em></p>\n\n\n\n<p><strong>Discussion</strong></p>\n\n\n\n<p>Turn the ability to leave comments and/or trackbacks on the media attachment page on or off</p>\n\n\n\n<p><strong>Comments</strong></p>\n\n\n\n<p>List of current comments saved for this media file</p>\n\n\n\n<p><strong>Slug</strong></p>\n\n\n\n<p>the attachment page slug</p>\n\n\n\n<p><strong>Author</strong></p>\n\n\n\n<p>the Author for the media</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"541\" src=\"https://wordpress.org/documentation/files/2023/06/attachment-details-2-1024x541.png\" alt=\"Attachment details after clicking on edit image\" class=\"wp-image-16357576\" srcset=\"https://wordpress.org/documentation/files/2023/06/attachment-details-2-1024x541.png 1024w, https://wordpress.org/documentation/files/2023/06/attachment-details-2-300x158.png 300w, https://wordpress.org/documentation/files/2023/06/attachment-details-2-768x406.png 768w, https://wordpress.org/documentation/files/2023/06/attachment-details-2-1536x811.png 1536w, https://wordpress.org/documentation/files/2023/06/attachment-details-2-2048x1082.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Attachment details</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\"><a href=\"https://wordpress.org/documentation/article/edit-media/#edit-image\">Edit image</a></h3>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"601\" src=\"https://wordpress.org/documentation/files/2023/06/edit-image-1024x601.png\" alt=\"Edit image options\" class=\"wp-image-16357572\" srcset=\"https://wordpress.org/documentation/files/2023/06/edit-image-1024x601.png 1024w, https://wordpress.org/documentation/files/2023/06/edit-image-300x176.png 300w, https://wordpress.org/documentation/files/2023/06/edit-image-768x451.png 768w, https://wordpress.org/documentation/files/2023/06/edit-image-1536x902.png 1536w, https://wordpress.org/documentation/files/2023/06/edit-image.png 1850w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Edit image</figcaption></figure>\n\n\n\n<p>Clicking the\u00a0<strong>Edit Image</strong>\u00a0button launches the image editor screen, giving you access to several useful image editing controls. The edits you make to your image are\u00a0<em>non-destructive</em>\u00a0and you can restore the image to its original (uploaded) specifications at any time. Here are the various controls available to you in this\u00a0<strong>Edit Image</strong>\u00a0mode:</p>\n\n\n\n<p><strong>Crop</strong></p>\n\n\n\n<p>To crop the image, first, click on the image and drag to make your selection. Once a selection has been made, then click the crop icon above the image to finalize the crop. You can use the&nbsp;<strong>Aspect ratio</strong>&nbsp;and&nbsp;<strong>Selection</strong>&nbsp;option to make further adjustments or use&nbsp;<a href=\"https://wordpress.org/documentation/article/edit-media/#keyboard-shortcuts\">keyboard shortcuts</a>&nbsp;to fine-tune your crop selection before clicking the crop icon.</p>\n\n\n\n<p><strong>Rotate left button</strong></p>\n\n\n\n<p>Rotate the image 90 degrees counter-clockwise.</p>\n\n\n\n<p><strong>Rotate right button</strong></p>\n\n\n\n<p>Rotate the image 90 degrees clockwise.</p>\n\n\n\n<p><strong>Flip vertical button</strong></p>\n\n\n\n<p>Flip the image upside-down.</p>\n\n\n\n<p><strong>Flip horizontal button</strong></p>\n\n\n\n<p>Flip the image left-to-right.</p>\n\n\n\n<p><strong>Undo/Redo button</strong></p>\n\n\n\n<p>Remove or restore your last edit. You can click as many times as you want in succession to \u201cstep\u201d through the edit history.</p>\n\n\n\n<p><strong>Scale image</strong></p>\n\n\n\n<p>Proportionally scale the original image. For best results, scaling should be done before you crop, flip, or rotate. Images can only be scaled down, not up. The original dimensions are displayed as a guideline above the box for entering new dimensions. Click&nbsp;<strong>Scale</strong>&nbsp;button to display the new scaled image. Also&nbsp;<strong>Restore Original Image</strong>&nbsp;button appears to allow you restore the change.</p>\n\n\n\n<p><strong>Restore original image</strong>&nbsp;</p>\n\n\n\n<p>If changes have been made to an image, the Restore Original Image pull-down allows you to discard any changes and restore the original image. Previously edited copies of the image will not be deleted. Press the Restore Image button to complete the action.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1280\" height=\"720\" src=\"https://wordpress.org/documentation/files/2023/06/restore-image.gif\" alt=\"restore original image size after scaling the image\" class=\"wp-image-16357564\" /><figcaption class=\"wp-element-caption\">Restore original image</figcaption></figure>\n\n\n\n<p><strong>Image crop</strong></p>\n\n\n\n<p>Used in combination with the&nbsp;<em>Crop</em>&nbsp;icon, this tool allows you to make the following precise adjustments:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Crop aspect Ratio:</strong>&nbsp;You can specify the crop selection aspect ratio then hold down the Shift key while dragging to lock it. The values can be 1:1 (square), 4:3, 16:9, etc. If there is a selection, specifying aspect ratio will set it immediately.</li>\n\n\n\n<li><strong>Crop selection</strong>: Once started, the selection can be adjusted by entering new values (in pixels). Note that these values are scaled to approximately match the original image dimensions. The minimum selection size equals the thumbnail size as set in the&nbsp;<a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings Media Screen</a>.</li>\n</ul>\n\n\n\n<p><strong>Thumbnail settings</strong></p>\n\n\n\n<p>WordPress thumbnails are smaller, usually square, versions of your main image. They are automatically created each time you upload a new image. By default, a WordPress thumbnail image is 150px x 150px, and cropped as a perfect square. (You can adjust this on the&nbsp;<a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings<strong>&nbsp;</strong>Media&nbsp;Screen</a>.)</p>\n\n\n\n<p>When editing an image, you have three options. You can apply your changes to</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>All image sizes</li>\n\n\n\n<li>Thumbnail</li>\n\n\n\n<li>All sizes except thumbnail</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image\" id=\"attachment_5395\"><img loading=\"lazy\" decoding=\"async\" width=\"512\" height=\"630\" src=\"https://wordpress.org/documentation/files/2021/06/edit-image-thumbnail.png\" alt=\"Options for thumbnail settings\" class=\"wp-image-14597469\" srcset=\"https://wordpress.org/documentation/files/2021/06/edit-image-thumbnail.png 512w, https://wordpress.org/documentation/files/2021/06/edit-image-thumbnail-244x300.png 244w\" sizes=\"auto, (max-width: 512px) 100vw, 512px\" /><figcaption class=\"wp-element-caption\">Thumbnail Settings</figcaption></figure>\n\n\n\n<p><strong>Save</strong></p>\n\n\n\n<p>Use this to save the changes made to an image and return to the&nbsp;<strong>Edit Media</strong>&nbsp;screen for this image.</p>\n\n\n\n<p><strong>Cancel</strong></p>\n\n\n\n<p>Use this to cancel any operation that has been performed on the image in the current session.</p>\n\n\n\n<h3 class=\"wp-block-heading\"><a href=\"https://wordpress.org/documentation/article/edit-media/#keyboard-shortcuts\">Keyboard shortcuts</a></h3>\n\n\n\n<p>When cropping your image, these keyboard combinations can \u2018fine-tune\u2019 the size of the crop frame. Note: The arrow key can be any of four arrow keys\u2013up arrow, down arrow, left arrow, or right arrow:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Arrow:</strong>&nbsp;move by 10px</li>\n\n\n\n<li><strong>Shift + arrow:</strong>&nbsp;move by 1px</li>\n\n\n\n<li><strong>Ctrl + arrow:</strong>&nbsp;resize by 10px</li>\n\n\n\n<li><strong>Ctrl + Shift + arrow:</strong>&nbsp;resize by 1px</li>\n\n\n\n<li><strong>Shift + drag:</strong>&nbsp;lock aspect ratio</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\"><a href=\"https://wordpress.org/documentation/article/edit-media/#further-reading\">Further reading</a></h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">Media Add New Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media library screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings Media Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/image-size-and-quality/\">Image Size and Quality</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-images/\">Use Images</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-image-and-file-attachments/\">Use image and file attachments</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\">Inserting Images into Posts and Pages (Block Editor)</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/\">Inserting Images into Posts and Pages (Classic Editor)</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-07-04\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for media item edit page, attachment details and made those relevant to 6.2.2</li>\n\n\n\n<li>Updated GIF for Restore original image</li>\n\n\n\n<li>Made sure there is alt tag and caption for all the images</li>\n\n\n\n<li>Added the paragraph Download file for edit media page</li>\n\n\n\n<li>Made sure all the Headings are in sentence case</li>\n</ul>\n</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Overview The&nbsp;Edit Media&nbsp;page is where you manage information about your media that is saved in the&nbsp;Media Library. To reach the&nbsp;Edit Media&nbsp;page, go to&nbsp;Media &gt; Library&nbsp;and click the name of the media item or the&nbsp;Edit&nbsp;link that appears below the name on hover. You can also reach this page by clicking on the&nbsp;Edit&nbsp;link when&nbsp;adding new media&nbsp;to your [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        87,
+        78
+    ],
+    "class_list": [
+        "post-11289158",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-media",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289158",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11289158"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289158/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365177,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289158/revisions/16365177"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11289158"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11289158"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

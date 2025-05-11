@@ -1,0 +1,97 @@
+{
+    "id": 153652,
+    "date": "2024-04-30T18:55:47",
+    "date_gmt": "2024-04-30T18:55:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=153652"
+    },
+    "modified": "2024-04-30T18:56:19",
+    "modified_gmt": "2024-04-30T18:56:19",
+    "slug": "usage-in-templates",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/patterns/usage-in-templates/",
+    "title": {
+        "rendered": "Usage in Templates"
+    },
+    "content": {
+        "rendered": "\n<p>When building themes, patterns are not merely reusable sections of blocks that users can add to their content. That is a nice feature, but the true power of patterns is using them directly in your theme\u2019s front-end output.</p>\n\n\n\n<p>In this article, you will learn both why and how to include patterns in your theme\u2019s templates and template parts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why use patterns in templates?</h2>\n\n\n\n<p>There are two primary reasons to use patterns in your templates:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>PHP access:</strong> Block templates and template parts are HTML files and you need access to various PHP functions for dynamic functionality. You can learn more about this in the <a href=\"https://developer.wordpress.org/themes/patterns/using-php-in-patterns/\">Using PHP in Patterns</a> documentation.</li>\n\n\n\n<li><strong>The DRY (Don\u2019t Repeat Yourself) principle:</strong> When building any type of software (themes included) you should always reuse code when possible, which means less work for you and fewer potential bugs. Because patterns are reusable groups of blocks, it makes sense to use the pattern instead of rewriting the code in your templates and parts.</li>\n</ul>\n\n\n\n<p>This article will primarily focus on the last point. You will learn how to reuse your patterns within your theme\u2019s block templates and template parts.</p>\n\n\n\n<p>One of the best use cases is to create patterns of common elements across multiple templates. For example, if your Home, Archive, and Search templates all include the same Query Loop layout, create a pattern for that design and include it in each template.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The Pattern block</h2>\n\n\n\n<p>As described in <a href=\"https://developer.wordpress.org/themes/patterns/introduction-to-patterns/\">Introduction to Patterns</a>, a block pattern is merely one or more blocks that you have registered as a pattern. However, there is also a block named Pattern available in WordPress. You won\u2019t find the Pattern block anywhere in the UI (such as the block inserter). It\u2019s primarily meant to be used in WordPress themes.</p>\n\n\n\n<p>Here is what the Pattern block markup looks like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:pattern {\"slug\":\"namespace/pattern-slug\"} /--&gt;</code></pre>\n\n\n\n<p>As you can see, it looks just like any other block markup. The big difference is that you must set the <code>slug</code> parameter to include a specific pattern. The value must include both the pattern namespace and slug.</p>\n\n\n\n<p>Whenever you want to include a pattern within a template or template part, you only need to call the Pattern block.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>You can also include patterns registered by WordPress or plugins in templates, not just those from your theme. All you need to do is reference the correct <code>slug</code> value when calling the Pattern block.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Adding a pattern to a template</h2>\n\n\n\n<p>In this section, you will walk through a practical example of including a pattern within a template.</p>\n\n\n\n<p>Assume you had a \u201chero\u201d pattern that you have registered for your theme because you want users to be able to insert it anywhere they need to. But you also want to include this in your Home template by default.</p>\n\n\n\n<p>First, register a custom pattern with the <code>themeslug/hero</code>, as described in the <a href=\"https://developer.wordpress.org/themes/patterns/registering-patterns/\">Registering Patterns</a> documentation. Create a new file named <code>hero.php</code> and place it into your theme\u2019s <code>/patterns</code> folder with this code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/**\n * Title: Hero\n * Slug: themeslug/hero\n * Categories: featured\n */\n?&gt;\n&lt;!-- wp:cover {\"overlayColor\":\"contrast\",\"isUserOverlayColor\":true,\"align\":\"full\"} --&gt;\n&lt;div class=\"wp-block-cover alignfull\"&gt;\n\t&lt;span aria-hidden=\"true\" class=\"wp-block-cover__background has-contrast-background-color has-background-dim-100 has-background-dim\"&gt;&lt;/span&gt;\n\t&lt;div class=\"wp-block-cover__inner-container\"&gt;\n\t\t\n\t\t&lt;!-- wp:heading {\"textAlign\":\"center\"} --&gt;\n\t\t&lt;h2 class=\"wp-block-heading has-text-align-center\"&gt;&lt;?php esc_html_e( 'Welcome to My Site', 'themeslug' ); ?&gt;&lt;/h2&gt;\n\t\t&lt;!-- /wp:heading --&gt;\n\n\t\t&lt;!-- wp:paragraph {\"align\":\"center\"} --&gt;\n\t\t&lt;p class=\"has-text-align-center\"&gt;&lt;?php esc_html_e( 'This is my little home away from home.', 'themeslug' ); ?&gt;&lt;/p&gt;\n\t\t&lt;!-- /wp:paragraph --&gt;\n\n\t\t&lt;!-- wp:buttons {\"layout\":{\"type\":\"flex\",\"justifyContent\":\"center\"}} --&gt;\n\t\t&lt;div class=\"wp-block-buttons\"&gt;\n\t\t\t&lt;!-- wp:button {\"className\":\"wp-block-button is-style-outline\"} --&gt;\n\t\t\t&lt;div class=\"wp-block-button is-style-outline\"&gt;&lt;a class=\"wp-block-button__link wp-element-button\"&gt;&lt;?php esc_html_e( 'Button A', 'themeslug' ); ?&gt;&lt;/a&gt;&lt;/div&gt;\n\t\t\t&lt;!-- /wp:button --&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;!-- /wp:buttons --&gt;\n\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;!-- /wp:cover --&gt;</code></pre>\n\n\n\n<p>This will make the pattern both available to users via the UI and to your theme templates for inclusion.</p>\n\n\n\n<p>To include this specific pattern in a template, you need to call it like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:pattern {\"slug\":\"themeslug/hero\"} /--&gt;</code></pre>\n\n\n\n<p>Now try adding it to one of your theme\u2019s templates, such as <code>/templates/home.html</code> or <code>/templates/index.html</code> below the header. Your template with the pattern code should look similar to this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:template-part {\"slug\":\"header\"} /--&gt;\n\n&lt;!-- wp:pattern {\"slug\":\"themeslug/hero\"} /--&gt;\n\n&lt;!-- Some other blocks. /--&gt;\n\n&lt;!-- wp:template-part {\"slug\":\"footer\"} /--&gt;</code></pre>\n\n\n\n<p>Now test the addition of the pattern in the Site Editor by going to <strong>Appearance &gt; Editor &gt; Templates</strong> and choosing the template you added it to:</p>\n\n\n\n<figure class=\"wp-block-image size-full has-custom-border\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1061\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?resize=2048%2C1061&#038;ssl=1\" alt=\"WordPress Site Editor with the Home/Blog template open. It shows a Header template part and a &quot;welcome&quot; message in a Cover block at the top of the template.\" class=\"has-border-color has-light-grey-2-border-color wp-image-153654\" style=\"border-width:1px\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?resize=1024%2C531&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?resize=768%2C398&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/04/template-home-pattern.webp?resize=1536%2C796&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>The pattern should also appear on the front end of your site when that template is in use.</p>\n\n\n\n<p>From this point, you can use this feature however you need. Whether you\u2019re including a pattern in a template or template part, the process is the same.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 153616,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-153652",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153652",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153652/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153656,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153652/revisions/153656"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153616"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=153652"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134455,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/disabled/"
+    },
+    "modified": "2024-11-18T21:55:16",
+    "modified_gmt": "2024-11-18T21:55:16",
+    "slug": "disabled",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/disabled/",
+    "title": {
+        "rendered": "Disabled"
+    },
+    "content": {
+        "rendered": "<p>Disabled is a component which disables descendant tabbable elements and prevents pointer interaction.</p>\n<h2>Usage</h2>\n<p>Assuming you have a form component, you can disable all form inputs by wrapping the form with <code>&lt;Disabled&gt;</code>.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { Button, Disabled, TextControl } from '@wordpress/components';\n\nconst MyDisabled = () =&gt; {\n    const [ isDisabled, setIsDisabled ] = useState( true );\n\n    let input = (\n        &lt;TextControl\n            __next40pxDefaultSize\n            __nextHasNoMarginBottom\n            label=\"Input\"\n            onChange={ () =&gt; {} }\n        /&gt;\n    );\n    if ( isDisabled ) {\n        input = &lt;Disabled&gt;{ input }&lt;/Disabled&gt;;\n    }\n\n    const toggleDisabled = () =&gt; {\n        setIsDisabled( ( state ) =&gt; ! state );\n    };\n\n    return (\n        &lt;div&gt;\n            { input }\n            &lt;Button variant=\"primary\" onClick={ toggleDisabled }&gt;\n                Toggle Disabled\n            &lt;/Button&gt;\n        &lt;/div&gt;\n    );\n};\n</code></pre>\n<p>A component can detect if it has been wrapped in a <code>&lt;Disabled /&gt;</code> by accessing its <a href=\"https://react.dev/learn/passing-data-deeply-with-context\">context</a> using <code>Disabled.Context</code>.</p>\n<pre><code class=\"language-jsx\">function CustomButton( props ) {\n    const isDisabled = useContext( Disabled.Context );\n    return &lt;button { ...props } style={ { opacity: isDisabled ? 0.5 : 1 } } /&gt;;\n}\n</code></pre>\n<p><em>Note: this component may not behave as expected in browsers that don&#8217;t support <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert\">the <code>inert</code> HTML attribute</a>. We recommend adding <a href=\"https://github.com/WICG/inert\">the official WICG polyfill</a> when using this component in your project.</em></p>\n<h3>Props</h3>\n<p>The component accepts the following props:</p>\n<h4>isDisabled</h4>\n<p>Whether to disable all the descendant fields. Defaults to <code>true</code>.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 140,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134455",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134455",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134455/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155769,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134455/revisions/155769"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134455"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 157185,
+    "date": "2025-02-21T04:17:13",
+    "date_gmt": "2025-02-21T04:17:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/repeater/repeater-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:32",
+    "modified_gmt": "2025-02-21T04:17:32",
+    "slug": "repeater-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/repeater/repeater-tutorial/",
+    "title": {
+        "rendered": "Using the Repeater Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Repeater field</li>\n<li>Configure options:\n<ul>\n<li>Add sub fields</li>\n<li>Set min/max rows</li>\n<li>Choose layout style</li>\n<li>Configure labels</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Dynamic Content\n<ul>\n<li>Social media links</li>\n<li>Team members</li>\n<li>Feature lists</li>\n</ul>\n</li>\n<li>Content Management\n<ul>\n<li>Gallery items</li>\n<li>Related links</li>\n<li>Service offerings</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Plan field structure carefully</li>\n<li>Consider nesting depth</li>\n<li>Use clear labels</li>\n<li>Set appropriate limits</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157184,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157185",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157185",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157185/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157230,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157185/revisions/157230"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157184"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157185"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

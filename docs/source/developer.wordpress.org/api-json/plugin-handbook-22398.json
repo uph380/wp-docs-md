@@ -1,0 +1,97 @@
+{
+    "id": 22398,
+    "date": "2021-08-26T21:35:26",
+    "date_gmt": "2021-08-26T21:35:26",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=22398"
+    },
+    "modified": "2024-07-19T19:54:01",
+    "modified_gmt": "2024-07-19T19:54:01",
+    "slug": "responses-2",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/rest-api/responses-2/",
+    "title": {
+        "rendered": "Responses"
+    },
+    "content": {
+        "rendered": "<h2>Overview</h2>\n<p>Responses in the API are what holds all of the data we want. If we made a mistake in our request, our response&#8217;s data should also inform us that an error occurred. Responses in the WordPress REST API should return the data we requested or an error message. Responses in the API are handled by the <code>WP_REST_Response</code> class, one of the three infrastructural classes for the API.</p>\n<h2><a href=\"https://developer.wordpress.org/reference/classes/wp_rest_response/\" rel=\"class\">WP_REST_Response</a></h2>\n<p>The <code>WP_REST_Response</code> extends WordPress&#8217;s <code>WP_HTTP_Response</code> class, allowing us access to response headers, response status code, and response data.<br />\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">// The following code will not do anything and just serves as a demonstration.\n$response = new WP_REST_Response( 'This is some data' );\n\n// To get the response data we can use this method. It should equal 'This is some data'.\n$our_data = $response-&gt;get_data();\n\n// To access the HTTP status code we can use this method. The most common status code is probably 200, which means OK!\n$our_status = $response-&gt;get_status();\n\n// To access the HTTP response headers we can use this method.\n$our_headers = $response-&gt;get_headers();</code></pre></p>\n<p>The above is pretty straightforward and shows you how to get what you need out of a response. The <code>WP_REST_Response</code> takes things a bit further.  You can access the matched route for the response to backtrack which endpoint the response came from with <code>$response-&gt;get_matched_route()</code>. <code>$response-&gt;get_matched_handler()</code> will return the options registered for the endpoint that produced our response. These could be useful for logging the API among other things. The response class also helps us with error handling.</p>\n<h3>Error Handling</h3>\n<p>If something went terribly wrong in our request, we can return <code>WP_Error</code> objects in our endpoint callbacks explaining what went wrong, like this:<br />\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">// Register our mock batch endpoint.\nfunction prefix_register_broken_route() {\n    register_rest_route( 'my-namespace/v1', '/broken', array(\n        // Supported methods for this endpoint. WP_REST_Server::READABLE translates to GET.\n        'methods' =&gt; WP_REST_Server::READABLE,\n        // Register the callback for the endpoint.\n        'callback' =&gt; 'prefix_get_an_error',\n    ) );\n}\n\nadd_action( 'rest_api_init', 'prefix_register_broken_route' );\n\n/**\n * Our registered endpoint callback. Notice how we are passing in $request as an argument.\n * By default, the WP_REST_Server will pass in the matched request object to our callback.\n *\n * @param WP_REST_Request $request The current matched request object.\n */\nfunction prefix_get_an_error( $request ) {\n    return new WP_Error( 'oops', esc_html__( 'This endpoint is currently broken, try another endpoint, I promise the API is cool! EEEK!!!!', 'my-textdomain' ), array( 'status' =&gt; 400 ) );\n}</code></pre><br />\nThat is kind of a silly example but it touches on some key things. The most important thing to understand is that the WordPress REST API will automatically handle changing the <a href=\"https://developer.wordpress.org/reference/classes/wp_error/\" rel=\"class\">WP_Error</a> object into an HTTP Response containing your data.  When you set the status code in the <code>WP_Error</code> object your HTTP response status code will take on that value. This comes in really handy when you need to use different error codes like 404 for content that wasn&#8217;t found, or 403 for forbidden access. All we have to do is have our endpoint callbacks return a request and the <code>WP_REST_Server</code> class will handle a lot of really important things for us.</p>\n<p>There are other cool things the response class can help us with, like Linking.</p>\n<h2>Linking</h2>\n<p>What if we wanted to get a post and the first comment for that post? Would we write a separate endpoint to handle this use case? If we did that, we would need to start adding a lot of endpoints to handle various small use cases and our API index would get bloated really fast. Response Linking provides us a way to form relations between our resources that the API can understand. The API implements a standard known as HAL for resource linking. Let&#8217;s look at our post and comment example, it would be better to have routes for each resource. </p>\n<p>Let&#8217;s say we have post with ID = 1 and comment ID = 3. The comment is assigned to post 1, so realistically the two resources could live at the routes <code>/my-namespace/v1/posts/1</code> and <code>/my-namespace/v1/comments/3</code>. We would add links to the responses to create the relationships between them. Let&#8217;s look at this from the comment perspective first.<br />\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">// Register our mock endpoints.\nfunction prefix_register_my_routes() {\n    register_rest_route( 'my-namespace/v1', '/posts/(?P&lt;id&gt;[\\d]+)', array(\n        // Supported methods for this endpoint. WP_REST_Server::READABLE translates to GET.\n        'methods' =&gt; WP_REST_Server::READABLE,\n        // Register the callback for the endpoint.\n        'callback' =&gt; 'prefix_get_rest_post',\n    ) );\n    register_rest_route( 'my-namespace/v1', '/comments', array(\n        // Supported methods for this endpoint. WP_REST_Server::READABLE translates to GET.\n        'methods' =&gt; WP_REST_Server::READABLE,\n        // Register the callback for the endpoint.\n        'callback' =&gt; 'prefix_get_rest_comments',\n        // Register the post argument to limit results to a specific post parent.\n        'args' =&gt; array(\n            'post' =&gt; array(\n                'description' =&gt; esc_html__( 'The post ID that the comment is assigned to.', 'my-textdomain' ),\n                'type'        =&gt; 'integer',\n                'required'    =&gt; true,\n            ),\n        ),\n    ) );\n    register_rest_route( 'my-namespace/v1', '/comments/(?P&lt;id&gt;[\\d]+)', array(\n        // Supported methods for this endpoint. WP_REST_Server::READABLE translates to GET.\n        'methods' =&gt; WP_REST_Server::READABLE,\n        // Register the callback for the endpoint.\n        'callback' =&gt; 'prefix_get_rest_comment',\n    ) );\n}\n\nadd_action( 'rest_api_init', 'prefix_register_my_routes' );\n\n// Grab a post.\nfunction prefix_get_rest_post( $request ) {\n    $id = (int) $request['id'];\n    $post = get_post( $id );\n\n    $response = rest_ensure_response( array( $post ) );\n\n    $response-&gt;add_links( prefix_prepare_post_links( $post ) );\n\n    return $response;\n}\n\n// Prepare post links.\nfunction prefix_prepare_post_links( $post ) {\n    $links = array();\n\n    $replies_url = rest_url( 'my-namespace/v1/comments' );\n    $replies_url = add_query_arg( 'post', $post-&gt;ID, $replies_url );\n    $links['replies'] = array(\n\t\t'href'         =&gt; $replies_url,\n\t\t'embeddable'   =&gt; true,\n    );\n\n    return $links;\n}\n\n// Grab a comments.\nfunction prefix_get_rest_comments( $request ) {\n    if ( ! isset( $request['post'] ) ) {\n        return new WP_Error( 'rest_bad_request', esc_html__( 'You must specify the post parameter for this request.', 'my-text-domain' ), array( 'status' =&gt; 400 ) );\n    }\n\n    $data = array();\n\n    $comments = get_comments( array( 'post__in' =&gt; $request['post'] ) );\n\n    if ( empty( $comments ) ) {\n        return array();\n    }\n\n    foreach( $comments as $comment ) {\n        $response = rest_ensure_response( $comment );\n        $response-&gt;add_links( prefix_prepare_comment_links( $comment ) );\n        $data[] = prefix_prepare_for_collection( $response );\n    }\n\n    $response = rest_ensure_response( $data );\n    return $response;\n}\n\n// Grab a comment.\nfunction prefix_get_rest_comment( $request ) {\n    $id = (int) $request['id'];\n    $post = get_comment( $id );\n\n    $response = rest_ensure_response( $comment );\n\n    $response-&gt;add_links( prefix_prepare_comment_links( $comment ) );\n\n    return $response;\n}\n\n// Prepare comment links.\nfunction prefix_prepare_comment_links( $comment ) {\n    $links = array();\n    if ( 0 !== (int) $comment-&gt;comment_post_ID ) {\n        $post = get_post( $comment-&gt;comment_post_ID );\n        if ( ! empty( $post-&gt;ID ) ) {\n        $links['up'] = array(\n                'href'       =&gt; rest_url( 'my-namespace/v1/posts/' . $comment-&gt;comment_post_ID ),\n                'embeddable' =&gt; true,\n                'post_type'  =&gt; $post-&gt;post_type,\n            );\n        }\n    }\n    return $links;\n}\n\n/**\n * Prepare a response for inserting into a collection of responses.\n *\n * This is lifted from WP_REST_Controller class in the WP REST API v2 plugin.\n *\n * @param WP_REST_Response $response Response object.\n * @return array Response data, ready for insertion into collection data.\n */\nfunction prefix_prepare_for_collection( $response ) {\n\tif ( ! ( $response instanceof WP_REST_Response ) ) {\n\t\treturn $response;\n\t}\n\n\t$data = (array) $response-&gt;get_data();\n\t$server = rest_get_server();\n\n\tif ( method_exists( $server, 'get_compact_response_links' ) ) {\n\t\t$links = call_user_func( array( $server, 'get_compact_response_links' ), $response );\n\t} else {\n\t\t$links = call_user_func( array( $server, 'get_response_links' ), $response );\n\t}\n\n\tif ( ! empty( $links ) ) {\n\t\t$data['_links'] = $links;\n\t}\n\n\treturn $data;\n}</code></pre></p>\n<p>As you can see in the example above we are using links to create the relations between our resources.  If the post has comments, our endpoint callback will add a link to the comments route specifying the `post` parameter to match our current post ID. So if you were to follow that route you would now get the comments that have that assigned post ID. If you search for comments then each comment will have a link point `up` to the post. `up` has special meaning in links using the HAL spec. If we follow an up link for a comment then we will be returned the post that is the comment parent. Linking is pretty awesome, but it gets better.</p>\n<p>The WordPress REST API also supports what is referred to as embedding.  If you notice in both of the links we added, we specified that <code>embeddable =&gt; true</code>. This enables us to embed our linked data in our responses. So if we wanted to grab comment 3 and its assigned post we could make this request <code>https://ourawesomesite.com/wp-json/my-namespace/v1/comments/3?_embed</code>. The <code>_embed</code> parameter tells the API we want all of the embeddable resource links for our request to also be added to the API. Using embed is a performance gain as the multiple resources are all handled in one HTTP Request.</p>\n<p>Smart use of embedding and links make the WordPress REST API incredibly flexible and powerful for interacting with WordPress.</p>\n",
+        "protected": false
+    },
+    "author": 14582129,
+    "featured_media": 0,
+    "parent": 22370,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-22398",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22398",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14582129"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22398/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 22546,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22398/revisions/22546"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22370"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=22398"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 152060,
+    "date": "2024-01-26T16:43:01",
+    "date_gmt": "2024-01-26T16:43:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=152060"
+    },
+    "modified": "2024-01-26T16:45:09",
+    "modified_gmt": "2024-01-26T16:45:09",
+    "slug": "build-process",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/build-process/",
+    "title": {
+        "rendered": "Build Process"
+    },
+    "content": {
+        "rendered": "\n<p>A build process is a method of converting source code files into a final build/production version that can be read by the computer. In particular, themes will most often be minifying or converting source code into CSS or JavaScript so that they can be read by the browser.</p>\n\n\n\n<p>When creating a WordPress theme, you may find yourself in need of a build process to handle more complex projects. There are many systems to choose from, and you can use whatever you prefer. But WordPress also offers a standard package that you can be assured is continually updated and should cover most of your needs.</p>\n\n\n\n<p>In this article, you will learn how to integrate with the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/\"><code>@wordpress/scripts</code></a> package to handle your theme\u2019s build process.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Prerequisites</h2>\n\n\n\n<p>Most of WordPress theme development is pretty much plug and play. You just need a code editor and an install of WordPress in some type of development environment as outlined in <a href=\"https://developer.wordpress.org/themes/getting-started/tools-and-setup/\">Tools and Setup</a>. But to work with a build process, there are some other requirements:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>You need to have <a href=\"https://docs.npmjs.com/downloading-and-installing-node-js-and-npm\">Node.js and npm installed</a> on your local machine.</li>\n\n\n\n<li>A basic <a href=\"https://webpack.js.org/concepts/\">understanding of webpack</a> is also highly recommended.</li>\n\n\n\n<li>Some familiarity with the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/\"><code>@wordpress/scripts</code></a> package (read <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/\">Getting started with wp-scripts</a> in the Block Editor Handbook).</li>\n</ul>\n\n\n\n<p>These are more advanced tools than what is normally required to build themes, but they are necessary if you want to work with the standard WordPress build process.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Setting up your files and folders</h2>\n\n\n\n<p>The <code>@wordpress/scripts</code> package was originally created for block development, but it evolved to also work with themes over time. By default, it expects that development files live in the <code>/src</code> folder and will output build files in the <code>/build</code> folder. Because most theme authors utilize a custom system for working with assets, this guide will show you how to do that.</p>\n\n\n\n<p>For the examples that follow, you will use this structure within your theme folder:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>public/</code></li>\n\n\n\n<li><code>resources/</code>\n<ul class=\"wp-block-list\">\n<li><code>js/</code>\n<ul class=\"wp-block-list\">\n<li><code>editor.js</code></li>\n</ul>\n</li>\n\n\n\n<li><code>scss/</code>\n<ul class=\"wp-block-list\">\n<li><code>editor.scss</code></li>\n\n\n\n<li><code>screen.scss</code></li>\n</ul>\n</li>\n</ul>\n</li>\n\n\n\n<li><code>package.json</code></li>\n\n\n\n<li><code>webpack.config.js</code></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Installing the WordPress scripts package</h2>\n\n\n\n<p>Once you have your files and folders set up, you need to install the correct packages on your local machine.</p>\n\n\n\n<p>First, open your theme\u2019s <code>package.json</code> file and add the following code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"name\": \"your-project-name\",\n\t\"scripts\": {\n\t\t\"start\": \"wp-scripts start --webpack-src-dir=resources --output-path=public\",\n\t\t\"build\": \"wp-scripts build --webpack-src-dir=resources --output-path=public\"\n\t}\n}</code></pre>\n\n\n\n<p>The <code>@wordpress/scripts</code> package has several other <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/#available-scripts\">available scripts</a> that you can add, but you will definitely need <code>start</code> and <code>build</code>.</p>\n\n\n\n<p>Now open your command line tool on your computer, navigate to your theme folder, and input the following command:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">npm install @wordpress/scripts path webpack-remove-empty-scripts --save-dev</code></pre>\n\n\n\n<p>That command installs three packages:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>@wordpress/scripts</code></li>\n\n\n\n<li><code>path</code></li>\n\n\n\n<li><code>webpack-remove-empty-scripts</code></li>\n</ul>\n\n\n\n<p>The latter two are third-party packages, but they are useful for integrating with webpack in the next step.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Configuring webpack</h2>\n\n\n\n<p>The <code>@wordpress/scripts</code> package is built on top of webpack. If you were building a block, everything would already be in place for you. However, because you are building a theme, you need to overwrite some of the default configuration of the <code>@wordpress/scripts</code> package with your own.</p>\n\n\n\n<p>That\u2019s where your theme\u2019s custom <code>webpack.config.js</code> file comes in. There two primary things you need to configure:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The entry points for your custom CSS and JavaScript files (those in the code below correspond to the file structure in this article).</li>\n\n\n\n<li>The <code>webpack-remove-empty-scripts</code> plugin so that there are no leftover <code>.js</code> files mapped to your CSS.</li>\n</ul>\n\n\n\n<p>Add the following code to your <code>webpack.config.js</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">// WordPress webpack config.\nconst defaultConfig = require( '@wordpress/scripts/config/webpack.config' );\n\n// Plugins.\nconst RemoveEmptyScriptsPlugin = require( 'webpack-remove-empty-scripts' );\n\n// Utilities.\nconst path = require( 'path' );\n\n// Add any new entry points by extending the webpack config.\nmodule.exports = {\n\t...defaultConfig,\n\t...{\n\t\tentry: {\n\t\t\t'js/editor':  path.resolve( process.cwd(), 'resources/js',   'editor.js'   ),\n\t\t\t'css/screen': path.resolve( process.cwd(), 'resources/scss', 'screen.scss' ),\n\t\t\t'css/editor': path.resolve( process.cwd(), 'resources/scss', 'editor.scss' ),\n\t\t},\n\t\tplugins: [\n\t\t\t// Include WP's plugin config.\n\t\t\t...defaultConfig.plugins,\n\n\t\t\t// Removes the empty `.js` files generated by webpack but\n\t\t\t// sets it after WP has generated its `*.asset.php` file.\n\t\t\tnew RemoveEmptyScriptsPlugin( {\n\t\t\t\tstage: RemoveEmptyScriptsPlugin.STAGE_AFTER_PROCESS_PLUGINS\n\t\t\t} )\n\t\t]\n\t}\n};</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Using the WordPress scripts package</h2>\n\n\n\n<p>To use the WordPress scripts package to process your assets, you can run one of two commands in your command line tool:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>start</code>: Builds the development version of your files and activates \u201cwatch\u201d mode, which will process any code changes while enabled.</li>\n\n\n\n<li><code>build</code>: Builds the production version of your files.</li>\n</ul>\n\n\n\n<p>Now open your command line tool and run the <code>start</code> command:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">npm run start</code></pre>\n\n\n\n<p>It should automatically process your files from the <code>/resources</code> folder and place them in the <code>/public</code> folder with this structure:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>public/</code>\n<ul class=\"wp-block-list\">\n<li><code>js/</code>\n<ul class=\"wp-block-list\">\n<li><code>editor.js</code></li>\n\n\n\n<li><code>editor.asset.php</code></li>\n</ul>\n</li>\n\n\n\n<li><code>scss/</code>\n<ul class=\"wp-block-list\">\n<li><code>editor.scss</code></li>\n\n\n\n<li><code>editor.asset.php</code></li>\n\n\n\n<li><code>screen.scss</code></li>\n\n\n\n<li><code>screen.asset.php</code></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>You\u2019ll now see new <code>*.asset.php</code> files generated for each of your CSS and JavaScript files. These will contain metadata about each asset file that you can use when loading your files. This is covered in the \u201cLoading scripts and styles\u201d section below.</p>\n\n\n\n<p>To disable the <code>start</code> command, type <code>Ctrl + C</code> (on either Windows or Mac) of your command line tool.</p>\n\n\n\n<p>Once you\u2019re ready to do a final production build of your files, run this command in your command line tool:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">npm run build</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Loading scripts and styles</h2>\n\n\n\n<p>The methods for loading scripts and styles are already covered in depth in the <a href=\"https://developer.wordpress.org/themes/core-concepts/including-assets/\">Including Assets</a> documentation in this handbook. You should already be familiar with how to do this before proceeding with the next steps.</p>\n\n\n\n<p>The documentation below is primarily geared towards teaching you how the <code>*.asset.php</code> file is generated for each asset. In each file, you will see an array that looks similar to the following snippet:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php return array('dependencies' =&gt; array('wp-block-editor'), 'version' =&gt; '2eae4c519afeff2a8c77');</code></pre>\n\n\n\n<p>In particular, the array will have two pieces of metadata that you can use in any <code>wp_enqueue_*()</code> functions:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>dependencies</code>:</strong> An array of dependencies that your script/style rely on.</li>\n\n\n\n<li><strong><code>version</code>:</strong> A version number that you can use for cache busting.</li>\n</ul>\n\n\n\n<p>Because the file returns the array, you can use PHP\u2019s <code>include</code> to assign the array to a variable in your code. The following example shows getting the array for the <code>screen.asset.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$asset = include get_theme_file_path( 'public/css/screen.asset.php' );\n// Returns: array( 'dependencies' =&gt; array(), 'version' =&gt; '0000' );</code></pre>\n\n\n\n<p>When loading a script or style using either <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_script/\"><code>wp_enqueue_script()</code></a> or <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_style/\"><code>wp_enqueue_style()</code></a>, you can pass <code>$asset['dependencies']</code> and <code>$asset['version']</code> to the corresponding parameters in the functions.</p>\n\n\n\n<p>Try adding the following code to your theme\u2019s <code>functions.php</code> file to load the assets that you\u2019ve previously defined:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// Load front-end assets.\nadd_action( 'wp_enqueue_scripts', 'themeslug_assets' );\n\nfunction themeslug_assets() {\n\t$asset = include get_theme_file_path( 'public/css/screen.asset.php' );\n\n\twp_enqueue_style(\n\t\t'themeslug-style',\n\t\tget_theme_file_uri( 'public/css/screen.css' ),\n\t\t$asset['dependencies'],\n\t\t$asset['version']\n\t);\n}\n\n// Load editor stylesheets.\nadd_action( 'after_setup_theme', 'themeslug_editor_styles' );\n\nfunction themeslug_editor_styles() {\n\tadd_editor_style( [\n\t\tget_theme_file_uri( 'public/css/screen.css' )\n\t] );\n}\n\n// Load editor scripts.\nadd_action( 'enqueue_block_editor_assets', 'themeslug_editor_assets' );\n\nfunction themeslug_editor_assets() {\n\t$script_asset = include get_theme_file_path( 'public/js/editor.asset.php'  );\n\t$style_asset  = include get_theme_file_path( 'public/css/editor.asset.php' );\n\n\twp_enqueue_script(\n\t\t'themeslug-editor',\n\t\tget_theme_file_uri( 'public/js/editor.js' ),\n\t\t$script_asset['dependencies'],\n\t\t$script_asset['version'],\n\t\ttrue\n\t);\n\n\twp_enqueue_style(\n\t\t'themeslug-editor',\n\t\tget_theme_file_uri( 'public/css/editor.css' ),\n\t\t$style_asset['dependencies'],\n\t\t$style_asset['version']\n\t);\n}</code></pre>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152060",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152060",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152060/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152062,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152060/revisions/152062"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152060"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

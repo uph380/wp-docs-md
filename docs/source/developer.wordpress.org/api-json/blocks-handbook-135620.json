@@ -1,0 +1,91 @@
+{
+    "id": 135620,
+    "date": "2021-04-21T15:39:48",
+    "date_gmt": "2021-04-21T15:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/"
+    },
+    "modified": "2024-09-16T16:39:56",
+    "modified_gmt": "2024-09-16T16:39:56",
+    "slug": "block-api-versions",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/",
+    "title": {
+        "rendered": "API Versions"
+    },
+    "content": {
+        "rendered": "<p>This document lists the changes made between the different API versions.</p>\n<h2>Version 3 (&gt;= WordPress 6.3)</h2>\n<ul>\n<li>The post editor will be iframed if all registered blocks have a Block API version 3 or higher. Adding version 3 support means that the block should work inside an iframe, though the block may still be rendered outside the iframe if not all blocks support version 3.</li>\n</ul>\n<h2>Version 2 (&gt;= WordPress 5.6)</h2>\n<ul>\n<li>To render the block element wrapper for the block&#8217;s <code>edit</code> implementation, the block author must use the <code>useBlockProps()</code> hook.</li>\n<li>The generated class names and styles are no longer added automatically to the saved markup for static blocks when <code>save</code> is processed. To include them, the block author must explicitly use <code>useBlockProps.save()</code> and add to their block wrapper.</li>\n</ul>\n<h2>Version 1</h2>\n<p>Initial version.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134406,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135620",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135620",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135620/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155229,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135620/revisions/155229"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135620"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 25136,
+    "date": "2017-01-13T08:04:07",
+    "date_gmt": "2017-01-13T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25136"
+    },
+    "modified": "2022-11-01T01:15:44",
+    "modified_gmt": "2022-11-01T01:15:44",
+    "slug": "images",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/media/images/",
+    "title": {
+        "rendered": "Images"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Images</h2>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">This section describes the handling of images in the Media Library. If you want to display the image file located within your theme directory, just specify the location with the img tag, and style it with CSS.</p>\n<pre>&lt;img alt=\"\" src=\"\" /&gt;</pre>\n<p></div></div>\n\n\n\n\n<h3 class=\"wp-block-heading\">Getting img code</h3>\n\n\n\n<p>To display the image in the Media Library, use <code><a href=\"https://developer.wordpress.org/reference/functions/wp_get_attachment_image/\">wp_get_attachment_image()</a></code> function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">echo wp_get_attachment_image( $attachment-&gt;ID, 'thumbnail' );</code></pre>\n\n\n\n<p>You will get the following HTML output with the selected thumbnail size</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;img width=\"150\" height=\"150\" src=\"http://example.com/wordpress/wp-content/uploads/2016/11/sample-150x150.jpg\" class=\"attachment-thumbnail size-thumbnail\" ... /&gt;</code></pre>\n\n\n\n<p>You can specify other size such as &#8216;full&#8217; for original image or &#8216;medium&#8217; and &#8216;large&#8217; for the sizes set at <strong>Settings &gt; Media</strong> in the <a href=\"https://codex.wordpress.org/Administration_Screens\">Administration Screen</a>, or any pair of width and height as array. You&#8217;re also free to set custom size strings with <a href=\"https://developer.wordpress.org/reference/functions/add_image_size/\" rel=\"function\">add_image_size()</a> ;</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">echo wp_get_attachment_image( $attachment-&gt;ID, array(640, 480) );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Getting URL of image</h3>\n\n\n\n<p>If you want to get the URL of the image, use <code><a href=\"https://developer.wordpress.org/reference/functions/wp_get_attachment_image_src/\">wp_get_attachment_image_src()</a></code>. It returns an array (URL, width, height, is_intermediate), or <code>false</code>, if no image is available.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php \n$image_attributes = wp_get_attachment_image_src( $attachment-&gt;ID );\nif ( $image_attributes ) : ?&gt;\n    &lt;img src=\"&lt;?php echo $image_attributes[0]; ?&gt;\" width=\"&lt;?php echo $image_attributes[1]; ?&gt;\" height=\"&lt;?php echo $image_attributes[2]; ?&gt;\" /&gt;\n&lt;?php endif; ?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Alignments</h3>\n\n\n\n<p>When adding the image in your site, you can specify the image alignment as right, left, center or none. WordPress core automatically adds CSS classes to align the image:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>alignright</li>\n\n\n\n<li>alignleft</li>\n\n\n\n<li>aligncenter</li>\n\n\n\n<li>alignnone</li>\n</ul>\n\n\n\n<p>This is the sample output when center align si chosen</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;img class=\"aligncenter size-full wp-image-131\" src= ... /&gt;</code></pre>\n\n\n\n<p>In order to take advantage of these CSS classes for alignment and text wrapping, your theme must include the styles in a stylesheet such as the <a href=\"https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/\">main stylesheet file</a>. You can use the <code>style.css</code> bundled with official themes such as Twenty Seventeen for reference.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Caption</h3>\n\n\n\n<p>If a Caption was specified to image in the Media Library, HTML <code>img</code> element was enclosed by the shortcode [caption] and [/caption].</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;div class=\"mceTemp\"&gt;\n  &lt;dl id=\"attachment_133\" class=\"wp-caption aligncenter\" style=\"width: 1210px\"&gt;\n    &lt;dt class=\"wp-caption-dt\"&gt;\n      &lt;img class=\"size-full wp-image-133\" src=\"http://example.com/wordpress/wp-content/uploads/2016/11/sample.jpg\" alt=\"sun set\" width=\"1200\" height=\"400\" /&gt;\n    &lt;/dt&gt;\n    &lt;dd class=\"wp-caption-dd\"&gt;Sun set over the sea&lt;/dd&gt;\n  &lt;/dl&gt;\n&lt;/div&gt;</code></pre>\n\n\n\n<p>And, it will be rendered as in HTML as the figure tag:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;figure id=\"attachment_133\" style=\"width: 1200px\" class=\"wp-caption aligncenter\"&gt;\n  &lt;img class=\"size-full wp-image-133\" src=\"http://example.com/wordpress/wp-content/uploads/2016/11/sample.jpg\" alt=\"sun set\" width=\"1200\" height=\"400\" srcset= ... /&gt;\n  &lt;figcaption class=\"wp-caption-text\"&gt;Sun set over the sea&lt;/figcaption&gt;\n&lt;/figure&gt;</code></pre>\n\n\n\n<p>Similar to alignments, your theme must include following styles.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>wp-caption</code></li>\n\n\n\n<li><code>wp-caption-text</code></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">WebP support and default MIME type of sub size image output</h2>\n\n\n\n<p><a href=\"https://make.wordpress.org/core/2021/06/07/wordpress-5-8-adds-webp-support/\">WordPress 5.8</a> introduces support for <a href=\"https://developers.google.com/speed/webp\">WebP</a> image format which provides improved lossless and lossy compression for images on the web. WebP images are around 30% smaller on average than their JPEG or PNG equivalents, resulting in sites that are faster and use less bandwidth. WebP is supported in all modern browsers&nbsp;<a href=\"https://caniuse.com/webp\">according to caniuse</a>.</p>\n\n\n\n<p>When images are uploaded, WordPress generates smaller sub sizes as defined using&nbsp;<code>add_image_size()</code>. By default, WordPress will generate these sub sizes in the same format as the original. Because of the performance benefits of the WebP format, it may be desirable for sub sizes to be generated in WebP instead of the original format.</p>\n\n\n\n<p><code>image_editor_output_format</code>&nbsp;filter hook can be used to change the file format used for image sub sizes. This can be used to switch all sub sizes to WebP, or any other desired format (JPEG, etc.).</p>\n\n\n\n<p>The following example shows how to generate all sub sizes for JPG images using WebP:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction wporg_image_editor_output_format( $formats ) {\n    $formats['image/jpg'] = 'image/webp';\n \n    return $formats;\n}\nadd_filter( 'image_editor_output_format', 'wporg_image_editor_output_format' );</code></pre>\n\n\n\n<p><strong>Note:</strong>&nbsp;both the GD and ImageMagick libraries support the WebP format in both lossy and lossless. However, only ImageMagick supports animated images.</p>\n\n\n\n<p>Setting the output format to WebP will verify if the web server supports it, and if not it will not change the format, i.e. won\u2019t work.</p>\n\n\n\n<h4 class=\"wp-block-heading\">References</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_get_attachment_image/\">wp_get_attachment_image()</a></code></li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_get_attachment_image_src/\">wp_get_attachment_image_src()</a></code></li>\n\n\n\n<li><a href=\"https://codex.wordpress.org/Styling_Images_in_Posts_and_Pages\">Styling Images in Posts and Pages</a></li>\n\n\n\n<li><a href=\"https://codex.wordpress.org/CSS\">CSS (Codex)</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 14467238,
+    "featured_media": 0,
+    "parent": 11360,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25136",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25136",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14467238"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25136/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143717,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25136/revisions/143717"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11360"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25136"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

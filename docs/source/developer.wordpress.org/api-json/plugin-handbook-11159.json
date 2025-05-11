@@ -1,0 +1,97 @@
+{
+    "id": 11159,
+    "date": "2014-10-19T18:11:30",
+    "date_gmt": "2014-10-19T18:11:30",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11159"
+    },
+    "modified": "2022-11-17T06:08:53",
+    "modified_gmt": "2022-11-17T06:08:53",
+    "slug": "understanding-wp-cron-scheduling",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/cron/understanding-wp-cron-scheduling/",
+    "title": {
+        "rendered": "Understanding WP-Cron Scheduling"
+    },
+    "content": {
+        "rendered": "\n<p>Unlike a traditional system cron that schedules tasks for specific times (e.g. &#8220;every hour at 5 minutes past the hour&#8221;), WP-Cron uses intervals to simulate a system cron. </p>\n\n\n\n<p>WP-Cron is given two arguments: the time for the first task, and an interval (in seconds) after which the task should be repeated. For example, if you schedule a task to begin at 2:00PM with an interval of 300 seconds (five minutes), the task would first run at 2:00PM and then again at 2:05PM, then again at 2:10PM, and so on, every five minutes.</p>\n\n\n\n<p>To simplify scheduling tasks, WordPress provides some default intervals and an easy method for adding custom intervals.</p>\n\n\n\n<p>The default intervals provided by WordPress&nbsp;are:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>hourly</li><li>twicedaily</li><li>daily</li><li>weekly (since WP 5.4)</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Intervals</h2>\n\n\n\n<p>To add a custom interval, you can create a filter, such as:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_filter( 'cron_schedules', 'example_add_cron_interval' );\nfunction example_add_cron_interval( $schedules ) { \n    $schedules['five_seconds'] = array(\n        'interval' =&gt; 5,\n        'display'  =&gt; esc_html__( 'Every Five Seconds' ), );\n    return $schedules;\n}</code></pre>\n\n\n\n<p>This filter function creates a new interval that will allow us to run a cron task every five seconds.</p>\n\n\n\n<p><strong>Note:</strong> All intervals are in seconds.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11157,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11159",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11159",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11159/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144330,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11159/revisions/144330"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11159"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

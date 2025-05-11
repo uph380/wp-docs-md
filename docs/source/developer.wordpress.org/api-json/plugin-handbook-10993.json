@@ -1,0 +1,97 @@
+{
+    "id": 10993,
+    "date": "2014-09-18T03:13:38",
+    "date_gmt": "2014-09-18T03:13:38",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10993"
+    },
+    "modified": "2020-07-31T16:46:31",
+    "modified_gmt": "2020-07-31T16:46:31",
+    "slug": "tinymce-enhanced-shortcodes",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/shortcodes/tinymce-enhanced-shortcodes/",
+    "title": {
+        "rendered": "TinyMCE Enhanced Shortcodes"
+    },
+    "content": {
+        "rendered": "\n<p>It&#8217;s possible to parse shortcodes within the visual editor of TinyMCE and make them render actual content, rather than the shortcode itself.</p>\n\n\n\n<p>Switching to the <code>Text</code> tab allows you to see the actual shortcode again.</p>\n\n\n\n<p>Below are the built-in WordPress shortcodes that use this functionality.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Audio Shortcode</h2>\n\n\n\n<p>The <code>[audio]</code> shortcode allows you to embed a single audio file.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1260\" height=\"318\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-01.png?resize=1260%2C318&#038;ssl=1\" alt=\"\" class=\"wp-image-11237\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-01.png?w=1260&amp;ssl=1 1260w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-01.png?resize=300%2C75&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-01.png?resize=1024%2C258&amp;ssl=1 1024w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Caption Shortcode</h2>\n\n\n\n<p>The <code>[caption]</code> shortcode wraps the image in a div and puts a <code>&lt;p class=\"wp-caption-text\"&gt;</code> tag around the caption.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"737\" height=\"502\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-02.png?resize=737%2C502&#038;ssl=1\" alt=\"\" class=\"wp-image-11239\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-02.png?w=737&amp;ssl=1 737w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-02.png?resize=300%2C204&amp;ssl=1 300w\" sizes=\"auto, (max-width: 737px) 100vw, 737px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Gallery Shortcode</h2>\n\n\n\n<p>The <code>[gallery]</code> shortcode allows you to embed several images at once in a div.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1006\" height=\"912\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-03.png?resize=1006%2C912&#038;ssl=1\" alt=\"\" class=\"wp-image-11236\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-03.png?w=1006&amp;ssl=1 1006w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-03.png?resize=300%2C271&amp;ssl=1 300w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Playlist Shortcode</h2>\n\n\n\n<p>The <code>[playlist]</code> shortcode allows you to attach more than one media file and render with an html5 playlist.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1272\" height=\"730\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-04.png?resize=1272%2C730&#038;ssl=1\" alt=\"\" class=\"wp-image-11238\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-04.png?w=1272&amp;ssl=1 1272w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-04.png?resize=300%2C172&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-04.png?resize=1024%2C587&amp;ssl=1 1024w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Video Shortcode</h2>\n\n\n\n<p>The <code>[video]</code> shortcode is very similar to the <code>[audio]</code> shortcode, it simply renders a video instead of audio.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1270\" height=\"940\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-05.png?resize=1270%2C940&#038;ssl=1\" alt=\"\" class=\"wp-image-11240\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-05.png?w=1270&amp;ssl=1 1270w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-05.png?resize=300%2C222&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2014/09/shortcodes-tinymce-enhanced-shortcodes-05.png?resize=1024%2C757&amp;ssl=1 1024w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure></div>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10983,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10993",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10993",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10993/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129846,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10993/revisions/129846"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10983"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10993"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

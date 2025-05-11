@@ -1,0 +1,109 @@
+{
+    "id": 11164816,
+    "date": "2019-02-04T05:15:27",
+    "date_gmt": "2019-02-04T05:15:27",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11164816"
+    },
+    "modified": "2024-06-08T19:55:14",
+    "modified_gmt": "2024-06-08T19:55:14",
+    "slug": "tools-export-personal-data-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tools-export-personal-data-screen/",
+    "title": {
+        "rendered": "Tools Export Personal Data screen"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress 4.9.6 included a feature to archive user data for export. Export Personal Data tool can generate a (<code>.zip</code> format) file containing the personal data which exists about a user within your WordPress site.\n</p>\n\n\n\n<p>Note: As this tool ONLY gathers data from WordPress and\nparticipating plugins, you may need to go beyond to comply with export\nrequests.\n</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using Export Personal Data</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Basic Usage</h3>\n\n\n\n<p>Export Personal Data tool uses email validation to send a user&#8217;s request to an administrator.\n</p>\n\n\n\n<p>1. Select <strong>Tools</strong> -&gt; <strong>Export Personal Data</strong> from Administration Screens. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11158276\"><img loading=\"lazy\" decoding=\"async\" width=\"1083\" height=\"603\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6-1.jpg?fit=1083%2C603&amp;ssl=1\" alt=\"\" class=\"wp-image-11158276\" srcset=\"https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6-1.jpg 1083w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6-1-300x167.jpg 300w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6-1-1024x570.jpg 1024w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6-1-768x428.jpg 768w\" sizes=\"auto, (max-width: 1083px) 100vw, 1083px\" /></a><figcaption>Export Personal Data Screen</figcaption></figure>\n\n\n\n<p>2. Specify Username or email address and click <strong>Send Request</strong>.<br />\nIf Confirmation request initiated successfully, the request will be shown in below Requester Table and <strong>Status</strong> will be changed to <em>Pending</em>.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/exportpersonaldata_4-9-6_pending/\"><img loading=\"lazy\" decoding=\"async\" width=\"879\" height=\"260\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_pending.jpg?fit=879%2C260&amp;ssl=1\" alt=\"\" class=\"wp-image-11158266\" srcset=\"https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_pending.jpg 879w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_pending-300x89.jpg 300w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_pending-768x227.jpg 768w\" sizes=\"auto, (max-width: 879px) 100vw, 879px\" /></a><figcaption>Export Personal Data Pending Screen</figcaption></figure>\n\n\n\n<p>User will receive the following mail with subject &#8216;[&lt;site_name&gt;] Confirm Action: Extract Personal Data&#8217;.\n</p>\n\n\n\n<pre class=\"wp-block-preformatted\">Howdy,\n\nA request has been made to perform the following action on your account:\n\n     Export Personal Data\n\nTo confirm this, please click on the following link:\nhttps://&lt;site_address&gt;/wp-login.php?action=confirmaction&request_id=94&confirm_key=99rqZB4CcRct8JwL55Ov\n\nYou can safely ignore and delete this email if you do not want to\ntake this action.\n\nThis email has been sent to atachibana@unofficialtokyo.com.\n\nRegards,\nAll at &lt;site_name&gt;\nhttp://&lt;site_address&gt;/\n</pre>\n\n\n\n<p>3. If user click link in the mail, below page is shown.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/exportpersonaldata_4-9-6_confirmation/\"><img loading=\"lazy\" decoding=\"async\" width=\"370\" height=\"377\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmation.jpg?fit=370%2C377&amp;ssl=1\" alt=\"\" class=\"wp-image-11158262\" srcset=\"https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmation.jpg 370w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmation-294x300.jpg 294w\" sizes=\"auto, (max-width: 370px) 100vw, 370px\" /></a></figure>\n\n\n\n<p>At the same time, the Status of Request will be changed to <em>Confirmed</em>, and <strong>Next Steps</strong> shows <strong>Email Data</strong> button.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/exportpersonaldata_4-9-6_confirmed/\"><img loading=\"lazy\" decoding=\"async\" width=\"878\" height=\"252\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed.jpg?fit=878%2C252&amp;ssl=1\" alt=\"\" class=\"wp-image-11158263\" srcset=\"https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed.jpg 878w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed-300x86.jpg 300w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed-768x220.jpg 768w\" sizes=\"auto, (max-width: 878px) 100vw, 878px\" /></a><figcaption>Export Personal Data Confirmed Screen</figcaption></figure>\n\n\n\n<p>4. Click <strong>Email Data</strong>.<br /> <strong>Next Steps</strong> will be changed to <strong>Email Sent</strong>.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/exportpersonaldata_4-9-6_confirmed-2/\"><img loading=\"lazy\" decoding=\"async\" width=\"878\" height=\"252\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed-1.jpg?fit=878%2C252&amp;ssl=1\" alt=\"\" class=\"wp-image-11158319\" srcset=\"https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed-1.jpg 878w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed-1-300x86.jpg 300w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_confirmed-1-768x220.jpg 768w\" sizes=\"auto, (max-width: 878px) 100vw, 878px\" /></a></figure>\n\n\n\n<p>User will receive following mail with subject &#8216;[&lt;site_name&gt;] Personal Data Export&#8217;.\n</p>\n\n\n\n<pre class=\"wp-block-preformatted\">Howdy,\n\nYour request for an export of personal data has been completed. You may\ndownload your personal data by clicking on the link below. For privacy\nand security, we will automatically delete the file on &lt;expired_date&gt;,\nso please download it before then.\n\nhttps://&lt;site_address&gt;/wp-content/uploads/sites/3/wp-personal-data-exports/wp-personal-data-file-atachibana-at-unofficialtokyo-com-TONWbmz8GqwFi5ScUBTrClel0zc4DkU0.zip\n\nThis email has been sent to atachibana@unofficialtokyo.com.\n\nRegards,\nAll at &lt;site_name&gt;\nhttp://&lt;site_address&gt;\n</pre>\n\n\n\n<p><strong>Note:</strong> Link is available only 48 hours. </p>\n\n\n\n<p>5. If user click the link, <code>.zip</code> file will be downloaded that includes one index.html file. For detail format, refer below section Exported Personal Data. </p>\n\n\n\n<p>At the same time, the <strong>Status</strong> of Request will be changed to <em>Completed</em>, and <strong>Next Steps</strong> displays <strong>Remove request</strong> button.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://codex.wordpress.org/images/thumb/c/ca/ExportPersonalData_4.9.6_completed.jpg/600px-ExportPersonalData_4.9.6_completed.jpg\"><img decoding=\"async\" src=\"https://codex.wordpress.org/images/thumb/c/ca/ExportPersonalData_4.9.6_completed.jpg/600px-ExportPersonalData_4.9.6_completed.jpg\" alt=\"ExportPersonalData 4.9.6 completed.jpg\" /></a></figure>\n\n\n\n<p>6. Click <strong>Remove request</strong>. The request will be removed.\n</p>\n\n\n\n<p>Note: There are no &#8216;Trash&#8217; status such as Posts&#8217;.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Downloading Personal Data</h3>\n\n\n\n<p>You can download Personal Data from popup menu <strong>Download Personal Data</strong>.\n</p>\n\n\n\n<ol class=\"wp-block-list\"><li> Move mouse cursor on the Requester&#8217;s mail address in the Requester Table. <strong>Download Personal Data</strong> will be displayed. </li><li> Click <strong>Download Personal Data</strong>.</li></ol>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://codex.wordpress.org/images/thumb/0/09/ExportPersonalData_4.9.6_download.jpg/600px-ExportPersonalData_4.9.6_download.jpg\"><img decoding=\"async\" src=\"https://codex.wordpress.org/images/thumb/0/09/ExportPersonalData_4.9.6_download.jpg/600px-ExportPersonalData_4.9.6_download.jpg\" alt=\"ExportPersonalData 4.9.6 download.jpg\" /></a></figure>\n\n\n\n<p><code>.zip</code> file will be downloaded that includes one index.html file. For detail format, refer below section Exported Personal Data.<br /> At the same time, the Status of Request will be changed to <em>Completed</em>, and <strong>Next Steps</strong> shows <strong>Remove request</strong> button. </p>\n\n\n\n<p>Note: Even in the <em>Pending</em> status, you can download the Personal Data.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filtering Request</h3>\n\n\n\n<p>You can filter requests by Status or Requester&#8217;s mail address.\n</p>\n\n\n\n<p>To Filter by Status\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Click <strong>All</strong>, <strong>Pending</strong>, <strong>Confirmed</strong>, <strong>Failed</strong> and <strong>Completed</strong> above Requester Table.</li></ul>\n\n\n\n<p>To Filter by Requester&#8217;s email address\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Insert full or part of email address in the box above Requester Table, and Click <strong>Search Results</strong>.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Resending the mail</h3>\n\n\n\n<ol class=\"wp-block-list\"><li> Select checkbox of the Request that you want to resend the mail.</li><li> Select <strong>Resend email</strong> from <strong>Bulk Actions</strong> dropdown box and click <strong>Apply</strong>.</li></ol>\n\n\n\n<h3 class=\"wp-block-heading\">Removing Request</h3>\n\n\n\n<ol class=\"wp-block-list\"><li> Select checkbox of the Request that you want to remove.</li><li> Select <strong>Remove</strong> from <strong>Bulk Actions</strong> dropdown box and click <strong>Apply</strong>.</li></ol>\n\n\n\n<h2 class=\"wp-block-heading\">Exported Personal Data</h2>\n\n\n\n<p>In the <code>.zip</code> file, one <code>index.html</code> file exists. To see the data double click the icon from Explorer (Windows) or Finder (Mac).\n</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/exportpersonaldata_4-9-6_indexhtml/\"><img loading=\"lazy\" decoding=\"async\" width=\"994\" height=\"526\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_indexhtml.jpg?fit=994%2C526&amp;ssl=1\" alt=\"\" class=\"wp-image-11158265\" srcset=\"https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_indexhtml.jpg 994w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_indexhtml-300x159.jpg 300w, https://wordpress.org/documentation/files/2019/02/ExportPersonalData_4.9.6_indexhtml-768x406.jpg 768w\" sizes=\"auto, (max-width: 994px) 100vw, 994px\" /></a></figure>\n\n\n\n<p>Export Personal Data tool only exports data from WordPress and participating plugins.\nFrom WordPress, following data are exported as Personal Data:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> About WordPress site</li><li> User Information</li><li> Comments</li><li> Media</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress 4.9.6 included a feature to archive user data for export. Export Personal Data tool can generate a (.zip format) file containing the personal data which exists about a user within your WordPress site. Note: As this tool ONLY gathers data from WordPress and participating plugins, you may need to go beyond to comply with [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11164816",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11164816",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11164816"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11164816/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360422,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11164816/revisions/16360422"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11164816"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11164816"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

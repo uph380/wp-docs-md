@@ -1,0 +1,91 @@
+{
+    "id": 150312,
+    "date": "2023-11-29T08:25:01",
+    "date_gmt": "2023-11-29T08:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-json/"
+    },
+    "modified": "2024-02-07T19:39:36",
+    "modified_gmt": "2024-02-07T19:39:36",
+    "slug": "block-json",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-json/",
+    "title": {
+        "rendered": "block.json"
+    },
+    "content": {
+        "rendered": "<p>The <code>block.json</code> file simplifies the process of defining and registering a block by using the same block&#8217;s definition in JSON format to register the block on both the server and the client (Block Editor).</p>\n<p>The diagram below details the basic structure of the <code>block.json</code> file.</p>\n<p><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/block-json.png?ssl=1\" title=\"Open block.json diagram image\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/block-json.png?ssl=1\" alt=\"Open block.json diagram image\" /></a></p>\n<div class=\"callout callout-info\">\n    To view a complete block example and its associated <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/block-supports-6aa4dd/src/block.json\"><code>block.json</code></a> file, visit the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/block-supports-6aa4dd\">Block Development Examples</a> GitHub repository.\n</div>\n<p>Besides simplifying a block&#8217;s registration, using a <code>block.json</code> has <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file\">several benefits</a>, including improved performance.</p>\n<p>The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/\">Metadata in block.json</a> documentation has a comprehensive guide on all the properties you can use in a <code>block.json</code> file for a block. This article will cover the most common options, which allow you to specify:</p>\n<ul>\n<li>The block&#8217;s basic metadata.</li>\n<li>The files that dictate the block&#8217;s functionality, appearance, and output.</li>\n<li>How data is stored within the block.</li>\n<li>The block&#8217;s setting panels within the user interface.</li>\n</ul>\n<h2>Basic metadata of a block</h2>\n<p>Using <code>block.json</code> properties, you can define how the block will be uniquely identified and what information is displayed in the Block Editor. These properties include:</p>\n<ul>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#api-version\"><code>apiVersion</code></a>:</strong> Specifies the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/\">API</a> version the block uses. Use the latest version unless you have specific requirements.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#name\"><code>name</code></a>:</strong>  The unique name of the block, including namespace (e.g., <code>my-plugin/my-custom-block</code>).</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#title\"><code>title</code></a>:</strong> The display title for the block, shown in the Inserter.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#category\"><code>category</code></a>:</strong> The category under which the block appears in the Inserter. Common categories include <code>text</code>, <code>media</code>, <code>design</code>, <code>widgets</code>, and <code>theme</code>.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#icon\"><code>icon</code></a>:</strong>  An icon representing the block in the Inserter. This can be a <a href=\"https://developer.wordpress.org/resource/dashicons\">Dashicon</a> slug or a custom SVG icon.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#description\"><code>description</code></a>:</strong>  A short description of the block, providing more context than the title.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#keywords\"><code>keywords</code></a>:</strong> An array of keywords to help users find the block when searching.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#text-domain\"><code>textdomain</code></a>:</strong> The text domain for the block, used for internationalization.</li>\n</ul>\n<h2>Files for the block&#8217;s behavior, output, or style</h2>\n<p>The <code>block.json</code> file also allows you to specify the essential files for a block&#8217;s functionality:</p>\n<ul>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#editor-script\"><code>editorScript</code></a>:</strong> A JavaScript file or files for use only in the Block Editor.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#editor-style\"><code>editorStyle</code></a>:</strong> A CSS file or files for styling within the Block Editor.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#script\"><code>script</code></a>:</strong> A JavaScript file or files loaded in both the Block Editor and the front end.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#style\"><code>style</code></a>:</strong> A CSS file or files applied in both the Block Editor and the front end.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script\"><code>viewScript</code></a>:</strong> A JavaScript file or files intended solely for the front end.</li>\n</ul>\n<p>For all these properties, you can provide a <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#wpdefinedpath\">file path</a> (starting with <code>file:</code>), a <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#wpdefinedasset\">handle</a> that has been registered using <code>wp_register_script</code> or <code>wp_register_style</code>, or an array combining both options.</p>\n<p>Additionally, the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#render\"><code>render</code></a> property, <a href=\"https://make.wordpress.org/core/2022/10/12/block-api-changes-in-wordpress-6-1/\">introduced on WordPress 6.1</a>, specifies the path to a PHP template file responsible for generating a <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/static-dynamic-rendering/\">dynamically rendered</a> block&#8217;s front-end markup. This approach is used if a <code>$render_callback</code> function is not provided to the <code>register_block_type()</code> function.</p>\n<h2>Using block <code>attributes</code> to store data</h2>\n<p>Block <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#attributes\">attributes</a> are settings or data assigned to blocks. They can determine various aspects of a block, such as its content, layout, style, and any other specific information you need to store along with your block&#8217;s structure. If the user changes a block, such as modifying the font size, you need a way to persist these changes. Attributes are the solution.</p>\n<p>When registering a new block type, the <code>attributes</code> property of <code>block.json</code> describes the custom data the block requires and how they&#8217;re stored in the database. This allows the Block Editor to parse these values correctly and pass the <code>attributes</code> to the block&#8217;s <code>Edit</code> component and <code>save</code> function.</p>\n<p>Here&#8217;s an example of three attributes defined in <code>block.json</code>:</p>\n<pre><code class=\"language-json\">\"attributes\": {\n    \"fallbackCurrentYear\": {\n        \"type\": \"string\"\n    },\n    \"showStartingYear\": {\n        \"type\": \"boolean\"\n    },\n    \"startingYear\": {\n        \"type\": \"string\"\n    }\n},\n</code></pre>\n<p>Blocks are &#8220;delimited&#8221; using HTML-style comment tags that contain specific JSON-like attributes. These delimiters make it possible to recognize block boundaries and parse block attributes when rendering post content or editing a post in the Block Editor.</p>\n<p>The code example below demonstrates the attributes defined in the block delimiter.</p>\n<pre><code class=\"language-html\">&lt;!-- wp:block-development-examples/copyright-date-block-09aac3 {\"fallbackCurrentYear\":\"2023\",\"showStartingYear\":true,\"startingYear\":\"2020\"} --&gt;\n&lt;p class=\"wp-block-block-development-examples-copyright-date-block-09aac3\"&gt;\u00a9 2020\u20132023&lt;/p&gt;\n&lt;!-- /wp:block-development-examples/copyright-date-block-09aac3 --&gt;\n</code></pre>\n<p>All attributes are serialized and stored in the block&#8217;s delimiter by default, but this can be configured to suit your needs. Check out the <a href=\"https://developer.wordpress.org/news/2023/09/understanding-block-attributes/\">Understanding Block Attributes</a> article to learn more.</p>\n<h3>Reading and updating attributes</h3>\n<p>These <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#attributes\">attributes</a> are passed to the block&#8217;s <code>Edit</code> React component for display in the Block Editor, to the <code>save</code> function for generating the markup that gets stored in the database, and to any server-side rendering definition for the block.</p>\n<p>The <code>Edit</code> component uniquely possesses the ability to modify these attributes through the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#setattributes\"><code>setAttributes</code></a> function.</p>\n<p>The following diagram details how attributes are stored, read, and updated in a typical block.</p>\n<p><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/attributes.png?ssl=1\" title=\"Open Attributes diagram image\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/attributes.png?ssl=1\" alt=\"Open Attributes diagram image\" /></a></p>\n<p><em>See how the attributes are passed to the <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/copyright-date-block-09aac3/src/edit.js\"><code>Edit</code></a> component, the <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/copyright-date-block-09aac3/src/save.js\"><code>save</code></a> function, and <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/copyright-date-block-09aac3/src/render.php\"><code>render.php</code></a> in this <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/copyright-date-block-09aac3\">complete block example</a>.</em></p>\n<p>For more information about attributes and how to use them in your custom blocks, visit the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">Attributes API</a> reference page.</p>\n<h2>Using block supports to enable settings and styles</h2>\n<p>Many blocks, including Core blocks, offer similar customization options, such as background color, text color, and padding adjustments.</p>\n<p>The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#supports\"><code>supports</code></a> property in <code>block.json</code> allows a block to declare support for a set of these common customization options. When enabled, users of the block can then adjust things like color or padding directly from the Settings Sidebar.</p>\n<p>Leveraging these predefined block supports helps ensure your block behaves consistently with Core blocks, eliminating the need to recreate similar functionalities from scratch.</p>\n<p>Here&#8217;s an example of color supports defined in <code>block.json</code>:</p>\n<pre><code class=\"language-json\">\"supports\": {\n    \"color\": {\n        \"text\": true,\n        \"link\": true,\n        \"background\": true\n    }\n}\n</code></pre>\n<p>The use of block supports generates a set of properties that need to be manually added to the <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-wrapper/\">wrapping element of the block</a>. This ensures they&#8217;re properly stored as part of the block data and taken into account when generating the markup of the block that will be delivered to the front end.</p>\n<p>The following code demonstrates how the attributes and CSS classes generated by enabling block supports are stored in the markup representation of the block.</p>\n<pre><code class=\"language-html\">&lt;!-- wp:block-development-examples/block-supports-6aa4dd {\"backgroundColor\":\"contrast\",\"textColor\":\"accent-4\"} --&gt;\n&lt;p class=\"wp-block-block-development-examples-block-supports-6aa4dd has-accent-4-color has-contrast-background-color has-text-color has-background\"&gt;Hello World&lt;/p&gt;\n&lt;!-- /wp:block-development-examples/block-supports-6aa4dd --&gt;\n</code></pre>\n<p><em>See the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/block-supports-6aa4dd\">complete block example</a> of the <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/block-supports-6aa4dd/src/block.json\">code above</a>.</em></p>\n<p>For more information about supports and how to use them in your custom blocks, visit the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/\">Supports API</a> reference page.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://excalidraw.com/#json=v1GrIkGsYGKv8P14irBy6,Yy0vl8q7DTTL2VsH5Ww27A\">block.json diagram</a></li>\n<li><a href=\"https://excalidraw.com/#json=pSgCZy8q9GbH7r0oz2fL1,MFCLd6ddQHqi_UqNp5ZSgg\">Attributes diagram</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 150294,
+    "menu_order": 11,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-150312",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150312",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150312/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152198,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150312/revisions/152198"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150294"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=150312"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

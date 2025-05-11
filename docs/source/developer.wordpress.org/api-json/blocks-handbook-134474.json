@@ -1,0 +1,91 @@
+{
+    "id": 134474,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/with-focus-outside/"
+    },
+    "modified": "2024-10-30T16:55:43",
+    "modified_gmt": "2024-10-30T16:55:43",
+    "slug": "with-focus-outside",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/with-focus-outside/",
+    "title": {
+        "rendered": "WithFocusOutside"
+    },
+    "content": {
+        "rendered": "<p><code>withFocusOutside</code> is a React <a href=\"https://facebook.github.io/react/docs/higher-order-components.html\">higher-order component</a> to enable behavior to occur when focus leaves an element. Since a <code>blur</code> event will fire in React even when focus transitions to another element in the same context, this higher-order component encapsulates the logic necessary to determine if focus has truly left the element.</p>\n<h2>Usage</h2>\n<p>Wrap your original component with <code>withFocusOutside</code>, defining a <code>handleFocusOutside</code> instance method on the component class.</p>\n<p><strong>Note:</strong> <code>withFocusOutside</code> must only be used to wrap the <code>Component</code> class.</p>\n<pre><code class=\"language-jsx\">import { withFocusOutside, TextControl } from '@wordpress/components';\n\nconst MyComponentWithFocusOutside = withFocusOutside(\n    class extends React.Component {\n        handleFocusOutside() {\n            console.log( 'Focus outside' );\n        }\n\n        render() {\n            return (\n                &lt;div&gt;\n                    &lt;TextControl onChange={ () =&gt; {} } /&gt;\n                    &lt;TextControl onChange={ () =&gt; {} } /&gt;\n                &lt;/div&gt;\n            );\n        }\n    }\n);\n</code></pre>\n<p>In the above example, the <code>handleFocusOutside</code> function is only called if focus leaves the element, and not if transitioning focus between the two inputs.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 168,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134474",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134474",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134474/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151859,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134474/revisions/151859"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134474"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

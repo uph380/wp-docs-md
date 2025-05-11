@@ -1,0 +1,91 @@
+{
+    "id": 156779,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/button-group/"
+    },
+    "modified": "2025-02-21T04:18:02",
+    "modified_gmt": "2025-02-21T04:18:02",
+    "slug": "button-group",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/button-group/",
+    "title": {
+        "rendered": "Button Group Field"
+    },
+    "content": {
+        "rendered": "<p>The Button Group field provides a set of buttons where users can select one option from multiple choices. It offers a more visual and user-friendly alternative to radio buttons or select dropdowns.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Visual button-style interface</li>\n<li>Single option selection</li>\n<li>Customizable button labels</li>\n<li>Clear visual indication of selected option</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Choices &#8211; Define the available options</li>\n<li>Default Value &#8211; Set the pre-selected option</li>\n<li>Return Format &#8211; Specify how the value should be returned</li>\n<li>Allow Null &#8211; Option to have no selection</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156779",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156779",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156779/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156940,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156779/revisions/156940"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156779"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

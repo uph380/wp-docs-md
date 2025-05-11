@@ -1,0 +1,91 @@
+{
+    "id": 10936,
+    "date": "2014-09-16T17:39:02",
+    "date_gmt": "2014-09-16T17:39:02",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10936"
+    },
+    "modified": "2024-01-29T05:26:55",
+    "modified_gmt": "2024-01-29T05:26:55",
+    "slug": "hooks",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/hooks/",
+    "title": {
+        "rendered": "Hooks"
+    },
+    "content": {
+        "rendered": "\n<p>Hooks are a way for one piece of code to interact/modify another piece of code at specific, pre-defined spots. They make up the foundation for how plugins and themes interact with WordPress Core, but they&#8217;re also used extensively by Core itself.</p>\n\n\n\n<p>There are two types of hooks: <a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a> and <a href=\"https://developer.wordpress.org/plugins/hooks/filters/\">Filters</a>. To use either, you need to write a custom function known as a <code>Callback</code>, and then register it with a WordPress hook for a specific action or filter.</p>\n\n\n\n<p><a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a> allow you to add data or change how WordPress operates. Actions will run at a specific point in the execution of WordPress Core, plugins, and themes. Callback functions for Actions can perform some kind of a task, like echoing output to the user or inserting something into the database. Callback functions for an Action do not return anything back to the calling Action hook.</p>\n\n\n\n<p><a href=\"https://developer.wordpress.org/plugins/hooks/filters/\">Filters</a> give you the ability to change data during the execution of WordPress Core, plugins, and themes. Callback functions for Filters will accept a variable, modify it, and return it. They are meant to work in an isolated manner, and should never have <a href=\"https://en.wikipedia.org/wiki/Side_effect_(computer_science)\">side effects</a> such as affecting global variables and output. Filters expect to have something returned back to them.</p>\n\n\n\n<p>WordPress provides many hooks that you can use, but you can also <a href=\"https://developer.wordpress.org/plugins/hooks/custom-hooks/\">create your own</a> so that other developers can extend and modify your plugin or theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Actions vs. Filters</h2>\n\n\n\n<p>The main difference between an action and a filter can be summed up like this: </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>an action takes the info it receives, does something with it, and returns nothing. In other words: it <em>acts</em> on something and then exits, returning nothing back to the calling hook.</li>\n\n\n\n<li>a filter takes the info it receives, modifies it somehow, and returns it. In other words: it <em>filters</em> something and passes it back to the hook for further use.</li>\n</ul>\n\n\n\n<p>Said another way: </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>an action interrupts the code flow to do something, and then returns back to the normal flow without modifying anything;</li>\n\n\n\n<li>a filter is used to modify something in a specific way so that the modification is then used by code later on.</li>\n</ul>\n\n\n\n<p>The <em>something</em> referred to is the parameter list sent via the hook definition. More on this in later sections.</p>\n\n\n\n<h2 class=\"wp-block-heading\">More Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/apis/hooks/filter-reference/\">Filter Reference</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/apis/hooks/action-reference/\">Action Reference</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 5,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10936",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10936",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 21,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10936/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152129,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10936/revisions/152129"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10936"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

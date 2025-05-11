@@ -1,0 +1,97 @@
+{
+    "id": 12028,
+    "date": "2014-12-09T18:44:19",
+    "date_gmt": "2014-12-09T18:44:19",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=12028"
+    },
+    "modified": "2019-06-14T08:25:05",
+    "modified_gmt": "2019-06-14T08:25:05",
+    "slug": "reworking-theme-files-organization",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/reworking-theme-files-organization/",
+    "title": {
+        "rendered": "Reworking Theme Files &amp; Organization"
+    },
+    "content": {
+        "rendered": "<p><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-11264\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-01.jpg?resize=1024%2C384&#038;ssl=1\" alt=\"basics-theme-files-organization-01\" width=\"1024\" height=\"384\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-01.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-01.jpg?resize=300%2C112&amp;ssl=1 300w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></p>\n<h2>Theme folder and file structure</h2>\n<p>While WordPress themes technically only require two files (<code>index.php</code> and <code>style.css</code>), they usually are made up of many files and can become quickly disorganized.</p>\n<p>In the last section, <a title=\"Template Files\" href=\"#\">Template Files</a>, you set up your <code>header.php, footer.php, page.php, home.php, and single.php</code> files.</p>\n<p>Let&#8217;s look at \u00a0the\u00a0<a href=\"https://wordpress.org/themes/twentytwelve\" target=\"_blank\" rel=\"noopener noreferrer\">Twenty Twelve theme</a>\u00a0default themes as\u00a0one example of good file structure and organization. \u00a0While this may be a bit overwhelming at first, let&#8217;s break it down. \u00a0Can you find the templates you just built?</p>\n<p><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-11265\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-02.png?resize=629%2C1500&#038;ssl=1\" alt=\"basics-theme-files-organization-02\" width=\"629\" height=\"1500\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-02.png?w=629&amp;ssl=1 629w, https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-02.png?resize=429%2C1024&amp;ssl=1 429w\" sizes=\"auto, (max-width: 629px) 100vw, 629px\" /></p>\n<p>While there are still a lot of files, their names help provide a context\u00a0of what they are. \u00a0Basically each file handles a feature of WordPress. \u00a0I.e. <code>comments.php</code> deals with how the theme will handle comments; <code>image.php</code> instructs the theme how to handle images, etc. \u00a0Don&#8217;t worry about adding these files unless\u00a0you need them.</p>\n<p>You can see that the main theme template files are in the theme&#8217;s root directory, while JavaScript, languages, CSS, and page template files are placed within their own folders.</p>\n<p>At this time there are <strong>no required folders within a WordPress theme</strong>. However, WordPress does recognize the following folders by default:</p>\n<h3>Page templates folder</h3>\n<p><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-11267\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-03.png?resize=400%2C124&#038;ssl=1\" alt=\"basics-theme-files-organization-03\" width=\"400\" height=\"124\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-03.png?w=400&amp;ssl=1 400w, https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-03.png?resize=300%2C93&amp;ssl=1 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></p>\n<p>The <a title=\"Custom Page Templates\" href=\"https://developer.wordpress.org/themes/basics/page-templates/\">custom page templates</a>, named <em>page-templates</em> (since: 3.4.0) allows for better organization of template files. Custom page template files placed in this folder are automatically recognized by WordPress.</p>\n<h3>Language folder</h3>\n<p><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-11268\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-04.png?resize=400%2C85&#038;ssl=1\" alt=\"basics-theme-files-organization-04\" width=\"400\" height=\"85\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-04.png?w=400&amp;ssl=1 400w, https://i0.wp.com/developer.wordpress.org/files/2014/08/basics-theme-files-organization-04.png?resize=300%2C63&amp;ssl=1 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></p>\n<p>If you wish to <a title=\"Internationalization\" href=\"https://developer.wordpress.org/themes/functionality/internationalization/\">internationalize your theme</a> so it&#8217;s usable in other languages, you can create a <em>languages</em> folder to contain translations.</p>\n",
+        "protected": false
+    },
+    "author": 14167654,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-12028",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/12028",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/12028/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125316,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/12028/revisions/125316"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wporg/v1/users/lizkaraffa"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=12028"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

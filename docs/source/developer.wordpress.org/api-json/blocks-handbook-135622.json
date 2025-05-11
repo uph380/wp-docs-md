@@ -1,0 +1,91 @@
+{
+    "id": 135622,
+    "date": "2021-04-21T15:39:48",
+    "date_gmt": "2021-04-21T15:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-deprecation/"
+    },
+    "modified": "2024-10-30T16:55:05",
+    "modified_gmt": "2024-10-30T16:55:05",
+    "slug": "block-deprecation",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-deprecation/",
+    "title": {
+        "rendered": "Deprecation"
+    },
+    "content": {
+        "rendered": "<blockquote><p>\n  This page provides a comprehensive guide to the principles and usage of the Deprecation API. For an introduction check out the <a href=\"https://developer.wordpress.org/news/2023/03/block-deprecation-a-tutorial/\">tutorial on the basics of block deprecation</a> which can be found on the <a href=\"https://developer.wordpress.org/news/\">Developer Blog</a>.\n</p></blockquote>\n<p>When updating static blocks markup and attributes, block authors need to consider existing posts using the old versions of their block. To provide a good upgrade path, you can choose one of the following strategies:</p>\n<ul>\n<li>Do not deprecate the block and create a new one (a different name)</li>\n<li>Provide a &#8220;deprecated&#8221; version of the block allowing users opening these in the block editor to edit them using the updated block.</li>\n</ul>\n<p>A block can have several deprecated versions. A deprecation will be tried if the current state of a parsed block is invalid, or if the deprecation defines an <code>isEligible</code> function that returns true.</p>\n<p>Deprecations do not operate as a chain of updates in the way other software data updates, like database migrations, do. At first glance, it is easy to think that each deprecation is going to make the required changes to the data and then hand this new form of the block onto the next deprecation to make its changes. What happens instead is:</p>\n<ol>\n<li>If the current <code>save</code> method does not produce a valid block the first deprecation in the deprecations array is passed the original saved content.</li>\n<li>If its <code>save</code> method produces valid content this deprecation is used to parse the block attributes. If it has a <code>migrate</code> method it will also be run using the attributes parsed by the deprecation.</li>\n<li>If the first deprecation&#8217;s <code>save</code> method does not produce a valid block the subsequent deprecations in the array are tried until one producing a valid block is encountered.</li>\n<li>The attributes, and any innerBlocks, from the first deprecation to generate a valid block are then passed back to the current <code>save</code> method to generate new valid content for the block.</li>\n<li>At this point the current block should now be in a valid state and the deprecations workflow stops.</li>\n</ol>\n<p>It is important to note that if a deprecation&#8217;s <code>save</code> method does not produce a valid block then it is skipped completely, including its <code>migrate</code> method, even if <code>isEligible</code> would return true for the given attributes. This means that if you have several deprecations for a block and want to perform a new migration, like moving content to <code>InnerBlocks</code>, you may need to update the <code>migrate</code> methods in multiple deprecations in order for the required changes to be applied to all previous versions of the block.</p>\n<p>It is also important to note that if a deprecation&#8217;s <code>save</code> method imports additional functions from other files, changes to those files may accidentally change the behavior of the deprecation. You may want to add a snapshot copy of these functions to the deprecations file instead of importing them in order to avoid inadvertently breaking the deprecations.</p>\n<p>For blocks with multiple deprecations, it may be easier to save each deprecation to a constant with the version of the block it applies to, and then add each of these to the block&#8217;s <code>deprecated</code> array. The deprecations in the array should be in reverse chronological order. This allows the block editor to attempt to apply the most recent and likely deprecations first, avoiding unnecessary and expensive processing.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const v1 = {};\nconst v2 = {};\nconst v3 = {};\nconst deprecated = [ v3, v2, v1 ];\n</code></pre>\n<p>It is also recommended to keep <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/test/integration/fixtures/blocks/README.md\">fixtures</a> which contain the different versions of the block content to allow you to easily test that new deprecations and migrations are working across all previous versions of the block.</p>\n<p>Deprecations are defined on a block type as its <code>deprecated</code> property, an array of deprecation objects where each object takes the form:</p>\n<ul>\n<li><code>attributes</code> (Object): The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">attributes definition</a> of the deprecated form of the block.</li>\n<li><code>supports</code> (Object): The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/\">supports definition</a> of the deprecated form of the block.</li>\n<li><code>save</code> (Function): The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/\">save implementation</a> of the deprecated form of the block.</li>\n<li><code>migrate</code>: (Function, Optional). A function which, given the old attributes and inner blocks is expected to return either the new attributes or a tuple array of attributes and inner blocks compatible with the block. As mentioned above, a deprecation&#8217;s <code>migrate</code> will not be run if its <code>save</code> function does not return a valid block so you will need to make sure your migrations are available in all the deprecations where they are relevant.\n<ul>\n<li><em>Parameters</em>\n<ul>\n<li><code>attributes</code>: The block&#8217;s old attributes.</li>\n<li><code>innerBlocks</code>: The block&#8217;s old inner blocks.</li>\n</ul>\n</li>\n<li><em>Return</em>\n<ul>\n<li><code>Object | Array</code>: Either the updated block attributes or tuple array <code>[attributes, innerBlocks]</code>.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><code>isEligible</code>: (Function, Optional). A function which returns <code>true</code> if the deprecation can handle the block migration even if the block is valid. It is particularly useful in cases where a block is technically valid even once deprecated, but still requires updates to its attributes or inner blocks. This function is <strong>not</strong> called when the results of all previous deprecations&#8217; save functions were invalid.\n<ul>\n<li><em>Parameters</em>\n<ul>\n<li><code>attributes</code>: The raw block attributes as parsed from the serialized HTML, and before the block type code is applied.</li>\n<li><code>innerBlocks</code>: The block&#8217;s current inner blocks.</li>\n<li><code>data</code>: An object containing properties representing the block node and its resulting block object.\n<ul>\n<li><code>data.blockNode</code>: The raw form of the block as a result of parsing the serialized HTML.</li>\n<li><code>data.block</code>: The block object, which is the result of applying the block type to the <code>blockNode</code>.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><em>Return</em>\n<ul>\n<li><code>boolean</code>: Whether or not this otherwise valid block is eligible to be migrated by this deprecation.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<div class=\"callout callout-alert\">\nIt&#8217;s important to note that <code>attributes</code>, <code>supports</code>, and <code>save</code> are not automatically inherited from the current version, since they can impact parsing and serialization of a block, so they must be defined on the deprecated object in order to be processed during a migration.\n</div>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const { registerBlockType } = wp.blocks;\nconst attributes = {\n    text: {\n        type: 'string',\n        default: 'some random value',\n    },\n};\nconst supports = {\n    className: false,\n};\n\nregisterBlockType( 'gutenberg/block-with-deprecated-version', {\n    // ... other block properties go here\n\n    attributes,\n\n    supports,\n\n    save( props ) {\n        return &lt;div&gt;{ props.attributes.text }&lt;/div&gt;;\n    },\n\n    deprecated: [\n        {\n            attributes,\n\n            supports,\n\n            save( props ) {\n                return &lt;p&gt;{ props.attributes.text }&lt;/p&gt;;\n            },\n        },\n    ],\n} );\n</code></pre>\n<p>In the example above we updated the markup of the block to use a <code>div</code> instead of <code>p</code>.</p>\n<h2>Changing the attributes set</h2>\n<p>Sometimes, you need to update the attributes set to rename or modify old attributes.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const { registerBlockType } = wp.blocks;\n\nregisterBlockType( 'gutenberg/block-with-deprecated-version', {\n    // ... other block properties go here\n\n    attributes: {\n        content: {\n            type: 'string',\n            default: 'some random value',\n        },\n    },\n\n    save( props ) {\n        return &lt;div&gt;{ props.attributes.content }&lt;/div&gt;;\n    },\n\n    deprecated: [\n        {\n            attributes: {\n                text: {\n                    type: 'string',\n                    default: 'some random value',\n                },\n            },\n\n            migrate( { text } ) {\n                return {\n                    content: text,\n                };\n            },\n\n            save( props ) {\n                return &lt;p&gt;{ props.attributes.text }&lt;/p&gt;;\n            },\n        },\n    ],\n} );\n</code></pre>\n<p>In the example above we updated the markup of the block to use a <code>div</code> instead of <code>p</code> and rename the <code>text</code> attribute to <code>content</code>.</p>\n<h2>Changing the innerBlocks</h2>\n<p>Situations may exist where when migrating the block we may need to add or remove innerBlocks.<br />\nE.g: a block wants to migrate a title attribute to a paragraph innerBlock.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const { registerBlockType } = wp.blocks;\n\nregisterBlockType( 'gutenberg/block-with-deprecated-version', {\n    // ... block properties go here\n\n    save( props ) {\n        return &lt;p&gt;{ props.attributes.title }&lt;/p&gt;;\n    },\n\n    deprecated: [\n        {\n            attributes: {\n                title: {\n                    type: 'string',\n                    source: 'html',\n                    selector: 'p',\n                },\n            },\n\n            migrate( attributes, innerBlocks ) {\n                const { title, ...restAttributes } = attributes;\n\n                return [\n                    restAttributes,\n                    [\n                        createBlock( 'core/paragraph', {\n                            content: attributes.title,\n                            fontSize: 'large',\n                        } ),\n                        ...innerBlocks,\n                    ],\n                ];\n            },\n\n            save( props ) {\n                return &lt;p&gt;{ props.attributes.title }&lt;/p&gt;;\n            },\n        },\n    ],\n} );\n</code></pre>\n<p>In the example above we updated the block to use an inner Paragraph block with a title instead of a title attribute.</p>\n<p><em>Above are example cases of block deprecation. For more, real-world examples, check for deprecations in the <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-library/src\">core block library</a>. Core blocks have been updated across releases and contain simple and complex deprecations.</em></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134406,
+    "menu_order": 64,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135622",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135622",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135622/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153580,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135622/revisions/153580"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135622"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "id": 134350,
+    "date": "2021-03-09T08:38:18",
+    "date_gmt": "2021-03-09T08:38:18",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/"
+    },
+    "modified": "2024-01-16T20:28:06",
+    "modified_gmt": "2024-01-16T20:28:06",
+    "slug": "how-to-guides",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/",
+    "title": {
+        "rendered": "How-to Guides"
+    },
+    "content": {
+        "rendered": "<p>The new editor is highly flexible, like most of WordPress. You can build custom blocks, modify the editor&#8217;s appearance, add special plugins, and much more.</p>\n<h2>Creating blocks</h2>\n<p>The editor is about blocks, and the main extensibility API is the Block API. It allows you to create your own static blocks, <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks/\">Dynamic Blocks</a> ( rendered on the server ) and also blocks capable of saving data to Post Meta for more structured content.</p>\n<p>If you want to learn more about block creation, see the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\">Create a Block tutorial</a> for the best place to start.</p>\n<h2>Extending blocks</h2>\n<p>It is also possible to modify the behavior of existing blocks or even remove them completely using filters.</p>\n<p>Learn more in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/\">Block Filters</a> section.</p>\n<p>Specifically for <code>Query Loop</code> block, besides the available filters, there are more ways to extend it and create bespoke versions of it. Learn more in the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/extending-the-query-loop-block/\">Extending the Query Loop block</a> section.</p>\n<h2>Extending the Editor UI</h2>\n<p>Extending the editor UI can be accomplished with the <code>registerPlugin</code> API, allowing you to define all your plugin&#8217;s UI elements in one place.</p>\n<p>Refer to the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-plugins/\">Plugins</a> and <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-edit-post/\">Edit Post</a> section for more information.</p>\n<p>You can also filter certain aspects of the editor; this is documented on the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/\">Editor Filters</a> page.</p>\n<h2>Meta boxes</h2>\n<p>Porting PHP meta boxes to blocks or sidebar plugins is highly encouraged, learn how in the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/metabox/\">meta box</a> and <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/plugin-sidebar-0/\">sidebar plugin</a> guides.</p>\n<h2>Theme support</h2>\n<p>By default, blocks provide their styles to enable basic support for blocks in themes without any change. Themes can add/override these styles, or rely on defaults.</p>\n<p>There are some advanced block features which require opt-in support in the theme. See <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/\">theme support</a> and <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/\">how to filter global styles</a>.</p>\n<h2>Autocomplete</h2>\n<p>Autocompleters within blocks may be extended and overridden. Learn more about the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/autocomplete-filters/\">autocomplete</a> filters.</p>\n<h2>Block parsing and serialization</h2>\n<p>Posts in the editor move through a couple of different stages between being stored in <code>post_content</code> and appearing in the editor. Since the blocks themselves are data structures that live in memory it takes a parsing and serialization step to transform out from and into the stored format in the database.</p>\n<p>Customizing the parser is an advanced topic that you can learn more about in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/parser-filters/\">Extending the Parser</a> section.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134350",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151438,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350/revisions/151438"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134350"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

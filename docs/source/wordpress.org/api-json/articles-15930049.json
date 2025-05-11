@@ -1,0 +1,109 @@
+{
+    "id": 15930049,
+    "date": "2022-08-19T15:46:41",
+    "date_gmt": "2022-08-19T15:46:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15930049"
+    },
+    "modified": "2024-06-06T13:47:42",
+    "modified_gmt": "2024-06-06T13:47:42",
+    "slug": "comment-template-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comment-template-block/",
+    "title": {
+        "rendered": "Comment Template block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>The <em>Comment Template </em>block is a part of the <em>Comments </em>block. It contains block elements to display comments, such as the comment author, avatar, and comment content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to use the Comment Template Block</h2>\n\n\n\n<p>When you add a Comments block, the <em>Comment Template</em> block is included by default. Also, you can only insert a <em>Comment Template</em> block inside a Comments block. Since the <em>Comment Template</em> is a part of the Comments block, the content will change on the front-end depending on the query.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/lTEIwsk3Kl0fo5UgsiAQCEAGCYKFcEfHeLy3Iwp0kvti6KmwzgrbN2yl_NQaPo2l1JKn3MAK14vqmtmWsa1N0f4T6_dq-s6Zeoelm1hdPxwgN--ih6QW11fgMOl4Ndv6uvu2gh2_TJfRQIoSbYvDWg8\" alt=\"Comment Template block\" /></figure>\n\n\n\n<p>To add a <em>Comment Template</em> block, click the block inserter icon (<strong>+</strong>) inside the Comments block to open the block inserter pop-up window and search for the <em>Comment Template</em> block.</p>\n\n\n\n<p>You can also use the keyboard shortcut<kbd> /comment-template</kbd> to insert a<em> Comment Template</em> block quickly.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\">Check the detailed instructions on how to add a block <a href=\"https://wordpress.org/support/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<p>When the <em>Comments </em>block is added in the post editor, the <em>Comment Template </em>block will display the actual comments on the post and use a &#8220;No results found&#8221; placeholder when there&#8217;s no comment on the post yet.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"678\" height=\"190\" src=\"https://wordpress.org/documentation/files/2023/04/image-4.png\" alt=\"No results found placeholder\" class=\"wp-image-16356669\" srcset=\"https://wordpress.org/documentation/files/2023/04/image-4.png 678w, https://wordpress.org/documentation/files/2023/04/image-4-300x84.png 300w\" sizes=\"auto, (max-width: 678px) 100vw, 678px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block has unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The <em>Comment Template </em>block shows the following buttons:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/image-2.png\" alt=\"Comment Template block toolbar\" class=\"wp-image-16356622\" width=\"401\" height=\"79\" srcset=\"https://wordpress.org/documentation/files/2023/04/image-2.png 534w, https://wordpress.org/documentation/files/2023/04/image-2-300x59.png 300w\" sizes=\"auto, (max-width: 401px) 100vw, 401px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Select Comments block</li>\n\n\n\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Align</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Select Comments block</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/umhCYzt--ADX979nT2LxlCAWPeH6yAwE6-4L9E4KKg8a_F1msm8C30bk1RAKtmukHGW9jA8i8Ec-LZvsucPkF6hGIlCbTdGwI1-dtCY2ANE97AnN0k_Ksf9TTPl3H4zbjijNNQkOkqDErKPyCamFROs\" alt=\"Select Comments Query loop block in the Comment Template block\" width=\"333\" height=\"64\" /></figure>\n\n\n\n<p>This button will select the Comments block, as it\u2019s the parent block of the <em>Comment Template</em> block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/Ry6U7hQF-dK7ymftQ7EBK44tm_DAOQNYinwPZBBzOAI9KDZhwz_y9tsS15NbeRVUjgu7FHqiO5M212Y4_w8pTGR1yoE9mUOw6_l2OsxDgX5kCRLvUgRikXVS4zqK_vQejCL0AHRh5xTUd7fMEZ-efJU\" alt=\"Transform tool in the Comment Template block\" /></figure>\n\n\n\n<p>When you click the Transform button, you can convert the <em>Comment Template</em> block into another block type using the existing content.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Block-moving tools</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/V4_YnsO5F7wlEIOSc33Vu0Tz-Ajn5EMwSEw3y7tXkAP1sP5RHGvDMrpPVsGH84GU93pPb1iq9G5W6jCOZ74dZyfrYJtvoW4Nhjs6ejqJM3Y3E9ml8oFL5DPN14TDBIN9A6hyKu-LPPzuy1l5sKE3WBU\" alt=\"Block moving tools in the Comment Template block\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <em>Comment Template</em> block and reposition it anywhere on the Comments block. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/bNvmJvjbNQmN5jA-RKKIN2DqFdER-pjIL9vV50-WOboCc_6Aii8BA_0tUxJFmXxjMPAGGbirQCjgNTql8TS-h28zudQJttBHObNN25mmdyrdQtnFun6dnH_PNXCJY_6a04a1DOx2wMKx08sTB12nIKY\" alt=\"Change alignment in the Comment Template block\" /></figure>\n\n\n\n<p>The <em>change alignment </em>tool is used for the <em>Comment Template</em> block\u2019s position inside the Comments Query Loop block. Choose one of the following block alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Align left</li>\n\n\n\n<li>Align center</li>\n\n\n\n<li>Align right</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Options</h3>\n\n\n\n<p>The <strong>Options </strong>button on a block toolbar gives you more features to customize the block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings </strong>button next to the <strong>Publish </strong>button.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"611\" height=\"83\" src=\"https://wordpress.org/documentation/files/2023/04/image-3.png\" alt=\"\" class=\"wp-image-16356623\" srcset=\"https://wordpress.org/documentation/files/2023/04/image-3.png 611w, https://wordpress.org/documentation/files/2023/04/image-3-300x41.png 300w\" sizes=\"auto, (max-width: 611px) 100vw, 611px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>Typography settings allow you to change a block\u2019s font size, appearance, line height, letter casing, and spacing.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The <em>Comment Template</em> block provides dimension settings options to change padding and margin size.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">For details, refer to this support article: Dimensions Settings Overview.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced<strong> </strong></h3>\n\n\n\n<p>The <em>Comment Template </em>block only has Advanced settings in the block settings panel. The \u201cAdvanced\u201d settings tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/gs2hOarzNyh6o14MPEE5X8prsS03ZhIhXTcO8XcvNm67zbqYLCrnUkKj3OymVjS42z9V6W5YsDnngWVKhWictE_d0C6H8fNWSiMro2--JBbBWWubXQ7Gd8vUmDaWfErS4I4ILoHOb6yzJLMmJjWWVE0\" alt=\"Block settings in the Comment Template block\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-04-11\n<ul class=\"wp-block-list\">\n<li>Added &#8220;no results found&#8221; placeholder</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-04-05\n<ul class=\"wp-block-list\">\n<li>Updated images for 6.2</li>\n\n\n\n<li>Added dimensions support</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-08-19</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks The Comment Template block is a part of the Comments block. It contains block elements to display comments, such as the comment author, avatar, and comment content. How to use the Comment Template Block When you add a Comments block, the Comment Template block is included by default. Also, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15930049",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15930049",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15930049"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15930049/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360295,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15930049/revisions/16360295"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15930049"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15930049"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 135103,
+    "date": "2021-03-10T02:39:47",
+    "date_gmt": "2021-03-10T02:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/managing-packages/"
+    },
+    "modified": "2025-01-07T18:34:10",
+    "modified_gmt": "2025-01-07T18:34:10",
+    "slug": "managing-packages",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/managing-packages/",
+    "title": {
+        "rendered": "Managing Packages"
+    },
+    "content": {
+        "rendered": "<p>This repository uses <a href=\"https://docs.npmjs.com/cli/v10/using-npm/workspaces\">npm workspaces</a> to manage WordPress packages and <a href=\"https://lerna.js.org/\">lerna</a> to publish them to <a href=\"https://www.npmjs.com/\">npm</a>. This enforces certain steps in the workflow which are described in details in <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/README.md\">packages</a> documentation.</p>\n<p>Maintaining dozens of npm packages is difficult\u2014it can be tough to keep track of changes. That&#8217;s why we use <code>CHANGELOG.md</code> files for each package to simplify the release process. As a contributor, you should add an entry to the aforementioned file each time you contribute adding production code as described in <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/README.md#maintaining-changelogs\">Maintaining Changelogs</a> section.</p>\n<p>Publishing WordPress packages to npm is automated by synchronizing it with the bi-weekly Gutenberg plugin RC1 release. You can learn more about this process and other ways to publish new versions of npm packages in the <a href=\"https://developer.wordpress.org/block-editor/contributors/code/release/#packages-releases-to-npm-and-wordpress-core-updates\">Gutenberg Release Process document</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135090,
+    "menu_order": 378,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135103",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135103",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135103/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155608,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135103/revisions/155608"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135103"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

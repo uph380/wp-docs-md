@@ -1,0 +1,109 @@
+{
+    "id": 13255925,
+    "date": "2020-08-17T13:05:58",
+    "date_gmt": "2020-08-17T13:05:58",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13255925"
+    },
+    "modified": "2024-06-08T19:45:36",
+    "modified_gmt": "2024-06-08T19:45:36",
+    "slug": "tag-cloud-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tag-cloud-block/",
+    "title": {
+        "rendered": "Tag Cloud block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Tag Cloud block</em> allows adding tag/category cloud into the page/post. A tag cloud is a list of all <a href=\"https://wordpress.org/documentation/article/posts-tags-screen/\">tags</a> /categories on your site, displayed in alphabetical order.&nbsp;&nbsp;</p>\n\n\n\n<p>Tag cloud helps your readers to discover and search content easily and quickly. </p>\n\n\n\n<p>The <em>Tag Cloud block</em> displays each tag with the font size based on the number of times that tag has been associated with posts. The bigger the size, the more posts are tagged with that tag. This helps your readers know your favorite subjects and the topics you write about most frequently.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to add a Tag Cloud block to your post or page</h2>\n\n\n\n<p>Add the <em>Tag Cloud block</em> to your post or page by clicking on the \u201cBlock Inserter\u201d (+) and then search for &#8220;Tag Cloud&#8221;. Alternatively, you can type\u00a0<code>/tag-cloud</code> in a new paragraph block and press\u00a0<code>enter</code>.</p>\n\n\n\n<ol class=\"wp-block-list\"></ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"562\" height=\"404\" src=\"https://wordpress.org/documentation/files/2024/04/image-1.png\" alt=\"How to add a Tag Cloud block\" class=\"wp-image-16360182\" style=\"width:398px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2024/04/image-1.png 562w, https://wordpress.org/documentation/files/2024/04/image-1-300x216.png 300w\" sizes=\"auto, (max-width: 562px) 100vw, 562px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p>If you have tags/categories on your site, the <em>Tag Cloud block</em> will display a list of the tags as follows:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/hCtqFBzOn9j8H4JiNzQLFGYd0qkwDMJfdA08NPnuUegtBNXCCnaWDPOv8jT3NPFrBez1z6DI7WvsHbYOYAREktz040z873suDbtBKRh7Qjd6ChV6_bKrtvWWVjUbr_jjdVuI56E\" alt=\"Preview of a Tag Cloud block\" /></figure>\n\n\n\n<p>If the site doesn&#8217;t have any tags then it will display the message as shown below.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"166\" src=\"https://wordpress.org/documentation/files/2020/08/tag-clould-no-content-WP-62-1024x166.png\" alt=\"When there are no tags to show, the block displays a text that says &quot;There's no content to show here yet.&quot;\" class=\"wp-image-16356488\" srcset=\"https://wordpress.org/documentation/files/2020/08/tag-clould-no-content-WP-62-1024x166.png 1024w, https://wordpress.org/documentation/files/2020/08/tag-clould-no-content-WP-62-300x49.png 300w, https://wordpress.org/documentation/files/2020/08/tag-clould-no-content-WP-62-768x125.png 768w, https://wordpress.org/documentation/files/2020/08/tag-clould-no-content-WP-62.png 1332w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p><strong>Note: </strong>Tags&#8217; appearance varies based on the selected theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar\u00a0</h2>\n\n\n\n<p>Each block has its own block-specific controls that allow you to customize the block right in the editor. The&nbsp;<em>Tag Cloud block</em>&nbsp;offers the following options in its toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag</li>\n\n\n\n<li>Move handles</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>More Options.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"626\" height=\"680\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.05.21-PM.png\" alt=\"Transform options in the Tag Cloud block\" class=\"wp-image-15840526\" style=\"width:354px;height:384px\" srcset=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.05.21-PM.png 626w, https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.05.21-PM-276x300.png 276w\" sizes=\"auto, (max-width: 626px) 100vw, 626px\" /></figure>\n\n\n\n<p>When you click on the&nbsp;<strong>Transform</strong>&nbsp;button you can convert the <em>Tag Cloud block&nbsp;</em>into a Categories List, Columns, or Group. The Group lets you change the background color around the Tag Cloud block. You can also change the Tag Cloud styles from Default to Outline.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"223\" src=\"https://wordpress.org/documentation/files/2022/07/171654193-d567206e-27ef-436b-b26a-3f608faa48b6-1024x223.png\" alt=\"Editor view of an Tag Cloud block as a group with Color Settings controls\" class=\"wp-image-15840524\" srcset=\"https://wordpress.org/documentation/files/2022/07/171654193-d567206e-27ef-436b-b26a-3f608faa48b6-1024x223.png 1024w, https://wordpress.org/documentation/files/2022/07/171654193-d567206e-27ef-436b-b26a-3f608faa48b6-300x65.png 300w, https://wordpress.org/documentation/files/2022/07/171654193-d567206e-27ef-436b-b26a-3f608faa48b6-768x167.png 768w, https://wordpress.org/documentation/files/2022/07/171654193-d567206e-27ef-436b-b26a-3f608faa48b6-1536x334.png 1536w, https://wordpress.org/documentation/files/2022/07/171654193-d567206e-27ef-436b-b26a-3f608faa48b6.png 2006w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/07/171654025-c209b1b6-d786-44d4-a4d6-d648d24d0a41-1-1024x428.png\" alt=\"Tag Cloud block with a yellow background.\" class=\"wp-image-15840525\" style=\"width:409px;height:171px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Drag</h3>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move handles</h3>\n\n\n\n<p>The up and down arrow icons can be used to move a block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\"></a><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change alignment<strong> \u00a0</strong></h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"458\" height=\"612\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.08.19-PM.png\" alt=\"Change alignment in the Tag Cloud block\" class=\"wp-image-15840529\" style=\"width:344px;height:459px\" srcset=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.08.19-PM.png 458w, https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.08.19-PM-225x300.png 225w\" sizes=\"auto, (max-width: 458px) 100vw, 458px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Wide width</strong> &#8211; Increase the width of the Tag Cloud block beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> &#8211; Extend the Tag Cloud block to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left</strong> &#8211; Make the Tag Cloud left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Tag Cloud aligned center.</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the&nbsp;Tag Cloud right aligned.</li>\n</ul>\n\n\n\n<p><strong>Note:</strong> \u201cWide width\u201d and \u201cFull width\u201d alignment is only available if it is enabled by the Theme of your site.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar.&nbsp;If you do not see the sidebar, simply click the \u2018settings\u2019 icon next to the Publish button.</p>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top\" style=\"grid-template-columns:auto 36%\"><div class=\"wp-block-media-text__content\">\n<h3 class=\"wp-block-heading\">Settings tab</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Taxonomy</h4>\n\n\n\n<p>Select from the following three\u00a0<a href=\"https://wordpress.org/documentation/article/taxonomies/\">taxonomy</a>\u00a0types: Categories, Tags, or Pattern Categories. The Tag Cloud is displayed based on the selected taxonomy.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Show post counts</h4>\n\n\n\n<p>Toggle the switch to display the number of posts associated with the taxonomy.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Number of tags</h4>\n\n\n\n<p>Move the slider or type in a number to change the number of taxonomy terms that can be displayed in the Tag Cloud.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"843\" height=\"201\" src=\"https://wordpress.org/documentation/files/2020/08/image-3.png\" alt=\"Number of tags in the Tag Cloud block\" class=\"wp-image-13255961\" style=\"width:372px;height:89px\" srcset=\"https://wordpress.org/documentation/files/2020/08/image-3.png 843w, https://wordpress.org/documentation/files/2020/08/image-3-300x72.png 300w, https://wordpress.org/documentation/files/2020/08/image-3-768x183.png 768w\" sizes=\"auto, (max-width: 843px) 100vw, 843px\" /></figure>\n\n\n\n<h4 class=\"wp-block-heading\">Smallest size/largest size</h4>\n\n\n\n<p>Change the smallest and largest font size that can be used in the Tag Cloud. You can change the font size unit between PX, %, EM, REM, VW, VH.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"528\" height=\"284\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.35.39-PM.png\" alt=\"Font size in the Tag Cloud block\" class=\"wp-image-15840571\" style=\"width:364px;height:196px\" srcset=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.35.39-PM.png 528w, https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-19-at-5.35.39-PM-300x161.png 300w\" sizes=\"auto, (max-width: 528px) 100vw, 528px\" /></figure>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"415\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/04/tag-cloud-settings-tab-WP-62-415x1024.png\" alt=\"The block settings sidebar with the settings tab opened.\" class=\"wp-image-16356491 size-full\" srcset=\"https://wordpress.org/documentation/files/2023/04/tag-cloud-settings-tab-WP-62-415x1024.png 415w, https://wordpress.org/documentation/files/2023/04/tag-cloud-settings-tab-WP-62-122x300.png 122w, https://wordpress.org/documentation/files/2023/04/tag-cloud-settings-tab-WP-62.png 558w\" sizes=\"auto, (max-width: 415px) 100vw, 415px\" /></figure></div>\n\n\n\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile\" style=\"grid-template-columns:auto 36%\"><div class=\"wp-block-media-text__content\">\n<h3 class=\"wp-block-heading\">Styles tab</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Styles</h4>\n\n\n\n<p>You can modify the <em>Tag Cloud block</em> styles by choosing the \u2018Default\u2019 or \u2018Outline\u2019 buttons in the Styles settings panel. Hover over the \u2018Default\u2019 or \u2018Outline\u2019 buttons to get a preview of the styles.</p>\n\n\n\n<p>The style options may vary based on your theme.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Typography </h4>\n\n\n\n<p>Typography settings allow you to change a block\u2019s font size, appearance, line height, letter casing, and spacing.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<h4 class=\"wp-block-heading\">Dimensions</h4>\n\n\n\n<p>Dimension controls are used to control how groups of blocks are placed alongside one another, by changing the values for padding, margin, and other dimensions</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Learn more about dimension controls.</a></p>\n</div><figure class=\"wp-block-media-text__media\"><img loading=\"lazy\" decoding=\"async\" width=\"414\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/04/tag-cloud-styles-tab-WP-62-414x1024.png\" alt=\"The block settings sidebar with the styles tab opened.\" class=\"wp-image-16356493 size-full\" srcset=\"https://wordpress.org/documentation/files/2023/04/tag-cloud-styles-tab-WP-62-414x1024.png 414w, https://wordpress.org/documentation/files/2023/04/tag-cloud-styles-tab-WP-62-121x300.png 121w, https://wordpress.org/documentation/files/2023/04/tag-cloud-styles-tab-WP-62.png 570w\" sizes=\"auto, (max-width: 414px) 100vw, 414px\" /></figure></div>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"562\" height=\"292\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-17-at-10.21.07-AM.png\" alt=\"Advanced settings in the Tag Cloud block\" class=\"wp-image-16209656\" style=\"width:347px;height:180px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-17-at-10.21.07-AM.png 562w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-17-at-10.21.07-AM-300x156.png 300w\" sizes=\"auto, (max-width: 562px) 100vw, 562px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-04-23\n<ul class=\"wp-block-list\">\n<li>Updated formatting</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-03-30\n<ul class=\"wp-block-list\">\n<li>Updated screenshots.</li>\n\n\n\n<li>Added information about typography options.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-01-26\n<ul class=\"wp-block-list\">\n<li>Updated for formatting consistency.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Alinged images for mobile view .</li>\n\n\n\n<li>Removed redundant content .</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-17\n<ul class=\"wp-block-list\">\n<li>Updated screenshots and content for 6.1.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-07-19\n<ul class=\"wp-block-list\">\n<li>Added content and screenshots for 6.0.</li>\n\n\n\n<li>Added ALT tags for images.</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-08-17</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Tag Cloud block allows adding tag/category cloud into the page/post. A tag cloud is a list of all tags /categories on your site, displayed in alphabetical order.&nbsp;&nbsp; Tag cloud helps your readers to discover and search content easily and quickly. The Tag Cloud block displays each tag [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-13255925",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13255925",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13255925"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13255925/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360416,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13255925/revisions/16360416"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13255925"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13255925"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

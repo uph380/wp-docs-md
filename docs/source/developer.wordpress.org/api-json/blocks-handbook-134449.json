@@ -1,0 +1,91 @@
+{
+    "id": 134449,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/color-picker/"
+    },
+    "modified": "2024-10-30T16:55:49",
+    "modified_gmt": "2024-10-30T16:55:49",
+    "slug": "color-picker",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/color-picker/",
+    "title": {
+        "rendered": "ColorPicker"
+    },
+    "content": {
+        "rendered": "<p><code>ColorPicker</code> is a color picking component based on <code>react-colorful</code>. It lets you pick a color visually or by manipulating the individual RGB(A), HSL(A) and Hex(8) color values.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { ColorPicker } from '@wordpress/components';\n\nfunction Example() {\n    const [color, setColor] = useState();\n    return (\n        &lt;ColorPicker\n            color={color}\n            onChange={setColor}\n            enableAlpha\n            defaultValue=\"#000\"\n        /&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>color</code>: <code>string</code></h3>\n<p>The current color value to display in the picker. Must be a hex or hex8 string.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onChange</code>: <code>(hex8Color: string) =&gt; void</code></h3>\n<p>Fired when the color changes. Always passes a hex or hex8 color string.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>enableAlpha</code>: <code>boolean</code></h3>\n<p>When <code>true</code> the color picker will display the alpha channel both in the bottom inputs as well as in the color picker itself.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>defaultValue</code>: <code>string | undefined</code></h3>\n<p>An optional default value to use for the color picker.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>'#fff'</code></li>\n</ul>\n<h3><code>copyFormat</code>: <code>'hex' | 'hsl' | 'rgb' | undefined</code></h3>\n<p>The format to copy when clicking the displayed color format.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 132,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134449",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134449",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134449/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151877,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134449/revisions/151877"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134449"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 10917,
+    "date": "2014-09-16T17:14:02",
+    "date_gmt": "2014-09-16T17:14:02",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10917"
+    },
+    "modified": "2024-02-20T10:37:10",
+    "modified_gmt": "2024-02-20T10:37:10",
+    "slug": "activation-deactivation-hooks",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/",
+    "title": {
+        "rendered": "Activation / Deactivation Hooks"
+    },
+    "content": {
+        "rendered": "\n<p>Activation and deactivation hooks provide ways to perform actions when plugins are&nbsp;activated or deactivated.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>On <em>activation</em>, plugins can run a routine to add&nbsp;rewrite rules, add custom database tables, or set default option values.</li>\n\n\n\n<li>On <em>deactivation</em>, plugins can run a routine to remove temporary data such as cache and temp files and directories.</li>\n</ul>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nThe deactivation hook is sometimes confused with the <a href=\"https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/\">uninstall hook</a>. The uninstall hook is best suited to <strong>delete all data permanently</strong> such as deleting plugin options and custom tables, etc.<br />\n</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Activation</h2>\n\n\n\n<p>To set up an activation hook, use the <a href=\"https://developer.wordpress.org/reference/functions/register_activation_hook/\" rel=\"function\">register_activation_hook()</a>  function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">register_activation_hook(\n\t__FILE__,\n\t'pluginprefix_function_to_run'\n);</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Deactivation</h2>\n\n\n\n<p>To set up a deactivation hook, use the <a href=\"https://developer.wordpress.org/reference/functions/register_deactivation_hook/\" rel=\"function\">register_deactivation_hook()</a>  function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">register_deactivation_hook(\n\t__FILE__,\n\t'pluginprefix_function_to_run'\n);</code></pre>\n\n\n\n<p>The first parameter in each of these functions refers to your main plugin file, which is the file in which you have placed the <a href=\"https://developer.wordpress.org/plugins/the-basics/header-requirements/\">plugin header comment</a>. Usually these two functions will be triggered from within the main plugin file; however, if the functions are placed in any other file, you must update the first parameter to correctly point to the main plugin file.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Example</h2>\n\n\n\n<p>One of the most common uses for an activation hook is to refresh&nbsp;WordPress permalinks when a plugin registers a custom post type. This gets rid of the nasty 404 errors.</p>\n\n\n\n<p>Let&#8217;s look at an example of how to do this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Register the \"book\" custom post type\n */\nfunction pluginprefix_setup_post_type() {\n\tregister_post_type( 'book', ['public' =&gt; true ] ); \n} \nadd_action( 'init', 'pluginprefix_setup_post_type' );\n\n\n/**\n * Activate the plugin.\n */\nfunction pluginprefix_activate() { \n\t// Trigger our function that registers the custom post type plugin.\n\tpluginprefix_setup_post_type(); \n\t// Clear the permalinks after the post type has been registered.\n\tflush_rewrite_rules(); \n}\nregister_activation_hook( __FILE__, 'pluginprefix_activate' );</code></pre>\n\n\n\n<p>If you are unfamiliar with registering custom post types, don&#8217;t worry &#8211; this will be covered later. This example is used simply because it&#8217;s very common.</p>\n\n\n\n<p>Using the example from above, the following is how to reverse this process and deactivate a plugin:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Deactivation hook.\n */\nfunction pluginprefix_deactivate() {\n\t// Unregister the post type, so the rules are no longer in memory.\n\tunregister_post_type( 'book' );\n\t// Clear the permalinks to remove our post type's rules from the database.\n\tflush_rewrite_rules();\n}\nregister_deactivation_hook( __FILE__, 'pluginprefix_deactivate' );</code></pre>\n\n\n\n<p>For further information regarding activation and deactivation hooks, here are some excellent resources:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/register_activation_hook/\">register_activation_hook()</a> in the WordPress function reference.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/register_deactivation_hook/\">register_deactivation_hook()</a> in the WordPress function reference.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10903,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10917",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10917",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 24,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10917/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144448,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10917/revisions/144448"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10903"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10917"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

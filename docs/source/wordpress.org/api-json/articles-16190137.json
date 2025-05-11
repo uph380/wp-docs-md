@@ -1,0 +1,109 @@
+{
+    "id": 16190137,
+    "date": "2022-11-11T17:22:41",
+    "date_gmt": "2022-11-11T17:22:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16190137"
+    },
+    "modified": "2024-09-16T13:33:35",
+    "modified_gmt": "2024-09-16T13:33:35",
+    "slug": "amazon-kindle-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/amazon-kindle-embed/",
+    "title": {
+        "rendered": "Amazon Kindle Embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>The <strong>Amazon Kindle </strong>embed<em> </em>block allows users to embed Amazon Kindle content. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"959\" height=\"400\" src=\"https://wordpress.org/documentation/files/2022/11/image1-2.png\" alt=\"Amazon kindle block\" class=\"wp-image-16360953\" style=\"aspect-ratio:2.4785992217898833;object-fit:cover;width:663px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2022/11/image1-2.png 959w, https://wordpress.org/documentation/files/2022/11/image1-2-300x125.png 300w, https://wordpress.org/documentation/files/2022/11/image1-2-768x320.png 768w\" sizes=\"auto, (max-width: 959px) 100vw, 959px\" /></figure>\n\n\n\n<p></p>\n\n\n\n<p>Click the <strong>(+)</strong> icon to open the block inserter pop-up window and search for the <strong>Amazon Kindle</strong> embed block.&nbsp;</p>\n\n\n\n<p>You can also use the keyboard shortcut <code>/amazon-kindle</code> to quickly insert an <strong>Amazon Kindle</strong><em> </em>embed block.&nbsp;</p>\n\n\n\n<p>Keep in mind that the link needs to follow this format: <a href=\"http://www.amazon.com/dp/ASIN\">http://www.amazon.com/dp/ASIN</a> where you will need to paste your preferred ASIN numbers and choose the corresponding locale (amazon.co.uk, amazon.com, and so on). More information can be found here: <a href=\"https://kdp.amazon.com/en_US/help/topic/G200652190\">Linking from Your Website</a>.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"898\" height=\"396\" src=\"https://wordpress.org/documentation/files/2022/11/image3-3.png\" alt=\"Amazon kindle block with book URL\" class=\"wp-image-16360976\" style=\"width:680px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2022/11/image3-3.png 898w, https://wordpress.org/documentation/files/2022/11/image3-3-300x132.png 300w, https://wordpress.org/documentation/files/2022/11/image3-3-768x339.png 768w\" sizes=\"auto, (max-width: 898px) 100vw, 898px\" /></figure>\n\n\n\n<p>Then paste the preferred URL, click on the Embed button and the book\u2019s details will be added:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"715\" height=\"716\" src=\"https://wordpress.org/documentation/files/2022/11/image4-3.png\" alt=\"Preview of Amazon kindle block with book details\" class=\"wp-image-16360978\" srcset=\"https://wordpress.org/documentation/files/2022/11/image4-3.png 715w, https://wordpress.org/documentation/files/2022/11/image4-3-300x300.png 300w, https://wordpress.org/documentation/files/2022/11/image4-3-150x150.png 150w\" sizes=\"auto, (max-width: 715px) 100vw, 715px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/wordpress-editor/#adding-a-block\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"409\" height=\"128\" src=\"https://wordpress.org/documentation/files/2022/11/image6-2.png\" alt=\"Block toolbar for Amazon kindle block\" class=\"wp-image-16360979\" style=\"aspect-ratio:4.574712643678161;object-fit:cover;width:397px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image6-2.png 409w, https://wordpress.org/documentation/files/2022/11/image6-2-300x94.png 300w\" sizes=\"auto, (max-width: 409px) 100vw, 409px\" /></figure>\n\n\n\n<p>The block toolbar contains the tools to customize each block. The <strong>Amazon Kindle</strong> block\u2019s toolbar consists of the following tools:</p>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"485\" height=\"373\" src=\"https://wordpress.org/documentation/files/2022/11/image9-4.png\" alt=\"Transform to option in the Amazon kindle block\" class=\"wp-image-16360980\" style=\"width:462px;height:320px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image9-4.png 485w, https://wordpress.org/documentation/files/2022/11/image9-4-300x231.png 300w\" sizes=\"auto, (max-width: 485px) 100vw, 485px\" /></figure>\n\n\n\n<p>If you click the Embed icon on the toolbar, you will be able to convert the block into columns and group blocks.</p>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"426\" height=\"145\" src=\"https://wordpress.org/documentation/files/2022/11/image2-2.png\" alt=\"Block moving tools in the Amazon kindle block\" class=\"wp-image-16360981\" style=\"aspect-ratio:4.586206896551724;object-fit:cover;width:436px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image2-2.png 426w, https://wordpress.org/documentation/files/2022/11/image2-2-300x102.png 300w\" sizes=\"auto, (max-width: 426px) 100vw, 426px\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <strong>Amazon Kindle </strong>block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"533\" height=\"476\" src=\"https://wordpress.org/documentation/files/2022/11/image10.png\" alt=\"Change alignment in the Amazon kindle block\" class=\"wp-image-16360982\" style=\"width:506px;height:462px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image10.png 533w, https://wordpress.org/documentation/files/2022/11/image10-300x268.png 300w\" sizes=\"auto, (max-width: 533px) 100vw, 533px\" /></figure>\n\n\n\n<p>The change alignment tool is used for the <strong>Amazon Kindle</strong> block\u2019s position and width:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong> \u2013 Uses the default alignment options.&nbsp;</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> \u2013 Extend the book embed to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left</strong> \u2013 Make the book embedded, left aligned.</li>\n\n\n\n<li><strong>Align center</strong> \u2013 Make the book embedded, center aligned.</li>\n\n\n\n<li><strong>Align right </strong>\u2013 Make the book embedded, right aligned.</li>\n</ul>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"430\" height=\"144\" src=\"https://wordpress.org/documentation/files/2022/11/image11-2.png\" alt=\"Edit URL in the Amazon kindle block\" class=\"wp-image-16360983\" style=\"aspect-ratio:4.771084337349397;object-fit:cover;width:397px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image11-2.png 430w, https://wordpress.org/documentation/files/2022/11/image11-2-300x100.png 300w\" sizes=\"auto, (max-width: 430px) 100vw, 430px\" /></figure>\n\n\n\n<p>The edit URL button is used to modify the <strong>Amazon Kindle</strong> block embed link.&nbsp;</p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"407\" height=\"130\" src=\"https://wordpress.org/documentation/files/2022/11/image7-4.png\" alt=\"More options in the Amazon kindle block\" class=\"wp-image-16360984\" style=\"width:397px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image7-4.png 407w, https://wordpress.org/documentation/files/2022/11/image7-4-300x96.png 300w\" sizes=\"auto, (max-width: 407px) 100vw, 407px\" /></figure>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image alignright size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"414\" height=\"632\" src=\"https://wordpress.org/documentation/files/2022/11/image8-4.png\" alt=\"More options in the Amazon kindle block\" class=\"wp-image-16360985\" style=\"width:238px;height:433px\" srcset=\"https://wordpress.org/documentation/files/2022/11/image8-4.png 414w, https://wordpress.org/documentation/files/2022/11/image8-4-197x300.png 197w\" sizes=\"auto, (max-width: 414px) 100vw, 414px\" /></figure>\n\n\n\n<p>Click on the three dots icon to show more block options. A drop-down menu with these actions will appear:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Copy</strong><em> </em>adds the Amazon Kindle block into the clipboard. Then, you can paste it anywhere you want in the block editor.</li>\n\n\n\n<li><strong>Duplicate</strong><em> </em>creates a copy of the selected block that appears after the current block.</li>\n\n\n\n<li><strong>Add Before</strong> inserts a new block before the selected block(s).</li>\n\n\n\n<li><strong>Add After</strong> inserts a new block after the selected block(s).</li>\n\n\n\n<li><strong>Group</strong> allows you to create a group of blocks and treat them as a unit. You can, for instance, add a common background color or other blocks to the group.</li>\n\n\n\n<li><strong>Lock</strong><em> </em>lets you prevent users from moving or deleting the selected block. A pop-up window will appear to set the block locking attribute to the selected block. You can opt to disable movement, prevent removal, or both for the selected block.</li>\n\n\n\n<li><strong>Rename</strong> let&#8217;s you create a custom name for the block.</li>\n\n\n\n<li><strong>Create patterns </strong>lets you add the selected block to a list of Synced patterns, so you can use them on other posts or pages as well.</li>\n\n\n\n<li><strong>Move<em> </em>to</strong> lets you use a blue line on the editor to indicate the new position for the selected block. Use your keyboard\u2019s up and down arrows to move the blue line. When the line is in the desired position, press Enter to move the selected block to that position.</li>\n\n\n\n<li><strong>Edit as HTML</strong> allows you to modify the HTML code of the embed block.</li>\n\n\n\n<li><strong>Delete</strong><em> </em>deletes the selected block from the content.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"456\" height=\"621\" src=\"https://wordpress.org/documentation/files/2022/11/image11-1.png\" alt=\"How to show the Block settings sidebar from the cog icon\" class=\"wp-image-16360972\" srcset=\"https://wordpress.org/documentation/files/2022/11/image11-1.png 456w, https://wordpress.org/documentation/files/2022/11/image11-1-220x300.png 220w\" sizes=\"auto, (max-width: 456px) 100vw, 456px\" /></figure>\n\n\n\n<p>Here are the options for the <strong>Amazon Kindle block</strong>:</p>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The Advanced tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles for the block.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"421\" height=\"236\" src=\"https://wordpress.org/documentation/files/2022/11/image5-1.png\" alt=\"Advanced option in the selected Block\" class=\"wp-image-16360974\" srcset=\"https://wordpress.org/documentation/files/2022/11/image5-1.png 421w, https://wordpress.org/documentation/files/2022/11/image5-1-300x168.png 300w\" sizes=\"auto, (max-width: 421px) 100vw, 421px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-09-16\n<ul class=\"wp-block-list\">\n<li>Updated broken and missing images. </li>\n\n\n\n<li>Replaced old images with current ones.</li>\n\n\n\n<li>Edited some texts to ensure they correlate with the images.</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-11-11</li>\n</ul>\n</div>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks The Amazon Kindle embed block allows users to embed Amazon Kindle content. Click the (+) icon to open the block inserter pop-up window and search for the Amazon Kindle embed block.&nbsp; You can also use the keyboard shortcut /amazon-kindle to quickly insert an Amazon Kindle embed block.&nbsp; Keep in [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-16190137",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16190137",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16190137"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 20,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16190137/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360990,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16190137/revisions/16360990"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16190137"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16190137"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

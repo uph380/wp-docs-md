@@ -1,0 +1,91 @@
+{
+    "id": 157207,
+    "date": "2025-02-21T04:17:15",
+    "date_gmt": "2025-02-21T04:17:15",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/wysiwyg/wysiwyg-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:25",
+    "modified_gmt": "2025-02-21T04:17:25",
+    "slug": "wysiwyg-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/wysiwyg/wysiwyg-tutorial/",
+    "title": {
+        "rendered": "Using the WYSIWYG Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a WYSIWYG field</li>\n<li>Configure options:\n<ul>\n<li>Choose toolbar</li>\n<li>Set media options</li>\n<li>Configure height</li>\n<li>Set defaults</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Rich Content\n<ul>\n<li>Post content</li>\n<li>Product descriptions</li>\n<li>Page sections</li>\n</ul>\n</li>\n<li>Formatted Text\n<ul>\n<li>Documentation</li>\n<li>Guidelines</li>\n<li>Formatted messages</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Configure appropriate tools</li>\n<li>Consider media handling</li>\n<li>Plan content structure</li>\n<li>Set consistent styling</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157206,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157207",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157207",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157207/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157208,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157207/revisions/157208"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157206"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157207"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

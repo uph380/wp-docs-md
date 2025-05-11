@@ -1,0 +1,91 @@
+{
+    "id": 134437,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/angle-picker-control/"
+    },
+    "modified": "2025-03-24T16:49:13",
+    "modified_gmt": "2025-03-24T16:49:13",
+    "slug": "angle-picker-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/angle-picker-control/",
+    "title": {
+        "rendered": "AnglePickerControl"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-anglepickercontrol--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p><code>AnglePickerControl</code> is a React component to render a UI that allows users to<br />\npick an angle. Users can choose an angle in a visual UI with the mouse by<br />\ndragging an angle indicator inside a circle or by directly inserting the<br />\ndesired angle in a text field.</p>\n<pre><code class=\"language-jsx\">import { useState } from '@wordpress/element';\nimport { AnglePickerControl } from '@wordpress/components';\n\nfunction Example() {\n  const [ angle, setAngle ] = useState( 0 );\n  return (\n    &lt;AnglePickerControl\n      value={ angle }\n      onChange={ setAngle }\n    /&gt;\n  );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>as</code></h3>\n<ul>\n<li>Type: <code>\"symbol\" | \"object\" | \"a\" | \"abbr\" | \"address\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | ...</code></li>\n<li>Required: No</li>\n</ul>\n<p>The HTML element or React component to render the component as.</p>\n<h3><code>label</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>__( 'Angle' )</code></li>\n</ul>\n<p>Label to use for the angle picker.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>(value: number) =&gt; void</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>A function that receives the new value of the input.</p>\n<h3><code>value</code></h3>\n<ul>\n<li>Type: <code>string | number</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>The current value of the input. The value represents an angle in degrees<br />\nand should be a value between 0 and 360.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 112,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134437",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134437",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134437/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157408,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134437/revisions/157408"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134437"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

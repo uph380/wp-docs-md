@@ -1,0 +1,91 @@
+{
+    "id": 125644,
+    "date": "2019-08-12T08:21:25",
+    "date_gmt": "2019-08-12T08:21:25",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125644"
+    },
+    "modified": "2022-11-21T16:08:38",
+    "modified_gmt": "2022-11-21T16:08:38",
+    "slug": "global-variables",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/global-variables/",
+    "title": {
+        "rendered": "Global Variables"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Introduction</h2>\n\n\n\n<p>WordPress-specific global variables are used throughout WordPress code for various reasons. Almost all data that WordPress generates can be found in a global variable.</p>\n\n\n\n<p>Note that it&#8217;s best to use the appropriate API functions when available, instead of modifying globals directly.</p>\n\n\n\n<p>To access a global variable in your code, you first need to globalize the variable with\u00a0<code>global $variable;</code>.</p>\n\n\n\n<p><strong>Accessing other globals besides the ones listed below is not recommended.</strong></p>\n\n\n\n<h3 class=\"wp-block-heading\">Inside the Loop variables</h3>\n\n\n\n<p>While inside the loop, these globals are set, containing information about the current post being processed.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>$post</code> (<a href=\"https://developer.wordpress.org/reference/classes/wp_post/\" rel=\"class\">WP_Post</a>): The post object for the current post. Object described in\u00a0<a href=\"https://developer.wordpress.org/reference/classes/wp_post/\">WP_Post Class Reference</a>.</li><li><code>$posts</code>: Used by some core functions, not to be mistaken for <code>$query-&gt;$posts</code>.</li><li><code>$authordata</code> (<a href=\"https://developer.wordpress.org/reference/classes/wp_user/\" rel=\"class\">WP_User</a>): The author object for the current post. Object described in\u00a0<a href=\"https://developer.wordpress.org/reference/classes/wp_user/\">WP_User Class Reference</a>.</li><li><code>$currentday</code> (string): Day that the current post was published.</li><li><code>$currentmonth</code> (string): Month that the curent post was published.</li><li><code>$page</code>\u00a0(int): The page of the current post being viewed. Specified by the query var page.</li><li><code>$pages</code>\u00a0(array): The content of the pages of the current post. Each page elements contains part of the content separated by the <code>&lt;!--nextpage--&gt;</code> tag.</li><li><code>$multipage</code> (boolean): Flag to know if the current post has multiple pages or not. Returns <code>true</code> if the post has multiple pages, related to <code>$pages</code>.</li><li><code>$more</code> (boolean): Flag to know if WordPress should enforce the <code>&lt;!--more--&gt;</code> tag for the current post. WordPress will not enforce the more tag if <code>true</code>.</li><li><code>$numpages</code> (int): Returns the number of pages in the post, related to <code>$pages</code>.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Browser Detection Booleans</h3>\n\n\n\n<p>These globals store data about which browser the user is on.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>$is_iphone</code>\u00a0(boolean): iPhone Safari</li><li><code>$is_chrome</code> (boolean): Google Chrome</li><li><code>$is_safari</code> (boolean): Safari</li><li><code>$is_NS4</code> (boolean): Netscape 4</li><li><code>$is_opera</code> (boolean): Opera</li><li><code>$is_macIE</code>\u00a0(boolean): Mac Internet Explorer</li><li><code>$is_winIE</code>\u00a0(boolean): Windows Internet Explorer</li><li><code>$is_gecko</code>\u00a0(boolean): FireFox</li><li><code>$is_lynx</code>\u00a0(boolean): Lynx</li><li><code>$is_IE</code>\u00a0(boolean): Internet Explorer</li><li><code>$is_edge</code>\u00a0(boolean): Microsoft Edge</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Web Server Detection Booleans</h3>\n\n\n\n<p>These globals store data about which web server WordPress is running on.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>$is_apache</code>\u00a0(boolean): Apache HTTP Server</li><li><code>$is_IIS</code>\u00a0(boolean): Microsoft Internet Information Services (IIS)</li><li><code>$is_iis7</code>\u00a0(boolean): Microsoft Internet Information Services (IIS) v7.x</li><li><code>$is_nginx</code>\u00a0(boolean): Nginx web server</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Version Variables</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><code>$wp_version</code>\u00a0(string): The installed version of WordPress</li><li><code>$wp_db_version</code>\u00a0(int): The version number of the database</li><li><code>$tinymce_version</code>\u00a0(string): The installed version of TinyMCE</li><li><code>$manifest_version</code>\u00a0(string): The cache manifest version</li><li><code>$required_php_version</code>\u00a0(string): The version of PHP this install of WordPress requires</li><li><code>$required_mysql_version</code>\u00a0(string): The version of MySQL this install of WordPress requires</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Misc</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><code>$super_admins</code>\u00a0(array): An array of user IDs that should be granted super admin privileges (multisite). This global is only set by the site owner (e.g., in\u00a0<code>wp-config.php</code>), and contains an array of IDs of users who should have super admin privileges. If set it will override the list of super admins in the database.</li><li><code>$wp_query</code>\u00a0(object): The global instance of the\u00a0<a href=\"https://developer.wordpress.org/reference/classes/wp_query/\">WP_Query</a>\u00a0class.</li><li><code>$wp_rewrite</code>\u00a0(object): The global instance of the\u00a0<a href=\"https://developer.wordpress.org/reference/classes/wp_rewrite/\">WP_Rewrite</a>\u00a0class.</li><li><code>$wp</code>\u00a0(object): The global instance of the\u00a0<a href=\"https://developer.wordpress.org/reference/classes/wp/\">WP</a>\u00a0environment setup class.</li><li><code>$wpdb</code>\u00a0(object): The global instance of the\u00a0<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\">wpdb</a>\u00a0class.</li><li><code>$wp_locale</code>\u00a0(object): The global instance of the <a href=\"https://developer.wordpress.org/reference/classes/wp_locale/\">WP_Locale</a> class.</li><li><code>$wp_admin_bar</code> (object): The global instance of the <a href=\"https://developer.wordpress.org/reference/classes/wp_admin_bar/\">WP_Admin_Bar</a> class.</li><li><code>$wp_roles</code>\u00a0(object): The global instance of the <a href=\"https://developer.wordpress.org/reference/classes/wp_roles/\">WP_Roles</a> class.</li><li><code>$wp_meta_boxes</code>\u00a0(array): Object containing all registered metaboxes, including their id&#8217;s, args, callback functions and title for all post types including custom.</li><li><code>$wp_registered_sidebars</code>\u00a0(array)</li><li><code>$wp_registered_widgets</code>\u00a0(array)</li><li><code>$wp_registered_widget_controls</code>\u00a0(array)</li><li><code>$wp_registered_widget_updates</code>\u00a0(array)</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Admin Globals</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><code>$pagenow</code>\u00a0(string): Used in wp-admin.\u00a0<br>See also <a href=\"https://developer.wordpress.org/reference/functions/get_current_screen/\">get_current_screen()</a> for the WordPress Admin Screen API.</li><li><code>$post_type</code>\u00a0(string): Used in wp-admin</li><li><code>$allowedposttags</code>\u00a0(array)</li><li><code>$allowedtags</code>\u00a0(array)</li><li><code>$menu</code>\u00a0(array)</li></ul>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 50,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125644",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125644",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125644/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125703,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125644/revisions/125703"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125644"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

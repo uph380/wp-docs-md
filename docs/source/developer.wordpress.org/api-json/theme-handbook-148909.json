@@ -1,0 +1,97 @@
+{
+    "id": 148909,
+    "date": "2023-10-11T14:00:47",
+    "date_gmt": "2023-10-11T14:00:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=148909"
+    },
+    "modified": "2023-12-14T21:09:05",
+    "modified_gmt": "2023-12-14T21:09:05",
+    "slug": "styles",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/",
+    "title": {
+        "rendered": "Styles"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>styles</code> property in <code>theme.json</code> lets you configure settings at the global level, for individual elements, and individual blocks. WordPress supports a standard subset of the CSS specification, but also allows you to add custom CSS directly in your <code>theme.json</code> file.</p>\n\n\n\n<p>When possible, it is recommended to add your theme styles via the <code>styles</code> property, at least for standard WordPress features. This makes it possible for users to customize them via <strong>Appearance &gt; Editor &gt; Styles</strong> without CSS specificity issues.</p>\n\n\n\n<p>This document contains links for learning about the available style properties and how to apply styles to your theme via its <code>theme.json</code> file.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The styles property</h2>\n\n\n\n<p><code>styles</code> is a top-level property in <code>theme.json</code> and has multiple nested properties that you can define. And some of those nested properties have multiple levels of nesting of their own.</p>\n\n\n\n<p>The following is an overarching look at these properties in the context of a <code>theme.json</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"elements\": {},\n\t\t\"blocks\": {}\n\t}\n}</code></pre>\n\n\n\n<p>The following is an example of what the <code>styles</code> property could look like in a custom <code>theme.json</code> file. This should give you a feel for how it is structured, but you will dive into this more deeply as you read through this section of the handbook:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"styles\": {\n\t\t\"color\": {\n\t\t\t\"text\": \"#000000\",\n\t\t\t\"background\": \"#ffffff\"\n\t\t},\n\t\t\"elements\": {\n\t\t\t\"button\": {\n\t\t\t\t\"color\": {\n\t\t\t\t\t\"text\": \"#ffffff\",\n\t\t\t\t\t\"background\": \"#000000\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t\"blocks\": {\n\t\t\t\"core/code\": {\n\t\t\t\t\"color\": {\n\t\t\t\t\t\"text\": \"#ffffff\",\n\t\t\t\t\t\"background\": \"#000000\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Styles documentation</h2>\n\n\n\n<p>Use the following links to explore configuring styles via <code>theme.json</code> file:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/applying-styles/\">Applying Styles</a>:</strong> How to apply custom styles to your theme using the standard JSON syntax.</li>\n\n\n\n<li><strong><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/using-presets/\">Using Presets</a>:</strong> How to use the presets that you\u2019ve configured via the <code>settings</code> property in your styles.</li>\n\n\n\n<li><strong><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/styles-reference/\">Styles Reference</a>:</strong> A reference guide for the available style properties that you can use in <code>theme.json</code>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148901,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148909",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148909",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148909/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149180,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148909/revisions/149180"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148901"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148909"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

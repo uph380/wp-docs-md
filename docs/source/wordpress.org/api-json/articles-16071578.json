@@ -1,0 +1,109 @@
+{
+    "id": 16071578,
+    "date": "2022-10-06T10:16:34",
+    "date_gmt": "2022-10-06T10:16:34",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16071578"
+    },
+    "modified": "2025-04-17T07:36:57",
+    "modified_gmt": "2025-04-17T07:36:57",
+    "slug": "border-settings-overview",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/border-settings-overview/",
+    "title": {
+        "rendered": "Border &amp; Shadow Settings overview"
+    },
+    "content": {
+        "rendered": "\n<p>You can use the border and shadow settings in your&nbsp;<a href=\"https://wordpress.org/documentation/article/blocks/\">block</a>&nbsp;to set a visible border or shadow on specific blocks. These settings allow you to control the width and radius on each side of the border. Some blocks also have the option to change the border color.</p>\n\n\n\n<p>The border and shadow settings are available when you use the&nbsp;<a href=\"https://wordpress.org/documentation/article/wordpress-editor/\">block editor</a>. If you are new to the block editor,&nbsp;<a href=\"https://wordpress.org/documentation/article/working-with-blocks/\" target=\"_blank\" rel=\"noreferrer noopener\">this guide</a>&nbsp;will show you how to work with blocks. You can read more about the new block editor features and improvements&nbsp;<a href=\"https://make.wordpress.org/core/2022/09/26/core-editor-improvement-catalyst-for-creativity/\" target=\"_blank\" rel=\"noreferrer noopener\">in this article.</a></p>\n\n\n\n<div style=\"height:30px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:70%\">\n<h2 class=\"wp-block-heading\">How to access border and shadow settings</h2>\n\n\n\n<p class=\"has-text-align-left\">The border and shadow settings can be found in the Block Settings sidebar of a&nbsp;<a href=\"https://wordpress.org/documentation/article/blocks/\">block</a>&nbsp;under the section&nbsp;<strong>Border</strong>.</p>\n\n\n\n<p>If you don\u2019t see the <strong>Block Settings</strong> sidebar, select the block you want to customize, then click the&nbsp;<strong>settings</strong>&nbsp;icon that is to the right of the&nbsp;<strong>Publish</strong>&nbsp;or&nbsp;<strong>Update</strong>&nbsp;buttons in the WordPress Editor.</p>\n\n\n\n<p>In the&nbsp;<strong>Border &amp; Shadow</strong>&nbsp;section, shadow option may be hidden. Click on the three-dot border options menu (also known as an ellipsis) to explore all the border and shadow settings that are not visible by default.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f4fa\">You can read more about <a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/working-with-blocks/#block-settings\" target=\"_blank\">block settings here.</a></p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:30%\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"756\" height=\"1324\" src=\"https://wordpress.org/documentation/files/2022/10/border-shadow-6.7.jpg\" alt=\"Border &amp; Shadow section in the Block Settings sidebar\" class=\"wp-image-16365247\" srcset=\"https://wordpress.org/documentation/files/2022/10/border-shadow-6.7.jpg 756w, https://wordpress.org/documentation/files/2022/10/border-shadow-6.7-171x300.jpg 171w, https://wordpress.org/documentation/files/2022/10/border-shadow-6.7-585x1024.jpg 585w\" sizes=\"auto, (max-width: 756px) 100vw, 756px\" /><figcaption class=\"wp-element-caption\">Screenshot</figcaption></figure>\n</div>\n</div>\n\n\n\n<div style=\"height:5px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<h2 class=\"wp-block-heading\">Type of settings </h2>\n\n\n\n<p>Each supported block comes with different border and shadow settings. If you make customizations to these settings and want to revert back to the original settings quickly, you can do so by selecting the three-dot menu icon and clicking&nbsp;<strong>Reset All</strong>&nbsp;as&nbsp;<a href=\"https://wordpress.org/documentation/article/working-with-blocks/#reset-controls\" target=\"_blank\" rel=\"noreferrer noopener\">shown in this article</a>. This resets the settings and removes all of your changes. Note that not every block supports all the border settings.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Width </h3>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:50%\">\n<p>The width setting allows you to define the width of the border on the four sides. You can type in a value in the text box or use the slider to adjust the value.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"flex-basis:50%\">\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"552\" height=\"182\" src=\"https://wordpress.org/documentation/files/2022/11/Edit-Page-Sample-Page-\u2039-Coco-Woofs-\u2014-WordPress.png\" alt=\"Adding border width to a block\" class=\"wp-image-16205801\" style=\"width:414px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Edit-Page-Sample-Page-\u2039-Coco-Woofs-\u2014-WordPress.png 552w, https://wordpress.org/documentation/files/2022/11/Edit-Page-Sample-Page-\u2039-Coco-Woofs-\u2014-WordPress-300x99.png 300w\" sizes=\"auto, (max-width: 552px) 100vw, 552px\" /></figure>\n</div>\n</div>\n\n\n\n<p>You can click on the <strong>Link</strong> icon to unlink the sides and set separate values for the border width for the top, left, right and bottom.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"582\" height=\"368\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.40.45-AM.png\" alt=\"Setting separate border width values for the four sides.\" class=\"wp-image-16205814\" style=\"width:437px;height:276px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.40.45-AM.png 582w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.40.45-AM-300x190.png 300w\" sizes=\"auto, (max-width: 582px) 100vw, 582px\" /></figure>\n\n\n\n<p>You can choose to set border width using different units. Click the <code>px</code>&nbsp;icon to change the unit of measurement for the border thickness or radius. You can choose between&nbsp;<code>px</code>, <code>%</code>, <code>em</code>, <code>rem</code>, <code>vw</code>, and <code>vh</code>.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f4fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\">Read more about what each of these units means.</a></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"542\" height=\"322\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.38.48-AM.png\" alt=\"Changing the unit of measurement \" class=\"wp-image-16205805\" style=\"width:407px;height:242px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.38.48-AM.png 542w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.38.48-AM-300x178.png 300w\" sizes=\"auto, (max-width: 542px) 100vw, 542px\" /></figure>\n\n\n\n<div style=\"height:10px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The border color for your block can be set using the style picker next to the border width as seen below. You can the colors from the theme palette or from the default colors in the theme.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.43.26-AM-1-1024x663.png\" alt=\"Changing the border width and color\" class=\"wp-image-16205833\" style=\"width:512px;height:332px\" /></figure>\n\n\n\n<p>If you make customizations to these settings and want to revert back to the original settings quickly, you can do so by selecting the <strong>Reset to default </strong>button at the bottom of the color picker. This resets the settings and removes all of your changes.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"532\" height=\"808\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.53.01-AM.png\" alt=\"Reset to default button\" class=\"wp-image-16205858\" style=\"width:266px;height:404px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.53.01-AM.png 532w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-9.53.01-AM-198x300.png 198w\" sizes=\"auto, (max-width: 532px) 100vw, 532px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Style</h3>\n\n\n\n<p>From the color picker, you can also select one of the three border styles: straight line, dash line, and dotted line.&nbsp;&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"776\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-10.00.20-AM-1024x776.png\" alt=\"Changing the border style\" class=\"wp-image-16205866\" style=\"width:512px;height:388px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-10.00.20-AM-1024x776.png 1024w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-10.00.20-AM-300x227.png 300w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-10.00.20-AM-768x582.png 768w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-16-at-10.00.20-AM.png 1122w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<div style=\"height:15px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<h3 class=\"wp-block-heading\">Radius </h3>\n\n\n\n<p>The radius setting will give your block a more rounded border. Setting this to 0 means the block has sharp edges. </p>\n\n\n\n<p>You can choose to set a border radius using different units. Click the <code>px</code>&nbsp;icon to change the unit of measurement for the radius. You can choose between&nbsp;<code>px</code>, <code>%</code>, <code>em</code>, <code>rem</code>, <code>vw</code>, and <code>vh</code>.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f4fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\">Read more about what each of these units means.</a></p>\n\n\n\n<p>You can type in a value in the text box or use the slider to adjust the value.</p>\n\n\n\n<p>You can click on the <strong>Link</strong> icon to unlink the radii and set separate values for the four corners. Below is an example of how you can have unlinked values to create a block with uneven round corners.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"420\" src=\"https://wordpress.org/documentation/files/2023/04/border-radius-WP-62-1024x420.png\" alt=\"How to change the border-radius \" class=\"wp-image-16356567\" style=\"width:512px;height:210px\" srcset=\"https://wordpress.org/documentation/files/2023/04/border-radius-WP-62-1024x420.png 1024w, https://wordpress.org/documentation/files/2023/04/border-radius-WP-62-300x123.png 300w, https://wordpress.org/documentation/files/2023/04/border-radius-WP-62-768x315.png 768w, https://wordpress.org/documentation/files/2023/04/border-radius-WP-62.png 1176w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Note that when you unlink the radii, hover over the radii text boxes to display a tooltip that shows which corner each of the four text boxes relates to as shown below:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"546\" height=\"468\" src=\"https://wordpress.org/documentation/files/2023/04/border-radius-control-hover-WP-62.png\" alt=\"The border-radius control has labels indicating which corner of the block you are changing: Top left, top right, and so on.\" class=\"wp-image-16356568\" style=\"width:273px;height:234px\" srcset=\"https://wordpress.org/documentation/files/2023/04/border-radius-control-hover-WP-62.png 546w, https://wordpress.org/documentation/files/2023/04/border-radius-control-hover-WP-62-300x257.png 300w\" sizes=\"auto, (max-width: 546px) 100vw, 546px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Shadow</h3>\n\n\n\n<p>The shadow setting will give your block a shadow effect behind it.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f4fa\">Tips: If you don&#8217;t see the shadow option in the Border &amp; Shadow section, click the three vertical dots to the right of the section header and select Shadow option.</p>\n\n\n\n<p><br>Click Drop shadow and select shadow effects.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"573\" height=\"328\" src=\"https://wordpress.org/documentation/files/2022/10/shadow.png\" alt=\"Shadow setting\" class=\"wp-image-16365586\" srcset=\"https://wordpress.org/documentation/files/2022/10/shadow.png 573w, https://wordpress.org/documentation/files/2022/10/shadow-300x172.png 300w\" sizes=\"auto, (max-width: 573px) 100vw, 573px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Demonstration </h2>\n\n\n\n<p>This powerful set of tools allows for some neat ways to decorate everything from individual images to overall columns of content. To see how borders can transform a block, here\u2019s an example showing how a theme author can customize a featured image block to make it stand out even more:&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/10/demonstration-1.mp4\"></video></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2025-04-17 (props to <a href=\"https://profiles.wordpress.org/nikunj8866/\">@nikunj8866</a>)\n<ul class=\"wp-block-list\">\n<li>Add Shadow reset button</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2024-11-04\n<ul class=\"wp-block-list\">\n<li>Add shadow setting</li>\n\n\n\n<li>Categorised under the Block Editor from Appearance</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-04-11\n<ul class=\"wp-block-list\">\n<li>Updated block styles to emphasize important links</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-04-03\n<ul class=\"wp-block-list\">\n<li>Updated screenshots</li>\n\n\n\n<li>Updated the list of blocks that has border settings</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-16\n<ul class=\"wp-block-list\">\n<li>Updated info where color settings and style are merged together next to the Border width</li>\n\n\n\n<li>Added video and info about tooltip for the four corners</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-11-01</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>You can use the border and shadow settings in your&nbsp;block&nbsp;to set a visible border or shadow on specific blocks. These settings allow you to control the width and radius on each side of the border. Some blocks also have the option to change the border color. The border and shadow settings are available when you [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-16071578",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16071578",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16071578"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16071578/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365588,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16071578/revisions/16365588"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16071578"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16071578"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

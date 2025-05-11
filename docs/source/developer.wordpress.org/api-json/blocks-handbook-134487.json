@@ -1,0 +1,91 @@
+{
+    "id": 134487,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/navigation/"
+    },
+    "modified": "2024-10-30T16:55:41",
+    "modified_gmt": "2024-10-30T16:55:41",
+    "slug": "navigation",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/navigation/",
+    "title": {
+        "rendered": "Navigation"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis component is deprecated. Consider using `Navigator` instead.\n</div>\n<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p>Render a navigation list with optional groupings and hierarchy.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import {\n    __experimentalNavigation as Navigation,\n    __experimentalNavigationGroup as NavigationGroup,\n    __experimentalNavigationItem as NavigationItem,\n    __experimentalNavigationMenu as NavigationMenu,\n} from '@wordpress/components';\n\nconst MyNavigation = () =&gt; (\n    &lt;Navigation&gt;\n        &lt;NavigationMenu title=\"Home\"&gt;\n            &lt;NavigationGroup title=\"Group 1\"&gt;\n                &lt;NavigationItem item=\"item-1\" title=\"Item 1\" /&gt;\n                &lt;NavigationItem item=\"item-2\" title=\"Item 2\" /&gt;\n            &lt;/NavigationGroup&gt;\n            &lt;NavigationGroup title=\"Group 2\"&gt;\n                &lt;NavigationItem\n                    item=\"item-3\"\n                    navigateToMenu=\"category\"\n                    title=\"Category\"\n                /&gt;\n            &lt;/NavigationGroup&gt;\n        &lt;/NavigationMenu&gt;\n\n        &lt;NavigationMenu\n            backButtonLabel=\"Home\"\n            menu=\"category\"\n            parentMenu=\"root\"\n            title=\"Category\"\n        &gt;\n            &lt;NavigationItem badge=\"1\" item=\"child-1\" title=\"Child 1\" /&gt;\n            &lt;NavigationItem item=\"child-2\" title=\"Child 2\" /&gt;\n        &lt;/NavigationMenu&gt;\n    &lt;/Navigation&gt;\n);\n</code></pre>\n<h2>Navigation Props</h2>\n<p><code>Navigation</code> supports the following props.</p>\n<h3><code>activeItem</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The active item slug.</p>\n<h3><code>activeMenu</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: &#8220;root&#8221;</li>\n</ul>\n<p>The active menu slug.</p>\n<h3>className</h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Optional className for the <code>Navigation</code> component.</p>\n<h3><code>onActivateMenu</code></h3>\n<ul>\n<li>Type: <code>function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Sync the active menu between the external state and the Navigation&#8217;s internal state.</p>\n<h2>Navigation Menu Props</h2>\n<p><code>NavigationMenu</code> supports the following props.</p>\n<h3><code>backButtonLabel</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: parent menu&#8217;s title or &#8220;Back&#8221;</li>\n</ul>\n<p>The back button label used in nested menus. If not provided, the label will be inferred from the parent menu&#8217;s title.<br />\nIf for some reason the parent menu&#8217;s title is not available then it will default to &#8220;Back&#8221;.</p>\n<h3><code>onBackButtonClick</code></h3>\n<ul>\n<li>Type: <code>function</code></li>\n<li>Required: No</li>\n</ul>\n<p>A callback to handle clicking on the back button. If this prop is provided then the back button will be shown.</p>\n<h3>className</h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Optional className for the <code>NavigationMenu</code> component.</p>\n<h3>hasSearch</h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Enable the search feature on the menu title.</p>\n<h3><code>menu</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: &#8220;root&#8221;</li>\n</ul>\n<p>The unique identifier of the menu. The root menu can omit this, and it will default to &#8220;root&#8221;; all other menus need to specify it.</p>\n<h3>onSearch</h3>\n<ul>\n<li>Type: <code>( searchString: string ) =&gt; void;</code></li>\n<li>Required: No</li>\n</ul>\n<p>When <code>hasSearch</code> is active, this function handles the search input&#8217;s <code>onChange</code> event, making it controlled from the outside. It requires setting the <code>search</code> prop as well.</p>\n<h3>isSearchDebouncing</h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Indicates whether the search is debouncing or not. In case of <code>true</code> the &#8220;No results found.&#8221; text is omitted. Used to prevent showing &#8220;No results found.&#8221; text between debounced searches.</p>\n<h3><code>parentMenu</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The parent menu slug; used by nested menus to indicate their parent menu.</p>\n<h3>search</h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>When <code>hasSearch</code> is active and <code>onSearch</code> is provided, this controls the value of the search input. Required when the <code>onSearch</code> prop is provided.</p>\n<h3><code>isEmpty</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Indicates whether the menu is empty or not. Used together with the <code>hideIfTargetMenuEmpty</code> prop of Navigation Item.</p>\n<h3><code>title</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The menu title. It&#8217;s also the field used by the menu search function.</p>\n<h3><code>titleAction</code></h3>\n<ul>\n<li>Type: <code>React.ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Use this prop to render additional actions in the menu title.</p>\n<h2>Navigation Group Props</h2>\n<p><code>NavigationGroup</code> supports the following props.</p>\n<h3>className</h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Optional className for the <code>NavigationGroup</code> component.</p>\n<h3><code>title</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The group title.</p>\n<h2>Navigation Item Props</h2>\n<p><code>NavigationItem</code> supports the following props.</p>\n<h3><code>badge</code></h3>\n<ul>\n<li>Type: <code>string|Number</code></li>\n<li>Required: No</li>\n</ul>\n<p>The item badge content.</p>\n<h3>className</h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Optional className for the <code>NavigationItem</code> component.</p>\n<h3><code>href</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided, renders <code>a</code> instead of <code>button</code>.</p>\n<h3><code>icon</code></h3>\n<ul>\n<li>Type: <code>JSX.Element</code></li>\n<li>Required: No</li>\n</ul>\n<p>If no <code>children</code> are passed, this prop allows to specify a custom icon for the menu item.</p>\n<h3><code>item</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The unique identifier of the item.</p>\n<h3><code>navigateToMenu</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The child menu slug. If provided, clicking on the item will navigate to the target menu.</p>\n<h3><code>hideIfTargetMenuEmpty</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Indicates whether this item should be hidden if the menu specified in <code>navigateToMenu</code> is marked as empty in the <code>isEmpty</code> prop. Used together with the <code>isEmpty</code> prop of Navigation Menu.</p>\n<h3><code>onClick</code></h3>\n<ul>\n<li>Type: <code>React.MouseEventHandler</code></li>\n<li>Required: No</li>\n</ul>\n<p>A callback to handle clicking on a menu item.</p>\n<h3><code>isText</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: false</li>\n</ul>\n<p>If set to true then the menu item will only act as a text-only item rather than a button.</p>\n<h3><code>title</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The item title.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 183,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134487",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134487",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134487/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153504,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134487/revisions/153504"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134487"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

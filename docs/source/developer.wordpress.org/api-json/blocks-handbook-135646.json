@@ -1,0 +1,91 @@
+{
+    "id": 135646,
+    "date": "2021-04-22T17:24:47",
+    "date_gmt": "2021-04-22T17:24:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/duotone-picker/"
+    },
+    "modified": "2024-10-30T16:55:03",
+    "modified_gmt": "2024-10-30T16:55:03",
+    "slug": "duotone-picker",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/duotone-picker/",
+    "title": {
+        "rendered": "DuotonePicker"
+    },
+    "content": {
+        "rendered": "<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { DuotonePicker, DuotoneSwatch } from '@wordpress/components';\n\nconst DUOTONE_PALETTE = [\n    { colors: [ '#8c00b7', '#fcff41' ], name: 'Purple and yellow', slug: 'purple-yellow' },\n    { colors: [ '#000097', '#ff4747' ], name: 'Blue and red', slug: 'blue-red' },\n];\n\nconst COLOR_PALETTE = [\n    { color: '#ff4747', name: 'Red', slug: 'red' },\n    { color: '#fcff41', name: 'Yellow', slug: 'yellow' },\n    { color: '#000097', name: 'Blue', slug: 'blue' },\n    { color: '#8c00b7', name: 'Purple', slug: 'purple' },\n];\n\nconst Example = () =&gt; {\n    const [ duotone, setDuotone ] = useState( [ '#000000', '#ffffff' ] );\n    return (\n        &lt;&gt;\n            &lt;DuotonePicker\n                duotonePalette={ DUOTONE_PALETTE }\n                colorPalette={ COLOR_PALETTE }\n                value={ duotone }\n                onChange={ setDuotone }\n            /&gt;\n            &lt;DuotoneSwatch values={ duotone } /&gt;\n        &lt;/&gt;\n    );\n};\n</code></pre>\n<h2>DuotonePicker Props</h2>\n<h3><code>colorPalette</code></h3>\n<ul>\n<li>Type: <code>Object[]</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>Array of color presets of the form <code>{ color: '#000000', name: 'Black', slug: 'black' }</code>.</p>\n<h3><code>duotonePalette</code></h3>\n<ul>\n<li>Type: <code>Object[]</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>Array of duotone presets of the form <code>{ colors: [ '#000000', '#ffffff' ], name: 'Grayscale', slug: 'grayscale' }</code>.</p>\n<h3><code>value</code></h3>\n<ul>\n<li>Type: <code>string[]</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>An array of colors for the duotone effect.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>Callback which is called when the duotone colors change.</p>\n<h3><code>asButtons</code>: <code>boolean</code></h3>\n<p>Whether the control should present as a set of buttons, each with its own tab stop.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>loop</code>: <code>boolean</code></h3>\n<p>Prevents keyboard interaction from wrapping around. Only used when <code>asButtons</code> is not true.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h2>DuotoneSwatch Props</h2>\n<h3><code>values</code></h3>\n<ul>\n<li>Type: <code>string[] | null</code></li>\n<li>Required: No</li>\n</ul>\n<p>An array of colors to show or <code>null</code> to show the placeholder swatch icon.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 146,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135646",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135646",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135646/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151747,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135646/revisions/151747"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135646"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

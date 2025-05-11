@@ -1,0 +1,109 @@
+{
+    "id": 11181247,
+    "date": "2019-02-07T19:17:33",
+    "date_gmt": "2019-02-07T19:17:33",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11181247"
+    },
+    "modified": "2024-06-08T20:03:55",
+    "modified_gmt": "2024-06-08T20:03:55",
+    "slug": "tools-network-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tools-network-screen/",
+    "title": {
+        "rendered": "Tools Network screen"
+    },
+    "content": {
+        "rendered": "\n<p>In WordPress you have the ability to create a network of sites (multisite). To  enable the Network ability, you must first define multisite in the wp-config.php  file.  Note that because the Network ability requires a certain level  of expertise, developers intentional require manual configuration of the  wp-config.php file to enable Networks. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11181253\"><img loading=\"lazy\" decoding=\"async\" width=\"1264\" height=\"792\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/02/tools-network.png?fit=1264%2C792&amp;ssl=1\" alt=\"\" class=\"wp-image-11181253\" srcset=\"https://wordpress.org/documentation/files/2019/02/tools-network.png 1264w, https://wordpress.org/documentation/files/2019/02/tools-network-300x188.png 300w, https://wordpress.org/documentation/files/2019/02/tools-network-1024x642.png 1024w, https://wordpress.org/documentation/files/2019/02/tools-network-768x481.png 768w\" sizes=\"auto, (max-width: 1264px) 100vw, 1264px\" /></a><figcaption>Network Creation screen</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Create a Network of WordPress Sites</h3>\n\n\n\n<p>To start the process of creating a Network, you first must tell  WordPress to allow multisites, and by doing do enable the Network menu  item to appear in the Tools menu. It is there you will configure certain  aspects of your network.   So first, edit the wp-config.php file and add the following line to the file: </p>\n\n\n\n<pre class=\"wp-block-preformatted\">define('WP_ALLOW_MULTISITE', true);</pre>\n\n\n\n<p><strong>Considerations</strong>&nbsp; </p>\n\n\n\n<ul class=\"wp-block-list\"><li> Giving WordPress Its Own Directory will not work in WordPress 3.0 with multisite enabled. It interferes with the member blog lookup.</li><li> You cannot create a network in the following cases:</li></ul>\n\n\n\n<p>\n &#8220;WordPress address (URL)&#8221; is different from &#8220;Site address (URL)&#8221;\n &#8220;WordPress address (URL)&#8221; is used IP address such as 127.0.0.1 or port number other than &#8216;:80&#8217;, &#8216;:443&#8217;.\n Use &#8216;localhost&#8217; instead of &#8216;127.0.0.1&#8217;, if on local computer.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Addresses of Sites in your Network</h3>\n\n\n\n<p>The primary information in this section involves the decision to use  sub-domains or sub-directories for your sites.  This means each  additional site in your network will be created as a new virtual  sub-domain or sub-directory.  Please choose whether you would like sites  in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later</strong>.</p>\n\n\n\n<p><strong>Sub-domains</strong></p>\n\n\n\n<p>Check this radio button to utilize sub-domains for your sites.  Examples of sub-domains are <strong>site1.example.com</strong> and <strong>site2.example.com</strong>.   This features works by using wildcard subdomains.  You must have this  enabled in Apache, and you must also add a wildcard sub-domain to your  DNS records. Some hosts will not support this, so you may need to ask  your host before enabling this feature.</p>\n\n\n\n<p><strong>Sub-directories</strong></p>\n\n\n\n<p>Check this radio button to utilize sub-directories for your sites.  Examples of sub-directories are <strong>example.com/site1</strong> and <strong>example.com/site2</strong>.  Sub-directories work with mod_rewrite.  </p>\n\n\n\n<p>Note: If you wish to use fully qualified domains, you still need to  pick a format to start with. Then after verifying they work, use the Domain mapping plugin.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Alternative Messages</h4>\n\n\n\n<p><strong>Sub-domain Install</strong></p>\n\n\n\n<p>This messages displays if you are changing from a stand-alone  version of WordPress to the multisite version this will display.<br /><br /><em>Because your install is not new, the sites in your WordPress  network must use sub-domains. The main site in a sub-directory install  will need to use a modified permalink structure, potentially breaking  existing links.</em></p>\n\n\n\n<p><strong>Sub-directory Install</strong></p>\n\n\n\n<p>This messages displays if you are using localhost as a domain.<br /><br /><em>Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains.</em></p>\n\n\n\n<h3 class=\"wp-block-heading\">Network Details</h3>\n\n\n\n<p><strong>Server Address</strong></p>\n\n\n\n<p>The Internet address of your network will be <code>example.com</code>.  This information is filled in automatically.  Note:  if your existing URL has <strong>www</strong> such as <strong>www.example.com</strong> you will see this message: &#8220;<em>We recommend you change your siteurl to <code>example.com</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>www.sample.com</code> but any links will not have the <code>www</code> prefix.</em>&#8220;</p>\n\n\n\n<p><strong>Network Title</strong></p>\n\n\n\n<p>What would you like to call your network?  A suggested title is supplied but edit that to reflect the title you want to use.</p>\n\n\n\n<p><strong>Admin E-mail Address</strong></p>\n\n\n\n<p>Your email address.  A suggested email is supplied, but change as necessary. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Install</h3>\n\n\n\n<p>Click the <strong>Install</strong> button to start the network install.\n</p>\n\n\n\n<h4 class=\"wp-block-heading\">Installation Warnings</h4>\n\n\n\n<p>You may receive a warning about wildcard subdomains.<br /><br /><strong>To use a subdomain configuration, you must have a  wildcard entry in your DNS. This usually means adding a * hostname  record pointing at your web server in your DNS configuration tool.</strong><br /><br /><strong>Warning! Wildcard DNS may not be configured correctly!</strong><br /><br /><strong>The installer attempted to contact a random hostname  (599af5.sample.com) on your domain. This resulted in an error message:  Couldn&#8217;t resolve host &#8216;599af5.sample.com&#8217; </strong><br /><strong>You can still use your site but any subdomain you create may not  be accessible. If you know your DNS is correct, ignore this message.</strong></p>\n\n\n\n<h3 class=\"wp-block-heading\">Enabling the Network</h3>\n\n\n\n<p>Once the Network install is completed this Screen displays with these directions. Follow the directions in the order presented to complete the process. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11181273\"><img loading=\"lazy\" decoding=\"async\" width=\"1277\" height=\"925\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/02/tools-network-created.png?fit=1277%2C925&amp;ssl=1\" alt=\"\" class=\"wp-image-11181273\" srcset=\"https://wordpress.org/documentation/files/2019/02/tools-network-created.png 1277w, https://wordpress.org/documentation/files/2019/02/tools-network-created-300x217.png 300w, https://wordpress.org/documentation/files/2019/02/tools-network-created-1024x742.png 1024w, https://wordpress.org/documentation/files/2019/02/tools-network-created-768x556.png 768w\" sizes=\"auto, (max-width: 1277px) 100vw, 1277px\" /></a></figure>\n\n\n\n<p><strong>Caution We recommend you back up your existing wp-config.php and .htaccess files.</strong> </p>\n\n\n\n<p>1. Create a blogs.dir directory in /wp-content.<br />This directory is used to stored uploaded media for your additional  sites and must be writeable by the web server.  Note that the directory  should be CHOWNed and CHMODed the same as your wp-content folder.  </p>\n\n\n\n<p>If you&#8217;ve set the <strong>WP_CONTENT_DIR</strong> constant to something other than <em>wp-content</em> you may want to reconsider as you will see this message:  <em>Warning: Networks may not be fully compatible with custom wp-content directories.</em></p>\n\n\n\n<p>2.  Add the following to your wp-config.php file in  /public_html/ above the line reading /* That\u2019s all, stop editing! Happy  blogging. */   <br />These lines are automatically generated and will look similar to this.  </p>\n\n\n\n<pre class=\"wp-block-preformatted\">define( 'MULTISITE', true );\ndefine( 'SUBDOMAIN_INSTALL', true );\n$base = '/';\ndefine( 'DOMAIN_CURRENT_SITE', 'sample.com' );\ndefine( 'PATH_CURRENT_SITE', '/' );\ndefine( 'SITE_ID_CURRENT_SITE', 1 );\ndefine( 'BLOG_ID_CURRENT_SITE', 1 );</pre>\n\n\n\n<p>These unique authentication keys are also missing from your  wp-config.php file. To make your installation more secure, you should  also add   These lines are automatically generated and will look similar to this. </p>\n\n\n\n<pre class=\"wp-block-preformatted\">define( 'AUTH_KEY', '{K 2rUF&amp;uy(Ak0(M3J%f(W&amp;ADLiI(+#^W*H|0@jdAc(0LHOz3)gaiOoDgN_;W+2' );\ndefine( 'SECURE_AUTH_KEY', ']n+=#}^=3BdTn~FoS@8K#o|~WgC@#?Oj*s[L+Y+tInaOjNCFa1h59vRL#!R[[{UI' );\ndefine( 'LOGGED_IN_KEY', 'hFe,fw?jgX@@X,Yl]jz9!qoD]v8N[TNDvleEaE5zH=|`D+yUYM|&gt;/=8KRelv=XPE' );\ndefine( 'NONCE_KEY', 'fkrSg(v-|/&amp;=TC{66rgrX[_VpWv$.{a{q$CvjvjB$AP&lt;5q?|58{6xvN{xut r?|j' );\ndefine( 'AUTH_SALT', 'kVVt8^+oh,$|?g RxaWq_Px RwC%^^r?8zhQ+GDUWp:QB]W!tPHins]RJ@a%P_ue' );\ndefine( 'SECURE_AUTH_SALT','&gt;|tv)^94YuNk[:+)l&lt;5ubJ0uTdo3gn9|YN.0J/MR1R&gt;T=oe1}eov*ds@Z.&amp;PA%&amp;q' );\ndefine( 'LOGGED_IN_SALT', 'E,C#!&lt;lf6B $y;-nfjP10$rea?g/_A,V0tkbqCNJMfOO)Ml4&amp;JUhM]bU[*w]oh,X' );\ndefine( 'NONCE_SALT', '$qbgS^/Dj.RJC-,S&lt;y9L7SV9EMuyB &lt;wQS`}poc;Yd{PGa$!,b*oL&lt;qX!cPMqXh`' ); </pre>\n\n\n\n<p>3. Add the following to your .htaccess file in /public_html/sample.com/, replacing other WordPress rules   If there isn&#8217;t a .htaccess file, then create it.  These lines are automatically generated and will look similar to this. </p>\n\n\n\n<pre class=\"wp-block-preformatted\">RewriteEngine On\nRewriteBase /\nRewriteRule ^index\\.php$ - [L]\n#uploaded files\nRewriteRule ^files/(.+) wp-includes/ms-files.php?file=$1 [L]\n RewriteCond %{REQUEST_FILENAME} -f [OR]\nRewriteCond %{REQUEST_FILENAME} -d RewriteRule ^ - [L]\nRewriteRule . index.php [L]  </pre>\n\n\n\n<p>Once you complete these steps, your network is enabled and configured. You will have to log in again</p>\n\n\n\n<p>Click the Log In link.  You will now see a new menu section called <strong>Super Admin</strong>.  The menus contained in there are for adding and managing additional  sites in your network. Your base WordPress install is now the main site  in your network. </p>\n\n\n\n<p>Visit the Administration &gt; Network Admin &gt; Settings Screen to configure network options.  After that you will need to create sites and users. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Troubleshooting</h2>\n\n\n\n<ul class=\"wp-block-list\"><li> If after enabling networking/multisite and you are not able to\nlogin, try clearing your browser cache AND cookies, then try to login.</li></ul>\n\n\n\n<p> See also <a href=\"/support/article/administration-screens/\">Administration Screens</a> and <a href=\"/support/article/network-admin/\">Network Admin</a>. </p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>In WordPress you have the ability to create a network of sites (multisite). To enable the Network ability, you must first define multisite in the wp-config.php file. Note that because the Network ability requires a certain level of expertise, developers intentional require manual configuration of the wp-config.php file to enable Networks. Create a Network of [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11181247",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11181247",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11181247"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11181247/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360425,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11181247/revisions/16360425"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11181247"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11181247"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

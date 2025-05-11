@@ -1,0 +1,91 @@
+{
+    "id": 157200,
+    "date": "2025-02-21T04:17:14",
+    "date_gmt": "2025-02-21T04:17:14",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/true-false/"
+    },
+    "modified": "2025-02-21T04:17:27",
+    "modified_gmt": "2025-02-21T04:17:27",
+    "slug": "true-false",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/true-false/",
+    "title": {
+        "rendered": "True/False Field"
+    },
+    "content": {
+        "rendered": "<p>The True/False field provides a simple toggle switch for boolean values. It offers a clean interface for yes/no choices.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Toggle interface</li>\n<li>Custom labels</li>\n<li>Default state</li>\n<li>Message display</li>\n<li>UI customization</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Message &#8211; Field description</li>\n<li>Default Value &#8211; Initial state</li>\n<li>On Text &#8211; Custom label</li>\n<li>Off Text &#8211; Custom label</li>\n<li>UI &#8211; Style options</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157200",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157200",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157200/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157215,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157200/revisions/157215"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157200"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

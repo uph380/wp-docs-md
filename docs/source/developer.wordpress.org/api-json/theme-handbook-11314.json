@@ -1,0 +1,97 @@
+{
+    "id": 11314,
+    "date": "2014-10-22T19:54:31",
+    "date_gmt": "2014-10-22T19:54:31",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11314"
+    },
+    "modified": "2022-10-29T03:56:23",
+    "modified_gmt": "2022-10-29T03:56:23",
+    "slug": "custom-headers",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/custom-headers/",
+    "title": {
+        "rendered": "Custom Headers"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Custom Header</h2>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/functionality/custom-headers/\">Custom headers</a> allow site owners to upload their own \u201ctitle\u201d image to their site, which can be placed at the top of certain pages. These can be customized and cropped by the user through a visual editor in the <strong>Appearance &gt; Header</strong> section of the admin panel. You may also place text beneath or on top of the header. To support fluid layouts and responsive design, these headers may also be flexible. Headers are placed into a theme using <code>get_custom_header()</code>, but they must first be added to your <em>functions.php</em> file using <code>add_theme_support()</code>. Custom headers are <strong>optional.</strong></p>\n\n\n\n<p>To set up a basic, flexible, custom header with text you would include the following code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction themename_custom_header_setup() {\n\t$args = array(\n\t\t'default-image'      =&gt; get_template_directory_uri() . 'img/default-image.jpg',\n\t\t'default-text-color' =&gt; '000',\n\t\t'width'              =&gt; 1000,\n\t\t'height'             =&gt; 250,\n\t\t'flex-width'         =&gt; true,\n\t\t'flex-height'        =&gt; true,\n\t);\n\tadd_theme_support( 'custom-header', $args );\n}\nadd_action( 'after_setup_theme', 'themename_custom_header_setup' );</code></pre>\n\n\n\n<p><em>&nbsp;The <a href=\"https://developer.wordpress.org/reference/hooks/after_setup_theme/\"><code>after_setup_theme</code></a> hook is used so that custom headers are registered after the theme is loaded.</em></p>\n\n\n\n<h3 class=\"wp-block-heading\">What are Custom Headers?</h3>\n\n\n\n<p>When you enable Custom Headers in your theme, users can change their header image using the WordPress theme Customizer. This gives users more control and flexibility over the look of their site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Add Custom Header Support to your Theme</h2>\n\n\n\n<p>To enable Custom Headers in your theme, add the following to your <em><code>functions.php</code></em> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_theme_support( 'custom-header' );</code></pre>\n\n\n\n<p>When enabling Custom Headers, you can configure several other options by passing along arguments to the <code>add_theme_support()</code> function.</p>\n\n\n\n<p>You can pass specific configuration options to the <code>add_theme_support</code> function using an array:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction themename_custom_header_setup() {\n\t$defaults = array(\n\t\t// Default Header Image to display.\n\t\t'default-image'          =&gt; get_template_directory_uri() . '/images/headers/default.jpg',\n\t\t// Display the header text along with the image.\n\t\t'header-text'            =&gt; false,\n\t\t// Header text color default.\n\t\t'default-text-color'     =&gt; '000',\n\t\t// Header image width (in pixels).\n\t\t'width'                  =&gt; 1000,\n\t\t// Header image height (in pixels).\n\t\t'height'                 =&gt; 198,\n\t\t// Header image random rotation default.\n\t\t'random-default'         =&gt; false,\n\t\t// Enable upload of image file in admin.\n\t\t'uploads'                =&gt; false,\n\t\t// Function to be called in theme head section.\n\t\t'wp-head-callback'       =&gt; 'wphead_cb',\n\t\t// Function to be called in preview page head section.\n\t\t'admin-head-callback'    =&gt; 'adminhead_cb',\n\t\t// Function to produce preview markup in the admin screen.\n\t\t'admin-preview-callback' =&gt; 'adminpreview_cb',\n\t);\n}\nadd_action( 'after_setup_theme', 'themename_custom_header_setup' );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Flexible Header Image</h3>\n\n\n\n<p>If flex-height or flex-width are not included in the array, height and width will be fixed sizes. If flex-height and flex-width are included, height and width will be used as suggested dimensions instead.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Header text</h3>\n\n\n\n<p>By default, the user will have the option of whether or not to display header text over the image. There is no option to force the header text on the user, but if you want to remove the header text completely, you can set \u2018header-text\u2019 to \u2018false\u2019 in the arguments. This will remove the header text and the option to toggle it.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Set a custom header image</h3>\n\n\n\n<p>When the user first installs your theme, you can include a default header that will be selected before they choose their own header. This allows users to set up your theme more quickly and use your default image until they\u2019re ready to upload their own.</p>\n\n\n\n<p>Set a default header image 980px width and 60px height:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$header_info = array(\n\t'width'         =&gt; 980,\n\t'height'        =&gt; 60,\n\t'default-image' =&gt; get_template_directory_uri() . '/images/sunset.jpg',\n);\nadd_theme_support( 'custom-header', $header_info );\n\n$header_images = array(\n\t'sunset' =&gt; array(\n\t\t'url'           =&gt; get_template_directory_uri() . '/images/sunset.jpg',\n\t\t'thumbnail_url' =&gt; get_template_directory_uri() . '/images/sunset_thumbnail.jpg',\n\t\t'description'   =&gt; 'Sunset',\n\t),\n\t'flower' =&gt; array(\n\t\t'url'           =&gt; get_template_directory_uri() . '/images/flower.jpg',\n\t\t'thumbnail_url' =&gt; get_template_directory_uri() . '/images/flower_thumbnail.jpg',\n\t\t'description'   =&gt; 'Flower',\n\t),\n);\nregister_default_headers( $header_images );</code></pre>\n\n\n\n<figure class=\"wp-block-image alignright\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"393\" height=\"712\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/custom_headers_example1.jpg?resize=393%2C712&#038;ssl=1\" alt=\"\" class=\"wp-image-25356\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/custom_headers_example1.jpg?w=393&amp;ssl=1 393w, https://i0.wp.com/developer.wordpress.org/files/2014/10/custom_headers_example1.jpg?resize=166%2C300&amp;ssl=1 166w\" sizes=\"auto, (max-width: 393px) 100vw, 393px\" /></figure>\n\n\n\n<p>Do not forget to call <a href=\"https://developer.wordpress.org/reference/functions/register_default_headers/\" rel=\"function\">register_default_headers()</a>  to register a default image. In this example, <code>sunset.jpg</code> is the default image and <code>flower.jpg</code> is an alternative selection in Customizer.</p>\n\n\n\n<p>From Administration Screen, Click <strong>Appearance &gt; Header</strong> to display Header Image menu in Customizer. Notice that width and height specified in <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\" rel=\"function\">add_theme_support()</a>  is displayed as recommended size, and <code>flower.jpg</code> is shown as selectable option.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Use flexible headers</h3>\n\n\n\n<p>By default, the user will have to crop any images they upload to fit in the width and height you specify. However, you can let users upload images of any height and width by specifying \u2018flex-width\u2019 and \u2018flex-height\u2019 as true. This will let the user skip the cropping step when they upload a new photo.</p>\n\n\n\n<p>Set flexible headers:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args = array(\n\t'flex-width'    =&gt; true,\n\t'width'         =&gt; 980,\n\t'flex-height'   =&gt; true,\n\t'height'        =&gt; 200,\n\t'default-image' =&gt; get_template_directory_uri() . '/images/header.jpg',\n);\nadd_theme_support( 'custom-header', $args );</code></pre>\n\n\n\n<p>update your <code>header.php</code> file to:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;img alt=\"\" src=\"&lt;?php header_image(); ?&gt;\" width=\"&lt;?php echo absint( get_custom_header()-&gt;width ); ?&gt;\" height=\"&lt;?php echo absint( get_custom_header()-&gt;height ); ?&gt;\"&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Displaying Custom Header</h3>\n\n\n\n<p>To display the custom header, function <a href=\"https://developer.wordpress.org/reference/functions/get_header_image/\" rel=\"function\">get_header_image()</a>  retrieves the header image. <a href=\"https://developer.wordpress.org/reference/functions/get_custom_header/\" rel=\"function\">get_custom_header()</a>  gets the custom header data.<br>E.g. below shows how custom header images can be used to display the header in the theme. The below code goes into header.php file.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( get_header_image() ) : ?&gt;\n\t&lt;div id=\"site-header\"&gt;\n\t\t&lt;a href=\"&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;\" rel=\"home\"&gt;\n\t\t\t&lt;img src=\"&lt;?php header_image(); ?&gt;\" width=\"&lt;?php echo absint( get_custom_header()-&gt;width ); ?&gt;\" height=\"&lt;?php echo absint( get_custom_header()-&gt;height ); ?&gt;\" alt=\"&lt;?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?&gt;\"&gt;\n\t\t&lt;/a&gt;\n\t&lt;/div&gt;\n&lt;?php endif; ?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Backwards Compatibility</h3>\n\n\n\n<p>Custom Headers are supported in WordPress 3.4 and above. If you\u2019d like your theme to support WordPress installations that are older than 3.4, you can use the following code instead of <code>add_theme_support( \u2018custom-header\u2019);</code></p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nglobal $wp_version;\nif ( version_compare( $wp_version, '3.4', '&gt;=' ) ) :\n\tadd_theme_support( 'custom-header' );\nelse :\n\tadd_custom_image_header( $wp_head_callback, $admin_head_callback );\nendif;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/header_image/\">header_image()</a> Display header image URL.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_header_image/\">get_header_image()</a> Retrieve header image for custom header.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_custom_header/\">get_custom_header()</a> Get the header image data.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_random_header_image/\">get_random_header_image()</a> Retrieve header image for custom header.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\">add_theme_support()</a> Registers theme support for a given feature.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/register_default_headers/\" rel=\"function\">register_default_headers()</a>  Registers a selection of default headers to be displayed by the Customizer.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11314",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11314",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 34,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11314/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143706,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11314/revisions/143706"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11314"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 149060,
+    "date": "2023-10-17T14:35:43",
+    "date_gmt": "2023-10-17T14:35:43",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149060"
+    },
+    "modified": "2023-10-17T14:35:43",
+    "modified_gmt": "2023-10-17T14:35:43",
+    "slug": "dimensions",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/dimensions/",
+    "title": {
+        "rendered": "Dimensions"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.dimensions</code> property in <code>theme.json</code> gives you control over the global dimensions settings for blocks. This property lets you decide which dimension controls are available in the user interface.</p>\n\n\n\n<p>In this document, you will learn what the <code>dimensions</code> property is for and how you can use it in your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Dimensions settings</h2>\n\n\n\n<p><code>dimensions</code> is an object that\u2019s nested directly within the top-level <code>settings</code> property in <code>theme.json</code>. Currently, it only lets you set a single property:\u00a0</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>minHeight</code>:</strong> A boolean value for enabling block support for the <strong>Minimum Height</strong> control.</li>\n</ul>\n\n\n\n<p>Take a look at the <code>dimensions</code> property in the context of a <code>theme.json</code> file with its default values:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"dimensions\": {\n\t\t\t\"minHeight\": false\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Minimum Height</h3>\n\n\n\n<p>The <code>settings.dimensions.minHeight</code> property lets you control whether the <strong>Minimum Height</strong> field appears for blocks that have opted into support for the feature. As of WordPress 6.3, the only core WordPress blocks that do are Group and Post Content.</p>\n\n\n\n<p>To enable support for the control, you must set the property\u2019s value to <code>true</code> in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"dimensions\": {\n\t\t\t\"minHeight\": true\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>This will enable the control in the interface. As shown in this screenshot, the <strong>Minimum Height</strong> field appears for the Group block (Stack variation):</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress post editor with a Stack block in the content canvas. Its minimum height is set in the sidebar.\" class=\"wp-image-149061\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/group-min-height.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149060",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149060",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149060/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149062,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149060/revisions/149062"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149060"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

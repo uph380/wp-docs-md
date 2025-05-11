@@ -1,0 +1,91 @@
+{
+    "id": 10983,
+    "date": "2014-09-18T03:01:37",
+    "date_gmt": "2014-09-18T03:01:37",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10983"
+    },
+    "modified": "2023-12-14T20:49:32",
+    "modified_gmt": "2023-12-14T20:49:32",
+    "slug": "shortcodes",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/shortcodes/",
+    "title": {
+        "rendered": "Shortcodes"
+    },
+    "content": {
+        "rendered": "\n<p>As a security precaution, running PHP inside WordPress content is forbidden; to allow dynamic interactions with the content, Shortcodes were presented in WordPress version 2.5.</p>\n\n\n\n<p>Shortcodes are macros that can be used to perform dynamic interactions with the content. i.e creating a gallery from images attached to the post or rendering a video.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why Shortcodes?</h2>\n\n\n\n<p>Shortcodes are a valuable way of keeping content clean and semantic while allowing end users some ability to programmatically alter the presentation of their content.</p>\n\n\n\n<p>When the end user adds a photo gallery to their post using a shortcode, they&#8217;re using the least data possible to indicate how the gallery should be presented.</p>\n\n\n\n<p>Advantages:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>No markup is added to the post content, which means that markup and styling can easily be manipulated on the fly or at a later state.</li><li>Shortcodes can also accept parameters, allowing users to modify how the shortcode behaves on an instance by instance basis.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Built-in Shortcodes</h2>\n\n\n\n<p>By default, WordPress includes the following shortcodes:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>[caption]</code> &#8211; allows you to wrap captions around content</li><li><code>[gallery]</code> &#8211; allows you to show image galleries</li><li><code>[audio]</code> &#8211; allows you to embed and play audio files</li><li><code>[video]</code> &#8211; allows you to embed and play video files</li><li><code>[playlist]</code> &#8211; allows you to display collection of audio or video files</li><li><code>[embed]</code> &#8211; allows you to wrap embedded items</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Shortcode Best Practices</h2>\n\n\n\n<p>Best practices for developing shortcodes include the <a href=\"https://developer.wordpress.org/plugins/the-basics/best-practices/\">plugin development best practices</a> and the list below:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Always return!</strong><br>Shortcodes are essentially filters, so creating &#8220;<a href=\"https://en.wikipedia.org/wiki/Side_effect_(computer_science)\" target=\"_blank\" rel=\"noopener noreferrer\">side effects</a>&#8221; will lead to unexpected bugs.</li><li>Prefix your shortcode names to avoid collisions with other plugins.</li><li>Sanitize the input and escape the output.</li><li>Provide users with clear documentation on all shortcode attributes.</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Quick Reference</h2>\n\n\n\n<p>See the complete example of using a <a href=\"https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/#complete-example\">basic shortcode structure, taking care of self-closing and enclosing scenarios, shortcodes within shortcodes and securing output</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">External Resources</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://generatewp.com/shortcodes/\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress Shortcodes Generator</a></li></ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 8,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10983",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10983",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10983/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129838,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10983/revisions/129838"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10983"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

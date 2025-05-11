@@ -1,0 +1,91 @@
+{
+    "id": 5819,
+    "date": "2014-08-01T22:57:15",
+    "date_gmt": "2014-08-01T22:57:15",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5819"
+    },
+    "modified": "2023-12-14T20:55:27",
+    "modified_gmt": "2023-12-14T20:55:27",
+    "slug": "functionality",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/",
+    "title": {
+        "rendered": "Theme Functionality"
+    },
+    "content": {
+        "rendered": "<p>Now that you&#8217;re familiar with the basics of theme development, it&#8217;s time to start digging deeper into the world of themes. This section covers all of the basic theme functionality that you&#8217;ll need to consider while creating your theme:</p>\n<ul>\n<li><a title=\"Custom Headers\" href=\"https://developer.wordpress.org/themes/functionality/custom-headers/\">Custom headers</a> &#8211; learn how to give your users the flexibility of adding their own header image</li>\n<li><a title=\"Sidebars\" href=\"https://developer.wordpress.org/themes/functionality/sidebars/\">Sidebars</a> &#8211; add widgetized areas to your theme\u00a0where users can add widgets</li>\n<li><a title=\"Widgets\" href=\"https://developer.wordpress.org/themes/functionality/widgets/\">Widgets</a> &#8211; create re-usable PHP objects that can be added to a sidebar</li>\n<li><a title=\"Navigation Menus\" href=\"https://developer.wordpress.org/themes/functionality/navigation-menus/\">Navigation menus</a> &#8211; register and display menus within your theme</li>\n<li><a title=\"Taxonomy Templates\" href=\"https://developer.wordpress.org/themes/functionality/taxonomy-templates/\">Taxonomy Templates</a> &#8211; create templates for your taxonomy archive pages</li>\n<li><a title=\"Pagination\" href=\"https://developer.wordpress.org/themes/functionality/pagination/\">Pagination</a> &#8211; work with WordPress&#8217; built-in pagination</li>\n<li><a title=\"Comments\" href=\"https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comment-template/\">Comments</a> &#8211; customize the comments template</li>\n<li><a title=\"Media\" href=\"https://developer.wordpress.org/themes/functionality/media/\">Media</a> &#8211; work with WordPress core&#8217;s media capabilities</li>\n<li><a title=\"Featured Images &amp; Post Thumbnails\" href=\"https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/\">Featured Images &amp; Post Thumbnails</a> &#8211; work with and customize post thumbnails</li>\n<li><a title=\"Post Formats\" href=\"https://developer.wordpress.org/themes/functionality/post-formats/\">Post Formats </a>&#8211; create different formats for displaying users&#8217; posts</li>\n<li><a title=\"Internationalization\" href=\"https://developer.wordpress.org/themes/functionality/internationalization/\">Internationalization</a> &#8211; learn how to prepare your theme for translation into different languages</li>\n<li><a title=\"Localization\" href=\"https://developer.wordpress.org/themes/functionality/localization/\">Localization</a> &#8211; learn how to translate a WordPress theme</li>\n<li><a title=\"Accessibility\" href=\"https://developer.wordpress.org/themes/functionality/accessibility/\">Accessibility</a> &#8211; learn about accessibility best practices to ensure everyone can use your theme</li>\n<li><a title=\"Administration Menus\" href=\"https://developer.wordpress.org/themes/functionality/administration-menus/\">Administration Menus</a> &#8211; add menu items to the WordPress administration</li>\n<li><a title=\"Creating a 404 Page\" href=\"https://developer.wordpress.org/themes/functionality/404-pages/\">404 Pages</a> &#8211; create a custom 404 page</li>\n</ul>\n<p>If you&#8217;re new to themes it&#8217;s worth working your way through each section, but\u00a0you can also jump into a section if you&#8217;re looking for something specific.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1020,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5819",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138746,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819/revisions/138746"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5819"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

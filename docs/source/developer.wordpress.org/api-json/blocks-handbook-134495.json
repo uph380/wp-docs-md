@@ -1,0 +1,91 @@
+{
+    "id": 134495,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/radio-group/"
+    },
+    "modified": "2024-10-31T14:25:27",
+    "modified_gmt": "2024-10-31T14:25:27",
+    "slug": "radio-group",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/radio-group/",
+    "title": {
+        "rendered": "RadioGroup"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis component is deprecated. Consider using `RadioControl` or `ToggleGroupControl` instead.\n</div>\n<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p>Use a RadioGroup component when you want users to select one option from a small set of options.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/s_96EC471FE9C9D91A996770229947AAB54A03351BDE98F444FD3C1BF0CED365EA_1541792995815_ButtonGroup.png?ssl=1\" alt=\"RadioGroup component\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>Selected action</h4>\n<p>Only one option in a radio group can be selected and active at a time. Selecting one option deselects any other.</p>\n<h3>Best practices</h3>\n<p>Radio groups should:</p>\n<ul>\n<li><strong>Be clearly and accurately labeled.</strong></li>\n<li><strong>Clearly communicate that clicking or tapping will trigger an action.</strong></li>\n<li><strong>Use established colors appropriately.</strong> For example, only use red buttons for actions that are difficult or impossible to undo.</li>\n<li><strong>Have consistent locations in the interface.</strong></li>\n<li><strong>Have a default option already selected.</strong></li>\n</ul>\n<h3>States</h3>\n<h4>Active and available radio groups</h4>\n<p>A radio group\u2019s state makes it clear which option is active. Hover and focus states express the available selection options for buttons in a button group.</p>\n<h4>Disabled radio groups</h4>\n<p>Radio groups that cannot be selected can either be given a disabled state, or be hidden.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<h4>Controlled</h4>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport {\n    __experimentalRadio as Radio,\n    __experimentalRadioGroup as RadioGroup,\n} from '@wordpress/components';\n\nconst MyControlledRadioRadioGroup = () =&gt; {\n    const [ checked, setChecked ] = useState( '25' );\n    return (\n        &lt;RadioGroup label=\"Width\" onChange={ setChecked } checked={ checked }&gt;\n            &lt;Radio __next40pxDefaultSize value=\"25\"&gt;25%&lt;/Radio&gt;\n            &lt;Radio __next40pxDefaultSize value=\"50\"&gt;50%&lt;/Radio&gt;\n            &lt;Radio __next40pxDefaultSize value=\"75\"&gt;75%&lt;/Radio&gt;\n            &lt;Radio __next40pxDefaultSize value=\"100\"&gt;100%&lt;/Radio&gt;\n        &lt;/RadioGroup&gt;\n    );\n};\n</code></pre>\n<h4>Uncontrolled</h4>\n<p>When using the RadioGroup component as an uncontrolled component, the default value can be set with the <code>defaultChecked</code> prop.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport {\n    __experimentalRadio as Radio,\n    __experimentalRadioGroup as RadioGroup,\n} from '@wordpress/components';\n\nconst MyUncontrolledRadioRadioGroup = () =&gt; {\n    return (\n        &lt;RadioGroup label=\"Width\" defaultChecked=\"25\"&gt;\n            &lt;Radio __next40pxDefaultSize value=\"25\"&gt;25%&lt;/Radio&gt;\n            &lt;Radio __next40pxDefaultSize value=\"50\"&gt;50%&lt;/Radio&gt;\n            &lt;Radio __next40pxDefaultSize value=\"75\"&gt;75%&lt;/Radio&gt;\n            &lt;Radio __next40pxDefaultSize value=\"100\"&gt;100%&lt;/Radio&gt;\n        &lt;/RadioGroup&gt;\n    );\n};\n</code></pre>\n<h2>Related components</h2>\n<ul>\n<li>For simple buttons that are related, use a <code>ButtonGroup</code> component.</li>\n<li>For traditional radio options, use a <code>RadioControl</code> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 193,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134495",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134495",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134495/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155628,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134495/revisions/155628"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134495"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 136877,
+    "date": "2021-08-10T23:54:48",
+    "date_gmt": "2021-08-10T23:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel-item/"
+    },
+    "modified": "2024-10-30T17:09:58",
+    "modified_gmt": "2024-10-30T17:09:58",
+    "slug": "tools-panel-item",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel-item/",
+    "title": {
+        "rendered": "ToolsPanelItem"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early<br />\nimplementation subject to drastic and breaking changes.\n</div>\n<p></p>\n<p>This component acts as a wrapper and controls the display of items to be contained<br />\nwithin a ToolsPanel. An item is displayed if it is flagged as a default control<br />\nor the corresponding panel menu item, provided via context, is toggled on for<br />\nthis item.</p>\n<h2>Usage</h2>\n<p>See <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/tools-panel/tools-panel/\"><code>tools-panel/README.md#usage</code></a><br />\nfor how to use <code>ToolsPanelItem</code>.</p>\n<h2>Props</h2>\n<h3><code>hasValue</code>: <code>() =&gt; boolean</code></h3>\n<p>This is called when building the <code>ToolsPanel</code> menu to determine the item&#8217;s<br />\ninitial checked state.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>isShownByDefault</code>: <code>boolean</code></h3>\n<p>This prop identifies the current item as being displayed by default. This means<br />\nit will show regardless of whether it has a value set or is toggled on in the<br />\npanel&#8217;s menu.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>label</code>: <code>string</code></h3>\n<p>The supplied label is dual purpose.<br />\nIt is used as:<br />\n1. the human-readable label for the panel&#8217;s dropdown menu<br />\n2. a key to locate the corresponding item in the panel&#8217;s menu context to<br />\ndetermine if the panel item should be displayed.</p>\n<p>A panel item&#8217;s <code>label</code> should be unique among all items within a single panel.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>onDeselect</code>: <code>() =&gt; void</code></h3>\n<p>Called when this item is deselected in the <code>ToolsPanel</code> menu. This is normally<br />\nused to reset the panel item control&#8217;s value.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onSelect</code>: <code>() =&gt; void</code></h3>\n<p>A callback to take action when this item is selected in the <code>ToolsPanel</code> menu.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>panelId</code>: <code>string | null</code></h3>\n<p>Panel items will ensure they are only registering with their intended panel by<br />\ncomparing the <code>panelId</code> props set on both the item and the panel itself, or if the <code>panelId</code> is explicitly <code>null</code>. This<br />\nallows items to be injected from a shared source.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>resetAllFilter</code>: <code>( attributes?: any ) =&gt; any</code></h3>\n<p>A <code>ToolsPanel</code> will collect each item&#8217;s <code>resetAllFilter</code> and pass an array of<br />\nthese functions through to the panel&#8217;s <code>resetAll</code> callback. They can then be<br />\niterated over to perform additional tasks.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>() =&gt; {}</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 224,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136877",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136877",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136877/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151718,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136877/revisions/151718"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136877"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

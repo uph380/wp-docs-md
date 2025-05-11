@@ -1,0 +1,91 @@
+{
+    "id": 134478,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/icon/"
+    },
+    "modified": "2024-12-26T16:49:13",
+    "modified_gmt": "2024-12-26T16:49:13",
+    "slug": "icon",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/icon/",
+    "title": {
+        "rendered": "Icon"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-icon--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p>Renders a raw icon without any initial styling or wrappers.</p>\n<pre><code class=\"language-jsx\">import { wordpress } from '@wordpress/icons';\n\n&lt;Icon icon={ wordpress } /&gt;\n</code></pre>\n<h2>Props</h2>\n<h3><code>icon</code></h3>\n<ul>\n<li>Type: <code>IconType</code></li>\n<li>Required: No</li>\n<li>Default: <code>null</code></li>\n</ul>\n<p>The icon to render. In most cases, you should use an icon from<br />\n<a href=\"https://wordpress.github.io/gutenberg/?path=/story/icons-icon--library\">the <code>@wordpress/icons</code> package</a>.</p>\n<p>Other supported values are: component instances, functions,<br />\n<a href=\"https://developer.wordpress.org/resource/dashicons/\">Dashicons</a><br />\n(specified as strings), and <code>null</code>.</p>\n<p>The <code>size</code> value, as well as any other additional props, will be passed through.</p>\n<h3><code>size</code></h3>\n<ul>\n<li>Type: <code>number</code></li>\n<li>Required: No</li>\n<li>Default: <code>'string' === typeof icon ? 20 : 24</code></li>\n</ul>\n<p>The size (width and height) of the icon.</p>\n<p>Defaults to <code>20</code> when <code>icon</code> is a string (i.e. a Dashicon id), otherwise <code>24</code>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 172,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134478",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134478",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134478/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156146,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134478/revisions/156146"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134478"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

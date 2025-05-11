@@ -1,0 +1,109 @@
+{
+    "id": 10848222,
+    "date": "2018-11-05T08:34:37",
+    "date_gmt": "2018-11-05T08:34:37",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10848222"
+    },
+    "modified": "2024-06-08T19:26:19",
+    "modified_gmt": "2024-06-08T19:26:19",
+    "slug": "settings-writing-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-writing-screen/",
+    "title": {
+        "rendered": "Settings Writing screen"
+    },
+    "content": {
+        "rendered": "\n<p>Use the Settings Writing Screen to control the interface you use when writing new posts. These settings control WordPress&#8217;s features in the adding and editing posts, Pages, and <a href=\"/support/article/post-types/\">Post Types</a>, as well as the optional functions like Remote Publishing, Post via e-mail, and Update Services.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"797\" src=\"https://wordpress.org/documentation/files/2021/02/settings-writing-4_9_4-1024x797.jpg\" alt=\"\" class=\"wp-image-13992472\" srcset=\"https://wordpress.org/documentation/files/2021/02/settings-writing-4_9_4-1024x797.jpg 1024w, https://wordpress.org/documentation/files/2021/02/settings-writing-4_9_4-300x234.jpg 300w, https://wordpress.org/documentation/files/2021/02/settings-writing-4_9_4-768x598.jpg 768w, https://wordpress.org/documentation/files/2021/02/settings-writing-4_9_4.jpg 1103w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Writing Settings</h3>\n\n\n\n<p><strong>Default Post Category</strong><br />The <a href=\"/support/article/glossary#category\">Category</a> you select from this drop-down is called the default post Category. The default post Category is Category assigned to a post if you fail to assign any other Categories with writing your posts. If you delete a Category, the posts in that Category will be assigned the default post Category. If you have several Categories, but use one of those Categories more frequently, select that Category here to make your life a little easier.</p>\n\n\n\n<p><strong>Default Post Format</strong><br />The Post Format you select from this drop-down is called the default Post Format. Post Formats are used by themes to create different styling for different types of posts. This settings is only visible if the current activated theme supports Post Formats. The WordPress default theme is an example of a theme that supports various Post Formats including Standard (no special format), Aside, and Gallery.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Post via e-mail</h3>\n\n\n\n<p>With this option, you can set up your blog to publish e-mails as blog posts. To do this, you would send an e-mail to a specific address you&#8217;ve established for the purpose. More than likely, you will need the help of your web host and/or your e-mail provider.</p>\n\n\n\n<p>This messages is displayed at the beginning of this section: &#8220;To post to WordPress by e-mail you must set up a secret e-mail account with POP3 access. Any mail received at this address will be posted, so it\u2019s a good idea to keep this address very secret. Here are three random strings you could use: <em>FKZXx8EK</em>, <em>P6snQ5Lq</em>, <em>YcrfBw03</em>.&#8221;</p>\n\n\n\n<p>Complete the following fields to post by e-mail:&nbsp;</p>\n\n\n\n<p><strong>Mail Server</strong><br />A mail server receives e-mails on your behalf and stores them for retrieval. Your mail server will have a URI address, such as mail.example.com, which you should enter here.</p>\n\n\n\n<p><strong>Port</strong><br />Servers usually use port 110 to receive requests related to emails. If your mail server uses a different port, enter that port number here.</p>\n\n\n\n<p><strong>Login Name</strong><br />If, for example, the e-mail address that you will be using for the writing by e-mail feature is wordpress@example.com, then &#8216;wordpress&#8217; is the <strong>Login name</strong>.</p>\n\n\n\n<p><strong>Password</strong><br />Enter the password for the above e-mail address here. Three possible passwords are displayed by WordPress in the introduction section of this Screen.</p>\n\n\n\n<p><strong>Default Mail Category</strong><br />WordPress will assign this <a href=\"/support/article/glossary#category\">Category</a> to all of the posts published via the Post by e-mail feature. Note: You can create new Categories in <a href=\"/support/article/administration-screens/\">Administration</a> &gt; <a href=\"/support/article/administration-screens/#posts-make-some-content\">Posts</a> &gt; <a href=\"https://codex.wordpress.org/Posts_Categories_Screen\">Categories</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Update Services</h3>\n\n\n\n<p>When you publish a new post, WordPress automatically notifies the update services of the sites listed in the box. For more about this, see <a href=\"/support/article/update-services/\">Update Services</a> on the Codex. When entering services, separate multiple URIs with line breaks.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Save Changes</h3>\n\n\n\n<p>Click the <strong>Save Changes</strong> button to ensure any changes you have made to your Settings are saved to your database. Once you click the button, a confirmation text box will appear at the top of the page telling you your settings have been saved.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Use the Settings Writing Screen to control the interface you use when writing new posts. These settings control WordPress&#8217;s features in the adding and editing posts, Pages, and Post Types, as well as the optional functions like Remote Publishing, Post via e-mail, and Update Services. Writing Settings Default Post CategoryThe Category you select from this [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10848222",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10848222",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10848222"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10848222/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360399,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10848222/revisions/16360399"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10848222"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10848222"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

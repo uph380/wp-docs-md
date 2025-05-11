@@ -1,0 +1,97 @@
+{
+    "id": 149116,
+    "date": "2023-10-17T14:40:57",
+    "date_gmt": "2023-10-17T14:40:57",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149116"
+    },
+    "modified": "2023-12-14T21:10:13",
+    "modified_gmt": "2023-12-14T21:10:13",
+    "slug": "using-presets",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/using-presets/",
+    "title": {
+        "rendered": "Using Presets"
+    },
+    "content": {
+        "rendered": "\n<p>In the <code>theme.json</code> <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings\">Settings documentation</a>, you learned how to register custom presets, such as a color palette, font sizes, a spacing scale, and more. In the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/\">Styles documentation</a>, you\u2019ve learned how to apply CSS styles via <code>theme.json</code>.</p>\n\n\n\n<p>Now it\u2019s time to combine these two concepts by applying styles using the presets that you\u2019ve registered.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>In the styles documentation, you will often see examples using hard-coded CSS values. This is primarily for the sake of demonstration. You will almost always use registered presets instead. This makes it much easier to manage everything from a single location.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">What are presets?</h2>\n\n\n\n<p>Essentially, presets are options that you register\u2014generally for users to select from the UI\u2014that map to CSS custom properties.</p>\n\n\n\n<p>For example, when you learned how to <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/typography/\">register custom font sizes</a>, you added your presets to <code>settings.typography.fontSizes</code>. WordPress takes each of those font sizes and creates a CSS custom property with the name of <code>--wp--preset--font-size\u2013{$slug}</code>.</p>\n\n\n\n<p>WordPress itself, your theme, plugins, and even users can register presets for the various features that are supported. And WordPress creates CSS custom properties for all registered presets with the name of <code>--wp--preset\u2013{$feature}-{$slug}</code>.</p>\n\n\n\n<p>Let\u2019s look at a basic example of a <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/color/\">custom color palette</a> with three colors:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"color\": {\n\t\t\t\"palette\": [\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#ffffff\",\n\t\t\t\t\t\"name\": \"Base\",\n\t\t\t\t\t\"slug\": \"base\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#000000\",\n\t\t\t\t\t\"name\": \"Contrast\",\n\t\t\t\t\t\"slug\": \"contrast\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#89cff0\",\n\t\t\t\t\t\"name\": \"Primary\",\n\t\t\t\t\t\"slug\": \"primary\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>This creates three CSS custom properties, which WordPress will output in the editor and on the front end:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--preset--color--base: #ffffff;\n\t--wp--preset--color--contrast: #000000;\n\t--wp--preset--color--primary: #89cff0;\n}</code></pre>\n\n\n\n<p>At the end of the day, presets are merely a standardized method of creating options in the interface and generating CSS custom properties.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Applying presets as styles</h2>\n\n\n\n<p>Because presets are registered as settings, they are available to select in the user interface. But you must apply them as styles if you want to use them as part of your theme\u2019s default design.</p>\n\n\n\n<p>Let\u2019s build off the custom color palette from the previous section. Suppose you wanted to apply these styles using your registered presets:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The site\u2019s background color should use the <code>base</code> preset.</li>\n\n\n\n<li>The site\u2019s primary text color should use the <code>contrast</code> preset.</li>\n\n\n\n<li>Link colors should use the <code>primary</code> preset.</li>\n</ul>\n\n\n\n<p>To reference presets in <code>theme.json</code>, there is a special syntax that you can use: <code>var:preset|$feature|$slug</code>. So <code>base</code> color in this instance would be <code>var:preset|color|base</code>.</p>\n\n\n\n<p>With that plan in mind and using what you\u2019ve already learned from this chapter, try your hand at recreating this in <code>theme.json</code>. Your code should look like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"color\": {\n\t\t\t\"palette\": [\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#ffffff\",\n\t\t\t\t\t\"name\": \"Base\",\n\t\t\t\t\t\"slug\": \"base\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#000000\",\n\t\t\t\t\t\"name\": \"Contrast\",\n\t\t\t\t\t\"slug\": \"contrast\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#89cff0\",\n\t\t\t\t\t\"name\": \"Primary\",\n\t\t\t\t\t\"slug\": \"primary\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t},\n\t\"styles\": {\n\t\t\"color\": {\n\t\t\t\"text\": \"var:preset|color|contrast\",\n\t\t\t\"background\": \"var:preset|color|base\"\n\t\t},\n\t\t\"elements\": {\n\t\t\t\"link\": {\n\t\t\t\t\"color\": {\n\t\t\t\t\t\"text\": \"var:preset|color|primary\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>If you test your site on the front end or via the editor, you should see that your colors have correctly applied:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1056\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?resize=2048%2C1056&#038;ssl=1\" alt=\"WordPress post editor with a couple of demo paragraphs. The image reflects the black text color and blue link color.\" class=\"wp-image-149117\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?resize=1024%2C528&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?resize=768%2C396&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/using-presets-color.jpg?resize=1536%2C792&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>The next step now is to figure out which elements and blocks you want to apply other presets to. Depending on the complexity of your theme, this can be as simple as a few custom colors to hundreds of lines of JSON code. Really, what you do from here is entirely up to you.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Technically, you can reference presets using the CSS syntax of <code>var( --wp--preset--{$feature}--{$slug} )</code>. But the WordPress <code>var:preset|$feature|$slug</code> syntax works much better and always appears correctly throughout the interface in the WordPress admin. Save the CSS syntax for when you are actually writing CSS.</p></div></div>\n\n\n\n<h3 class=\"wp-block-heading\">Referencing custom presets</h3>\n\n\n\n<p>In the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/custom/\">Custom Settings</a> documentation, you learned how to create \u201ccustom\u201d presets. These are non-standard CSS custom properties that you can register, and WordPress generates the CSS output for you.</p>\n\n\n\n<p>These use a different naming convention in comparison to standard presets. Essentially, whenever you used the term <code>preset</code> in your code for standard presets, you would exchange that for <code>custom</code> when dealing with custom presets.</p>\n\n\n\n<p>Let\u2019s walk through an example. Assume that you wanted to register some CSS custom properties for handling line heights in your theme design. You would add this to your <code>theme.json</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {\n\t\t\t\"lineHeight\": {\n\t\t\t\t\"xs\": \"1\",\n\t\t\t\t\"sm\": \"1.25\",\n\t\t\t\t\"md\": \"1.5\",\n\t\t\t\t\"lg\": \"1.75\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>WordPress will generate these custom line heights as CSS custom properties in the editor and on the front end:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">body {\n\t--wp--custom--line-height--xs: 1;\n\t--wp--custom--line-height--sm: 1.25;\n\t--wp--custom--line-height--md: 1.5;\n\t--wp--custom--line-height--lg: 1.75;\n}</code></pre>\n\n\n\n<p>To reference these as styles in <code>theme.json</code>, you would use the <code>var:custom</code> syntax instead of <code>var:preset</code>.</p>\n\n\n\n<p>Suppose you wanted to apply the registered <code>md</code> line-height size as the default line height at the root/global level. For that, you would need to target <code>styles.typography.lineHeight</code>.</p>\n\n\n\n<p>Here is what the full code would look like in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"custom\": {\n\t\t\t\"lineHeight\": {\n\t\t\t\t\"xs\": \"1\",\n\t\t\t\t\"sm\": \"1.25\",\n\t\t\t\t\"md\": \"1.5\",\n\t\t\t\t\"lg\": \"1.75\"\n\t\t\t}\n\t\t}\n\t},\n\t\"styles\": {\n\t\t\"typography\": {\n\t\t\t\"lineHeight\": \"var:custom|line-height|md\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>Of course, you could use your other custom line-height presets for styling other elements and blocks.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Available presets</h2>\n\n\n\n<p>WordPress has several features that you can register presets for. You can find these presets in their corresponding settings docs (the specific properties are noted in parentheses):</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/color/\">Color</a> (<code>palette</code>)</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/shadow/\">Shadow</a> (<code>presets</code>)</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/spacing/\">Spacing</a> (<code>spacingScale</code>, <code>spacingSizes</code>)</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/typography/\">Typography</a> (<code>fontSizes</code>, <code>fontFamily</code>)</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/custom/\">Custom</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148909,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149116",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149116",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149116/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149186,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149116/revisions/149186"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148909"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149116"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

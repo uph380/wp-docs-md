@@ -1,0 +1,109 @@
+{
+    "id": 13071393,
+    "date": "2020-07-04T11:31:51",
+    "date_gmt": "2020-07-04T11:31:51",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13071393"
+    },
+    "modified": "2024-06-08T18:42:07",
+    "modified_gmt": "2024-06-08T18:42:07",
+    "slug": "reverbnation-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/reverbnation-embed/",
+    "title": {
+        "rendered": "ReverbNation embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the ReverbNation Embed block, you can embed contents from ReverbNation into your posts and pages. You don\u2019t need a ReverbNation account to be able to embed contents from ReverbNation into your posts or pages.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Embedded ReverbNation Content:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"531\" height=\"582\" src=\"https://wordpress.org/documentation/files/2020/07/embedded-reverbnation-content.png\" alt=\"Screenshot of  ReverbNation\" class=\"wp-image-13071398\" srcset=\"https://wordpress.org/documentation/files/2020/07/embedded-reverbnation-content.png 531w, https://wordpress.org/documentation/files/2020/07/embedded-reverbnation-content-274x300.png 274w\" sizes=\"auto, (max-width: 531px) 100vw, 531px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to Embed <strong>ReverbNation Content</strong>:</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to <a href=\"https://reverbnation.com\" data-type=\"URL\" data-id=\"https://reverbnation.com\">ReverbNation.com</a> and search for the content you want to embed. You can signup for an account, but it is not needed to share content.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1345\" height=\"588\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2020/07/homepage.png?fit=1024%2C448&amp;ssl=1\" alt=\"Screenshot of ReverbNation \" class=\"wp-image-13071421\" srcset=\"https://wordpress.org/documentation/files/2020/07/homepage.png 1345w, https://wordpress.org/documentation/files/2020/07/homepage-300x131.png 300w, https://wordpress.org/documentation/files/2020/07/homepage-1024x448.png 1024w, https://wordpress.org/documentation/files/2020/07/homepage-768x336.png 768w\" sizes=\"auto, (max-width: 1345px) 100vw, 1345px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li><strong>Click on the \u201cshare artist\u201d to get a link</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"721\" height=\"280\" src=\"https://wordpress.org/documentation/files/2020/07/select-artist.png\" alt=\"The correct URL to copy to use the embed block\" class=\"wp-image-13071429\" srcset=\"https://wordpress.org/documentation/files/2020/07/select-artist.png 721w, https://wordpress.org/documentation/files/2020/07/select-artist-300x117.png 300w\" sizes=\"auto, (max-width: 721px) 100vw, 721px\" /></figure>\n\n\n\n<p><strong>Copy your custom link</strong><br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"653\" height=\"620\" src=\"https://wordpress.org/documentation/files/2020/07/copy-the-url.png\" alt=\"Screenshot of ReverbNation and the correct URL to copy to use the embed block.\" class=\"wp-image-13071436\" srcset=\"https://wordpress.org/documentation/files/2020/07/copy-the-url.png 653w, https://wordpress.org/documentation/files/2020/07/copy-the-url-300x285.png 300w\" sizes=\"auto, (max-width: 653px) 100vw, 653px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li><strong>Add a ReverbNation Embed Block to your post/page</strong><br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"342\" height=\"227\" src=\"https://wordpress.org/documentation/files/2020/08/select-reverbnation-embed-block-v5.5.png\" alt=\"Screenshot showing the ReverbNation embed block\" class=\"wp-image-13270016\" srcset=\"https://wordpress.org/documentation/files/2020/08/select-reverbnation-embed-block-v5.5.png 342w, https://wordpress.org/documentation/files/2020/08/select-reverbnation-embed-block-v5.5-300x199.png 300w\" sizes=\"auto, (max-width: 342px) 100vw, 342px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li><strong>Paste the ReverbNation content link from step 2</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"647\" height=\"301\" src=\"https://wordpress.org/documentation/files/2020/08/reverbnation-embed-block-with-url-v5.5.png\" alt=\"Embed option for the ReverbNation block to paste the URL.\" class=\"wp-image-13270019\" srcset=\"https://wordpress.org/documentation/files/2020/08/reverbnation-embed-block-with-url-v5.5.png 647w, https://wordpress.org/documentation/files/2020/08/reverbnation-embed-block-with-url-v5.5-300x140.png 300w\" sizes=\"auto, (max-width: 647px) 100vw, 647px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li><strong>Click the \u201cEmbed\u201d button</strong></li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"531\" height=\"582\" src=\"https://wordpress.org/documentation/files/2020/07/embedded-reverbnation-content-1.png\" alt=\"Preview of the embedded ReverbNation video within the WordPress editor.\" class=\"wp-image-13071442\" srcset=\"https://wordpress.org/documentation/files/2020/07/embedded-reverbnation-content-1.png 531w, https://wordpress.org/documentation/files/2020/07/embedded-reverbnation-content-1-274x300.png 274w\" sizes=\"auto, (max-width: 531px) 100vw, 531px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: Try again with a different URL or convert to link.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"624\" height=\"324\" src=\"https://wordpress.org/documentation/files/2020/08/wrong-url-v5.5.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-13270023\" srcset=\"https://wordpress.org/documentation/files/2020/08/wrong-url-v5.5.png 624w, https://wordpress.org/documentation/files/2020/08/wrong-url-v5.5-300x156.png 300w\" sizes=\"auto, (max-width: 624px) 100vw, 624px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<figure class=\"wp-block-image alignright size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/block-toolbar-v5.5-edited.png\" alt=\"Block Toolbar with options available for the ReverbNation Block.\" class=\"wp-image-13275245\" style=\"width:234px;height:132px\" width=\"234\" height=\"132\" srcset=\"https://wordpress.org/documentation/files/2020/08/block-toolbar-v5.5-edited.png 361w, https://wordpress.org/documentation/files/2020/08/block-toolbar-v5.5-edited-300x169.png 300w\" sizes=\"auto, (max-width: 234px) 100vw, 234px\" /></figure>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the ReverbNation embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"384\" height=\"293\" src=\"https://wordpress.org/documentation/files/2020/08/transform-to-v5.5-1.png\" alt=\"Options to transform the ReverbNation block to Paragraph, Columns or Group.\" class=\"wp-image-13270033\" srcset=\"https://wordpress.org/documentation/files/2020/08/transform-to-v5.5-1.png 384w, https://wordpress.org/documentation/files/2020/08/transform-to-v5.5-1-300x229.png 300w\" sizes=\"auto, (max-width: 384px) 100vw, 384px\" /></figure>\n\n\n\n<p>You can transform a ReverbNation embed to a Group. This would give you the ability to change the background and text color around the ReverbNation embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"455\" src=\"https://wordpress.org/documentation/files/2020/08/transform-to-change-bg-v5.5-1024x455.png\" alt=\"Editor view of a Reverbnation Embed as a group with Color Settings controls\" class=\"wp-image-13270037\" srcset=\"https://wordpress.org/documentation/files/2020/08/transform-to-change-bg-v5.5-1024x455.png 1024w, https://wordpress.org/documentation/files/2020/08/transform-to-change-bg-v5.5-300x133.png 300w, https://wordpress.org/documentation/files/2020/08/transform-to-change-bg-v5.5-768x341.png 768w, https://wordpress.org/documentation/files/2020/08/transform-to-change-bg-v5.5.png 1147w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of a Reverbnation Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"518\" height=\"388\" src=\"https://wordpress.org/documentation/files/2020/07/transform-to-change-bg.jpg\" alt=\"Reverbnation Embed with a yellow background.\" class=\"wp-image-13169746\" srcset=\"https://wordpress.org/documentation/files/2020/07/transform-to-change-bg.jpg 518w, https://wordpress.org/documentation/files/2020/07/transform-to-change-bg-300x225.jpg 300w\" sizes=\"auto, (max-width: 518px) 100vw, 518px\" /><figcaption class=\"wp-element-caption\">Reverbnation Embed with a yellow background.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change Alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image alignright size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"351\" height=\"297\" src=\"https://wordpress.org/documentation/files/2020/08/change-alignment-v5.5-2-edited.png\" alt=\"Alignment options for the Reverbnation block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-13275254\" srcset=\"https://wordpress.org/documentation/files/2020/08/change-alignment-v5.5-2-edited.png 351w, https://wordpress.org/documentation/files/2020/08/change-alignment-v5.5-2-edited-300x254.png 300w\" sizes=\"auto, (max-width: 351px) 100vw, 351px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the ReverbNation embed post-left-aligned.</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the ReverbNation embed post alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the ReverbNation embed post-align-right.</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the ReverbNation embed post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the ReverbNation embed post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the ReverbNation embed URL in the embed block. To overwrite the existing URL and click on the &#8220;Embed&#8221; button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"690\" height=\"293\" src=\"https://wordpress.org/documentation/files/2020/08/reverbnation-embed-block-with-url.png\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" class=\"wp-image-13270050\" srcset=\"https://wordpress.org/documentation/files/2020/08/reverbnation-embed-block-with-url.png 690w, https://wordpress.org/documentation/files/2020/08/reverbnation-embed-block-with-url-300x127.png 300w\" sizes=\"auto, (max-width: 690px) 100vw, 690px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<h3 class=\"wp-block-heading has-medium-font-size\">Media Settings</h3>\n\n\n\n<figure class=\"wp-block-gallery aligncenter has-nested-images columns-default is-cropped wp-block-gallery-5 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"406\" height=\"182\" data-id=\"12996503\" src=\"https://wordpress.org/documentation/files/2020/06/media-settings.png\" alt=\"Media settings for the embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-12996503\" srcset=\"https://wordpress.org/documentation/files/2020/06/media-settings.png 406w, https://wordpress.org/documentation/files/2020/06/media-settings-300x134.png 300w\" sizes=\"auto, (max-width: 406px) 100vw, 406px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"408\" height=\"197\" data-id=\"12996537\" src=\"https://wordpress.org/documentation/files/2020/06/media-settings-2-1.png\" alt=\"Media settings for the embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-12996537\" srcset=\"https://wordpress.org/documentation/files/2020/06/media-settings-2-1.png 408w, https://wordpress.org/documentation/files/2020/06/media-settings-2-1-300x145.png 300w\" sizes=\"auto, (max-width: 408px) 100vw, 408px\" /></figure>\n</figure>\n\n\n\n<p>Via the Media Settings, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p>\u201cOff:\u201d This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p>\u201cOn:\u201d This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"349\" height=\"191\" src=\"https://wordpress.org/documentation/files/2020/06/advanced.png\" alt=\"Additional CSS Class(es) option for the ReverbNation Embed block.\" class=\"wp-image-12996547\" srcset=\"https://wordpress.org/documentation/files/2020/06/advanced.png 349w, https://wordpress.org/documentation/files/2020/06/advanced-300x164.png 300w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></figure>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-18\n<ul class=\"wp-block-list\">\n<li>Updated &#8220;More Options&#8221; sections: replaced screenshot and added text for &#8220;Move to&#8221; and &#8220;Copy&#8221; </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-07-25\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshots</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-07-25\n<ul class=\"wp-block-list\">\n<li>Uploaded image for Reverbnation embed with a yellow background</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-04</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the ReverbNation Embed block, you can embed contents from ReverbNation into your posts and pages. You don\u2019t need a ReverbNation account to be able to embed contents from ReverbNation into your posts or pages. Embedded ReverbNation Content: Steps to Embed ReverbNation Content: Copy your custom link Detailed [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13071393",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13071393",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13071393"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13071393/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360385,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13071393/revisions/16360385"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13071393"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13071393"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

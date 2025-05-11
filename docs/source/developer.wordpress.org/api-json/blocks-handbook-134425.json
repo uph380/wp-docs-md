@@ -1,0 +1,91 @@
+{
+    "id": 134425,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/main-dashboard-button/"
+    },
+    "modified": "2025-01-27T02:34:19",
+    "modified_gmt": "2025-01-27T02:34:19",
+    "slug": "main-dashboard-button",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/main-dashboard-button/",
+    "title": {
+        "rendered": "MainDashboardButton"
+    },
+    "content": {
+        "rendered": "<p>This slot allows replacing the default main dashboard button in the post editor. It is no longer available in the site editor as of WordPress 6.2.<br />\nIt&#8217;s used for returning back to main wp-admin dashboard when editor is in fullscreen mode.</p>\n<div class=\"callout callout-warning\">\n    Please note that this SlotFill is still considered experimental and may change\n</div>\n<h2>Examples</h2>\n<h3>Change the icon</h3>\n<p>This will replace the W icon button in the header with a close icon.</p>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { __experimentalMainDashboardButton as MainDashboardButton } from '@wordpress/edit-post';\nimport { close } from '@wordpress/icons';\n\nconst MainDashboardButtonTest = () =&gt; (\n    &lt;MainDashboardButton&gt;\n        &lt;FullscreenModeClose icon={ close } /&gt;\n    &lt;/MainDashboardButton&gt;\n);\n\nregisterPlugin( 'main-dashboard-button-test', {\n    render: MainDashboardButtonTest,\n} );\n</code></pre>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/08/main-dashboard-button-close-icon-example.png?ssl=1\" alt=\"The edit post screen in fullscreen mode displaying a close icon instead of the default W\" title=\"Replace the W icon button in the header with a close icon\" /></p>\n<h3>Change the icon and link</h3>\n<p>This example will change the icon in the header to indicate an external link that will take the user to https://wordpress.org when clicked.</p>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport {\n    __experimentalFullscreenModeClose as FullscreenModeClose,\n    __experimentalMainDashboardButton as MainDashboardButton,\n} from '@wordpress/edit-post';\nimport { external } from '@wordpress/icons';\n\nconst MainDashboardButtonIconTest = () =&gt; (\n    &lt;MainDashboardButton&gt;\n        &lt;FullscreenModeClose icon={ external } href=\"https://wordpress.org\" /&gt;\n    &lt;/MainDashboardButton&gt;\n);\n\nregisterPlugin( 'main-dashboard-button-icon-test', {\n    render: MainDashboardButtonIconTest,\n} );\n</code></pre>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/08/main-dashboard-button-external-link-example.png?ssl=1\" alt=\"The edit post screen in fullscreen mode displaying an external link icon instead of the default W\" title=\"Change the icon in the header to indicate an external link that will take the user to https://wordpress.org when clicked\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 94,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134425",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134425",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134425/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156230,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134425/revisions/156230"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134425"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

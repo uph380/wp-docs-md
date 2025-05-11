@@ -1,0 +1,97 @@
+{
+    "id": 144476,
+    "date": "2022-11-20T20:00:05",
+    "date_gmt": "2022-11-20T20:00:05",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=144476"
+    },
+    "modified": "2022-11-20T20:03:50",
+    "modified_gmt": "2022-11-20T20:03:50",
+    "slug": "example",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/security/example/",
+    "title": {
+        "rendered": "Example"
+    },
+    "content": {
+        "rendered": "\n<p>Complete example using capability checks, data validation, secure input, secure output and nonces:</p>\n\n\n\n<pre class=\"wp-block-code expanded\"><code lang=\"php\" class=\"language-php\">/**\n * Generate a Delete link based on the homepage url.\n *\n * @param string $content   Existing content.\n *\n * @return string|null\n */\nfunction wporg_generate_delete_link( $content ) {\n\t// Run only for single post page.\n\tif ( is_single() &amp;&amp; in_the_loop() &amp;&amp; is_main_query() ) {\n\t\t// Add query arguments: action, post, nonce\n\t\t$url = add_query_arg(\n\t\t\t[\n\t\t\t\t'action' =&gt; 'wporg_frontend_delete',\n\t\t\t\t'post'   =&gt; get_the_ID(),\n\t\t\t\t'nonce'  =&gt; wp_create_nonce( 'wporg_frontend_delete' ),\n\t\t\t], home_url()\n\t\t);\n\n\t\treturn $content . ' &lt;a href=\"' . esc_url( $url ) . '\"&gt;' . esc_html__( 'Delete Post', 'wporg' ) . '&lt;/a&gt;';\n\t}\n\n\treturn null;\n}\n\n\n/**\n * Request handler\n */\nfunction wporg_delete_post() {\n\tif ( isset( $_GET['action'] )\n         &amp;&amp; isset( $_GET['nonce'] )\n         &amp;&amp; 'wporg_frontend_delete' === $_GET['action']\n         &amp;&amp; wp_verify_nonce( $_GET['nonce'], 'wporg_frontend_delete' ) ) {\n\n\t\t// Verify we have a post id.\n\t\t$post_id = ( isset( $_GET['post'] ) ) ? ( $_GET['post'] ) : ( null );\n\n\t\t// Verify there is a post with such a number.\n\t\t$post = get_post( (int) $post_id );\n\t\tif ( empty( $post ) ) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Delete the post.\n\t\twp_trash_post( $post_id );\n\n\t\t// Redirect to admin page.\n\t\t$redirect = admin_url( 'edit.php' );\n\t\twp_safe_redirect( $redirect );\n\n\t\t// We are done.\n\t\tdie;\n\t}\n}\n\n\n/**\n * Add delete post ability\n */\nadd_action('plugins_loaded', 'wporg_add_delete_post_ability');\n \nfunction wporg_add_delete_post_ability() {    \n    if ( current_user_can( 'edit_others_posts' ) ) {\n        /**\n         * Add the delete link to the end of the post content.\n         */\n        add_filter( 'the_content', 'wporg_generate_delete_link' );\n      \n        /**\n         * Register our request handler with the init hook.\n         */\n        add_action( 'init', 'wporg_delete_post' );\n    }\n}</code></pre>\n",
+        "protected": false
+    },
+    "author": 7756733,
+    "featured_media": 0,
+    "parent": 144458,
+    "menu_order": 70,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-144476",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144476",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7756733"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144476/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144477,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144476/revisions/144477"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144458"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=144476"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

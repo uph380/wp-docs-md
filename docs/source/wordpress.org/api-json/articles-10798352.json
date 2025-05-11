@@ -1,0 +1,109 @@
+{
+    "id": 10798352,
+    "date": "2021-07-02T17:06:16",
+    "date_gmt": "2021-07-02T17:06:16",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10798352"
+    },
+    "modified": "2024-02-27T13:53:06",
+    "modified_gmt": "2024-02-27T13:53:06",
+    "slug": "appearance-menus-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/appearance-menus-screen/",
+    "title": {
+        "rendered": "Appearance Menus Screen"
+    },
+    "content": {
+        "rendered": "\n<div class=\"wp-block-group has-border-color has-pomegrade-1-border-color has-charcoal-1-color has-pomegrade-3-background-color has-text-color has-background has-link-color wp-elements-397505c27c4ee7002aa6a9ebcd86e2ef is-layout-constrained wp-container-core-group-is-layout-a9c49bdc wp-block-group-is-layout-constrained\" style=\"border-style:solid;border-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)\">\n<p><strong>Warning:</strong> WordPress 5.9 is the last version with this screen available. In WordPress 6.0 and later managing menus is done via <a href=\"https://wordpress.org/documentation/article/navigation-block/\">navigation block</a>.</p>\n</div>\n\n\n\n<p>The Menus Screen enables the user to create a custom menu (also known as a navigation bar, navigation menu, or main menu). It is a section of the site that helps visitors to navigate the site. Depending on the theme used, typically a site will have one navigation menu, while some themes may enable secondary or footer menus. It is essential to have a simplified navigation menu, so as not to confuse your visitors.</p>\n\n\n\n<p>In your menu, you can add different items such as links to pages, articles, categories, or custom links to the url of your choice, such as another site, and then choose the order of the items and their hierarchy (possibility of creating submenus). In short, your menu is fully customizable.</p>\n\n\n\n<p>The Appearance Menus Screen is accessible from the Dashboard via <strong>Appearance</strong> &gt; <strong>Menus.</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><a href=\"https://wordpress.org/documentation/files/2024/02/image-2.png\"><img loading=\"lazy\" decoding=\"async\" width=\"3352\" height=\"1704\" src=\"https://wordpress.org/documentation/files/2024/02/image-2.png\" alt=\"The interface of Appearance &gt; Menus\" class=\"wp-image-16359796\" srcset=\"https://wordpress.org/documentation/files/2024/02/image-2.png 3352w, https://wordpress.org/documentation/files/2024/02/image-2-300x153.png 300w, https://wordpress.org/documentation/files/2024/02/image-2-1024x521.png 1024w, https://wordpress.org/documentation/files/2024/02/image-2-768x390.png 768w, https://wordpress.org/documentation/files/2024/02/image-2-1536x781.png 1536w, https://wordpress.org/documentation/files/2024/02/image-2-2048x1041.png 2048w\" sizes=\"auto, (max-width: 3352px) 100vw, 3352px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Screen options</h2>\n\n\n\n<p>The <a href=\"/support/article/administration-screens/#screen-options\">Screen Options</a> allow you to choose which modules are displayed, or not displayed, in the underlying Screen. Clicking on the Screen Options tab shows a list of the possible modules and options with a check-box next to each. Check the box for each module or option you want displayed, or uncheck the box to not display that module. Click the Screen Options tab again to close the Screen Options.</p>\n\n\n\n<p>Certain modules, like <strong>Posts</strong> are hidden by default.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Creating menus</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"3352\" height=\"1704\" src=\"https://wordpress.org/documentation/files/2024/02/image-5.png\" alt=\"Creating a new menu\" class=\"wp-image-16359800\" srcset=\"https://wordpress.org/documentation/files/2024/02/image-5.png 3352w, https://wordpress.org/documentation/files/2024/02/image-5-300x153.png 300w, https://wordpress.org/documentation/files/2024/02/image-5-1024x521.png 1024w, https://wordpress.org/documentation/files/2024/02/image-5-768x390.png 768w, https://wordpress.org/documentation/files/2024/02/image-5-1536x781.png 1536w, https://wordpress.org/documentation/files/2024/02/image-5-2048x1041.png 2048w\" sizes=\"auto, (max-width: 3352px) 100vw, 3352px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to the WordPress Dashboard.</li>\n\n\n\n<li>From the &#8216;Appearance&#8217; menu on the left-hand side of the Dashboard, select the &#8216;Menus&#8217; option to bring up the Menu Editor.</li>\n\n\n\n<li>Click the link <strong>Create a new menu</strong> at the top of the page.</li>\n\n\n\n<li>Enter a name for your new menu in the Menu Name box</li>\n\n\n\n<li>Click the <strong>Create Menu</strong> button.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Adding items to a menu</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><a href=\"https://wordpress.org/documentation/files/2024/02/image-6.png\"><img loading=\"lazy\" decoding=\"async\" width=\"3352\" height=\"1704\" src=\"https://wordpress.org/documentation/files/2024/02/image-6.png\" alt=\"Adding items to a menu\" class=\"wp-image-16359801\" srcset=\"https://wordpress.org/documentation/files/2024/02/image-6.png 3352w, https://wordpress.org/documentation/files/2024/02/image-6-300x153.png 300w, https://wordpress.org/documentation/files/2024/02/image-6-1024x521.png 1024w, https://wordpress.org/documentation/files/2024/02/image-6-768x390.png 768w, https://wordpress.org/documentation/files/2024/02/image-6-1536x781.png 1536w, https://wordpress.org/documentation/files/2024/02/image-6-2048x1041.png 2048w\" sizes=\"auto, (max-width: 3352px) 100vw, 3352px\" /></a></figure>\n\n\n\n<p>You can add different item types into your menu, such as Pages, Categories, or even Custom Links. These are split between panes left of the menu you&#8217;re currently editing. An example on how to add link to a page:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Locate the pane entitled <strong>Pages</strong>.</li>\n\n\n\n<li>Within this pane, select the <em>View All</em> link to bring up a list of all the currently published Pages on your site.</li>\n\n\n\n<li>Select the Pages that you want to add by clicking the checkbox next to each Page&#8217;s title.</li>\n\n\n\n<li>Click the <strong>Add to Menu</strong> button located at the bottom of this pane to add your selection(s) to the menu that you created in the previous step.</li>\n\n\n\n<li>Click the <strong>Save Menu</strong> button once you&#8217;ve added all the menu items you want.</li>\n</ol>\n\n\n\n<p>Your custom menu has now been saved.</p>\n\n\n\n<p><strong>Note:</strong> The <a href=\"/support/article/administration-screens/#screen-options\">Screen Options</a> allow you to choose which items you can use to add to a menu. Certain items, like <strong>Tags</strong> are hidden by default.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Deleting a menu item</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><a href=\"https://wordpress.org/documentation/files/2024/02/image-7.png\"><img loading=\"lazy\" decoding=\"async\" width=\"3352\" height=\"1704\" src=\"https://wordpress.org/documentation/files/2024/02/image-7.png\" alt=\"Deleting a menu item\" class=\"wp-image-16359802\" srcset=\"https://wordpress.org/documentation/files/2024/02/image-7.png 3352w, https://wordpress.org/documentation/files/2024/02/image-7-300x153.png 300w, https://wordpress.org/documentation/files/2024/02/image-7-1024x521.png 1024w, https://wordpress.org/documentation/files/2024/02/image-7-768x390.png 768w, https://wordpress.org/documentation/files/2024/02/image-7-1536x781.png 1536w, https://wordpress.org/documentation/files/2024/02/image-7-2048x1041.png 2048w\" sizes=\"auto, (max-width: 3352px) 100vw, 3352px\" /></a></figure>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Locate the menu item that you want to remove in the menu editor window</li>\n\n\n\n<li>Click on the arrow icon in the top right-hand corner of the menu item to expand it.</li>\n\n\n\n<li>Click on the <em>Remove</em> item. The menu item will be immediately removed.</li>\n\n\n\n<li>Click the <strong>Save Menu</strong> button to save your changes.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Deleting menu items in bulk</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>To delete multiple menu items at once, click on the checkbox <em>Bulk Select</em>. </li>\n\n\n\n<li>Select the checkbox next to each of the menu items you wish to delete. </li>\n\n\n\n<li>Click <em>Remove Selected Items</em>. This will delete the selected menu items from the menu in bulk.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video autoplay controls loop src=\"https://wordpress.org/documentation/files/2024/02/247964487-f42e8935-745e-481d-8559-33b0d6df72d0.mov\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Creating multi-level menus</h2>\n\n\n\n<p>When planning the structure of your menu, it helps to think of each menu item as a heading in a formal report document. In a formal report, main section headings (Level 1 headings) are the nearest to the left of the page; sub-section headings (Level 2 headings) are indented slightly further to the right; any other subordinate headings (Level 3, 4, etc) within the same section are indented even further to the right.</p>\n\n\n\n<p>The WordPress menu editor allows you to create multi-level menus using a simple &#8216;drag and drop&#8217; interface. Drag menu items up or down to change their order of appearance in the menu. Drag menu items left or right in order to create sub-levels within your menu.</p>\n\n\n\n<p>To make one menu item a subordinate of another, you need to position the &#8216;child&#8217; underneath its &#8216;parent&#8217; and then drag it slightly to the right.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Position the mouse over the &#8216;child&#8217; menu item.</li>\n\n\n\n<li>Whilst holding the left mouse button, drag it to the right.</li>\n\n\n\n<li>Release the mouse button.</li>\n\n\n\n<li>Repeat these steps for each sub-menu item.</li>\n\n\n\n<li>Click the <strong>Save Menu</strong> button in the Menu Editor to save your changes.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video autoplay controls loop src=\"https://wordpress.org/documentation/files/2024/02/247964816-55434209-44b8-41d5-9da7-701a78c8100a.mov\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Adding your menu to your site</h2>\n\n\n\n<p>If your current theme supports custom menus, you will be able to add your new menu to one of the <strong>Theme Locations</strong>.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Scroll to the bottom of the menu editor window.</li>\n\n\n\n<li>Under <em>Menu Settings</em> -&gt; <em>Display location</em>, click the check box for the location where you want your menu to appear.</li>\n\n\n\n<li>Click <strong>Save Menu</strong> once you&#8217;ve made your selection.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><a href=\"https://wordpress.org/documentation/files/2024/02/image-8.png\"><img loading=\"lazy\" decoding=\"async\" width=\"2988\" height=\"1620\" src=\"https://wordpress.org/documentation/files/2024/02/image-8.png\" alt=\"Adding menu to your site\" class=\"wp-image-16359805\" srcset=\"https://wordpress.org/documentation/files/2024/02/image-8.png 2988w, https://wordpress.org/documentation/files/2024/02/image-8-300x163.png 300w, https://wordpress.org/documentation/files/2024/02/image-8-1024x555.png 1024w, https://wordpress.org/documentation/files/2024/02/image-8-768x416.png 768w, https://wordpress.org/documentation/files/2024/02/image-8-1536x833.png 1536w, https://wordpress.org/documentation/files/2024/02/image-8-2048x1110.png 2048w\" sizes=\"auto, (max-width: 2988px) 100vw, 2988px\" /></a></figure>\n\n\n\n<p>If your current theme does not support custom menus, you will need to add your new menu via the Custom Menu widget in the <a href=\"https://wordpress.org/documentation/article/appearance-widgets-screen/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/appearance-widgets-screen/\">Appearance Widgets Screen</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Rearranging, configuring menu items</h2>\n\n\n\n<p>Once an item is added to a menu, those menu items can be rearranged. Placing the mouse cursor over the menu item title, when the mouse cursor changes to cross-arrow, hold the left mouse button down, drag the module to where you want to place it, then release the mouse button (this is called drag-and-drop). Remember you can drag a menu item slightly to the right of the menu item above it to create a <strong>hierarchy</strong> (parent/child) relationship in the menu.</p>\n\n\n\n<p>Each Menu Item has a configuration arrow on the right side of the Menu Item title, that when clicked opens the configuration box. Click the arrow a second time to close the configuration box. If you don&#8217;t see Link Target, Title Attribute, CSS Classes, Link Relationship (XFN), and Description, then under Screen Options make sure those boxes are checked to expose them here.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><a href=\"https://wordpress.org/documentation/files/2024/02/image-9.png\"><img loading=\"lazy\" decoding=\"async\" width=\"852\" height=\"1052\" src=\"https://wordpress.org/documentation/files/2024/02/image-9.png\" alt=\"Menu options\" class=\"wp-image-16359806\" style=\"width:502px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2024/02/image-9.png 852w, https://wordpress.org/documentation/files/2024/02/image-9-243x300.png 243w, https://wordpress.org/documentation/files/2024/02/image-9-829x1024.png 829w, https://wordpress.org/documentation/files/2024/02/image-9-768x948.png 768w\" sizes=\"auto, (max-width: 852px) 100vw, 852px\" /></a></figure>\n\n\n\n<p>Then configuration choices are:</p>\n\n\n\n<p><strong>Navigation Label </strong></p>\n\n\n\n<p>The label for this particular menu item</p>\n\n\n\n<p><strong>Title Attribute </strong></p>\n\n\n\n<p>The attribute used when displaying the label</p>\n\n\n\n<p><strong>Open link in new tab </strong></p>\n\n\n\n<p>Click the checkbox to open the menu item in a new tab</p>\n\n\n\n<p><strong>CSS Classes </strong></p>\n\n\n\n<p>Optional CSS Classes for this menu item</p>\n\n\n\n<p><strong>Link Relationship (XFN) </strong></p>\n\n\n\n<p>Allows for the generation of XFN attributes automatically so you can show how you are related to the authors/owners of site to which you are linking. See <a href=\"https://codex.wordpress.org/Links_Add_New_Screen#Link_Relationship_.28XFN.29 Link Relationship\">Link Relationship</a> for details.</p>\n\n\n\n<p><strong>Description </strong></p>\n\n\n\n<p>Description for this link. The description will be displayed in the menu if the current theme supports it.</p>\n\n\n\n<p><strong>Original </strong></p>\n\n\n\n<p>A link to the original source of the menu item (e.g. a link to view the post or page).</p>\n\n\n\n<p><strong>Move</strong></p>\n\n\n\n<p>Links to move the menu item <em>Up one</em> level, <em>Down one</em> level, <em>Under the previous menu item </em>as its child, <em>To the top</em></p>\n\n\n\n<p><strong>Remove </strong></p>\n\n\n\n<p>Remove this menu item from the menu</p>\n\n\n\n<p><strong>Cancel </strong></p>\n\n\n\n<p>Cancel the configuration of the menu item</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h4 class=\"wp-block-heading\" id=\"changelog\"><strong>Changelog </strong></h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-02-27\n<ul class=\"wp-block-list\">\n<li>Updated screenshots and video</li>\n\n\n\n<li>Fixed headings formatting</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-06-07\n<ul class=\"wp-block-list\">\n<li>Add 6.0 warning at the top</li>\n\n\n\n<li>Add the first screenshot, state when screen is open  </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-06-02\n<ul class=\"wp-block-list\">\n<li>Updated &#8220;Create menu&#8221; image</li>\n\n\n\n<li>Updated to sentence case</li>\n</ul>\n</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Warning: WordPress 5.9 is the last version with this screen available. In WordPress 6.0 and later managing menus is done via navigation block. The Menus Screen enables the user to create a custom menu (also known as a navigation bar, navigation menu, or main menu). It is a section of the site that helps visitors [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10798352",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10798352",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10798352"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10798352/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359807,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10798352/revisions/16359807"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10798352"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10798352"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

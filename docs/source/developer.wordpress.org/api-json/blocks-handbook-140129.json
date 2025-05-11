@@ -1,0 +1,91 @@
+{
+    "id": 140129,
+    "date": "2022-02-09T01:54:48",
+    "date_gmt": "2022-02-09T01:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/data-basics/"
+    },
+    "modified": "2024-01-29T21:09:42",
+    "modified_gmt": "2024-01-29T21:09:42",
+    "slug": "data-basics",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/data-basics/",
+    "title": {
+        "rendered": "Create your First App with Gutenberg Data"
+    },
+    "content": {
+        "rendered": "<p>This tutorial aims to get you comfortable with the Gutenberg data layer. It guides you through building a simple React application that enables the user to manage their WordPress pages. The finished app will look like this:</p>\n<p><a href=\"https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/data-basics-59c8f8/_playground/blueprint.json\" title=\"Opens demo in WordPress Playground\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/how-to-guides/data-basics/media/list-of-pages/part1-finished.jpg?ssl=1\" alt=\"Open demo in WordPress Playground\" /></a></p>\n<p>You may review the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/data-basics-59c8f8\">finished app</a> in the block-development-examples repository.</p>\n<h3>Table of Contents</h3>\n<ol>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/1-data-basics-setup/\">Setup</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/2-building-a-list-of-pages/\">Building a basic list of pages</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/3-building-an-edit-form/\">Building an edit form</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/4-building-a-create-page-form/\">Building a <em>create page</em> form</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/data-basics/5-adding-a-delete-button/\">Adding a delete button</a></li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 29,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140129",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140129",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140129/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150216,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140129/revisions/150216"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140129"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

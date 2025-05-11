@@ -1,0 +1,91 @@
+{
+    "id": 134443,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/button/"
+    },
+    "modified": "2024-12-26T16:49:14",
+    "modified_gmt": "2024-12-26T16:49:14",
+    "slug": "button",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/button/",
+    "title": {
+        "rendered": "Button"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-button--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p>Lets users take actions and make choices with a single click or tap.</p>\n<pre><code class=\"language-jsx\">import { Button } from '@wordpress/components';\nconst Mybutton = () =&gt; (\n  &lt;Button\n    variant=\"primary\"\n    onClick={ handleClick }\n  &gt;\n    Click here\n  &lt;/Button&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<h3><code>__next40pxDefaultSize</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the larger default height that will become the<br />\ndefault size in a future version.</p>\n<h3><code>accessibleWhenDisabled</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Whether to keep the button focusable when disabled.</p>\n<p>In most cases, it is recommended to set this to <code>true</code>. Disabling a control without maintaining focusability<br />\ncan cause accessibility issues, by hiding their presence from screen reader users,<br />\nor by preventing focus from returning to a trigger element.</p>\n<p>Learn more about the <a href=\"https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#focusabilityofdisabledcontrols\">focusability of disabled controls</a><br />\nin the WAI-ARIA Authoring Practices Guide.</p>\n<h3><code>children</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>The button&#8217;s children.</p>\n<h3><code>description</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>A visually hidden accessible description for the button.</p>\n<h3><code>disabled</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Whether the button is disabled. If <code>true</code>, this will force a <code>button</code> element<br />\nto be rendered, even when an <code>href</code> is given.</p>\n<p>In most cases, it is recommended to also set the <code>accessibleWhenDisabled</code> prop to <code>true</code>.</p>\n<h3><code>href</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>If provided, renders <code>a</code> instead of <code>button</code>.</p>\n<h3><code>icon</code></h3>\n<ul>\n<li>Type: <code>IconType</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided, renders an Icon component inside the button.</p>\n<h3><code>iconPosition</code></h3>\n<ul>\n<li>Type: <code>\"left\" | \"right\"</code></li>\n<li>Required: No</li>\n<li>Default: <code>'left'</code></li>\n</ul>\n<p>If provided with <code>icon</code>, sets the position of icon relative to the <code>text</code>.</p>\n<h3><code>iconSize</code></h3>\n<ul>\n<li>Type: <code>number</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided with <code>icon</code>, sets the icon size.<br />\nPlease refer to the Icon component for more details regarding<br />\nthe default value of its <code>size</code> prop.</p>\n<h3><code>isBusy</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Indicates activity while a action is being performed.</p>\n<h3><code>isDestructive</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Renders a red text-based button style to indicate destructive behavior.</p>\n<h3><code>isPressed</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>Renders a pressed button style.</p>\n<h3><code>label</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Sets the <code>aria-label</code> of the component, if none is provided.<br />\nSets the Tooltip content if <code>showTooltip</code> is provided.</p>\n<h3><code>shortcut</code></h3>\n<ul>\n<li>Type: <code>string | { display: string; ariaLabel: string; }</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided with <code>showTooltip</code>, appends the Shortcut label to the tooltip content.<br />\nIf an object is provided, it should contain <code>display</code> and <code>ariaLabel</code> keys.</p>\n<h3><code>showTooltip</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided, renders a Tooltip component for the button.</p>\n<h3><code>size</code></h3>\n<ul>\n<li>Type: <code>\"small\" | \"default\" | \"compact\"</code></li>\n<li>Required: No</li>\n<li>Default: <code>'default'</code></li>\n</ul>\n<p>The size of the button.</p>\n<ul>\n<li><code>'default'</code>: For normal text-label buttons, unless it is a toggle button.</li>\n<li><code>'compact'</code>: For toggle buttons, icon buttons, and buttons when used in context of either.</li>\n<li><code>'small'</code>: For icon buttons associated with more advanced or auxiliary features.</li>\n</ul>\n<p>If the deprecated <code>isSmall</code> prop is also defined, this prop will take precedence.</p>\n<h3><code>text</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided, displays the given text inside the button. If the button contains children elements, the text is displayed before them.</p>\n<h3><code>tooltipPosition</code></h3>\n<ul>\n<li>Type: <code>\"top\" | \"middle\" | \"bottom\" | \"top center\" | \"top left\" | \"top right\" | \"middle center\" | \"middle left\" | \"middle right\" | \"bottom center\" | ...</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided with <code>showTooltip</code>, sets the position of the tooltip.<br />\nPlease refer to the Tooltip component for more details regarding the defaults.</p>\n<h3><code>target</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>If provided with <code>href</code>, sets the <code>target</code> attribute to the <code>a</code>.</p>\n<h3><code>variant</code></h3>\n<ul>\n<li>Type: <code>\"link\" | \"primary\" | \"secondary\" | \"tertiary\"</code></li>\n<li>Required: No</li>\n</ul>\n<p>Specifies the button&#8217;s style.</p>\n<p>The accepted values are:</p>\n<ol>\n<li><code>'primary'</code> (the primary button styles)</li>\n<li><code>'secondary'</code> (the default button styles)</li>\n<li><code>'tertiary'</code> (the text-based button styles)</li>\n<li><code>'link'</code> (the link button styles)</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 120,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134443",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134443",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134443/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156148,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134443/revisions/156148"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134443"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

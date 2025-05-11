@@ -1,0 +1,91 @@
+{
+    "id": 134481,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/keyboard-shortcuts/"
+    },
+    "modified": "2024-10-30T16:55:42",
+    "modified_gmt": "2024-10-30T16:55:42",
+    "slug": "keyboard-shortcuts",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/keyboard-shortcuts/",
+    "title": {
+        "rendered": "KeyboardShortcuts"
+    },
+    "content": {
+        "rendered": "<p><code>&lt;KeyboardShortcuts /&gt;</code> is a component which handles keyboard sequences during the lifetime of the rendering element.</p>\n<p>When passed children, it will capture key events which occur on or within the children. If no children are passed, events are captured on the document.</p>\n<p>It uses the <a href=\"https://craig.is/killing/mice\">Mousetrap</a> library to implement keyboard sequence bindings.</p>\n<h2>Example</h2>\n<p>Render <code>&lt;KeyboardShortcuts /&gt;</code> with a <code>shortcuts</code> prop object:</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { KeyboardShortcuts } from '@wordpress/components';\n\nconst MyKeyboardShortcuts = () =&gt; {\n    const [ isAllSelected, setIsAllSelected ] = useState( false );\n    const selectAll = () =&gt; {\n        setIsAllSelected( true );\n    };\n\n    return (\n        &lt;div&gt;\n            &lt;KeyboardShortcuts\n                shortcuts={ {\n                    'mod+a': selectAll,\n                } }\n            /&gt;\n            [cmd/ctrl + A] Combination pressed? { isAllSelected ? 'Yes' : 'No' }\n        &lt;/div&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3>children</h3>\n<p>Elements to render, upon whom key events are to be monitored.</p>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<h3>shortcuts</h3>\n<p>An object of shortcut bindings, where each key is a keyboard combination, the value of which is the callback to be invoked when the key combination is pressed.</p>\n<ul>\n<li>Type: <code>Object</code></li>\n<li>Required: Yes</li>\n</ul>\n<p><strong>Note:</strong> The value of each shortcut should be a consistent function reference, not an anonymous function. Otherwise, the callback will not be correctly unbound when the component unmounts.</p>\n<p><strong>Note:</strong> The <code>KeyboardShortcuts</code> component will not update to reflect a changed <code>shortcuts</code> prop. If you need to change shortcuts, mount a separate <code>KeyboardShortcuts</code> element, which can be achieved by assigning a unique <code>key</code> prop.</p>\n<h3>bindGlobal</h3>\n<p>By default, a callback will not be invoked if the key combination occurs in an editable field. Pass <code>bindGlobal</code> as <code>true</code> if the key events should be observed globally, including within editable fields.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<p><em>Tip:</em> If you need some but not all keyboard events to be observed globally, simply render two distinct <code>KeyboardShortcuts</code> elements, one with and one without the <code>bindGlobal</code> prop.</p>\n<h3>eventName</h3>\n<p>By default, a callback is invoked in response to the <code>keydown</code> event. To override this, pass <code>eventName</code> with the name of a specific keyboard event.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://craig.is/killing/mice\">Mousetrap documentation</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 177,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134481",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134481",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134481/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151853,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134481/revisions/151853"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134481"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

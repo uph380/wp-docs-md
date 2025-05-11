@@ -1,0 +1,91 @@
+{
+    "id": 148865,
+    "date": "2023-09-18T18:25:01",
+    "date_gmt": "2023-09-18T18:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/devenv/nodejs-development-environment/"
+    },
+    "modified": "2024-01-16T20:27:17",
+    "modified_gmt": "2024-01-16T20:27:17",
+    "slug": "nodejs-development-environment",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/nodejs-development-environment/",
+    "title": {
+        "rendered": "Node.js development environment"
+    },
+    "content": {
+        "rendered": "<p>When developing for the Block Editor, you will need <a href=\"https://nodejs.org/en\">Node.js</a> development tools along with a code editor and a local WordPress environment (see <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/\">Block Development Environment</a>). Node.js (<code>node</code>) is an open-source runtime environment that allows you to execute JavaScript code from the terminal (also known as a command-line interface, CLI, or shell)</p>\n<p>Installing <code>node</code> will automatically include the Node Package Manager (<code>npm</code>) and the Node Package eXecute (<code>npx</code>), two tools you will frequently use in block and plugin development.</p>\n<p>Node Package Manager (<a href=\"https://docs.npmjs.com/cli/v10/commands/npm\"><code>npm</code></a>) serves multiple purposes, including dependency management and script execution. It&#8217;s the recommended package manager and is extensively featured in all documentation.</p>\n<p>The Node Package eXecute (<a href=\"https://docs.npmjs.com/cli/v10/commands/npx\"><code>npx</code></a>) tool is used to run commands from packages without installing them globally and is commonly used when scaffolding blocks with the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/\"><code>create-block</code></a> package.</p>\n<h2>Node.js installation on Mac and Linux (with <code>nvm</code>)</h2>\n<p>It&#8217;s recommended that you use <a href=\"https://github.com/nvm-sh/nvm\">Node Version Manager</a> (<code>nvm</code>) to install Node.js. This allows you to install and manage specific versions of <code>node</code>, which are installed locally in your home directory, avoiding any global permission issues.</p>\n<p>Here are the quick instructions for installing <code>node</code> using <code>nvm</code> and setting the recommended Node.js version for block development. See the <a href=\"https://github.com/nvm-sh/nvm#installing-and-updating\">complete installation guide</a> for more details.</p>\n<ol>\n<li>Open the terminal and run the following to install <code>nvm</code>. On macOS, the required developer tools are not installed by default. Install them if prompted.</li>\n</ol>\n<pre><code class=\"language-sh\">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash\n</code></pre>\n<ol>\n<li>Quit and restart the terminal.</li>\n<li>Run <code>nvm install --lts</code> in the terminal to install the latest <a href=\"https://nodejs.org/en/about/previous-releases\">LTS</a> (Long Term Support) version of Node.js.</li>\n<li>Run <code>node -v</code> and <code>npm -v</code> in the terminal to verify the installed <code>node</code> and <code>npm</code> versions.</li>\n</ol>\n<p>If needed, you can also install specific versions of <code>node</code>. For example, install version 18 by running <code>nvm install 18</code>, and switch between different versions by running <code>nvm use [version-number]</code>. See the <code>nvm</code> <a href=\"https://github.com/nvm-sh/nvm#usage\">usage guide</a> for more details.</p>\n<p>Some projects, like Gutenberg, include an <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/.nvmrc\"><code>.nvmrc</code></a> file which specifies the version of <code>node</code> that should be used. In this case, running <code>nvm use</code> will automatically select the correct version. If the version is not yet installed, you will get an error that tells you what version needs to be added. Run <code>nvm install [version-number]</code> followed by <code>nvm use</code>.</p>\n<h2>Node.js installation on Windows and others</h2>\n<p>You can <a href=\"https://nodejs.org/en/download/\">download a Node.js installer</a> directly from the main Node.js website. The latest version is recommended. Installers are available for Windows and Mac, and binaries are available for Linux.</p>\n<p>Microsoft also provides a <a href=\"https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm\">detailed guide</a> on how to install <code>nvm</code> and Node.js on Windows and WSL.</p>\n<h2>Troubleshooting</h2>\n<p>If you encounter the error <code>zsh: command not found: nvm</code> when attempting to install <code>node</code>, you might need to create the default profile file.</p>\n<p>The default shell is <code>zsh</code> on macOS, so create the profile file by running <code>touch ~/.zshrc</code> in the terminal. It&#8217;s fine to run if the file already exists. The default profile is <code>bash</code> for Ubuntu, including WSL, so use <code>touch ~/.bashrc</code> instead. Then repeat steps 2-4.</p>\n<p>The latest <code>node</code> version should work for most development projects, but be aware that some packages and tools have specific requirements. If you encounter issues, you might need to install and use a previous <code>node</code> version. Also, make sure to check if the project has an <code>.nvmrc</code> and use the <code>node</code> version indicated.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://nodejs.org/en\">Node.js</a> (Official documentation)</li>\n<li><a href=\"https://github.com/nvm-sh/nvm\">Node Version Manager</a> (Official documentation)</li>\n<li><a href=\"https://learn.wordpress.org/tutorial/installing-node-js-and-npm-for-local-wordpress-development/\">Installing Node.js and npm for local WordPress development</a> (Learn WordPress tutorial)</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134336,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148865",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148865",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148865/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151661,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148865/revisions/151661"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134336"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148865"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

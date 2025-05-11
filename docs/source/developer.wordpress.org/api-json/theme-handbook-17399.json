@@ -1,0 +1,97 @@
+{
+    "id": 17399,
+    "date": "2015-06-11T18:38:55",
+    "date_gmt": "2015-06-11T18:38:55",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=17399"
+    },
+    "modified": "2022-10-25T17:52:55",
+    "modified_gmt": "2022-10-25T17:52:55",
+    "slug": "post-template-files",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/template-files-section/post-template-files/",
+    "title": {
+        "rendered": "Post Template Files"
+    },
+    "content": {
+        "rendered": "\n<p>There are many <a href=\"https://developer.wordpress.org/themes/basics/template-files/\">template files</a> that WordPress uses to display the Post <a href=\"https://developer.wordpress.org/themes/basics/post-types/\">post type</a>. Any content dealing with a blog or its posts are within the Post post type.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Index.php</h2>\n\n\n\n<p><code>index.php</code> will display Post post types if there is no other template file in place. As stated in many places, every theme must have an <code>index.php</code> file to be valid. Many basic themes can get away with just using the <code>index.php</code> to display their Post post types, but the use cases given above would justify creating other template files.</p>\n\n\n\n<p>Often you will want unique content structure or layout depending on what is being displayed. There are many templates you can use to customize content structure based on the context within the site. The two most notable post template files are <code>home.php</code> and <code>single.php</code> which display a feed of posts and a single post respectively.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Home.php</h2>\n\n\n\n<p>When a static front page is used and the site has a page defined for the blog list the <code>home.php</code> file is used for the designated blog list page. Use of this template is encouraged over creating a custom page template because blog pagination on a custom page template will not work properly. If there is no <code>home.php</code> in the theme <code>index.php</code> will be used instead.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Single.php</h2>\n\n\n\n<p>It&#8217;s good sense to build as simply as possible in your template structure and not make more templates unless you have real need for them. Therefore, most theme developers don&#8217;t create a single-post.php file because single.php is specific enough. For the most part, all themes should have a <code>single.php</code>. Below is an example of a <code>single.php</code> file from the theme Twenty Fifteen.</p>\n\n\n\n<div class=\"wp-block-group is-layout-constrained wp-block-group-is-layout-constrained\">\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\"><pre class=\"wp-block-syntaxhighlighter-code\">&lt;?php\n/**\n * The template for displaying all single posts and attachments\n *\n * @package WordPress\n * @subpackage Twenty_Fifteen\n * @since Twenty Fifteen 1.0\n */\n \nget_header(); ?&gt;\n \n    &lt;div id=\"primary\" class=\"content-area\"&gt;\n        &lt;main id=\"main\" class=\"site-main\" role=\"main\"&gt;\n \n        &lt;?php\n        // Start the loop.\n        while ( have_posts() ) : the_post();\n \n            /*\n             * Include the post format-specific template for the content. If you want to\n             * use this in a child theme, then include a file called called content-___.php\n             * (where ___ is the post format) and that will be used instead.\n             */\n            get_template_part( 'content', get_post_format() );\n \n            // If comments are open or we have at least one comment, load up the comment template.\n            if ( comments_open() || get_comments_number() ) :\n                comments_template();\n            endif;\n \n            // Previous/next post navigation.\n            the_post_navigation( array(\n                'next_text' =&gt; '&lt;span class=\"meta-nav\" aria-hidden=\"true\"&gt;' . __( 'Next', 'twentyfifteen' ) . '&lt;/span&gt; ' .\n                    '&lt;span class=\"screen-reader-text\"&gt;' . __( 'Next post:', 'twentyfifteen' ) . '&lt;/span&gt; ' .\n                    '&lt;span class=\"post-title\"&gt;%title&lt;/span&gt;',\n                'prev_text' =&gt; '&lt;span class=\"meta-nav\" aria-hidden=\"true\"&gt;' . __( 'Previous', 'twentyfifteen' ) . '&lt;/span&gt; ' .\n                    '&lt;span class=\"screen-reader-text\"&gt;' . __( 'Previous post:', 'twentyfifteen' ) . '&lt;/span&gt; ' .\n                    '&lt;span class=\"post-title\"&gt;%title&lt;/span&gt;',\n            ) );\n \n        // End the loop.\n        endwhile;\n        ?&gt;\n \n        &lt;/main&gt;&lt;!-- .site-main --&gt;\n    &lt;/div&gt;&lt;!-- .content-area --&gt;\n \n&lt;?php get_footer(); ?&gt;</pre></code></pre>\n</div>\n\n\n\n<p>In the code example above you can see the header is pulled in with <code><a href=\"https://developer.wordpress.org/reference/functions/get_header/\">get_header()</a></code> then there are a two html tags. Next <a href=\"https://developer.wordpress.org/themes/basics/the-loop/\">the Loop</a> starts and the <a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">template tag</a> <code class=\"php plain\"><a href=\"https://developer.wordpress.org/reference/functions/get_template_part/\">get_template_part</a>( </code><code class=\"php string\">'content'</code><code class=\"php plain\">, get_post_format());</code> pulls in the appropriate content by determining the post type with <code><a href=\"https://developer.wordpress.org/reference/functions/get_post_format/\">get_post_format()</a></code>. Next, <a href=\"https://developer.wordpress.org/themes/functionality/comments/\">comments</a> are pulled in with the template tag <a href=\"https://developer.wordpress.org/reference/functions/comments_template/\">comments_template()</a>. Then there is some <a href=\"https://developer.wordpress.org/themes/functionality/pagination/\">pagination</a>. Lastly, the content divs are closed and then footer is pulled in with <code><a href=\"https://developer.wordpress.org/reference/functions/get_footer/\">get_footer()</a></code>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Singular.php</h2>\n\n\n\n<p>WordPress Version 4.3 added <code>singular.php</code> that comes in the hierarchy after <code>single.php</code> for posts, <code>page.php</code> for pages, and the variations of each. This template follows the rules of <a href=\"https://developer.wordpress.org/reference/functions/is_singular/\" rel=\"function\">is_singular()</a>  and is used for a single post, regardless of post type. Themes that used the same code for both of those files (or included one in the other) can now simplify down to the one template.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Archive.php</h2>\n\n\n\n<p>Unless a developer includes meta data with permalinks in their templates, the <code>archive.php</code> will not be used. Meta data is information tied to the post. For example the date something was posted on, the author, and any <a href=\"https://developer.wordpress.org/themes/functionality/categories-tags-custom-taxonomies/\">categories, tags, or taxonomies</a> used for the post are all examples of meta data. When a visitor to a website clicks on the meta data, the <code>archive.php</code> will render any posts associated with that piece of meta data. For example, if a visitor clicks on the name of an author, the <code>archive.php</code> will display all posts by that author.</p>\n\n\n\n<p>Commonly, the title of the page being displayed by <code>archive.php</code> will be the name of the meta data the user clicked on. So if the user clicked on the Author&#8217;s name, the page name displaying all the other author&#8217;s posts will be the Author&#8217;s name and frequently there might be an additional description about the meta data. Here is a code example from Twenty Fifteen on their <code>archive.php</code> file. This snippet is the only piece of code that makes the <code>archive.php</code> file different from a <code>home.php</code> or <code>index.php</code> file.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\"><pre class=\"wp-block-syntaxhighlighter-code\">&lt;header class=\"page-header\"&gt;\n    &lt;?php\n        the_archive_title( '&lt;h1 class=\"page-title\"&gt;', '&lt;/h1&gt;' );\n        the_archive_description( '&lt;div class=\"taxonomy-description\"&gt;', '&lt;/div&gt;' );\n    ?&gt;\n&lt;/header&gt;\n&lt;!-- .page-header --&gt;</pre></code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Author.php and Date.php</h2>\n\n\n\n<p><code>Author.php</code> and <code>date.php</code> are more specific archive type files. If you need a refresher check out where they fit within the <a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">template heirarchy</a>. Generally, <code>archive.php</code> will suffice for most themes&#8217; needs and you won&#8217;t need to create these templates.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Author.php</h3>\n\n\n\n<p>If you are building a theme designed for multiple authors, it might make sense to build an author.php template. In the <code>author.php</code> template you could provide more information about an author, their gravatar, pull in their social media sites, and then all posts written by them. This would be a step up from relying just on the <code>archive.php</code> file.</p>\n\n\n\n<p>Additionally, you can build specific <code>author.php</code> files for individual author&#8217;s by using their author ID or nicename. For example, say John Doe is the head author for a site with many guest authors. You may want all the guest authors&#8217; information to display with author.php but you might build a specific author page with more information for John Doe by creating <code>author-johndoe.php</code> or <code>author-3.php</code> if his author ID is 3.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Date.php</h3>\n\n\n\n<p>Similarly, if you are building a theme directed at magazine or news websites, a <code>date.php</code> file might make sense to build as these websites frequently organize their articles and posts by date or issue. Additionally, you could build a <code>day.php</code>, <code>month.php</code>, or <code>year.php</code> if you found enough justification for it.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Category.php, Tag.php, and Taxonomy.php</h2>\n\n\n\n<p>If you need a refresher on what <a href=\"https://developer.wordpress.org/themes/basics/categories-tags-custom-taxonomies/\">categories, tags, &amp; taxonomies</a> are you can look at their page. Often you won&#8217;t need to build out these template files. However, in an example of building a theme for food bloggers, there are some use cases for building these specific templates. In a food blogger website, the categories could be Great Restaurants, Beautiful Food, Ethnic Cuisine, and Recipes.</p>\n\n\n\n<p>You might want most of your blog posts to display the same way except for any blogs that are categorized as recipes, because all recipes have ingredients and instrucitons sections. Therefore, you may want to build a <code>category-recipe.php</code> file to display your recipe blog posts in a grid view with some of the important details about the recipe visible.</p>\n\n\n\n<p>Additionally, perhaps chocolate is a really important tag for the theme you&#8217;re building. It might make sense to build a <code>tag-chocolate.php</code> file so that you can display a specialized banner image of chocolate.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Search.php</h2>\n\n\n\n<p>Most themes have a search.php file so it is clear to users that their query went through. It is common to have some sort of header identifying the query results such as this snippet found int twenty fifteen&#8217;s theme.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;header class=\"page-header\"&gt;\n&lt;h1 class=\"page-title\"&gt;\n    &lt;?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?&gt;\n&lt;/h1&gt;\n&lt;/header&gt;&lt;!-- .page-header --&gt;</code></pre>\n\n\n\n<p>This code snippet pulls in the query that was searched with <code>get_search_query()</code>. Often <code>search.php</code> will only pull in the excerpt instead of the full content since the user is trying to determine if the article or page fits their search.</p>\n",
+        "protected": false
+    },
+    "author": 14167654,
+    "featured_media": 0,
+    "parent": 17401,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-17399",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17399",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 39,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17399/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143642,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17399/revisions/143642"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17401"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wporg/v1/users/lizkaraffa"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=17399"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

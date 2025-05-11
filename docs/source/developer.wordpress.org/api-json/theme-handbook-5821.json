@@ -1,0 +1,91 @@
+{
+    "id": 5821,
+    "date": "2014-08-01T22:57:55",
+    "date_gmt": "2014-08-01T22:57:55",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5821"
+    },
+    "modified": "2024-02-06T03:45:14",
+    "modified_gmt": "2024-02-06T03:45:14",
+    "slug": "advanced-topics",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/",
+    "title": {
+        "rendered": "Advanced Topics"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the advanced theme topics documentation. In this chapter, you will learn about some of the more complex features, techniques, and more that are not covered in previous chapters.</p>\n\n\n\n<p>While this chapter is considered \u201cadvanced\u201d it doesn\u2019t mean you cannot learn something if you\u2019re still getting started on your theme development journey. In many ways, the articles in this chapter are essential if you plan to distribute your theme to others, such as through the <a href=\"https://wordpress.org/themes/\">WordPress Theme Directory</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the following links to locate a topic within this chapter. Each article covers a specific topic that is relevant to theme development, and you can explore each at your own pace.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/internationalization/\"><strong>Internationalization</strong></a><strong>:</strong> Must-know techniques and tips to ensure your theme can be translated into any language.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\"><strong>Child Themes</strong></a><strong>:</strong> Build a custom theme that extends an existing theme (i.e., parent theme) and requires less work.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/build-process/\"><strong>Build Process</strong></a><strong>:</strong> How to integrate with the <code>@wordpress/scripts</code> package to process and bundle your theme assets.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/privacy/\"><strong>Privacy</strong></a><strong>:</strong> Test the built-in WordPress privacy features and ensure your theme works with them.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/testing/\"><strong>Testing</strong></a><strong>:</strong> How to run your theme through a suite of testing tools to make sure it works across a variety of environments.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/debugging/\"><strong>Debugging</strong></a><strong>:</strong> How to enable debugging in WordPress to ensure your theme is error free.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/advanced-topics/security/\"><strong>Security</strong></a><strong>:</strong> A rundown of security best practices that your theme should be doing to defend against exploits.</li>\n\n\n\n<li><strong><a href=\"https://developer.wordpress.org/themes/advanced-topics/publishing-themes/\">Publishing Themes</a>:</strong> The steps you need to take to publish your theme on WordPress.org or distribute to others.</li>\n</ul>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>This chapter also includes several other documents that are currently undergoing updates. These will eventually be updated or moved to more appropriate chapters:</p></div></div>\n\n\n\n<ul class=\"wp-block-list\">\n<li style=\"font-style:normal;font-weight:700\"><a href=\"https://developer.wordpress.org/themes/advanced-topics/plugin-api-hooks/\">Plugin API Hooks</a></li>\n\n\n\n<li style=\"font-style:normal;font-weight:700\"><a href=\"https://developer.wordpress.org/themes/advanced-topics/ui-best-practices/\">UI Best Practices</a></li>\n\n\n\n<li style=\"font-style:normal;font-weight:700\"><a href=\"https://developer.wordpress.org/themes/advanced-topics/javascript-best-practices/\">JavaScript Best Practices</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 70,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5821",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152190,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821/revisions/152190"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5821"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

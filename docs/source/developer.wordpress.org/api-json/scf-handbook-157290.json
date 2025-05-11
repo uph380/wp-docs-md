@@ -1,0 +1,91 @@
+{
+    "id": 157290,
+    "date": "2025-02-21T05:19:06",
+    "date_gmt": "2025-02-21T05:19:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/"
+    },
+    "modified": "2025-02-21T18:45:44",
+    "modified_gmt": "2025-02-21T18:45:44",
+    "slug": "welcome",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/",
+    "title": {
+        "rendered": "Getting Started with Secure Custom Fields"
+    },
+    "content": {
+        "rendered": "<p>This section helps you get up and running with Secure Custom Fields (SCF). Whether you&#8217;re new to WordPress development or an experienced developer, these guides will help you start using SCF effectively.</p>\n<h2>In This Section</h2>\n<ul>\n<li><a href=\"installation\">Installation</a> &#8211; How to install and activate SCF</li>\n<li><a href=\"quick-start\">Quick Start</a> &#8211; Create your first custom field group in minutes</li>\n</ul>\n<h2>Documentation Sections</h2>\n<ul>\n<li><a href=\"../concepts/\">Concepts</a> &#8211; Core concepts and architecture</li>\n<li><a href=\"../features/\">Features</a> &#8211; Detailed feature documentation</li>\n<li><a href=\"../tutorials/\">Tutorials</a> &#8211; Step-by-step guides</li>\n<li><a href=\"../contributing/\">Contributing</a> &#8211; How to contribute to SCF</li>\n</ul>\n<h2>Code Reference</h2>\n<p>The <a href=\"../code-reference/\">Code Reference</a> provides detailed technical documentation of SCF&#8217;s functions, classes, hooks, and APIs. This is particularly useful for developers who want to:</p>\n<ul>\n<li>Extend SCF&#8217;s functionality</li>\n<li>Integrate SCF with other plugins or themes</li>\n<li>Understand SCF&#8217;s internal architecture</li>\n<li>Find specific hooks and filters</li>\n</ul>\n<h2>Prerequisites</h2>\n<ul>\n<li>WordPress 6.0 or later</li>\n<li>PHP 7.4 or later</li>\n<li>Basic understanding of WordPress development</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 7879583,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": -99,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157290",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157290",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7879583"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157290/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157338,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157290/revisions/157338"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157290"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

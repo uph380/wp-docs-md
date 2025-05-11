@@ -1,0 +1,91 @@
+{
+    "id": 126759,
+    "date": "2019-12-18T23:19:29",
+    "date_gmt": "2019-12-18T23:19:29",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/coding-standards/styleguide/"
+    },
+    "modified": "2024-01-16T20:30:00",
+    "modified_gmt": "2024-01-16T20:30:00",
+    "slug": "styleguide",
+    "status": "publish",
+    "type": "wpcs-handbook",
+    "link": "https://developer.wordpress.org/coding-standards/styleguide/",
+    "title": {
+        "rendered": "Markdown Style Guide"
+    },
+    "content": {
+        "rendered": "<h2>Headings</h2>\n<pre><code class=\"language-md\"># Heading h1\n## Heading h2\n### Heading h3\n#### Heading h4\n##### Heading h5\n###### Heading h6\n</code></pre>\n<p>Note: h1 &#8211; h4 items will be automatically added to the Table of Contents.</p>\n<h2>Emphasis</h2>\n<h3>Italics</h3>\n<p>Wrap text with a single <code>_</code> for <em>Italic</em> text:</p>\n<pre><code class=\"language-md\">This is _italic text_.\n</code></pre>\n<h3>Bold</h3>\n<p>Wrap text with double <code>**</code> for <strong>Bold</strong> text:</p>\n<pre><code class=\"language-md\">This is **bold text**.\n</code></pre>\n<h3>Strikethrough</h3>\n<p>Wrap text with double <code>~~</code> for <del>strikethrough</del> text:</p>\n<pre><code class=\"language-md\">This is ~~strikethrough~~ text.\n</code></pre>\n<h2>Links</h2>\n<p>Wrap the title in square brackets <code>[title]</code> immediately followed by the URL in <code>(https://example.com)</code>:</p>\n<pre><code class=\"language-md\">[WordPress](https://wordpress.org/)\n</code></pre>\n<h2>Blockquotes</h2>\n<p>Use <code>&gt;</code> for blockquotes, double <code>&gt;&gt;</code> to further indent:</p>\n<pre><code class=\"language-md\">&gt; Blockquote\n&gt;&gt; Indented Blockquote\n</code></pre>\n<h2>Lists</h2>\n<h3>Unordered Lists</h3>\n<p>Use <code>-</code> for unordered lists, and intent two spaces for list subitems:</p>\n<pre><code class=\"language-md\">- List\n  - List\n- List\n- List\n</code></pre>\n<h3>Ordered Lists</h3>\n<p>Use numbered items followed by a `.:</p>\n<pre><code class=\"language-md\">1. One\n2. Two\n3. Three\n</code></pre>\n<h2>Horizontal Rules</h2>\n<p>Use <code>---</code> for a horizontal rules:</p>\n<pre><code class=\"language-md\">---\n</code></pre>\n<h2>Tables</h2>\n<pre><code class=\"language-md\">| A     | B     |\n| ----- | ----- |\n| Alpha | Bravo |\n</code></pre>\n<h2>Example Code</h2>\n<h3>Inline Code</h3>\n<p>Wrap inline code with single <code>`\\``</code> backticks:</p>\n<pre><code class=\"language-md\">```\nThis is `inline code` wrapped with backticks\n```\n</code></pre>\n<p>When documenting an example, use the markdown <code>`\\``</code> code block to demarcate the beginning and end of the code sample:</p>\n<h3>Fenced Code Blocks</h3>\n<h4>Javascript</h4>\n<pre><code class=\"language-md\">```javascript\nvar foo = function (bar) {\n  return bar++;\n};\n\nconsole.log(foo(5));\n```\n</code></pre>\n<h4>JSON</h4>\n<pre><code class=\"language-md\">```json\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Smith\",\n  \"address\": {\n    \"streetAddress\": \"21 2nd Street\",\n    \"city\": \"New York\",\n    \"state\": \"NY\",\n    \"postalCode\": \"10021-3100\"\n  },\n  \"phoneNumbers\": [\n    {\n      \"type\": \"home\",\n      \"number\": \"212 555-1234\"\n    },\n    {\n      \"type\": \"office\",\n      \"number\": \"646 555-4567\"\n    }\n  ],\n  \"children\": [],\n  \"spouse\": null\n}\n```\n</code></pre>\n<h4>CSS</h4>\n<pre><code class=\"language-md\">```css\nfoo {\n  padding: 5px;\n  margin-right: 3px;\n}\n\n.bar {\n  background-color: #f00;\n}\n```\n</code></pre>\n<h4>SCSS</h4>\n<pre><code class=\"language-md\">```scss\nfoo {\n  padding: 5px;\n  margin-right: 3px;\n}\n\n.bar {\n  background-color: #f00;\n}\n```\n</code></pre>\n<h4>HTML</h4>\n<pre><code class=\"language-md\">```html\n&lt;span class=\"my-class\"&gt;Example&lt;/span&gt;\n```\n</code></pre>\n<h4>PHP</h4>\n<pre><code class=\"language-md\">```php\n$array = array(\n    \"foo\" =&gt; \"bar\",\n    \"bar\" =&gt; \"foo\",\n);\n```\n</code></pre>\n<h4>Markdown</h4>\n<pre><code class=\"language-md\">```md\nThis is _italic text_. This is **bold text**.\n```\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 46383,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-126759",
+        "wpcs-handbook",
+        "type-wpcs-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/126759",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/wpcs-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/46383"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/126759/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151913,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/126759/revisions/151913"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=126759"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

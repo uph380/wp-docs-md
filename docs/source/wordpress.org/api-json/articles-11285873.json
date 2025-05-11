@@ -1,0 +1,109 @@
+{
+    "id": 11285873,
+    "date": "2019-03-07T12:26:26",
+    "date_gmt": "2019-03-07T12:26:26",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11285873"
+    },
+    "modified": "2024-06-08T17:44:54",
+    "modified_gmt": "2024-06-08T17:44:54",
+    "slug": "page-break-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/page-break-block/",
+    "title": {
+        "rendered": "Page Break block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>Use the&nbsp;<em>page break block</em> to separate your content into a multiple-page experience and add pagination, or page breaks, to a page or post. This can be useful if you are writing a step-by-step tutorial or if you\u2019d like to split your page into multiple chapters, for instance.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video aligncenter\"><video controls src=\"https://wordpress.org/documentation/files/2022/08/171639717-40c88ae3-6e4c-4994-b8fc-355893b92053.mp4\"></video><figcaption class=\"wp-element-caption\">Page break overview</figcaption></figure>\n\n\n\n<p>In order to add a&nbsp;<em>page break block</em>, click on the&nbsp;<strong>Block Inserter</strong>&nbsp;icon.</p>\n\n\n\n<p>You can also type <kbd>/page-break </kbd>and hit enter in a new&nbsp;<em>paragraph block</em>&nbsp;to add one quickly.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><a href=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-11.36.44-AM.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-11.36.44-AM.png\" alt=\"How to add a Page break block using the slash command\" class=\"wp-image-15885804\" width=\"400\" height=\"211\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-11.36.44-AM.png 712w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-11.36.44-AM-300x158.png 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></a><figcaption class=\"wp-element-caption\">Page break block \u2013 Add typing</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p>You can add as many page breaks as you want to your post or page. Each&nbsp;<em>page break block&nbsp;</em>adds a new number to the multi-page link that appears at the bottom, splitting the content into more pages.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2022/08/171639818-60c74799-9901-48b4-8167-861f0794cec4.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/171639818-60c74799-9901-48b4-8167-861f0794cec4-1024x367.png\" alt=\"Page break pagination links\" class=\"wp-image-15886085\" width=\"360\" height=\"129\" srcset=\"https://wordpress.org/documentation/files/2022/08/171639818-60c74799-9901-48b4-8167-861f0794cec4-1024x367.png 1024w, https://wordpress.org/documentation/files/2022/08/171639818-60c74799-9901-48b4-8167-861f0794cec4-300x107.png 300w, https://wordpress.org/documentation/files/2022/08/171639818-60c74799-9901-48b4-8167-861f0794cec4-768x275.png 768w, https://wordpress.org/documentation/files/2022/08/171639818-60c74799-9901-48b4-8167-861f0794cec4.png 1424w\" sizes=\"auto, (max-width: 360px) 100vw, 360px\" /></a><figcaption class=\"wp-element-caption\">Page break links</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"block-interface\">Block Toolbar</h2>\n\n\n\n<p>Each block has its own block-specific controls that allow you to manipulate the block right in the editor. The&nbsp;<em>page break block</em>&nbsp;has the following options in the Block toolbar.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2022/08/171639713-7d61e958-d269-4051-8d3f-1f5234f49c3c-1.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/171639713-7d61e958-d269-4051-8d3f-1f5234f49c3c-1-1024x234.png\" alt=\"Bock toolbar in the Page Break block\" class=\"wp-image-15885809\" width=\"364\" height=\"83\" /></a><figcaption class=\"wp-element-caption\">Page break block interface</figcaption></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<p>You can transform a&nbsp;<em>Page Break block</em>&nbsp;into a Columns, or a Group block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-1.03.16-PM-1.png\" alt=\"Transform tool in the Page Break block\" class=\"wp-image-15886076\" width=\"312\" height=\"185\" /></figure>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-1.03.35-PM.png\" alt=\"Block moving tools in the Page Break block\" class=\"wp-image-15886077\" width=\"261\" height=\"95\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-1.03.35-PM.png 348w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-03-at-1.03.35-PM-300x109.png 300w\" sizes=\"auto, (max-width: 261px) 100vw, 261px\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the&nbsp;<em>Page Break Block</em>&nbsp;and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"block-settings-panel\">Block Settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar.&nbsp;<em>If you do not see the sidebar, simply click the \u2018cog\u2019 icon next to the Publish button.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><a href=\"https://wordpress.org/documentation/files/2022/08/171639821-1df07250-fe04-436e-9646-4837eec2ed2e.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/171639821-1df07250-fe04-436e-9646-4837eec2ed2e.png\" alt=\"Block settings in the Page Break block\" class=\"wp-image-15886088\" width=\"360\" height=\"141\" srcset=\"https://wordpress.org/documentation/files/2022/08/171639821-1df07250-fe04-436e-9646-4837eec2ed2e.png 548w, https://wordpress.org/documentation/files/2022/08/171639821-1df07250-fe04-436e-9646-4837eec2ed2e-300x117.png 300w\" sizes=\"auto, (max-width: 360px) 100vw, 360px\" /></a><figcaption class=\"wp-element-caption\">The block settings can be found in the sidebar.</figcaption></figure>\n\n\n\n<p>The page break block doesn\u2019t have any additional options on the sidebar. Once you add it to your page or post you are all set!<br></p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-28\n<ul class=\"wp-block-list\">\n<li>Removed redundant content </li>\n\n\n\n<li>Aligned images for mobile view </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-03\n<ul class=\"wp-block-list\">\n<li>Screenshots, video and content updated for 6.0</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks Use the&nbsp;page break block to separate your content into a multiple-page experience and add pagination, or page breaks, to a page or post. This can be useful if you are writing a step-by-step tutorial or if you\u2019d like to split your page into multiple chapters, for instance.&nbsp; In order [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        88
+    ],
+    "class_list": [
+        "post-11285873",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-design-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285873",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11285873"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285873/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360348,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285873/revisions/16360348"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11285873"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11285873"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

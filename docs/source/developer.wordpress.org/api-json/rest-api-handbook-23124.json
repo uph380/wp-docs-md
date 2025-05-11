@@ -1,0 +1,97 @@
+{
+    "id": 23124,
+    "date": "2016-12-06T18:09:16",
+    "date_gmt": "2016-12-06T18:09:16",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23124"
+    },
+    "modified": "2024-01-16T20:30:19",
+    "modified_gmt": "2024-01-16T20:30:19",
+    "slug": "post-statuses",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/post-statuses/",
+    "title": {
+        "rendered": "Statuses"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a status record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                The title for the status.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-private\">\n<td>\n                <code>private</code>\n            </td>\n<td>\n                Whether posts with this status should be private.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-protected\">\n<td>\n                <code>protected</code>\n            </td>\n<td>\n                Whether posts with this status should be protected.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-public\">\n<td>\n                <code>public</code>\n            </td>\n<td>\n                Whether posts of this status should be shown in the front end of the site.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-queryable\">\n<td>\n                <code>queryable</code>\n            </td>\n<td>\n                Whether posts with this status should be publicly-queryable.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-show_in_list\">\n<td>\n                <code>show_in_list</code>\n            </td>\n<td>\n                Whether to include posts in the edit listing for their post type.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-slug\">\n<td>\n                <code>slug</code>\n            </td>\n<td>\n                An alphanumeric identifier for the status.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>embed</code>, <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-date_floating\">\n<td>\n                <code>date_floating</code>\n            </td>\n<td>\n                Whether posts of this status may have floating published dates.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Status</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/statuses</code></p>\n<p>        Query this endpoint to retrieve a specific status record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/statuses</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Status</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/statuses/&lt;status&gt;</code></p>\n<p>        Query this endpoint to retrieve a specific status record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/statuses/&lt;status&gt;</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>status</code>\n                                    </td>\n<td>\n                                            An alphanumeric identifier for the status.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n</table></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23124",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23124",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23124/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152010,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23124/revisions/152010"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23124"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

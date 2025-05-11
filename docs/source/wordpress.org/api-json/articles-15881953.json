@@ -1,0 +1,109 @@
+{
+    "id": 15881953,
+    "date": "2022-08-02T17:42:48",
+    "date_gmt": "2022-08-02T17:42:48",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15881953"
+    },
+    "modified": "2023-08-01T10:31:07",
+    "modified_gmt": "2023-08-01T10:31:07",
+    "slug": "comment-content-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comment-content-block/",
+    "title": {
+        "rendered": "Comment Content Block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>The <em>Comment Content</em> block<em> </em>displays the content of a comment. This block is located inside a Comment Query Loop block and lets you customize the appearance of the comment\u2019s content.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/gRVTZXXPLxClT3RVGZigJ6WWC46zNET1ksAOcXUBnT0Z3DC4lkedLbmczFHnIR6IF560dQ9BstdJBwGfHon-aYAMx_pAgs-vi-Qsxp7v_85zM6NaGo1kIOkGyjSbwsisfTXJQP1kUp2avO6TQ9XXMQ\" alt=\"Comment Content block\n\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">You can only insert the <em>Comment Content </em>block<strong><em> </em></strong>inside a Comment Template block within the Comment Query Loop block.&nbsp;</p>\n\n\n\n<p>Click the (+) icon inside the comment template block to open the block inserter pop-up window and search for the <em>Comment Content</em> block.</p>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/comment-content</kbd> to quickly insert a <em>Comment Content</em> block inside a Comment Template block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/LUnzsLp8MFXxxkEfIQOHs_Cojx4HDVjYYOLxqALmBMsm1voVAi4iOuebWxXsfiDyqPafeljB7LXlU2JiMkuy-992rwa189SV2WD3ZcYGUqNBXCcij1OG6KTAO7KZecxdxWbuzhWT9rE-bgn1pb_axQ\" alt=\"How to quickly add a comment content block\" style=\"width:383px;height:360px\" width=\"383\" height=\"360\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>The block toolbar contains the tools to customize each block. The <em>Comment Content</em> block\u2019s toolbar consists of the following tools:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/l72u01JXFOM9V9tjSKIZknNfKFWVy4cL_bOv1sEo0JnZStNYfQtTc3E9qbEMBniDB8DuvoO9jx4hnN6fpKe0A6sQeQXlApL1H-8iiZsbrlP_RpNyB3PiQQlbf3wiHh4CfZ4LXLX2xjTrrFvvyNbt1w\" alt=\"Block toolbar in the Comment Content block\" /></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<p>You can transform a <em>Comment Content block</em> into a Columns, or a Group block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.18.42-AM.png\" alt=\"Transform option in the Comment Content block\" class=\"wp-image-15882004\" style=\"width:310px;height:190px\" width=\"310\" height=\"190\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.18.42-AM.png 620w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.18.42-AM-300x184.png 300w\" sizes=\"auto, (max-width: 310px) 100vw, 310px\" /></figure>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/QiaaQsKqM6rPaHKRuBHFEAzS6QiqyBpytzh0KMCM6j9a7CKKTu_4lKBkDYKIuEdXExIhCWUy6p-sZegC5ARXyeV2IUtT7hshKaUo4vfrWkp1kDmZptodY_MYsQL33wStuxX2xgDhgeaZwrfeibtXxQ\" alt=\"Block moving tools in the Comment Content block\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <em>Comment Content </em>block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>Change text alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/rVoBlzCsyBk4lvQTSuCuvW91Hww3va24sU3JFcyCKyc34_p5hAoBM7o_e8Bhu34c1ieNjx47qmLXQxNa4jZAFGnF3aQD8obmU1v-Uw-OzYADh8Lb0_NmtpmPgaXK3QG89Z4h3kRBSOo4WcWndr4xcw\" alt=\"Change text alignment in the Comment Content block\" /></figure>\n\n\n\n<p>Text alignment options let you align the content of a comment towards the left, center, or right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p class=\"has-text-align-center\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/dHwOyTZ-Dm3GhxUDu4yugKgKkvW-LJEXxO3_NFxB1BJ1No84KlzwUtuM5Q3Dvf9OuVswDXiixyzG0ee-LEpdjWl5J6yQP147jg-1qEYShvA_l3eKhArLlRpl4ysu5A7weWlX3y6MFMt3NduFF3k00A\" width=\"249\" height=\"88\">&nbsp;</p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by <strong>three vertical dots on the far right of the toolbar</strong> gives you more features such as the ability to duplicate, remove, or edit your block as HTML.&nbsp;</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar.&nbsp;<em>If you do not see the sidebar, simply click the &#8216;cog&#8217; icon.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-23-at-9.39.34-AM.png\" alt=\"Cog icon to display the Block sidebar\" class=\"wp-image-15765217\" style=\"width:369px;height:93px\" width=\"369\" height=\"93\" srcset=\"https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-23-at-9.39.34-AM.png 492w, https://wordpress.org/documentation/files/2022/06/Screen-Shot-2022-06-23-at-9.39.34-AM-300x76.png 300w\" sizes=\"auto, (max-width: 369px) 100vw, 369px\" /></figure>\n\n\n\n<p>Here are the options for the <em>Comment Content</em> block:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The <em>comment content block</em> lets you customize the text, and background colors.</p>\n\n\n\n<p>Click on any of the options to change the color. Choose from the default color or click the upper rectangle area to pick a custom color using the color picker.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/8QJvjFgL80IpjB46tPG3W09VtsgAuAOO1oPC5SRIpZebTkAQGOq4_nTQvfjSp8kvFcGk2Uyd_fdjaD0ifDg8g_u6Hi0reTAy-HByp220VMinw6vaj7uHcs-6ayv_zEtNI4rXLWnu6Cbl-uUd0lnhtg\" alt=\"Color settings in the Comment Content block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>Typography settings allow you to change a block\u2019s font size, appearance, line height, letter casing, and spacing.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/IVdARymD8GeNv8AWii9jC3eNLr9O89rN6qcB6OOc7e98FhaZHGoO3SXrVEFdufLXB8p4AGddCSJNu4QA-FJRcb_jISplkAZAnW7USORNQbtOQ2naXEBqqzO0n_8XM0_r8GIxQqWp7qGS9polVkzFig\" alt=\"Typography settings in the Comment Content block\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>Dimension controls are used to control how groups of blocks are placed alongside one another, by changing the values for padding, margin, and other dimensions</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.30.47-AM-1.png\" alt=\"Dimension settings in the Comment Content block\" class=\"wp-image-15882035\" style=\"width:396px;height:180px\" width=\"396\" height=\"180\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\"></a><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Learn more about dimension controls.</a></p>\n\n\n\n<p></p>\n\n\n\n<p><strong>Advanced</strong> </p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/WO7ILUEBf3iROKyBmtFpkPhnI9ZXyGV4pVzBWYoQ8-0JzJb-lE3-kITUoTupym9Dq6u53grUknX186VfaDB_WetsU88hEVujsyyMCwFNXmeDjIzFuCdogQZkNv_STu4yp_sjnPtzqTYJXXIVTSuo0g\" alt=\"Advanced settings in the Comment Content block\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-08-02</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks The Comment Content block displays the content of a comment. This block is located inside a Comment Query Loop block and lets you customize the appearance of the comment\u2019s content. You can only insert the Comment Content block inside a Comment Template block within the Comment Query Loop block.&nbsp; [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15881953",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15881953",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15881953"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15881953/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358275,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15881953/revisions/16358275"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15881953"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15881953"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

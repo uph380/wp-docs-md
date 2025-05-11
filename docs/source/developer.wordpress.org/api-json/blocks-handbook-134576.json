@@ -1,0 +1,91 @@
+{
+    "id": 134576,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-lazy-import/"
+    },
+    "modified": "2025-01-06T18:49:12",
+    "modified_gmt": "2025-01-06T18:49:12",
+    "slug": "packages-lazy-import",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-lazy-import/",
+    "title": {
+        "rendered": "@wordpress/lazy-import"
+    },
+    "content": {
+        "rendered": "<p>Import an NPM module, even if not installed locally or defined as a dependency of the project. Uses a locally installed package if available. Otherwise, the package will be downloaded dynamically on-demand.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/lazy-import --save\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>Requirements</h2>\n<p>NPM 6.9.0 or newer is required, since it uses the <a href=\"https://github.com/npm/rfcs/blob/latest/implemented/0001-package-aliases.md\">package aliases feature</a> to maintain multiple versions of the same package.</p>\n<h2>Usage</h2>\n<p>Usage is intended to mimic the behavior of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Dynamic_Imports\">dynamic <code>import</code> function</a>, receiving the name (and optional version specifier) of an NPM package and returning a promise which resolves to the required module.</p>\n<p><em><strong>Note:</strong> Currently, this alignment to <code>import</code> is superficial, and the module resolution still uses <a href=\"https://nodejs.org/docs/latest-v12.x/api/modules.html#modules_require_id\">CommonJS <code>require</code></a>, rather than the newer <a href=\"https://nodejs.org/docs/latest-v16.x/api/esm.html\">ES Modules support</a>. Future versions of this package will likely support ES Modules, once an LTS release of Node.js including unflagged ES Modules support becomes available.</em></p>\n<p>The string passed to <code>lazyImport</code> can be formatted exactly as you would provide to <code>npm install</code>, including an optional version specifier (including <a href=\"https://docs.npmjs.com/misc/semver#ranges\">version ranges</a>). If the version specifier is omitted, it will be treated as equivalent to <code>*</code>, using the version of a locally installed package if available, otherwise installing the latest available version.</p>\n<pre><code class=\"language-js\">const lazyImport = require( '@wordpress/lazy-import' );\n\nlazyImport( 'is-equal-shallow@^0.1.3' ).then( ( isEqualShallow ) =&gt; {\n    console.log( isEqualShallow( { a: true, b: true }, { a: true, b: true } ) );\n    // true\n} );\n</code></pre>\n<p>If you&#8217;re using Node v14.3.0 or newer, you can also take advantage of <a href=\"https://v8.dev/features/top-level-await\">top-level await</a> to simplify top-level imports:</p>\n<pre><code class=\"language-js\">const lazyImport = require( '@wordpress/lazy-import' );\n\nconst isEqualShallow = await lazyImport( 'is-equal-shallow@^0.1.3' );\nconsole.log( isEqualShallow( { a: true, b: true }, { a: true, b: true } ) );\n// true\n</code></pre>\n<p><code>lazyImport</code> optionally accepts a second argument, an options object:</p>\n<pre><code class=\"language-js\">const lazyImport = require( '@wordpress/lazy-import' );\n\nfunction onInstall() {\n    console.log( 'Installing\u2026' );\n}\n\nlazyImport( 'fbjs@^1.0.0', {\n    localPath: './lib/shallowEqual',\n    onInstall,\n} ).then( /* ... */ );\n</code></pre>\n<p>Note that <code>lazyImport</code> can throw an error when offline and unable to install the dependency using NPM. You may want to anticipate this and provide remediation steps for a failed install, such as logging a warning message:</p>\n<pre><code class=\"language-js\">try {\n    await lazyImport( 'is-equal-shallow@^0.1.3' );\n} catch ( error ) {\n    if ( error.code === 'ENOTFOUND' ) {\n        console.log( 'Unable to connect to NPM registry!' );\n    }\n}\n</code></pre>\n<h3>Options</h3>\n<h4><code>localPath</code></h4>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>Local path pointing to a file or directory that can be used when other script that <code>main</code> needs to be imported.</p>\n<h4><code>onInstall</code></h4>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<p>Function to call if and when the module is being installed. Since installation can cause a delay in script execution, this can be useful to output logging information or display a spinner.</p>\n<p>An installation can be assumed to finish once the returned promise is resolved.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 296,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134576",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134576",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134576/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156173,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134576/revisions/156173"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134576"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

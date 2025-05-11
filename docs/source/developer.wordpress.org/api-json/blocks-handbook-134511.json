@@ -1,0 +1,91 @@
+{
+    "id": 134511,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/"
+    },
+    "modified": "2024-10-30T16:55:36",
+    "modified_gmt": "2024-10-30T16:55:36",
+    "slug": "toggle-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/",
+    "title": {
+        "rendered": "ToggleControl"
+    },
+    "content": {
+        "rendered": "<p>ToggleControl is used to generate a toggle user interface.</p>\n<h2>Usage</h2>\n<p>Render a user interface to change fixed background setting.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { ToggleControl } from '@wordpress/components';\n\nconst MyToggleControl = () =&gt; {\n    const [ hasFixedBackground, setHasFixedBackground ] = useState( false );\n\n    return (\n        &lt;ToggleControl\n            __nextHasNoMarginBottom\n            label=\"Fixed Background\"\n            help={\n                hasFixedBackground\n                    ? 'Has fixed background.'\n                    : 'No fixed background.'\n            }\n            checked={ hasFixedBackground }\n            onChange={ (newValue) =&gt; {\n                setHasFixedBackground( newValue );\n            } }\n        /&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3>label</h3>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>help</h3>\n<p>If this property is added, a help text will be generated using help property as the content.<br />\nFor controlled components the <code>help</code> prop can also be a function which will return a help text<br />\ndynamically depending on the boolean <code>checked</code> parameter.</p>\n<ul>\n<li>Type: <code>String|Element|Function</code></li>\n<li>Required: No</li>\n</ul>\n<h3>checked</h3>\n<p>If checked is true the toggle will be checked. If checked is false the toggle will be unchecked.<br />\nIf no value is passed the toggle will be an uncontrolled component with unchecked initial value.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h3>disabled</h3>\n<p>If disabled is true the toggle will be disabled and apply the appropriate styles.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h3>onChange</h3>\n<p>A function that receives the checked state (boolean) as input.</p>\n<ul>\n<li>Type: <code>function</code></li>\n<li>Required: No</li>\n</ul>\n<h3>className</h3>\n<p>The class that will be added with <code>components-base-control</code> and <code>components-toggle-control</code> to the classes of the wrapper div. If no className is passed only <code>components-base-control</code> and <code>components-toggle-control</code> are used.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3><code>__nextHasNoMarginBottom</code></h3>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 213,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134511",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134511",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134511/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154569,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134511/revisions/154569"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134511"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

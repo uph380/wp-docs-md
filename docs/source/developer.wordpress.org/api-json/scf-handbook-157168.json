@@ -1,0 +1,91 @@
+{
+    "id": 157168,
+    "date": "2025-02-21T04:17:11",
+    "date_gmt": "2025-02-21T04:17:11",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/api/api-term-file/"
+    },
+    "modified": "2025-02-21T05:46:03",
+    "modified_gmt": "2025-02-21T05:46:03",
+    "slug": "api-term-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/api/api-term-file/",
+    "title": {
+        "rendered": "API Term Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_taxonomies()</code></h2>\n<p>Returns an array of taxonomy names.</p>\n<ul>\n<li>@date    7/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $args An array of args used in the <a href=\"https://developer.wordpress.org/reference/functions/get_taxonomies/\" rel=\"function\">get_taxonomies()</a>  function.</li>\n<li>@return array An array of taxonomy names.</li>\n</ul>\n<h2><code>acf_get_taxonomies_for_post_type()</code></h2>\n<p>acf_get_taxonomies_for_post_type</p>\n<ul>\n<li>Returns an array of taxonomies for a given post type(s)</li>\n<li>@date    7/9/18</li>\n<li>@since ACF 5.7.5</li>\n<li>@param   string|array $post_types The post types to compare against.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_taxonomy_labels()</code></h2>\n<p>Returns an array of taxonomies in the format &#8220;name =&gt; label&#8221; for use in a select field.</p>\n<ul>\n<li>@date    3/8/18</li>\n<li>@since ACF 5.7.2</li>\n<li>@param   array $taxonomies Optional. An array of specific taxonomies to return.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_term_title()</code></h2>\n<p>acf_get_term_title</p>\n<ul>\n<li>Returns the title for this term object.</li>\n<li>@date    10/9/18</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   object $term The <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a> object.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_get_grouped_terms()</code></h2>\n<p>acf_get_grouped_terms</p>\n<ul>\n<li>Returns an array of terms for the given query $args and groups by taxonomy name.</li>\n<li>@date    2/8/18</li>\n<li>@since ACF 5.7.2</li>\n<li>@param   array $args An array of args used in the <a href=\"https://developer.wordpress.org/reference/functions/get_terms/\" rel=\"function\">get_terms()</a>  function.</li>\n<li>@return array</li>\n</ul>\n<h2><code>_acf_terms_clauses()</code></h2>\n<p>_acf_terms_clauses</p>\n<ul>\n<li>Used in the &#8216;terms_clauses&#8217; filter to order terms by taxonomy name.</li>\n<li>@date    2/8/18</li>\n<li>@since ACF 5.7.2</li>\n<li>@param   array $pieces     Terms query SQL clauses.</li>\n<li>@param array $taxonomies An array of taxonomies.</li>\n<li>@param array $args       An array of terms query arguments.</li>\n<li>@return array $pieces</li>\n</ul>\n<h2><code>acf_get_pretty_taxonomies()</code></h2>\n<p>acf_get_pretty_taxonomies</p>\n<ul>\n<li>Deprecated in favor of acf_get_taxonomy_labels() function.</li>\n<li>@date        7/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@deprecated 5.7.2</li>\n</ul>\n<h2><code>acf_get_term()</code></h2>\n<p>acf_get_term</p>\n<ul>\n<li>Similar to <a href=\"https://developer.wordpress.org/reference/functions/get_term/\" rel=\"function\">get_term()</a>  but with some extra functionality.</li>\n<li>@date    19/8/18</li>\n<li>@since ACF 5.7.3</li>\n<li>@param   mixed  $term_id  The term ID or a string of &#8220;taxonomy:slug&#8221;.</li>\n<li>@param string $taxonomy The taxonomyname.</li>\n<li>@return <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a></li>\n</ul>\n<h2><code>acf_encode_term()</code></h2>\n<p>acf_encode_term</p>\n<ul>\n<li>Returns a &#8220;taxonomy:slug&#8221; string for a given <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a>.</li>\n<li>@date    27/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a> $term The term object.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_decode_term()</code></h2>\n<p>acf_decode_term</p>\n<ul>\n<li>Decodes a &#8220;taxonomy:slug&#8221; string into an array of taxonomy and slug.</li>\n<li>@date    27/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a> $term The term object.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_get_encoded_terms()</code></h2>\n<p>acf_get_encoded_terms</p>\n<ul>\n<li>Returns an array of <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a> objects from an array of encoded strings</li>\n<li>@date    9/9/18</li>\n<li>@since ACF 5.7.5</li>\n<li>@param   array $values The array of encoded strings.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_choices_from_terms()</code></h2>\n<p>acf_get_choices_from_terms</p>\n<ul>\n<li>Returns an array of choices from the terms provided.</li>\n<li>@date    8/9/18</li>\n<li>@since ACF 5.7.5</li>\n<li>@param   array  $values and array of WP_Terms objects or encoded strings.</li>\n<li>@param string $format The value format (term_id, slug).</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_choices_from_grouped_terms()</code></h2>\n<p>acf_get_choices_from_grouped_terms</p>\n<ul>\n<li>Returns an array of choices from the grouped terms provided.</li>\n<li>@date    8/9/18</li>\n<li>@since ACF 5.7.5</li>\n<li>@param   array  $value  A grouped array of WP_Terms objects.</li>\n<li>@param string $format The value format (term_id, slug).</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_choice_from_term()</code></h2>\n<p>acf_get_choice_from_term</p>\n<ul>\n<li>Returns an array containing the id and text for this item.</li>\n<li>@date    10/9/18</li>\n<li>@since ACF 5.7.6</li>\n<li>@param   object $item   The item object such as <a href=\"https://developer.wordpress.org/reference/classes/wp_post/\" rel=\"class\">WP_Post</a> or <a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a>.</li>\n<li>@param string $format The value format (term_id, slug)</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_term_post_id()</code></h2>\n<p>Returns a valid post_id string for a given term and taxonomy.<br />\nNo longer needed since WP introduced the termmeta table in WP 4.4.</p>\n<ul>\n<li>@date    6/2/17</li>\n<li>@since ACF 5.5.6</li>\n<li>@deprecated 5.9.2</li>\n<li>@param   $taxonomy (string) The taxonomy type.</li>\n<li>@param $term_id (int) The term ID.</li>\n<li>@return (string)</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156769,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157168",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157168",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157168/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157296,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157168/revisions/157296"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156769"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157168"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

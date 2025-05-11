@@ -1,0 +1,91 @@
+{
+    "id": 5785,
+    "date": "2014-07-30T22:15:01",
+    "date_gmt": "2014-07-30T22:15:01",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5785"
+    },
+    "modified": "2023-12-15T14:38:36",
+    "modified_gmt": "2023-12-15T14:38:36",
+    "slug": "theme-handbook",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/",
+    "title": {
+        "rendered": "Theme Handbook"
+    },
+    "content": {
+        "rendered": "\n<p><em>Welcome to the WordPress Theme Developer Handbook, your resource for learning all about the exciting world of WordPress themes.&nbsp;</em></p>\n\n\n\n<p>The Theme Developer Handbook is a repository for all things WordPress themes. Whether you&#8217;re new to WordPress themes, or you&#8217;re an experienced theme developer,&nbsp;you should be able to find the answer to many of your theme-related questions right here.</p>\n\n\n\n<p>In this handbook, you can learn how to build <strong>block themes or classic themes.</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>A block theme is a new theme that you can use from WordPress version 5.9. It is built mainly using HTML and a theme configuration file. The block theme is composed entirely of blocks, allowing you to edit all parts of your site in the Site Editor.</li>\n\n\n\n<li>A classic theme is the original theme, without version limitations, that primarily uses PHP, JavaScript and CSS. Classic themes take advantage of WordPress PHP functions, hooks and filters.</li>\n</ul>\n\n\n\n<ol class=\"wp-block-list\">\n<li>If you&#8217;re new to developing WordPress themes, start with section 1, where you can <a href=\"https://developer.wordpress.org/theme/getting-started/what-is-a-theme/\">find out what a theme is</a>, learn about <a href=\"https://wordpress.org/about/license/\">WordPress&#8217; license</a>, and <a href=\"https://developer.wordpress.org/themes/getting-started/tools-and-setup/\">set up your development environment</a>.</li>\n\n\n\n<li>Once you&#8217;re through the introduction, continue with the <a href=\"https://developer.wordpress.org/themes/core-concepts/\">Core Concepts</a> section.</li>\n</ol>\n\n\n\n<p>It is recommended to read through both the block theme section and the classic theme sections. This will give you an understanding of the differences between the two types of themes, and help you choose what type of theme to build.</p>\n\n\n\n<p>If you&#8217;ve got to grips with the basics of themes, check out the <a href=\"https://developer.wordpress.org/theme/advanced-topics/\">Advanced Theme Topics</a>&nbsp;to learn about child themes, best UI practices, theme testing and more.</p>\n\n\n\n<p>Once you&#8217;ve got your theme ready for the world, the final section will cover <a href=\"https://developer.wordpress.org/themes/releasing-your-theme/\">releasing your theme</a>, teaching&nbsp;you some best practices for&nbsp;theme distribution, and for getting it ready for the WordPress.org theme directory.</p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n\n\n\n<p>The WordPress Theme Developer Handbook is created by the WordPress community, for the WordPress community.&nbsp;We are always looking for more contributors; if you&#8217;re interested stop by the <a href=\"https://make.wordpress.org/docs\">docs team blog</a> to find out more about getting involved.</p>\n",
+        "protected": false
+    },
+    "author": 3606,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5785",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5785",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/3606"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5785/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151165,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5785/revisions/151165"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5785"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

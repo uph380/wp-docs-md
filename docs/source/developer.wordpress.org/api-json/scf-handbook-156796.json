@@ -1,0 +1,91 @@
+{
+    "id": 156796,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/flexible-content/flexible-content-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:57",
+    "modified_gmt": "2025-02-21T04:17:57",
+    "slug": "flexible-content-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/flexible-content/flexible-content-tutorial/",
+    "title": {
+        "rendered": "Using the Flexible Content Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Flexible Content field</li>\n<li>Configure layouts:\n<ul>\n<li>Create layout types</li>\n<li>Add fields to each layout</li>\n<li>Set minimum/maximum</li>\n<li>Configure button labels</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Page Building\n<ul>\n<li>Content sections</li>\n<li>Landing pages</li>\n<li>Dynamic layouts</li>\n</ul>\n</li>\n<li>Content Management\n<ul>\n<li>Article components</li>\n<li>Product displays</li>\n<li>Feature blocks</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Plan layouts carefully</li>\n<li>Use clear layout labels</li>\n<li>Consider nesting depth</li>\n<li>Optimize for editors</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156795,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156796",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156796",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156796/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156923,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156796/revisions/156923"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156795"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156796"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

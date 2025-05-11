@@ -1,0 +1,91 @@
+{
+    "id": 156821,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/radio/"
+    },
+    "modified": "2025-02-21T04:17:51",
+    "modified_gmt": "2025-02-21T04:17:51",
+    "slug": "radio",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/radio/",
+    "title": {
+        "rendered": "Radio Field"
+    },
+    "content": {
+        "rendered": "<p>The Radio field presents users with a list of options where they can select a single choice. It provides a clear visual representation of available options.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Single option selection</li>\n<li>Custom choice labels</li>\n<li>Vertical or horizontal layout</li>\n<li>Other/custom value option</li>\n<li>Clear visual feedback</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Choices &#8211; Define available options</li>\n<li>Default Value &#8211; Pre-selected option</li>\n<li>Layout &#8211; Vertical or horizontal display</li>\n<li>Allow Other &#8211; Enable custom value input</li>\n<li>Return Format &#8211; Value or label</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156821",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156821",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156821/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156898,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156821/revisions/156898"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156821"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

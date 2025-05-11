@@ -1,0 +1,97 @@
+{
+    "id": 149040,
+    "date": "2023-10-17T14:32:32",
+    "date_gmt": "2023-10-17T14:32:32",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149040"
+    },
+    "modified": "2023-10-17T14:32:32",
+    "modified_gmt": "2023-10-17T14:32:32",
+    "slug": "appearance-tools",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/appearance-tools/",
+    "title": {
+        "rendered": "Appearance Tools"
+    },
+    "content": {
+        "rendered": "\n<p><code>settings.appearanceTools</code> is a unique property in <code>theme.json</code> that behaves as a catchall for multiple other properties. Compared to other settings that you can configure, this one makes it easy to enable several design-related settings in one go.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Opting into appearance tools</h2>\n\n\n\n<p><code>settings.appearanceTools</code> enables several features related to the design or the <em>appearance</em> of a site. By default, the value is set to <code>false</code>, so if you choose to not use this property, you can simply not add it to your <code>theme.json</code>.</p>\n\n\n\n<p>However, if you want to enable it, you can set it to <code>true</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"appearanceTools\": true\n\t}\n}</code></pre>\n\n\n\n<p>This is the equivalent of setting these properties individually in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"border\": {\n\t\t\t\"color\": true,\n\t\t\t\"radius\": true,\n\t\t\t\"style\": true,\n\t\t\t\"width\": true\n\t\t},\n\t\t\"color\": {\n\t\t\t\"link\": true\n\t\t},\n\t\t\"dimensions\": {\n\t\t\t\"minHeight\": true\n\t\t},\n\t\t\"position\": {\n\t\t\t\"sticky\": true\n\t\t},\n\t\t\"spacing\": {\n\t\t\t\"blockGap\": true,\n\t\t\t\"margin\": true,\n\t\t\t\"padding\": true\n\t\t},\n\t\t\"typography\": {\n\t\t\t\"lineHeight\": true\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>As you can see, it can be a major time-saver and create much less work for you. With <code>settings.appearanceTools</code> enabled, you can skip setting those properties individually.</p>\n\n\n\n<p>You can learn more about what each does via its documentation here in the handbook:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/border\">Border</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/color\">Color</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/dimensions\">Dimensions</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/position\">Position</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/spacing\">Spacing</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/typography\">Typography</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Overwriting appearance tools</h2>\n\n\n\n<p>Just because you\u2019ve enabled <code>appearanceTools</code> doesn\u2019t mean that you cannot disable some features. You can do both.</p>\n\n\n\n<p>Suppose that you wanted to enable all appearance tools but disable sticky positioning. You would use this code in your <code>theme.json</code> to do this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"appearanceTools\": true,\n\t\t\"position\": {\n\t\t\t\"sticky\": false\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>This gives you the best of both worlds. You can use <code>appearanceTools</code> to enable a large selection of settings but disable others on a case-by-case basis.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Should I enable appearance tools?</h2>\n\n\n\n<p>There is one caveat to setting <code>appearanceTools</code> to <code>true</code> in your <code>theme.json</code> file: it can automatically opt your theme into design tools in the future. Sometimes, WordPress enables new features when this setting is enabled.</p>\n\n\n\n<p>Because no one can reliably predict the future, you need to decide whether you want your theme to support unknown design features that you haven\u2019t tested today.&nbsp;</p>\n\n\n\n<p>For many publicly-distributed themes, this will not typically be an issue if you want to provide a lot of flexibility for your theme\u2019s users. By enabling <code>appearanceTools</code>, you can give users new design features without updating your theme.</p>\n\n\n\n<p>For agencies and freelancers, this could create issues for your clients. Often, these projects are meant to limit the user interface to only specific design tools that the client needs. If WordPress adds new appearance tools in a future update, it\u2019s possible the client will see new and unfamiliar features. For this reason, leaving <code>appearanceTools</code> disabled will often make sense.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149040",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149040",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149040/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149041,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149040/revisions/149041"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149040"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

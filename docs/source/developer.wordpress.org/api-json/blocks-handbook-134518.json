@@ -1,0 +1,91 @@
+{
+    "id": 134518,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/tree-select/"
+    },
+    "modified": "2024-12-26T16:49:13",
+    "modified_gmt": "2024-12-26T16:49:13",
+    "slug": "tree-select",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/tree-select/",
+    "title": {
+        "rendered": "TreeSelect"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-treeselect--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p>Generates a hierarchical select input.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { TreeSelect } from '@wordpress/components';\n\nconst MyTreeSelect = () =&gt; {\n    const [ page, setPage ] = useState( 'p21' );\n\n    return (\n        &lt;TreeSelect\n            __nextHasNoMarginBottom\n            __next40pxDefaultSize\n            label=\"Parent page\"\n            noOptionLabel=\"No parent page\"\n            onChange={ ( newPage ) =&gt; setPage( newPage ) }\n            selectedId={ page }\n            tree={ [\n                {\n                    name: 'Page 1',\n                    id: 'p1',\n                    children: [\n                        { name: 'Descend 1 of page 1', id: 'p11' },\n                        { name: 'Descend 2 of page 1', id: 'p12' },\n                    ],\n                },\n                {\n                    name: 'Page 2',\n                    id: 'p2',\n                    children: [\n                        {\n                            name: 'Descend 1 of page 2',\n                            id: 'p21',\n                            children: [\n                                {\n                                    name: 'Descend 1 of Descend 1 of page 2',\n                                    id: 'p211',\n                                },\n                            ],\n                        },\n                    ],\n                },\n            ] }\n        /&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>__next40pxDefaultSize</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<h3><code>__nextHasNoMarginBottom</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<h3><code>children</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>As an alternative to the <code>options</code> prop, <code>optgroup</code>s and <code>options</code> can be<br />\npassed in as <code>children</code> for more customizability.</p>\n<h3><code>disabled</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>If true, the <code>input</code> will be disabled.</p>\n<h3><code>hideLabelFromVision</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>If true, the label will only be visible to screen readers.</p>\n<h3><code>help</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Additional description for the control.</p>\n<p>Only use for meaningful description or instructions for the control. An element containing the description will be programmatically associated to the BaseControl by the means of an <code>aria-describedby</code> attribute.</p>\n<h3><code>label</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<h3><code>labelPosition</code></h3>\n<ul>\n<li>Type: <code>\"top\" | \"bottom\" | \"side\" | \"edge\"</code></li>\n<li>Required: No</li>\n<li>Default: <code>'top'</code></li>\n</ul>\n<p>The position of the label.</p>\n<h3><code>noOptionLabel</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>If this property is added, an option will be added with this label to represent empty selection.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>(value: string, extra?: { event?: ChangeEvent&lt;HTMLSelectElement&gt;; }) =&gt; void</code></li>\n<li>Required: No</li>\n</ul>\n<p>A function that receives the value of the new option that is being selected as input.</p>\n<h3><code>options</code></h3>\n<ul>\n<li>Type: <code>readonly ({ label: string; value: string; } &amp; Omit&lt;OptionHTMLAttributes&lt;HTMLOptionElement&gt;, \"label\" | \"value\"&gt;)[]</code></li>\n<li>Required: No</li>\n</ul>\n<p>An array of option property objects to be rendered,<br />\neach with a <code>label</code> and <code>value</code> property, as well as any other<br />\n<code>&lt;option&gt;</code> attributes.</p>\n<h3><code>prefix</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Renders an element on the left side of the input.</p>\n<p>By default, the prefix is aligned with the edge of the input border, with no padding.<br />\nIf you want to apply standard padding in accordance with the size variant, wrap the element in<br />\nthe provided <code>&lt;InputControlPrefixWrapper&gt;</code> component.</p>\n<pre><code class=\"language-jsx\">import {\n  __experimentalInputControl as InputControl,\n  __experimentalInputControlPrefixWrapper as InputControlPrefixWrapper,\n} from '@wordpress/components';\n\n&lt;InputControl\n  prefix={&lt;InputControlPrefixWrapper&gt;@&lt;/InputControlPrefixWrapper&gt;}\n/&gt;\n</code></pre>\n<h3><code>selectedId</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The id of the currently selected node.</p>\n<h3><code>size</code></h3>\n<ul>\n<li>Type: <code>\"default\" | \"small\" | \"compact\" | \"__unstable-large\"</code></li>\n<li>Required: No</li>\n<li>Default: <code>'default'</code></li>\n</ul>\n<p>Adjusts the size of the input.</p>\n<h3><code>suffix</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Renders an element on the right side of the input.</p>\n<p>By default, the suffix is aligned with the edge of the input border, with no padding.<br />\nIf you want to apply standard padding in accordance with the size variant, wrap the element in<br />\nthe provided <code>&lt;InputControlSuffixWrapper&gt;</code> component.</p>\n<pre><code class=\"language-jsx\">import {\n  __experimentalInputControl as InputControl,\n  __experimentalInputControlSuffixWrapper as InputControlSuffixWrapper,\n} from '@wordpress/components';\n\n&lt;InputControl\n  suffix={&lt;InputControlSuffixWrapper&gt;%&lt;/InputControlSuffixWrapper&gt;}\n/&gt;\n</code></pre>\n<h3><code>tree</code></h3>\n<ul>\n<li>Type: <code>Tree[]</code></li>\n<li>Required: No</li>\n</ul>\n<p>An array containing the tree objects with the possible nodes the user can select.</p>\n<h3><code>variant</code></h3>\n<ul>\n<li>Type: <code>\"default\" | \"minimal\"</code></li>\n<li>Required: No</li>\n<li>Default: <code>'default'</code></li>\n</ul>\n<p>The style variant of the control.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 228,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134518",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134518",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134518/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156145,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134518/revisions/156145"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134518"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

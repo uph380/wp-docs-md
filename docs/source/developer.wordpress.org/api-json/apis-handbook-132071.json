@@ -1,0 +1,91 @@
+{
+    "id": 132071,
+    "date": "2020-11-25T07:33:23",
+    "date_gmt": "2020-11-25T07:33:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=132071"
+    },
+    "modified": "2022-11-21T15:57:02",
+    "modified_gmt": "2022-11-21T15:57:02",
+    "slug": "responsive-images",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/responsive-images/",
+    "title": {
+        "rendered": "Responsive Images"
+    },
+    "content": {
+        "rendered": "\n<p>Since WordPress 4.4, native responsive images is supported&nbsp;by including&nbsp;<code>srcset</code>&nbsp;and&nbsp;<code>sizes</code>&nbsp;attributes to the image markup it generates. For background on this feature, read the&nbsp;<a href=\"https://make.wordpress.org/core/2015/09/30/responsive-images-merge-proposal/\">merge proposal</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Some History</h2>\n\n\n\n<p>When users upload images in WordPress, it automatically crops new images to smaller sizes. For example, if you upload an image that\u2019s 1500 x 706, the image sizes might look like this:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Full Size \u2013 1500 x 706</li>\n\n\n\n<li>Large \u2013 500 x 235</li>\n\n\n\n<li>Medium \u2013 300 x 141</li>\n\n\n\n<li>Thumbnail \u2013 150 x 150</li>\n</ul>\n\n\n\n<p>So WordPress automatically&nbsp;creates several sizes of each image uploaded to the media library. Additional sizes are created depending on the theme. If the full size image is attached to a post, users on desktop and mobile devices will see the full size image. However, it doesn\u2019t make sense to use the full size image on mobile devices because of its display and file size.</p>\n\n\n\n<p>Before responsive design was popular, many sites attempted to dynamically serve different layouts (including images) to browsers based on the device type (e.g. phone, tablet, etc.). In these cases, all of the dynamic stuff happened at the server, before the page was rendered. This strategy is usually associated with the term <strong>adaptive design</strong>.</p>\n\n\n\n<p><strong>Responsive design</strong>, on the other hand, uses tools like media queries to allow a single page to be rendered that will <em>respond</em> in the browser based on things like viewport width and display density.</p>\n\n\n\n<p><strong>Responsive images</strong> follows the second strategy and sends all of the information to the browser up front and lets the browser take care of loading the appropriate image rather than making those decisions on the server before the page is loaded.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How it works</h2>\n\n\n\n<p>By including the available sizes of an&nbsp;image into a&nbsp;<code>srcset</code>&nbsp;attribute, it allows the software to automatically use and display the right image based on a device\u2019s screen size. If you attach a full size 1500 x 706 image to a post in WordPress, mobile devices will see the large or medium-sized image instead\u2014potentially saving bandwidth and speeding up page load times in the process.</p>\n\n\n\n<p>Note that for compatibility with existing markup, neither&nbsp;<code>srcset</code>&nbsp;nor&nbsp;<code>sizes</code>&nbsp;are added or modified if they already exist in content&nbsp;HTML. Responsive images don\u2019t have any settings to configure as the magic happens behind the scenes.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Browser side</h3>\n\n\n\n<p>To help browsers select the best image from the source set list,&nbsp;WordPress also include a default&nbsp;<code>sizes</code>&nbsp;attribute that is equivalent to&nbsp;<code>(max-width: {{image-width}}px) 100vw, {{image-width}}px</code>.&nbsp;While this default will work out of the box for a majority of sites, themes should&nbsp;customize the default&nbsp;<code>sizes</code>&nbsp;attribute as needed using the&nbsp;<code>wp_calculate_image_sizes</code>&nbsp;filter.</p>\n\n\n\n<p>A normal browser request goes to server, server sends back response. This response includes links to other resources \u2013 fonts, css, JS, and images. The browser notices these resources, and sends additional requests to the server and fetches those resources.</p>\n\n\n\n<p>What this responsive image approach does is provide additional attributes to the image tag that alerts the browser to the different image files available for that particular image tag so that the browser can then intelligently request the right image file (source) for whatever window/viewport size or even resolution support the browser has. This means the browser can request the right \u201csized\u201d image file for an image instead of being served an overly large image and resizing down to fit the space after the fact.</p>\n\n\n\n<p>For a full overview of how&nbsp;<code>srcset</code>&nbsp;and&nbsp;<code>sizes</code>&nbsp;works, read&nbsp;<em><a href=\"http://alistapart.com/article/responsive-images-in-practice\">Responsive Images in Practice</a></em>, by <em>Eric Portis</em> over at A List Apart.</p>\n\n\n\n<h2 class=\"wp-block-heading\">New functions and&nbsp;hooks</h2>\n\n\n\n<p>To implement this&nbsp;feature, the&nbsp;following new functions&nbsp;were added to WordPress:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_get_attachment_image_srcset/\">wp_get_attachment_image_srcset</a>()</code>&nbsp;\u2013&nbsp;Retrieves the value for an image attachment\u2019s&nbsp;<code>srcset</code>&nbsp;attribute.</li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_calculate_image_srcset/\">wp_calculate_image_srcset</a>()</code>&nbsp;\u2013&nbsp;A helper function to calculate the image sources to include in a&nbsp;<code>srcset</code>&nbsp;attribute.</li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_get_attachment_image_sizes/\">wp_get_attachment_image_sizes</a>()</code>&nbsp;\u2013 Creates a&nbsp;<code>sizes</code>&nbsp;attribute value for an image.</li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_calculate_image_sizes/\">wp_calculate_image_sizes</a>()</code>&nbsp;\u2013 A helper function to create the&nbsp;<code>sizes</code>&nbsp;attribute for an image.</li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_image_add_srcset_and_sizes/\">wp_image_add_srcset_and_sizes</a>()</code>&nbsp;\u2013 Adds&nbsp;<code>srcset</code>&nbsp;and&nbsp;<code>sizes</code>&nbsp;attributes to an existing&nbsp;<code>img</code>&nbsp;element.</li>\n</ul>\n\n\n\n<p>As a safeguard against adding very large images to&nbsp;<code>srcset</code>&nbsp;attributes, a&nbsp;<code><a href=\"https://developer.wordpress.org/reference/hooks/max_srcset_image_width/\">max_srcset_image_width</a></code>&nbsp;filter has been added, which allows themes&nbsp;to set a&nbsp;maximum image width for images&nbsp;include in source set lists.&nbsp;The default value is <em>2048px</em>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A new&nbsp;default image size</h2>\n\n\n\n<p>A new default intermediate size,&nbsp;<code>medium_large</code> has been added to&nbsp;better take advantage of responsive image support. The new size is 768px wide by default, with no height limit,&nbsp;and&nbsp;can be used like any other size available in WordPress. As it is a standard size, it will only be generated when new images are uploaded or sizes are regenerated with third party plugins.</p>\n\n\n\n<p>The&nbsp;<code>medium_large</code>&nbsp;size is not included in the&nbsp;UI&nbsp;when selecting an image&nbsp;to insert in posts,&nbsp;nor are we including UI to change the image size from the media settings page. However, developers can modify the width&nbsp;of this new size&nbsp;using the&nbsp;<code>update_option()</code>&nbsp;function, similar to any other default image size.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Customizing responsive image markup</h2>\n\n\n\n<p>To modify the&nbsp;default&nbsp;<code>srcset</code>&nbsp;and&nbsp;<code>sizes</code>&nbsp;attributes, &nbsp;you should use the&nbsp;<code>wp_calculate_image_srcset</code>&nbsp;and&nbsp;<code>wp_calculate_image_sizes</code>&nbsp;filters, respectively.</p>\n\n\n\n<p>Overriding the&nbsp;<code>srcset</code>&nbsp;or&nbsp;<code>sizes</code>&nbsp;attributes for images not embedded in post content (e.g.&nbsp;post thumbnails, galleries, etc.), can be accomplished using the&nbsp;<code><a href=\"https://developer.wordpress.org/reference/hooks/wp_get_attachment_image_attributes/\">wp_get_attachment_image_attributes</a></code>&nbsp;filter, similar to how other&nbsp;image attributes are&nbsp;modified.</p>\n\n\n\n<p>Additionally, you can create your own custom markup patterns by using&nbsp;<code>wp_get_attachment_image_srcset()</code>&nbsp;directly in your templates. Here is an&nbsp;example of how you could&nbsp;use this function to build an&nbsp;<code>&lt;img&gt;</code>&nbsp;element with a custom&nbsp;<code>sizes</code>&nbsp;attribute:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;?php\n$img_src = wp_get_attachment_image_url( $attachment_id, 'medium' );\n$img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'medium' );\n?&gt;\n&lt;img src=\"&lt;?php echo esc_url( $img_src ); ?&gt;\"\n     srcset=\"&lt;?php echo esc_attr( $img_srcset ); ?&gt;\"\n     sizes=\"(max-width: 50em) 87vw, 680px\" alt=\"Foo Bar\"&gt;</pre>\n\n\n\n<p><strong>Need more developer details?</strong><br><a href=\"https://github.com/ResponsiveImagesCG/wp-tevko-responsive-images\">Learn more about customizing responsive images markup on this GitHub repository</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Sources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://make.wordpress.org/core/2015/11/10/responsive-images-in-wordpress-4-4/\">https://make.wordpress.org/core/2015/11/10/responsive-images-in-wordpress-4-4/</a></li>\n\n\n\n<li><a href=\"https://wptavern.com/joe-mcgill-explains-how-responsive-images-work-in-wordpress-4-4\">https://wptavern.com/joe-mcgill-explains-how-responsive-images-work-in-wordpress-4-4</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 6016133,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-132071",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/132071",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/6016133"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/132071/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 148725,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/132071/revisions/148725"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=132071"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

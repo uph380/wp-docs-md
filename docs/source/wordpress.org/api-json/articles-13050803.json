@@ -1,0 +1,109 @@
+{
+    "id": 13050803,
+    "date": "2020-06-30T08:49:29",
+    "date_gmt": "2020-06-30T08:49:29",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13050803"
+    },
+    "modified": "2024-06-06T16:54:53",
+    "modified_gmt": "2024-06-06T16:54:53",
+    "slug": "flickr-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/flickr-embed/",
+    "title": {
+        "rendered": "Flickr embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the Flickr embed block, you can add photos and videos from Flickr to your posts and pages. However, when you click any photo or video, it will take you to Flickr where you can see photos and play videos.&nbsp;</p>\n\n\n\n<p>You can also embed photo albums and galleries with the next/previous arrow links. You don\u2019t need a Flickr account to embed photos or videos.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/10/Flickr-Embed-HelpHub-Oct-2022.mp4\"></video></figure>\n\n\n\n<p>Note: With video, the page/post only displays the image of the video. There will be no play/pause button. By clicking on the video, it will be redirected to the corresponding Flickr page to play.</p>\n\n\n\n<p>You can only share those photos and videos which are visible to everyone(public). Some publishers put restrictions by setting privacy.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"232\" height=\"110\" src=\"https://wordpress.org/documentation/files/2020/06/image23.png\" alt=\"Privacy settings options available on Flickr\" class=\"wp-image-13050866\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Embedded image from flickr</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1024x676.png\" alt=\"Preview of an embedded image from Flickr\" class=\"wp-image-16143781\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><br><strong>Steps to embed Flickr photos or videos to your post or page</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Find your photo or video on Flickr.com, and copy the URL of the photo, album, gallery or video from the browser bar.<br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-2-2-1024x480.png\" alt=\"Choosing an image from Flickr\" class=\"wp-image-16143782\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Add Flickr embed block to your post or page<br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-3.png\" alt=\"Adding a Flickr block with the slash command.\" class=\"wp-image-16143783\" style=\"width:234px;height:118px\" width=\"234\" height=\"118\" srcset=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-3.png 468w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-3-300x151.png 300w\" sizes=\"auto, (max-width: 234px) 100vw, 234px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the link into the textbox.<br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"605\" height=\"214\" src=\"https://wordpress.org/documentation/files/2020/08/Flickr-Block-URL-WP5.5r-8.3.png\" alt=\"Embed URL for Flickr block.\" class=\"wp-image-13236104\" srcset=\"https://wordpress.org/documentation/files/2020/08/Flickr-Block-URL-WP5.5r-8.3.png 605w, https://wordpress.org/documentation/files/2020/08/Flickr-Block-URL-WP5.5r-8.3-300x106.png 300w\" sizes=\"auto, (max-width: 605px) 100vw, 605px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click the \u201cEmbed\u201d button</li>\n</ol>\n\n\n\n<p>If the link can be successfully embedded into the post/page, you will see the preview in your block editor.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-4-1-902x1024.png\" alt=\"Example of an embedded Flickr block on the backend.\" class=\"wp-image-16143785\" style=\"width:344px;height:391px\" width=\"344\" height=\"391\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message \u201cSorry, this content could not be embedded.\u201d You will have two choices: Try again with a different URL or convert to link.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"645\" height=\"333\" src=\"https://wordpress.org/documentation/files/2020/08/not-embedding-WP5.5r8.3.png\" alt=\"Example of error message for the Flickr block.\" class=\"wp-image-13236109\" srcset=\"https://wordpress.org/documentation/files/2020/08/not-embedding-WP5.5r8.3.png 645w, https://wordpress.org/documentation/files/2020/08/not-embedding-WP5.5r8.3-300x155.png 300w\" sizes=\"auto, (max-width: 645px) 100vw, 645px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>Click on the Preview button on the top right corner of the page/post.<br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"676\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1-1024x676.png\" alt=\"Preview of the Flickr embed.\" class=\"wp-image-16143786\" srcset=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1-1024x676.png 1024w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1-300x198.png 300w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1-768x507.png 768w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1-1536x1014.png 1536w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-1-1-1-2048x1352.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p><strong>Embed Photo Album and Gallery</strong><br></p>\n\n\n\n<p>You can embed a photo album and gallery to your post/page. The page/post will display the first photo of the album or gallery with the next and previous arrow link.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"964\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-5-964x1024.png\" alt=\"Embedded a photo album or gallery with Flickr.\" class=\"wp-image-16143787\" srcset=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-5-964x1024.png 964w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-5-282x300.png 282w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-5-768x816.png 768w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-5.png 1354w\" sizes=\"auto, (max-width: 964px) 100vw, 964px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>The Block Toolbar for the Flickr embed shows six buttons: </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Embed</li>\n\n\n\n<li>Change block type or style</li>\n\n\n\n<li>Drag / Move down</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL</li>\n\n\n\n<li>Options.<br></li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-6.png\" alt=\"Block toolbar for the Flickr embed block.\" class=\"wp-image-16143791\" style=\"width:281px;height:91px\" width=\"281\" height=\"91\" srcset=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-6.png 562w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-6-300x97.png 300w\" sizes=\"auto, (max-width: 281px) 100vw, 281px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-7-1.png\" alt=\"Transform to options for the Flickr embed block.\" class=\"wp-image-16143793\" style=\"width:361px;height:252px\" width=\"361\" height=\"252\" srcset=\"https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-7-1.png 722w, https://wordpress.org/documentation/files/2022/10/Flickr-HelpHub-Oct-2022-SS-7-1-300x209.png 300w\" sizes=\"auto, (max-width: 361px) 100vw, 361px\" /></figure>\n\n\n\n<p><strong>Group</strong></p>\n\n\n\n<p>You can transform a Flickr embed into a Group. This would give you the ability to change the background color around the Flickr embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.02.47-PM-1-1024x466.png\" alt=\"Group options for the Flickr embed block.\" class=\"wp-image-16143807\" style=\"width:709px;height:323px\" width=\"709\" height=\"323\" /></figure>\n\n\n\n<p>Left: Editor view of a Flickr Embed as a group with Color Settings controls</p>\n\n\n\n<p>Right: Flickr embeds with a green background.</p>\n\n\n\n<p><strong>Change Alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-2.58.55-PM.png\" alt=\"Changing alignment for the Flickr embed block.\" class=\"wp-image-16143795\" style=\"width:248px;height:327px\" width=\"248\" height=\"327\" srcset=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-2.58.55-PM.png 496w, https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-2.58.55-PM-228x300.png 228w\" sizes=\"auto, (max-width: 248px) 100vw, 248px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the Flickr post left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Flickr post alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the&nbsp; Flickr post-align-right</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the Flickr post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p><strong>Note:</strong> \u201cWide width\u201d and \u201cFull width\u201d alignment needs to be enabled by the Theme of your site.&nbsp;</p>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Flickr Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"601\" height=\"258\" src=\"https://wordpress.org/documentation/files/2020/08/Edit-Post-WP5.5r8.3.png\" alt=\"Edit the URL for the Flickr embed block.\" class=\"wp-image-13236141\" srcset=\"https://wordpress.org/documentation/files/2020/08/Edit-Post-WP5.5r8.3.png 601w, https://wordpress.org/documentation/files/2020/08/Edit-Post-WP5.5r8.3-300x129.png 300w\" sizes=\"auto, (max-width: 601px) 100vw, 601px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Media settings</h3>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"544\" height=\"282\" src=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.08.53-PM.png\" alt=\"Media settings for the Flickr embed block - set to Resize for smaller devices ON.\" class=\"wp-image-16143822\" srcset=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.08.53-PM.png 544w, https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.08.53-PM-300x156.png 300w\" sizes=\"auto, (max-width: 544px) 100vw, 544px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"538\" height=\"272\" src=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.08.56-PM.png\" alt=\"Media settings for the Flickr embed block - set to Resize for smaller devices OFF.\" class=\"wp-image-16143823\" srcset=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.08.56-PM.png 538w, https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.08.56-PM-300x152.png 300w\" sizes=\"auto, (max-width: 538px) 100vw, 538px\" /></figure>\n</div>\n</div>\n\n\n\n<p>Via the Media Settings, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p>\u201cOff:\u201d This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p>\u201cOn:\u201d This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<div style=\"height:13px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.10.24-PM.png\" alt=\"Advanced CSS options for the Flickr embed block.\" class=\"wp-image-16143824\" style=\"width:274px;height:175px\" width=\"274\" height=\"175\" srcset=\"https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.10.24-PM.png 548w, https://wordpress.org/documentation/files/2022/10/Screen-Shot-2022-10-28-at-3.10.24-PM-300x192.png 300w\" sizes=\"auto, (max-width: 274px) 100vw, 274px\" /></figure>\n\n\n\n<p>The advanced section lets you add a CSS class to your block.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-10-28\n<ul class=\"wp-block-list\">\n<li>Added Video walkthrough</li>\n\n\n\n<li>Updated Screenshots as per WordPress 6.0</li>\n\n\n\n<li>Added Alt text to images</li>\n\n\n\n<li>Added locking functionality</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-18\n<ul class=\"wp-block-list\">\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-17\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.5</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-06-30</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Flickr embed block, you can add photos and videos from Flickr to your posts and pages. However, when you click any photo or video, it will take you to Flickr where you can see photos and play videos.&nbsp; You can also embed photo albums and galleries [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13050803",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13050803",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13050803"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13050803/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360314,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13050803/revisions/16360314"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13050803"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13050803"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

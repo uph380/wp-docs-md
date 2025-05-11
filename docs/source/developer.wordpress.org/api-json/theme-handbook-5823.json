@@ -1,0 +1,91 @@
+{
+    "id": 5823,
+    "date": "2014-08-01T22:58:39",
+    "date_gmt": "2014-08-01T22:58:39",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5823"
+    },
+    "modified": "2023-12-14T20:58:53",
+    "modified_gmt": "2023-12-14T20:58:53",
+    "slug": "releasing-your-theme",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/releasing-your-theme/",
+    "title": {
+        "rendered": "Releasing Your Theme"
+    },
+    "content": {
+        "rendered": "\n<p>This section covers the&nbsp;requirements and submission process&nbsp;for releasing your theme into the <a href=\"https://wordpress.org/themes/\">WordPress Theme Directory</a>. If you&#8217;ve followed the instructions&nbsp;in this handbook, your theme is almost ready for release into the directory.</p>\n\n\n\n<p>The first requirement to releasing your theme is to make sure you have \u2013 at a minimum \u2013 the <a href=\"https://developer.wordpress.org/themes/release/required-theme-files/\">required theme&nbsp;files</a> before submitting your theme for review.</p>\n\n\n\n<p>Once you&#8217;ve confirmed the required theme files, thorough <a href=\"https://developer.wordpress.org/themes/release/testing/\">testing</a> of the theme \u2013 including content \u2013 must be completed.&nbsp;Following the <a href=\"https://developer.wordpress.org/themes/release/theme-review-guidelines/\">theme review guidelines</a> will help ensure acceptance of your&nbsp;theme.</p>\n\n\n\n<p>After completing everything&nbsp;above, having the proper <a href=\"https://developer.wordpress.org/themes/release/writing-documentation/\">documentation</a> is the final step before <a href=\"https://developer.wordpress.org/themes/release/submitting-your-theme-to-wordpress-org/\">submitting your theme for approval</a>. After submitting your theme for review, the theme reviewer may request other changes to your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"important-notices\">Important Notices</h2>\n\n\n\n<p>Themes that have <b>3 or more distinct issues may be closed</b> as not-approved. Theme authors are encouraged to review the <a href=\"//developer.wordpress.org/themes/release/theme-review-guidelines/\">Theme Review Guidelines</a>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\n<a href=\"//make.wordpress.org/themes/handbook/review/how-to-do-a-review-draft/\">&#8220;How to do a review (Draft)&#8221;</a> is another practical guide to understand the review process in-depth.<br />\n</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\" id=\"first-two-checks\">First Two Checks</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"1-commonly-missed-requirements\"><b>1. Commonly missed requirements</b></h3>\n\n\n\n<p>Here are some of the commonly missed requirements at the initial review. Themes with incomplete requirements may be closed as not-approved.</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Themes must be compatible with the GNU General Public License. GPLv2 or later is strongly recommended.</li><li>Themes are not allowed to include plugins and non-design related functionalities such as forms. Anything that will be deleted when user switches a theme should not be included.</li><li>Shortcodes, custom post types, and custom blocks are not allowed in themes.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"2-testing-your-theme-with-theme-check-plugin\">2. <b>Testing your theme with Theme Check Plugin</b></h3>\n\n\n\n<p>Theme Check plugin is an easy way to test your theme and ensure it\u2019s up to spec with the latest theme review standards. Learn more about <a href=\"https://make.wordpress.org/themes/handbook/review/required/theme-check-plugin/\">Theme Check Plugin</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 100,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5823",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138665,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823/revisions/138665"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5823"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

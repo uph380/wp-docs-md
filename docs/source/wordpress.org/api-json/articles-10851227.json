@@ -1,0 +1,109 @@
+{
+    "id": 10851227,
+    "date": "2018-11-06T02:52:42",
+    "date_gmt": "2018-11-06T02:52:42",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851227"
+    },
+    "modified": "2024-06-08T18:41:58",
+    "modified_gmt": "2024-06-08T18:41:58",
+    "slug": "reset-your-password",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/reset-your-password/",
+    "title": {
+        "rendered": "Reset your password"
+    },
+    "content": {
+        "rendered": "\n<p>In WordPress, there is more than one way to reset your password. (Normally, the easiest way to reset it is through the &#8220;Lost your password?&#8221; link on the main login page for your blog or website.)<br>\nHowever, there are certain times (especially if your email isn&#8217;t working correctly) that you may have to take different steps to reset your password.</p>\n\n\n\n<p>Here&#8217;s a list of different ways to reset a password. The method that you use depends on the type of access that you still have to your website.</p>\n\n\n\n<h2 class=\"wp-block-heading\">To Change Your Password</h2>\n\n\n\n<p>To change your password in current versions:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>In the Administration Screen, menu, go to Users &gt; All Users.</li>\n\n\n\n<li>Click on your username in the list to edit it.</li>\n\n\n\n<li>In the Edit User screen, scroll down to the New Password section and click the Generate Password button.</li>\n\n\n\n<li>If you want to change the automatically generated password, you can overwrite it by typing a new password in the box provided. The strength box will show you how good (strong) your password is.</li>\n\n\n\n<li>Click the Update User button.</li>\n</ol>\n\n\n\n<p>\n\n     Your new password becomes active immediately.\n\n</p>\n\n\n\n<h2 class=\"wp-block-heading\">Through the automatic emailer</h2>\n\n\n\n<p>If you know your username or the email account in your profile, you can use the &#8220;lost password&#8221; feature of WordPress.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Go to your WordPress Login page (something like <a href=\"https://codex.wordpress.org/Resetting_your_password\">http://yoursite.com/wordpress/wp-login.php</a>)</li>\n\n\n\n<li>Click on the &#8220;Lost your password?&#8221; link</li>\n\n\n\n<li>You will be taken to a page to enter some details. Enter your username or the email address on file for that account.</li>\n\n\n\n<li>Wait happily as your new password is emailed to you.</li>\n\n\n\n<li>Once you get your new password, login to your profile page and change this password to something you can <em>remember</em>.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Through MySQL Command Line</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Get an MD5 hash of your password.\n<ul class=\"wp-block-list\">\n<li><a href=\"http://www.miraclesalad.com/webtools/md5.php\">Visit md5 Hash Generator</a>, or&#8230;</li>\n\n\n\n<li>Create a key with Python, or&#8230;</li>\n\n\n\n<li>On Unix/Linux:\n<ol class=\"wp-block-list\">\n<li>Create a file called wp.txt, containing nothing but the new password.</li>\n\n\n\n<li>tr -d &#8216;\\r\\n&#8217; &lt; wp.txt | md5sum | tr -d &#8216; -&#8216;</li>\n\n\n\n<li>rm wp.txt</li>\n</ol>\n</li>\n\n\n\n<li>On Mac OS X:\n<ol class=\"wp-block-list\">\n<li>Create a file called wp.txt, containing nothing but the new password. Then enter either of the lines below</li>\n\n\n\n<li>md5 -q ./wp.txt; rm ./wp.txt (If you want the MD5 hash printed out.)</li>\n\n\n\n<li>md5 -q ./wp.txt | pbcopy; rm ./wp.txt (If you want the MD5 hash copied to the clipboard.)</li>\n</ol>\n</li>\n</ul>\n</li>\n\n\n\n<li>&#8220;mysql -u root -p&#8221; (log in to MySQL)</li>\n\n\n\n<li>enter your mysql password</li>\n\n\n\n<li>&#8220;use (name-of-database)&#8221; (select WordPress database)</li>\n\n\n\n<li>&#8220;show tables;&#8221; (you&#8217;re looking for a table name with &#8220;users&#8221; at the end)</li>\n\n\n\n<li>&#8220;SELECT ID, user_login, user_pass FROM (name-of-table-you-found);&#8221; (this gives you an idea of what&#8217;s going on inside)</li>\n\n\n\n<li>&#8220;UPDATE (name-of-table-you-found) SET user_pass=&#8221;(MD5-string-you-made)&#8221; WHERE ID = (id#-of-account-you-are-reseting-password-for);&#8221; (actually changes the password)</li>\n\n\n\n<li>&#8220;SELECT ID, user_login, user_pass FROM (name-of-table-you-found);&#8221; (confirm that it was changed)</li>\n\n\n\n<li>(type Control-D to exit mysql client)</li>\n</ol>\n\n\n\n<p>Note: if you have a recent version of MySQL (version 5.x?) you can have MySQL compute the MD5 hash for you.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Skip step# 1 above.</li>\n\n\n\n<li>Do the following for step# 7 instead.\n<ul class=\"wp-block-list\">\n<li>&#8220;UPDATE (name-of-table-you-found) SET user_pass = MD5(&#8216;(new-password)&#8217;) WHERE ID = (id#-of-account-you-are-reseting-password-for);&#8221; (actually changes the password)</li>\n</ul>\n</li>\n</ol>\n\n\n\n<p>Note that even if the passwords are salted, meaning they look like $P$BLDJMdyBwegaCLE0GeDiGtC/mqXLzB0, you can still replace the password with an MD5 hash, and WordPress will let you log in.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Through phpMyAdmin</h2>\n\n\n\n<p>This article is for those who have <a href=\"/support/article/phpmyadmin/\">phpMyAdmin</a> access to their database. <strong>Note: use phpMyAdmin at your own risk. If you doubt your ability to use it, seek further advice. WordPress is not responsible for loss of data.</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Begin by logging into phpMyAdmin and clicking <strong>databases</strong>.</li>\n\n\n\n<li>A list of databases will appear. Click on your WordPress database.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/changepw2.jpg?fit=355%2C316&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"355\" height=\"316\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/changepw2.jpg?fit=355%2C316&amp;ssl=1\" alt=\"PHPMyAdmin database selection\" class=\"wp-image-10851228\" srcset=\"https://wordpress.org/documentation/files/2018/11/changepw2.jpg 355w, https://wordpress.org/documentation/files/2018/11/changepw2-300x267.jpg 300w\" sizes=\"auto, (max-width: 355px) 100vw, 355px\" /></a><figcaption class=\"wp-element-caption\">phpMyAdmin database select</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>All the tables in your database will appear. If not, click <strong>Structure</strong>.</li>\n\n\n\n<li>Look for <strong>wp_users</strong> in the Table column.</li>\n\n\n\n<li>Click on the icon for <strong>browse</strong>.</li>\n\n\n\n<li>Locate your username under user_login</li>\n\n\n\n<li>Click <strong>edit</strong> (may look like a pencil icon in some versions of phpMyAdmin).</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i1.wp.com/wordpress.org/documentation/files/2018/11/changepw3.jpg?fit=343%2C226&amp;ssl=1\"><img loading=\"lazy\" decoding=\"async\" width=\"343\" height=\"226\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2018/11/changepw3.jpg?fit=343%2C226&amp;ssl=1\" alt=\"PHPMyAdmin select users database table\" class=\"wp-image-10851242\" srcset=\"https://wordpress.org/documentation/files/2018/11/changepw3.jpg 343w, https://wordpress.org/documentation/files/2018/11/changepw3-300x198.jpg 300w\" sizes=\"auto, (max-width: 343px) 100vw, 343px\" /></a><figcaption class=\"wp-element-caption\">phpMyAdmin select users table</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"8\">\n<li>Your user_id will be shown. Click on Edit.</li>\n\n\n\n<li>Next to the user_pass is a long list of numbers and letters.</li>\n\n\n\n<li>Select and delete these and type in your new password.</li>\n\n\n\n<li>Type in the password you want to use. You can type it in normally&#8211;but remember, it is case-sensitive.</li>\n\n\n\n<li>In this example, the new password will be &#8216;rabbitseatcarrots.&#8217;</li>\n\n\n\n<li>Once you have done that, click the dropdown menu indicated, and select MD5 from the menu.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/changepw6.jpg?fit=415%2C139&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"415\" height=\"139\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/changepw6.jpg?fit=415%2C139&amp;ssl=1\" alt=\"phpMyAdmin select MD5 function on user_pass row\" class=\"wp-image-10851250\" srcset=\"https://wordpress.org/documentation/files/2018/11/changepw6.jpg 415w, https://wordpress.org/documentation/files/2018/11/changepw6-300x100.jpg 300w\" sizes=\"auto, (max-width: 415px) 100vw, 415px\" /></a><figcaption class=\"wp-element-caption\">phpMyAdmin select MD5 function on user_pass row</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"14\">\n<li>Check that your password is actually correct, and that MD5 is in the box.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><a href=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/changepw7.jpg?fit=415%2C76&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"415\" height=\"76\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/changepw7.jpg?fit=415%2C76&amp;ssl=1\" alt=\"phpMyAdmin user_pass row with MD5 function and &quot;rabbitseatcarrots&quot; as the password\" class=\"wp-image-10851252\" srcset=\"https://wordpress.org/documentation/files/2018/11/changepw7.jpg 415w, https://wordpress.org/documentation/files/2018/11/changepw7-300x55.jpg 300w\" sizes=\"auto, (max-width: 415px) 100vw, 415px\" /></a><figcaption class=\"wp-element-caption\">phpMyAdmin user_pass row with MD5 function and &#8220;rabbitseatcarrots&#8221; as the password</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"15\">\n<li>Click the &#8216;Go&#8217; button to the bottom right.</li>\n\n\n\n<li>Test the new password on the login screen. If it doesn&#8217;t work, check that you&#8217;ve followed these instructions exactly.</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Other Tutorials using phpMyAdmin</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"http://www.devlounge.net/articles/reset-a-wordpress-password-from-phpmyadmin\">Reset a WordPress password from phpMyAdmin</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Through FTP</h2>\n\n\n\n<p>There is also an easy way to reset your password via FTP, if you&#8217;re using the admin user.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Login to your site via FTP and download your active theme&#8217;s functions.php file.</li>\n\n\n\n<li>Edit the file and add this code to it, right at the beginning, after the first <code>&lt;?php</code><br><br><code>wp_set_password( 'my_new_password', 1 );</code><br><br>In the above code, replace the text <code>my_new_password</code> with your own new password for the main admin user. The number <code>1</code> above refers to the user ID number in the <code>wp_users</code> database table. Since we wanted the user ID of the main admin user, we just keep the number as <code>1</code>, which is typically the user ID of the main admin user.</li>\n\n\n\n<li>Upload the modified file back to your site.</li>\n\n\n\n<li>Once you are able to login, make sure to go back and remove that code. It will reset your password on every page load until you do so.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Through WP CLI</h2>\n\n\n\n<p>WP CLI is a command line tool for managing your WordPress installation.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Move into the /wordpress directory and type<br><br><code>$ wp user list<br></code><br>to see all users. Find the ID of the user you&#8217;d like to update.</li>\n</ol>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Then, update the user<br><br><code>$ wp user update 1 --user_pass=$UP3RstrongP4$w0rd<br></code><br>replacing &#8220;1&#8221; with the id of the user you want to update.</li>\n</ol>\n\n\n\n<p><a href=\"http://wp-cli.org/\">More on wp cli</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Using the Emergency Password Reset Script</h2>\n\n\n\n<p>If the other solutions listed above won&#8217;t work, then try the Emergency Password Reset Script. Please note that it&#8217;s not a plugin, it&#8217;s a PHP script.</p>\n\n\n\n<h3 class=\"wp-block-heading\">A Word of Caution:</h3>\n\n\n\n<ol class=\"wp-block-list\">\n<li>The Emergency Password Reset Script requires that you know the administrator&#8217;s username.</li>\n\n\n\n<li>It updates the administrator password and sends an email to the administrator&#8217;s email address.</li>\n\n\n\n<li>Even if you don&#8217;t receive the email, the password will still be changed.</li>\n\n\n\n<li>You do not need to be logged in to use it. (After all, if you could login, you wouldn&#8217;t need the script.)</li>\n\n\n\n<li>Place the script in the root of your WordPress installation. Do not upload it to your WordPress Plugins directory.</li>\n\n\n\n<li>For security reasons, remember to delete the script when you are done.</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Directions for Use:</h3>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Copy the emergency script from <a href=\"https://codex.wordpress.org/User:MichaelH/Orphaned_Plugins_needing_Adoption/Emergency\">Emergency Password Script</a> and put into a file called emergency.php in the root of your WordPress installation (the same directory that contains wp-config.php).</li>\n\n\n\n<li>In your browser, open http://example.com/emergency.php.</li>\n\n\n\n<li>As instructed, enter the administrator username (usually admin) and the new password, then click <strong>Update Options</strong>. A message is displayed noting the changed password. An email is sent to the blog administrator with the changed password information.</li>\n\n\n\n<li><strong>Delete emergency.php from your server when you are done.</strong> Do not leave it on your server, as someone else could use it to change your password.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Additional Reference</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Here is another <a href=\"http://kuttler.eu/code/wordpress-password-reset/\">password reset script</a> that can be used without knowing the username or email.</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>In WordPress, there is more than one way to reset your password. (Normally, the easiest way to reset it is through the &#8220;Lost your password?&#8221; link on the main login page for your blog or website.) However, there are certain times (especially if your email isn&#8217;t working correctly) that you may have to take different [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10851227",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851227",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851227"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851227/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360384,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851227/revisions/16360384"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851227"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851227"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

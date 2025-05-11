@@ -1,0 +1,109 @@
+{
+    "id": 16355693,
+    "date": "2023-02-14T15:02:21",
+    "date_gmt": "2023-02-14T15:02:21",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16355693"
+    },
+    "modified": "2024-06-08T19:44:42",
+    "modified_gmt": "2024-06-08T19:44:42",
+    "slug": "submenu-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/submenu-block/",
+    "title": {
+        "rendered": "Submenu block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/support/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>The&nbsp;<strong>Submenu Block</strong>&nbsp;is an advanced block that can only be used as a child block of the <a href=\"https://wordpress.org/support/article/navigation-block/\" data-type=\"helphub_article\" data-id=\"15191692\">Navigation Block</a> released with WordPress 5.9. It allows you to create and edit the structure and appearance of submenus within your site&#8217;s navigation menus. The&nbsp;<strong>Submenu</strong><em> </em><strong>Block</strong>&nbsp;can be used with a <a href=\"https://wordpress.org/themes/tags/full-site-editing/\" data-type=\"URL\" data-id=\"https://wordpress.org/themes/tags/full-site-editing/\">block theme</a>&nbsp;or a theme that supports <a href=\"https://wordpress.org/themes/tags/template-editing/\">template editing</a>.</p>\n\n\n\n<p>To add a submenu block to your content in the block editor, select the menu item where you want to add a submenu, inside an existing navigation block. In the block toolbar, search and add the Submenu<em> </em>block by clicking the <strong>Block inserter</strong> (+) icon or typing /<kbd>submenu</kbd> in the editor. You can also click the <strong>Add Submenu</strong> icon in the Block toolbar.  This will automatically add a submenu item below the block you selected.</p>\n\n\n\n<p></p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/image4-1024x353.png\" alt=\"Adding a submenu\" class=\"wp-image-16460530\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block has its own toolbar, which contains unique controls that let you customize or configure the block. The <strong>Submenu Block</strong><em>&nbsp;</em> has the following options on its toolbar:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-4.19.27-PM.png\" alt=\"Block toolbar in the submenu block\" class=\"wp-image-16460779\" width=\"382\" height=\"53\" /></figure>\n\n\n\n<p><strong>Block moving tools</strong></p>\n\n\n\n<p>There are two ways you can move blocks once you&#8217;ve added them to the&nbsp;<strong>Submenu block</strong>. Using these tools, you can reorder the&nbsp;<strong>Submenu block</strong> inside a <strong>Navigation</strong> section. Use the toolbar to <em>move</em> the items <em>left and righ</em>t or <em>drag </em>them to a new position.</p>\n\n\n\n<p></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-5.54.54-PM.png\" alt=\"Moving blocks\" class=\"wp-image-16460873\" width=\"387\" height=\"58\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Link tool</strong></p>\n\n\n\n<p>The Link tool lets you edit the link and title of your <strong>Submenu block</strong>. </p>\n\n\n\n<p>To change the title, you can edit the text in the submenu block directly.</p>\n\n\n\n<p>To edit the link, select the block and click the link icon in the toolbar. From the popup, click the <strong>Pencil</strong> icon to edit the link. Click the <strong>Unlink</strong> icon to remove the link.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-6.11.39-PM.png\" alt=\"Edit pencil icon \" class=\"wp-image-16460889\" width=\"378\" height=\"162\" /></figure>\n\n\n\n<p>In the edit popup, you can change the text and URL to edit what the submenu item links to and the title. You can also decide whether you want to open the link<em> </em>in a new tab.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/support/files/2023/02/Screen-Recording-2023-02-10-at-6.05.04-PM.mp4\"></video></figure>\n\n\n\n<p><strong>Add additional submenu items</strong></p>\n\n\n\n<p>To add additional submenu items to the&nbsp;<strong>Submenu block</strong>, click the <strong>Add submenu</strong> icon in the Block toolbar.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-6.18.52-PM.png\" alt=\"Add additional sub menu items\" class=\"wp-image-16460898\" width=\"385\" height=\"54\" /></figure>\n\n\n\n<p>Select the <strong>+</strong> button that appears upon doing so. After selecting the + icon, you will see a new submenu&nbsp;<em>Add link </em>item. You can add a link and text title to modify this submenu item.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/image2-1024x658.png\" alt=\"Adding additional submenu items\" class=\"wp-image-16460564\" width=\"512\" height=\"329\" /></figure>\n\n\n\n<p>The blocks you can add below a submenu block are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Custom links</li>\n\n\n\n<li>Post links</li>\n\n\n\n<li>Page links</li>\n\n\n\n<li>Category links</li>\n\n\n\n<li>Tag links</li>\n\n\n\n<li>Additional submenus</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Text formatting</strong></p>\n\n\n\n<p>Basic text formatting is available for all <strong>Submenu </strong>blocks. Select your title (or a part of it) to make it Bold<em>, </em>Italic, or Strikethrough, or turn it into an Inline image to cover your link with an image.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/Screenshot-2023-02-11-at-6.41.37-PM.png\" alt=\"WordPress Submenu Link block toolbar with selected text formation and additional options unwrapped, followed by the edited block example.\" class=\"wp-image-16462579\" width=\"503\" height=\"250\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about the More options settings.</a><a rel=\"noreferrer noopener\" href=\"https://github.com/WordPress/Documentation-Issue-Tracker/issues/RackMultipart20220927-1-9r2x2c_html_23f1e51e53153bf8.png\" target=\"_blank\"></a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Each link has its <strong>Block settings</strong> you can access by clicking the <strong>settings </strong>button on the upper-right corner of the editor or via <strong>Options </strong>in the toolbar.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Link</strong> <strong>settings</strong></p>\n\n\n\n<p>The link settings section contains the following options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Description</strong> to display with your link if the selected theme includes that option.</li>\n\n\n\n<li><strong>Link title </strong>to provide more information about the link for search engine optimization. Leave this field empty if you want the title used in URL settings to stay.&nbsp;</li>\n\n\n\n<li><strong>Link rel</strong> to specify how your external link is related to the page you\u2019re working on and if its authority should be higher than your website\u2019s.&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2023/02/image3-482x1024.png\" alt=\"Block settings in the submenu block\" class=\"wp-image-16460557\" width=\"241\" height=\"512\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-02-11</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the list of Blocks The&nbsp;Submenu Block&nbsp;is an advanced block that can only be used as a child block of the Navigation Block released with WordPress 5.9. It allows you to create and edit the structure and appearance of submenus within your site&#8217;s navigation menus. The&nbsp;Submenu Block&nbsp;can be used with a block theme&nbsp;or a [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16355693",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355693",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16355693"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355693/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360414,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355693/revisions/16360414"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16355693"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16355693"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

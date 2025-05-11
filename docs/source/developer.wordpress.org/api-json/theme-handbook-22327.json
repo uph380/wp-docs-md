@@ -1,0 +1,97 @@
+{
+    "id": 22327,
+    "date": "2016-08-25T09:53:51",
+    "date_gmt": "2016-08-25T09:53:51",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=22327"
+    },
+    "modified": "2022-10-25T17:00:25",
+    "modified_gmt": "2022-10-25T17:00:25",
+    "slug": "custom-logo",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/custom-logo/",
+    "title": {
+        "rendered": "Custom Logo"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What is a Custom Logo?</h2>\n\n\n\n<p>Using a custom logo allows site owners to upload an image for their website, which can be placed at the top of their website. It can be uploaded from <strong>Appearance &gt; Header</strong>, in your admin panel. The custom logo support should be added first to your theme using <code>add_theme_support()</code>, and then be called in your theme using <code>the_custom_logo()</code>. A custom logo is <strong>optional</strong>, but theme authors should use this function if they include a logo to their theme.<strong><br></strong></p>\n\n\n\n<h3 class=\"wp-block-heading\">Adding Custom Logo support to your Theme</h3>\n\n\n\n<p>To enable the use of a custom logo in your theme, add the following to your <code>functions.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_theme_support( 'custom-logo' );</code></pre>\n\n\n\n<p></p>\n\n\n\n<p>When enabling custom logo support, you can configure five parameters by passing along arguments to the <code>add_theme_support()</code> function using an array:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\"><pre class=\"wp-block-syntaxhighlighter-code\">function themename_custom_logo_setup() {\n\t$defaults = array(\n\t\t'height'               =&gt; 100,\n\t\t'width'                =&gt; 400,\n\t\t'flex-height'          =&gt; true,\n\t\t'flex-width'           =&gt; true,\n\t\t'header-text'          =&gt; array( 'site-title', 'site-description' ),\n\t\t'unlink-homepage-logo' =&gt; true, \n\t);\n\tadd_theme_support( 'custom-logo', $defaults );\n}\nadd_action( 'after_setup_theme', 'themename_custom_logo_setup' );</pre></code></pre>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/reference/hooks/after_setup_theme/\">after_setup_theme</a> hook is used so that the custom logo support is registered after the theme has loaded.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>height</code><br>Expected logo height in pixels. A custom logo can also use built-in image sizes, such as <code>thumbnail</code>, or register a custom size using <a href=\"https://developer.wordpress.org/reference/functions/add_image_size/\"><code>add_image_size()</code></a>.</li>\n\n\n\n<li><code>width<br> </code>Expected logo width in pixels. A custom logo can also use built-in image sizes, such as <code>thumbnail</code>, or register a custom size using <a href=\"https://developer.wordpress.org/reference/functions/add_image_size/\"><code>add_image_size()</code></a>.</li>\n\n\n\n<li><code>flex-height</code><br>Whether to allow for a flexible height.</li>\n\n\n\n<li><code>flex-width<br> </code>Whether to allow for a flexible width.</li>\n\n\n\n<li><code>header-text<br> </code>Classes(s) of elements to hide. It can pass an array of class names here for all elements constituting header text that could be replaced by a logo.</li>\n\n\n\n<li><code>unlink-homepage-logo</code> <br><em>If the&nbsp;<code><a href=\"https://make.wordpress.org/core/2020/07/28/themes-changes-related-to-get_custom_logo-in-wordpress-5-5/\">unlink-homepage-logo</a></code>&nbsp;parameter is set to true,&nbsp;</em>logo images inserted using&nbsp;<code>get_custom_logo()</code>&nbsp;or&nbsp;<code>the_custom_logo()</code>&nbsp;will no longer link to the homepage when visitors are on that page. In an effort to maintain the styling given to the linked image, the unlinked logo image is inside a&nbsp;<code>span</code>&nbsp;tag&nbsp;with the same \u201ccustom-logo-link\u201d class.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Displaying the custom logo in your theme</h3>\n\n\n\n<p>A custom logo can be displayed in the theme using&nbsp;<code>the_<code>custom_logo()</code></code> function. But it&#8217;s recommended to wrap the code in a <code>function_exists()</code> call to maintain backward compatibility with the older versions of WordPress, like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( function_exists( 'the_custom_logo' ) ) {\n\tthe_custom_logo();\n}</code></pre>\n\n\n\n<p>Generally logos are added to the <code>header.php</code> file of the theme, but it can be elsewhere as well.</p>\n\n\n\n<p>If you want to get your current logo URL (or use your own markup) instead of the default markup, you can use the following code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$custom_logo_id = get_theme_mod( 'custom_logo' );\n$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );\nif ( has_custom_logo() ) {\n\techo '&lt;img src=\"' . esc_url( $logo[0] ) . '\" alt=\"' . get_bloginfo( 'name' ) . '\"&gt;';\n} else {\n\techo '&lt;h1&gt;' . get_bloginfo('name') . '&lt;/h1&gt;';\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Custom logo template tags</h3>\n\n\n\n<p>To manage displaying a custom logo in the front-end, these three template tags can be used:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/get_custom_logo/\">get_custom_logo()</a> - </code>Returns markup for a custom logo.</li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/the_custom_logo/\">the_custom_logo()</a> - </code>Displays&nbsp;markup for a custom logo.</li>\n\n\n\n<li><code><a href=\"https://developer.wordpress.org/reference/functions/has_custom_logo/\">has_custom_logo()</a> - </code>Returns a boolean true/false, whether&nbsp;a custom logo is set or not.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12087296,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-22327",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/22327",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12087296"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 30,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/22327/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143629,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/22327/revisions/143629"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=22327"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

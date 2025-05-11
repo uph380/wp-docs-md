@@ -1,0 +1,97 @@
+{
+    "id": 11372,
+    "date": "2014-10-23T15:36:03",
+    "date_gmt": "2014-10-23T15:36:03",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11372"
+    },
+    "modified": "2019-12-13T17:27:14",
+    "modified_gmt": "2019-12-13T17:27:14",
+    "slug": "localization",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/localization/",
+    "title": {
+        "rendered": "Localization"
+    },
+    "content": {
+        "rendered": "<h2>What is localization?</h2>\n<p>Localization describes the subsequent process of translating an internationalized theme. Localization is abbreviated as <code>l10n</code> (because there are 10 letters between the l and the n.)</p>\n<p>Please refer to the <a href=\"https://developer.wordpress.org/apis/handbook/internationalization/localization/\">Localization</a> page on the <a href=\"https://developer.wordpress.org/apis/\">Common APIs handbook</a> to learn how to Localize your theme.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11372",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11372",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11372/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 126735,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11372/revisions/126735"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11372"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

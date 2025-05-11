@@ -1,0 +1,91 @@
+{
+    "id": 134586,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-prettier-config/"
+    },
+    "modified": "2024-10-30T16:55:18",
+    "modified_gmt": "2024-10-30T16:55:18",
+    "slug": "packages-prettier-config",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-prettier-config/",
+    "title": {
+        "rendered": "@wordpress/prettier-config"
+    },
+    "content": {
+        "rendered": "<p>WordPress Prettier shareable config for <a href=\"https://prettier.io\">Prettier</a>.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-shell\">$ npm install @wordpress/prettier-config --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Usage</h2>\n<p>Add this to your <code>package.json</code> file:</p>\n<pre><code class=\"language-json\">\"prettier\": \"@wordpress/prettier-config\"\n</code></pre>\n<p>Alternatively, add this to <code>.prettierrc</code> file:</p>\n<pre><code>\"@wordpress/prettier-config\"\n</code></pre>\n<p>Or add this to <code>.prettierrc.js</code> file:</p>\n<pre><code class=\"language-js\">module.exports = require( '@wordpress/prettier-config' );\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 308,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134586",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134586",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134586/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153841,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134586/revisions/153841"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134586"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

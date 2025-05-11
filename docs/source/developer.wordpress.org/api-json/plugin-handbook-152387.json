@@ -1,0 +1,91 @@
+{
+    "id": 152387,
+    "date": "2024-09-12T07:58:54",
+    "date_gmt": "2024-09-12T07:58:54",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=152387"
+    },
+    "modified": "2024-09-12T08:14:10",
+    "modified_gmt": "2024-09-12T08:14:10",
+    "slug": "creating-tables-with-plugins",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/creating-tables-with-plugins/",
+    "title": {
+        "rendered": "Creating Tables with Plugins"
+    },
+    "content": {
+        "rendered": "\n<p>If you are <a href=\"https://developer.wordpress.org/plugins/\">writing a plugin</a> for WordPress, you will almost certainly find that you need to store some information in the WordPress database. There are two types of information you could store:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Setup information</strong> &#8212; user choices that are entered when the user first sets up your plugin, and don&#8217;t tend to grow much beyond that (for example, in a tag-related plugin, the user&#8217;s choices regarding the format of the tag cloud in the sidebar).<br>Setup information will generally be stored using the <a href=\"https://developer.wordpress.org/plugins/settings/options-api/\">WordPress <em>options</em> mechanism</a>.</li>\n\n\n\n<li><strong>Data</strong> &#8212; information that is added as the user continues to use your plugin, which is generally expanded information related to posts, categories, uploads, and other WordPress components (for example, in a statistics-related plugin, the various page views, referrers, and other statistics associated with each post on your site).<br>Data can be stored in a separate MySQL/MariaDB table, which will have to be created. Before jumping in with a whole new table, however, consider if storing your plugin&#8217;s data in <a href=\"https://developer.wordpress.org/plugins/metadata/\">WordPress&#8217; Post Meta</a> (a.k.a. Custom Fields) would work. Post Meta is the preferred method; use it when possible/practical.</li>\n</ul>\n\n\n\n<p>This article describes how to have your plugin automatically create a MySQL/MariaDB table to store its data. Note that as an alternative to following the steps here, you could have the plugin user run an install script when they install your plugin. Another approach would be to have the user execute an SQL query on their own, using something like <a href=\"https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/\">phpMyAdmin</a>. But neither of those options is very satisfactory, since a user could easily forget to run the install script or mess up the query (and they might not have phpMyAdmin available).</p>\n\n\n\n<p>So, it is recommended that you follow the steps below to have your plugin automatically create its database tables:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Write a PHP function that creates the table.</li>\n\n\n\n<li>Ensure that WordPress calls the function when the plugin is activated.</li>\n\n\n\n<li>Create an upgrade function, if a new version of your plugin needs to have a different table structure.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Create Database Tables</h2>\n\n\n\n<p>The first step in making your plugin create database tables automatically is to create a PHP function within your plugin that adds a table or tables to the WordPress MySQL/MariaDB database. For purposes of this article, we&#8217;ll assume you want to call this function jal_install.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Database Table Prefix</h3>\n\n\n\n<p>In the wp-config.php file, a WordPress site owner can define a database table prefix. By default, the prefix is &#8220;wp_&#8221;, but you&#8217;ll need to check on the actual value and use it to define your database table name. This value is found in the $<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\" rel=\"class\">wpdb</a>-&gt;prefix variable. (If you&#8217;re developing for a version of WordPress older than 2.0, you&#8217;ll need to use the $table_prefix global variable, which is deprecated in version 2.1).</p>\n\n\n\n<p>So, if you want to create a table called (prefix)liveshoutbox, the first few lines of your table-creation function will be:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function jal_install () {\n   global $wpdb;\n\n   $table_name = $wpdb-&gt;prefix . \"liveshoutbox\"; \n}\n</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Creating or Updating the Table</h3>\n\n\n\n<p>The next step is to actually create the database table. Rather than executing an SQL query directly, we&#8217;ll use the dbDelta function in wp-admin/includes/upgrade.php (we&#8217;ll have to load this file, as it is not loaded by default). The dbDelta function examines the current table structure, compares it to the desired table structure, and either adds or modifies the table as necessary, so it can be very handy for updates (see wp-admin/upgrade-schema.php for more examples of how to use dbDelta). Note that the dbDelta function is rather picky, however. For instance:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>You must put each field on its own line in your SQL statement.</li>\n\n\n\n<li>You must have two spaces between the words PRIMARY KEY and the definition of your primary key.</li>\n\n\n\n<li>You must use the key word KEY rather than its synonym INDEX and you must include at least one KEY.</li>\n\n\n\n<li>KEY must be followed by a SINGLE SPACE then the key name then a space then open parenthesis with the field name then a closed parenthesis.</li>\n\n\n\n<li>You must not use any apostrophes or backticks around field names.</li>\n\n\n\n<li>Field types must be all lowercase.</li>\n\n\n\n<li>SQL keywords, like CREATE TABLE and UPDATE, must be uppercase.</li>\n\n\n\n<li>You must specify the length of all fields that accept a length parameter. int(11), for example.</li>\n</ul>\n\n\n\n<p>With those caveats, here are the next lines in our function, which will actually create or update the table. You&#8217;ll need to substitute your own table structure in the $sql variable:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">global $wpdb;\n\n$charset_collate = $wpdb-&gt;get_charset_collate();\n\n$sql = \"CREATE TABLE $table_name (\n  id mediumint(9) NOT NULL AUTO_INCREMENT,\n  time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,\n  name tinytext NOT NULL,\n  text text NOT NULL,\n  url varchar(55) DEFAULT &apos;&apos; NOT NULL,\n  PRIMARY KEY  (id)\n) $charset_collate;\";\n\nrequire_once( ABSPATH . 'wp-admin/includes/upgrade.php' );\ndbDelta( $sql );\n</code></pre>\n\n\n\n<p><strong>Note:</strong> Above we set the default character set and collation for the table. If we don&#8217;t do this, some characters could end up being converted to just ?&#8217;s when saved in our table. In this example we use $<a href=\"https://developer.wordpress.org/reference/classes/wpdb/get_charset_collate/\" rel=\"method\">wpdb::get_charset_collate()</a> to get the character set and collation. That function was introduced in WordPress 3.5, and if you need to support versions before that you will need create the charset/collate string yourself (you could copy the source of that function).</p>\n\n\n\n<h3 class=\"wp-block-heading\">Adding Initial Data</h3>\n\n\n\n<p>Finally, you may want to add some data to the table you just created. Here is an example of how to do that:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$welcome_name = 'Mr. WordPress';\n$welcome_text = 'Congratulations, you just completed the installation!';\n\n$table_name = $wpdb-&gt;prefix . 'liveshoutbox';\n\n$wpdb-&gt;insert( \n\t$table_name, \n\tarray( \n\t\t'time' =&gt; current_time( 'mysql' ), \n\t\t'name' =&gt; $welcome_name, \n\t\t'text' =&gt; $welcome_text, \n\t) \n);\n\n</code></pre>\n\n\n\n<p><strong>NOTE:</strong> <strong>For more on using WPDB, see <a href=\"https://developer.wordpress.org/reference/classes/wpdb/\">wpdb</a> class.</strong> In this case, we&#8217;re using $<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\" rel=\"class\">wpdb</a>-&gt;insert, so our data will automatically be escaped. If you need to use another method like $<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\" rel=\"class\">wpdb</a>-&gt;query instead, it&#8217;s a good idea to run the variables through the $<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\" rel=\"class\">wpdb</a>-&gt;prepare function before passing the query to the database to prevent security problems, even though we defined $welcome_name and $welcome_text in this function and know that there are no SQL special characters in them.</p>\n\n\n\n<h3 class=\"wp-block-heading\">A Version Option</h3>\n\n\n\n<p>Another excellent idea is to add an option to record a version number for your database table structure, so you can use that information later if you need to update the table:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_option( \"jal_db_version\", \"1.0\" );\n</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">The Whole Function</h3>\n\n\n\n<p>This function is done. Let&#8217;s see it all in one piece. Note that the version number is now stored in a global variable.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n\nglobal $jal_db_version;\n$jal_db_version = '1.0';\n\nfunction jal_install() {\n\tglobal $wpdb;\n\tglobal $jal_db_version;\n\n\t$table_name = $wpdb-&gt;prefix . 'liveshoutbox';\n\t\n\t$charset_collate = $wpdb-&gt;get_charset_collate();\n\n\t$sql = \"CREATE TABLE $table_name (\n\t\tid mediumint(9) NOT NULL AUTO_INCREMENT,\n\t\ttime datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,\n\t\tname tinytext NOT NULL,\n\t\ttext text NOT NULL,\n\t\turl varchar(55) DEFAULT &apos;&apos; NOT NULL,\n\t\tPRIMARY KEY  (id)\n\t) $charset_collate;\";\n\n\trequire_once ABSPATH . 'wp-admin/includes/upgrade.php';\n\tdbDelta( $sql );\n\n\tadd_option( 'jal_db_version', $jal_db_version );\n}\n\nfunction jal_install_data() {\n\tglobal $wpdb;\n\t\n\t$welcome_name = 'Mr. WordPress';\n\t$welcome_text = 'Congratulations, you just completed the installation!';\n\t\n\t$table_name = $wpdb-&gt;prefix . 'liveshoutbox';\n\t\n\t$wpdb-&gt;insert( \n\t\t$table_name, \n\t\tarray( \n\t\t\t'time' =&gt; current_time( 'mysql' ), \n\t\t\t'name' =&gt; $welcome_name, \n\t\t\t'text' =&gt; $welcome_text, \n\t\t) \n\t);\n}\n</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Calling the functions</h2>\n\n\n\n<p>Now that we have the initialization function defined, we want to make sure that WordPress calls this function when the plugin is activated by a WordPress administrator. To do that, we will use the activate_ action hook. If your plugin file is wp-content/plugins/plugindir/pluginfile.php, you&#8217;ll add the following line to the main body of your plugin:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">register_activation_hook( __FILE__, 'jal_install' );\nregister_activation_hook( __FILE__, 'jal_install_data' );\n</code></pre>\n\n\n\n<p>See <a href=\"https://developer.wordpress.org/reference/functions/register_activation_hook/\">Function_Reference/register_activation_hook</a> for more details.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding an Upgrade Function</h2>\n\n\n\n<p>Over the lifetime of your plugin, you may find that you need to change the plugin&#8217;s database structure in an upgraded version. To do that, you will need to create update code within your plugin that will detect that a new version has been installed, and upgrade the database structure. The easiest thing to do is to add the code to the jal_install function we just created.</p>\n\n\n\n<p>So, let&#8217;s assume that the function above was used to create database version 1.0 of your plugin, and you are now upgrading to version 1.1 so that the URL field can be wider (100 characters instead of 55). You will need to add the following lines to the end of your jal_install function, to check the version and upgrade if necessary:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n\nglobal $wpdb;\n$installed_ver = get_option( \"jal_db_version\" );\n\nif ( $installed_ver&nbsp;!= $jal_db_version ) {\n\n\t$table_name = $wpdb-&gt;prefix . 'liveshoutbox';\n\n\t$sql = \"CREATE TABLE $table_name (\n\t\tid mediumint(9) NOT NULL AUTO_INCREMENT,\n\t\ttime datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,\n\t\tname tinytext NOT NULL,\n\t\ttext text NOT NULL,\n\t\turl varchar(100) DEFAULT &apos;&apos; NOT NULL,\n\t\tPRIMARY KEY  (id)\n\t);\";\n\n\trequire_once( ABSPATH . 'wp-admin/includes/upgrade.php' );\n\tdbDelta( $sql );\n\n\tupdate_option( \"jal_db_version\", $jal_db_version );\n}\n</code></pre>\n\n\n\n<p>You&#8217;ll also need to change the global $jal_db_version variable at the top of the file, and of course you&#8217;ll want to change the initialization section created above to use the new table structure.</p>\n\n\n\n<p>Since 3.1 the activation function registered with <a href=\"https://developer.wordpress.org/reference/functions/register_activation_hook/\">register_activation_hook()</a> is not called when a plugin is updated. So to run the above code after the plugin is upgraded, you need to check the plugin db version on another hook, and call the function manually if the the database version is old. Like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function myplugin_update_db_check() {\n    global $jal_db_version;\n    if ( get_site_option( 'jal_db_version' )&nbsp;!= $jal_db_version ) {\n        jal_install();\n    }\n}\nadd_action( 'plugins_loaded', 'myplugin_update_db_check' );\n</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<p>For further reading on plugin development, check out <a href=\"https://developer.wordpress.org/plugins/\">Plugin Handbook</a>, a comprehensive list of plugin resources. You may also find this post from the <a href=\"https://codex.wordpress.org/Mailing_Lists#Hackers\">wp-hackers mailing list</a> to be helpful: <a href=\"http://lists.automattic.com/pipermail/wp-hackers/2005-May/000940.html\">WordPress Hackers Mailing List: Answer to Plugin Requires Additional Tables</a>. Also see: <a href=\"http://wordpress.stackexchange.com/questions/4852/post-meta-vs-seperate-database-tables\">Post meta vs separate database tables</a>.</p>\n",
+        "protected": false
+    },
+    "author": 7511363,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 21,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152387",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/152387",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7511363"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/152387/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155214,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/152387/revisions/155214"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152387"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

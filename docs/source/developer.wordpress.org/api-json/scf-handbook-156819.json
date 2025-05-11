@@ -1,0 +1,91 @@
+{
+    "id": 156819,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/post-object/"
+    },
+    "modified": "2025-02-21T04:17:52",
+    "modified_gmt": "2025-02-21T04:17:52",
+    "slug": "post-object",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/post-object/",
+    "title": {
+        "rendered": "Post Object Field"
+    },
+    "content": {
+        "rendered": "<p>The Post Object field creates relationships with other WordPress posts, pages, or custom post types. It provides an intuitive interface for selecting and linking to other content.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Content relationship management</li>\n<li>Multiple post type support</li>\n<li>Advanced search functionality</li>\n<li>Single or multiple selection</li>\n<li>Bidirectional relationships</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Post Type &#8211; Select available content types</li>\n<li>Taxonomy &#8211; Filter by taxonomy terms</li>\n<li>Allow Null &#8211; Make selection optional</li>\n<li>Multiple Values &#8211; Allow multiple selections</li>\n<li>Return Format &#8211; Object, ID, or custom</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156819",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156819",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156819/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156900,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156819/revisions/156900"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156819"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 156803,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/icon-picker/"
+    },
+    "modified": "2025-02-21T04:17:56",
+    "modified_gmt": "2025-02-21T04:17:56",
+    "slug": "icon-picker",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/icon-picker/",
+    "title": {
+        "rendered": "Icon Picker Field"
+    },
+    "content": {
+        "rendered": "<p>The Icon Picker field provides an interface for selecting icons from various sources including Dashicons, custom icon sets, or the media library.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Multiple icon source options</li>\n<li>Dashicons integration</li>\n<li>Media library support</li>\n<li>URL input option</li>\n<li>Visual icon preview</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Icon Library &#8211; Choose available icon sources</li>\n<li>Return Format &#8211; Icon class, URL, or array</li>\n<li>Preview Size &#8211; Icon display size</li>\n<li>Allow Custom &#8211; Enable custom icon URLs</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156803",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156803",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156803/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156916,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156803/revisions/156916"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156803"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

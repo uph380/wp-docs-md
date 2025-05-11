@@ -1,0 +1,97 @@
+{
+    "id": 11370,
+    "date": "2014-10-23T15:30:22",
+    "date_gmt": "2014-10-23T15:30:22",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11370"
+    },
+    "modified": "2022-11-17T06:08:59",
+    "modified_gmt": "2022-11-17T06:08:59",
+    "slug": "internationalization",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/internationalization/",
+    "title": {
+        "rendered": "Internationalization"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What is internationalization?</h2>\n\n\n\n<p>Internationalization is the process of developing your theme, so it can easily be translated into other languages. Internationalization is often abbreviated as <code>i18n</code> (because there are 18 letters between the letters i and n).</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why is internationalization important?</h2>\n\n\n\n<p>WordPress is used all over the world, in countries where English is not the main language. The strings in the WordPress plugins need to be coded in a special way so that can be easily translated into other languages. As a developer, you may not be able to provide localizations for all your users; however, a translator can successfully localize the theme without needing to modify the source code itself.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to internationalize your theme?</h2>\n\n\n\n<p>For the text in the theme to be able to be translated easily the text should not be hardcoded in the theme but be passed as an argument through one of the localization functions in WordPress.</p>\n\n\n\n<p>The following example could not be translated unless the translator modified the source code which is not very efficient.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">&lt;h1&gt;Settings Page&lt;/h1&gt;</code></pre>\n\n\n\n<p>By passing the string through a localization function it can it can be easily parsed to be translated.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">&lt;h1&gt;&lt;?php _e( 'Settings Page' ); ?&gt;&lt;/h1&gt;</code></pre>\n\n\n\n<p>WordPress uses&nbsp;<a href=\"http://www.gnu.org/software/gettext/\">gettext</a> libraries to be able to add the translations in PHP. In WordPress you should use the WordPress localization functions instead of&nbsp;the native PHP gettext-compliant translation functions.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Text Domain</h3>\n\n\n\n<p>The text domain is the second argument that is used in the internationalization functions. The text domain is a unique identifier, allowing WordPress to distinguish between all of the loaded translations. The text domain is only needed to be defined for themes and plugins.</p>\n\n\n\n<p>Themes that are hosted on WordPress.org the text domain must match the slug of your theme URL (<code>wordpress.org/themes/&lt;slug&gt;</code>).&nbsp;This is needed so that the translations from <a href=\"https://translate.wordpress.org/\">translate.wordpress.org</a>&nbsp;work correctly.</p>\n\n\n\n<p>The text domain name must use dashes and not underscores and be lowercase.&nbsp;For example, if the theme&#8217;s name <code>My Theme</code>&nbsp;is defined in the <code>style.css</code>&nbsp;or it is contained in a folder called <code>my-theme</code> the text domain should be <code>my-theme</code>.</p>\n\n\n\n<p>The text domain is used in three different places:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>In the <code>style.css</code> theme header</li><li>As an argument in the localization functions</li><li>As an argument when loading the translations using <code>load_theme_textdomain()</code> or&nbsp; <code>load_child_theme_textdomain()</code></li></ol>\n\n\n\n<h4 class=\"wp-block-heading\">style.css theme header</h4>\n\n\n\n<p>The text domain is added to the <code>style.css</code> header so that the theme meta-data like the description can be translated even when the theme is not enabled. The text domain should be same as the one used when <a href=\"#loading-text-domain\">loading the text domain</a>.</p>\n\n\n\n<p><strong>Example:</strong></p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/*\n* Theme Name: My Theme\n* Author: Theme Author\n* Text Domain: my-theme\n*/</code></pre>\n\n\n\n<h5 class=\"wp-block-heading\">Domain Path</h5>\n\n\n\n<p>The domain path is needed when the translations are saved in a directory other than <code>languages</code>&nbsp;. This is so that WordPress knows where to find the translation when the theme is not activated.&nbsp;For example, if .mo files are located in the languages folder then Domain Path will be <code>/languages</code> and must be written with the first slash. Defaults to the <code>languages</code> folder in the theme.</p>\n\n\n\n<p><strong>Example:</strong></p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/*\n* Theme Name: My Theme\n* Author: Theme Author\n* Text Domain: my-theme\n* Domain Path: /languages\n*/</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Add text domain to strings</h4>\n\n\n\n<p>The text domain should be added as an argument to all of the localization functions for the translations to work correctly.</p>\n\n\n\n<p><strong>Example 1</strong>:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">__( 'Post' )</code></pre>\n\n\n\n<p>should become</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">__( 'Post', 'my-theme' )</code></pre>\n\n\n\n<p><strong>Example 2</strong>:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_e( 'Post' )</code></pre>\n\n\n\n<p>should become</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_e( 'Post', 'my-theme' )</code></pre>\n\n\n\n<p><strong>Example 3</strong>:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_n( '%s post', '%s posts', $count )</code></pre>\n\n\n\n<p>should become</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">_n( '%s post', '%s posts', $count, 'my-theme' )</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">The text domain should be passed as a string to the localization functions instead of a variable. It allows parsing tools to differentiate between text domains. Example of what not to do:<br />\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">__( 'Translate me.' , $text_domain );</code></pre><br />\n</div></div>\n\n\n\n\n<h4 class=\"wp-block-heading\">Loading Translations</h4>\n\n\n\n<p>The translations in WordPress are saved in <code>.po</code> and <code>.mo</code> files which need to be loaded.\u00a0They can be loaded by using the functions <code><a href=\"https://developer.wordpress.org/reference/functions/load_theme_textdomain/\">load_theme_textdomain()</a></code> or <code><a href=\"https://developer.wordpress.org/reference/functions/load_child_theme_textdomain/\">load_child_theme_textdomain()</a></code>. This\u00a0loads <code>{locale}.mo</code> from your theme&#8217;s base directory or <code>{text-domain}-{locale}.mo</code> from the WordPress theme language folder in <code>/wp-content/languages/themes/</code>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">As of version 4.6 WordPress automatically checks the language directory in <code>wp-content</code>&nbsp;for translations from&nbsp;<a href=\"https://translate.wordpress.org/\">translate.wordpress.org</a>. This means that plugins that are translated via translate.wordpress.org do not&nbsp;require <code>load_plugin_textdomain()</code> anymore.<br />\nIf you don&#8217;t want to add a <code>load_plugin_textdomain()</code> call to your plugin you should set the <code>Requires at least:</code> field in your readme.txt to 4.6.<br />\n</div></div>\n\n\n\n\n<p>To find out more about the different language and country codes, see <a title=\"https://codex.wordpress.org/WordPress_in_Your_Language\" href=\"https://make.wordpress.org/polyglots/teams/\">the list of languages</a>.</p>\n\n\n\n<p><strong>Watch Out</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li>Name your MO file as <code>{locale}.mo</code> (e.g. de_DE.po &amp; de_DE.mo) if adding the translation to the theme folder.</li><li>Name your MO file as <code>{text-domain}-{locale}.mo</code> (e.g my-theme-de_DE.po &amp; my-theme-de_DE.mo) if you are adding the translation to the WordPress theme language folder.</li></ul>\n\n\n\n<p><strong>Example:</strong></p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">function my_theme_load_theme_textdomain() {\n    load_theme_textdomain( 'my-theme', get_template_directory() . '/languages' );\n}\nadd_action( 'after_setup_theme', 'my_theme_load_theme_textdomain' );</code></pre>\n\n\n\n<p>This function should ideally be run within the theme&#8217;s <code>function.php</code>.</p>\n\n\n\n<h5 class=\"wp-block-heading\">Language Packs</h5>\n\n\n\n<p>If you&#8217;re interested in language packs and how the import to <a href=\"https://translate.wordpress.org/\">translate.wordpress.org</a> is working, please read the <a href=\"https://make.wordpress.org/meta/handbook/documentation/translations/\">Meta Handbook page about Translations</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Internationalizing your theme</h2>\n\n\n\n<p>Now that your translations are loaded, you can start writing every string in your theme with Internationalization functions.</p>\n\n\n\n<p>Check the <a href=\"https://developer.wordpress.org/apis/handbook/internationalization/\">Internationalization</a> page on the <a href=\"https://developer.wordpress.org/apis/\">Common APIs Handbook</a> for more information and best practices.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11370",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11370",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 54,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11370/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 140368,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11370/revisions/140368"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11370"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

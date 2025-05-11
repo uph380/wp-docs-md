@@ -1,0 +1,109 @@
+{
+    "id": 10821629,
+    "date": "2018-10-27T12:50:11",
+    "date_gmt": "2018-10-27T12:50:11",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10821629"
+    },
+    "modified": "2023-01-11T19:45:04",
+    "modified_gmt": "2023-01-11T19:45:04",
+    "slug": "assign-custom-fields",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/assign-custom-fields/",
+    "title": {
+        "rendered": "Assign custom fields"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress has the ability to allow post authors to assign custom fields to a post. This arbitrary extra information is known as <strong>metadata</strong>. This <strong>metadata</strong> can include bits of information such as:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Mood:</strong> Happy</li><li><strong>Currently Reading:</strong> Cinderella</li><li><strong>Listening To:</strong> Rock Around the Clock</li><li><strong>Weather:</strong> Hot and humid</li></ul>\n\n\n\n<p>With some extra coding, it is possible to achieve more complex actions, such as using the <strong>metadata</strong> to store an expiration date for a post.</p>\n\n\n\n<p>Metadata is handled with <strong>key/value</strong> pairs. The <strong>key</strong> is the name of the metadata element. The <strong>value</strong> is the information that will appear in the metadata list on each individual post that the information is associated with.</p>\n\n\n\n<p><strong>Keys</strong> can be used more than once per post. For example, if you were reading two different books (perhaps a technical book at work and a fiction at home), you could create a &#8220;reading&#8221; key and use it twice on the same post, once for each book.</p>\n\n\n\n<p>Here is an example of what this information might look like on your post:</p>\n\n\n\n<pre class=\"wp-block-preformatted\"><strong>Currently Reading</strong>: <em>Calvin and Hobbes</em><br /><strong>Today's Mood</strong>: <em>Jolly and Happy</em></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Usage</h2>\n\n\n\n<p>Based upon our example above, let&#8217;s add two custom fields, one called &#8220;Currently Reading&#8221; and the other &#8220;Today&#8217;s Mood&#8221;. Please follow the below steps to add this information to a post using Custom Fields.</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Custom Fields options on the Post &amp; Page edit screens are hidden by default if they have not been used before. Using the Block Editor, click the three dots button at the top of the right sidebar and visit <strong>Options</strong> to enable it. (If you are using the Classic editor, check the <a href=\"https://wordpress.org/documentation/article/administration-screens/#screen-options\">screen options</a>).</li><li>After you have written your post, scroll down to the area titled <strong>Custom Fields</strong>. </li><li>To create a new <strong>Custom Field</strong> called &#8220;Currently Reading&#8221;, enter the text &#8220;Currently Reading&#8221; (without the quotes) in the text entry field titled <strong>Name</strong>.</li><li>The newly created <strong>Key</strong> (&#8220;Currently Reading&#8221;) should now be assigned a <strong>Value</strong>, which in our case is the name of the book currently being read, &#8220;Calvin and Hobbes&#8221;. Type &#8220;Calvin and Hobbes&#8221; in the <em>Value</em> field, again without the quotes.</li><li>Click <strong>Add Custom Field</strong> button to save this custom information for that post.</li></ol>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"658\" height=\"294\" src=\"https://wordpress.org/documentation/files/2018/10/custom_field_example.jpg\" alt=\"\" class=\"wp-image-10821652\" srcset=\"https://wordpress.org/documentation/files/2018/10/custom_field_example.jpg 658w, https://wordpress.org/documentation/files/2018/10/custom_field_example-300x134.jpg 300w\" sizes=\"auto, (max-width: 658px) 100vw, 658px\" /><figcaption>Custom Fields</figcaption></figure>\n\n\n\n<p>To add your &#8220;Today&#8217;s Mood&#8221;, repeat the process and add &#8220;Today&#8217;s Mood&#8221; to the <strong>key</strong> and a description of your mood in the <strong>value</strong> text boxes and click <strong>Add Custom Field </strong>to save this information with the post.</p>\n\n\n\n<p>On your next post, you can add a new book and mood to your metadata. In the <strong>Custom Fields</strong> section, the <strong>Key</strong> will now feature a pull-down list with the previously entered Custom Fields. Choose &#8220;Currently Reading&#8221; and then enter the new book you are reading in the <strong>value</strong>. Click <strong>Add Custom Field</strong> and then repeat the process to add &#8220;Today&#8217;s Mood&#8221;.</p>\n\n\n\n<p>You only need to create a new &#8220;KEY&#8221; <strong>once</strong>, after which you can assign a value to that key for every post, if you so desire. You can also assign more than one <em>Value</em> to a key, for a post. This will come in handy for people who read more than one book at a time.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Displaying Custom Fields</h2>\n\n\n\n<p>To display the Custom Fields for each post, you have to use a template tag that customizes your theme. For more details about it, please refer to:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/the_meta/\">the_meta() </a>&#8211; Template tag that automatically lists all Custom Fields of a post</li><li><a href=\"https://developer.wordpress.org/reference/functions/get_post_custom/\">get_post_custom()</a> and <a href=\"https://developer.wordpress.org/reference/functions/get_post_meta/\">get_post_meta()</a> &#8211; Retrieves one or all metadata of a post.</li><li><a href=\"https://developer.wordpress.org/reference/functions/get_post_custom_values/\">get_post_custom_values()</a> &#8211; Retrieves values for a custom post field.</li><li><a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a> &#8211; WordPress Theme Developers Handbook page on Template Tags</li></ul>\n\n\n\n<p>You may install a plugin that manages custom fields by searching &#8220;<a href=\"https://wordpress.org/plugins/search/custom+fields/\">custom fields</a>&#8221; in the plugins directory.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress has the ability to allow post authors to assign custom fields to a post. This arbitrary extra information is known as metadata. This metadata can include bits of information such as: Mood: Happy Currently Reading: Cinderella Listening To: Rock Around the Clock Weather: Hot and humid With some extra coding, it is possible to [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-10821629",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821629",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10821629"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821629/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355154,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821629/revisions/16355154"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10821629"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10821629"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

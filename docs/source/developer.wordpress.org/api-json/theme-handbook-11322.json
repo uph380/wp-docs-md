@@ -1,0 +1,97 @@
+{
+    "id": 11322,
+    "date": "2014-10-22T20:30:23",
+    "date_gmt": "2014-10-22T20:30:23",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11322"
+    },
+    "modified": "2017-03-17T14:35:51",
+    "modified_gmt": "2017-03-17T14:35:51",
+    "slug": "navigation-menus",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/navigation-menus/",
+    "title": {
+        "rendered": "Navigation Menus"
+    },
+    "content": {
+        "rendered": "<p>Navigation Menus are customizable menus in your theme. They allow users to add Pages, Posts, Categories, and URLs to the menu. To create a navigation menu you&#8217;ll need to register it, and then display the menu in the appropriate location in your theme.</p>\n<h2>Register Menus</h2>\n<p>In your theme&#8217;s functions.php, you need to register your menu(s). This sets the name that will\u00a0appear at <strong>Appearance -&gt; Menus</strong>.</p>\n<p>First of all, you will use <a href=\"https://developer.wordpress.org/reference/functions/register_nav_menus/\">register_nav_menus()</a> to register the menu.</p>\n<p>In this example, two locations are added to the &#8220;Manage Locations&#8221; tab: &#8220;Header Menu&#8221; and &#8220;Extra Menu&#8221;.</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">function register_my_menus() {\n  register_nav_menus(\n    array(\n      'header-menu' =&gt; __( 'Header Menu' ),\n      'extra-menu' =&gt; __( 'Extra Menu' )\n     )\n   );\n }\n add_action( 'init', 'register_my_menus' );</code></pre></p>\n<h2>Display Menus</h2>\n<p>Once you&#8217;ve registered your menus, you need to use <a href=\"https://developer.wordpress.org/reference/functions/wp_nav_menu/\">wp_nav_menu()</a> to tell your theme where to display them. For example, add the following code to your <code>header.php</code> file to display the header-menu that was registered above.</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">wp_nav_menu( array( 'theme_location' =&gt; 'header-menu' ) );</code></pre></p>\n<p>\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> A full list of parameters can be found in the <a href=\"https://developer.wordpress.org/reference/functions/wp_nav_menu/\">wp_nav_menu()</a> page in the function reference</div></div>\n</p>\n<p>Repeat this process for any additional menus you want to display in your theme. Optionally, you can add a container class which allows you to style the menu with CSS.</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">wp_nav_menu(\n  array(\n    'theme_location' =&gt; 'extra-menu',\n    'container_class' =&gt; 'my_extra_menu_class'\n  )\n);</code></pre></p>\n<p>\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> A full list of CSS Classes\u00a0can be found in the <a href=\"https://developer.wordpress.org/reference/functions/wp_nav_menu/\">wp_nav_menu()</a> page in the function reference. You can use these to style your menus. </div></div>\n</p>\n<h2>Display Additional Contents</h2>\n<p>Below is a simplified version of the Twenty Seventeen footer social menu, which displays <code>span</code> elements before and after the menu item label text.</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">wp_nav_menu(\n  array(\n    'menu' =&gt; 'primary',\n    'link_before' =&gt; '&lt;span class=&quot;screen-reader-text&quot;&gt;',\n    'link_after' =&gt; '&lt;/span&gt;',\n  )\n);</code></pre></p>\n<p>The output will display as&#8230;</p>\n<p>[html]<br />\n&lt;div class=&quot;menu-social-container&quot;&gt;<br />\n  &lt;ul id=&quot;menu-social&quot;&gt;<br />\n    &lt;li id=&quot;menu-item-1&quot;&gt;<br />\n      &lt;a href=&quot;http://twitter.com/&quot;&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Twitter&lt;/span&gt;<br />\n    &lt;/li&gt;<br />\n  &lt;/ul&gt;<br />\n&lt;/div&gt;<br />\n[/html]</p>\n<p>\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> To display text between the <code>&lt;li&gt;</code> and <code>&lt;a&gt;</code> elements for each menu item, use <code>before</code> and <code>after</code> parameters.</div></div>\n</p>\n<h2>Define Callback</h2>\n<p>By default, WordPress displays the first non-empty menu when the specified menu or location is not found, or generates a Page menu when there is no custom menu selected. To prevent this, use the <code>theme_location</code> and <code>fallback_cb</code> parameters.</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">wp_nav_menu(\n  array(\n    'menu' =&gt; 'primary',\n    // do not fall back to first non-empty menu\n    'theme_location' =&gt; '__no_such_location',\n    // do not fall back to wp_page_menu()\n    'fallback_cb' =&gt; false\n  )\n);</code></pre></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11322",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11322",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 18,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11322/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 25506,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11322/revisions/25506"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11322"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

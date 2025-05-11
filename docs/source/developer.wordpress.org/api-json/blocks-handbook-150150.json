@@ -1,0 +1,91 @@
+{
+    "id": 150150,
+    "date": "2023-11-13T16:25:01",
+    "date_gmt": "2023-11-13T16:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/quick-start-guide/"
+    },
+    "modified": "2024-04-29T15:09:37",
+    "modified_gmt": "2024-04-29T15:09:37",
+    "slug": "quick-start-guide",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/quick-start-guide/",
+    "title": {
+        "rendered": "Quick Start Guide"
+    },
+    "content": {
+        "rendered": "<p>This guide is designed to demonstrate the basic principles of block development in WordPress using a hands-on approach. Following the steps below, you will create a custom block plugin that uses modern JavaScript (ESNext and JSX) in a matter of minutes. The example block displays the copyright symbol (\u00a9) and the current year, the perfect addition to any website&#8217;s footer. You can see these steps in action through this short video demonstration.</p>\n<span class=\"embed-youtube\" style=\"text-align:center; display: block;\"><iframe loading=\"lazy\" class=\"youtube-player\" width=\"960\" height=\"540\" src=\"https://www.youtube.com/embed/nrut8SfXA44?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox\"></iframe></span>\n<h2>Scaffold the block plugin</h2>\n<p>Start by ensuring you have Node.js and <code>npm</code> installed on your computer. Review the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/nodejs-development-environment/\">Node.js development environment</a> guide if not.</p>\n<p>Next, use the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/\"><code>@wordpress/create-block</code></a> package and the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block-tutorial-template/\"><code>@wordpress/create-block-tutorial-template</code></a> template to scaffold the complete \u201cCopyright Date Block\u201d plugin.</p>\n<div class=\"callout callout-info\">\n    You can use <code>create-block</code> to scaffold a block just about anywhere and then use <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/\"><code>wp-env</code></a> inside the generated plugin folder. This will create a local WordPress development environment with your new block plugin installed and activated.<br />\n    If you already have your own <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/#local-wordpress-environment\">local WordPress development environment</a>, navigate to the <code>plugins/</code> folder using the terminal.\n</div>\n<p>Choose the folder where you want to create the plugin, and then execute the following command in the terminal from within that folder:</p>\n<pre><code class=\"language-sh\">npx @wordpress/create-block copyright-date-block --template @wordpress/create-block-tutorial-template\n</code></pre>\n<p>The <code>slug</code> provided (<code>copyright-date-block</code>) defines the folder name for the scaffolded plugin and the internal block name.</p>\n<p>Navigate to the Plugins page of your local WordPress installation and activate the \u201cCopyright Date Block\u201d plugin. The example block will then be available in the Editor.</p>\n<h2>Basic usage</h2>\n<p>With the plugin activated, you can explore how the block works. Use the following command to move into the newly created plugin folder and start the development process.</p>\n<pre><code class=\"language-sh\">cd copyright-date-block &amp;&amp; npm start\n</code></pre>\n<p>When <code>create-block</code> scaffolds the block, it installs <code>wp-scripts</code> and adds the most common scripts to the block\u2019s <code>package.json</code> file. Refer to the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/\">Get started with wp-scripts</a> article for an introduction to this package.</p>\n<p>The <code>npm start</code> command will start a development server and watch for changes in the block\u2019s code, rebuilding the block whenever modifications are made.</p>\n<p>When you are finished making changes, run the <code>npm run build</code> command. This optimizes the block code and makes it production-ready.</p>\n<h2>View the block in action</h2>\n<p>You can use any local WordPress development environment to test your new block, but the scaffolded plugin includes configuration for <code>wp-env</code>. You must have <a href=\"https://www.docker.com/products/docker-desktop\">Docker</a> already installed and running on your machine, but if you do, run the <code>npx wp-env start</code> command.</p>\n<p>Once the script finishes running, you can access the local environment at: <code>http://localhost:8888</code>. Log into the WordPress dashboard using username <code>admin</code> and password <code>password</code>. The plugin will already be installed and activated. Open the Editor or Site Editor, and insert the Copyright Date Block as you would any other block.</p>\n<p>Visit the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/\">Getting started</a> guide to learn more about <code>wp-env</code>.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\">Get started with create-block</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/\">Get started with wp-scripts</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/\">Get started with wp-env</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 137157,
+    "menu_order": 7,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-150150",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150150",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150150/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153614,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150150/revisions/153614"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137157"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=150150"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

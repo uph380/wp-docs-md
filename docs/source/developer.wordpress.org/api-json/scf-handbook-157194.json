@@ -1,0 +1,91 @@
+{
+    "id": 157194,
+    "date": "2025-02-21T04:17:14",
+    "date_gmt": "2025-02-21T04:17:14",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/text/"
+    },
+    "modified": "2025-02-21T04:17:29",
+    "modified_gmt": "2025-02-21T04:17:29",
+    "slug": "text",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/text/",
+    "title": {
+        "rendered": "Text Field"
+    },
+    "content": {
+        "rendered": "<p>The Text field provides a standard single-line text input with various formatting and validation options.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Text input</li>\n<li>Character limits</li>\n<li>Placeholder text</li>\n<li>Prepend/append</li>\n<li>Custom formatting</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Default Value &#8211; Preset text</li>\n<li>Placeholder &#8211; Input helper text</li>\n<li>Character Limit &#8211; Set max length</li>\n<li>Prepend &#8211; Text before input</li>\n<li>Append &#8211; Text after input</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157194",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157194",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157194/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157221,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157194/revisions/157221"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157194"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

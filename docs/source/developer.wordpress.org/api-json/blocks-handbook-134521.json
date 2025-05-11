@@ -1,0 +1,91 @@
+{
+    "id": 134521,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/"
+    },
+    "modified": "2024-10-30T16:55:33",
+    "modified_gmt": "2024-10-30T16:55:33",
+    "slug": "packages",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/",
+    "title": {
+        "rendered": "Package Reference"
+    },
+    "content": {
+        "rendered": "<p>WordPress exposes a list of JavaScript packages and tools for WordPress development.</p>\n<h2>Using the packages via WordPress global</h2>\n<p>JavaScript packages are available as a registered script in WordPress and can be accessed using the <code>wp</code> global variable.</p>\n<p>If you wanted to use the <code>PlainText</code> component from the block editor module, first you would specify <code>wp-block-editor</code> as a dependency when you enqueue your script:</p>\n<pre><code class=\"language-php\">wp_enqueue_script(\n    'my-custom-block',\n    plugins_url( $block_path, __FILE__ ),\n    array( 'react', 'wp-blocks', 'wp-block-editor', 'wp-i18n' )\n);\n</code></pre>\n<p>After the dependency is declared, you can access the module in your JavaScript code using the global <code>wp</code> like so:</p>\n<pre><code class=\"language-js\">const { PlainText } = wp.blockEditor;\n</code></pre>\n<h2>Using the packages via npm</h2>\n<p>All the packages are also available on <a href=\"https://www.npmjs.com/org/wordpress\">npm</a> if you want to bundle them in your code.</p>\n<p>Using the same <code>PlainText</code> example, you would install the block editor module with npm:</p>\n<pre><code class=\"language-bash\">npm install @wordpress/block-editor --save\n</code></pre>\n<p>Once installed, you can access the component in your code using:</p>\n<pre><code class=\"language-js\">import { PlainText } from '@wordpress/block-editor';\n</code></pre>\n<h2>Testing JavaScript code from a specific major WordPress version</h2>\n<p>There is a way to quickly install a version of the individual WordPress package used with a given WordPress major version using <a href=\"https://docs.npmjs.com/cli/v8/commands/npm-dist-tag\">npm distribution tags</a> (example for WordPress <code>5.8.x</code>):</p>\n<pre><code class=\"language-bash\">npm install @wordpress/block-editor@wp-5.8\n</code></pre>\n<p>It\u2019s also possible to update all existing WordPress packages in the project with a single command:</p>\n<pre><code class=\"language-bash\">npx @wordpress/scripts packages-update --dist-tag=wp-5.8\n</code></pre>\n<p>All major WordPress versions starting from <code>5.7.x</code> are supported (e.g., <code>wp-5.7</code> or <code>wp-6.0</code>). Each individual dist-tag always points to the latest bug fix release for that major version line.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134405,
+    "menu_order": 234,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134521",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151298,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521/revisions/151298"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134521"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

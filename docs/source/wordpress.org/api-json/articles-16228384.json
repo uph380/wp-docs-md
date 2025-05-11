@@ -1,0 +1,109 @@
+{
+    "id": 16228384,
+    "date": "2022-11-23T22:16:07",
+    "date_gmt": "2022-11-23T22:16:07",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16228384"
+    },
+    "modified": "2024-06-08T18:26:58",
+    "modified_gmt": "2024-06-08T18:26:58",
+    "slug": "post-template-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-template-block/",
+    "title": {
+        "rendered": "Post Template block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <strong>Post Template </strong>block is a container block that is nested in the <a href=\"https://wordpress.org/documentation/article/query-loop-block/\" data-type=\"helphub_article\" data-id=\"14633622\">Query Loop</a> block. This block contains inner block elements used to display a post in the Query loop block such as the post title, post content or excerpt, date, and featured image.</p>\n\n\n\n<p>To find the <strong>Post Template </strong>block, click the <strong>Block Inserter</strong> icon, then search for the <strong>Query Loop</strong> block. Click on it to insert the block to the editor. Alternatively, you can type <kbd>/query-loop</kbd> to quickly insert the Query Loop block. Click <strong>Choose</strong> to open a selection of patterns. Use the arrow icons (at the bottom) to move from one pattern to another. Click on the <strong>Choose</strong> button to confirm the selection.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/11/post-template-screencast.mp4\"></video></figure>\n\n\n\n<p>To have the <strong>Post Template </strong>block load only the posts from a specific category, <a href=\"https://wordpress.org/documentation/article/template-editor/#to-add-a-new-template\">add a new template</a> for that category in the <a href=\"https://wordpress.org/documentation/article/template-editor/\" data-type=\"helphub_article\" data-id=\"14632189\">Template Editor</a> and enable the <strong>inherit query</strong> under the Query Loop block settings.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>When users select a block, the block toolbar containing a number of control buttons will appear above the selected block. The <strong>Post Template</strong> block toolbar includes the following tools:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Select query loop</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh3.googleusercontent.com/ve-OYq2ig5Hu7Ukzu46rbtFUPs_krmsXnBkhSNDoHTUkD6FdlkaLW8qleS8Ayjykg3wRxKo_-BNqJiwbLMAKWVWTBvpBRjdUj2Pk7iT6oplhXRXg50sIrurvG9ZVxc_fAjHaWwN4HkmpNGS4y221YzTOLX1_1LGqaUHGgQUoCr26wSqBD-PICwbOih993g\" alt=\"Block toolbar in the Post Template block\" style=\"width:425px;height:98px\" width=\"425\" height=\"98\" /></figure>\n\n\n\n<p>This button will select the Query Loop block, which is the <strong>Post</strong><em> </em><strong>Template\u2019s</strong> parent block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/BkiGkbDRePR0AzGkvEDZfL6PyOM_IcK7560cdFHE5smMAK5c9MPbS3tR7qXsLNIHisKAk5vpiBPpqy5ChDvwyhkWou-Ns4U3NZBQ10wyFkWwJOO4YUEMeM5N1LifIgyeD-W2e5slVUdGtYn0kCBfAvt2puEBH8GSdYYdBhq9WEnP_kewdQZEiS-PDmILsA\" alt=\"Transform option in the Post Template block\" style=\"width:425px;height:98px\" width=\"425\" height=\"98\" /></figure>\n\n\n\n<p>Users can transform the <strong>Post Template</strong><em> </em>block into a <strong>Columns</strong> or a <strong>Group</strong> block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh3.googleusercontent.com/DrkI_6uKj0-P0LSC9sK6cc1vaAIjFPuSR6W7_VKmKUpgmtOvt5IVhrnk3GPk4yzHj5v8g6pLox8BTDHjVD6k-mBcXQp0fnKhZxH8KB8AyobZ22Lm6xmu3sl1YjH51qPBzV89EHZ9RL1j3V_66Eer6bFrFicQLAS0BGNskjlywFb_eQfgKJsmz3JharrEbA\" alt=\"Block moving tools in the Post Template block\" style=\"width:425px;height:98px\" width=\"425\" height=\"98\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the <strong>Post Template</strong> block. The six dots icon allows you to freely reposition the block anywhere within the editor by dragging and dropping it. You can also use the arrows icon to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/aJuuJl0HhzNAQ-ZUpyPSxj-vyE-qeNOCuiEBTdWXDeVInbNRgJMcMwTt8N-pxz51D8TNvndZUqWyAP9K2e3njX7dHqiyu07lCDGfeMY4OGN08YIRqPy4ZoLcjfx3aH0hcJEBi65TPPZRVDoTsBquzztYlLFwca71F3USXlwrjuddYRvh0vHSXUSYmGVdQw\" alt=\"Change alignment in the Post Template block\" style=\"width:425px;height:98px\" width=\"425\" height=\"98\" /></figure>\n\n\n\n<p>Use the change alignment tool to reposition the <strong>Post Template</strong> block inside the Query Loop block. The following is a list of the block alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Wide width</li>\n\n\n\n<li>Full width</li>\n\n\n\n<li>Align left</li>\n\n\n\n<li>Align center</li>\n\n\n\n<li>Align right</li>\n</ul>\n\n\n\n<p>When the parent Query Loop block\u2019s Layout settings &#8211; <strong>inner blocks use content width</strong> option is enabled, the <strong>Post Template</strong> block will inherit the layout settings from the parent Query Loop block.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/rgzEKxvx-2AJHWCTaCOKxogUxPSoNa9TeQnzvnwsEJL0UPS-42r2_LOBp_YdL0jBzfKjczLOz9ZEs9rBln8UxSEUBM7fAJSFLLJAkyx-1xwvycnoM1Vfab_RgQOik-1Zrsgf4OqvXBw8CIJQEKNAIrNqObWw9yRIQyAYsIOzFf_60zjvvEr6XhzElX23xw\" alt=\"Parent query loop block has layout settings enabled\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/pewGVfw20kp28blaxp5oFY6tmLNiLVeTcoV-IRjaz7PtjB9dY2gcvBuwrM8ih5kwW2zgOYYBktSgLpXGLNaJVefGOSSkM1dECNLo_o7t9Rm8sgybmxCOl59QtWHGJ7PYGqzPetWaSdpIcQ2DsOq8seEluO86k18VzUOodcvZPJ0uQIAoEOYAZirzcq8MEQ\" alt=\"More options in the Post Template block\" style=\"width:425px;height:98px\" width=\"425\" height=\"98\" /></figure>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by <strong>three vertical dots on the far right of the toolbar</strong> gives you more features such as the ability to duplicate, remove, or edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every WordPress block has specific configuration options in the editor sidebar as the additional settings in the block toolbar. To toggle the sidebar, you can click the cog icon.</p>\n\n\n\n<p>The <strong>Post Template</strong> block has two settings in the block settings panel.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <strong><strong>Post Template</strong></strong> block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The <strong>Advanced</strong> settings tab lets you add additional CSS classe(s) that allows you to write custom CSS styles for the block.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-11-23</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Post Template block is a container block that is nested in the Query Loop block. This block contains inner block elements used to display a post in the Query loop block such as the post title, post content or excerpt, date, and featured image. To find the [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16228384",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16228384",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16228384"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16228384/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360371,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16228384/revisions/16360371"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16228384"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16228384"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

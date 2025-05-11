@@ -1,0 +1,97 @@
+{
+    "id": 144484,
+    "date": "2022-11-20T20:07:14",
+    "date_gmt": "2022-11-20T20:07:14",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=144484"
+    },
+    "modified": "2025-01-07T14:34:01",
+    "modified_gmt": "2025-01-07T14:34:01",
+    "slug": "common-vulnerabilities",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/security/common-vulnerabilities/",
+    "title": {
+        "rendered": "Common Vulnerabilities"
+    },
+    "content": {
+        "rendered": "\n<p>Security is an ever-changing landscape, and vulnerabilities evolve over time. The following is a discussion of common vulnerabilities you should protect against, and the techniques for protecting your theme from exploitation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Types of Vulnerabilities</h2>\n\n\n\n<h3 class=\"wp-block-heading\">SQL&nbsp;Injection</h3>\n\n\n\n<p>SQL&nbsp;injection happens when values being inputted are not properly sanitized allowing for any SQL&nbsp;commands in the inputted data to potentially be executed. To prevent this, the WordPress API is extensive, offering functions like&nbsp;<code>add_post_meta();</code> instead of you needing to adding the post meta manually via SQL&nbsp;(<code>INSERT INTO wp_postmeta\u2026</code>).</p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/docs/files/2013/03/exploits_of_a_mom.png?ssl=1\" alt=\"exploits_of_a_mom\" class=\"wp-image-4237\" /></figure>\n\n\n\n<p><small>xkcd <a href=\"https://xkcd.com/327/\">Exploits of a Mom</a></small></p>\n\n\n\n<p>The first rule for hardening your theme against SQL&nbsp;injection is: When there\u2019s a WordPress function, use it.</p>\n\n\n\n<p>But sometimes you need to do complex queries, that have not been accounted for in the API. If this is the case, always use the&nbsp;<a href=\"https://developer.wordpress.org/reference/classes/wpdb/\"><code>$wpdb</code>&nbsp;functions</a>. These were built specifically to protect your database.</p>\n\n\n\n<p>All data in SQL queries must be SQL-escaped before the SQL query is executed to prevent against SQL injection attacks. The best function to use for SQL-escaping is <code>$wpdb-&gt;prepare()</code> which supports both a <a rel=\"noreferrer noopener\" href=\"http://secure.php.net/sprintf\" target=\"_blank\">sprintf()</a>-like and <a rel=\"noreferrer noopener\" href=\"http://secure.php.net/vsprintf\" target=\"_blank\">vsprintf()</a>-like syntax.</p>\n\n\n\n<pre class=\"wp-block-code has-small-font-size\"><code lang=\"php\" class=\"language-php line-numbers\">$wpdb-&gt;get_var( $wpdb-&gt;prepare(\n    \"SELECT something FROM table WHERE foo = %s and status = %d\",\n    $name, // an unescaped string (function will do the sanitization for you)\n    $status // an untrusted integer (function will do the sanitization for you)\n) );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Cross Site Scripting (XSS)</h3>\n\n\n\n<p>Cross Site Scripting (XSS) happens when a nefarious party injects JavaScript into a web&nbsp;page.</p>\n\n\n\n<p>Avoid XSS vulnerabilities&nbsp;by escaping output, stripping out unwanted data. As a theme&#8217;s primary responsibility is outputting content, a theme should&nbsp;<a href=\"https://developer.wordpress.org/themes/theme-security/data-sanitization-escaping/\">escape dynamic content</a> with the&nbsp;proper&nbsp;function depending on the type of the&nbsp;content.</p>\n\n\n\n<p>An example of one of the escaping functions is escaping URL from a user profile.</p>\n\n\n\n<pre class=\"wp-block-code has-small-font-size\"><code lang=\"php\" class=\"language-php\">&lt;img src=\"&lt;?php echo esc_url( $great_user_picture_url ); ?&gt;\" /&gt;</code></pre>\n\n\n\n<p>Content that has HTML entities within can be sanitized to allow only specified HTML elements.</p>\n\n\n\n<pre class=\"wp-block-code has-small-font-size\"><code lang=\"php\" class=\"language-php line-numbers\">$allowed_html = array(\n    'a' =&gt; array(\n        'href' =&gt; array(),\n        'title' =&gt; array()\n    ),\n    'br' =&gt; array(),\n    'em' =&gt; array(),\n    'strong' =&gt; array(),\n);\n\necho wp_kses( $custom_content, $allowed_html );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Cross-site Request Forgery (CSRF)</h3>\n\n\n\n<p>Cross-site request forgery&nbsp;or CSRF (pronounced sea-surf) is when a nefarious party tricks a user into&nbsp;performing an unwanted action within a web application they are authenticated in. For example, a phishing email might contain a link&nbsp;to a page that would&nbsp;delete a user&#8217;s account in the WordPress admin.</p>\n\n\n\n<p>If your theme includes any HTML or HTTP-based form submissions, use a\u00a0<a href=\"https://developer.wordpress.org/apis/security/nonces/\">nonce</a>\u00a0to guarantee a user intends to perform an action.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;form method=\"post\"&gt;\n    &lt;!-- some inputs here \u2026 --&gt;\n    &lt;?php wp_nonce_field( 'name_of_my_action', 'name_of_nonce_field' ); ?&gt;\n&lt;/form&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Staying Current</h3>\n\n\n\n<p>It is important to stay current on potential security holes. The following resources provide a good starting point:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/about/security/\">WordPress Security Whitepaper</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/news/category/security/\">WordPress Security Release</a></li>\n\n\n\n<li><a href=\"https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet\">Open Web Application Security Project (OWASP) Top 10</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 7756733,
+    "featured_media": 0,
+    "parent": 144458,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-144484",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144484",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7756733"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144484/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156187,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144484/revisions/156187"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144458"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=144484"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 15122,
+    "date": "2015-02-05T21:36:16",
+    "date_gmt": "2015-02-05T21:36:16",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=15122"
+    },
+    "modified": "2023-12-14T20:50:20",
+    "modified_gmt": "2023-12-14T20:50:20",
+    "slug": "taxonomies",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/taxonomies/",
+    "title": {
+        "rendered": "Taxonomies"
+    },
+    "content": {
+        "rendered": "\n<p>A <strong>Taxonomy</strong> is a fancy word for the classification/grouping of things. Taxonomies can be hierarchical (with parents/children) or flat.</p>\n\n\n\n<p>WordPress stores the Taxonomies in the <code>term_taxonomy</code> database table allowing developers to register Custom Taxonomies along the ones that already exist.</p>\n\n\n\n<p>Taxonomies have <strong>Terms</strong> which serve as the topic by which you classify/group things. They are stored inside the <code>terms</code> table.</p>\n\n\n\n<p>For example: a Taxonomy named &#8220;Art&#8221; can have multiple Terms, such as &#8220;Modern&#8221; and &#8220;18th Century&#8221;.</p>\n\n\n\n<p>This chapter will show you how to register Custom Taxonomies, how to retrieve their content from the database, and how to render them to the public.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nWordPress 3.4 and earlier had a Taxonomy named &#8220;Links&#8221; which was deprecated in WordPress 3.5.<br />\n</div></div>\n\n",
+        "protected": false
+    },
+    "author": 2881701,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 12,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-15122",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15122",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/2881701"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15122/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 137600,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15122/revisions/137600"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=15122"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

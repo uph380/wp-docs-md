@@ -1,0 +1,97 @@
+{
+    "id": 11070,
+    "date": "2014-09-24T18:50:36",
+    "date_gmt": "2014-09-24T18:50:36",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11070"
+    },
+    "modified": "2022-11-17T06:08:50",
+    "modified_gmt": "2022-11-17T06:08:50",
+    "slug": "working-with-custom-post-types",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/post-types/working-with-custom-post-types/",
+    "title": {
+        "rendered": "Working with Custom Post Types"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Custom Post Type Templates</h2>\n\n\n\n<p>You can create custom <a href=\"https://make.wordpress.org/docs/theme-developer-handbook/theme-basics/theme-files/\">templates</a> for your custom post types. In the same way posts and their archives can be displayed using <code>single.php</code> and <code>archive.php</code>, you can create the templates:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>single-{post_type}.php</code> &#8211; for single posts of a custom post type</li><li><code>archive-{post_type}.php</code> &#8211; for the archive</li></ul>\n\n\n\n<p>Where <code>{post_type}</code> is the post type identifier, used as the <code>$post_type</code> argument of the <code>register_post_type()</code> function.</p>\n\n\n\n<p>Building upon what we&#8217;ve learned previously, you could create <code>single-wporg_product.php</code> and <code>archive-wporg_product.php</code> template files for single product posts and the archive.</p>\n\n\n\n<p>Alternatively, you can use the <a href=\"https://developer.wordpress.org/reference/functions/is_post_type_archive/\" rel=\"function\">is_post_type_archive()</a>  function in any template file to check if the query shows an archive page of a given post type, and the <a href=\"https://developer.wordpress.org/reference/functions/post_type_archive_title/\" rel=\"function\">post_type_archive_title()</a> &nbsp;function to display the post type title.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Querying by Post Type</h2>\n\n\n\n<p>You can query posts of a specific type by passing the <code>post_type</code> key in the arguments array of the <code>WP_Query</code> class constructor.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args = array(\n\t'post_type'      =&gt; 'product',\n\t'posts_per_page' =&gt; 10,\n);\n$loop = new WP_Query($args);\nwhile ( $loop-&gt;have_posts() ) {\n\t$loop-&gt;the_post();\n\t?&gt;\n\t&lt;div class=\"entry-content\"&gt;\n\t\t&lt;?php the_title(); ?&gt;\n\t\t&lt;?php the_content(); ?&gt;\n\t&lt;/div&gt;\n\t&lt;?php\n}</code></pre>\n\n\n\n<p>This loops through the latest ten product posts and displays the title and content of them one by one.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Altering the Main Query</h2>\n\n\n\n<p>Registering a custom post type does not mean it gets added to the main query automatically.</p>\n\n\n\n<p>If you want your custom post type posts to show up on standard archives or include them on your home page mixed up with other post types, use the <code><a href=\"https://developer.wordpress.org/reference/hooks/pre_get_posts/\">pre_get_posts</a></code> action hook.</p>\n\n\n\n<p>The next example will show posts from <code>post</code>, <code>page</code> and <code>movie</code> post types on the home page:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_add_custom_post_types($query) {\n\tif ( is_home() &amp;&amp; $query-&gt;is_main_query() ) {\n\t\t$query-&gt;set( 'post_type', array( 'post', 'page', 'movie' ) );\n\t}\n\treturn $query;\n}\nadd_action('pre_get_posts', 'wporg_add_custom_post_types');</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11065,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11070",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11070",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11070/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144323,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11070/revisions/144323"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11065"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11070"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

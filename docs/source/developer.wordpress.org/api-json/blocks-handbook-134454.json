@@ -1,0 +1,91 @@
+{
+    "id": 134454,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/dimension-control/"
+    },
+    "modified": "2024-11-15T22:55:18",
+    "modified_gmt": "2024-11-15T22:55:18",
+    "slug": "dimension-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/dimension-control/",
+    "title": {
+        "rendered": "DimensionControl"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis component is deprecated.\n</div>\n<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>DimensionControl</code> is a component designed to provide a UI to control spacing and/or dimensions.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';\n\nexport default function MyCustomDimensionControl() {\n    const [ paddingSize, setPaddingSize ] = useState( &apos;&apos; );\n\n    return (\n        &lt;DimensionControl\n            __nextHasNoMarginBottom\n            __next40pxDefaultSize\n            label={ 'Padding' }\n            icon={ 'desktop' }\n            onChange={ ( value ) =&gt; setPaddingSize( value ) }\n            value={ paddingSize }\n        /&gt;\n    );\n}\n</code></pre>\n<p><em>Note:</em> by default, if you do not provide an initial <code>value</code> prop for the current dimension value, then no value will be selected (ie: there is no default dimension set).</p>\n<h2>Props</h2>\n<h3><code>label</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>string</code></li>\n<li><strong>Required:</strong> Yes</li>\n</ul>\n<p>The human readable label for the control.</p>\n<h3><code>value</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>string</code></li>\n<li><strong>Required:</strong> No</li>\n</ul>\n<p>The current value of the dimension UI control. If provided the UI with automatically select the value.</p>\n<h3><code>sizes</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>{ name: string; slug: string }[]</code></li>\n<li><strong>Default:</strong> See <code>packages/block-editor/src/components/dimension-control/sizes.ts</code></li>\n<li><strong>Required:</strong> No</li>\n</ul>\n<p>An optional array of size objects in the following shape:</p>\n<pre><code>[\n    {\n        name: __( 'Small' ),\n        slug: 'small',\n    },\n        {\n        name: __( 'Medium' ),\n        slug: 'small',\n    },\n    // ...etc\n]\n</code></pre>\n<p>By default a set of relative sizes (<code>small</code>, <code>medium</code>&#8230;etc) are provided. See <code>packages/block-editor/src/components/dimension-control/sizes.js</code>.</p>\n<h3><code>icon</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>string</code></li>\n<li><strong>Required:</strong> No</li>\n</ul>\n<p>An optional dashicon to display before to the control label.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>( value?: string ) =&gt; void;</code></li>\n<li><strong>Required:</strong> No</li>\n<li><strong>Arguments:</strong>:\n<ul>\n<li><code>size</code> &#8211; a string representing the selected size (eg: <code>medium</code>)</li>\n</ul>\n</li>\n</ul>\n<p>A callback which is triggered when a spacing size value changes (is selected/clicked).</p>\n<h3><code>className</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>string</code></li>\n<li><strong>Default:</strong> <code>&apos;&apos;</code></li>\n<li><strong>Required:</strong> No</li>\n</ul>\n<p>A string of classes to be added to the control component.</p>\n<h3><code>__next40pxDefaultSize</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>Boolean</code></li>\n<li><strong>Required:</strong> No</li>\n<li><strong>Default:</strong> <code>false</code></li>\n</ul>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<h3><code>__nextHasNoMarginBottom</code></h3>\n<ul>\n<li><strong>Type:</strong> <code>Boolean</code></li>\n<li><strong>Required:</strong> No</li>\n<li><strong>Default:</strong> <code>false</code></li>\n</ul>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 139,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134454",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134454",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134454/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155745,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134454/revisions/155745"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134454"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

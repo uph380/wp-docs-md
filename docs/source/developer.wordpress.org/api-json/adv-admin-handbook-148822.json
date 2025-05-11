@@ -1,0 +1,91 @@
+{
+    "id": 148822,
+    "date": "2023-09-14T15:13:27",
+    "date_gmt": "2023-09-14T15:13:27",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/advanced-administration/security/hardening/display-errors/"
+    },
+    "modified": "2024-01-16T20:30:02",
+    "modified_gmt": "2024-01-16T20:30:02",
+    "slug": "display-errors",
+    "status": "publish",
+    "type": "adv-admin-handbook",
+    "link": "https://developer.wordpress.org/advanced-administration/security/hardening/display-errors/",
+    "title": {
+        "rendered": "Display Errors"
+    },
+    "content": {
+        "rendered": "<h2>What is display_errors?</h2>\n<p><code>display_errors</code> is a directive found in PHP, found in the php.ini file. With this option, PHP determines whether or not errors should be printed directly on the page.</p>\n<h2>Why does display_errors need to be disabled?</h2>\n<p>According to <a href=\"https://www.php.net/manual/en/errorfunc.configuration.php#ini.display-errors\">PHP documentation</a>, it should never be enabled on production environments or live sites.</p>\n<p>While <code>display_errors</code> may provide useful information in debugging scenarios, there are potential security issues that need to be taken into account if it is activated. <a href=\"https://owasp.org/www-community/Improper_Error_Handling\">See OWASP article about improper error handling.</a></p>\n<p>However, some hosting companies have <code>display_errors</code> enabled by default. This may be due to a misconfiguration, such as trying to disable it by using a configuration that does not work in hosting environments where for example PHP is not running as a module, but with PHP FastCGI Process Manager (PHP-FPM).</p>\n<h2>How to disable display_errors</h2>\n<p>Check your hosting control panel to disable <code>display_errors</code> or reach out to your hosting provider.</p>\n<p>If your PHP is running as Apache module, you may be able to disable display_errors with the following .htaccess configuration:</p>\n<p><code>&lt;IfModule mod_php8.c&gt; php_flag display_errors off &lt;/IfModule&gt;</code></p>\n<p>If your server uses FastCGI/PHP-FPM, it may be possible disable the display_errors by ensuring that a .user.ini file with the following content:</p>\n<p><code>display_errors = 0</code></p>\n<p>If these examples do not work for you, or if you need more instructions, please reach out to your hosting provider.</p>\n<h2>Changelog</h2>\n<ul>\n<li>2023-09-14: Setup, and Adding text.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 145869,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148822",
+        "adv-admin-handbook",
+        "type-adv-admin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/148822",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/adv-admin-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/148822/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151920,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/148822/revisions/151920"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145869"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148822"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

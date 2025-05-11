@@ -1,0 +1,91 @@
+{
+    "id": 134433,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar-more-menu-item/"
+    },
+    "modified": "2024-11-18T21:55:19",
+    "modified_gmt": "2024-11-18T21:55:19",
+    "slug": "plugin-sidebar-more-menu-item",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar-more-menu-item/",
+    "title": {
+        "rendered": "PluginSidebarMoreMenuItem"
+    },
+    "content": {
+        "rendered": "<p>This slot is used to allow the opening of a <code>&lt;PluginSidebar /&gt;</code> panel from the Options dropdown.<br />\nWhen a <code>&lt;PluginSidebar /&gt;</code> is registered, a <code>&lt;PluginSidebarMoreMenuItem /&gt;</code> is automatically registered using the title prop from the <code>&lt;PluginSidebar /&gt;</code> and so it&#8217;s not required to use this slot to create the menu item.</p>\n<h2>Example</h2>\n<p>This example shows how customize the text for the menu item instead of using the default text provided by the <code>&lt;PluginSidebar /&gt;</code> title.</p>\n<pre><code class=\"language-js\">import { __ } from '@wordpress/i18n';\nimport { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/editor';\nimport {\n    PanelBody,\n    Button,\n    TextControl,\n    SelectControl,\n} from '@wordpress/components';\nimport { registerPlugin } from '@wordpress/plugins';\nimport { useState } from '@wordpress/element';\nimport { image } from '@wordpress/icons';\n\nconst PluginSidebarMoreMenuItemTest = () =&gt; {\n    const [ text, setText ] = useState( &apos;&apos; );\n    const [ select, setSelect ] = useState( 'a' );\n    return (\n        &lt;&gt;\n            &lt;PluginSidebarMoreMenuItem target=\"sidebar-name\" icon={ image }&gt;\n                { __( 'Custom Menu Item Text' ) }\n            &lt;/PluginSidebarMoreMenuItem&gt;\n            &lt;PluginSidebar\n                name=\"sidebar-name\"\n                icon={ image }\n                title=\"My Sidebar\"\n            &gt;\n                &lt;PanelBody&gt;\n                    &lt;h2&gt;\n                        { __(\n                            'This is a heading for the PluginSidebar example.'\n                        ) }\n                    &lt;/h2&gt;\n                    &lt;p&gt;\n                        { __(\n                            'This is some example text for the PluginSidebar example.'\n                        ) }\n                    &lt;/p&gt;\n                    &lt;TextControl\n                        __nextHasNoMarginBottom\n                        __next40pxDefaultSize\n                        label={ __( 'Text Control' ) }\n                        value={ text }\n                        onChange={ ( newText ) =&gt; setText( newText ) }\n                    /&gt;\n                    &lt;SelectControl\n                        label={ __( 'Select Control' ) }\n                        value={ select }\n                        options={ [\n                            { value: 'a', label: __( 'Option A' ) },\n                            { value: 'b', label: __( 'Option B' ) },\n                            { value: 'c', label: __( 'Option C' ) },\n                        ] }\n                        onChange={ ( newSelect ) =&gt; setSelect( newSelect ) }\n                    /&gt;\n                    &lt;Button variant=\"primary\"&gt;\n                        { __( 'Primary Button' ) }{ ' ' }\n                    &lt;/Button&gt;\n                &lt;/PanelBody&gt;\n            &lt;/PluginSidebar&gt;\n        &lt;/&gt;\n    );\n};\n\nregisterPlugin( 'plugin-sidebar-more-menu-item-example', {\n    render: PluginSidebarMoreMenuItemTest,\n} );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/08/pluginsidebar-more-menu-item-1.gif?ssl=1\" alt=\"Interaction\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 102,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134433",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134433",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134433/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155770,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134433/revisions/155770"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134433"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

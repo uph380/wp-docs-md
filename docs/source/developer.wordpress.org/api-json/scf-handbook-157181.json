@@ -1,0 +1,97 @@
+{
+    "id": 157181,
+    "date": "2025-02-21T04:17:12",
+    "date_gmt": "2025-02-21T04:17:12",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/class-acf-rest-request-file/"
+    },
+    "modified": "2025-02-21T05:51:49",
+    "modified_gmt": "2025-02-21T05:51:49",
+    "slug": "class-acf-rest-request-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-request-file/",
+    "title": {
+        "rendered": "ACF_Rest_Request"
+    },
+    "content": {
+        "rendered": "<p>Class ACF_Rest_Request</p>\n<h2>Properties</h2>\n<h3><code>$readonly_props</code></h3>\n<p>Define which private/protected class properties are allowed read access. Access to these is controlled in<br />\n\\ACF_Rest_Request::__get();</p>\n<ul>\n<li>@var string[]</li>\n</ul>\n<h3><code>$http_method</code></h3>\n<ul>\n<li>@var string The HTTP request method for the current request. i.e; GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD</li>\n</ul>\n<h3><code>$current_route</code></h3>\n<ul>\n<li>@var string The current route being requested.</li>\n</ul>\n<h3><code>$supported_routes</code></h3>\n<ul>\n<li>@var array Route URL patterns we support.</li>\n</ul>\n<h3><code>$url_params</code></h3>\n<ul>\n<li>@var array Parameters matched from the URL. e.g; object IDs.</li>\n</ul>\n<h3><code>$object_type</code></h3>\n<ul>\n<li>@var string The underlying object type. e.g; post, term, user, etc.</li>\n</ul>\n<h3><code>$object_sub_type</code></h3>\n<ul>\n<li>@var string The requested object type.</li>\n</ul>\n<h3><code>$child_object_type</code></h3>\n<ul>\n<li>@var string The object type for a child object. e.g. post-revision, autosaves, etc.</li>\n</ul>\n<h2>Methods</h2>\n<h3><code>parse_request</code></h3>\n<p>Determine all required information from the current request.</p>\n<h3><code>__get</code></h3>\n<p>Magic getter for accessing read-only properties. Should we ever need to enforce a getter method, we can do so here.</p>\n<ul>\n<li>@param string $name The desired property name.</li>\n<li>@return string|null</li>\n</ul>\n<h3><code>get_url_param</code></h3>\n<p>Get a URL parameter if found on the request URL.</p>\n<ul>\n<li>@param $param</li>\n<li>@return mixed|null</li>\n</ul>\n<h3><code>set_http_method</code></h3>\n<p>Determine the HTTP method of the current request.</p>\n<h3><code>set_current_route</code></h3>\n<p>Get the current REST route as determined by WordPress.</p>\n<h3><code>build_supported_routes</code></h3>\n<p>Build an array of route match patterns that we handle. These are the same as WordPress&#8217; core patterns except<br />\nwe are also matching the object type here as well.</p>\n<h3><code>set_url_params</code></h3>\n<p>Loop through supported routes to find matching pattern. Use matching pattern to determine any URL parameters.</p>\n<h3><code>set_object_types</code></h3>\n<p>Determine the object type and sub type from the requested route. We need to know both the underlying WordPress<br />\nobject type as well as post type or taxonomy in order to provide the right context when getting/updating fields.</p>\n<h3><code>get_post_type_by_rest_base</code></h3>\n<p>Find the REST enabled post type object that matches the given REST base.</p>\n<ul>\n<li>@param string $rest_base</li>\n<li>@return <a href=\"https://developer.wordpress.org/reference/classes/wp_post_type/\" rel=\"class\">WP_Post_Type</a>|null</li>\n</ul>\n<h3><code>get_taxonomy_by_rest_base</code></h3>\n<p>Find the REST enabled taxonomy object that matches the given REST base.</p>\n<ul>\n<li>@param $rest_base</li>\n<li>@return <a href=\"https://developer.wordpress.org/reference/classes/wp_taxonomy/\" rel=\"class\">WP_Taxonomy</a>|null</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 7879583,
+    "featured_media": 0,
+    "parent": 157177,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157181",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157181",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7879583"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157181/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157234,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157181/revisions/157234"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157177"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157181"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

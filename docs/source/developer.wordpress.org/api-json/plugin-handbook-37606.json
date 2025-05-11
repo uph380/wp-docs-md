@@ -1,0 +1,97 @@
+{
+    "id": 37606,
+    "date": "2018-04-12T15:46:44",
+    "date_gmt": "2018-04-12T15:46:44",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=37606"
+    },
+    "modified": "2018-04-12T15:46:44",
+    "modified_gmt": "2018-04-12T15:46:44",
+    "slug": "compliance-disclaimers",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/compliance-disclaimers/",
+    "title": {
+        "rendered": "Compliance Disclaimers"
+    },
+    "content": {
+        "rendered": "<p>As of <strong>April 12, 2018</strong>,\u00a0<a href=\"https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#9-developers-and-their-plugins-must-not-do-anything-illegal-dishonest-or-morally-offensive\">Guideline 9</a> (Developers and their plugins must not do anything illegal, dishonest, or morally offensive.) has been amended to include the following new prohibition:</p>\n<ul>\n<li>implying that a plugin can create, provide, automate, or guarantee legal compliance</li>\n</ul>\n<p>Some plugins offer to assist a site with being &#8216;compliant&#8217; with laws like the ADA, GDPR, EU Cookie Law, VAT, HIPPA, PCI, and so on.</p>\n<p>No plugin can offer 100% legal compliance. They can (and do) assist sites with being more compliant. Still, at the end of the day, the responsibility remains with the site administrators to ensure their sites meet the qualifications for any compliance. Even services are not providing full compliance, just compliance when <em>their</em>\u00a0service is in use.</p>\n<p>In order to make this more clear to site administrators, we recommend that plugins do <strong>not</strong> claim to be 100% compliant, and instead to explain that the plugin itself will assist in compliance. This has the added benefit of protecting developers in the case where compliance guidelines change and the plugin has not yet been updated.</p>\n<h2>What do I need to do?</h2>\n<p>tl;dr: Update your readme, documentation, assets (banners, screenshots, etc), and descriptions to clearly state that your plugin is meant to <strong>assist</strong>\u00a0in compliance.</p>\n<p>For example, if your plugin says it &#8220;will make your website ADA compliant.&#8221; you should change that to &#8220;will help make your website more ADA compliant.&#8221; In addition, it would be wise to add in a note that &#8220;no plugin can provide 100% compliance&#8221; and then enumerate what yours does to get people closer. It&#8217;ll help your sales pitches too!</p>\n<p>&nbsp;</p>\n<h2>Do I need to change my plugin display name?</h2>\n<p>If your plugin name claims or implies compliance, yes.</p>\n<p>For example, if your plugin display name is &#8220;100% EU Cookie Law Compliance&#8221; or &#8220;VAT-MOSS Compliance&#8221; then you should change the display name to &#8220;Improve EU Cookie Law Compliance&#8221; or &#8220;VAT-MOSS Compliance Assistant&#8221;</p>\n<p>Keep in mind, a BETTER plugin name would be one that is unique to you. Remember, people can find &#8220;Foobar&#8217;s EU Cookie Law Tools&#8221; easier than &#8220;EU Cookie Law Tools&#8221; &#8211; they&#8217;ll remember your name easier.</p>\n<h2>My plugin&#8217;s a service and is 100% compliant. Do I still need to do this?</h2>\n<p>Yes, but in a slightly different way.</p>\n<p>A service assumes the responsibility for the compliance needed in those cases, and that&#8217;s what needs to be clear in the readme: it&#8217;s not the plugin code, it&#8217;s the service. We strongly recommend you link to your proof of compliance, and that is has a date on it.</p>\n<p>For example, instead of saying &#8220;Foobar Payment Plugin is PCI compliant.&#8221; you could say &#8220;The Foobar Payment Gateway Service handles PCI compliance, however this only pertains to purchases made using our gateway. Full details on our compliance can be found in our <code>[documentation](https://service-name.com/doc/)</code>.&#8221;</p>\n<h2>My plugin uses a 3rd party library that claims 100% compliance. Do I need to change that?</h2>\n<p>Not unless you also claim it in your own readme/documentation. Though you should be a good human and warn them that what they&#8217;re doing isn&#8217;t really accurate.</p>\n<h2>I only talk about 100% XHTML compliance. Do I have to change things?</h2>\n<p>Technically no, but &#8230; can you\u00a0<strong>really</strong> promise 100% compliance forever and ever? Probably best to change that and just say &#8220;Updated for further XHTML compliance.&#8221; Check out how WordPress.org handles <a href=\"https://wordpress.org/about/accessibility/\">Accessibility compliance</a> for a good place to start.</p>\n<p>&nbsp;</p>\n<h2>What happens if I don&#8217;t do this?</h2>\n<p>If we find you&#8217;re making inaccurate claims, we will warn you. Then if it&#8217;s not fixed in a reasonable amount of time (60 days) your plugin may be closed.\u00a0Worst than that, however, you open yourself up for legal disputes. This is not actually our responsibility to protect you from, however we feel that being good stewards of open source includes educating you as to these things. Essential, this is something that could seriously hurt you (or your company), and we&#8217;d rather that not happen.</p>\n<p>In addition, from this point forward, if your plugin is closed for other issues (guideline or security related), we will require you to update the readme before we will reopen the plugin.</p>\n<p>&nbsp;</p>\n<h2>How do I report other plugins for this violation?</h2>\n<p>Same way you would anything. Email <code>plugins@wordpress.org</code>\u00a0with a link to their plugin and an explanation as to why you feel they&#8217;re in violation. Keep in mind, closing a plugin is a last resort, so we may already be talking to them about it. Also remember pointing out other people making this mistake doesn&#8217;t give you a free pass. You have to fix your own stuff too.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-37606",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37606",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37606/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 37607,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37606/revisions/37607"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=37606"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

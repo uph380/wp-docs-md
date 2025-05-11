@@ -1,0 +1,91 @@
+{
+    "id": 134432,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar/"
+    },
+    "modified": "2024-11-18T21:55:19",
+    "modified_gmt": "2024-11-18T21:55:19",
+    "slug": "plugin-sidebar",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar/",
+    "title": {
+        "rendered": "PluginSidebar"
+    },
+    "content": {
+        "rendered": "<p>This slot allows adding items to the tool bar of either the Post or Site editor screens.<br />\nUsing this slot will add an icon to the toolbar that, when clicked, opens a panel with containing the items wrapped in the <code>&lt;PluginSidebar /&gt;</code> component.<br />\nAdditionally, it will also create a <code>&lt;PluginSidebarMoreMenuItem /&gt;</code> that will allow opening the panel from Options panel when clicked.</p>\n<h2>Example</h2>\n<pre><code class=\"language-jsx\">import { __ } from '@wordpress/i18n';\nimport { PluginSidebar } from '@wordpress/editor';\nimport {\n    PanelBody,\n    Button,\n    TextControl,\n    SelectControl,\n} from '@wordpress/components';\nimport { registerPlugin } from '@wordpress/plugins';\nimport { useState } from '@wordpress/element';\n\nconst PluginSidebarExample = () =&gt; {\n    const [ text, setText ] = useState( &apos;&apos; );\n    const [ select, setSelect ] = useState( 'a' );\n\n    return (\n        &lt;PluginSidebar\n            name=\"plugin-sidebar-example\"\n            title={ __( 'My PluginSidebar' ) }\n            icon={ 'smiley' }\n        &gt;\n            &lt;PanelBody&gt;\n                &lt;h2&gt;\n                    { __( 'This is a heading for the PluginSidebar example.' ) }\n                &lt;/h2&gt;\n                &lt;p&gt;\n                    { __(\n                        'This is some example text for the PluginSidebar example.'\n                    ) }\n                &lt;/p&gt;\n                &lt;TextControl\n                    __nextHasNoMarginBottom\n                    __next40pxDefaultSize\n                    label={ __( 'Text Control' ) }\n                    value={ text }\n                    onChange={ ( newText ) =&gt; setText( newText ) }\n                /&gt;\n                &lt;SelectControl\n                    label={ __( 'Select Control' ) }\n                    value={ select }\n                    options={ [\n                        { value: 'a', label: 'Option A' },\n                        { value: 'b', label: 'Option B' },\n                        { value: 'c', label: 'Option C' },\n                    ] }\n                    onChange={ ( newSelect ) =&gt; setSelect( newSelect ) }\n                /&gt;\n                &lt;Button variant=\"primary\"&gt;{ __( 'Primary Button' ) } &lt;/Button&gt;\n            &lt;/PanelBody&gt;\n        &lt;/PluginSidebar&gt;\n    );\n};\n\n// Register the plugin.\nregisterPlugin( 'plugin-sidebar-example', { render: PluginSidebarExample } );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/08/plugin-sidebar-example.png?ssl=1\" alt=\"PluginSidebar example expanded\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 101,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134432",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134432",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134432/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155771,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134432/revisions/155771"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134432"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

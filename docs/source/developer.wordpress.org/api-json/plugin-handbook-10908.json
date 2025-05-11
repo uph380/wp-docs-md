@@ -1,0 +1,97 @@
+{
+    "id": 10908,
+    "date": "2014-09-16T17:01:06",
+    "date_gmt": "2014-09-16T17:01:06",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10908"
+    },
+    "modified": "2024-05-08T22:36:53",
+    "modified_gmt": "2024-05-08T22:36:53",
+    "slug": "header-requirements",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/plugin-basics/header-requirements/",
+    "title": {
+        "rendered": "Header Requirements"
+    },
+    "content": {
+        "rendered": "\n<p>As described in <a href=\"https://developer.wordpress.org/plugins/plugin-basics/#getting-started\">Getting Started</a>, the main PHP file should include header comment what tells WordPress that a file is a plugin and provides information about the plugin.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Minimum Fields</h2>\n\n\n\n<p>At a minimum, a header comment must contain the Plugin Name:</p>\n\n\n\n<pre class=\"wp-block-code notranslate\"><code lang=\"php\" class=\"language-php\">/*\n * Plugin Name: YOUR PLUGIN NAME\n */</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Header Fields</h2>\n\n\n\n<p>Available header fields:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Plugin Name:</strong> (<em>required</em>) The name of your plugin, which will be displayed in the Plugins list in the WordPress Admin.</li>\n\n\n\n<li><strong>Plugin URI:</strong> The home page of the plugin, which should be a unique URL, preferably on your own website. This <em>must be unique</em> to your plugin. You cannot use a WordPress.org URL here.</li>\n\n\n\n<li><strong>Description:</strong> A short description of the plugin, as displayed in the Plugins section in the WordPress Admin. Keep this description to fewer than 140 characters.</li>\n\n\n\n<li><strong>Version:</strong> The current version number of the plugin, such as 1.0 or 1.0.3. </li>\n\n\n\n<li><strong>Requires at least:</strong> The lowest WordPress version that the plugin will work on.</li>\n\n\n\n<li><strong>Requires PHP:</strong> The minimum required PHP version.</li>\n\n\n\n<li><strong>Author:</strong> The name of the plugin author. Multiple authors may be listed using commas.</li>\n\n\n\n<li><strong>Author URI:</strong> The author&#8217;s website or profile on another website, such as WordPress.org.</li>\n\n\n\n<li><strong>License:</strong> The short name (slug) of the plugin&#8217;s license (e.g. GPLv2). More information about licensing can be found in the <a href=\"https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/#1-plugins-must-be-compatible-with-the-gnu-general-public-license\">WordPress.org guidelines</a>.</li>\n\n\n\n<li><strong>License URI:</strong> A link to the full text of the license (e.g. <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\">https://www.gnu.org/licenses/gpl-2.0.html</a>).</li>\n\n\n\n<li><strong>Text Domain:</strong> The <a href=\"https://www.gnu.org/software/gettext/\">gettext</a> text domain of the plugin. More information can be found in the <a href=\"https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#text-domains\">Text Domain</a> section of the <a href=\"https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/\">How to Internationalize your Plugin</a> page.</li>\n\n\n\n<li><strong>Domain Path:</strong> The domain path lets WordPress know where to find the translations. More information can be found in the <a href=\"https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#domain-path\">Domain Path</a> section of the <a href=\"https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/\">How to Internationalize your Plugin</a> page.</li>\n\n\n\n<li><strong>Network: </strong>Whether the plugin can only be activated network-wide. Can only be set to <em>true</em>, and should be left out when not needed.</li>\n\n\n\n<li><strong>Update URI:</strong> Allows third-party plugins to avoid accidentally being overwritten with an update of a plugin of a similar name from the&nbsp;WordPress.org&nbsp;Plugin Directory. For more info read related <a href=\"https://make.wordpress.org/core/2021/06/29/introducing-update-uri-plugin-header-in-wordpress-5-8/\">dev note</a>.</li>\n\n\n\n<li><strong>Requires Plugins</strong>: A comma-separated list of&nbsp;WordPress.org-formatted slugs for its dependencies, such as&nbsp;<code>my-plugin</code>&nbsp;(<code>my-plugin/my-plugin.php</code>&nbsp;is not supported). It does not support commas in plugin slugs. For more info read the related <a href=\"https://make.wordpress.org/core/2024/03/05/introducing-plugin-dependencies-in-wordpress-6-5/\">dev note</a>.</li>\n</ul>\n\n\n\n<p>A valid PHP file with a header comment might look like this:</p>\n\n\n\n<pre class=\"wp-block-code notranslate\"><code lang=\"php\" class=\"language-php\">/*\n * Plugin Name:       My Basics Plugin\n * Plugin URI:        https://example.com/plugins/the-basics/\n * Description:       Handle the basics with this plugin.\n * Version:           1.10.3\n * Requires at least: 5.2\n * Requires PHP:      7.2\n * Author:            John Smith\n * Author URI:        https://author.example.com/\n * License:           GPL v2 or later\n * License URI:       https://www.gnu.org/licenses/gpl-2.0.html\n * Update URI:        https://example.com/my-plugin/\n * Text Domain:       my-basics-plugin\n * Domain Path:       /languages\n * Requires Plugins:  my-plugin, yet-another-plugin\n */</code></pre>\n\n\n\n<p>Here&#8217;s another example which allows file-level PHPDoc DocBlock as well as WordPress plugin file headers:</p>\n\n\n\n<pre class=\"wp-block-code expanded notranslate\"><code lang=\"php\" class=\"language-php\">/**\n * Plugin Name\n *\n * @package           PluginPackage\n * @author            Your Name\n * @copyright         2019 Your Name or Company Name\n * @license           GPL-2.0-or-later\n *\n * @wordpress-plugin\n * Plugin Name:       Plugin Name\n * Plugin URI:        https://example.com/plugin-name\n * Description:       Description of the plugin.\n * Version:           1.0.0\n * Requires at least: 5.2\n * Requires PHP:      7.2\n * Author:            Your Name\n * Author URI:        https://example.com\n * Text Domain:       plugin-slug\n * License:           GPL v2 or later\n * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt\n * Update URI:        https://example.com/my-plugin/\n * Requires Plugins:  my-plugin, yet-another-plugin\n */</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Notes</h2>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">When assigning a version number to your project, keep in mind that WordPress uses the PHP version_compare() function to compare plugin version numbers. Therefore, before you release a new version of your plugin, you should make sure that this PHP function considers the new version to be \u201cgreater\u201d than the old one.  For example, 1.02 is actually greater than 1.1.</div></div>\n\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10903,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10908",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10908",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 52,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10908/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153748,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10908/revisions/153748"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10903"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10908"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

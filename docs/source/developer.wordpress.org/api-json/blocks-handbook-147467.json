@@ -1,0 +1,91 @@
+{
+    "id": 147467,
+    "date": "2023-05-05T06:10:01",
+    "date_gmt": "2023-05-05T06:10:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-test-utils-playwright/"
+    },
+    "modified": "2024-10-30T17:09:44",
+    "modified_gmt": "2024-10-30T17:09:44",
+    "slug": "packages-e2e-test-utils-playwright",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-test-utils-playwright/",
+    "title": {
+        "rendered": "@wordpress/e2e-test-utils-playwright"
+    },
+    "content": {
+        "rendered": "<p>End-To-End (E2E) Playwright test utils for WordPress.</p>\n<p><em>It works properly with the minimum version of Gutenberg <code>9.2.0</code> or the minimum version of WordPress <code>5.6.0</code>.</em></p>\n<div class=\"callout callout-alert\">\nThis package is still under active development. Documentation might not be up-to-date, and the <code>v0.x</code> version can introduce breaking changes without a detailed migration guide. Early adopters are encouraged to use a <a href=\"https://docs.npmjs.com/cli/v9/configuring-npm/package-lock-json\">lock file</a> to prevent unexpected breakages.\n</div>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/e2e-test-utils-playwright --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>API</h2>\n<h3>test</h3>\n<p>The extended Playwright&#8217;s <a href=\"https://playwright.dev/docs/api/class-test\">test</a> module with the <code>admin</code>, <code>editor</code>, <code>pageUtils</code> and the <code>requestUtils</code> fixtures.</p>\n<h3>expect</h3>\n<p>The Playwright/Jest&#8217;s <a href=\"https://jestjs.io/docs/expect\">expect</a> function.</p>\n<h3>Admin</h3>\n<p>End to end test utilities for WordPress admin&#8217;s user interface.</p>\n<pre><code class=\"language-js\">const admin = new Admin( { page, pageUtils } );\nawait admin.visitAdminPage( 'options-general.php' );\n</code></pre>\n<h3>Editor</h3>\n<p>End to end test utilities for the WordPress Block Editor.</p>\n<p>To use these utilities, instantiate them within each test file:</p>\n<pre><code class=\"language-js\">test.use( {\n    editor: async ( { page }, use ) =&gt; {\n        await use( new Editor( { page } ) );\n    },\n} );\n</code></pre>\n<p>Within a test or test utility, use the <code>canvas</code> property to select elements within the iframe canvas:</p>\n<pre><code class=\"language-js\">await editor.canvas.locator( 'role=document[name=\"Paragraph block\"i]' );\n</code></pre>\n<h3>PageUtils</h3>\n<p>Generic Playwright utilities for interacting with web pages.</p>\n<pre><code class=\"language-js\">const pageUtils = new PageUtils( { page } );\nawait pageUtils.pressKeys( 'primary+a' );\n</code></pre>\n<h3>RequestUtils</h3>\n<p>Playwright utilities for interacting with the WordPress REST API.</p>\n<p>Create a request utils instance.</p>\n<pre><code class=\"language-js\">const requestUtils = await RequestUtils.setup( {\n    user: {\n        username: 'admin',\n        password: 'password',\n    },\n} );\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 270,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147467",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147467",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147467/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153837,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147467/revisions/153837"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147467"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

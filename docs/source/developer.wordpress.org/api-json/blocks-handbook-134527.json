@@ -1,0 +1,91 @@
+{
+    "id": 134527,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-plugin-makepot/"
+    },
+    "modified": "2024-10-30T16:55:32",
+    "modified_gmt": "2024-10-30T16:55:32",
+    "slug": "packages-babel-plugin-makepot",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-plugin-makepot/",
+    "title": {
+        "rendered": "@wordpress/babel-plugin-makepot"
+    },
+    "content": {
+        "rendered": "<p>Babel plugin used to scan JavaScript files for use of localization functions. It then compiles these into a <a href=\"https://en.wikipedia.org/wiki/Gettext\">gettext POT formatted</a> file as a template for translation. By default the output file will be written to <code>gettext.pot</code> of the root project directory. This can be overridden using the <code>\"output\"</code> option of the plugin.</p>\n<pre><code class=\"language-json\">{\n    \"plugins\": [\n        [\n            \"@wordpress/babel-plugin-makepot\",\n            { \"output\": \"languages/myplugin.pot\" }\n        ]\n    ]\n}\n</code></pre>\n<h2>Installation</h2>\n<p>Install the module:</p>\n<pre><code class=\"language-bash\">npm install @wordpress/babel-plugin-makepot --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 240,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134527",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134527",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134527/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153855,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134527/revisions/153855"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134527"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

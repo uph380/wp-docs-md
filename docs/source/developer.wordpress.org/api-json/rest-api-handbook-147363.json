@@ -1,0 +1,91 @@
+{
+    "id": 147363,
+    "date": "2023-04-26T10:55:33",
+    "date_gmt": "2023-04-26T10:55:33",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/block-patterns/"
+    },
+    "modified": "2024-01-16T20:30:13",
+    "modified_gmt": "2024-01-16T20:30:13",
+    "slug": "block-patterns",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/block-patterns/",
+    "title": {
+        "rendered": "Block Patterns"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a block pattern record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                The pattern name.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-title\">\n<td>\n                <code>title</code>\n            </td>\n<td>\n                The pattern title, in human readable format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-content\">\n<td>\n                <code>content</code>\n            </td>\n<td>\n                The pattern content.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                The pattern detailed description.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-viewport_width\">\n<td>\n                <code>viewport_width</code>\n            </td>\n<td>\n                The pattern viewport width for inserter preview.</p>\n<p class=\"type\">\n                    JSON data type: number              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-inserter\">\n<td>\n                <code>inserter</code>\n            </td>\n<td>\n                Determines whether the pattern is visible in inserter.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-categories\">\n<td>\n                <code>categories</code>\n            </td>\n<td>\n                The pattern category slugs.</p>\n<p class=\"type\">\n                    JSON data type: array               </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-keywords\">\n<td>\n                <code>keywords</code>\n            </td>\n<td>\n                The pattern keywords.</p>\n<p class=\"type\">\n                    JSON data type: array               </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-block_types\">\n<td>\n                <code>block_types</code>\n            </td>\n<td>\n                Block types that the pattern is intended to be used with.</p>\n<p class=\"type\">\n                    JSON data type: array               </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-post_types\">\n<td>\n                <code>post_types</code>\n            </td>\n<td>\n                An array of post types that the pattern is restricted to be used with.</p>\n<p class=\"type\">\n                    JSON data type: array               </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-template_types\">\n<td>\n                <code>template_types</code>\n            </td>\n<td>\n                An array of template types where the pattern fits.</p>\n<p class=\"type\">\n                    JSON data type: array               </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-source\">\n<td>\n                <code>source</code>\n            </td>\n<td>\n                Where the pattern comes from e.g. core</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n<p>                                    One of: <code>core</code>, <code>plugin</code>, <code>theme</code>, <code>pattern-directory/core</code>, <code>pattern-directory/theme</code>, <code>pattern-directory/featured</code>\n                            </td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Block Pattern</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/block-patterns/patterns</code></p>\n<p>        Query this endpoint to retrieve a specific block pattern record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/block-patterns/patterns</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147363",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147363",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147363/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151981,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147363/revisions/151981"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147363"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

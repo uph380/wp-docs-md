@@ -1,0 +1,109 @@
+{
+    "id": 10775503,
+    "date": "2018-10-12T17:09:18",
+    "date_gmt": "2018-10-12T17:09:18",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10775503"
+    },
+    "modified": "2024-08-09T18:50:04",
+    "modified_gmt": "2024-08-09T18:50:04",
+    "slug": "twenty-seventeen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-seventeen/",
+    "title": {
+        "rendered": "Twenty Seventeen"
+    },
+    "content": {
+        "rendered": "\n<p><a href=\"https://wordpress.org/themes/twentyseventeen/\">Twenty Seventeen</a> is the new default theme for WordPress in 2017. Its business-oriented design highlights new video headers, and it has a front-page layout that can be created by combining page sections. The theme can be customized further using custom color options and by adding a site logo, social menu, and widgets.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/twenty-seventeen-1058.jpg\" alt=\"Two screenshots of Twenty Seventeen, one for desktop and one for mobile.\" class=\"wp-image-2530\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Quick Specs</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The main column width is up to 525px for the two-column layout and 740px for the one-column layout.</li>\n\n\n\n<li>The sidebar column width is up to 326px.</li>\n\n\n\n<li>The recommended size for featured images is 2000px wide by 1200px high.</li>\n\n\n\n<li>The recommended size for header videos and header images is 2000px wide by 1200px high.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Header Media</h2>\n\n\n\n<p>Twenty Seventeen supports both header images and header videos. To modify either type on your site, navigate to Customizer &gt; Header Media.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/video-headers.png\" alt=\"The Customizer is opened and shows the preview of the site. The settings panel shows the options for the Header Media, including an option for selecting a header video.\" class=\"wp-image-2533\" /></figure>\n\n\n\n<p>For header videos, you can upload your own <code>mp4</code> video or link to a video hosted on YouTube. Smaller file sizes will help make sure your site is loaded quickly.</p>\n\n\n\n<p>A header image can be used on its own to display a large photograph at the top of your site. It can also be used as a video fallback: If both a video and image are added, the image will be used as a placeholder while the video loads, and it also acts as a fallback on smaller screens where videos may be harder to serve over mobile networks.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Front Page</h2>\n\n\n\n<p>Twenty Seventeen allows you to build a striking front page composed of content from different pages on your site. Each page\u2019s featured image is highlighted, displayed at full-screen size with a fixed position. Twenty Seventeen has four different sections you can assign pages to.</p>\n\n\n\n<p>To set this up, first navigate to Customizer &gt; Static Front Page, and set your site to use a static front page if you haven\u2019t already.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/front-page.jpg\" alt=\"The Customizer is open and shows a preview of the site, as well as the Static Front Page settings.\" class=\"wp-image-2538\" /></figure>\n\n\n\n<p>Navigate to Customizer &gt; Theme Options. Under each <code>Front Page Section # Content</code> header, select a page you\u2019d like to display for that section.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/theme-options.jpg\" alt=\"The Customizer is open and shows a preview of the site. The settings panel shows the Page Layout options which are custom options for Twenty Seventeen.\" class=\"wp-image-2539\" /></figure>\n\n\n\n<p>If you haven\u2019t created any pages yet, you can do that from the Customizer by clicking <code>+ Add New Page</code> beneath any of the sections. This will allow you to create a new page from the Customizer that you can later add content to.</p>\n\n\n\n<p>For the best appearance, make sure each page includes a featured image and some content.</p>\n\n\n\n<p>You can also select your Blog Posts page, and the panel will display your three latest blog posts.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/blog.jpg\" alt=\"An example of the Page Layout options for the front page, with the page section in view.\" class=\"wp-image-2540\" /></figure>\n\n\n\n<p>Once you\u2019ve finished adding pages to the sections, click <code>Save &amp; Publish</code>.</p>\n\n\n\n<p>If you&#8217;d like to change the number of sections you can add pages to, add this snippet to your theme&#8217;s <code>functions.php</code>:</p>\n\n\n\n<pre title=\"functions.php\" class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\"><code>add_filter( 'twentyseventeen_front_page_sections', 'prefix_custom_front_page_sections' );<br>function prefix_custom_front_page_sections( $num_sections ) {<br>    return 6;<br>}</code></code></pre>\n\n\n\n<p>This snippet changes the default four sections to six.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Colors</h2>\n\n\n\n<p>Twenty Seventeen includes three color options: the default light color scheme, a dark color scheme, and a Custom Colors scheme that can be adjusted to various hues using a slider.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/colours-screenshot.png\" alt=\"Six screenshots that show the color schemes in the Customizer: Light, dark and custom color hues.\" class=\"wp-image-2541\" /></figure>\n\n\n\n<p>To explore all the color options available, navigate to Customizer &gt; Colors.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Language Support</h2>\n\n\n\n<p>Twenty Seventeen includes optimal font styles for many languages, thanks to feedback from the WordPress community. The theme uses <a href=\"https://fonts.google.com/specimen/Libre+Franklin\">Libre Franklin</a> by default and makes adjustments to the typography for the following alphabets:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Arabic</li>\n\n\n\n<li>Chinese</li>\n\n\n\n<li>Cyrillic</li>\n\n\n\n<li>Devanagari</li>\n\n\n\n<li>Greek</li>\n\n\n\n<li>Gujarati</li>\n\n\n\n<li>Hebrew</li>\n\n\n\n<li>Japanese</li>\n\n\n\n<li>Korean</li>\n\n\n\n<li>Thai</li>\n</ul>\n\n\n\n<p>To improve legibility, Twenty Seventeen also removes its letter-spacing styles for all non-Latin alphabets.</p>\n\n\n\n<h2 class=\"wp-block-heading\">One- and Two-Column Layouts</h2>\n\n\n\n<p>For <a href=\"/support/article/pages/\">pages</a>, Twenty Seventeen allows you to choose between a one- and two-column layout. This can be changed via Customizer &gt; Theme Options. The theme defaults to the two-column layout, which displays the page title in one column and the page content in the other.</p>\n\n\n\n<p>Note: This feature only becomes available after setting a static front page.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/two-column-option.jpg\" alt=\"The Customizer Theme Options panel for single pages.\" class=\"wp-image-2546\" /></figure>\n\n\n\n<p>When the one-column layout is selected, both the page title and content display in a wider single column, centered on the page.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/two-column.jpg\" alt=\"The theme's two column layout, with the post title on the left and the content on the right.\" class=\"wp-image-2545\" /></figure>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/one-column.jpg\" alt=\"The theme's one column layout, with the post title above the content.\" class=\"wp-image-2544\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Widgets</h2>\n\n\n\n<p>Twenty Seventeen includes a footer <a href=\"/support/article/wordpress-widgets/\">widget</a> <a href=\"https://codex.wordpress.org/WordPress_Widgets\"></a>area allowing widgets to be added below the site\u2019s content.</p>\n\n\n\n<p>The blog index, archive, and search pages and single blog posts also include a sidebar widget area. For each of these pages, the content is displayed in one center column if there is no sidebar. With the sidebar, the content is displayed in one column and the widgets are displayed in the other.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Pullquotes</h2>\n\n\n\n<p>Pullquotes can be used to direct your readers&#8217; attention to a particular passage or add visual interest to your posts and pages. In Twenty Seventeen, you can pair a pullquote with an <code>alignleft</code> or <code>alignright</code> class on the <code>blockquote</code> element to further highlight it. Instructions on how to do this can be found in <a href=\"https://wordpress.org/documentation/article/write-posts-classic-editor/#visual-versus-text-editor\">the support article for the Classic Editor</a>. See the following example:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;blockquote class=\"alignleft\"&gt;This is my fabulous left-aligned pullquote.&lt;/blockquote&gt;</pre>\n\n\n\n<p>When a two-column layout is used (whether via the Customizer for pages, or by adding a sidebar widget for posts), the pullquote aligned to the same side will display fully outside of the content area and below the second column. Note: This will only work when the pullquote appears in the content below where the second column ends.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/10/pullquotes.jpg\" alt=\"A pullquote that is positioned to the left of the main content.\" class=\"wp-image-2548\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Post Formats</h2>\n\n\n\n<p>Twenty Seventeen supports the following post formats:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Aside</li>\n\n\n\n<li>Audio</li>\n\n\n\n<li>Gallery</li>\n\n\n\n<li>Image</li>\n\n\n\n<li>Link</li>\n\n\n\n<li>Quote</li>\n\n\n\n<li>Video</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Social Icons</h2>\n\n\n\n<p>Twenty Seventeen includes a Social Icons Menu, allowing you to add links to your social media profiles that will be displayed as logos in the footer. If you\u2019re not familiar with this functionality, please refer to the <a href=\"/support/article/twenty-fifteen/#add-social-icons\">documentation from Twenty Fifteen</a>.</p>\n\n\n\n<p>The following services are supported by Twenty Seventeen\u2019s Social Icons Menu:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Behance</li>\n\n\n\n<li>Codepen</li>\n\n\n\n<li>DeviantArt</li>\n\n\n\n<li>Digg</li>\n\n\n\n<li>Dribbble</li>\n\n\n\n<li>Dropbox</li>\n\n\n\n<li>Facebook</li>\n\n\n\n<li>Flickr</li>\n\n\n\n<li>Foursquare</li>\n\n\n\n<li>GitHub</li>\n\n\n\n<li>Google+</li>\n\n\n\n<li>Instagram</li>\n\n\n\n<li>LinkedIn</li>\n\n\n\n<li>Meanpath</li>\n\n\n\n<li>Medium</li>\n\n\n\n<li>Pinterest</li>\n\n\n\n<li>Pocket</li>\n\n\n\n<li>Reddit</li>\n\n\n\n<li>Skype</li>\n\n\n\n<li>SlideShare</li>\n\n\n\n<li>Snapchat</li>\n\n\n\n<li>SoundCloud</li>\n\n\n\n<li>Spotify</li>\n\n\n\n<li>StumbleUpon</li>\n\n\n\n<li>Tumblr</li>\n\n\n\n<li>Twitch</li>\n\n\n\n<li>Twitter</li>\n\n\n\n<li>Vimeo</li>\n\n\n\n<li>Vine</li>\n\n\n\n<li>VK</li>\n\n\n\n<li>WordPress</li>\n\n\n\n<li>Yelp</li>\n\n\n\n<li>YouTube</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Support and Resources</h2>\n\n\n\n<p>Get community help with Twenty Seventeen on its <a href=\"https://wordpress.org/support/theme/twentyseventeen\">forum</a>.</p>\n\n\n\n<p>Get tips for theming with Twenty Seventeen from <a href=\"https://make.wordpress.org/core/2016/11/29/theming-with-twenty-seventeen/\">this post on make.wordpress.org</a> by one of Twenty Seventeen&#8217;s developers. You can also read <a href=\"https://wordpress.org/documentation/article/twenty-seventeen-changelog/\">the theme&#8217;s changelog</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Twenty Seventeen is the new default theme for WordPress in 2017. Its business-oriented design highlights new video headers, and it has a front-page layout that can be created by combining page sections. The theme can be customized further using custom color options and by adding a site logo, social menu, and widgets. Quick Specs Header [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 17,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        82
+    ],
+    "class_list": [
+        "post-10775503",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10775503",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10775503"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10775503/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359794,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10775503/revisions/16359794"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10775503"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10775503"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

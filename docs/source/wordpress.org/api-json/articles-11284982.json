@@ -1,0 +1,109 @@
+{
+    "id": 11284982,
+    "date": "2019-03-07T09:53:32",
+    "date_gmt": "2019-03-07T09:53:32",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11284982"
+    },
+    "modified": "2023-10-26T08:29:58",
+    "modified_gmt": "2023-10-26T08:29:58",
+    "slug": "quote-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/quote-block/",
+    "title": {
+        "rendered": "Quote block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Use the <em>Quote </em>block to easily add a quote to any post or page. Adding quotes can help you highlight great reviews from your audience or phrases that inspire you.</p>\n\n\n\n<p>To add the <em>Quote </em>block to a page, click the block inserter (+) to open the block inserter pop-up window and choose the <em>Quote</em> block.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1428\" height=\"674\" src=\"https://wordpress.org/documentation/files/2023/03/quote-block.gif\" alt=\"Demonstration to add the quote block to the editor\" class=\"wp-image-16355919\" /></figure>\n\n\n\n<p>Alternatively, you can use the slash command, <code>/quote</code> in a new&nbsp;<em>paragraph block</em>&nbsp;then press <code>enter</code> to add one quickly.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2020/09/Annotation-2020-09-14-120316.png\"><img loading=\"lazy\" decoding=\"async\" width=\"468\" height=\"202\" src=\"https://wordpress.org/documentation/files/2020/09/Annotation-2020-09-14-120316.png\" alt=\"Shortcut to add Quote block\" class=\"wp-image-13402383\" style=\"width:351px;height:152px\" srcset=\"https://wordpress.org/documentation/files/2020/09/Annotation-2020-09-14-120316.png 468w, https://wordpress.org/documentation/files/2020/09/Annotation-2020-09-14-120316-300x129.png 300w\" sizes=\"auto, (max-width: 468px) 100vw, 468px\" /></a></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\" target=\"_blank\" rel=\"noreferrer noopener\">Detailed instructions on adding blocks </a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block comes with unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"752\" height=\"108\" src=\"https://wordpress.org/documentation/files/2023/03/toolbar-1.png\" alt=\"Quote block toolbar\" class=\"wp-image-16355920\" srcset=\"https://wordpress.org/documentation/files/2023/03/toolbar-1.png 752w, https://wordpress.org/documentation/files/2023/03/toolbar-1-300x43.png 300w\" sizes=\"auto, (max-width: 752px) 100vw, 752px\" /></figure>\n\n\n\n<p>The Quote block shows the following buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move handles</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>Bold</li>\n\n\n\n<li>Italic </li>\n\n\n\n<li>Link</li>\n\n\n\n<li>More text editing options</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"383\" height=\"482\" src=\"https://wordpress.org/documentation/files/2023/10/image-10.png\" alt=\"Transform tool for the Quote Block\" class=\"wp-image-16359066\" srcset=\"https://wordpress.org/documentation/files/2023/10/image-10.png 383w, https://wordpress.org/documentation/files/2023/10/image-10-238x300.png 238w\" sizes=\"auto, (max-width: 383px) 100vw, 383px\" /></figure>\n\n\n\n<p>Click on the <strong>Transform </strong>button to convert the <em>Quote </em>block into another block type using the existing content.<br>You can transform the <em>Quote </em>block into a <strong>Paragraph</strong>, <strong>Columns</strong>, <strong>Group</strong>, or <strong>Pullquote </strong>block. You can also change the style of the Quote block from <strong>Default </strong>to <strong>Plain</strong>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Drag icon</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"744\" height=\"112\" src=\"https://wordpress.org/documentation/files/2023/03/drag-1.png\" alt=\"Drag and drop tool for the Quote block\" class=\"wp-image-16355922\" style=\"width:372px;height:56px\" srcset=\"https://wordpress.org/documentation/files/2023/03/drag-1.png 744w, https://wordpress.org/documentation/files/2023/03/drag-1-300x45.png 300w\" sizes=\"auto, (max-width: 744px) 100vw, 744px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move handles</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"738\" height=\"108\" src=\"https://wordpress.org/documentation/files/2023/03/arrows-1.png\" alt=\"Move handles for the Quote block\" class=\"wp-image-16355923\" style=\"width:369px;height:54px\" srcset=\"https://wordpress.org/documentation/files/2023/03/arrows-1.png 738w, https://wordpress.org/documentation/files/2023/03/arrows-1-300x44.png 300w\" sizes=\"auto, (max-width: 738px) 100vw, 738px\" /></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change text alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"860\" height=\"440\" src=\"https://wordpress.org/documentation/files/2023/03/align-1.png\" alt=\"Text alignment tool for the Quote block\" class=\"wp-image-16355924\" style=\"width:430px;height:220px\" srcset=\"https://wordpress.org/documentation/files/2023/03/align-1.png 860w, https://wordpress.org/documentation/files/2023/03/align-1-300x153.png 300w, https://wordpress.org/documentation/files/2023/03/align-1-768x393.png 768w\" sizes=\"auto, (max-width: 860px) 100vw, 860px\" /><figcaption class=\"wp-element-caption\">.</figcaption></figure>\n\n\n\n<p>Using the alignment drop-down from the toolbar, you are able to align the <em>Quote</em> block to the left, make it center-aligned, or align it to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Bold</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"744\" height=\"112\" src=\"https://wordpress.org/documentation/files/2023/03/bold-2.png\" alt=\"Bold text tool for the Quote block\" class=\"wp-image-16355925\" style=\"width:372px;height:56px\" srcset=\"https://wordpress.org/documentation/files/2023/03/bold-2.png 744w, https://wordpress.org/documentation/files/2023/03/bold-2-300x45.png 300w\" sizes=\"auto, (max-width: 744px) 100vw, 744px\" /></figure>\n\n\n\n<p>You can select the text in the <em>Quote</em> block and use the <em>Bold</em> option or <kbd>Ctrl+B</kbd> or <kbd>Cmd+B</kbd> on your keyboard to bold it, which is usually heavier than the surrounding text.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Italic</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"740\" height=\"110\" src=\"https://wordpress.org/documentation/files/2023/03/italics.png\" alt=\"Italic text tool for the Quote block\" class=\"wp-image-16355926\" style=\"width:370px;height:55px\" srcset=\"https://wordpress.org/documentation/files/2023/03/italics.png 740w, https://wordpress.org/documentation/files/2023/03/italics-300x45.png 300w\" sizes=\"auto, (max-width: 740px) 100vw, 740px\" /></figure>\n\n\n\n<p>You can select any text inside the <em>Quote </em>block and use the <strong>Italic</strong> option or <kbd>Ctrl+I</kbd> or <kbd>Cmd+I</kbd> on your keyboard to italicize it, which usually appears slanted to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Link</h3>\n\n\n\n<p>Use the link icon to insert a hyperlink to the highlighted text inside the <em>Quote </em>block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/link-editing/\">Read about more link editing options.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">More rich text options</h3>\n\n\n\n<p>The drop-down menu to the left of the&nbsp;<a href=\"https://wordpress.org/documentation/article/more-options/\">More options menu</a>&nbsp;contains a range of additional rich text editing options such as highlighting, inline code, strikethrough, and more.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-text-editing-overview/\">Read about more rich text editing options.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p>The Options menu represented by three vertical dots on the far right of the toolbar gives you more features such as the ability to duplicate or remove the block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings </strong>button next to the <strong>Publish/Update </strong>button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"646\" height=\"102\" src=\"https://wordpress.org/documentation/files/2023/03/block-settings.png\" alt=\"Block settings button on the editor\" class=\"wp-image-16355930\" style=\"width:485px;height:77px\" srcset=\"https://wordpress.org/documentation/files/2023/03/block-settings.png 646w, https://wordpress.org/documentation/files/2023/03/block-settings-300x47.png 300w\" sizes=\"auto, (max-width: 646px) 100vw, 646px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Styles</h3>\n\n\n\n<p>You can modify the <em>Quote </em>block styles by choosing the <strong>Default </strong>or <strong>Plain </strong>buttons in the Styles settings panel. Hover over the <strong>Default </strong>or <strong>Plain </strong>buttons to get a preview of the styles.&nbsp;</p>\n\n\n\n<p>The style options may vary based on your theme.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"843\" src=\"https://wordpress.org/documentation/files/2023/03/styles-1-1024x843.png\" alt=\"Styles option for the Quote block\" class=\"wp-image-16355931\" style=\"width:512px;height:422px\" srcset=\"https://wordpress.org/documentation/files/2023/03/styles-1-1024x843.png 1024w, https://wordpress.org/documentation/files/2023/03/styles-1-300x247.png 300w, https://wordpress.org/documentation/files/2023/03/styles-1-768x632.png 768w, https://wordpress.org/documentation/files/2023/03/styles-1.png 1220w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Based on which style you choose for the <em>Quote</em> block, WordPress automatically adds a CSS class to the <em>Quote</em> block. You can find the class in the Advanced settings panel under the Additional CSS class(es) section.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"538\" height=\"674\" src=\"https://wordpress.org/documentation/files/2023/03/advanced-css.png\" alt=\"Adding additional CSS for the Quote block\" class=\"wp-image-16355932\" style=\"width:404px;height:506px\" srcset=\"https://wordpress.org/documentation/files/2023/03/advanced-css.png 538w, https://wordpress.org/documentation/files/2023/03/advanced-css-239x300.png 239w\" sizes=\"auto, (max-width: 538px) 100vw, 538px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The <em>Quote</em> block provides Color settings options to change the text and background colors.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>The <em>Quote</em> block<em> </em>provides typography settings to change the font family, size, appearance, line height, letter case, letter spacing, and decoration. </p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The <em>Quote</em> block provides dimension settings options to change padding and margin size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The <strong>Advanced</strong> tab lets you add HTML anchor and CSS class(es) to your block.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><a href=\"https://wordpress.org/documentation/files/2023/03/advanced-1.png\"><img loading=\"lazy\" decoding=\"async\" width=\"538\" height=\"662\" src=\"https://wordpress.org/documentation/files/2023/03/advanced-1.png\" alt=\"Advanced settings tool for the Quote block\" class=\"wp-image-16355933\" style=\"width:404px;height:497px\" srcset=\"https://wordpress.org/documentation/files/2023/03/advanced-1.png 538w, https://wordpress.org/documentation/files/2023/03/advanced-1-244x300.png 244w\" sizes=\"auto, (max-width: 538px) 100vw, 538px\" /></a><figcaption class=\"wp-element-caption\">The \u201cAdvanced\u201d tab lets you add HTML anchor and CSS class(es) to your block.</figcaption></figure>\n\n\n\n<p><strong>HTML anchor</strong> allows you to <a href=\"https://wordpress.org/documentation/article/page-jumps/\">make a unique web address</a> for a particular <em>Quote </em>block. Then, you\u2019ll be able to link directly to a <em>Quote </em>block of your page.The <strong>Additional CSS class(es)</strong> lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog<strong> </strong></h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-10-26\n<ul class=\"wp-block-list\">\n<li>Updated content</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-08-09\n<ul class=\"wp-block-list\">\n<li>Replaced the link section with short summary linking to new dedicated page.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-06-08\n<ul class=\"wp-block-list\">\n<li>Replaced &#8220;More rich text options&#8221; section with short summary linking to new dedicated page for rich text editing options.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-03-26\n<ul class=\"wp-block-list\">\n<li>Updated content, images, and video for 6.2</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-10-18\n<ul class=\"wp-block-list\">\n<li>Updated images, video for 6.1</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-06-24\n<ul class=\"wp-block-list\">\n<li>Updated content, images, videos for 6.0</li>\n\n\n\n<li>Added ALT tags for images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-09-21\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 video</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-09-14\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshots</li>\n\n\n\n<li>Updated block toolbar new features</li>\n\n\n\n<li>Updated block settings new features</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-06-18\n<ul class=\"wp-block-list\">\n<li>Added &#8216;Link back to blocks&#8217; to the top of the page</li>\n\n\n\n<li>Converted the &#8216;Advanced&#8217; reusable block to a regular block</li>\n\n\n\n<li>Add the &#8216;Changelog&#8217;</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n\n\n\n<div style=\"height:41px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Use the Quote block to easily add a quote to any post or page. Adding quotes can help you highlight great reviews from your audience or phrases that inspire you. To add the Quote block to a page, click the block inserter (+) to open the block inserter [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        85
+    ],
+    "class_list": [
+        "post-11284982",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-text-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11284982",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11284982"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11284982/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359068,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11284982/revisions/16359068"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11284982"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11284982"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

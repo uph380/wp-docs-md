@@ -1,0 +1,109 @@
+{
+    "id": 11263506,
+    "date": "2019-03-01T14:23:40",
+    "date_gmt": "2019-03-01T14:23:40",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11263506"
+    },
+    "modified": "2025-03-26T12:59:57",
+    "modified_gmt": "2025-03-26T12:59:57",
+    "slug": "understand-comment-spam",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/understand-comment-spam/",
+    "title": {
+        "rendered": "Understand comment spam"
+    },
+    "content": {
+        "rendered": "\n<p>If you&#8217;ve been on the internet for any amount of time you&#8217;re probably familiar with &#8220;spam&#8221; in your email inbox. For the uninitiated, spam is an unsolicited commercial message, or something you didn&#8217;t ask for trying to sell you something.</p>\n\n\n\n<p>So what does this have to do with blogs? Well just like you can get spam messages in your inbox, people will leave spam comments on your blog. However unlike email spam where the target is you, comment spam generally targets search engines.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Comment Spam and Search Engines</h2>\n\n\n\n<p>Why on earth would a spammer use your blog to target a search engine? Let&#8217;s start from the beginning. Several years ago, Google pioneered a search technique called&nbsp;<a href=\"http://en.wikipedia.org/wiki/PageRank\">PageRank</a>. Basically, in addition to looking at the content of the page being indexed, Google also takes into account who links to the page and what those links say. This technology meant Google was very good at returning relevant results, making it the most popular search engine today. Because their ranking system relies so heavily on PageRank, people sometimes game the system using a technique called &#8220;Google Bombing.&#8221;</p>\n\n\n\n<p>A&nbsp;<a href=\"http://en.wikipedia.org/wiki/Google_bomb\">google bomb</a>&nbsp;is when a large number of different websites link to a page with the same link text to influence the ranking of that page for a search term.</p>\n\n\n\n<p>This brings us back to the spammers. A spammer might have a site that sells &#8220;mydrug&#8221; and wants to be at the top of search results for &#8220;mydrug&#8221; on Google. They leave comments on hundreds or thousands of weblogs linking to their site with the link text &#8220;mydrug.&#8221; They don&#8217;t really care if you see their google bomb text\u2014in fact they&#8217;d rather you didn&#8217;t in case you decide to delete it! They just want the search engine to see it when they index your page.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Fighting Comment Spam</h2>\n\n\n\n<p><a href=\"/support/article/comment-moderation/\">Comment Moderation</a>&nbsp;is very effective in addressing unwanted comments. The best defense against comment spam is just watching your comments. Under&nbsp;<code>Manage <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Comments</code>&nbsp;it shows a listing of the latest comments on any post and you can quickly scan the comment activity on your site. The faster you respond to comment spam on your site, the less likely the spammers will return.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Stealth Spam</h2>\n\n\n\n<p>Spammers find new and creative ways to be sneaky all the time. You may notice that posters leave comments on your site which look perfectly normal except for the commenter&#8217;s name or URL, which likely references a product or a site selling something.</p>\n\n\n\n<p>It&#8217;s good practice to visit the URLs of people who leave comments on your blog to determine whether the poster is sincere or spammy. If you see one that looks suspicious, you can choose to delete the comment entirely or leave the comment and just delete the URL.</p>\n\n\n\n<p>Another way of stealth is to use a div-tag around a bundle of hundreds of links. This becomes more and more common because many software displays directly the given HTML tags and not the HTML code. To avoid this the software must &#8220;strip-out&#8221;, other word: filter the HTML tags while inserting the comment into the database.</p>\n\n\n\n<h2 class=\"wp-block-heading\">FAQ</h2>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>Why are they spamming me?</summary>\n<p>Apart from&nbsp;<em>because they can</em>, the need to raise page ranking in search engines gives rise to the need to create a lot of links to a web page so the search engine thinks that page is important.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>Where can I find WordPress anti-spam plugins?</summary>\n<p><a href=\"https://wordpress.org/plugins/tags/anti-spam\">Plugins for handling comment spam</a>&nbsp;can be found in the&nbsp;<a href=\"https://wordpress.org/plugins/\">Official WordPress Plugin Directory</a>.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>Which is the best plugin?</summary>\n<p>This is not an easy answer. Spammers use different tactics, and each plugin will use different tactics in response. There is no plugin that will keep you spam-free forever. Comment spammers can download the plugins, see how they work, and figure out a way around them.</p>\n\n\n\n<p>Check plugin authors&#8217; sites for updates. WordPress makes it easy to find updates via the&nbsp;<a href=\"https://wordpress.org/documentation/article/plugins-screen/\">Plugins screen</a>&nbsp;and the link to the plugin author&#8217;s website.</p>\n\n\n\n<p>Comment spam technology is changing fast on both sides, so keep updated with the latest news on comment spam techniques and WordPress Plugin options.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>I have a problem with a plugin</summary>\n<p>Visit the plugin author&#8217;s site to see if they have already offered a solution, and if they offer support directly. If not,&nbsp;<strong>search the forums first</strong>&nbsp;before posting as the answer may be there. If there is no answer, then post a support request on that plugin&#8217;s support forum.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>What happens to comments that are marked as &#8220;Spam&#8221;?</summary>\n<p>Comments that are marked as&nbsp;[spam]&nbsp;will be held in your database to educate &#8220;intelligent&#8221; anti-spam plugins, such as&nbsp;<a href=\"https://akismet.com/\">Akismet</a>.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>I have spam appear as soon as I post!</summary>\n<p>If you do not have comment spam plugins or the&nbsp;<a href=\"https://wordpress.org/download/\">latest version of WordPress</a>&nbsp;installed, this may happen.&nbsp;<a href=\"https://wordpress.org/documentation/article/updating-wordpress/\">Upgrade</a>&nbsp;or install one of the comment spam plugins and manually delete the comment spam from your&nbsp;<a href=\"https://wordpress.org/documentation/article/administration-screens/\">Manage&nbsp;&gt;&nbsp;Comments</a>&nbsp;panel.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>Why is every comment going into the moderation queue?</summary>\n<p>Go to the\u00a0<a href=\"https://wordpress.org/documentation/article/administration-screens/\">Settings\u00a0&gt;\u00a0Discussion</a>\u00a0panel and make sure that\u00a0<strong>An administrator must approve the comment (regardless of any matches below)</strong>\u00a0is unchecked. With that option selected, all comments are sent to the moderation queue to await approval. Make sure that\u00a0<strong>Hold a comment in the queue if it contains more than x links</strong>\u00a0is not blank and contains a number higher than zero. If this value is blank or zero, all comments containing links will be moderated. If the option mentioned above is unchecked, the link moderation value is higher than zero, and you still have this problem, your\u00a0Spam Words\u00a0list probably has blank lines, punctuation marks, or single letters between the information in the list. There should be spaces between the listed items or each item must be on its own line. If you have done this, then upgrade the comment spam plugins you have installed. If this continues to be a problem, deactivate the comment spam plugins one by one to determine the culprit and contact the plugin author for help.</p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>I have disabled comments, but comments continue to be posted</summary>\n<p>If you have unchecked&nbsp;<strong>Allow people to post comments on the article</strong>&nbsp;on the&nbsp;<a href=\"https://wordpress.org/documentation/article/administration-screens/\">Options&nbsp;&gt;&nbsp;Discussion</a>&nbsp;panel, then you have only disabled comments on&nbsp;<em>future posts</em>. To completely disable comments, you will have to edit each past post and uncheck&nbsp;<strong>Allow Comments</strong>. Alternatively, you could delete the&nbsp;wp-comments-post.php&nbsp;file, or run this MySQL query, from the command line on a shell account, or using&nbsp;<a href=\"https://codex.wordpress.org/phpMyAdmin\">phpMyAdmin</a>:&nbsp;<code>UPDATE wp_posts SET comment_status=\"closed\";</code></p>\n</details>\n\n\n\n<details class=\"wp-block-details is-layout-flow wp-block-details-is-layout-flow\"><summary>I have disabled trackbacks, but trackbacks continue to be posted</summary>\n<p>If you have unchecked&nbsp;<strong>Allow link notifications from other Weblogs (pingbacks and trackbacks.)</strong>&nbsp;on the&nbsp;Options&nbsp;&gt;&nbsp;Discussion&nbsp;panel, then you have only disabled trackbacks on&nbsp;<em>future posts</em>. To completely disable trackbacks, you will have to edit each past post and uncheck&nbsp;<strong>Allow Pings</strong>&nbsp;from the Write Post SubPanel. Alternatively, you could just simply delete the&nbsp;wp-trackback.php&nbsp;file, or run this MySQL query, from the command line on a shell account, or using PHPMyAdmin:&nbsp;<code>UPDATE wp_posts SET ping_status=\"closed\";</code></p>\n</details>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>If you&#8217;ve been on the internet for any amount of time you&#8217;re probably familiar with &#8220;spam&#8221; in your email inbox. For the uninitiated, spam is an unsolicited commercial message, or something you didn&#8217;t ask for trying to sell you something. So what does this have to do with blogs? Well just like you can get [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-11263506",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11263506",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11263506"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11263506/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365511,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11263506/revisions/16365511"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11263506"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11263506"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

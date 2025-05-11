@@ -1,0 +1,97 @@
+{
+    "id": 153657,
+    "date": "2024-04-30T19:08:09",
+    "date_gmt": "2024-04-30T19:08:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=153657"
+    },
+    "modified": "2024-04-30T19:08:09",
+    "modified_gmt": "2024-04-30T19:08:09",
+    "slug": "starter-patterns",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/patterns/starter-patterns/",
+    "title": {
+        "rendered": "Starter Patterns"
+    },
+    "content": {
+        "rendered": "\n<p>The WordPress block editor is powerful and can handle many different layouts and designs. However, when building a theme, you must remember that not all of your users will be skilled designers or even have much interest in piecing together their own layouts. This is where starter patterns can be beneficial to them.</p>\n\n\n\n<p>WordPress supports two types of starter patterns for pages (or any post type) and templates. This feature lets you create starting points for your theme users to build out their pages and templates with minimal skills.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Starter page patterns</h2>\n\n\n\n<p>Page patterns let you create custom patterns your theme users can access when adding a new page via <strong>Pages &gt; Add New</strong> in their WordPress admin. From there, a modal will pop up and show them a selection of patterns if any are registered.</p>\n\n\n\n<p>Here is what the screen looks like when creating a new page with the default Twenty Twenty-Four theme installed:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1061\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?resize=2048%2C1061&#038;ssl=1\" alt=\"Modal overlaying the edit page screen, showing a grid of various page layouts.\" class=\"wp-image-153658\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?resize=1024%2C531&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?resize=768%2C398&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-page-pattern-tt4.webp?resize=1536%2C796&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>This is a powerful feature because it means that you can provide well-designed starting points for your theme\u2019s users or clients. And they don\u2019t need to build from scratch. They only need to select a pattern, and it will automatically be inserted into the content area. From there, they can make any customizations they want.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How to create a page pattern</h3>\n\n\n\n<p>Technically, any pattern in your theme can be converted to a page pattern. All you need to do is define the correct parameters to mark it as such. As described in <a href=\"https://developer.wordpress.org/themes/patterns/registering-patterns/\">Registering Patterns</a>, there are two available file header fields that you must set to make this happen:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>Block Types</code>:</strong> Adding <code>core/post-content</code> as one of the block types for the pattern tells WordPress that the pattern should be used for the post content.</li>\n\n\n\n<li><strong><code>Post Types</code>:</strong> You can add one or more post types (separated by commas) to connect the pattern.</li>\n</ul>\n\n\n\n<p>With these two fields combined, you create a starter page pattern. Here is what the file header looks like for a fictional <code>/patterns/example-page.php</code> pattern file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/**\n * Title: Example Page\n * Slug: themeslug/example-page\n * Categories: page\n * Block Types: core/post-content\n * Post Types: page\n * Viewport width: 1376\n */\n?&gt;\n&lt;!-- Block code here. --&gt;</code></pre>\n\n\n\n<p>And that\u2019s literally all you must do. Define the pattern\u2019s <code>Block Types</code> and <code>Post Types</code> parameters and you have a starter page pattern.\u00a0</p>\n\n\n\n<p>This will work with any post type that has opted into the block editor, including both the default <code>post</code> and <code>page</code> post types.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Because page patterns are actually tied to the content, you wouldn\u2019t typically include something like a site header or footer here. The pattern is output as post content.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Starter template patterns</h2>\n\n\n\n<p>Like page patterns, template patterns give users a starting point when building a new template. The difference is that template patterns work from the Site Editor.</p>\n\n\n\n<p>If you visit <strong>Appearance &gt; Editor &gt; Templates</strong> in your WordPress admin and click the <strong>+</strong> icon button for creating a new template, you should see a new <strong>Add template</strong> modal:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1060\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?resize=2048%2C1060&#038;ssl=1\" alt=\"WordPress site editing screen with a modal popup asking the user to add a new template.\" class=\"wp-image-153659\" style=\"width:960px;height:auto\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?resize=1024%2C530&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?resize=768%2C398&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/04/add-template.webp?resize=1536%2C795&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>From there, you can select the template that you want to create. If the template type has any patterns registered for it, a new <strong>Choose a pattern</strong> modal will appear, overlaying the template-editing interface.</p>\n\n\n\n<p>For example, when choosing the <strong>Front Page</strong> option with the default Twenty Twenty-Four theme, you will see this:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1061\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?resize=2048%2C1061&#038;ssl=1\" alt=\"A modal overlay showing four template options for the homepage from within the WordPress site editor.\" class=\"wp-image-153660\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?resize=300%2C155&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?resize=1024%2C531&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?resize=768%2C398&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2024/04/starter-template-patterns-tt4.webp?resize=1536%2C796&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>This gives your theme users a really nice onramp for building templates. It means they don\u2019t have to create everything from the ground up and can get started down the right path.</p>\n\n\n\n<h3 class=\"wp-block-heading\">How to create template type patterns</h3>\n\n\n\n<p>Unlike page patterns, you will usually not make any of your patterns a template pattern. These are starting points for an entire template, so their use cases are much more limited and specific.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Because template patterns represent an entire template, you would typically include global elements like the header, footer, sidebar, and other sections that your theme\u2019s templates display.</p></div></div>\n\n\n\n<p>As noted in <a href=\"https://developer.wordpress.org/themes/patterns/registering-patterns/\">Registering Patterns</a>, there is a single required header field needed for your template pattern (and one optional field):</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>Template Types</code>:</strong> One or more template types, separated by comma, that the pattern should be associated with.</li>\n\n\n\n<li><strong><code>Inserter</code>:</strong> <em>(Optional)</em> Often, you will not want template patterns to be available via the inserter. To disable this, set it to <code>no</code> or <code>false</code>.</li>\n</ul>\n\n\n\n<p>Suppose that you created a pattern that would work well for the Front Page or Home templates. Here is what a fictional <code>/patterns/home-template.php</code> file would look like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/**\n * Title: Home Template\n * Slug: themeslug/home-template\n * Template Types: front-page, home\n * Viewport width: 1376\n * Inserter: no\n */\n?&gt;\n&lt;!-- Block code here. --&gt;</code></pre>\n\n\n\n<p>From that point, anytime a user attempted to create a new Front Page or Home template from the WordPress Site Editor, they would be presented with your template pattern as a starting point.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Supported template types</h3>\n\n\n\n<p>The following list includes the templates that you can define via the <code>Template Types</code> field, but you can always reference the <a href=\"https://developer.wordpress.org/themes/templates/template-hierarchy/\">Template Hierarchy</a> documentation for a full overview of templates:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>index</code></li>\n\n\n\n<li><code>home</code></li>\n\n\n\n<li><code>front-page</code></li>\n\n\n\n<li><code>singular</code></li>\n\n\n\n<li><code>single</code></li>\n\n\n\n<li><code>page</code></li>\n\n\n\n<li><code>archive</code></li>\n\n\n\n<li><code>author</code></li>\n\n\n\n<li><code>category</code></li>\n\n\n\n<li><code>taxonomy</code></li>\n\n\n\n<li><code>date</code></li>\n\n\n\n<li><code>tag</code></li>\n\n\n\n<li><code>attachment</code></li>\n\n\n\n<li><code>search</code></li>\n\n\n\n<li><code>privacy-policy</code></li>\n\n\n\n<li><code>404</code></li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Using template patterns in templates</h3>\n\n\n\n<p>When creating custom template patterns, it also makes sense to reuse those patterns within your templates. <em>Why rewrite code?</em></p>\n\n\n\n<p>Imagine that you created a template pattern that would work as both a Home and Index template. It would look like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/**\n * Title: Index Template\n * Slug: themeslug/index-template\n * Template Types: home, index\n * Viewport width: 1376\n * Inserter: no\n */\n?&gt;\n&lt;!-- Block code here. --&gt;</code></pre>\n\n\n\n<p>Now suppose that you included a <code>/templates/index.html</code> template in your theme. Instead of adding the code in two places, you can simply call the pattern from the template file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:pattern {\"slug\":\"themeslug/index-template\"} /--&gt;</code></pre>\n\n\n\n<p>To learn more about including patterns in templates, check out the <a href=\"https://developer.wordpress.org/themes/patterns/usage-in-templates/\">Usage in Templates</a> documentation.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 153616,
+    "menu_order": 50,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-153657",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153657",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153657/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153662,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153657/revisions/153662"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/153616"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=153657"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 16224779,
+    "date": "2022-11-22T21:17:02",
+    "date_gmt": "2022-11-22T21:17:02",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16224779"
+    },
+    "modified": "2024-06-08T17:54:43",
+    "modified_gmt": "2024-06-08T17:54:43",
+    "slug": "post-comments-form-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-comments-form-block/",
+    "title": {
+        "rendered": "Post Comments Form block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <strong>Post Comments Form </strong>block<em> </em>displays a post&#8217;s comments form. This block is located inside a Comments block and lets you customize the appearance of the post comments form.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/rotO7KFxSTDJn8c9CcbfurtndgT5PYi-Ftt2mBB-JQcs0DxHuQ3CSjg8lq37gHyxVvxuk8-aZcbh3RdyFr8JG2gdyPcWyEIoz_4kjzE1TX0R6xDCwaw-eadOCbZyk6qYk0JbZeduxI8wUMMlycf29wPKZrMg0-yaPo5TH0bJxu_0MD5Ciw9EN--dn4icKQ\" alt=\"Post Comments Form block\" /></figure>\n\n\n\n<p>You can only insert the <strong>Post Comments Form </strong>block<strong><em> </em></strong>inside a <a href=\"https://wordpress.org/documentation/article/comment-template-block/\" data-type=\"helphub_article\" data-id=\"15930049\">Comment Template</a> block within the Comment block.&nbsp;</p>\n\n\n\n<p>Click the (+) icon inside the comment template block to open the block inserter pop-up window and search for the <strong>Post Comments Form</strong> block.</p>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/post-comments-form</kbd> to quickly insert a <strong>Post Comments Form</strong><em> </em>block inside a Comment Template block.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/G7XSaqXP8z02oi7kvJdACwR90T5HhbHTyI_biOG_qKfpAkMhVu9OzNl73zE-Wejo2353e9lgV54PpJflDT8kEbQRQsx06n8OoN22PtLV7DZyO4HoK7t3RW8e79_Ww1UM5cNwKm6ZxC2iaT9ZqkAiZSvy1s7GMlGtxMApNL5I9QHrVhESXlKSiyxwCvBvQw\" alt=\"Adding a Post Comments Form block\" /></figure>\n\n\n\n<p>If your post has comments disabled, you can still add the <strong>Post Comments Form </strong>and enable the comments again while adding the block:</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/9mVrApf7xB7viAPBvTHVxXOgJjWhAAiIkHUowL6NURi5OzGoVoNNVzt7Fz2g0JParre8SouBciYcch2TUotOdrKkrJRY6ryuW6jJrZo_izqlFKjFhK-IxVkvFYXPqHJLdxOPp0YUeAU0YWSya9O6R-nA2ksfvWvKGLaVRy3O1zEOTJayN1AFrwh0yX9_4g\" alt=\"Enabling comments from within the Post Comments Form block\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh3.googleusercontent.com/94nirPXcPVz6zXnyON73G4YX8YL6TjAGTmyl3Wc3jOuA5ePSrRnsfkKTNXxfXMwbSy16nu_LgIOzYMSiuYAiCKo6t8hjo1PskLvmrM6ljmqMcppjO4Qscm9fGBrOobSHreS3ALurFDgAWoyDlcbGHznPnbmlB_0a2Jc1lJ63Kdo14glc0hk6uZnOsh9Ftw\" alt=\"Block toolbar in the Post Comments Form block\" style=\"width:326px;height:84px\" width=\"326\" height=\"84\" /></figure>\n\n\n\n<p>The block toolbar contains the tools to customize each block. The <strong>Post Comments Form </strong>block\u2019s toolbar consists of the following tools:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<p>You can transform a&nbsp;<strong>Post Comments Form </strong>block<strong> </strong>into a Columns, or a Group block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-22-at-1.13.33-PM-1.png\" alt=\"Transform to in the Post Comments Form block\" class=\"wp-image-16224900\" style=\"width:470px;height:279px\" width=\"470\" height=\"279\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/WPNrokpDILIErSHIABJTIRqWl8508RE-F51ga6SPfkxOPbBtPPMutWY-UXBsYdZMOn_tL8SHXLQhMwgEO_HsvcQDawXv3RVeoKtioYixa3HBUnEVyAzjy9s_E0P359F2lvD7sXD27EoQNhHQnqmnA2rZj0j4OsdPefBF1tfMdZFOhf1m905z5e86S-31aw\" alt=\"Block moving tools in the Post Comments Form block\" style=\"width:330px;height:90px\" width=\"330\" height=\"90\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <strong>Post Comments Form</strong> block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change text alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/p9ME0BJDS9GqdoU_Ey7hMTIrI5155Jlt053H7eNJuA6l68Tzp2MRCEhtT33fJNSc7IfvJ1kIrGO_-LuylDlEHVOvzdG-SBh8HQXXQnvRnsDj3hcytOD0fz2iUJvmW_MjhHLpCmyB6q88WAh8AVnNQm3IFQIqH76jV4b_mIB9-LKIQTLgTYOaHfAIKHp4-Q\" alt=\"Change text alignment in the Post Comments Form block\" style=\"width:438px;height:294px\" width=\"438\" height=\"294\" /></figure>\n\n\n\n<p>Text alignment options let you align the <strong>Edit</strong> button towards the left, center, or right.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/WWgHajrRgAx0HMz8_ALZbZ7pt4dPkFwbDhnTyf9I5mDYQzx7ykqTAcdxKqHVF5xQIKtjcWL2qIKYv14yVlDjR8ZZuC90Ax66xSfO2IX1gZA28oBJyNqNq5UtKuPUVoTvFQM38Dv9MotT9LTyD_E0DQJSLNQw6OXHHDmZdyuFqZRbhp2ZH1qgMYa5rQHOGQ\" style=\"width: 250px\">\u00a0</p>\n\n\n\n<p>The drop-down menu to the left of the\u00a0<a href=\"https://wordpress.org/documentation/article/more-options/\">More options menu</a>\u00a0contains a range of additional rich text editing options such as highlighting, inline code, strikethrough, and more.</p>\n\n\n\n<p>Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\" data-type=\"helphub_article\" data-id=\"13748329\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the settings icon next to the <strong>Publish</strong> or <strong>Update</strong> button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/post-comments-form-settings-WP-62.png\" alt=\"Post Comments Form block settings.\" class=\"wp-image-16356494\" style=\"width:314px;height:749px\" width=\"314\" height=\"749\" srcset=\"https://wordpress.org/documentation/files/2023/04/post-comments-form-settings-WP-62.png 628w, https://wordpress.org/documentation/files/2023/04/post-comments-form-settings-WP-62-126x300.png 126w, https://wordpress.org/documentation/files/2023/04/post-comments-form-settings-WP-62-429x1024.png 429w\" sizes=\"auto, (max-width: 314px) 100vw, 314px\" /></figure>\n\n\n\n<p>Here are the options for the <strong>Post Comments Form</strong> block:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Color</strong></p>\n\n\n\n<p>The <strong><strong>Post Comments Form</strong></strong> block provides Color settings options to change the text, background, and link colors. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <strong><strong><strong>Post Comments Form</strong></strong> </strong>block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Dimension</strong></p>\n\n\n\n<p>The <strong><strong><strong>Post Comments Form</strong></strong> </strong>block provides spacing settings to change the margin and padding.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension controls overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The <strong>Advanced</strong> tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-22-at-1.10.51-PM.png\" alt=\"Advanced settings in the Post Comments Form block\" class=\"wp-image-16224891\" style=\"width:414px;height:221px\" width=\"414\" height=\"221\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-22-at-1.10.51-PM.png 552w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-22-at-1.10.51-PM-300x160.png 300w\" sizes=\"auto, (max-width: 414px) 100vw, 414px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>2023-03-30\n<ul class=\"wp-block-list\">\n<li>Updated screenshots</li>\n\n\n\n<li>Added information about spacing settings</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-11-22</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Post Comments Form block displays a post&#8217;s comments form. This block is located inside a Comments block and lets you customize the appearance of the post comments form. You can only insert the Post Comments Form block inside a Comment Template block within the Comment block.&nbsp; Click [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16224779",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16224779",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16224779"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16224779/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360363,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16224779/revisions/16360363"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16224779"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16224779"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

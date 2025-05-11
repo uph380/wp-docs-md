@@ -1,0 +1,109 @@
+{
+    "id": 13334997,
+    "date": "2020-09-08T09:52:36",
+    "date_gmt": "2020-09-08T09:52:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13334997"
+    },
+    "modified": "2024-09-30T20:04:48",
+    "modified_gmt": "2024-09-30T20:04:48",
+    "slug": "imgur-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/imgur-embed/",
+    "title": {
+        "rendered": "Imgur embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of Blocks</a></p>\n\n\n\n<p>Using the Imgur Embed block you can include an <a href=\"https://imgur.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Imgur</a> post into your post/page, so your visitor can stay on your site to view the Imgur post directly, without redirecting to Imgur. Also note that you don\u2019t need an Imgur account to embed an image, GIF or video, although it needs to be public.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"581\" height=\"799\" src=\"https://wordpress.org/documentation/files/2020/09/imgurPreview.png\" alt=\"Imgur Embed block\" class=\"wp-image-13375765\" srcset=\"https://wordpress.org/documentation/files/2020/09/imgurPreview.png 581w, https://wordpress.org/documentation/files/2020/09/imgurPreview-218x300.png 218w\" sizes=\"auto, (max-width: 581px) 100vw, 581px\" /></figure>\n\n\n\n<p>Steps to embed an Imgur post in your post or page:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Head over the Imgur URL of the post you want to embed and copy the URL of the post from the browser bar.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"706\" src=\"https://wordpress.org/documentation/files/2020/09/ImgurEmbedURL-1024x706.png\" alt=\"How to copy the URL from an Imgur post.\" class=\"wp-image-13375766\" srcset=\"https://wordpress.org/documentation/files/2020/09/ImgurEmbedURL-1024x706.png 1024w, https://wordpress.org/documentation/files/2020/09/ImgurEmbedURL-300x207.png 300w, https://wordpress.org/documentation/files/2020/09/ImgurEmbedURL-768x530.png 768w, https://wordpress.org/documentation/files/2020/09/ImgurEmbedURL.png 1386w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>2. Add an Imgur Embed block to your post.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"523\" height=\"233\" src=\"https://wordpress.org/documentation/files/2020/09/imgurBlockSuggestion.png\" alt=\"\" class=\"wp-image-13375770\" style=\"width:366px;height:155px\" srcset=\"https://wordpress.org/documentation/files/2020/09/imgurBlockSuggestion.png 523w, https://wordpress.org/documentation/files/2020/09/imgurBlockSuggestion-300x134.png 300w\" sizes=\"auto, (max-width: 523px) 100vw, 523px\" /><figcaption class=\"wp-element-caption\">How to quickly add an imgur embed block using the slash command.</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p>3. Paste the Imgur URL from Step 1 in the text box</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"433\" src=\"https://wordpress.org/documentation/files/2022/08/image-1-1-1024x433.png\" alt=\"How to paste the URL of an imgur post into an Imgur Embed block\" class=\"wp-image-15879221\" style=\"width:366px;height:155px\" srcset=\"https://wordpress.org/documentation/files/2022/08/image-1-1-1024x433.png 1024w, https://wordpress.org/documentation/files/2022/08/image-1-1-300x127.png 300w, https://wordpress.org/documentation/files/2022/08/image-1-1-768x325.png 768w, https://wordpress.org/documentation/files/2022/08/image-1-1.png 1352w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>4. Click on the \u201cEmbed\u201d Button</p>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.52.09-PM-1-1024x952.png\" alt=\"Preview of an Imgur Embed block\" class=\"wp-image-15879187\" style=\"width:398px;height:370px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message \u201cSorry, this content could not be embedded.\u201d You will have two choices: Try again with a different URL or convert to a link.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"282\" src=\"https://wordpress.org/documentation/files/2020/09/imgurCanNotEmbed-1024x282.png\" alt=\"\" class=\"wp-image-13375786\" style=\"width:366px;height:114px\" srcset=\"https://wordpress.org/documentation/files/2020/09/imgurCanNotEmbed-1024x282.png 1024w, https://wordpress.org/documentation/files/2020/09/imgurCanNotEmbed-300x83.png 300w, https://wordpress.org/documentation/files/2020/09/imgurCanNotEmbed-768x212.png 768w, https://wordpress.org/documentation/files/2020/09/imgurCanNotEmbed.png 1353w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>5. Click on \u201cPreview\u201d to see how it will look on the front end of your page</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"581\" height=\"799\" src=\"https://wordpress.org/documentation/files/2020/09/imgurPreview-1.png\" alt=\"Preview of an Imgur post in the Imgur Embed block\" class=\"wp-image-13375787\" srcset=\"https://wordpress.org/documentation/files/2020/09/imgurPreview-1.png 581w, https://wordpress.org/documentation/files/2020/09/imgurPreview-1-218x300.png 218w\" sizes=\"auto, (max-width: 581px) 100vw, 581px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Each block has its own block-specific controls that allow you to manipulate the block right in the editor. The Block Toolbar for the Imgur embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Block moving tools</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"534\" height=\"122\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.48.27-PM.png\" alt=\"Block toolbar in the in the Imgur Embed block\" class=\"wp-image-15879176\" style=\"width:349px;height:80px\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.48.27-PM.png 534w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.48.27-PM-300x69.png 300w\" sizes=\"auto, (max-width: 534px) 100vw, 534px\" /></figure>\n\n\n\n<p><strong>Transform to</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1012\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.54.35-PM-1024x1012.png\" alt=\"Transform tool in the Imgur Embed block\" class=\"wp-image-15879189\" style=\"width:350px;height:346px\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.54.35-PM-1024x1012.png 1024w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.54.35-PM-300x296.png 300w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.54.35-PM-768x759.png 768w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-4.54.35-PM.png 1184w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>You can transform an Imgur embed block into a Paragraph, Columns or Group block. Changing an Imgur embed block into a Group block would give you the ability to change the background color around the Imgur embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"931\" src=\"https://wordpress.org/documentation/files/2022/08/imgur1-1024x931.png\" alt=\"Editor view of an Imgur Embed as a group with Color Settings controls\" class=\"wp-image-15879195\" srcset=\"https://wordpress.org/documentation/files/2022/08/imgur1-1024x931.png 1024w, https://wordpress.org/documentation/files/2022/08/imgur1-300x273.png 300w, https://wordpress.org/documentation/files/2022/08/imgur1-768x698.png 768w, https://wordpress.org/documentation/files/2022/08/imgur1-1536x1396.png 1536w, https://wordpress.org/documentation/files/2022/08/imgur1.png 2000w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of an Imgur Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"624\" src=\"https://wordpress.org/documentation/files/2020/09/imgurEmbedBgColorPreview-1-1024x624.png\" alt=\"Imgur embed with a blue background.\" class=\"wp-image-13375832\" srcset=\"https://wordpress.org/documentation/files/2020/09/imgurEmbedBgColorPreview-1-1024x624.png 1024w, https://wordpress.org/documentation/files/2020/09/imgurEmbedBgColorPreview-1-300x183.png 300w, https://wordpress.org/documentation/files/2020/09/imgurEmbedBgColorPreview-1-768x468.png 768w, https://wordpress.org/documentation/files/2020/09/imgurEmbedBgColorPreview-1.png 1363w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Imgur embed with a blue background.</figcaption></figure>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"550\" height=\"124\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-5.02.13-PM.png\" alt=\"Block moving tools in the Imgur Embed block\" class=\"wp-image-15879200\" style=\"width:360px;height:81px\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-5.02.13-PM.png 550w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-5.02.13-PM-300x68.png 300w\" sizes=\"auto, (max-width: 550px) 100vw, 550px\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down the editor. Use the six dots icon to drag and drop the Imgur Embed block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<figure class=\"wp-block-image alignright size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"458\" height=\"604\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-5.04.29-PM.png\" alt=\"Change Alignment in the Imgur Embed block\" class=\"wp-image-15879202\" style=\"width:229px;height:302px\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-5.04.29-PM.png 458w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-01-at-5.04.29-PM-227x300.png 227w\" sizes=\"auto, (max-width: 458px) 100vw, 458px\" /></figure>\n\n\n\n<p></p>\n\n\n\n<p style=\"font-size:15px\"><strong>Change Alignment:</strong> </p>\n\n\n\n<p>The block toolbar for the&nbsp;<em>Imgur Embed block</em>&nbsp;has options for alignment.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong>&nbsp;\u2013 Make the block left-aligned.</li>\n\n\n\n<li><strong>Align center</strong>&nbsp;\u2013 Make the block alignment centered.</li>\n\n\n\n<li><strong>Align right&nbsp;</strong>\u2013 Make the block right-aligned.</li>\n\n\n\n<li><strong>Wide width</strong>&nbsp;\u2013 Increase the width of the block beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong>&nbsp;\u2013 Extend the block to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>The \u201cWide width\u201d and \u201cFull width\u201d alignment settings must be enabled by your WordPress theme.&nbsp;</p>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Imgur Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/180570676-07c878cc-2d0c-47a0-b8f7-92f05c60a8a6-1-1024x439.png\" alt=\"Edit URL in the Imgur Embed block\" class=\"wp-image-15879203\" style=\"width:362px;height:155px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>Besides the Advanced section, the Imgur embed has only one setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<p>Media settings</p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"540\" height=\"280\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-16.png\" alt=\"Media settings for the Imgur embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-15953928\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-16.png 540w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-16-300x156.png 300w\" sizes=\"auto, (max-width: 540px) 100vw, 540px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-15-1.png\" alt=\"Media settings for the Imgur embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-15953929\" /></figure>\n</div>\n</div>\n\n\n\n<p>Via the&nbsp;<em>Media Settings</em>&nbsp;you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong>&nbsp;This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong>&nbsp;This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced settings</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM.png\"><img loading=\"lazy\" decoding=\"async\" width=\"349\" height=\"191\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM.png\" alt=\"Advanced settings in the Imgur Embed block\" class=\"wp-image-12714391\" style=\"width:262px;height:143px\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM.png 349w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM-300x164.png 300w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></a><figcaption class=\"wp-element-caption\">The advanced section lets you add a CSS class to your block.</figcaption></figure>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-01\n<ul class=\"wp-block-list\">\n<li>Content and screenshots added for 6.0</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-11-27\n<ul class=\"wp-block-list\">\n<li>screenshots 5.6 </li>\n\n\n\n<li>removed Edit HTML, Add to reusable Blocks and Media sections from More Options and Advanced settings sections. </li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-09-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Using the Imgur Embed block you can include an Imgur post into your post/page, so your visitor can stay on your site to view the Imgur post directly, without redirecting to Imgur. Also note that you don\u2019t need an Imgur account to embed an image, GIF or video, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13334997",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13334997",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13334997"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13334997/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16361070,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13334997/revisions/16361070"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13334997"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13334997"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

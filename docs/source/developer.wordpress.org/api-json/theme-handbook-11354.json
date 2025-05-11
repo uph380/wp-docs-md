@@ -1,0 +1,97 @@
+{
+    "id": 11354,
+    "date": "2014-10-23T15:05:21",
+    "date_gmt": "2014-10-23T15:05:21",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11354"
+    },
+    "modified": "2022-10-25T15:33:59",
+    "modified_gmt": "2022-10-25T15:33:59",
+    "slug": "pagination",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/pagination/",
+    "title": {
+        "rendered": "Pagination"
+    },
+    "content": {
+        "rendered": "\n<p>Pagination allows your user to <em>page</em> back and forth through multiple pages of content.</p>\n\n\n\n<p>WordPress can use pagination when:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Viewing lists of posts when more posts exist than can fit on one page, or</li>\n\n\n\n<li>Breaking up longer posts by manually by using the following tag: <code>&lt;!--nextpage--&gt;</code></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Using Pagination to Navigate Post Lists</h2>\n\n\n\n<p>The most common use for pagination in WordPress sites is to break up long lists of posts into separate pages. Whether you&#8217;re viewing a category, archive, or default index page for a blog or site, WordPress only shows 10 posts per page by default. Users can change the number of posts that appear on each page on the Reading screen: <strong>Admin &gt; Settings &gt; Reading</strong>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Loop with Pagination</h3>\n\n\n\n<p>This simplified example shows where you can add pagination functions for the main loop. Add the functions just before or after the loop.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( have_posts() ) : ?&gt;\n\n    &lt;!-- Start the pagination functions before the loop. --&gt;\n    &lt;div class=\"nav-previous alignleft\"&gt;&lt;?php next_posts_link( 'Older posts' ); ?&gt;&lt;/div&gt;\n    &lt;div class=\"nav-next alignright\"&gt;&lt;?php previous_posts_link( 'Newer posts' ); ?&gt;&lt;/div&gt;\n    &lt;!-- End the pagination functions before the loop. --&gt;\n\n\t&lt;!-- Start of the main loop. --&gt;\n\t&lt;?php while ( have_posts() ) : the_post();  ?&gt;\n\n\t&lt;!-- the rest of your theme's main loop --&gt;\n\n    &lt;?php endwhile; ?&gt;\n    &lt;!-- End of the main loop --&gt;\n\n    &lt;!-- Start the pagination functions after the loop. --&gt;\n    &lt;div class=\"nav-previous alignleft\"&gt;&lt;?php next_posts_link( 'Older posts' ); ?&gt;&lt;/div&gt;\n    &lt;div class=\"nav-next alignright\"&gt;&lt;?php previous_posts_link( 'Newer posts' ); ?&gt;&lt;/div&gt;\n    &lt;!-- End the pagination functions after the loop. --&gt;\n\n&lt;?php else : ?&gt;\n\n\t&lt;?php _e( 'Sorry, no posts matched your criteria.' ); ?&gt;\n\n&lt;?php endif; ?&gt;\n</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Methods for displaying pagination links</h3>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">When using any of these pagination functions outside the template file with the loop that is being paginated, you must call the global variable $wp_query.</div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function your_themes_pagination() {\n\tglobal $wp_query;\n\techo paginate_links();\n}</code></pre>\n\n\n\n<p>WordPress has numerous functions for displaying links to other pages in your loop. Some of these functions are only used in very specific contexts. You would use a different function on a single post page then you would on a archive page. The following section covers archive template pagination functions. The section after that cover single post pagination.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Simple Pagination</h4>\n\n\n\n<p><strong>posts_nav_link</strong></p>\n\n\n\n<p>One of the simplest methods is <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/posts_nav_link/\" target=\"_blank\">posts_nav_link()</a>. Simply place the function in your template after your loop. This generates both links to the next page of posts and previous page of posts where applicable. This function is ideal for themes that have simple pagination requirements.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">posts_nav_link();</code></pre>\n\n\n\n<p><strong>next_posts_link &amp; prev_posts_link</strong></p>\n\n\n\n<p>When building a theme, use <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/next_posts_link/\" target=\"_blank\">next_posts_link()</a> and <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/previous_posts_link/\" target=\"_blank\">prev_posts_link()</a>. to have control over where the previous and next posts page link appears.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">next_posts_link();\nprevious_posts_link();</code></pre>\n\n\n\n<p>If you need to pass the pagination links to a PHP variable, you can use <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/get_next_posts_link/\" target=\"_blank\">get_next_posts_link()</a> and <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/get_previous_posts_link/\" target=\"_blank\">get_previous_posts_link()</a>.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$next_posts = get_next_posts_link();\n$prev_posts = get_previous_posts_link();</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Numerical Pagination</h4>\n\n\n\n<p>When you have many pages of content it is a better experience to display a list of page numbers so the user can click on any one of the page links rather then having to repeatedly click next or previous posts. WordPress provides several functions for automatically displaying a numerical pagination list.</p>\n\n\n\n<p><strong>For WordPress 4.1+</strong></p>\n\n\n\n<p>If you want more robust pagination options, you can use <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/the_posts_pagination/\" target=\"_blank\">the_posts_pagination()</a> for WordPress 4.1 and higher. This will output a set of page numbers with links to previous and next pages of posts.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">the_posts_pagination();</code></pre>\n\n\n\n<p><strong>For WordPress prior to 4.1</strong></p>\n\n\n\n<p>If you want your pagination to support older versions of WordPress, you must use <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/paginate_links/\" target=\"_blank\">paginate_links()</a>.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">echo paginate_links();</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Pagination Between Single Posts</h4>\n\n\n\n<p>All of the previous functions should be used on index and archive pages. When you are viewing a single blog post, you must use <a href=\"https://developer.wordpress.org/reference/functions/previous_post_link/\">prev_post_link</a> and <a href=\"https://developer.wordpress.org/reference/functions/next_post_link/\">next_post_link</a>. Place the following functions below the loop on your single.php.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">previous_post_link();\nnext_post_link();</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Pagination within a post</h3>\n\n\n\n<p>WordPress gives you a tag that can be placed in post content to enable pagination for that post:<br><code>&lt;!--nextpage--&gt;</code><br>If you use that tag in the content, you need to ensure that the <a rel=\"noopener\" href=\"https://developer.wordpress.org/reference/functions/wp_link_pages/\" target=\"_blank\">wp_link_pages</a> function is placed in your single.php template within the loop.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( have_posts() ) : ?&gt;\n\n\t&lt;!-- Start of the main loop. --&gt;\n\t&lt;?php while ( have_posts() ) : the_post(); ?&gt;\n\n\t\t&lt;?php the_content(); ?&gt;\n\n\t\t&lt;?php wp_link_pages(); ?&gt;\n\n\t&lt;?php endwhile; ?&gt;\n\t&lt;!-- End of the main loop. --&gt;\n\n&lt;?php endif; ?&gt;\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11354",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11354",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 33,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11354/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143614,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11354/revisions/143614"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11354"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

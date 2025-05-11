@@ -1,0 +1,91 @@
+{
+    "id": 135819,
+    "date": "2021-05-08T17:54:47",
+    "date_gmt": "2021-05-08T17:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/overview/"
+    },
+    "modified": "2024-01-29T21:09:49",
+    "modified_gmt": "2024-01-29T21:09:49",
+    "slug": "overview",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/overview/",
+    "title": {
+        "rendered": "Widgets Block Editor overview"
+    },
+    "content": {
+        "rendered": "<h2>Widgets Block Editor</h2>\n<p>The new Widgets Editor is a WordPress feature which upgrades widget areas to allow using blocks alongside widgets. It offers a new widget management experience built using the familiar WordPress block editor.</p>\n<p>You can access the new Widgets Editor by navigating to Appearance <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Widgets or Appearance <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Customize <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Widgets and choose a widget area.</p>\n<p>The Widgets Block Editor allows you to insert blocks and widgets into any of the <a href=\"https://developer.wordpress.org/themes/functionality/sidebars/\">Widget Areas or Sidebars</a> defined by the site&#8217;s active theme, via a standalone editor or through the Customizer.</p>\n<h3>Customizer Widgets Block Editor</h3>\n<p>The new Widgets Editor also replaces the Widgets section in the Customizer with the new block-based editor.</p>\n<p>You can access the Customizer Widgets Block Editor by navigating to Appearance <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Customize, selecting Widgets, and then selecting a Widget Area.</p>\n<p>Using the new Widgets Editor through the Customizer goes beyond inserting blocks and widgets into a selected Widget Area, making use of the live preview of the changes, to the right of the editor, and of all the other Customizer specific features such as scheduling and sharing changes.</p>\n<h2>Compatibility</h2>\n<p>Widgets that were added to a Widget Area before the new Widgets Editor will continue to work &#8211; via the Legacy Widget block.</p>\n<p>The Legacy Widget block is the compatibility mechanism which allows us to edit and preview changes to a classic widget within the new block based Widgets Editor.</p>\n<p>Any third party widgets registered by plugins can still be inserted in widget areas by adding and setting them up through a Legacy Widget block.</p>\n<p>The Widgets Editor stores blocks using an underlying &#8220;Block&#8221; widget that is invisible to the user. This means that plugins and themes will continue to work normally, and that the Widgets Block Editor can be disabled without any data loss.</p>\n<p>Themes may disable the Widgets Block Editor using <code>remove_theme_support( 'widgets-block-editor' )</code>.</p>\n<p>Users may disable the Widgets Block Editor by installing the <a href=\"https://wordpress.org/plugins/classic-widgets/\">Classic Widgets plugin</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135818,
+    "menu_order": 54,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135819",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135819",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135819/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151735,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135819/revisions/151735"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135818"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135819"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

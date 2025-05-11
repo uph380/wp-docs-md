@@ -1,0 +1,91 @@
+{
+    "id": 134503,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/slot-fill/"
+    },
+    "modified": "2024-11-25T11:04:13",
+    "modified_gmt": "2024-11-25T11:04:13",
+    "slug": "slot-fill",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/slot-fill/",
+    "title": {
+        "rendered": "SlotFill"
+    },
+    "content": {
+        "rendered": "<p><code>Slot</code> and <code>Fill</code> are a pair of components which enable developers to render React UI elsewhere in a React element tree, a pattern often referred to as &#8220;portal&#8221; rendering. It is a pattern for component extensibility, where a single <code>Slot</code> may be occupied by multiple <code>Fill</code>s rendered in different parts of the application.</p>\n<p>Slot/Fill was originally inspired by the <a href=\"https://github.com/camwest/react-slot-fill\"><code>react-slot-fill</code> library</a>.</p>\n<h2>Usage</h2>\n<p>At the root of your application, you must render a <code>SlotFillProvider</code> which coordinates <code>Slot</code> and <code>Fill</code> rendering.</p>\n<p>Then, render a <code>Slot</code> component anywhere in your application, giving it a <code>name</code>. The <code>name</code> is either a <code>string</code> or a symbol. Symbol names are useful for slots that are supposed to be private, accessible only to clients that have access to the symbol value.</p>\n<p>Any <code>Fill</code> will render its UI in this <code>Slot</code> space, even if rendered elsewhere in the application.</p>\n<p>You can either use the <code>Fill</code> component directly, or create a wrapper component (as in the following example) to hide the slot name from the consumer.</p>\n<pre><code class=\"language-jsx\">import {\n    SlotFillProvider,\n    Slot,\n    Fill,\n    Panel,\n    PanelBody,\n} from '@wordpress/components';\n\nconst MySlotFillProvider = () =&gt; {\n    const MyPanelSlot = () =&gt; (\n        &lt;Panel header=\"Panel with slot\"&gt;\n            &lt;PanelBody&gt;\n                &lt;Slot name=\"MyPanelSlot\" /&gt;\n            &lt;/PanelBody&gt;\n        &lt;/Panel&gt;\n    );\n\n    MyPanelSlot.Content = () =&gt; &lt;Fill name=\"MyPanelSlot\"&gt;Panel body&lt;/Fill&gt;;\n\n    return (\n        &lt;SlotFillProvider&gt;\n            &lt;MyPanelSlot /&gt;\n            &lt;MyPanelSlot.Content /&gt;\n        &lt;/SlotFillProvider&gt;\n    );\n};\n</code></pre>\n<p>There is also the <code>createSlotFill</code> helper method which was created to simplify the process of matching the corresponding <code>Slot</code> and <code>Fill</code> components:</p>\n<pre><code class=\"language-jsx\">const { Fill, Slot } = createSlotFill( 'Toolbar' );\n\nconst ToolbarItem = () =&gt; &lt;Fill&gt;My item&lt;/Fill&gt;;\n\nconst Toolbar = () =&gt; (\n    &lt;div className=\"toolbar\"&gt;\n        &lt;Slot /&gt;\n    &lt;/div&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<p>The <code>SlotFillProvider</code> component does not accept any props (except <code>children</code>).</p>\n<p>Both <code>Slot</code> and <code>Fill</code> accept a <code>name</code> string prop, where a <code>Slot</code> with a given <code>name</code> will render the <code>children</code> of any associated <code>Fill</code>s.</p>\n<p><code>Slot</code> accepts a <code>bubblesVirtually</code> prop which changes the method how the <code>Fill</code> children are rendered. With <code>bubblesVirtually</code>, the <code>Fill</code> is rendered using a React portal. That affects the event bubbling and React context propagation behaviour:</p>\n<h3><code>bubblesVirtually=false</code></h3>\n<ul>\n<li>events will bubble to their parents on the DOM hierarchy (native event bubbling)</li>\n<li>the React elements inside the <code>Fill</code> will be rendered with React context of the <code>Slot</code></li>\n<li>renders the <code>Fill</code> elements directly, inside a <code>Fragment</code>, with no wrapper DOM element</li>\n</ul>\n<h3><code>bubblesVirtually=true</code></h3>\n<ul>\n<li>events will bubble to their virtual (React) parent in the React elements hierarchy</li>\n<li>the React elements inside the <code>Fill</code> will keep the React context of the <code>Fill</code> and its parents</li>\n<li>renders a wrapper DOM element inside which the <code>Fill</code> elements are rendered (used as an argument for React <code>createPortal</code>)</li>\n</ul>\n<p><code>Slot</code> with <code>bubblesVirtually=true</code> renders a wrapper DOM element (a <code>div</code> by default) and accepts additional props that customize this element, like <code>className</code> or <code>style</code>. You can also replace the <code>div</code> with another element by passing an <code>as</code> prop.</p>\n<p><code>Slot</code> <strong>without</strong> <code>bubblesVirtually</code> accepts an optional <code>children</code> prop, which is a function that receives <code>fills</code> array as a param. It allows you to perform additional processing: render a placeholder when there are no fills, or render a wrapper only when there are fills.</p>\n<p><em>Example</em>:</p>\n<pre><code class=\"language-jsx\">const Toolbar = ( { isMobile } ) =&gt; (\n    &lt;div className=\"toolbar\"&gt;\n        &lt;Slot name=\"Toolbar\"&gt;\n            { ( fills ) =&gt; {\n                return isMobile &amp;&amp; fills.length &gt; 3 ? (\n                    &lt;div className=\"toolbar__mobile-long\"&gt;{ fills }&lt;/div&gt;\n                ) : (\n                    fills\n                );\n            } }\n        &lt;/Slot&gt;\n    &lt;/div&gt;\n);\n</code></pre>\n<p>Additional information (props) can also be passed from a <code>Slot</code> to a <code>Fill</code> by a combination of:<br />\n1. Adding a <code>fillProps</code> prop to the <code>Slot</code>.<br />\n2. Passing a function as <code>children</code> to the <code>Fill</code>. This function will receive the <code>fillProps</code> as an argument.</p>\n<pre><code class=\"language-jsx\">const { Fill, Slot } = createSlotFill( 'Toolbar' );\n\nconst ToolbarItem = () =&gt; (\n    &lt;Fill&gt;\n        { ( { hideToolbar } ) =&gt; {\n            &lt;Button onClick={ hideToolbar }&gt;Hide&lt;/Button&gt;;\n        } }\n    &lt;/Fill&gt;\n);\n\nconst Toolbar = () =&gt; {\n    const hideToolbar = () =&gt; {\n        console.log( 'Hide toolbar' );\n    };\n    return (\n        &lt;div className=\"toolbar\"&gt;\n            &lt;Slot fillProps={ { hideToolbar } } /&gt;\n        &lt;/div&gt;\n    );\n};\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 203,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134503",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134503",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134503/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155837,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134503/revisions/155837"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134503"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

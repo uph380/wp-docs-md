@@ -1,0 +1,91 @@
+{
+    "id": 136311,
+    "date": "2021-06-07T17:54:48",
+    "date_gmt": "2021-06-07T17:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/scrollable/"
+    },
+    "modified": "2024-10-30T17:10:01",
+    "modified_gmt": "2024-10-30T17:10:01",
+    "slug": "scrollable",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/scrollable/",
+    "title": {
+        "rendered": "Scrollable"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>Scrollable</code> is a layout component that content in a scrollable container.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { __experimentalScrollable as Scrollable } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;Scrollable style={ { maxHeight: 200 } }&gt;\n            &lt;div style={ { height: 500 } }&gt;...&lt;/div&gt;\n        &lt;/Scrollable&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>children</code>: <code>ReactNode</code></h3>\n<p>The children elements.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>scrollDirection</code>: <code>string</code></h3>\n<p>Renders a scrollbar for a specific axis when content overflows.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>y</code></li>\n<li>Allowed values: <code>x</code>, <code>y</code>, <code>auto</code></li>\n</ul>\n<h3><code>smoothScroll</code>: <code>boolean</code></h3>\n<p>Enables (CSS) smooth scrolling.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 200,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136311",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136311",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136311/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151730,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136311/revisions/151730"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136311"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 13771020,
+    "date": "2020-12-10T12:55:48",
+    "date_gmt": "2020-12-10T12:55:48",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13771020"
+    },
+    "modified": "2023-04-14T13:32:36",
+    "modified_gmt": "2023-04-14T13:32:36",
+    "slug": "where-to-find-wordpress-help",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/where-to-find-wordpress-help/",
+    "title": {
+        "rendered": "Where to find WordPress help"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-white-color has-deep-blueberry-background-color has-text-color has-background has-link-color wp-elements-89407259ecdc93d26f85dc0cffcfce4a\"><strong>Important:</strong> Please note that this is not a support page. If you seek help with your specific problem, please refer to the&nbsp;<a href=\"https://wordpress.org/support/welcome/\">Support forums</a>.</p>\n\n\n\n<p>WordPress help is never hard to find. There are many sites dedicated to helping WordPress users, including this support page and the always-helpful <a href=\"https://wordpress.org/support/forums/\">forums</a>. With so much content available, however, how are you to know where to begin looking for help?</p>\n\n\n\n<p>The <a href=\"https://codex.wordpress.org/FAQ\">WordPress FAQ</a>, which provides comprehensive answers to common questions, is a good place to start. You could also read our document on <a href=\"https://wordpress.org/support/welcome/\">using the WordPress forums</a> to help you get better results from your support requests.</p>\n\n\n\n<p>However, the best place to start looking for WordPress help is your favorite search engine. This is usually the quickest way to get the information you need, and helps take some of the pressure off our volunteers in the support forums.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Searching The Net For WordPress Help</h2>\n\n\n\n<p>When searching online for WordPress help, one of the biggest challenges can be figuring out the right keywords to use. Otherwise, you risk spending an inordinate amount of time sorting through search results that don&#8217;t accurately reflect the problem that you are currently experiencing. In order to quickly get the information that you need, it makes sense to limit your search to specific online WordPress resources or websites. The following section will show you how to choose the right search terms, and how to use those terms effectively.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Search Using Keywords</h3>\n\n\n\n<p>Sometimes you can use error messages to generate the keywords needed in your help search. For example:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">Warning: main(/home/atlantis/public_html/wp-includes/\nfunctions.php): failed to open stream: No such\nfile or directory in /home/stargateatlantis/\npublic_html/wp-settings.php on line 67\n\nFatal error: main(): Failed opening required\n'/home/atlantis/public_html/wp-includes/\nfunctions.php' (include_path='.:/usr/lib/php:\n/usr/local/lib/php') in /home/stargateatlantis/\npublic_html/wp-settings.php on line 67</pre>\n\n\n\n<p>The keywords you need to help solve the problem are hidden within this information. In particular, the error specifically references the files that are causing the issue: functions.php and wp-settings.php. The names of these files will make up part of your search.</p>\n\n\n\n<p>You could try opening the files directly to examine them. However, this may be of limited use. Due to the way that WordPress processes .php files, the given line numbers may not correspond to the actual source of the error.</p>\n\n\n\n<p>The specific errors are <strong>failed to open stream</strong> and <strong>failed opening required</strong>, with both happening inside the wp-settings.php file. This indicates that the problem is likely with wp-settings.php rather than functions.php. The fact that both errors contain the words &#8220;failed&#8221; and &#8220;open&#8221; is another clue.</p>\n\n\n\n<p>Armed with this information, create a search in your favorite search engine that includes the words:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">wordpress failed open wp-settings.php\n</pre>\n\n\n\n<p>This should get you started on narrowing down the problem.</p>\n\n\n\n<p>Not all keywords can be found so easily. If the problem is a CSS or HTML issue, you can include the <a href=\"https://codex.wordpress.org/Finding_Your_CSS_Styles\">specific tag</a> or selector with which the problem seems to lie. However, it is still advisable to include actual words in your search, as it can be difficult to figure out which tag is causing the actual issue.</p>\n\n\n\n<p>You may need to analyze the problem for a minute or two to in order to find the right terms. For example, if your web page layout looks noticeably different in Internet Explorer than it does in another browser, then search for information on <strong>Internet Explorer layout bugs</strong>. On the other hand, if you have a layout error that remains consistent among browsers, identify the part of the layout that is affected. Is it the <strong>sidebar</strong>, <strong>header</strong>, <strong>post content</strong>, or <strong>comments</strong>? Likewise, if the header image is not showing up or is not displaying correctly, begin by searching for <strong>wordpress header image</strong> and then add specifics such as <strong>wordpress header image missing</strong> to narrow things down.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Brainstorming Search Terms</h3>\n\n\n\n<p>Brainstorming is a useful technique to use if you are struggling to find suitable keywords. To start, write down the problem you are experiencing, trying to be as descriptive as possible. For example:</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n<p><em>I&#8217;m having trouble with the nested list in the sidebar of my layout. It isn&#8217;t lining up the items under the titles right. It is keeping things on the left margin when I want them to be indented.</em></p>\n</blockquote>\n\n\n\n<p>Your description can be a good source of potential keywords. In the above example, you can find:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>sidebar</li>\n\n\n\n<li>layout</li>\n\n\n\n<li>nested list</li>\n\n\n\n<li>left margin</li>\n\n\n\n<li>indented</li>\n</ul>\n\n\n\n<p>All of these terms could be used as search keywords.</p>\n\n\n\n<p>Alternatively, explain your problem to a non-WordPress user. Stating the issue in simple terms is an excellent way to get to the heart of a problem and find the right keywords to summarize the issue.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Search Engine Site Search</h3>\n\n\n\n<p>Once you have selected your keywords, it&#8217;s time to put them to work. As you sort through the search results, you may end up replacing your initial keywords with more specific ones, in order to narrow down the results. For example, while searching for &#8220;wordpress sidebar layout nested links&#8221;, you may discover that the problem lies within the specific <a href=\"https://codex.wordpress.org/Using_Themes\">theme</a> you are using. Add the name of the theme to your keywords in order to narrow down your search.</p>\n\n\n\n<p>Another way to improve the quality of your search results is to search a specific site, rather than the entire internet. Most search engines allow you to run a search across one specific web address, helping you to avoid irrelevant results.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Google, Yahoo, and Bing Site Search</h4>\n\n\n\n<p>Google, Yahoo, and Bing all support use of the &#8220;site:&#8221; function while searching. To search a specific domain via one of these search engines, type your keywords and specify the site you want to search using the format &#8220;site:[domain]&#8221;. For example:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">keyword1 keyword2 site:wordpress.org\n</pre>\n\n\n\n<p>This instructs the search engine to search all <strong>wordpress.org</strong> sites, such as <em>codex.wordpress.org</em>, <em>wordpress.org/support</em>, and <em>make.wordpress.org</em>.</p>\n\n\n\n<p>To narrow your search down to a specific site, such as <em>codex.wordpress.org</em>, enter:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">keyword1 keyword2 site:codex.wordpress.org\n</pre>\n\n\n\n<p>This instructs the search engine to search only the codex.wordpress.org site, which won&#8217;t include results from the Support Forums.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Other Search Engines</h4>\n\n\n\n<p>Other search engines provide different ways to narrow down searches. Check to see if there is an advanced search option for your favorite search engine, and take your search from there.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Use Quotes to Group Keywords</h3>\n\n\n\n<p>You can narrow your search by grouping different keywords together. For example, instead of looking for:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">sidebar layout nested list left margin indented</pre>\n\n\n\n<p>you could group key phrases together with quote marks:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">sidebar layout \"nested list\" \"left margin\" indented</pre>\n\n\n\n<p>This would limit your search to anything with the words <em>sidebar</em>, <em>layout</em>, and <em>indented</em>, and the phrases &#8220;<em>nested list</em>&#8221; and &#8220;<em>left margin</em>.&#8221;</p>\n\n\n\n<p>Most search engines also allow you to use Boolean references such as <strong>AND</strong>, <strong>OR</strong> and <strong>NOT</strong> to group keywords together. For example, searching for:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">\"left margin\" OR \"nested list\"</pre>\n\n\n\n<p>would return a list of pages containing either the phrase <em>&#8220;left margin&#8221;</em> or <em>&#8220;nested list&#8221;</em>, as well as pages containing both of those terms.</p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Sources for Help</h2>\n\n\n\n<p>The best way to find accurate and concise WordPress information is to get it directly from WordPress.org sites. The main places to go for WordPress help and support are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://codex.wordpress.org/Main_Page\">WordPress Codex</a> &#8211; WordPress Online Manual</li>\n\n\n\n<li><a href=\"https://www.wordpress.org/support/\">WordPress Support Forums</a></li>\n\n\n\n<li><a href=\"https://codex.wordpress.org/IRC\">IRC Libera WordPress Support on channel #wordpress</a></li>\n\n\n\n<li><a href=\"https://codex.wordpress.org/WordPress_IRC_Live_Help\">WordPress IRC Live Help</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Other Helpful Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Search the <a href=\"https://wordpress.org/support\">WordPress Support Forums</a> for the self-hosted version of WordPress, and the <a href=\"http://wordpress.com/support/\">WordPress.com Support Forum</a> for help with WordPress.com issues. Please read <a href=\"https://codex.wordpress.org/Using_the_Support_Forums\">Using the Support Forums</a> and <strong>Finding WordPress Help</strong> to find out how to search the forums and post a clear, answerable question.</li>\n\n\n\n<li><a href=\"http://learn.wordpress.com/\">Learn WordPress</a> is the official WordPress.com tutorial and online video help site. Many tutorials apply to the self-hosted version of WordPress as well.</li>\n\n\n\n<li>To learn more about PHP (the open source scripting language that WordPress is built upon) try <a href=\"http://www.w3schools.com/php/\">this article</a>.</li>\n\n\n\n<li>Use Live WordPress Support via IRC. See: <a href=\"https://codex.wordpress.org/WordPress_IRC_Live_Help\">WordPress IRC Live Help</a> and <a href=\"https://codex.wordpress.org/IRC\">IRC</a>.</li>\n\n\n\n<li>If all else fails, go to the <a href=\"https://trac.wordpress.org/\">WordPress Trac</a> (bug tracker) and search the database to see if your problem has already been addressed. If you think your problem merits a new bug report, file one.</li>\n</ul>\n\n\n\n<p class=\"has-white-color has-deep-blueberry-background-color has-text-color has-background has-link-color wp-elements-89407259ecdc93d26f85dc0cffcfce4a\"><strong>Important:</strong> Please note that this is not a support page. If you seek help with your specific problem, please refer to the&nbsp;<a href=\"https://wordpress.org/support/welcome/\">Support forums</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Important: Please note that this is not a support page. If you seek help with your specific problem, please refer to the&nbsp;Support forums. WordPress help is never hard to find. There are many sites dedicated to helping WordPress users, including this support page and the always-helpful forums. With so much content available, however, how are [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        76,
+        74
+    ],
+    "class_list": [
+        "post-13771020",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-where-to-start",
+        "category-wordpress-overview"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13771020",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13771020"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13771020/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356732,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13771020/revisions/16356732"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13771020"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13771020"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

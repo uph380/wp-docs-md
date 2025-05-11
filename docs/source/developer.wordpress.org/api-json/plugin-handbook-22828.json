@@ -1,0 +1,97 @@
+{
+    "id": 22828,
+    "date": "2016-11-07T18:20:54",
+    "date_gmt": "2016-11-07T18:20:54",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=22828"
+    },
+    "modified": "2024-11-24T13:30:33",
+    "modified_gmt": "2024-11-24T13:30:33",
+    "slug": "special-user-roles-capabilities",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/special-user-roles-capabilities/",
+    "title": {
+        "rendered": "Special User Roles and Capabilities"
+    },
+    "content": {
+        "rendered": "\n<p>Every person who pushes code for, or aids in support for, a plugin is required to have their <strong>OWN</strong> individual account. These accounts do not have to be personally identifying (that is, you can name them PluginNameSupport1 if you wanted), however all accounts must be used by a single human for your own protection.</p>\n\n\n\n<p>There are four roles a user can have with regards to plugins. All can be managed from the <strong>advanced view</strong> section of a plugin page:</p>\n\n\n\n<figure class=\"wp-block-image alignleft size-medium\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"260\" src=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/advanced-view.jpg?resize=300%2C260&#038;ssl=1\" alt=\"Interface of the plugin page, the link &apos;&apos;Advanced View&apos;&apos; is highlighted.\" class=\"wp-image-129864\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/advanced-view.jpg?resize=300%2C260&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2020/08/advanced-view.jpg?w=700&amp;ssl=1 700w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<p>There are fields to add Support Reps and Committers as needed.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Owner</h2>\n\n\n\n<p>A plugin owner is automatically set by the person who submits the plugin. On plugin approval, they are added as a Committer (see below) and flagged as the owner. Should this need to be changed, scroll down to the <strong>Danger Zone</strong> section and select the new owner from the dropdown:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"548\" src=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/can-transger.jpg?resize=1024%2C548&#038;ssl=1\" alt=\"Transfer this plugin interface with a selector for the new owner and a &quot;Please transfer -Plugin Name-&quot; button\" class=\"wp-image-129867\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/can-transger.jpg?resize=1024%2C548&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2020/08/can-transger.jpg?resize=300%2C160&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2020/08/can-transger.jpg?resize=768%2C411&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2020/08/can-transger.jpg?w=1346&amp;ssl=1 1346w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<p>If there are no other users with commit access, you will need to grant them access before you can transfer the plugin. Remember, plugin owners should <strong>always</strong> have commit access to the plugins they own.</p>\n\n\n\n<p>If you see this message, then you are not the current owner, and need to contact them to have ownership transferred:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"249\" src=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/Owner.jpg?resize=1024%2C249&#038;ssl=1\" alt=\"Message: This plugin is currently owned by -user- the can choose to transfer ownership rights of the plugin to you\" class=\"wp-image-129865\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2020/08/Owner.jpg?resize=1024%2C249&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2020/08/Owner.jpg?resize=300%2C73&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2020/08/Owner.jpg?resize=768%2C187&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2020/08/Owner.jpg?w=1324&amp;ssl=1 1324w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<p>If the original owner is no longer available, you may contact the plugins team for assistance.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Committer</h2>\n\n\n\n<p>Someone with commit access has the ability to push code via SVN and make official requests concerning a plugin to the Plugin Directory Team. </p>\n\n\n\n<p>Anyone with commit access has the right to request a plugin be closed, and has the ability to add and remove anyone from commit access. This is done from the <strong>Advanced Page</strong> on the sidebar:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2021/02/Commit.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"604\" height=\"266\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/02/Commit.jpg?resize=604%2C266&#038;ssl=1\" alt=\"Interface to add a committer, an input with an &quot;Add&quot; button next to it\" class=\"wp-image-133798\" style=\"width:302px;height:133px\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2021/02/Commit.jpg?w=604&amp;ssl=1 604w, https://i0.wp.com/developer.wordpress.org/files/2021/02/Commit.jpg?resize=300%2C132&amp;ssl=1 300w\" sizes=\"auto, (max-width: 604px) 100vw, 604px\" /></a></figure>\n\n\n\n<p>In the forums, these people are labeled as a &#8220;Plugin Author&#8221; and have the ability to mark posts regarding their plugin as resolved.</p>\n\n\n\n<p>Other than the &#8220;Plugin Author&#8221; label in the forum for replies to plugin support topics, having commit access is not outwardly displayed. In order to be listed in the plugin&#8217;s &#8220;Contributors &amp; Developers&#8221; section, and to have the plugin included in a WordPress.org profile, the user must be listed as a contributor (see the subsequent section).</p>\n\n\n\n<p>Adding and removing commit access can only be done by an existing committer.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Support Rep</h2>\n\n\n\n<p>A support rep has <strong>no</strong> extra ability to directly manage the plugin itself. They cannot request changes be made to a plugin&#8217;s status in the directory. However, they will be labeled in the forums as being official support and this can help people understand who is helping them.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2021/02/Support.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"634\" height=\"280\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/02/Support.jpg?resize=634%2C280&#038;ssl=1\" alt=\"Interface to add a support rep, an input with an &quot;Add&quot; button next to it\" class=\"wp-image-133799\" style=\"width:317px;height:140px\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2021/02/Support.jpg?w=634&amp;ssl=1 634w, https://i0.wp.com/developer.wordpress.org/files/2021/02/Support.jpg?resize=300%2C132&amp;ssl=1 300w\" sizes=\"auto, (max-width: 634px) 100vw, 634px\" /></a></figure>\n\n\n\n<p>In the forums, they are labeled as a &#8220;Plugin Support&#8221; and have the ability to mark posts regarding their plugin as resolved.</p>\n\n\n\n<p>They are displayed on the plugin page, and the plugin appears on their profile page as a Support Representative.</p>\n\n\n\n<p>Adding and removing this status can only be done by an existing committer.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Contributor</h2>\n\n\n\n<p>A contributor has <span style=\"text-decoration: underline\">no</span> extra ability to directly manage the plugin itself. They <em>cannot</em> request changes be made to a plugin&#8217;s status in the directory.</p>\n\n\n\n<p>In the forums, they are labeled as a &#8220;Plugin Contributor&#8221; and have the ability to mark posts regarding their plugin as resolved.</p>\n\n\n\n<p>A contributor is publicly listed in the plugin&#8217;s &#8220;Contributors &amp; Developers&#8221; section and the plugin is listed as one of the user&#8217;s plugins in their WordPress.org profile.</p>\n\n\n\n<p>To be added as a contributor, a user must be listed within&nbsp;<em>Contributors</em> in the plugin&#8217;s <code>readme.txt</code>.</p>\n\n\n\n<p>While it is common to add people who helped with a plugin&#8217;s conceptualization or was an original contributor, you do not need to add anyone to your plugin with more access than you&#8217;re comfortable with.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-22828",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22828",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22828/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155830,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22828/revisions/155830"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=22828"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

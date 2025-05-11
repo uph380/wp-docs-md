@@ -1,0 +1,109 @@
+{
+    "id": 16221042,
+    "date": "2022-11-21T21:45:51",
+    "date_gmt": "2022-11-21T21:45:51",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16221042"
+    },
+    "modified": "2024-06-08T17:52:57",
+    "modified_gmt": "2024-06-08T17:52:57",
+    "slug": "post-author-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-author-block/",
+    "title": {
+        "rendered": "Post Author block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p style=\"font-size:18px\">The <em>Post Author</em><strong> </strong>block<em> </em>displays the username, avatar, and byline of the post\u2019s author.\u00a0</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1999\" height=\"1072\" src=\"https://wordpress.org/documentation/files/2023/04/post-author-block.png\" alt=\"Post author block on the editor\" class=\"wp-image-16356797\" srcset=\"https://wordpress.org/documentation/files/2023/04/post-author-block.png 1999w, https://wordpress.org/documentation/files/2023/04/post-author-block-300x161.png 300w, https://wordpress.org/documentation/files/2023/04/post-author-block-1024x549.png 1024w, https://wordpress.org/documentation/files/2023/04/post-author-block-768x412.png 768w, https://wordpress.org/documentation/files/2023/04/post-author-block-1536x824.png 1536w\" sizes=\"auto, (max-width: 1999px) 100vw, 1999px\" /></figure>\n\n\n\n<p>The <em>Post Author</em> block has a byline space in which you can write optional text, such as &#8220;Written by:&#8221; or &#8220;Post Author: &#8221; to precede the author\u2019s name<em>.</em> Moreover, there are options in the block settings to show author&#8217;s avatar, bio, and link the author name to the author page.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1332\" height=\"324\" src=\"https://wordpress.org/documentation/files/2023/04/post-author-byline.png\" alt=\"The byline on the post author block\" class=\"wp-image-16356798\" srcset=\"https://wordpress.org/documentation/files/2023/04/post-author-byline.png 1332w, https://wordpress.org/documentation/files/2023/04/post-author-byline-300x73.png 300w, https://wordpress.org/documentation/files/2023/04/post-author-byline-1024x249.png 1024w, https://wordpress.org/documentation/files/2023/04/post-author-byline-768x187.png 768w\" sizes=\"auto, (max-width: 1332px) 100vw, 1332px\" /></figure>\n\n\n\n<p>Single post templates already include the <em>Post Author</em> block by default. That said, you can insert this block elsewhere by clicking the <strong>Add block </strong>icon to open the block inserter pop-up window and search for the <em>Post Author</em> block. </p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1428\" height=\"676\" src=\"https://wordpress.org/documentation/files/2023/04/post-author.gif\" alt=\"A demonstration of adding and using the post author block\" class=\"wp-image-16356799\" /></figure>\n\n\n\n<p>You can also type\u00a0<kbd>/Post Author</kbd>\u00a0and hit\u00a0<kbd>enter</kbd>\u00a0in a new paragraph block to add one quickly.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block has its own toolbar, which contains unique controls that let you customize or configure the block. The <em>Post Author</em> block has the following options on its toolbar:</p>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Transform to</h3>\n\n\n\n<p>If you click the <strong>Post Author</strong> icon on the toolbar, you\u2019ll open the <strong>Transform to </strong>options to convert the block into <strong>Columns</strong>, <strong>Group</strong>, and <strong>Post Author Name</strong> blocks.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/M_WxbfyM1jjxlj9YpqAodo_2Y0WvOoGTnYFAKgNvvugOZi_G2KbJ7qhLC5tI2x6GGJYdSmz_-1hPNyPeqBmcxIB8y_31vEQhgm9bZ-XifMLerzcYYYY6tH7FgCtHGalN-LyWZIxVqJimgQllPU5Uytv9kFD9agjM9PqHe1Igdtenig5Zdxn4rl_-oKetdg\" alt=\"Transform option in the Post Author block\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Block moving tools</h3>\n\n\n\n<p>The <strong>Drag</strong> button lets you drag and drop the Post Author block and reposition it anywhere on the editor, while the <strong>Move up</strong> and <strong>Move down</strong> buttons let you move the Post Author block up or down on the editor.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/Jkw9M6HG8OLMDxKwtN0Um_FaQfr6p7OWUjzpKAqRw2uryOY6VgMhdy2aypRedPlIkJsuOSKnf7Qylalb4pc8B4uQj0HfaBAcGqWzwUQgQ0mteVn7hPnfMgR9EEDsaE2v26srAQnuDXs7Lyq9JgnDDKUZwMwE1D_Csdv4kz7w9dNDuea0izy2ZCAVFxWbcA\" alt=\"Block moving tools in the Post Author block\" /></figure>\n\n\n\n<p>If the Post Author is inside a row block, the <strong>Move up</strong> and <strong>Move down</strong> buttons are replaced by the <strong>Move left </strong>and <strong>Move right </strong>buttons to move the Post Author block inside the row block.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/uSGvgeGOWFnv7xjU5nNTtM_0uxRechaV-1tCrIdKbzUe_fMS37JyDb3RKwkTS7B5-LvnqlM7gWMp_98NST_RddVUiW4-8v_EKFwl4pqM1_At8GPieKC20h-I71njBQocgx-VUgxwa0Iecc8f6Ojwg9s6ch0W1ZXGxUsq6FEVckSP6Gl0Nn1lvZDkdBOIgw\" alt=\"Block moving tools in the Post Author block when inside a row block\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Text alignment</h3>\n\n\n\n<p>Text alignment options lets you choose to align the author&#8217;s name left, center, or right.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh3.googleusercontent.com/TZLnJ8iV-IPJxaHUvKiINdvbphJZPBC2Po1Vau8kSZpxWWuuWa3pUwv2P24M1UivpnQO8kOFwLB7mpuwcewK4uCsd7jc9X_JCx4HifRvscvhVjl7J8IBCd9MOZGeg_fgw_esUH1v0KL9VnhGTAXukkwgFwh2TS36fmMuYfAy0iD0rOOXVRc605p5XsCSAQ\" alt=\"Text alignment tools in the Post Author block \" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Duotone filter</h3>\n\n\n\n<p>The duotone filter options let you apply the duotone filter to the <strong>Post Author </strong>avatar that will be shown in this block when enabled.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/kY5lT1uJ2uc6FdFYLc98UZl-h0rtjeSn02TgCwpNeevc-IogZTLDn0zpmKbnuJC4-78z7-VWjNz0z3-uIl8KxxX26WE3NeVbnvp9qAPL85XAccSmCXDEhtVW46Hti8MhdXl8o7R1if_VCXJESi0KA-WYccRIMSPvaKIkoBD1ZH2PzrEI98TEU0n0XxAnXA\" alt=\"Duotone filter in the Post Author block\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Text formatting</h3>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/Em61XjM7t98ks3p_KX4rkQjZcEl8ojGNPmnHcc-XM8bUTe12glCAuJcFlPvSO-osAb-lONep9uHRwsw_MeS-p2P2YJmO3Ub_BkIkVI-Y8v8GwDMm2Ln69CUgTPBS-9mP26PCk9-MXNkIYI84OYpB1HyNBKY8RvfJykokOGJpTqQ34U7M0zHbYtK3KT6Jxw\" alt=\"Text formatting in the Post Author block\" /></figure>\n\n\n\n<p>The text formatting options are available when editing the <strong>Post Author block\u2019s</strong> byline. Here are the available text formatting options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Bold</li>\n\n\n\n<li>Italic</li>\n\n\n\n<li>Link</li>\n</ul>\n\n\n\n<p>There\u2019s also a drop-down menu that displays more options as follows:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Highlight</li>\n\n\n\n<li>Inline code</li>\n\n\n\n<li>Inline image</li>\n\n\n\n<li>Keyboard input</li>\n\n\n\n<li>Strikethrough</li>\n\n\n\n<li>Subscript</li>\n\n\n\n<li>Superscript</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Options</h3>\n\n\n\n<p>The <strong>Options </strong>button on a block toolbar gives you more features to customize the block.\u00a0</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every block has specific options in the block settings panel. To open it, select the block and click the <strong>Settings </strong>button at the top-right section of the editor, or click the <strong>Options </strong>button on the block toolbar and select <strong>show more settings</strong>.</p>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Settings</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/settings-2.png\" alt=\"The post author block setting options\" class=\"wp-image-16356802\" width=\"405\" height=\"536\" srcset=\"https://wordpress.org/documentation/files/2023/04/settings-2.png 540w, https://wordpress.org/documentation/files/2023/04/settings-2-227x300.png 227w\" sizes=\"auto, (max-width: 405px) 100vw, 405px\" /></figure>\n\n\n\n<p>The <em>Post Author</em> settings let you specify the author and whether to display the avatar, the bio, and/or link the author&#8217;s name to the author page. You may also choose the avatar size and whether to open the author page in a new tab.</p>\n\n\n\n<p>It\u2019s also possible to change the <em>Color</em>, <em>Typography,</em> and <em>Dimensions</em> settings. To access them, open the <em>Styles </em>section.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/styles-1.png\" alt=\"The style tab on the block settings panel\" class=\"wp-image-16356803\" width=\"353\" height=\"768\" srcset=\"https://wordpress.org/documentation/files/2023/04/styles-1.png 528w, https://wordpress.org/documentation/files/2023/04/styles-1-138x300.png 138w, https://wordpress.org/documentation/files/2023/04/styles-1-471x1024.png 471w\" sizes=\"auto, (max-width: 353px) 100vw, 353px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Color</h2>\n\n\n\n<p>The <em>Post Author</em> block provides Color settings options to change the text, background, and link colors </p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Typography</h2>\n\n\n\n<p>The <em>Post Author</em><strong> </strong>block<strong> </strong>provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Dimensions</h2>\n\n\n\n<p>The <em>Post Author</em> block provides dimension settings options to change padding and margin size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Advanced</h2>\n\n\n\n<p>The <em>Additional CSS class(es)</em> lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/tuybME7LixSej4Zt7CIYRTgN6ZaoYVlzYODKWn8PX7NGVE3j4NWqk9gwK5M6M08UFMr0gK4XSjG_1mQ5hfZIkqIesM3nGOuXdC-PKyuNNoD7S0zsg7rn2Og8b2ayETFdpX5w3gGPQEauToTo7JtgpVAVWNhVhDl7xTmoGe7I4-sifq_wMLCOfRpA279lTw\" alt=\"Advanced settings in the Post Author\u00a0block \" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-container-core-group-is-layout-9e092a97 wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-04-25\n<ul class=\"wp-block-list\">\n<li>Updated screenshots and content for 6.2</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-11-21</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Post Author block displays the username, avatar, and byline of the post\u2019s author.\u00a0 The Post Author block has a byline space in which you can write optional text, such as &#8220;Written by:&#8221; or &#8220;Post Author: &#8221; to precede the author\u2019s name. Moreover, there are options in the [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16221042",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16221042",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16221042"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16221042/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360361,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16221042/revisions/16360361"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16221042"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16221042"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

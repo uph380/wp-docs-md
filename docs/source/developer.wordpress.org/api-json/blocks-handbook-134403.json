@@ -1,0 +1,91 @@
+{
+    "id": 134403,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/accessibility/"
+    },
+    "modified": "2024-01-16T20:28:05",
+    "modified_gmt": "2024-01-16T20:28:05",
+    "slug": "accessibility",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/accessibility/",
+    "title": {
+        "rendered": "Accessibility"
+    },
+    "content": {
+        "rendered": "<p>Accessibility documentation for developers working on the Gutenberg Project.</p>\n<p>For more information on accessibility and WordPress see the <a href=\"https://make.wordpress.org/accessibility/handbook/\">Make WordPress Accessibility Handbook</a> and the <a href=\"https://make.wordpress.org/accessibility/\">Accessibility Team section</a>.</p>\n<h2>Landmark regions</h2>\n<p>It is a best practice to include ALL content on the page in landmarks, so that screen reader users who rely on them to navigate from section to section do not lose track of content.</p>\n<p>For setting up navigation between different regions, see the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/higher-order/navigate-regions/\">navigateRegions package</a> for additional documentation.</p>\n<p>Read more regarding landmark design from W3C:</p>\n<ul>\n<li><a href=\"https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/#x4-2-general-principles-of-landmark-design\">General Principles of Landmark Design</a></li>\n<li><a href=\"https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/\">ARIA Landmarks Examples</a></li>\n<li><a href=\"https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/#x4-1-html-sectioning-elements\">HTML5 elements that by default define ARIA landmarks</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 21,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134403",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134403",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134403/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151304,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134403/revisions/151304"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134403"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

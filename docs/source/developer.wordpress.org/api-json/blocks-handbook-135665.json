@@ -1,0 +1,91 @@
+{
+    "id": 135665,
+    "date": "2021-04-26T13:39:48",
+    "date_gmt": "2021-04-26T13:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/"
+    },
+    "modified": "2024-04-30T17:54:51",
+    "modified_gmt": "2024-04-30T17:54:51",
+    "slug": "theme-json",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/theme-json/",
+    "title": {
+        "rendered": "theme.json"
+    },
+    "content": {
+        "rendered": "<p>A theme&#8217;s theme.json file is one of the best ways to curate the Editor experience and will likely be the first tool you use before reaching for more sophisticated solutions.</p>\n<h2>Providing default controls/options</h2>\n<p>Since theme.json acts as a configuration tool, there are numerous ways to define at a granular level what options are available. This section will use duotone as an example since it showcases a feature that cuts across a few blocks and allows for varying levels of access.</p>\n<p><em>Duotone with Core options and customization available for each image related block:</em></p>\n<pre><code class=\"language-json\">{\n    \"version\": 3,\n    \"settings\": {\n        \"color\": {\n            \"customDuotone\": true,\n            \"duotone\": [\n            ]\n        }\n    }\n}\n</code></pre>\n<p><em>Duotone with theme defined color options, Core options, and customization available for each image related block:</em></p>\n<pre><code class=\"language-json\">{\n    \"version\": 3,\n    \"settings\": {\n        \"color\": {\n            \"duotone\": [\n                {\n                    \"colors\": [ \"#000000\", \"#ffffff\" ],\n                    \"slug\": \"foreground-and-background\",\n                    \"name\": \"Foreground and background\"\n                },\n                {\n                    \"colors\": [ \"#000000\", \"#ff0200\" ],\n                    \"slug\": \"foreground-and-secondary\",\n                    \"name\": \"Foreground and secondary\"\n                },\n                {\n                    \"colors\": [ \"#000000\", \"#7f5dee\" ],\n                    \"slug\": \"foreground-and-tertiary\",\n                    \"name\": \"Foreground and tertiary\"\n                },\n            ]\n        }\n    }\n}\n</code></pre>\n<p><em>Duotone with defined default options and all customization available for the Post Featured Image block:</em></p>\n<pre><code class=\"language-json\">{\n    \"version\": 3,\n    \"settings\": {\n        \"color\": {\n            \"custom\": true,\n            \"customDuotone\": true\n        },\n        \"blocks\": {\n            \"core/post-featured-image\": {\n                \"color\": {\n                    \"duotone\": [\n                        {\n                            \"colors\": [ \"#282828\", \"#ff5837\" ],\n                            \"slug\": \"black-and-orange\",\n                            \"name\": \"Black and Orange\"\n                        },\n                        {\n                            \"colors\": [ \"#282828\", \"#0288d1\" ],\n                            \"slug\": \"black-and-blue\", \n                            \"name\": \"Black and Blue\"\n                        }\n                    ],\n                    \"customDuotone\": true,\n                    \"custom\": true\n                }\n            }\n        }\n    }\n}\n</code></pre>\n<p><em>Duotone with only defined default options and core options available for the Post Featured Image block (no customization):</em></p>\n<pre><code class=\"language-json\">{\n    \"version\": 3,\n    \"settings\": {\n        \"color\": {\n            \"custom\": true,\n            \"customDuotone\": true\n        },  \n        \"blocks\": {\n            \"core/post-featured-image\": {\n                \"color\": {\n                    \"duotone\": [\n                        {\n                            \"colors\": [ \"#282828\", \"#ff5837\" ],\n                            \"slug\": \"black-and-orange\",\n                            \"name\": \"Black and Orange\"\n                        },\n                        {\n                            \"colors\": [ \"#282828\", \"#0288d1\" ],\n                            \"slug\": \"black-and-blue\",\n                            \"name\": \"Black and Blue\"\n                        }\n                    ],\n                    \"customDuotone\": false,\n                    \"custom\": false\n                }\n            }\n        } \n    }\n}\n</code></pre>\n<h2>Limiting interface options with theme.json</h2>\n<h3>Limit options on a per-block basis</h3>\n<p>Beyond defining default values, using theme.json allows you to also remove options entirely and instead rely on what the theme has set in place. Below is a visual showing two extremes with the same paragraph block:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/Locking%20comparison%20visual.png?ssl=1\" alt=\"Image of restricted interface\" /></p>\n<p>Continuing the examples with duotone, this means you could allow full access to all Duotone functionality for Image blocks and only limit the Post Featured Image block like so:</p>\n<pre><code class=\"language-json\">{\n    \"version\": 3,\n    \"settings\": {\n        \"color\": {\n            \"custom\": true,\n            \"customDuotone\": true\n        },\n        \"blocks\": {\n            \"core/image\": {\n                \"color\": {\n                    \"duotone\": [],\n                    \"customDuotone\": true,\n                    \"custom\": true\n                }\n            },\n            \"core/post-featured-image\": {\n                \"color\": {\n                    \"duotone\": [],\n                    \"customDuotone\": false,\n                    \"custom\": false\n                }\n            }\n        }\n    }\n}\n</code></pre>\n<p>You can read more about how best to <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/\">turn on/off options with theme.json here</a>.</p>\n<h3>Disable inherit default layout</h3>\n<p>To disable the \u201cInherit default layout\u201d setting for container blocks like the Group block, remove the following section:</p>\n<pre><code class=\"language-json\">\"layout\": {\n    \"contentSize\": null,\n    \"wideSize\": null\n},\n</code></pre>\n<h3>Limit options globally</h3>\n<p>When using theme.json in a block or classic theme, these settings will stop the default color and typography controls from being enabled globally, greatly limiting what\u2019s possible:</p>\n<pre><code class=\"language-json\">{\n    \"version\": 3,\n    \"settings\": {\n        \"layout\": {\n            \"contentSize\": \"750px\"\n        },\n        \"color\": {\n            \"background\": false,\n            \"custom\": false,\n            \"customDuotone\": false,\n            \"customGradient\": false,\n            \"defaultGradients\": false,\n            \"defaultPalette\": false,\n            \"text\": false\n        },\n        \"typography\": {\n            \"customFontSize\": false,\n            \"dropCap\": false,\n            \"fontStyle\": false,\n            \"fontWeight\": false,\n            \"letterSpacing\": false,\n            \"lineHeight\": false,\n            \"textDecoration\": false,\n            \"textTransform\": false\n        }\n    }\n}\n</code></pre>\n<p>To enable something from the above, just set whatever value you want to change to <code>true</code> for more granularity.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 141559,
+    "menu_order": 38,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135665",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135665",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 70,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135665/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153636,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135665/revisions/153636"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/141559"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135665"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

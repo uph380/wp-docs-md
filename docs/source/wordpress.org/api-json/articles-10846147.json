@@ -1,0 +1,109 @@
+{
+    "id": 10846147,
+    "date": "2018-11-04T10:21:12",
+    "date_gmt": "2018-11-04T10:21:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10846147"
+    },
+    "modified": "2023-01-16T12:51:54",
+    "modified_gmt": "2023-01-16T12:51:54",
+    "slug": "use-gravatars",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/use-gravatars/",
+    "title": {
+        "rendered": "Use Gravatars"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">What is a Gravatar?</h2>\n\n\n\n<p>When browsing different web sites, you may notice that many users have a picture next to their name.  These pictures are called &#8220;avatars.&#8221;  WordPress, however, uses a specific type of avatar called &#8220;<a rel=\"noreferrer noopener\" href=\"https://en.gravatar.com/\" target=\"_blank\">Gravatars</a>&#8220;&#8211;short for &#8220;Globally Recognized Avatar.&#8221; Unlike standard avatars, Gravatars follow you around the web and automatically appear when you post a comment on a WordPress site.</p>\n\n\n\n<figure class=\"wp-block-embed is-type-video is-provider-videopress wp-block-embed-videopress wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://videopress.com/v/HNyK67JS\n</div><figcaption>A short introduction video presenting Gravatar</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/11/gravatar_example.png\"><img loading=\"lazy\" decoding=\"async\" width=\"233\" height=\"139\" src=\"https://wordpress.org/documentation/files/2018/11/gravatar_example.png\" alt=\"gravatar_example\" class=\"wp-image-10846148\" /></a></figure>\n\n\n\n<p>WordPress integrates Gravatars into every WordPress site.  Once <a rel=\"noopener noreferrer\" href=\"https://en.gravatar.com/site/signup/\" target=\"_blank\">registered with Gravatar</a>, the service matches your WordPress profile information to the email address registered with Gravatar and displays your custom Gravatar image next to comments and (optionally) elsewhere on the WordPress site.  If you choose not to sign up with Gravatar, the <a href=\"#using-gravatars-on-your-site\"> default icon set by the Administrator</a> appears next to your name.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why use Gravatars?</h2>\n\n\n\n<p>Providing your users with avatars has become a convention in web-publishing.  Enabling Gravatars on your WordPress site simplifies the process for everyone involved.  While it is possible to use a <a href=\"https://wordpress.org/plugins/\">WordPress Plugin</a> to manage user avatars on your WordPress-run site, using Gravatars on your site makes less work for both you and your site\u2019s users.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Benefits for Administrators</h3>\n\n\n\n<ul class=\"wp-block-list\"><li>You can add user Gravatars with very little effort</li><li>You don\u2019t need to maintain an additional Plugin</li><li>You don\u2019t have to manage user accounts, or their images, for commenters to use Gravatars on your site</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Benefits for Users</h3>\n\n\n\n<ul class=\"wp-block-list\"><li>You don\u2019t need to register for every site you visit just to use a Gravatar</li><li>You can update the Gravatar you use across multiple sites by uploading a single image in a single place</li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Using Gravatars on your Site</h2>\n\n\n\n<p>To <a href=\"https://en.gravatar.com/site/signup\" target=\"_blank\" rel=\"noreferrer noopener\">start using Gravatars</a> on your site:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Log in as an administrator to your site</li><li>Navigate to <a href=\"/support/article/settings-discussion-screen/\"> Settings</a> &gt;<a href=\"/support/article/settings-discussion-screen/\"> Discussion</a> and scroll down to the \u201cAvatar\u201d Section</li><li>The \u201cAvatar\u201d section presents you with several options:<ul><li><strong>Avatar Display</strong>: Toggle Gravatars on and off for your site.</li><li><strong>Maximum Rating</strong>: When users create a profile on Gravatar, they are given the opportunity to rate their Gravatar image as G, PG, R, X based on its appropriateness.  Select the radio button for the maximum rating you would like displayed on your site.</li><li><strong>Default Avatar</strong>: WordPress allows for you to select what image you would like to display when a commenter does not have a Gravatar account.  Selecting one of the \u201cgenerated\u201d icons give you and your users some of the benefits of a Gravatar without requiring them to <a href=\"https://en.gravatar.com/site/signup\">have a Gravatar account</a>.  The icons that say \u201cgenerated\u201d next to them take the email of the commenter and link it to an auto-generated image.  Now, every time that commenter posts to your site, they will have the same unique image next to their name.</li></ul></li></ol>\n\n\n\n<figure class=\"wp-block-image is-resized\"><a href=\"https://wordpress.org/documentation/files/2018/11/avatar_rating_default.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2018/11/avatar_rating_default.png\" alt=\"Avatar rating and default icon\" class=\"wp-image-10846201\" width=\"734\" height=\"463\" srcset=\"https://wordpress.org/documentation/files/2018/11/avatar_rating_default.png 979w, https://wordpress.org/documentation/files/2018/11/avatar_rating_default-300x189.png 300w, https://wordpress.org/documentation/files/2018/11/avatar_rating_default-768x484.png 768w\" sizes=\"auto, (max-width: 734px) 100vw, 734px\" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Using Gravatar\u2019s Hovercards</h3>\n\n\n\n<p>If you want to use Gravatar\u2019s Hovercard feature, like on WordPress.com, you can install the <a href=\"https://jetpack.me/\" target=\"_blank\" rel=\"noreferrer noopener\">Jetpack</a> Plugin.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/11/hovercard.png\"><img loading=\"lazy\" decoding=\"async\" width=\"544\" height=\"277\" src=\"https://wordpress.org/documentation/files/2018/11/hovercard.png\" alt=\"An example of a Hovercard\" class=\"wp-image-10846155\" srcset=\"https://wordpress.org/documentation/files/2018/11/hovercard.png 544w, https://wordpress.org/documentation/files/2018/11/hovercard-300x153.png 300w\" sizes=\"auto, (max-width: 544px) 100vw, 544px\" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Resources</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://wordpress.tv/2009/07/26/introducing-gravatar-your-globally-recognized-avatar/\">Introducing Gravatar</a></li><li><a href=\"http://wordpress.tv/2010/05/01/beau-lebens-gravatar-profiles-sf10/\">Gravatar Profiles</a><a href=\"https://codex.wordpress.org/Using_Gravatars\"></a><br /></li><li><a rel=\"noreferrer noopener\" href=\"http://en.gravatar.com/site/implement/\" target=\"_blank\">Gravatar Developer Resources</a><br /></li></ul>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>What is a Gravatar? When browsing different web sites, you may notice that many users have a picture next to their name. These pictures are called &#8220;avatars.&#8221; WordPress, however, uses a specific type of avatar called &#8220;Gravatars&#8220;&#8211;short for &#8220;Globally Recognized Avatar.&#8221; Unlike standard avatars, Gravatars follow you around the web and automatically appear when you [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-10846147",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846147",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10846147"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846147/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355220,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846147/revisions/16355220"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10846147"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10846147"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

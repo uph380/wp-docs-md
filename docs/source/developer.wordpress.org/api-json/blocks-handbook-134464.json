@@ -1,0 +1,91 @@
+{
+    "id": 134464,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/font-size-picker/"
+    },
+    "modified": "2025-02-27T13:19:13",
+    "modified_gmt": "2025-02-27T13:19:13",
+    "slug": "font-size-picker",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/font-size-picker/",
+    "title": {
+        "rendered": "FontSizePicker"
+    },
+    "content": {
+        "rendered": "<p>FontSizePicker is a React component that renders a UI that allows users to select a font size.<br />\nThe component renders a user interface that allows the user to select predefined (common) font sizes and contains an option that allows users to select custom font sizes (by choosing the value) if that functionality is enabled.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { FontSizePicker } from '@wordpress/components';\nimport { __ } from '@wordpress/i18n';\n\nconst fontSizes = [\n    {\n        name: __( 'Small' ),\n        slug: 'small',\n        size: 12,\n    },\n    {\n        name: __( 'Big' ),\n        slug: 'big',\n        size: 26,\n    },\n];\nconst fallbackFontSize = 16;\n\nconst MyFontSizePicker = () =&gt; {\n    const [ fontSize, setFontSize ] = useState( 12 );\n\n    return (\n        &lt;FontSizePicker\n            __next40pxDefaultSize\n            fontSizes={ fontSizes }\n            value={ fontSize }\n            fallbackFontSize={ fallbackFontSize }\n            onChange={ ( newFontSize ) =&gt; {\n                setFontSize( newFontSize );\n            } }\n        /&gt;\n    );\n};\n\n...\n\n&lt;MyFontSizePicker /&gt;\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3><code>disableCustomFontSizes</code>: <code>boolean</code></h3>\n<p>If <code>true</code>, it will not be possible to choose a custom fontSize. The user will be forced to pick one of the pre-defined sizes passed in fontSizes.</p>\n<ul>\n<li>Required: no</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>fallbackFontSize</code>: <code>number</code></h3>\n<p>If no value exists, this prop defines the starting position for the font size picker slider. Only relevant if <code>withSlider</code> is <code>true</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>fontSizes</code>: <code>FontSize[]</code></h3>\n<p>An array of font size objects. The object should contain properties size, name, and slug.<br />\nThe property <code>size</code> contains a number with the font size value, in <code>px</code> or a string specifying the font size CSS property that should be used eg: &#8220;13px&#8221;, &#8220;1em&#8221;, or &#8220;clamp(12px, 5vw, 100px)&#8221;.<br />\nThe <code>name</code> property includes a label for that font size e.g.: <code>Small</code>.<br />\nThe <code>slug</code> property is a string with a unique identifier for the font size. Used for the class generation process.</p>\n<p><strong>Note:</strong> The slugs <code>default</code> and <code>custom</code> are reserved and cannot be used.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>[]</code></li>\n</ul>\n<h3><code>onChange</code>: <code>( value: number | string | undefined, selectedItem?: FontSize ) =&gt; void</code></h3>\n<p>A function that receives the new font size value.<br />\nIf onChange is called without any parameter, it should reset the value, attending to what reset means in that context, e.g., set the font size to undefined or set the font size a starting value.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>size</code>: <code>'default' | '__unstable-large'</code></h3>\n<p>Size of the control.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>'default'</code></li>\n</ul>\n<h3><code>units</code>: <code>string[]</code></h3>\n<p>Available units for custom font size selection.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>[ 'px', 'em', 'rem', 'vw', 'vh' ]</code></li>\n</ul>\n<h3><code>value</code>: <code>number | string</code></h3>\n<p>The current font size value.</p>\n<p><strong>Note</strong>: For the <code>units</code> property to work, the current font size value must be specified as strings with units (e.g., <code>'12px'</code> instead of <code>12</code>). When the font size is provided as a number, the component operates in &#8220;unitless mode&#8221; where the <code>units</code> property has no effect.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>withReset</code>: <code>boolean</code></h3>\n<p>If <code>true</code>, a reset button will be displayed alongside the input field when a custom font size is active. Has no effect when <code>disableCustomFontSizes</code> is <code>true</code>.</p>\n<ul>\n<li>Required: no</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>withSlider</code>: <code>boolean</code></h3>\n<p>If <code>true</code>, a slider will be displayed alongside the input field when a custom font size is active. Has no effect when <code>disableCustomFontSizes</code> is <code>true</code>.</p>\n<ul>\n<li>Required: no</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>__next40pxDefaultSize</code>: <code>boolean</code></h3>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 154,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134464",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134464",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134464/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157345,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134464/revisions/157345"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134464"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

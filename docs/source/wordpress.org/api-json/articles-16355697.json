@@ -1,0 +1,109 @@
+{
+    "id": 16355697,
+    "date": "2023-02-14T15:18:55",
+    "date_gmt": "2023-02-14T15:18:55",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16355697"
+    },
+    "modified": "2025-04-15T17:00:02",
+    "modified_gmt": "2025-04-15T17:00:02",
+    "slug": "comments-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comments-block/",
+    "title": {
+        "rendered": "Comments block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/support/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>The <em>Comments</em> block is an advanced block that displays post comments with various visual configurations. It contains multiple blocks to show comments, such as <a href=\"https://wordpress.org/support/article/comments-title-block/\">Comments Title</a>, <a href=\"https://wordpress.org/support/article/comment-template-block/\">Comment Template</a>, <a href=\"https://wordpress.org/documentation/article/comment-pagination-block/\">Comment Pagination</a>, and <a href=\"https://wordpress.org/support/article/post-comments-form-block/\">Post Comments Form</a>. With the Comments block, adding a comment section to your posts becomes effortless.</p>\n\n\n\n<p>To add the <em>Comments</em> block, open the block inserter by clicking the (<strong>+</strong>) icon on the upper left corner of the editor. After that, look for Comments using the search bar and click it to insert the block into the editor.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1426\" height=\"634\" src=\"https://wordpress.org/documentation/files/2023/05/comments.gif\" alt=\"A demonstration on how to add and use Comments block\" class=\"wp-image-16356829\" /></figure>\n\n\n\n<p>Alternatively, you can type <kbd>/comments </kbd>on the editor to insert the <em>Comments</em> block manually.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/support/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Most blocks have their own block-specific controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The <em>Comments Block</em> shows the following buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Moving handles</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"421\" height=\"104\" src=\"https://wordpress.org/documentation/files/2023/05/image-6.png\" alt=\"The transform button on the Comments block toolbar\" class=\"wp-image-16356837\" style=\"width:421px;height:104px\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-6.png 421w, https://wordpress.org/documentation/files/2023/05/image-6-300x74.png 300w\" sizes=\"auto, (max-width: 421px) 100vw, 421px\" /></figure>\n\n\n\n<p>The Transform to button lets you change the <em>Comments</em> block into a Columns or a Group block.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Moving handles</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"460\" height=\"126\" src=\"https://wordpress.org/documentation/files/2023/05/image6.png\" alt=\"The block moving tools on the Comments block toolbar\" class=\"wp-image-16356838\" srcset=\"https://wordpress.org/documentation/files/2023/05/image6.png 460w, https://wordpress.org/documentation/files/2023/05/image6-300x82.png 300w\" sizes=\"auto, (max-width: 460px) 100vw, 460px\" /></figure>\n\n\n\n<p>The dotted icons can be used to drag and drop a block to the place of your choosing. The up and down arrow icons can be used to shift a block up and down in your document.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/moving-blocks/\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Change alignment</h3>\n\n\n\n<p>You can modify the alignment of the <em>Comments</em> block using this tool. Click on the icon and select one of the following alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong></li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the block beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> \u2013 Extend the block to cover the full width of the screen.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"526\" height=\"270\" src=\"https://wordpress.org/documentation/files/2023/02/comments-block-change-alignment.png\" alt=\"The change alignment options on the Comments block toolbar\" class=\"wp-image-16365547\" srcset=\"https://wordpress.org/documentation/files/2023/02/comments-block-change-alignment.png 526w, https://wordpress.org/documentation/files/2023/02/comments-block-change-alignment-300x154.png 300w\" sizes=\"auto, (max-width: 526px) 100vw, 526px\" /></figure>\n\n\n\n<p>When you transform the <em>Comments</em> block into a Columns block, the toolbar will show an additional tool called Change vertical alignment with three options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align top</strong> \u2013 makes the block top-aligned.</li>\n\n\n\n<li><strong>Align middle</strong> \u2013 lets you align the block to the center.</li>\n\n\n\n<li><strong>Align bottom</strong> \u2013 makes the block right-aligned.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"874\" height=\"466\" src=\"https://wordpress.org/documentation/files/2023/05/image3.png\" alt=\"The vertical alignment options on the Comments block toolbar\" class=\"wp-image-16356840\" style=\"width:656px;height:350px\" srcset=\"https://wordpress.org/documentation/files/2023/05/image3.png 874w, https://wordpress.org/documentation/files/2023/05/image3-300x160.png 300w, https://wordpress.org/documentation/files/2023/05/image3-768x409.png 768w\" sizes=\"auto, (max-width: 874px) 100vw, 874px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Options</h2>\n\n\n\n<p>The <strong>Options </strong>button on a block toolbar gives you more features to customize the block.&nbsp;</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <em>Settings</em><strong> </strong>button next to the <em>Publish</em><strong> </strong>button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"646\" height=\"102\" src=\"https://wordpress.org/documentation/files/2023/05/image7.png\" alt=\"The block settings icon\" class=\"wp-image-16356841\" style=\"width:485px;height:77px\" srcset=\"https://wordpress.org/documentation/files/2023/05/image7.png 646w, https://wordpress.org/documentation/files/2023/05/image7-300x47.png 300w\" sizes=\"auto, (max-width: 646px) 100vw, 646px\" /></figure>\n\n\n\n<p>It\u2019s possible to change the <em>Color</em>, <em>Typography,</em> and <em>Dimensions</em> settings. To access them, open the <em>Styles </em>section:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"464\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/05/image4-464x1024.png\" alt=\"The styles tab\" class=\"wp-image-16356842\" style=\"width:348px;height:768px\" srcset=\"https://wordpress.org/documentation/files/2023/05/image4-464x1024.png 464w, https://wordpress.org/documentation/files/2023/05/image4-136x300.png 136w, https://wordpress.org/documentation/files/2023/05/image4.png 536w\" sizes=\"auto, (max-width: 464px) 100vw, 464px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The <em>Comments</em> block provides color settings options to change the text and background colors.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/support/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>The <em>Comments</em> block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/support/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The <em>Comments</em> block provides dimension settings options to add padding and margin.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/support/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Border</h3>\n\n\n\n<p>The <em>paragraph</em> block provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"530\" height=\"664\" src=\"https://wordpress.org/documentation/files/2023/05/image2.png\" alt=\"The advanced settings on the block settings panel\" class=\"wp-image-16356843\" style=\"width:398px;height:498px\" srcset=\"https://wordpress.org/documentation/files/2023/05/image2.png 530w, https://wordpress.org/documentation/files/2023/05/image2-239x300.png 239w\" sizes=\"auto, (max-width: 530px) 100vw, 530px\" /></figure>\n\n\n\n<p><strong>Additional CSS Class(es)</strong></p>\n\n\n\n<p>The <em>Comments</em> block provides advanced settings for adding CSS class(es), allowing you to style the block using custom CSS code.</p>\n\n\n\n<p><strong>HTML Element</strong></p>\n\n\n\n<p>Use this feature to select an HTML element in the <em>Comments</em> block.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2025-04-15 (props to <a href=\"https://profiles.wordpress.org/karthickmurugan/\">@karthickmurugan</a>)\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for 6.8</li>\n\n\n\n<li>Add border support</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-05-09\n<ul class=\"wp-block-list\">\n<li>Updated for WordPress 6.2 update</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-03-07\n<ul class=\"wp-block-list\">\n<li>Fixed the link to Comment Pagination block page</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-01-10\n<ul class=\"wp-block-list\">\n<li>Added dimension settings </li>\n</ul>\n</li>\n\n\n\n<li>Created 2023-01-04</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the list of Blocks The Comments block is an advanced block that displays post comments with various visual configurations. It contains multiple blocks to show comments, such as Comments Title, Comment Template, Comment Pagination, and Post Comments Form. With the Comments block, adding a comment section to your posts becomes effortless. To add [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16355697",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355697",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16355697"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355697/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365549,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355697/revisions/16365549"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16355697"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16355697"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

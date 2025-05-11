@@ -1,0 +1,109 @@
+{
+    "id": 15654964,
+    "date": "2022-05-24T01:00:00",
+    "date_gmt": "2022-05-24T01:00:00",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15654964"
+    },
+    "modified": "2024-02-22T21:33:32",
+    "modified_gmt": "2024-02-22T21:33:32",
+    "slug": "additional-guide-to-using-the-site-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/additional-guide-to-using-the-site-editor/",
+    "title": {
+        "rendered": "Additional guide to using the Site Editor"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\" id=\"how-to-update-what-your-homepage-displays\">How to update what your homepage displays</h2>\n\n\n\n<p>Your homepage can show a list of your latest blog posts or a static page with custom content. Which setting you use depends on the templates that are included in your theme. To view the list of templates, go to the Administration Screen &gt; Appearance &gt; Editor &gt; Templates. </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>If your theme does not have a Home or Front page template, select the Add New button and create a new Front Page.</li>\n\n\n\n<li>If your theme has a Front Page template, click on the link with the template name to open the editor.</li>\n\n\n\n<li>If your theme has a Home template, you can edit the template or set what you want to appear in the Administration Screen &gt; Settings &gt; Reading.</li>\n</ul>\n\n\n\n<p>To learn how to select a static page for your homepage, please see the support article&nbsp;<a href=\"https://wordpress.org/documentation/article/creating-a-static-front-page/\">Creating a Static Front Page</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-customize-your-homepage\">How to customize your homepage</h2>\n\n\n\n<p><strong>Latest Blog Posts</strong></p>\n\n\n\n<p>To customize your blog, go to Administration Screen &gt; Appearance &gt; Editor. The editor will open to your homepage, and you can start editing.</p>\n\n\n\n<p>Block themes display lists of blog posts with the Query Loop block and the Post Template block.<br>The <a href=\"https://wordpress.org/documentation/article/query-loop-block/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/query-loop-block/\">support article for the Query Loop Block</a> explains how to configure the block.<br><br>When you add a block inside the post template block, it is repeated for every post in the list. The Post Title and Post Featured Image, Post Author, Post Date, Post Category, and Post tags are examples of blocks that you can use to customize your blog.</p>\n\n\n\n<p id=\"static-page\"><strong>Static page</strong></p>\n\n\n\n<p>If you have selected a static page for your home page, and you want it to have a different design than other pages, you need to assign it a different template. </p>\n\n\n\n<p>Follow these steps to assign an existing template:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>From your wp-admin dashboard, head to Pages &gt; All Pages.</li>\n\n\n\n<li>From the list of pages, select the option to edit page you have set as your home page.</li>\n\n\n\n<li>Once in the editor, open the settings sidebar. </li>\n\n\n\n<li>Under &#8220;Template&#8221;, you can then select whatever Template you want your home page to use.</li>\n\n\n\n<li>When you&#8217;re done, select &#8220;Update&#8221; to save the changes.</li>\n</ol>\n\n\n\n<p>Follow these steps to create a new template:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>From your wp-admin dashboard, head to Pages &gt; All Pages.</li>\n\n\n\n<li>From the list of pages, select the option to edit page you have set as your home page.</li>\n\n\n\n<li>Once in the editor, open the settings sidebar. </li>\n\n\n\n<li>Under &#8220;Template&#8221;, select New.</li>\n\n\n\n<li>This will open the Site Editor to add blocks for create your template for your static homepage.</li>\n\n\n\n<li>When you&#8217;re done, select &#8220;Update&#8221; to save the changes.</li>\n</ol>\n\n\n\n<p>Please note that if you add a Front Page template in the Site Editor, it will&nbsp;always be used as the front page regardless of what setting you choose under Admin &gt; Settings &gt; Reading. You will need to either customize that template to your liking or remove it to then adjust the homepage settings again.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-update-your-site-icon\">How to update your site icon</h2>\n\n\n\n<p>Block themes include the ability to use the Site Logo block which has built within it an option to set your Site Logo as your Site Icon. For context, the Site Logo simply displays whatever logo you set for your site whereas your Site Icon is also known as a favicon and it is used to help identify your website. To learn more about setting your Site Icon or favicon, please see the support article <a href=\"https://wordpress.org/documentation/article/creating-a-favicon/\">Creating a Favicon</a>.</p>\n\n\n\n<p>Follow the steps below to use the same image for the Site Logo and Site Icon:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Head to Appearance &gt; Editor. This will open up your homepage. </li>\n\n\n\n<li>Either find your Site Logo block added by your theme or add it to yourself wherever you&#8217;d like. Detailed instructions for adding blocks <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">can be found here</a>. </li>\n\n\n\n<li>From there, you&#8217;ll see the option to upload or select an image to use from your Media Library. </li>\n\n\n\n<li>After choosing an image and while still selecting the Site Logo block, open the block settings sidebar (uses the cog icon). </li>\n\n\n\n<li>Under the settings for the Site Logo block, toggle on the option to &#8220;Use as site icon&#8221;. </li>\n\n\n\n<li>Save your changes.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"914\" src=\"https://wordpress.org/documentation/files/2022/01/site_icon-1024x914.png\" alt=\"Image showing the options to set a site logo as a site icon in the settings sidebar. \" class=\"wp-image-15222275\" style=\"width:500px\" srcset=\"https://wordpress.org/documentation/files/2022/01/site_icon-1024x914.png 1024w, https://wordpress.org/documentation/files/2022/01/site_icon-300x268.png 300w, https://wordpress.org/documentation/files/2022/01/site_icon-768x686.png 768w, https://wordpress.org/documentation/files/2022/01/site_icon.png 1306w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to customize your site design at a global level</h2>\n\n\n\n<p>Since WordPress 5.9, you can set the colors, typography, layout, spacing, and more, for the entire site via Styles. You can also edit the default appearance of blocks to streamline the look and feel of your site.</p>\n\n\n\n<p>Fore more details, refer\u00a0<a href=\"https://wordpress.org/documentation/article/styles-overview/\">Styles Overview</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>How to update what your homepage displays Your homepage can show a list of your latest blog posts or a static page with custom content. Which setting you use depends on the templates that are included in your theme. To view the list of templates, go to the Administration Screen &gt; Appearance &gt; Editor &gt; [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-15654964",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15654964",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15654964"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15654964/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359691,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15654964/revisions/16359691"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15654964"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15654964"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

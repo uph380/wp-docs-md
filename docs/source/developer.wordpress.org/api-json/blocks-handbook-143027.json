@@ -1,0 +1,91 @@
+{
+    "id": 143027,
+    "date": "2022-09-26T21:39:48",
+    "date_gmt": "2022-09-26T21:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-style-engine/using-the-style-engine-with-block-supports/"
+    },
+    "modified": "2024-10-30T17:09:46",
+    "modified_gmt": "2024-10-30T17:09:46",
+    "slug": "using-the-style-engine-with-block-supports",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-style-engine/using-the-style-engine-with-block-supports/",
+    "title": {
+        "rendered": "@wordpress/style-engine Using the Style Engine to generate block supports styles"
+    },
+    "content": {
+        "rendered": "<p><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/\">Block supports</a> is the API that allows a block to declare support for certain features.</p>\n<p>Where a block declares support for a specific style group or property, e.g., &#8220;spacing&#8221; or &#8220;spacing.padding&#8221;, the block&#8217;s attributes are extended to include a <strong>style object</strong>.</p>\n<p>For example:</p>\n<pre><code class=\"language-json\">{\n    \"attributes\": {\n        \"style\": {\n            \"spacing\": {\n                \"margin\": {\n                    \"top\": \"10px\"\n                },\n                \"padding\": \"1em\"\n            },\n            \"typography\": {\n                \"fontSize\": \"2.2rem\"\n            }\n        }\n    }\n}\n</code></pre>\n<p>Using this object, the Style Engine can generate the classes and CSS required to style the block element.</p>\n<p>The global function <code>wp_style_engine_get_styles</code> accepts a style object as its first argument, and will output compiled CSS and an array of CSS declaration property/value pairs.</p>\n<pre><code class=\"language-php\">$block_styles =  array(\n    'spacing' =&gt; array( 'padding' =&gt; '10px', 'margin' =&gt; array( 'top' =&gt; '1em') ),\n    'typography' =&gt; array( 'fontSize' =&gt; '2.2rem' ),\n);\n$styles = wp_style_engine_get_styles(\n    $block_styles\n);\nprint_r( $styles );\n\n/*\narray(\n    'css'          =&gt; 'padding:10px;margin-top:1em;font-size:2.2rem',\n    'declarations' =&gt; array( 'padding' =&gt; '10px', 'margin-top' =&gt; '1em', 'font-size' =&gt; '2.2rem' )\n)\n*/\n</code></pre>\n<h2>Use case</h2>\n<p>When <a href=\"https://developer.wordpress.org/reference/classes/wp_block_supports/register/\">registering a block support</a>, it is possible to pass an &#8216;apply&#8217; callback in the block support config array to add or extend block support attributes with &#8220;class&#8221; or &#8220;style&#8221; properties.</p>\n<p>If a block has opted into the block support, the values of &#8220;class&#8221; and &#8220;style&#8221; will be applied to the block element&#8217;s &#8220;class&#8221; and &#8220;style&#8221; attributes accordingly when rendered in the frontend HTML. Note, this applies only to server-side rendered blocks, for example, the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#site-title\">Site Title block</a>.</p>\n<p>The callback receives <code>$block_type</code> and <code>$block_attributes</code> as arguments. The <code>style</code> attribute within <code>$block_attributes</code> only contains the raw style object, if any styles have been set for the block, and not any CSS or classnames to be applied to the block&#8217;s HTML elements.</p>\n<p>Here is where <code>wp_style_engine_get_styles</code> comes in handy: it will generate CSS and, if appropriate, classnames to be added to the &#8220;style&#8221; and &#8220;class&#8221; HTML attributes in the final rendered block markup.</p>\n<p>Here is a <em>very</em> simplified version of how the <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/lib/block-supports/color.php\">color block support</a> works:</p>\n<pre><code class=\"language-php\">function gutenberg_apply_colors_support( $block_type, $block_attributes ) {\n    // Get the color styles from the style object.\n    $block_color_styles = isset( $block_attributes['style']['color'] ) ? $block_attributes['style']['color'] : null;\n\n    // Since we only want the color styles, pass the color styles only to the Style Engine.\n    $styles = wp_style_engine_get_styles( array( 'color' =&gt; $block_color_styles ) );\n\n    // Return the generated styles to be applied to the block's HTML element.\n    return array(\n        'style' =&gt; $styles['css'],\n        'class' =&gt; $styles['classnames']\n    );\n}\n\n// Register the block support.\nWP_Block_Supports::get_instance()-&gt;register(\n    'colors',\n    array(\n        'register_attribute' =&gt; 'gutenberg_register_colors_support',\n        'apply'              =&gt; 'gutenberg_apply_colors_support',\n    )\n);\n</code></pre>\n<p>It&#8217;s important to note that, for now, the Style Engine will only generate styles for the following, core block supports:</p>\n<ul>\n<li>border</li>\n<li>color</li>\n<li>spacing</li>\n<li>typography</li>\n</ul>\n<p>In future releases, it will be possible to extend this list.</p>\n<h2>Checking for block support and skip serialization</h2>\n<p>Before passing the block style object to the Style Engine, you&#8217;ll need to take into account:</p>\n<ol>\n<li>whether the theme has elected to support a particular block style, and</li>\n<li>whether a block has elected to &#8220;skip serialization&#8221; of that particular block style, that is, opt-out of automatic application of styles to the block&#8217;s element (usually in order to do it via the block&#8217;s internals). See the <a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/styles/#block-supports-api\">block API documentation</a> for further information.</li>\n</ol>\n<p>If a block either:</p>\n<ul>\n<li>has no support for a style, or</li>\n<li>skips serialization of that style</li>\n</ul>\n<p>it&#8217;s likely that you&#8217;ll want to remove those style values from the style object before passing it to the Style Engine with help of two functions:</p>\n<ul>\n<li>wp_should_skip_block_supports_serialization()</li>\n<li><a href=\"https://developer.wordpress.org/reference/functions/block_has_support/\" rel=\"function\">block_has_support()</a> </li>\n</ul>\n<p>We can now update the &#8220;apply&#8221; callback code above so that we&#8217;ll only return &#8220;style&#8221; and &#8220;class&#8221;, where a block has support, and it doesn&#8217;t skip serialization:</p>\n<pre><code class=\"language-php\">function gutenberg_apply_colors_support( $block_type, $block_attributes ) {\n    // The return value.\n    $attributes = array();\n\n    // Return early if the block skips all serialization for block supports.\n    if ( gutenberg_should_skip_block_supports_serialization( $block_type, 'color' ) ) {\n        return $attributes;\n    }\n\n    // Checks for support and skip serialization.\n    $has_text_support                        = block_has_support( $block_type, array( 'color', 'text' ), false );\n    $has_background_support                  = block_has_support( $block_type, array( 'color', 'background' ), false );\n    $skips_serialization_of_color_text       = wp_should_skip_block_supports_serialization( $block_type, 'color', 'text' );\n    $skips_serialization_of_color_background = wp_should_skip_block_supports_serialization( $block_type, 'color', 'background' );\n\n    // Get the color styles from the style object.\n    $block_color_styles = isset( $block_attributes['style']['color'] ) ? $block_attributes['style']['color'] : null;\n\n    // The mutated styles object we're going to pass to wp_style_engine_get_styles().\n    $color_block_styles = array();\n\n    // Set the color style values according to whether the block has support and does not skip serialization.\n    $spacing_block_styles['text']       = null;\n    $spacing_block_styles['background'] = null;\n    if ( $has_text_support &amp;&amp; ! $skips_serialization_of_color_text ) {\n        $spacing_block_styles['text'] = $block_color_styles['text'] ?? null;\n    }\n    if $has_background_support &amp;&amp; ! $skips_serialization_of_color_background ) {\n        $spacing_block_styles['background'] = $block_color_styles['background'] ?? null;\n    }\n\n    // Pass the color styles, excluding those that have no support or skip serialization, to the Style Engine.\n    $styles = wp_style_engine_get_styles( array( 'color' =&gt; $block_color_styles ) );\n\n    // Return the generated styles to be applied to the block's HTML element.\n    return array(\n        'style' =&gt; $styles['css'],\n        'class' =&gt; $styles['classnames']\n    );\n}\n</code></pre>\n<h2>Generating classnames and CSS custom selectors from presets</h2>\n<p>Many of theme.json&#8217;s presets will generate both CSS custom properties and CSS rules (consisting of a selector and the CSS declarations) on the frontend.</p>\n<p>Styling a block using these presets normally involves adding the selector to the &#8220;className&#8221; attribute of the block.</p>\n<p>For styles that can have preset values, such as text color and font family, the Style Engine knows how to construct the classnames using the preset slug.</p>\n<p>To discern CSS values from preset values, the Style Engine expects a special format.</p>\n<p>Preset values must follow the pattern <code>var:preset|&lt;PRESET_TYPE&gt;|&lt;PRESET_SLUG&gt;</code>.</p>\n<p>When the Style Engine encounters these values, it will parse them and create a CSS value of <code>var(--wp--preset--font-size--small)</code> and/or generate a classname if required.</p>\n<p>Example:</p>\n<pre><code class=\"language-php\">// Let's say the block attributes styles contain a fontSize preset slug of \"small\".\n// $block_attributes['fontSize'] = 'var:preset|font-size|small';\n$preset_font_size        = \"var:preset|font-size|{$block_attributes['fontSize']}\";\n// Now let's say the block attributes styles contain a backgroundColor preset slug of \"blue\".\n// $block_attributes['backgroundColor'] = 'var:preset|color|blue';\n$preset_background_color = \"var:preset|color|{$block_attributes['backgroundColor']}\";\n\n$block_styles =  array(\n    'typography' =&gt; array( 'fontSize' =&gt; $preset_font_size ),\n    'color'      =&gt; array( 'background' =&gt; $preset_background_color ),\n    'spacing'    =&gt; array( 'padding' =&gt; '10px', 'margin' =&gt; array( 'top' =&gt; '1em') ),\n);\n\n$styles = wp_style_engine_get_styles(\n    $block_styles\n);\nprint_r( $styles );\n\n/*\narray(\n    'css'          =&gt; 'background-color:var(--wp--preset--color--blue);padding:10px;margin-top:1em;font-size:var(--wp--preset--font-size--small);',\n    'declarations' =&gt; array(\n        'background-color' =&gt; 'var(--wp--preset--color--blue)',\n        'padding' =&gt; '10px',\n        'margin-top' =&gt; '1em',\n        'font-size' =&gt; 'var(--wp--preset--font-size--small)',\n    ),\n    'classnames'   =&gt; 'has-background has-blue-background-color has-small-font-size',\n)\n*/\n</code></pre>\n<p>If you don&#8217;t want the Style Engine to output the CSS custom vars in the generated CSS string as well, which you might not if you&#8217;re applying both the CSS rules and classnames to the block element, you can pass <code>'convert_vars_to_classnames' =&gt; true</code> in the options array.</p>\n<p>This flag means &#8220;convert the vars to classnames and don&#8217;t output the vars to the CSS&#8221;. The Style Engine will therefore <strong>only</strong> generate the required classnames and omit the CSS custom vars in the CSS.</p>\n<p>Using the above example code, observe the different output when we pass the option:</p>\n<pre><code class=\"language-php\">$options = array(\n    'convert_vars_to_classnames' =&gt; true,\n);\n\n$styles = wp_style_engine_get_styles(\n    $block_styles,\n    $options\n);\nprint_r( $styles );\n\n/*\narray(\n    'css'          =&gt; 'padding:10px;margin-top:1em;',\n    'declarations' =&gt; array(\n        'padding' =&gt; '10px',\n        'margin-top' =&gt; '1em',\n    ),\n    'classnames'   =&gt; 'has-background has-blue-background-color has-small-font-size',\n)\n*/\n</code></pre>\n<p>Read more about <a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/styles/#global-styles\">global styles</a> and <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles.md#css-custom-properties-presets-custom\">preset CSS custom properties</a> and <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/\">theme supports</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 140166,
+    "menu_order": 323,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-143027",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/143027",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/143027/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151674,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/143027/revisions/151674"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140166"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=143027"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

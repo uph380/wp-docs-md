@@ -1,0 +1,85 @@
+{
+    "id": 41425,
+    "date": "2019-04-25T20:55:50",
+    "date_gmt": "2019-04-25T20:55:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/coding-standards/"
+    },
+    "modified": "2024-01-16T20:30:02",
+    "modified_gmt": "2024-01-16T20:30:02",
+    "slug": "wpcs-handbook",
+    "status": "publish",
+    "type": "wpcs-handbook",
+    "link": "https://developer.wordpress.org/coding-standards/",
+    "title": {
+        "rendered": "Best Practices"
+    },
+    "content": {
+        "rendered": "<p>WordPress is a big project with thousands of contributors. It&#8217;s important that best practices are followed so that the codebase is consistent and readable, and changes are easy to find and read, whether the code is five days old or five years old. What follows are a series of best practices to help keep WordPress code clean and well documented for years to come.</p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/\">WordPress Coding Standards</a>\n<ul>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/\">Accessibility Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/\">CSS Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/html/\">HTML Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/\">JavaScript Coding Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/\">PHP Coding Standards</a></li>\n</ul>\n</li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/inline-documentation-standards/\">Inline Documentation Standards</a>\n<ul>\n<li><a href=\"https://developer.wordpress.org/coding-standards/inline-documentation-standards/javascript/\">JavaScript Documentation Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/inline-documentation-standards/php/\">PHP Documentation Standards</a></li>\n</ul>\n</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41425",
+        "wpcs-handbook",
+        "type-wpcs-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41425",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/wpcs-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41425/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125120,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41425/revisions/125120"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41425"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

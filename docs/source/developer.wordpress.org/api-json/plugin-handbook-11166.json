@@ -1,0 +1,97 @@
+{
+    "id": 11166,
+    "date": "2014-10-19T18:17:08",
+    "date_gmt": "2014-10-19T18:17:08",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11166"
+    },
+    "modified": "2022-07-09T12:31:00",
+    "modified_gmt": "2022-07-09T12:31:00",
+    "slug": "simple-testing",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/cron/simple-testing/",
+    "title": {
+        "rendered": "Testing of WP-Cron"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">WP-CLI</h2>\n\n\n\n<p>Cron jobs can be tested using <a href=\"https://wp-cli.org/\">WP-CLI</a>. It offers commands like <code>wp cron event list</code> and <code>wp cron event run {job name}</code>. <a href=\"https://developer.wordpress.org/cli/commands/cron/\">Check the documentation</a> for more details.</p>\n\n\n\n<h2 class=\"wp-block-heading\">WP-Cron Management Plugins</h2>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/tags/cron/\">Several plugins are available on the WordPress.org Plugin Directory for viewing, editing, and controlling the scheduled cron events and available schedules on your site.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\"><code>_get_cron_array()</code></h2>\n\n\n\n<p><a href=\"https://developer.wordpress.org/reference/functions/_get_cron_array/\">The <code>_get_cron_array()</code> function</a> returns an array of all currently scheduled cron events. Use this function if you need to inspect the raw list of events.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><code>wp_get_schedules()</code></h2>\n\n\n\n<p><a href=\"https://developer.wordpress.org/reference/functions/wp_get_schedules/\">The <code>wp_get_schedules()</code> function</a> returns an array of available event recurrence schedules. Use this function if you need to inspect the raw list of available schedules.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11157,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11166",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11166",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11166/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 141658,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11166/revisions/141658"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11166"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

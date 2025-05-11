@@ -1,0 +1,91 @@
+{
+    "id": 134497,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/resizable-box/"
+    },
+    "modified": "2024-10-30T16:55:38",
+    "modified_gmt": "2024-10-30T16:55:38",
+    "slug": "resizable-box",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/resizable-box/",
+    "title": {
+        "rendered": "ResizableBox"
+    },
+    "content": {
+        "rendered": "<p>ResizableBox is a wrapper around the <a href=\"https://github.com/bokuweb/re-resizable\">re-resizable package</a> with pre-defined classes and styles.</p>\n<h2>Usage</h2>\n<p>Most options are passed directly through to <a href=\"https://github.com/bokuweb/re-resizable\">re-resizable</a> so you may wish to refer to their documentation. The primary differences in this component are that we set <code>handleClasses</code> (to use custom class names) and pass some null values to <code>handleStyles</code> (to unset some inline styles).</p>\n<p>The example below shows how you might use <code>ResizableBox</code> to set a width and height inside a block&#8217;s <code>edit</code> component.</p>\n<pre><code class=\"language-jsx\">import { ResizableBox } from '@wordpress/components';\n\nconst Edit = ( props ) =&gt; {\n    const {\n        attributes: { height, width },\n        setAttributes,\n        toggleSelection,\n    } = props;\n\n    return (\n        &lt;ResizableBox\n            size={ {\n                height,\n                width,\n            } }\n            minHeight=\"50\"\n            minWidth=\"50\"\n            enable={ {\n                top: false,\n                right: true,\n                bottom: true,\n                left: false,\n                topRight: false,\n                bottomRight: true,\n                bottomLeft: false,\n                topLeft: false,\n            } }\n            onResizeStop={ ( event, direction, elt, delta ) =&gt; {\n                setAttributes( {\n                    height: height + delta.height,\n                    width: width + delta.width,\n                } );\n                toggleSelection( true );\n            } }\n            onResizeStart={ () =&gt; {\n                toggleSelection( false );\n            } }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>showHandle</code></td>\n<td><code>bool</code></td>\n<td><code>false</code></td>\n<td>Determines of the resize handles are visible.</td>\n</tr>\n</tbody>\n</table>\n<p>For additional props, check out <a href=\"https://github.com/bokuweb/re-resizable#props\">re-resizable</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 195,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134497",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134497",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134497/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151842,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134497/revisions/151842"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134497"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

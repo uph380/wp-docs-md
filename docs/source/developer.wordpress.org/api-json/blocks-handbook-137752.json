@@ -1,0 +1,91 @@
+{
+    "id": 137752,
+    "date": "2021-11-25T17:39:48",
+    "date_gmt": "2021-11-25T17:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/confirm-dialog/"
+    },
+    "modified": "2024-10-30T17:09:57",
+    "modified_gmt": "2024-10-30T17:09:57",
+    "slug": "confirm-dialog",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/confirm-dialog/",
+    "title": {
+        "rendered": "ConfirmDialog"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. &#8220;Experimental&#8221; means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>ConfirmDialog</code> is built of top of <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/modal/\"><code>Modal</code></a> and displays a confirmation dialog, with <em>confirm</em> and <em>cancel</em> buttons.</p>\n<p>The dialog is confirmed by clicking the <em>confirm</em> button or by pressing the <code>Enter</code> key. It is cancelled (closed) by clicking the <em>cancel</em> button, by pressing the <code>ESC</code> key, or by clicking outside the dialog focus (i.e, the overlay).</p>\n<h2>Usage</h2>\n<p><code>ConfirmDialog</code> has two main implicit modes: controlled and uncontrolled.</p>\n<h3>Uncontrolled mode</h3>\n<p>Allows the component to be used standalone, just by declaring it as part of another React&#8217;s component render method:</p>\n<ul>\n<li>It will be automatically open (displayed) upon mounting;</li>\n<li>It will be automatically closed when clicking the <em>cancel</em> button, by pressing the <code>ESC</code> key, or by clicking outside the dialog focus (i.e, the overlay);</li>\n<li><code>onCancel</code> is not mandatory but can be passed. Even if passed, the dialog will still be able to close itself.</li>\n</ul>\n<p>Activating this mode is as simple as omitting the <code>isOpen</code> prop. The only mandatory prop, in this case, is the <code>onConfirm</code> callback. The message is passed as the <code>children</code>. You can pass any JSX you&#8217;d like, which allows to further format the message or include sub-component if you&#8217;d like:</p>\n<pre><code class=\"language-jsx\">import { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;ConfirmDialog onConfirm={ () =&gt; console.debug( ' Confirmed! ' ) }&gt;\n            Are you sure? &lt;strong&gt;This action cannot be undone!&lt;/strong&gt;\n        &lt;/ConfirmDialog&gt;\n    );\n}\n</code></pre>\n<h3>Controlled mode</h3>\n<p>Let the parent component control when the dialog is open/closed. It&#8217;s activated when a boolean value is passed to <code>isOpen</code>:</p>\n<ul>\n<li>It will not be automatically closed. You need to let it know when to open/close by updating the value of the <code>isOpen</code> prop;</li>\n<li>Both <code>onConfirm</code> and the <code>onCancel</code> callbacks are mandatory props in this mode;</li>\n<li>You&#8217;ll want to update the state that controls <code>isOpen</code> by updating it from the <code>onCancel</code> and <code>onConfirm</code> callbacks.</li>\n</ul>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';\n\nfunction Example() {\n    const [ isOpen, setIsOpen ] = useState( true );\n\n    const handleConfirm = () =&gt; {\n        console.debug( 'Confirmed!' );\n        setIsOpen( false );\n    };\n\n    const handleCancel = () =&gt; {\n        console.debug( 'Cancelled!' );\n        setIsOpen( false );\n    };\n\n    return (\n        &lt;ConfirmDialog\n            isOpen={ isOpen }\n            onConfirm={ handleConfirm }\n            onCancel={ handleCancel }\n        &gt;\n            Are you sure? &lt;strong&gt;This action cannot be undone!&lt;/strong&gt;\n        &lt;/ConfirmDialog&gt;\n    );\n}\n</code></pre>\n<h3>Unsupported: Multiple instances</h3>\n<p>Multiple <code>ConfirmDialog</code>s is an edge case that&#8217;s currently not officially supported by this component. At the moment, new instances will end up closing the last instance due to the way the <code>Modal</code> is implemented.</p>\n<h2>Custom Types</h2>\n<pre><code class=\"language-ts\">type DialogInputEvent =\n    | KeyboardEvent&lt; HTMLDivElement &gt;\n    | MouseEvent&lt; HTMLButtonElement &gt;;\n</code></pre>\n<h2>Props</h2>\n<h3><code>title</code>: <code>string</code></h3>\n<ul>\n<li>Required: No</li>\n</ul>\n<p>An optional <code>title</code> for the dialog. Setting a title will render it in a title bar at the top of the dialog, making it a bit taller. The bar will also include an <code>x</code> close button at the top-right corner.</p>\n<h3><code>children</code>: <code>React.ReactNode</code></h3>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<p>The actual message for the dialog. It&#8217;s passed as children and any valid <code>ReactNode</code> is accepted:</p>\n<pre><code class=\"language-jsx\">&lt;ConfirmDialog&gt;\n    Are you sure? &lt;strong&gt;This action cannot be undone!&lt;/strong&gt;\n&lt;/ConfirmDialog&gt;\n</code></pre>\n<h3><code>isOpen</code>: <code>boolean</code></h3>\n<ul>\n<li>Required: No</li>\n</ul>\n<p>Defines if the dialog is open (displayed) or closed (not rendered/displayed). It also implicitly toggles the controlled mode if set or the uncontrolled mode if it&#8217;s not set.</p>\n<h3><code>onConfirm</code>: <code>( event: DialogInputEvent ) =&gt; void</code></h3>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<p>The callback that&#8217;s called when the user confirms. A confirmation can happen when the <code>OK</code> button is clicked or when <code>Enter</code> is pressed.</p>\n<h3><code>onCancel</code>: <code>( event: DialogInputEvent ) =&gt; void</code></h3>\n<ul>\n<li>Required: Only if <code>isOpen</code> is not set</li>\n</ul>\n<p>The callback that&#8217;s called when the user cancels. A cancellation can happen when the <code>Cancel</code> button is clicked, when the <code>ESC</code> key is pressed, or when a click outside of the dialog focus is detected (i.e. in the overlay).</p>\n<p>It&#8217;s not required if <code>isOpen</code> is not set (uncontrolled mode), as the component will take care of closing itself, but you can still pass a callback if something must be done upon cancelling (the component will still close itself in this case).</p>\n<p>If <code>isOpen</code> is set (controlled mode), then it&#8217;s required, and you need to set the state that defines <code>isOpen</code> to <code>false</code> as part of this callback if you want the dialog to close when the user cancels.</p>\n<h3><code>confirmButtonText</code>: <code>string</code></h3>\n<ul>\n<li>Required: No</li>\n<li>Default: &#8220;OK&#8221;</li>\n</ul>\n<p>The optional custom text to display as the confirmation button&#8217;s label</p>\n<h3><code>cancelButtonText</code>: <code>string</code></h3>\n<ul>\n<li>Required: No</li>\n<li>Default: &#8220;Cancel&#8221;</li>\n</ul>\n<p>The optional custom text to display as the cancellation button&#8217;s label</p>\n<h2>Best practices</h2>\n<p>The ConfirmDialog component should:</p>\n<ul>\n<li>Be used only for short confirmation messages where a cancel and confirm actions are provided.</li>\n<li>Use a descriptive text for the <em>confirm</em> button. Default is &#8220;OK&#8221;.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 135,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-137752",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137752",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137752/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152857,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137752/revisions/152857"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=137752"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

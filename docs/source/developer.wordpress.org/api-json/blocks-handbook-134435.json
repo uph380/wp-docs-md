@@ -1,0 +1,91 @@
+{
+    "id": 134435,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/"
+    },
+    "modified": "2025-01-06T18:49:16",
+    "modified_gmt": "2025-01-06T18:49:16",
+    "slug": "components",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/",
+    "title": {
+        "rendered": "Component Reference"
+    },
+    "content": {
+        "rendered": "<p>This package includes a library of generic WordPress components to be used for creating common UI elements shared between screens and features of the WordPress dashboard.</p>\n<h2>Installation</h2>\n<pre><code class=\"language-bash\">npm install @wordpress/components --save\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>Usage</h2>\n<p>Within Gutenberg, these components can be accessed by importing from the <code>components</code> root directory:</p>\n<pre><code class=\"language-jsx\">/**\n * WordPress dependencies\n */\nimport { Button } from '@wordpress/components';\n\nexport default function MyButton() {\n    return &lt;Button&gt;Click Me!&lt;/Button&gt;;\n}\n</code></pre>\n<p>Many components include CSS to add styles, which you will need to load in order for them to appear correctly. Within WordPress, add the <code>wp-components</code> stylesheet as a dependency of your plugin&#8217;s stylesheet. See <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_style/#parameters\">wp_enqueue_style documentation</a> for how to specify dependencies.</p>\n<p>In non-WordPress projects, link to the <code>build-style/style.css</code> file directly, it is located at <code>node_modules/@wordpress/components/build-style/style.css</code>.</p>\n<h3>Popovers</h3>\n<p>By default, the <code>Popover</code> component will render within an extra element appended to the body of the document.</p>\n<p>If you want to precisely control where the popovers render, you will need to use the <code>Popover.Slot</code> component.</p>\n<p>The following example illustrates how you can wrap a component using a<br />\n<code>Popover</code> and have those popovers render to a single location in the DOM.</p>\n<pre><code class=\"language-jsx\">/**\n * External dependencies\n */\nimport { Popover, SlotFillProvider } from '@wordpress/components';\n\n/**\n * Internal dependencies\n */\nimport { MyComponentWithPopover } from './my-component';\n\nconst Example = () =&gt; {\n    &lt;SlotFillProvider&gt;\n        &lt;MyComponentWithPopover /&gt;\n        &lt;Popover.Slot /&gt;\n    &lt;/SlotFillProvider&gt;;\n};\n</code></pre>\n<h3>TypeScript</h3>\n<p>This package exposes its own types for the components it exports, however it doesn&#8217;t export its own types for component props. If you need to extract the props type, please use <code>React.ComponentProps</code> to get the types from the element.</p>\n<pre><code class=\"language-tsx\">import type { ComponentProps } from 'react';\nimport { Button } from '@wordpress/components';\n\nexport default function MyButton( props: ComponentProps&lt; typeof Button &gt; ) {\n    return &lt;Button { ...props }&gt;Click Me!&lt;/Button&gt;;\n}\n</code></pre>\n<h2>Docs &amp; examples</h2>\n<p>You can browse the components docs and examples at <a href=\"https://wordpress.github.io/gutenberg/\">https://wordpress.github.io/gutenberg/</a></p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n<p>This package also has its own <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/components/CONTRIBUTING.md\">contributing information</a> where you can find additional details.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134405,
+    "menu_order": 110,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134435",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 18,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156182,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435/revisions/156182"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134435"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

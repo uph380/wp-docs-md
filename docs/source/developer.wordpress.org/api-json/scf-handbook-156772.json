@@ -1,0 +1,91 @@
+{
+    "id": 156772,
+    "date": "2025-02-20T08:04:06",
+    "date_gmt": "2025-02-20T08:04:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/getting-started/installation/"
+    },
+    "modified": "2025-02-21T18:45:59",
+    "modified_gmt": "2025-02-21T18:45:59",
+    "slug": "installation",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/welcome/installation/",
+    "title": {
+        "rendered": "Installing Secure Custom Fields"
+    },
+    "content": {
+        "rendered": "<p>This guide walks you through installing Secure Custom Fields (SCF) on your WordPress site.</p>\n<h2>Requirements</h2>\n<p>Before installing, ensure your site meets these requirements:</p>\n<ul>\n<li>WordPress 6.0 or later</li>\n<li>PHP 7.4 or later</li>\n<li>WordPress memory limit of 40MB or greater (64MB recommended)</li>\n</ul>\n<h2>Installation Methods</h2>\n<h3>Via WordPress Admin (Recommended)</h3>\n<ol>\n<li>Log in to your WordPress admin panel</li>\n<li>Navigate to Plugins <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Add New</li>\n<li>Search for &#8220;Secure Custom Fields&#8221;</li>\n<li>Click &#8220;Install Now&#8221;</li>\n<li>Click &#8220;Activate&#8221;</li>\n</ol>\n<h3>Manual Installation</h3>\n<ol>\n<li>Download the latest release from WordPress.org</li>\n<li>Extract the plugin files</li>\n<li>Upload the plugin folder to <code>/wp-content/plugins/</code></li>\n<li>Activate through the WordPress admin interface</li>\n</ol>\n<h2>Verification</h2>\n<p>After installation:</p>\n<ol>\n<li>Navigate to Custom Fields in your admin menu</li>\n<li>Verify you can access all plugin features</li>\n<li>Create a test field group to ensure functionality</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157290,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156772",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156772",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156772/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156947,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156772/revisions/156947"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157290"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156772"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

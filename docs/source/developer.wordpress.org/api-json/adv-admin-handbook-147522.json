@@ -1,0 +1,91 @@
+{
+    "id": 147522,
+    "date": "2023-05-29T10:43:26",
+    "date_gmt": "2023-05-29T10:43:26",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/advanced-administration/debug/version-control/"
+    },
+    "modified": "2024-07-17T05:54:39",
+    "modified_gmt": "2024-07-17T05:54:39",
+    "slug": "version-control",
+    "status": "publish",
+    "type": "adv-admin-handbook",
+    "link": "https://developer.wordpress.org/advanced-administration/debug/version-control/",
+    "title": {
+        "rendered": "Version Control"
+    },
+    "content": {
+        "rendered": "<p>Version control is a way of tracking the changes made to files over time by different people, such as the code for a website or another application. It allows people to track the revision history of code and to revert or apply changes easily via the command line. It is also a good way to debug your website if something goes wrong, as you can quickly restore to a previous state of the site&#8217;s code without restoring from a full backup.</p>\n<p>A lot of WordPress hosts offer version control but there are third-party services and self hosted options as well.</p>\n<h2>Changelog</h2>\n<ul>\n<li>2023-05-29: Synced with <a href=\"https://make.wordpress.org/hosting/handbook/reliability/#version-control\">Hosting Handbook</a></li>\n<li>2023-03-03: Created a new page for <em>Version control</em></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 145873,
+    "menu_order": 5,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147522",
+        "adv-admin-handbook",
+        "type-adv-admin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/147522",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/adv-admin-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/147522/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154462,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/147522/revisions/154462"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145873"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147522"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

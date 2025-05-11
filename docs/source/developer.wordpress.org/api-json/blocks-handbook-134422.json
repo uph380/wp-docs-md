@@ -1,0 +1,91 @@
+{
+    "id": 134422,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/filters/parser-filters/"
+    },
+    "modified": "2024-10-30T16:55:55",
+    "modified_gmt": "2024-10-30T16:55:55",
+    "slug": "parser-filters",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/filters/parser-filters/",
+    "title": {
+        "rendered": "Parser Filters"
+    },
+    "content": {
+        "rendered": "<p>When the editor is interacting with blocks, these are stored in memory as data structures comprising a few basic properties and attributes. Upon saving a working post we serialize these data structures into a specific HTML structure and save the resultant string into the <code>post_content</code> property of the post in the WordPress database. When we load that post back into the editor we have to make the reverse transformation to build those data structures from the serialized format in HTML.</p>\n<p>The process of loading the serialized HTML into the editor is performed by the <em>block parser</em>. The formal specification for this transformation is encoded in the parsing expression grammar (PEG) inside the <code>@wordpress/block-serialization-spec-parser</code> package. The editor provides a default parser implementation of this grammar but there may be various reasons for replacing that implementation with a custom implementation. We can inject our own custom parser implementation through the appropriate filter.</p>\n<h2>Server-side parser</h2>\n<p>Plugins have access to the parser if they want to process posts in their structured form instead of a plain HTML-as-string representation.</p>\n<h2>Client-side parser</h2>\n<p>The editor uses the client-side parser while interactively working in a post. The plain HTML-as-string representation is sent to the browser by the backend and then the editor performs the first parse to initialize itself.</p>\n<h2>Filters</h2>\n<p>To replace the server-side parser, use the <code>block_parser_class</code> filter. The filter transforms the string class name of a parser class. This class is expected to expose a <code>parse</code> method.</p>\n<p><em>Example:</em></p>\n<pre><code class=\"language-php\">class EmptyParser {\n  public function parse( $post_content ) {\n    // return an empty document\n    return array();\n  }\n}\n\nfunction wpdocs_select_empty_parser( $prev_parser_class ) {\n    return 'EmptyParser';\n}\n\nadd_filter( 'block_parser_class', 'wpdocs_select_empty_parser', 10, 1 );\n</code></pre>\n<blockquote><p>\n  <strong>Note</strong>: At the present time it&#8217;s not possible to replace the client-side parser.\n</p></blockquote>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134419,
+    "menu_order": 80,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134422",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134422",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134422/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152046,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134422/revisions/152046"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134419"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134422"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 138654,
+    "date": "2022-01-04T02:54:48",
+    "date_gmt": "2022-01-04T02:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/"
+    },
+    "modified": "2024-10-30T17:09:54",
+    "modified_gmt": "2024-10-30T17:09:54",
+    "slug": "theme-json-reference",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/",
+    "title": {
+        "rendered": "Theme.json Reference"
+    },
+    "content": {
+        "rendered": "<p>This reference guide lists the settings and style properties defined in the theme.json schema. See the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/\">theme.json how to guide</a> for examples and guide on how to use the theme.json file in your theme.</p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/\">Version 3 (latest)</a></li>\n</ul>\n<h2>Older versions</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-migrations/\">Migrating to Newer Theme.json Versions</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v1/\">Version 1</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v2/\">Version 2</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134405,
+    "menu_order": 104,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-138654",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138654",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138654/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153634,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138654/revisions/153634"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=138654"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

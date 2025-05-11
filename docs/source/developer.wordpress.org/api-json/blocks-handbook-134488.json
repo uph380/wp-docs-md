@@ -1,0 +1,91 @@
+{
+    "id": 134488,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/notice/"
+    },
+    "modified": "2025-05-09T08:45:43",
+    "modified_gmt": "2025-05-09T08:45:43",
+    "slug": "notice",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/notice/",
+    "title": {
+        "rendered": "Notice"
+    },
+    "content": {
+        "rendered": "<p>Use Notices to communicate prominent messages to the user.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Screenshot-alt.png?ssl=1\" alt=\"Notice component\" /></p>\n<h2>Design guidelines</h2>\n<p>A Notice displays a succinct message. It can also offer the user options, like viewing a published post or updating a setting, and requires a user action to be dismissed.</p>\n<p>Use Notices to communicate things that are important but don\u2019t necessarily require action \u2014 a user can keep using the product even if they don\u2019t choose to act on a Notice. They are less interruptive than a Modal.</p>\n<h3>Usage</h3>\n<p>Notices display at the top of the screen, below any toolbars anchored to the top of the page. They\u2019re persistent and non-modal. Since they don\u2019t overlay the content, users can ignore or dismiss them, and choose when to interact with them.</p>\n<p>Notices are color-coded to indicate the type of message being communicated:</p>\n<ul>\n<li><strong>Informational</strong> notices are <strong>blue</strong> by default.</li>\n<li>If there is a parent <code>Theme</code> component with an <code>accent</code> color prop, informational notices will take on that color instead.</li>\n<li><strong>Success</strong> notices are <strong>green.</strong></li>\n<li><strong>Warning</strong> notices are <strong>yellow.</strong></li>\n<li><strong>Error</strong> notices are <strong>red.</strong></li>\n</ul>\n<p>If an icon is included in the Notice, it should be color-coded to match the Notice state.</p>\n<h3>Do&#8217;s and Don&#8217;ts</h3>\n<p><strong>Do</strong> use a Notice when you want to communicate a message of medium importance.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Do-1-alt.png?ssl=1\" alt=\"A success Notice for updating a post\" /></p>\n<hr />\n<p><strong>Don\u2019t</strong> use a Notice for a message that requires immediate attention and action from the user. Use a Modal for this instead.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Dont-1-alt.png?ssl=1\" alt=\"A Notice that requires an immediate action\" /></p>\n<hr />\n<p><strong>Do</strong> display Notices at the top of the screen, below any toolbars.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Do-2-alt.png?ssl=1\" alt=\"A success Notice for publishing a post\" /></p>\n<hr />\n<p><strong>Don\u2019t</strong> show Notices on top of toolbars.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Dont-2-alt.png?ssl=1\" alt=\"A success Notice on top of the editor toolbar\" /></p>\n<hr />\n<p><strong>Do</strong> use color to indicate the type of message being communicated.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Do-3-alt.png?ssl=1\" alt=\"An error Notice using red\" /></p>\n<hr />\n<p><strong>Don\u2019t</strong> apply any colors other than those for Warnings, Success, or Errors.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/03/Notice-Dont-3-alt.png?ssl=1\" alt=\"An error Notice using purple\" /></p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<p>To display a plain notice, pass <code>Notice</code> a string:</p>\n<pre><code class=\"language-jsx\">import { Notice } from '@wordpress/components';\n\nconst MyNotice = () =&gt; (\n    &lt;Notice status=\"error\"&gt;An unknown error occurred.&lt;/Notice&gt;\n);\n</code></pre>\n<p>For more complex markup, you can pass any JSX element:</p>\n<pre><code class=\"language-jsx\">import { Notice } from '@wordpress/components';\n\nconst MyNotice = () =&gt; (\n    &lt;Notice status=\"error\"&gt;\n        &lt;p&gt;\n            An error occurred: &lt;code&gt;{ errorDetails }&lt;/code&gt;.\n        &lt;/p&gt;\n    &lt;/Notice&gt;\n);\n</code></pre>\n<h3>Props</h3>\n<p>The following props are used to control the behavior of the component.</p>\n<h4><code>children</code>: <code>ReactNode</code></h4>\n<p>The displayed message of a notice. Also used as the spoken message for assistive technology, unless <code>spokenMessage</code> is provided as an alternative message.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>spokenMessage</code>: <code>ReactNode</code></h4>\n<p>Used to provide a custom spoken message in place of the <code>children</code> default.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>children</code></li>\n</ul>\n<h4><code>status</code>: <code>'warning' | 'success' | 'error' | 'info'</code></h4>\n<p>Determines the color of the notice: <code>warning</code> (yellow), <code>success</code> (green), <code>error</code> (red), or <code>'info'</code>. By default <code>'info'</code> will be blue, but if there is a parent Theme component with an accent color prop, the notice will take on that color instead.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>info</code></li>\n</ul>\n<h4><code>onRemove</code>: <code>() =&gt; void</code></h4>\n<p>A function called to dismiss/remove the notice.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>noop</code></li>\n</ul>\n<h4><code>politeness</code>: <code>'polite' | 'assertive'</code></h4>\n<p>A politeness level for the notice&#8217;s spoken message. Should be provided as one of the valid options for <a href=\"https://www.w3.org/TR/wai-aria-1.1/#aria-live\">an <code>aria-live</code> attribute value</a>.</p>\n<ul>\n<li>A value of <code>'assertive'</code> is to be used for important, and usually time-sensitive, information. It will interrupt anything else the screen reader is announcing in that moment.</li>\n<li>A value of <code>'polite'</code> is to be used for advisory information. It should not interrupt what the screen reader is announcing in that moment (the &#8220;speech queue&#8221;) or interrupt the current task.</li>\n</ul>\n<p>Note that this value should be considered a suggestion; assistive technologies may override it based on internal heuristics.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>'assertive'</code> or <code>'polite'</code>, based on the notice status.</li>\n</ul>\n<h4><code>isDismissible</code>: <code>boolean</code></h4>\n<p>Whether the notice should be dismissible or not</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h4><code>onDismiss</code> : <code>() =&gt; void</code></h4>\n<p>A deprecated alternative to <code>onRemove</code>. This prop is kept for compatibility reasons but should be avoided.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>noop</code></li>\n</ul>\n<h4><code>actions</code>: <code>Array&lt;NoticeAction&gt;</code>.</h4>\n<p>An array of notice actions. Each member object should contain:</p>\n<ul>\n<li><code>label</code>: <code>string</code> containing the text of the button/link</li>\n<li><code>url</code>: <code>string</code> OR <code>onClick</code>: <code>( event: SyntheticEvent ) =&gt; void</code> to specify what the action does.</li>\n<li><code>openInNewTab</code>: <code>boolean</code> (optional) When set to <code>true</code>, opens the URL in a new browser tab.</li>\n<li><code>className</code>: <code>string</code> (optional) to add custom classes to the button styles.</li>\n<li><code>noDefaultClasses</code>: <code>boolean</code> (optional) A value of <code>true</code> will remove all default styling.</li>\n<li><code>variant</code>: <code>'primary' | 'secondary' | 'link'</code> (optional) You can denote a primary button action for a notice by passing a value of <code>primary</code>.</li>\n</ul>\n<p>The default appearance of an action button is inferred based on whether <code>url</code> or <code>onClick</code> are provided, rendering the button as a link if appropriate. If both props are provided, <code>url</code> takes precedence, and the action button will render as an anchor tag.</p>\n<h2>Related components</h2>\n<ul>\n<li>To create a more prominent message that requires action, use a Modal.</li>\n<li>For low priority, non-interruptive messages, use Snackbar.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 185,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134488",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134488",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134488/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 158699,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134488/revisions/158699"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134488"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

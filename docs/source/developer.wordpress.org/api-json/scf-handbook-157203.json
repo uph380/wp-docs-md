@@ -1,0 +1,91 @@
+{
+    "id": 157203,
+    "date": "2025-02-21T04:17:15",
+    "date_gmt": "2025-02-21T04:17:15",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/url/url-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:26",
+    "modified_gmt": "2025-02-21T04:17:26",
+    "slug": "url-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/url/url-tutorial/",
+    "title": {
+        "rendered": "Using the URL Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a URL field</li>\n<li>Configure options:\n<ul>\n<li>Set placeholder</li>\n<li>Configure protocol</li>\n<li>Set validation</li>\n<li>Choose format</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Web Links\n<ul>\n<li>Website URLs</li>\n<li>Social profiles</li>\n<li>Resource links</li>\n</ul>\n</li>\n<li>Reference Links\n<ul>\n<li>Documentation</li>\n<li>External content</li>\n<li>Media sources</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Validate URLs properly</li>\n<li>Consider protocols</li>\n<li>Use clear placeholders</li>\n<li>Check link validity</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157202,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157203",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157203",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157203/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157212,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157203/revisions/157212"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157202"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157203"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

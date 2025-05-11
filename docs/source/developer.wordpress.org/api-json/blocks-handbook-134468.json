@@ -1,0 +1,91 @@
+{
+    "id": 134468,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/guide/"
+    },
+    "modified": "2025-04-16T12:30:59",
+    "modified_gmt": "2025-04-16T12:30:59",
+    "slug": "guide",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/guide/",
+    "title": {
+        "rendered": "Guide"
+    },
+    "content": {
+        "rendered": "<p><code>Guide</code> is a React component that renders a <em>user guide</em> in a modal. The guide consists of several pages which the user can step through one by one. The guide is finished when the modal is closed or when the user clicks <em>Finish</em> on the last page of the guide.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">function MyTutorial() {\n    const [ isOpen, setIsOpen ] = useState( true );\n\n    if ( ! isOpen ) {\n        return null;\n    }\n\n    return (\n        &lt;Guide\n            onFinish={ () =&gt; setIsOpen( false ) }\n            pages={ [\n                {\n                    content: &lt;p&gt;Welcome to the ACME Store!&lt;/p&gt;,\n                },\n                {\n                    image: &lt;img src=\"https://acmestore.com/add-to-cart.png\" /&gt;,\n                    content: (\n                        &lt;p&gt;\n                            Click &lt;i&gt;Add to Cart&lt;/i&gt; to buy a product.\n                        &lt;/p&gt;\n                    ),\n                },\n            ] }\n        /&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3>className</h3>\n<p>A custom class to add to the modal.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<h3>contentLabel</h3>\n<p>This property is used as the modal&#8217;s accessibility label. It is required for accessibility reasons.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: Yes</li>\n</ul>\n<h3>finishButtonText</h3>\n<p>Use this to customize the label of the <em>Finish</em> button shown at the end of the guide.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>'Finish'</code></li>\n</ul>\n<h3>nextButtonText</h3>\n<p>Use this to customize the label of the <em>Next</em> button shown on each page of the guide.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>'Next'</code></li>\n</ul>\n<h3>previousButtonText</h3>\n<p>Use this to customize the label of the <em>Previous</em> button shown on each page of the guide except the first.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>'Previous'</code></li>\n</ul>\n<h3>onFinish</h3>\n<p>A function which is called when the guide is finished. The guide is finished when the modal is closed or when the user clicks <em>Finish</em> on the last page of the guide.</p>\n<ul>\n<li>Type: <code>( event?: KeyboardEvent&lt; HTMLDivElement &gt; | SyntheticEvent ) =&gt; void</code></li>\n<li>Required: Yes</li>\n</ul>\n<h3>pages</h3>\n<p>A list of objects describing each page in the guide. Each object <strong>must</strong> contain a <code>'content'</code> property and may optionally contain a <code>'image'</code> property.</p>\n<ul>\n<li>Type: <code>{ content: ReactNode; image?: ReactNode; }[]</code></li>\n<li>Required: No</li>\n<li>Default: <code>[]</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 160,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134468",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134468",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134468/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157476,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134468/revisions/157476"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134468"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

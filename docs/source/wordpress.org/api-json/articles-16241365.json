@@ -1,0 +1,109 @@
+{
+    "id": 16241365,
+    "date": "2022-11-28T17:28:53",
+    "date_gmt": "2022-11-28T17:28:53",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16241365"
+    },
+    "modified": "2024-06-08T19:30:03",
+    "modified_gmt": "2024-06-08T19:30:03",
+    "slug": "stack-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/stack-block/",
+    "title": {
+        "rendered": "Stack block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p><em>Stack</em> block is one of the container blocks that can be used to nest other blocks vertically.\u00a0As a container block, it&#8217;s possible to transform a <em>Stack </em>block into a <em>Group</em> or <em>Row </em>block without changing the content of the block.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1600\" height=\"900\" src=\"https://wordpress.org/documentation/files/2023/05/stack.png\" alt=\"Stack block on the editor\" class=\"wp-image-16357046\" srcset=\"https://wordpress.org/documentation/files/2023/05/stack.png 1600w, https://wordpress.org/documentation/files/2023/05/stack-300x169.png 300w, https://wordpress.org/documentation/files/2023/05/stack-1024x576.png 1024w, https://wordpress.org/documentation/files/2023/05/stack-768x432.png 768w, https://wordpress.org/documentation/files/2023/05/stack-1536x864.png 1536w\" sizes=\"auto, (max-width: 1600px) 100vw, 1600px\" /></figure>\n\n\n\n<p>Click the block inserter <strong>(+)</strong> icon to open the block inserter pop-up window and search for the <em>Stack </em>block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1426\" height=\"682\" src=\"https://wordpress.org/documentation/files/2023/05/stack-block.gif\" alt=\"Adding and using a stack block\" class=\"wp-image-16357044\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/stack-block</kbd> to quickly insert a <em>Stack </em>block.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Stack block shows the following buttons in the block toolbar:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/image-41.png\" alt=\"Stack block toolbar\" class=\"wp-image-16357048\" width=\"435\" height=\"89\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-41.png 580w, https://wordpress.org/documentation/files/2023/05/image-41-300x61.png 300w\" sizes=\"auto, (max-width: 435px) 100vw, 435px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Moving handles</li>\n\n\n\n<li>Change items justification</li>\n\n\n\n<li>Change vertical alignment</li>\n\n\n\n<li>Align</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/image-43.png\" alt=\"Stack block transform options\" class=\"wp-image-16357050\" width=\"521\" height=\"282\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-43.png 1042w, https://wordpress.org/documentation/files/2023/05/image-43-300x162.png 300w, https://wordpress.org/documentation/files/2023/05/image-43-1024x554.png 1024w, https://wordpress.org/documentation/files/2023/05/image-43-768x416.png 768w\" sizes=\"auto, (max-width: 521px) 100vw, 521px\" /></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to convert the <em>Stack</em> block into \u201cQuote\u201d, \u201cColumns\u201d, or \u201cCover\u201d blocks. It\u2019s also possible to unwrap the <em>Stack</em> block.&nbsp;&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Moving handles</h3>\n\n\n\n<p>The dotted icons can be used to drag and drop a block to the place of your choosing. The up and down arrow icons can be used to shift a block up and down in your document.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/image-42.png\" alt=\"Block moving handles\" class=\"wp-image-16357049\" width=\"447\" height=\"84\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-42.png 596w, https://wordpress.org/documentation/files/2023/05/image-42-300x56.png 300w\" sizes=\"auto, (max-width: 447px) 100vw, 447px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/moving-blocks/\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change items justification&nbsp;</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/image-44.png\" alt=\"Justification settings for stack block\" class=\"wp-image-16357052\" width=\"520\" height=\"231\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-44.png 1040w, https://wordpress.org/documentation/files/2023/05/image-44-300x133.png 300w, https://wordpress.org/documentation/files/2023/05/image-44-1024x455.png 1024w, https://wordpress.org/documentation/files/2023/05/image-44-768x341.png 768w\" sizes=\"auto, (max-width: 520px) 100vw, 520px\" /></figure>\n\n\n\n<p>Click the \u201cChange items justification\u201d button in the Block toolbar to display the justification drop-down. You can justify the block text to the left, make it center-justified, align it to the right, or stretch it.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Change vertical alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/image-45.png\" alt=\"Vertical alignment settings for stack block\" class=\"wp-image-16357053\" width=\"509\" height=\"233\" srcset=\"https://wordpress.org/documentation/files/2023/05/image-45.png 1018w, https://wordpress.org/documentation/files/2023/05/image-45-300x137.png 300w, https://wordpress.org/documentation/files/2023/05/image-45-768x352.png 768w\" sizes=\"auto, (max-width: 509px) 100vw, 509px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align top \u2013 </strong>Make the block vertically aligned top<strong>.</strong></li>\n\n\n\n<li><strong>Align middle \u2013 </strong>Make the block vertically aligned middle<strong>.</strong></li>\n\n\n\n<li><strong>Align bottom \u2013 </strong>Make the block vertically aligned bottom<strong>.</strong></li>\n\n\n\n<li><strong>Space between </strong>\u2013<strong> </strong>Leave a space between blocks. Remember that this option is only available for the parent <em>Stack </em>block.&nbsp;</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Align</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/width-sttings.png\" alt=\"Alignment settings for stack block\" class=\"wp-image-16357068\" width=\"511\" height=\"207\" srcset=\"https://wordpress.org/documentation/files/2023/05/width-sttings.png 1022w, https://wordpress.org/documentation/files/2023/05/width-sttings-300x122.png 300w, https://wordpress.org/documentation/files/2023/05/width-sttings-768x311.png 768w\" sizes=\"auto, (max-width: 511px) 100vw, 511px\" /></figure>\n\n\n\n<p>Use the change alignment tool to change the width of the <em>Stack </em>block. The following is a list of the block width options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Wide width</li>\n\n\n\n<li>Full width</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Options</h3>\n\n\n\n<p>The Options button on a block toolbar gives you more features to customize the block.&nbsp;</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/block-settings-icon.png\" alt=\"Block settings icon on the editor\" class=\"wp-image-16357054\" width=\"485\" height=\"77\" srcset=\"https://wordpress.org/documentation/files/2023/05/block-settings-icon.png 646w, https://wordpress.org/documentation/files/2023/05/block-settings-icon-300x47.png 300w\" sizes=\"auto, (max-width: 485px) 100vw, 485px\" /></figure>\n\n\n\n<p>Here are the options for the <strong>Stack</strong> block:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Settings</h3>\n\n\n\n<p>Click <strong>Group</strong> or <strong>Row</strong> button in the Block Settings to transform the <em>Stack </em>block to <em>Group </em>or <em>Row </em>blocks.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><a href=\"https://wordpress.org/documentation/files/2023/05/stack-settings.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/stack-settings.png\" alt=\"Stack block settings to transform to row or group\" class=\"wp-image-16357062\" width=\"380\" height=\"176\" srcset=\"https://wordpress.org/documentation/files/2023/05/stack-settings.png 506w, https://wordpress.org/documentation/files/2023/05/stack-settings-300x139.png 300w\" sizes=\"auto, (max-width: 380px) 100vw, 380px\" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Layout</h3>\n\n\n\n<p>The <em>Stack </em>block<em> </em>provides Layout settings options to change the justification or orientation of the text and to wrap to multiple lines.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"333\" height=\"147\" src=\"https://wordpress.org/documentation/files/2023/05/layout.png\" alt=\"Layout settings on the stack block settings panel\" class=\"wp-image-16357057\" srcset=\"https://wordpress.org/documentation/files/2023/05/layout.png 333w, https://wordpress.org/documentation/files/2023/05/layout-300x132.png 300w\" sizes=\"auto, (max-width: 333px) 100vw, 333px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/layout-settings-overview/\">Layout settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Position</h3>\n\n\n\n<p>The position setting is only available when the <em>Stack</em> block is located at the root-level. The drop-down menu has two options: <strong>Default</strong> and <strong>Sticky</strong>. If the Sticky option is selected, the <em>Stack</em> block will remain at the top of the window when you scroll down the page.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/position.png\" alt=\"The position settings for stack block\" class=\"wp-image-16357058\" width=\"311\" height=\"280\" srcset=\"https://wordpress.org/documentation/files/2023/05/position.png 337w, https://wordpress.org/documentation/files/2023/05/position-300x271.png 300w\" sizes=\"auto, (max-width: 311px) 100vw, 311px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The <em>Stack </em>block<em> </em>provides Color settings options to change the text, background, and link colors.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>The <em>Stack </em>block<em> </em>provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The <em>Stack </em>block provides dimension settings options to add padding, margin, and block spacing.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Border</h3>\n\n\n\n<p>The <em>Stack </em>block provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The <strong>Advanced</strong> tab lets you add HTML anchor and CSS class(es) to your block.</p>\n\n\n\n<p><strong>HTML element</strong> lets you choose the HTML element you want to be used for the <em>Stack </em>block&#8217;s wrapper in the HTML code.<br></p>\n\n\n\n<p><strong>HTML anchor</strong> allows you to&nbsp;<a href=\"https://wordpress.org/documentation/article/page-jumps/\">make a unique web address</a> just for this block, Then, you\u2019ll be able to link directly to this section of your page. This can be helpful for longer pages where visitors might want to click on a link to go directly to a specific section.</p>\n\n\n\n<p>The <strong>Additional CSS class(es)</strong> lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-28-at-8.40.21-AM.png\" alt=\"Advanced tab in the Stack block\" class=\"wp-image-16241432\" width=\"280\" height=\"423\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-28-at-8.40.21-AM.png 560w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-28-at-8.40.21-AM-199x300.png 199w\" sizes=\"auto, (max-width: 280px) 100vw, 280px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-05-23\n<ul class=\"wp-block-list\">\n<li>Updated screenshots and content for 6.2</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-11-28</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Stack block is one of the container blocks that can be used to nest other blocks vertically.\u00a0As a container block, it&#8217;s possible to transform a Stack block into a Group or Row block without changing the content of the block. Click the block inserter (+) icon to open [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        88
+    ],
+    "class_list": [
+        "post-16241365",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-design-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16241365",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16241365"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16241365/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360412,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16241365/revisions/16360412"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16241365"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16241365"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

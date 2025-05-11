@@ -1,0 +1,109 @@
+{
+    "id": 16357027,
+    "date": "2023-05-19T19:55:55",
+    "date_gmt": "2023-05-19T19:55:55",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16357027"
+    },
+    "modified": "2024-06-06T16:56:34",
+    "modified_gmt": "2024-06-06T16:56:34",
+    "slug": "home-link-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/home-link-block/",
+    "title": {
+        "rendered": "Home Link block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>The&nbsp;<strong>Home Link</strong>&nbsp;block allows you to automatically add a link to your site&#8217;s homepage.</p>\n\n\n\n<p><strong>Note</strong>: the&nbsp;<strong>Home Link</strong>&nbsp;block is only available as a sub-block of the&nbsp;<a href=\"https://wordpress.org/documentation/article/navigation-block/\" data-type=\"helphub_article\" data-id=\"15191692\">Navigation</a>&nbsp;block</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to add the Home Link block</h2>\n\n\n\n<p>To add a&nbsp;<strong>Home Link&nbsp;</strong>block, you first need to add a&nbsp;<a href=\"https://wordpress.org/documentation/article/navigation-block/\" data-type=\"helphub_article\" data-id=\"15191692\">Navigation</a>&nbsp;block in a post or Site Editor. There are three ways you can use to add a&nbsp;<strong>Home Link</strong>&nbsp;block once you add a Navigation block:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>From the sidebar</li>\n\n\n\n<li>From the&nbsp;<em>Navigation</em>&nbsp;block contextual menu</li>\n\n\n\n<li>by converting an existing block</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">From the sidebar</h3>\n\n\n\n<p>With the&nbsp;<em>Navigation</em>&nbsp;block selected, click on the (<strong>+</strong>) icon in the sidebar, and either select the&nbsp;<em>Home link</em>&nbsp;block from the list of your recently used blocks or click on&nbsp;<em>Browse all</em>&nbsp;to show all the available blocks and select it from there.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://user-images.githubusercontent.com/68744851/232058336-08886952-5922-4bf4-ab6c-d50932c1e819.gif\" target=\"_blank\" rel=\"noreferrer noopener\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/68744851/232058336-08886952-5922-4bf4-ab6c-d50932c1e819.gif\" alt=\"Adding the Home Link from the sidebar\" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">From the Navigation Block </h3>\n\n\n\n<p>With the&nbsp;<em>Navigation</em>&nbsp;block selected, click on the (<strong>+</strong>) icon inside the&nbsp;<em>Navigation</em>, and either select the&nbsp;<em>Home link</em>&nbsp;block from the list of your recently used blocks or click on&nbsp;<em>Browse all</em>&nbsp;to show all the available blocks and select it from there.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://user-images.githubusercontent.com/68744851/232063559-0d1d7d56-21db-4c04-87bd-f339e681096e.gif\" target=\"_blank\" rel=\"noreferrer noopener\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/68744851/232063559-0d1d7d56-21db-4c04-87bd-f339e681096e.gif\" alt=\"Adding the Home Link from the Navigation Block \" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">By converting an existing block</h3>\n\n\n\n<p>Select an already-existing sub-block inside the&nbsp;<em>Navigation</em>&nbsp;block and click on the icon to the left of the&nbsp;<em>Drag</em>&nbsp;tool, which represents the actual sub-block. Select the&nbsp;<em>Home link</em>&nbsp;block from the drop-down menu.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://user-images.githubusercontent.com/68744851/232065572-0d6b6269-7fd6-436f-ba2a-c287245763f4.gif\" target=\"_blank\" rel=\"noreferrer noopener\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/68744851/232065572-0d6b6269-7fd6-436f-ba2a-c287245763f4.gif\" alt=\"Adding the Home Link by converting an existing block\" /></a></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Refer to this article for&nbsp;<a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">detailed instructions on adding blocks</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block has its own toolbar, which contains unique controls that let you customize or configure the block. The&nbsp;<em>Home Link</em>&nbsp;block has the following options on its toolbar:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"308\" height=\"57\" src=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.44.25-PM.png\" alt=\"Block toolbar for the home link block\" class=\"wp-image-16357030\" srcset=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.44.25-PM.png 308w, https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.44.25-PM-300x56.png 300w\" sizes=\"auto, (max-width: 308px) 100vw, 308px\" /></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"331\" height=\"156\" src=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.45.31-PM.png\" alt=\"Transform toolbar for the home link block\" class=\"wp-image-16357031\" srcset=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.45.31-PM.png 331w, https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.45.31-PM-300x141.png 300w\" sizes=\"auto, (max-width: 331px) 100vw, 331px\" /></figure>\n\n\n\n<p>You can transform your&nbsp;<em>Home Link block</em>&nbsp;to a <a href=\"https://wordpress.org/documentation/article/custom-link-block/\" data-type=\"helphub_article\" data-id=\"16278661\">Custom Link</a> block.</p>\n\n\n\n<p><strong>Block moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"308\" height=\"57\" src=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.44.25-PM-1.png\" alt=\"Block moving tools for the home link block\" class=\"wp-image-16357032\" srcset=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.44.25-PM-1.png 308w, https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.44.25-PM-1-300x56.png 300w\" sizes=\"auto, (max-width: 308px) 100vw, 308px\" /></figure>\n\n\n\n<p>You can reorder&nbsp;<em>Home Link block</em>&nbsp;inside a&nbsp;Navigation&nbsp;block. Use the toolbar to&nbsp;<em>move</em>&nbsp;the items&nbsp;<em>left and righ</em>t or&nbsp;<em>drag&nbsp;</em>them to a new position.</p>\n\n\n\n<p><strong>Text formatting</strong></p>\n\n\n\n<p>Basic&nbsp;Text formatting&nbsp;is available for all&nbsp;<em>Home Link</em>&nbsp;blocks. Select your title (or a part of it) to make it&nbsp;<em>Bold, Italic</em>, or&nbsp;<em>Strikethrough</em>, or turn it into an&nbsp;<em>Inline image</em>&nbsp;to cover your link with an image.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"260\" height=\"159\" src=\"https://wordpress.org/documentation/files/2023/05/Screenshot-2023-05-19-at-12.50.04-PM.png\" alt=\"Block text formatting for the home link block\" class=\"wp-image-16357033\" /></figure>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>The&nbsp;<strong>Options&nbsp;</strong>section opens block settings and a button to move to the&nbsp;<em>parent Navigation field</em>&nbsp;section to update it. You can also&nbsp;<em>copy, duplicate, lock</em>, or&nbsp;<em>remove your Home Link</em>. </p>\n\n\n\n<p>Details about&nbsp;<strong>More options</strong>&nbsp;can be found in this&nbsp;<a href=\"https://wordpress.org/documentation/article/more-options/\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Each link has its&nbsp;<strong>Block settings</strong>&nbsp;you can access by clicking the&nbsp;<strong>settings&nbsp;</strong>button on the upper-right corner of the editor or via&nbsp;<strong>Options&nbsp;</strong>in the toolbar.</p>\n\n\n\n<p><strong>Typography</strong></p>\n\n\n\n<p>The&nbsp;<em>Home Link&nbsp;</em>block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p>For details refer to this support article:&nbsp;<a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The<strong> </strong><em>Home Link&nbsp;</em>block provides dimension settings options to width.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The&nbsp;<strong>Advanced</strong>&nbsp;section has the&nbsp;<strong>Additional CSS classes(es)</strong>&nbsp;option. You can integrate your custom style into a&nbsp;<em><em>Home</em> Link</em>&nbsp;block by inserting your CSS Class name into this field.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-05-19</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the list of Blocks The&nbsp;Home Link&nbsp;block allows you to automatically add a link to your site&#8217;s homepage. Note: the&nbsp;Home Link&nbsp;block is only available as a sub-block of the&nbsp;Navigation&nbsp;block How to add the Home Link block To add a&nbsp;Home Link&nbsp;block, you first need to add a&nbsp;Navigation&nbsp;block in a post or Site Editor. There are [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16357027",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357027",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16357027"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357027/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360318,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357027/revisions/16360318"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16357027"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16357027"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

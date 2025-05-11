@@ -1,0 +1,91 @@
+{
+    "id": 136845,
+    "date": "2021-07-29T09:09:47",
+    "date_gmt": "2021-07-29T09:09:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/item-group/"
+    },
+    "modified": "2024-10-30T17:09:58",
+    "modified_gmt": "2024-10-30T17:09:58",
+    "slug": "item-group",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/item-group/",
+    "title": {
+        "rendered": "ItemGroup"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>ItemGroup</code> displays a list of <code>Item</code>s grouped and styled together.</p>\n<h2>Usage</h2>\n<p><code>ItemGroup</code> should be used in combination with the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/item-group/item/\"><code>Item</code> sub-component</a>.</p>\n<pre><code class=\"language-jsx\">import {\n    __experimentalItemGroup as ItemGroup,\n    __experimentalItem as Item,\n} from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;ItemGroup&gt;\n            &lt;Item&gt;Code&lt;/Item&gt;\n            &lt;Item&gt;is&lt;/Item&gt;\n            &lt;Item&gt;Poetry&lt;/Item&gt;\n        &lt;/ItemGroup&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>isBordered</code>: <code>boolean</code></h3>\n<p>Renders borders around each items.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isRounded</code>: <code>boolean</code></h3>\n<p>Renders with rounded corners.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>isSeparated</code>: <code>boolean</code></h3>\n<p>Renders items individually. Even if <code>isBordered</code> is <code>false</code>, a border in between each item will be still be displayed.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>size</code>: <code>'small' | 'medium' | 'large'</code></h3>\n<p>Determines the amount of padding within the component.<br />\nWhen not defined, it defaults to the value from the context (which is <code>medium</code> by default).</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>medium</code></li>\n</ul>\n<h3>Context</h3>\n<p>The <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/item-group/item/\"><code>Item</code> sub-component</a> is connected to <code>&lt;ItemGroup /&gt;</code> using <a href=\"https://reactjs.org/docs/context.html\">Context</a>. Therefore, <code>Item</code> receives the <code>size</code> prop from the <code>ItemGroup</code> parent component.</p>\n<p>In the following example, the <code>&lt;Item /&gt;</code> will render with a size of <code>small</code>:</p>\n<pre><code class=\"language-jsx\">import {\n    __experimentalItemGroup as ItemGroup,\n    __experimentalItem as Item,\n} from '@wordpress/components';\n\nconst Example = () =&gt; (\n    &lt;ItemGroup size=\"small\"&gt;\n        &lt;Item&gt;Item text&lt;/Item&gt;\n    &lt;/ItemGroup&gt;\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 175,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136845",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136845",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136845/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151721,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136845/revisions/151721"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136845"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

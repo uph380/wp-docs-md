@@ -1,0 +1,91 @@
+{
+    "id": 137796,
+    "date": "2021-12-10T20:09:47",
+    "date_gmt": "2021-12-10T20:09:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/react-native/osx-setup-guide/"
+    },
+    "modified": "2025-01-07T18:34:08",
+    "modified_gmt": "2025-01-07T18:34:08",
+    "slug": "osx-setup-guide",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/react-native/osx-setup-guide/",
+    "title": {
+        "rendered": "Setup guide for React Native development (macOS)"
+    },
+    "content": {
+        "rendered": "<p>Are you interested in contributing to the native mobile editor? This guide is a detailed walk through designed to get you up and running!</p>\n<p>Note that these instructions are primarily focused on the macOS environment. For other environments, <a href=\"https://reactnative.dev/docs/environment-setup\">the React Native quickstart documentation</a> has helpful pointers and steps for getting set up.</p>\n<h2>Clone Gutenberg</h2>\n<pre><code class=\"language-sh\">git clone git@github.com:WordPress/gutenberg.git\n</code></pre>\n<h3>Install node and npm</h3>\n<p>If you\u2019re working in multiple JS projects, a node version manager may make sense. A manager will let you switch between different node and npm versions of your choosing.</p>\n<p>We recommend <a href=\"https://github.com/nvm-sh/nvm\">nvm</a>.</p>\n<p>After installing nvm, run the following from the top-level directory of the cloned project:</p>\n<pre><code class=\"language-sh\">nvm install 'lts/*'\nnvm alias default 'lts/*' # sets this as the default when opening a new terminal\nnvm use # switches to the project settings\n</code></pre>\n<p>Then install dependencies:</p>\n<pre><code>npm ci\n</code></pre>\n<h3>Do you have an older existing Gutenberg checkout?</h3>\n<p>If you have an existing Gutenberg checkout be sure to fully clean <code>node_modules</code> and re-install dependencies.<br />\nThis may help avoid errors in the future.</p>\n<pre><code class=\"language-sh\">npm run distclean\nnpm ci\n</code></pre>\n<h2>iOS</h2>\n<h3>CocoaPods</h3>\n<p><a href=\"https://guides.cocoapods.org/using/getting-started.html\">CocoaPods</a> is required to fetch React and third-party dependencies. The steps to install it vary depending on how Ruby is managed on your machine.</p>\n<h4>System Ruby</h4>\n<p>If you&#8217;re using the default Ruby available with MacOS, you&#8217;ll need to use the <code>sudo</code> command to install gems like Cocoapods:</p>\n<pre><code>sudo gem install cocoapods\n</code></pre>\n<p>Note, Mac M1 is not directly compatible with Cocoapods. If you encounter issues, try running these commands to install the ffi package, which will enable pods to be installed with the proper architecture:</p>\n<pre><code>sudo arch -x86_64 gem install ffi\narch -x86_64 pod install\n</code></pre>\n<h4>Ruby Manager</h4>\n<p>It may not be necessary to manually install Cocoapods or the <code>ffi</code> package if you&#8217;re using a Ruby Version manager. Please refer to your chosen manager&#8217;s documentation for guidance.</p>\n<p><a href=\"https://github.com/rbenv/rbenv\"><code>rbenv</code></a> is the recommended manager if you&#8217;re running Gutenberg from within <a href=\"https://github.com/wordpress-mobile/WordPress-iOS\">the WordPress iOS app</a> (vs. only the demo app).</p>\n<h3>Set up Xcode</h3>\n<p>Install <a href=\"https://developer.apple.com/xcode/\">Xcode</a> via the app store and then open it up:</p>\n<ul>\n<li>Accept the license agreement.</li>\n<li>Verify that <code>Xcode &gt; Preferences &gt; Locations &gt; Command Line Tools</code> points to the current Xcode version.</li>\n</ul>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/xcode-command-line-tools.png?ssl=1\"  alt=\"Screenshot of Xcode command line tools settings.\"></p>\n<h3>react-native doctor</h3>\n<p><a href=\"https://reactnative.dev/blog/2019/11/18/react-native-doctor\">react-native doctor</a> can be used to identify anything that&#8217;s missing from your development environment. From your Gutenberg checkout, or relative to <code>/packages/react-native-editor folder</code>, run:</p>\n<pre><code class=\"language-sh\">npx @react-native-community/cli doctor\n</code></pre>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-doctor.png?ssl=1\"  alt=\"Screenshot of react-native-community/cli doctor tool running in the terminal.\"></p>\n<p>See if <code>doctor</code> can fix both &#8220;common&#8221; and &#8220;iOS&#8221; issues. (Don&#8217;t worry if &#8220;Android&#8221; still has \u274cs at this stage, we&#8217;ll get to those later!)</p>\n<h3>Run the demo app</h3>\n<p>Once all common and iOS issues are resolved, try:</p>\n<pre><code>npm run native start:reset #starts metro\n</code></pre>\n<p>In another terminal type:</p>\n<pre><code>npm run native ios\n</code></pre>\n<p>After waiting for everything to build, the demo app should be running from the iOS simulator:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/iOS-Simulator.png?ssl=1\"  alt=\"Screenshot of the block editor in iOS simulator.\" /></p>\n<h2>Android</h2>\n<h3>Java Development Kit (JDK)</h3>\n<p>The JDK recommended in <a href=\"https://reactnative.dev/docs/environment-setup\">the React Native documentation</a> is called Azul Zulu. It can be installed using <a href=\"https://brew.sh/\">Homebrew</a>. To install it, run the following commands in a terminal after installing Homebrew:</p>\n<pre><code>brew tap homebrew/cask-versions\nbrew install --cask zulu11\n</code></pre>\n<p>If you already have a JDK installed on your system, it should be JDK 11 or newer.</p>\n<h3>Set up Android Studio</h3>\n<p>To compile the Android app, <a href=\"https://developer.android.com/studio\">download Android Studio</a>.</p>\n<p>Next, open an existing project and select the Gutenberg folder you cloned.</p>\n<p>From here, click on the cube icon that&#8217;s highlighted in the following screenshot to access the SDK Manager. Another way to the SDK Manager is to navigate to <code>Tools &gt; SDK Manager</code>:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-package-manager.png?ssl=1\"  alt=\"Screenshot highlighting where the package manager button is located in Android Studio.\"></p>\n<p>We can download SDK platforms, packages and other tools on this screen. Specific versions are hidden behind the &#8220;Show package details&#8221; checkbox, check it, since our build requires specific versions for E2E and development:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-show-package-details.png?ssl=1\"  alt=\"Screenshot of the package manager in Android Studio, highlighting the Show Package Details checkbox.\"></p>\n<p>Check all related packages from <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/react-native-editor/android/build.gradle\">build.gradle</a>. Then click on &#8220;Apply&#8221; to download items. There may be other related dependencies from build.gradle files in node_modules.</p>\n<p>If you don\u2019t want to dig through files, stack traces will complain of missing packages, but it does take quite a number of tries if you go through this route.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-editor-build-gradle.png?ssl=1\"  alt=\"Screenshot of the build.gradle configuration file.\"></p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-sdk.png?ssl=1\"  alt=\"Screenshot of the package manager displaying SDK Platforms.\"></p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-sdk-tools.png?ssl=1\"  alt=\"Screenshot of the package manager displaying SDK Tools.\"></p>\n<h3>Update Paths</h3>\n<p>Export the following env variables and update $PATH. We can normally add this to our <code>~/.zshrc</code> file if we&#8217;re using zsh<br />\nin our terminal, or <code>~/.bash_profile</code> if the terminal is still using bash.</p>\n<pre><code class=\"language-sh\">### Java that comes with Android Studio:\nexport JAVA_HOME=/Applications/Android\\ Studio.app/Contents/jre/Contents/Home\n### Android Home is configurable in Android Studio. Go to Preferences &gt; System Settings &gt; Android SDK\nexport ANDROID_HOME=$HOME/Library/Android/sdk\nexport PATH=$PATH:$ANDROID_HOME/emulator\nexport PATH=$PATH:$ANDROID_HOME/tools\nexport PATH=$PATH:$ANDROID_HOME/tools/bin\nexport PATH=$PATH:$ANDROID_HOME/platform-tools\n</code></pre>\n<p>Save then source, or open a new terminal to pick up changes.</p>\n<pre><code class=\"language-sh\">source ~/.zshrc\n</code></pre>\n<p>or</p>\n<pre><code class=\"language-sh\">source ~/.bash_profile\n</code></pre>\n<p>If the SDK path can&#8217;t be found, you can verify its location by visiting Android Studio &gt; Preferences &gt; System Settings &gt; Android SDK</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/sdk-path.png?ssl=1\"  alt=\"Screenshot of where the SDK Path may be found in Android Studio.\"></p>\n<h3>Create a new device image</h3>\n<p>Next, let\u2019s create a virtual device image. Click on the phone icon with an android to the bottom-right.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-android-device-manager-button.png?ssl=1\"  alt=\"Screenshot of where to find the android device manager button.\"></p>\n<p>This brings up the \u201cAndroid Virtual Device Manager\u201d or (AVD). Click on \u201cCreate Virtual Device\u201d. Pick a phone type of your choice:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-android-select-hardware.png?ssl=1\"  alt=\"Screenshot of the Virtual Device Configuration setup.\"></p>\n<p>Pick the target SDK version. This is the targetSdkVersion set in the <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/react-native-editor/android/build.gradle\">build.gradle</a> file.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/react-native-adv-system-image.png?ssl=1\"  alt=\"Screenshot of picking a system image in the Android Device Manager workflow.\"></p>\n<p>There are some advanced settings we can toggle, but these are optional. Click finish.</p>\n<h3>Run the demo app</h3>\n<p>Start metro:</p>\n<pre><code>npm run native start:reset\n</code></pre>\n<p>In another terminal run the following to launch the demo app in the Android emulator (if the emulator isn&#8217;t already running, it&#8217;ll also be launched as part of this command):</p>\n<pre><code>npm run native android\n</code></pre>\n<p>After a bit of a wait, we\u2019ll see something like this:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/android-simulator.png?ssl=1\"  alt=\"Screenshot of a the block editor in Android Simulator.\"></p>\n<h2>Unit Tests</h2>\n<pre><code class=\"language-sh\">npm run test:native\n</code></pre>\n<h2>Integration Tests</h2>\n<p><a href=\"https://appium.io/\">Appium</a> has it own doctor tool. Run this with:</p>\n<pre><code class=\"language-sh\">npx appium-doctor\n</code></pre>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/CleanShot-2021-10-27-at-15.20.16.png?ssl=1\"  alt=\"Screenshot of the appium-doctor tool running in the terminal.\"></p>\n<p>Resolve any required dependencies.</p>\n<h3>iOS Integration Tests</h3>\n<p>If we know we can run the iOS local environment without issue, E2Es for iOS are straightforward. Stop any running metro processes. This was launched previously with <code>npm run native start:reset</code>.</p>\n<p>Then in terminal type:</p>\n<pre><code class=\"language-sh\">npm run native test:e2e:ios:local\n</code></pre>\n<p>Passing a filename should also work to run a subset of tests:</p>\n<pre><code class=\"language-sh\">npm run native test:e2e:ios:local gutenberg-editor-paragraph.test.js\n</code></pre>\n<p>If all things go well, it should look like:</p>\n<p><video src=\"https://user-images.githubusercontent.com/1270189/137403353-2a8ded47-5c7c-4f99-b2cc-fa6def4b4990.mp4\" data-canonical-src=\"https://user-images.githubusercontent.com/1270189/137403353-2a8ded47-5c7c-4f99-b2cc-fa6def4b4990.mp4\" controls=\"controls\" muted=\"muted\" class=\"d-block rounded-bottom-2 width-fit\" style=\"max-height:640px\"></video></p>\n<h3>Android Integration Tests</h3>\n<p><strong>Create a new virtual device()</strong> that matches the device specified in <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/packages/react-native-editor/__device-tests__/helpers/caps.js#L30\">packages/react-native-editor/<strong>device-tests</strong>/helpers/caps.js</a> At the time of this writing, this would be a Pixel 3 XL image, using Android 9 (API 28).</p>\n<p>Start the virtual device first. Go back to the AVD by clicking on the phone icon, then click the green play button.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/adv-integration.png?ssl=1\"  alt=\"A screenshot of how to start the Android Simulator.\"></p>\n<p>Make sure no metro processes are running. This was launched previously with <code>npm run native start:reset</code>.</p>\n<p>Then in a terminal run:</p>\n<pre><code class=\"language-sh\">npm run native test:e2e:android:local\n</code></pre>\n<p>Passing a filename should also work to run a subset of tests:</p>\n<pre><code>npm run native test:e2e:android:local gutenberg-editor-paragraph.test.js\n</code></pre>\n<p>After a bit of a wait we should see:</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2021/10/CleanShot-2021-10-27-at-15.28.22.png?ssl=1\"  alt=\"A screenshot of block editor integration tests in Android Simulator.\"></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 137772,
+    "menu_order": 383,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-137796",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137796",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137796/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 147718,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137796/revisions/147718"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137772"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=137796"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

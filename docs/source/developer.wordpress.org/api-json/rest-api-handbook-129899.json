@@ -1,0 +1,91 @@
+{
+    "id": 129899,
+    "date": "2020-08-09T03:34:43",
+    "date_gmt": "2020-08-09T03:34:43",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/block-directory-items/"
+    },
+    "modified": "2024-01-16T20:30:14",
+    "modified_gmt": "2024-01-16T20:30:14",
+    "slug": "block-directory-items",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/block-directory-items/",
+    "title": {
+        "rendered": "Block Directory Items"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a block directory item record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                The block name, in namespace/block-name format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-title\">\n<td>\n                <code>title</code>\n            </td>\n<td>\n                The block title, in human readable format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                A short description of the block, in human readable format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-id\">\n<td>\n                <code>id</code>\n            </td>\n<td>\n                The block slug.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-rating\">\n<td>\n                <code>rating</code>\n            </td>\n<td>\n                The star rating of the block.</p>\n<p class=\"type\">\n                    JSON data type: number              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-rating_count\">\n<td>\n                <code>rating_count</code>\n            </td>\n<td>\n                The number of ratings.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-active_installs\">\n<td>\n                <code>active_installs</code>\n            </td>\n<td>\n                The number sites that have activated this block.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-author_block_rating\">\n<td>\n                <code>author_block_rating</code>\n            </td>\n<td>\n                The average rating of blocks published by the same author.</p>\n<p class=\"type\">\n                    JSON data type: number              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-author_block_count\">\n<td>\n                <code>author_block_count</code>\n            </td>\n<td>\n                The number of blocks published by the same author.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-author\">\n<td>\n                <code>author</code>\n            </td>\n<td>\n                The WordPress.org username of the block author.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-icon\">\n<td>\n                <code>icon</code>\n            </td>\n<td>\n                The block icon.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: uri\n                                    </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-last_updated\">\n<td>\n                <code>last_updated</code>\n            </td>\n<td>\n                The date when the block was last updated.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: datetime (<a href=\"https://core.trac.wordpress.org/ticket/41032\">details</a>)\n                                    </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n<tr id=\"schema-humanized_updated\">\n<td>\n                <code>humanized_updated</code>\n            </td>\n<td>\n                The date when the block was last updated, in fuzzy human readable format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>List Block Directory Items</h2>\n<p>        Query this endpoint to retrieve a collection of block directory items. The response you receive can be controlled and filtered using the URL query parameters below.</p>\n<h3>Definition</h3>\n<p>        <code>GET /wp/v2/block-directory/search</code></p>\n<h3>Example Request</h3>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/block-directory/search</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code>page</code>\n                                    </td>\n<td>\n                                            Current page of the collection.</p>\n<p class=\"default\">\n                            Default: <code>1</code>\n                        </p>\n</td>\n</tr>\n<tr>\n<td>\n                                            <code>per_page</code>\n                                    </td>\n<td>\n                                            Maximum number of items to be returned in result set.</p>\n<p class=\"default\">\n                            Default: <code>10</code>\n                        </p>\n</td>\n</tr>\n<tr>\n<td>\n                                            <code>term</code>\n                                    </td>\n<td>\n                                            Limit result set to blocks matching the search term.</p>\n<p class=\"required\">\n                            Required: 1\n                        </p>\n</td>\n</tr>\n</table></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129899",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/129899",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/129899/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151986,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/129899/revisions/151986"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129899"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

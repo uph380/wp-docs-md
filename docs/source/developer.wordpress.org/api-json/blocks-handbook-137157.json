@@ -1,0 +1,85 @@
+{
+    "id": 137157,
+    "date": "2021-10-22T23:22:28",
+    "date_gmt": "2021-10-22T23:22:28",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/"
+    },
+    "modified": "2025-02-22T02:34:09",
+    "modified_gmt": "2025-02-22T02:34:09",
+    "slug": "getting-started",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/",
+    "title": {
+        "rendered": "Getting Started"
+    },
+    "content": {
+        "rendered": "<p>Welcome to the Getting Started documentation. From setting up your development environment and building your first block to understanding the fundamentals, this section is the perfect starting point if you are new to block development or want to improve your skills.</p>\n<h2>Navigating this chapter</h2>\n<p>Use the following links to locate a topic within this chapter. If you have never built a block before, consider reading through the documentation in the order listed.</p>\n<ul>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/\">Block Development Environment</a>:</strong> Set up the right development environment to create blocks and get introduced to basic tools for block development such as <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/\"><code>wp-env</code></a>, <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\"><code>create-block</code></a>, and <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\"><code>wp-scripts</code></a></li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/quick-start-guide/\">Quick Start Guide</a>:</strong> Get a custom block up and running in less than one minute.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/tutorial/\">Tutorial: Build your first block</a>:</strong> Learn how to build a fully functional custom block from the ground up.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/\">Fundamentals of Block Development</a>:</strong> Learn the most relevant concepts in block development.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/glossary/\">Glossary</a>:</strong> A glossary of common terms you will encounter when working with the Block Editor.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/faq/\">Frequently Asked Questions</a>:</strong> Common questions (and answers) that have come up from the last few years of Gutenberg&#8217;s development. </li>\n</ul>\n<h2>Keeping up with the WordPress project</h2>\n<p>Once you have finished reviewing this chapter, you will have a solid understanding of blocks and how to develop for the Block Editor, but what&#8217;s next?</p>\n<p>The WordPress project, and Gutenberg in particular, iterates quickly. Staying up-to-date on all the changes can be challenging. So, here are a few essential developer resources you should be aware of. Each person will have their own unique needs in keeping up with a project of this scale, so choose what&#8217;s right for you.</p>\n<ul>\n<li><strong><a href=\"https://wordpress.org/about/roadmap/\">WordPress Roadmap</a>:</strong> The high-level roadmap for WordPress and Gutenberg.</li>\n<li><strong><a href=\"https://make.wordpress.org/core/\">Make Core</a>:</strong> The primary blog for WordPress Core where all major project updates are posted.</li>\n<li><strong><a href=\"https://make.wordpress.org/chat/\">WordPress Slack</a>:</strong> The official Slack community for all WordPress contributors is the hub for team meetings, ongoing conversations, and more. Make sure to join the <code>#core</code> and <code>#core-editor</code> channels.</li>\n<li><strong><a href=\"https://github.com/WordPress/gutenberg/\">Gutenberg GitHub repository</a>:</strong> This is where all Block Editor development happens. Keeping a close eye on the repository will give you a real-time understanding of what\u2019s being worked on by fellow contributors.</li>\n<li><strong><a href=\"https://make.wordpress.org/core/handbook/references/keeping-up-with-gutenberg-index/\">Keeping up with Gutenberg</a>:</strong> A compilation of Gutenberg-related posts from the many <a href=\"https://make.wordpress.org/\">Make teams</a>, including Core, Design, Meta, and Themes.</li>\n<li><strong><a href=\"https://make.wordpress.org/core/tag/gutenberg-new/\">&#8220;What&#8217;s new in Gutenberg?&#8221;</a>:</strong> Biweekly posts published on Make Core with each Gutenberg release. They are a great way to review the most relevant new features and the full changelog.</li>\n<li><strong><a href=\"https://developer.wordpress.org/news/\">&#8220;What&#8217;s new for developers?&#8221;</a>:</strong> Monthly posts on the WordPress Developer Blog that showcase the most important developer-related changes that happened in WordPress the previous month.</li>\n</ul>\n<h2>Additional resources</h2>\n<p>For more resources on block development and extending the Block Editor, review the additional sections here in the Block Editor Handbook. Further practical examples are also available in the <a href=\"https://github.com/WordPress/block-development-examples\">block-development-examples</a> GitHub repository.</p>\n<p>If you are looking for more educational content, check out <a href=\"https://learn.wordpress.org/\">Learn WordPress</a>, where you can find <a href=\"https://learn.wordpress.org/tutorials/\">tutorials</a>, <a href=\"https://learn.wordpress.org/courses/\">courses</a>, and <a href=\"https://learn.wordpress.org/online-workshops/\">online workshops</a>. Here is a selection of current offerings:</p>\n<ul>\n<li><a href=\"https://learn.wordpress.org/course/introduction-to-block-development-build-your-first-custom-block/\">Intro to Block Development: Build Your First Custom Block</a></li>\n<li><a href=\"https://learn.wordpress.org/course/converting-a-shortcode-to-a-block/\">Converting a Shortcode to a Block</a></li>\n<li><a href=\"https://learn.wordpress.org/course/using-the-wordpress-data-layer/\">Using the WordPress Data Layer</a></li>\n<li><a href=\"https://learn.wordpress.org/workshop/registering-block-patterns/\">Registering Block Patterns</a></li>\n<li><a href=\"https://learn.wordpress.org/workshop/intro-to-gutenberg-block-development/\">Intro to Gutenberg Block Development</a></li>\n<li><a href=\"https://learn.wordpress.org/workshop/intro-to-publishing-with-the-block-editor/\">Intro to Publishing with the Block Editor</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-137157",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137157",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137157/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157340,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137157/revisions/157340"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=137157"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

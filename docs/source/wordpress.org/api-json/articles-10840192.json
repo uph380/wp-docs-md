@@ -1,0 +1,109 @@
+{
+    "id": 10840192,
+    "date": "2018-11-02T05:17:27",
+    "date_gmt": "2018-11-02T05:17:27",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840192"
+    },
+    "modified": "2023-01-13T22:08:59",
+    "modified_gmt": "2023-01-13T22:08:59",
+    "slug": "post-status",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-status/",
+    "title": {
+        "rendered": "Post Status"
+    },
+    "content": {
+        "rendered": "\n<p>Posts in WordPress can have one of a number of statuses. The status of a given post determines how WordPress handles that post. For instance, public posts viewable by everyone are assigned the publish status, while drafts are assigned the draft status. The status is stored in the post_status field in the wp_posts table.</p>\n\n\n\n<p>WordPress provides 8 built-in statuses you can use. WordPress 3.0 gave you the capability to add your own custom post status and to use it in different ways.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Workflow</h2>\n\n\n\n<p>WordPress provides built-in features that empower some users (based on their <a href=\"/support/article/roles-and-capabilities/\">Roles and Capabilities</a>) to review content submitted to the website before it is published. This is commonly called &#8220;workflow.&#8221; WordPress&#8217;s workflow features rely on the value of a post&#8217;s <code>post_status</code> field to know which step in the workflow process the post is currently held in.</p>\n\n\n\n<p>Most users are already familiar with at least two workflow states:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Posts that are published and visible to everyone (including users who are logged out) are given <a href=\"/support/article/post-status/#publish\">the </a><code><a href=\"/support/article/post-status/#publish\">publish</a></code><a href=\"/support/article/post-status/#publish\"> status</a>.</li><li>Drafts that are not yet published are assigned <a href=\"/support/article/post-status/#draft\">the </a><code><a href=\"/support/article/post-status/#draft\">draft</a></code><a href=\"/support/article/post-status/#draft\"> status</a>.</li></ul>\n\n\n\n<p>Internally, WordPress sets the post status to <code>publish</code> when you click the &#8220;Publish&#8221; button, and WordPress sets the post status to <code>draft</code> when you click the &#8220;Save Draft&#8221; button. Similarly, if your website has users granted <a href=\"/support/article/roles-and-capabilities/#edit_posts\">the </a><code><a href=\"/support/article/roles-and-capabilities/#edit_posts\">edit_posts</a></code><a href=\"/support/article/roles-and-capabilities/#edit_posts\"> capability</a> but not <a href=\"/support/article/roles-and-capabilities/#publish_posts\">the </a><code><a href=\"/support/article/roles-and-capabilities/#publish_posts\">publish_posts</a></code><a href=\"/support/article/roles-and-capabilities/#publish_posts\"> capability</a>, then when those users start writing a new post, WordPress will display a &#8220;Submit for Review&#8221; button instead of a &#8220;Publish&#8221; button. Likewise, WordPress then assigns the post that user created <a href=\"/support/article/post-status/#pending\">the </a><code><a href=\"/support/article/post-status/#pending\">pending</a></code><a href=\"/support/article/post-status/#pending\"> status</a> when they press that button.</p>\n\n\n\n<p>The status of a post can also be set in the <a href=\"/support/article/administration-screens/\">Administration Screen</a> and <a href=\"/support/article/writing-posts/\">Add New Posts</a> Screen by any user with the capability needed to assign the post to the given status. Internally, all of these posts are stored in the same place (the <a href=\"https://codex.wordpress.org/Database_Description#Table:_wp_posts\"><code>wp_posts</code></a> table), and are differentiated by a column called <code>post_status</code>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Default Statuses</h2>\n\n\n\n<p>There are 8 major post statuses that WordPress uses by default.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Publish</h3>\n\n\n\n<p>Viewable by everyone. (publish)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Future</h3>\n\n\n\n<p>Scheduled to be published in a future date. (future)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Draft</h3>\n\n\n\n<p>Incomplete post viewable by anyone with proper <a href=\"/support/article/roles-and-capabilities/\">user role</a>.  (draft)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Pending</h3>\n\n\n\n<p>Awaiting a user with the <code>publish_posts</code> capability (typically a user assigned <a href=\"/support/article/roles-and-capabilities/#editor\">the </a><code><a href=\"/support/article/roles-and-capabilities/#editor\">Editor</a></code><a href=\"/support/article/roles-and-capabilities/#editor\"> role</a>) to publish. (pending)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Private</h3>\n\n\n\n<p>Viewable only to WordPress users at Administrator level. (private)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Trash</h3>\n\n\n\n<p>Posts in the Trash are assigned the <code>trash</code> status. (trash)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Auto-Draft</h3>\n\n\n\n<p><a href=\"https://codex.wordpress.org/Revisions\">Revisions</a> that WordPress saves automatically while you are editing. (auto-draft)</p>\n\n\n\n<h3 class=\"wp-block-heading\">Inherit</h3>\n\n\n\n<p>Used with a child post (such as <a href=\"https://codex.wordpress.org/Attachments\">Attachments</a> and <a href=\"https://codex.wordpress.org/Revisions\">Revisions</a>) to determine the actual status from the parent post.  (inherit)</p>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Status</h2>\n\n\n\n<p><strong>NOTICE:</strong>\n\nThis function does NOT add the registered post status to the Administration Screen.  This functionality is pending future development.  Please refer to <a href=\"https://core.trac.wordpress.org/ticket/12706\">Trac Ticket #12706</a>.\n\nConsider the action hook <a href=\"https://core.trac.wordpress.org/browser/tags/3.5.1/wp-admin/includes/meta-boxes.php#L183\">post_submitbox_misc_actions</a> for adding this parameter.\n\n\n</p>\n\n\n\n<p>A Custom Status is a Post Status you define.</p>\n\n\n\n<p>Adding a custom status to WordPress is done via the <a href=\"https://developer.wordpress.org/reference/functions/register_post_status\">register_post_status()</a> function. This function allows you to define the post status and how it operates within WordPress.</p>\n\n\n\n<p>Here&#8217;s a basic example of adding a custom post status called &#8220;Unread&#8221;:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">function custom_post_status(){\n\tregister_post_status( 'unread', array(\n\t\t'label'                     =&gt; _x( 'Unread', 'post' ),\n\t\t'public'                    =&gt; true,\n\t\t'exclude_from_search'       =&gt; false,\n\t\t'show_in_admin_all_list'    =&gt; true,\n\t\t'show_in_admin_status_list' =&gt; true,\n\t\t'label_count'               =&gt; _n_noop( 'Unread <span class=\"count\">(%s)</span>', 'Unread <span class=\"count\">(%s)</span>' ),\n\t) );\n}\nadd_action( 'init', 'custom_post_status' );</pre>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://generatewp.com/post-status/\">WordPress Post Status Generator</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Related</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/roles-and-capabilities/#editor\">Roles and Capabilities</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Code Documentation</h2>\n\n\n\n<ul class=\"wp-block-list\"><li>Function: <a href=\"https://developer.wordpress.org/reference/functions/get_post_status\"> get_post_status()</a> &#8211; Retrieve the post status based on the Post ID.</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Posts in WordPress can have one of a number of statuses. The status of a given post determines how WordPress handles that post. For instance, public posts viewable by everyone are assigned the publish status, while drafts are assigned the draft status. The status is stored in the post_status field in the wp_posts table. WordPress [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10840192",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840192",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840192"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840192/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355311,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840192/revisions/16355311"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840192"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840192"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

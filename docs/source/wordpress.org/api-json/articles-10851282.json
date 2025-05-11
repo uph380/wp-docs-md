@@ -1,0 +1,109 @@
+{
+    "id": 10851282,
+    "date": "2018-11-06T03:09:26",
+    "date_gmt": "2018-11-06T03:09:26",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851282"
+    },
+    "modified": "2024-06-08T18:44:01",
+    "modified_gmt": "2024-06-08T18:44:01",
+    "slug": "settings-media-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-media-screen/",
+    "title": {
+        "rendered": "Settings Media screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Settings Media Screen</strong> controls the various settings related to images and other media that are used in writing posts and pages.\n</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"853\" height=\"531\" src=\"https://wordpress.org/documentation/files/2018/11/media-setting.png\" alt=\"\" class=\"wp-image-10851292\" srcset=\"https://wordpress.org/documentation/files/2018/11/media-setting.png 853w, https://wordpress.org/documentation/files/2018/11/media-setting-300x187.png 300w, https://wordpress.org/documentation/files/2018/11/media-setting-768x478.png 768w\" sizes=\"auto, (max-width: 853px) 100vw, 853px\" /></figure>\n\n\n\n<p>You will need php-gd (GD graphics library) installed on your server to use this feature.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Settings</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Image sizes</h3>\n\n\n\n<p>The sizes listed below determine the maximum dimensions in pixels to use when inserting an image into the body of a post.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Thumbnail size</strong> &#8211; Enter the <strong>Width</strong> and <strong>Height</strong>\n<ul class=\"wp-block-list\">\n<li><strong>Crop thumbnail to exact dimensions (normally thumbnails are proportional)</strong> &#8211; checkbox<br>    </li>\n</ul>\n</li>\n\n\n\n<li><strong>Medium size</strong> &#8211; Enter the<strong> Max Width</strong> and <strong>Max Height</strong></li>\n\n\n\n<li><strong>Large size</strong> &#8211; Enter the <strong>Max Width</strong> and <strong>Max Height</strong></li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Uploading Files</h3>\n\n\n\n<p>Default settings used for during the media upload process when writing a post.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Organize my uploads into month- and year-based folders</strong> &#8211; Check this box if you wish to organize your uploads into folders based on the year and the month of the upload. As of 3.5, wp-content/uploads is the default path setting for the uploads folder. Assuming this is your path setting, if you check this box, a file uploaded in June of 2018 would be placed into the wp-content/uploads/2018/06 folder. Note: At the time of the actual upload, WordPress will automatically create the folders, such as wp-content/uploads/2018 and wp-content/uploads/2018/06, as long as your wp-content folder is writeable.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Save Changes</h3>\n\n\n\n<p>Click the <strong>Save Changes</strong> button to ensure any changes you have made to your Settings are saved to your database. Once you click the button, a confirmation text box will appear at the top of the page telling you your settings have been saved.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Further reading</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/image-size-and-quality/\">Image Size and Quality</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">Media Add New Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media library screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/edit-media/\">Edit Media</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-images/\">Use Images</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-image-and-file-attachments/\">Use image and file attachments</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\">Inserting Images into Posts and Pages (Block Editor)</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/\">Inserting Images into Posts and Pages (Classic Editor)</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Settings Media Screen controls the various settings related to images and other media that are used in writing posts and pages. You will need php-gd (GD graphics library) installed on your server to use this feature. Media Settings Image sizes The sizes listed below determine the maximum dimensions in pixels to use when inserting [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10851282",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851282",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851282"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851282/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360395,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851282/revisions/16360395"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851282"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851282"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 125654,
+    "date": "2019-08-12T08:27:31",
+    "date_gmt": "2019-08-12T08:27:31",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125654"
+    },
+    "modified": "2022-11-21T16:09:29",
+    "modified_gmt": "2022-11-21T16:09:29",
+    "slug": "rest",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/rest/",
+    "title": {
+        "rendered": "REST"
+    },
+    "content": {
+        "rendered": "\n<p>Refer <a href=\"https://developer.wordpress.org/rest-api/\">REST API Handbook</a>.</p>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 100,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125654",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125654",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125654/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125655,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125654/revisions/125655"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125654"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

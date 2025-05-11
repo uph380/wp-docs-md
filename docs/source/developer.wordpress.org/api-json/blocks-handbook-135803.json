@@ -1,0 +1,91 @@
+{
+    "id": 135803,
+    "date": "2021-05-06T14:24:48",
+    "date_gmt": "2021-05-06T14:24:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/spacer/"
+    },
+    "modified": "2024-10-30T17:10:03",
+    "modified_gmt": "2024-10-30T17:10:03",
+    "slug": "spacer",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/spacer/",
+    "title": {
+        "rendered": "Spacer"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>Spacer</code> is a primitive layout component that providers inner (<code>padding</code>) or outer (<code>margin</code>) space in-between components. It can also be used to adaptively provide space within an <code>HStack</code> or <code>VStack</code>.</p>\n<h2>Usage</h2>\n<p><code>Spacer</code> comes with a bunch of shorthand props to adjust <code>margin</code> and <code>padding</code>. The values of these props work as a multiplier to the library&#8217;s grid system (base of <code>4px</code>).</p>\n<pre><code class=\"language-jsx\">import {\n    __experimentalSpacer as Spacer,\n    __experimentalHeading as Heading,\n    __experimentalView as View,\n} from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;View&gt;\n            &lt;Spacer&gt;\n                &lt;Heading&gt;WordPress.org&lt;/Heading&gt;\n            &lt;/Spacer&gt;\n            &lt;Text&gt;Code is Poetry&lt;/Text&gt;\n        &lt;/View&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3><code>children</code>: <code>ReactNode</code></h3>\n<p>The children elements.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>margin</code>: <code>number</code></h3>\n<p>Adjusts all margins.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginBottom</code>: <code>number</code></h3>\n<p>Adjusts bottom margin, potentially overriding the value from the more generic <code>margin</code> and <code>marginY</code> props.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>2</code></li>\n</ul>\n<h3><code>marginLeft</code>: <code>number</code></h3>\n<p>Adjusts left margin, potentially overriding the value from the more generic <code>margin</code> and <code>marginX</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginRight</code>: <code>number</code></h3>\n<p>Adjusts right margin, potentially overriding the value from the more generic <code>margin</code> and <code>marginX</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginTop</code>: <code>number</code></h3>\n<p>Adjusts top margin, potentially overriding the value from the more generic <code>margin</code> and <code>marginY</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginX</code>: <code>number</code></h3>\n<p>Adjusts left and right margins, potentially overriding the value from the more generic <code>margin</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>marginY</code>: <code>number</code></h3>\n<p>Adjusts top and bottom margins, potentially overriding the value from the more generic <code>margin</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>padding</code>: <code>number</code></h3>\n<p>Adjusts all padding.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>paddingBottom</code>: <code>number</code></h3>\n<p>Adjusts bottom padding, potentially overriding the value from the more generic <code>padding</code> and <code>paddingY</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>paddingLeft</code>: <code>number</code></h3>\n<p>Adjusts left padding, potentially overriding the value from the more generic <code>padding</code> and <code>paddingX</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>paddingRight</code>: <code>number</code></h3>\n<p>Adjusts right padding, potentially overriding the value from the more generic <code>padding</code> and <code>paddingX</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>paddingTop</code>: <code>number</code></h3>\n<p>Adjusts top padding, potentially overriding the value from the more generic <code>padding</code> and <code>paddingY</code> props.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>paddingX</code>: <code>number</code></h3>\n<p>Adjusts left and right padding, potentially overriding the value from the more generic <code>padding</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>paddingY</code>: <code>number</code></h3>\n<p>Adjusts top and bottom padding, potentially overriding the value from the more generic <code>padding</code> prop.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 205,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135803",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135803",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135803/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151738,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135803/revisions/151738"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135803"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

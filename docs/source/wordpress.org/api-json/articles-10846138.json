@@ -1,0 +1,109 @@
+{
+    "id": 10846138,
+    "date": "2021-07-02T15:25:18",
+    "date_gmt": "2021-07-02T15:25:18",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10846138"
+    },
+    "modified": "2023-04-25T15:16:47",
+    "modified_gmt": "2023-04-25T15:16:47",
+    "slug": "create-a-static-front-page",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/create-a-static-front-page/",
+    "title": {
+        "rendered": "Create a static front page"
+    },
+    "content": {
+        "rendered": "\n<p><em><strong>Goal</strong>: you will know what a Static Front page is, and you will be able to set up a Static Front Page on your WordPress site.</em></p>\n\n\n\n<p><em><strong>Pre-requisites</strong>: you need to know the difference between <a href=\"/support/article/pages/\">Pages</a>&nbsp;and Post</em>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What is a Static Front Page</h2>\n\n\n\n<p>By default, WordPress displays a list of <em>Posts</em> on the home page of your site. This list of posts is <em>automatically updated</em> as soon as new posts are published, thus this is not static. Also, there is no need to create any page in order to have WordPress displaying this list of posts.</p>\n\n\n\n<p>A Static Front Page is <strong>a specific Page</strong> used as <em>the Home Page</em> of the site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to create a Static Front Page</h2>\n\n\n\n<p><em>Reminder: to create a page, go to <strong>Pages &gt; Add New</strong></em></p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2021/06/Screen-Shot-2021-06-23-at-2.04.35-PM-1024x327.png\" alt=\"How to create a Static Front Page\" class=\"wp-image-14589629\" width=\"589\" height=\"188\" srcset=\"https://wordpress.org/documentation/files/2021/06/Screen-Shot-2021-06-23-at-2.04.35-PM-1024x327.png 1024w, https://wordpress.org/documentation/files/2021/06/Screen-Shot-2021-06-23-at-2.04.35-PM-300x96.png 300w, https://wordpress.org/documentation/files/2021/06/Screen-Shot-2021-06-23-at-2.04.35-PM-768x245.png 768w, https://wordpress.org/documentation/files/2021/06/Screen-Shot-2021-06-23-at-2.04.35-PM.png 1222w\" sizes=\"auto, (max-width: 589px) 100vw, 589px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\">\n<li><strong>Home Page</strong>: (if not already created) create <strong>the Page you want to use</strong> as the Static Front (Home) Page.</li>\n\n\n\n<li><strong>Posts Page</strong>: (if not already created) create an <strong>empty page</strong>. Give it <strong>a title</strong> that will be used on top of your posts list. <strong>This step is mandatory</strong> as you are modifying WordPress default setting. <em>Any other content other than Title will not be displayed</em> at all on this specific page.</li>\n\n\n\n<li><strong>Setting</strong>: go to <strong>Settings &gt; Reading</strong>, then &#8216;Home page displays&#8217;.\n<ol class=\"wp-block-list\">\n<li>Static Page setting: <strong>select a static page</strong> (instead of the default <em>Your latest posts</em>).</li>\n\n\n\n<li>Home Page setting: in &#8216;Home page&#8217; list, <strong>select the page you want</strong> for Static Front(Home) Page.</li>\n\n\n\n<li>Posts Page setting: in &#8216;Posts page&#8217; list, <strong>select the empty page</strong> you created. <em>Do not select any page with content</em>, as it will not be displayed. </li>\n</ol>\n</li>\n\n\n\n<li><strong>Save your settings</strong> by clicking &#8216;Save Changes&#8217; button.</li>\n</ol>\n\n\n\n<p>Connect to your site home page: you should now see the Page you selected.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Goal: you will know what a Static Front page is, and you will be able to set up a Static Front Page on your WordPress site. Pre-requisites: you need to know the difference between Pages&nbsp;and Post. What is a Static Front Page By default, WordPress displays a list of Posts on the home page of [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10846138",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846138",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10846138"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846138/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356806,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846138/revisions/16356806"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10846138"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10846138"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 147734,
+    "date": "2023-07-14T11:25:01",
+    "date_gmt": "2023-07-14T11:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block-interactive-template/"
+    },
+    "modified": "2024-10-30T17:09:43",
+    "modified_gmt": "2024-10-30T17:09:43",
+    "slug": "packages-create-block-interactive-template",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block-interactive-template/",
+    "title": {
+        "rendered": "@wordpress/create-block-interactive-template"
+    },
+    "content": {
+        "rendered": "<p>This is a template for <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/create-block/README.md\"><code>@wordpress/create-block</code></a> to create interactive blocks.</p>\n<h2>Usage</h2>\n<p>This block template can be used by running the following command:</p>\n<pre><code class=\"language-bash\">npx @wordpress/create-block --template @wordpress/create-block-interactive-template\n</code></pre>\n<p>It requires at least WordPress 6.5 or Gutenberg 17.7.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 256,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147734",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147734",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147734/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155274,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147734/revisions/155274"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147734"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

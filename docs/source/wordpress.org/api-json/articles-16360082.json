@@ -1,0 +1,109 @@
+{
+    "id": 16360082,
+    "date": "2024-08-13T03:04:04",
+    "date_gmt": "2024-08-13T03:04:04",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16360082"
+    },
+    "modified": "2024-08-14T05:56:13",
+    "modified_gmt": "2024-08-14T05:56:13",
+    "slug": "twenty-ten",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-ten/",
+    "title": {
+        "rendered": "Twenty Ten"
+    },
+    "content": {
+        "rendered": "\n<p>The&nbsp;<a href=\"https://wordpress.org/themes/twentyten/\">Twenty Ten</a>&nbsp;is the default theme for WordPress in 2010, introduced with <a href=\"https://wordpress.org/documentation/wordpress-version/version-3-0/\">WordPress version 3.0.</a></p>\n\n\n\n<p>It is stylish, customizable, simple, and readable. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). Twenty Ten has editor styles, one and two- column page templates, and supports Aside and Gallery post formats.</p>\n\n\n\n<p>Twenty Ten was created by <a href=\"https://profiles.wordpress.org/iandstewart/\">Ian Stewart</a> and <a href=\"https://profiles.wordpress.org/mattmiklic/\">Matt Miklic</a>, based on the theme &#8220;Kirby&#8221;.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"880\" height=\"660\" src=\"https://wordpress.org/documentation/files/2024/04/TwentyTen.webp\" alt=\"Screenshot of the default theme Twenty Ten. The theme has a light grey body background, white content background, and dark grey text.\nA full width image is displayed below the site title. Below the header image is a horizontal menu with black background and white text.\nThe main section is split into two columns, with the content on the left and a narrow sidebar on the right.\" class=\"wp-image-16360083\" srcset=\"https://wordpress.org/documentation/files/2024/04/TwentyTen.webp 880w, https://wordpress.org/documentation/files/2024/04/TwentyTen-300x225.webp 300w, https://wordpress.org/documentation/files/2024/04/TwentyTen-768x576.webp 768w\" sizes=\"auto, (max-width: 880px) 100vw, 880px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Quick Specs</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Content and one sidebar: The main column width is 640px with one sidebar of 200px.</li>\n\n\n\n<li>Full-width layout: The main column is 640px.</li>\n\n\n\n<li>Header image is 940px in width and 198px in height.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Customizing</h2>\n\n\n\n<p>There are a few ways that you can customize Twenty Ten, either from the <a href=\"https://wordpress.org/documentation/article/customizer/\" data-type=\"helphub_article\" data-id=\"10866101\">Customizer</a> or through the WordPress admin screen. This short guide will use the Customizer to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Change the custom header</li>\n\n\n\n<li>Add a custom background</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Change the Custom Header</h3>\n\n\n\n<p>The theme has eight header images to choose from, and you can add your own image.</p>\n\n\n\n<p>To change you custom header, go to&nbsp;<strong>Appearance &gt; Customize</strong>. Navigate to the link named &#8220;Custom Header&#8221; and click on the link.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"609\" src=\"https://wordpress.org/documentation/files/2024/04/twentyten-customheader.png\" alt=\"The Customizer Header Image panel with the default image selected.\" class=\"wp-image-16360100\" srcset=\"https://wordpress.org/documentation/files/2024/04/twentyten-customheader.png 300w, https://wordpress.org/documentation/files/2024/04/twentyten-customheader-148x300.png 148w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<p>Click either</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>the &#8220;Hide image&#8221; button to remove any custom header image in your theme,</li>\n\n\n\n<li>the &#8220;Add new image&#8221; button to upload your own image for your theme&#8217;s header area, or</li>\n\n\n\n<li>either of the suggested images bundled with this theme.</li>\n</ul>\n\n\n\n<p>After you&#8217;ve changed the header image, click on the &#8220;Save and Publish&#8221; button at the top of the customizer and wait till the text in the button changes to &#8220;Saved&#8221;.</p>\n\n\n\n<p>Click on the &#8220;X&#8221; at the top of the Customizer to close the panel.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Add a Custom Background</h3>\n\n\n\n<p>To add a custom background, go to&nbsp;<strong>Appearance &gt; Customize</strong>&nbsp;then navigate to the link named &#8220;Custom Background&#8221; and click on the link.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"302\" height=\"255\" src=\"https://wordpress.org/documentation/files/2024/04/2010-custombackground.png\" alt=\"The Customizer Background image panel, without an image selected. The panel has a button that says &quot;Select Image&quot;.\" class=\"wp-image-16360104\" srcset=\"https://wordpress.org/documentation/files/2024/04/2010-custombackground.png 302w, https://wordpress.org/documentation/files/2024/04/2010-custombackground-300x253.png 300w\" sizes=\"auto, (max-width: 302px) 100vw, 302px\" /></figure>\n\n\n\n<p>Upload the image you want as your custom background and a new screen will show up with the following options.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Background Image\n<ul class=\"wp-block-list\">\n<li>&#8220;Remove&#8221; button</li>\n\n\n\n<li> &#8220;Change Image&#8221; button</li>\n</ul>\n</li>\n</ul>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Background\n<ul class=\"wp-block-list\">\n<li> Repeat </li>\n\n\n\n<li>No Repeat</li>\n\n\n\n<li> Tile</li>\n\n\n\n<li>Tile Horizontally</li>\n\n\n\n<li>Tile Vertically</li>\n</ul>\n</li>\n</ul>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Background Position\n<ul class=\"wp-block-list\">\n<li>Left</li>\n\n\n\n<li>Center</li>\n\n\n\n<li>Right</li>\n</ul>\n</li>\n</ul>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Background Attachment\n<ul class=\"wp-block-list\">\n<li>Scroll</li>\n\n\n\n<li>Fixed</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>Select the options and then navigate to the top of the Customizer and click on the &#8220;Save and Publish&#8221; button. Wait till the text in the button changes to &#8220;Saved&#8221;.</p>\n\n\n\n<p>Click on the &#8220;X&#8221; at the top of the Customizer to close the panel.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Templates</h2>\n\n\n\n<p>Twenty Ten has one custom page template that shows the content in one column, without sidebar.<br>You can set the page template by editing the page, opening the Page panel, and clicking on the template name.<br>The template are available for pages, not for posts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Post Formats</h2>\n\n\n\n<p>Twenty Ten supports standard, aside, and gallery <a href=\"https://developer.wordpress.org/advanced-administration/wordpress/post-formats/\">post formats</a>. In archive pages, the aside format hides the post title, and the gallery post format shows the gallery.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Patterns</h2>\n\n\n\n<p>The theme has three custom <a href=\"https://wordpress.org/documentation/article/block-pattern/\" data-type=\"helphub_article\" data-id=\"13271532\">patterns</a>: Introduction, Highlighted Quote, and Alternating images.</p>\n\n\n\n<p>You can access the patterns from the Block Editor.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Click the + icon to add a new block.</li>\n\n\n\n<li>Click on the&nbsp;Patterns&nbsp;tab.</li>\n\n\n\n<li>Select&nbsp;Twenty Ten&nbsp;from the list of categories.</li>\n\n\n\n<li>Click on the pattern you wish to insert and the pattern is inserted in the document at the location of your cursor.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"3019\" height=\"1532\" src=\"https://wordpress.org/documentation/files/2024/04/twentyten-patterns.jpg\" alt=\"The pattern explorer in the block editor with the Twenty Ten category selected, showing a preview of all four theme patterns.\" class=\"wp-image-16360124\" srcset=\"https://wordpress.org/documentation/files/2024/04/twentyten-patterns.jpg 3019w, https://wordpress.org/documentation/files/2024/04/twentyten-patterns-300x152.jpg 300w, https://wordpress.org/documentation/files/2024/04/twentyten-patterns-1024x520.jpg 1024w, https://wordpress.org/documentation/files/2024/04/twentyten-patterns-768x390.jpg 768w, https://wordpress.org/documentation/files/2024/04/twentyten-patterns-1536x779.jpg 1536w, https://wordpress.org/documentation/files/2024/04/twentyten-patterns-2048x1039.jpg 2048w\" sizes=\"auto, (max-width: 3019px) 100vw, 3019px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Support &amp; resources</h2>\n\n\n\n<p>Get community help with Twenty Ten in its&nbsp;<a href=\"https://wordpress.org/support/theme/twentyten/\">forum</a>.</p>\n\n\n\n<p>You can also read&nbsp;<a href=\"https://wordpress.org/documentation/article/twenty-ten-changelog/\">the theme&#8217;s changelog</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The&nbsp;Twenty Ten&nbsp;is the default theme for WordPress in 2010, introduced with WordPress version 3.0. It is stylish, customizable, simple, and readable. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). Twenty Ten has editor styles, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 10,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        82
+    ],
+    "class_list": [
+        "post-16360082",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360082",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16360082"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 53,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360082/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360776,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360082/revisions/16360776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16360082"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16360082"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

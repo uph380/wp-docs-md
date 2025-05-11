@@ -1,0 +1,97 @@
+{
+    "id": 10944,
+    "date": "2014-09-16T17:55:56",
+    "date_gmt": "2014-09-16T17:55:56",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10944"
+    },
+    "modified": "2025-03-20T00:33:24",
+    "modified_gmt": "2025-03-20T00:33:24",
+    "slug": "custom-hooks",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/hooks/custom-hooks/",
+    "title": {
+        "rendered": "Custom Hooks"
+    },
+    "content": {
+        "rendered": "\n<p>An important, but often overlooked practice is using custom hooks in your plugin so that other developers can extend and modify it.</p>\n\n\n\n<p>Custom hooks are created and called in the same way that WordPress Core hooks are.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Create a Hook</h2>\n\n\n\n<p>To create a custom hook, use <code><a href=\"https://developer.wordpress.org/reference/functions/do_action/\">do_action()</a></code> for <a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a> and <code><a href=\"https://developer.wordpress.org/reference/functions/apply_filters/\">apply_filters()</a></code> for <a href=\"https://developer.wordpress.org/plugins/hooks/filters/\">Filters</a>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nWe recommend using `<a href=\"https://developer.wordpress.org/reference/functions/apply_filters/\" rel=\"function\">apply_filters()</a> ` on any text that is output to the browser. Particularly on the frontend.</p>\n<p>This makes it easier for plugins to be modified according to the user&#8217;s needs.<br />\n</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Add a Callback to the Hook</h2>\n\n\n\n<p>To add a callback function to a custom hook, use <code><a href=\"https://developer.wordpress.org/reference/functions/add_action/\">add_action()</a></code> for <a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a> and <code><a href=\"https://developer.wordpress.org/reference/functions/add_filter/\">add_filter()</a></code> for <a href=\"https://developer.wordpress.org/plugins/hooks/filters/\">Filters</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Naming Conflicts</h2>\n\n\n\n<p>Naming conflicts (&#8220;collisions&#8221;) occur when two developers use the same hook name for completely different purposes. This leads to difficult to find bugs. So it&#8217;s important to prefix your hook names with a unique string to avoid hook name collisions.collisions with other plugins.</p>\n\n\n\n<p>For example, a filter named <code>email_body</code> is generic enough that two or more developers could use this hook in different plugins for different purposes. So to avoid this, a prefix is added. For example, functions used as examples in this handbook use <code>wporg_</code> as the prefix. </p>\n\n\n\n<p>When you choose your prefix, you can use your company name, your wp handle, the plugin name, anything you like really. The goal is to make it unique so choose wisely.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Extensible Action: Settings Form</h3>\n\n\n\n<p>If your plugin adds a settings form to the Administrative Panels, you can use Actions to allow other plugins to add their own settings to it.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">    do_action( 'wporg_after_settings_page_html' );</code></pre>\n\n\n\n<p>Now another plugin can register a callback function for the <code>wporg_after_settings_page_html</code> hook and inject new settings:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">add_action( 'wporg_after_settings_page_html', 'myprefix_add_settings' );</code></pre>\n\n\n\n<p>Note that because this is an action, no value is returned. Also note that since no priority is given, it will run at default priority 10.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Extensible Filter: Custom Post Type</h3>\n\n\n\n<p>In this example, when the new post type is registered, the parameters that define it are passed through a filter, so another plugin can change them before the post type is created.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">function wporg_create_post_type() {\n    $post_type_params = [/* ... */];\n\n    register_post_type(\n        'post_type_slug',\n        apply_filters( 'wporg_post_type_params', $post_type_params )\n    );\n}</code></pre>\n\n\n\n<p>Now another plugin can register a callback function for the <code>wporg_post_type_params</code> hook and change post type parameters:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">function myprefix_change_post_type_params( $post_type_params ) {\n\t$post_type_params['hierarchical'] = true;\n\treturn $post_type_params;\n}\nadd_filter( 'wporg_post_type_params', 'myprefix_change_post_type_params' );</code></pre>\n\n\n\n<p>Note that filters filters take data, modify it, and return it. So the code called ( <code>myprefix_change_post_type_params</code> ) doesn&#8217;t output anything using echo or html, or anything else directly to the screen. Also note that the retuned value is used directly by <code>register_post_type</code> without being assigned to a variable first. This is simple to skip that extra (an unnecessary) step. </p>\n\n\n\n<p>Also note that since no priority is given, it will run at default priority 10. And since there is no value for the number of parameters expected, the default of one is assumed.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10936,
+    "menu_order": 5,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10944",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10944",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10944/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 147659,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10944/revisions/147659"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10936"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10944"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

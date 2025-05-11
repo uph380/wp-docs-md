@@ -1,0 +1,97 @@
+{
+    "id": 11027,
+    "date": "2014-09-24T00:20:54",
+    "date_gmt": "2014-09-24T00:20:54",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11027"
+    },
+    "modified": "2024-02-05T13:46:14",
+    "modified_gmt": "2024-02-05T13:46:14",
+    "slug": "using-settings-api",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/settings/using-settings-api/",
+    "title": {
+        "rendered": "Using Settings API"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Adding Settings</h2>\n\n\n\n<p>You must define a new setting using <a href=\"https://developer.wordpress.org/reference/functions/register_setting/\" rel=\"function\">register_setting()</a> , it will create an entry in the <code>{$wpdb-&gt;prefix}_options</code> table.</p>\n\n\n\n<p>You can add new sections on existing pages using <a href=\"https://developer.wordpress.org/reference/functions/add_settings_section/\" rel=\"function\">add_settings_section()</a> .</p>\n\n\n\n<p>You can add new fields to existing sections using <a href=\"https://developer.wordpress.org/reference/functions/add_settings_field/\" rel=\"function\">add_settings_field()</a> .</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\n<a href=\"https://developer.wordpress.org/reference/functions/register_setting/\" rel=\"function\">register_setting()</a>  as well as the mentioned <code>add_settings_*()</code> functions should all be added to the <code>admin_init</code> action hook.<br />\n</div></div>\n\n\n\n\n<h3 class=\"wp-block-heading\">Add a Setting</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">register_setting(<br>    string $option_group,<br>    string $option_name,<br>    array $args = []<br>);</code></pre>\n\n\n\n<p>Please refer to the Function Reference about <a href=\"https://developer.wordpress.org/reference/functions/register_setting/\" rel=\"function\">register_setting()</a>  for full explanation about the used parameters.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Add a Section</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_settings_section(<br>    string $id,<br>    string $title,<br>    callable $callback,<br>    string $page,<br>    array $args = []<br>);</code></pre>\n\n\n\n<p>Sections are the groups of settings you see on WordPress settings pages with a shared heading. In your plugin you can add new sections to existing settings pages rather than creating a whole new page. This makes your plugin simpler to maintain and creates fewer new pages for users to learn.</p>\n\n\n\n<p>Please refer to the Function Reference about <a href=\"https://developer.wordpress.org/reference/functions/add_settings_section/\" rel=\"function\">add_settings_section()</a>  for full explanation about the used parameters.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Add a Field</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_settings_field(\n    string $id,\n    string $title,\n    callable $callback,\n    string $page,\n    string $section = 'default',\n    array $args = []\n);</code></pre>\n\n\n\n<p>Please refer to the Function Reference about <a href=\"https://developer.wordpress.org/reference/functions/add_settings_field/\" rel=\"function\">add_settings_field()</a>  for full explanation about the used parameters.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Example</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_settings_init() {\n\t// register a new setting for \"reading\" page\n\tregister_setting('reading', 'wporg_setting_name');\n\n\t// register a new section in the \"reading\" page\n\tadd_settings_section(\n\t\t'wporg_settings_section',\n\t\t'WPOrg Settings Section', 'wporg_settings_section_callback',\n\t\t'reading'\n\t);\n\n\t// register a new field in the \"wporg_settings_section\" section, inside the \"reading\" page\n\tadd_settings_field(\n\t\t'wporg_settings_field',\n\t\t'WPOrg Setting', 'wporg_settings_field_callback',\n\t\t'reading',\n\t\t'wporg_settings_section'\n\t);\n}\n\n/**\n * register wporg_settings_init to the admin_init action hook\n */\nadd_action('admin_init', 'wporg_settings_init');\n\n/**\n * callback functions\n */\n\n// section content cb\nfunction wporg_settings_section_callback() {\n\techo '&lt;p&gt;WPOrg Section Introduction.&lt;/p&gt;';\n}\n\n// field content cb\nfunction wporg_settings_field_callback() {\n\t// get the value of the setting we've registered with register_setting()\n\t$setting = get_option('wporg_setting_name');\n\t// output the field\n\t?&gt;\n\t&lt;input type=\"text\" name=\"wporg_setting_name\" value=\"&lt;?php echo isset( $setting ) ? esc_attr( $setting ) : &apos;&apos;; ?&gt;\"&gt;\n    &lt;?php\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Getting Settings</h2>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">get_option(\n    string $option,\n    mixed $default = false\n);</code></pre>\n\n\n\n<p>Getting settings is accomplished with the <a href=\"https://developer.wordpress.org/reference/functions/get_option/\" rel=\"function\">get_option()</a>  function.<br>The function accepts two parameters: the name of the option and an optional default value for that option.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Example</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// Get the value of the setting we've registered with register_setting()\n$setting = get_option('wporg_setting_name');</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11025,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11027",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11027",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 32,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11027/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152177,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11027/revisions/152177"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11027"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

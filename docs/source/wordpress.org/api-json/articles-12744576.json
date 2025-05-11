@@ -1,0 +1,109 @@
+{
+    "id": 12744576,
+    "date": "2020-04-28T14:08:18",
+    "date_gmt": "2020-04-28T14:08:18",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=12744576"
+    },
+    "modified": "2023-04-25T14:27:57",
+    "modified_gmt": "2023-04-25T14:27:57",
+    "slug": "calendar-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/calendar-block/",
+    "title": {
+        "rendered": "Calendar Block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Calendar Widget block</em> displays your posts in a calendar format. When you&nbsp;publish a new post, it is automatically added to the Calendar block. If you click on a date, it will open the archive of posts published on that date.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.44.31-AM.png\" alt=\"Calendar block\" class=\"wp-image-12744595\" width=\"363\" height=\"184\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.44.31-AM.png 670w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.44.31-AM-300x152.png 300w\" sizes=\"auto, (max-width: 363px) 100vw, 363px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">The <em>Calendar Widget block</em> does not let you create a calendar of events. For that, you need an Events calendar plugin.</p>\n\n\n\n<p>By default, it shows the current month and links to the posts published on various days in that month.  </p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.47.19-AM.png\" alt=\"Calendar block - right aigned\" class=\"wp-image-12744729\" width=\"346\" height=\"164\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.47.19-AM.png 1005w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.47.19-AM-300x142.png 300w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-28-at-9.47.19-AM-768x365.png 768w\" sizes=\"auto, (max-width: 346px) 100vw, 346px\" /><figcaption class=\"wp-element-caption\"><em>Example: Calendar Block &#8211; right aligned.</em></figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\">To add a&nbsp;<em><em>Calendar Widget block</em></em>, click on the&nbsp;<strong>Block Inserter</strong>&nbsp;icon. You can also type<kbd>&nbsp;/calendar</kbd>&nbsp;and hit enter in a new&nbsp;<em>paragraph block</em>&nbsp;to add one quickly.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/171653175-30c8d445-8470-4768-8a93-20418f7f3c77.png\" alt=\"How to quickly add Calendar block\" class=\"wp-image-15889221\" width=\"348\" height=\"122\" srcset=\"https://wordpress.org/documentation/files/2022/08/171653175-30c8d445-8470-4768-8a93-20418f7f3c77.png 796w, https://wordpress.org/documentation/files/2022/08/171653175-30c8d445-8470-4768-8a93-20418f7f3c77-300x105.png 300w, https://wordpress.org/documentation/files/2022/08/171653175-30c8d445-8470-4768-8a93-20418f7f3c77-768x268.png 768w\" sizes=\"auto, (max-width: 348px) 100vw, 348px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Each block has its own block-specific controls that allow you to manipulate the block right in the editor. The&nbsp;<em>Calendar Widget block</em>&nbsp;has the following options in the Block toolbar.&nbsp; </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Block moving tools</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>More options. </li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/171653176-b74c0159-00b7-430b-a917-72287d8613dd-1-1.png\" alt=\"Block toolbar in the Calendar block\" class=\"wp-image-15889227\" width=\"344\" height=\"224\" /></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<p>You can transform a Calendar block into Archives, Columns or &#8216;Group&#8217; block. Changing the <em>Calender Widget block</em> into a Group block lets you change the background color around the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-04-at-11.34.05-AM.png\" alt=\"Transform option in the Calendar block\" class=\"wp-image-15889274\" width=\"358\" height=\"261\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-04-at-11.34.05-AM.png 614w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-04-at-11.34.05-AM-300x219.png 300w\" sizes=\"auto, (max-width: 358px) 100vw, 358px\" /></figure>\n\n\n\n<p><strong>Block moving tools</strong></p>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the&nbsp;<em><em>Calender Widget block</em> </em>and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-04-at-11.17.44-AM-1.png\" alt=\"Block moving tools in the Calendar block\" class=\"wp-image-15889281\" width=\"347\" height=\"94\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/171653178-c0498d2b-402e-4dd9-88bb-06f232807160-1.png\" alt=\"Change alignment in the Calendar block\" class=\"wp-image-15889284\" width=\"350\" height=\"325\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the block left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the block alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the&nbsp;block align right</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the block beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> &#8211; Extend the block to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.&nbsp;</p>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\"></div>\n\n\n\n<p></p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>There are no further settings available for the Calendar Widget block, except for the &#8220;Advanced Settings.&#8221; </p>\n\n\n\n<p><strong>Advanced</strong> <strong>settings</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/HCaeEAd-xkijY3husAGN8FkRfOokz6h-mLa1vQoT11JIf366WEE4Y3jtoy6CTOJGTpBZELgZPdIewg2ug8pURV5XtFciGwLHJiNwleOvlGte5WnWTug0SYe4p-qBR54_8oR1NwHM\" alt=\"Advanced option in the selected Block\" width=\"344\" height=\"184\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-extra-large-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-23\n<ul class=\"wp-block-list\">\n<li>Removed redundant content </li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-04\n<ul class=\"wp-block-list\">\n<li>Added screenshots for 6.0</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-04-28 </li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Calendar Widget block displays your posts in a calendar format. When you&nbsp;publish a new post, it is automatically added to the Calendar block. If you click on a date, it will open the archive of posts published on that date. The Calendar Widget block does not let [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-12744576",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12744576",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=12744576"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12744576/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356782,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12744576/revisions/16356782"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=12744576"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=12744576"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11088,
+    "date": "2014-09-24T19:21:45",
+    "date_gmt": "2014-09-24T19:21:45",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11088"
+    },
+    "modified": "2022-11-17T06:43:34",
+    "modified_gmt": "2022-11-17T06:43:34",
+    "slug": "working-with-user-metadata",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/users/working-with-user-metadata/",
+    "title": {
+        "rendered": "Working with User Metadata"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Introduction</h2>\n\n\n\n<p>WordPress&#8217; <code>users</code> table was designed to contain only the essential information about the user.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nAs of WP 4.7 the table contains: <code>ID</code>, <code>user_login</code>, <code>user_pass</code>, <code>user_nicename</code>, <code>user_email</code>, <code>user_url</code>, <code>user_registered</code>, <code>user_activation_key</code>, <code>user_status</code> and <code>display_name</code>.<br />\n</div></div>\n\n\n\n\n<p>Because of this, to store additional data, the <code>usermeta</code> table was introduced, which can store any arbitrary amount of data about a user.</p>\n\n\n\n<p>Both tables are tied together using one-to-many relationship based on the <code>ID</code> in the <code>users</code> table.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Manipulating User Metadata</h2>\n\n\n\n<p>There are two main ways for manipulating User Metadata.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>A form field in the user&#8217;s profile screen.</li>\n\n\n\n<li>Programmatically, via a function call.</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">via a Form Field</h3>\n\n\n\n<p>The form field option is suitable for cases where the user will have access to the WordPress admin area, in which he will be able to view and edit profiles.</p>\n\n\n\n<p>Before we dive into an example, it&#8217;s important to understand the hooks involved in the process and why they are there.</p>\n\n\n\n<h4 class=\"wp-block-heading\"><code>show_user_profile</code> hook</h4>\n\n\n\n<p>This action hook is fired whenever a user edits <strong>it&#8217;s own</strong> user profile.</p>\n\n\n\n<p><strong>Remember,</strong> a user that doesn&#8217;t have the capability of editing his own profile won&#8217;t fire this hook.</p>\n\n\n\n<h4 class=\"wp-block-heading\"><code>edit_user_profile</code> hook</h4>\n\n\n\n<p>This action hook is fired whenever a user edits a user profile of <strong>somebody else</strong>.</p>\n\n\n\n<p><strong>Remember,</strong> a user that doesn&#8217;t have the capability for editing 3rd party profiles won&#8217;t fire this hook.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Example Form Field</h4>\n\n\n\n<p>In the example below we will be adding a birthday field to the all profile screens. Saving it to the database on profile updates.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * The field on the editing screens.\n *\n * @param $user WP_User user object\n */\nfunction wporg_usermeta_form_field_birthday( $user ) {\n    ?&gt;\n    &lt;h3&gt;It's Your Birthday&lt;/h3&gt;\n    &lt;table class=\"form-table\"&gt;\n        &lt;tr&gt;\n            &lt;th&gt;\n                &lt;label for=\"birthday\"&gt;Birthday&lt;/label&gt;\n            &lt;/th&gt;\n            &lt;td&gt;\n                &lt;input type=\"date\"\n                       class=\"regular-text ltr\"\n                       id=\"birthday\"\n                       name=\"birthday\"\n                       value=\"&lt;?= esc_attr( get_user_meta( $user-&gt;ID, 'birthday', true ) ) ?&gt;\"\n                       title=\"Please use YYYY-MM-DD as the date format.\"\n                       pattern=\"(19[0-9][0-9]|20[0-9][0-9])-(1[0-2]|0[1-9])-(3[01]|[21][0-9]|0[1-9])\"\n                       required&gt;\n                &lt;p class=\"description\"&gt;\n                    Please enter your birthday date.\n                &lt;/p&gt;\n            &lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/table&gt;\n    &lt;?php\n}\n \n/**\n * The save action.\n *\n * @param $user_id int the ID of the current user.\n *\n * @return bool Meta ID if the key didn't exist, true on successful update, false on failure.\n */\nfunction wporg_usermeta_form_field_birthday_update( $user_id ) {\n    // check that the current user have the capability to edit the $user_id\n    if ( ! current_user_can( 'edit_user', $user_id ) ) {\n        return false;\n    }\n \n    // create/update user meta for the $user_id\n    return update_user_meta(\n        $user_id,\n        'birthday',\n        $_POST['birthday']\n    );\n}\n \n// Add the field to user's own profile editing screen.\nadd_action(\n    'show_user_profile',\n    'wporg_usermeta_form_field_birthday'\n);\n \n// Add the field to user profile editing screen.\nadd_action(\n    'edit_user_profile',\n    'wporg_usermeta_form_field_birthday'\n);\n \n// Add the save action to user's own profile editing screen update.\nadd_action(\n    'personal_options_update',\n    'wporg_usermeta_form_field_birthday_update'\n);\n \n// Add the save action to user profile editing screen update.\nadd_action(\n    'edit_user_profile_update',\n    'wporg_usermeta_form_field_birthday_update'\n);</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Programmatically</h3>\n\n\n\n<p>This option is suitable for cases where you&#8217;re building a custom user area and/or plan to disable access to the WordPress admin area.</p>\n\n\n\n<p>The functions available for manipulating User Metadata are: <code><a href=\"/reference/functions/add_user_meta/\">add_user_meta()</a></code>, <code><a href=\"/reference/functions/update_user_meta/\">update_user_meta()</a></code>, <code><a href=\"/reference/functions/delete_user_meta/\">delete_user_meta()</a></code> and <code><a href=\"/reference/functions/get_user_meta/\">get_user_meta()</a></code>.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Add</h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_user_meta(\n    int $user_id,\n    string $meta_key,\n    mixed $meta_value,\n    bool $unique = false\n);</code></pre>\n\n\n\n<p>Please refer to the Function Reference about <code><a href=\"/reference/functions/add_user_meta/\">add_user_meta()</a></code> for full explanation about the used parameters.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Update</h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">update_user_meta(\n    int $user_id,\n    string $meta_key,\n    mixed $meta_value,\n    mixed $prev_value = &apos;&apos;\n);</code></pre>\n\n\n\n<p>Please refer to the Function Reference about <code><a href=\"/reference/functions/update_user_meta/\">update_user_meta()</a></code> for full explanation about the used parameters.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Delete</h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">delete_user_meta(\n    int $user_id,\n    string $meta_key,\n    mixed $meta_value = &apos;&apos;\n);</code></pre>\n\n\n\n<p>Please refer to the Function Reference about <code><a href=\"/reference/functions/delete_user_meta/\">delete_user_meta()</a></code> for full explanation about the used parameters.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Get</h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">get_user_meta(\n    int $user_id,\n    string $key = &apos;&apos;,\n    bool $single = false\n);</code></pre>\n\n\n\n<p>Please refer to the Function Reference about <code><a href=\"/reference/functions/get_user_meta/\">get_user_meta()</a></code> for full explanation about the used parameters.</p>\n\n\n\n<p>Please note, if you pass only the <code>$user_id</code>, the function will retrieve all Metadata as an associative array.</p>\n\n\n\n<p>You can render User Metadata anywhere in your plugin or theme.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11084,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11088",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11088",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 29,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11088/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144404,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11088/revisions/144404"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11084"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11088"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

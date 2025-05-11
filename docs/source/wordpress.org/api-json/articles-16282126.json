@@ -1,0 +1,109 @@
+{
+    "id": 16282126,
+    "date": "2022-12-12T16:33:16",
+    "date_gmt": "2022-12-12T16:33:16",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16282126"
+    },
+    "modified": "2025-04-15T19:52:23",
+    "modified_gmt": "2025-04-15T19:52:23",
+    "slug": "page-list-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/page-list-block/",
+    "title": {
+        "rendered": "Page List block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <strong>Page List </strong>block allows you to display your website\u2019s published pages in a page, post, and sidebar.</p>\n\n\n\n<p>To add a <strong>Page List </strong>block, click the <strong>Block Inserter</strong> (+) icon and search for Page List.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"568\" src=\"https://wordpress.org/documentation/files/2023/08/adding-page-list-block.gif\" alt=\"Adding a Page List Block\" class=\"wp-image-16358407\" /></figure>\n\n\n\n<p>Another way you can add the <strong>Page List </strong>block is by typing <em>/page list</em> and hitting enter in a new paragraph block.</p>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/rONRvKkLgGdWkRTU19cfWyhCJDwRitwODnzTqW8520GycCdMorJE1KQJozOTrxzJTwXau4isohlGY4SW_pav8b22Ft5gdQkpc_htyUgyYLANwIEE3uEuYlgb7c9SKZz-m_FQu8GFCeIkZGaUo2Y-SDUqgjngN7MhdUDaKRMEzw2JmdudLo4SBoPrrM3uyQ\" alt=\"Use the slash command to add a page list block\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions for adding blocks are <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">in this support article</a>.</p>\n\n\n\n<p>Using this block on your website sidebar makes pages easily accessible to visitors. Each page name on the list links to its respective page.</p>\n\n\n\n<p>Here&#8217;s how the block looks on your website sidebar:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"681\" height=\"462\" src=\"https://wordpress.org/documentation/files/2022/12/page-list-block-sidebar.png\" alt=\"Page List block in sidebar\" class=\"wp-image-16358408\" style=\"width:681px;height:462px\" srcset=\"https://wordpress.org/documentation/files/2022/12/page-list-block-sidebar.png 681w, https://wordpress.org/documentation/files/2022/12/page-list-block-sidebar-300x204.png 300w\" sizes=\"auto, (max-width: 681px) 100vw, 681px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Every block has unique toolbar icons, and block-specific user controls that let you customize the block right in the editor. The <strong>Page List </strong>block has the following options on its <strong>Block Toolbar</strong>:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move handles</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<p>Note: Move and Drag option is only available if you have more than 1 block in the editor.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"810\" height=\"460\" src=\"https://wordpress.org/documentation/files/2022/12/block-toolbar.png\" alt=\"Block Toolbar - Page List Block\" class=\"wp-image-16358412\" srcset=\"https://wordpress.org/documentation/files/2022/12/block-toolbar.png 810w, https://wordpress.org/documentation/files/2022/12/block-toolbar-300x170.png 300w, https://wordpress.org/documentation/files/2022/12/block-toolbar-768x436.png 768w\" sizes=\"auto, (max-width: 810px) 100vw, 810px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<p>The <strong>Transform to</strong> button helps change the <strong>Page List</strong> block into <strong>Columns</strong>, <strong>Details</strong>, or <strong>Group</strong> blocks.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Details</strong>\u00a0\u2013 Convert the Page List into a collapsible Details block, allowing sections to be expanded or collapsed for a cleaner interface.</li>\n\n\n\n<li><strong>Group</strong>\u00a0\u2013 Wrap the Page List within a Group block for easier styling and layout control.</li>\n\n\n\n<li><strong>Columns</strong>\u00a0\u2013 Distribute the Page List items into multiple columns to optimize space usage and improve readability.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"632\" height=\"483\" src=\"https://wordpress.org/documentation/files/2022/12/page-list-transform.png\" alt=\"Block transformation tool\" class=\"wp-image-16365583\" srcset=\"https://wordpress.org/documentation/files/2022/12/page-list-transform.png 632w, https://wordpress.org/documentation/files/2022/12/page-list-transform-300x229.png 300w\" sizes=\"auto, (max-width: 632px) 100vw, 632px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-heading-3-font-size\">Drag icon</h3>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/gf-4hxXLtsjc2In8IYt8TU4EC3rpjcbtZeioOx47WAH-DYYmb7_HRKldYMN9XD1yQY7Kug_qLH_w-Fe_CCak4isb0nG0gh6mVMVErUhW63eGE1u-qDik6KRmkkUrhVLjtkGiU4yWTGBSA8Z_wXvZDYNrCfexqjXpqNR6eJznQxpW-JblxqB_RWYbSH3ygg\" alt=\"Use the Drag icon to move blocks.\" /></figure>\n\n\n\n<p></p>\n\n\n\n<p>To drag and drop the block to a new location on the page, select and hold the rectangle of dots, then move it to that location. As you drag the block, the blue separator line shows where it can be dropped. When you find the desired location, release the left mouse button.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"655\" src=\"https://wordpress.org/documentation/files/2023/08/drag-page-list-block.gif\" alt=\"Drag page list block\" class=\"wp-image-16358414\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">Move handles</h2>\n\n\n\n<figure class=\"wp-block-image\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/0TXXPairvXtghCgYFjYLSywSTZb4AYhYaf9jm5bE7KEiTFHl6eOte-tgzSTYtPaWPv2WKn2MLiKx7Tglm2sCc-wSPBCjvHPGBUksH2oDY7e0CUIgA1wVESeeiEqT2V5iJGUSTcxOV8ExStQGFw6HoWAiWfmQRiTrsV6E76DzgcLOY5KHkCZLZyub7T7KqA\" alt=\"Use the Move handles to move blocks up and down.\" /></figure>\n\n\n\n<p>The up and down arrow icons let you move a block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Here are more details on <a href=\"https://wordpress.org/documentation/article/moving-blocks/\">moving blocks</a> in the editor.</p>\n\n\n\n<h2 class=\"wp-block-heading has-heading-3-font-size\">More options</h2>\n\n\n\n<p>This control give you many other options like copy or duplicate your block, copy/page styles etc.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the <strong>Block Toolbar</strong>. If you do not see the sidebar, simply click the \u2018sidebar\u2019 icon next to <strong>Publish</strong> or <strong>Update</strong> button.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"588\" height=\"166\" src=\"https://wordpress.org/documentation/files/2022/12/block-settings.png\" alt=\"Toggle block settings\" class=\"wp-image-16358415\" srcset=\"https://wordpress.org/documentation/files/2022/12/block-settings.png 588w, https://wordpress.org/documentation/files/2022/12/block-settings-300x85.png 300w\" sizes=\"auto, (max-width: 588px) 100vw, 588px\" /></figure>\n\n\n\n<p>This block has controls categorised under <strong>Settings</strong> and <strong>Styles</strong> tab.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Settings</h3>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"560\" height=\"894\" src=\"https://wordpress.org/documentation/files/2023/10/page-list-block-settings.png\" alt=\"Page list block settings panel\" class=\"wp-image-16359078\" style=\"width:247px;height:398px\" srcset=\"https://wordpress.org/documentation/files/2023/10/page-list-block-settings.png 560w, https://wordpress.org/documentation/files/2023/10/page-list-block-settings-188x300.png 188w\" sizes=\"auto, (max-width: 560px) 100vw, 560px\" /></figure>\n\n\n\n<p><strong>Parent</strong></p>\n\n\n\n<p>If you only want to list the child pages of any specific page, then select that parent page in this option. Start typing the page title and you will get the option to select.</p>\n\n\n\n<p><strong>Additional CSS Class(es)</strong></p>\n\n\n\n<p>This option allows you to specify additional class(es) for the block, which can be used while writing custom CSS targeting particular blocks.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Styles</h3>\n\n\n\n<p>This block has only <strong>Typography</strong> settings under Styles</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"558\" height=\"626\" src=\"https://wordpress.org/documentation/files/2023/08/page-list-block-styles.png\" alt=\"Page list block styles\" class=\"wp-image-16358417\" style=\"width:301px;height:338px\" srcset=\"https://wordpress.org/documentation/files/2023/08/page-list-block-styles.png 558w, https://wordpress.org/documentation/files/2023/08/page-list-block-styles-267x300.png 267w\" sizes=\"auto, (max-width: 558px) 100vw, 558px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\">Read more about <strong><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography Settings</a></strong></p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"dimensions\">Dimensions</h3>\n\n\n\n<p>The <em>paragraph</em> block provides various options to adjust its dimensions, such as width and height, allowing you to customize the text layout to ensure visual consistency.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Border</h3>\n\n\n\n<p>The <em>paragraph</em> block provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2025-04-15 (props to <a href=\"https://profiles.wordpress.org/karthickmurugan/\" data-type=\"link\" data-id=\"https://profiles.wordpress.org/karthickmurugan/\">@karthickmurugan</a>)\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for 6.8</li>\n\n\n\n<li>Add Dimensions and Border sections.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-10-31</li>\n\n\n\n<li>Updated 2023-08-04</li>\n\n\n\n<li>Created 2022-12-12</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Page List block allows you to display your website\u2019s published pages in a page, post, and sidebar. To add a Page List block, click the Block Inserter (+) icon and search for Page List. Another way you can add the Page List block is by typing /page [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-16282126",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16282126",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16282126"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16282126/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365585,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16282126/revisions/16365585"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16282126"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16282126"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

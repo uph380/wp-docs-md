@@ -1,0 +1,109 @@
+{
+    "id": 13174174,
+    "date": "2020-07-27T08:42:04",
+    "date_gmt": "2020-07-27T08:42:04",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13174174"
+    },
+    "modified": "2024-06-09T09:29:13",
+    "modified_gmt": "2024-06-09T09:29:13",
+    "slug": "videopress-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/videopress-embed/",
+    "title": {
+        "rendered": "VideoPress embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the VideoPress Embed block, you can embed videos from VideoPress into your posts and pages. You don\u2019t need a VideoPress account to be able to embed them, although the video-sharing option should be enabled.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to embed a video from VideoPress</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Find the video permalink &#8211; In the web player, select the video and click on the <strong>Share</strong> button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image15-1.png\" alt=\"Screenshot of  VideoPress\" class=\"wp-image-16265849\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>In the share section, click on the permalink and it will be automatically copied. Alternatively, you can highlight the link and copy it.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image14-1-1.png\" alt=\"The correct URL to copy to use the VideoPress block\" class=\"wp-image-16265848\" /></figure>\n\n\n\n<p>VideoPress provides you with three sharing options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Start at = true/false to exactly the time you want the video to start at.</li>\n\n\n\n<li>Loop = true/false to automatically play the video over and over.</li>\n\n\n\n<li>Autoplay = true/false to automatically play the video when it loads.</li>\n</ul>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Add a VideoPress embed block to your page/post by clicking the <strong>(+)</strong> Block inserter icon.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image1-1-1024x271.png\" alt=\"Add the VideoPress block \" class=\"wp-image-16265842\" width=\"768\" height=\"203\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Paste the link into the text box and click on the <strong>Embed</strong> button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"441\" src=\"https://wordpress.org/documentation/files/2022/12/image2-1-1024x441.png\" alt=\"Embed option for the VideoPress block to paste the URL.\" class=\"wp-image-16265857\" srcset=\"https://wordpress.org/documentation/files/2022/12/image2-1-1024x441.png 1024w, https://wordpress.org/documentation/files/2022/12/image2-1-300x129.png 300w, https://wordpress.org/documentation/files/2022/12/image2-1-768x330.png 768w, https://wordpress.org/documentation/files/2022/12/image2-1.png 1464w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image5-1-1.png\" alt=\"Preview of the embedded VideoPress video within the WordPress editor.\" class=\"wp-image-16265861\" /></figure>\n\n\n\n<p>If you use an URL that can\u2019t be embedded, the block shows the message \u201cSorry, this content could not be embedded.\u201d You will have two choices: <strong>Try again</strong> with a different URL or <strong>Convert to link</strong>.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image8-2-1-1024x565.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-16265865\" width=\"768\" height=\"424\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>Click on <strong>Preview</strong> to see how it will look on the front-end.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image6-1-1.png\" alt=\"Preview of the embedded VideoPress video within the WordPress editor.\" class=\"wp-image-16265869\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Besides the \u201cMover\u201d and \u201cDrag &amp; Drop Handle\u201d, the Block Toolbar for the VideoPress Embed block shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change Alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"291\" height=\"140\" src=\"https://wordpress.org/documentation/files/2022/12/image4-2.png\" alt=\"Block Toolbar with options available for the VideoPress Block.\" class=\"wp-image-16265875\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image13-1-1.png\" alt=\"Options to transform the VideoPress block to Paragraph, or Group.\" class=\"wp-image-16265877\" /></figure>\n\n\n\n<p>You can transform a VideoPress embed into a Group. This would give you the ability to change the background color around the VideoPress embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"496\" src=\"https://wordpress.org/documentation/files/2020/08/image7-1024x496.png\" alt=\"Editor view of a VideoPress embed as a group with Color Settings controls\" class=\"wp-image-13237506\" srcset=\"https://wordpress.org/documentation/files/2020/08/image7-1024x496.png 1024w, https://wordpress.org/documentation/files/2020/08/image7-300x145.png 300w, https://wordpress.org/documentation/files/2020/08/image7-768x372.png 768w, https://wordpress.org/documentation/files/2020/08/image7.png 1049w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of a VideoPress embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"672\" height=\"433\" src=\"https://wordpress.org/documentation/files/2020/07/image-71.png\" alt=\"VideoPress embeds with a blue background-color\" class=\"wp-image-13174221\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-71.png 672w, https://wordpress.org/documentation/files/2020/07/image-71-300x193.png 300w\" sizes=\"auto, (max-width: 672px) 100vw, 672px\" /><figcaption class=\"wp-element-caption\">VideoPress embeds with a blue background-color</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image12-1024x540.png\" alt=\"Alignment options for the VideoPress block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-16265882\" width=\"768\" height=\"405\" srcset=\"https://wordpress.org/documentation/files/2022/12/image12-1024x540.png 1024w, https://wordpress.org/documentation/files/2022/12/image12-300x158.png 300w, https://wordpress.org/documentation/files/2022/12/image12-768x405.png 768w, https://wordpress.org/documentation/files/2022/12/image12.png 1510w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> \u2013 Make the VideoPress post. left aligned.</li>\n\n\n\n<li><strong>Align center</strong> \u2013 Make the VideoPress post alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>\u2013 Make the VideoPress post, right aligned.</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> \u2013 Extend the VideoPress post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p><strong>Wide width</strong> and <strong>Full width</strong> alignment need to be enabled by the theme of your site.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Using the <strong>Edit URL</strong> button, you can change the VideoPress Embed URL in the embed block. Overwrite the existing URL and click on the <strong>Embed</strong> button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"441\" src=\"https://wordpress.org/documentation/files/2022/12/image2-3-1024x441.png\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" class=\"wp-image-16265887\" srcset=\"https://wordpress.org/documentation/files/2022/12/image2-3-1024x441.png 1024w, https://wordpress.org/documentation/files/2022/12/image2-3-300x129.png 300w, https://wordpress.org/documentation/files/2022/12/image2-3-768x330.png 768w, https://wordpress.org/documentation/files/2022/12/image2-3.png 1464w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Besides the <strong>Advanced</strong> section, the VideoPress embed has only one setting in the <strong>Block Settings</strong> sidebar.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"842\" height=\"190\" src=\"https://wordpress.org/documentation/files/2020/07/image-76.png\" alt=\"Media settings for the embed block with the toggle OFF/ON for resizing on smaller devices.\" class=\"wp-image-13174231\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-76.png 842w, https://wordpress.org/documentation/files/2020/07/image-76-300x68.png 300w, https://wordpress.org/documentation/files/2020/07/image-76-768x173.png 768w\" sizes=\"auto, (max-width: 842px) 100vw, 842px\" /></figure>\n\n\n\n<p>Via the <strong>Media Settings</strong>, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>Off:</strong> This embed may not preserve its aspect ratio when the browser is resized. In the <strong>Off</strong> position, the toggle switch is gray.</p>\n\n\n\n<p><strong>On:</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the <strong>On</strong> position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The <strong>Advanced</strong> tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"396\" height=\"207\" src=\"https://wordpress.org/documentation/files/2020/07/image-77.png\" alt=\"Additional CSS Class(es) option for the VideoPress Embed block.\" class=\"wp-image-13174232\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-77.png 396w, https://wordpress.org/documentation/files/2020/07/image-77-300x157.png 300w\" sizes=\"auto, (max-width: 396px) 100vw, 396px\" /></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated &#8220;More Options&#8221; sections: replaced screenshot and added text for &#8220;Move to&#8221; and &#8220;Copy&#8221; </li>\n\n\n\n<li>Updated 2020-08-19\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-11\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.5</li>\n\n\n\n<li>Embedded VideoPress video</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the VideoPress Embed block, you can embed videos from VideoPress into your posts and pages. You don\u2019t need a VideoPress account to be able to embed them, although the video-sharing option should be enabled. Steps to embed a video from VideoPress VideoPress provides you with three sharing [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13174174",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13174174",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13174174"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13174174/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360448,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13174174/revisions/16360448"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13174174"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13174174"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

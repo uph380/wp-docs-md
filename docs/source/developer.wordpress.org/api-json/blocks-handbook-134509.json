@@ -1,0 +1,91 @@
+{
+    "id": 134509,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/text/"
+    },
+    "modified": "2025-01-06T18:49:14",
+    "modified_gmt": "2025-01-06T18:49:14",
+    "slug": "text",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/text/",
+    "title": {
+        "rendered": "Text"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>Text</code> is a core component that renders text in the library, using the library&#8217;s typography system.</p>\n<h2>Usage</h2>\n<p><code>Text</code> can be used to render any text-content, like an HTML <code>p</code> or <code>span</code>.</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text } from '@wordpress/components';\n\nfunction Example() {\n    return &lt;Text&gt;Code is Poetry&lt;/Text&gt;;\n}\n</code></pre>\n<h2>Props</h2>\n<h3>adjustLineHeightForInnerControls</h3>\n<p><strong>Type</strong>: <code>\"large\"</code>,<code>\"medium\"</code>,<code>\"small\"</code>,<code>\"xSmall\"</code></p>\n<p>Automatically calculate the appropriate line-height value for contents that render text and Control elements (e.g. <code>TextInput</code>).</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text, TextInput } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;Text adjustLineHeightForInnerControls={\"small\"}&gt;\n            Lorem ipsum dolor sit amet, consectetur\n            &lt;TextInput value=\"adipiscing elit...\" /&gt;\n        &lt;/Text&gt;\n    );\n}\n</code></pre>\n<h3>align</h3>\n<p><strong>Type</strong>: <code>CSSProperties['textAlign']</code></p>\n<p>Adjusts the text alignment.</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;Text align=\"center\" isBlock&gt;\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit...\n        &lt;/Text&gt;\n    );\n}\n</code></pre>\n<h3>color</h3>\n<p><strong>Type</strong>: <code>CSSProperties['color']</code></p>\n<p>Adjusts the text color.</p>\n<h3>display</h3>\n<p><strong>Type</strong>: <code>CSSProperties['display']</code></p>\n<p>Adjusts the CSS display.</p>\n<h3>ellipsis</h3>\n<p><strong>Type</strong>: <code>string</code></p>\n<p>The ellipsis string when <code>truncate</code> is set.</p>\n<h3>ellipsizeMode</h3>\n<p><strong>Type</strong>: <code>\"auto\"</code>,<code>\"head\"</code>,<code>\"tail\"</code>,<code>\"middle\"</code></p>\n<p>Determines where to truncate. For example, we can truncate text right in the middle. To do this, we need to set <code>ellipsizeMode</code> to <code>middle</code> and a text <code>limit</code>.</p>\n<ul>\n<li><code>auto</code>: Trims content at the end automatically without a <code>limit</code>.</li>\n<li><code>head</code>: Trims content at the beginning. Requires a <code>limit</code>.</li>\n<li><code>middle</code>: Trims content in the middle. Requires a <code>limit</code>.</li>\n<li><code>tail</code>: Trims content at the end. Requires a <code>limit</code>.</li>\n</ul>\n<h3>highlightCaseSensitive</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Escape characters in <code>highlightWords</code> which are meaningful in regular expressions.</p>\n<h3>highlightEscape</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Determines if <code>highlightWords</code> should be case sensitive.</p>\n<h3>highlightSanitize</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Array of search words. String search terms are automatically cast to RegExps unless <code>highlightEscape</code> is true.</p>\n<h3>highlightWords</h3>\n<p><strong>Type</strong>: <code>any[]</code></p>\n<p>Letters or words within <code>Text</code> can be highlighted using <code>highlightWords</code>.</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;Text highlightWords={ [ 'pi' ] }&gt;\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ex\n            neque, vulputate a diam et, luctus convallis lacus. Vestibulum ac\n            mollis mi. Morbi id elementum massa. Suspendisse interdum auctor\n            ligula eget cursus. In fermentum ultricies mauris, pharetra\n            fermentum erat pellentesque id.\n        &lt;/Text&gt;\n    );\n}\n</code></pre>\n<h3>isBlock</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Sets <code>Text</code> to have <code>display: block</code>.</p>\n<p>Note: text truncation only works when <code>isBlock</code> is <code>false</code>.</p>\n<h3>isDestructive</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Renders a destructive color.</p>\n<h3>limit</h3>\n<p><strong>Type</strong>: <code>number</code></p>\n<p>Determines the max characters when <code>truncate</code> is set.</p>\n<h3>lineHeight</h3>\n<p><strong>Type</strong>: <code>CSSProperties['lineHeight']</code></p>\n<p>Adjusts all text line-height based on the typography system.</p>\n<h3>numberOfLines</h3>\n<p><strong>Type</strong>: <code>number</code></p>\n<p>Clamps the text content to the specific <code>numberOfLines</code>, adding the <code>ellipsis</code> at the end.</p>\n<h3>optimizeReadabilityFor</h3>\n<p><strong>Type</strong>: <code>CSSProperties['color']</code></p>\n<p>The <code>Text</code> color can be adapted to a background color for optimal readability. <code>optimizeReadabilityFor</code> can accept CSS variables, in addition to standard CSS color values (e.g. Hex, RGB, HSL, etc&#8230;).</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text, View } from '@wordpress/components';\n\nfunction Example() {\n    const backgroundColor = 'blue';\n\n    return (\n        &lt;View css={ { backgroundColor } }&gt;\n            &lt;Text optimizeReadabilityFor={ backgroundColor }&gt;\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n            &lt;/Text&gt;\n        &lt;/View&gt;\n    );\n}\n</code></pre>\n<h3>size</h3>\n<p><strong>Type</strong>: <code>CSSProperties['fontSize']</code>,<code>TextSize</code></p>\n<p>Adjusts text size based on the typography system. <code>Text</code> can render a wide range of font sizes, which are automatically calculated and adapted to the typography system. The <code>size</code> value can be a system preset, a <code>number</code>, or a custom unit value (<code>string</code>) such as <code>30em</code>.</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text } from '@wordpress/components';\n\nfunction Example() {\n    return &lt;Text size=\"largeTitle\"&gt;Code is Poetry&lt;/Text&gt;;\n}\n</code></pre>\n<h3>truncate</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Enables text truncation. When <code>truncate</code> is set, we are able to truncate the long text in a variety of ways.</p>\n<p>Note: text truncation won&#8217;t work if the <code>isBlock</code> property is set to <code>true</code></p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text } from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;Text truncate&gt;\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ex\n            neque, vulputate a diam et, luctus convallis lacus. Vestibulum ac\n            mollis mi. Morbi id elementum massa. Suspendisse interdum auctor\n            ligula eget cursus. In fermentum ultricies mauris, pharetra\n            fermentum erat pellentesque id.\n        &lt;/Text&gt;\n    );\n}\n</code></pre>\n<h3>upperCase</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Uppercases the text content.</p>\n<h3>variant</h3>\n<p><strong>Type</strong>: <code>\"muted\"</code></p>\n<p>Adjusts style variation of the text.</p>\n<pre><code class=\"language-jsx\">import { __experimentalText as Text } from '@wordpress/components';\n\nfunction Example() {\n    return &lt;Text variant=\"muted\"&gt;Code is Poetry&lt;/Text&gt;;\n}\n</code></pre>\n<h3>weight</h3>\n<p><strong>Type</strong>: <code>CSSProperties['fontWeight']</code>,<code>TextWeight</code></p>\n<p>Adjusts font-weight of the text.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 211,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134509",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134509",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134509/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156180,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134509/revisions/156180"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134509"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

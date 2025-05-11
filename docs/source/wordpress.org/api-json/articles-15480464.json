@@ -1,0 +1,109 @@
+{
+    "id": 15480464,
+    "date": "2022-03-21T17:50:58",
+    "date_gmt": "2022-03-21T17:50:58",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15480464"
+    },
+    "modified": "2024-06-08T18:26:49",
+    "modified_gmt": "2024-06-08T18:26:49",
+    "slug": "post-tags-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-tags-block/",
+    "title": {
+        "rendered": "Post Tags block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>Use the <em>Tags block</em> to display the posts\u2019 tags. This block is primarily inside a single post template or nested inside a <a href=\"https://wordpress.org/documentation/article/query-loop-block/\">Query Loop</a> block and helps to customize the appearance of the query loop.\u00a0</p>\n\n\n\n<p>To add a Tags block, click the <strong>Block Inserter</strong> icon when editing the page template. Search for the Tags<strong> block</strong>. Click on it to add the block to your page template.</p>\n\n\n\n<p>You can also type /tags and hit enter to add the Tags block quickly.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/04/post-tags-WP-62.mp4\"></video><figcaption class=\"wp-element-caption\"><em>Video showing how to add a Tags block with a prefix.</em></figcaption></figure>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding prefix and suffix</h2>\n\n\n\n<p>You can add a text before and after the tags. Select the block and click on the placeholder text to enter your text:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-prefix.png\" alt=\"The placeholder texts, Prefix and Suffix, are visible when the Tags  block is selected.\" class=\"wp-image-16356638\" style=\"width:378px;height:98px\" width=\"378\" height=\"98\" srcset=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-prefix.png 756w, https://wordpress.org/documentation/files/2023/04/tags-WP-62-prefix-300x78.png 300w\" sizes=\"auto, (max-width: 378px) 100vw, 378px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Tags block shows five buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>Bold and Italics</li>\n\n\n\n<li>Insert Hyperlinks</li>\n\n\n\n<li>More Rich Text Controls</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar.png\" alt=\"Tags block toolbar\" class=\"wp-image-16356639\" style=\"width:378px;height:63px\" width=\"378\" height=\"63\" srcset=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar.png 756w, https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-300x50.png 300w\" sizes=\"auto, (max-width: 378px) 100vw, 378px\" /><figcaption class=\"wp-element-caption\">Tags block toolbar</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-transform.png\" alt=\"Transform options for the Tags block\" class=\"wp-image-16356640\" style=\"width:378px;height:206px\" width=\"378\" height=\"206\" srcset=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-transform.png 756w, https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-transform-300x163.png 300w\" sizes=\"auto, (max-width: 378px) 100vw, 378px\" /><figcaption class=\"wp-element-caption\">Transform options for the Tags block</figcaption></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to convert the Tags block into a \u201cGroup\u201d block or \u201cColumns\u201d block.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Drag icon</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-drag.png\" alt=\"Drag icon in the Tags block\" class=\"wp-image-16356641\" style=\"width:378px;height:71px\" width=\"378\" height=\"71\" srcset=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-drag.png 756w, https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-drag-300x56.png 300w\" sizes=\"auto, (max-width: 378px) 100vw, 378px\" /><figcaption class=\"wp-element-caption\">Drag icon in the Tags block</figcaption></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move arrows</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-move.png\" alt=\"Move arrows in the Tags block\" class=\"wp-image-16356642\" style=\"width:378px;height:71px\" width=\"378\" height=\"71\" srcset=\"https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-move.png 756w, https://wordpress.org/documentation/files/2023/04/tags-WP-62-toolbar-move-300x56.png 300w\" sizes=\"auto, (max-width: 378px) 100vw, 378px\" /><figcaption class=\"wp-element-caption\">Move arrows in the Tags block</figcaption></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Change text alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/JsIE08dBZF7XXtboBBffzuApeuJsY5W-Gk-_8kDve2NY0FQupCXlYCzWh_3_OYNk_eFMoZPa73Rd8QFDJ36ZKbhZLiGMPuoWEyCWUbO076kaWEumQG2TlQvIOm80Q4hEUTg46SAR\" alt=\"Change text alignment in the Tags block\" style=\"width:211px;height:246px\" width=\"211\" height=\"246\" /><figcaption class=\"wp-element-caption\">Change text alignment in the Tags block</figcaption></figure>\n\n\n\n<p>Click the \u201cChange alignment\u201d button in the Block toolbar to display the alignment drop-down. You can align the block text to the left, make it center-aligned or align it to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Bold and Italics</h3>\n\n\n\n<p>Used quite frequently, Bold and Italics formatting have their own buttons on the Toolbar. The shortcuts are CTRL+b (or Command+B) for bold and CTRL+i (or Command+i) for italics. </p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/paragraph-block/#insert-links\">Insert hyperlinks</a></p>\n\n\n\n<p>Use the chain link icon to insert a hyperlink to your highlighted text. Or use the CTRL + k (or Command+k) keyboard shortcut.</p>\n\n\n\n<h3 class=\"wp-block-heading\">More rich text options</h3>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-text-editing-overview/\">Read more about Rich text options</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">More option</h3>\n\n\n\n<p>The More option on a block toolbar gives you more features to customize the block.&nbsp;These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>In addition to the block toolbar, every block has specific options in the editor sidebar. If you do not see the sidebar, click the \u2018settings\u2019 icon next to the Save button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/04/WP-62-block-editor-settings-icon.png\" alt=\"Block settings in the sidebar\" class=\"wp-image-16356337\" style=\"width:325px;height:120px\" width=\"325\" height=\"120\" srcset=\"https://wordpress.org/documentation/files/2023/04/WP-62-block-editor-settings-icon.png 650w, https://wordpress.org/documentation/files/2023/04/WP-62-block-editor-settings-icon-300x111.png 300w\" sizes=\"auto, (max-width: 325px) 100vw, 325px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color </h3>\n\n\n\n<p>You can customize the text color, background color, and link color for the Tags block.<em> </em>The color options available will vary based on the theme. Pick a color from the suggestions, or add a custom color using the color picker or by adding a color code.</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography </h3>\n\n\n\n<p>On this tab, you can adjust the Font size, Font Family, Appearance, Line height, Letter case, and Letter-spacing.&nbsp;These settings allow you to change a block\u2019s font size, appearance, line height, letter casing, and spacing.</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>Dimension controls are used to control how groups of blocks are placed alongside one another, by changing the values for padding, margin, and other dimensions.</p>\n\n\n\n<p class=\"has-text-align-center has-background\" style=\"background-color:#e5f5fa\">&nbsp;<a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">For details refer to this support article: Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced </h3>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you enter character(s) that can be used to separate the category terms. The default setting is a comma.</p>\n\n\n\n<p>You can also add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/H-xgyZI4MHCRcqoMzljOc0HYoPI1dSar7N_ZoHE9yzqRWz7OPBs4Q3Wh-Dz_4a8L2HKTSrSOnB5fbwHW66ronVjRuY75DtqwU7fbhzTmhi0RYXqA06e18hDVq4gNGORyAasp11mC\" alt=\"Advanced setting in Tags block\" style=\"width:226px;height:208px\" width=\"226\" height=\"208\" /><figcaption class=\"wp-element-caption\">Advanced setting in Post Tags block</figcaption></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h4 class=\"wp-block-heading has-medium-font-size\">Changelog:</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-08-24\n<ul class=\"wp-block-list\">\n<li>Updated formatting</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-04-04\n<ul class=\"wp-block-list\">\n<li>Added information about prefix and suffix</li>\n\n\n\n<li>Added information about support for dimension settings</li>\n\n\n\n<li>Updated screenshots and video</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-03-21 </li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks Use the Tags block to display the posts\u2019 tags. This block is primarily inside a single post template or nested inside a Query Loop block and helps to customize the appearance of the query loop.\u00a0 To add a Tags block, click the Block Inserter icon when editing the page [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15480464",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15480464",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15480464"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15480464/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360370,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15480464/revisions/16360370"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15480464"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15480464"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

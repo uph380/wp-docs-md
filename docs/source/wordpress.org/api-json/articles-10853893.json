@@ -1,0 +1,109 @@
+{
+    "id": 10853893,
+    "date": "2018-11-06T18:19:03",
+    "date_gmt": "2018-11-06T18:19:03",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10853893"
+    },
+    "modified": "2024-06-08T18:31:00",
+    "modified_gmt": "2024-06-08T18:31:00",
+    "slug": "posts-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/posts-screen/",
+    "title": {
+        "rendered": "Posts screen"
+    },
+    "content": {
+        "rendered": "\n<p>The Posts Screen provides the facility to manage all the Posts in a blog. Via this Screen, Posts can be edited, deleted, and viewed. Filtering, and searching, also makes it easy to quickly find Posts matching certain criteria.</p>\n\n\n\n<p>A powerful bulk edit feature allows Posts to be edited in bulk (en masse) allowing fields such as Author, Comments Allowed, Status, Pings Allowed, and Sticky to be changed for a whole batch of Posts. It is important to note that Categories and Tags can be ADDED in bulk to a set of Posts, but it is not possible to CHANGE, or DELETE, a Category, or Tag, for those Posts. In addition, a Quick Edit feature provides an easy method to change a mulititude of values, such as Title, Slug, Date, and Category, for a given Post.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Edit Posts</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Table of Posts</h3>\n\n\n\n<p>A table lists all of your Posts, by row. The Posts are listed with the newest Post first.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/11/manageposts-768x528.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"768\" height=\"528\" src=\"https://wordpress.org/documentation/files/2018/11/manageposts-768x528.png\" alt=\"WordPress administration post list screen\" class=\"wp-image-10853896\" srcset=\"https://wordpress.org/documentation/files/2018/11/manageposts-768x528.png 768w, https://wordpress.org/documentation/files/2018/11/manageposts-300x206.png 300w, https://wordpress.org/documentation/files/2018/11/manageposts-1024x704.png 1024w, https://wordpress.org/documentation/files/2018/11/manageposts.png 1275w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" /></a><figcaption>Administration post list screen</figcaption></figure>\n\n\n\n<p>The table of Posts contains the following columns:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[ ]</strong> \u2013 This checkbox, when clicked (checked), &#8216;selects&#8217; that particular Post to be processed by a Bulk Action.</li><li><strong>Title</strong> &#8211; This is the Post&#8217;s Title displayed as a link. Click the Title link to allow this Post to be edited. Next to the Title, if a Post is of a Draft, Private, Pending, Sticky, or Password Protected nature, bold text will display showing that.</li><li><strong>&#8220;ID&#8221;</strong> &#8211; This is not a column in the Table, but by hovering the mouse over the Post Title, the Post ID is revealed as part of the URL displayed in the browser status bar (in Firefox the status bar is displayed at the bottom of the screen). A Post&#8217;s ID number is the unique number WordPress&#8217; database uses to identify individual Posts.</li><li><strong>Author</strong> &#8211; Displayed in the form of a link, this is the <a href=\"https://wordpress.org/documentation/article/users-your-profile-screen/\">author</a> who wrote the Post. Clicking the author link causes all the Posts authored by that user to be displayed in the Table of Posts (thus allowing a Bulk Action to be applied to all Posts for a given author).</li><li><strong>Categories</strong> &#8211; Displays all the Categories, in the form of links, to which this Post belongs. Each Category link, when clicked will cause the list of Posts assigned that Category to be displayed in the Table of Posts (note the Category Filter box at the top of the Table will depict the Category being displayed).</li><li><strong>Tags</strong> &#8211; Displays all the Tags, in the form of links, associated with a Post. Each Tag link, when clicked will cause the list of Posts assigned that Tag to be displayed in the Table of Posts.</li><li><strong>comment bubble</strong> &#8211; A comment bubble is the column heading, and each Post row has comment bubble with the number of comments for that Post. If a Posts has any comments, then the number comments is displayed in a blue bubble. Clicking on a blue comment bubble causes the <a href=\"/support/article/comments-in-wordpress/\">Comments Screen</a> to be displayed to allow moderation of those comments.</li><li><strong>Date</strong> &#8211; The Date column for each Post shows the Date &#8216;Published&#8217; for Published Posts or the Date &#8216;Last Modified&#8217; for other Posts. If the Post is a &#8220;future Post,&#8221; the scheduled date for publishing is displayed.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Sortable Columns</h4>\n\n\n\n<p>Some column headings, such as the Title, Author, and Date, can be clicked to sort the Table of Posts in ascending or descending order. Hover over the column title, for example Title, to see the up-arrow or down-arrow. Click the heading to change the sort order.</p>\n\n\n\n<h4 class=\"wp-block-heading\">View</h4>\n\n\n\n<p>Just to the right above the Table of Posts, two icons, List View, and Excerpt View, can be clicked to determine the amount of information listed with each Post. The default view is the List View and only the Post Title is listed for each Post. Click the Excerpt View to cause an <a href=\"/support/article/glossary#excerpt\">excerpt</a> for the Post to be displayed just below the Post Title.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Page Navigation</h4>\n\n\n\n<p>Under the Screen Options, the number of Posts displayed per page is determined. If more then one page of Posts is available, two double-arrow boxes to move to the first and last page are provided. Also two single-arrow boxes are displayed to move one page backward or forward. Finally, a box showing the current page number can be used to enter a page to directly display.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Screen Options</h4>\n\n\n\n<p>The Screen Options allow you to choose which columns are displayed, or not displayed, in the underlying Table. Clicking on the Screen Options tab shows a list of the columns with a check-box next to each column. Check the box for each column you want displayed in the Table, or uncheck the box to not display that column. Click the Screen Options tab again to close the Screen Options. In addition, the number of Posts per page can be set.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Search</h4>\n\n\n\n<p>Above the Table, to the right, is a search box where you can enter a word, or series of words, and click the &#8220;Search Posts&#8221; button to search and display all the Posts meeting your search words.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filtering Options</h3>\n\n\n\n<p>At the top of this Screen are links such as All, Published, Schedules, Pending Review, Draft, Private, that when clicked, will cause just the Posts of that type to be displayed in the underlying Table.</p>\n\n\n\n<p>Below that, and to the right of the <a href=\"#actions\">Bulk Actions</a> <a href=\"#apply\">Apply button</a>, are two other filter options:</p>\n\n\n\n<p><strong>Show all dates</strong></p>\n\n\n\n<p>This dropdown allows you to select, by date, which Posts are displayed in the <a href=\"https://wordpress.org/documentation/article/posts-screen/#table-of-posts\">Table of Posts</a>. By default, &#8220;Show all dates&#8221; is selected and all of your Posts are displayed.</p>\n\n\n\n<p><strong>View all categories</strong></p>\n\n\n\n<p>This dropdown allows you to select, by Category, which Posts are displayed in the <a href=\"https://wordpress.org/documentation/article/posts-screen/#table-of-posts\">Table of Posts</a>. By default, &#8220;Show all categories&#8221; is selected and all of your Posts are displayed.</p>\n\n\n\n<p><strong>Filter</strong></p>\n\n\n\n<p>Clicking this button applies the settings you select in the dropdowns.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Selection, Actions, and Apply</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Selection</h4>\n\n\n\n<p>This Screen allows Bulk Actions to be performed on one or more Posts selected in the Table. For Bulk Actions to be performed on multiple Posts at once, those Posts must be first <strong>selected</strong> via one of these methods:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Select one Post at a time</strong> &#8211; To select a Post, the checkbox to the left of the Post entry must be checked (clicked). It is possible to keep selecting more Posts by checking their respective checkbox.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Actions</h4>\n\n\n\n<p>Actions describe the process to be performed on particular Posts. There are two styles of Actions that will be referred to as <em>Bulk Actions</em> and <em>Immediate Actions</em>. The following describes these Actions:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Bulk Actions</strong> &#8211; These Actions can be performed on one, or more Posts, at one time, if those Posts have been previously <a href=\"https://wordpress.org/documentation/article/posts-screen/#selection\">selected</a>. Bulk Actions are available, when appropriate, as choices in the Bulk Actions pulldown box, above the Table. The only Bulk Actions allowed are Edit and Delete.</li></ul>\n\n\n\n<p>The available Actions are described below:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Edit</strong> &#8211; This Action can be either an &#8220;Immediate Action&#8221; or a &#8220;Bulk Action&#8221;. The Immediate Action, initiated by click on the Post Title or clicking on the Edit option just below the Post Title, causes the <a href=\"https://wordpress.org/documentation/article/writing-posts/#post-field-descriptions\">Edit Posts screen</a> to display. Edit is also available as a Bulk Action for the selected Posts, so see the <a href=\"https://wordpress.org/documentation/article/posts-screen/#bulk-edit\">Bulk Edit section</a> for details on the Bulk Editing process.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\" id=\"bulk-edit\">Bulk Edit</h5>\n\n\n\n<p>The Bulk Edit Posts &#8216;screen&#8217; is displayed below the Table Of Posts header once, one, or more Posts, have been <a href=\"https://wordpress.org/documentation/article/posts-screen/#selection\">selected</a>, and the <a href=\"https://wordpress.org/documentation/article/posts-screen/#action\">Bulk Action</a> of Edit is <a href=\"https://wordpress.org/documentation/article/posts-screen/#apply\">Applied</a>. Bulk Edit allows the fields, Author, Comments Allowed, Status, Pings Allowed, and Sticky, to be changed for all the selected Posts. <strong>It is important to note, Categories and Tags can be ADDED in bulk to a set of Posts, but it is not possible to CHANGE, or DELETE, a Category, or Tag, for those Posts.</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Cancel</strong> &#8211; Click Cancel to cancel and abort the Bulk Edit of these Posts.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Quick Edit</h5>\n\n\n\n<p>Quick Edit is an Immediate Action performed on one Post by clicking the Quick Edit link, under the Post Title in the Table of Posts. Quick Edit is just an in-line edit that allows you to change the following items&#8211;Title, Slug, Date, Author, Password or Private post box, Categories, Tags, Allow Comments, Allow Pings, Status, and Make this a post-sticky.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Cancel</strong> &#8211; Click Cancel to cancel and abort the Edit of this Post.</li></ul>\n\n\n\n<h5 class=\"wp-block-heading\">Editing Individual Posts</h5>\n\n\n\n<p>This mode is essentially the same as the <a href=\"https://wordpress.org/documentation/article/writing-posts/\">Posts Add New Screen</a> so see the <a href=\"https://wordpress.org/documentation/article/writing-posts/\">Posts_Add_New_Screen</a> for the specific details of writing a Post. The only difference is that the button to save your work is called &#8220;<strong>Update</strong>&#8221; instead of &#8220;<strong>Publish</strong>&#8220;.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Apply</h4>\n\n\n\n<p>After one or more Posts are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected Posts.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Apply</strong> &#8211; Click the Apply button to execute the Bulk Action, specified in the Actions pulldown, on the selected Posts. Remember, prior to executing Actions, one or more Posts must be <strong>selected</strong>, as described before.</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Posts Screen provides the facility to manage all the Posts in a blog. Via this Screen, Posts can be edited, deleted, and viewed. Filtering, and searching, also makes it easy to quickly find Posts matching certain criteria. A powerful bulk edit feature allows Posts to be edited in bulk (en masse) allowing fields such [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10853893",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853893",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10853893"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853893/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360375,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853893/revisions/16360375"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10853893"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10853893"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

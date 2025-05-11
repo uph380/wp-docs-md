@@ -1,0 +1,91 @@
+{
+    "id": 147530,
+    "date": "2023-05-29T14:55:01",
+    "date_gmt": "2023-05-29T14:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/architecture/entities/"
+    },
+    "modified": "2025-01-07T18:34:06",
+    "modified_gmt": "2025-01-07T18:34:06",
+    "slug": "entities",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/architecture/entities/",
+    "title": {
+        "rendered": "Entities and Undo/Redo."
+    },
+    "content": {
+        "rendered": "<p>The WordPress editors, whether it&#8217;s the Post or Site Editor, manipulate what we call entity records. These are objects that represent a post, a page, a user, a term, a template, etc. They are the data that is stored in the database, and that is manipulated by the editor. Each editor can fetch, edit, and save multiple entity records at the same time.</p>\n<p>For instance, when opening a page in the Site Editor:</p>\n<ul>\n<li>You can edit properties of the page itself (title, content, etc.)</li>\n<li>You can edit properties of the template of the page (content of the template, design, etc.)</li>\n<li>You can edit properties of template parts (header, footer) used with the template.</li>\n</ul>\n<p>The editor keeps track of all these modifications and orchestrates the saving of all these modified records. This happens within the <code>@wordpress/core-data</code> package.</p>\n<h2>Editing entities</h2>\n<p>To be able to edit an entity, you need to first fetch it and load it into the <code>core-data</code> store. For example, the following code loads the post with ID 1 into the store. (The entity is the post, the post 1 is the entity record).</p>\n<pre><code class=\"language-js\">wp.data.select( 'core' ).getEntityRecord( 'postType', 'post', 1 );\n</code></pre>\n<p>Once the entity is loaded, you can edit it. For example, the following code sets the title of the post to &#8220;Hello World&#8221;. For each fetched entity record, the <code>core-data</code> store keeps track of the following:</p>\n<ul>\n<li><strong>The &#8220;persisted&#8221; record:</strong> The last state of the record as it was fetched from the backend.</li>\n<li><strong>A list of &#8220;edits&#8221;:</strong> Unsaved local modifications for one or several properties of the record. </li>\n</ul>\n<p>The package also exposes a set of actions to manipulate the fetched entity records.</p>\n<p>To edit an entity record, you can call <code>editEntityRecord</code>, which takes the entity type, the entity ID, and the new entity record as parameters. The following example sets the title of the post with ID 1 to &#8220;Hello World&#8221;.</p>\n<pre><code class=\"language-js\">wp.data.dispatch( 'core' ).editEntityRecord( 'postType', 'post', 1, { title: 'Hello World' } );\n</code></pre>\n<p>Once you have edited an entity record, you can save it. The following code saves the post with ID 1.</p>\n<pre><code class=\"language-js\">wp.data.dispatch( 'core' ).saveEditedEntityRecord( 'postType', 'post', 1 );\n</code></pre>\n<h2>Undo/Redo</h2>\n<p>Since the WordPress editors allow multiple entity records to be edited at the same time, the <code>core-data</code> package keeps track of all the entity records that have been fetched and edited in a common undo/redo stack. Each step in the undo/redo stack contains a list of &#8220;edits&#8221; that should be undone or redone at the same time when calling the <code>undo</code> or <code>redo</code> action.</p>\n<p>And to be able to perform both undo and redo operations properly, each modification in the list of edits contains the following information:</p>\n<ul>\n<li><strong>Entity kind and name:</strong> Each entity in core-data is identified by the pair <em>(kind, name)</em>. This corresponds to the identifier of the modified entity. </li>\n<li><strong>Entity Record ID:</strong> The ID of the modified record.</li>\n<li><strong>Property:</strong> The name of the modified property.</li>\n<li><strong>From:</strong> The previous value of the property (needed to apply the undo operation).</li>\n<li><strong>To:</strong> The new value of the property (needed to apply the redo operation).</li>\n</ul>\n<p>For example, let&#8217;s say a user edits the title of a post, followed by a modification to the post slug, and then a modification of the title of a reusable block used with the post. The following information is stored in the undo/redo stack:</p>\n<ul>\n<li><code>[ { kind: 'postType', name: 'post', id: 1, property: 'title', from: &apos;&apos;, to: 'Hello World' } ]</code></li>\n<li><code>[ { kind: 'postType', name: 'post', id: 1, property: 'slug', from: 'Previous slug', to: 'This is the slug of the hello world post' } ]</code></li>\n<li><code>[ { kind: 'postType', name: 'wp_block', id: 2, property: 'title', from: 'Reusable Block', to: 'Awesome Reusable Block' } ]</code></li>\n</ul>\n<p>The store also keeps track of a &#8220;pointer&#8221; to the current &#8220;undo/redo&#8221; step. By default, the pointer always points to the last item in the stack. This pointer is updated when the user performs an undo or redo operation.</p>\n<h3>Cached changes</h3>\n<p>The undo/redo core behavior also supports what we call &#8220;cached modifications&#8221;. These are modifications that are not stored in the undo/redo stack right away. For instance, when a user starts typing in a text field, the value of the field is modified in the store, but this modification is not stored in the undo/redo stack until after the user moves to the next word or after a few milliseconds. This is done to avoid creating a new undo/redo step for each character typed by the user.</p>\n<p>Cached changes are kept outside the undo/redo stack in what is called a &#8220;cache&#8221; of modifications, and these modifications are only stored in the undo/redo stack when we explicitly call <code>__unstableCreateUndoLevel</code> or when the next modification is not a cached one.</p>\n<p>By default, all calls to <code>editEntityRecord</code> are considered &#8220;non-cached&#8221; unless the <code>isCached</code> option is passed as true. Example:</p>\n<pre><code class=\"language-js\">wp.data.dispatch( 'core' ).editEntityRecord( 'postType', 'post', 1, { title: 'Hello World' }, {\u00a0isCached: true } );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134617,
+    "menu_order": 357,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147530",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147530",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147530/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152181,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147530/revisions/152181"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147530"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

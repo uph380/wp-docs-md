@@ -1,0 +1,91 @@
+{
+    "id": 134504,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/snackbar/"
+    },
+    "modified": "2024-10-30T16:55:37",
+    "modified_gmt": "2024-10-30T16:55:37",
+    "slug": "snackbar",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/snackbar/",
+    "title": {
+        "rendered": "Snackbar"
+    },
+    "content": {
+        "rendered": "<p>Use Snackbars to communicate low priority, non-interruptive messages to the user.</p>\n<h2>Design guidelines</h2>\n<p>A Snackbar displays a succinct message that is cleared out after a small delay. It can also offer the user options, like viewing a published post but these options should also be available elsewhere in the UI.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<p>To display a plain snackbar, pass the message as a <code>children</code> prop:</p>\n<pre><code class=\"language-jsx\">const MySnackbarNotice = () =&gt; (\n    &lt;Snackbar&gt;Post published successfully.&lt;/Snackbar&gt;\n);\n</code></pre>\n<p>For more complex markup, you can pass any JSX element:</p>\n<pre><code class=\"language-jsx\">const MySnackbarNotice = () =&gt; (\n    &lt;Snackbar&gt;\n        &lt;p&gt;\n            An error occurred: &lt;code&gt;{ errorDetails }&lt;/code&gt;.\n        &lt;/p&gt;\n    &lt;/Snackbar&gt;\n);\n</code></pre>\n<h3>Props</h3>\n<p>The following props are used to control the display of the component.</p>\n<h4><code>actions</code>: <code>NoticeAction[]</code></h4>\n<p>An array of action objects. Each member object should contain a <code>label</code> and either a <code>url</code> link string or <code>onClick</code> callback function.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>[]</code></li>\n</ul>\n<h4><code>children</code>: <code>string</code></h4>\n<p>The displayed message of a notice. Also used as the spoken message for assistive technology, unless <code>spokenMessage</code> is provided as an alternative message.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>explicitDismiss</code>: <code>boolean</code></h4>\n<p>Whether to require user action to dismiss the snackbar. By default, this is dismissed on a timeout, without user interaction.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h4><code>icon</code>: <code>ReactNode</code></h4>\n<p>The icon to render in the snackbar.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>null</code></li>\n</ul>\n<h4><code>listRef</code>: <code>MutableRefObject&lt; HTMLDivElement | null &gt;</code></h4>\n<p>A ref to the list that contains the snackbar.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>onDismiss</code>: <code>() =&gt; void</code></h4>\n<p>A callback executed when the snackbar is dismissed. It is distinct from onRemove, which <em>looks</em> like a callback but is actually the function to call to remove the snackbar from the UI.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>onRemove</code>: <code>() =&gt; void</code></h4>\n<p>Function called when dismissing the notice.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>politeness</code>: <code>'polite' | 'assertive'</code></h4>\n<p>A politeness level for the notice&#8217;s spoken message. Should be provided as one of the valid options for <a href=\"https://www.w3.org/TR/wai-aria-1.1/#aria-live\">an <code>aria-live</code> attribute value</a>. Note that this value should be considered a suggestion; assistive technologies may override it based on internal heuristics.</p>\n<p>A value of <code>'assertive'</code> is to be used for important, and usually time-sensitive, information. It will interrupt anything else the screen reader is announcing in that moment.</p>\n<p>A value of <code>'polite'</code> is to be used for advisory information. It should not interrupt what the screen reader is announcing in that moment (the &#8220;speech queue&#8221;) or interrupt the current task.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>'polite'</code></li>\n</ul>\n<h4><code>spokenMessage</code>: <code>string</code></h4>\n<p>Used to provide a custom spoken message.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>children</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To create a prominent message that requires a higher-level of attention, use a Notice.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 204,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134504",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134504",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134504/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151146,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134504/revisions/151146"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134504"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

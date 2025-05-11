@@ -1,0 +1,91 @@
+{
+    "id": 135818,
+    "date": "2021-05-08T17:54:47",
+    "date_gmt": "2021-05-08T17:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/"
+    },
+    "modified": "2024-01-29T21:09:49",
+    "modified_gmt": "2024-01-29T21:09:49",
+    "slug": "widgets",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/",
+    "title": {
+        "rendered": "Widgets"
+    },
+    "content": {
+        "rendered": "<p>The Gutenberg plugin replaces the Widgets Editor screen in WP Admin with a new screen based on the WordPress block editor.</p>\n<p><strong>Contents</strong></p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/widgets/overview/\">Widgets Block Editor overview</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/widgets/opting-out/\">Restoring the old Widgets Editor</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/widgets/legacy-widget-block/\">Ensuring compatibility with the Legacy Widget block</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 53,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135818",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135818",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135818/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138221,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135818/revisions/138221"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135818"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

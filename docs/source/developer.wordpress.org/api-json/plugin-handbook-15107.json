@@ -1,0 +1,97 @@
+{
+    "id": 15107,
+    "date": "2015-02-05T21:37:46",
+    "date_gmt": "2015-02-05T21:37:46",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=15107"
+    },
+    "modified": "2023-06-19T14:13:50",
+    "modified_gmt": "2023-06-19T14:13:50",
+    "slug": "split-terms-wp-4-2",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/taxonomies/split-terms-wp-4-2/",
+    "title": {
+        "rendered": "Term Splitting (WordPress 4.2)"
+    },
+    "content": {
+        "rendered": "\n<p>This information is here for historical purposes. If you&#8217;re not interested in how terms worked prior to 2015, you can skip this section.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Prior to WordPress 4.2</h2>\n\n\n\n<p>Terms in different taxonomies with the same slug shared a single term ID. For instance, a tag and a category with the slug &#8220;news&#8221; had the same term ID.</p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress 4.2+</h2>\n\n\n\n<p>Beginning with 4.2, when one of these shared terms is updated, it will be split: the updated term will be assigned a new term ID.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What does it mean for you?</h2>\n\n\n\n<p>In the vast majority of situations, this update was seamless and uneventful. However, some plugins and themes who store term IDs in options, post meta, user meta, or elsewhere might have been affected.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Handling the Split</h2>\n\n\n\n<p>WordPress 4.2 includes two different tools to help authors of plugins and themes with the transition.</p>\n\n\n\n<h3 class=\"wp-block-heading\">The <code>split_shared_term</code> hook</h3>\n\n\n\n<p>When a shared term is assigned a new term ID, a new <code>split_shared_term</code> action is fired.</p>\n\n\n\n<p>Here are a few examples of how plugin and theme authors can leverage this hook to ensure that stored term IDs are updated.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Term ID stored in an option</h4>\n\n\n\n<p>Let&#8217;s say your plugin stores an option called <code>featured_tags</code> that contains an array of term IDs (<code>[4, 6, 10]</code>) that serve as the query parameter for your homepage featured posts section.</p>\n\n\n\n<p>In this example, you&#8217;ll hook to <code>split_shared_term</code> action, check whether the updated term ID is in the array, and update if necessary.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/**\n * Update featured_tags option when a shared term gets split.\n *\n * @param int    $term_id          ID of the formerly shared term.\n * @param int    $new_term_id      ID of the new term created for the $term_taxonomy_id.\n * @param int    $term_taxonomy_id ID for the term_taxonomy row affected by the split.\n * @param string $taxonomy         Taxonomy for the split term.\n */\nfunction wporg_featured_tags_split( int $term_id, int $new_term_id, int $term_taxonomy_id, string $taxonomy ): void {\n\t// we only care about tags, so we'll first verify that the taxonomy is post_tag.\n\tif ( 'post_tag' === $taxonomy ) {\n\n\t\t// get the currently featured tags.\n\t\t$featured_tags = get_option( 'featured_tags' );\n\n\t\t// if the updated term is in the array, note the array key.\n\t\t$found_term = array_search( $term_id, $featured_tags, true );\n\t\tif ( false !== $found_term ) {\n\n\t\t\t// the updated term is a featured tag! replace it in the array, save the new array.\n\t\t\t$featured_tags[ $found_term ] = $new_term_id;\n\t\t\tupdate_option( 'featured_tags', $featured_tags );\n\t\t}\n\t}\n}\nadd_action( 'split_shared_term', 'wporg_featured_tags_split', 10, 4 );</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Term ID stored in post meta</h4>\n\n\n\n<p>Let&#8217;s say your plugin stores a term ID in post meta for pages so that you can show related posts for a certain page.</p>\n\n\n\n<p>In this case, you need to use the <code>get_posts()</code> function to get the pages with your <code>meta_key</code> and update the <code>meta_value</code> matching the split term ID.</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/**\n * Update related posts term ID for pages\n *\n * @param int    $term_id          ID of the formerly shared term.\n * @param int    $new_term_id      ID of the new term created for the $term_taxonomy_id.\n * @param int    $term_taxonomy_id ID for the term_taxonomy row affected by the split.\n * @param string $taxonomy         Taxonomy for the split term.\n */\nfunction wporg_page_related_posts_split( int $term_id, int $new_term_id, int $term_taxonomy_id, string $taxonomy ): void {\n\t// find all the pages where meta_value matches the old term ID.\n\t$page_ids = get_posts(\n\t\tarray(\n\t\t\t'post_type'  =&gt; 'page',\n\t\t\t'fields'     =&gt; 'ids',\n\t\t\t'meta_key'   =&gt; 'meta_key',\n\t\t\t'meta_value' =&gt; $term_id,\n\t\t)\n\t);\n\n\t// if such pages exist, update the term ID for each page.\n\tif ( $page_ids ) {\n\t\tforeach ( $page_ids as $id ) {\n\t\t\tupdate_post_meta( $id, 'meta_key', $new_term_id, $term_id );\n\t\t}\n\t}\n}\nadd_action( 'split_shared_term', 'wporg_page_related_posts_split', 10, 4 );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">The <code>wp_get_split_term</code> function</h3>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nUsing the <code>split_shared_term</code> hook is the preferred method for processing Term ID changes.</p>\n<p>However, there may be cases where Terms are split without your plugin having a chance to hook to the <code>split_shared_term</code> action.<br />\n</div></div>\n\n\n\n\n<p>WordPress 4.2 stores information about taxonomy terms that have been split, and provides the <code>wp_get_split_term()</code> utility function to help developers retrieve this information.</p>\n\n\n\n<p>Consider the case above, where your plugin stores term IDs in an option named <code>featured_tags</code>. You may want to build a function that validates these tag IDs (perhaps to be run on plugin update), to be sure that none of the featured tags has been split:</p>\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">/**\n * Retrieve information about split terms and udpates the featured_tags option with the new term IDs.\n *\n * @return void\n */\nfunction wporg_featured_tags_check_split() {\n\t$featured_tag_ids = get_option( 'featured_tags', array() );\n\n\t// check to see whether any IDs correspond to post_tag terms that have been split.\n\tforeach ( $featured_tag_ids as $index =&gt; $featured_tag_id ) {\n\t\t$new_term_id = wp_get_split_term( $featured_tag_id, 'post_tag' );\n\n\t\tif ( $new_term_id ) {\n\t\t\t$featured_tag_ids[ $index ] = $new_term_id;\n\t\t}\n\t}\n\n\t// save\n\tupdate_option( 'featured_tags', $featured_tag_ids );\n}</code></pre>\n\n\n\n<p>Note that <code>wp_get_split_term()</code> takes two parameters, <code>$old_term_id</code> and <code>$taxonomy</code> and returns an integer.</p>\n\n\n\n<p>If you need to retrieve a list of all split terms associated with an old Term ID, regardless of taxonomy, use <code>wp_get_split_terms()</code>.</p>\n",
+        "protected": false
+    },
+    "author": 2881701,
+    "featured_media": 0,
+    "parent": 15122,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-15107",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15107",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/2881701"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 23,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15107/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 147663,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15107/revisions/147663"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15122"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=15107"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

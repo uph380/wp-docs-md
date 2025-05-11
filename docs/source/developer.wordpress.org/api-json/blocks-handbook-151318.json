@@ -1,0 +1,91 @@
+{
+    "id": 151318,
+    "date": "2023-12-18T20:10:01",
+    "date_gmt": "2023-12-18T20:10:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/"
+    },
+    "modified": "2024-11-18T21:54:38",
+    "modified_gmt": "2024-11-18T21:54:38",
+    "slug": "block-in-the-editor",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/",
+    "title": {
+        "rendered": "The block in the Editor"
+    },
+    "content": {
+        "rendered": "<p>The Block Editor is a React Single Page Application (SPA). Every block in the Editor is displayed through a React component defined in the <code>edit</code> property of the settings object used to <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/#registering-a-block-with-javascript-client-side\">register the block</a> on the client.</p>\n<p>The <code>props</code> object received by the block&#8217;s <code>Edit</code> React component includes:</p>\n<ul>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#attributes\"><code>attributes</code></a>:</strong> An object of all the block&#8217;s attributes.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#setattributes\"><code>setAttributes</code></a>:</strong> A method to update the attributes object.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#isselected\"><code>isSelected</code></a>:</strong> A boolean value that communicates whether the block is currently selected</li>\n</ul>\n<p>WordPress provides many built-in standard components that can be used to define the block interface in the Editor. These built-in components are available via packages such as <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/\"><code>@wordpress/components</code></a> and <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/\"><code>@wordpress/block-editor</code></a>.</p>\n<div class=\"callout\">\n    The WordPress Gutenberg project uses <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page\">Storybook</a> to document the user interface components that are available in WordPress packages.\n</div>\n<p>Custom settings controls for the block in the Block Toolbar or the Settings Sidebar can also be defined through this <code>Edit</code> React component via built-in components such as:</p>\n<ul>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md\"><code>InspectorControls</code></a> </li>\n<li><a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls\"><code>BlockControls</code></a> </li>\n</ul>\n<h2>Built-in components</h2>\n<p>The package <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/\"><code>@wordpress/components</code></a> includes a library of generic WordPress components to create common UI elements for the Block Editor and the WordPress dashboard. Some of the  most commonly used components from this package are:</p>\n<ul>\n<li><a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-textcontrol--docs\"><code>TextControl</code></a> </li>\n<li><a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-panel--docs\"><code>Panel</code></a></li>\n<li><a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-togglecontrol--docs\"><code>ToggleControl</code></a></li>\n<li><a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-externallink--docs\"><code>ExternalLink</code></a></li>\n</ul>\n<p>The package <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/\"><code>@wordpress/block-editor</code></a> includes a library of components and hooks for the Block Editor, including those to define custom settings controls for the block. Some of the components most commonly used from this package are:</p>\n<ul>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/rich-text/README.md\"><code>RichText</code></a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls\"><code>BlockControls</code></a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md\"><code>InspectorControls</code></a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inner-blocks/README.md\"><code>InnerBlocks</code></a></li>\n</ul>\n<div class=\"callout callout-info\">\n    The package <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/\"><code>@wordpress/block-editor</code></a> also provides the tools to create and use standalone block editors.\n</div>\n<p>A good workflow when using a component for the Block Editor is:</p>\n<ul>\n<li>Import the component from a WordPress package.</li>\n<li>Add the corresponding code for the component to your project in JSX format.</li>\n<li>Most built-in components will be used to set <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-json/#using-attributes-to-store-block-data\">block attributes</a>, so define any necessary attributes in <code>block.json</code> and create event handlers to update those attributes with <code>setAttributes</code> in your component.</li>\n<li>Adapt the code to be serialized and stored in the database if needed.</li>\n</ul>\n<h2>Block Controls: Block Toolbar and Settings Sidebar</h2>\n<p>To simplify block customization and ensure a consistent user experience, there are several built-in UI patterns to help generate the Editor preview of a block.</p>\n<p>The image below details the Block Toolbar and the Settings Sidebar of a selected Paragraph block.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/12/block-toolbar-settings-sidebar.png?ssl=1\" alt=\"Diagram showing the Block Toolbar and the Settings Sidebar when a Paragraph block is selected\" /></p>\n<h3>Block Toolbar</h3>\n<p>When the user selects a block, a number of control buttons may be shown in a toolbar above the selected block. Some of these block-level controls may be included automatically, but you can also customize the toolbar to include controls specific to your block type. If the return value of your block type&#8217;s <code>Edit</code> function includes a <code>BlockControls</code> element, those controls will be shown in the selected block&#8217;s toolbar.</p>\n<pre><code class=\"language-jsx\">export default function Edit( { className, attributes: attr, setAttributes } ) {\n\n    const onChangeContent = ( newContent ) =&gt; {\n        setAttributes( { content: newContent } );\n    };\n\n    const onChangeAlignment = ( newAlignment ) =&gt; {\n        setAttributes( {\n            alignment: newAlignment === undefined ? 'none' : newAlignment,\n        } );\n    };\n\n    return (\n        &lt;div { ...useBlockProps() }&gt;\n            &lt;BlockControls&gt;\n                &lt;ToolbarGroup&gt;\n                    &lt;AlignmentToolbar\n                        value={ attr.alignment }\n                        onChange={ onChangeAlignment }\n                    /&gt;\n                &lt;/ToolbarGroup&gt;\n            &lt;/BlockControls&gt;\n\n            &lt;RichText\n                className={ className }\n                style={ { textAlign: attr.alignment } }\n                tagName=\"p\"\n                onChange={ onChangeContent }\n                value={ attr.content }\n            /&gt;\n        &lt;/div&gt;\n    );\n}\n</code></pre>\n<p><em>See the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/block-toolbar-ab967f\">full block example</a> of the <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/block-toolbar-ab967f/src/edit.js\">code above</a>.</em></p>\n<p>Note that <code>BlockControls</code> is only visible when the block is currently selected and in visual editing mode. <code>BlockControls</code> are not shown when editing a block in HTML editing mode.</p>\n<h3>Settings Sidebar</h3>\n<p>The Settings Sidebar is used to display less-often-used settings or those that require more screen space. The Settings Sidebar should be used for <strong>block-level settings only</strong> and is shown when a block is selected.</p>\n<p>If a setting only affects selected content inside a block, such as &#8220;bolding&#8221; text, <strong>do not place the setting inside the Settings Sidebar</strong>. Use a toolbar instead. The Settings Sidebar is displayed even when editing a block in HTML mode, so it should only contain block-level settings.</p>\n<p>Similar to rendering a toolbar, if you include an <code>InspectorControls</code> component in the <code>return</code> value of your block type&#8217;s <code>Edit</code> function, those controls will be shown in the Settings Sidebar region.</p>\n<pre><code class=\"language-jsx\">export default function Edit( { attributes, setAttributes } ) {\n    const onChangeBGColor = ( hexColor ) =&gt; {\n        setAttributes( { bg_color: hexColor } );\n    };\n\n    const onChangeTextColor = ( hexColor ) =&gt; {\n        setAttributes( { text_color: hexColor } );\n    };\n\n    return (\n        &lt;div { ...useBlockProps() }&gt;\n            &lt;InspectorControls key=\"setting\"&gt;\n                &lt;div&gt;\n                    &lt;fieldset&gt;\n                        &lt;legend className=\"blocks-base-control__label\"&gt;\n                            { __( 'Background color', 'block-development-examples' ) }\n                        &lt;/legend&gt;\n                        &lt;ColorPalette // Element Tag for Gutenberg standard color selector\n                            onChange={ onChangeBGColor } // onChange event callback\n                        /&gt;\n                    &lt;/fieldset&gt;\n                    &lt;fieldset&gt;\n                        &lt;legend className=\"blocks-base-control__label\"&gt;\n                            { __( 'Text color', 'block-development-examples' ) }\n                        &lt;/legend&gt;\n                        &lt;ColorPalette\n                            onChange={ onChangeTextColor }\n                        /&gt;\n                    &lt;/fieldset&gt;\n                &lt;/div&gt;\n            &lt;/InspectorControls&gt;\n            &lt;TextControl\n                __nextHasNoMarginBottom\n                __next40pxDefaultSize\n                value={ attributes.message }\n                onChange={ ( val ) =&gt; setAttributes( { message: val } ) }\n                style={ {\n                    backgroundColor: attributes.bg_color,\n                    color: attributes.text_color,\n                } }\n            /&gt;\n        &lt;/div&gt;\n    );\n}\n</code></pre>\n<p><em>See the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/settings-sidebar-82c525\">full block example</a> of the <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/settings-sidebar-82c525/src/edit.js\">code above</a>.</em></p>\n<p>Block controls rendered in both the toolbar and sidebar will also be available when multiple blocks of the same type are selected.</p>\n<div class=\"callout callout-note\">\n    For common customization settings, including color, border, spacing, and more, you can rely on <a href=\"https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-json/#enable-ui-settings-panels-for-the-block-with-supports\">block supports</a> instead of a custom solution. Block supports provide a consistent UI with the same functionality as other Core blocks.\n</div>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page\">Storybook for WordPress components</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/\">@wordpress/block-editor</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/\">@wordpress/components</a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md\"><code>InspectorControls</code></a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/block-controls\"><code>BlockControls</code></a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 150294,
+    "menu_order": 14,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-151318",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151318",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151318/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155759,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151318/revisions/155759"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150294"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=151318"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

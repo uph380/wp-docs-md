@@ -1,0 +1,91 @@
+{
+    "id": 125656,
+    "date": "2019-08-12T08:28:09",
+    "date_gmt": "2019-08-12T08:28:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125656"
+    },
+    "modified": "2022-11-21T16:09:35",
+    "modified_gmt": "2022-11-21T16:09:35",
+    "slug": "rewrite",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/rewrite/",
+    "title": {
+        "rendered": "Rewrite"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Description</h2>\n\n\n\n<p>WordPress allows theme and plugin developers to programmatically specify new, custom rewrite rules. </p>\n\n\n\n<p>The following functions (which are mostly aliases for&nbsp;<a href=\"https://developer.wordpress.org/reference/classes/wp_rewrite/\">WP_Rewrite</a>&nbsp;methods) can be used to achieve this.</p>\n\n\n\n<p>Please note that these rules are usually called inside the\u00a0<code>init</code>\u00a0hook. Furthermore, permalinks will need to be refreshed (you can do this from WP-Admin under Settings -&gt; Permalinks) before the rewrite changes will take effect. Requires one-time use of <code>flush_rules()</code> to take effect.</p>\n\n\n\n<h2 class=\"wp-block-heading\">API Reference</h2>\n\n\n\n<h4 class=\"wp-block-heading\">Articles</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Class:&nbsp;<a href=\"https://developer.wordpress.org/reference/classes/wp_rewrite/\"><code>WP_Rewrite</code></a>&nbsp;&#8211; An overview of WordPress&#8217;s built-in URL rewrite class.</li>\n</ul>\n\n\n\n<h4 class=\"wp-block-heading\">Hooks</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/root_rewrite_rules/\"><code>root_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for the root of your weblog.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/post_rewrite_rules/\"><code>post_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for permalink URLs.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/page_rewrite_rules\"><code>page_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for your Pages.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/date_rewrite_rules\"><code>date_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for dated archive URLs.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/search_rewrite_rules\"><code>search_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for search URLs.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/comments_rewrite_rules\"><code>comments_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for the latest comment feed URLs.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/author_rewrite_rules/\"><code>author_rewrite_rules</code></a>&nbsp;&#8211; Filters the rewrite rules generated for author archive URLs.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/rewrite_rules_array/\"><code>rewrite_rules_array</code></a>&nbsp;&#8211; Filters&nbsp;<em>all</em>&nbsp;the rewrite rules at once.</li>\n\n\n\n<li>Filter:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/permastructname_rewrite_rules/\"><code>{$permastructname}_rewrite_rules</code></a>&nbsp;&#8211; Can be used to create or modify rewrite rules for any custom permastructs, such as taxonomies or custom post types.</li>\n\n\n\n<li>Action:&nbsp;<a href=\"https://developer.wordpress.org/reference/hooks/generate_rewrite_rules/\"><code>generate_rewrite_rules</code></a> &#8211; Runs&nbsp;<strong>after</strong>&nbsp;all the rules have been created.</li>\n</ul>\n\n\n\n<h4 class=\"wp-block-heading\">Functions</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_rewrite_tag/\"><code>add_rewrite_tag()</code></a>&nbsp;&#8211; Can be used to allow WordPress to recognize custom variables (particularly custom querystring variables).</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_rewrite_rule/\"><code>add_rewrite_rule()</code></a>&nbsp;&#8211; Allows you to specify new, custom rewrite rules.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_rewrite_endpoint/\"><code>add_rewrite_endpoint()</code></a>&nbsp;&#8211; Add a new endpoint like /trackback/</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/classes/wp_rewrite/flush_rules/\"><code>flush_rules()</code></a>&nbsp;&#8211; Regenerate the rewrite rules and save them to the database.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/flush_rewrite_rules/\"><code>flush_rewrite_rules()</code></a>&nbsp;&#8211; Remove rewrite rules and then recreate rewrite rules.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/hooks/generate_rewrite_rules/\"><code>generate_rewrite_rules()</code></a>&nbsp;&#8211; Generates rewrite rules from a permalink structure</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_permastruct/\"><code>add_permastruct()</code></a>&nbsp;&#8211; Add a new permastruct</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/add_feed/\"><code>add_feed()</code></a>&#8211; Add a new feed type like <code>/atom1/</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 110,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125656",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125656",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125656/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 142045,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125656/revisions/142045"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125656"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

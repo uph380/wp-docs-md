@@ -1,0 +1,91 @@
+{
+    "id": 153870,
+    "date": "2024-05-29T18:55:31",
+    "date_gmt": "2024-05-29T18:55:31",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/progress-bar/"
+    },
+    "modified": "2024-10-30T17:09:37",
+    "modified_gmt": "2024-10-30T17:09:37",
+    "slug": "progress-bar",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/progress-bar/",
+    "title": {
+        "rendered": "ProgressBar"
+    },
+    "content": {
+        "rendered": "<p>A simple horizontal progress bar component.</p>\n<p>Supports two modes: determinate and indeterminate. A progress bar is determinate when a specific progress value has been specified (from 0 to 100), and indeterminate when a value hasn&#8217;t been specified.</p>\n<h2>Usage</h2>\n<p>Basic usage:</p>\n<pre><code class=\"language-jsx\">import { ProgressBar } from '@wordpress/components';\n\nconst MyLoadingComponent = () =&gt; {\n    return &lt;ProgressBar /&gt;;\n};\n</code></pre>\n<p>You can also make it determinate by passing a <code>value</code> (from 0 to 100) representing the progress:</p>\n<pre><code class=\"language-jsx\">import { ProgressBar } from '@wordpress/components';\n\nconst MyLoadingComponent = ( { progress } ) =&gt; {\n    return &lt;ProgressBar value={ progress } /&gt;;\n};\n</code></pre>\n<p>You can customize its appearance by passing a custom CSS class name to <code>className</code>.</p>\n<pre><code class=\"language-css\">.my-custom-progress-bar {\n    width: 100%;\n}\n</code></pre>\n<pre><code class=\"language-jsx\">import { ProgressBar } from '@wordpress/components';\n\nconst MyLoadingComponent = () =&gt; {\n    return &lt;ProgressBar className=\"my-custom-progress-bar\" /&gt;;\n};\n</code></pre>\n<h3>Props</h3>\n<p>The component accepts the following props:</p>\n<h4><code>value</code>: <code>number</code></h4>\n<p>The progress value, a number from 0 to 100.<br />\nIf a <code>value</code> is not specified, the progress bar will be considered indeterminate.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>className</code>: <code>string</code></h4>\n<p>A CSS class to apply to the underlying <code>div</code> element, serving as a progress bar track.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4>Inherited props</h4>\n<p>Any additional props will be passed the underlying <code>&lt;progress/&gt;</code> element.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 190,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-153870",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153870",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153870/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153873,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/153870/revisions/153873"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=153870"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

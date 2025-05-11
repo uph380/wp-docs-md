@@ -1,0 +1,109 @@
+{
+    "id": 10848231,
+    "date": "2021-07-02T15:47:41",
+    "date_gmt": "2021-07-02T15:47:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10848231"
+    },
+    "modified": "2024-06-08T18:45:09",
+    "modified_gmt": "2024-06-08T18:45:09",
+    "slug": "settings-reading-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-reading-screen/",
+    "title": {
+        "rendered": "Settings Reading screen"
+    },
+    "content": {
+        "rendered": "\n<p>The options in the<strong> Reading <strong>Settings</strong></strong> <strong>Screen</strong> are few in number, but still important. You can decide if you want your latest <a href=\"/support/article/writing-posts/\">posts</a> or a &#8220;static&#8221; <a href=\"https://codex.wordpress.org/Pages\">P</a><a href=\"/support/article/pages\">a</a><a href=\"https://codex.wordpress.org/Pages\">ge</a> displayed as your website&#8217;s front (home) page. You can also adjust how many posts are displayed on that home page. In addition, you can adjust <a href=\"/support/article/glossary#feed\">syndication feed</a> features to determine how the information from your site is sent to a reader&#8217;s web browser or other applications.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Reading Settings</h2>\n\n\n\n<p>     Your website&#8217;s front page uses these settings to determine if your posts or a &#8220;static&#8221; <a href=\"/support/article/pages\">Page</a> is displayed as your website&#8217;s home (main) page. These settings work only if you have one or more <a href=\"/support/article/pages\">Pages</a> defined. Please note: static front page plugins and other &#8216;posts display&#8217; control/restriction plugins may affect how these features work!</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2021/06/options-reading.png\" alt=\"Reading Settings\" class=\"wp-image-14589489\" width=\"449\" height=\"468\" srcset=\"https://wordpress.org/documentation/files/2021/06/options-reading.png 628w, https://wordpress.org/documentation/files/2021/06/options-reading-288x300.png 288w\" sizes=\"auto, (max-width: 449px) 100vw, 449px\" /><figcaption>Reading Settings</figcaption></figure></div>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Your latest posts</strong> &#8211; Check this radio button so your latest posts are displayed on the blog&#8217;s home page. Remember, the number of posts you display is controlled by the &#8220;Blog pages show at most&#8221; setting.</li><li><strong>A static page (select below)</strong> &#8211; Check this radio button to have a &#8220;static&#8221; <a href=\"/support/article/pages\">Page</a> be displayed as your blog&#8217;s home page. At the same time, choose the Page that will display your actual Posts. The Home page and Posts page cannot be the same.</li></ul>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Home page</strong> &#8211; In the drop-down box, select the actual <a href=\"/support/article/pages\">Page</a> that you want displayed as your front page. If you do not select a choice here, then effectively your blog will show your posts on both the blog&#8217;s front page and on the <strong>Posts page</strong> you specify. If you would like to create a static home page template file, <strong>do not</strong> name it home.php, otherwise you will encounter problems when you try to view the &#8220;blog&#8221;/&#8221;posts&#8221; section of your site. To get around this, just name it anything but home.php, for example, myhome.php</li><li><strong>Posts page</strong> &#8211; In the drop-down box, select the name of the <a href=\"https://codex.wordpress.org/Pages\">Page</a> that will now contain your Posts. If you do not select a Page here, your Posts will only be accessible via other navigation features such as category, calendar, or archive links. Even if the selected Page is password protected, visitors will NOT be prompted for a password when viewing the Posts Page. Also, any Template assigned to the Page will be ignored and the theme&#8217;s <em>index.php</em> (or <em>home.php</em> if it exists) will control the display of the posts.</li></ul>\n\n\n\n<p>     See <a href=\"/support/article/creating-a-static-front-page/\">Creating a Static Front Page</a> for more detail. </p>\n\n\n\n<p>    <strong>Blog pages show at most</strong>     </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[X] posts</strong> &#8211; Enter the number of posts to be displayed, per page, on your site.</li></ul>\n\n\n\n<p>     <strong>Syndication feeds show the most recent</strong>     </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[X] posts</strong> &#8211; Enter the number of posts people will see when they download one of your site&#8217;s feeds.</li></ul>\n\n\n\n<p><strong>For each article in a feed, show</strong></p>\n\n\n\n<p>Determines whether or not the feed will include the full article or just an excerpt.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Full text</strong> &#8211; Click this radio button to include the full content of each post.</li><li><strong>Excerpt</strong> &#8211; Click this radio button to include an excerpt of the post. This could save bandwidth.</li></ul>\n\n\n\n<p><strong>Encoding for pages and feeds <em>(Removed as of <a href=\"https://codex.wordpress.org/Version_3.5\">Version 3.5.0</a>)</em></strong></p>\n\n\n\n<p>Enter the character encoding to set the choice of languages in which you, the other authors, and your commenters, can write. The default (and safe choice) is &#8220;UTF-8&#8221; (see <a href=\"https://codex.wordpress.org/Glossary#Unicode\">Unicode</a>), as that encoding supports a wide variety of languages. If you wish to use some other character encoding (for example you have imported or will import articles written using a different character encoding) then specify that here. Caution should be used when changing this field as it may change the way information is displayed on your blog. For a more in-depth article on character encoding see <a href=\"http://en.wikipedia.org/wiki/Character_encoding\">Wikipedia:Character encoding</a>.</p>\n\n\n\n<p><strong>Search Engine Visibility <em>(New as of <a href=\"https://codex.wordpress.org/Version_3.5\">Version 3.5.0</a>)</em></strong> </p>\n\n\n\n<p>    Note: the Settings <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Privacy screen has been removed from WordPress as of <a href=\"https://codex.wordpress.org/Version_3.5\">Version 3.5.0</a>).</p>\n\n\n\n<p>Check the <em>Discourage search engines from indexing this site</em> box to ask search engines not to index this site. When the option is checked, the following happens:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>(Since <a href=\"https://make.wordpress.org/core/2019/09/02/changes-to-prevent-search-engines-indexing-sites/\">Version 5.3</a>) Causes &#8220;&lt;meta name=&#8217;robots&#8217; content=&#8217;noindex,nofollow&#8217; /&gt;&#8221; to be generated into the &lt;head&gt; &lt;/head&gt; section (if wp_head is used) of your site&#8217;s source, causing search engine spiders to ignore your site.</li><li>(Till Version 5.2) Causes hits to robots.txt to send back:</li></ul>\n\n\n\n<pre class=\"wp-block-preformatted\">User-agent: *<br />Disallow: /</pre>\n\n\n\n<p><strong>Note:</strong> The above only works if WordPress is installed in the site root and no robots.txt exists.          </p>\n\n\n\n<ul class=\"wp-block-list\"><li>Stops pings to ping-o-matic and any other RPC ping services specified in the <a href=\"/support/article/settings-writing-screen/#update-services\">Update Services</a> of <a href=\"/support/article/administration-screens/\">Administration</a> &gt; <a href=\"/support/article/administration-screens/#writing\">Settings</a> &gt;<a href=\"/support/article/settings-writing-screen/\">Writing</a>. This works by having the function privacy_ping_filter() remove the sites to ping from the list. This filter is added by having add_filter(&#8216;option_ping_sites&#8217;,&#8217;privacy_ping_filter&#8217;); in the default-filters. When the generic_pingfunction attempts to get the &#8220;ping_sites&#8221; option, this filter blocks it from returning anything.</li></ul>\n\n\n\n<ul class=\"wp-block-list\"><li>Hides the <a href=\"/support/article/settings-writing-screen/#update-services\">Update Services</a> option entirely on the <a href=\"https://codex.wordpress.org/Administration_Screens\">Administration</a> &gt; <a href=\"/support/article/administration-screens/#writing\">Settings</a> &gt; <a href=\"/support/article/settings-writing-screen/\">Writing</a> screen with the message &#8220;WordPress is not notifying any Update Services because of your blog&#8217;s privacy settings.&#8221;</li></ul>\n\n\n\n<ul class=\"wp-block-list\"><li>Allows normal visitors.</li></ul>\n\n\n\n<p>\n\n\n\n\n\n     *Note: <em>Neither of these options blocks access to your site \u2014 it is up to search engines to honor your request.</em></p>\n\n\n\n<h3 class=\"wp-block-heading\">Save Changes</h3>\n\n\n\n<p>\n\n     Click the <strong>Save Changes</strong> button to ensure any changes you have made to your Settings are saved to your database. Once you click the button, a confirmation text box will appear at the top of the page telling you your settings have been saved.\n\n</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The options in the Reading Settings Screen are few in number, but still important. You can decide if you want your latest posts or a &#8220;static&#8221; Page displayed as your website&#8217;s front (home) page. You can also adjust how many posts are displayed on that home page. In addition, you can adjust syndication feed features [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10848231",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10848231",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10848231"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10848231/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360398,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10848231/revisions/16360398"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10848231"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10848231"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

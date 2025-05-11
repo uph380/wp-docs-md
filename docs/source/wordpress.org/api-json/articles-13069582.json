@@ -1,0 +1,109 @@
+{
+    "id": 13069582,
+    "date": "2020-07-03T18:38:08",
+    "date_gmt": "2020-07-03T18:38:08",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13069582"
+    },
+    "modified": "2024-06-06T13:58:53",
+    "modified_gmt": "2024-06-06T13:58:53",
+    "slug": "crowdsignal-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/crowdsignal-embed/",
+    "title": {
+        "rendered": "Crowdsignal embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the <em>Crowdsignal Embed</em> block, you can embed Crowdsignal polls (or surveys or votes) into your posts and pages. You need a Crowdsignal account to be able to create polls (or surveys or votes) before you can embed them into your posts or pages.</p>\n\n\n\n<figure class=\"wp-block-video\"><video autoplay controls loop muted src=\"https://wordpress.org/documentation/files/2022/08/CrowdSignal-HelpHub-Walkthrough-1.mp4\"></video></figure>\n\n\n\n<p><strong>Example of an Embedded Crowsignal Poll</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"639\" height=\"423\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-1.png\" alt=\"Example of an embedded Crowdsignal Poll with the question &quot;what is the best color?&quot;\" class=\"wp-image-15954084\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-1.png 639w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-1-300x199.png 300w\" sizes=\"auto, (max-width: 639px) 100vw, 639px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Steps to embed Crowdsignal polls (or surveys or votes):</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li><strong>Go to crowdsignal.com and signup for a free account.</strong> <br>On your Crowdsignal Dashboard, create a new survey, poll, quiz, or rating, or select one you&#8217;ve already created.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"310\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-2.png\" alt=\"Crowdsignal dashboard to create a survey, poll, quiz or rating.\" class=\"wp-image-15954088\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-2.png 1000w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-2-300x93.png 300w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-2-768x238.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li><strong>Get the custom link to share your poll</strong><br>Either from the Dashboard or within the editor, find the &#8220;Share&#8221; button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"509\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-3.png\" alt=\"Sharing your Crowdsignal poll via the Edtior panel.\" class=\"wp-image-15954099\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-3.png 1000w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-3-300x153.png 300w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-3-768x391.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\">Find the share link within the Editor panel</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"256\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-4.png\" alt=\"Sharing your Crowdsignal poll via the Dashboard.\" class=\"wp-image-15954100\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-4.png 1000w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-4-300x77.png 300w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-4-768x197.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\">Find the share link within the Dashboard for the poll</figcaption></figure>\n\n\n\n<p>Within the <strong>Share Your Poll</strong> pop up, click &#8220;Copy to Clipboard&#8221;.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"952\" height=\"394\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-5.png\" alt=\"The &quot;Share your Poll&quot; pop up with the link to copy to clipboard.\" class=\"wp-image-15954102\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-5.png 952w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-5-300x124.png 300w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-5-768x318.png 768w\" sizes=\"auto, (max-width: 952px) 100vw, 952px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li><strong>Add a Crowdsignal Embed Block to your post/page</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"287\" height=\"137\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-6.png\" alt=\"Adding the Crowdsignal block via the WordPress slash command /crowdsignal.\" class=\"wp-image-15954105\" /><figcaption class=\"wp-element-caption\">Adding a block via the \u201cSlash\u201d command from an empty row</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li><strong>Paste the Crowdsignal Poll link from step 2</strong> <strong>into the text box</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"692\" height=\"287\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-7.png\" alt=\"Embed option for the Crowdsignal block to paste the URL.\" class=\"wp-image-15954109\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-7.png 692w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-7-300x124.png 300w\" sizes=\"auto, (max-width: 692px) 100vw, 692px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li><strong>Click the \u201cEmbed\u201d button</strong></li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-8-1.png\" alt=\"Preview of the embedded Crowdsignal poll within the WordPress editor.\" class=\"wp-image-15954115\" style=\"width:300px\" width=\"300\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: Try again with a different URL or convert to link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"676\" height=\"374\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-9.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-15954117\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-9.png 676w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-9-300x166.png 300w\" sizes=\"auto, (max-width: 676px) 100vw, 676px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Crowdsignal embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to&nbsp;</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More options.&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-10-1.png\" alt=\"Block Toolbar with options available for the Crowdsignal Block.\" class=\"wp-image-15954122\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-11-1.png\" alt=\"Options to transform the Crowdsignal block to Paragraph, Columns or Group.\" class=\"wp-image-15954123\" /></figure>\n\n\n\n<p>You can transform a Crowdsignal embed into a Paragraph, Columns, or Group. Transforming it into a Group would give you the ability to change the background color around the Crowdsignal embed.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"727\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-12-1024x727.png\" alt=\"Example of transforming Crowdsignal block to group and updating the background to gradient.\" class=\"wp-image-15954126\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-12-1024x727.png 1024w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-12-300x213.png 300w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-12-768x545.png 768w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-12.png 1111w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\"><em>Editor view of a Crowdsignal Embed as a group with Color Settings controls</em></figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"682\" height=\"560\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-13.png\" alt=\"Front end example of Crowdsignal embed group with gradient background.\" class=\"wp-image-15954129\" srcset=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-13.png 682w, https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-13-300x246.png 300w\" sizes=\"auto, (max-width: 682px) 100vw, 682px\" /><figcaption class=\"wp-element-caption\">Crowdsignal embed with a gradient background.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-14-1.png\" alt=\"Alignment options for the Crowdsignal block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-15954131\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Wide width &#8211; Increase the width of the post beyond the content size</li>\n\n\n\n<li>Full width &#8211; extend the Crowdsignal post to cover the full width of the screen.</li>\n\n\n\n<li>Align left &#8211; Make the Crowdsignal post left aligned</li>\n\n\n\n<li>Align center &#8211; Make the Crowdsignal post alignment centered</li>\n\n\n\n<li>Align right &#8211; Make the Crowdsignal post align right</li>\n</ul>\n\n\n\n<p><em>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.&nbsp;</em></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong>:</p>\n\n\n\n<p>Via the edit URL, you can change the Crowdsignal Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-15-1.png\" alt=\"Editing the Crowdsignal block URL via the &quot;edit&quot; option.\" class=\"wp-image-15954132\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>The More Options menu represented by three vertical dots on the far right of the toolbar gives you more features such as the ability to duplicate, remove, or edit your block as HTML.\u00a0</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings<strong>&nbsp;</strong></h2>\n\n\n\n<p>Besides the Advanced section, the Crowdsignal embed has only one other setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Media Settings</h3>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-20.png\" alt=\"Media settings for the Crowdsignal embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-15954143\" style=\"width:300px\" width=\"300\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-19.png\" alt=\"Media settings for the Crowdsignal embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-15954141\" style=\"width:300px\" width=\"300\" /></figure>\n</div>\n</div>\n\n\n\n<p>Via the&nbsp;<em>Media Settings</em>&nbsp;you can control the behavior of your embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong>&nbsp;This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong>&nbsp;This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add  CSS class(es) to your block.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"271\" height=\"144\" src=\"https://wordpress.org/documentation/files/2022/08/Crowdsignal-HelpHub-SS-21.png\" alt=\"Additional CSS Class(es) option for the Crowdsignal Embed block.\" class=\"wp-image-15954145\" /></figure>\n\n\n\n<p>The \u201cAdditional CSS class(es)\u201d lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-29\n<ul class=\"wp-block-list\">\n<li>Removed the external link</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-26 <ul><li>Video walkthrough created</li></ul>\n<ul class=\"wp-block-list\">\n<li>Updated with images from WordPress 6.0</li>\n\n\n\n<li>Added new \u201cTransform to\u201d setting (Column)</li>\n\n\n\n<li>Added \u201cLock\u201d information under More Options</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-17\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshots</li>\n\n\n\n<li>Replaced &#8220;More Options&#8221; &#8211; new screenshot,</li>\n\n\n\n<li>Added &#8220;Move to&#8221; and &#8220;Copy&#8221; section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-07-25\n<ul class=\"wp-block-list\">\n<li>Uploaded image for crowdsignal embed with green background</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-03</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Crowdsignal Embed block, you can embed Crowdsignal polls (or surveys or votes) into your posts and pages. You need a Crowdsignal account to be able to create polls (or surveys or votes) before you can embed them into your posts or pages. Example of an Embedded [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13069582",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13069582",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13069582"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13069582/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360300,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13069582/revisions/16360300"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13069582"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13069582"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

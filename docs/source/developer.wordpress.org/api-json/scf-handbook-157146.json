@@ -1,0 +1,91 @@
+{
+    "id": 157146,
+    "date": "2025-02-21T04:17:08",
+    "date_gmt": "2025-02-21T04:17:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/blocks-file/"
+    },
+    "modified": "2025-02-21T05:46:12",
+    "modified_gmt": "2025-02-21T05:46:12",
+    "slug": "blocks-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/blocks-file/",
+    "title": {
+        "rendered": "Blocks Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_add_block_namespace()</code></h2>\n<p>Prefix block names for SCF blocks registered through block.json</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@param array $metadata The block metadata array.</li>\n<li>@return array The original array with a prefixed block name if it&#8217;s an ACF block.</li>\n</ul>\n<h2><code>acf_handle_json_block_registration()</code></h2>\n<p>Handle an SCF block registered through block.json</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@param array $settings The compiled block settings.</li>\n<li>@param array $metadata The raw json metadata.</li>\n<li>@return array Block registration settings with ACF required additions.</li>\n</ul>\n<h2><code>acf_is_acf_block_json()</code></h2>\n<p>Check if a block.json block is an SCF block.</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@param array $metadata The raw block metadata array.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_register_block_type()</code></h2>\n<p>Registers a block type.</p>\n<ul>\n<li>@date    18/2/19</li>\n<li>@since ACF 5.8.0</li>\n<li>@param   array $block The block settings.</li>\n<li>@return (array|false)</li>\n</ul>\n<h2><code>acf_register_block()</code></h2>\n<p>See acf_register_block_type().</p>\n<ul>\n<li>@date    18/2/19</li>\n<li>@since ACF 5.7.12</li>\n<li>@param   array $block The block settings.</li>\n<li>@return (array|false)</li>\n</ul>\n<h2><code>acf_has_block_type()</code></h2>\n<p>Returns true if a block type exists for the given name.</p>\n<ul>\n<li>@since   ACF 5.7.12</li>\n<li>@param   string $name The block type name.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_get_block_types()</code></h2>\n<p>Returns an array of all registered block types.</p>\n<ul>\n<li>@since   ACF 5.7.12</li>\n<li>@return  array</li>\n</ul>\n<h2><code>acf_get_block_type()</code></h2>\n<p>Returns a block type for the given name.</p>\n<ul>\n<li>@since   ACF 5.7.12</li>\n<li>@param   string $name The block type name.</li>\n<li>@return (array|null)</li>\n</ul>\n<h2><code>acf_remove_block_type()</code></h2>\n<p>Removes a block type for the given name.</p>\n<ul>\n<li>@since   ACF 5.7.12</li>\n<li>@param   string $name The block type name.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_block_type_default_attributes()</code></h2>\n<p>Returns an array of default attribute settings for a block type.</p>\n<ul>\n<li>@date    19/11/18</li>\n<li>@since ACF 5.8.0</li>\n<li>@param array $block_type A block configuration array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_validate_block_type()</code></h2>\n<p>Validates a block type ensuring all settings exist.</p>\n<ul>\n<li>@since   ACF 5.8.0</li>\n<li>@param   array $block The block settings.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_prepare_block()</code></h2>\n<p>Prepares a block for use in render_callback by merging in all settings and attributes.</p>\n<ul>\n<li>@since   ACF 5.8.0</li>\n<li>@param   array $block The block props.</li>\n<li>@return array|boolean</li>\n</ul>\n<h2><code>acf_add_back_compat_attributes()</code></h2>\n<p>Add backwards compatible attribute values.</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@param array $block The original block.</li>\n<li>@return array Modified block array with backwards compatibility attributes.</li>\n</ul>\n<h2><code>acf_get_block_back_compat_attribute_key_array()</code></h2>\n<p>Get back compat new values and old values.</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@return array back compat key array.</li>\n</ul>\n<h2><code>acf_render_block_callback()</code></h2>\n<p>The render callback for all ACF blocks.</p>\n<ul>\n<li>@date    28/10/20</li>\n<li>@since ACF 5.9.2</li>\n<li>@param   array    $attributes The block attributes.</li>\n<li>@param string   $content    The block content.</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_block/\" rel=\"class\">WP_Block</a> $wp_block   The block instance (since WP 5.5).</li>\n<li>@return string The block HTML.</li>\n</ul>\n<h2><code>acf_rendered_block()</code></h2>\n<p>Returns the rendered block HTML.</p>\n<ul>\n<li>@date    28/2/19</li>\n<li>@since ACF 5.7.13</li>\n<li>@param   array    $attributes     The block attributes.</li>\n<li>@param string   $content        The block content.</li>\n<li>@param boolean  $is_preview     Whether or not the block is being rendered for editing preview.</li>\n<li>@param integer  $post_id        The current post being edited or viewed.</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_block/\" rel=\"class\">WP_Block</a> $wp_block       The block instance (since WP 5.5).</li>\n<li>@param array    $context        The block context array.</li>\n<li>@param boolean  $is_ajax_render Whether or not this is an ACF AJAX render.</li>\n<li>@return string   The block HTML.</li>\n</ul>\n<h2><code>acf_render_block()</code></h2>\n<p>Renders the block HTML.</p>\n<ul>\n<li>@since   ACF 5.7.12</li>\n<li>@param   array    $attributes The block attributes.</li>\n<li>@param string   $content    The block content.</li>\n<li>@param boolean  $is_preview Whether or not the block is being rendered for editing preview.</li>\n<li>@param integer  $post_id    The current post being edited or viewed.</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_block/\" rel=\"class\">WP_Block</a> $wp_block   The block instance (since WP 5.5).</li>\n<li>@param array    $context    The block context array.</li>\n<li>@return void|string</li>\n</ul>\n<h2><code>acf_block_render_template()</code></h2>\n<p>Locate and include an ACF block&#8217;s template.</p>\n<ul>\n<li>@since   ACF 6.0.4</li>\n<li>@param   array   $block      The block props.</li>\n<li>@param string  $content    The block content.</li>\n<li>@param boolean $is_preview Whether this is a preview render.</li>\n<li>@param int     $post_id    The post ID this block is saved to.</li>\n<li>@param object  $wp_block   The block instance object.</li>\n<li>@param array   $context    The block context array.</li>\n</ul>\n<h2><code>acf_get_block_fields()</code></h2>\n<p>Returns an array of all fields for the given block.</p>\n<ul>\n<li>@date    24/10/18</li>\n<li>@since ACF 5.8.0</li>\n<li>@param   array $block The block props.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_enqueue_block_assets()</code></h2>\n<p>Enqueues and localizes block scripts and styles.</p>\n<ul>\n<li>@since   ACF 5.7.13</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_enqueue_block_type_assets()</code></h2>\n<p>Enqueues scripts and styles for a specific block type.</p>\n<ul>\n<li>@since   ACF 5.7.13</li>\n<li>@param   array $block_type The block type settings.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_ajax_fetch_block()</code></h2>\n<p>Handles the ajax request for block data.</p>\n<ul>\n<li>@since   ACF 5.7.13</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_get_empty_block_form_html()</code></h2>\n<p>Render the empty block form for when a block has no fields assigned.</p>\n<ul>\n<li>@since   ACF 6.0.0</li>\n<li>@param   string $block_name The block name current being rendered.</li>\n<li>@return string The html that makes up a block form with no fields.</li>\n</ul>\n<h2><code>acf_parse_save_blocks()</code></h2>\n<p>Parse content that may contain HTML block comments and saves ACF block meta.</p>\n<ul>\n<li>@since   ACF 5.7.13</li>\n<li>@param   string $text Content that may contain HTML block comments.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_parse_save_blocks_callback()</code></h2>\n<p>Callback used in preg_replace to modify ACF Block comment.</p>\n<ul>\n<li>@since   ACF 5.7.13</li>\n<li>@param   array $matches The preg matches.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_get_block_id()</code></h2>\n<p>Return or generate a block ID.</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@param array   $attributes A block attributes array.</li>\n<li>@param array   $context    The block context array, defaults to an empty array.</li>\n<li>@param boolean $force      If we should generate a new block ID even if one exists.</li>\n<li>@return string A block ID.</li>\n</ul>\n<h2><code>acf_ensure_block_id_prefix()</code></h2>\n<p>Ensure a block ID always has a block_ prefix for post meta internals.</p>\n<ul>\n<li>@since ACF 6.0.0</li>\n<li>@param string $block_id A possibly non-prefixed block ID.</li>\n<li>@return string A prefixed block ID.</li>\n</ul>\n<h2><code>acf_serialize_block_attributes()</code></h2>\n<p>This directly copied from the WordPress core <code>serialize_block_attributes()</code> function.</p>\n<ul>\n<li>We need this in order to make sure that block attributes are stored in a way that is<br />\nconsistent with how Gutenberg sends them over from JS, and so that things like <a href=\"https://developer.wordpress.org/reference/functions/wp_kses/\" rel=\"function\">wp_kses()</a> <br />\nwork as expected. Copied from core to get around a bug that was fixed in 5.8.1 or on the off chance<br />\nthat folks are still using WP 5.3 or below.</li>\n<li>TODO: Remove this when we refactor <code>acf_parse_save_blocks_callback()</code> to use <code>serialize_block()</code>,<br />\nor when we&#8217;re confident that folks aren&#8217;t using WP versions prior to 5.8.</li>\n<li>@since ACF 5.12</li>\n<li>@param array $block_attributes Attributes object.</li>\n<li>@return string Serialized attributes.</li>\n</ul>\n<h2><code>acf_get_block_validation_state()</code></h2>\n<p>Handle validating a block&#8217;s fields and return the validity, and any errors.</p>\n<ul>\n<li>This function can use values loaded into Local Meta, which means they have to be<br />\nconverted back to the data format before they can be validated.</li>\n<li>@since ACF 6.3</li>\n<li>@param array   $block          An array of the block&#8217;s data attribute.</li>\n<li>@param boolean $using_defaults True if the block is currently being generated with default values. Default false.</li>\n<li>@param boolean $use_post_data  True if we should validate the POSTed data rather than local meta values. Default false.</li>\n<li>@param boolean $on_load        True if we&#8217;re validating as part of a render. This is essentially the same as a first load. Default false.</li>\n<li>@return array An array containing a valid boolean, and an errors array.</li>\n</ul>\n<h2><code>acf_validate_block_from_post_data()</code></h2>\n<p>Handle the specific validation for a block from POSTed values.</p>\n<ul>\n<li>@since ACF 6.3.1</li>\n<li>@param array $block The block object containing the POSTed values and other block data.</li>\n<li>@return array|boolean An array containing the validation errors, or false if there are no errors.</li>\n</ul>\n<h2><code>acf_validate_block_from_local_meta()</code></h2>\n<p>Handle the specific validation for a block from local meta.</p>\n<ul>\n<li>This function uses the values loaded into Local Meta, which means they have to be<br />\nconverted back to the data format because they can be validated.</li>\n<li>@since ACF 6.3.1</li>\n<li>@param string  $block_id       The block ID.</li>\n<li>@param array   $field_objects  The field objects in local meta to be validated.</li>\n<li>@param boolean $using_defaults True if this is the first load of the block, when special validation may apply.</li>\n<li>@return array|boolean An array containing the validation errors, or false if there are no errors.</li>\n</ul>\n<h2><code>acf_set_after_rest_media_enqueue_reset_flag()</code></h2>\n<p>Set ACF data before a rest call if media scripts have not been enqueued yet for after REST reset.</p>\n<ul>\n<li>@date    07/06/22</li>\n<li>@since ACF 6.0</li>\n<li>@param   <a href=\"https://developer.wordpress.org/reference/classes/wp_rest_response/\" rel=\"class\">WP_REST_Response</a>|<a href=\"https://developer.wordpress.org/reference/classes/wp_http_response/\" rel=\"class\">WP_HTTP_Response</a>|<a href=\"https://developer.wordpress.org/reference/classes/wp_error/\" rel=\"class\">WP_Error</a>|mixed $response The WordPress response object.</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_reset_media_enqueue_after_rest()</code></h2>\n<p>Reset wp_enqueue_media action count after REST call so it can happen inside the main execution if required.</p>\n<ul>\n<li>@date    07/06/22</li>\n<li>@since ACF 6.0</li>\n<li>@param   <a href=\"https://developer.wordpress.org/reference/classes/wp_rest_response/\" rel=\"class\">WP_REST_Response</a>|<a href=\"https://developer.wordpress.org/reference/classes/wp_http_response/\" rel=\"class\">WP_HTTP_Response</a>|<a href=\"https://developer.wordpress.org/reference/classes/wp_error/\" rel=\"class\">WP_Error</a>|mixed $response The WordPress response object.</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_block_uses_post_meta()</code></h2>\n<p>Checks if the provided block is configured to save/load post meta.</p>\n<ul>\n<li>@since ACF 6.3</li>\n<li>@param array $block The block to check.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_add_block_meta_values()</code></h2>\n<p>Loads ACF field values from the post meta if the block is configured to do so.</p>\n<ul>\n<li>@since ACF 6.3</li>\n<li>@param array   $block   The block to get values for.</li>\n<li>@param integer $post_id The ID of the post to retrieve meta from.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_save_block_meta_values()</code></h2>\n<p>Stores ACF field values in post meta for any blocks configured to do so.</p>\n<ul>\n<li>@since ACF 6.3</li>\n<li>@param integer $post_id The ID of the post being saved.</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_post/\" rel=\"class\">WP_Post</a> $post    The post object.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_block_meta_values_to_save()</code></h2>\n<p>Iterates over blocks in post content and retrieves values<br />\nthat need to be saved to post meta.</p>\n<ul>\n<li>@since ACF 6.3</li>\n<li>@param string $content The content saved for the post.</li>\n<li>@return array An array containing the field values that need to be saved.</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157146",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157146",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157146/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157315,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157146/revisions/157315"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157146"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

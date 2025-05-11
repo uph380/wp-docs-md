@@ -1,0 +1,97 @@
+{
+    "id": 152057,
+    "date": "2024-01-26T16:43:01",
+    "date_gmt": "2024-01-26T16:43:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=152057"
+    },
+    "modified": "2024-01-26T16:44:38",
+    "modified_gmt": "2024-01-26T16:44:38",
+    "slug": "internationalization",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/internationalization/",
+    "title": {
+        "rendered": "Internationalization"
+    },
+    "content": {
+        "rendered": "\n<p>Internationalization is the process of developing your theme in such a way that its custom text can be translated into other languages. The term is often abbreviated as \u201ci18n\u201d because there are 18 letters between the \u201ci\u201d and \u201cn,\u201d the first and last letters.</p>\n\n\n\n<p>In this article, you will learn how to internationalize your WordPress themes and why it is important.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why internationalization is important</h2>\n\n\n\n<p>WordPress is used all over the world, in countries where your native language is not used. The strings in the WordPress themes need to be coded in a special way so that they can be easily translated into other languages.&nbsp;</p>\n\n\n\n<p>Even if you yourself do not know multiple languages, internationalization leaves the door open for translators to localize the text. Localization is the process of taking internationalized text and translating it for a specific language and locale. It is often abbreviated as \u201cl10n.\u201d</p>\n\n\n\n<p>WordPress has a built-in translation system that allows localizing a theme without having to modify the source code of the theme itself. This is important because it means that users can keep up with theme updates while using their preferred translation.</p>\n\n\n\n<p>You can certainly build a WordPress theme without internationalization, particularly if it\u2019s for a site that you know will never be translated. But in most cases, it is considered standard practice to internationalize all of your theme\u2019s text. For one, it means that it can be used by people in other languages, giving you a wider audience. And it <a href=\"https://make.wordpress.org/themes/handbook/review/required/#8-language-internationalization\">is also a requirement</a> when submitting a theme to the official <a href=\"https://wordpress.org/themes/\">Theme Directory</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to internationalize your theme</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Getting your text domain</h3>\n\n\n\n<p>The text domain is a unique identifier, allowing WordPress to distinguish between all of the loaded translations. That means that you need something unique for your theme so that WordPress will recognize translations that belong to it.</p>\n\n\n\n<p>The text domain is used in three different places in your theme:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>In the <code>style.css</code> file header.</li>\n\n\n\n<li>As an argument in internationalization functions.</li>\n\n\n\n<li>As an argument when loading translations (optional for themes submitted to the WordPress <a href=\"https://wordpress.org/themes/\">Theme Directory</a>).</li>\n</ul>\n\n\n\n<p>Your theme\u2019s text domain should always match your theme slug, as described in the <a href=\"https://developer.wordpress.org/themes/getting-started/reading-this-handbook/#how-to-read-code-examples\">Reading this handbook</a> documentation. This is a central component in making sure your theme is ready for translation.</p>\n\n\n\n<p>The <em>de facto</em> standard (and requirement if submitting your theme to the WordPress Theme Directory) is to use the <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case\">kebab-case</a> version of your theme name. This means that it should:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Use all lowercase letters.</li>\n\n\n\n<li>Have no spaces.</li>\n\n\n\n<li>Hyphenate when there are multiple words.</li>\n</ul>\n\n\n\n<p>So if your theme\u2019s name is <code>Fabled Sunset</code>, your text domain should be <code>fabled-sunset</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Defining your text domain</h3>\n\n\n\n<p>As described in the <a href=\"https://developer.wordpress.org/themes/core-concepts/main-stylesheet/\">Main Stylesheet</a> documentation, you can configure several important pieces of metadata about your theme via the <code>style.css</code> file header. In particular, there are two meta values you can define related to internationalization:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Text Domain:</strong> The string used for the text domain for translations.</li>\n\n\n\n<li><strong>Domain Path:</strong> A relative path to where theme translations are stored. WordPress uses this field when the theme is disabled to detect translations. Defaults to <code>/languages</code> if not defined.</li>\n</ul>\n\n\n\n<p>For translations to work correctly, you must at least define the <code>Text Domain</code> field, which should be your theme\u2019s slug.</p>\n\n\n\n<p>Let\u2019s imagine your theme name is \u201cFabled Sunset\u201d and you want translations stored in your theme\u2019s <code>/assets/lang</code> folder. Your theme\u2019s <code>style.css</code> should define these fields like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">/**\n * Theme Name:        Fabled Sunset\n * ...\n * Text Domain:       fabled-sunset\n * Domain Path:       /assets/lang\n * ...\n */</code></pre>\n\n\n\n<p>It\u2019s important to add this metadata to your <code>style.css</code> file because WordPress uses it even when the theme is not enabled (for example, when viewing all themes from the <strong>Appearance &gt; Themes</strong> screen in the admin).</p>\n\n\n\n<h3 class=\"wp-block-heading\">Wrapping text with internationalization functions</h3>\n\n\n\n<p>For text in your theme to be easily translated in your theme, it must be wrapped in an internationalization function instead of hardcoded. The available <a href=\"https://developer.wordpress.org/apis/internationalization/internationalization-functions/\">internationalization functions</a> are listed in the Common APIs handbook.</p>\n\n\n\n<p>In a typical HTML-based webpage, you would add plain text strings. For example, take a look at this example heading:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;h2&gt;Latest Posts&lt;/h2&gt;</code></pre>\n\n\n\n<p>Because it is merely plain text, it cannot be translated into other languages without directly modifying the code.</p>\n\n\n\n<p>Let\u2019s wrap that text in the <a href=\"https://developer.wordpress.org/reference/functions/_e/\"><code>_e()</code></a> internationalization function, which tells WordPress that the text inside should be available for translation and echoed (printed to the screen):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;h2&gt;&lt;?php _e( 'Latest Posts', 'themeslug' ); ?&gt;&lt;/h2&gt;</code></pre>\n\n\n\n<p>Now users can add translations for your theme without touching the code.</p>\n\n\n\n<p>As you may have noticed, the <code>_e()</code> function accepted a second parameter of <code>themeslug</code>. This should be replaced with your text domain.</p>\n\n\n\n<p>There are many other internationalization functions that you will use, and you will learn about them later. For now, the idea is to introduce you to the basic concept.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Because internationalized text is technically a PHP variable, it means that it can be exploited and become a security vulnerability. You should always use the <a href=\"https://developer.wordpress.org/apis/internationalization/internationalization-functions/#translate-escape-functions\">translate-and-escape functions</a> when possible. Otherwise, be sure to wrap them in an escaping function when outputting, as described in the <a href=\"https://developer.wordpress.org/themes/advanced-topics/security/\">Security</a> documentation.</p></div></div>\n\n\n\n<h3 class=\"wp-block-heading\">Loading translations</h3>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>For themes hosted in the WordPress <a href=\"https://wordpress.org/themes/\">Theme Directory</a>, you do not need to load translations. WordPress automatically checks the <code>wp-content/languages</code> directory in a user\u2019s install and will download translations from the <a href=\"https://translate.wordpress.org/\">Translating WordPress</a> site. All translations can be handled there, and you don\u2019t have to worry about storing or loading them from your theme.</p></div></div>\n\n\n\n<p>Translation in WordPress are saved in <code>.po</code> (human readable) and <code>.mo</code> (machine readable) files. The <code>.mo</code> files are the ones actually used by WordPress.\u00a0</p>\n\n\n\n<p>WordPress will look in two places for translation files based on the user\u2019s locale defined for the site:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>wp-content/themes/your-theme/{domain-path}/{locale}.mo</code></li>\n\n\n\n<li><code>wp-content/languages/themes/{textdomain}-{locale}.mo</code></li>\n</ul>\n\n\n\n<p>To load translation files from your theme, you must use one of two functions:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/load_theme_textdomain/\"><code>load_theme_textdomain()</code></a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/load_child_theme_textdomain/\"><code>load_child_theme_textdomain()</code></a> (if building a <a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\">child theme</a>)</li>\n</ul>\n\n\n\n<p>Let\u2019s take a look at the <code>load_theme_textdomain()</code> function signature (it\u2019s the same for both functions):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">load_theme_textdomain(\n\tstring $domain, \n\tstring|false $path = false \n): bool</code></pre>\n\n\n\n<p>The function accepts two parameters:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>$domain</code>:</strong> This should be the text domain for your theme as defined in <code>style.css</code>.</li>\n\n\n\n<li><strong><code>$path</code>:</strong> This must be a full directory path to the location of translations in your theme. If left undefined, WordPress will fall back to your theme\u2019s root folder.</li>\n</ul>\n\n\n\n<p>Using the same example \u201cFabled Sunset\u201d theme described earlier with translations stored in the <code>/assets/lang</code> folder, let\u2019s try loading translations from the theme.</p>\n\n\n\n<p>Add this code to your theme\u2019s <code>functions.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'after_setup_theme', 'themeslug_load_textdomain' );\n\nfunction themeslug_load_textdomain() {\n\tload_theme_textdomain(\n\t\t'fabled-sunset',\n\t\tget_parent_theme_file_path( 'assets/lang' )\n\t);\n}</code></pre>\n\n\n\n<p>The above call to <code>load_theme_textdomain()</code> was executed on the <a href=\"https://developer.wordpress.org/reference/hooks/after_setup_theme/\"><code>after_setup_theme</code></a> action hook, which fires immediately after the theme\u2019s <code>functions.php</code> is loaded.</p>\n\n\n\n<p>If you were building a child theme, your <code>functions.php</code> code would instead look like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'after_setup_theme', 'themeslug_load_textdomain' );\n\nfunction themeslug_load_textdomain() {\n\tload_child_theme_textdomain(\n\t\t'fabled-sunset',\n\t\tget_theme_file_path( 'assets/lang' )\n\t);\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<p>Internationalization is a large topic and is covered in full in the <a href=\"https://developer.wordpress.org/apis/internationalization/\">Internationalization chapter</a> of the Common APIs handbook. What you learn there will apply to both theme and plugin development.</p>\n\n\n\n<p>WordPress has many <a href=\"https://developer.wordpress.org/apis/internationalization/internationalization-functions/\">internationalization functions</a> for you to use when wrapping text. Which one to use will be context-specific. Take the time to study each function so that you will know when to use it. The <a href=\"https://developer.wordpress.org/apis/internationalization/internationalization-guidelines/\">Internationalization Guidelines</a> will set you down the correct path.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152057",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152057",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152057/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152059,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152057/revisions/152059"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152057"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

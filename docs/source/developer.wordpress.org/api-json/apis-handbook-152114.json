@@ -1,0 +1,91 @@
+{
+    "id": 152114,
+    "date": "2024-01-29T05:19:45",
+    "date_gmt": "2024-01-29T05:19:45",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=152114"
+    },
+    "modified": "2024-01-29T05:19:48",
+    "modified_gmt": "2024-01-29T05:19:48",
+    "slug": "hooks",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/hooks/",
+    "title": {
+        "rendered": "Hooks"
+    },
+    "content": {
+        "rendered": "\n<p>Hooks are a way for one piece of code to interact/modify another piece of code at specific, pre-defined spots.\u00a0</p>\n\n\n\n<p>You can read more about how to use Hooks in the <a href=\"https://developer.wordpress.org/plugins/hooks/\">Plugin Developer Handbook</a>.</p>\n\n\n\n<p>The reference guides below are a list of action and filter hooks available in WordPress.</p>\n\n\n\n<p><a href=\"https://developer.wordpress.org/apis/action-reference/\" data-type=\"link\" data-id=\"https://developer.wordpress.org/apis/action-reference/\">Action Reference</a></p>\n\n\n\n<p><a href=\"https://developer.wordpress.org/apis/filter-reference/\" data-type=\"link\" data-id=\"https://developer.wordpress.org/apis/filter-reference/\">Filter Reference</a></p>\n",
+        "protected": false
+    },
+    "author": 7511363,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152114",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/152114",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7511363"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/152114/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152118,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/152114/revisions/152118"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152114"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

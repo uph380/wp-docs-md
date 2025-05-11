@@ -1,0 +1,109 @@
+{
+    "id": 11289129,
+    "date": "2019-03-08T06:50:07",
+    "date_gmt": "2019-03-08T06:50:07",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11289129"
+    },
+    "modified": "2024-06-08T18:45:00",
+    "modified_gmt": "2024-06-08T18:45:00",
+    "slug": "settings-privacy-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-privacy-screen/",
+    "title": {
+        "rendered": "Settings Privacy screen"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress 4.9.6 included a Privacy Settings tool. Administrator can\ncreate new page or specify existing one as Privacy Policy page of the\nsite.\n</p>\n\n\n\n<p>Note: The new page will include help and suggestions for your\nprivacy policy.\tHowever, it is your responsibility to use those\nresources correctly, to provide the information that your privacy policy\n requires, and to keep that information current and accurate.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Privacy Settings tool</h3>\n\n\n\n<p>1. Select <strong>Settings</strong> -&gt; <strong>Privacy</strong> from Administration Screens. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11188507\"><img loading=\"lazy\" decoding=\"async\" width=\"1083\" height=\"673\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6.jpg?fit=1083%2C673&amp;ssl=1\" alt=\"\" class=\"wp-image-11188507\" srcset=\"https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6.jpg 1083w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6-300x186.jpg 300w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6-1024x636.jpg 1024w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6-768x477.jpg 768w\" sizes=\"auto, (max-width: 1083px) 100vw, 1083px\" /></a></figure>\n\n\n\n<p>2. Click <strong>Create New Page</strong> to generate a Privacy Policy Page. Or, Select an existing page which you want to use from drop down box and click <strong>Use This Page</strong>. </p>\n\n\n\n<p>3. If you click <strong>Create New Page</strong>, then template page titled Privacy Policy will be opened.  Modify the contents and click Publish.\n</p>\n\n\n\n<p>Hint: If you need help, click the link of &#8216;Check out our guide&#8217; for recommendations on what content to include. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11188509\"><img loading=\"lazy\" decoding=\"async\" width=\"1089\" height=\"683\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/02/PrivacySettingsTool_Editor_4.9.6.jpg?fit=1089%2C683&amp;ssl=1\" alt=\"\" class=\"wp-image-11188509\" srcset=\"https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_Editor_4.9.6.jpg 1089w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_Editor_4.9.6-300x188.jpg 300w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_Editor_4.9.6-1024x642.jpg 1024w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_Editor_4.9.6-768x482.jpg 768w\" sizes=\"auto, (max-width: 1089px) 100vw, 1089px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Where is the Privacy Policy page displayed?</h2>\n\n\n\n<p>The Privacy Policy page will be shown on your login and registration pages. Notice the bottom Link &#8216;Privacy Policy&#8217;. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11188516\"><img loading=\"lazy\" decoding=\"async\" width=\"435\" height=\"568\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6_login.jpg?fit=435%2C568&amp;ssl=1\" alt=\"\" class=\"wp-image-11188516\" srcset=\"https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6_login.jpg 435w, https://wordpress.org/documentation/files/2019/02/PrivacySettingsTool_4.9.6_login-230x300.jpg 230w\" sizes=\"auto, (max-width: 435px) 100vw, 435px\" /></a></figure>\n\n\n\n<p>It is your responsibility to create a link to the Privacy Policy page to every page on your site. But theme will support such function soon. For example, Twenty Seventeen adds the link to the Privacy Policy page at the bottom. </p>\n\n\n\n<h2 class=\"wp-block-heading\">To Theme Developers</h2>\n\n\n\n<p>For users convenience, you should refer these new functions.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> <code>get_privacy_policy_url()</code> &#8211; Retrieves the URL to the privacy policy page.</li><li> <code>the_privacy_policy_link()</code> &#8211; Displays the privacy policy link with formatting, when applicable.</li><li> <code>get_the_privacy_policy_link()</code> &#8211; Returns the privacy policy link with formatting, when applicable.</li></ul>\n\n\n\n<p>This is the example from Twenty Seventeen (twentyseventeen/template-parts/footer/site-info.php) </p>\n\n\n\n<pre class=\"wp-block-preformatted\">if ( function_exists( 'the_privacy_policy_link' ) ) {\n    the_privacy_policy_link( '', '&lt;span role=\"separator\" aria-hidden=\"true\"&gt;&lt;/span&gt;' );\n}\n</pre>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress 4.9.6 included a Privacy Settings tool. Administrator can create new page or specify existing one as Privacy Policy page of the site. Note: The new page will include help and suggestions for your privacy policy. However, it is your responsibility to use those resources correctly, to provide the information that your privacy policy requires, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11289129",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289129",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11289129"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289129/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360397,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11289129/revisions/16360397"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11289129"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11289129"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

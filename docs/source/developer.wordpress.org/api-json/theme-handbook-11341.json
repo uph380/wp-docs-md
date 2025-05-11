@@ -1,0 +1,97 @@
+{
+    "id": 11341,
+    "date": "2014-10-22T21:23:09",
+    "date_gmt": "2014-10-22T21:23:09",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11341"
+    },
+    "modified": "2022-10-29T02:30:21",
+    "modified_gmt": "2022-10-29T02:30:21",
+    "slug": "taxonomy-templates",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/",
+    "title": {
+        "rendered": "Taxonomy Templates"
+    },
+    "content": {
+        "rendered": "\n<p>When a visitor clicks on a hyperlink to category, tag or custom taxonomy, WordPress displays a page of posts in reverse chronological order filtered by that taxonomy.</p>\n\n\n\n<p>By default, this page is generated using the <em>index.php</em> template file. You can create optional template files to override and refine the <em>index.php</em> template files. This section explains how to use and create such templates.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Taxonomy Template Hierarchy</h2>\n\n\n\n<p>WordPress display posts in the order determined by the <a title=\"Template Hierarchy\" href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a>.</p>\n\n\n\n<p>The <em>category.php</em>, <em>tag.php</em>, and <em>taxonomy.php</em> templates allow posts <strong>filtered</strong> by taxonomy to be treated differently from <strong>unfiltered</strong> posts or posts <strong>filtered by a different taxonomy</strong>. (Note: post refers to any post type &#8211; posts, pages, custom post types, etc.). These files let you target specific taxonomies or specific taxonomy terms. For example:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><em>taxonomy-{taxonomy}-{term}.php</em></li>\n\n\n\n<li><em>taxonomy-{taxonomy}.php</em></li>\n\n\n\n<li><em>tag-{slug}.php</em></li>\n\n\n\n<li><em>tag-{id}.php</em></li>\n\n\n\n<li><em>category-{slug}.php</em></li>\n\n\n\n<li><em>category-{ID}.php</em></li>\n</ul>\n\n\n\n<p>So you could format all posts in an animal taxonomy named <em>news</em> on a page that looks different from posts filtered in other categories.</p>\n\n\n\n<p>The <em>archive.php</em> template provides the most general form of control, providing a layout for all archives; that is, a page that displays a list of posts.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Category</h3>\n\n\n\n<p>For categories, WordPress looks for the <em>category-{slug}.php</em> file. If it doesn&#8217;t exist, WordPress then looks for a file for the next hierarchical level, <em>category-{ID}.php</em>, and so on. If WordPress fails to find any specialized templates or an <em>archive.php</em> template file, it reverts to the default behavior, using <em>index.php</em>.</p>\n\n\n\n<p>The category hierarchy is listed below:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><em>category-{slug}.php</em>: For example, if the category&#8217;s slug is named &#8220;news,&#8221; WordPress would look for a file named <em>category-news.php.</em></li>\n\n\n\n<li><em>category-{ID}.php</em>: For example, if the category&#8217;s ID is &#8220;6&#8221;, WordPress would look for a file named <em>category-6.php.</em></li>\n\n\n\n<li><em>category.php</em></li>\n\n\n\n<li><em>archive.php</em></li>\n\n\n\n<li><em>index.php</em></li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Tag</h3>\n\n\n\n<p>For tags, WordPress looks for the <em>tag-{slug}.php</em> file. If it doesn&#8217;t exist, WordPress then looks for a file for the next hierarchical level, <em>tag-{ID}.php</em>, and so on. If WordPress fails to find any specialized templates or an <em>archive.php</em> template file, it will revert to the default behavior, using <em>index.php</em>.</p>\n\n\n\n<p>The tag hierarchy is listed below:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><em>tag-{slug}.php</em>: For example, if the tag&#8217;s slug is named &#8220;sometag,&#8221; WordPress would look for a file named <em>tag-sometag.php.</em></li>\n\n\n\n<li><em>tag-{id}.php</em>: For example, if the tag&#8217;s ID were &#8220;6,&#8221; WordPress would look for a file named <em>tag-6.php</em>.</li>\n\n\n\n<li><em>tag.php</em></li>\n\n\n\n<li><em>archive.php</em></li>\n\n\n\n<li><em>index.php</em></li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Custom Taxonomy</h3>\n\n\n\n<p>A custom taxonomy hierarchy works similarly to the categories and tags hierarchies described above. WordPress looks for the <em>taxonomy-{taxonomy}-{term}.php</em> file. If it doesn&#8217;t exist, WordPress then looks for a file for the next hierarchical level, <em>taxonomy-{taxonomy}.php</em>, and so on. If WordPress fails to find any specialized templates or an <em>archive.php</em> template file, it will revert to the default behavior, using <em>index.php</em>.</p>\n\n\n\n<p>The hierarchy for a custom taxonomy is listed below:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><em>taxonomy-{taxonomy}-{term}.php</em>: For example, if the taxonomy is named &#8220;sometax,&#8221; and the taxonomy&#8217;s term is &#8220;someterm,&#8221; WordPress would look for a file named <em>taxonomy-sometax-someterm.php</em>.</li>\n\n\n\n<li><em>taxonomy-{taxonomy}.php</em>: For example, if the taxonomy is named &#8220;sometax,&#8221; WordPress would look for a file named <em>taxonomy-sometax.php</em></li>\n\n\n\n<li><em>taxonomy.php</em></li>\n\n\n\n<li><em>archive.php</em></li>\n\n\n\n<li><em>index.php</em></li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">Creating Taxonomy Template Files</h2>\n\n\n\n<p>Now you&#8217;ve decided that you need to create custom designs for content based on taxonomies, where do you start?</p>\n\n\n\n<p>Rather than starting from a blank file, it is good practice to <strong>copy the next file in the hierarchy</strong>, if it exists. If you&#8217;ve already created an <em>archive.php</em>, make a copy called <em>category.php</em> and modify that to suit your design needs. If you don&#8217;t have an <em>archive.php</em> file, use a copy of your theme&#8217;s <em>index.php</em> as a starting point.</p>\n\n\n\n<p>Follow the same procedure if you are creating any taxonomy template file. Use a copy of your <em>archive.php</em>, <em>category.php</em>, <em>tag.php</em>, or <em>index.php</em> as a starting point.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<p>Now that you&#8217;ve selected the template file in your theme&#8217;s directory that you need to modify, let&#8217;s look at some examples.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Adding Text to Category Pages</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Static Text Above Posts</h4>\n\n\n\n<p>Suppose you want some static text displayed before the list of posts on your category page(s). &#8220;Static&#8221; is text that remains the same, no matter which posts are displayed below, and no matter which category is displayed.</p>\n\n\n\n<p>Open your file and above <a title=\"The Loop\" href=\"https://developer.wordpress.org/themes/basics/the-loop/\">The Loop</a> section of your Template file, insert the following code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;p&gt;This is some text that will display at the top of the Category page.&lt;/p&gt;</code></pre>\n\n\n\n<p>This text will only display on an archive page displaying posts in that category.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Different Text on Some Category Pages</h4>\n\n\n\n<p>What if you want to display different text based on the category page that the visitor is using? You could add default text to the main <em>category.php</em> file, and create special <em>category-{slug}.php</em> files each with their own version of the text, but this would create lots of files in your theme. Instead, you can use <a title=\"Conditional Tags\" href=\"https://developer.wordpress.org/themes/basics/conditional-tags/\">conditional tags</a>.</p>\n\n\n\n<p>Again, this code would be added before the loop:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( is_category( 'Category A' ) ) : ?&gt;\n\t&lt;p&gt;This is the text to describe category A.&lt;/p&gt;\n&lt;?php elseif ( is_category( 'Category B' ) ) : ?&gt;\n\t&lt;p&gt;This is the text to describe category B.&lt;/p&gt;\n&lt;?php else : ?&gt;\n\t&lt;p&gt;This is some generic text to describe all other category pages, I could be left blank.&lt;/p&gt;\n&lt;?php endif; ?&gt;</code></pre>\n\n\n\n<p>This code does the following:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Checks to see if the visitor has requested Category A. If yes, it displays the first piece of text.</li>\n\n\n\n<li>Checks for category B if the user didn&#8217;t request category A. If yes, it displays the second piece of text.</li>\n\n\n\n<li>Displays the default text, if neither was requested.</li>\n</ol>\n\n\n\n<h4 class=\"wp-block-heading\">Display Text only on First Page of Archive</h4>\n\n\n\n<p>If you have more posts than fits on one page of your archive, the category splits into multiple pages. Perhaps you want to display static text, if the user is on the first page of the results.</p>\n\n\n\n<p>To do this, use a PHP if statement that looks at the value of the $paged WordPress variable.</p>\n\n\n\n<p>Put the following above The Loop:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( $paged &lt; 2 ) : ?&gt;\n\t&lt;p&gt;Text for first page of Category archive.&lt;/p&gt;\n&lt;?php endif; ?&gt;</code></pre>\n\n\n\n<p>This code asks whether the page displayed is the first page of the archive. If it is, the text for the first page is displayed. Otherwise, the text for the subsequent pages is displayed.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Modify How Posts are Displayed</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Excerpts vs. Full Posts</h4>\n\n\n\n<p>You can choose whether to display full posts or just excerpts. By displaying excerpts, you shorten the length of your archive page.</p>\n\n\n\n<p>Open your file and find the loop. Look for:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">the_content()</code></pre>\n\n\n\n<p>And replace it with:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">the_excerpt()</code></pre>\n\n\n\n<p>And if your theme is displaying excerpts but you want to display the full content, replace <code>the_excerpt</code> with <code>the_content</code>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 17401,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11341",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11341",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11341/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143700,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11341/revisions/143700"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17401"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11341"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10829435,
+    "date": "2018-10-30T09:32:36",
+    "date_gmt": "2018-10-30T09:32:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10829435"
+    },
+    "modified": "2024-09-15T12:49:42",
+    "modified_gmt": "2024-09-15T12:49:42",
+    "slug": "updating-wordpress",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "title": {
+        "rendered": "Updating WordPress"
+    },
+    "content": {
+        "rendered": "\n<p><strong>WARNING:</strong> The upgrade process will affect all files and folders included in the main WordPress installation. This includes all the core files used to run WordPress. If you have made any modifications to those files, your changes will be lost.</p>\n\n\n\n<p>You should always update WordPress to the&nbsp;<a href=\"https://wordpress.org/download/\">latest version</a>. When a new version of WordPress is available you will receive an update message in your WordPress Admin Screens. To update WordPress, click the link in this message.</p>\n\n\n\n<p>There are two methods for updating &#8211; the easiest is the one-click update, which will work for most people. If it doesn&#8217;t work, or you just prefer to be more hands-on, you can follow the manual update process.</p>\n\n\n\n<p>If you are updating across multiple versions, follow the procedure at\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/upgrade/upgrading/\">Upgrading WordPress &#8211; Extended Instructions</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Back up WordPress</h2>\n\n\n\n<p>Before you get started, it&#8217;s a good idea to back up your website. This means if there are any issues you can restore your website. Complete instructions to make a backup can be found in the\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/security/backup/\">WordPress Backup</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Automatic Background Updates</h2>\n\n\n\n<p>For&nbsp;<a href=\"https://wordpress.org/documentation/wordpress-version/version-3-7/\">WordPress 3.7</a>+, you don\u2019t have to lift a finger to apply minor and security updates. Most sites are now able to automatically apply these updates in the background. If your site is capable of one-click updates without entering FTP credentials, then your site should be able to update from 3.7 to 3.7.1, 3.7.2, etc. (You\u2019ll still need to click \u201cUpdate Now\u201d for major feature releases.)</p>\n\n\n\n<h2 class=\"wp-block-heading\">One-click Update</h2>\n\n\n\n<p>WordPress lets you update with the click of a button. &nbsp;You can launch the update by clicking the link in the new version banner (if it&#8217;s there) or by going to the Dashboard &gt; Updates screen. Once you are on the &#8220;Update WordPress&#8221; page, click the button &#8220;Update Now&#8221; to start the process off. You shouldn&#8217;t need to do anything else and, once it&#8217;s finished, you will be up-to-date.</p>\n\n\n\n<p>One-click updates work on most servers. If you have any problems, it is probably related to permissions issues on the filesystem.</p>\n\n\n\n<h3 class=\"wp-block-heading\">File Ownership</h3>\n\n\n\n<p>WordPress determines what method it will use to connect to the filesystem of your server based on the file ownership of your WordPress files. If the files are owned by the owner of the current process (i.e., the user under which the web server is running),&nbsp;<em>and</em> new files created by WordPress will also be owned by that user, WordPress will directly modify the files all by itself, without asking you for credentials.</p>\n\n\n\n<p>WordPress won&#8217;t attempt to create the new files directly if they won&#8217;t have the correct ownership. Instead, you will be shown a dialog box asking for connection credentials. It is typical for the files to be owned by the FTP account that originally uploaded them. To perform the update, you just need to fill in the connection credentials for that FTP account.</p>\n\n\n\n<p>Whether your files are owned by the web server user, or not, will depend on how you installed WordPress and how your server is configured. On some shared hosting platforms, it is a security risk for the files to be owned by the web server user and not a FTP user. See the tutorial on\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/server/file-permissions/\">Changing File Permissions</a><a>\u00a0</a>for more information, including how to configure file permissions so that multiple FTP users are able to edit the files.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Failed Updates</h3>\n\n\n\n<p>If you see a &#8220;failed update&#8221; nag message, delete the file&nbsp;<strong>.maintenance</strong> from your WordPress directory using FTP. This will remove the &#8220;failed update&#8221; nag message.</p>\n\n\n\n<p>If the one-click upgrade doesn&#8217;t work for you, don&#8217;t panic! Just try a manual update.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Manual Update</h2>\n\n\n\n<p>These are the short instructions, if you want more check out the\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/upgrade/upgrading/\">extended upgrade</a> instructions. If you experience problems with the Three Step Update, you may want to review the\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/upgrade/upgrading/\">more detailed upgrade instructions</a>.</p>\n\n\n\n<p>For these instructions, it is assumed that your blog&#8217;s URL is&nbsp;<code>http://example.com/wordpress/</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 1: Replace WordPress files</h3>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Get the\u00a0<a href=\"https://wordpress.org/download/\">latest WordPress</a> zip (or tar.gz) file.</li>\n\n\n\n<li>Unpack the zip file that you downloaded.</li>\n\n\n\n<li>Deactivate plugins.</li>\n\n\n\n<li>Delete the old\u00a0<code>wp-includes</code> and\u00a0<code>wp-admin</code> directories on your web host (through your\u00a0<a href=\"https://wordpress.org/documentation/article/ftp-clients/\">FTP</a><a>\u00a0</a>or shell access).</li>\n\n\n\n<li>Using\u00a0<a href=\"https://wordpress.org/documentation/article/ftp-clients/\">FTP\u00a0</a>or your shell access, upload the new\u00a0<code>wp-includes</code> and\u00a0<code>wp-admin</code> directories to your web host, in place of the previously deleted directories.</li>\n\n\n\n<li>Upload the individual files from the new\u00a0<code>wp-content</code> folder to your existing\u00a0<code>wp-content</code> folder, overwriting existing files. Do NOT delete your existing\u00a0<code>wp-content</code> folder. Do NOT delete any files or folders in your existing\u00a0<code>wp-content</code> directory (except for the one being overwritten by new files).</li>\n\n\n\n<li>Upload all new loose files from the root directory of the new version to your existing WordPress root directory.</li>\n</ol>\n\n\n\n<p>NOTE &#8211; you should replace all the old WordPress files with the new ones in the&nbsp;<code>wp-includes</code> and&nbsp;<code>wp-admin</code> directories and sub-directories, and in the root directory (such as <code>index.php</code>, <code>wp-login.php</code> and so on). Don&#8217;t worry &#8211; your <code>wp-config.php</code> will be safe.</p>\n\n\n\n<p>Be careful when you come to copying the <code>wp-content</code> directory. You should make sure that you only copy the files from inside this directory, rather than replacing your entire <code>wp-content</code> directory. This is where your themes and plugins live, so you will want to keep them. If you have customized the default or classic themes without renaming them, make sure not to overwrite those files, otherwise you will lose your changes. (Though you might want to compare them for new features or fixes..)</p>\n\n\n\n<p>Lastly you should take a look at the <code>wp-config-sample.php</code> file, to see if any new settings have been introduced that you might want to add to your own <code>wp-config.php</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 1.5: Remove .maintenance file</h3>\n\n\n\n<p>If you&#8217;re upgrading manually after a failed auto-upgrade, delete the file .maintenance from your WordPress directory using FTP. This will remove the &#8220;failed update&#8221; nag message.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 2: Update your installation</h3>\n\n\n\n<p>Visit your main WordPress admin page at /wp-admin. You may be asked to login again. If a database upgrade is necessary at this point, WordPress will detect it and give you a link to a URL like&nbsp;<code>http://example.com/wordpress/wp-admin/upgrade.php</code>. Follow that link and follow the instructions. This will update your database to be compatible with the latest code. You should do this as soon as possible after step 1.</p>\n\n\n\n<p>Don&#8217;t forget to reactivate plugins!</p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 3: Do something nice for yourself</h3>\n\n\n\n<p>If you have caching enabled, clear the cache at this point so the changes will go live immediately. Otherwise, visitors to your site (including you) will continue to see the old version (until the cache updates).</p>\n\n\n\n<p>Your WordPress installation is successfully updated. That&#8217;s as simple as we can make it without&nbsp;<a href=\"https://codex.wordpress.org/Installing/Updating_WordPress_with_Subversion\">Updating WordPress Using Subversion</a>.</p>\n\n\n\n<p>Consider rewarding yourself with a blog post about the update, reading that book or article you&#8217;ve been putting off, or simply sitting back for a few moments and letting the world pass you by.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Final Steps</h2>\n\n\n\n<p>Your update is now complete, so you can go in and enable your Plugins again.<br>If you have issues with logging in, try clearing cookies in your browser.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Troubleshooting</h2>\n\n\n\n<p>If anything has gone wrong, then the first thing to do is go through all the steps in our\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/upgrade/upgrading/\">extended upgrade instructions</a>. That page also has information about some of the most common problems we see.</p>\n\n\n\n<p>If you run into a request for FTP credentials with trying to update WP on a IIS server automatically, it may well be a matter of rights. Go into the IIS Management Console, and there to the application pool of your blog. In its advanced settings, change the Process Model Id into LocalSystem. Then on Sites, choose your blog, right click, click on Edit permissions and on security tab add authenticated users. That should do it.</p>\n\n\n\n<p>If you experience problems after the upgrade, you can always\u00a0<a href=\"https://developer.wordpress.org/advanced-administration/security/backup/\">restore your backup</a><a>\u00a0</a>and replace the files with ones from your previous version from the\u00a0<a href=\"https://wordpress.org/download/release-archive/\">release archive</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Other options</h3>\n\n\n\n<p>If you have some knowledge of unix shells you should check out&nbsp;<a href=\"https://developer.wordpress.org/cli/commands/\">wp-cli</a>.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WARNING: The upgrade process will affect all files and folders included in the main WordPress installation. This includes all the core files used to run WordPress. If you have made any modifications to those files, your changes will be lost. You should always update WordPress to the&nbsp;latest version. When a new version of WordPress is [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        33,
+        73
+    ],
+    "class_list": [
+        "post-10829435",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-maintenance",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10829435",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10829435"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10829435/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360951,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10829435/revisions/16360951"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10829435"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10829435"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 41299,
+    "date": "2019-03-22T18:11:54",
+    "date_gmt": "2019-03-22T18:11:54",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=41299"
+    },
+    "modified": "2024-02-20T10:37:33",
+    "modified_gmt": "2024-02-20T10:37:33",
+    "slug": "determining-plugin-and-content-directories",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/plugin-basics/determining-plugin-and-content-directories/",
+    "title": {
+        "rendered": "Determining Plugin and Content Directories"
+    },
+    "content": {
+        "rendered": "\n<p>When coding WordPress plugins you often need to reference various files and folders throughout the WordPress installation and within your plugin or theme.</p>\n\n\n\n<p>WordPress provides several functions for easily determining where a given file or directory lives. Always use these functions in your plugins instead of hard-coding references to the&nbsp;wp-content&nbsp;directory or using the WordPress&nbsp;internal constants.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">WordPress allows users to place their wp-content directory anywhere they want and rename it whatever they want. Never assume that plugins will be in wp-content/plugins, uploads will be in wp-content/uploads, or that themes will be in wp-content/themes.</div></div>\n\n\n\n\n<p>PHP&#8217;s <code>__FILE__</code> magic-constant resolves symlinks automatically, so if the&nbsp;<code>wp-content</code>&nbsp;or&nbsp;<code>wp-content/plugins</code>&nbsp;or even the individual plugin directory is symlinked, hardcoded paths will not work correctly.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"common-usage\">Common Usage</h2>\n\n\n\n<p>If your plugin includes JavaScript files, CSS files or other external files, then it&#8217;s likely you&#8217;ll need the URL to these files so you can load them into the page. To do this you should use the&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/plugins_url/\">plugins_url()</a>&nbsp;function like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">plugins_url( 'myscript.js', __FILE__ );</code></pre>\n\n\n\n<p>This will return the full URL to myscript.js, such as&nbsp;<code>example.com/wp-content/plugins/myplugin/myscript.js</code>.</p>\n\n\n\n<p>To load your plugins&#8217; JavaScript or CSS into the page you should use&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_script/\"><code>wp_enqueue_script()</code></a>&nbsp;or&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_style/\"><code>wp_enqueue_style()</code></a>&nbsp;respectively, passing the result of&nbsp;<code>plugins_url()</code>&nbsp;as the file URL.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"available-functions\">Available Functions</h2>\n\n\n\n<p>WordPress includes many other functions for determining paths and URLs to files or directories within plugins, themes, and WordPress itself. See the individual DevHub pages for each function for complete information on their use.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"plugins\">Plugins</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">plugins_url()\nplugin_dir_url()\nplugin_dir_path()\nplugin_basename()</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"themes\">Themes</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">get_template_directory_uri()\nget_stylesheet_directory_uri()\nget_stylesheet_uri()\nget_theme_root_uri()\nget_theme_root()\nget_theme_roots()\nget_stylesheet_directory()\nget_template_directory()</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"site-home\">Site Home</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">home_url()\nget_home_path()</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"wordpress\">WordPress</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">admin_url()\nsite_url()\ncontent_url()\nincludes_url()\nwp_upload_dir()</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"multisite\">Multisite</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">get_admin_url()\nget_home_url()\nget_site_url()\nnetwork_admin_url()\nnetwork_site_url()\nnetwork_home_url()</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"constants\">Constants</h2>\n\n\n\n<p>WordPress makes use of the following constants when determining the path to the content and plugin directories. These should not be used directly by plugins or themes, but are listed here for completeness.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">WP_CONTENT_DIR  // no trailing slash, full paths only\nWP_CONTENT_URL  // full url \nWP_PLUGIN_DIR  // full path, no trailing slash\nWP_PLUGIN_URL  // full url, no trailing slash\n\n// Available per default in MS, not set in single site install\n// Can be used in single site installs (as usual: at your own risk)\nUPLOADS // (If set, uploads folder, relative to ABSPATH) (for e.g.: /wp-content/uploads)</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"related\">Related</h2>\n\n\n\n<p><strong><strong>WordPress Directories</strong></strong>:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><td><a href=\"https://developer.wordpress.org/reference/functions/home_url/\">home_url()</a></td><td>Home URL</td><td><a href=\"http://www.example.com\">http://www.example.com</a></td></tr><tr><td><a href=\"https://developer.wordpress.org/reference/functions/site_url/\">site_url()</a></td><td>Site directory URL</td><td><a href=\"http://www.example.com\">http://www.example.com</a> or <a href=\"http://www.example.com/wordpress\">http://www.example.com/wordpress</a></td></tr><tr><td><a href=\"https://developer.wordpress.org/reference/functions/admin_url/\">admin_url()</a></td><td>Admin directory URL</td><td><a href=\"http://www.example.com/wp-admin\">http://www.example.com/wp-admin</a></td></tr><tr><td><a href=\"https://developer.wordpress.org/reference/functions/includes_url/\">includes_url()</a></td><td>Includes directory URL</td><td><a href=\"http://www.example.com/wp-includes\">http://www.example.com/wp-includes</a></td></tr><tr><td><a href=\"https://developer.wordpress.org/reference/functions/content_url/\">content_url()</a></td><td>Content directory URL</td><td><a href=\"http://www.example.com/wp-content\">http://www.example.com/wp-content</a></td></tr><tr><td><a href=\"https://developer.wordpress.org/reference/functions/plugins_url/\">plugins_url()</a></td><td>Plugins directory URL</td><td><a href=\"http://www.example.com/wp-content/plugins\">http://www.example.com/wp-content/plugins</a></td></tr><tr><td><a href=\"https://developer.wordpress.org/reference/functions/wp_upload_dir/\">wp_upload_dir()</a></td><td>Upload directory URL (returns an array)</td><td><a href=\"http://www.example.com/wp-content/uploads\">http://www.example.com/wp-content/uploads</a></td></tr></tbody></table></figure>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 10903,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41299",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/41299",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/41299/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144446,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/41299/revisions/144446"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10903"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41299"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

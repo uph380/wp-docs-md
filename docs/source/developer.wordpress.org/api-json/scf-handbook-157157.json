@@ -1,0 +1,91 @@
+{
+    "id": 157157,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/scf-ui-options-page-functions-file/"
+    },
+    "modified": "2025-02-21T05:46:08",
+    "modified_gmt": "2025-02-21T05:46:08",
+    "slug": "scf-ui-options-page-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/scf-ui-options-page-functions-file/",
+    "title": {
+        "rendered": "Scf Ui Options Page Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_ui_options_page()</code></h2>\n<p>Get an SCF UI options page as an array</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id The post ID being queried.</li>\n<li>@return array|false The UI options page array.</li>\n</ul>\n<h2><code>acf_get_raw_ui_options_page()</code></h2>\n<p>Retrieves a raw SCF UI options page.</p>\n<ul>\n<li>@since   ACF 6.2</li>\n<li>@param integer|string $id The post ID.</li>\n<li>@return array|false The UI options page array.</li>\n</ul>\n<h2><code>acf_get_ui_options_page_post()</code></h2>\n<p>Gets a post object for an SCF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id The post ID, key, or name.</li>\n<li>@return object|boolean The post object, or false on failure.</li>\n</ul>\n<h2><code>acf_is_ui_options_page_key()</code></h2>\n<p>Returns true if the given identifier is an SCF UI options page key.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param string $id The identifier.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_validate_ui_options_page()</code></h2>\n<p>Validates an SCF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The SCF UI options page array to validate.</li>\n<li>@return array|boolean</li>\n</ul>\n<h2><code>acf_translate_ui_options_page()</code></h2>\n<p>Translates the settings for an SCF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The SCF UI options page array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_ui_options_pages()</code></h2>\n<p>Returns and array of SCF UI options pages for the given $filter.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $filter An array of args to filter results by.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_raw_ui_options_pages()</code></h2>\n<p>Returns an array of raw SCF UI options pages.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_filter_ui_options_pages()</code></h2>\n<p>Returns a filtered array of SCF UI options pages based on the given $args.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_pages An array of SCF UI options pages.</li>\n<li>@param array $args             An array of args to filter by.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_update_ui_options_page()</code></h2>\n<p>Updates an SCF UI options page in the database.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The main ACF UI options page array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_flush_ui_options_page_cache()</code></h2>\n<p>Deletes all caches for the provided ACF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The SCF UI options page array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_delete_ui_options_page()</code></h2>\n<p>Deletes an ACF UI options page from the database.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id The ACF UI options page ID, key or name.</li>\n<li>@return boolean True if the options page was deleted.</li>\n</ul>\n<h2><code>acf_trash_ui_options_page()</code></h2>\n<p>Trashes an ACF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id The UI options page ID, key, or name.</li>\n<li>@return boolean True if the options page was trashed.</li>\n</ul>\n<h2><code>acf_untrash_ui_options_page()</code></h2>\n<p>Restores an ACF UI options page from the trash.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id The UI options page ID, key, or name.</li>\n<li>@return boolean True if the options page was untrashed.</li>\n</ul>\n<h2><code>acf_is_ui_options_page()</code></h2>\n<p>Returns true if the given params match an ACF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The ACF UI options page array.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_duplicate_ui_options_page()</code></h2>\n<p>Duplicates an ACF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id          The ACF UI options page ID, key or name.</li>\n<li>@param integer        $new_post_id Optional ID to override.</li>\n<li>@return array|boolean The new ACF UI options page, or false on failure.</li>\n</ul>\n<h2><code>acf_update_ui_options_page_active_status()</code></h2>\n<p>Activates or deactivates an ACF UI options page.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer|string $id       The ACF UI options page ID, key or name.</li>\n<li>@param boolean        $activate True if the UI options page should be activated.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_get_ui_options_page_edit_link()</code></h2>\n<p>Checks if the current user can edit the UI options page and returns the edit URL.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param integer $post_id The ACF UI options page ID.</li>\n<li>@return string</li>\n</ul>\n<h2><code>acf_prepare_ui_options_page_for_export()</code></h2>\n<p>Returns a modified ACF UI options page ready for export.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The ACF UI options page array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_export_ui_options_page_as_php()</code></h2>\n<p>Exports an ACF UI options page as PHP.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The ACF UI options page array.</li>\n<li>@return string|boolean</li>\n</ul>\n<h2><code>acf_prepare_ui_options_page_for_import()</code></h2>\n<p>Prepares an ACF UI options page for the import process.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The ACF UI options page array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_import_ui_options_page()</code></h2>\n<p>Imports an ACF UI options page into the database.</p>\n<ul>\n<li>@since ACF 6.2</li>\n<li>@param array $ui_options_page The ACF UI options page array.</li>\n<li>@return array The imported options page.</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157157",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157157",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157157/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157304,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157157/revisions/157304"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157157"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

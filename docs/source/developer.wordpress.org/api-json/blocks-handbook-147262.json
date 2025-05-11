@@ -1,0 +1,91 @@
+{
+    "id": 147262,
+    "date": "2023-04-13T07:55:01",
+    "date_gmt": "2023-04-13T07:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-selectors/"
+    },
+    "modified": "2024-10-30T17:09:45",
+    "modified_gmt": "2024-10-30T17:09:45",
+    "slug": "block-selectors",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-selectors/",
+    "title": {
+        "rendered": "Selectors"
+    },
+    "content": {
+        "rendered": "<p>Block Selectors is the API that allows blocks to customize the CSS selector used<br />\nwhen their styles are generated.</p>\n<p>A block may customize its CSS selectors at three levels: root, feature, and<br />\nsubfeature.</p>\n<h2>Root selector</h2>\n<p>The root selector is the block&#8217;s primary CSS selector.</p>\n<p>All blocks require a primary CSS selector for their style declarations to be<br />\nincluded under. If one is not provided through the Block Selectors API, a<br />\ndefault is generated in the form of <code>.wp-block-&lt;name&gt;</code>.</p>\n<h3>Example</h3>\n<pre><code class=\"language-json\">{\n    ...\n    \"selectors\": {\n        \"root\": \".my-custom-block-selector\"\n    }\n}\n</code></pre>\n<h2>Feature selectors</h2>\n<p>Feature selectors relate to styles for a block support, e.g. border, color,<br />\ntypography, etc.</p>\n<p>A block may wish to apply the styles for specific features to different<br />\nelements within a block. An example might be using colors on the block&#8217;s wrapper<br />\nbut applying the typography styles to an inner heading only.</p>\n<h3>Example</h3>\n<pre><code class=\"language-json\">{\n    ...\n    \"selectors\": {\n        \"root\": \".my-custom-block-selector\",\n        \"color\": \".my-custom-block-selector\",\n        \"typography\": \".my-custom-block-selector &gt; h2\"\n    }\n}\n</code></pre>\n<h2>Subfeature selectors</h2>\n<p>These selectors relate to individual styles provided by a block support e.g.<br />\n<code>background-color</code></p>\n<p>A subfeature can have styles generated under its own unique selector. This is<br />\nespecially useful where one block support subfeature can&#8217;t be applied to the<br />\nsame element as the support&#8217;s other subfeatures.</p>\n<p>A great example of this is <code>text-decoration</code>. Web browsers render this style<br />\ndifferently, making it difficult to override if added to a wrapper element. By<br />\nassigning <code>text-decoration</code> a custom selector, its style can target only the<br />\nelements to which it should be applied.</p>\n<h3>Example</h3>\n<pre><code class=\"language-json\">{\n    ...\n    \"selectors\": {\n        \"root\": \".my-custom-block-selector\",\n        \"color\": \".my-custom-block-selector\",\n        \"typography\": {\n            \"root\": \".my-custom-block-selector &gt; h2\",\n            \"text-decoration\": \".my-custom-block-selector &gt; h2 span\"\n        }\n    }\n}\n</code></pre>\n<h2>Shorthand</h2>\n<p>Rather than specify a CSS selector for every subfeature, you can set a single<br />\nselector as a string value for the relevant feature. This is the approach<br />\ndemonstrated for the <code>color</code> feature in the earlier examples above.</p>\n<h2>Fallbacks</h2>\n<p>A selector that hasn&#8217;t been configured for a specific feature will fall back to<br />\nthe block&#8217;s root selector. Similarly, if a subfeature hasn&#8217;t had a custom<br />\nselector set, it will fall back to its parent feature&#8217;s selector and, if unavailable, fall back further to the block&#8217;s root selector.</p>\n<p>Rather than repeating selectors for multiple subfeatures, you can set the<br />\ncommon selector as the parent feature&#8217;s <code>root</code> selector and only define the<br />\nunique selectors for the subfeatures that differ.</p>\n<h3>Example</h3>\n<pre><code class=\"language-json\">{\n    ...\n    \"selectors\": {\n        \"root\": \".my-custom-block-selector\",\n        \"color\": {\n            \"text\": \".my-custom-block-selector p\"\n        },\n        \"typography\": {\n            \"root\": \".my-custom-block-selector &gt; h2\",\n            \"text-decoration\": \".my-custom-block-selector &gt; h2 span\"\n        }\n    }\n}\n</code></pre>\n<p>The <code>color.background-color</code> subfeature isn&#8217;t explicitly set in the above<br />\nexample. As the <code>color</code> feature also doesn&#8217;t define a <code>root</code> selector,<br />\n<code>color.background-color</code> would be included under the block&#8217;s primary root<br />\nselector, <code>.my-custom-block-selector</code>.</p>\n<p>For a subfeature such as <code>typography.font-size</code>, it would fallback to its parent<br />\nfeature&#8217;s selector given that is present, i.e. <code>.my-custom-block-selector &gt; h2</code>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134406,
+    "menu_order": 69,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147262",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147262",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147262/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152851,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147262/revisions/152851"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134406"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147262"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 135821,
+    "date": "2021-05-08T17:54:47",
+    "date_gmt": "2021-05-08T17:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/legacy-widget-block/"
+    },
+    "modified": "2024-01-29T21:09:48",
+    "modified_gmt": "2024-01-29T21:09:48",
+    "slug": "legacy-widget-block",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/legacy-widget-block/",
+    "title": {
+        "rendered": "About the Legacy Widget block"
+    },
+    "content": {
+        "rendered": "<p>The Legacy Widget block allows users to add, edit and preview third party widgets that are registered by plugins and widgets that were added using the classic Widgets Editor.</p>\n<p>Third party widgets can be added by inserting a Legacy Widget block using the block inserter and selecting the widget from the block&#8217;s dropdown.</p>\n<p>Third party widgets may also be added by searching for the name of the widget in the block inserter and selecting the widget. A variation of the Legacy Widget block will be inserted.</p>\n<h2>Compatibility with the Legacy Widget block</h2>\n<h3>The <code>widget-added</code> event</h3>\n<p>The Legacy Widget block will display the widget&#8217;s form in a way similar to the Customizer, and so is compatible with most third party widgets.</p>\n<p>If the widget uses JavaScript in its form, it is important that events are added to the DOM after the <code>'widget-added'</code> jQuery event is triggered on <code>document</code>.</p>\n<p>For example, a widget might want to show a &#8220;Password&#8221; field when the &#8220;Change password&#8221; checkbox is checked.</p>\n<pre><code class=\"language-js\">( function ( $ ) {\n    $( document ).on( 'widget-added', function ( $event, $control ) {\n        $control.find( '.change-password' ).on( 'change', function () {\n            var isChecked = $( this ).prop( 'checked' );\n            $control.find( '.password' ).toggleClass( 'hidden', ! isChecked );\n        } );\n    } );\n} )( jQuery );\n</code></pre>\n<p>Note that all of the widget&#8217;s event handlers are added in the <code>widget-added</code> callback.</p>\n<h3>Displaying &#8220;No preview available.&#8221;</h3>\n<p>The Legacy Widget block will display a preview of the widget when the Legacy Widget block is not selected.</p>\n<p>A &#8220;No preview available.&#8221; message is automatically shown by the Legacy Widget block when the widget&#8217;s <code>widget()</code> function does not render anything or only renders empty HTML elements.</p>\n<p>Widgets may take advantage of this by returning early from <code>widget()</code> when a preview should not be displayed.</p>\n<pre><code class=\"language-php\">class ExampleWidget extends WP_Widget {\n    ...\n    public function widget( $instance ) {\n        if ( ! isset( $instance['name'] ) ) {\n            // Name is required, so display nothing if we don't have it.\n            return;\n        }\n        ?&gt;\n        &lt;h3&gt;Name: &lt;?php echo esc_html( $instance['name'] ); ?&gt;&lt;/h3&gt;\n        ...\n        &lt;?php\n    }\n    ...\n}\n</code></pre>\n<h3>Allowing migration to a block</h3>\n<p>You can allow users to easily migrate a Legacy Widget block containing a specific widget to a block or multiple blocks. This allows plugin authors to phase out their widgets in favour of blocks which are more intuitive and can be used in more places.</p>\n<p>The following steps show how to do this.</p>\n<h4>1) Display the widget&#8217;s instance in the REST API</h4>\n<p>First, we need to tell WordPress that it is OK to display your widget&#8217;s instance array in the REST API.</p>\n<p>This can be safely done if:</p>\n<ul>\n<li>You know that all of the values stored by your widget in <code>$instance</code> can be represented as JSON; and</li>\n<li>You know that your widget does not store any private data in <code>$instance</code> that should be kept hidden from users that have permission to customize the site.</li>\n</ul>\n<p>If it is safe to do so, then include a widget option named <code>show_instance_in_rest</code> with its value set to <code>true</code> when registering your widget.</p>\n<pre><code class=\"language-php\">class ExampleWidget extends WP_Widget {\n    ...\n    /**\n     * Sets up the widget\n     */\n    public function __construct() {\n        $widget_ops = array(\n            // ...other options here\n            'show_instance_in_rest' =&gt; true,\n            // ...other options here\n        );\n        parent::__construct( 'example_widget', 'ExampleWidget', $widget_ops );\n    }\n    ...\n}\n</code></pre>\n<p>This allows the block editor and other REST API clients to see your widget&#8217;s instance array by accessing <code>instance.raw</code> in the REST API response.</p>\n<p>Note that <a href=\"https://core.trac.wordpress.org/ticket/53332\">versions of WordPress prior to 5.8.0 allowed you to enable this feature by setting <code>$show_instance_in_rest</code> to <code>true</code></a> in the class that extends <code>WP_Widget</code>.</p>\n<pre><code class=\"language-php\">class ExampleWidget extends WP_Widget {\n    ...\n    public $show_instance_in_rest = true;\n    ...\n}\n</code></pre>\n<p>This is now deprecated in favour of the widget option method.</p>\n<h4>2) Add a block transform</h4>\n<p>Now, we can define a <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-transforms/\">block transform</a> which tells the block editor what to replace the Legacy Widget block containing your widget with.</p>\n<p>This is done by adding JavaScript code to your block&#8217;s definition. In this example, we define a transform that turns a widget with ID <code>'example_widget'</code> into a block with name <code>'example/block'</code>.</p>\n<pre><code class=\"language-js\">transforms: {\n    from: [\n        {\n            type: 'block',\n            blocks: [ 'core/legacy-widget' ],\n            isMatch: ( { idBase, instance } ) =&gt; {\n                if ( ! instance?.raw ) {\n                    // Can't transform if raw instance is not shown in REST API.\n                    return false;\n                }\n                return idBase === 'example_widget';\n            },\n            transform: ( { instance } ) =&gt; {\n                return createBlock( 'example/block', {\n                    name: instance.raw.name,\n                } );\n            },\n        },\n    ]\n},\n</code></pre>\n<h4>3) Hide the widget from the Legacy Widget block</h4>\n<p>As a final touch, we can tell the Legacy Widget block to hide your widget from the &#8220;Select widget&#8221; dropdown and from the block inserter. This encourages users to use the block that replaces your widget.</p>\n<p>This can be done using the <code>widget_types_to_hide_from_legacy_widget_block</code> filter.</p>\n<pre><code class=\"language-php\">function hide_example_widget( $widget_types ) {\n    $widget_types[] = 'example_widget';\n    return $widget_types;\n}\nadd_filter( 'widget_types_to_hide_from_legacy_widget_block', 'hide_example_widget' );\n</code></pre>\n<h2>Using the Legacy Widget block in other block editors (Advanced)</h2>\n<p>You may optionally allow the Legacy Widget block in other block editors such as<br />\nthe WordPress post editor. This is not enabled by default.</p>\n<p>First, ensure that any styles and scripts required by the legacy widgets are<br />\nloaded onto the page. A convenient way of doing this is to manually perform all<br />\nof the hooks that ordinarily run when a user browses to the widgets WP Admin<br />\nscreen.</p>\n<pre><code class=\"language-php\">add_action( 'admin_print_styles', function() {\n    if ( get_current_screen()-&gt;is_block_editor() ) {\n        do_action( 'admin_print_styles-widgets.php' );\n    }\n} );\nadd_action( 'admin_print_scripts', function() {\n    if ( get_current_screen()-&gt;is_block_editor() ) {\n        do_action( 'load-widgets.php' );\n        do_action( 'widgets.php' );\n        do_action( 'sidebar_admin_setup' );\n        do_action( 'admin_print_scripts-widgets.php' );\n    }\n} );\nadd_action( 'admin_print_footer_scripts', function() {\n    if ( get_current_screen()-&gt;is_block_editor() ) {\n        do_action( 'admin_print_footer_scripts-widgets.php' );\n    }\n} );\nadd_action( 'admin_footer', function() {\n    if ( get_current_screen()-&gt;is_block_editor() ) {\n        do_action( 'admin_footer-widgets.php' );\n    }\n} );\n</code></pre>\n<p>Then, register the Legacy Widget block using <code>registerLegacyWidgetBlock</code> which<br />\nis defined in the <code>@wordpress/widgets</code> package.</p>\n<pre><code class=\"language-php\">add_action( 'enqueue_block_editor_assets', function() {\n    wp_enqueue_script( 'wp-widgets' );\n    wp_add_inline_script( 'wp-widgets', 'wp.widgets.registerLegacyWidgetBlock()' );\n} );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135818,
+    "menu_order": 56,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135821",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135821",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135821/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144743,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135821/revisions/144743"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135818"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135821"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

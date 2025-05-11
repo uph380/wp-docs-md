@@ -1,0 +1,91 @@
+{
+    "id": 157132,
+    "date": "2025-02-21T04:17:07",
+    "date_gmt": "2025-02-21T04:17:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-form-functions-file/"
+    },
+    "modified": "2025-02-21T05:46:14",
+    "modified_gmt": "2025-02-21T05:46:14",
+    "slug": "acf-form-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-form-functions-file/",
+    "title": {
+        "rendered": "Acf Form Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_set_form_data()</code></h2>\n<p>acf_set_form_data</p>\n<ul>\n<li>Sets data about the current form.</li>\n<li>@date    6/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   string $name The store name.</li>\n<li>@param array  $data Array of data to start the store with.</li>\n<li>@return ACF_Data</li>\n</ul>\n<h2><code>acf_get_form_data()</code></h2>\n<p>acf_get_form_data</p>\n<ul>\n<li>Gets data about the current form.</li>\n<li>@date    6/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   string $name The store name.</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_form_data()</code></h2>\n<p>acf_form_data</p>\n<ul>\n<li>Called within a form to set important information and render hidden inputs.</li>\n<li>@date    15/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_save_post()</code></h2>\n<p>acf_save_post</p>\n<ul>\n<li>Saves the $_POST data.</li>\n<li>@date    15/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   integer|string $post_id The post id.</li>\n<li>@param array          $values  An array of values to override $_POST.</li>\n<li>@return boolean True if save was successful.</li>\n</ul>\n<h2><code>_acf_do_save_post()</code></h2>\n<p>_acf_do_save_post</p>\n<ul>\n<li>Private function hooked into &#8216;acf/save_post&#8217; to actually save the $_POST data.<br />\nThis allows developers to hook in before and after ACF has actually saved the data.</li>\n<li>@date    11/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   integer|string $post_id The post id.</li>\n<li>@return void</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157132",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157132",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157132/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157329,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157132/revisions/157329"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157132"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

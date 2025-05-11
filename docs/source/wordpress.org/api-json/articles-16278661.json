@@ -1,0 +1,109 @@
+{
+    "id": 16278661,
+    "date": "2022-12-11T12:15:34",
+    "date_gmt": "2022-12-11T12:15:34",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16278661"
+    },
+    "modified": "2024-06-06T13:59:00",
+    "modified_gmt": "2024-06-06T13:59:00",
+    "slug": "custom-link-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/custom-link-block/",
+    "title": {
+        "rendered": "Custom Link block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Custom Link</em> block allows you to embed a link, page, category, or another item in your Navigation section.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image4-3.png\" alt=\"WordPress editor block: Add link window with typed URL, toolbar, and options for updating the link.\" class=\"wp-image-16278666\" style=\"width:477px;height:513px\" width=\"477\" height=\"513\" srcset=\"https://wordpress.org/documentation/files/2022/12/image4-3.png 954w, https://wordpress.org/documentation/files/2022/12/image4-3-279x300.png 279w, https://wordpress.org/documentation/files/2022/12/image4-3-952x1024.png 952w, https://wordpress.org/documentation/files/2022/12/image4-3-768x826.png 768w\" sizes=\"auto, (max-width: 477px) 100vw, 477px\" /></figure>\n\n\n\n<p>To embed a <em>Custom Link</em>, add the <em>Navigation </em>block by clicking the <strong>Block inserter</strong> (+) icon or typing /navigation in the editor.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image8-3.png\" alt=\"The plus icon in the toolbar and the Navigation block selection option to add a Custom link block\" class=\"wp-image-16278670\" style=\"width:327px;height:165px\" width=\"327\" height=\"165\" srcset=\"https://wordpress.org/documentation/files/2022/12/image8-3.png 654w, https://wordpress.org/documentation/files/2022/12/image8-3-300x151.png 300w\" sizes=\"auto, (max-width: 327px) 100vw, 327px\" /></figure>\n\n\n\n<p>The <em>Add link</em> field will appear after adding a <em>Navigation </em>block. Type your URL or select from recent pages you used or created on WordPress. Hit enter to save the link.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/adding-custom-link.gif\" alt=\"URL pasted to the Custom Link block with option to select other items and the toolbar above.\" class=\"wp-image-16278675\" style=\"width:537px;height:430px\" width=\"537\" height=\"430\" /></figure>\n\n\n\n<p>You can insert multiple <em>Custom Link </em>blocks in one<strong> Navigation </strong>section. Hit enter after editing one link, and a new <em>Add link</em> field will appear. Every <em>Custom Link </em>block can have a separate link and text settings.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1478\" height=\"710\" src=\"https://wordpress.org/documentation/files/2022/12/customizing-custom-link.gif\" alt=\"One Custom Link block selected, Bold and Italics text formatting applied to it, and Options section expanded to click Duplicate.\" class=\"wp-image-16278708\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block has its own toolbar, which contains unique controls that let you customize or configure the block. The <em>Custom Link</em> block has the following options on its toolbar:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<p>You can transform your <em>Custom Link block</em> to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Submenu, turning your link into a wrapped links list</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/spacer-block/\">Spacer</a> for dividing multiple links with an empty block</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/search-block/\">Search</a>, creating a search bar&nbsp;</li>\n\n\n\n<li>Home link, linking to homepage of your website</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/site-logo-block/\">Site logo</a> for adding your site logo</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/social-icons/\">Social icons</a> for embedding buttons that lead to a selected social media platform</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image13-2.png\" alt=\"Custom Link block editor toolbar with the selected \u2018Transform to\u2019 icon and unwrapped options for updates.\" class=\"wp-image-16278684\" style=\"width:537px;height:411px\" width=\"537\" height=\"411\" srcset=\"https://wordpress.org/documentation/files/2022/12/image13-2.png 716w, https://wordpress.org/documentation/files/2022/12/image13-2-300x230.png 300w\" sizes=\"auto, (max-width: 537px) 100vw, 537px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Block moving tools</strong></p>\n\n\n\n<p>You can reorder <em>Custom Link blocks</em> inside a <strong>Navigation</strong> section. Use the toolbar to <em>move</em> the items <em>left and righ</em>t or <em>drag </em>them to a new position.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image7-1.png\" alt=\"Two toolbars with the Move option and example of a Custom Link block and with the Drag tool featured with three blocks.\" class=\"wp-image-16278688\" style=\"width:629px;height:267px\" width=\"629\" height=\"267\" /></figure>\n\n\n\n<p>For more information, explore the <a href=\"https://wordpress.org/documentation/article/navigation-block/\">Navigation block</a>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Link tool</strong></p>\n\n\n\n<p>The <strong>Link</strong> tool lets you edit your custom link block. You can edit <em>title</em> and<em> custom URL </em>and decide whether you want to open the link<em> in a new tab</em>.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/editing-custom-link.gof_.gif\" alt=\"The toolbar with a Custom Link block editing process containing typing a title, selecting to open in a new tab, and demonstrating the unlink option.\" class=\"wp-image-16278710\" style=\"width:556px;height:458px\" width=\"556\" height=\"458\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Adding submenu to a Custom Link block</strong></p>\n\n\n\n<p>The next icon lets you build a submenu, where you can add links to a drop-down list.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image11-1.png\" alt=\"WordPress editor Submenu section in the Navigation block applied to the selected Custom Link with the options to type URL or select an item.\" class=\"wp-image-16278717\" style=\"width:333px;height:397px\" width=\"333\" height=\"397\" srcset=\"https://wordpress.org/documentation/files/2022/12/image11-1.png 666w, https://wordpress.org/documentation/files/2022/12/image11-1-252x300.png 252w\" sizes=\"auto, (max-width: 333px) 100vw, 333px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Text formatting</strong></p>\n\n\n\n<p>Basic <strong>Text formatting</strong> is available for all <em>Custom Link</em> blocks. Select your title (or a part of it) to make it <em>Bold, Italic</em>, or <em>Strikethrough</em>, or turn it into an <em>Inline image</em> to cover your link with an illustration.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image9-1.png\" alt=\"WordPress Custom Link block toolbar with selected text formation and additional options unwrapped, followed by the edited block example.\" class=\"wp-image-16278692\" style=\"width:617px;height:218px\" width=\"617\" height=\"218\" srcset=\"https://wordpress.org/documentation/files/2022/12/image9-1.png 822w, https://wordpress.org/documentation/files/2022/12/image9-1-300x106.png 300w, https://wordpress.org/documentation/files/2022/12/image9-1-768x271.png 768w\" sizes=\"auto, (max-width: 617px) 100vw, 617px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>The <strong>Options </strong>section opens block settings and a button to move to the <em>parent Navigation field</em> section to update it. You can also <em>copy, duplicate, lock</em>, or <em>remove your Custom Link</em>. Like everywhere in the WordPress editor, you can undo actions using the <strong>Ctrl+Z</strong> (or <strong>Command+Z</strong> on macOS).</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Each link has its <strong>Block settings</strong> you can access by clicking the <strong>settings </strong>button on the upper-right corner of the editor or via <strong>Options </strong>in the toolbar.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Link</strong> <strong>Settings</strong></p>\n\n\n\n<p><strong>Link settings</strong> section contains the following options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Description</strong> to display with your link if the selected theme includes that option.</li>\n\n\n\n<li><strong>Link title </strong>to provide more information about the link for search engine optimization. Leave this field empty if you want the title used in URL settings to stay.&nbsp;</li>\n\n\n\n<li><strong>Link rel</strong> to specify how your external link is related to the page you\u2019re working on and if its authority should be higher than your website\u2019s.&nbsp;</li>\n</ul>\n\n\n\n<p>Refer to the <a href=\"https://wordpress.com/support/full-site-editing/theme-blocks/navigation-block/#link-settings\">Navigation block documentation</a> for more information.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image12-1.png\" alt=\"The link settings section of the Custom Link blocks the WordPress editor with the description inserted, the link title left empty, and the link rel field filled with \u2018nofollow.\u2019\" class=\"wp-image-16278701\" style=\"object-fit:cover\" /></figure>\n\n\n\n<p><strong>Typography</strong></p>\n\n\n\n<p>The <em>Custom Link </em>block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The <strong>Advanced</strong> section has the <strong>Additional CSS classes(es)</strong> option. You can integrate your custom style into a <em>Custom Link</em> block by inserting your CSS Class name into this field.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"420\" height=\"200\" src=\"https://wordpress.org/documentation/files/2022/12/image10-1.png\" alt=\"Additional class in Advanced settings.\" class=\"wp-image-16278704\" srcset=\"https://wordpress.org/documentation/files/2022/12/image10-1.png 420w, https://wordpress.org/documentation/files/2022/12/image10-1-300x143.png 300w\" sizes=\"auto, (max-width: 420px) 100vw, 420px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>2023-07-25\n<ul class=\"wp-block-list\">\n<li>Fix broken image URLs</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-12-11</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Custom Link block allows you to embed a link, page, category, or another item in your Navigation section.&nbsp; To embed a Custom Link, add the Navigation block by clicking the Block inserter (+) icon or typing /navigation in the editor. The Add link field will appear after [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16278661",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16278661",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16278661"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16278661/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360301,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16278661/revisions/16360301"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16278661"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16278661"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

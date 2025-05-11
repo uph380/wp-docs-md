@@ -1,0 +1,109 @@
+{
+    "id": 11150891,
+    "date": "2019-01-30T22:09:40",
+    "date_gmt": "2019-01-30T22:09:40",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11150891"
+    },
+    "modified": "2024-06-09T09:18:10",
+    "modified_gmt": "2024-06-09T09:18:10",
+    "slug": "users-add-new-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/users-add-new-screen/",
+    "title": {
+        "rendered": "Users Add New screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Users Add New Screen</strong> allows you to add new users who can login to your site. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11150900\"><img loading=\"lazy\" decoding=\"async\" width=\"523\" height=\"533\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/add-user.png?fit=523%2C533&amp;ssl=1\" alt=\"\" class=\"wp-image-11150900\" srcset=\"https://wordpress.org/documentation/files/2019/01/add-user.png 523w, https://wordpress.org/documentation/files/2019/01/add-user-294x300.png 294w\" sizes=\"auto, (max-width: 523px) 100vw, 523px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Add New User</h2>\n\n\n\n<p>In this Screen, you may add new Users to your site.  If the <strong>Anyone can register</strong> option is set in the Membership section of Administration &gt; Settings &gt; General,  users can register themselves at http://your wordpress  url/wp-register.php.  Regardless of that setting, you can manually  create new users here. </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Username (required)</strong> &#8211;  Enter the username of the new user here.  This will also be used as the <strong>Login</strong> name of the new user.</li><li><strong>E-mail (required)</strong> &#8211;  Enter a valid e-mail address of the new\nuser here. The e-mail address must be unique for each user.  If a\npublished post or page is authored by this user, then when approved\ncomments are made to that post or page, a notification e-mail is sent to\n this e-mail address.  </li><li><strong>First Name</strong> &#8211;  Enter the first name of the new user here.</li><li><strong>Last Name</strong> &#8211; Enter the last name of the new user in this text box (the display name defaults to first and last name).</li><li><strong>Website</strong> -:  You may enter the new user&#8217;s website URL in this text box.</li><li><strong>Password (twice)</strong> &#8211; Enter a password for the new user twice here, once in each text box.</li></ul>\n\n\n\n<p><strong>Strength Indicator</strong>  This indicates if the password you\nentered is Very Weak, Weak, Medium, or Strong (displayed in green).  The\n stronger the password the more secure the login.  Hint: The password\nshould be at least seven characters long. To make it stronger, use upper\n and lower case letters, numbers and symbols like <em>!&#8221;?$%^&amp;)</em>.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Send Password?</strong> &#8211; Check the box to <strong>Send this password to the new user by email</strong>.</li><li><strong>Role</strong> &#8211;  Select the desired <a href=\"https://wordpress.org/documentation/article/roles-and-capabilities/\">Role</a> for this User from the drop-down box. Default: Administration &gt; Settings &gt; General &#8211; New User Default Role</li><li><strong>Add New User</strong> &#8211;  Click this important button to save the new  user&#8217;s information into WordPress&#8217; database.  If you don&#8217;t click this  button, the user will not be added.  A flash message at the top of the  screen will advise you that the new user has been added.</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Users Add New Screen allows you to add new users who can login to your site. Add New User In this Screen, you may add new Users to your site. If the Anyone can register option is set in the Membership section of Administration &gt; Settings &gt; General, users can register themselves at http://your [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11150891",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11150891",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11150891"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11150891/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360442,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11150891/revisions/16360442"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11150891"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11150891"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

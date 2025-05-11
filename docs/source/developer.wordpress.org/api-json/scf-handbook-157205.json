@@ -1,0 +1,91 @@
+{
+    "id": 157205,
+    "date": "2025-02-21T04:17:15",
+    "date_gmt": "2025-02-21T04:17:15",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/user/user-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:26",
+    "modified_gmt": "2025-02-21T04:17:26",
+    "slug": "user-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/user/user-tutorial/",
+    "title": {
+        "rendered": "Using the User Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a User field</li>\n<li>Configure options:\n<ul>\n<li>Select roles</li>\n<li>Set return format</li>\n<li>Configure multiple</li>\n<li>Set filters</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>User Assignment\n<ul>\n<li>Author selection</li>\n<li>Team members</li>\n<li>User permissions</li>\n</ul>\n</li>\n<li>User Relations\n<ul>\n<li>Content ownership</li>\n<li>User groups</li>\n<li>Access control</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Filter appropriate roles</li>\n<li>Consider permissions</li>\n<li>Use clear search</li>\n<li>Plan user structure</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157204,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157205",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157205",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157205/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157210,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157205/revisions/157210"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157204"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157205"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

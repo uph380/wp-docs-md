@@ -1,0 +1,97 @@
+{
+    "id": 23113,
+    "date": "2016-12-06T18:10:22",
+    "date_gmt": "2016-12-06T18:10:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23113"
+    },
+    "modified": "2024-01-16T20:30:17",
+    "modified_gmt": "2024-01-16T20:30:17",
+    "slug": "settings",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/settings/",
+    "title": {
+        "rendered": "Site Settings"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a Site Setting record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-title\">\n<td>\n                <code>title</code>\n            </td>\n<td>\n                Site title.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                Site tagline.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-url\">\n<td>\n                <code>url</code>\n            </td>\n<td>\n                Site URL.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: uri\n                                    </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-email\">\n<td>\n                <code>email</code>\n            </td>\n<td>\n                This address is used for admin purposes, like new user notification.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: email\n                                    </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-timezone\">\n<td>\n                <code>timezone</code>\n            </td>\n<td>\n                A city in the same timezone as you.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-date_format\">\n<td>\n                <code>date_format</code>\n            </td>\n<td>\n                A date format for all date strings.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-time_format\">\n<td>\n                <code>time_format</code>\n            </td>\n<td>\n                A time format for all time strings.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-start_of_week\">\n<td>\n                <code>start_of_week</code>\n            </td>\n<td>\n                A day number of the week that the week should start on.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-language\">\n<td>\n                <code>language</code>\n            </td>\n<td>\n                WordPress locale code.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-use_smilies\">\n<td>\n                <code>use_smilies</code>\n            </td>\n<td>\n                Convert emoticons like :-) and :-P to graphics on display.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-default_category\">\n<td>\n                <code>default_category</code>\n            </td>\n<td>\n                Default post category.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-default_post_format\">\n<td>\n                <code>default_post_format</code>\n            </td>\n<td>\n                Default post format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-posts_per_page\">\n<td>\n                <code>posts_per_page</code>\n            </td>\n<td>\n                Blog pages show at most.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-show_on_front\">\n<td>\n                <code>show_on_front</code>\n            </td>\n<td>\n                What to show on the front page</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-page_on_front\">\n<td>\n                <code>page_on_front</code>\n            </td>\n<td>\n                The ID of the page that should be displayed on the front page</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-page_for_posts\">\n<td>\n                <code>page_for_posts</code>\n            </td>\n<td>\n                The ID of the page that should display the latest posts</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-default_ping_status\">\n<td>\n                <code>default_ping_status</code>\n            </td>\n<td>\n                Allow link notifications from other blogs (pingbacks and trackbacks) on new articles.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n<p>                                    One of: <code>open</code>, <code>closed</code>\n                            </td>\n</tr>\n<tr id=\"schema-default_comment_status\">\n<td>\n                <code>default_comment_status</code>\n            </td>\n<td>\n                Allow people to submit comments on new posts.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code></code></p>\n<p>                                    One of: <code>open</code>, <code>closed</code>\n                            </td>\n</tr>\n<tr id=\"schema-site_logo\">\n<td>\n                <code>site_logo</code>\n            </td>\n<td>\n                Site logo.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-site_icon\">\n<td>\n                <code>site_icon</code>\n            </td>\n<td>\n                Site icon.</p>\n<p class=\"type\">\n                    JSON data type: integer             </p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Site Setting</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/settings</code></p>\n<p>        Query this endpoint to retrieve a specific Site Setting record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/settings</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Update a Site Setting</h2>\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code><a href=\"#schema-title\">title</a></code>\n                                    </td>\n<td>\n                                            Site title.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-description\">description</a></code>\n                                    </td>\n<td>\n                                            Site tagline.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-url\">url</a></code>\n                                    </td>\n<td>\n                                            Site URL.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-email\">email</a></code>\n                                    </td>\n<td>\n                                            This address is used for admin purposes, like new user notification.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-timezone\">timezone</a></code>\n                                    </td>\n<td>\n                                            A city in the same timezone as you.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-date_format\">date_format</a></code>\n                                    </td>\n<td>\n                                            A date format for all date strings.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-time_format\">time_format</a></code>\n                                    </td>\n<td>\n                                            A time format for all time strings.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-start_of_week\">start_of_week</a></code>\n                                    </td>\n<td>\n                                            A day number of the week that the week should start on.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-language\">language</a></code>\n                                    </td>\n<td>\n                                            WordPress locale code.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-use_smilies\">use_smilies</a></code>\n                                    </td>\n<td>\n                                            Convert emoticons like :-) and :-P to graphics on display.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-default_category\">default_category</a></code>\n                                    </td>\n<td>\n                                            Default post category.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-default_post_format\">default_post_format</a></code>\n                                    </td>\n<td>\n                                            Default post format.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-posts_per_page\">posts_per_page</a></code>\n                                    </td>\n<td>\n                                            Blog pages show at most.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-show_on_front\">show_on_front</a></code>\n                                    </td>\n<td>\n                                            What to show on the front page\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-page_on_front\">page_on_front</a></code>\n                                    </td>\n<td>\n                                            The ID of the page that should be displayed on the front page\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-page_for_posts\">page_for_posts</a></code>\n                                    </td>\n<td>\n                                            The ID of the page that should display the latest posts\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-default_ping_status\">default_ping_status</a></code>\n                                    </td>\n<td>\n                                            Allow link notifications from other blogs (pingbacks and trackbacks) on new articles.<br />\n                                                                                                        One of: <code>open</code>, <code>closed</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-default_comment_status\">default_comment_status</a></code>\n                                    </td>\n<td>\n                                            Allow people to submit comments on new posts.<br />\n                                                                                                        One of: <code>open</code>, <code>closed</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-site_logo\">site_logo</a></code>\n                                    </td>\n<td>\n                                            Site logo.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-site_icon\">site_icon</a></code>\n                                    </td>\n<td>\n                                            Site icon.\n                                                                                                </td>\n</tr>\n</table></div>\n<div class=\"secondary\">\n<h3>Definition</h3>\n<p>        <code>POST /wp/v2/settings</code></p>\n<h3>Example Request</h3>\n<p>        <code></code>\n    </div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23113",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23113",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23113/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152003,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23113/revisions/152003"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23113"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

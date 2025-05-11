@@ -1,0 +1,91 @@
+{
+    "id": 157150,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/l10n-file/"
+    },
+    "modified": "2025-02-21T05:46:11",
+    "modified_gmt": "2025-02-21T05:46:11",
+    "slug": "l10n-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/l10n-file/",
+    "title": {
+        "rendered": "L10n Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_locale()</code></h2>\n<p>Returns the current locale.</p>\n<ul>\n<li>@date    16/12/16</li>\n<li>@since ACF 5.5.0</li>\n<li>@return  string</li>\n</ul>\n<h2><code>acf_load_textdomain()</code></h2>\n<p>acf_load_textdomain</p>\n<ul>\n<li>Loads the plugin&#8217;s translated strings similar to <a href=\"https://developer.wordpress.org/reference/functions/load_plugin_textdomain/\" rel=\"function\">load_plugin_textdomain()</a> .</li>\n<li>@date    8/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   string $locale The plugin&#8217;s current locale.</li>\n<li>@return void</li>\n</ul>\n<h2><code>_acf_apply_language_cache_key()</code></h2>\n<p>_acf_apply_language_cache_key</p>\n<ul>\n<li>Applies the current language to the cache key.</li>\n<li>@date    23/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   string $key The cache key.</li>\n<li>@return string</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157150",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157150",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157150/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157311,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157150/revisions/157311"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157150"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

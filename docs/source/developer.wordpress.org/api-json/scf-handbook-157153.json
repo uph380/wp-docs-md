@@ -1,0 +1,91 @@
+{
+    "id": 157153,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/local-meta-file/"
+    },
+    "modified": "2025-02-21T05:46:11",
+    "modified_gmt": "2025-02-21T05:46:11",
+    "slug": "local-meta-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/local-meta-file/",
+    "title": {
+        "rendered": "Local Meta Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_setup_meta()</code></h2>\n<p>acf_setup_meta</p>\n<ul>\n<li>Adds postmeta to storage.</li>\n<li>@date    8/10/18</li>\n<li>@since ACF 5.8.0<br />\n@see     ACF_Local_Meta::add() for list of parameters.</li>\n<li>@return  array</li>\n</ul>\n<h2><code>acf_reset_meta()</code></h2>\n<p>acf_reset_meta</p>\n<ul>\n<li>Removes postmeta to storage.</li>\n<li>@date    8/10/18</li>\n<li>@since ACF 5.8.0<br />\n@see     ACF_Local_Meta::remove() for list of parameters.</li>\n<li>@return  void</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157153",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157153",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157153/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157308,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157153/revisions/157308"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157153"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

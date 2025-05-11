@@ -1,0 +1,85 @@
+{
+    "id": 156768,
+    "date": "2025-02-20T08:04:06",
+    "date_gmt": "2025-02-20T08:04:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/"
+    },
+    "modified": "2025-02-21T04:16:05",
+    "modified_gmt": "2025-02-21T04:16:05",
+    "slug": "features",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/",
+    "title": {
+        "rendered": "Features"
+    },
+    "content": {
+        "rendered": "<p>This section details all features available in Secure Custom Fields.</p>\n<h2>Core Features</h2>\n<ul>\n<li><a href=\"post-types\">Post Types</a> &#8211; Create and manage custom post types</li>\n<li><a href=\"fields\">Fields</a> &#8211; Available field types and their usage</li>\n<li><a href=\"api\">API</a> &#8211; Programmatic access and integration</li>\n</ul>\n<h2>Feature Categories</h2>\n<ol>\n<li><strong>Content Management</strong>\n<ul>\n<li>Custom post types</li>\n<li>Custom taxonomies</li>\n<li>Field groups</li>\n</ul>\n</li>\n<li><strong>Field Types</strong>\n<ul>\n<li>Basic fields (text, textarea, etc.)</li>\n<li>Advanced fields (repeater, flexible content)</li>\n<li>Special fields (relationship, clone)</li>\n</ul>\n</li>\n<li><strong>Developer Tools</strong>\n<ul>\n<li>API endpoints</li>\n<li>Hooks and filters</li>\n<li>Helper functions</li>\n</ul>\n</li>\n</ol>\n<h2>Available Fields</h2>\n<ul>\n<li><a href=\"fields/accordion\">Accordion</a> &#8211; Group fields into collapsible sections</li>\n<li><a href=\"fields/button-group\">Button Group</a> &#8211; Select one option from a group of buttons</li>\n<li><a href=\"fields/checkbox\">Checkbox</a> &#8211; Select one or more choices</li>\n<li><a href=\"fields/clone\">Clone</a> &#8211; Duplicate and reuse existing field configurations</li>\n<li><a href=\"fields/color-picker\">Color Picker</a> &#8211; Choose colors with a visual picker</li>\n<li><a href=\"fields/date-picker\">Date Picker</a> &#8211; Select dates from a calendar</li>\n<li><a href=\"fields/date-time-picker\">Date/Time Picker</a> &#8211; Select dates and times</li>\n<li><a href=\"fields/email\">Email</a> &#8211; Input and validate email addresses</li>\n<li><a href=\"fields/file\">File</a> &#8211; Upload and manage files</li>\n<li><a href=\"fields/flexible-content\">Flexible Content</a> &#8211; Create flexible content layouts</li>\n<li><a href=\"fields/gallery\">Gallery</a> &#8211; Manage collections of images</li>\n<li><a href=\"fields/google-map\">Google Map</a> &#8211; Add location data with Google Maps</li>\n<li><a href=\"fields/group\">Group</a> &#8211; Group fields together</li>\n<li><a href=\"fields/icon-picker\">Icon Picker</a> &#8211; Select from available icons</li>\n<li><a href=\"fields/image\">Image</a> &#8211; Upload and manage images</li>\n<li><a href=\"fields/link\">Link</a> &#8211; Create links with titles and targets</li>\n<li><a href=\"fields/message\">Message</a> &#8211; Display instructional text</li>\n<li><a href=\"fields/number\">Number</a> &#8211; Input numeric values</li>\n<li><a href=\"fields/oembed\">oEmbed</a> &#8211; Embed external content</li>\n<li><a href=\"fields/page-link\">Page Link</a> &#8211; Link to internal content</li>\n<li><a href=\"fields/password\">Password</a> &#8211; Securely input passwords</li>\n<li><a href=\"fields/post-object\">Post Object</a> &#8211; Relate to other posts</li>\n<li><a href=\"fields/radio\">Radio</a> &#8211; Select one choice from options</li>\n<li><a href=\"fields/range\">Range</a> &#8211; Select a numeric value with a slider</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156768",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156768",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156768/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157125,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156768/revisions/157125"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156768"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 136823,
+    "date": "2021-07-21T12:24:48",
+    "date_gmt": "2021-07-21T12:24:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/filters/i18n-filters/"
+    },
+    "modified": "2024-10-30T17:09:59",
+    "modified_gmt": "2024-10-30T17:09:59",
+    "slug": "i18n-filters",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/filters/i18n-filters/",
+    "title": {
+        "rendered": "i18n Filters"
+    },
+    "content": {
+        "rendered": "<p>The i18n functions (<code>__()</code>, <code>_x()</code>, <code>_n()</code> and <code>_nx()</code>) provide translations of strings for use in your code. The values returned by these functions are filterable if you need to override them, using the following filters:</p>\n<ul>\n<li><code>i18n.gettext</code></li>\n<li><code>i18n.gettext_with_context</code></li>\n<li><code>i18n.ngettext</code></li>\n<li><code>i18n.ngettext_with_context</code></li>\n</ul>\n<h2>Filter Arguments</h2>\n<p>The filters are passed the following arguments, in line with their PHP equivalents.</p>\n<h3>i18n.gettext</h3>\n<pre><code class=\"language-jsx\">function i18nGettextCallback( translation, text, domain ) {\n    return translation;\n}\n</code></pre>\n<h3>i18n.gettext_with_context</h3>\n<pre><code class=\"language-jsx\">function i18nGettextWithContextCallback( translation, text, context, domain ) {\n    return translation;\n}\n</code></pre>\n<h3>i18n.ngettext</h3>\n<pre><code class=\"language-jsx\">function i18nNgettextCallback( translation, single, plural, number, domain ) {\n    return translation;\n}\n</code></pre>\n<h3>i18n.ngettext_with_context</h3>\n<pre><code class=\"language-jsx\">function i18nNgettextWithContextCallback(\n    translation,\n    single,\n    plural,\n    number,\n    context,\n    domain\n) {\n    return translation;\n}\n</code></pre>\n<h2>Basic Example</h2>\n<p>Here is a simple example, using the <code>i18n.gettext</code> filter to override a specific translation.</p>\n<pre><code class=\"language-jsx\">// Define our filter callback.\nfunction myPluginGettextFilter( translation, text, domain ) {\n    if ( text === 'Create Reusable block' ) {\n        return 'Save to MyOrg block library';\n    }\n    return translation;\n}\n\n// Adding the filter\nwp.hooks.addFilter(\n    'i18n.gettext',\n    'my-plugin/override-add-to-reusable-blocks-label',\n    myPluginGettextFilter\n);\n</code></pre>\n<h2>Using &#8216;text domain&#8217;-specific filters</h2>\n<p>Filters that are specific to the text domain you&#8217;re operating on are generally preferred for performance reasons (since your callback will only be run for strings in the relevant text domain).</p>\n<p>To attach to a text domain-specific filter append an underscore and the text-domain to the standard filter name. For example, if filtering a string where the text domain is &#8220;woocommerce&#8221;, you would use one of the following filters:</p>\n<ul>\n<li><code>i18n.gettext_woocommerce</code></li>\n<li><code>i18n.gettext_with_context_woocommerce</code></li>\n<li><code>i18n.ngettext_woocommerce</code></li>\n<li><code>i18n.ngettext_with_context_woocommerce</code></li>\n</ul>\n<p>For example:</p>\n<pre><code class=\"language-jsx\">// Define our filter callback.\nfunction myPluginGettextFilter( translation, text, domain ) {\n    if ( text === 'You\u2019ve fulfilled all your orders' ) {\n        return 'All packed up and ready to go. Good job!';\n    }\n    return translation;\n}\n\n// Adding the filter\nwp.hooks.addFilter(\n    'i18n.gettext_woocommerce',\n    'my-plugin/override-fulfilled-all-orders-text',\n    myPluginGettextFilter\n);\n</code></pre>\n<p><em>Note</em>: To apply a filter where the text-domain is <code>undefined</code> (for example WordPress core strings), then use the name &#8220;default&#8221; to construct the filter name.</p>\n<ul>\n<li><code>i18n.gettext_default</code></li>\n<li><code>i18n.gettext_with_context_default</code></li>\n<li><code>i18n.ngettext_default</code></li>\n<li><code>i18n.ngettext_with_context_default</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134419,
+    "menu_order": 79,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136823",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136823",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136823/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151722,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136823/revisions/151722"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134419"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136823"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 16358338,
+    "date": "2023-08-08T08:06:26",
+    "date_gmt": "2023-08-08T08:06:26",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16358338"
+    },
+    "modified": "2024-10-23T20:20:33",
+    "modified_gmt": "2024-10-23T20:20:33",
+    "slug": "site-editor-command-palette",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/site-editor-command-palette/",
+    "title": {
+        "rendered": "Editor Command Palette"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Command Palette </strong>is part of the Site Editor and Post Editor and offers you a way to quickly navigate the content of your site and to invoke different actions such as:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Search for individual posts or pages and create new ones.</li>\n\n\n\n<li>Search through templates, template parts and patterns.</li>\n\n\n\n<li>Add custom CSS. </li>\n\n\n\n<li>Access Styles and style revisions.</li>\n\n\n\n<li>Transform and manipulate blocks.</li>\n\n\n\n<li>Toggle settings and preferences.</li>\n\n\n\n<li>Reset customisations.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">How to access the Command Palette</h2>\n\n\n\n<p>To access the Command Palette, head to the Site Editor and click on the title, at the top center of the editor. Once the command line opens, you can start typing to search for the action or content you want.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/First-Video.mp4\"></video></figure>\n\n\n\n<p>You will also find it available when in the Site View in the sidebar by clicking on the search icon.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Second-Video.mp4\"></video></figure>\n\n\n\n<p>You can also use the keyboard shortcut <code>Cmd+k</code> on Mac or <code>Ctrl+k</code> on Windows. Please note that the <a href=\"https://github.com/WordPress/gutenberg/issues/51737\">keyboard shortcut is not available in some environments</a> at the moment.</p>\n\n\n\n<h2 class=\"wp-block-heading\">List of available commands</h2>\n\n\n\n<p>Here\u2019s a list of all available commands:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><em>Edit Template</em>&nbsp;when editing a page.</li>\n\n\n\n<li><em>Back to page</em>&nbsp;to return to editing a page from a template.</li>\n\n\n\n<li><em>Reset template</em></li>\n\n\n\n<li><em>Reset template part</em></li>\n\n\n\n<li><em>Reset styles to default</em></li>\n\n\n\n<li><em>Delete template</em></li>\n\n\n\n<li><em>Delete template part</em></li>\n\n\n\n<li><em>Toggle settings sidebar</em></li>\n\n\n\n<li><em>Toggle block inspector</em></li>\n\n\n\n<li><em>Toggle spotlight mode</em></li>\n\n\n\n<li><em>Toggle distraction free</em></li>\n\n\n\n<li><em>Toggle top toolbar</em></li>\n\n\n\n<li><em>Open code editor</em></li>\n\n\n\n<li><em>Exit code editor</em></li>\n\n\n\n<li><em>Toggle list view</em></li>\n\n\n\n<li><em>Toggle fullscreen mode</em></li>\n\n\n\n<li><em>Editor preferences</em></li>\n\n\n\n<li><em>Keyboard shortcuts</em></li>\n\n\n\n<li><em>Show/Hide block breadcrumbs</em></li>\n\n\n\n<li><em>Customize CSS</em></li>\n\n\n\n<li><em>Style revisions</em></li>\n\n\n\n<li><em>Open styles</em></li>\n\n\n\n<li><em>Learn about styles</em>&nbsp;to trigger the welcome guide for Styles</li>\n\n\n\n<li><em>Reset styles</em></li>\n\n\n\n<li><em>View site</em></li>\n\n\n\n<li><em>View templates</em></li>\n\n\n\n<li><em>View template parts</em></li>\n\n\n\n<li><em>Open Navigation Menus</em></li>\n\n\n\n<li><em>Rename Pattern</em></li>\n\n\n\n<li><em>Duplicate Pattern</em></li>\n\n\n\n<li><em>Manage all custom patterns</em></li>\n</ul>\n\n\n\n<p>An up-to-date list of all the available commands can be found <a href=\"https://github.com/WordPress/gutenberg/tree/trunk/packages/edit-site/src/hooks/commands\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Demo</h2>\n\n\n\n<p>Please watch the demo below for more details.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Command-palette-demo.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Registering custom commands</h2>\n\n\n\n<p>It is possible to extend the Command Palette by registering your own commands. You can read more details on how to register your own commands <a href=\"https://make.wordpress.org/core/2023/07/17/introducing-the-wordpress-command-palette-api/\">here</a>.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-11-27 \n<ul class=\"wp-block-list\">\n<li>Changed wording to refer to Site <em>and</em> Post Editor</li>\n\n\n\n<li>Updated list of Commands</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-08-24\n<ul class=\"wp-block-list\">\n<li>Updated headings formatting</li>\n\n\n\n<li>Added category and subcategory</li>\n</ul>\n</li>\n\n\n\n<li>Created 2023-08-08</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Command Palette is part of the Site Editor and Post Editor and offers you a way to quickly navigate the content of your site and to invoke different actions such as: How to access the Command Palette To access the Command Palette, head to the Site Editor and click on the title, at the [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        94
+    ],
+    "class_list": [
+        "post-16358338",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-site-editor"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358338",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16358338"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358338/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365178,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358338/revisions/16365178"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16358338"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16358338"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

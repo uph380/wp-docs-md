@@ -1,0 +1,91 @@
+{
+    "id": 138992,
+    "date": "2022-01-14T08:54:48",
+    "date_gmt": "2022-01-14T08:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v1/"
+    },
+    "modified": "2024-10-30T17:09:53",
+    "modified_gmt": "2024-10-30T17:09:53",
+    "slug": "theme-json-v1",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v1/",
+    "title": {
+        "rendered": "Theme.json Version 1 Reference"
+    },
+    "content": {
+        "rendered": "<blockquote><p>\n  This is the specification for  <strong>version 1</strong> of <code>theme.json</code>. This version works with WordPress 5.8 or later.\n</p></blockquote>\n<div class=\"callout callout-alert\">\n<p>Theme.json version 2 has been released with WordPress 5.9. WordPress will continue to support theme.json version 1. However new features will only be added to [new versions](https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/).</p>\n<p>When you are ready to upgrade, see the [theme.json migration guide](https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-migrations/#migrating-from-v1-to-v2) for details on updating to the latest version.</p>\n</div>\n<p>This reference guide lists the settings and style properties defined in the <code>theme.json</code> schema. See the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/\">theme.json how to guide</a> for examples and guidance on how to use the <code>theme.json</code> file in your theme.</p>\n<h2>JSON Schema</h2>\n<p>The last schema for version 1 is available at `https://schemas.wp.org/wp/5.8/theme.json`.</p>\n<p>Theme.json schemas for each WordPress version are available at <code>https://schemas.wp.org/wp/{{version}}/theme.json`. For example a schema for WordPress 5.8 is available at</code>https://schemas.wp.org/wp/5.8/theme.json`.</p>\n<p>See <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/#developing-with-themejson\">Developing with theme.json</a> for how to use the JSON schema in your editor.</p>\n<h2>Settings</h2>\n<h3>border</h3>\n<p>Settings related to borders.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Default</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>customRadius</td>\n<td>boolean</td>\n<td>false</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>color</h3>\n<p>Settings related to colors.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Default</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>custom</td>\n<td>boolean</td>\n<td>true</td>\n<td></td>\n</tr>\n<tr>\n<td>customDuotone</td>\n<td>boolean</td>\n<td>true</td>\n<td></td>\n</tr>\n<tr>\n<td>customGradient</td>\n<td>boolean</td>\n<td>true</td>\n<td></td>\n</tr>\n<tr>\n<td>duotone</td>\n<td>array</td>\n<td></td>\n<td>colors, name, slug</td>\n</tr>\n<tr>\n<td>gradients</td>\n<td>array</td>\n<td></td>\n<td>gradient, name, slug</td>\n</tr>\n<tr>\n<td>link</td>\n<td>boolean</td>\n<td>false</td>\n<td></td>\n</tr>\n<tr>\n<td>palette</td>\n<td>array</td>\n<td></td>\n<td>color, name, slug</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>layout</h3>\n<p>Settings related to layout.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Default</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>contentSize</td>\n<td>string</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>wideSize</td>\n<td>string</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>spacing</h3>\n<p>Settings related to spacing.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Default</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>customMargin</td>\n<td>boolean</td>\n<td>false</td>\n<td></td>\n</tr>\n<tr>\n<td>customPadding</td>\n<td>boolean</td>\n<td>false</td>\n<td></td>\n</tr>\n<tr>\n<td>units</td>\n<td>array</td>\n<td>px,em,rem,vh,vw,%</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>typography</h3>\n<p>Settings related to typography.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Default</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>customFontSize</td>\n<td>boolean</td>\n<td>true</td>\n<td></td>\n</tr>\n<tr>\n<td>customLineHeight</td>\n<td>boolean</td>\n<td>false</td>\n<td></td>\n</tr>\n<tr>\n<td>dropCap</td>\n<td>boolean</td>\n<td>true</td>\n<td></td>\n</tr>\n<tr>\n<td>fontSizes</td>\n<td>array</td>\n<td></td>\n<td>name, size, slug</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>custom</h3>\n<p>Generate custom CSS custom properties of the form <code>--wp--custom--{key}--{nested-key}: {value};</code>. <code>camelCased</code> keys are transformed to <code>kebab-case</code> as to follow the CSS property naming schema. Keys at different depth levels are separated by <code>--</code>, so keys should not include <code>--</code> in the name.</p>\n<hr />\n<h2>Styles</h2>\n<h3>border</h3>\n<p>Border styles.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>radius</td>\n<td>string</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>color</h3>\n<p>Color styles.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>background</td>\n<td>string</td>\n<td></td>\n</tr>\n<tr>\n<td>gradient</td>\n<td>string</td>\n<td></td>\n</tr>\n<tr>\n<td>text</td>\n<td>string</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>spacing</h3>\n<p>Spacing styles.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>margin</td>\n<td>object</td>\n<td>bottom, left, right, top</td>\n</tr>\n<tr>\n<td>padding</td>\n<td>object</td>\n<td>bottom, left, right, top</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>typography</h3>\n<p>Typography styles.</p>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n<th>Props</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>fontSize</td>\n<td>string</td>\n<td></td>\n</tr>\n<tr>\n<td>lineHeight</td>\n<td>string</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 138654,
+    "menu_order": 106,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-138992",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138992",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138992/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153632,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138992/revisions/153632"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138654"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=138992"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

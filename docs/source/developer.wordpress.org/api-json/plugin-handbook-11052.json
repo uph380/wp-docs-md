@@ -1,0 +1,97 @@
+{
+    "id": 11052,
+    "date": "2014-09-24T00:51:24",
+    "date_gmt": "2014-09-24T00:51:24",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11052"
+    },
+    "modified": "2024-02-08T15:17:36",
+    "modified_gmt": "2024-02-08T15:17:36",
+    "slug": "rendering-post-metadata",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/metadata/rendering-post-metadata/",
+    "title": {
+        "rendered": "Rendering Post Metadata"
+    },
+    "content": {
+        "rendered": "\n<p>Here is a non exhaustive list of functions and <a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">template tags</a> used to get and render Post Metadata:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/the_meta/\">the_meta() </a>&#8211; Template tag that automatically lists all Custom Fields of a post</li><li><a href=\"https://developer.wordpress.org/reference/functions/get_post_custom/\">get_post_custom()</a> and <a href=\"https://developer.wordpress.org/reference/functions/get_post_meta/\">get_post_meta()</a> &#8211; Retrieves one or all metadata of a post.</li><li><a href=\"https://developer.wordpress.org/reference/functions/get_post_custom_values/\">get_post_custom_values()</a> &#8211; Retrieves values for a custom post field.</li></ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11046,
+    "menu_order": 2,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11052",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11052",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11052/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 126871,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11052/revisions/126871"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11046"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11052"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

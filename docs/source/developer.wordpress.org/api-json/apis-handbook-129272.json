@@ -1,0 +1,97 @@
+{
+    "id": 129272,
+    "date": "2020-07-13T13:01:08",
+    "date_gmt": "2020-07-13T13:01:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=129272"
+    },
+    "modified": "2022-11-17T06:09:11",
+    "modified_gmt": "2022-11-17T06:09:11",
+    "slug": "getting-data-from-an-external-service",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/making-http-requests/getting-data-from-an-external-service/",
+    "title": {
+        "rendered": "GETting data from an external service"
+    },
+    "content": {
+        "rendered": "\n<p>GETting data is made incredibly simple in WordPress through the <code><a title=\"wp_remote_get\" href=\"https://developer.wordpress.org/reference/functions/wp_remote_get/\">wp_remote_get()</a></code> function. This function takes the following two arguments:</p>\n\n\n\n<ol class=\"wp-block-list\"><li><code>$url</code> &#8211; Resource to retrieve data from. This must be in a standard HTTP format</li><li><code>$args</code> &#8211; OPTIONAL &#8211; You may pass an array of arguments in here to alter behavior and headers, such as cookies, follow redirects, etc.</li></ol>\n\n\n\n<p>The following defaults are assumed, though they can be changed via the <code>$args</code> parameter:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>method &#8211; GET</li><li>timeout &#8211; 5 &#8211; How long to wait before giving up</li><li>redirection &#8211; 5 &#8211; How many times to follow redirections.</li><li>httpversion &#8211; 1.0</li><li>blocking &#8211; true &#8211; Should the rest of the page wait to finish loading until this operation is complete?</li><li>headers &#8211; array()</li><li>body &#8211; null</li><li>cookies &#8211; array()</li></ul>\n\n\n\n<p>Because <a href=\"https://github.com/\">GitHub</a> provides an excellent API that does not require app registration for many public aspects we will target GitHub API in the following examples.</p>\n\n\n\n<p>Let&#8217;s use the URL to a GitHub WordPress organization and see what sort of information we can get.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$response = wp_remote_get( 'https://api.github.com/users/wordpress' );</code></pre>\n\n\n\n<p><code>$response</code> will contain all the headers, content, and other meta data about our request.</p>\n\n\n\n<p>Response from previous example will be something like</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">Array(\n\t[headers] =&gt; Array(\n\t\t[server] =&gt; nginx\n\t\t[date] =&gt; Fri, 05 Oct 2012 04:43:50 GMT\n\t\t[content-type] =&gt; application/json; charset=utf-8\n\t\t[connection] =&gt; close\n\t\t[status] =&gt; 200 OK\n\t\t[vary] =&gt; Accept\n\t\t[x-ratelimit-remaining] =&gt; 4988\n\t\t[content-length] =&gt; 594\n\t\t[last-modified] =&gt; Fri, 05 Oct 2012 04:39:58 GMT\n\t\t[etag] =&gt; \"5d5e6f7a09462d6a2b473fb616a26d2a\"\n\t\t[x-github-media-type] =&gt; github.beta\n\t\t[cache-control] =&gt; public, s-maxage=60, max-age=60\n\t\t[x-content-type-options] =&gt; nosniff\n\t\t[x-ratelimit-limit] =&gt; 5000\n\t)\n\n\t[body] =&gt; {\n\"login\": \"WordPress\",\n\"id\": 276006,\n\"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjI3NjAwNg==\",\n\"avatar_url\": \"https://avatars0.githubusercontent.com/u/276006?v=4\",\n\"gravatar_id\": \"\",\n\"url\": \"https://api.github.com/users/WordPress\",\n\"html_url\": \"https://github.com/WordPress\",\n\"followers_url\": \"https://api.github.com/users/WordPress/followers\",\n\"following_url\": \"https://api.github.com/users/WordPress/following{/other_user}\",\n\"gists_url\": \"https://api.github.com/users/WordPress/gists{/gist_id}\",\n\"starred_url\": \"https://api.github.com/users/WordPress/starred{/owner}{/repo}\",\n\"subscriptions_url\": \"https://api.github.com/users/WordPress/subscriptions\",\n\"organizations_url\": \"https://api.github.com/users/WordPress/orgs\",\n\"repos_url\": \"https://api.github.com/users/WordPress/repos\",\n\"events_url\": \"https://api.github.com/users/WordPress/events{/privacy}\",\n\"received_events_url\": \"https://api.github.com/users/WordPress/received_events\",\n\"type\": \"Organization\",\n\"site_admin\": false,\n\"name\": null,\n\"company\": null,\n\"blog\": \"https://wordpress.org/\",\n\"location\": null,\n\"email\": null,\n\"hireable\": null,\n\"bio\": null,\n\"twitter_username\": null,\n\"public_repos\": 50,\n\"public_gists\": 0,\n\"followers\": 0,\n\"following\": 0,\n\"created_at\": \"2010-05-13T22:42:10Z\",\n\"updated_at\": \"2020-05-22T14:27:02Z\"\n}\n\t[response] =&gt; Array(\n\t\t[preserved_text 5237511b45884ac6db1ff9d7e407f225 /] =&gt; 200\n\t\t[message] =&gt; OK\n\t)\n\n\t[cookies] =&gt; Array()\n\t[filename] =&gt;\n)</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">GET the body you always wanted</h3>\n\n\n\n<p>To retrieve response body use <code><a title=\"wp_remote_retrieve_body\" href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_body/\">wp_remote_retrieve_body()</a></code> function. This function takes just one parameter, the response from <code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_get/\">wp_remote_get()</a></code> function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$response = wp_remote_get( 'https://api.github.com/users/wordpress' );\n$body     = wp_remote_retrieve_body( $response );</code></pre>\n\n\n\n<p>Using the <code>$response</code> from the previous example, <code>$body</code> will be something like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">{\n\"login\": \"WordPress\",\n\"id\": 276006,\n\"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjI3NjAwNg==\",\n\"avatar_url\": \"https://avatars0.githubusercontent.com/u/276006?v=4\",\n\"gravatar_id\": \"\",\n\"url\": \"https://api.github.com/users/WordPress\",\n\"html_url\": \"https://github.com/WordPress\",\n\"followers_url\": \"https://api.github.com/users/WordPress/followers\",\n\"following_url\": \"https://api.github.com/users/WordPress/following{/other_user}\",\n\"gists_url\": \"https://api.github.com/users/WordPress/gists{/gist_id}\",\n\"starred_url\": \"https://api.github.com/users/WordPress/starred{/owner}{/repo}\",\n\"subscriptions_url\": \"https://api.github.com/users/WordPress/subscriptions\",\n\"organizations_url\": \"https://api.github.com/users/WordPress/orgs\",\n\"repos_url\": \"https://api.github.com/users/WordPress/repos\",\n\"events_url\": \"https://api.github.com/users/WordPress/events{/privacy}\",\n\"received_events_url\": \"https://api.github.com/users/WordPress/received_events\",\n\"type\": \"Organization\",\n\"site_admin\": false,\n\"name\": null,\n\"company\": null,\n\"blog\": \"https://wordpress.org/\",\n\"location\": null,\n\"email\": null,\n\"hireable\": null,\n\"bio\": null,\n\"twitter_username\": null,\n\"public_repos\": 50,\n\"public_gists\": 0,\n\"followers\": 0,\n\"following\": 0,\n\"created_at\": \"2010-05-13T22:42:10Z\",\n\"updated_at\": \"2020-05-22T14:27:02Z\"\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">GET the response code</h3>\n\n\n\n<p>You may want to check the response code to ensure your retrieval was successful. This can be done via the <code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_response_code/\">wp_remote_retrieve_response_code()</a></code> function:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$http_code = wp_remote_retrieve_response_code( $response );</code></pre>\n\n\n\n<p>If successful <code>$http_code</code> will contain <code>200</code>. Otherwise, it will contain some HTTP status codes.</p>\n\n\n\n<h3 class=\"wp-block-heading\">GET a specific header</h3>\n\n\n\n<p>If your desire is to retrieve a specific header, say last-modified, you can do so with <a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_header/\">wp_remote_retrieve_header()</a>. This function takes two parameters</p>\n\n\n\n<ol class=\"wp-block-list\"><li><code>$response</code> &#8211; The response from the get call</li><li><code>$header</code> &#8211; Name of the header to retrieve</li></ol>\n\n\n\n<p>To retrieve the last-modified header:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$last_modified = wp_remote_retrieve_header( $response, 'last-modified' );</code></pre>\n\n\n\n<p>You can also retrieve all of the headers in an array with  <a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_headers/\">wp_remote_retrieve_headers()</a> function.</p>\n\n\n\n<h3 class=\"wp-block-heading\">GET using basic authentication</h3>\n\n\n\n<p>APIs that are secured more provide one or more of many different types of authentication. A common, though not highly secure, the authentication method is HTTP Basic Authentication. It can be used in WordPress bypassing &#8216;Authorization&#8217; to the second parameter of the <code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_get/\">wp_remote_get()</a></code> function, as well as the other HTTP method functions.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$args = array(\n    'headers' =&gt; array(\n        'Authorization' =&gt; 'Basic ' . base64_encode( YOUR_USERNAME . ':' . YOUR_PASSWORD )\n    )\n);\nwp_remote_get( $url, $args );</code></pre>\n\n\n\n<p>MORE ABOUT AUTH</p>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 129278,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129272",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129272",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129272/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144362,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129272/revisions/144362"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129272"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

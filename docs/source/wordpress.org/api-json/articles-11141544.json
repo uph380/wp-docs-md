@@ -1,0 +1,109 @@
+{
+    "id": 11141544,
+    "date": "2019-01-28T23:04:59",
+    "date_gmt": "2019-01-28T23:04:59",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11141544"
+    },
+    "modified": "2024-06-08T17:52:08",
+    "modified_gmt": "2024-06-08T17:52:08",
+    "slug": "plugins-add-new-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/plugins-add-new-screen/",
+    "title": {
+        "rendered": "Plugins Add New screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Plugins Add New Screen</strong> allows  for the installation of new Plugins. Plugins extend and expand the  functionality of WordPress. You may automatically install plugins from  the <a href=\"/plugins/\">WordPress Plugins Directory</a> or upload a plugin in .zip format via this screen. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11141691\"><img loading=\"lazy\" decoding=\"async\" width=\"1047\" height=\"578\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/add-plugins.png?fit=1047%2C578&amp;ssl=1\" alt=\"\" class=\"wp-image-11141691\" srcset=\"https://wordpress.org/documentation/files/2019/01/add-plugins.png 1047w, https://wordpress.org/documentation/files/2019/01/add-plugins-300x166.png 300w, https://wordpress.org/documentation/files/2019/01/add-plugins-1024x565.png 1024w, https://wordpress.org/documentation/files/2019/01/add-plugins-768x424.png 768w\" sizes=\"auto, (max-width: 1047px) 100vw, 1047px\" /></a></figure>\n\n\n\n<p>The top section of the screen has 4 links (Featured, Popular, Recommended and Favorites) and Search Plugins box. The Featured page is active by default when you click into the Plugins &#8211; Add New menu. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Search Plugins</h2>\n\n\n\n<p>If you know what you\u2019re looking for, Search Plugins is your best bet. The Search function has options to search the <a href=\"https://wordpress.org/plugins/\">WordPress Plugins Directory</a>\n for a particular Keyword, Author, or Tag. Enter the word, or words,\nthat can be used to search for the Plugin you would like to find. An\nexample of a search keyword is <strong>backup</strong>. Hit the Enter key to initiate the Search. You will be presented with a table of Plugins under the Search Results link.\n</p>\n\n\n\n<p>You can also search the directory by selecting popular tags at\nthe bottom of Featured page. Tags in larger type mean more plugins have\nbeen labeled with that tag.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Search Results</h3>\n\n\n\n<p>Completing a search causes a new link to appear on the page called\n&#8220;Search Results&#8221; with Search type box allows for Keyword, Author, or Tag\n choices.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> <strong>Search type</strong> &#8211; Pull down the box to select one of three searches types. <strong>Keyword</strong> searches plugins names and descriptions for the specified keyword, <strong>Author</strong> searches for plugins created by the Author, or which the Author contributed to, and <strong>Tag</strong> searches for plugins tagged as such.</li></ul>\n\n\n\n<p>Once that is selected, re-enter the word, or words, if required in the search box and hit the Enter key.\n</p>\n\n\n\n<p>The Search Results page consists of a table with the Plugin Name,\n Descriptions, Author, star rating from users, Last Updated,\ncompatibility with your WordPress version, action button and link to\nMore Details information.\nThere are 3 types of actions:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> <strong>Install Now</strong> &#8211; When clicked, install the plugin immediately.  </li><li> <strong>Update Now</strong> &#8211; When the plugin is already installed but not the latest version, it is labeled as Update Now.  </li><li> <strong>Installed</strong> &#8211; When the latest plugin is already installed, it is labeled as Installed, and deactivated.</li></ul>\n\n\n\n<p>If there are many Plugins found with your search, there will be Page\nNumbers at the top of the Table that will allow you to navigate to those\n pages.  If you don&#8217;t see the Plugin you wish to install, execute a new\nSearch via the boxes at the top of the Table.\n</p>\n\n\n\n<h4 class=\"wp-block-heading\">Install Now</h4>\n\n\n\n<p>If the Install Now is clicked for a Plugin in one of the search\nTables, it will install the plugin and display messages similar to the\nfollowing:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> <em>Installing Plugin: WP-DB-Backup xxx</em></li><li> <em>Downloading plugin package from XXXXX</em></li><li> <em>Unpacking the plugin package</em></li><li> <em>Installing the plugin</em></li><li> <em>Successfully installed the plugin WP-DB-Backup xxx.</em></li><li> <em>Activate Plugin | Return to Plugin Installer</em></li></ul>\n\n\n\n<p>As part of a successful Plugin installation, two links are displayed:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> <strong>Activate Plugin</strong> &#8211; Click this link to activate the Plugin just installed.</li><li> <strong>Return to Plugin Installer</strong> &#8211; Click this to be directed to the <strong>Plugins Add New Screen</strong>.</li></ul>\n\n\n\n<p>If you get prompted for ftp login information you can bypass this by setting the file permissions properly. See <a href=\"/support/article/updating-wordpress/\">Updating WordPress</a> for more details. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Upload Plugins</h2>\n\n\n\n<p>If you want to install a plugin that you\u2019ve downloaded elsewhere,\nclick the Upload link in the upper left. You will be prompted to upload\nthe .zip package, and once uploaded, you can install the plugin.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> <strong>Browse</strong> &#8211; Click to browse your computer&#8217;s local hard drive and the select the Plugin zip file name is placed in the text box. </li><li> <strong>Install Now</strong> &#8211; Click this button to install the Plugin from the zip file detailed in the text box. </li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Featured and Popular Plugins</h2>\n\n\n\n<p>If you just want to get an idea of what\u2019s available, you can browse\nFeatured and Popular plugins by using the links in the upper left of the\n screen. They produce similar tables to conducting a search. These\nsections rotate regularly.\n</p>\n\n\n\n<h2 class=\"wp-block-heading\">Recommended Plugin</h2>\n\n\n\n<p>In a Recommend page, suggested plugins based on the plugins you and other users have installed are listed.\n</p>\n\n\n\n<h2 class=\"wp-block-heading\">Favorites Plugin</h2>\n\n\n\n<p>WordPress has the ability to display and easily install a user&#8217;s favorite plugins from this <strong>Plugins Add New Screen</strong>.  Click the Favorites link in the upper left of the screen. You can view  the favorites of any wordpress.org user, by entering their username. </p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Plugins Add New Screen allows for the installation of new Plugins. Plugins extend and expand the functionality of WordPress. You may automatically install plugins from the WordPress Plugins Directory or upload a plugin in .zip format via this screen. The top section of the screen has 4 links (Featured, Popular, Recommended and Favorites) and [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11141544",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11141544",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11141544"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11141544/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360356,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11141544/revisions/16360356"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11141544"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11141544"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

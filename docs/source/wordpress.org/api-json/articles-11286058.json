@@ -1,0 +1,109 @@
+{
+    "id": 11286058,
+    "date": "2019-03-07T13:15:41",
+    "date_gmt": "2019-03-07T13:15:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11286058"
+    },
+    "modified": "2024-06-06T17:19:30",
+    "modified_gmt": "2024-06-06T17:19:30",
+    "slug": "latest-posts-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/latest-posts-block/",
+    "title": {
+        "rendered": "Latest Posts block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>latest posts block</em>&nbsp;displays your most recent posts, making it easy for your readers to see what\u2019s new on your blog.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264026-bee07046-db86-464c-9dfc-3ed073ff154c.png\" alt=\"Here\u2019s what it looks like when it\u2019s embedded in the Editor. \" /><figcaption class=\"wp-element-caption\">Here\u2019s what it looks like when it\u2019s embedded in the Editor. </figcaption></figure>\n\n\n\n<p>The&nbsp;<em>latest posts block</em>&nbsp;can be added to a page by clicking on the Add Block button. It can be found in&nbsp;<em>Widgets</em>&nbsp;section. Alternatively, you can type <em>/latest </em>and click on <em>Latest Posts</em>.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"331\" height=\"185\" src=\"https://wordpress.org/documentation/files/2020/08/latestposts_1.png\" alt=\"\" class=\"wp-image-13299355\" srcset=\"https://wordpress.org/documentation/files/2020/08/latestposts_1.png 331w, https://wordpress.org/documentation/files/2020/08/latestposts_1-300x168.png 300w\" sizes=\"auto, (max-width: 331px) 100vw, 331px\" /><figcaption class=\"wp-element-caption\">Latest Posts Slash Command</figcaption></figure>\n\n\n\n<p>You can also choose the Latest Posts<em><strong> </strong></em>from the Add Block button. </p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block has its own block-specific controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264029-66f0e652-4c60-4109-84e7-5c20257006b4.png\" alt=\"The Latest Posts Block toolbar\" style=\"width:370px;height:61px\" /><figcaption class=\"wp-element-caption\">The Latest Posts Block toolbar</figcaption></figure>\n\n\n\n<p>The block toolbar for the <em>latest posts block</em> has options for:</p>\n\n\n\n<p><strong>Changing Alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image alignright size-large is-resized\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264030-ae3a9c29-d767-4a49-9fb7-c27ff80a0d7d.png\" alt=\"Alignment Settings\" style=\"width:-22px;height:-30px\" /><figcaption class=\"wp-element-caption\">Alignment Settings</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong> &#8211; default</li>\n\n\n\n<li><strong>Wide width</strong>&nbsp;\u2013 Increase the width of the Latest Post block beyond the content size</li>\n\n\n\n<li><strong>Full width</strong>&nbsp;\u2013 Extend the Latest Post block to cover the full width of the screen</li>\n\n\n\n<li><strong>Align left</strong>&nbsp;\u2013 Make the Latest Post block left aligned</li>\n\n\n\n<li><strong>Align center</strong>&nbsp;\u2013 Make the Latest Post block alignment centered</li>\n\n\n\n<li><strong>Align right&nbsp;</strong>\u2013 Make the Latest Post block align right</li>\n</ul>\n\n\n\n<p></p>\n\n\n\n<h3 class=\"wp-block-heading\">List view (default)</h3>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264031-96f7a429-40c3-44e7-aef3-02c40a43344e.png\" alt=\"List view\" /><figcaption class=\"wp-element-caption\">List view</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Grid view</h3>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264033-8eb59636-ec96-4860-a9f0-1b29f2c86887.png\" alt=\"Grid View\" /><figcaption class=\"wp-element-caption\">Grid View</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">More options </h3>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings  </h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar. <em>If you do not see the sidebar, simply click the &#8216;cog&#8217; icon next to the Publish button.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"556\" height=\"450\" src=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.18.52.png\" alt=\"\" class=\"wp-image-16358935\" style=\"width:395px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.18.52.png 556w, https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.18.52-300x243.png 300w\" sizes=\"auto, (max-width: 556px) 100vw, 556px\" /><figcaption class=\"wp-element-caption\">Block Settings</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image alignright size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.27.37-300x1024.png\" alt=\"\" class=\"wp-image-16358938\" style=\"aspect-ratio:0.32223903177004537\" srcset=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.27.37-300x1024.png 300w, https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.27.37-88x300.png 88w, https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.27.37.png 562w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><figcaption class=\"wp-element-caption\"> Latest Posts settings</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Post content settings</h3>\n\n\n\n<p>You can choose to show full post content or post excerpt with the option to modify the number of words for the excerpt.</p>\n\n\n\n<figure class=\"wp-block-image alignleft size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"558\" height=\"546\" src=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.37.10.png\" alt=\"\" class=\"wp-image-16358941\" style=\"width:276px;height:271px\" srcset=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.37.10.png 558w, https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.37.10-300x294.png 300w\" sizes=\"auto, (max-width: 558px) 100vw, 558px\" /><figcaption class=\"wp-element-caption\">Post content settings</figcaption></figure>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\">\n<h3 class=\"wp-block-heading\">Post meta settings</h3>\n\n\n\n<p>Meta settings allow you to show or hide author&#8217;s name and post publish date.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"710\" height=\"350\" src=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.17.11.png\" alt=\"\" class=\"wp-image-16358934\" style=\"width:386px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.17.11.png 710w, https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.17.11-300x148.png 300w\" sizes=\"auto, (max-width: 710px) 100vw, 710px\" /><figcaption class=\"wp-element-caption\">Post meta settings</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Featured image settings</h3>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"562\" height=\"926\" src=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.39.59.png\" alt=\"\" class=\"wp-image-16358942\" style=\"width:396px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.39.59.png 562w, https://wordpress.org/documentation/files/2023/10/Screenshot-2023-10-04-at-14.39.59-182x300.png 182w\" sizes=\"auto, (max-width: 562px) 100vw, 562px\" /><figcaption class=\"wp-element-caption\">Featured image settings</figcaption></figure>\n\n\n\n<p>With Featured image settings you can select resolution, dimensions, alignment and whether you want image to link to the article itself.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Sorting and filtering</h3>\n\n\n\n<p>The Latest Posts Settings allow you to choose how you wish to order the posts, with choices of:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Newest to Oldest (default)</li>\n\n\n\n<li>Oldest to Newest</li>\n\n\n\n<li>Alphabetical A to Z</li>\n\n\n\n<li>Alphabetical Z to A</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264043-c7c00db6-1fd7-4aa6-872b-d58009b2cc18.png\" alt=\"Order by settings\" /><figcaption class=\"wp-element-caption\">Order by settings</figcaption></figure>\n\n\n\n<p>You also have the option to choose a specific category or subcategory to display the posts from. You may also specify the number of posts to display (if you have fewer posts than the limit, that number of posts will show), as well as toggle the post date on and off.</p>\n\n\n\n<p>If you select Grid view you&#8217;ll also have an option to choose how many columns you want grid to have.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264044-76fa35c1-eafd-4850-b67d-af03de20ebc3.png\" alt=\"Sorting and filtering settings\" style=\"width:283px;height:472px\" /><figcaption class=\"wp-element-caption\">Sorting and filtering settings</figcaption></figure>\n</div>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264046-0e9ae9bb-bb3c-495f-b9b9-87a4f40b69e3.png\" alt=\"List view with all settings enabled\" /><figcaption class=\"wp-element-caption\">List view with all settings enabled</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/159264048-49120ac7-b2f1-46d3-92ea-869246628275.png\" alt=\"Grid view with all settings enabled\" /><figcaption class=\"wp-element-caption\">Grid view with all settings enabled</figcaption></figure>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><a href=\"https://wordpress.org/documentation/files/2019/03/block-settings-advanced-1.png\"><img loading=\"lazy\" decoding=\"async\" width=\"564\" height=\"262\" src=\"https://wordpress.org/documentation/files/2019/03/block-settings-advanced-1.png\" alt=\"The advanced section lets you add a CSS class to your block.\" class=\"wp-image-11285926\" style=\"width:341px;height:159px\" srcset=\"https://wordpress.org/documentation/files/2019/03/block-settings-advanced-1.png 564w, https://wordpress.org/documentation/files/2019/03/block-settings-advanced-1-300x139.png 300w\" sizes=\"auto, (max-width: 564px) 100vw, 564px\" /></a><figcaption class=\"wp-element-caption\">The advanced section lets you add a CSS class to your block.</figcaption></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-extra-large-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-07-05\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for 6.0</li>\n\n\n\n<li>Added new settings sections</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-12-15\n<ul class=\"wp-block-list\">\n<li>Updated Block Settings. </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-23<ul><li>WP 5.5 overall updates</li></ul>\n<ul class=\"wp-block-list\">\n<li>Updated images to WP 5.5</li>\n\n\n\n<li>Updates to Alignment, List &amp; Grid View sections</li>\n\n\n\n<li>Added changelog</li>\n\n\n\n<li>Added list of blocks reusable block</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The latest posts block&nbsp;displays your most recent posts, making it easy for your readers to see what\u2019s new on your blog. The&nbsp;latest posts block&nbsp;can be added to a page by clicking on the Add Block button. It can be found in&nbsp;Widgets&nbsp;section. Alternatively, you can type /latest and click [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        90
+    ],
+    "class_list": [
+        "post-11286058",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-widget-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11286058",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11286058"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11286058/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360331,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11286058/revisions/16360331"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11286058"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11286058"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

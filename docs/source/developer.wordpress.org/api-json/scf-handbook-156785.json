@@ -1,0 +1,91 @@
+{
+    "id": 156785,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/color-picker/"
+    },
+    "modified": "2025-02-21T04:18:00",
+    "modified_gmt": "2025-02-21T04:18:00",
+    "slug": "color-picker",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/color-picker/",
+    "title": {
+        "rendered": "Color Picker Field"
+    },
+    "content": {
+        "rendered": "<p>The Color Picker field provides an interactive interface for selecting colors. It supports both RGB and RGBA color formats and includes a visual color picker with opacity control.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Visual color selection interface</li>\n<li>RGB and RGBA color support</li>\n<li>Opacity/transparency control</li>\n<li>Default color presets</li>\n<li>Hex color input</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Default Value &#8211; Set a default color</li>\n<li>Return Format &#8211; Choose between string, array, or rgba format</li>\n<li>Enable Opacity &#8211; Allow transparency selection</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156785",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156785",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156785/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156934,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156785/revisions/156934"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156785"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

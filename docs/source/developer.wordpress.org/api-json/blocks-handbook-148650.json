@@ -1,0 +1,91 @@
+{
+    "id": 148650,
+    "date": "2023-08-24T12:40:01",
+    "date_gmt": "2023-08-24T12:40:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/"
+    },
+    "modified": "2024-06-12T23:09:38",
+    "modified_gmt": "2024-06-12T23:09:38",
+    "slug": "enqueueing-assets-in-the-editor",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/",
+    "title": {
+        "rendered": "Enqueueing assets in the Editor"
+    },
+    "content": {
+        "rendered": "<p>This guide is designed to be the definitive reference for enqueueing assets (scripts and styles) in the Editor. The approaches outlined here represent the recommended practices but keep in mind that this resource will evolve as WordPress does. Updates are encouraged.</p>\n<p>As of WordPress 6.3, the Post Editor is iframed if all registered blocks have a <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/\"><code>Block API version 3</code></a> or higher and no traditional metaboxes are registered. The Site Editor has always been iframed. This guide assumes you are looking to enqueue assets for the iframed Editor, but refer to the backward compatibility section below for additional considerations.</p>\n<p>For more information about why the Editor is iframed, please revisit the post <a href=\"https://make.wordpress.org/core/2021/06/29/blocks-in-an-iframed-template-editor/\">Blocks in an iframed (template) editor</a>.</p>\n<h2>The Editor versus Editor content</h2>\n<p>Before enqueueing assets in the Editor, you must first identify what you are trying to target.</p>\n<p>Do you want to add styling or JavaScript to the user-generated content (blocks) in the Editor? Or do you want to modify the Editor user interface (UI) components or interact with Editor APIs? This could include everything from creating custom block controls to registering block variations.</p>\n<p>There are different hooks to use depending on the answers to these questions, and if you are building a block or a theme, there are additional approaches to consider. Refer to the designated sections below.</p>\n<h2>Scenarios for enqueuing assets</h2>\n<h3>Editor scripts and styles</h3>\n<p>Whenever you need to enqueue assets for the Editor itself (i.e. not the user-generated content), you should use the <a href=\"https://developer.wordpress.org/reference/hooks/enqueue_block_editor_assets/\"><code>enqueue_block_editor_assets</code></a> hook coupled with the standard <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_script/\"><code>wp_enqueue_script</code></a> and <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_style/\"><code>wp_enqueue_style</code></a> functions.</p>\n<p>Examples might be adding custom inspector or toolbar controls, registering block styles and variations in JavaScript, registering Editor plugins, etc.</p>\n<pre><code class=\"language-php\">/**\n * Enqueue Editor assets.\n */\nfunction example_enqueue_editor_assets() {\n    wp_enqueue_script(\n        'example-editor-scripts',\n        plugins_url( 'editor-scripts.js', __FILE__ )\n    );\n    wp_enqueue_style(\n        'example-editor-styles',\n        plugins_url( 'editor-styles.css', __FILE__ )\n    );\n}\nadd_action( 'enqueue_block_editor_assets', 'example_enqueue_editor_assets' );\n</code></pre>\n<p>While not the recommended approach, it&#8217;s important to note that <code>enqueue_block_editor_assets</code> can be used to style Editor content for backward compatibility. See below for more details.</p>\n<h3>Editor content scripts and styles</h3>\n<p>As of WordPress 6.3, all assets added through the <a href=\"https://developer.wordpress.org/reference/hooks/enqueue_block_assets/\"><code>enqueue_block_assets</code></a> PHP action will also be enqueued in the iframed Editor. See <a href=\"https://github.com/WordPress/gutenberg/pull/48286\">#48286</a> for more details.</p>\n<p>This is the primary method you should use to enqueue assets for user-generated content (blocks), and this hook fires both in the Editor and on the front end of your site. It should not be used to add assets intended for the Editor UI or to interact with Editor APIs. See below for a note on backward compatibility.</p>\n<p>There are instances where you may only want to add assets in the Editor and not on the front end. You can achieve this by using an <a href=\"https://developer.wordpress.org/reference/functions/is_admin/\"><code>is_admin()</code></a> check.</p>\n<pre><code class=\"language-php\">/**\n * Enqueue content assets but only in the Editor.\n */\nfunction example_enqueue_editor_content_assets() {\n    if ( is_admin() ) {\n        wp_enqueue_script(\n            'example-editor-content-scripts',\n            plugins_url( 'content-scripts.js', __FILE__ )\n        );\n        wp_enqueue_style(\n            'example-editor-content-styles',\n            plugins_url( 'content-styles.css', __FILE__ )\n        );\n    }\n}\nadd_action( 'enqueue_block_assets', 'example_enqueue_editor_content_assets' );\n</code></pre>\n<p>You can also use the hook <a href=\"https://developer.wordpress.org/reference/hooks/block_editor_settings_all/\"><code>block_editor_settings_all</code></a> to modify Editor settings directly. This method is a bit more complicated to implement but provides greater flexibility. It should only be used if <code>enqueue_block_assets</code> does not meet your needs.</p>\n<p>The following example sets the default text color for all paragraphs to <code>green</code>.</p>\n<pre><code class=\"language-php\">/**\n * Modify the Editor settings by adding custom styles.\n *\n * @param array  $editor_settings An array containing the current Editor settings.\n * @param string $editor_context  The context of the editor.\n *\n * @return array Modified editor settings with the added custom CSS style.\n */\nfunction example_modify_editor_settings( $editor_settings, $editor_context ) {\n    $editor_settings[\"styles\"][] = array(\n        \"css\" =&gt; 'p { color: green }'\n    );\n\n    return $editor_settings;\n}\nadd_filter( 'block_editor_settings_all', 'example_modify_editor_settings', 10,2 );\n</code></pre>\n<p>These styles are inlined in the <code>body</code> of the iframed Editor and prefixed by <code>.editor-styles-wrapper</code>. The resulting markup will look like this:</p>\n<pre><code class=\"language-css\">&lt;style&gt;.editor-styles-wrapper p { color: green; }&lt;/style&gt;\n</code></pre>\n<p>Beginning in WordPress 6.3, you can also use this method of modifying Editor settings to change styles dynamically with JavaScript. See <a href=\"https://github.com/WordPress/gutenberg/pull/52767#top\">#52767</a> for more details.</p>\n<h3>Block scripts and styles</h3>\n<p>When building a block, <code>block.json</code> is the recommended way to enqueue all scripts and styles that are specifically required for the block itself. You are able to enqueue assets for the Editor, the front end, or both. See the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/\">Block Metadata</a> article for more details.</p>\n<h3>Theme scripts and styles</h3>\n<p>If you need to enqueue Editor JavaScript in a theme, you can use either <code>enqueue_block_assets</code> or <code>enqueue_block_editor_assets</code> as outlined above. Editor-specific stylesheets should almost always be added with <a href=\"https://developer.wordpress.org/reference/functions/add_editor_style/\"><code>add_editor_style()</code></a> or <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/\"><code>wp_enqueue_block_style()</code></a>.</p>\n<p>The <code>wp_enqueue_block_style()</code> function allows you to load per-block stylesheets in the Editor and on the front end. Coupled with <code>theme.json</code>, this is one of the best methods of styling blocks. See the WordPress Developer Blog article <a href=\"https://developer.wordpress.org/news/2022/12/leveraging-theme-json-and-per-block-styles-for-more-performant-themes/\">Leveraging theme.json and per-block styles for more performant themes</a> for more details.</p>\n<h2>Backward compatibility and known issues</h2>\n<p>As a general rule, when you enqueue assets in the iframed Editor, they will also be enqueued when the Editor is not iframed so long as you are using WordPress 6.3+. The opposite is not always true.</p>\n<p>Suppose you are building a plugin or theme that requires backward compatibility to 6.2 or lower while maintaining compatibility with WordPress 6.3. In that case, you will not be able to use <code>enqueue_block_assets</code> since this hook does not enqueue assets in the content of the iframed Editor prior to 6.3.</p>\n<p>As an alternative, you can use <code>enqueue_block_editor_assets</code> so long as the enqueued stylesheet contains at least one of the following selectors: <code>.editor-styles-wrapper</code>, <code>.wp-block</code>, or <code>.wp-block-*</code>. A warning message will be logged in the console, but the hook will apply the styles to the content of the Editor.</p>\n<p>It\u2019s also important to note that as of WordPress 6.3, assets enqueued by <code>enqueue_block_assets</code> are loaded both inside and outside Editor&#8217;s iframe for backward compatibility. Depending on the script libraries that you are trying to enqueue, this might cause problems. An ongoing discussion about this approach is happening in the Gutenberg <a href=\"https://github.com/WordPress/gutenberg/issues/53590\">GitHub repository</a>.</p>\n<p>If you experience issues using any of the methods outlined in this guide that have not been previously reported, please <a href=\"https://github.com/WordPress/gutenberg/issues/new/choose\">submit an issue</a> on GitHub.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 41,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148650",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148650",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148650/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153926,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/148650/revisions/153926"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148650"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

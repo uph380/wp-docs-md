@@ -1,0 +1,109 @@
+{
+    "id": 11215349,
+    "date": "2019-02-17T14:18:29",
+    "date_gmt": "2019-02-17T14:18:29",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11215349"
+    },
+    "modified": "2025-03-26T12:55:56",
+    "modified_gmt": "2025-03-26T12:55:56",
+    "slug": "become-a-wordpress-contributor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/become-a-wordpress-contributor/",
+    "title": {
+        "rendered": "Become a WordPress contributor"
+    },
+    "content": {
+        "rendered": "\n<p>Thank you for contributing to the project we all love! Your participation is vital to the WordPress project.</p>\n\n\n\n<p>WordPress is a user-driven project, and all developments and enhancements depend on users like&nbsp;<strong>you</strong>! Please consider contributing to the project and the WordPress Community in one or more of the ways outlined below. Contributions from users like you keep the project vibrant, alive, and on the path of progress.</p>\n\n\n\n<p>Whether you\u2019re a budding developer, a pixel-perfect designer, or just like helping out, we\u2019re always looking for people to help make WordPress even better. Below is an overview of ways to get involved and help out. If you want to dive right in, visit&nbsp;<a href=\"https://make.wordpress.org/\">https://make.wordpress.org/</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Documentation</h2>\n\n\n\n<p>All of the WordPress user and developer documentation has been produced by users like you and me! The many different ways in which you can volunteer your time and effort to improve the quality and scope of documentation are outlined in <a href=\"https://make.wordpress.org/docs/handbook/\">Documentation Contributor Handbook</a>.</p>\n\n\n\n<p>The slack channel <a href=\"https://wordpress.slack.com/messages/C02RP4WU5\">#docs</a> is the forum for discussing all issues related to documentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Translation</h2>\n\n\n\n<p><a href=\"https://make.wordpress.org/polyglots/handbook/\">Translating WordPress</a> describes the process of translating the WordPress software, so that people can use WordPress for blogs in languages other than English. This article tells you how to find and join the teams that are translating WordPress.</p>\n\n\n\n<p>The slack channel <a href=\"http://wordpress.slack.com/messages/polyglots/\">#polyglots</a> is for questions, suggestions and discussions related to translating WordPress; please feel free to join in.</p>\n\n\n\n<p>To get involved with the Translation team, please review&nbsp;<a href=\"https://make.wordpress.org/polyglots/\">https://make.wordpress.org/polyglots/</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Support Forum</h2>\n\n\n\n<p>Another valuable contribution you can make is donating some of your time to help other users of WordPress. All WordPress related support at the&nbsp;<a href=\"https://www.wordpress.org/support\">WordPress Support Forum</a>&nbsp;is provided free of cost, and the involvement of users is essential to maintain this.</p>\n\n\n\n<p>If you&#8217;d like to help, read visit <a href=\"https://make.wordpress.org/support/\">https://make.wordpress.org/support/</a>&nbsp;for more information.</p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Chat on Slack</h2>\n\n\n\n<p>Slack has replaced IRC as a way to organize and get work done on WordPress. The community is vibrant, responsive, and very active. Please join us on our&nbsp;<a href=\"https://make.wordpress.org/chat/\">Slack channel</a>&nbsp;and start getting involved today.</p>\n\n\n\n<p>There is a\u00a0weekly <a href=\"https://make.wordpress.org/core/weekly-developer-chats/\">meetup of core developers</a>\u00a0in\u00a0#core\u00a0on Slack. Agendas, minutes, and discussion between meetups all take place on the\u00a0<a href=\"https://make.wordpress.org/core/\">WordPress Development Blog</a>.</p>\n\n\n\n<p>While the IRC Live chat is still active, our Slack Channel is where we are getting work done. Please join us on&nbsp;<a href=\"https://make.wordpress.org/chat/.\">https://make.wordpress.org/chat/.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Development</h2>\n\n\n\n<p>You can help with the&nbsp;<a href=\"https://make.wordpress.org/\">development of the WordPress software</a>, whether or not you are a software developer.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Development Planning</h3>\n\n\n\n<p>One way to participate in WordPress development is to suggest features and participate in the&nbsp;<a href=\"https://codex.wordpress.org/Development_Planning\">development planning</a> process. Even if you aren&#8217;t a developer, you can help build consensus and formalize proposals, boiling down long email threads and IRC logs to their essence, so that developers can quickly ascertain what the community is hoping to achieve with a particular feature.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Testing WordPress</h3>\n\n\n\n<p>Another valuable contribution a non-developer (or developer) can make to WordPress development is to test WordPress. Before every stable release of WordPress, pre-release versions are made to enable testing. You can download the pre-releases and test them, so that the WordPress developers can fix problems before the new version is made available to the public. If you would like to get involved in this effort, join the&nbsp;<a href=\"https://codex.wordpress.org/Mailing_Lists#Testers\">wp-testers mailing list</a>, where new releases are announced and discussed.</p>\n\n\n\n<p>If you want to be on the bleeding edge of development, even before pre-release versions are put together, you can also check out the latest software from the WordPress Subversion (SVN) repository, as outlined in&nbsp;<a href=\"https://codex.wordpress.org/Using_Subversion\">Using Subversion</a>. Or, you can get the &#8220;nightly build&#8221; (which is created from the Subversion repository, and available as a zip file) at&nbsp;<a href=\"https://wordpress.org/nightly-builds/wordpress-latest.zip\">https://wordpress.org/nightly-builds/wordpress-latest.zip</a>&nbsp;&#8212; almost as up-to-date as the instantaneous Subversion repository.</p>\n\n\n\n<p>If you find bugs while testing pre-release or already-released versions of WordPress, see the section just below.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Reporting Bugs</h3>\n\n\n\n<p>Another way you can contribute to WordPress development is by reporting any problems you find with the WordPress software. The process of reporting bugs is described in&nbsp;<a href=\"https://make.wordpress.org/core/handbook/testing/reporting-bugs/\">Reporting Bugs</a>&nbsp;&#8212; please start by reading that article. Once you have understood the bug reporting process, you can search the WordPress&nbsp;<a href=\"https://trac.wordpress.org/\">Trac</a>&nbsp;database to see if your issue has already been reported, and if not, file a new report. Your help with reporting bugs will be highly appreciated.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Fixing Bugs and Other Programming</h3>\n\n\n\n<p>If you are a software developer, you can also help the development of WordPress by fixing problems that have been reported by you or another person in the WordPress&nbsp;<a href=\"https://trac.wordpress.org/\">Trac</a>&nbsp;database. This process is also known as &#8220;patching&#8221;, and is described in&nbsp;<a href=\"https://make.wordpress.org/core/handbook/testing/reporting-bugs/\">Reporting Bugs</a>. That article also has some suggestions on how to find bugs to fix.</p>\n\n\n\n<p>You can also subscribe to the&nbsp;<a href=\"https://codex.wordpress.org/Mailing_Lists#Hackers\">wp-hackers mailing list</a>&nbsp;to participate in discussions regarding WordPress development. All contributions, ideas and suggestions are welcome at the mailing list. Sometimes, requests are also made on the list asking for the help of volunteers to assist in the improvement and development of specific functionality.</p>\n\n\n\n<p>Occasionally there are also bug scrubs in the&nbsp;<a href=\"https://wordpress.slack.com/messages/core/\">#core</a> <a href=\"https://make.wordpress.org/chat/\">Slack</a> channel. They are usually announced ahead of time on the <a href=\"https://make.wordpress.org/core/\">make/core blog</a>, and more details about what a bug scrub involves is available in the <a href=\"https://make.wordpress.org/core/handbook/testing/bug-gardening/\">core team handbook</a>.</p>\n\n\n\n<p>You may also be interested to read this page on&nbsp;<a href=\"https://codex.wordpress.org/How_does_code_make_it_into_WordPress\">How does code make it into WordPress</a>. It details how bug fixes, code and new features are included into the next releases of WordPress.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Show You Care</h2>\n\n\n\n<p>If you enjoy WordPress or find it to be useful, put a link to WordPress on your site. You can do this with a text link, or use one of the many&nbsp;<a href=\"https://wordpress.org/about/logos/\">WordPress logos</a> on your site with a link to&nbsp;<a href=\"https://www.wordpress.org/\">http://wordpress.org</a>. Show you care.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Donating Money</h2>\n\n\n\n<p>The WordPress Community exists because everyone takes part in some way, by giving their time, energy, and sometimes even money, because they believe in the valuable services WordPress provides. We invite you to join the community in whatever way you feel is appropriate, and donating money to WordPress Theme and Plugin authors and developers who give so freely of their creativity and expertise by offering their services for free to all WordPress users is a good place to start.</p>\n\n\n\n<p>If you use a WordPress Theme or Plugin and your WordPress blog depends upon it, contact the author and find out how you can give back and support their continued efforts. It takes a lot of time and energy to create and then support Themes and Plugins, keeping them updated as WordPress changes and bugs are found. Many take donations or appreciate it when you blog about their Plugin or Theme. Others offer their Plugins and Themes as&nbsp;<em>experiential portfolios</em>&#8211; you play with it, you like it, you hire them. Most clearly indicate how they appreciate compensation for their hard work &#8211; give back to WordPress by giving back to them.</p>\n\n\n\n<p>The more the WordPress Community supports the programmers, developers, testers, and challengers, the stronger and better WordPress becomes. Sometimes that means donating money, sometimes it means saying thank you.</p>\n\n\n\n<p>Just remember, every contribution counts, no matter what it looks like. It takes every one of us to make WordPress better.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Thank you for contributing to the project we all love! Your participation is vital to the WordPress project. WordPress is a user-driven project, and all developments and enhancements depend on users like&nbsp;you! Please consider contributing to the project and the WordPress Community in one or more of the ways outlined below. Contributions from users like [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        75,
+        74
+    ],
+    "class_list": [
+        "post-11215349",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-about-wp",
+        "category-wordpress-overview"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11215349",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11215349"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11215349/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365510,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11215349/revisions/16365510"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11215349"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11215349"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 157175,
+    "date": "2025-02-21T04:17:11",
+    "date_gmt": "2025-02-21T04:17:11",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/acf-rest-api-functions-file/"
+    },
+    "modified": "2025-02-21T05:51:49",
+    "modified_gmt": "2025-02-21T05:51:49",
+    "slug": "acf-rest-api-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/acf-rest-api-functions-file/",
+    "title": {
+        "rendered": "Acf Rest API Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_field_rest_schema()</code></h2>\n<p>Get the REST API schema for a given field.</p>\n<ul>\n<li>@param array $field</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_field_rest_links()</code></h2>\n<p>Get the REST API field links for a given field. The links are appended to the REST response under the _links property<br />\nand provide API resource links to related objects. If a link is marked as &#8217;embeddable&#8217;, WordPress can load the resource<br />\nin the main request under the_embedded property when the request contains the _embed URL parameter.</p>\n<ul>\n<li>@see \\acf_field::get_rest_links()<br />\n@see <a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/linking-and-embedding/\">https://developer.wordpress.org/rest-api/using-the-rest-api/linking-and-embedding/</a></li>\n<li>@param string|integer $post_id</li>\n<li>@param array          $field</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_format_value_for_rest()</code></h2>\n<p>Format a given field&#8217;s value for output in the REST API.</p>\n<ul>\n<li>@param        $value</li>\n<li>@param $post_id</li>\n<li>@param $field</li>\n<li>@param string  $format &#8216;light&#8217; for normal REST API formatting or &#8216;standard&#8217; to apply ACF&#8217;s normal field formatting.</li>\n<li>@return mixed</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 7879583,
+    "featured_media": 0,
+    "parent": 157177,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157175",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157175",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7879583"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157175/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157293,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157175/revisions/157293"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157177"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157175"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

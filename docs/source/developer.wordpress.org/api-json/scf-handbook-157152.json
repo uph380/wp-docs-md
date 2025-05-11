@@ -1,0 +1,91 @@
+{
+    "id": 157152,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/local-json-file/"
+    },
+    "modified": "2025-02-21T05:46:11",
+    "modified_gmt": "2025-02-21T05:46:11",
+    "slug": "local-json-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/local-json-file/",
+    "title": {
+        "rendered": "Local Json Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_local_json_files()</code></h2>\n<p>Returns an array of found JSON field group files.</p>\n<ul>\n<li>@date    14/4/20</li>\n<li>@since ACF 5.9.0</li>\n<li>@param string $post_type The ACF post type to get files for.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_write_json_field_group()</code></h2>\n<p>Saves a field group JSON file.</p>\n<ul>\n<li>@date    5/12/2014</li>\n<li>@since ACF 5.1.5</li>\n<li>@param   array $field_group The field group.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_delete_json_field_group()</code></h2>\n<p>Deletes a field group JSON file.</p>\n<ul>\n<li>@date    5/12/2014</li>\n<li>@since ACF 5.1.5</li>\n<li>@param   string $key The field group key.</li>\n<li>@return boolean True on success.</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157152",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157152",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157152/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157309,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157152/revisions/157309"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157152"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

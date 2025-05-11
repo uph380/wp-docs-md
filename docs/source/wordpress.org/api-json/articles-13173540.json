@@ -1,0 +1,109 @@
+{
+    "id": 13173540,
+    "date": "2020-07-27T06:08:38",
+    "date_gmt": "2020-07-27T06:08:38",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13173540"
+    },
+    "modified": "2024-06-06T14:01:21",
+    "modified_gmt": "2024-06-06T14:01:21",
+    "slug": "dailymotion-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/dailymotion-embed/",
+    "title": {
+        "rendered": "Dailymotion embed"
+    },
+    "content": {
+        "rendered": "\n\n\n<p>Dailymotion is a video-sharing platform. Using the <em>Dailymotion Embed</em> block includes a Dailymotion video into your post/page with play buttons, so your visitor can stay on your site to watch it. You don\u2019t need a Dailymotion account to embed posts.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-video\"><video autoplay controls loop muted src=\"https://wordpress.org/documentation/files/2022/08/DailyMotion-Embed-HelpHub.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Steps to embed a Dailymotion video in your post or page</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Locate the video and copy the URL from Dailymotion.com in the browser bar</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"454\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-1.png\" alt=\"Screenshot of Dailymotion and the correct URL to copy to use the embed block.\" class=\"wp-image-15953717\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-1.png 1000w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-1-300x136.png 300w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-1-768x349.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Add a Dailymotion Embed block to your post</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-2.png\" alt=\"Adding the Dailymotion block using a slash command /dailymotion.\" class=\"wp-image-15953789\" style=\"width:271px;height:150px\" width=\"271\" height=\"150\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-2.png 542w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-2-300x166.png 300w\" sizes=\"auto, (max-width: 271px) 100vw, 271px\" /><figcaption class=\"wp-element-caption\">Adding a block via the \u201cSlash\u201d command from an empty row</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the video URL into the text box</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-3.png\" alt=\"Embed option for the Dailymotion block to paste the URL.\" class=\"wp-image-15953850\" style=\"width:367px;height:159px\" width=\"367\" height=\"159\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-3.png 800w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-3-300x130.png 300w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-3-768x332.png 768w\" sizes=\"auto, (max-width: 367px) 100vw, 367px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click the \u201cEmbed\u201d button</li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<p>You\u2019ll see your video in the block editor, with the option to write a caption underneath.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-4-1.png\" alt=\"Preview of the embedded Dailymotion video within the WordPress editor.\" class=\"wp-image-15953852\" style=\"width:344px;height:300px\" width=\"344\" height=\"300\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message \u201cSorry, this content could not be embedded.\u201d You will have two choices: Try again with a different URL or Convert to link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-5.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-15953854\" style=\"width:356px;height:197px\" width=\"356\" height=\"197\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-5.png 600w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-5-300x166.png 300w\" sizes=\"auto, (max-width: 356px) 100vw, 356px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Dailymotion embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to&nbsp;</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-6-1.png\" alt=\"Block Toolbar with options available for the Dailymotion Block.\" class=\"wp-image-15953863\" style=\"width:358px;height:86px\" width=\"358\" height=\"86\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-6-1.png 550w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-6-1-300x72.png 300w\" sizes=\"auto, (max-width: 358px) 100vw, 358px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-7.png\" alt=\"Options to transform the Dailymotion block to Paragraph, Columns or Group.\" class=\"wp-image-15953885\" style=\"width:337px;height:245px\" width=\"337\" height=\"245\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-7.png 672w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-7-300x219.png 300w\" sizes=\"auto, (max-width: 337px) 100vw, 337px\" /></figure>\n\n\n\n<p>You can transform a Dailymotion embed into a Paragraph, Columns, or Group. Transforming it into a Group would give you the ability to change the background color around the Dailymotion embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"558\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-8.png\" alt=\"Example of transforming Dailymotion block to group and updating the background to gradient.\" class=\"wp-image-15953893\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-8.png 1000w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-8-300x167.png 300w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-8-768x429.png 768w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\"><em>Editor view of a Dailymotion Embed as a group with Color Settings controls</em></figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"600\" height=\"462\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-9.png\" alt=\"Front end example of Dailymotion embed group with gradient background.\" class=\"wp-image-15953896\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-9.png 600w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-9-300x231.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /><figcaption class=\"wp-element-caption\">Dailymotion embed with a gradient background.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-10-2.png\" alt=\"Alignment options for the Dailymotion block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-15953905\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Wide width &#8211; Increase the width of the post beyond the content size</li>\n\n\n\n<li>Full width &#8211; extend the Dailymotion post to cover the full width of the screen.</li>\n\n\n\n<li>Align left &#8211; Make the Dailymotion post left aligned</li>\n\n\n\n<li>Align center &#8211; Make the Dailymotion post alignment centered</li>\n\n\n\n<li>Align right &#8211; Make the Dailymotion post align right</li>\n</ul>\n\n\n\n<p><em>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.&nbsp;</em></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong>:</p>\n\n\n\n<p>Via the edit URL, you can change the Dailymotion Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"600\" height=\"253\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-11.png\" alt=\"Editing the Dailymotion block URL via the &quot;edit&quot; option.\" class=\"wp-image-15953910\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-11.png 600w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-11-300x127.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>The More Options menu represented by three vertical dots on the far right of the toolbar gives you more features such as the ability to duplicate, remove, or edit your block as HTML.\u00a0</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings<strong>&nbsp;</strong></h2>\n\n\n\n<p>Besides the Advanced section, the Dailymotion embed has only one other setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Media Settings</h3>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"540\" height=\"280\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-16.png\" alt=\"Media settings for the Dailymotion embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-15953928\" srcset=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-16.png 540w, https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-16-300x156.png 300w\" sizes=\"auto, (max-width: 540px) 100vw, 540px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-15-1.png\" alt=\"Media settings for the Dailymotion embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-15953929\" /></figure>\n</div>\n</div>\n\n\n\n<p>Via the&nbsp;<em>Media Settings</em>&nbsp;you can control the behavior of your embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong>&nbsp;This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong>&nbsp;This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add  CSS class(es) to your block.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Dailymotion-HelpHub-SS-17-1.png\" alt=\"Additional CSS Class(es) option for the Dailymotion Embed block.\" class=\"wp-image-15953932\" style=\"width:300px\" width=\"300\" /></figure>\n\n\n\n<p>The \u201cAdditional CSS class(es)\u201d lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-27\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 Screenshots</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-19\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-11\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.5</li>\n\n\n\n<li>Embedded VideoPress video</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Dailymotion is a video-sharing platform. Using the Dailymotion Embed block includes a Dailymotion video into your post/page with play buttons, so your visitor can stay on your site to watch it. You don\u2019t need a Dailymotion account to embed posts.&nbsp; Steps to embed a Dailymotion video in your post or page Detailed instructions on adding [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13173540",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173540",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13173540"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173540/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360302,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173540/revisions/16360302"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13173540"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13173540"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 11154609,
+    "date": "2019-01-31T18:15:12",
+    "date_gmt": "2019-01-31T18:15:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11154609"
+    },
+    "modified": "2024-06-08T20:04:07",
+    "modified_gmt": "2024-06-08T20:04:07",
+    "slug": "tools-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tools-screen/",
+    "title": {
+        "rendered": "Tools screen"
+    },
+    "content": {
+        "rendered": "\n<h3 class=\"wp-block-heading\">Categories and Tags Converter</h3>\n\n\n\n<p>Use this to convert categories to tags or tags to categories.  Selecting this will direct you to the <a href=\"/support/article/tools-import-screen/\">Tools Import Screen</a>. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11154621\"><img loading=\"lazy\" decoding=\"async\" width=\"666\" height=\"425\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/01/tools.png?fit=666%2C425&amp;ssl=1\" alt=\"\" class=\"wp-image-11154621\" srcset=\"https://wordpress.org/documentation/files/2019/01/tools.png 666w, https://wordpress.org/documentation/files/2019/01/tools-300x191.png 300w\" sizes=\"auto, (max-width: 666px) 100vw, 666px\" /></a></figure>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Categories and Tags Converter Use this to convert categories to tags or tags to categories. Selecting this will direct you to the Tools Import Screen.</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11154609",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11154609",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11154609"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11154609/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360426,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11154609/revisions/16360426"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11154609"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11154609"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

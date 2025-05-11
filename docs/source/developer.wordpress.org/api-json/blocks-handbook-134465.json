@@ -1,0 +1,91 @@
+{
+    "id": 134465,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/form-file-upload/"
+    },
+    "modified": "2024-12-26T16:49:14",
+    "modified_gmt": "2024-12-26T16:49:14",
+    "slug": "form-file-upload",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/form-file-upload/",
+    "title": {
+        "rendered": "FormFileUpload"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-formfileupload--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p>FormFileUpload allows users to select files from their local device.</p>\n<pre><code class=\"language-jsx\">import { FormFileUpload } from '@wordpress/components';\n\nconst MyFormFileUpload = () =&gt; (\n  &lt;FormFileUpload\n    __next40pxDefaultSize\n    accept=\"image/*\"\n    onChange={ ( event ) =&gt; console.log( event.currentTarget.files ) }\n  &gt;\n    Upload\n  &lt;/FormFileUpload&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<h3><code>__next40pxDefaultSize</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<h3><code>accept</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>A string passed to the <code>input</code> element that tells the browser which<br />\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#Unique_file_type_specifiers\">file types</a><br />\ncan be uploaded by the user. e.g: <code>image/*,video/*</code>.</p>\n<h3><code>children</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Children are passed as children of <code>Button</code>.</p>\n<h3><code>icon</code></h3>\n<ul>\n<li>Type: <code>IconType</code></li>\n<li>Required: No</li>\n</ul>\n<p>The icon to render in the default button.</p>\n<p>See the <code>Icon</code> component docs for more information.</p>\n<h3><code>multiple</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Whether to allow multiple selection of files or not.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>ChangeEventHandler&lt;HTMLInputElement&gt;</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>Callback function passed directly to the <code>input</code> file element.</p>\n<p>Select files will be available in <code>event.currentTarget.files</code>.</p>\n<h3><code>onClick</code></h3>\n<ul>\n<li>Type: <code>MouseEventHandler&lt;HTMLInputElement&gt;</code></li>\n<li>Required: No</li>\n</ul>\n<p>Callback function passed directly to the <code>input</code> file element.</p>\n<p>This can be useful when you want to force a <code>change</code> event to fire when<br />\nthe user chooses the same file again. To do this, set the target value to<br />\nan empty string in the <code>onClick</code> function.</p>\n<pre><code class=\"language-jsx\">&lt;FormFileUpload\n  __next40pxDefaultSize\n  onClick={ ( event ) =&gt; ( event.target.value = &apos;&apos; ) }\n  onChange={ onChange }\n&gt;\n  Upload\n&lt;/FormFileUpload&gt;\n</code></pre>\n<h3><code>render</code></h3>\n<ul>\n<li>Type: <code>(arg: { openFileDialog: () =&gt; void; }) =&gt; ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Optional callback function used to render the UI.</p>\n<p>If passed, the component does not render the default UI (a button) and<br />\ncalls this function to render it. The function receives an object with<br />\nproperty <code>openFileDialog</code>, a function that, when called, opens the browser<br />\nnative file upload modal window.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 155,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134465",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134465",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134465/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156147,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134465/revisions/156147"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134465"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

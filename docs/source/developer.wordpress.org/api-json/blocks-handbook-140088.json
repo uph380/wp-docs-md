@@ -1,0 +1,91 @@
+{
+    "id": 140088,
+    "date": "2022-02-05T00:24:48",
+    "date_gmt": "2022-02-05T00:24:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/backward-compatibility/"
+    },
+    "modified": "2025-01-07T18:34:08",
+    "modified_gmt": "2025-01-07T18:34:08",
+    "slug": "backward-compatibility",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/backward-compatibility/",
+    "title": {
+        "rendered": "Backward Compatibility"
+    },
+    "content": {
+        "rendered": "<p>Historically, WordPress has been known for preserving backward compatibility across versions. Gutenberg follows this example wherever possible in its production public APIs. There are rare occasions where breaking backward compatibility is unavoidable and in those cases the breakage:</p>\n<ul>\n<li>Should be constrained as much as possible to a small surface area of the API.</li>\n<li>Should be documented as clearly as possible to third-party developers using Dev Notes.</li>\n</ul>\n<h2>What qualifies as a production public API</h2>\n<p>The Gutenberg code base is composed of two different types of packages:</p>\n<ul>\n<li><strong>production packages</strong>: these are packages that are shipped as WordPress scripts (example: wp-components, wp-editor&#8230;).</li>\n<li><strong>development packages</strong>: these are made up of developer tools that can be used by third-party developers to lint, test, format and build their themes and plugins (example: @wordpress/scrips, @wordpress/env&#8230;). Typically, these are consumed as npm dependencies in third-party projects.</li>\n</ul>\n<p>Backward compatibility guarantees only apply to the production packages, as updates happen through WordPress upgrades.</p>\n<p>Production packages use the <code>wp</code> global variable to provide APIs to third-party developers. These APIs can be JavaScript functions, variables and React components.</p>\n<h3>How to preserve backward compatibility for a JavaScript function</h3>\n<ul>\n<li>The name of the function should not change.</li>\n<li>The order of the arguments of the function should not change.</li>\n<li>The function&#8217;s returned value type should not change.</li>\n<li>Changes to arguments (new arguments, modification of semantics) is possible if we guarantee that all previous calls are still possible.</li>\n</ul>\n<h3>How to preserve backward compatibility for a React Component</h3>\n<ul>\n<li>The name of the component should not change.</li>\n<li>The props of the component should not be removed.</li>\n<li>Existing prop values should continue to be supported. If a component accepts a function as a prop, we can update the component to accept a new type for the same prop, but it shouldn&#8217;t break existing usage.</li>\n<li>Adding new props is allowed.</li>\n<li>React Context dependencies can only be added or removed if we ensure the previous context contract is not breaking.</li>\n</ul>\n<h3>How to preserve backward compatibility for a Block</h3>\n<ul>\n<li>Existing usage of the block should not break or be marked as invalid when the editor is loaded.</li>\n<li>The styling of the existing blocks should be guaranteed.</li>\n<li>Markup changes should be limited to the minimum possible, but if a block needs to change its saved markup, making previous versions invalid, a <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-deprecation/\"><strong>deprecated version</strong></a> of the block should be added.</li>\n</ul>\n<h2>Class names and DOM updates</h2>\n<p>Class names and DOM nodes used inside the tree of React components are not considered part of the public API and can be modified.</p>\n<p>Changes to these should be done with caution as it can affect the styling and behavior of third-party code (Even if they should not rely on these in the first place). Keep the old ones if possible. If not, document the changes and write a dev note.</p>\n<h2>Deprecations</h2>\n<p>As the project evolves, flaws of existing APIs are discovered, or updates are required to support new features. When this happens, we try to guarantee that existing APIs don&#8217;t break and build new alternative APIs.</p>\n<p>To encourage third-party developers to adopt the new APIs instead, we can use the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-deprecated/\"><strong>deprecated</strong></a> helper to show a message explaining the deprecation and propose the alternative whenever the old API is used.</p>\n<p>Make it more clear when the feature was deprecated. Use the <code>since</code> and <code>plugin</code> options of the helper method.</p>\n<p>Example:</p>\n<pre><code class=\"language-js\">deprecated( 'wp.components.ClipboardButton', {\n    since: '10.3',\n    plugin: 'Gutenberg',\n    alternative: 'wp.compose.useCopyToClipboard',\n} );\n</code></pre>\n<h2>Dev notes</h2>\n<p>Dev notes are <a href=\"https://make.wordpress.org/core/tag/dev-notes/\">posts published on the make/core site</a> prior to WordPress releases to inform third-party developers about important changes to the developer APIs, these changes can include:</p>\n<ul>\n<li>New APIs.</li>\n<li>Changes to existing APIs that might affect existing plugins and themes. (Example: classname changes&#8230;)</li>\n<li>Unavoidable backward compatibility breakage, with reasoning and migration flows.</li>\n<li>Important deprecations (even without breakage), with reasoning and migration flows.</li>\n</ul>\n<h3>Dev note workflow</h3>\n<ul>\n<li>When working on a pull request and the need for a dev note is discovered, add the <strong>Needs Dev Note</strong> label to the PR.</li>\n<li>If possible, add a comment to the PR explaining why the dev note is needed.</li>\n<li>When the first beta of the upcoming WordPress release is shipped, go through the list of merged PRs included in the release that are tagged with the <strong>Needs Dev Note</strong> label.</li>\n<li>For each one of these PRs, write a dev note and coordinate with the WordPress release leads to publish the dev note.</li>\n<li>Once the dev note for a PR is published, remove the <strong>Needs Dev Note</strong> label from the PR.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135090,
+    "menu_order": 386,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140088",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140088",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140088/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151270,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140088/revisions/151270"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140088"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

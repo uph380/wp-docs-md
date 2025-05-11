@@ -1,0 +1,91 @@
+{
+    "id": 156781,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/checkbox/"
+    },
+    "modified": "2025-02-21T04:18:01",
+    "modified_gmt": "2025-02-21T04:18:01",
+    "slug": "checkbox",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/checkbox/",
+    "title": {
+        "rendered": "Checkbox Field"
+    },
+    "content": {
+        "rendered": "<p>The Checkbox field allows users to select one or multiple choices from a set of options. It&#8217;s ideal for situations where multiple selections are needed or when users need to toggle specific options on/off.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Multiple option selection</li>\n<li>Toggle individual choices</li>\n<li>Customizable checkbox layout</li>\n<li>Flexible return format</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Choices &#8211; Define the available options</li>\n<li>Default Value &#8211; Set pre-selected options</li>\n<li>Layout &#8211; Choose between vertical or horizontal layout</li>\n<li>Allow Custom &#8211; Enable user-added choices</li>\n<li>Toggle All &#8211; Option to select/deselect all choices</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156776,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156781",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156781",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156781/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156938,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156781/revisions/156938"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156776"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156781"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

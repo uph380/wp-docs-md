@@ -1,0 +1,91 @@
+{
+    "id": 134498,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/resize-tooltip/"
+    },
+    "modified": "2024-10-30T16:55:38",
+    "modified_gmt": "2024-10-30T16:55:38",
+    "slug": "resize-tooltip",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/resize-tooltip/",
+    "title": {
+        "rendered": "ResizeTooltip"
+    },
+    "content": {
+        "rendered": "<p>ResizeTooltip displays the dimensions of an element whenever the width or height of the element changes.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">const Example = () =&gt; {\n    return (\n        &lt;div style={ { position: 'relative' } }&gt;\n            &lt;ResizeTooltip /&gt;\n            ...\n        &lt;/div&gt;\n    );\n};\n</code></pre>\n<p>Be sure that the parent element containing <code>&lt;ResizeTooltip /&gt;</code> has the <code>position</code> style property defined. This is important as <code>&lt;ResizeTooltip /&gt;</code> uses <code>position</code> based techniques to determine size changes.</p>\n<h3>Positions</h3>\n<p><code>&lt;ResizeTooltip /&gt;</code> has three positions;</p>\n<ul>\n<li><code>bottom</code> (Default)</li>\n<li><code>corner</code></li>\n</ul>\n<h4><code>bottom</code></h4>\n<p>The <code>bottom</code> position (default) renders the dimensions label at the bottom-center of the (parent) element.</p>\n<h4><code>corner</code></h4>\n<p>The <code>corner</code> position renders the dimensions label in the top-right corner of the (parent) element.</p>\n<h2>Props</h2>\n<h3>axis</h3>\n<p>Limits the label to render corresponding to the axis. By default, the label will automatically render based on both <code>x</code> and <code>y</code> changes.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Values: <code>x</code> | <code>y</code></li>\n</ul>\n<h3>fadeTimeout</h3>\n<p>Duration (in <code>ms</code>) before the label disappears after resize event.</p>\n<ul>\n<li>Type: <code>Number</code></li>\n<li>Required: No</li>\n<li>Default: <code>180</code></li>\n</ul>\n<h3>isVisible</h3>\n<p>Determines if the label can render.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3>labelRef</h3>\n<p>Callback <a href=\"https://react.dev/learn/manipulating-the-dom-with-refs\">Ref</a> for the label element.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<h3>onMove</h3>\n<p>Callback function when the (observed) element resizes, specifically with a <code>mousemove</code> based event.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<h3>onResize</h3>\n<p>Callback function when the (observed) element resizes.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<h3>position</h3>\n<p>The positions for the label.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: <code>corner</code></li>\n<li>Values: <code>bottom</code> | <code>corner</code></li>\n</ul>\n<h3>showPx</h3>\n<p>Renders a <code>PX</code> unit suffix after the width or height value in the label.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3>zIndex</h3>\n<p>The <code>z-index</code> style property for the label.</p>\n<ul>\n<li>Type: <code>Number</code></li>\n<li>Required: No</li>\n<li>Default: <code>1000</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 196,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134498",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134498",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134498/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154481,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134498/revisions/154481"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134498"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

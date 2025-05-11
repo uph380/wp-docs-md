@@ -1,0 +1,91 @@
+{
+    "id": 134563,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-eslint-plugin/"
+    },
+    "modified": "2025-01-29T11:34:12",
+    "modified_gmt": "2025-01-29T11:34:12",
+    "slug": "packages-eslint-plugin",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-eslint-plugin/",
+    "title": {
+        "rendered": "@wordpress/eslint-plugin"
+    },
+    "content": {
+        "rendered": "<p><a href=\"https://eslint.org/\">ESLint</a> plugin including configurations and custom rules for WordPress development.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/eslint-plugin --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Usage</h2>\n<p>To opt-in to the default configuration, extend your own project&#8217;s <code>.eslintrc</code> file:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": [ \"plugin:@wordpress/eslint-plugin/recommended\" ]\n}\n</code></pre>\n<p>Refer to the <a href=\"https://eslint.org/docs/latest/extend/shareable-configs\">ESLint documentation on Shareable Configs</a> for more information.</p>\n<p>The <code>recommended</code> preset will include rules governing an ES2015+ environment, and includes rules from the <a href=\"https://github.com/gajus/eslint-plugin-jsdoc\"><code>eslint-plugin-jsdoc</code></a>, <a href=\"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y\"><code>eslint-plugin-jsx-a11y</code></a>, <a href=\"https://github.com/yannickcr/eslint-plugin-react\"><code>eslint-plugin-react</code></a>, and other similar plugins.</p>\n<p>This preset offers an optional integration with the <a href=\"https://github.com/prettier/eslint-plugin-prettier\"><code>eslint-plugin-prettier</code></a> package that runs <a href=\"https://prettier.io\">Prettier</a> code formatter and reports differences as individual ESLint issues. You can activate it by installing the <a href=\"https://www.npmjs.com/package/prettier\"><code>prettier</code></a> package separately with:</p>\n<pre><code class=\"language-bash\">npm install prettier --save-dev\n</code></pre>\n<p>Finally, this ruleset also includes an optional integration with the <a href=\"https://github.com/typescript-eslint/typescript-eslint\"><code>@typescript-eslint/eslint-plugin</code></a> package that enables ESLint to support <a href=\"https://www.typescriptlang.org\">TypeScript</a> language. You can activate it by installing the <a href=\"https://www.npmjs.com/package/typescript\"><code>typescript</code></a> package separately with:</p>\n<pre><code class=\"language-bash\">npm install typescript --save-dev\n</code></pre>\n<p>There is also <code>recommended-with-formatting</code> ruleset for projects that want to ensure that <a href=\"https://prettier.io\">Prettier</a> and <a href=\"https://www.typescriptlang.org\">TypeScript</a> integration is never activated. This preset has the native ESLint code formatting rules enabled instead.</p>\n<h3>Rulesets</h3>\n<p>Alternatively, you can opt-in to only the more granular rulesets offered by the plugin. These include:</p>\n<ul>\n<li><code>custom</code> \u2013 custom rules for WordPress development.</li>\n<li><code>es5</code> \u2013 rules for legacy ES5 environments.</li>\n<li><code>esnext</code> \u2013 rules for ES2015+ environments.</li>\n<li><code>i18n</code> \u2013 rules for internationalization.</li>\n<li><code>jsdoc</code> \u2013 rules for JSDoc comments.</li>\n<li><code>jsx-a11y</code> \u2013 rules for accessibility in JSX.</li>\n<li><code>react</code> \u2013 rules for React components.</li>\n<li><code>test-e2e</code> \u2013 rules for end-to-end tests written in Puppeteer.</li>\n<li><code>test-unit</code>\u2013 rules for unit tests written in Jest.</li>\n<li><code>test-playwright</code> \u2013 rules for end-to-end tests written in Playwright.</li>\n</ul>\n<p>For example, if your project does not use React, you could consider extending including only the ESNext rules in your project using the following <code>extends</code> definition:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": [ \"plugin:@wordpress/eslint-plugin/esnext\" ]\n}\n</code></pre>\n<p>These rules can be used additively, so you could extend both <code>esnext</code> and <code>custom</code> rulesets, but omit the <code>react</code> and <code>jsx-a11y</code> configurations.</p>\n<p>The granular rulesets will not define any environment globals. As such, if they are required for your project, you will need to define them yourself.</p>\n<h3>Rules</h3>\n<table>\n<thead>\n<tr>\n<th>Rule</th>\n<th>Description</th>\n<th>Recommended</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/data-no-store-string-literals.md\">data-no-store-string-literals</a></td>\n<td>Discourage passing string literals to reference data stores.</td>\n<td></td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/dependency-group.md\">dependency-group</a></td>\n<td>Enforce dependencies docblocks formatting.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-ellipsis.md\">i18n-ellipsis</a></td>\n<td>Disallow using three dots in translatable strings.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-hyphenated-range.md\">i18n-hyphenated-range</a></td>\n<td>Disallow hyphenated numerical ranges in translatable strings.</td>\n<td></td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-no-collapsible-whitespace.md\">i18n-no-collapsible-whitespace</a></td>\n<td>Disallow collapsible whitespace in translatable strings.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-no-flanking-whitespace.md\">i18n-no-flanking-whitespace</a></td>\n<td>Disallow leading or trailing whitespace in translatable strings.</td>\n<td></td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-no-placeholders-only.md\">i18n-no-placeholders-only</a></td>\n<td>Prevent using only placeholders in translatable strings.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-no-variables.md\">i18n-no-variables</a></td>\n<td>Enforce string literals as translation function arguments.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-text-domain.md\">i18n-text-domain</a></td>\n<td>Enforce passing valid text domains.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/i18n-translator-comments.md\">i18n-translator-comments</a></td>\n<td>Enforce adding translator comments.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-base-control-with-label-without-id.md\">no-base-control-with-label-without-id</a></td>\n<td>Disallow the usage of BaseControl component with a label prop set but omitting the id property.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unguarded-get-range-at.md\">no-unguarded-get-range-at</a></td>\n<td>Disallow the usage of unguarded <code>getRangeAt</code> calls.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unsafe-wp-apis.md\">no-unsafe-wp-apis</a></td>\n<td>Disallow the usage of unsafe APIs from <code>@wordpress/*</code> packagesl</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-unused-vars-before-return.md\">no-unused-vars-before-return</a></td>\n<td>Disallow assigning variable values if unused before a return.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/no-wp-process-env.md\">no-wp-process-env</a></td>\n<td>Disallow legacy usage of WordPress variables via <code>process.env</code> like <code>process.env.SCRIPT_DEBUG</code>.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/react-no-unsafe-timeout.md\">react-no-unsafe-timeout</a></td>\n<td>Disallow unsafe <code>setTimeout</code> in component.</td>\n<td></td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/valid-sprintf.md\">valid-sprintf</a></td>\n<td>Enforce valid sprintf usage.</td>\n<td>\u2713</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/eslint-plugin/docs/rules/wp-global-usage.md\">wp-global-usage</a></td>\n<td>Enforce correct usage of WordPress globals like <code>globalThis.SCRIPT_DEBUG</code>.</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Legacy</h3>\n<p>If you are using WordPress&#8217; <code>.jshintrc</code> JSHint configuration and you would like to take the first step to migrate to an ESLint equivalent it is also possible to define your own project&#8217;s <code>.eslintrc</code> file as:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": [ \"plugin:@wordpress/eslint-plugin/jshint\" ]\n}\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 280,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134563",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134563",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134563/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156237,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134563/revisions/156237"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134563"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 157172,
+    "date": "2025-02-21T04:17:11",
+    "date_gmt": "2025-02-21T04:17:11",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/forms/"
+    },
+    "modified": "2025-02-21T05:46:03",
+    "modified_gmt": "2025-02-21T05:46:03",
+    "slug": "forms",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/forms/",
+    "title": {
+        "rendered": "Forms"
+    },
+    "content": {
+        "rendered": "<h2>Files</h2>\n<ul>\n<li><a href=\"form-front-file\">Form Front</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157172",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157172",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157172/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157294,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157172/revisions/157294"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157172"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

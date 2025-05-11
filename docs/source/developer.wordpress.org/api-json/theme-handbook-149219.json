@@ -1,0 +1,91 @@
+{
+    "id": 149219,
+    "date": "2023-10-25T19:42:08",
+    "date_gmt": "2023-10-25T19:42:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149219"
+    },
+    "modified": "2023-12-14T20:54:16",
+    "modified_gmt": "2023-12-14T20:54:16",
+    "slug": "templates",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/templates/",
+    "title": {
+        "rendered": "Templates"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the Templates documentation. In this chapter you will learn how the WordPress block template system works, how to build custom templates and parts, and include them in your theme.</p>\n\n\n\n<p>Templates are one of the core concepts of building websites, representing the underlying structure that presents your content in the browser. In many ways, they are the most important feature of developing WordPress themes.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the below links to find the topic you are looking for in this chapter. Each section of the chapter is set up to offer a straightforward learning path toward learning how to build templates for those building their first theme. But if you are already familiar with the foundational concepts, feel free to skip ahead to the topic you want to learn more about.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/templates/introduction-to-templates/\"><strong>Introduction to Templates</strong></a><strong>:</strong> An overview of what templating is, how the templating system in WordPress works, and a look at the relationship between the template hierarchy, templates, and template parts.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/templates/templates/\"><strong>Templates</strong></a><strong>:</strong> How to build custom templates and include them in your WordPress theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/templates/template-hierarchy/\"><strong>Template Hierarchy</strong></a><strong>:</strong> How WordPress decides which template to use based on the page the user is viewing.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/templates/template-parts/\"><strong>Template Parts</strong></a><strong>:</strong> How to build template parts and insert them into top-level templates.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149219",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149219",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149219/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149220,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149219/revisions/149220"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149219"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

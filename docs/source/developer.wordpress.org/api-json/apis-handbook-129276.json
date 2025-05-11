@@ -1,0 +1,97 @@
+{
+    "id": 129276,
+    "date": "2020-07-13T13:01:50",
+    "date_gmt": "2020-07-13T13:01:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=129276"
+    },
+    "modified": "2022-11-17T06:09:11",
+    "modified_gmt": "2022-11-17T06:09:11",
+    "slug": "authentication",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/making-http-requests/authentication/",
+    "title": {
+        "rendered": "Authentication"
+    },
+    "content": {
+        "rendered": "\n<p>Many APIs will require you to make authenticated requests to access some endpoints. A common authentication method is called HTTP Basic Authentication. It can be used in WordPress using the &#8216;Authorization&#8217; header <code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_get\">wp_remote_get()</a></code>. </p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$args = array(\n    'headers' =&gt; array(\n        'Authorization' =&gt; 'Basic ' . base64_encode( YOUR_USERNAME . ':' . YOUR_PASSWORD )\n    )\n);\nwp_remote_get( $url, $args );</code></pre>\n\n\n\n<p>HTTP Basic Auth is very insecure because it exposes the username and password and is only used for testing and development. Check the documentation of the API you want to access for more information on how to authenticate.</p>\n\n\n\n<p>If you want to make authenticated requests to the WordPress REST API, check <a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/\">this article</a>.</p>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 129278,
+    "menu_order": 50,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129276",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129276",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129276/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144364,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129276/revisions/144364"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129276"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

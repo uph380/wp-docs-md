@@ -1,0 +1,97 @@
+{
+    "id": 11029,
+    "date": "2014-09-24T00:21:48",
+    "date_gmt": "2014-09-24T00:21:48",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11029"
+    },
+    "modified": "2022-11-17T06:08:48",
+    "modified_gmt": "2022-11-17T06:08:48",
+    "slug": "options-api",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/settings/options-api/",
+    "title": {
+        "rendered": "Options API"
+    },
+    "content": {
+        "rendered": "\n<p>The Options API, added in WordPress 1.0, allows creating, reading, updating and deleting of WordPress options. In combination with the <a href=\"https://developer.wordpress.org/plugins/settings/settings-api/\">Settings API</a> it allows controlling of options defined in settings pages.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Where Options are Stored?</h2>\n\n\n\n<p>Options are stored in the <code>{$wpdb-&gt;prefix}_options</code> table. <code>$wpdb-&gt;prefix</code> is defined by the <code>$table_prefix</code> variable set in the <code>wp-config.php</code> file.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How Options are Stored?</h2>\n\n\n\n<p>Options may be stored in the WordPress database in one of two ways: as a single value or as an array of values.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Single Value</h3>\n\n\n\n<p>When saved as a single value, the option name refers to a single value.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// add a new option\nadd_option('wporg_custom_option', 'hello world!');\n// get an option\n$option = get_option('wporg_custom_option');</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Array of Values</h3>\n\n\n\n<p>When saved as an array of values, the option name refers to an array, which itself may be comprised key/value pairs.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// array of options\n$data_r = array('title' =&gt; 'hello world!', 1, false );\n// add a new option\nadd_option('wporg_custom_option', $data_r);\n// get an option\n$options_r = get_option('wporg_custom_option');\n// output the title\necho esc_html($options_r['title']);</code></pre>\n\n\n\n<p>If you are working with a large number of related options, storing them as an array can have a positive impact on overall performance.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nAccessing data as individual options may result in many individual database transactions, and as a rule, database transactions are expensive operations (in terms of time and server resources). When you store or retrieve an array of options, it happens in a single transaction, which is ideal.<br />\n</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><th>Add Option</th><th>Get Option</th><th>Update Option</th><th>Delete Option</th></tr><tr><td><tt><a href=\"https://developer.wordpress.org/reference/functions/add_option/\" rel=\"function\">add_option()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/get_option/\" rel=\"function\">get_option()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/update_option/\" rel=\"function\">update_option()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/delete_option/\" rel=\"function\">delete_option()</a> </tt></td></tr><tr><td><tt><a href=\"https://developer.wordpress.org/reference/functions/add_site_option/\" rel=\"function\">add_site_option()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/get_site_option/\" rel=\"function\">get_site_option()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/update_site_option/\" rel=\"function\">update_site_option()</a> </tt></td><td><tt><a href=\"https://developer.wordpress.org/reference/functions/delete_site_option/\" rel=\"function\">delete_site_option()</a> </tt></td></tr></tbody></table></figure>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11025,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11029",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11029",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11029/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144318,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11029/revisions/144318"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11029"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

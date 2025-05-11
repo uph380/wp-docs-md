@@ -1,0 +1,91 @@
+{
+    "id": 147372,
+    "date": "2023-04-26T10:55:33",
+    "date_gmt": "2023-04-26T10:55:33",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/wp-site-health-tests/"
+    },
+    "modified": "2024-01-16T20:30:12",
+    "modified_gmt": "2024-01-16T20:30:12",
+    "slug": "wp-site-health-tests",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/wp-site-health-tests/",
+    "title": {
+        "rendered": "Wp Site Health Tests"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a wp site health test record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-test\">\n<td>\n                <code>test</code>\n            </td>\n<td>\n                The name of the test being run.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-label\">\n<td>\n                <code>label</code>\n            </td>\n<td>\n                A label describing the test.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-status\">\n<td>\n                <code>status</code>\n            </td>\n<td>\n                The status of the test.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n<p>                                    One of: <code>good</code>, <code>recommended</code>, <code>critical</code>\n                            </td>\n</tr>\n<tr id=\"schema-badge\">\n<td>\n                <code>badge</code>\n            </td>\n<td>\n                The category this test is grouped in.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                A more descriptive explanation of what the test looks for, and why it is important for the user.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n<tr id=\"schema-actions\">\n<td>\n                <code>actions</code>\n            </td>\n<td>\n                HTML containing an action to direct the user to where they can resolve the issue.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code></code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Wp Site Health Test</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp-site-health/v1/tests/background-updates</code></p>\n<p>        Query this endpoint to retrieve a specific wp site health test record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp-site-health/v1/tests/background-updates</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Wp Site Health Test</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp-site-health/v1/tests/loopback-requests</code></p>\n<p>        Query this endpoint to retrieve a specific wp site health test record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp-site-health/v1/tests/loopback-requests</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Wp Site Health Test</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp-site-health/v1/tests/https-status</code></p>\n<p>        Query this endpoint to retrieve a specific wp site health test record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp-site-health/v1/tests/https-status</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Wp Site Health Test</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp-site-health/v1/tests/dotorg-communication</code></p>\n<p>        Query this endpoint to retrieve a specific wp site health test record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp-site-health/v1/tests/dotorg-communication</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Wp Site Health Test</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp-site-health/v1/tests/authorization-header</code></p>\n<p>        Query this endpoint to retrieve a specific wp site health test record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp-site-health/v1/tests/authorization-header</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147372",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147372",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147372/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151972,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147372/revisions/151972"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147372"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134450,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/combobox-control/"
+    },
+    "modified": "2025-02-05T07:49:13",
+    "modified_gmt": "2025-02-05T07:49:13",
+    "slug": "combobox-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/combobox-control/",
+    "title": {
+        "rendered": "ComboboxControl"
+    },
+    "content": {
+        "rendered": "<p><code>ComboboxControl</code> is an enhanced version of a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/select-control/\"><code>SelectControl</code></a>, with the addition of being able to search for options using a search input.</p>\n<h2>Design guidelines</h2>\n<p>These are the same as <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/select-control/#design-guidelines\">the ones for <code>SelectControl</code>s</a>, but this component is better suited for when there are too many items to scroll through or load at once so you need to filter them based on user input.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { ComboboxControl } from '@wordpress/components';\n\nconst options = [\n    {\n        value: 'small',\n        label: 'Small',\n    },\n    {\n        value: 'normal',\n        label: 'Normal',\n    },\n    {\n        value: 'large',\n        label: 'Large',\n    },\n];\n\nfunction MyComboboxControl() {\n    const [ fontSize, setFontSize ] = useState();\n    const [ filteredOptions, setFilteredOptions ] = useState( options );\n    return (\n        &lt;ComboboxControl\n            __next40pxDefaultSize\n            __nextHasNoMarginBottom\n            label=\"Font Size\"\n            value={ fontSize }\n            onChange={ setFontSize }\n            isLoading={ isLoading }\n            options={ filteredOptions }\n            onFilterValueChange={ ( inputValue ) =&gt;\n                setFilteredOptions(\n                    options.filter( ( option ) =&gt;\n                        option.value === inputValue\n                    )\n                )\n            }\n        /&gt;\n    );\n}\n</code></pre>\n<h3>Props</h3>\n<h4>label</h4>\n<p>The label for the control.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>hideLabelFromVision</h4>\n<p>If true, the label will only be visible to screen readers.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h4>help</h4>\n<p>If this property is added, a help text will be generated using help property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>options</h4>\n<p>The options that can be chosen from.</p>\n<ul>\n<li>Type: <code>Array&lt;{ value: string, label: string, disabled?: boolean }&gt;</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>onFilterValueChange</h4>\n<p>Function called when the control&#8217;s search input value changes. The argument contains the next input value.</p>\n<ul>\n<li>Type: <code>( value: string ) =&gt; void</code></li>\n<li>Required: No</li>\n</ul>\n<h4>onChange</h4>\n<p>Function called with the selected value changes.</p>\n<ul>\n<li>Type: <code>( value: string | null | undefined ) =&gt; void</code></li>\n<li>Required: No</li>\n</ul>\n<h4>value</h4>\n<p>The current value of the control.</p>\n<ul>\n<li>Type: <code>string | null</code></li>\n<li>Required: No</li>\n</ul>\n<h4>expandOnFocus</h4>\n<p>Automatically expand the dropdown when the control is focused.<br />\nIf the control is clicked, the dropdown will expand regardless of this prop.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h4>placeholder</h4>\n<p>If passed, the combobox input will show a placeholder string if no values are present.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<h4>isLoading</h4>\n<p>Show a spinner (and hide the suggestions dropdown) while data about the matching suggestions (ie the <code>options</code> prop) is loading</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h4>__experimentalRenderItem</h4>\n<p>Custom renderer invoked for each option in the suggestion list. The render prop receives as its argument an object containing, under the <code>item</code> key, the single option&#8217;s data (directly from the array of data passed to the <code>options</code> prop).</p>\n<ul>\n<li>Type: <code>( args: { item: object } ) =&gt; ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<h4>__next40pxDefaultSize</h4>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h4>__nextHasNoMarginBottom</h4>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>\n<p>Like this component, but without a search input, the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/components/custom-select-control/\"><code>CustomSelectControl</code></a> component.</p>\n</li>\n<li>\n<p>To select one option from a set, when you want to show all the available options at once, use the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/\"><code>RadioControl</code></a> component.</p>\n</li>\n<li>To select one or more items from a set, use the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/components/checkbox-control/\"><code>CheckboxControl</code></a> component.</li>\n<li>To toggle a single setting on or off, use the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/\"><code>ToggleControl</code></a> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 133,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134450",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134450",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134450/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156271,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134450/revisions/156271"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134450"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

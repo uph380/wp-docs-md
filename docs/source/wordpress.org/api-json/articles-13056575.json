@@ -1,0 +1,109 @@
+{
+    "id": 13056575,
+    "date": "2020-07-02T09:06:48",
+    "date_gmt": "2020-07-02T09:06:48",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13056575"
+    },
+    "modified": "2024-06-08T19:29:08",
+    "modified_gmt": "2024-06-08T19:29:08",
+    "slug": "smugmug-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/smugmug-embed/",
+    "title": {
+        "rendered": "SmugMug embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>SmugMug Embed block</em> helps to embed images from SmugMug.com on your page or blog post. All you need to embed a SmugMug image is a SmugMug image URL. You do not need a SmugMug account to embed images.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"871\" height=\"583\" src=\"https://wordpress.org/documentation/files/2020/07/pre-1.png\" alt=\"Screenshot of  SmugMug\" class=\"wp-image-13062386\" srcset=\"https://wordpress.org/documentation/files/2020/07/pre-1.png 871w, https://wordpress.org/documentation/files/2020/07/pre-1-300x201.png 300w, https://wordpress.org/documentation/files/2020/07/pre-1-768x514.png 768w\" sizes=\"auto, (max-width: 871px) 100vw, 871px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps To Embed SmugMug Images on your Page or Post</strong></p>\n\n\n\n<p><strong>1. Choose an Image from smugmug.com and find image URL</strong></p>\n\n\n\n<p>Search for an image from smugmug.com and select any image to embed on a page or post.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"545\" src=\"https://wordpress.org/documentation/files/2020/07/Step-1-1024x545.png\" alt=\"Screenshot of  SmugMug\" class=\"wp-image-13062281\" srcset=\"https://wordpress.org/documentation/files/2020/07/Step-1-1024x545.png 1024w, https://wordpress.org/documentation/files/2020/07/Step-1-300x160.png 300w, https://wordpress.org/documentation/files/2020/07/Step-1-768x408.png 768w, https://wordpress.org/documentation/files/2020/07/Step-1.png 1365w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>After choosing an image we want on our page or post, copy its URL from the address bar of our browser.</p>\n\n\n\n<p><strong>&nbsp;2. Copy the image URL</strong></p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"662\" height=\"100\" src=\"https://wordpress.org/documentation/files/2020/07/link.png\" alt=\"The correct URL to copy to use the embed block\" class=\"wp-image-13062298\" srcset=\"https://wordpress.org/documentation/files/2020/07/link.png 662w, https://wordpress.org/documentation/files/2020/07/link-300x45.png 300w\" sizes=\"auto, (max-width: 662px) 100vw, 662px\" /></figure>\n\n\n\n<p><strong>3. Add a SmugMug Embed block to your post or page</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"371\" height=\"195\" src=\"https://wordpress.org/documentation/files/2020/08/123.png\" alt=\"Adding the SmugMug block\" class=\"wp-image-13288317\" srcset=\"https://wordpress.org/documentation/files/2020/08/123.png 371w, https://wordpress.org/documentation/files/2020/08/123-300x158.png 300w\" sizes=\"auto, (max-width: 371px) 100vw, 371px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p><strong>4. Paste the URL in the text box&nbsp;</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"277\" src=\"https://wordpress.org/documentation/files/2020/08/5.5-embed.png\" alt=\"Embed option for the SmugMug block to paste the URL.\" class=\"wp-image-13288324\" srcset=\"https://wordpress.org/documentation/files/2020/08/5.5-embed.png 640w, https://wordpress.org/documentation/files/2020/08/5.5-embed-300x130.png 300w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\" /></figure>\n\n\n\n<p>5. <strong>Click the \u201cEmbed\u201d button&nbsp;</strong></p>\n\n\n\n<p>&nbsp;A preview won\u2019t be displayed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"621\" height=\"348\" src=\"https://wordpress.org/documentation/files/2020/08/block-3.png\" alt=\"Embed content for this block cannot be previewed in the editor \" class=\"wp-image-13288341\" srcset=\"https://wordpress.org/documentation/files/2020/08/block-3.png 621w, https://wordpress.org/documentation/files/2020/08/block-3-300x168.png 300w\" sizes=\"auto, (max-width: 621px) 100vw, 621px\" /></figure>\n\n\n\n<p>If we use an URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d</em></p>\n\n\n\n<p>You will have two choices: Try again with a different URL or convert it to a link.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1063\" height=\"278\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2020/07/step-4-2.png?fit=1024%2C268&amp;ssl=1\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-13062320\" srcset=\"https://wordpress.org/documentation/files/2020/07/step-4-2.png 1063w, https://wordpress.org/documentation/files/2020/07/step-4-2-300x78.png 300w, https://wordpress.org/documentation/files/2020/07/step-4-2-1024x268.png 1024w, https://wordpress.org/documentation/files/2020/07/step-4-2-768x201.png 768w\" sizes=\"auto, (max-width: 1063px) 100vw, 1063px\" /></figure>\n\n\n\n<p><strong>6. Click on \u201cPreview\u201d to see how it will look</strong></p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"871\" height=\"583\" src=\"https://wordpress.org/documentation/files/2020/07/pre.png\" alt=\"Preview of the embedded SmugMug post within the WordPress editor.\" class=\"wp-image-13062324\" srcset=\"https://wordpress.org/documentation/files/2020/07/pre.png 871w, https://wordpress.org/documentation/files/2020/07/pre-300x201.png 300w, https://wordpress.org/documentation/files/2020/07/pre-768x514.png 768w\" sizes=\"auto, (max-width: 871px) 100vw, 871px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<figure class=\"wp-block-image alignright size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/tool.png\" alt=\"Block Toolbar with options available for the SmugMug Block.\" class=\"wp-image-13288368\" width=\"208\" height=\"181\" /></figure>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the <em>SmugMug Embed block</em> shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.&nbsp;</li>\n</ul>\n\n\n\n<p><strong>Transform to</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"620\" height=\"322\" src=\"https://wordpress.org/documentation/files/2020/08/transform-.png\" alt=\"Options to transform the SmugMug block to Paragraph, or Group.\" class=\"wp-image-13288373\" srcset=\"https://wordpress.org/documentation/files/2020/08/transform-.png 620w, https://wordpress.org/documentation/files/2020/08/transform--300x156.png 300w\" sizes=\"auto, (max-width: 620px) 100vw, 620px\" /></figure>\n\n\n\n<p>You can transform a <em>SmugMug Embed block</em> to a Group. This would give you the ability to change the background color around the SmugMug embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"364\" src=\"https://wordpress.org/documentation/files/2020/08/transform-4-1024x364.png\" alt=\"Editor view of an SmugMug Embed as a group with Color Settings controls\" class=\"wp-image-13288377\" srcset=\"https://wordpress.org/documentation/files/2020/08/transform-4-1024x364.png 1024w, https://wordpress.org/documentation/files/2020/08/transform-4-300x107.png 300w, https://wordpress.org/documentation/files/2020/08/transform-4-768x273.png 768w, https://wordpress.org/documentation/files/2020/08/transform-4.png 1142w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of an SmugMug Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"580\" height=\"506\" src=\"https://wordpress.org/documentation/files/2020/08/transform-2.png\" alt=\"SmugMug embed with a Cream background.\" class=\"wp-image-13288378\" srcset=\"https://wordpress.org/documentation/files/2020/08/transform-2.png 580w, https://wordpress.org/documentation/files/2020/08/transform-2-300x262.png 300w\" sizes=\"auto, (max-width: 580px) 100vw, 580px\" /><figcaption class=\"wp-element-caption\">SmugMug embed with a Gray background.</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image alignright size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/ali.png\" alt=\"Alignment options for the block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-13288440\" width=\"329\" height=\"276\" srcset=\"https://wordpress.org/documentation/files/2020/08/ali.png 381w, https://wordpress.org/documentation/files/2020/08/ali-300x252.png 300w\" sizes=\"auto, (max-width: 329px) 100vw, 329px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Alignment:</strong> </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the SmugMug post left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the SmugMug post alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the&nbsp; SmugMug post align right</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the SmugMug post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.&nbsp;</p>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the SmugMug URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"611\" height=\"331\" src=\"https://wordpress.org/documentation/files/2020/08/edi.png\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" class=\"wp-image-13288444\" srcset=\"https://wordpress.org/documentation/files/2020/08/edi.png 611w, https://wordpress.org/documentation/files/2020/08/edi-300x163.png 300w\" sizes=\"auto, (max-width: 611px) 100vw, 611px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options:</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>Besides the Advanced section, the SmugMug embed has only one setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"560\" height=\"142\" src=\"https://wordpress.org/documentation/files/2020/07/block2.png\" alt=\"Media settings for the embed block with the toggle OFF/ON for resizing on smaller devices.\" class=\"wp-image-13062367\" srcset=\"https://wordpress.org/documentation/files/2020/07/block2.png 560w, https://wordpress.org/documentation/files/2020/07/block2-300x76.png 300w\" sizes=\"auto, (max-width: 560px) 100vw, 560px\" /></figure>\n\n\n\n<p>Via the Media Settings you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong> This embed may not preserve its aspect ratio when the browser is resized. In the off position the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><a href=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM.png\" alt=\"The advanced section lets you add a CSS class to your block.\" class=\"wp-image-12714391\" width=\"349\" height=\"191\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM.png 349w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-22-at-10.33.35-AM-300x164.png 300w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /></a><figcaption class=\"wp-element-caption\">The advanced section lets you add a CSS class to your block.</figcaption></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-01-26\n<ul class=\"wp-block-list\">\n<li>Updated for formatting consistency</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated &#8220;More Options&#8221; sections: replaced screenshot and added text for &#8220;Move to&#8221; and &#8220;Copy&#8221; </li>\n\n\n\n<li>Updated 2020-08-20\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 Screenshots</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-19\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Update 2020-08-10\n<ul class=\"wp-block-list\">\n<li>Removed mention of &#8216;reusable blocks&#8217;  and added standard blocks</li>\n\n\n\n<li>Added Changelog Box</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-02</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The SmugMug Embed block helps to embed images from SmugMug.com on your page or blog post. All you need to embed a SmugMug image is a SmugMug image URL. You do not need a SmugMug account to embed images. Steps To Embed SmugMug Images on your Page or [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13056575",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13056575",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13056575"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13056575/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360406,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13056575/revisions/16360406"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13056575"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13056575"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

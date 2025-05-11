@@ -1,0 +1,91 @@
+{
+    "id": 134991,
+    "date": "2021-03-09T19:39:47",
+    "date_gmt": "2021-03-09T19:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/documentation/"
+    },
+    "modified": "2025-01-07T18:34:10",
+    "modified_gmt": "2025-01-07T18:34:10",
+    "slug": "documentation",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/documentation/",
+    "title": {
+        "rendered": "Documentation Contributions"
+    },
+    "content": {
+        "rendered": "<p>A guide on how to get started contributing documentation to the Gutenberg project.</p>\n<h2>Discussions</h2>\n<p>The <a href=\"https://make.wordpress.org/docs/\">Make WordPress Docs blog</a> is the primary spot for the latest information around WordPress documentation, including announcements, product goals, meeting notes, meeting agendas, and more.</p>\n<p>Real-time discussions for documentation take place in the <code>#docs</code> channel in <a href=\"https://make.wordpress.org/chat\">Make WordPress Slack</a> (registration required). Weekly meetings for the Documentation team are on Tuesdays at 14:00UTC.</p>\n<p>The Gutenberg project uses GitHub for managing code and tracking issues. The main repository is at: <a href=\"https://github.com/WordPress/gutenberg\">https://github.com/WordPress/gutenberg</a>. To find documentation issues to work on, browse <a href=\"https://github.com/WordPress/gutenberg/issues?utf8=%E2%9C%93&amp;q=is%3Aopen+is%3Aissue+label%3A%22%5BType%5D+Documentation%22+\">issues with documentation label</a>.</p>\n<h2>Documentation types</h2>\n<p>There are two major sets of documentation for the Gutenberg project:</p>\n<ol>\n<li><a href=\"https://wordpress.org/documentation/article/wordpress-block-editor/\">User documentation</a> is information on how to use the Editor as an author publishing posts. For contributing to user docs, follow the docs blog or ask in the #docs Slack channel to understand the current priorities.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/\">Block editor handbook</a> is everything related to the Gutenberg project including: developing, extending, and\u2014what you are reading right now\u2014contributing specific to Gutenberg.</li>\n</ol>\n<p>The rest of this document covers contributing to the block editor handbook.</p>\n<h2>Block editor handbook process</h2>\n<p>The block editor handbook is a mix of markdown files in the <code>/docs/</code> directory of the <a href=\"https://github.com/WordPress/gutenberg/\">Gutenberg project repository</a> and generated documentation from the packages.</p>\n<p>An automated job publishes the docs every 15 minutes to the <a href=\"https://developer.wordpress.org/block-editor/\">block editor handbook site</a>.</p>\n<p>See <a href=\"https://developer.wordpress.org/block-editor/contributors/code/git-workflow/\">the Git Workflow</a> documentation for how to use git to deploy changes using pull requests. Additionally, see the <a href=\"https://wordpress.tv/2020/09/02/marcus-kazmierczak-contribute-developer-documentation-to-gutenberg/\">video walk-through</a> and the accompanying <a href=\"https://mkaz.blog/wordpress/contribute-developer-documentation-to-gutenberg/\">slides for contributing documentation to Gutenberg</a>.</p>\n<h3>Handbook structure</h3>\n<p>The handbook is organized into four sections based on the functional types of documents. <a href=\"https://documentation.divio.com/\">The Documentation System</a> does a great job explaining the needs and functions of each type, but in short, they are:</p>\n<ul>\n<li><strong>Getting started tutorials</strong> &#8211; full lessons that take learners step by step to complete an objective, for example the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\">create a block tutorial</a>.</li>\n<li><strong>How-to guides</strong> &#8211; short lessons specific to completing a small specific task, for example <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/format-api/\">how to add a button to the block toolbar</a>.</li>\n<li><strong>Reference guides</strong> &#8211; API documentation, purely functional descriptions,</li>\n<li><strong>Explanations</strong> &#8211; longer documentation focused on learning, not a specific task.</li>\n</ul>\n<h3>Templates</h3>\n<p>A <a href=\"https://raw.githubusercontent.com/WordPress/gutenberg/trunk/docs/contributors/documentation/how-to-guide-template.md\">how-to guide template</a> is available to provide a common structure to guides. If starting a new how-to guide, copy the markdown from the template to get started.</p>\n<p>The template is based on examples from The Good Docs Project. See their <a href=\"https://github.com/thegooddocsproject/templates\">template repository</a> for additional examples to help you create quality documentation.</p>\n<h3>Update a document</h3>\n<p>To update an existing page:</p>\n<ol>\n<li>Check out the Gutenberg repository.</li>\n<li>Create a branch to work, for example <code>docs/update-contrib-guide</code>.</li>\n<li>Make the necessary changes to the existing document.</li>\n<li>Commit your changes.</li>\n<li>Create a pull request using the <a href=\"https://github.com/WordPress/gutenberg/labels/%5BType%5D%20Developer%20Documentation\">&#091;Type&#093; Developer Documentation</a> label.</li>\n</ol>\n<h3>Create a new document</h3>\n<p>To add a new document requires a working JavaScript development environment to build the documentation, see the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/\">JavaScript build setup documentation</a>:</p>\n<ol>\n<li>Create a Markdown file in the <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/docs\">docs</a> folder, use lower-case, no spaces, if needed a dash separator, and <code>.md</code> extension.</li>\n<li>Add content using markdown notation. All documents require one and only <code>h1</code> tag.</li>\n<li>Add document entry to the <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/docs/toc.json\">toc.json</a> hierarchy. See existing entries for format.</li>\n<li>Run <code>npm run docs:build</code> to update <code>manifest.json</code>.</li>\n<li>Commit <code>manifest.json</code> with other files updated.</li>\n</ol>\n<p>If you forget to run, <code>npm run docs:build</code> your PR will fail the static analysis check since the <code>manifest.json</code> file is an uncommitted local change that must be committed.</p>\n<h3>Documenting packages</h3>\n<p>Package documentation is generated automatically by the documentation tool by pulling the contents of the README.md file located in the root of the package. Sometimes, however, it is preferable to split the contents of the README into smaller, easier-to-read portions.</p>\n<p>This can be accomplished by creating a <code>docs</code> directory in the package and adding <code>toc.json</code> file that contains references other markdown files also contained in the <code>docs</code> directory. The <code>toc.json</code> file should contain an array of pages to be added as sub-pages of the main README file. The formatting follows the <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/docs/manifest.json\"><code>manifest.json</code></a> file that is generated automatically.</p>\n<p>In order for these pages to be nested under the main package name, be sure to set the <code>parent</code> property correctly. See the example below that adds child pages to the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/\"><code>@wordpress/create-block</code> section</a>.</p>\n<pre><code class=\"language-json\">[\n    {\n        \"title\": \"@wordpress/create-block External Template\",\n        \"slug\": \"packages-create-block-external-template\",\n        \"markdown_source\": \"../packages/create-block/docs/external-template.md\",\n        \"parent\": \"packages-create-block\"\n    }\n]\n</code></pre>\n<h3>Using links</h3>\n<p>It&#8217;s likely at some point, you&#8217;ll want to link to other internal documentation pages. It&#8217;s worth emphasizing all documents can be browsed in different contexts:</p>\n<ul>\n<li>Block editor handbook</li>\n<li>GitHub website</li>\n<li>npm website</li>\n</ul>\n<p>To create links that work in all contexts, you must use absolute path links without the `https://github.com/WordPress/gutenberg` prefix. You can reference files using the following patterns:</p>\n<ul>\n<li><code>/docs/*.md</code></li>\n<li><code>/packages/*/README.md</code></li>\n<li><code>/packages/components/src/**/README.md</code></li>\n</ul>\n<p>This way, they will be properly handled in all three aforementioned contexts.</p>\n<p>Use the full directory and filename from the Gutenberg repository, not the published path; the Block Editor Handbook creates short URLs\u2014you can see this in the tutorials section. Likewise, the <code>readme.md</code> portion is dropped in the handbook but should be included in the links.</p>\n<p>An example, the link to this page is: <code>/docs/contributors/documentation/README.md</code></p>\n<div class=\"callout callout-warning\">\n<b>Note:</b> The usual link transformation is not applied to links in callouts. See below.\n</div>\n<h3>Code examples</h3>\n<p>The code example in markdown should be wrapped in three tick marks &#096;&#096;&#096; and should additionally include a language specifier. See this <a href=\"https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks\">GitHub documentation around fenced code blocks</a>.</p>\n<p>A unique feature to the Gutenberg documentation is the <code>codetabs</code> toggle, this allows two versions of code to be shown at once. This is used for showing both <code>JSX</code> and <code>Plain</code> code samples.</p>\n<p>Here is an example <code>codetabs</code> section:</p>\n<pre><code class=\"language-md\">    \\{\\% codetabs \\%\\}\n    \\{\\% JSX \\%\\}\n    ```js\n    // JSX code here\n    ```\n    \\{\\% Plain \\%\\}\n    ```js\n    // Plain code here\n    ```\n    \\{\\% end \\%\\}\n</code></pre>\n<p>The preferred format for code examples is JSX. This should be the default view. The example placed first in source will be shown as the default.</p>\n<p><strong>Note:</strong> It is not required to include plain JavaScript code examples for every guide. The recommendation is to include plain code for beginner tutorials or short examples, but the majority of code in Gutenberg packages and across the larger React and JavaScript ecosystem are in JSX that requires a build process.</p>\n<h3>Callout notices</h3>\n<p>The Block Editor handbook supports the same <a href=\"https://make.wordpress.org/docs/handbook/documentation-team-handbook/handbooks-style-and-formatting-guide/#formatting\">notice styles as other WordPress handbooks</a>. However, the shortcode implementation is not ideal with the different locations the block editor handbook documentation is published (npm, GitHub).</p>\n<p>The recommended way to implement in markdown is to use the raw HTML and <code>callout callout-LEVEL</code> classes. For example:</p>\n<pre><code class=\"language-html\">&lt;div class=\"callout callout-info\"&gt;This is an **info** callout.&lt;/div&gt;\n</code></pre>\n<p>The following classes are available: <code>info</code>, <code>tip</code>, <code>alert</code>, <code>warning</code></p>\n<div class=\"callout callout-tip\">\nThis is a **tip** callout.\n</div>\n<div class=\"callout callout-info\">\nThis is an **info** callout.\n</div>\n<div class=\"callout callout-alert\">\nThis is an **alert** callout.\n</div>\n<div class=\"callout callout-warning\">\nThis is a **warning** callout.\n</div>\n<div class=\"callout callout-warning\">\nNote: In callout notices, links also need to be HTML `&lt;a href&gt;&lt;/a&gt;` notations.<br />\nThe usual link transformation is not applied to links in callouts.<br />\nFor instance, to reach the Getting started &gt; Create Block page, the URL in GitHub is<br />\nhttps://developer.wordpress.org/docs/getting-started/devenv/get-started-with-create-block.md<br />\nand will have to be hardcoded for the endpoint in the Block Editor Handbook as<br />\n<a href=\"https://developer.wordpress.org/block-editor/getting-started/create-block/\">https://developer.wordpress.org/block-editor/getting-started/create-block/</a> to link correctly in the handbook.\n</div>\n<h3>Editor config</h3>\n<p>You should configure your editor to use Prettier to auto-format markdown documents. See the <a href=\"https://developer.wordpress.org/block-editor/contributors/code/getting-started-with-code-contribution/\">Getting Started documentation</a> for complete details.</p>\n<p>An example config for using Visual Studio Code and the Prettier extensions:</p>\n<pre><code class=\"language-json\">\"[[markdown]]\": {\n    \"editor.defaultFormatter\": \"esbenp.prettier-vscode\",\n    \"editor.formatOnSave\": true\n},\n</code></pre>\n<div class=\"callout callout-info\">\nDepending on where you are viewing this document, the brackets may show as double. The proper format is just a single bracket.\n</div>\n<h3>Video embeds</h3>\n<p>Videos in the Block Editor Handbook need to be hosted on the <a href=\"https://www.youtube.com/@WordPress\">WordPress YouTube channel</a> as unlisted videos. This process requires additional permissions. Reach out in the #marketing Slack channel for assistance.</p>\n<p>Once the video has been uploaded to YouTube, retrieve the video embed link. It should look something like this:</p>\n<pre><code>https://www.youtube.com/embed/nrut8SfXA44?si=YxvmHmAoYx-BDCog\n</code></pre>\n<p>Then, place the following code where you want the video to be embedded in the documentation. Update the embed link and video title accordingly.</p>\n<pre><code class=\"language-html\">&lt;iframe width=\"960\" height=\"540\" src=\"[Video embed link]\" title=\"[Video title]\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"true\"&gt;&lt;/iframe&gt;\n</code></pre>\n<div class=\"callout callout-info\">\nVideos should have an aspect ratio of <code>16:9</code> and be filmed at the highest resolution possible.\n</div>\n<h2>Resources</h2>\n<ul>\n<li>\n<p><a href=\"https://developer.wordpress.org/block-editor/contributors/documentation/copy-guide/\">Copy Guidelines</a> for writing instructions, documentation, or other contributions to the Gutenberg project.</p>\n</li>\n<li>\n<p><a href=\"https://make.wordpress.org/docs/handbook/documentation-team-handbook/tone-and-voice-guide/\">Tone and Voice Guide</a> from WordPress Documentation.</p>\n</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135089,
+    "menu_order": 391,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134991",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134991",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134991/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152139,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134991/revisions/152139"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134991"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

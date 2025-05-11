@@ -1,0 +1,97 @@
+{
+    "id": 149311,
+    "date": "2023-11-21T14:34:56",
+    "date_gmt": "2023-11-21T14:34:56",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149311"
+    },
+    "modified": "2023-12-14T21:01:44",
+    "modified_gmt": "2023-12-14T21:01:44",
+    "slug": "who-is-this-handbook-for",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/getting-started/who-is-this-handbook-for/",
+    "title": {
+        "rendered": "Who Is This Handbook For?"
+    },
+    "content": {
+        "rendered": "\n<p>The Theme Developer Handbook is a self-contained resource to help you learn the fundamental principles of creating a WordPress theme. It covers a range of topics that span the basics to advanced development.</p>\n\n\n\n<p>You should read this handbook if you want to:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Create a theme based on nothing but your imagination</li>\n\n\n\n<li>Build a new theme based on an existing one</li>\n\n\n\n<li>Extend another theme by creating a child theme</li>\n\n\n\n<li>Understand how themes work&nbsp;</li>\n</ul>\n\n\n\n<p>Regardless of your reasons for starting down this adventure, this handbook will help you take the next steps toward building a WordPress theme of your own.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Your skill level</h2>\n\n\n\n<p>While not a strict requirement, you will get the most out of this handbook if you have a baseline understanding and some experience with web technologies, such as HTML, CSS, and PHP. JavaScript knowledge would be a bonus if you plan to add interactivity to the front end.</p>\n\n\n\n<p>Present-day WordPress and its block theme system allow you to customize and export a theme directly from the Site Editor interface:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2400\" height=\"1250\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?resize=2400%2C1250&#038;ssl=1\" alt=\"WordPress Site Editor with the options menu dropdown open on the right. The Export option is highlighted.\" class=\"wp-image-149312\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?w=2400&amp;ssl=1 2400w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?resize=1536%2C800&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-export.jpg?resize=2048%2C1067&amp;ssl=1 2048w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Exporting a variation of the core Twenty Twenty-Three theme.</figcaption></figure>\n\n\n\n<p>With each major WordPress update, its visual building tools become even more robust. Still, having some basic HTML, CSS, and PHP knowledge will help you move along faster.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Unlike block themes, <a href=\"https://developer.wordpress.org/themes/classic-themes/\">classic themes</a> are built entirely from code. This requires that you be comfortable enough to edit one or more of those languages to some degree.</p></div></div>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/themes/getting-started/reading-this-handbook/\">Reading this handbook</a> page has more information on the prerequisite knowledge you need to build themes.</p>\n\n\n\n<p>At the very least, you must be able to set up and configure a website using WordPress. Otherwise, you won\u2019t be able to test or use the theme that you are building. You can learn more about getting things running in the <a href=\"https://developer.wordpress.org/themes/getting-started/tools-and-setup/\">Tools and setup</a> documentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What this handbook covers</h2>\n\n\n\n<p>This handbook provides the basic information you need to build both block and classic WordPress themes. This includes in-depth coverage of the essential features and APIs that you should know, such as the topics in the <a href=\"https://developer.wordpress.org/themes/core-concepts/\">Core Concepts</a> chapter. It also dives into tools and techniques for building more advanced themes in the <a href=\"https://developer.wordpress.org/themes/advanced-topics/\">Advanced Topics</a> chapter.</p>\n\n\n\n<p>WordPress is a vast subject. HTML, CSS, PHP, accessibility, and other web technologies are even larger. It\u2019d be impossible to cover every aspect of building a website in this handbook alone. Therefore, it is highly-focused on the fundamentals of theme building.</p>\n\n\n\n<p>The goal of this handbook is to give you a solid foundation for WordPress theme creation by providing step-by-step instructions for building basic themes and providing resources to further your skills.</p>\n\n\n\n<p>If this sounds like something you\u2019d be interested in, come along. You\u2019re in for a journey.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5794,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149311",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149311",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149311/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150247,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149311/revisions/150247"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5794"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149311"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

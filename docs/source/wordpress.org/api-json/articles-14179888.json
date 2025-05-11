@@ -1,0 +1,109 @@
+{
+    "id": 14179888,
+    "date": "2021-03-15T06:15:20",
+    "date_gmt": "2021-03-15T06:15:20",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=14179888"
+    },
+    "modified": "2024-06-09T09:50:54",
+    "modified_gmt": "2024-06-09T09:50:54",
+    "slug": "vimeo-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/vimeo-embed/",
+    "title": {
+        "rendered": "Vimeo embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Vimeo is a popular video-sharing service. With the Vimeo block, you can embed videos from Vimeo into your WordPress website. You don\u2019t need a Vimeo account to be able to use it. You can only embed all public Vimeo videos.</p>\n\n\n\n<p>When embedded, a Vimeo video would look like this inside your WordPress post or page.</p>\n\n\n\n<p><strong>Embedded Vimeo Video</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"576\" src=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-28-58-1024x576.png\" alt=\"Vimeo Embed example \" class=\"wp-image-15415981\" srcset=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-28-58-1024x576.png 1024w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-28-58-300x169.png 300w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-28-58-768x432.png 768w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-28-58.png 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p><strong>Steps to Embed a Vimeo Video</strong>:</p>\n\n\n\n<p><strong>1. Find the URL of the Vimeo video</strong></p>\n\n\n\n<p>Find your video on vimeo.com, and copy the URL of the video from the browser bar.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"918\" height=\"645\" src=\"https://wordpress.org/documentation/files/2021/03/image10.png\" alt=\"How to get the vimeo video URL \" class=\"wp-image-14179897\" srcset=\"https://wordpress.org/documentation/files/2021/03/image10.png 918w, https://wordpress.org/documentation/files/2021/03/image10-300x211.png 300w, https://wordpress.org/documentation/files/2021/03/image10-768x540.png 768w\" sizes=\"auto, (max-width: 918px) 100vw, 918px\" /></figure>\n\n\n\n<p><strong>2. Add a Vimeo Embed block to your post</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"480\" src=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-34-28.png\" alt=\"How to quickly add a vimeo block\" class=\"wp-image-15415983\" srcset=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-34-28.png 640w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-34-28-300x225.png 300w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<p><strong>3. Paste the Vimeo URL <em>from Step 1</em></strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"637\" src=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-36-30-1024x637.png\" alt=\"Paste the video link into the text box.\" class=\"wp-image-15415985\" srcset=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-36-30-1024x637.png 1024w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-36-30-300x187.png 300w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-36-30-768x478.png 768w, https://wordpress.org/documentation/files/2022/03/2022-02-21_22-36-30.png 1137w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p><strong>4. Click the <em>Embed</em> button</strong></p>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-38-30-1.png\" alt=\"Preview of the vimeo  Block\" class=\"wp-image-15415986\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d&nbsp;</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-43-04-1-1024x684.png\" alt=\"Error message when you cannot embed a URL in the SoundCloud block\" class=\"wp-image-15415990\" /></figure>\n\n\n\n<p>You will have two choices: Try again with a different URL or convert to link.</p>\n\n\n\n<p><strong>5. You\u2019ll see the Vimeo player on your WordPress editor if you successfully embed a Vimeo video</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"576\" src=\"https://wordpress.org/documentation/files/2022/03/155064604-ae7c6863-7102-4f2a-aa38-2bfc3ad8190d-1024x576.png\" alt=\"Preview in the Vimeo video \" class=\"wp-image-15416017\" srcset=\"https://wordpress.org/documentation/files/2022/03/155064604-ae7c6863-7102-4f2a-aa38-2bfc3ad8190d-1024x576.png 1024w, https://wordpress.org/documentation/files/2022/03/155064604-ae7c6863-7102-4f2a-aa38-2bfc3ad8190d-300x169.png 300w, https://wordpress.org/documentation/files/2022/03/155064604-ae7c6863-7102-4f2a-aa38-2bfc3ad8190d-768x432.png 768w, https://wordpress.org/documentation/files/2022/03/155064604-ae7c6863-7102-4f2a-aa38-2bfc3ad8190d.png 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"block-toolbar\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for Vimeo embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/154611389-012a95a5-dabb-448a-8323-ba52144952be-1.png\" alt=\"Block toolbar in the vimeo video block\" class=\"wp-image-15416000\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/154611481-81e9e9fd-f127-4b55-989d-facf2a5701ad-1.png\" alt=\"Transform option in the vimeo block\" class=\"wp-image-15416001\" /></figure>\n\n\n\n<p>You can transform a Vimeo embed block into a Group. This would give you the ability to change the background color around the Vimeo embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"489\" src=\"https://wordpress.org/documentation/files/2022/03/2022-03-01_12-51-20-1024x489.png\" alt=\"Vimeo block inside the group block\" class=\"wp-image-15416055\" srcset=\"https://wordpress.org/documentation/files/2022/03/2022-03-01_12-51-20-1024x489.png 1024w, https://wordpress.org/documentation/files/2022/03/2022-03-01_12-51-20-300x143.png 300w, https://wordpress.org/documentation/files/2022/03/2022-03-01_12-51-20-768x367.png 768w, https://wordpress.org/documentation/files/2022/03/2022-03-01_12-51-20-1536x734.png 1536w, https://wordpress.org/documentation/files/2022/03/2022-03-01_12-51-20.png 1917w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of a Vimeo embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/2022-02-21_22-59-13-1-1024x576.png\" alt=\"Vimeo embed with a gray background-color\" class=\"wp-image-15416006\" /><figcaption class=\"wp-element-caption\">Vimeo embed with a gray background-color</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change Alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/154611609-181208d6-8a52-4813-9418-8df683e4cdd9-1.png\" alt=\"Change alignment in the vimeo block\" class=\"wp-image-15416010\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None&nbsp;</strong>\u2013 Default alignment option.</li>\n\n\n\n<li><strong>Wide width&nbsp;</strong>\u2013 Increase the width of the post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong>&nbsp;\u2013 Extend the block to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left</strong>&nbsp;\u2013 Make the block left-aligned.</li>\n\n\n\n<li><strong>Align center&nbsp;</strong>\u2013 Make the block alignment centered.</li>\n\n\n\n<li><strong>Align right&nbsp;</strong>\u2013 Make the block right aligned.</li>\n</ul>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Via the <strong>Edit URL</strong>, you can change the Vimeo Embed URL in the embed block. Overwrite the existing URL and click on the <strong>Embed</strong> button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"782\" height=\"418\" src=\"https://wordpress.org/documentation/files/2022/03/154611683-c2f565bf-f547-4b2e-8264-921b61b190fe.png\" alt=\"Edit URL in the vimeo block\" class=\"wp-image-15416011\" srcset=\"https://wordpress.org/documentation/files/2022/03/154611683-c2f565bf-f547-4b2e-8264-921b61b190fe.png 782w, https://wordpress.org/documentation/files/2022/03/154611683-c2f565bf-f547-4b2e-8264-921b61b190fe-300x160.png 300w, https://wordpress.org/documentation/files/2022/03/154611683-c2f565bf-f547-4b2e-8264-921b61b190fe-768x411.png 768w\" sizes=\"auto, (max-width: 782px) 100vw, 782px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"block-settings\">Block Settings</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"394\" height=\"221\" src=\"https://wordpress.org/documentation/files/2021/03/image3-edited-3.png\" alt=\"Block settings for the vimeo block\" class=\"wp-image-14180039\" srcset=\"https://wordpress.org/documentation/files/2021/03/image3-edited-3.png 394w, https://wordpress.org/documentation/files/2021/03/image3-edited-3-300x168.png 300w\" sizes=\"auto, (max-width: 394px) 100vw, 394px\" /></figure>\n\n\n\n<p>Besides the Advanced section, the Vimeo embed has only one setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<p><strong>Media Settings</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"842\" height=\"190\" src=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1.png\" alt=\"Media settings turned off in the vimeo block and Media settings turned on in the vimeo block\" class=\"wp-image-13073819\" srcset=\"https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1.png 842w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1-300x68.png 300w, https://wordpress.org/documentation/files/2020/07/pasted-image-0-15-1-768x173.png 768w\" sizes=\"auto, (max-width: 842px) 100vw, 842px\" /></figure>\n\n\n\n<p>Via the <em>Media Settings</em>, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong> This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"396\" height=\"207\" src=\"https://wordpress.org/documentation/files/2020/07/image-77.png\" alt=\"The advanced section lets you add a CSS class to your block.\" class=\"wp-image-13174232\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-77.png 396w, https://wordpress.org/documentation/files/2020/07/image-77-300x157.png 300w\" sizes=\"auto, (max-width: 396px) 100vw, 396px\" /></figure>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit. For a Vimeo embed there are default CSS classes to allow for responsive handling of the embed when viewed on smaller devices like mobile phones.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<p></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content </li>\n\n\n\n<li>Added alt text to images </li>\n\n\n\n<li>Aligned images for mobile view </li>\n</ul>\n</li>\n\n\n\n<li>Created on 2022-03-01</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Vimeo is a popular video-sharing service. With the Vimeo block, you can embed videos from Vimeo into your WordPress website. You don\u2019t need a Vimeo account to be able to use it. You can only embed all public Vimeo videos. When embedded, a Vimeo video would look like [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-14179888",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14179888",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=14179888"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14179888/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360449,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14179888/revisions/16360449"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=14179888"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=14179888"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

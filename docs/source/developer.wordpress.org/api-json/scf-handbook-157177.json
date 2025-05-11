@@ -1,0 +1,97 @@
+{
+    "id": 157177,
+    "date": "2025-02-21T04:17:12",
+    "date_gmt": "2025-02-21T04:17:12",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/class-acf-rest-api-file/"
+    },
+    "modified": "2025-02-21T05:52:03",
+    "modified_gmt": "2025-02-21T05:52:03",
+    "slug": "class-acf-rest-api-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/",
+    "title": {
+        "rendered": "ACF_Rest_Api"
+    },
+    "content": {
+        "rendered": "<h2>Properties</h2>\n<h3><code>$request</code></h3>\n<ul>\n<li>@var ACF_Rest_Request</li>\n</ul>\n<h3><code>$embed_links</code></h3>\n<ul>\n<li>@var ACF_Rest_Embed_Links</li>\n</ul>\n<h2>Methods</h2>\n<h3><code>register_field</code></h3>\n<p>Register our custom property as a REST field.</p>\n<h3><code>get_schema</code></h3>\n<p>Dynamically generate the schema for the current request.</p>\n<ul>\n<li>@return array</li>\n</ul>\n<h3><code>validate_rest_arg</code></h3>\n<p>Validate the request args. Mostly a wrapper for <code>rest_validate_request_arg()</code>, but also<br />\nfires off a filter, so we can add some custom validation for specific fields.</p>\n<ul>\n<li>This will likely no longer be needed once WordPress implements something like <code>validate_callback</code><br />\nand <code>sanitize_callback</code> for nested schema properties, see:<br />\n<a href=\"https://core.trac.wordpress.org/ticket/49960\">https://core.trac.wordpress.org/ticket/49960</a></li>\n<li>@param mixed            $value</li>\n<li>@param \\<a href=\"https://developer.wordpress.org/reference/classes/wp_rest_request/\" rel=\"class\">WP_REST_Request</a> $request</li>\n<li>@param string           $param</li>\n<li>@return boolean|<a href=\"https://developer.wordpress.org/reference/classes/wp_error/\" rel=\"class\">WP_Error</a></li>\n</ul>\n<h3><code>load_fields</code></h3>\n<p>Load field values into the requested object. This method is not a part of any public API and is only public as<br />\nit is required by WordPress.</p>\n<ul>\n<li>@param array           $object          An array representation of the post, term, or user object.</li>\n<li>@param string          $field_name</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_rest_request/\" rel=\"class\">WP_REST_Request</a> $request</li>\n<li>@param string          $object_sub_type Note that this isn&#8217;t the same as $this-&gt;object_type. This variable is<br />\nmore specific and can be a post type or taxonomy.</li>\n<li>@return array</li>\n</ul>\n<h3><code>update_fields</code></h3>\n<p>Update any incoming field values for the given object. This method is not a part of any public API and is only<br />\npublic as it is required by WordPress.</p>\n<ul>\n<li>@param array                   $data</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_post/\" rel=\"class\">WP_Post</a>|<a href=\"https://developer.wordpress.org/reference/classes/wp_term/\" rel=\"class\">WP_Term</a>|<a href=\"https://developer.wordpress.org/reference/classes/wp_user/\" rel=\"class\">WP_User</a> $object</li>\n<li>@param string                  $property        &#8216;acf&#8217;</li>\n<li>@param <a href=\"https://developer.wordpress.org/reference/classes/wp_rest_request/\" rel=\"class\">WP_REST_Request</a>         $request</li>\n<li>@param string                  $object_sub_type This will be the post type, the taxonomy, or &#8216;user&#8217;.</li>\n<li>@return boolean|<a href=\"https://developer.wordpress.org/reference/classes/wp_error/\" rel=\"class\">WP_Error</a></li>\n</ul>\n<h3><code>make_identifier</code></h3>\n<p>Make the ACF identifier string for the given object.</p>\n<ul>\n<li>@param integer $object_id</li>\n<li>@param string  $object_type &#8216;user&#8217;, &#8216;term&#8217;, or &#8216;post&#8217;</li>\n<li>@return string</li>\n</ul>\n<h3><code>object_type_has_field_group</code></h3>\n<p>Gets an array of the location types that a field group is configured to use.</p>\n<ul>\n<li>@param string $object_type    &#8216;user&#8217;, &#8216;term&#8217;, or &#8216;post&#8217;</li>\n<li>@param array  $field_group    The field group to check.</li>\n<li>@param array  $location_types An array of location types.</li>\n<li>@return boolean</li>\n</ul>\n<h3><code>get_field_groups_by_object_type</code></h3>\n<p>Get all field groups for the provided object type.</p>\n<ul>\n<li>@param string $object_type &#8216;user&#8217;, &#8216;term&#8217;, or &#8216;post&#8217;</li>\n<li>@return array An array of field groups that display for that location type.</li>\n</ul>\n<h3><code>get_field_groups_by_id</code></h3>\n<p>Get all field groups for a given object.</p>\n<ul>\n<li>@param integer     $object_id</li>\n<li>@param string      $object_type     &#8216;user&#8217;, &#8216;term&#8217;, or &#8216;post&#8217;</li>\n<li>@param string|null $object_sub_type The post type or taxonomy. When an $object_type of &#8216;user&#8217; is in play, this can be ignored.</li>\n<li>@param array       $scope           Field group keys to limit the returned set of field groups to. This is used to scope field lookups to specific groups.</li>\n<li>@return array An array of matching field groups.</li>\n</ul>\n<h3><code>get_fields</code></h3>\n<p>Get all ACF fields for a given field group and allow third party filtering.</p>\n<ul>\n<li>@param array        $field_group This could technically be other possible values supported by acf_get_fields() but in this<br />\ncontext, we&#8217;re only using the field group arrays.</li>\n<li>@param null|integer $object_id   The ID of the object being prepared.</li>\n<li>@return array</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 7879583,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157177",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157177",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7879583"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157177/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157236,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157177/revisions/157236"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157177"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

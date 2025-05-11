@@ -1,0 +1,91 @@
+{
+    "id": 41897,
+    "date": "2019-04-26T15:31:50",
+    "date_gmt": "2019-04-26T15:31:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/develop/localizing/"
+    },
+    "modified": "2025-01-07T18:34:16",
+    "modified_gmt": "2025-01-07T18:34:16",
+    "slug": "localizing",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/localizing/",
+    "title": {
+        "rendered": "Localizing Gutenberg"
+    },
+    "content": {
+        "rendered": "<p>The Gutenberg plugin is translated via the general plugin translation system (GlotPress) at https://translate.wordpress.org. Review the <a href=\"https://make.wordpress.org/polyglots/handbook/tools/glotpress-translate-wordpress-org/\">GlotPress translation process documentation</a> for additional information.</p>\n<p>To translate Gutenberg in your locale or language, <a href=\"https://translate.wordpress.org/projects/wp-plugins/gutenberg\">select your locale here</a> and translate <em>Development</em> (which contains the plugin&#8217;s string) and/or <em>Development Readme</em> (please translate what you see in the Details tab of the <a href=\"https://wordpress.org/plugins/gutenberg/\">plugin page</a>).</p>\n<p>A Global Translation Editor (GTE) or Project Translation Editor (PTE) with suitable rights will process your translations in due time.</p>\n<p>Language packs are automatically generated once 95% of the plugin&#8217;s strings are translated and approved for a locale.</p>\n<p>The inclusion of Gutenberg into WordPress core means that more than 51% of WordPress installations running a translated WordPress installation have Gutenberg&#8217;s translated strings compiled into the core language pack as well.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135089,
+    "menu_order": 394,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41897",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/41897",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/41897/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151910,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/41897/revisions/151910"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41897"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 5817,
+    "date": "2014-08-01T22:56:29",
+    "date_gmt": "2014-08-01T22:56:29",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5817"
+    },
+    "modified": "2023-12-14T20:54:56",
+    "modified_gmt": "2023-12-14T20:54:56",
+    "slug": "basics",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/",
+    "title": {
+        "rendered": "Theme Basics"
+    },
+    "content": {
+        "rendered": "\n<p>In this chapter, you&#8217;ll begin\u00a0learning how to build a theme. The anatomy of a theme and its parts will be broken down and explained. </p>\n\n\n\n<p>You&#8217;ll begin by understanding the concepts of building a theme by looking at <a href=\"https://developer.wordpress.org/themes/basics/template-files/\">theme files</a> and <a href=\"https://developer.wordpress.org/themes/basics/post-types/\">post types</a>. Then you&#8217;ll learn how to keep your files <a href=\"https://developer.wordpress.org/themes/basics/organizing-theme-files/\">organized</a> within your theme.</p>\n\n\n\n<p>You&#8217;ll also look at <a title=\"The Loop\" href=\"https://developer.wordpress.org/themes/basics/the-loop/\">The Loop</a>, which is responsible for pulling content out of the WordPress database.</p>\n\n\n\n<p>Finally, you&#8217;ll learn more about adding features&nbsp;to your theme by <a title=\"Theme Functions\" href=\"https://developer.wordpress.org/themes/basics/theme-functions/\">using theme functions</a>, <a title=\"Including CSS &amp; JavaScript\" href=\"https://developer.wordpress.org/themes/basics/including-css-javascript/\">including CSS &amp; JavaScript</a>, leveraging <a title=\"Conditional Tags\" href=\"https://developer.wordpress.org/themes/basics/conditional-tags/\">conditional tags</a> to only show content you need, and working with <a href=\"https://developer.wordpress.org/themes/basics/categories-tags-custom-taxonomies/\">default taxonomies and creating your own</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1010,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5817",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144941,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817/revisions/144941"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5817"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

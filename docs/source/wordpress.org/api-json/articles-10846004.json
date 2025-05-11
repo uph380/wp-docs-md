@@ -1,0 +1,109 @@
+{
+    "id": 10846004,
+    "date": "2018-11-04T09:50:08",
+    "date_gmt": "2018-11-04T09:50:08",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10846004"
+    },
+    "modified": "2025-04-25T10:09:45",
+    "modified_gmt": "2025-04-25T10:09:45",
+    "slug": "create-a-favicon",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/create-a-favicon/",
+    "title": {
+        "rendered": "Create a Favicon"
+    },
+    "content": {
+        "rendered": "\n<p>A <em>favicon</em> (short for &#8220;favorite icon&#8221;) is an icon associated with a particular website or web page. It is generally intended to be used when you bookmark a web page. Web browsers use them in the URL bar, on tabs, and elsewhere to help identify a website visually. Favicons are also used as application icons on mobile devices.  </p>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Version 6.5 or later</h2>\n\n\n\n<p>WordPress <a href=\"https://wordpress.org/documentation/wordpress-version/version-6-5/\">Version 6.5</a> moved the site icon to <strong>General Settings</strong>.</p>\n\n\n\n<p>Follow the steps below to set <strong>Site Icon</strong> from General settings.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Prepare the image file and upload to media library. (It must be square, having a height and width of at least 512 px. and a .png is the recommended format)</li>\n\n\n\n<li>Navigate to\u00a0<a href=\"https://wordpress.org/documentation/article/settings-general-screen/\">General Settings</a></li>\n\n\n\n<li>Click Choose a Site icon.</li>\n\n\n\n<li>Select image file that you prepared in the previous step.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1740\" height=\"1340\" src=\"https://wordpress.org/documentation/files/2018/11/6-5-favicon-general-settings.png\" alt=\"screenshot of the general settings tab where the site icon is added in WordPress since version 6.5\" class=\"wp-image-16365632\" style=\"aspect-ratio:1.3333333333333333;object-fit:cover;width:659px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2018/11/6-5-favicon-general-settings.png 1740w, https://wordpress.org/documentation/files/2018/11/6-5-favicon-general-settings-300x231.png 300w, https://wordpress.org/documentation/files/2018/11/6-5-favicon-general-settings-1024x789.png 1024w, https://wordpress.org/documentation/files/2018/11/6-5-favicon-general-settings-768x591.png 768w, https://wordpress.org/documentation/files/2018/11/6-5-favicon-general-settings-1536x1183.png 1536w\" sizes=\"auto, (max-width: 1740px) 100vw, 1740px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">WordPress Version 4.3 to 6.4</h2>\n\n\n\n<p>WordPress <a href=\"https://wordpress.org/documentation/wordpress-version/version-4-3/\">Version 4.3</a> implemented a Site Icon feature that enables favicons on your web site.</p>\n\n\n\n<p>When you use the Site Icon feature, you don&#8217;t need to prepare the <code>favicon.ico</code> file by yourself, or modify your template file. All you have to do is navigate to the Customize screen and specify a square image that has a height and width of at least 512 px.</p>\n\n\n\n<p>Later paragraphs in this article contain instructions for manually setting up your own favicon. However, it is highly recommended that you use the Site Icon feature (a feature that is built-in to WordPress) instead.</p>\n\n\n\n<p>Follow the steps below to use Site Icon to set up a favicon for your site.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Prepare the image file. (It must be square, having a height and width of at least 512 px.)</li>\n\n\n\n<li>Navigate to <a href=\"/support/article/administration-screens/\">Administration Screen</a> &gt; Appearance &gt; Customize</li>\n\n\n\n<li>Click <strong>Site Identity</strong></li>\n\n\n\n<li>Click <strong>Select Image</strong> (located under the<strong> Site Icon</strong> subheading).</li>\n\n\n\n<li>Click on the <strong>Upload Files</strong> tab, then click <strong>Select Files</strong> to upload the image file that you prepared in the previous step.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/11/customizer-siteicon.jpg\"><img loading=\"lazy\" decoding=\"async\" width=\"298\" height=\"281\" src=\"https://wordpress.org/documentation/files/2018/11/customizer-siteicon.jpg\" alt=\"customizer-siteicon\" class=\"wp-image-10846015\" /></a></figure>\n\n\n\n<figure class=\"wp-block-table\"><table class=\"has-light-grey-1-background-color has-background has-fixed-layout\"><tbody><tr><td><strong>Changelog</strong><br><strong>April 25, 2025</strong> &#8211; Added the update for 6.5 and removed outdated sections: <br>&#8211; Creating a Favicon<br>&#8211; Installing a Favicon in WordPress<br>&#8211; How to create a favicon with a transparent background<br>&#8211; Advantages of using .ico over .png or .gif<br> <br><br></td></tr></tbody></table></figure>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>A favicon (short for &#8220;favorite icon&#8221;) is an icon associated with a particular website or web page. It is generally intended to be used when you bookmark a web page. Web browsers use them in the URL bar, on tabs, and elsewhere to help identify a website visually. Favicons are also used as application icons [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-10846004",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846004",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10846004"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846004/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365635,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10846004/revisions/16365635"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10846004"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10846004"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

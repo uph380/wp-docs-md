@@ -1,0 +1,91 @@
+{
+    "id": 134434,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/richtext/"
+    },
+    "modified": "2024-10-30T16:55:52",
+    "modified_gmt": "2024-10-30T16:55:52",
+    "slug": "richtext",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/richtext/",
+    "title": {
+        "rendered": "RichText Reference"
+    },
+    "content": {
+        "rendered": "<p>RichText is a component that allows developers to render a <a href=\"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content\"><code>contenteditable</code> input</a>, providing users with the option to format block content to make it bold, italics, linked, or use other formatting.</p>\n<p>The RichText component is extremely powerful because it provides built-in functionality you won&#8217;t find in other components:</p>\n<ul>\n<li><strong>Consistent Styling in the Admin and Frontend:</strong> The editable container can be set to any block-level element, such as a <code>div</code>, <code>h2</code> or <code>p</code> tag. This allows the styles you apply in style.css to more easily apply on the frontend and admin, without having to rewrite them in editor.css.</li>\n<li><strong>Cohesive Placeholder Text:</strong> Before the user writes their content, it&#8217;s easy to include placeholder text that&#8217;s already styled to match the rest of the block editor.</li>\n<li><strong>Control Over Formatting Options:</strong> It&#8217;s possible to dictate exactly which formatting options you want to allow for the RichText field. For example, you can dictate whether to allow the user to make text bold, italics or both.</li>\n</ul>\n<p>Unlike other components that exist in the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/\">Component Reference</a> section, RichText lives separately because it only makes sense within the block editor, and not within other areas of WordPress.</p>\n<h2>Property reference</h2>\n<p>For a list of the possible properties to pass your RichText component, <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/rich-text/README.md\">check out the component documentation on GitHub</a>.</p>\n<h2>Core blocks using the RichText component</h2>\n<p>There are a number of core blocks using the RichText component. The JavaScript edit function linked below for each block can be used as a best practice reference while creating your own blocks.</p>\n<ul>\n<li><strong><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-library/src/button/edit.js\">Button</a>:</strong> RichText is used to enter the button&#8217;s text.</li>\n<li><strong><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-library/src/heading/edit.js\">Heading</a>:</strong> RichText is used to enter the heading&#8217;s text.</li>\n<li><strong><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-library/src/quote/edit.js\">Quote</a>:</strong> RichText is used in two places, for both the quotation and citation text.</li>\n<li><strong><a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-library/src/search/edit.js\">Search</a>:</strong> RichText is used in two places, for both the label above the search field and the submit button text.</li>\n</ul>\n<h2>Example</h2>\n<pre><code class=\"language-jsx\">import { registerBlockType } from '@wordpress/blocks';\nimport { useBlockProps, RichText } from '@wordpress/block-editor';\n\nregisterBlockType( /* ... */, {\n    // ...\n\n    attributes: {\n        content: {\n            type: 'string',\n            source: 'html',\n            selector: 'h2',\n        },\n    },\n\n    edit( { attributes, setAttributes } ) {\n        const blockProps = useBlockProps();\n\n        return (\n            &lt;RichText\n                { ...blockProps }\n                tagName=\"h2\" // The tag here is the element output and editable in the admin\n                value={ attributes.content } // Any existing content, either from the database or an attribute default\n                allowedFormats={ [ 'core/bold', 'core/italic' ] } // Allow the content to be made bold or italic, but do not allow other formatting options\n                onChange={ ( content ) =&gt; setAttributes( { content } ) } // Store updated content as a block attribute\n                placeholder={ __( 'Heading...' ) } // Display this text before any content has been added by the user\n            /&gt;\n        );\n    },\n\n    save( { attributes } ) {\n        const blockProps = useBlockProps.save();\n\n        return &lt;RichText.Content { ...blockProps } tagName=\"h2\" value={ attributes.content } /&gt;; // Saves &lt;h2&gt;Content added in the editor...&lt;/h2&gt; to the database for frontend display\n    }\n} );\n</code></pre>\n<h2>Common issues and solutions</h2>\n<p>While using the RichText component a number of common issues tend to appear.</p>\n<h3>HTML formatting tags display in the content</h3>\n<p>If the HTML tags from text formatting such as <code>&lt;strong&gt;</code> or <code>&lt;em&gt;</code> are being escaped and displayed on the frontend of the site, this is likely due to an issue in your save function. Make sure your code looks something like <code>&lt;RichText.Content tagName=\"h2\" value={ heading } /&gt;</code> (JSX) within your save function instead of simply outputting the value with <code>&lt;h2&gt;{ heading }&lt;/h2&gt;</code>.</p>\n<h3>Unwanted formatting options still display</h3>\n<p>Before moving forward, consider if using the RichText component makes sense at all. Would it be better to use a basic <code>input</code> or <code>textarea</code> element? If you don&#8217;t think any formatting should be possible, these HTML tags may make more sense.</p>\n<p>If you&#8217;d still like to use RichText, you can eliminate all of the formatting options by specifying the <code>withoutInteractiveFormatting</code> property.</p>\n<p>If you want to limit the formats allowed, you can specify using <code>allowedFormats</code> property in your code, see the example above or <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/rich-text/README.md#allowedformats-array\">the component documentation</a> for details.</p>\n<h3>Disable specific format types in Editor</h3>\n<p>The RichText component uses formats to display inline elements, for example images within the paragraph block. If you just want to disable a format from the editor, you can use the <code>unregisterFormatType</code> function. For example to disable inline images, use:</p>\n<pre><code>wp.richText.unregisterFormatType( 'core/image' );\n</code></pre>\n<p>To apply, you would need to enqueue the above script in your plugin or theme. See the JavaScript tutorial for <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/javascript/loading-javascript/\">how to load JavaScript in WordPress</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134405,
+    "menu_order": 103,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134434",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134434",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134434/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152385,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134434/revisions/152385"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134434"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134446,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/clipboard-button/"
+    },
+    "modified": "2024-10-30T16:55:49",
+    "modified_gmt": "2024-10-30T16:55:49",
+    "slug": "clipboard-button",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/clipboard-button/",
+    "title": {
+        "rendered": "ClipboardButton"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis component is deprecated. Please use the `useCopyToClipboard` hook from the `@wordpress/compose` package instead.\n</div>\n<p>With a clipboard button, users copy text (or other elements) with a single click or tap.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/07/clipboard-button-2-1.png?ssl=1\" alt=\"Clipboard button component\" /></p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { ClipboardButton } from '@wordpress/components';\n\nconst MyClipboardButton = () =&gt; {\n    const [ hasCopied, setHasCopied ] = useState( false );\n    return (\n        &lt;ClipboardButton\n            variant=\"primary\"\n            text=\"Text to be copied.\"\n            onCopy={ () =&gt; setHasCopied( true ) }\n            onFinishCopy={ () =&gt; setHasCopied( false ) }\n        &gt;\n            { hasCopied ? 'Copied!' : 'Copy Text' }\n        &lt;/ClipboardButton&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3>className</h3>\n<p>The class that will be added to the classes of the underlying <code>&lt;Button&gt;</code> component.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: no</li>\n</ul>\n<h3>text</h3>\n<p>The text that will be copied to the clipboard.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: yes</li>\n</ul>\n<h3>onCopy</h3>\n<p>The function that will be called when the text is copied.</p>\n<p>&#8212; Type: <code>() =&gt; void</code><br />\n&#8212; Required: yes</p>\n<h3>onFinishCopy</h3>\n<p>The function that will be called when the text is copied and the copy animation is finished.</p>\n<p>&#8212; Type: <code>() =&gt; void</code><br />\n&#8212; Required: no</p>\n<h3>Inherited props</h3>\n<p>Any additional props will be passed the underlying <code>&lt;Button/&gt;</code> component. See the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/#props\">Button</a> component for more details on the available props.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 129,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134446",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134446",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134446/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151880,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134446/revisions/151880"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134446"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134486,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/navigable-container/"
+    },
+    "modified": "2024-10-30T16:55:41",
+    "modified_gmt": "2024-10-30T16:55:41",
+    "slug": "navigable-container",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/navigable-container/",
+    "title": {
+        "rendered": "NavigableContainer"
+    },
+    "content": {
+        "rendered": "<p><code>NavigableContainer</code> is a React component to render a container navigable using the keyboard. Only things that are focusable can be navigated to. It will currently always be a <code>div</code>.</p>\n<p><code>NavigableContainer</code> is exported as two components: <code>NavigableMenu</code> and <code>TabbableContainer</code>. <code>NavigableContainer</code> itself is <strong>not</strong> exported. <code>NavigableMenu</code> and <code>TabbableContainer</code> have the props listed below. Any other props will be passed through to the <code>div</code>.</p>\n<hr />\n<h2>Props</h2>\n<p>These are the props that <code>NavigableMenu</code> and <code>TabbableContainer</code>. Any props which are specific to one component are labelled appropriately.</p>\n<h3><code>cycle</code>: <code>boolean</code></h3>\n<p>A boolean which tells the component whether or not to cycle from the end back to the beginning and vice versa.</p>\n<ul>\n<li>Required: No</li>\n<li>default: <code>true</code></li>\n</ul>\n<h3><code>eventToOffset</code>: <code>( event: KeyboardEvent ) =&gt; -1 | 0 | 1 | undefined</code></h3>\n<p>(TabbableContainer only)<br />\nGets an offset, given an event.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onKeyDown</code>: <code>( event: KeyboardEvent ) =&gt; void</code></h3>\n<p>A callback invoked on the keydown event.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onNavigate</code>: <code>( index: number, focusable: HTMLElement ) =&gt; void</code></h3>\n<p>A callback invoked when the menu navigates to one of its children passing the index and child as an argument</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>orientation</code>: <code>'vertical' | 'horizontal' | 'both'</code></h3>\n<p>(NavigableMenu only)<br />\nThe orientation of the menu. It could be &#8220;vertical&#8221;, &#8220;horizontal&#8221;, or &#8220;both&#8221;.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>\"vertical\"</code></li>\n</ul>\n<h2>Components</h2>\n<h3>NavigableMenu</h3>\n<p>A NavigableMenu allows movement up and down (or left and right) the component via the arrow keys. The <code>tab</code> key is not handled. The <code>orientation</code> prop is used to determine whether the arrow keys used are vertical, horizontal or both.</p>\n<p>The <code>NavigableMenu</code> by default has a <code>menu</code> role and therefore, in order to function as expected, the component expects its children elements to have one of the following roles: <code>'menuitem' | 'menuitemradio' | 'menuitemcheckbox'</code>.</p>\n<h3>TabbableContainer</h3>\n<p>A <code>TabbableContainer</code> will only be navigated using the <code>tab</code> key. Every intended tabstop must have a tabIndex <code>0</code>.</p>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import {\n    NavigableMenu,\n    TabbableContainer,\n    Button,\n} from '@wordpress/components';\n\nfunction onNavigate( index, target ) {\n    console.log( `Navigates to ${ index }`, target );\n}\n\nconst MyNavigableContainer = () =&gt; (\n    &lt;div&gt;\n        &lt;span&gt;Navigable Menu:&lt;/span&gt;\n        &lt;NavigableMenu onNavigate={ onNavigate } orientation=\"horizontal\"&gt;\n            &lt;Button variant=\"secondary\"&gt;Item 1&lt;/Button&gt;\n            &lt;Button variant=\"secondary\"&gt;Item 2&lt;/Button&gt;\n            &lt;Button variant=\"secondary\"&gt;Item 3&lt;/Button&gt;\n        &lt;/NavigableMenu&gt;\n\n        &lt;span&gt;Tabbable Container:&lt;/span&gt;\n        &lt;TabbableContainer onNavigate={ onNavigate }&gt;\n            &lt;Button variant=\"secondary\" tabIndex=\"0\"&gt;\n                Section 1\n            &lt;/Button&gt;\n            &lt;Button variant=\"secondary\" tabIndex=\"0\"&gt;\n                Section 2\n            &lt;/Button&gt;\n            &lt;Button variant=\"secondary\" tabIndex=\"0\"&gt;\n                Section 3\n            &lt;/Button&gt;\n            &lt;Button variant=\"secondary\" tabIndex=\"0\"&gt;\n                Section 4\n            &lt;/Button&gt;\n        &lt;/TabbableContainer&gt;\n    &lt;/div&gt;\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 182,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134486",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134486",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134486/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151849,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134486/revisions/151849"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134486"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

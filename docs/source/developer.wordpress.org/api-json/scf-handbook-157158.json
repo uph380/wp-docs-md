@@ -1,0 +1,91 @@
+{
+    "id": 157158,
+    "date": "2025-02-21T04:17:09",
+    "date_gmt": "2025-02-21T04:17:09",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/upgrades-file/"
+    },
+    "modified": "2025-03-10T18:31:04",
+    "modified_gmt": "2025-03-10T18:31:04",
+    "slug": "upgrades-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/upgrades-file/",
+    "title": {
+        "rendered": "Upgrades Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_has_upgrade()</code></h2>\n<p>acf_has_upgrade</p>\n<ul>\n<li>Returns true if this site has an upgrade available.</li>\n<li>@date    24/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@return  boolean</li>\n</ul>\n<h2><code>acf_upgrade_all()</code></h2>\n<p>Runs upgrade routines if this site has an upgrade available.</p>\n<ul>\n<li>@date  24/8/18</li>\n<li>@since ACF 5.7.4</li>\n</ul>\n<h2><code>acf_get_db_version()</code></h2>\n<p>acf_get_db_version</p>\n<ul>\n<li>Returns the ACF DB version.</li>\n<li>@date    10/09/2016</li>\n<li>@since ACF 5.4.0</li>\n<li>@return  string</li>\n</ul>\n<h2><code>acf_update_db_version()</code></h2>\n<p>Updates the ACF DB version.</p>\n<ul>\n<li>@date    10/09/2016</li>\n<li>@since ACF 5.4.0</li>\n<li>@param   string $version The new version.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_upgrade_500()</code></h2>\n<p>acf_upgrade_500</p>\n<ul>\n<li>Version 5 introduces new post types for field groups and fields.</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_upgrade_500_field_groups()</code></h2>\n<p>acf_upgrade_500_field_groups</p>\n<ul>\n<li>Upgrades all ACF4 field groups to ACF5</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_upgrade_500_field_group()</code></h2>\n<p>acf_upgrade_500_field_group</p>\n<ul>\n<li>Upgrades a ACF4 field group to ACF5</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   object $ofg The old field group post object.</li>\n<li>@return array $nfg  The new field group array.</li>\n</ul>\n<h2><code>acf_upgrade_500_fields()</code></h2>\n<p>acf_upgrade_500_fields</p>\n<ul>\n<li>Upgrades all ACF4 fields to ACF5 from a specific field group</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   object $ofg The old field group post object.</li>\n<li>@param array  $nfg The new field group array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_upgrade_500_field()</code></h2>\n<p>acf_upgrade_500_field</p>\n<ul>\n<li>Upgrades a ACF4 field to ACF5</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   array $field The old field.</li>\n<li>@return array $field The new field.</li>\n</ul>\n<h2><code>acf_upgrade_550()</code></h2>\n<p>acf_upgrade_550</p>\n<ul>\n<li>Version 5.5 adds support for the wp_termmeta table added in WP 4.4.</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_upgrade_550_termmeta()</code></h2>\n<p>acf_upgrade_550_termmeta</p>\n<ul>\n<li>Upgrades all ACF4 termmeta saved in wp_options to the wp_termmeta table.</li>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@return  void</li>\n</ul>\n<h2><code>acf_wp_upgrade_550_termmeta()</code></h2>\n<p>When the database is updated to support term meta, migrate ACF term meta data across.</p>\n<ul>\n<li>@date    23/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   string $wp_db_version         The new $wp_db_version.</li>\n<li>@param string $wp_current_db_version The old (current) $wp_db_version.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_upgrade_550_taxonomy()</code></h2>\n<p>acf_upgrade_550_taxonomy</p>\n<ul>\n<li>Upgrades all ACF4 termmeta for a specific taxonomy.</li>\n<li>@date    24/8/18</li>\n<li>@since ACF 5.7.4</li>\n<li>@param   string $taxonomy The taxonomy name.</li>\n<li>@return void</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157158",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157158",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157158/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157387,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157158/revisions/157387"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157158"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

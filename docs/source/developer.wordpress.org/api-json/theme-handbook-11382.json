@@ -1,0 +1,97 @@
+{
+    "id": 11382,
+    "date": "2014-10-23T16:09:33",
+    "date_gmt": "2014-10-23T16:09:33",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11382"
+    },
+    "modified": "2015-10-17T22:07:19",
+    "modified_gmt": "2015-10-17T22:07:19",
+    "slug": "404-pages",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/404-pages/",
+    "title": {
+        "rendered": "404 Pages"
+    },
+    "content": {
+        "rendered": "<p>A 404 page is important to add into your theme in case a user stumbles upon a page that doesn&#8217;t exist or hasn&#8217;t been created yet. It is also important that your 404 page gives your visitors a way to arrive at the right place.</p>\n<p>These next few steps will help you build a useful 404 page for your WordPress theme.</p>\n<h2>Creating the 404.php file</h2>\n<p>As the <code>404.php</code> file is used on a page not found error, the first step is to create a file named <code>404.php</code> and add it to your WordPress theme folder.</p>\n<p>\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><p>Often times a great starting point for your <code>404.php</code> is your <code>index.php</code></p>\n</div></div>\n</p>\n<h2>Add a file header</h2>\n<p>To use your theme&#8217;s <code>header.php</code> file, open your <code>404.php</code> file. At the top, add a comment describing what the file is and make sure you include your theme&#8217;s header.</p>\n<p>For example:</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">/**\n * The template for displaying 404 pages (Not Found)\n */\nget_header();</code></pre></p>\n<h2>Adding the body to your 404 Page</h2>\n<p>To make the 404 page functional you have to add the body content to your template:</p>\n<p>Example:</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">&lt;div id=&quot;primary&quot; class=&quot;content-area&quot;&gt;\n\t\t&lt;div id=&quot;content&quot; class=&quot;site-content&quot; role=&quot;main&quot;&gt;\n\n\t\t\t&lt;header class=&quot;page-header&quot;&gt;\n\t\t\t\t&lt;h1 class=&quot;page-title&quot;&gt;&lt;?php _e( 'Not Found', 'twentythirteen' ); ?&gt;&lt;/h1&gt;\n\t\t\t&lt;/header&gt;\n\n\t\t\t&lt;div class=&quot;page-wrapper&quot;&gt;\n\t\t\t\t&lt;div class=&quot;page-content&quot;&gt;\n\t\t\t\t\t&lt;h2&gt;&lt;?php _e( 'This is somewhat embarrassing, isn\u2019t it?', 'twentythirteen' ); ?&gt;&lt;/h2&gt;\n\t\t\t\t\t&lt;p&gt;&lt;?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen' ); ?&gt;&lt;/p&gt;\n\n\t\t\t\t\t&lt;?php get_search_form(); ?&gt;\n\t\t\t\t&lt;/div&gt;&lt;!-- .page-content --&gt;\n\t\t\t&lt;/div&gt;&lt;!-- .page-wrapper --&gt;\n\n\t\t&lt;/div&gt;&lt;!-- #content --&gt;\n\t&lt;/div&gt;&lt;!-- #primary --&gt;</code></pre></p>\n<p>This example is from the Twenty Thirteen theme that comes with WordPress. This adds some text and a search form in the 404 page.</p>\n<p>\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">You can to add your own text to make your 404 page look better.</div></div>\n</p>\n<h2>Adding the footer and sidebar.</h2>\n<p>The final step when creating a 404 page is to add the footer. You may also add a sidebar if you want.</p>\n<p>Example:</p>\n<p><pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">get_sidebar();\nget_footer();</code></pre></p>\n<p>Now you have a functional 404 page with a search form and some text in case a user stumbles upon the wrong page. Once you make sure the <code>404.php</code> has been uploaded, you can test your 404 page. Just type a URL address for your website that doesn&#8217;t exist. You can try something like <code>http://example.com/fred.php</code>. This is sure to result in a 404 error unless you actually have a PHP file called <code>fred.php<code>.</code></code></p>\n<p>&nbsp;</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11382",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11382",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11382/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138747,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11382/revisions/138747"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11382"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

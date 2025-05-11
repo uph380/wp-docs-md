@@ -1,0 +1,91 @@
+{
+    "id": 156773,
+    "date": "2025-02-20T08:04:06",
+    "date_gmt": "2025-02-20T08:04:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/getting-started/quick-start/"
+    },
+    "modified": "2025-02-21T18:45:59",
+    "modified_gmt": "2025-02-21T18:45:59",
+    "slug": "quick-start",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/welcome/quick-start/",
+    "title": {
+        "rendered": "Quick Start Guide"
+    },
+    "content": {
+        "rendered": "<p>This guide will help you create your first custom field group with Secure Custom Fields.</p>\n<h2>Creating a Field Group</h2>\n<ol>\n<li>Navigate to Custom Fields <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Add New</li>\n<li>Enter a title for your field group</li>\n<li>Click &#8220;Add Field&#8221;</li>\n<li>Choose a field type</li>\n<li>Configure the field settings</li>\n<li>Set the location rules</li>\n<li>Save the field group</li>\n</ol>\n<h2>Example: Author Bio</h2>\n<p>Let&#8217;s create a simple author bio field group:</p>\n<ol>\n<li>Create a new field group called &#8220;Author Profile&#8221;</li>\n<li>Add these fields:\n<ul>\n<li>Profile Image (Image field)</li>\n<li>Bio (Textarea field)</li>\n<li>Social Links (Repeater field)</li>\n</ul>\n</li>\n<li>Set location to &#8220;User Form&#8221;</li>\n<li>Save and test</li>\n</ol>\n<h2>Next Steps</h2>\n<ul>\n<li>Learn about <a href=\"../features/fields\">field types</a></li>\n<li>Explore <a href=\"../features/README\">advanced features</a></li>\n<li>Read the <a href=\"../concepts/security\">security guidelines</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157290,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156773",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156773",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156773/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157122,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156773/revisions/157122"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157290"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156773"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

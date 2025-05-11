@@ -1,0 +1,91 @@
+{
+    "id": 140086,
+    "date": "2022-02-05T00:24:48",
+    "date_gmt": "2022-02-05T00:24:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/user-interface/animation/"
+    },
+    "modified": "2025-01-07T18:34:08",
+    "modified_gmt": "2025-01-07T18:34:08",
+    "slug": "animation",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/user-interface/animation/",
+    "title": {
+        "rendered": "Animation"
+    },
+    "content": {
+        "rendered": "<p>Animation can help reinforce a sense of hierarchy and spatial orientation. This document goes into principles you should follow when you add animation.</p>\n<h2>Principles</h2>\n<h3>Point of Origin</h3>\n<ul>\n<li>Animation can help anchor an interface element. For example a menu can scale up from the button that opened it.</li>\n<li>Animation can help give a sense of place; for example a sidebar can animate in from the side, implying it was always hidden off-screen.</li>\n<li>Design your animations as if you&#8217;re working with real-world materials. Imagine your user interface elements are made of real materials \u2014 when not on screen, where are they? Use animation to help express that.</li>\n</ul>\n<h3>Speed</h3>\n<ul>\n<li>Animations should never block a user interaction. They should be fast, almost always complete in less than 0.2 seconds.</li>\n<li>A user should not have to wait for an animation to finish before they can interact.</li>\n<li>Animations should be performant. Use <code>transform</code> CSS properties when you can, these render elements on the GPU, making them smooth.</li>\n<li>If an animation can&#8217;t be made fast &amp; performant, leave it out.</li>\n</ul>\n<h3>Simple</h3>\n<ul>\n<li>Don&#8217;t bounce if the material isn&#8217;t made of rubber.</li>\n<li>Don&#8217;t rotate, fold, or animate on a curved path. Keep it simple.</li>\n</ul>\n<h3>Consistency</h3>\n<p>In creating consistent animations, we have to establish physical rules for how elements behave when animated. When all animations follow these rules, they feel consistent, related, and predictable. An animation should match user expectations, if it doesn&#8217;t, it&#8217;s probably not the right animation for the job.</p>\n<p>Reuse animations if one already exists for your task.</p>\n<h2>Accessibility Considerations</h2>\n<ul>\n<li>Animations should be subtle. Be cognizant of users with <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/29017000\">vestibular disorders triggered by motion</a>.</li>\n<li>Don&#8217;t animate elements that are currently reporting content to adaptive technology (e.g., an <code>aria-live</code> region that&#8217;s receiving updates). This can cause confusion wherein the technology tries to parse a region that&#8217;s actively changing.</li>\n<li>Avoid animations that aren&#8217;t directly triggered by user behaviors.</li>\n<li>Whenever possible, ensure that animations respect the OS-level &#8220;Reduce Motion&#8221; settings. This can be done by utilizing the <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion\"><code>prefers-reduced-motion</code></a> media query. Gutenberg includes a <code>@reduce-motion</code> mixin for this, to be used alongside rules that include a CSS <code>animate</code> property.</li>\n</ul>\n<h2>Inventory of Reused Animations</h2>\n<p>The generic <code>Animate</code> component is used to animate different parts of the interface. See <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/animate/\">the component documentation</a> for more details about the available animations.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134400,
+    "menu_order": 365,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140086",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140086",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140086/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 140093,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140086/revisions/140093"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134400"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140086"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

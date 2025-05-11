@@ -1,0 +1,91 @@
+{
+    "id": 11198,
+    "date": "2014-10-19T18:57:41",
+    "date_gmt": "2014-10-19T18:57:41",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11198"
+    },
+    "modified": "2023-12-14T20:55:26",
+    "modified_gmt": "2023-12-14T20:55:26",
+    "slug": "developer-tools",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/developer-tools/",
+    "title": {
+        "rendered": "Developer Tools"
+    },
+    "content": {
+        "rendered": "\n<p>There are a wide variety of tools available to help with plugin development. Some of them are run in your development environment (<a href=\"http://xdebug.org/\">xdebug</a>, <a href=\"https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards\">PHPCS</a>, etc), but there are also some excellent tools that can run right inside WordPress to help you build things properly and diagnose problems.\u00a0 This chapter deals with the in-browser tools.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 19,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11198",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11198",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11198/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 127747,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11198/revisions/127747"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11198"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

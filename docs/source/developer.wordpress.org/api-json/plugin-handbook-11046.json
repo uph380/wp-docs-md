@@ -1,0 +1,91 @@
+{
+    "id": 11046,
+    "date": "2014-09-24T00:44:03",
+    "date_gmt": "2014-09-24T00:44:03",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11046"
+    },
+    "modified": "2023-12-14T20:49:56",
+    "modified_gmt": "2023-12-14T20:49:56",
+    "slug": "metadata",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/metadata/",
+    "title": {
+        "rendered": "Metadata"
+    },
+    "content": {
+        "rendered": "\n<p>Metadata is information about information.\u00a0In the case of WordPress, it&#8217;s information associated with posts, users, comments and terms.</p>\n\n\n\n<p>Given the many-to-one relationship of metadata in WordPress, your options are fairly limitless. You can have as many meta options as you wish, and you can store just about anything in there.</p>\n\n\n\n<p>This chapter will discuss <a href=\"https://developer.wordpress.org/plugins/metadata/managing-post-metadata/\">managing post metadata</a>, <a href=\"https://developer.wordpress.org/plugins/metadata/custom-meta-boxes/\">creating custom meta boxes</a>, and <a href=\"https://developer.wordpress.org/plugins/metadata/rendering-post-metadata/\">rendering post metadata</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11046",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11046",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11046/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129149,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11046/revisions/129149"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11046"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

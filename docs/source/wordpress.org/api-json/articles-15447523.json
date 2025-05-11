@@ -1,0 +1,109 @@
+{
+    "id": 15447523,
+    "date": "2022-03-10T22:36:53",
+    "date_gmt": "2022-03-10T22:36:53",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15447523"
+    },
+    "modified": "2023-08-01T10:29:09",
+    "modified_gmt": "2023-08-01T10:29:09",
+    "slug": "archive-title-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/archive-title-block/",
+    "title": {
+        "rendered": "Archive Title Block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>Use the<em> Archive Title block</em> to display the name of the Category, Tag, or custom Taxonomy, on the archive pages.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1999\" height=\"933\" src=\"https://wordpress.org/documentation/files/2023/02/archive-title-block.png\" alt=\"The archive title block on the site editor\" class=\"wp-image-16355630\" srcset=\"https://wordpress.org/documentation/files/2023/02/archive-title-block.png 1999w, https://wordpress.org/documentation/files/2023/02/archive-title-block-300x140.png 300w, https://wordpress.org/documentation/files/2023/02/archive-title-block-1024x478.png 1024w, https://wordpress.org/documentation/files/2023/02/archive-title-block-768x358.png 768w, https://wordpress.org/documentation/files/2023/02/archive-title-block-1536x717.png 1536w\" sizes=\"auto, (max-width: 1999px) 100vw, 1999px\" /></figure>\n\n\n\n<div class=\"callout callout-info\" style=\"background: #e5f5fa;border-left: 5px solid #00a0d2;padding: 1.5em 3em 1.6em 3.7em;margin-bottom: 1.5em\"><p><em><strong>Note:</strong> </em>This block works only in the archive pages and will not be visible on other pages of the website<em>.</em> This block should be used only in the <a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a> to edit the archive page templates. </p></div>\n\n\n\n<p>To add an <em>Archive Title block</em>, click the <strong>Block Inserter</strong> icon when editing the archive page template. Search for the <em>Archive Title<strong> </strong>block</em>. Click on it to add the block to your page template.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1424\" height=\"596\" src=\"https://wordpress.org/documentation/files/2023/02/adding-an-archive-title.gif\" alt=\"Adding an archive title block\" class=\"wp-image-16355629\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/archive-title</kbd> to quickly insert an <em>Archive Title block</em>.&nbsp;</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/block-toolbar.png\" alt=\"Archive title block toolbar\" class=\"wp-image-16355631\" style=\"width:437px;height:86px\" width=\"437\" height=\"86\" srcset=\"https://wordpress.org/documentation/files/2023/02/block-toolbar.png 582w, https://wordpress.org/documentation/files/2023/02/block-toolbar-300x59.png 300w\" sizes=\"auto, (max-width: 437px) 100vw, 437px\" /></figure>\n\n\n\n<p>Every block comes with unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The <em>Archive Title block</em> shows seven buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Change heading level</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<p class=\"has-large-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/transform-2.png\" alt=\"Transform options for the archive title block\" class=\"wp-image-16355632\" style=\"width:480px;height:284px\" width=\"480\" height=\"284\" srcset=\"https://wordpress.org/documentation/files/2023/02/transform-2.png 640w, https://wordpress.org/documentation/files/2023/02/transform-2-300x177.png 300w\" sizes=\"auto, (max-width: 480px) 100vw, 480px\" /></figure>\n\n\n\n<p>Click on the <strong>Transform</strong> button to convert the <em>Archive Title bloc</em>k into a <em>Group</em> block or <em>Columns</em> block.</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Drag icon</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/drag-and-drop-tools.png\" alt=\"Drag and drop tool on the toolbar\" class=\"wp-image-16355633\" style=\"width:437px;height:84px\" width=\"437\" height=\"84\" srcset=\"https://wordpress.org/documentation/files/2023/02/drag-and-drop-tools.png 582w, https://wordpress.org/documentation/files/2023/02/drag-and-drop-tools-300x58.png 300w\" sizes=\"auto, (max-width: 437px) 100vw, 437px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Move arrows</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/block-moving-tools.png\" alt=\"Block moving tools on the block toolbar\" class=\"wp-image-16355634\" style=\"width:432px;height:81px\" width=\"432\" height=\"81\" srcset=\"https://wordpress.org/documentation/files/2023/02/block-moving-tools.png 576w, https://wordpress.org/documentation/files/2023/02/block-moving-tools-300x56.png 300w\" sizes=\"auto, (max-width: 432px) 100vw, 432px\" /></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/block-align.png\" alt=\"Block alignment tools\" class=\"wp-image-16355635\" style=\"width:548px;height:326px\" width=\"548\" height=\"326\" srcset=\"https://wordpress.org/documentation/files/2023/02/block-align.png 730w, https://wordpress.org/documentation/files/2023/02/block-align-300x178.png 300w\" sizes=\"auto, (max-width: 548px) 100vw, 548px\" /></figure>\n\n\n\n<p>Use the change alignment tool to align the <em>Archive Title block</em>. Choose one of the following options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None \u2013 </strong>Leaves the block the current size.</li>\n\n\n\n<li><strong>Wide width \u2013 </strong>Increase the width of the block beyond the content size.</li>\n\n\n\n<li><strong>Full width \u2013 </strong>Extend the block to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p class=\"has-large-font-size\"><strong>Change heading level</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/heading-settings.png\" alt=\"\" class=\"wp-image-16355636\" style=\"width:438px;height:86px\" width=\"438\" height=\"86\" srcset=\"https://wordpress.org/documentation/files/2023/02/heading-settings.png 584w, https://wordpress.org/documentation/files/2023/02/heading-settings-300x59.png 300w\" sizes=\"auto, (max-width: 438px) 100vw, 438px\" /></figure>\n\n\n\n<p>You can choose the heading level for the archive title from H1-H6.</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Change text alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/block-alignment.png\" alt=\"Text alignment tools\" class=\"wp-image-16355637\" style=\"width:534px;height:288px\" width=\"534\" height=\"288\" srcset=\"https://wordpress.org/documentation/files/2023/02/block-alignment.png 712w, https://wordpress.org/documentation/files/2023/02/block-alignment-300x162.png 300w\" sizes=\"auto, (max-width: 534px) 100vw, 534px\" /></figure>\n\n\n\n<p>Click the <strong>Change alignment</strong> button in the block toolbar to display the alignment drop-down. You can align the block text to the left, make it center-aligned or align it to the right.</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Options</strong></p>\n\n\n\n<p>The <strong>Options</strong> button on a block toolbar gives you more features to customize the block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings </strong>icon next to the <strong>Publish </strong>button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/settings-icon.png\" alt=\"Block settings button icon\" class=\"wp-image-16355639\" style=\"width:455px;height:68px\" width=\"455\" height=\"68\" srcset=\"https://wordpress.org/documentation/files/2023/02/settings-icon.png 606w, https://wordpress.org/documentation/files/2023/02/settings-icon-300x45.png 300w\" sizes=\"auto, (max-width: 455px) 100vw, 455px\" /></figure>\n\n\n\n<p>Here are the options for the <em>Archive Title</em> <em>block</em>:</p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Settings</strong></p>\n\n\n\n<p>It\u2019s possible to toggle between an option to either show the archive type in the title or not.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/block-settings.png\" alt=\"Show archive tipe toggle setting\" class=\"wp-image-16355640\" style=\"width:534px;height:150px\" width=\"534\" height=\"150\" srcset=\"https://wordpress.org/documentation/files/2023/02/block-settings.png 534w, https://wordpress.org/documentation/files/2023/02/block-settings-300x84.png 300w\" sizes=\"auto, (max-width: 534px) 100vw, 534px\" /></figure>\n\n\n\n<p>An example with this setting enabled:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1344\" height=\"246\" src=\"https://wordpress.org/documentation/files/2023/02/archive-type-enabled.png\" alt=\"Archive title with the type enabled\" class=\"wp-image-16355641\" srcset=\"https://wordpress.org/documentation/files/2023/02/archive-type-enabled.png 1344w, https://wordpress.org/documentation/files/2023/02/archive-type-enabled-300x55.png 300w, https://wordpress.org/documentation/files/2023/02/archive-type-enabled-1024x187.png 1024w, https://wordpress.org/documentation/files/2023/02/archive-type-enabled-768x141.png 768w\" sizes=\"auto, (max-width: 1344px) 100vw, 1344px\" /></figure>\n\n\n\n<p>An example with this setting disabled:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1344\" height=\"240\" src=\"https://wordpress.org/documentation/files/2023/02/archive-type-disabled.png\" alt=\"Archive title with the type disabled\" class=\"wp-image-16355642\" srcset=\"https://wordpress.org/documentation/files/2023/02/archive-type-disabled.png 1344w, https://wordpress.org/documentation/files/2023/02/archive-type-disabled-300x54.png 300w, https://wordpress.org/documentation/files/2023/02/archive-type-disabled-1024x183.png 1024w, https://wordpress.org/documentation/files/2023/02/archive-type-disabled-768x137.png 768w\" sizes=\"auto, (max-width: 1344px) 100vw, 1344px\" /></figure>\n\n\n\n<p class=\"has-large-font-size\"><strong>Color</strong> </p>\n\n\n\n<p>The <em>Archive Title block </em>provides color settings options to change the text and background colors.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/vGd1bPidVEXdbHGSIQXoK_PJsIlt2uxxSNBruY4CYExWqpxY19xNxdJR1gWrU8DI0u8TUnckQaBp-MDl4431435PIQWztwspNaJJiDouBJ5K9bfsXUVWWfBNgOVfZV0r45EG1vA6\" alt=\"Color Settings in the Archive Title Block\" style=\"width:367px;height:210px\" width=\"367\" height=\"210\" /><figcaption class=\"wp-element-caption\">Color Settings in the Archive Title Block</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\"></a><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Typography </strong></p>\n\n\n\n<p>The <em>Archive Title block </em>provides typography settings to change the font family, size, appearance, line height, letter case, letter spacing, and decoration.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The <em>Archive Title block</em> provides dimensions settings options to change padding and margin size.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/dimensions-settings.png\" alt=\"Archive title dimension settings\" class=\"wp-image-16355643\" style=\"width:417px;height:290px\" width=\"417\" height=\"290\" srcset=\"https://wordpress.org/documentation/files/2023/02/dimensions-settings.png 556w, https://wordpress.org/documentation/files/2023/02/dimensions-settings-300x208.png 300w\" sizes=\"auto, (max-width: 417px) 100vw, 417px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\"></a><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Learn more about dimension controls.</a></p>\n\n\n\n<p class=\"has-large-font-size\"><strong>Advanced settings</strong></p>\n\n\n\n<p>The Advanced tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/02/css-classes.png\" alt=\"Archive title block custom CSS option\" class=\"wp-image-16355644\" style=\"width:401px;height:213px\" width=\"401\" height=\"213\" srcset=\"https://wordpress.org/documentation/files/2023/02/css-classes.png 534w, https://wordpress.org/documentation/files/2023/02/css-classes-300x160.png 300w\" sizes=\"auto, (max-width: 401px) 100vw, 401px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-heading-6-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-02-07\n<ul class=\"wp-block-list\">\n<li>Updated screenshots</li>\n\n\n\n<li>Fixed some formatting</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-03-10</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Use the Archive Title block to display the name of the Category, Tag, or custom Taxonomy, on the archive pages. Note: This block works only in the archive pages and will not be visible on other pages of the website. This block should be used only in the Site Editor to edit the archive page [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15447523",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15447523",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15447523"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15447523/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358270,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15447523/revisions/16358270"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15447523"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15447523"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

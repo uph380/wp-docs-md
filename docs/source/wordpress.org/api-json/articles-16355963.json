@@ -1,0 +1,109 @@
+{
+    "id": 16355963,
+    "date": "2023-03-27T17:04:53",
+    "date_gmt": "2023-03-27T17:04:53",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16355963"
+    },
+    "modified": "2024-06-08T17:52:39",
+    "modified_gmt": "2024-06-08T17:52:39",
+    "slug": "position-settings-overview",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/position-settings-overview/",
+    "title": {
+        "rendered": "Position Settings overview"
+    },
+    "content": {
+        "rendered": "\n<p>The position settings in\u00a0<a href=\"https://wordpress.org/documentation/article/blocks/\">blocks</a> allow you to set how an element is positioned in your site. These settings can only be found in a few blocks when they are placed at the root of site. </p>\n\n\n\n<p>The position settings are available when you use the\u00a0<a href=\"https://wordpress.org/documentation/article/wordpress-editor/\">block editor</a>. If you are new to the block editor,\u00a0<a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/working-with-blocks/\" target=\"_blank\">this guide</a>\u00a0will show you how to work with blocks. </p>\n\n\n\n<h2 class=\"wp-block-heading\">How to access position settings</h2>\n\n\n\n<p>To access the position settings, either add a Group, Row, or Stack block to the root of your content, meaning not placed within another block. In the block settings sidebar of the block you added, you will find the<strong> Position</strong> section as shown below. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Type of settings</h2>\n\n\n\n<figure class=\"wp-block-image alignright size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/Sticky-positioning-horizontal-view-1-361x1024.png\" alt=\"\" class=\"wp-image-16356035\" width=\"271\" height=\"768\" srcset=\"https://wordpress.org/documentation/files/2023/03/Sticky-positioning-horizontal-view-1-361x1024.png 361w, https://wordpress.org/documentation/files/2023/03/Sticky-positioning-horizontal-view-1-106x300.png 106w, https://wordpress.org/documentation/files/2023/03/Sticky-positioning-horizontal-view-1.png 492w\" sizes=\"auto, (max-width: 271px) 100vw, 271px\" /></figure>\n\n\n\n<p>Each supported block comes with two different position settings. Automatically, blocks will use the &#8220;Default&#8221; option. You can switch between these two options as you&#8217;d like. If you do not see these settings, it&#8217;s because the block either doesn&#8217;t support the positioning option or, if it&#8217;s one of the blocks listed under blocks that include these settings, the block is not placed in the root of your site, meaning not placed within another block. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Default</h3>\n\n\n\n<p>This is the option chosen automatically. It allows a block to be positioned as it usually is in relation to other blocks. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Sticky</h3>\n\n\n\n<p>This option allows you to keep top-level blocks fixed to the top of a page as visitors scroll. This matches the CSS property of the same name. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Blocks that include position settings</h2>\n\n\n\n<p>As a reminder, this setting will only show for the following blocks when that block is placed at the root of your site, meaning not placed within another block.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Group</li>\n\n\n\n<li>Row</li>\n\n\n\n<li>Stack</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Demonstration </h2>\n\n\n\n<p><strong>Making a Header Template Part sticky</strong></p>\n\n\n\n<p>A common use case for the sticky positioning option is having a header that sticks to the top of the page as a visitor scrolls. To accomplish this, follow these steps:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><strong>Open <a href=\"https://wordpress.org/documentation/article/list-view/\">List View</a> </strong>and select the Header Template Part block. Ensure this Header Template Part block is not placed within another block. </li>\n\n\n\n<li>Select the three dot menu either in List View or the block toolbar and choose the option to <strong>Group</strong>. This will wrap the Header Template Part block in a Group block. </li>\n\n\n\n<li>Select the Group block that was just created and <strong>open the Block Settings sidebar</strong>.</li>\n\n\n\n<li>Add a background color to the Group block under the Styles tab in the Block Settings. This ensures that when a visitor is scrolling, the items in the Header Template part aren&#8217;t interfering with the rest of the blocks on the page. </li>\n\n\n\n<li>Scroll down to the Position settings and choose <strong>Sticky</strong>. </li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/03/Sticky-positioning-for-a-header-template-part.mp4\"></video></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog<strong> </strong></h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-03-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The position settings in\u00a0blocks allow you to set how an element is positioned in your site. These settings can only be found in a few blocks when they are placed at the root of site. The position settings are available when you use the\u00a0block editor. If you are new to the block editor,\u00a0this guide\u00a0will show [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-16355963",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355963",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16355963"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355963/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360359,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16355963/revisions/16360359"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16355963"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16355963"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

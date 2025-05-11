@@ -1,0 +1,97 @@
+{
+    "id": 5800,
+    "date": "2014-07-31T22:46:46",
+    "date_gmt": "2014-07-31T22:46:46",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5800"
+    },
+    "modified": "2023-12-14T21:01:24",
+    "modified_gmt": "2023-12-14T21:01:24",
+    "slug": "what-is-a-theme",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/getting-started/what-is-a-theme/",
+    "title": {
+        "rendered": "What Is a Theme?"
+    },
+    "content": {
+        "rendered": "\n<p>A WordPress theme represents the design of your website. It can control everything from colors, to fonts, to the entire layout. In essence, what you see when viewing the front-end of your site is shaped by the theme.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2400\" height=\"1500\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?resize=2400%2C1500&#038;ssl=1\" alt=\"A collage of site designs at an angle.\" class=\"wp-image-150236\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?w=2400&amp;ssl=1 2400w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?resize=300%2C188&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?resize=1024%2C640&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?resize=768%2C480&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?resize=1536%2C960&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-two-collage.jpg?resize=2048%2C1280&amp;ssl=1 2048w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Templates from the default Twenty Twenty-Two theme.</figcaption></figure>\n\n\n\n<p>There are 1,000s of free WordPress themes in the <a href=\"https://wordpress.org/themes/\">WordPress.org Theme Directory</a> and even more from third-party directories and shops. Many people and businesses also have bespoke (custom-made) themes for their sites.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What can themes do?</h2>\n\n\n\n<p>Themes take the content stored by WordPress and display it in the browser. When you create a WordPress theme, you decide how that content looks and is displayed. There are many options available to you when building your theme. The biggest limit is your imagination.&nbsp;</p>\n\n\n\n<p>As a theme creator, you can:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Create different layouts, such as one, two or more columns.</li>\n\n\n\n<li>Control the typography of the site with custom font choices.</li>\n\n\n\n<li>Skin the site with any color scheme you want.</li>\n\n\n\n<li>Put a sidebar on the left or right side of the page. Or, have no sidebar at all.</li>\n\n\n\n<li>Display featured images alongside posts.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2400\" height=\"1255\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?resize=2400%2C1255&#038;ssl=1\" alt=\"The WordPress site editor showing the homepage template with a dotted black background and a three-column grid of posts.\" class=\"wp-image-150237\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?w=2400&amp;ssl=1 2400w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?resize=1024%2C535&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?resize=1536%2C803&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2023/11/twenty-twenty-three-style-variation.jpg?resize=2048%2C1071&amp;ssl=1 2048w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Editing a Twenty Twenty-Three theme style variation.</figcaption></figure>\n\n\n\n<p>The WordPress theming system is incredibly powerful. As with every web design project, a good theme is more than defining a layout or two and a few custom colors. The best themes improve engagement with a website\u2019s content <em>in addition</em> to being beautiful.</p>\n\n\n\n<p>There really are not many limits to the possibilities. Outside of your imagination, theme creation requires some baseline knowledge, which is covered in the <a href=\"https://developer.wordpress.org/themes/getting-started/reading-this-handbook/\">Reading this handbook</a> page of this chapter. That\u2019s what this handbook is all about\u2014<em>teaching you what you need to know to build themes of your own</em>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Theme types</h2>\n\n\n\n<p>WordPress supports two primary types of themes: <strong>block</strong> and <strong>classic</strong>.</p>\n\n\n\n<p>There is also a classic subtype that is called a <strong>hybrid</strong> theme, and you\u2019ll learn about it below, too. But the most important distinction is block vs. classic.</p>\n\n\n\n<p>Technically, you can even build your own theming system altogether. That\u2019s outside the scope of this handbook, but it\u2019s at least worth noting that WordPress lets you build pretty much whatever you set your mind to.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Block themes</h3>\n\n\n\n<p>Block themes are the modern method of building WordPress themes. They generally follow a standard set of conventions and are built entirely out of blocks. This handbook will primarily focus on building themes using this method because it is the future of the WordPress project.</p>\n\n\n\n<p>Block themes rely on HTML-based <a href=\"https://developer.wordpress.org/themes/templates/\">block templates</a> that contain block markup. Both creators and users can edit the templates in the Site Editor. Users can also customize <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\">global settings and styles</a> defined by the theme\u2019s <code>theme.json</code> file through the Styles interface.\u00a0</p>\n\n\n\n<p>It\u2019s also possible to export a theme directly from the Site Editor without touching any code. Technically, you cannot create a new theme from scratch entirely from the editor, but you can modify the templates and styles of an existing theme\u2014in essence, creating a custom theme of your own.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2400\" height=\"1255\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?resize=2400%2C1255&#038;ssl=1\" alt=\"WordPress site editor with a single post template that shows a design with a yellow background and black text.\" class=\"wp-image-150238\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?w=2400&amp;ssl=1 2400w, https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?resize=1024%2C535&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?resize=1536%2C803&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2023/11/site-editor-styles.png?resize=2048%2C1071&amp;ssl=1 2048w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Editing a theme\u2019s styles in the Site Editor.</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Classic themes</h3>\n\n\n\n<p>Classic themes use a PHP-based templating system, which is still supported in WordPress today. They are still in wide use because they were built on the theming system that was first introduced in 2005 with the launch of <a href=\"https://wordpress.org/news/2005/02/strayhorn/\">WordPress 1.5</a>. There is a long and deep history of classic theming in WordPress, which continues on. For this reason, the handbook maintains documentation for classic themes in the <a href=\"https://developer.wordpress.org/themes/classic-themes/\">Classic Themes</a> chapter.</p>\n\n\n\n<p>Unlike block themes, classic themes have far fewer standards to adhere to, but there are APIs you can use for specific features. The classic theme creation process also requires some minimal PHP, HTML, and CSS code knowledge, at least.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2400\" height=\"1255\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?resize=2400%2C1255&#038;ssl=1\" alt=\"WordPress customizer showing the Twenty Twenty-Two theme. On the left is a list of options, and on the right a preview of the site homepage.\" class=\"wp-image-150239\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?w=2400&amp;ssl=1 2400w, https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?resize=1024%2C535&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?resize=1536%2C803&amp;ssl=1 1536w, https://i0.wp.com/developer.wordpress.org/files/2023/11/customizer-twenty-twenty.jpg?resize=2048%2C1071&amp;ssl=1 2048w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Editing the default Twenty Twenty theme styles in the customizer.</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Hybrid themes</h3>\n\n\n\n<p>Hybrid themes are merely classic themes that have adopted some modern block-related features, such as <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\">global settings and styles</a> or <a href=\"https://developer.wordpress.org/themes/templates/template-parts/\">block template parts</a>. This is a widely agreed-upon term by the community, but it is not an \u201cofficial\u201d theme type. At the end of the day, hybrids are still classic themes.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Become familiar with themes</h2>\n\n\n\n<p>To build a WordPress theme of your own, you should familiarize yourself with how themes work from a user\u2019s viewpoint. Before diving into the creation process, try <a href=\"https://wordpress.org/documentation/article/work-with-themes/\">installing a theme</a> and playing around with it.</p>\n\n\n\n<p>WordPress comes with several default themes, titled <em>Twenty [Year]</em>, but you should also try other themes from the <a href=\"https://wordpress.org/themes/\">Theme Directory</a> just to get a feel for the possibilities.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What are themes made of?</h2>\n\n\n\n<p>Themes can include many different folders and file types. The list below is non-exhaustive, but it includes some of common things you might see:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Templates (<code>.html</code> in block themes and <code>.php</code> in classic themes)</li>\n\n\n\n<li>CSS Stylesheets</li>\n\n\n\n<li>JavaScript</li>\n\n\n\n<li>PHP</li>\n\n\n\n<li>Media (images, audio, video, etc.)</li>\n\n\n\n<li>JSON</li>\n</ul>\n\n\n\n<p>You will learn more about the specific folders and files used to create a theme in the next chapter: <a href=\"https://developer.wordpress.org/themes/core-concepts\">Core Concepts</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What is the difference between themes and plugins?</h2>\n\n\n\n<p>It is common for there to be overlap between features found in themes and plugins. However, best practices are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Themes control the <em>presentation</em> of content.</li>\n\n\n\n<li>Plugins control the behaviors and features of your site.</li>\n</ul>\n\n\n\n<p>Any theme that you create should not add site-critical functionality. Doing so means that a user loses access to that functionality when they change their theme.</p>\n\n\n\n<p>For example, say you build a theme with a portfolio feature. Users who build their portfolio with your feature will lose it when they change themes. By leaving critical features to plugins, you make it possible to change the design of a website while its features remain intact.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Remember, some users switch themes often. It is best practice to make sure any functionality their sites require, even if the design changes, is in a separate plugin.</p></div></div>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5794,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5800",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5800",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 29,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5800/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150241,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5800/revisions/150241"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5794"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5800"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

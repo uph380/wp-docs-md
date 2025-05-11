@@ -1,0 +1,97 @@
+{
+    "id": 10942,
+    "date": "2014-09-16T17:53:30",
+    "date_gmt": "2014-09-16T17:53:30",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10942"
+    },
+    "modified": "2022-11-17T06:08:44",
+    "modified_gmt": "2022-11-17T06:08:44",
+    "slug": "filters",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/hooks/filters/",
+    "title": {
+        "rendered": "Filters"
+    },
+    "content": {
+        "rendered": "\n<p><strong>Filters</strong> are one of the two types of <a href=\"https://developer.wordpress.org/plugins/hooks/\">Hooks</a>.</p>\n\n\n\n<p>They provide a way for functions to modify data during the execution of WordPress Core, plugins, and themes.&nbsp;They are the counterpart to <a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a>.</p>\n\n\n\n<p>Unlike <a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a>, filters are meant to work in an isolated manner, and should never have <a href=\"https://en.wikipedia.org/wiki/Side_effect_(computer_science)\">side effects</a> such as affecting global variables and output. Filters expect to have something returned back to them.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Add Filter</h2>\n\n\n\n<p>The process of adding a filter includes two steps.</p>\n\n\n\n<p>First, you need to create a Callback function which will be called when the filter is run. Second, you need to add your Callback function to a hook which will perform the calling of the function.</p>\n\n\n\n<p>You will use the <a href=\"https://developer.wordpress.org/reference/functions/add_filter/\" rel=\"function\">add_filter()</a>  function, passing at least two parameters: </p>\n\n\n\n<ol class=\"wp-block-list\"><li><code>string $hook_name</code> which is the name of the filter you\u2019re hooking to, and </li><li><code>callable $callback</code> the name of your callback function.</li></ol>\n\n\n\n<p>The example below will run when the <code>the_title</code> filter is executed.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_filter_title( $title ) {\n\treturn 'The ' . $title . ' was filtered';\n}\nadd_filter( 'the_title', 'wporg_filter_title' );</code></pre>\n\n\n\n<p>Lets say we have a post title, &#8220;Learning WordPress&#8221;, the above example will modify it to be &#8220;The Learning WordPress was filtered&#8221;.</p>\n\n\n\n<p>You can refer to the <a href=\"https://developer.wordpress.org/plugins/hooks/\">Hooks</a> chapter for a list of available hooks.</p>\n\n\n\n<p>As you gain more experience, looking through WordPress Core source code will allow you to find the most appropriate hook.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Additional Parameters</h3>\n\n\n\n<p><a href=\"https://developer.wordpress.org/reference/functions/add_filter/\" rel=\"function\">add_filter()</a>  can accept two additional parameters, <code>int $priority</code> for the priority given to the callback function, and <code>int $accepted_args</code> for the number of arguments that will be passed to the callback function.</p>\n\n\n\n<p>For detailed explanation of these parameters please read the article on <a href=\"https://developer.wordpress.org/plugins/hooks/actions/\">Actions</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Example</h3>\n\n\n\n<p>To add a CSS class to the <code>&lt;body&gt;</code> tag when a certain condition is met:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_css_body_class( $classes ) {\n\tif ( ! is_admin() ) {\n\t\t$classes[] = 'wporg-is-awesome';\n\t}\n\treturn $classes;\n}\nadd_filter( 'body_class', 'wporg_css_body_class' );</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10936,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10942",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10942",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10942/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144310,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10942/revisions/144310"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10936"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10942"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

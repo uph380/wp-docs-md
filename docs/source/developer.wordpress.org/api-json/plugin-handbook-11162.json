@@ -1,0 +1,97 @@
+{
+    "id": 11162,
+    "date": "2014-10-19T18:13:42",
+    "date_gmt": "2014-10-19T18:13:42",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11162"
+    },
+    "modified": "2022-11-17T06:08:54",
+    "modified_gmt": "2022-11-17T06:08:54",
+    "slug": "scheduling-wp-cron-events",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/cron/scheduling-wp-cron-events/",
+    "title": {
+        "rendered": "Scheduling WP Cron Events"
+    },
+    "content": {
+        "rendered": "\n<p>The WP Cron system uses hooks to add new scheduled tasks.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding the Hook</h2>\n\n\n\n<p>In order to get your task to run you must create your own custom hook and give that hook the name of a function to execute. This is a very important step. Forget it and your task will never run.</p>\n\n\n\n<p>The following example will create a hook. The first parameter is the name of the hook you are creating, and the second is the name of the function to call.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'bl_cron_hook', 'bl_cron_exec' );</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Remember, the &#8220;bl_&#8221; part of the function name is a <i>function prefix</i>. You can learn why prefixes are important <a href=\"https://developer.wordpress.org/plugins/plugin-basics/best-practices/#prefix-everything\">here</a>. </div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">You can read more about actions <a href='https://developer.wordpress.org/plugins/hooks/actions/'>here</a>.</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Scheduling the Task</h2>\n\n\n\n<p>An important note is that WP-Cron is a simple task scheduler. As we know, tasks are added by the hook created to call the function that runs the desired task. However if you call <code>wp_schedule_event()</code> multiple times, even with the same hook name, the event will be scheduled multiple times. If your code adds the task on each page load this could result in the task being scheduled several thousand times. This is not what you want. </p>\n\n\n\n<p>WordPress provides a convenient function called <a href=\"https://developer.wordpress.org/reference/functions/wp_next_scheduled/\" rel=\"function\">wp_next_scheduled()</a>  to check if a particular hook is already scheduled. <code>wp_next_scheduled()</code> takes one parameter, the hook name. It will return either a string containing the timestamp of the next execution or false, signifying the task is not scheduled. It is used like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">wp_next_scheduled( 'bl_cron_hook' )</code></pre>\n\n\n\n<p>Scheduling a recurring task is accomplished with <a href=\"https://developer.wordpress.org/reference/functions/wp_schedule_event/\" rel=\"function\">wp_schedule_event()</a> . This function takes three required parameters, and one additional parameter that is an array that can be passed to the function executing the wp-cron task. We will focus on the first three parameters. The parameters are as follows:</p>\n\n\n\n<ol class=\"wp-block-list\"><li><code>$timestamp</code> &#8211; The UNIX timestamp of the first time this task should execute</li><li><code>$recurrence</code> &#8211; The name of the interval in which the task will recur in seconds</li><li><code>$hook</code> &#8211; The name of our custom hook to call</li></ol>\n\n\n\n<p>We will use the 5 second interval we created <a href=\"https://developer.wordpress.org/plugins/cron/understanding-wp-cron-scheduling/\">here</a> and the hook we created above, like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">wp_schedule_event( time(), 'five_seconds', 'bl_cron_hook' );</code></pre>\n\n\n\n<p>Remember, we need to first ensure the task is not already scheduled. So we wrap the scheduling code in a check like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( ! wp_next_scheduled( 'bl_cron_hook' ) ) {\n    wp_schedule_event( time(), 'five_seconds', 'bl_cron_hook' );\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Unscheduling tasks</h2>\n\n\n\n<p>When you no longer need a task scheduled you can unschedule tasks with <a href=\"https://developer.wordpress.org/reference/functions/wp_unschedule_event/\" rel=\"function\">wp_unschedule_event()</a>  . This function takes the following two parameters:</p>\n\n\n\n<ol class=\"wp-block-list\"><li><code>$timestamp</code> &#8211; Timestamp of the next occurrence of the task</li><li><code>$hook</code> &#8211; Name of the custom hook to be called</li></ol>\n\n\n\n<p>This function will not only unschedule the task indicated by the timestamp, it will also unschedule all future occurrences of the task. Since you probably will not know the timestamp for the next task, there is another handy function, <a href=\"https://developer.wordpress.org/reference/functions/wp_next_scheduled/\" rel=\"function\">wp_next_scheduled()</a>  that will find it for you. <code>wp_next_scheduled()</code> takes one parameter (that we care about):</p>\n\n\n\n<ol class=\"wp-block-list\"><li><code>$hook</code> &#8211; The name of the hook that is called to execute the task</li></ol>\n\n\n\n<p>Put it all together and the code looks like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$timestamp = wp_next_scheduled( 'bl_cron_hook' );\nwp_unschedule_event( $timestamp, 'bl_cron_hook' );</code></pre>\n\n\n\n<p>It is very important to unschedule tasks when you no longer need them because WordPress will continue to attempt to execute the tasks, even though they are no longer in use (or even after your plugin has been deactivated or removed). An important place to remember to unschedule your tasks is upon plugin deactivation. </p>\n\n\n\n<p>Unfortunately there are many plugins in the WordPress.org Plugin Directory\u00a0that do not clean up after themselves. If you find one of these plugins please let the author know to update their code. WordPress provides a function called <a href=\"https://developer.wordpress.org/reference/functions/register_deactivation_hook/\" rel=\"function\">register_deactivation_hook()</a>  that allows developers to run a function when their plugin is deactivated. It is very simple to setup and looks like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">register_deactivation_hook( __FILE__, 'bl_deactivate' ); \n\nfunction bl_deactivate() {\n    $timestamp = wp_next_scheduled( 'bl_cron_hook' );\n    wp_unschedule_event( $timestamp, 'bl_cron_hook' );\n}</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">You can read more about activation and deactivation hooks <a href='https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/'>here</a>.</div></div>\n\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11157,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11162",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11162",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11162/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144331,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11162/revisions/144331"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11157"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11162"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

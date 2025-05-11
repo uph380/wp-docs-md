@@ -1,0 +1,97 @@
+{
+    "id": 5789,
+    "date": "2014-07-30T22:19:37",
+    "date_gmt": "2014-07-30T22:19:37",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=5789"
+    },
+    "modified": "2021-05-02T21:31:20",
+    "modified_gmt": "2021-05-02T21:31:20",
+    "slug": "what-is-a-plugin",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/intro/what-is-a-plugin/",
+    "title": {
+        "rendered": "What is a Plugin?"
+    },
+    "content": {
+        "rendered": "\n<p>Plugins are packages of code that extend the core functionality of WordPress. WordPress plugins are made up of PHP code and can include other assets&nbsp;such as&nbsp;images, CSS, and JavaScript.</p>\n\n\n\n<p>By making your own plugin you are <em>extending</em> WordPress, i.e. building additional functionality on top of what WordPress already offers.&nbsp;For example, you could write a plugin that displays&nbsp;links to the ten most recent posts on your site.</p>\n\n\n\n<p>Or, using WordPress\u2019 custom post types, you could write a plugin that creates a full-featured support ticketing system with email notifications, custom ticket statuses, and a client-facing portal. The possibilities are <i>endles</i><em><i>s</i>!</em></p>\n\n\n\n<p>Most WordPress plugins are composed&nbsp;of many files, but a plugin really only <i>needs</i> one main file with a specifically formatted <a href=\"http://en.wikipedia.org/wiki/PHPDoc#DocBlock\" target=\"_blank\" rel=\"noopener noreferrer\">DocBlock</a> in the header.</p>\n\n\n\n<p><a title=\"Hello Dolly\" rel=\"noopener noreferrer\" href=\"https://wordpress.org/plugins/hello-dolly/\" target=\"_blank\">Hello Dolly</a>, one of the first plugins, is only\u00a0<a href=\"https://plugins.trac.wordpress.org/browser/hello-dolly/trunk/hello.php\">100 lines</a>\u00a0long. Hello Dolly shows lyrics from <a href=\"http://en.wikipedia.org/wiki/Hello,_Dolly!_(song)\">the famous song</a> in the WordPress admin. Some CSS is used in the PHP file to control how the lyric is styled.</p>\n\n\n\n<p>As a WordPress.org plugin author, you have an amazing opportunity to create a plugin that will be installed, tinkered with, and loved by millions of WordPress users. All <b>you</b> need to do is turn your great idea into code. The Plugin Handbook is here to help you with that.</p>\n",
+        "protected": false
+    },
+    "author": 3606,
+    "featured_media": 0,
+    "parent": 5787,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5789",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5789",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/3606"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5789/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 135777,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5789/revisions/135777"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/5787"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5789"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

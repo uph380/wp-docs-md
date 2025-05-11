@@ -1,0 +1,91 @@
+{
+    "id": 134510,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/textarea-control/"
+    },
+    "modified": "2024-10-30T16:55:36",
+    "modified_gmt": "2024-10-30T16:55:36",
+    "slug": "textarea-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/textarea-control/",
+    "title": {
+        "rendered": "TextareaControl"
+    },
+    "content": {
+        "rendered": "<p>TextareaControls are TextControls that allow for multiple lines of text, and wrap overflow text onto a new line. They are a fixed height and scroll vertically when the cursor reaches the bottom of the field.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl.png?ssl=1\" alt=\"An empty TextareaControl, and a focused TextareaControl with some content entered.\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use TextareaControl</h4>\n<p>Use TextareaControl when you need to encourage users enter an amount of text that\u2019s longer than a single line. (A bigger box can encourage people to be more verbose, where a smaller one encourages them to be succinct.)</p>\n<p>TextareaControl should:</p>\n<ul>\n<li>Stand out from the background of the page and indicate that users can input information.</li>\n<li>Have clearly differentiated active/inactive states, including focus styling.</li>\n<li>Make it easy to understand and address any errors via clear and direct error notices.</li>\n<li>Make it easy to understand the requested information by using a clear and descriptive label.</li>\n</ul>\n<h4>When not to use TextareaControl</h4>\n<p>Do not use TextareaControl if you need to let users enter shorter answers (no longer than a single line), such as a phone number or name. In this case, you should use <code>Text Control</code>.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl-Answers-Do.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Do</strong></p>\n<p>Use TextareaControl to let users to enter text longer than a single line.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl-Answers-Dont.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Don\u2019t</strong></p>\n<p>Use TextareaControl for shorter answers.</p>\n<h2>Anatomy</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl-Anatomy.png?ssl=1\" alt=\"\" /></p>\n<ol>\n<li>Container</li>\n<li>Label</li>\n</ol>\n<h3>Containers</h3>\n<p>Containers improve the discoverability of text fields by creating contrast between the text field and surrounding content.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl-Stroke-Do.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Do</strong><br />\nUse a stroke around the container, which clearly indicates that users can input information.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl-Stroke-Dont.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Don\u2019t</strong><br />\nUse unclear visual markers to indicate a text field.</p>\n<h3>Label text</h3>\n<p>Label text is used to inform users as to what information is requested for a text field. Every text field should have a label. Label text should be above the input field, and always visible. Write labels in sentence capitalization.</p>\n<h3>Error text</h3>\n<p>When text input isn\u2019t accepted, an error message can display instructions on how to fix it. Error messages are displayed below the input line, replacing helper text until fixed.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/TextareaControl-Error.png?ssl=1\" alt=\"\" /></p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { TextareaControl } from '@wordpress/components';\n\nconst MyTextareaControl = () =&gt; {\n    const [ text, setText ] = useState( &apos;&apos; );\n\n    return (\n        &lt;TextareaControl\n          __nextHasNoMarginBottom\n            label=\"Text\"\n            help=\"Enter some text\"\n            value={ text }\n            onChange={ ( value ) =&gt; setText( value ) }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<p>The set of props accepted by the component will be specified below.</p>\n<p>Props not included in this set will be applied to the textarea element.</p>\n<h4><code>help</code>: <code>string | Element</code></h4>\n<p>If this property is added, a help text will be generated using help property as the content.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>hideLabelFromVision</code>: <code>boolean</code></h4>\n<p>If true, the label will only be visible to screen readers.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>label</code>: <code>string</code></h4>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>onChange</code>: <code>( value: string ) =&gt; void</code></h4>\n<p>A function that receives the new value of the textarea each time it changes.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>rows</code>: <code>number</code></h4>\n<p>The number of rows the textarea should contain.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: 4</li>\n</ul>\n<h4><code>value</code>: <code>string</code></h4>\n<p>The current value of the textarea.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>__nextHasNoMarginBottom</code>: <code>Boolean</code></h4>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>For a field where users only enter one line of text, use the <code>TextControl</code> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 212,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134510",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134510",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134510/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154474,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134510/revisions/154474"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134510"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

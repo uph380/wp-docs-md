@@ -1,0 +1,97 @@
+{
+    "id": 11980,
+    "date": "2015-01-14T15:47:58",
+    "date_gmt": "2015-01-14T15:47:58",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11980"
+    },
+    "modified": "2023-01-21T05:21:36",
+    "modified_gmt": "2023-01-21T05:21:36",
+    "slug": "template-files",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/template-files/",
+    "title": {
+        "rendered": "Template Files"
+    },
+    "content": {
+        "rendered": "\n<p>Template files are used throughout WordPress themes, but first let&#8217;s learn about the terminology.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"template-terminology\">Template Terminology</h2>\n\n\n\n<p>The term &#8220;template&#8221;&nbsp;is used in different ways when working with&nbsp;WordPress themes:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Templates files exist within a theme and express&nbsp;how your site is displayed.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a> is the logic WordPress uses to decide which theme template file(s) to use, depending on the content being&nbsp;requested.</li>\n\n\n\n<li><a title=\"Page Templates\" href=\"https://developer.wordpress.org/themes/template-files-section/page-template-files/\">Page Templates</a> are those that&nbsp;apply&nbsp;to pages, posts, and custom post types to change their look and feel. </li>\n</ul>\n\n\n\n<p><strong>In classic themes,</strong> <a title=\"Template Tags\" href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a> are built-in WordPress functions you can use inside a template file to retrieve and display data (such as <a title=\"Function Reference/the title\" href=\"https://developer.wordpress.org/reference/hooks/the_title/\"><code>the_title()</code></a> and <a title=\"Function Reference/the content\" href=\"https://developer.wordpress.org/reference/hooks/the_content/\"><code>the_content()</code></a>).</p>\n\n\n\n<p><strong>In block themes,</strong> blocks are used instead of template tags.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"template-files\">Template files</h2>\n\n\n\n<p>WordPress themes are made up of template files. </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>In classic themes these&nbsp;are PHP files that contain a mixture of HTML, <a title=\"Template Tags\" href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a>, and PHP code.</li>\n\n\n\n<li>In block themes these are HTML files that contain HTML markup representing blocks.</li>\n</ul>\n\n\n\n<p>When you are building your theme, you will use template files to affect the layout and design of different parts of your website. For example, you would use a <code>header</code> template or template part to create a header.</p>\n\n\n\n<p>When someone visits a page on your website, WordPress loads a template based on the request. The type of content that is displayed by the template file is determined by the <a href=\"https://developer.wordpress.org/themes/basics/post-types/\">Post Type</a> associated with the template file.&nbsp;The&nbsp;<a title=\"Template Hierarchy\" href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a>&nbsp;describes which&nbsp;template file WordPress will&nbsp;load based on the type of request and whether the template exists in the theme.&nbsp;The server then parses the code in the template and returns HTML to the visitor.</p>\n\n\n\n<p>The most critical template file is <code>the index</code>, which is the&nbsp;catch-all&nbsp;template if a&nbsp;more-specific template can not be found in&nbsp;the <a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">template hierarchy</a>.&nbsp;Although a theme only needs a&nbsp;<code>index</code> template, typically themes include numerous templates to display different content types and contexts.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"template-partials\">Template partials</h2>\n\n\n\n<p>A template part is a piece&nbsp;of a template that is included as a part of another template, such as a site&nbsp;header. Template part can be&nbsp;embedded&nbsp;in&nbsp;multiple templates, simplifying theme creation. Common template parts include:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>header.php</code> or <code>header.html</code> for generating the site&#8217;s header</li>\n\n\n\n<li><code>footer.php</code> or <code>footer.html</code> for generating the footer</li>\n\n\n\n<li><code>sidebar.php</code> or <code>sidebar.html</code> for&nbsp;generating&nbsp;the sidebar</li>\n</ul>\n\n\n\n<p>While the above template files are special-case in WordPress and apply to just one portion of a page, you can create any number of template partials and include them in other template files.</p>\n\n\n\n<p>In block themes, template parts must be placed inside a folder called parts.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"common-wordpress-template-files\">Common WordPress template files</h2>\n\n\n\n<p>Below is a list of some basic theme templates and files recognized by WordPress.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>index.php (classic theme) or index.html (block theme)</strong></p>\n\n\n\n<p>The main template file. It is <strong>required</strong> in all themes.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>style.css</strong></p>\n\n\n\n<p>The main stylesheet. It is <strong>required</strong> in all themes and contains the information header for your theme.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>rtl.css</strong></p>\n\n\n\n<p>The right-to-left stylesheet is included automatically if the website language&#8217;s text direction is right-to-left.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>front-page.php (classic theme) or front-page.html (block theme)</strong></p>\n\n\n\n<p>The front page template is always used as the site front page if it exists, regardless of what settings on <strong>Admin &gt; Settings &gt; Reading</strong>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>home.php (classic theme) or home.html (block theme)</strong></p>\n\n\n\n<p>The home page template is the front page by default. If you do not set WordPress to use a static front page, this template is used to show latest posts.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>singular.php (classic theme) or singular.html (block theme)</strong></p>\n\n\n\n<p>The singular template is used for posts when <code>single.php</code> is not found, or for pages when <code>page.php</code> are not found. If <code>singular.php</code> is not found, <code>index.php</code> is used.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>single.php (classic theme) or single.html (block theme)</strong></p>\n\n\n\n<p>The single post template is used when a visitor requests a single post.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>single-{post-type}.php (classic theme) or single-{post-type}.html (block theme)</strong></p>\n\n\n\n<p>The single post template used when a visitor requests a single post from a custom post type. For example, <code>single-book.php</code> would be used for displaying single posts from a custom post type named <em>book</em>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>archive-{post-type}.php (classic theme) or archive-{post-type}.html (block theme)</strong></p>\n\n\n\n<p>The archive post type template is used when visitors request a custom post type archive. For example, <code>archive-books.php</code> would be used for displaying an archive of posts from the custom post type named <em>books</em>. The archive template file is used if the <code>archive-{post-type} template</code> is not present.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>page.php (classic theme) or page.html (block theme)</strong></p>\n\n\n\n<p>The page template is used when visitors request individual pages, which are a built-in template.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>page-{slug}.php (classic theme) or page-{slug}.html (block theme)</strong></p>\n\n\n\n<p>The page slug template is used when visitors request a specific page, for example one with the &#8220;about&#8221; slug (page-about.php).</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>category.php (classic theme) or category.html (block theme)</strong></p>\n\n\n\n<p>The category template is used when visitors request posts by category.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>tag.php (classic theme) or tag.html (block theme)</strong></p>\n\n\n\n<p>The tag template is used when visitors request posts by tag.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>taxonomy.php (classic theme) or taxonomy.html (block theme)</strong></p>\n\n\n\n<p>The taxonomy term template is used when a visitor requests a term in a custom taxonomy.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>author.php (classic theme) or author.html (block theme)</strong></p>\n\n\n\n<p>The author page template is used whenever a visitor loads an author page.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>date.php (classic theme) or date.html (block theme)</strong></p>\n\n\n\n<p>The date/time template is used when posts are requested by date or time. For example, the pages generated with these slugs:<br>http://example.com/blog/2014/<br>http://example.com/blog/2014/05/<br>http://example.com/blog/2014/05/26/</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>archive.php (classic theme) or archive.html (block theme)</strong></p>\n\n\n\n<p>The archive template is used when visitors request posts by category, author, or date. <strong>Note</strong>: this template will be overridden if more specific templates are present like <code>category.php</code>, <code>author.php</code>, and <code>date.php</code>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>search.php (classic theme) or search.html (block theme)</strong></p>\n\n\n\n<p>The search results template is used to display a visitor&#8217;s search results.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>attachment.php (classic theme) or attachment.html (block theme)</strong></p>\n\n\n\n<p>The attachment template is used when viewing a single attachment like an image, pdf, or other media file.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>image.php (classic theme) or image.html (block theme)</strong></p>\n\n\n\n<p>The image attachment template is a more specific version of <code>attachment.php</code> and is used when viewing a single image attachment. If not present, WordPress will use <code>attachment.php</code> instead.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>404.php (classic theme) or 404.html (block theme)</strong></p>\n\n\n\n<p>The 404 template is used when WordPress cannot find a post, page, or other content that matches the visitor&#8217;s request.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>comments.php</strong></p>\n\n\n\n<p>The comments template in classic themes. In block themes, blocks are used instead.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"using-template-files\">Using template files</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"classic-themes\">Classic themes</h3>\n\n\n\n<p>In classic themes, within WordPress templates, you can use <a title=\"Template Tags\" href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a> to display information dynamically, include other template files, or otherwise customize your site.</p>\n\n\n\n<p>For example, in your <code>index.php</code> you can include other files in your final generated page:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>To include the header, use <tt><a title=\"Function Reference/get header\" href=\"https://developer.wordpress.org/reference/functions/get_header/\">get_header()</a></tt></li>\n\n\n\n<li>To include the sidebar, use <tt><a title=\"Function Reference/get sidebar\" href=\"https://developer.wordpress.org/reference/functions/get_sidebar/\">get_sidebar()</a></tt></li>\n\n\n\n<li>To include the footer, use <tt><a title=\"Function Reference/get footer\" href=\"https://developer.wordpress.org/reference/functions/get_footer/\">get_footer()</a></tt></li>\n\n\n\n<li>To include the search form, use <tt><a title=\"Function Reference/get search form\" href=\"https://developer.wordpress.org/reference/functions/get_search_form/\">get_search_form()</a></tt></li>\n\n\n\n<li>To include custom theme files, use <tt><a title=\"Function Reference/get template part\" href=\"https://developer.wordpress.org/reference/functions/get_template_part/\">get_template_part()</a></tt></li>\n</ul>\n\n\n\n<p>Here is an example of WordPress template tags to&nbsp;<em>include </em>specific templates into your page:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php get_sidebar(); ?&gt;\n&lt;?php get_template_part( 'featured-content' ); ?&gt;\n&lt;?php get_footer(); ?&gt;</code></pre>\n\n\n\n<p>There&#8217;s an entire page&nbsp;on <a title=\"Template Tags\" href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a> that you can dive into to learn all about them.</p>\n\n\n\n<p>Refer to the section <a title=\"Linking Theme Files &amp; Directories\" href=\"https://developer.wordpress.org/themes/basics/linking-theme-files-directories/\">Linking Theme Files &amp; Directories</a> for more information on linking component templates.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"block-themes\">Block themes</h3>\n\n\n\n<p>In block themes you use blocks instead of template tags. Block markup is the HTML code that WordPress uses to display the block. Template parts are blocks, and you add them to your template files the same way as you add blocks.</p>\n\n\n\n<p>To include a header or footer template part, add the block markup for the template part. The <code>slug</code> is the name of the part. If the file you want to include is called <code>header.html</code>, then the slug is &#8220;header&#8221;:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:template-part {\"slug\":\"header\"} /--&gt;\n(your page content)\n&lt;!-- wp:template-part {\"slug\":\"footer\"} /--&gt;\n</code></pre>\n\n\n\n<p>To include the search form, use the block markup for the search block:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:search {\"label\":\"Search\",\"buttonText\":\"Search\"} /--&gt;</code></pre>\n\n\n\n<p><br></p>\n",
+        "protected": false
+    },
+    "author": 14167654,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11980",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11980",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 37,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11980/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144776,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11980/revisions/144776"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wporg/v1/users/lizkaraffa"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11980"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

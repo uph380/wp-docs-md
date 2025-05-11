@@ -1,0 +1,109 @@
+{
+    "id": 11149318,
+    "date": "2019-01-31T00:25:23",
+    "date_gmt": "2019-01-31T00:25:23",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11149318"
+    },
+    "modified": "2024-10-23T20:45:05",
+    "modified_gmt": "2024-10-23T20:45:05",
+    "slug": "users-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/users-screen/",
+    "title": {
+        "rendered": "Users screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Users Screen</strong> allows you to add, change, or delete your site&#8217;s users. In addition, you can search for users and make bulk changes and deletions to a selected group of users.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11149341\"><img loading=\"lazy\" decoding=\"async\" width=\"1236\" height=\"560\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/01/users-screen.png?fit=1236%2C560&amp;ssl=1\" alt=\"\" class=\"wp-image-11149341\" srcset=\"https://wordpress.org/documentation/files/2019/01/users-screen.png 1236w, https://wordpress.org/documentation/files/2019/01/users-screen-300x136.png 300w, https://wordpress.org/documentation/files/2019/01/users-screen-1024x464.png 1024w, https://wordpress.org/documentation/files/2019/01/users-screen-768x348.png 768w\" sizes=\"auto, (max-width: 1236px) 100vw, 1236px\" /></a><figcaption class=\"wp-element-caption\">Users screen</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Table of users</h2>\n\n\n\n<p>The main part of the <strong>Users Screen</strong> displays a table of all the users listed by Username order.\n</p>\n\n\n\n<p>The table of Users contains the following columns:\n</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>[ ] check box:</strong> Check this box if this user is to  be affected by the Delete or Change User Role functions.  There is also a checkbox in the column header to the left of the text Username\u2014click  that checkbox to cause all Users to be checked.</li>\n\n\n\n<li><strong>User Image:</strong> Avatar for this particular user. </li>\n\n\n\n<li><strong>Username:</strong> The login of the User.  To edit a User, click on the Username link, the Users Your Profile Screen  will then display for you to make the necessary changes.  Also note  that if you hover the mouse anywhere over the whole row for a particular  user, the Edit and Delete links will be made visible for use.  The  current logged in user will not have the Delete link revealed.</li>\n\n\n\n<li><strong>Name:</strong> The first and last names of the User.</li>\n\n\n\n<li><strong>E-mail:</strong> The User&#8217;s e-mail address.</li>\n\n\n\n<li><strong>Role:</strong> The Role assigned to that User. A user&#8217;s role determines their <a href=\"https://wordpress.org/documentation/article/roles-and-capabilities/\">capabilities</a> in WordPress.</li>\n\n\n\n<li><strong>Posts:</strong> The number of Posts written by that User. Click on that number to be directed to the Posts Screen to view or edit the Posts written by this User. All users have a unique identification number, which WordPress uses to identify users internally. To determine that <strong>User ID</strong>, hover the mouse over the Posts number link, and the User ID (author=x) will be revealed as part of the URL in the browser status bar.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Sortable columns</h3>\n\n\n\n<p>Some column headings, such as the Username, Name, and Email, can be\nclicked to sort the Table of Users in ascending or descending order.\nHover over the column title, for example Username, to see the up-arrow\nor down-arrow.  Click the heading to change the sort order.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Page navigation</h3>\n\n\n\n<p>Under the Screen Options, the number of Users displayed per page is\ndetermined.  If more than one page of Users is available, two\ndouble-arrow boxes to move to the first and last page are provided.\nAlso two single-arrow boxes are displayed to move one page backward or\nforward.  Finally, a box showing the current page number can be used to\nenter a page to directly display.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Screen options</h3>\n\n\n\n<p>Under the top shaded area is the Screen Options hanging tab.  Clicking on that hanging tab reveals the <strong>Show on screen</strong>  choices of E-Mail, Role, and Posts check boxes.  Unchecking a box causes  a column to be not shown in the Table below, and, of course, checking a  box causes that column to be displayed in the Table below. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Search</h3>\n\n\n\n<p>At the top right of the User Table is a search box to help find  users.  Enter a string in the box and click the &#8220;Search users&#8221; box.  Any  User that contains the search string in the Username, Name, E-mail, or  Website fields will be displayed, by <a href=\"/support/articles/roles-and-capabilities\">Role</a>.   You can then add, change, and delete those users.  A &#8220;No matching  users were found! &#8221; message will be displayed if no Users can be found  that match the search string you entered. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Filtering options</h2>\n\n\n\n<p>Just above the User Table, are filter links to All Users, and to\nlinks to Users belonging to the each of the various Roles.  Clicking on\none of those links, say Subscribers, will display all the Users assigned\n the Subscriber Role.  Click on All Users to again display all the Users\n in the table.\n</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using selection, actions, and apply</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Selection</h3>\n\n\n\n<p>\nThis Screen allows Bulk Actions to be performed on one or more\nUsers selected in the Table.  For Bulk Actions to be performed on\nmultiple Users at once, those users must be first <strong>selected</strong> via one of these methods:\n</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Select one User at a time:</strong> To select a User, the<br>checkbox to the left of the User entry must be checked (clicked).  It is<br> possible to keep selecting more Users by checking their respective<br>checkbox.</li>\n\n\n\n<li><strong>Select all Users in given Table:</strong> All Users in a given table<br>can be selected by checking the checkbox in the Table&#8217;s title, or footer<br> bar.  Of course, unchecking the header or footer title bar checkbox<br>will cause all entries in that Table to be unchecked (NOT selected). </li>\n\n\n\n<li><strong>Reverse Selection:</strong> A Reverse Selection means checked items<br>become unchecked, and unchecked items become checked. A Reverse<br>Selection is accomplished by holding the Shift key on the keyboard and<br>clicking the header or footer title bar checkbox.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Actions</h3>\n\n\n\n<p>\nActions describe the process to be performed on particular Users.  There are two styles of Actions that will be referred to as <em>Bulk Actions</em> and <em>Immediate Actions</em>.  The follow describes these Actions:\n</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Bulk Actions:</strong> These Actions can be performed on one, or more Users, at one time, if those Users have been previously selected.  Bulk Actions are available, when appropriate, as choices in the Bulk  Actions pull down box, above the Table.  The only Bulk Action allowed is  Delete.   </li>\n\n\n\n<li><strong>Immediate Actions:</strong> Immediate Actions are performed  immediately, on an individual User.  Hovering the mouse cursor over the  User row reveals the Edit or Delete options under the Username column,  in that User row.  Clicking on a Username Name will also initiate the  Edit Action.</li>\n</ul>\n\n\n\n<p>\nThe available Actions are described below:\n</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Edit:</strong> This Immediate Action displays the Edit User  Screen.  This Action can be initiated by click on the Username or  clicking on the Edit option just below the Username.   </li>\n\n\n\n<li><strong>Delete:</strong> This Action deletes the User.   </li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Apply</h3>\n\n\n\n<p>\nAfter one or more Users are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected Users.\n</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Apply:</strong> Click the Apply button to execute the Bulk Action, specified in the Actions pull down, on the selected Users. Remember, prior to executing Actions, one or more Users must be <strong>selected</strong>, as described before.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Delete users</h2>\n\n\n\n<p>\nAvailable as both Bulk Action and an Immediate Action, the\ndelete user capability is allowed on all but the current user (you\ncannot delete the user doing the deletion!).  After the Delete action\nhas begun, a Delete Users Screen will display with a message &#8220;You have\nspecified these users for deletion:&#8221; with a list of the Users you are\ndeleting with the following question:\n <strong>What should be done with posts and links owned by this user?</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Delete all posts and links:</strong> Check this radio button and  click the Confirm Deletion button to delete the User(s) as well as any posts and links attributed to those User(s). </li>\n\n\n\n<li><strong>Attribute all posts and links to:</strong> Check this radio button,  select a User from the adjacent drop-down box, and click the Confirm  Deletion button to attribute all the posts and links for the Deleted  User(s) to the User you selected in the pull down box.   </li>\n</ul>\n\n\n\n<p>\nUpon successful completion of the deletion process, a splash message\n box near the top of the Screen will display &#8220;x user(s) deleted&#8221;.\n</p>\n\n\n\n<h2 class=\"wp-block-heading\">Change roles to</h2>\n\n\n\n<p> To the right of the Action pull-down box is the  <strong>Change role to</strong> pull-down box.  Select a Role, and all the Users that have been selected (checked),  will be changed to that Role upon clicking the Change button. At  successful completion of the changes, a splash box with the message  &#8220;Changed roles.&#8221; displays. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Edit users</h2>\n\n\n\n<p>The Edit Users Screen is similar to editing your profile.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Users Screen allows you to add, change, or delete your site&#8217;s users. In addition, you can search for users and make bulk changes and deletions to a selected group of users. Table of users The main part of the Users Screen displays a table of all the users listed by Username order. The table [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11149318",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11149318",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11149318"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11149318/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365180,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11149318/revisions/16365180"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11149318"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11149318"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

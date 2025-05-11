@@ -1,0 +1,97 @@
+{
+    "id": 149100,
+    "date": "2023-10-17T14:40:03",
+    "date_gmt": "2023-10-17T14:40:03",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149100"
+    },
+    "modified": "2023-12-14T21:19:28",
+    "modified_gmt": "2023-12-14T21:19:28",
+    "slug": "settings-reference",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/settings-reference/",
+    "title": {
+        "rendered": "Settings Reference"
+    },
+    "content": {
+        "rendered": "\n<p>The document is a reference to the available settings properties that you can configure via the <code>settings</code> object in <code>theme.json</code>. Each of the settings has an in-depth guide on how to use it within the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/\">Settings documentation</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Appearance Tools</h2>\n\n\n\n<p><code>settings.appearanceTools</code> is a top-level property with no sub-properties nested beneath it. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/appearance-tools/\">Settings: Appearance Tools</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>appearanceTools</code></td><td>boolean</td><td><code>false</code></td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Border</h2>\n\n\n\n<p><code>settings.border</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/border/\">Settings: Border</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>color</code></td><td>boolean</td><td><code>false</code></td></tr><tr><td><code>radius</code></td><td>boolean</td><td><code>false</code></td></tr><tr><td><code>style</code></td><td>boolean</td><td><code>false</code></td></tr><tr><td><code>width</code></td><td>boolean</td><td><code>false</code></td></tr></tbody></table></figure>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Enabling any one of the <code>color</code>, <code>style</code>, or <code>width</code> settings will automatically enable the other two since the properties are linked together.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Color</h2>\n\n\n\n<p><code>settings.color</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/color/\">Settings: Color</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th><th>Props</th></tr></thead><tbody><tr><td><code>background</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>custom</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>customDuotone</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>customGradient</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>defaultDuotone</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>defaultGradients</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>defaultPalette</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>duotone</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>colors</code>, <code>name</code>, <code>slug</code></td></tr><tr><td><code>gradients</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>gradient</code>, <code>name</code>, <code>slug</code></td></tr><tr><td><code>link</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr><tr><td><code>palette</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>color</code>, <code>name</code>, <code>slug</code></td></tr><tr><td><code>text</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Custom</h2>\n\n\n\n<p><code>settings.custom</code> is an object that supports any number of nested custom properties, as shown in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/custom/\">Settings: Custom</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>custom.&lt;custom&gt;</code></td><td>any</td><td>\u2014</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Dimensions</h2>\n\n\n\n<p><code>settings.dimensions</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/dimensions/\">Settings: Dimensions</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>minHeight</code></td><td>boolean</td><td><code>false</code></td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Layout</h2>\n\n\n\n<p><code>settings.layout</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/layout/\">Settings: Layout</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>contentSize</code></td><td>string</td><td><code>\"\"</code></td></tr><tr><td><code>wideSize</code></td><td>string</td><td><code>\"\"</code></td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Lightbox</h2>\n\n\n\n<p><code>settings.lightbox</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/lightbox/\">Settings: Lightbox</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>allowEditing</code></td><td>boolean</td><td><code>true</code></td></tr><tr><td><code>enabled</code></td><td>boolean</td><td><code>false</code></td></tr></tbody></table></figure>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>This setting is only available as of WordPress 6.4 and is specific to the core Image block (<code>core/image</code>).</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Position</h2>\n\n\n\n<p><code>settings.position</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/position/\">Settings: Position</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>sticky</code></td><td>boolean</td><td><code>false</code></td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Shadow</h2>\n\n\n\n<p><code>settings.shadow</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/shadow/\">Settings: Shadow</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th><th>Props</th></tr></thead><tbody><tr><td><code>defaultPresets</code></td><td>boolean</td><td><code>true</code></td><td></td></tr><tr><td><code>presets</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>name</code>, <code>shadow</code>, <code>slug</code></td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Spacing</h2>\n\n\n\n<p><code>settings.spacing</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/spacing/\">Settings: Spacing</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th><th>Props</th></tr></thead><tbody><tr><td><code>blockGap</code></td><td>boolean|null</td><td><code>null</code></td><td>\u2014</td></tr><tr><td><code>customSpacingSize</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>margin</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr><tr><td><code>padding</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr><tr><td><code>spacingScale</code></td><td>object</td><td><code>object</code></td><td><code>operator</code>, <code>increment</code>, <code>steps</code>, <code>mediumStep</code>, <code>unit</code></td></tr><tr><td><code>spacingSizes</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>name</code>, <code>size</code>, <code>slug</code></td></tr><tr><td><code>units</code></td><td>array &lt;string&gt;</td><td><code>[ \"px\", \"em\", \"rem\", \"vh\", \"vw\", \"%\" ]</code></td><td>\u2014</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Typography</h2>\n\n\n\n<p><code>settings.typography</code> is an object that supports the nested properties listed in the below table. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/typography/\">Settings: Typography</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th><th>Props</th></tr></thead><tbody><tr><td><code>customFontSize</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>dropCap</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>fontFamilies</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>fontFace</code>, <code>fontFamily</code>, <code>name</code>, <code>slug</code></td></tr><tr><td><code>fontSizes</code></td><td>array &lt;object&gt;</td><td><code>array</code></td><td><code>fluid</code>, <code>name</code>, <code>size</code>, <code>slug</code></td></tr><tr><td><code>fontStyle</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>fontWeight</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>fluid</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr><tr><td><code>letterSpacing</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>lineHeight</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr><tr><td><code>textColumns</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr><tr><td><code>textDecoration</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>textTransform</code></td><td>boolean</td><td><code>true</code></td><td>\u2014</td></tr><tr><td><code>writingMode</code></td><td>boolean</td><td><code>false</code></td><td>\u2014</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Use Root Padding Aware Alignments</h2>\n\n\n\n<p><code>settings.useRootPaddingAwareAlignments</code> is a top-level property with no sub-properties nested beneath it. It is documented at <a href=\"https://developer.wordpress.org/global-settings-and-styles/settings/use-root-padding-aware-alignments/\">Settings: Use Root Padding Aware Alignments</a>.</p>\n\n\n\n<figure class=\"wp-block-table\"><table><thead><tr><th>Property</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td><code>useRootPaddingAwareAlignments</code></td><td>boolean</td><td><code>false</code></td></tr></tbody></table></figure>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>This setting works together with <code>styles.spacing.padding</code> in <code>theme.json</code>. If enabled, <code>styles.spacing.padding</code> must be an object that defines the <code>top</code>, <code>right</code>,&nbsp; <code>bottom</code>, and <code>left</code> styles separately.</p></div></div>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 9999,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149100",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149100",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149100/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149150,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149100/revisions/149150"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149100"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

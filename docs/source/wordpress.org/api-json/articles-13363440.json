@@ -1,0 +1,109 @@
+{
+    "id": 13363440,
+    "date": "2021-07-13T00:22:31",
+    "date_gmt": "2021-07-13T00:22:31",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13363440"
+    },
+    "modified": "2024-06-08T19:44:33",
+    "modified_gmt": "2024-06-08T19:44:33",
+    "slug": "reusable-blocks",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/reusable-blocks/",
+    "title": {
+        "rendered": "Synced Patterns (Reusable blocks)"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\"></a><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Synced pattern is a type of block pattern that enabled Synced option, and it will behave in exactly the same way as a reusable block. Editing the synced pattern will update it anywhere it is used. After creating a synced pattern, you can &#8216;detach&#8217; it to a regular block, and edit the block without affecting your already saved synced pattern. For more information, you can learn more in the Synced Pattern article.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">WordPress 6.3 renamed Reusable Blocks to Patterns. A synced pattern will behave in exactly the same way as a reusable block.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"create-reusable-block\">Creating a Synced Pattern</h2>\n\n\n\n<p>Let\u2019s say you have a paragraph block which you often fill with the same text at the end of your post. This could be everything from how to get in touch to your business hours to your social media accounts. To avoid having to add the same content to a paragraph block every time you want to place it at the end of your post, you can make it a synced pattern. To accomplish this, follow these steps:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Select the block or blocks you want to turn into a pattern.</li>\n\n\n\n<li>Click on the three dot menu that opens up the additional settings.</li>\n\n\n\n<li>Click on &#8220;Create pattern&#8221;.</li>\n\n\n\n<li>Enter the name of pattern.</li>\n\n\n\n<li>Turn on Synced option</li>\n\n\n\n<li>Click Create.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/256239744-52edd86c-a582-4719-97e3-d11159161e46.mp4\"></video></figure>\n\n\n\n<p>You\u2019ll then be able to locate the created synced patterns at Synced Patterns (crossing rhombus icon) of Block Inserter.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1688\" height=\"1228\" src=\"https://wordpress.org/documentation/files/2023/07/WP-6-3-working-with-patterns.jpeg\" alt=\"The Block inserter with the &quot;Synced Patterns&quot; icon highlighted.\" class=\"wp-image-16358215\" style=\"object-fit:cover\" srcset=\"https://wordpress.org/documentation/files/2023/07/WP-6-3-working-with-patterns.jpeg 1688w, https://wordpress.org/documentation/files/2023/07/WP-6-3-working-with-patterns-300x218.jpeg 300w, https://wordpress.org/documentation/files/2023/07/WP-6-3-working-with-patterns-1024x745.jpeg 1024w, https://wordpress.org/documentation/files/2023/07/WP-6-3-working-with-patterns-768x559.jpeg 768w, https://wordpress.org/documentation/files/2023/07/WP-6-3-working-with-patterns-1536x1117.jpeg 1536w\" sizes=\"auto, (max-width: 1688px) 100vw, 1688px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"use-a-reusable-block\">Using a Synced Pattern</h2>\n\n\n\n<p>After you\u2019ve created a Synced Pattern, you can then use it wherever you\u2019d like.&nbsp;You\u2019ll also have a few more options for adding one into your content:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>You can open up the <strong>Block Inserter</strong> and switch to the <strong>Synced Patterns</strong> section to add whichever option you want.</li>\n\n\n\n<li>Click on the add block button and search for the name of the synced pattern you want to use.</li>\n\n\n\n<li>You can type <kbd>/</kbd> followed by the name of the synced pattern you want to use.</li>\n</ul>\n\n\n\n<p>After inserting the Synced Pattern you want to use, make sure to select &#8216;<strong>Detach pattern</strong>&#8216; (formerly known as<em> &#8220;</em><strong>Convert to Regular Block</strong>&#8220;) option shown\u00a0below\u00a0if you wish to make any changes to the block on that page or post only. Note that this option won&#8217;t be available if the Synced Pattern is locked.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"656\" height=\"204\" src=\"https://wordpress.org/documentation/files/2023/07/wp-6-3-detach-pattern.jpeg\" alt=\"Synced Pattern Toolbar with the &quot;Detach Pattern&quot; option highlighted.\" class=\"wp-image-16358216\" style=\"object-fit:cover;width:653px;height:203px\" srcset=\"https://wordpress.org/documentation/files/2023/07/wp-6-3-detach-pattern.jpeg 656w, https://wordpress.org/documentation/files/2023/07/wp-6-3-detach-pattern-300x93.jpeg 300w\" sizes=\"auto, (max-width: 656px) 100vw, 656px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"edit-reusable-block\">Selecting and editing a Synced Pattern</h2>\n\n\n\n<p>If you\u2019d like to edit a synced pattern, you can do so in two ways:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>You can add the block directly into a post or page and edit it from there. If you do this, you\u2019ll see the synced pattern mentioned in the saving flow when you save the post or page itself.</li>\n\n\n\n<li>You can go to <strong>Options &gt; Manage Patterns</strong>, which will take you to a specific interface where you can directly edit patterns as you\u2019d like.</li>\n</ul>\n\n\n\n<p><em>Keep in mind that, when a synced pattern is changed, the change will be reflected in all the places where the same synced pattern was used.</em></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"remove-a-reusable-block\">Removing a Synced Pattern</h2>\n\n\n\n<p>To remove a synced pattern, click on the <strong>three dots</strong> icon, and select the option to <strong>Manage Patterns</strong>. From there you can edit and delete patterns as you\u2019d like.</p>\n\n\n\n<p>Keep in mind that, when a synced pattern is removed, the removal will be reflected in all the places where the same synced pattern was used. You\u2019ll see the message below a where removed synced pattern existed:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"494\" src=\"https://wordpress.org/documentation/files/2023/07/wp-6-3-missing-reusable-block-1024x494.jpeg\" alt=\"A block with a message saying &quot;Block has been deleted or Is unavailable.&quot;\" class=\"wp-image-16358217\" style=\"object-fit:cover\" srcset=\"https://wordpress.org/documentation/files/2023/07/wp-6-3-missing-reusable-block-1024x494.jpeg 1024w, https://wordpress.org/documentation/files/2023/07/wp-6-3-missing-reusable-block-300x145.jpeg 300w, https://wordpress.org/documentation/files/2023/07/wp-6-3-missing-reusable-block-768x370.jpeg 768w, https://wordpress.org/documentation/files/2023/07/wp-6-3-missing-reusable-block-1536x741.jpeg 1536w, https://wordpress.org/documentation/files/2023/07/wp-6-3-missing-reusable-block.jpeg 1576w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"demonstration-of-the-reusable-block\">Demonstration of a Synced Pattern</h2>\n\n\n\n<p>In this demo, we insert Synced Patterns in the three ways described above (Block Inserter, Add Bloock icon, &#8216;/&#8217; key). A change in one pattern (in this case, a change in text color) will be reflected in others. Next, detach the middle Synced Pattern. Synchronization is then lost. And if you look at it in the list view, it is back to a normal block.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/07/wp6.3-synced-pattern-demo.mp4\"></video></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-01-09\n<ul class=\"wp-block-list\">\n<li>Updated for WordPress 6.4</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-08-08\n<ul class=\"wp-block-list\">\n<li>Replaced &#8220;Reusable Blocks&#8221; with &#8220;Patterns&#8221;</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2021-07-13</li>\n</ul>\n</div>\n\n\n\n<p></p>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Synced pattern is a type of block pattern that enabled Synced option, and it will behave in exactly the same way as a reusable block. Editing the synced pattern will update it anywhere it is used. After creating a synced pattern, you can &#8216;detach&#8217; it to a regular [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        88
+    ],
+    "class_list": [
+        "post-13363440",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-design-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13363440",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13363440"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13363440/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360413,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13363440/revisions/16360413"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13363440"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13363440"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

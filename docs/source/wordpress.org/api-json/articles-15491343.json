@@ -1,0 +1,109 @@
+{
+    "id": 15491343,
+    "date": "2022-03-24T13:36:53",
+    "date_gmt": "2022-03-24T13:36:53",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15491343"
+    },
+    "modified": "2024-06-08T17:51:55",
+    "modified_gmt": "2024-06-08T17:51:55",
+    "slug": "pinterest-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/pinterest-embed/",
+    "title": {
+        "rendered": "Pinterest embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the Pinterest embed block, you can embed pins, boards (a collection of pins), and Pinterest profiles into your posts and pages. You don\u2019t need a Pinterest account to be able to use it, but only public pins, boards, and profiles can be embedded.</p>\n\n\n\n<p><strong>Examples of Pinterest embeds</strong>:</p>\n\n\n\n<div class=\"wp-block-jetpack-tiled-gallery is-style-rectangular\"><div class=\"tiled-gallery__gallery\"><div class=\"tiled-gallery__row\"><div class=\"tiled-gallery__col\" style=\"flex-basis:65.52703%\"><figure class=\"tiled-gallery__item\"><a href=\"https://i1.wp.com/wordpress.org/documentation/files/2022/03/00c-example-pinterest-embed-block.webp?ssl=1\"><img decoding=\"async\" srcset=\"https://i1.wp.com/wordpress.org/documentation/files/2022/03/00c-example-pinterest-embed-block.webp?strip=info&#038;w=600&#038;ssl=1 600w,https://i1.wp.com/wordpress.org/documentation/files/2022/03/00c-example-pinterest-embed-block.webp?strip=info&#038;w=653&#038;ssl=1 653w\" alt=\"\" data-height=\"579\" data-id=\"15491442\" data-link=\"https://wordpress.org/support/?attachment_id=15491442\" data-url=\"https://wordpress.org/documentation/files/2022/03/00c-example-pinterest-embed-block.webp\" data-width=\"653\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2022/03/00c-example-pinterest-embed-block.webp?ssl=1\" data-amp-layout=\"responsive\" /></a></figure></div><div class=\"tiled-gallery__col\" style=\"flex-basis:34.47297%\"><figure class=\"tiled-gallery__item\"><a href=\"https://i1.wp.com/wordpress.org/documentation/files/2022/03/00d-preview-pinterest-wordpress-profile.webp?ssl=1\"><img decoding=\"async\" srcset=\"https://i1.wp.com/wordpress.org/documentation/files/2022/03/00d-preview-pinterest-wordpress-profile.webp?strip=info&#038;w=378&#038;ssl=1 378w\" alt=\"\" data-height=\"638\" data-id=\"15491457\" data-link=\"https://wordpress.org/support/?attachment_id=15491457\" data-url=\"https://wordpress.org/documentation/files/2022/03/00d-preview-pinterest-wordpress-profile-1.webp\" data-width=\"378\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2022/03/00d-preview-pinterest-wordpress-profile.webp?ssl=1\" data-amp-layout=\"responsive\" /></a></figure></div></div></div></div>\n\n\n\n<p class=\"has-text-align-center has-small-font-size\"><em>Left image: Example of an individual pin embed. Right image: Example of a Pinterest profile embed.</em></p>\n\n\n\n<div style=\"height:18px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to embed Pinterest pins, boards, and profiles</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>First, find the pin, board, or profile on Pinterest that you want to embed, and copy its URL from the browser bar.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"835\" height=\"496\" src=\"https://wordpress.org/documentation/files/2022/03/01-copy-url-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491475\" srcset=\"https://wordpress.org/documentation/files/2022/03/01-copy-url-pinterest-embed-block.webp 835w, https://wordpress.org/documentation/files/2022/03/01-copy-url-pinterest-embed-block-300x178.webp 300w, https://wordpress.org/documentation/files/2022/03/01-copy-url-pinterest-embed-block-768x456.webp 768w\" sizes=\"auto, (max-width: 835px) 100vw, 835px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Go to your post or page and add the Pinterest embed block. One way to do this is to press the &#8220;/&#8221; key to open the block inserter and type /pinterest.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"573\" height=\"162\" src=\"https://wordpress.org/documentation/files/2022/03/02-block-inserter-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491485\" srcset=\"https://wordpress.org/documentation/files/2022/03/02-block-inserter-pinterest-embed-block.webp 573w, https://wordpress.org/documentation/files/2022/03/02-block-inserter-pinterest-embed-block-300x85.webp 300w\" sizes=\"auto, (max-width: 573px) 100vw, 573px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#eeeeee\"><em>Detailed instructions on adding blocks can be found in <a href=\"https://wordpress.org/documentation/article/wordpress-editor/#adding-a-block\">this guide</a>.</em></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the link into the text box and click the &#8220;Embed&#8221; button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"734\" height=\"319\" src=\"https://wordpress.org/documentation/files/2022/03/03-paste-url-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491527\" srcset=\"https://wordpress.org/documentation/files/2022/03/03-paste-url-pinterest-embed-block.webp 734w, https://wordpress.org/documentation/files/2022/03/03-paste-url-pinterest-embed-block-300x130.webp 300w\" sizes=\"auto, (max-width: 734px) 100vw, 734px\" /></figure>\n\n\n\n<p>If the link can be successfully embedded into your post/page, you will see the preview in your block editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"775\" height=\"573\" src=\"https://wordpress.org/documentation/files/2022/03/04-preview-editor-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491537\" srcset=\"https://wordpress.org/documentation/files/2022/03/04-preview-editor-pinterest-embed-block.webp 775w, https://wordpress.org/documentation/files/2022/03/04-preview-editor-pinterest-embed-block-300x222.webp 300w, https://wordpress.org/documentation/files/2022/03/04-preview-editor-pinterest-embed-block-768x568.webp 768w\" sizes=\"auto, (max-width: 775px) 100vw, 775px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block displays the message: <em>&#8220;Sorry, this content could not be embedded.&#8221;</em> You will have two choices: try again with a different URL or convert it to a link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"739\" height=\"403\" src=\"https://wordpress.org/documentation/files/2022/03/05-incorrect-url-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491543\" srcset=\"https://wordpress.org/documentation/files/2022/03/05-incorrect-url-pinterest-embed-block.webp 739w, https://wordpress.org/documentation/files/2022/03/05-incorrect-url-pinterest-embed-block-300x164.webp 300w\" sizes=\"auto, (max-width: 739px) 100vw, 739px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click the &#8220;Preview&#8221; button in the top right corner of the post/page to see how it will look on the front-end.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"697\" height=\"603\" src=\"https://wordpress.org/documentation/files/2022/03/06a-frontend-preview-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491581\" srcset=\"https://wordpress.org/documentation/files/2022/03/06a-frontend-preview-pinterest-embed-block.webp 697w, https://wordpress.org/documentation/files/2022/03/06a-frontend-preview-pinterest-embed-block-300x260.webp 300w\" sizes=\"auto, (max-width: 697px) 100vw, 697px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the &#8220;Mover&#8221; and &#8220;Drag &amp; Drop Handle&#8221;, the Block Toolbar for the Pinterest embed block shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to \u2013 also the icon for the block</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"439\" height=\"75\" src=\"https://wordpress.org/documentation/files/2022/03/07-block-toolbar-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491588\" srcset=\"https://wordpress.org/documentation/files/2022/03/07-block-toolbar-pinterest-embed-block.webp 439w, https://wordpress.org/documentation/files/2022/03/07-block-toolbar-pinterest-embed-block-300x51.webp 300w\" sizes=\"auto, (max-width: 439px) 100vw, 439px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-text-align-left has-medium-font-size\"><strong>Transform to</strong></h3>\n\n\n\n<p>The first option will allow you to transform a Pinterest embed into a Paragraph. This will convert the pin, board, or Pinterest profile embedded to a link. You also can transform a Pinterest embed into Columns or into a Group. </p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"708\" height=\"557\" src=\"https://wordpress.org/documentation/files/2022/03/08-transform-to-hover-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491666\" srcset=\"https://wordpress.org/documentation/files/2022/03/08-transform-to-hover-pinterest-embed-block.webp 708w, https://wordpress.org/documentation/files/2022/03/08-transform-to-hover-pinterest-embed-block-300x236.webp 300w\" sizes=\"auto, (max-width: 708px) 100vw, 708px\" /></figure>\n\n\n\n<p>Transforming it into a Group will give you the ability to change the following, among other options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The background color around the Pinterest embed</li>\n\n\n\n<li>The padding, margin, and block spacing dimensions</li>\n\n\n\n<li>The border settings of the block (width, style, color, and radius)</li>\n</ul>\n\n\n\n<p><strong>Note</strong>: you can preview what each block (paragraph, column, or group) will look like by hovering the mouse over each option.</p>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\">\n<div class=\"wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular\"><div class=\"tiled-gallery__gallery\"><div class=\"tiled-gallery__row\"><div class=\"tiled-gallery__col\" style=\"flex-basis:60.41189%\"><figure class=\"tiled-gallery__item\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1024x605.webp?ssl=1\"><img decoding=\"async\" srcset=\"https://i0.wp.com/wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1024x605.webp?strip=info&#038;w=600&#038;ssl=1 600w,https://i0.wp.com/wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1024x605.webp?strip=info&#038;w=900&#038;ssl=1 900w,https://i0.wp.com/wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1024x605.webp?strip=info&#038;w=1200&#038;ssl=1 1200w,https://i0.wp.com/wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1024x605.webp?strip=info&#038;w=1303&#038;ssl=1 1303w\" alt=\"\" data-height=\"770\" data-id=\"15491701\" data-link=\"https://wordpress.org/support/?attachment_id=15491701\" data-url=\"https://wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1-1024x605.webp\" data-width=\"1303\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2022/03/09-group-color-settings-pinterest-embed-block-1024x605.webp?ssl=1\" data-amp-layout=\"responsive\" /></a></figure></div><div class=\"tiled-gallery__col\" style=\"flex-basis:39.58811%\"><figure class=\"tiled-gallery__item\"><a href=\"https://i2.wp.com/wordpress.org/documentation/files/2022/03/10c-preview-grey-background-pinterest-embed-block.webp?ssl=1\"><img decoding=\"async\" srcset=\"https://i2.wp.com/wordpress.org/documentation/files/2022/03/10c-preview-grey-background-pinterest-embed-block.webp?strip=info&#038;w=600&#038;ssl=1 600w,https://i2.wp.com/wordpress.org/documentation/files/2022/03/10c-preview-grey-background-pinterest-embed-block.webp?strip=info&#038;w=609&#038;ssl=1 609w\" alt=\"\" data-height=\"550\" data-id=\"15491702\" data-link=\"https://wordpress.org/support/?attachment_id=15491702\" data-url=\"https://wordpress.org/documentation/files/2022/03/10c-preview-grey-background-pinterest-embed-block.webp\" data-width=\"609\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2022/03/10c-preview-grey-background-pinterest-embed-block.webp?ssl=1\" data-amp-layout=\"responsive\" /></a></figure></div></div></div></div>\n</div>\n\n\n\n<p class=\"has-text-align-center has-small-font-size\"><em>Left image: Editor view of a Pinterest embed as a group with color, dimension, and border settings. Right image: Front-end preview of a Pinterest embed with a grey background.</em></p>\n\n\n\n<div style=\"height:18px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<h3 class=\"wp-block-heading has-medium-font-size\"><strong>Change Alignment</strong></h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong> \u2013 Default alignment option</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width </strong>\u2013 Extend the block to cover the full width of the screen</li>\n\n\n\n<li><strong>Align left</strong> \u2013 Make the block left-aligned</li>\n\n\n\n<li><strong>Align center</strong> \u2013 Make the block alignment centered</li>\n\n\n\n<li><strong>Align right</strong> \u2013 Make the block right-aligned</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"679\" height=\"544\" src=\"https://wordpress.org/documentation/files/2022/03/11-change-alignment-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491758\" srcset=\"https://wordpress.org/documentation/files/2022/03/11-change-alignment-pinterest-embed-block.webp 679w, https://wordpress.org/documentation/files/2022/03/11-change-alignment-pinterest-embed-block-300x240.webp 300w\" sizes=\"auto, (max-width: 679px) 100vw, 679px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-medium-font-size\"><strong>Edit URL</strong></h3>\n\n\n\n<p>Via the edit URL, you can change the Pinterest embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; button on the right.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"722\" height=\"313\" src=\"https://wordpress.org/documentation/files/2022/03/12-edit-url-pinterest-embed-block.webp\" alt=\"\" class=\"wp-image-15491765\" srcset=\"https://wordpress.org/documentation/files/2022/03/12-edit-url-pinterest-embed-block.webp 722w, https://wordpress.org/documentation/files/2022/03/12-edit-url-pinterest-embed-block-300x130.webp 300w\" sizes=\"auto, (max-width: 722px) 100vw, 722px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading has-medium-font-size\"><strong>More Options</strong></h3>\n\n\n\n<p>Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\" data-type=\"helphub_article\" data-id=\"13748329\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>In the Advanced tab, located in the block settings sidebar, you can add additional CSS class(es) to your block. This allows you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/03/15-advanced-tab-pinterest-embed-block-1.webp\" alt=\"\" class=\"wp-image-15491825\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-08-08\n<ul class=\"wp-block-list\">\n<li>Link &#8220;More Options&#8221; to article</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-03-24</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Pinterest embed block, you can embed pins, boards (a collection of pins), and Pinterest profiles into your posts and pages. You don\u2019t need a Pinterest account to be able to use it, but only public pins, boards, and profiles can be embedded. Examples of Pinterest embeds: [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-15491343",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15491343",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15491343"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15491343/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360355,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15491343/revisions/16360355"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15491343"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15491343"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

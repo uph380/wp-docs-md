@@ -1,0 +1,91 @@
+{
+    "id": 134439,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/autocomplete/"
+    },
+    "modified": "2024-10-30T16:55:51",
+    "modified_gmt": "2024-10-30T16:55:51",
+    "slug": "autocomplete",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/autocomplete/",
+    "title": {
+        "rendered": "Autocomplete"
+    },
+    "content": {
+        "rendered": "<p>This component is used to provide autocompletion support for a child input component.</p>\n<h2>Props</h2>\n<p>The following props are used to control the behavior of the component.</p>\n<h3>record</h3>\n<p>The rich text value object the autocompleter is being applied to.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Type: <code>RichTextValue</code></li>\n</ul>\n<h3>onChange</h3>\n<p>A function to be called when an option is selected to insert into the existing text.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Type: <code>( value: string ) =&gt; void</code></li>\n</ul>\n<h3>onReplace</h3>\n<p>A function to be called when an option is selected to replace the existing text.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Type: <code>( values: RichTextValue[] ) =&gt; void</code></li>\n</ul>\n<h3>completers</h3>\n<p>An array of all of the completers to apply to the current element.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Type: <code>Array&lt; WPCompleter &gt;</code></li>\n</ul>\n<h3>contentRef</h3>\n<p>A ref containing the editable element that will serve as the anchor for <code>Autocomplete</code>&#8216;s <code>Popover</code>.</p>\n<ul>\n<li>Required: Yes</li>\n<li><code>MutableRefObject&lt; HTMLElement | undefined &gt;</code></li>\n</ul>\n<h3>children</h3>\n<p>A function that returns nodes to be rendered within the Autocomplete.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Type: <code>Function</code></li>\n</ul>\n<h3>isSelected</h3>\n<p>Whether or not the Autocomplete component is selected, and if its <code>Popover</code> should be displayed.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Type: <code>Boolean</code></li>\n</ul>\n<h2>Autocompleters</h2>\n<p>Autocompleters enable us to offer users options for completing text input. For example, Gutenberg includes a user autocompleter that provides a list of user names and completes a selection with a user mention like <code>@mary</code>.</p>\n<p>Each completer declares:</p>\n<ul>\n<li>Its name.</li>\n<li>The text prefix that should trigger the display of completion options.</li>\n<li>Raw option data.</li>\n<li>How to render an option&#8217;s label.</li>\n<li>An option&#8217;s keywords, words that will be used to match an option with user input.</li>\n<li>What the completion of an option looks like, including whether it should be inserted in the text or used to replace the current block.</li>\n</ul>\n<p>In addition, a completer may optionally declare:</p>\n<ul>\n<li>A class name to be applied to the completion menu.</li>\n<li>Whether it should apply to a specified text node.</li>\n<li>Whether the completer applies in a given context, defined via a Range before and a Range after the autocompletion trigger and query.</li>\n</ul>\n<h3>The Completer Interface</h3>\n<h4>name</h4>\n<p>The name of the completer. Useful for identifying a specific completer to be overridden via extensibility hooks.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>options</h4>\n<p>The raw options for completion. May be an array, a function that returns an array, or a function that returns a promise for an array.</p>\n<p>Options may be of any type or shape. The completer declares how those options are rendered and what their completions should be when selected.</p>\n<ul>\n<li>Type: <code>Array|Function</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>triggerPrefix</h4>\n<p>The string prefix that should trigger the completer. For example, Gutenberg&#8217;s block completer is triggered when the &#8216;/&#8217; character is entered.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>getOptionLabel</h4>\n<p>A function that returns the label for a given option. A label may be a string or a mixed array of strings, elements, and components.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>getOptionKeywords</h4>\n<p>A function that returns the keywords for the specified option.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<h4>isOptionDisabled</h4>\n<p>A function that returns whether or not the specified option should be disabled. Disabled options cannot be selected.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<h4>getOptionCompletion</h4>\n<p>A function that takes an option and responds with how the option should be completed. By default, the result is a value to be inserted in the text. However, a completer may explicitly declare how a completion should be treated by returning an object with <code>action</code> and <code>value</code> properties. The <code>action</code> declares what should be done with the <code>value</code>.</p>\n<p>There are currently two supported actions:</p>\n<ul>\n<li>&#8220;insert-at-caret&#8221; &#8211; Insert the <code>value</code> into the text (the default completion action).</li>\n<li>&#8220;replace&#8221; &#8211; Replace the current block with the block specified in the <code>value</code> property.</li>\n</ul>\n<h4>allowContext</h4>\n<p>A function that takes a Range before and a Range after the autocomplete trigger and query text and returns a boolean indicating whether the completer should be considered for that context.</p>\n<ul>\n<li>Type: <code>Function</code></li>\n<li>Required: No</li>\n</ul>\n<h4>className</h4>\n<p>A class name to apply to the autocompletion popup menu.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>isDebounced</h4>\n<p>Whether to apply debouncing for the autocompleter. Set to true to enable debouncing.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h2>Usage</h2>\n<p>The <code>Autocomplete</code> component is not currently intended to be used as a standalone component. It is used by other packages to provide autocompletion support for the block editor.</p>\n<p>The block editor provides a separate, wrapped version of <code>Autocomplete</code> that supports the addition of custom completers via a filter.</p>\n<p>To implement your own completer in the block editor you will:<br />\n1. Define the completer<br />\n2. Write a callback that will add your completer to the list of existing completers<br />\n3. Add a filter to the <code>editor.Autocomplete.completers</code> hook that will call your callback</p>\n<p>The following example will add a contrived &#8220;fruits&#8221; autocompleter to the block editor. Note that in the callback it&#8217;s possible to limit this new completer to a specific block type. In this case, our &#8220;fruits&#8221; completer will only be available from the &#8220;core/paragraph&#8221; block type.</p>\n<pre><code class=\"language-js\">( function () {\n    // Define the completer\n    const fruits = {\n        name: 'fruit',\n        // The prefix that triggers this completer\n        triggerPrefix: '~',\n        // The option data\n        options: [\n            { visual: '\ud83c\udf4e', name: 'Apple', id: 1 },\n            { visual: '\ud83c\udf4a', name: 'Orange', id: 2 },\n            { visual: '\ud83c\udf47', name: 'Grapes', id: 3 },\n            { visual: '\ud83e\udd6d', name: 'Mango', id: 4 },\n            { visual: '\ud83c\udf53', name: 'Strawberry', id: 5 },\n            { visual: '\ud83e\uded0', name: 'Blueberry', id: 6 },\n            { visual: '\ud83c\udf52', name: 'Cherry', id: 7 },\n        ],\n        // Returns a label for an option like \"\ud83c\udf4a Orange\"\n        getOptionLabel: ( option ) =&gt; `${ option.visual } ${ option.name }`,\n        // Declares that options should be matched by their name\n        getOptionKeywords: ( option ) =&gt; [ option.name ],\n        // Declares that the Grapes option is disabled\n        isOptionDisabled: ( option ) =&gt; option.name === 'Grapes',\n        // Declares completions should be inserted as abbreviations\n        getOptionCompletion: ( option ) =&gt; option.visual,\n    };\n\n    // Define a callback that will add the custom completer to the list of completers\n    function appendTestCompleters( completers, blockName ) {\n        return blockName === 'core/paragraph'\n            ? [ ...completers, fruits ]\n            : completers;\n    }\n\n    // Trigger our callback on the `editor.Autocomplete.completers` hook\n    wp.hooks.addFilter(\n        'editor.Autocomplete.completers',\n        'fruit-test/fruits',\n        appendTestCompleters,\n        11\n    );\n} )();\n</code></pre>\n<p>Finally, enqueue your JavaScript file as you would any other, as in the following plugin example:</p>\n<pre><code class=\"language-php\">&lt;?php\n/**\n * Plugin Name: Fruit Autocompleter\n * Plugin URI: https://github.com/WordPress/gutenberg\n * Author: Gutenberg Team\n */\n\n/**\n * Registers a custom script for the plugin.\n */\nfunction enqueue_fruit_autocompleter_plugin_script() {\n    wp_enqueue_script(\n        'fruit-autocompleter',\n        plugins_url( '/index.js', __FILE__ ),\n        array(\n            'wp-hooks',\n        ),\n    );\n}\n\nadd_action( 'init', 'enqueue_fruit_autocompleter_plugin_script' );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 114,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134439",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134439",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134439/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154046,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134439/revisions/154046"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134439"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

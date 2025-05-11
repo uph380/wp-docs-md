@@ -1,0 +1,91 @@
+{
+    "id": 134482,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-group/"
+    },
+    "modified": "2024-10-30T16:55:42",
+    "modified_gmt": "2024-10-30T16:55:42",
+    "slug": "menu-group",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-group/",
+    "title": {
+        "rendered": "MenuGroup"
+    },
+    "content": {
+        "rendered": "<p><code>MenuGroup</code> wraps a series of related <code>MenuItem</code> components into a common section.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/03/MenuGroup.png?ssl=1\" alt=\"MenuGroup Example\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<p>A <code>MenuGroup</code> should be used to indicate that two or more individual MenuItems are related. When other menu items exist above or below a <code>MenuGroup</code>, the group should have a divider line between it and the adjacent item. A <code>MenuGroup</code> can optionally include a label to describe its contents.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/03/MenuGroup-Anatomy.png?ssl=1\" alt=\"MenuGroup diagram with label and dividers\" /></p>\n<ol>\n<li><code>MenuGroup</code> label</li>\n<li><code>MenuGroup</code> dividers</li>\n</ol>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { MenuGroup, MenuItem } from '@wordpress/components';\n\nconst MyMenuGroup = () =&gt; (\n    &lt;MenuGroup label=\"Settings\"&gt;\n        &lt;MenuItem&gt;Setting 1&lt;/MenuItem&gt;\n        &lt;MenuItem&gt;Setting 2&lt;/MenuItem&gt;\n    &lt;/MenuGroup&gt;\n);\n</code></pre>\n<h2>Related Components</h2>\n<ul>\n<li><code>MenuGroup</code>s are intended to be used in a <code>DropDownMenu</code>.</li>\n<li>To use a single button in a menu, use <code>MenuItem</code>.</li>\n<li>To allow users to toggle between a set of menu options, use <code>MenuItemsChoice</code> inside of a <code>MenuGroup</code>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 178,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134482",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134482",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134482/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151852,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134482/revisions/151852"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134482"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

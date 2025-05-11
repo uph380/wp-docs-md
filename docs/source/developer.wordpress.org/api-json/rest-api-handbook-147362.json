@@ -1,0 +1,91 @@
+{
+    "id": 147362,
+    "date": "2023-04-26T10:55:33",
+    "date_gmt": "2023-04-26T10:55:33",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/block-pattern-categories/"
+    },
+    "modified": "2024-01-16T20:30:13",
+    "modified_gmt": "2024-01-16T20:30:13",
+    "slug": "block-pattern-categories",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/block-pattern-categories/",
+    "title": {
+        "rendered": "Block Pattern Categories"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a block pattern category record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                The category name.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-label\">\n<td>\n                <code>label</code>\n            </td>\n<td>\n                The category label, in human readable format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                The category description, in human readable format.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Block Pattern Category</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/block-patterns/categories</code></p>\n<p>        Query this endpoint to retrieve a specific block pattern category record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/block-patterns/categories</code>\n    </div>\n<div class=\"secondary\">\n            There are no arguments for this endpoint.</p></div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147362",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147362",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147362/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151982,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/147362/revisions/151982"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147362"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

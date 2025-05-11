@@ -1,0 +1,91 @@
+{
+    "id": 149331,
+    "date": "2023-11-03T20:04:37",
+    "date_gmt": "2023-11-03T20:04:37",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149331"
+    },
+    "modified": "2023-12-14T20:51:25",
+    "modified_gmt": "2023-12-14T20:51:25",
+    "slug": "core-concepts",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/core-concepts/",
+    "title": {
+        "rendered": "Core Concepts"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the Core Concepts documentation. The goal of this chapter is to introduce you to the foundational concepts necessary for creating your own WordPress block themes.</p>\n\n\n\n<p>The focus of this chapter is to help you familiarize yourself with the basic theme structure and standard files like <code>style.css</code>, <code>functions.php</code>, and <code>theme.json</code>. Once you have these core concepts down, you can more comfortably dive into the later chapters in this handbook.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the following links to locate a topic within this chapter. Each article is listed in the recommended reading order for those new to theme development. For those with existing experience creating themes, feel free to jump to the section you need:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\"><strong>Theme Structure</strong></a><strong>:</strong> Walks through how a theme\u2019s files and folders are structured following WordPress standards.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/core-concepts/main-stylesheet/\"><strong>Main Stylesheet</strong></a><strong>:</strong> Explains the importance of the theme\u2019s <code>style.css</code> file and how to use it.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/core-concepts/custom-functionality/\"><strong>Custom Functionality</strong></a><strong>:</strong> Dives into the theme\u2019s functions file (<code>functions.php</code>) and how you can use it to add your own functionality to a theme.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/core-concepts/templates/\"><strong>Templates</strong></a><strong>:</strong> Introduces how WordPress\u2019 block templates system works and provides pathways for deeper learning.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/core-concepts/including-assets/\"><strong>Including Assets</strong></a><strong>:</strong> A guide on including CSS, JavaScript, images, and more in your themes.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/\"><strong>Global Settings and Styles</strong></a><strong>:</strong> Gives a basic overview of how the <code>theme.json</code> file works in themes with learning pathways to more detailed articles.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149331",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150286,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331/revisions/150286"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149331"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

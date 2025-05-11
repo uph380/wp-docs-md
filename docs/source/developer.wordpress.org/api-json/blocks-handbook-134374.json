@@ -1,0 +1,91 @@
+{
+    "id": 134374,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/"
+    },
+    "modified": "2024-01-16T20:28:06",
+    "modified_gmt": "2024-01-16T20:28:06",
+    "slug": "block-tutorial",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/",
+    "title": {
+        "rendered": "Blocks"
+    },
+    "content": {
+        "rendered": "<p>The purpose of this tutorial is to step through the fundamentals of creating a new block type. Beginning with the simplest possible example, each new section will incrementally build upon the last to include more of the common functionality you could expect to need when implementing your\u00a0own block types.</p>\n<p>To follow along with this tutorial, you can download the <a href=\"https://github.com/WordPress/block-development-examples\">accompanying WordPress plugin</a> which includes all of the examples for you to try on your own site. At each step along the way, experiment by modifying the examples with your own ideas, and observe the effects they have on the block&#8217;s behavior.</p>\n<blockquote><p>\n  To find the latest version of the .zip file go to the repo&#8217;s <a href=\"https://github.com/WordPress/block-development-examples/releases\">releases page</a> and look in the latest release under &#8216;Assets&#8217;.\n</p></blockquote>\n<p>Code snippets are provided in two formats &#8220;JSX&#8221; and &#8220;Plain&#8221;. JSX refers to JavaScript code that uses JSX syntax which requires a build step. Plain refers to &#8220;classic&#8221; JavaScript that does not require building. You can change between them using tabs found above each code example. Using JSX, does require you to run <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/\">the JavaScript build step</a> to compile your code to a browser compatible format.</p>\n<p>Note that it is not required to use JSX to create blocks or extend the editor, you can use classic JavaScript. However, once familiar with JSX and the build step, many developers tend to find it is easier to read and write, thus most code examples you&#8217;ll find use the JSX syntax.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 22,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134374",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134374",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134374/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150198,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134374/revisions/150198"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134374"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

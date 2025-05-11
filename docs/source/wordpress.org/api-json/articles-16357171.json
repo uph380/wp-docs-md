@@ -1,0 +1,109 @@
+{
+    "id": 16357171,
+    "date": "2023-06-02T10:41:13",
+    "date_gmt": "2023-06-02T10:41:13",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16357171"
+    },
+    "modified": "2024-06-08T18:32:26",
+    "modified_gmt": "2024-06-08T18:32:26",
+    "slug": "previous-post-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/previous-post-block/",
+    "title": {
+        "rendered": "Previous Post block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Use the&nbsp;<em>Previous Post</em>&nbsp;block to display a&nbsp;<code>Previous</code>&nbsp;link which automatically points to the previous post or page to the one currently being viewed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"913\" height=\"528\" src=\"https://wordpress.org/documentation/files/2023/06/image-19.png\" alt=\"Previous Post block on the editor\" class=\"wp-image-16357185\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-19.png 913w, https://wordpress.org/documentation/files/2023/06/image-19-300x173.png 300w, https://wordpress.org/documentation/files/2023/06/image-19-768x444.png 768w\" sizes=\"auto, (max-width: 913px) 100vw, 913px\" /></figure>\n\n\n\n<p>Click the (<strong>+</strong>) icon to open the block inserter pop-up window and search for the&nbsp;<em>Previous Post</em>&nbsp;blocks.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"560\" height=\"262\" src=\"https://wordpress.org/documentation/files/2023/06/232001499-2d09711f-23cc-4332-a600-e5286b850f52.gif\" alt=\"A demonstration to add the previous post block\" class=\"wp-image-16357182\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut&nbsp;<em>/previous-post</em>&nbsp;to quickly add the&nbsp;<em>Previous Post</em>&nbsp;block.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found&nbsp;<a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The&nbsp;<em>Previous Post</em>&nbsp;block shows seven buttons in the block toolbar:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"446\" height=\"79\" src=\"https://wordpress.org/documentation/files/2023/06/image-18.png\" alt=\"Previous post block toolbar\" class=\"wp-image-16357180\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-18.png 446w, https://wordpress.org/documentation/files/2023/06/image-18-300x53.png 300w\" sizes=\"auto, (max-width: 446px) 100vw, 446px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag</li>\n\n\n\n<li>Move up/down</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>Bold</li>\n\n\n\n<li>Italic</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/06/image-10.png\" alt=\"Previous post block transform options\" class=\"wp-image-16357172\" style=\"width:395px;height:239px\" width=\"395\" height=\"239\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-10.png 395w, https://wordpress.org/documentation/files/2023/06/image-10-300x182.png 300w\" sizes=\"auto, (max-width: 395px) 100vw, 395px\" /></figure>\n\n\n\n<p>Click on the&nbsp;<strong>Transform</strong>&nbsp;button to convert the&nbsp;<em>Previous Post</em>&nbsp;block into a&nbsp;<em>Columns</em>&nbsp;or&nbsp;<em>Group</em>&nbsp;block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Drag icon</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"371\" height=\"65\" src=\"https://wordpress.org/documentation/files/2023/06/image-11.png\" alt=\"Drag icon on the previous post block toolbar\" class=\"wp-image-16357173\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-11.png 371w, https://wordpress.org/documentation/files/2023/06/image-11-300x53.png 300w\" sizes=\"auto, (max-width: 371px) 100vw, 371px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Move arrows</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"372\" height=\"69\" src=\"https://wordpress.org/documentation/files/2023/06/image-12.png\" alt=\"Move arrows on the previous post block toolbar\" class=\"wp-image-16357174\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-12.png 372w, https://wordpress.org/documentation/files/2023/06/image-12-300x56.png 300w\" sizes=\"auto, (max-width: 372px) 100vw, 372px\" /></figure>\n\n\n\n<p>The&nbsp;<strong>up</strong>&nbsp;and&nbsp;<strong>down</strong>&nbsp;arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on moving a block within the editor can be found&nbsp;<a href=\"https://wordpress.org/documentation/article/moving-blocks/\">here</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Change text alignment</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"375\" height=\"246\" src=\"https://wordpress.org/documentation/files/2023/06/image-13.png\" alt=\"Change text alignment on the previous post block toolbar\" class=\"wp-image-16357175\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-13.png 375w, https://wordpress.org/documentation/files/2023/06/image-13-300x197.png 300w\" sizes=\"auto, (max-width: 375px) 100vw, 375px\" /></figure>\n\n\n\n<p>Use the change text alignment tool to change the text alignment for the <em>Previous Post</em> block. The following is a list of the block width options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Align text left</li>\n\n\n\n<li>Align text center</li>\n\n\n\n<li>Align text right</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Bold</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"374\" height=\"69\" src=\"https://wordpress.org/documentation/files/2023/06/image-14.png\" alt=\"Bold option on the previous post block toolbar\" class=\"wp-image-16357176\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-14.png 374w, https://wordpress.org/documentation/files/2023/06/image-14-300x55.png 300w\" sizes=\"auto, (max-width: 374px) 100vw, 374px\" /></figure>\n\n\n\n<p>You can select the text in the <em>Previous Post</em> block and use the&nbsp;<em>Bold</em>&nbsp;option or&nbsp;<kbd>Ctrl</kbd>+<kbd>b</kbd>&nbsp;or&nbsp;<kbd>Cmd</kbd>+<kbd>b</kbd>&nbsp;on your keyboard to bold it, which is usually heavier than the surrounding text.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Italic</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"373\" height=\"70\" src=\"https://wordpress.org/documentation/files/2023/06/image-15.png\" alt=\"Italic option on the previous post block toolbar\" class=\"wp-image-16357177\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-15.png 373w, https://wordpress.org/documentation/files/2023/06/image-15-300x56.png 300w\" sizes=\"auto, (max-width: 373px) 100vw, 373px\" /></figure>\n\n\n\n<p>You can select any text inside the <em>Previous Post</em> block and use the&nbsp;<em>Italic</em>&nbsp;option or <kbd>Ctrl</kbd>+<kbd>i</kbd>&nbsp;or&nbsp;<kbd>Cmd</kbd>+<kbd>b</kbd>&nbsp;on your keyboard to italicize it, which usually appears slanted to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Options</h3>\n\n\n\n<p>The More Options menu represented by three vertical dots on the far right of the toolbar gives you more features such as the ability to duplicate, remove, or edit your block as HTML.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-text-editing-overview/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon below the block description, in the sidebar.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/06/232024324-b9984e98-6388-42d4-b0d2-65d83bb9cc53.png\" alt=\"Block settings for the previous post block\" class=\"wp-image-16357184\" style=\"width:293px;height:537px\" width=\"293\" height=\"537\" srcset=\"https://wordpress.org/documentation/files/2023/06/232024324-b9984e98-6388-42d4-b0d2-65d83bb9cc53.png 586w, https://wordpress.org/documentation/files/2023/06/232024324-b9984e98-6388-42d4-b0d2-65d83bb9cc53-164x300.png 164w, https://wordpress.org/documentation/files/2023/06/232024324-b9984e98-6388-42d4-b0d2-65d83bb9cc53-559x1024.png 559w\" sizes=\"auto, (max-width: 293px) 100vw, 293px\" /></figure>\n\n\n\n<p>Click&nbsp;<strong>Display the title as a link</strong>&nbsp;to use the previous post/page title as link text. If you activate this toggle, another toggle&nbsp;<strong>Include the label as part of the link</strong>&nbsp;appears, allowing you to include in the link the custom label (if you have specified one).</p>\n\n\n\n<p>Under the&nbsp;<strong>Arrow</strong>&nbsp;section you can select between three options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><em>None</em>&nbsp;no arrow is displayed beside the link.</li>\n\n\n\n<li><em>Arrow</em>&nbsp;displays a left-headed arrow (<strong><span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2190</span></strong>) to the left of the link.</li>\n\n\n\n<li><em>Chevron</em>&nbsp;displays a chevron (<strong>\u00ab</strong>) to the left of the link.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The Advanced section lets you add HTML anchor and CSS class(es) to your block. This will allow you to write custom CSS and styles for the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"273\" height=\"325\" src=\"https://wordpress.org/documentation/files/2023/06/image-16.png\" alt=\"Advanced section on the previous post block settings\" class=\"wp-image-16357178\" srcset=\"https://wordpress.org/documentation/files/2023/06/image-16.png 273w, https://wordpress.org/documentation/files/2023/06/image-16-252x300.png 252w\" sizes=\"auto, (max-width: 273px) 100vw, 273px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block styles</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Colors</h3>\n\n\n\n<p>The&nbsp;<em>Previous Post</em>&nbsp;block provides color settings options to change the text, link, and background colors.<br>Specifically:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Text color applies to the arrow (if any)</li>\n\n\n\n<li>Link color applies to the link to the previous post</li>\n\n\n\n<li>Background color applies to the whole block</li>\n</ul>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article:&nbsp;<a href=\"https://wordpress.org/support/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>The <em>Previous Post</em> block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article:&nbsp;<a href=\"https://wordpress.org/support/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-huge-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-06-02</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Use the&nbsp;Previous Post&nbsp;block to display a&nbsp;Previous&nbsp;link which automatically points to the previous post or page to the one currently being viewed. Click the (+) icon to open the block inserter pop-up window and search for the&nbsp;Previous Post&nbsp;blocks. You can also use the keyboard shortcut&nbsp;/previous-post&nbsp;to quickly add the&nbsp;Previous Post&nbsp;block. [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16357171",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357171",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16357171"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357171/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360379,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16357171/revisions/16360379"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16357171"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16357171"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

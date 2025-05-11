@@ -1,0 +1,91 @@
+{
+    "id": 134469,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/navigate-regions/"
+    },
+    "modified": "2024-10-30T16:55:44",
+    "modified_gmt": "2024-10-30T16:55:44",
+    "slug": "navigate-regions",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/navigate-regions/",
+    "title": {
+        "rendered": "NavigateRegions"
+    },
+    "content": {
+        "rendered": "<p><code>navigateRegions</code> is a React <a href=\"https://facebook.github.io/react/docs/higher-order-components.html\">higher-order component</a> adding keyboard navigation to switch between the different DOM elements marked as &#8220;regions&#8221; (role=&#8221;region&#8221;). These regions should be focusable (By adding a tabIndex attribute for example). For better accessibility, these elements must be properly labelled to briefly describe the purpose of the content in the region. For more details, see &#8220;Landmark Roles&#8221; in the <a href=\"https://www.w3.org/TR/wai-aria/\">WAI-ARIA specification</a> and &#8220;Landmark Regions&#8221; in the <a href=\"https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/\">ARIA Authoring Practices Guide</a>.</p>\n<h2>Example:</h2>\n<pre><code class=\"language-jsx\">import { navigateRegions } from '@wordpress/components';\n\nconst MyComponentWithNavigateRegions = navigateRegions( () =&gt; (\n    &lt;div&gt;\n        &lt;div role=\"region\" tabIndex=\"-1\" aria-label=\"Header\"&gt;\n            Header\n        &lt;/div&gt;\n        &lt;div role=\"region\" tabIndex=\"-1\" aria-label=\"Content\"&gt;\n            Content\n        &lt;/div&gt;\n        &lt;div role=\"region\" tabIndex=\"-1\" aria-label=\"Sidebar\"&gt;\n            Sidebar\n        &lt;/div&gt;\n    &lt;/div&gt;\n) );\n</code></pre>\n<h2>Notes:</h2>\n<p>It&#8217;s important to note that an ARIA <code>role=\"region\"</code> is an ARIA landmark role. It should be reserved for sections of content sufficiently important to have it listed in a summary of the page. Only use this ARIA role for the main sections of a page. All perceivable content should reside in a semantically meaningful landmark in order that content is not missed by the user.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 163,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134469",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134469",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134469/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151863,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134469/revisions/151863"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134469"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

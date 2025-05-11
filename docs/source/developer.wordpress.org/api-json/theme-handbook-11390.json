@@ -1,0 +1,98 @@
+{
+    "id": 11390,
+    "date": "2014-10-23T16:55:28",
+    "date_gmt": "2014-10-23T16:55:28",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11390"
+    },
+    "modified": "2023-12-14T20:56:11",
+    "modified_gmt": "2023-12-14T20:56:11",
+    "slug": "customize-api",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/customize-api/",
+    "title": {
+        "rendered": "Theme Options &#8211; The Customize API"
+    },
+    "content": {
+        "rendered": "<p>The Customize API (Customizer) is a framework for live-previewing any change to WordPress. It provides a unified\u00a0interface for users to customize various aspects of their theme and their site, from colors and layouts to widgets, menus, and more. Themes and plugins alike can add options to the Customizer. The Customizer is the canonical way to\u00a0add\u00a0options to your theme.</p>\n<p><figure id=\"attachment_22437\" aria-describedby=\"caption-attachment-22437\" style=\"width: 640px\" class=\"wp-caption alignnone\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/customize-4.6.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"wp-image-22437 size-large\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/customize-4.6.png?resize=640%2C360&#038;ssl=1\" alt=\"The customizer as it appears in WordPress 4.6 with the Twenty Fifteen theme.\" width=\"640\" height=\"360\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/customize-4.6.png?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2014/10/customize-4.6.png?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2014/10/customize-4.6.png?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2014/10/customize-4.6.png?w=1600&amp;ssl=1 1600w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\" /></a><figcaption id=\"caption-attachment-22437\" class=\"wp-caption-text\">The customizer as it appears in WordPress 4.6 with the Twenty Fifteen theme.</figcaption></figure></p>\n<p>Customizer options can be granted to users with different capabilities on a granular basis, so while most options are visible only to administrators by default, other users may access certain options if you want them to be able to. Different parts of the Customizer can also be contextual to whether they&#8217;re relevant to the front-end context that the user is previewing. For example, the core widgets functionality only shows widget areas that are displayed on the current page; other widget areas are shown when the user navigates to a page that includes them within the Customizer preview window.</p>\n<p>This section contains an overview of the Customize API, including code examples and discussion of best practices. For more details, it is strongly recommended that developers study the core customizer code (all core files containing &#8220;customize&#8221;). This is considered the canonical, official documentation for the Customize API outside of the inline documentation within the core code.</p>\n<h2></h2>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 22437,
+    "parent": 0,
+    "menu_order": 1040,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11390",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "has-post-thumbnail",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11390",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 62,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11390/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 25026,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11390/revisions/25026"
+            }
+        ],
+        "wp:featuredmedia": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media/22437"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11390"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

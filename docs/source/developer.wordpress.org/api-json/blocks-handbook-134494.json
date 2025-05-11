@@ -1,0 +1,91 @@
+{
+    "id": 134494,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/"
+    },
+    "modified": "2024-10-30T16:55:39",
+    "modified_gmt": "2024-10-30T16:55:39",
+    "slug": "radio-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/",
+    "title": {
+        "rendered": "RadioControl"
+    },
+    "content": {
+        "rendered": "<p>Use radio buttons when you want users to select one option from a set, and you want to show them all the available options at once.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2018/11/radio.png?ssl=1\" alt=\"\" /><br />\nSelected and unselected radio buttons</p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use radio buttons</h4>\n<p>Use radio buttons when you want users to:</p>\n<ul>\n<li>Select a single option from a list.</li>\n<li>Expose all available options.</li>\n</ul>\n<p>If you have a list of available options that can be collapsed, consider using a dropdown menu instead, as dropdowns use less space. A country selection field, for instance, would be very large as a group of radio buttons and wouldn&#8217;t help the user gain more context by seeing all options at once.</p>\n<h4>Do</h4>\n<p><img decoding=\"async\" src=\"https://github.com/WordPress/gutenberg/assets/10128264/77da4e95-b038-43e7-bd29-11282cc2bac7\" alt=\"Right: A screenshot showing two radio buttons for &quot;Author&quot; and &quot;Editor&quot;, one checked\" /><br />\nUse radio buttons when only one item can be selected from a list.</p>\n<h4>Don\u2019t</h4>\n<p><img decoding=\"async\" src=\"https://github.com/WordPress/gutenberg/assets/10128264/214f37a8-2080-4c10-a4b5-b011e0875f18\" alt=\"Wrong: A screenshot showing two checkboxes for &quot;Author&quot; and &quot;Editor&quot;, one checked\" /><br />\nDon\u2019t use checkboxes when only one item can be selected from a list. Use radio buttons instead.</p>\n<h4>Defaults</h4>\n<p>When using radio buttons <strong>one should be selected by default</strong> (i.e., when the page loads, in the case of a web application).</p>\n<h5>User control</h5>\n<p>In most interactions, a user should be able to undo and redo their actions. With most selection controls you can un-choose a selection, but in this instance you cannot click or tap a selected radio button to deselect it\u2014selecting is a final action. The finality isn\u2019t conveyed when none are selected by default. Selecting a radio button by default communicates that the user is required to choose one in the set.</p>\n<h5>Expediting tasks</h5>\n<p>When one a choice in a set of radio buttons is the most desirable or frequently selected, it\u2019s helpful to select it by default. Doing this reduces the interaction cost and can save the user time and clicks.</p>\n<h5>The power of suggestion</h5>\n<p>Designs with a radio button selected by default make a strong suggestion to the user. It can help them make the best decision and increase their confidence. (Use this guidance with caution, and only for good.)</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<p>Render a user interface to select the user type using radio inputs.</p>\n<pre><code class=\"language-jsx\">import { RadioControl } from '@wordpress/components';\nimport { useState } from 'react';\n\nconst MyRadioControl = () =&gt; {\n    const [ option, setOption ] = useState( 'a' );\n\n    return (\n        &lt;RadioControl\n            label=\"User type\"\n            help=\"The type of the current user\"\n            selected={ option }\n            options={ [\n                { label: 'Author', value: 'a' },\n                { label: 'Editor', value: 'e' },\n            ] }\n            onChange={ ( value ) =&gt; setOption( value ) }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<p>The component accepts the following props:</p>\n<h4><code>help</code>: <code>string | Element</code></h4>\n<p>If this property is added, a help text will be generated using help property as the content.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>hideLabelFromVision</code>: <code>boolean</code></h4>\n<p>If true, the label will only be visible to screen readers.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>label</code>: <code>string</code></h4>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>onChange</code>: <code>( value: string ) =&gt; void</code></h4>\n<p>A function that receives the value of the new option that is being selected as input.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>options</code>: <code>{ label: string, value: string }[]</code></h4>\n<p>An array of objects containing the value and label of the options.</p>\n<ul>\n<li><code>label</code>: <code>string</code> The label to be shown to the user.</li>\n<li><code>value</code>: <code>string</code> The internal value compared against select and passed to onChange.</p>\n</li>\n<li>\n<p>Required: No</p>\n</li>\n</ul>\n<h4><code>selected</code>: <code>string</code></h4>\n<p>The value property of the currently selected option.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To select one or more items from a set, use the <code>CheckboxControl</code> component.</li>\n<li>To toggle a single setting on or off, use the <code>ToggleControl</code> component.</li>\n<li>To format as a segmented button group, use the <code>ToggleGroupControl</code> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 192,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134494",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134494",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134494/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152858,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134494/revisions/152858"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134494"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

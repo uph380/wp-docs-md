@@ -1,0 +1,91 @@
+{
+    "id": 136326,
+    "date": "2021-06-10T13:54:47",
+    "date_gmt": "2021-06-10T13:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/card-footer/"
+    },
+    "modified": "2024-10-30T17:10:00",
+    "modified_gmt": "2024-10-30T17:10:00",
+    "slug": "card-footer",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/card-footer/",
+    "title": {
+        "rendered": "CardFooter"
+    },
+    "content": {
+        "rendered": "<p><code>CardFooter</code> renders an optional footer within a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/card/card/\"><code>Card</code></a>.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Card, CardFooter } from '@wordpress/components';\n\nconst Example = () =&gt; (\n    &lt;Card&gt;\n        &lt;CardBody&gt;...&lt;/CardBody&gt;\n        &lt;CardFooter&gt;...&lt;/CardFooter&gt;\n    &lt;/Card&gt;\n);\n</code></pre>\n<h3>Flex</h3>\n<p>Underneath, <code>CardFooter</code> uses the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/flex/flex/\"><code>Flex</code> layout component</a>. This improves the alignment of child items within the component.</p>\n<pre><code class=\"language-jsx\">import {\n    Button,\n    Card,\n    CardFooter,\n    FlexItem,\n    FlexBlock,\n} from '@wordpress/components';\n\nconst Example = () =&gt; (\n    &lt;Card&gt;\n        &lt;CardBody&gt;...&lt;/CardBody&gt;\n        &lt;CardFooter&gt;\n            &lt;FlexBlock&gt;Content&lt;/FlexBlock&gt;\n            &lt;FlexItem&gt;\n                &lt;Button&gt;Action&lt;/Button&gt;\n            &lt;/FlexItem&gt;\n        &lt;/CardFooter&gt;\n    &lt;/Card&gt;\n);\n</code></pre>\n<p>Check out <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/flex/flex/\">the documentation</a> on <code>Flex</code> for more details on layout composition.</p>\n<h2>Props</h2>\n<p>Note: This component is connected to <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/card/card/#context\"><code>Card</code>&#8216;s Context</a>. The value of the <code>size</code> and <code>isBorderless</code> props is derived from the <code>Card</code> parent component (if there is one). Setting these props directly on this component will override any derived values.</p>\n<h3><code>isBorderless</code>: <code>boolean</code></h3>\n<p>Renders without a border.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isShady</code>: <code>boolean</code></h3>\n<p>Renders with a light gray background color.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>justify</code>: <code>CSSProperties[ 'justifyContent' ]</code></h3>\n<p>See the documentation for the <code>justify</code> prop for the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/flex/flex/#justify\"><code>Flex</code> component</a></p>\n<h3><code>size</code>: <code>string</code></h3>\n<p>Determines the amount of padding within the component.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>medium</code></li>\n<li>Allowed values: <code>xSmall</code>, <code>small</code>, <code>medium</code>, <code>large</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 123,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136326",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136326",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136326/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151726,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136326/revisions/151726"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136326"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10851356,
+    "date": "2018-11-06T03:57:49",
+    "date_gmt": "2018-11-06T03:57:49",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851356"
+    },
+    "modified": "2023-01-16T11:50:10",
+    "modified_gmt": "2023-01-16T11:50:10",
+    "slug": "sticky-posts-classic-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/sticky-posts-classic-editor/",
+    "title": {
+        "rendered": "Sticky Posts (Classic Editor)"
+    },
+    "content": {
+        "rendered": "\n<p><strong>Sticky Posts</strong> is a feature that places a post at the top of the front page of posts, keeping it there until new sticky posts are published.</p>\n\n\n\n<p>Note: Sticky Post is\u00a0<a href=\"https://core.trac.wordpress.org/ticket/12702\">only available for the built-in post type post</a>\u00a0and not for custom post types.</p>\n\n\n\n<h2 class=\"wp-block-heading\"> How to stick a post</h2>\n\n\n\n<ol class=\"wp-block-list\"><li>Select the post you want to stick from&nbsp;<strong>Administration Screens &gt; Posts &gt; All Posts</strong>. Or, create new post from&nbsp;<strong>Administration Screens &gt; Posts &gt; Add New</strong>.</li><li>Select&nbsp;<strong>Document</strong>&nbsp;tab of the right side bar.</li><li>Select&nbsp;<strong>Stick to the Front Page</strong>.</li><li></li></ol>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"264\" height=\"294\" src=\"https://wordpress.org/documentation/files/2019/01/sticky_posts_block.jpg\" alt=\"\" class=\"wp-image-11054952\" /><figcaption>Stick to the Front Page option</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to stick a post in Classic Editor</h2>\n\n\n\n<p>If you are a user of WordPress Version 3.x or 4.x, or Classic Editor, then follow below steps:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Select the post you want to stick from <strong>Administration Screens &gt; Posts &gt; All Posts</strong>. Or, create new post from <strong>Administration Screens &gt; Posts &gt; Add New</strong>.</li><li>Click <strong>Edit</strong> of Visibility in the right side bar.</li><li>Select <strong>Stick this post to the front page</strong>.</li><li>Click <strong>OK</strong>.</li></ol>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/Screen-Shot-2016-12-16-at-11.23.29-AM.png?fit=230%2C300&amp;ssl=1\"><img loading=\"lazy\" decoding=\"async\" width=\"285\" height=\"371\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/Screen-Shot-2016-12-16-at-11.23.29-AM.png?fit=230%2C300&amp;ssl=1\" alt=\"In the publish metabox changing visibility to public and clicking the &quot;Stick this post to the front page&quot; checkbox\" class=\"wp-image-10851357\" srcset=\"https://wordpress.org/documentation/files/2018/11/Screen-Shot-2016-12-16-at-11.23.29-AM.png 285w, https://wordpress.org/documentation/files/2018/11/Screen-Shot-2016-12-16-at-11.23.29-AM-230x300.png 230w\" sizes=\"auto, (max-width: 285px) 100vw, 285px\" /></a><figcaption>Creating a sticky post</figcaption></figure>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Sticky Posts is a feature that places a post at the top of the front page of posts, keeping it there until new sticky posts are published. Note: Sticky Post is\u00a0only available for the built-in post type post\u00a0and not for custom post types. How to stick a post Select the post you want to stick [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10851356",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851356",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851356"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851356/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355365,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851356/revisions/16355365"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851356"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851356"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 37535,
+    "date": "2018-02-12T20:11:17",
+    "date_gmt": "2018-02-12T20:11:17",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=37535"
+    },
+    "modified": "2019-08-19T21:01:14",
+    "modified_gmt": "2019-08-19T21:01:14",
+    "slug": "alerts-and-warnings",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/alerts-and-warnings/",
+    "title": {
+        "rendered": "Alerts and Warnings"
+    },
+    "content": {
+        "rendered": "\n<p>When you visit plugin pages on WordPress.org, you may notice special alerts or warnings. These exist to help visitors understand the status of various plugins.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Approved and Pending Data</h2>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/approved.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"954\" height=\"76\" src=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/approved.jpg?resize=954%2C76&#038;ssl=1\" alt=\"Blue background - This plugin is approved and awaiting data upload but not visible to the public yet. Once you make your first commit, the plugin will become public.\" class=\"wp-image-37536\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/approved.jpg?w=954&amp;ssl=1 954w, https://i0.wp.com/developer.wordpress.org/files/2018/02/approved.jpg?resize=300%2C24&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2018/02/approved.jpg?resize=768%2C61&amp;ssl=1 768w\" sizes=\"auto, (max-width: 954px) 100vw, 954px\" /></a></figure></div>\n\n\n\n<p>Plugins that have been approved but no code has yet been uploaded will see this message:This <em>only</em> displays to the plugin owner and will go away once code has been pushed via SVN.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Closed</h2>\n\n\n\n<p>As of November 2017, plugins that are closed display a notice:</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"629\" height=\"52\" src=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/closed.png?resize=629%2C52&#038;ssl=1\" alt=\"Red background: This plugin has been closed and is no longer available for download.\" class=\"wp-image-37539\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/closed.png?w=629&amp;ssl=1 629w, https://i0.wp.com/developer.wordpress.org/files/2018/02/closed.png?resize=300%2C25&amp;ssl=1 300w\" sizes=\"auto, (max-width: 629px) 100vw, 629px\" /></figure></div>\n\n\n\n<p>This is viewable by all visitors and indicates a plugin was closed. Plugins closed after January 2018 will include a date:</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"624\" height=\"56\" src=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/closed-alt.jpg?resize=624%2C56&#038;ssl=1\" alt=\"Red background: This plugin was closed on February 7, 2018 and is no longer available for download.\" class=\"wp-image-37541\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/closed-alt.jpg?w=624&amp;ssl=1 624w, https://i0.wp.com/developer.wordpress.org/files/2018/02/closed-alt.jpg?resize=300%2C27&amp;ssl=1 300w\" sizes=\"auto, (max-width: 624px) 100vw, 624px\" /></figure></div>\n\n\n\n<p>After 60 days, the alert will be updated to explain <em>why</em> the plugin was closed:</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"626\" height=\"81\" src=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/why-closed.png?resize=626%2C81&#038;ssl=1\" alt=\"Alert detailing why a plugin was closed\" class=\"wp-image-37705\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/why-closed.png?w=626&amp;ssl=1 626w, https://i0.wp.com/developer.wordpress.org/files/2018/02/why-closed.png?resize=300%2C39&amp;ssl=1 300w\" sizes=\"auto, (max-width: 626px) 100vw, 626px\" /></figure></div>\n\n\n\n<p>Plugin committers will see the following additional note:</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"629\" height=\"101\" src=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/closed-owner.png?resize=629%2C101&#038;ssl=1\" alt=\"Blue background: If you did not request this change, please contact plugins@wordpress.org for a status. All developers with commit access are contacted when a plugin is closed, with the reasons why, so check your spam email too.\" class=\"wp-image-37542\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/closed-owner.png?w=629&amp;ssl=1 629w, https://i0.wp.com/developer.wordpress.org/files/2018/02/closed-owner.png?resize=300%2C48&amp;ssl=1 300w\" sizes=\"auto, (max-width: 629px) 100vw, 629px\" /></figure></div>\n\n\n\n<h3 class=\"wp-block-heading\">Reasons why plugins are closed</h3>\n\n\n\n<ul class=\"wp-block-list\"><li>Author Request &#8211; the author has asked the plugin to be closed</li><li>Guideline Violation &#8211; a violation of any of the guideline</li><li>Licensing/Trademark Violation &#8211; non-GPL code in use, or trademarks are being misused</li><li>Merged Into Core &#8211; the plugin is now a part of core (reserved for feature projects)</li><li>Security Issue &#8211; a security concern has been found in this plugin</li></ul>\n\n\n\n<p>Additional details on why a plugin is closed are not provided to anyone outside the WordPress.org security team or the plugin authors, unless there is an extreme circumstance.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Out of Date</h2>\n\n\n\n<p>Plugins that do not support the last 3 major releases of WordPress have the following notice:</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"965\" height=\"83\" src=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/old.jpg?resize=965%2C83&#038;ssl=1\" alt=\"Yellow background: This plugin hasn\u2019t been tested with the latest 3 major releases of WordPress. It may no longer be maintained or supported and may have compatibility issues when used with more recent versions of WordPress.\" class=\"wp-image-37543\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2018/02/old.jpg?w=965&amp;ssl=1 965w, https://i0.wp.com/developer.wordpress.org/files/2018/02/old.jpg?resize=300%2C26&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2018/02/old.jpg?resize=768%2C66&amp;ssl=1 768w\" sizes=\"auto, (max-width: 965px) 100vw, 965px\" /></figure></div>\n\n\n\n<p>Previously this message alerted users to plugins not updated within the last 2 years. In 2018 it was modified to rely on more pertinent data. Since WordPress updates major releases 2 to 3 times per year, and a maintained a plugin should be testing with the recent versions, this alert can be avoided by updating a plugin readme when new versions of WordPress is released.</p>\n\n\n\n<p>Developers are emailed before every major release of WordPress and asked to update this value. They&nbsp;<em>do not</em> need to push a new version, just <a href=\"https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/\">update the readme</a> and edit the value of `Tested up to:` to the latest version of WordPress.</p>\n",
+        "protected": false
+    },
+    "author": 71562,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-37535",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37535",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/71562"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37535/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 125795,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37535/revisions/125795"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=37535"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

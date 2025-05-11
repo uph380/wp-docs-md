@@ -1,0 +1,91 @@
+{
+    "id": 134440,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/base-control/"
+    },
+    "modified": "2024-12-26T16:49:14",
+    "modified_gmt": "2024-12-26T16:49:14",
+    "slug": "base-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/base-control/",
+    "title": {
+        "rendered": "BaseControl"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-basecontrol--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p><code>BaseControl</code> is a component used to generate labels and help text for components handling user inputs.</p>\n<pre><code class=\"language-jsx\">import { BaseControl, useBaseControlProps } from '@wordpress/components';\n\n// Render a `BaseControl` for a textarea input\nconst MyCustomTextareaControl = ({ children, ...baseProps }) =&gt; (\n    // `useBaseControlProps` is a convenience hook to get the props for the `BaseControl`\n    // and the inner control itself. Namely, it takes care of generating a unique `id`,\n    // properly associating it with the `label` and `help` elements.\n    const { baseControlProps, controlProps } = useBaseControlProps( baseProps );\n\n    return (\n        &lt;BaseControl { ...baseControlProps } __nextHasNoMarginBottom&gt;\n            &lt;textarea { ...controlProps }&gt;\n              { children }\n            &lt;/textarea&gt;\n        &lt;/BaseControl&gt;\n    );\n);\n</code></pre>\n<h2>Props</h2>\n<h3><code>__nextHasNoMarginBottom</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<h3><code>as</code></h3>\n<ul>\n<li>Type: <code>\"symbol\" | \"object\" | \"label\" | \"a\" | \"abbr\" | \"address\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"base\" | \"bdi\" | \"bdo\" | \"big\" | \"blockquote\" | \"body\" | \"br\" | \"button\" | ... 516 more ... | (\"view\" &amp; FunctionComponent&lt;...&gt;)</code></li>\n<li>Required: No</li>\n</ul>\n<p>The HTML element or React component to render the component as.</p>\n<h3><code>className</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<h3><code>children</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>The content to be displayed within the <code>BaseControl</code>.</p>\n<h3><code>help</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>Additional description for the control.</p>\n<p>Only use for meaningful description or instructions for the control. An element containing the description will be programmatically associated to the BaseControl by the means of an <code>aria-describedby</code> attribute.</p>\n<h3><code>hideLabelFromVision</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>If true, the label will only be visible to screen readers.</p>\n<h3><code>id</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The HTML <code>id</code> of the control element (passed in as a child to <code>BaseControl</code>) to which labels and help text are being generated.<br />\nThis is necessary to accessibly associate the label with that element.</p>\n<p>The recommended way is to use the <code>useBaseControlProps</code> hook, which takes care of generating a unique <code>id</code> for you.<br />\nOtherwise, if you choose to pass an explicit <code>id</code> to this prop, you are responsible for ensuring the uniqueness of the <code>id</code>.</p>\n<h3><code>label</code></h3>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: No</li>\n</ul>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<h2>Subcomponents</h2>\n<h3>BaseControl.VisualLabel</h3>\n<p><code>BaseControl.VisualLabel</code> is used to render a purely visual label inside a <code>BaseControl</code> component.</p>\n<p>It should only be used in cases where the children being rendered inside <code>BaseControl</code> are already accessibly labeled,<br />\ne.g., a button, but we want an additional visual label for that section equivalent to the labels <code>BaseControl</code> would<br />\notherwise use if the <code>label</code> prop was passed.</p>\n<pre><code class=\"language-jsx\">import { BaseControl } from '@wordpress/components';\n\nconst MyBaseControl = () =&gt; (\n    &lt;BaseControl\n        __nextHasNoMarginBottom\n        help=\"This button is already accessibly labeled.\"\n    &gt;\n        &lt;BaseControl.VisualLabel&gt;Author&lt;/BaseControl.VisualLabel&gt;\n        &lt;Button&gt;Select an author&lt;/Button&gt;\n    &lt;/BaseControl&gt;\n);\n</code></pre>\n<h4>Props</h4>\n<h5><code>as</code></h5>\n<ul>\n<li>Type: <code>\"symbol\" | \"object\" | \"label\" | \"a\" | \"abbr\" | \"address\" | \"area\" | \"article\" | \"aside\" | \"audio\" | ...</code></li>\n<li>Required: No</li>\n</ul>\n<p>The HTML element or React component to render the component as.</p>\n<h5><code>children</code></h5>\n<ul>\n<li>Type: <code>ReactNode</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>The content to be displayed within the <code>BaseControl.VisualLabel</code>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 115,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134440",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134440",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134440/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156150,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134440/revisions/156150"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134440"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

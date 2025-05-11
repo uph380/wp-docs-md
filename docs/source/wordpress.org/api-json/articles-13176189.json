@@ -1,0 +1,109 @@
+{
+    "id": 13176189,
+    "date": "2020-07-27T15:41:29",
+    "date_gmt": "2020-07-27T15:41:29",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13176189"
+    },
+    "modified": "2025-01-03T16:00:07",
+    "modified_gmt": "2025-01-03T16:00:07",
+    "slug": "block-directory",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/block-directory/",
+    "title": {
+        "rendered": "Block Directory"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The Block Directory is a new way for block editor users to discover, test and install new blocks on their website. It is available to content creators who have the capability to install and activate plugins.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to use the Block Directory</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Select the \u201c+\u201d icon at the top, left-hand corner of the editor to open the Block Inserter.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"336\" src=\"https://wordpress.org/documentation/files/2020/07/block-directory-inserter-0-6.7-1024x336.jpg\" alt=\"The editor with icons displayed at the top, above the page content\" class=\"wp-image-16365417\" srcset=\"https://wordpress.org/documentation/files/2020/07/block-directory-inserter-0-6.7-1024x336.jpg 1024w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-0-6.7-300x98.jpg 300w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-0-6.7-768x252.jpg 768w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-0-6.7-1536x504.jpg 1536w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-0-6.7.jpg 1718w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ol start=\"2\" class=\"wp-block-list\">\n<li>Type a keyword in the search field of the Inserter, like &#8220;team&#8221; or &#8220;staff&#8221;.</li>\n</ol>\n\n\n\n<p>WordPress first searches the current site for the block named &#8220;team&#8221; or &#8220;staff&#8221;. If it doesn&#8217;t find a block, it searches in the Block Directory which is a special corner of the WordPress plugin repository, where single block plugins are available. </p>\n\n\n\n<p>If the search finds blocks, they will be displayed in the inserter, including a preview section. Decide which block to use and select it to add it to the page.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"859\" height=\"556\" src=\"https://wordpress.org/documentation/files/2020/07/block-directory-inserter-1-6.7.jpg\" alt=\"Blocks found in the block directory\" class=\"wp-image-16365419\" srcset=\"https://wordpress.org/documentation/files/2020/07/block-directory-inserter-1-6.7.jpg 859w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-1-6.7-300x194.jpg 300w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-1-6.7-768x497.jpg 768w\" sizes=\"auto, (max-width: 859px) 100vw, 859px\" /></figure>\n\n\n\n<p>In the background the single-block plugin is installed and activated, and the user can continue creating the page.</p>\n\n\n\n<ol start=\"3\" class=\"wp-block-list\">\n<li>If no blocks are found in either case, a\u00a0<a href=\"https://developer.wordpress.org/block-editor/\">link to the Block Editor Handbook</a>\u00a0is displayed with details on how to create your own blocks.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"471\" src=\"https://wordpress.org/documentation/files/2020/07/block-directory-inserter-2-6.7-1024x471.jpg\" alt=\"No results in the Block Directory, which displays a notice about creating your own block\" class=\"wp-image-16365420\" srcset=\"https://wordpress.org/documentation/files/2020/07/block-directory-inserter-2-6.7-1024x471.jpg 1024w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-2-6.7-300x138.jpg 300w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-2-6.7-768x353.jpg 768w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-2-6.7-1536x707.jpg 1536w, https://wordpress.org/documentation/files/2020/07/block-directory-inserter-2-6.7.jpg 1726w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ol start=\"3\" class=\"wp-block-list\"></ol>\n\n\n\n<ol start=\"4\" class=\"wp-block-list\">\n<li>If the first choice doesn&#8217;t suit your needs, you can go back to the search and select a different one that also will be installed.</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"3-examples-of-tested-single-block-plugins\">Examples of tested single-block plugins</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/plugins/maps-block-apple/\">Block for Apple Maps</a>,</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/event/\">Event block</a>,</li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/user-profile-block/\">User Profile Block</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">How to uninstall the block</h2>\n\n\n\n<p>Blocks from the Block Directory are installed as a plugin. To uninstall a block that you installed from the Block Directory, go to the Plugins screen. Find the block plugin and deactivate and delete to uninstall the block.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"367\" src=\"https://wordpress.org/documentation/files/2023/02/Screenshot-2023-02-09-at-4.42.00-PM-1024x367.png\" alt=\"How to uninstall the block\" class=\"wp-image-16355674\" srcset=\"https://wordpress.org/documentation/files/2023/02/Screenshot-2023-02-09-at-4.42.00-PM-1024x367.png 1024w, https://wordpress.org/documentation/files/2023/02/Screenshot-2023-02-09-at-4.42.00-PM-300x108.png 300w, https://wordpress.org/documentation/files/2023/02/Screenshot-2023-02-09-at-4.42.00-PM-768x275.png 768w, https://wordpress.org/documentation/files/2023/02/Screenshot-2023-02-09-at-4.42.00-PM-1536x550.png 1536w, https://wordpress.org/documentation/files/2023/02/Screenshot-2023-02-09-at-4.42.00-PM.png 1942w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to reinstall a block</h2>\n\n\n\n<p>If a previously used block is no longer available on the site, you have the option to reinstall it.</p>\n\n\n\n<p>When the page is first loaded, a search will be done in the background to check if that block is still available. If it has been found, a\u00a0<strong>Install [block name]</strong>\u00a0button will be displayed in place of the missing block on the page. Select the button to automatically reinstall the missing block.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"241\" src=\"https://wordpress.org/documentation/files/2020/07/block-directory-reinstall-6.3-1024x241.png\" alt=\"Examples: Missing block with \u201cInstall [block name]&quot; and \u201cKeep as HTML\u201d options.\" class=\"wp-image-16365421\" srcset=\"https://wordpress.org/documentation/files/2020/07/block-directory-reinstall-6.3-1024x241.png 1024w, https://wordpress.org/documentation/files/2020/07/block-directory-reinstall-6.3-300x71.png 300w, https://wordpress.org/documentation/files/2020/07/block-directory-reinstall-6.3-768x181.png 768w, https://wordpress.org/documentation/files/2020/07/block-directory-reinstall-6.3.png 1332w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>A\u00a0<strong>Keep as HTML</strong>\u00a0button will also be displayed, or it will be the only button present if no matching block was found when the page loaded.</p>\n\n\n\n<p>You can choose that option instead. It lets you convert the content into a custom HTML block so you still have a chance to use the content of the block you had before.</p>\n\n\n\n<p>You could also choose to remove the missing block and choose another one from the Block Directory using the steps outlined above.</p>\n\n\n\n<h2 class=\"wp-block-heading has-medium-font-size\">Video showing how the Block Directory works</h2>\n\n\n\n<figure class=\"wp-block-embed is-type-video is-provider-videopress wp-block-embed-videopress wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"VideoPress Video Player\" aria-label='VideoPress Video Player' width='500' height='281' src='https://video.wordpress.com/embed/RpDhdRqj?at=181&amp;hd=0&amp;cover=1' frameborder='0' allowfullscreen allow='clipboard-write'></iframe><script src='https://v0.wordpress.com/js/next/videopress-iframe.js?m=1725245713'></script>\n</div></figure>\n\n\n\n<p>In this video shows you how the Block Directory works. It&#8217;s starts at 3:00 time stamp. Start it at the beginning if you are new to the block editor and need a refresher. </p>\n\n\n\n<p><em>On<a href=\"https://learn.wordpress.org/\"> Learn.WordPress.org </a>contributors started creating workshop videos for self-study and <a href=\"https://www.meetup.com/learn-wordpress-discussions\" data-type=\"URL\" data-id=\"https://www.meetup.com/learn-wordpress-discussions\">scheduled discussion groups online</a>. Check it out. </em></p>\n\n\n\n<h2 class=\"wp-block-heading has-medium-font-size\">Resource links</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://learn.wordpress.org/workshop/intro-to-the-block-directory/\">Introduction to the Block Directory (Video)</a></li>\n\n\n\n<li><a href=\"https://learn.wordpress.org/workshop/intro-to-publishing-with-the-block-editor/\">Series: Introduction to Publishing with the Block Editor</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/plugins/browse/block/\">Single Block Plugins available through the Block Directory</a></li>\n\n\n\n<li><a href=\"https://make.wordpress.org/plugins/2020/07/22/proposed-block-directory-guidelines/\">Proposed Block Directory guidelines</a></li>\n</ul>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-large-font-size\" id=\"changelog\">Changelog<strong> </strong></h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2025-0103\n<ul class=\"wp-block-list\">\n<li>Updated screenshots with WordPress 6.7</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-02-09\n<ul class=\"wp-block-list\">\n<li>Reworded the Install and Uninstall sections</li>\n\n\n\n<li>Added reinstall section</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-06-14\n<ul class=\"wp-block-list\">\n<li>Removed one of the single block examples that was out of date. </li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-17\n<ul class=\"wp-block-list\">\n<li>Embeded  video from Learn.WordPress.org</li>\n\n\n\n<li>Added link to original source of the video</li>\n\n\n\n<li>Added link to Series &#8220;Introduction to Publishing with the Block Editor</li>\n\n\n\n<li>Added shout-out to learn.WordPress.org site with links</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-10\n<ul class=\"wp-block-list\">\n<li>Added Changelog</li>\n\n\n\n<li>Added Resource Links</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Block Directory is a new way for block editor users to discover, test and install new blocks on their website. It is available to content creators who have the capability to install and activate plugins. How to use the Block Directory WordPress first searches the current site [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-13176189",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13176189",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13176189"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13176189/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365422,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13176189/revisions/16365422"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13176189"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13176189"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11433,
+    "date": "2014-10-23T20:20:57",
+    "date_gmt": "2014-10-23T20:20:57",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11433"
+    },
+    "modified": "2024-09-16T02:22:03",
+    "modified_gmt": "2024-09-16T02:22:03",
+    "slug": "submitting-your-theme-to-wordpress-org",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/releasing-your-theme/submitting-your-theme-to-wordpress-org/",
+    "title": {
+        "rendered": "Submitting Your Theme to WordPress.org"
+    },
+    "content": {
+        "rendered": "\n<p>Before themes are added to the WordPress Theme Directory, they are closely reviewed by the <a href=\"https://make.wordpress.org/themes/\">Themes team</a> to make sure they adhere to basic <a href=\"https://make.wordpress.org/themes/handbook/review/required/\">guidelines</a>. This review&nbsp;ensures that WordPress users across the globe can download themes that are high quality and secure.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"need-help\">Need Help?</h2>\n\n\n\n<p>If you have theme development questions, please post them in the <a href=\"https://wordpress.org/support/forum/wp-advanced/\">Developing with WordPress</a> forum. Volunteers from around the world are ready to assist you with the development of your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"guidelines\">Guidelines</h2>\n\n\n\n<p>Make sure you review the <a href=\"https://make.wordpress.org/themes/handbook/review/required/\">Theme Review Guidelines</a> before uploading a theme. If you have questions about these guidelines, you can ask them in the <a href=\"https://wordpress.slack.com/messages/themes\">#themes</a> channel in <a href=\"https://chat.wordpress.org/\">Slack</a>. Anyone with a WordPress.org account can access the Making WordPress Slack.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"testing-with-sample-data\">Testing With Sample Data</h2>\n\n\n\n<p>The <a href=\"https://make.wordpress.org/themes/\">WordPress Themes Team</a> will be reviewing your theme using the sample data from the <a href=\"https://developer.wordpress.org/themes/release/testing/\">Theme Unit Test</a>. Before uploading your theme for review, please test it with this sample export data.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"uploading-your-theme\">Uploading Your Theme</h2>\n\n\n\n<p>When you are ready to submit your theme for review, please upload your theme ZIP at&nbsp;<a href=\"https://wordpress.org/themes/getting-started/\">Themes &gt; Upload</a>.&nbsp;Future updates are to be uploaded via the same page.</p>\n\n\n\n<p>More information about the theme review process is available on the <a href=\"https://make.wordpress.org/themes/handbook/review/\">Themes Team website</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5823,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11433",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11433",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11433/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155222,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11433/revisions/155222"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11433"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

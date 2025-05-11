@@ -1,0 +1,97 @@
+{
+    "id": 25410,
+    "date": "2018-03-18T08:05:40",
+    "date_gmt": "2018-03-18T08:05:40",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25410"
+    },
+    "modified": "2018-03-18T08:05:40",
+    "modified_gmt": "2018-03-18T08:05:40",
+    "slug": "custom-front-page-templates",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/custom-front-page-templates/",
+    "title": {
+        "rendered": "Custom Front Page Templates"
+    },
+    "content": {
+        "rendered": "<p>By default, WordPress shows your most recent posts in reverse chronological order on the front page of your site. Many WordPress users want a static front page or splash page as the front page instead. This &#8220;static front page&#8221; look is common for users desiring static or welcoming information on the front page of the site.</p>\r\n<p>The look and feel of the front page of the site is based upon the choices of the user combined with the features and options of the WordPress Theme. </p>\r\n<h2>Template Hierarchy of Custom Front Page</h2>\r\nOn the site front page, WordPress will always use the <tt>front-page.php</tt> template file, if it exists. If <tt>front-page.php</tt> does not exist, WordPress will determine which template file to use, depending on the user configuration of <a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> &gt;Front page displays, as follows:\r\n<ul>\r\n \t<li><b>A static page:</b> WordPress uses the <a title=\"Template Hierarchy\" href=\"https://codex.wordpress.org/Template_Hierarchy#Page_display\">Static Page</a> template hierarchy:\r\n \t<ol>\r\n \t<li><a title=\"Page Templates\" href=\"https://codex.wordpress.org/Page_Templates#Custom_Page_Template\">Custom Page Template</a></li>\r\n \t<li><tt>page-{id}.php</tt></li>\r\n \t<li><tt>page-{slug}.php</tt></li>\r\n \t<li><tt>page.php</tt></li>\r\n \t<li><tt>index.php</tt></li></li>\r\n \t</ol></li>\r\n \t<li><b>Your latest posts:</b> WordPress uses the <a title=\"Template Hierarchy\" href=\"https://codex.wordpress.org/Template_Hierarchy#Home_Page_display\">Blog Posts Index</a> template hierarchy:\r\n \t<ol>\r\n \t<li><tt>home.php</tt></li>\r\n \t<li><tt>index.php</tt></li>\r\n \t</ol></li>\r\n</ul>\r\n<h3><span id=\"Custom_Site_Front_Page_Template\" class=\"mw-headline\">Custom Site Front Page Template</span></h3>\r\nTo create a custom site front page template, include either of the following in the Theme:\r\n<ul>\r\n \t<li><tt>front-page.php</tt></li>\r\n \t<li>A <a title=\"Page Templates\" href=\"https://codex.wordpress.org/Page_Templates#Custom_Page_Template\">Custom Page Template</a> (e.g. <tt>template-featured.php</tt> for featured content)</li>\r\n</ul>\r\n<h3><span id=\"Custom_Blog_Posts_Index_Page_Template\" class=\"mw-headline\">Custom Blog Posts Index Page Template</span></h3>\r\nTo create a custom blog posts index template, include the following in the Theme:\r\n<ul>\r\n \t<li><tt>home.php</tt></li>\r\n</ul>\r\nUse only the <tt>home.php</tt> template file for the blog posts index. Do not use a Custom Page Template (such as <tt>template-blog.php</tt>) for two reasons:\r\n<ol>\r\n \t<li>When the static front page feature is configured properly, WordPress will not use a Custom Page Template to display the blog posts index, even if a Custom Page Template is assigned to the page designated as the &#8220;Posts page&#8221;. WordPress will <i>only</i> use either <tt>home.php</tt> or <tt>index.php</tt>.</li>\r\n \t<li>When the Custom Page Template is assigned to a static page other than the one designated as the &#8220;Posts page,&#8221; the blog posts index loop pagination will not work properly.</li>\r\n</ol>\r\n\r\n<h2><span id=\"Contextual_Conditional_Tags\" class=\"mw-headline\">Contextual Conditional Tags</span></h2>\r\n<h3>is_front_page</h3>\r\nThe <a title=\"Conditional Tags\" href=\"https://codex.wordpress.org/Conditional_Tags\">Conditional Tag</a> <a href=\"https://codex.wordpress.org/Function_Reference/is_front_page\">is_front_page()</a> checks if the site front page is being displayed. Returns true when the site front page is being displayed, regardless of whether &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Front page displays&#8217; is set to &#8220;Your latest posts&#8221; or &#8220;A static page&#8221;.\r\n<h3>is_home</h3>\r\nThe <a title=\"Conditional Tags\" href=\"https://codex.wordpress.org/Conditional_Tags\">Conditional Tag</a> <a href=\"https://codex.wordpress.org/Function_Reference/is_home\">is_home()</a> checks if the blog posts index is being displayed. Returns true when the blog posts index is being displayed: when the site front page is being displayed and &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Front page displays&#8217; is set to &#8220;Your latest posts&#8221;, or when &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Front page displays&#8217; is set to &#8220;A static page&#8221; and the &#8220;Posts Page&#8221; value is the current <a title=\"Pages\" href=\"https://codex.wordpress.org/Pages\">Page</a> being displayed.\r\n\r\n<p>When the site front page is being displayed and &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Front page displays&#8217; is set to &#8220;Your latest posts&#8221;, both<tt><a href=\"https://developer.wordpress.org/reference/functions/is_front_page/\" rel=\"function\">is_front_page()</a> </tt> and <tt><a href=\"https://developer.wordpress.org/reference/functions/is_home/\" rel=\"function\">is_home()</a> </tt> will return true.</p>\r\n\r\n<h2><span id=\"Configuration_of_front-page.php\" class=\"mw-headline\">Configuration of <tt>front-page.php</tt></span></h2>\r\nIf it exists, the <tt>front-page.php</tt> template file is used on the site&#8217;s front page regardless of whether &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Front page displays&#8217; is set to &#8220;A static page&#8221; or &#8220;Your latest posts,&#8221; the Theme will need to account for both options, so that the site front page will display either a static page or the blog posts index. There are a few methods to do so.\r\n<h3><span id=\"Conditional_display_within_front-page.php\" class=\"mw-headline\">Conditional display within <tt>front-page.php</tt></span></h3>\r\nOne way to allow <tt>front-page.php</tt> to account for both options for &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Front page displays&#8217; is to add a conditional inside of <tt>front-page.php</tt> itself, using <a title=\"Option Reference\" href=\"https://codex.wordpress.org/Option_Reference#Reading\"><tt>get_option( 'show_on_front' )</tt></a>, <a title=\"Function Reference/get home template\" href=\"https://codex.wordpress.org/Function_Reference/get_home_template\"><tt>get_home_template()</tt></a>, and<a title=\"Function Reference/get page template\" href=\"https://codex.wordpress.org/Function_Reference/get_page_template\"><tt>get_page_template()</tt></a>.\r\n\r\nMethod 1: including custom content directly within <tt>front-page.php</tt>:\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">if ( 'posts' == get_option( 'show_on_front' ) ) {\r\n    include( get_home_template() );\r\n} else {\r\n    // Custom content markup goes here\r\n}</code></pre>\r\nMethod 2: including any page template:\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">if ( 'posts' == get_option( 'show_on_front' ) ) {\r\n    include( get_home_template() );\r\n} else {\r\n    include( get_page_template() );\r\n}</code></pre>\r\n<h3><span id=\"Filtering_frontpage_template\" class=\"mw-headline\">Filtering <tt>frontpage_template</tt></span></h3>\r\nAnother way to allow the site front page to display either a static page/custom content or the blog posts index, without adding conditional code within <tt>front-page.php</tt>, is to <a title=\"Function Reference/get query template\" href=\"https://codex.wordpress.org/Function_Reference/get_query_template\">filter <tt>frontpage_template</tt></a>, by adding a filter callback to <tt>functions.php</tt>:\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">function themeslug_filter_front_page_template( $template ) {\r\n    return is_home() ? &apos;&apos; : $template;\r\n}\r\nadd_filter( 'frontpage_template', 'themeslug_filter_front_page_template' );</code></pre>\r\nThis method causes WordPress to bypass the <tt>front-page.php</tt> template file altogether when the blog posts index is being displayed.\r\n\r\n<h2><span id=\"Adding_custom_query_loops_to_front-page.php\" class=\"mw-headline\">Adding custom query loops to <tt>front-page.php</tt></span></h2>\r\nIf the <tt>front-page.php</tt> template file includes a default <a title=\"The Loop\" href=\"https://codex.wordpress.org/The_Loop\">WordPress Loop</a>, like so:\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">&amp;lt;?php\r\nif ( have_posts() ) : while ( have_posts() ) : the_post();\r\n    // do something\r\nendwhile; else:\r\n    // no posts found\r\nendif;</code></pre>\r\nThat loop applies to the post content of the static page assigned to &#8216;<a class=\"mw-redirect\" title=\"Administration Panels\" href=\"https://codex.wordpress.org/Administration_Panels#Reading\">Settings</a> &gt; <a class=\"mw-redirect\" title=\"Settings Reading SubPanel\" href=\"https://codex.wordpress.org/Settings_Reading_SubPanel\">Reading</a> -&gt;Posts page&#8217;.\r\n\r\nTo display custom loops (latest blog posts, custom/featured content, etc.), add secondary loop queries using calls to <a title=\"Class Reference/WP Query\" href=\"https://codex.wordpress.org/Class_Reference/WP_Query\">WP_Query</a>. For example, to show the 3 latest blog posts:\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php line-numbers\">$latest_blog_posts = new WP_Query( array( 'posts_per_page' =&amp;gt; 3 ) );\r\n\r\nif ( $latest_blog_posts-&amp;gt;have_posts() ) : while ( $latest_blog_posts-&amp;gt;have_posts() ) : $latest_blog_posts-&amp;gt;the_post();\r\n    // Loop output goes here\r\nendwhile; endif;</code></pre>\r\n\r\n<h2><span id=\"Pagination\" class=\"mw-headline\">Pagination</span></h2>\r\nStatic front pages are not intended to be paged. None of the WordPress <a title=\"Next and Previous Links\" href=\"https://codex.wordpress.org/Next_and_Previous_Links\">Previous / Next page link</a> functions work with a static front page. Pagination on a static front page uses the <tt>page</tt> query variable, not the <tt>paged</tt> variable. See the <a title=\"Class Reference/WP Query\" href=\"https://codex.wordpress.org/Class_Reference/WP_Query\">WP_Query</a> for details.\r\n\r\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25410",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25410",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25410/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 25424,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25410/revisions/25424"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25410"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 16233094,
+    "date": "2022-11-25T05:07:43",
+    "date_gmt": "2022-11-25T05:07:43",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16233094"
+    },
+    "modified": "2024-06-08T17:52:28",
+    "modified_gmt": "2024-06-08T17:52:28",
+    "slug": "pocket-casts-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/pocket-casts-embed/",
+    "title": {
+        "rendered": "Pocket Casts embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Pocket Casts Embed</em> block is a new WordPress feature, and a variation of the <a href=\"https://wordpress.org/documentation/article/embed-block/\">Embed block</a>. The block enables you to insert any Pocket Casts content, such as a podcast page, an episode, and the time position within an episode, into your post or page.</p>\n\n\n\n<p>Keep in mind that you will need to subscribe to a premium Pocket Casts account to add your favorite or own Pocket Casts content into the block.</p>\n\n\n\n<p>To add the <em>Pocket Casts Embed</em> block to the editor, click the (<strong>+</strong>) icon at the top left corner to open the Block Inserter. Search for and then click the <em>Pocket Casts Embed</em> block to add it to the editor.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/11/screencast_how-to-add-pocket-casts-embed-block.mp4\"></video></figure>\n\n\n\n<p>Alternatively, you can manually insert the <em>Pocket Casts Embed</em> block using the keyboard shortcut <kbd>/pocket-casts</kbd>.</p>\n\n\n\n<p>Once inserted, you can embed a Pocket Casts URL to the block. Here are the steps to insert a podcast page and an episode to the <em>Pocket Casts Embed</em> block:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Find a podcast and click on it to open the podcast page. Hover your mouse over the podcast title and click the <strong>Share</strong> button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-share.png\" alt=\"Share button on a Pocket Casts podcast\" class=\"wp-image-16233104\" style=\"width:764px;height:388px\" width=\"764\" height=\"388\" srcset=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-share.png 1018w, https://wordpress.org/documentation/files/2022/11/pocket-casts-share-300x152.png 300w, https://wordpress.org/documentation/files/2022/11/pocket-casts-share-768x390.png 768w\" sizes=\"auto, (max-width: 764px) 100vw, 764px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>If you want to share an episode, click on the episode and click the <strong>Share</strong> button on the pop-up window. Here is an example of the Share Episode pop-up window:</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-episode-share.png\" alt=\"Share button on a Pocket Casts podcast episode\" class=\"wp-image-16233107\" style=\"width:455px;height:238px\" width=\"455\" height=\"238\" srcset=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-episode-share.png 607w, https://wordpress.org/documentation/files/2022/11/pocket-casts-episode-share-300x157.png 300w\" sizes=\"auto, (max-width: 455px) 100vw, 455px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Copy the URL link from the pop-up window. Here is an example of the Share Podcast pop-up window:</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-url-1.png\" alt=\"URL to share Pocket Casts podcast\" class=\"wp-image-16233108\" style=\"width:452px;height:177px\" width=\"452\" height=\"177\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Paste the URL link into the text box on the <em>Pocket Casts Embed</em> block and click the <strong>Embed</strong> button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-embed.png\" alt=\"Pocket Casts embed block placeholder, with the highlighted Embed button\" class=\"wp-image-16233109\" style=\"width:491px;height:155px\" width=\"491\" height=\"155\" srcset=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-embed.png 655w, https://wordpress.org/documentation/files/2022/11/pocket-casts-embed-300x94.png 300w\" sizes=\"auto, (max-width: 491px) 100vw, 491px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>You will see a preview of the embedded podcast content on the editor.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-preview.png\" alt=\"A preview of Pocket Casts embed on the block editor\" class=\"wp-image-16233110\" style=\"width:695px;height:481px\" width=\"695\" height=\"481\" srcset=\"https://wordpress.org/documentation/files/2022/11/pocket-casts-preview.png 927w, https://wordpress.org/documentation/files/2022/11/pocket-casts-preview-300x207.png 300w, https://wordpress.org/documentation/files/2022/11/pocket-casts-preview-768x531.png 768w\" sizes=\"auto, (max-width: 695px) 100vw, 695px\" /></figure>\n\n\n\n<p>Moreover, you can also embed a Pocket Casts URL directly into the block editor. Here are the steps:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Create a new post.</li>\n\n\n\n<li>Copy and paste a Pocket Casts URL into the block editor, for example, <a href=\"https://pca.st/k2rof194\">https://pca.st/k2rof194</a> or <a href=\"https://pca.st/qekyjgs6\">https://pca.st/qekyjgs6</a>.</li>\n\n\n\n<li>Check if the URL is replaced by the Pocket Casts player.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/11/screencast_how-to-add-pocket-casts-embed-block-variation.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>The block toolbar displays several tools used to customize each block. When you select the <em>Pocket Casts Embed</em> block, it will show the block toolbar that contains the following tools:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/transform.png\" alt=\"Transform button on the Pocket Casts Embed block toolbar\" class=\"wp-image-16233111\" style=\"width:231px;height:80px\" width=\"231\" height=\"80\" srcset=\"https://wordpress.org/documentation/files/2022/11/transform.png 308w, https://wordpress.org/documentation/files/2022/11/transform-300x103.png 300w\" sizes=\"auto, (max-width: 231px) 100vw, 231px\" /></figure>\n\n\n\n<p>Use the <strong>Transform</strong> button to change the <em>Pocket Casts Embed</em> block into a Paragraph, a Column, or a Group block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/align-1.png\" alt=\"Change alignment button on the Pocket Casts Embed block toolbar\" class=\"wp-image-16233112\" style=\"width:231px;height:80px\" width=\"231\" height=\"80\" /></figure>\n\n\n\n<p>You can change the alignment of the <em>Pocket Casts Embed</em> block using this tool. Click on the <strong>Change alignment</strong> button and select one of the following alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong> \u2013 is the default block size.</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 increases the block width beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> \u2013 extends the block to cover the full width of the screen.</li>\n\n\n\n<li><strong>Align left</strong> \u2013 make the block left-aligned.</li>\n\n\n\n<li><strong>Align center</strong> \u2013 make the block center-aligned.</li>\n\n\n\n<li><strong>Align right</strong> \u2013 make the block right-aligned.</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/podcast-casts-edit-1.png\" alt=\"Edit URL button on the Pocket Casts Embed block toolbar\" class=\"wp-image-16233113\" style=\"width:305px;height:80px\" width=\"305\" height=\"80\" /></figure>\n\n\n\n<p>The <strong>Edit URL</strong> button only appears after you have embedded the podcast content. It lets you change the <em>Pocket Casts Embed</em>\u2019s URL via the Embed block. Overwrite the existing URL and paste a new one on the URL field and click the Embed button to confirm the changes.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\" data-type=\"helphub_article\" data-id=\"13748329\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>WordPress blocks have specific configuration options in the block settings panel. To access the <em>Pocket Casts Embed</em> block settings panel, click the <strong>Settings </strong>button at the top-right corner of the WordPress editor. Alternatively, click the <strong>More options</strong> or three dots icon in the <em>Pocket Casts Embed</em> block toolbar and select <strong>Show more settings</strong>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media settings</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/media-settings.png\" alt=\"Media settings for the Pocket Casts Embed block\" class=\"wp-image-16233115\" style=\"width:412px;height:206px\" width=\"412\" height=\"206\" srcset=\"https://wordpress.org/documentation/files/2022/11/media-settings.png 549w, https://wordpress.org/documentation/files/2022/11/media-settings-300x150.png 300w\" sizes=\"auto, (max-width: 412px) 100vw, 412px\" /></figure>\n\n\n\n<p>The Media settings option allows you to control the behavior of the <em>Pocket Casts Embed</em> block when viewed from a smaller device, such as a mobile phone screen. The option only appears after you have embedded the podcast content. The Media settings option is active by default.</p>\n\n\n\n<p>When you turn the toggle switch off, the <em>Pocket Casts Embed</em> block may not preserve its aspect ratio when the browser\u2019s window is resized. Meanwhile, if the option is active, the block will maintain its aspect ratio regardless of the browser\u2019s window size.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/css-classes-1.png\" alt=\"Additional CSS Class(es) field for the Pocket Casts Embed block\" class=\"wp-image-16233117\" style=\"width:415px;height:239px\" width=\"415\" height=\"239\" /></figure>\n\n\n\n<p>The Advanced section allows you to add CSS class(es) to the <em>Pocket Casts Embed</em> block. Therefore, you can insert custom CSS styles into the block.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-11-25</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Pocket Casts Embed block is a new WordPress feature, and a variation of the Embed block. The block enables you to insert any Pocket Casts content, such as a podcast page, an episode, and the time position within an episode, into your post or page. Keep in [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-16233094",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16233094",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16233094"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16233094/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360358,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16233094/revisions/16360358"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16233094"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16233094"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

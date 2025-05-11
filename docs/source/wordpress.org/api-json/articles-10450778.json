@@ -1,0 +1,109 @@
+{
+    "id": 10450778,
+    "date": "2018-11-18T04:53:40",
+    "date_gmt": "2018-11-18T04:53:40",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10450778"
+    },
+    "modified": "2024-03-18T16:50:27",
+    "modified_gmt": "2024-03-18T16:50:27",
+    "slug": "create-a-search-page",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/create-a-search-page/",
+    "title": {
+        "rendered": "Create a search page"
+    },
+    "content": {
+        "rendered": "\n<p>A Search Page is a WordPress <a href=\"https://codex.wordpress.org/Pages\">Page</a> with a custom <a href=\"https://codex.wordpress.org/Pages#Page_Templates\">Page template</a> to give users more information for searching your site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to create it?</h2>\n\n\n\n<p>Follow these steps to create a search page.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>On the&nbsp;<a href=\"https://codex.wordpress.org/Administration%20Screens\">Admin Area</a>&nbsp;go to Pages &gt; Add New.</li>\n\n\n\n<li>In the title field enter&nbsp;<strong>Search</strong>.</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Add a new block</a>&nbsp;named &#8220;<strong>Search</strong>&#8220;.</li>\n\n\n\n<li>Publish the page.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">How to test it?</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Leave the Admin Area and go to the User Area.</li>\n\n\n\n<li>Click on the Search link from the Menu to land on the newly created Search page.</li>\n\n\n\n<li>In the search field, type the keyword to search and submit.</li>\n\n\n\n<li>The search results must appear on the same page.</li>\n\n\n\n<li>If no post is found with the keyword then &#8220;No posts were found.&#8221; message would appear.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2024/03/834-fhd.mp4\"></video></figure>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>A Search Page is a WordPress Page with a custom Page template to give users more information for searching your site. How to create it? Follow these steps to create a search page. How to test it?</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10450778",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10450778",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10450778"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10450778/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359947,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10450778/revisions/16359947"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10450778"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10450778"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

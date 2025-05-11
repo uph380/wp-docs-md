@@ -1,0 +1,91 @@
+{
+    "id": 134528,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-preset-default/"
+    },
+    "modified": "2024-10-30T16:55:32",
+    "modified_gmt": "2024-10-30T16:55:32",
+    "slug": "packages-babel-preset-default",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-preset-default/",
+    "title": {
+        "rendered": "@wordpress/babel-preset-default"
+    },
+    "content": {
+        "rendered": "<p>Default <a href=\"https://babeljs.io/\">Babel</a> preset for WordPress development.</p>\n<p>The preset includes configuration which enable language features and syntax extensions targeted for support by WordPress. This includes <a href=\"https://github.com/tc39/proposals\">ECMAScript proposals</a> which have reached <a href=\"https://tc39.es/process-document/\">Stage 4 (&#8220;Finished&#8221;)</a>, as well as the <a href=\"https://react.dev/learn/writing-markup-with-jsx\">JSX syntax extension</a>. For more information, refer to the <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/docs/contributors/code/coding-guidelines.md#javascript\">JavaScript Coding Guidelines</a>.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/babel-preset-default --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h3>Usage</h3>\n<p>There are a number of methods to configure Babel. See <a href=\"https://babeljs.io/docs/en/configuration\">Babel&#8217;s Configuration documentation</a> for more information. To use this preset, simply reference <code>@wordpress/babel-preset-default</code> in the <code>presets</code> option in your Babel configuration.</p>\n<p>For example, using <code>.babelrc</code>:</p>\n<pre><code class=\"language-json\">{\n    \"presets\": [ \"@wordpress/babel-preset-default\" ]\n}\n</code></pre>\n<h4>Extending Configuration</h4>\n<p>This preset is an opinionated configuration. If you would like to add to or change this configuration, you can do so by expanding your Babel configuration to include plugins or presets which override those included through this preset. It may help to familiarize yourself <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/packages/babel-preset-default/index.js\">the implementation of the configuration</a> to see which specific plugins are enabled by default through this preset.</p>\n<p>For example, if you&#8217;d like to use a new language feature proposal which has not reached the stability requirements of WordPress, you can add those as additional plugins in your Babel configuration:</p>\n<pre><code class=\"language-json\">{\n    \"presets\": [ \"@wordpress/babel-preset-default\" ],\n    \"plugins\": [ \"@babel/plugin-transform-class-properties\" ]\n}\n</code></pre>\n<h3>Polyfill</h3>\n<p>There is a complementary <code>build/polyfill.js</code> (minified version \u2013 <code>build/polyfill.min.js</code>) file available that polyfills ECMAScript features missing in the <a href=\"https://make.wordpress.org/core/handbook/best-practices/browser-support/\">browsers supported</a> by the WordPress project (<a href=\"https://github.com/WordPress/gutenberg/pull/31279\">#31279</a>). It&#8217;s a drop-in replacement for the deprecated <code>@babel/polyfill</code> package, and it&#8217;s also based on <a href=\"https://github.com/zloirock/core-js\"><code>core-js</code></a> project.</p>\n<p>This needs to be included in some cases, if the features being used require polyfills. You can either prepend it to your compiled code or include it in a <code>&lt;script&gt;</code> before it.</p>\n<h4>TC39 Proposals</h4>\n<p>If you need to use a proposal that is not Stage 4, this polyfill will not automatically import those for you. You will have to import those from another polyfill like <a href=\"https://github.com/zloirock/core-js\"><code>core-js</code></a> individually.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 241,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134528",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134528",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134528/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155495,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134528/revisions/155495"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134528"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134623,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/architecture/full-site-editing-templates/"
+    },
+    "modified": "2025-01-07T18:34:11",
+    "modified_gmt": "2025-01-07T18:34:11",
+    "slug": "full-site-editing-templates",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/architecture/full-site-editing-templates/",
+    "title": {
+        "rendered": "Site Editing Templates"
+    },
+    "content": {
+        "rendered": "<h2>Template and template part flows</h2>\n<p>This document will explain the internals of how templates and templates parts are rendered in the frontend and edited in the backend.</p>\n<h2>Storage</h2>\n<p>Just like the regular templates, the block templates live initially as files in the theme folder but the main difference is that the user can edit these templates in the UI in the Site Editor.</p>\n<p>When a user edits a template (or template-part), the initial theme template file is kept as is but a forked version of the template is saved to the <code>wp_template</code> custom post type (or <code>wp_template_part</code> for template parts).</p>\n<p>These capabilities mean that at any point in time, a mix of template files (from the theme) and CPT templates (the edited templates) are used to render the frontend of the site.</p>\n<h2>Synchronization</h2>\n<p>In order to simplify the algorithm used to edit and render the templates from two different places, we performed an operation called &#8220;template synchronization&#8221;.</p>\n<p>The synchronization consists of duplicating the theme templates in the <code>wp_template</code> (and <code>wp_template_part</code>) custom templates with an <code>auto-draft</code> status. When a user edits these templates, the status is updated to <code>publish</code>.</p>\n<p>This means:</p>\n<ul>\n<li>The rendering/fetching of templates only need to consider the custom post type templates. It is not necessary to fetch the template files from the theme folder directly. The synchronization will ensure these are duplicated in the CPT.</li>\n<li>Untouched theme templates have the <code>auto-draft</code> status.</li>\n<li>Edited theme templates have the <code>publish</code> status.</li>\n</ul>\n<p>The synchronization is important for two different flows:</p>\n<ul>\n<li>When editing the template and template parts, the site editor frontend fetches the edited and available templates through the REST API. This means that for all <code>GET</code> API requests performed to the <code>wp-templates</code> and <code>wp-template-parts</code> endpoint synchronization is required.</li>\n<li>When rendering a template (sometimes referred to as &#8220;resolving a template&#8221;): this is the algorithm that WordPress follows to traverse the template hierarchy and find the right template to render for the current page being loaded.</li>\n<li>When exporting a block theme, we need to export all its templates back as files. The synchronization is required to simplify the operation and only export the CPT templates.</li>\n</ul>\n<h2>Switching themes</h2>\n<p>Since block themes make use of templates that can refer to each other and that can be saved to a custom post type, it becomes possible to mix templates and template parts from different themes. For example:</p>\n<ul>\n<li>A user might like the &#8220;header&#8221; template part of theme A and would like to use it in theme B.</li>\n<li>A user might like the &#8220;contact&#8221; template from theme A and would like to use it in theme B.</li>\n</ul>\n<p>Enabling these flows will require well thought UIs and experience. For the current phase of Full-site editing, we&#8217;re starting by forbidding these possibilities and making template and template-parts theme specific.</p>\n<p>That said, it is still important to keep track of where the template and template part come from initially. From which theme, it&#8217;s based. We do so by saving a <code>theme</code> post meta containing the theme identifier for each template and template part CPT entry.</p>\n<p>In the future, we might consider allowing the user to mix template and template parts with different <code>theme</code> post meta values.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134617,
+    "menu_order": 361,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134623",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134623",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134623/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151761,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134623/revisions/151761"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134623"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

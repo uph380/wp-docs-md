@@ -1,0 +1,109 @@
+{
+    "id": 13164462,
+    "date": "2020-07-24T09:27:09",
+    "date_gmt": "2020-07-24T09:27:09",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13164462"
+    },
+    "modified": "2024-06-08T18:42:37",
+    "modified_gmt": "2024-06-08T18:42:37",
+    "slug": "screencast-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/screencast-block/",
+    "title": {
+        "rendered": "Screencast embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Screencast is a digital recording of your computer screen. It usually includes audio narration and is a different type of instructional video. </p>\n\n\n\n<p>With the <a href=\"https://www.techsmith.com/screencast.html\">Screencast</a> Embed block, you can add Screencast videos on your posts/pages. You need a Screencast account to embed a video.&nbsp;</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to embed a Screencast video to your post or page:</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Create and upload a Screencast video in your <a href=\"https://app.screencast.com/\">Screencast</a> account and copy the URL of the video.</li>\n</ol>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Add a Screencast embed block to your post or page</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"357\" height=\"144\" src=\"https://wordpress.org/documentation/files/2020/08/add-embed-screencast-WP5.5r8.3.png\" alt=\"Screencast block embed \" class=\"wp-image-13236018\" srcset=\"https://wordpress.org/documentation/files/2020/08/add-embed-screencast-WP5.5r8.3.png 357w, https://wordpress.org/documentation/files/2020/08/add-embed-screencast-WP5.5r8.3-300x121.png 300w\" sizes=\"auto, (max-width: 357px) 100vw, 357px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the link into the textbox. Press the \u201cEmbed\u201d button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"621\" height=\"282\" src=\"https://wordpress.org/documentation/files/2020/08/put-link-WP5.5r8.3.png\" alt=\"Embed option for the block to paste the URL.\" class=\"wp-image-13236023\" srcset=\"https://wordpress.org/documentation/files/2020/08/put-link-WP5.5r8.3.png 621w, https://wordpress.org/documentation/files/2020/08/put-link-WP5.5r8.3-300x136.png 300w\" sizes=\"auto, (max-width: 621px) 100vw, 621px\" /></figure>\n\n\n\n<p>If the link can be successfully embedded into the post/page, you will see the preview in your block editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"600\" height=\"391\" src=\"https://wordpress.org/documentation/files/2020/08/preview-1-WP5.5r8.3.png\" alt=\"Preview of the embedded Screencast video within the WordPress editor.\" class=\"wp-image-13236029\" srcset=\"https://wordpress.org/documentation/files/2020/08/preview-1-WP5.5r8.3.png 600w, https://wordpress.org/documentation/files/2020/08/preview-1-WP5.5r8.3-300x196.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message \u201cSorry, this content could not be embedded.\u201d You will have two choices: Try again with a different URL or convert to link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"586\" height=\"300\" src=\"https://wordpress.org/documentation/files/2020/08/Not-embeded-WP5.5r8.3.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-13236040\" srcset=\"https://wordpress.org/documentation/files/2020/08/Not-embeded-WP5.5r8.3.png 586w, https://wordpress.org/documentation/files/2020/08/Not-embeded-WP5.5r8.3-300x154.png 300w\" sizes=\"auto, (max-width: 586px) 100vw, 586px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click on the Preview button on the top right corner of the page/post to see how it will look on the front-end</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"469\" src=\"https://wordpress.org/documentation/files/2020/07/image-6-1024x469.png\" alt=\"Preview of the embedded Screencast video within the WordPress editor.\" class=\"wp-image-13164472\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-6-1024x469.png 1024w, https://wordpress.org/documentation/files/2020/07/image-6-300x137.png 300w, https://wordpress.org/documentation/files/2020/07/image-6-768x351.png 768w, https://wordpress.org/documentation/files/2020/07/image-6.png 1191w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the&nbsp; Screencast embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"600\" height=\"391\" src=\"https://wordpress.org/documentation/files/2020/08/preview-1-WP5.5r8.3-1.png\" alt=\"Block Toolbar with options available for the Screencast Block.\" class=\"wp-image-13236056\" srcset=\"https://wordpress.org/documentation/files/2020/08/preview-1-WP5.5r8.3-1.png 600w, https://wordpress.org/documentation/files/2020/08/preview-1-WP5.5r8.3-1-300x196.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"420\" height=\"266\" src=\"https://wordpress.org/documentation/files/2020/08/transform-to-WP5.5r8.3.png\" alt=\"Options to transform the Screencast block to Paragraph, Columns or Group.\" class=\"wp-image-13236059\" srcset=\"https://wordpress.org/documentation/files/2020/08/transform-to-WP5.5r8.3.png 420w, https://wordpress.org/documentation/files/2020/08/transform-to-WP5.5r8.3-300x190.png 300w\" sizes=\"auto, (max-width: 420px) 100vw, 420px\" /></figure>\n\n\n\n<p>You can transform a Screencast embed to a Group. This would give you the ability to change the background color around the Screencast embed.</p>\n\n\n\n<figure class=\"wp-block-image alignleft size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/grouping-WP5.5r8.3-1024x483.png\" alt=\"Editor view of a Screencast Embed as a group with Color Settings controls\" class=\"wp-image-13236064\" width=\"230\" height=\"108\" srcset=\"https://wordpress.org/documentation/files/2020/08/grouping-WP5.5r8.3-1024x483.png 1024w, https://wordpress.org/documentation/files/2020/08/grouping-WP5.5r8.3-300x142.png 300w, https://wordpress.org/documentation/files/2020/08/grouping-WP5.5r8.3-768x363.png 768w, https://wordpress.org/documentation/files/2020/08/grouping-WP5.5r8.3.png 1112w\" sizes=\"auto, (max-width: 230px) 100vw, 230px\" /></figure>\n\n\n\n<figure class=\"wp-block-image alignleft size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/grouping-backgroung-color-WP5.5r8.3.png\" alt=\"Screencast Embed with a green background.\" class=\"wp-image-13236062\" width=\"225\" height=\"184\" srcset=\"https://wordpress.org/documentation/files/2020/08/grouping-backgroung-color-WP5.5r8.3.png 592w, https://wordpress.org/documentation/files/2020/08/grouping-backgroung-color-WP5.5r8.3-300x246.png 300w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /></figure>\n\n\n\n<p>Left: Editor view of an Screencast Embed as a group with Color Settings controls</p>\n\n\n\n<p>Screencast embed with a green background.</p>\n\n\n\n<p></p>\n\n\n\n<p><strong>Change alignment &nbsp;</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/alignment-WP5.5r8.3.png\" alt=\"Screencast Embed with a yellow background.\" class=\"wp-image-13236074\" width=\"320\" height=\"209\" srcset=\"https://wordpress.org/documentation/files/2020/08/alignment-WP5.5r8.3.png 389w, https://wordpress.org/documentation/files/2020/08/alignment-WP5.5r8.3-300x197.png 300w\" sizes=\"auto, (max-width: 320px) 100vw, 320px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the Screencast post left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Screencast post alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the&nbsp; Screencast post align right</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the Screencast post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p><strong>Note:</strong> \u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.&nbsp;</p>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Screencast Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"615\" height=\"284\" src=\"https://wordpress.org/documentation/files/2020/08/edit-WP5.5r8.3.png\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" class=\"wp-image-13236078\" srcset=\"https://wordpress.org/documentation/files/2020/08/edit-WP5.5r8.3.png 615w, https://wordpress.org/documentation/files/2020/08/edit-WP5.5r8.3-300x139.png 300w\" sizes=\"auto, (max-width: 615px) 100vw, 615px\" /></figure>\n\n\n\n<p><strong>More options</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>No block settings for this particular block</p>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"294\" height=\"293\" src=\"https://wordpress.org/documentation/files/2020/07/image-16.png\" alt=\"\" class=\"wp-image-13164492\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-16.png 294w, https://wordpress.org/documentation/files/2020/07/image-16-150x150.png 150w\" sizes=\"auto, (max-width: 294px) 100vw, 294px\" /></figure>\n\n\n\n<p>The advanced section lets you add a CSS class to your block.</p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-02-10\n<ul class=\"wp-block-list\">\n<li>Added info about the screencast account and links to the site</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-19\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-11\n<ul class=\"wp-block-list\">\n<li>screenshots as per WordPress 5.5</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-24</li>\n</ul>\n\n\n\n<p></p>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Screencast is a digital recording of your computer screen. It usually includes audio narration and is a different type of instructional video. With the Screencast Embed block, you can add Screencast videos on your posts/pages. You need a Screencast account to embed a video.&nbsp; Steps to embed a [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13164462",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13164462",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13164462"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13164462/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360388,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13164462/revisions/16360388"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13164462"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13164462"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

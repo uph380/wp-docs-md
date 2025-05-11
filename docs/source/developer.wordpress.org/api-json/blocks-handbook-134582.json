@@ -1,0 +1,91 @@
+{
+    "id": 134582,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-nux/"
+    },
+    "modified": "2025-01-06T18:49:12",
+    "modified_gmt": "2025-01-06T18:49:12",
+    "slug": "packages-nux",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-nux/",
+    "title": {
+        "rendered": "@wordpress/nux"
+    },
+    "content": {
+        "rendered": "<p>The NUX module exposes components, and <code>wp.data</code> methods useful for onboarding a new user to the WordPress admin interface. Specifically, it exposes <em>tips</em> and <em>guides</em>.</p>\n<p>A <em>tip</em> is a component that points to an element in the UI and contains text that explains the element&#8217;s functionality. The user can dismiss a tip, in which case it never shows again. The user can also disable tips entirely. Information about tips is persisted between sessions using <code>localStorage</code>.</p>\n<p>A <em>guide</em> allows a series of tips to be presented to the user one by one. When a user dismisses a tip that is in a guide, the next tip in the guide is shown.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/nux --save\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>DotTip</h2>\n<p><code>DotTip</code> is a React component that renders a single <em>tip</em> on the screen. The tip will point to the React element that <code>DotTip</code> is nested within. Each tip is uniquely identified by a string passed to <code>tipId</code>.</p>\n<p>See <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/nux/src/components/dot-tip/README.md\">the component&#8217;s README</a> for more information.</p>\n<pre><code class=\"language-jsx\">&lt;button onClick={ ... }&gt;\n    Add to Cart\n    &lt;DotTip tipId=\"acme/add-to-cart\"&gt;\n        Click here to add the product to your shopping cart.\n    &lt;/DotTip&gt;\n&lt;/button&gt;\n}\n</code></pre>\n<h2>Determining if a tip is visible</h2>\n<p>You can programmatically determine if a tip is visible using the <code>isTipVisible</code> select method.</p>\n<pre><code class=\"language-jsx\">const isVisible = select( 'core/nux' ).isTipVisible( 'acme/add-to-cart' );\nconsole.log( isVisible ); // true or false\n</code></pre>\n<h2>Manually dismissing a tip</h2>\n<p><code>dismissTip</code> is a dispatch method that allows you to programmatically dismiss a tip.</p>\n<pre><code class=\"language-jsx\">&lt;button\n    onClick={ () =&gt; {\n        dispatch( 'core/nux' ).dismissTip( 'acme/add-to-cart' );\n    } }\n&gt;\n    Dismiss tip\n&lt;/button&gt;\n</code></pre>\n<h2>Disabling and enabling tips</h2>\n<p>Tips can be programmatically disabled or enabled using the <code>disableTips</code> and <code>enableTips</code> dispatch methods. You can query the current setting by using the <code>areTipsEnabled</code> select method.</p>\n<p>Calling <code>enableTips</code> will also un-dismiss all previously dismissed tips.</p>\n<pre><code class=\"language-jsx\">const areTipsEnabled = select( 'core/nux' ).areTipsEnabled();\nreturn (\n    &lt;button\n        onClick={ () =&gt; {\n            if ( areTipsEnabled ) {\n                dispatch( 'core/nux' ).disableTips();\n            } else {\n                dispatch( 'core/nux' ).enableTips();\n            }\n        } }\n    &gt;\n        { areTipsEnabled ? 'Disable tips' : 'Enable tips' }\n    &lt;/button&gt;\n);\n</code></pre>\n<h2>Triggering a guide</h2>\n<p>You can group a series of tips into a guide by calling the <code>triggerGuide</code> dispatch method. The given tips will then appear one by one.</p>\n<p>A tip cannot be added to more than one guide.</p>\n<pre><code class=\"language-jsx\">dispatch( 'core/nux' ).triggerGuide( [\n    'acme/product-info',\n    'acme/add-to-cart',\n    'acme/checkout',\n] );\n</code></pre>\n<h2>Getting information about a guide</h2>\n<p><code>getAssociatedGuide</code> is a select method that returns useful information about the state of the guide that a tip is associated with.</p>\n<pre><code class=\"language-jsx\">const guide = select( 'core/nux' ).getAssociatedGuide( 'acme/add-to-cart' );\nconsole.log( 'Tips in this guide:', guide.tipIds );\nconsole.log( 'Currently showing:', guide.currentTipId );\nconsole.log( 'Next to show:', guide.nextTipId );\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 301,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134582",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134582",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134582/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156172,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134582/revisions/156172"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134582"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 11032107,
+    "date": "2019-05-08T11:39:49",
+    "date_gmt": "2019-05-08T11:39:49",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11032107"
+    },
+    "modified": "2023-01-16T12:12:22",
+    "modified_gmt": "2023-01-16T12:12:22",
+    "slug": "the-wordpress-gallery-block-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/the-wordpress-gallery-block-editor/",
+    "title": {
+        "rendered": "The WordPress Gallery (Block Editor)"
+    },
+    "content": {
+        "rendered": "\n<p>Note: This page uses Block Editor. If you are a Classic Editor User, refer <a href=\"/support/article/the-wordpress-gallery/\">this page</a>.  </p>\n\n\n\n<h2 class=\"wp-block-heading\">Overview</h2>\n\n\n\n<p>Image galleries are a great way to share groups of pictures on your WordPress site. The <strong>Create Gallery</strong> feature of the WordPress media uploader allows you to add a simple image gallery to pages or posts on your site.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/11/published-gallery.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"710\" height=\"686\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/published-gallery.png?fit=710%2C686&amp;ssl=1\" alt=\"A published gallery with captions\" class=\"wp-image-10851303\" srcset=\"https://wordpress.org/documentation/files/2018/11/published-gallery.png 710w, https://wordpress.org/documentation/files/2018/11/published-gallery-300x290.png 300w\" sizes=\"auto, (max-width: 710px) 100vw, 710px\" /></a><figcaption>End result of published gallery</figcaption></figure>\n\n\n\n<p>This article introduces how to add an image gallery using the media library.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding image gallery using media library</h2>\n\n\n\n<p>Here\u2019s how to add an image gallery step-by-step, using the media uploader:</p>\n\n\n\n<p><em>Note: Before adding a gallery, you should be comfortable using the </em>Add media<em> feature and the media uploader to <a href=\"/support/article/inserting-images-into-posts-and-pages/\">add images to your media library and place them into posts</a>.</em></p>\n\n\n\n<h3 class=\"wp-block-heading\">Step 1 \u2013 Place your cursor</h3>\n\n\n\n<p>A gallery can go anywhere on a page or post &#8211; by itself on a blank page, or above, below, or in the midst of text. Start by placing your cursor where you want the gallery to appear &#8211; if it&#8217;s in between blocks of text, like in the photo example below, consider adding a return and placing your cursor on a new line so there&#8217;s space above and below.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1021\" height=\"573\" src=\"https://wordpress.org/documentation/files/2019/05/Screenshot_24.png\" alt=\"\" class=\"wp-image-11508628\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_24.png 1021w, https://wordpress.org/documentation/files/2019/05/Screenshot_24-300x168.png 300w, https://wordpress.org/documentation/files/2019/05/Screenshot_24-768x431.png 768w\" sizes=\"auto, (max-width: 1021px) 100vw, 1021px\" /><figcaption> <br />Place cursor where gallery should be</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Step 2 \u2013 Select the Gallery block</h3>\n\n\n\n<p>Once you&#8217;ve placed your cursor where you want your image gallery to appear, click on the <strong>+</strong> symbol on the left of the cursor and select Gallery.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"817\" height=\"517\" src=\"https://wordpress.org/documentation/files/2019/05/Gutenberg-Gallery-Block-1.png\" alt=\"\" class=\"wp-image-11508612\" srcset=\"https://wordpress.org/documentation/files/2019/05/Gutenberg-Gallery-Block-1.png 817w, https://wordpress.org/documentation/files/2019/05/Gutenberg-Gallery-Block-1-300x190.png 300w, https://wordpress.org/documentation/files/2019/05/Gutenberg-Gallery-Block-1-768x486.png 768w\" sizes=\"auto, (max-width: 817px) 100vw, 817px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Step 3 \u2013 Add and/or Select the Images You Want to Include</h3>\n\n\n\n<p>You can add or select the images you want to include in your image gallery by choosing from either of the following options in the center of the media uploader window:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Upload Files:</strong> Upload the images you want to use from your computer by dragging them into the upload area. You can add more than one image, and they will be automatically grouped together as an image gallery.</li><li><strong>Media Library:</strong> Select from previously uploaded images in the media library by clicking on the ones you wish to add to the gallery. You will see a checkbox next to your selections.</li></ul>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1340\" height=\"673\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/05/Screenshot_25.png?fit=1024%2C514&amp;ssl=1\" alt=\"\" class=\"wp-image-11508652\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_25.png 1340w, https://wordpress.org/documentation/files/2019/05/Screenshot_25-300x151.png 300w, https://wordpress.org/documentation/files/2019/05/Screenshot_25-1024x514.png 1024w, https://wordpress.org/documentation/files/2019/05/Screenshot_25-768x386.png 768w\" sizes=\"auto, (max-width: 1340px) 100vw, 1340px\" /><figcaption>Select the images you want to add from the media gallery</figcaption></figure>\n\n\n\n<p><em>Note: You can create an image gallery using directly images from your computer simply by switching back and forth between the Upload Files and Media Library options.</em></p>\n\n\n\n<p>As you upload and/or select images, you will see your selection confirmed on the Insert Media screen by checkboxes at the top corner of each thumbnail. Also, a row of thumbnails appears at the bottom of the window to help you keep track of all the images you\u2019ve selected. When you are happy with your selection, click the <strong>Create a new gallery</strong> button.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"514\" src=\"https://wordpress.org/documentation/files/2019/05/Screenshot_25-1024x514.png\" alt=\"\" class=\"wp-image-11508652\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_25-1024x514.png 1024w, https://wordpress.org/documentation/files/2019/05/Screenshot_25-300x151.png 300w, https://wordpress.org/documentation/files/2019/05/Screenshot_25-768x386.png 768w, https://wordpress.org/documentation/files/2019/05/Screenshot_25.png 1340w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Step 4 \u2013 Edit Your Gallery</h3>\n\n\n\n<p>On the Edit Gallery page, you can do the following things before inserting the gallery you have created into your page or post:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Rearrange your images:</strong> Drag and Drop image thumbnails to rearrange the order of images in your gallery.</li><li><strong>Reverse Order:</strong> Reverses the order of the images in your gallery.</li><li><strong>Add image descriptions:</strong> Add descriptions to your images (optional) which appear as image captions below each thumbnail in the gallery.</li><li><strong>Remove images:</strong> Hover over a thumbnail and click on the &#8220;X&#8221; to remove any of the images you previously selected.</li><li><strong>Add more images:</strong> Click on the &#8220;Add to Gallery&#8221; link in the left-hand sidebar and add or select the images you want to include in your image gallery by choosing from either &#8220;Upload Files&#8221; or &#8220;Media Library&#8221; tabs.</li><li><strong>Cancel Gallery:</strong> Click on the &#8220;Cancel Gallery&#8221; link from the actions on the left to exit the Edit Gallery page and cancel your image gallery.</li></ul>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1365\" height=\"682\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/05/Screenshot_26.png?fit=1024%2C512&amp;ssl=1\" alt=\"\" class=\"wp-image-11508666\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_26.png 1365w, https://wordpress.org/documentation/files/2019/05/Screenshot_26-300x150.png 300w, https://wordpress.org/documentation/files/2019/05/Screenshot_26-1024x512.png 1024w, https://wordpress.org/documentation/files/2019/05/Screenshot_26-768x384.png 768w\" sizes=\"auto, (max-width: 1365px) 100vw, 1365px\" /></figure>\n\n\n\n<p>After inserting your gallery, you also have several Gallery Settings available in the right pane of your editor screen:</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"655\" height=\"589\" src=\"https://wordpress.org/documentation/files/2019/05/Screenshot_27.png\" alt=\"\" class=\"wp-image-11508673\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_27.png 655w, https://wordpress.org/documentation/files/2019/05/Screenshot_27-300x270.png 300w\" sizes=\"auto, (max-width: 655px) 100vw, 655px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Links To:</strong> Controls whether the gallery thumbnails (on the published page/post) link to the image attachment page or directly to the source image file itself.</li><li><strong>Columns:</strong> Set the number of columns you would like to have in your gallery. 3 Columns is the default settings, which is ideal for most sites.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Editing Existing Galleries</h3>\n\n\n\n<p>Within the visual editor, the image gallery is displayed as a series of thumbnail images.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1365\" height=\"696\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/05/Screenshot_29.png?fit=1024%2C522&amp;ssl=1\" alt=\"\" class=\"wp-image-11508687\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_29.png 1365w, https://wordpress.org/documentation/files/2019/05/Screenshot_29-300x153.png 300w, https://wordpress.org/documentation/files/2019/05/Screenshot_29-1024x522.png 1024w, https://wordpress.org/documentation/files/2019/05/Screenshot_29-768x392.png 768w\" sizes=\"auto, (max-width: 1365px) 100vw, 1365px\" /><figcaption> Gallery in WordPress editor</figcaption></figure>\n\n\n\n<p>When you click any area of the image gallery, icon buttons appear top of the area. At any time, you can edit the images or settings of your gallery by clicking on the Edit button. You can remove the image gallery at any time by clicking on the Remove button.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1087\" height=\"633\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/05/Screenshot_31.png?fit=1024%2C596&amp;ssl=1\" alt=\"\" class=\"wp-image-11508695\" srcset=\"https://wordpress.org/documentation/files/2019/05/Screenshot_31.png 1087w, https://wordpress.org/documentation/files/2019/05/Screenshot_31-300x175.png 300w, https://wordpress.org/documentation/files/2019/05/Screenshot_31-1024x596.png 1024w, https://wordpress.org/documentation/files/2019/05/Screenshot_31-768x447.png 768w\" sizes=\"auto, (max-width: 1087px) 100vw, 1087px\" /><figcaption> Edit image to edit</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Resources &amp; Gallery Plugins</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/plugins/search/gallery\">Gallery Plugins</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Note: This page uses Block Editor. If you are a Classic Editor User, refer this page. Overview Image galleries are a great way to share groups of pictures on your WordPress site. The Create Gallery feature of the WordPress media uploader allows you to add a simple image gallery to pages or posts on your [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        87,
+        78
+    ],
+    "class_list": [
+        "post-11032107",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-media",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11032107",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11032107"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11032107/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355380,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11032107/revisions/16355380"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11032107"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11032107"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

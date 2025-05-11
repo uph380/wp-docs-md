@@ -1,0 +1,91 @@
+{
+    "id": 157184,
+    "date": "2025-02-21T04:17:13",
+    "date_gmt": "2025-02-21T04:17:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/repeater/"
+    },
+    "modified": "2025-02-21T04:17:32",
+    "modified_gmt": "2025-02-21T04:17:32",
+    "slug": "repeater",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/repeater/",
+    "title": {
+        "rendered": "Repeater Field"
+    },
+    "content": {
+        "rendered": "<p>The Repeater field allows you to create a set of sub fields which can be repeated again and again.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Flexible row management</li>\n<li>Multiple field types support</li>\n<li>Nested repeater capability</li>\n<li>Row reordering</li>\n<li>Min/max rows control</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Sub Fields &#8211; Add fields to repeat</li>\n<li>Minimum Rows &#8211; Set required rows</li>\n<li>Maximum Rows &#8211; Limit total rows</li>\n<li>Layout &#8211; Table or block display</li>\n<li>Button Label &#8211; Customize add row text</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157184",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157184",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157184/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157231,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157184/revisions/157231"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157184"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

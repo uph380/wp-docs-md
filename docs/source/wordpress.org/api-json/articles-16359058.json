@@ -1,0 +1,107 @@
+{
+    "id": 16359058,
+    "date": "2023-11-13T00:35:50",
+    "date_gmt": "2023-11-13T00:35:50",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16359058"
+    },
+    "modified": "2024-08-14T05:53:02",
+    "modified_gmt": "2024-08-14T05:53:02",
+    "slug": "twenty-twenty-four",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-twenty-four/",
+    "title": {
+        "rendered": "Twenty Twenty-Four"
+    },
+    "content": {
+        "rendered": "\n<p><a href=\"https://wordpress.org/themes/twentytwentyfour/\">Twenty Twenty-Four</a> is the new, stylish and versatile, default theme for <a href=\"https://wordpress.org/documentation/wordpress-version/version-6-4/\">WordPress Version 6.4.</a></p>\n\n\n\n<p>A  block theme designed to take full advantage of full site editing capabilities, particularly the opportunities offered by patterns. Create new pages in a matter of moments by constructing them from the wide range of patterns that come bundled with the theme.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls poster=\"https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-13-at-11.37.43-am.png\" src=\"https://wordpress.org/documentation/files/2023/11/279638031-608e4865-2328-4ee8-a436-f2e55d3565c1.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Quick specs</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Requires at least WordPress 6.4.<strong> </strong></li>\n\n\n\n<li>Requires at least PHP version 5.6.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Full site editing support</h2>\n\n\n\n<p>Twenty Twenty-Four is designed to support full site editing&#8217;s powerful features, including:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>: an editor that allows you to edit all parts of your site, navigate between templates, and more.</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/styles-overview/\">Styles</a>: a feature that allows you to customize your site, including individual blocks, as much as you\u2019d like with different colors, typography, layouts, and more.</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/template-editor/\">Templates</a>: edit, create, and manage templates used by pages, posts, and other content.</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/template-part-block/\">Template parts</a>: a way to organize and display groups of blocks as part of a block template mainly for site structure, like Headers and Footers.</li>\n\n\n\n<li>Theme blocks including the <a href=\"https://wordpress.org/documentation/article/navigation-block/\">Navigation block</a>,<a href=\"https://wordpress.org/documentation/article/query-loop-block/\"> Query Loop block</a>, and more.</li>\n</ul>\n\n\n\n<p>Like its predecessor Twenty Twenty-Three, this theme is designed to use WordPress site-editing features <em>instead of </em>the<em> </em>Customizer, which will be hidden by default. The Customizer may be automatically reactivated if you have plugins that require it.</p>\n\n\n\n<h2 class=\"wp-block-heading\">One theme, many variations</h2>\n\n\n\n<p>In the past, default themes often centered around a specific topic or style. However, Twenty Twenty-Four breaks away from this tradition. This theme is thoughtfully designed to be your all-encompassing choice for any type of website, regardless of its specific focus.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"538\" src=\"https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-2-1024x538.jpg\" alt=\"Three screenshots of alternative Home Page layouts in a a grid\" class=\"wp-image-16359086\" style=\"aspect-ratio:16/9;object-fit:cover\" srcset=\"https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-2-1024x538.jpg 1024w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-2-300x158.jpg 300w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-2-768x403.jpg 768w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-2-1536x806.jpg 1536w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-2.jpg 1600w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Alternative patterns for the Blog Home template</figcaption></figure>\n\n\n\n<p>The Twenty Twenty-Four theme allows users to change certain Templates to use alternative patterns designed for specific use-cases: Business (the default), Writer, and Portfolio.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Alternative patterns</h3>\n\n\n\n<p>Alternative patterns for the Writer and Portfolio types can be switched to for the following templates:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Blog Home</li>\n\n\n\n<li>Index</li>\n\n\n\n<li>Archive</li>\n\n\n\n<li>Search</li>\n</ul>\n\n\n\n<p>You can use the Replace Template functionality to select one of the alternative patterns for your current template.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>When editing one of the Templates mentioned above &#8211; make sure the &#8216;Template&#8217; tab of the sidebar inspector is selected.</li>\n\n\n\n<li>Click the three dots next to the Template name, and select the &#8216;Replace Template&#8217; option from the menu that appears.</li>\n\n\n\n<li>You will be shown a selection of alternative patterns to choose from. Clicking to select one will replace the existing template contents with the new pattern.</li>\n\n\n\n<li>Save the changes to your template.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/tt4-howto-replace-template_compressed.mp4\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Template Parts</h3>\n\n\n\n<p>Twenty Twenty-Four also includes a range of different layouts for the Header and Footer of your site. When editing your Templates you can <a href=\"https://wordpress.org/documentation/article/template-part-block/#replacing-one-template-part-with-another\">replace the template part</a> with one of the variants.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/switch_footer.mov\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Templates</h2>\n\n\n\n<p>Twenty Twenty-Four includes several custom page templates for you to use:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Page no Title</strong>: the layout of a standard page, but with no page title at the top.</li>\n\n\n\n<li><strong>Page with Sidebar</strong>: displays page content with a sidebar on the right hand side.</li>\n\n\n\n<li><strong>Page with Wide Image</strong>: displays a wide featured-image with page title on the left, and content on the right.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Block patterns</h2>\n\n\n\n<p>Explore patterns to save time while crafting creative layouts. Patterns are collections of predesigned blocks whose text and media content can be quickly replaced by your own. Whether a call-to-action, an event announcement, or FAQ, patterns can help jump-start the creation of your page or post.</p>\n\n\n\n<figure class=\"wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-6 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"682\" data-id=\"16359089\" src=\"https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-1-1024x682.jpg\" alt=\"A grid of pattern layouts that are included with the theme\" class=\"wp-image-16359089\" srcset=\"https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-1-1024x682.jpg 1024w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-1-300x200.jpg 300w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-1-768x512.jpg 768w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-1-1536x1023.jpg 1536w, https://wordpress.org/documentation/files/2023/11/TT4-Post-Image-1.jpg 1600w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n</figure>\n\n\n\n<h2 class=\"wp-block-heading\">Style variations</h2>\n\n\n\n<p>Twenty Twenty-Four&#8217;s comes with a minimalist, but versatile, palette in monochromatic greys.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"548\" height=\"856\" src=\"https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.45.36-pm.png\" alt=\"A screenshot of the default color palette - which includes a range of greyscale tones.\" class=\"wp-image-16359097\" style=\"width:297px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.45.36-pm.png 548w, https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.45.36-pm-192x300.png 192w\" sizes=\"auto, (max-width: 548px) 100vw, 548px\" /></figure>\n\n\n\n<p>Prefer a different look? Visit the Styles area in the Editor and choose from 9 additional style variations to instantly switch up the design, including colors and typography.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"656\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.48.34-pm-656x1024.png\" alt=\"A grid of alternative Style color schemes for the theme.\" class=\"wp-image-16359098\" style=\"width:358px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.48.34-pm-656x1024.png 656w, https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.48.34-pm-192x300.png 192w, https://wordpress.org/documentation/files/2023/11/Screenshot-2023-11-01-at-9.48.34-pm.png 660w\" sizes=\"auto, (max-width: 656px) 100vw, 656px\" /></figure>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/style_variations.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block variations</h2>\n\n\n\n<p>Twenty Twenty-Four comes with style variations for a number of blocks &#8211; allowing slightly different appearance from their defaults.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Heading block</h3>\n\n\n\n<p>Headings in Twenty Twenty-Four come with a variation that includes an Asterix as a bullet point above the heading.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/asterix_heading.mov\"></video></figure>\n\n\n\n<p>When editing your headings &#8211; you will see an option in the sidebar to switch to the variant style. Selecting the &#8216;With asterisk&#8217; style will keep the size and font of your heading &#8211; but add the stylized asterix above it.</p>\n\n\n\n<h3 class=\"wp-block-heading\">List block</h3>\n\n\n\n<p>List items in Twenty Twenty Four come with a variation that uses a checkmark as bullet points instead of the default style.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/tt4_list_variation.mov\"></video></figure>\n\n\n\n<p>When editing your list &#8211; you will see an option in the sidebar to switch to the variant style. Selecting the &#8216;Checkmark&#8217; style will keep the swap the default bullet for a checkmark.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Details block</h3>\n\n\n\n<p>The Details block in Twenty Twenty Four come with a variation that uses an arrow to mark the summary instead of the default style.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/tt4_details_variation.mov\"></video></figure>\n\n\n\n<p>When editing your Details block &#8211; you will see an option in the sidebar to switch to the variant style. Selecting the &#8216;Arrow icon&#8217; style will keep the swap the default marker dor the summary section to use an arrow icon.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Navigation links</h3>\n\n\n\n<p>Links within Navigation blocks in Twenty Twenty Four come with a variation that adds an arrow to the right of the link text (sometimes used for indicating a link that leaves the main site).</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/tt4_nav_variation-1.mov\"></video></figure>\n\n\n\n<p>When editing menu items &#8211; you will see an option in the sidebar (Style tab) to switch to the variant style. Selecting the &#8216;With arrow&#8217; style will add the arrow to the right of the link text.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Category and Tag list blocks</h3>\n\n\n\n<p>Category and Tag list blocks in Twenty Twenty Four come with a variation that styles each term as a &#8216;pill&#8217; with a light background.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/11/tt4_taxonomy_list_variation-1.mov\"></video></figure>\n\n\n\n<p>When the Category or Tag blocks within a Query Loop  &#8211; you will see an option in the sidebar (Style tab) to switch to the variant style. Selecting the &#8216;Pill&#8217; style will add a light background color (with rounded corners) to each term in the list..</p>\n\n\n\n<h2 class=\"wp-block-heading\">Design specifications</h2>\n\n\n\n<p>Twenty Twenty-Four comes with the following defaults for style.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Cardo Font</strong> for headlines.</li>\n\n\n\n<li><strong>Sans-serif System</strong> font for paragraphs.</li>\n\n\n\n<li><strong>Instrument Sans</strong>, <strong>Inter</strong>, and <strong>Jost</strong> as alternative fonts.</li>\n\n\n\n<li>The <strong>default color palette </strong>of Twenty Twenty-Four is <strong>light</strong>, providing a fresh and inviting appearance.  The Style Variations (mentioned above) contain a range of alternative color palettes.</li>\n\n\n\n<li>A <strong>content width</strong> of 620 pixels and &#8216;<strong>Wide&#8217; width<em> </em></strong>of 1280 pixels.</li>\n</ul>\n\n\n\n<p>Should you wish &#8211; you can also view a more <a href=\"https://github.com/WordPress/twentytwentyfour/blob/trunk/README.md#token-cheat-sheet\">complete list of the spacing, color, and layout presets used by the theme</a>. And remember, the Site Editor&#8217;s <a href=\"https://wordpress.org/documentation/article/styles-overview/\">Styles tools</a> give a wide range of options for customizing the style of your site beyond these defaults.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Support and resources</h2>\n\n\n\n<p><a href=\"https://wordpress.org/support/theme/twentytwentyfour/?view=all\">Get community help with Twenty Twenty-Four in its support forum</a>. </p>\n\n\n\n<p>Learn how to take full advantage of full site editing with the <a href=\"https://learn.wordpress.org/course/simple-site-design-with-full-site-editing/\">Simple Site Design with Full Site Editing course on Learn.WordPress.org</a>.</p>\n\n\n\n<p>Read more about the Twenty Twenty-Four theme in <a href=\"https://make.wordpress.org/core/2023/08/24/introducing-twenty-twenty-four/\">the introduction post</a>.</p>\n\n\n\n<p><a href=\"https://wordpress.org/documentation/article/twenty-twenty-four-changelog/\">Twenty Twenty-Four changelog.</a></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Twenty Twenty-Four is a default WordPress theme designed to be your all-encompassing choice for any type of website, regardless of its specific focus.</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 24,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        82
+    ],
+    "class_list": [
+        "post-16359058",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16359058",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16359058"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 45,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16359058/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360807,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16359058/revisions/16360807"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16359058"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16359058"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

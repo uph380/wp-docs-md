@@ -1,0 +1,85 @@
+{
+    "id": 145835,
+    "date": "2023-03-28T04:02:41",
+    "date_gmt": "2023-03-28T04:02:41",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/advanced-administration/wordpress/"
+    },
+    "modified": "2024-01-16T20:30:09",
+    "modified_gmt": "2024-01-16T20:30:09",
+    "slug": "wordpress",
+    "status": "publish",
+    "type": "adv-admin-handbook",
+    "link": "https://developer.wordpress.org/advanced-administration/wordpress/",
+    "title": {
+        "rendered": "WordPress configuration"
+    },
+    "content": {
+        "rendered": "<h2>Changelog</h2>\n<ul>\n<li>2022-08-16: Nothing here, yet.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145835",
+        "adv-admin-handbook",
+        "type-adv-admin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145835",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/adv-admin-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145835/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151954,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145835/revisions/151954"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145835"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

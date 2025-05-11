@@ -1,0 +1,91 @@
+{
+    "id": 138993,
+    "date": "2022-01-14T08:54:48",
+    "date_gmt": "2022-01-14T08:54:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-migrations/"
+    },
+    "modified": "2024-10-30T17:09:53",
+    "modified_gmt": "2024-10-30T17:09:53",
+    "slug": "theme-json-migrations",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-migrations/",
+    "title": {
+        "rendered": "Migrating Theme.json to Newer Versions"
+    },
+    "content": {
+        "rendered": "<p>This guide documents the changes between different <code>theme.json</code> versions and how to upgrade. Using older versions will continue to be supported. Upgrading is recommended because new development will continue in the newer versions.</p>\n<h2>Migrating from v1 to v2</h2>\n<p>Upgrading to v2 enables some new features and adjusts the naming of some old features to be more consistent with one another.</p>\n<h3>How to migrate from v1 to v2:</h3>\n<ol>\n<li>Update <code>version</code> to <code>2</code>.</li>\n<li>Rename the properties that were updated (see below) if you&#8217;re using them.</li>\n</ol>\n<p>Refer to the <a href=\"https://make.wordpress.org/core/2022/01/08/updates-for-settings-styles-and-theme-json/\">dev note for the release</a> and the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/\">reference documents</a> for the respective v1 and v2 versions.</p>\n<h3>Renamed properties</h3>\n<table>\n<thead>\n<tr>\n<th>v1</th>\n<th>v2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>settings.border.customRadius</code></td>\n<td><code>settings.border.radius</code></td>\n</tr>\n<tr>\n<td><code>settings.spacing.customMargin</code></td>\n<td><code>settings.spacing.margin</code></td>\n</tr>\n<tr>\n<td><code>settings.spacing.customPadding</code></td>\n<td><code>settings.spacing.padding</code></td>\n</tr>\n<tr>\n<td><code>settings.typography.customLineHeight</code></td>\n<td><code>settings.typography.lineHeight</code></td>\n</tr>\n</tbody>\n</table>\n<h3>New properties</h3>\n<p>New top-level properties: <code>customTemplates</code>, <code>templateParts</code>.</p>\n<p>Additions to settings:</p>\n<ul>\n<li><code>settings.appearanceTools</code></li>\n<li><code>settings.border.color</code></li>\n<li><code>settings.border.style</code></li>\n<li><code>settings.border.width</code></li>\n<li><code>settings.color.background</code></li>\n<li><code>settings.color.defaultGradients</code></li>\n<li><code>settings.color.defaultPalette</code></li>\n<li><code>settings.color.text</code></li>\n<li><code>settings.spacing.blockGap</code></li>\n<li><code>settings.typography.fontFamilies</code></li>\n<li><code>settings.typography.fontStyle</code></li>\n<li><code>settings.typography.fontWeight</code></li>\n<li><code>settings.typography.letterSpacing</code></li>\n<li><code>settings.typography.textColumns</code></li>\n<li><code>settings.typography.textDecoration</code></li>\n<li><code>settings.typography.textTransform</code></li>\n</ul>\n<p>Additions to styles:</p>\n<ul>\n<li><code>styles.border.color</code></li>\n<li><code>styles.border.style</code></li>\n<li><code>styles.border.width</code></li>\n<li><code>styles.filter.duotone</code></li>\n<li><code>styles.spacing.blockGap</code></li>\n<li><code>styles.typography.fontFamily</code></li>\n<li><code>styles.typography.fontStyle</code></li>\n<li><code>styles.typography.fontWeight</code></li>\n<li><code>styles.typography.letterSpacing</code></li>\n<li><code>styles.typography.textColumns</code></li>\n<li><code>styles.typography.textDecoration</code></li>\n<li><code>styles.typography.textTransform</code></li>\n</ul>\n<h3>Changes to property values</h3>\n<p>The default font sizes provided by core (<code>settings.typography.fontSizes</code>) have been updated. The Normal and Huge sizes (with <code>normal</code> and <code>huge</code> slugs) have been removed from the list, and Extra Large (<code>x-large</code> slug) has been added. When the UI controls show the default values provided by core, Normal and Huge will no longer be present. However, their CSS classes and CSS Custom Properties are still enqueued to make sure existing content that uses them still works as expected.</p>\n<h2>Migrating from v2 to v3</h2>\n<p>Upgrading to v3 adjusts preset defaults to be more consistent with one another.</p>\n<h3>How to migrate from v2 to v3:</h3>\n<ol>\n<li>Update <code>version</code> to <code>3</code>.</li>\n<li>Configure the changed defaults (see below).</li>\n</ol>\n<h3>Changed defaults</h3>\n<h4><code>settings.typography.defaultFontSizes</code></h4>\n<p>In theme.json v2, the default font sizes were only shown when theme sizes were not defined. A theme providing font sizes with the same slugs as the defaults would always override them.</p>\n<p>The default <code>fontSizes</code> slugs are: <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>, and <code>xx-large</code>.</p>\n<p>The new <code>defaultFontSizes</code> option gives control over showing default font sizes and preventing those defaults from being overridden.</p>\n<ul>\n<li>When set to <code>true</code> it will show the default font sizes and prevent them from being overridden by the theme.</li>\n<li>When set to <code>false</code> it will hide the default font sizes and allow the theme to use the default slugs.</li>\n</ul>\n<p>It is <code>true</code> by default when switching to v3. This is to be consistent with how other <code>default*</code> options work such as <code>settings.color.defaultPalette</code>, but differs from the behavior in v2.</p>\n<p>To keep behavior similar to v2 with a v3 theme.json:<br />\n* If you do not have any <code>fontSizes</code> defined, <code>defaultFontSizes</code> can be left out or set to <code>true</code>.<br />\n* If you have some <code>fontSizes</code> defined, set <code>defaultFontSizes</code> to <code>false</code>.</p>\n<h4><code>settings.spacing.defaultSpacingSizes</code></h4>\n<p>In theme.json v2, there are two settings that could be used to set theme level spacing sizes: <code>settings.spacing.spacingSizes</code> and <code>settings.spacing.spacingScale</code>. Setting both <code>spacingSizes</code> <em>and</em> <code>spacingScale</code> would only use the values from <code>spacingSizes</code>. And setting either of them would always replace the entire set of default spacing sizes provided by WordPress.</p>\n<p>The default <code>spacingSizes</code> slugs provided by WordPress are: <code>20</code>, <code>30</code>, <code>40</code>, <code>50</code>, <code>60</code>, <code>70</code>, and <code>80</code>.</p>\n<p>The new <code>defaultSpacingSizes</code> option gives control over showing default spacing sizes and preventing those defaults from being overridden.</p>\n<ul>\n<li>When set to <code>true</code> it will show the default spacing sizes and prevent them from being overridden by the theme.</li>\n<li>When set to <code>false</code> it will hide the default spacing sizes and allow the theme to use the default slugs.</li>\n</ul>\n<p><code>defaultSpacingSizes</code> is <code>true</code> by default when switching to v3. This is to be consistent with how other <code>default*</code> options work such as <code>settings.color.defaultPalette</code>, but differs from the behavior in v2.</p>\n<p>Additionally, in v3 both <code>spacingSizes</code> and <code>spacingScale</code> can be set at the same time. Presets defined in <code>spacingSizes</code> with slugs matching the generated presets from <code>spacingSizes</code> will override the generated ones.</p>\n<p>To keep behavior similar to v2 with a v3 theme.json:<br />\n* If you do not have any <code>spacingSizes</code> presets or <code>spacingScale</code> config defined, <code>defaultSpacingSizes</code> can be left out or set to <code>true</code>.<br />\n* If you disabled default spacing sizes by setting <code>spacingScale</code> to <code>{ \"steps\": 0 }</code>, remove the <code>spacingScale</code> config and set <code>defaultSpacingSizes</code> to <code>false</code>.<br />\n* If you defined only one of either <code>spacingScale</code> or <code>spacingSizes</code> for your presets, set <code>defaultSpacingSizes</code> to <code>false</code>.<br />\n* If you defined both <code>spacingScale</code> and <code>spacingSizes</code>, remove the <code>spacingSizes</code> config <em>and</em> set <code>defaultSpacingSizes</code> to <code>false</code>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 138654,
+    "menu_order": 108,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-138993",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138993",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138993/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153881,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138993/revisions/153881"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138654"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=138993"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

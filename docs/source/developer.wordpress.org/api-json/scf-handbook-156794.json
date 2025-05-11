@@ -1,0 +1,91 @@
+{
+    "id": 156794,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/file/file-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:58",
+    "modified_gmt": "2025-02-21T04:17:58",
+    "slug": "file-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/file/file-tutorial/",
+    "title": {
+        "rendered": "Using the File Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a File field</li>\n<li>Configure options:\n<ul>\n<li>Set allowed file types</li>\n<li>Configure size limits</li>\n<li>Choose library restriction</li>\n<li>Set return format</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Document Management\n<ul>\n<li>PDF uploads</li>\n<li>Document attachments</li>\n<li>Resource libraries</li>\n</ul>\n</li>\n<li>Media Handling\n<ul>\n<li>Download files</li>\n<li>Asset management</li>\n<li>Resource linking</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Restrict file types appropriately</li>\n<li>Set reasonable size limits</li>\n<li>Consider storage implications</li>\n<li>Use clear preview options</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156793,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156794",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156794",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156794/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156925,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156794/revisions/156925"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156793"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156794"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

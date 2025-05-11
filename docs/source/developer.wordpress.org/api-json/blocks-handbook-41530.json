@@ -1,0 +1,91 @@
+{
+    "id": 41530,
+    "date": "2019-04-25T22:01:50",
+    "date_gmt": "2019-04-25T22:01:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/repository-management/"
+    },
+    "modified": "2025-01-07T18:34:16",
+    "modified_gmt": "2025-01-07T18:34:16",
+    "slug": "repository-management",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/repository-management/",
+    "title": {
+        "rendered": "Repository Management"
+    },
+    "content": {
+        "rendered": "<p>This is a living document explaining how we collaboratively manage the Gutenberg repository. If you\u2019d like to suggest a change, please open an issue for discussion or submit a pull request to the document.</p>\n<p>This document covers:</p>\n<ul>\n<li><a href=\"#issues\">Issues</a>\n<ul>\n<li><a href=\"#labels\">Labels</a></li>\n<li><a href=\"#milestones\">Milestones</a></li>\n<li><a href=\"#triaging-issues\">Triaging Issues</a></li>\n</ul>\n</li>\n<li><a href=\"#pull-requests\">Pull Requests</a>\n<ul>\n<li><a href=\"#code-review\">Code Review</a></li>\n<li><a href=\"#design-review\">Design Review</a></li>\n<li><a href=\"#merging-pull-requests\">Merging Pull Requests</a></li>\n<li><a href=\"#closing-pull-requests\">Closing Pull Requests</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/how-to-get-your-pull-request-reviewed/\">How To Get Your Pull Request Reviewed?</a></li>\n</ul>\n</li>\n<li><a href=\"#projects\">Projects</a></li>\n</ul>\n<h2>Issues</h2>\n<p>A healthy issue list is one where issues are relevant and actionable. <em>Relevant</em> in the sense that they relate to the project\u2019s current priorities. <em>Actionable</em> in the sense that it\u2019s clear what action(s) need to be taken to resolve the issue.</p>\n<p>Any issues that are irrelevant or not actionable should be closed, because they get in the way of making progress on the project. Imagine the issue list as a desk: the more clutter you have on it, the more difficult it is to use the space to get work done.</p>\n<h3>Labels</h3>\n<p>All issues should have <a href=\"https://github.com/WordPress/gutenberg/labels\">one or more labels</a>.</p>\n<p>Workflow labels start with \u201cNeeds\u201d and may be applied as needed. Ideally, each workflow label will have a group that follows it, such as the Accessibility Team for <code>Needs Accessibility Feedback</code>, the Testing Team for <code>Needs Testing</code>, etc.</p>\n<p><a href=\"https://github.com/WordPress/gutenberg/labels/%5BPriority%5D%20High\">Priority High</a> and <a href=\"https://github.com/WordPress/gutenberg/labels/%5BPriority%5D%20OMGWTFBBQ\">Priority OMGWTFBBQ</a> issues should have an assignee and/or be in an active milestone.</p>\n<p>Help requests or &#8216;how to&#8217; questions should be posted in a relevant support forum as a first step. If something might be a bug but it&#8217;s not clear, the Support Team or a forum volunteer can help troubleshoot the case to help get all the right information needed for an effective bug report.</p>\n<p>Here are some labels you might commonly see:</p>\n<ul>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/Good%20First%20Issue\">Good First Issue</a> &#8211; Issues identified as good for new contributors to work on. Comment to note that you intend to work on the issue and reference the issue number in the pull request you submit.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/Good%20First%20Review\">Good First Review</a> &#8211; Pull requests identified as good for new contributors who are interested in doing code reviews.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/Needs%20Accessibility%20Feedback\">Needs Accessibility Feedback</a> &#8211; Changes that impact accessibility and need corresponding review (e.g. markup changes).</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/Needs%20Design%20Feedback\">Needs Design Feedback</a> &#8211; Changes that modify the design or user experience in some way and need sign-off.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/%5BType%5D%20Bug\">[Type] Bug</a> &#8211; An existing feature is broken in some way.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/%5BType%5D%20Enhancement\">[Type] Enhancement</a> &#8211; Gutenberg would be better with this improvement added.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/%5BType%5D%20Plugin%20Interoperability\">[Type] Plugin Interoperability</a> &#8211; Documentation of a conflict between Gutenberg and a plugin or extension. The plugin author should be informed and provided documentation on how to address.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/labels/%5BStatus%5D%20Needs%20More%20Info\">[Status] Needs More Info</a> &#8211; The issue needs more information in order to be actionable and relevant. Typically this requires follow-up from the original reporter.</li>\n</ul>\n<p><a href=\"https://github.com/WordPress/gutenberg/labels\">Check out the label directory</a> for a listing of all labels.</p>\n<h3>Milestones</h3>\n<p>We put issues into <a href=\"https://github.com/wordpress/gutenberg/milestones\">milestones</a> to better categorize them. Issues are added to milestones starting with <code>WordPress</code> and pull requests are added to milestones ending in <code>(Gutenberg)</code>.</p>\n<p>Here are some milestones you might see:</p>\n<ul>\n<li><a href=\"https://github.com/WordPress/gutenberg/milestone/70\">WordPress X.Y</a>: Tasks that should be done for future WordPress releases.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/milestone/85\">X.Y (Gutenberg)</a>: PRs targeted for the Gutenberg Plugin X.Y release.</li>\n<li><a href=\"https://github.com/WordPress/gutenberg/milestone/35\">Future</a>: this is something that is confirmed by everyone as a good thing but doesn\u2019t fall into other criteria.</li>\n</ul>\n<h3>Triaging issues</h3>\n<p>To keep the issue list healthy, it needs to be triaged regularly. <em>Triage</em> is the practice of reviewing existing issues to make sure they\u2019re relevant, actionable, and have all the information they need.</p>\n<p>Anyone can help triage, although you\u2019ll need contributor permission on the Gutenberg repository to modify an issue\u2019s labels or edit its title.</p>\n<p>See the <a href=\"https://developer.wordpress.org/block-editor/contributors/triage/\">Triage Contributors guide</a> for details.</p>\n<h2>Pull requests</h2>\n<p>Gutenberg follows a feature branch pull request workflow for all code and documentation changes. At a high-level, the process looks like this:</p>\n<ol>\n<li>Check out a new feature branch locally.</li>\n<li>Make your changes, testing thoroughly.</li>\n<li>Commit your changes when you\u2019re happy with them, and push the branch.</li>\n<li>Open your pull request.</li>\n<li>If you are a regular contributor with proper access, label and name your pull request appropriately (see below).</li>\n</ol>\n<p>For labeling and naming pull requests, here are guidelines to consider that make compiling the changelog more efficient and organized. These guidelines are particularly relevant for regular contributors. Don&#8217;t let getting the following right be a blocker for sharing your work &#8211; mistakes are expected and easy to fix!</p>\n<ul>\n<li>When working on experimental screens and features, apply the <code>[Type] Experimental</code> label instead of <code>Feature</code>, <code>Enhancement</code>, etc.</li>\n<li>When working on new features to technical packages (scripts, create-block, adding react hooks, etc), apply the <code>[Type] New API</code> label instead of <code>Feature</code>, <code>Enhancement</code>, etc.</li>\n<li>When fixing a bug or making an enhancement to an internal tool used in the project, apply the <code>[Type] Build Tooling</code> instead of <code>Bugs</code>, <code>Enhancement</code>, etc</li>\n<li>In pull request titles, instead of describing the code change done to fix an issue, consider referring to the actual bug being fixed instead. For example: instead of saying &#8220;Check for nullable object in component&#8221;, it would be preferable to say &#8220;Fix editor breakage when clicking the copy block button&#8221;.</li>\n</ul>\n<p>Along with this process, there are a few important points to mention:</p>\n<ul>\n<li>Non-trivial pull requests should be preceded by a related issue that defines the problem to solve and allows for discussion of the most appropriate solution before actually writing code.</li>\n<li>To make it far easier to merge your code, each pull request should only contain one conceptual change. Keeping contributions atomic keeps the pull request discussion focused on one topic and makes it possible to approve changes on a case-by-case basis.</li>\n<li>Separate pull requests can address different items or todos from their linked issue, there\u2019s no need for a single pull request to cover a single issue if the issue is non-trivial.</li>\n</ul>\n<h3>Code review</h3>\n<p>Every pull request goes through a manual code review, in addition to automated tests. The objectives for the code review are best thought of as:</p>\n<ul>\n<li>Correct \u2014 Does the change do what it\u2019s supposed to?</li>\n<li>Secure \u2014 Would a nefarious party find some way to exploit this change?</li>\n<li>Readable \u2014 Will your future self be able to understand this change months down the road?</li>\n<li>Elegant \u2014 Does the change fit aesthetically within the overall style and architecture?</li>\n<li>Altruistic \u2014 How does this change contribute to the greater whole?</li>\n</ul>\n<p><em>As a reviewer</em>, your feedback should be focused on the idea, not the person. Seek to understand, be respectful, and focus on constructive dialog.</p>\n<p><em>As a contributor</em>, your responsibility is to learn from suggestions and iterate your pull request should it be needed based on feedback. Seek to collaborate and produce the best possible contribution to the greater whole.</p>\n<p>Code reviews are encouraged by everyone who is willing to attempt one. If you review a pull request and are confident in the changes, approve it. If you don&#8217;t feel totally confident it is ready for merging, add your review with a comment that says it should have another set of eyes on it before final approval. This can help filter out obvious bugs and simplify reviews for core members. Following the later reviews will also help improve your reviewing confidence in the future.</p>\n<p>If you are not yet comfortable leaving a full review, try commenting on a PR. Questions about functionality or the reasoning behind a change are helpful too. You could also comment on changes to parts of the code you understand, without leaving a full review.</p>\n<p>If you struggle with getting a review, see: <a href=\"https://developer.wordpress.org/block-editor/contributors/code/how-to-get-your-pull-request-reviewed/\">How To Get Your Pull Request Reviewed?</a></p>\n<h3>Design review</h3>\n<p>If your pull request impacts the design/UI, you need to label appropriately to alert design. To request a design review, add the <a href=\"https://github.com/WordPress/gutenberg/labels/Needs%20Design%20Feedback\">Needs Design Feedback</a> label to your PR. If there are any PRs that require an update to the design/UI, please use the <a href=\"https://github.com/WordPress/gutenberg/labels/Figma%20Library%20Update\">Figma Library Update</a> label.</p>\n<p>As a guide, changes that should be reviewed:</p>\n<ul>\n<li>A change based on a previous design, to confirm the design is still valid with the change.</li>\n<li>Anything that changes something visually.</li>\n<li>If you just want design feedback on an idea or exploration.</li>\n</ul>\n<h3>Merging pull requests</h3>\n<p>A pull request can generally be merged once it is:</p>\n<ul>\n<li>Deemed a worthwhile change to the codebase.</li>\n<li>In compliance with all relevant code review criteria.</li>\n<li>Covered by sufficient tests, as necessary.</li>\n<li>Vetted against all potential edge cases.</li>\n<li>Changelog entries were properly added.</li>\n<li>Reviewed by someone other than the original author.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/git-workflow/#keeping-your-branch-up-to-date\">Rebased</a> onto the latest version of the <code>trunk</code> branch.</li>\n</ul>\n<p>The final pull request merge decision is made by the <strong>@wordpress/gutenberg-core</strong> team.</p>\n<p>All members of the WordPress organization on GitHub have the ability to review and merge pull requests. If you have reviewed a PR and are confident in the code, approve the pull request and comment pinging <strong>@wordpress/gutenberg-core</strong> or a specific core member who has been involved in the PR. Once they confirm there are no objections, you are free to merge the PR into trunk.</p>\n<p>Most pull requests will be automatically assigned a release milestone, but please make sure your merged pull request was assigned one. Doing so creates the historical legacy of what code landed when, and makes it possible for all project contributors (even non-technical ones) to access this information.</p>\n<h3>Closing pull requests</h3>\n<p>Sometimes, a pull request may not be mergeable, no matter how much additional effort is applied to it (e.g. out of scope). In these cases, it\u2019s best to communicate with the contributor graciously while describing why the pull request was closed, this encourages productive future involvement.</p>\n<p>Make sure to:</p>\n<ol>\n<li>Thank the contributor for their time and effort.</li>\n<li>Fully explain the reasoning behind the decision to close the pull request.</li>\n<li>Link to as much supporting documentation as possible.</li>\n</ol>\n<p>If you\u2019d like a template to follow:</p>\n<blockquote><p>\n  Thanks &#095;&#095;&#095;&#095; for the time you\u2019ve spent on this pull request.</p>\n<p>  I\u2019m closing this pull request because &#095;&#095;&#095;&#095;. To clarify further, &#095;&#095;&#095;&#095;.</p>\n<p>  For more details, please see &#095;&#095;&#095;&#095; and &#095;&#095;&#095;&#095;.\n</p></blockquote>\n<h2>Teams</h2>\n<p>Two GitHub teams are used in the project.</p>\n<ul>\n<li><a href=\"https://github.com/orgs/WordPress/teams/gutenberg-core\">Gutenberg Core</a>: A team composed of people that are actively involved in the project: attending meetings regularly, participating in triage sessions, performing reviews regularly, working on features and bug fixes and performing plugin and npm releases.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/orgs/WordPress/teams/gutenberg\">Gutenberg</a>: A team composed of contributors with at least 2\u20133 meaningful contributions to the project.</p>\n</li>\n</ul>\n<p>If you meet this criterion of several meaningful contributions having been accepted into the repository and would like to be added to the Gutenberg team, feel free to ask in the <a href=\"https://make.wordpress.org/chat/\">#core-editor Slack channel</a>.</p>\n<h2>Projects</h2>\n<p>We use <a href=\"https://github.com/WordPress/gutenberg/projects\">GitHub projects</a> to keep track of details that aren&#8217;t immediately actionable, but that we want to keep around for future reference.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135089,
+    "menu_order": 396,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41530",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/41530",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 18,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/41530/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155924,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/41530/revisions/155924"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41530"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

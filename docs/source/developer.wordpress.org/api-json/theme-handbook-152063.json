@@ -1,0 +1,97 @@
+{
+    "id": 152063,
+    "date": "2024-01-26T16:43:01",
+    "date_gmt": "2024-01-26T16:43:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=152063"
+    },
+    "modified": "2024-05-17T11:23:14",
+    "modified_gmt": "2024-05-17T11:23:14",
+    "slug": "privacy",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/privacy/",
+    "title": {
+        "rendered": "Privacy"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress 4.9.6 introduced several tools to help sites meet the requirements of the European Union\u2019s new GDPR (General Data Protection Regulation) and other potential laws across the world. This article details what theme authors need to know about compatibility with the features.</p>\n\n\n\n<p>For the most part, this should not directly impact themes, but you should make sure that nothing in your theme\u2019s design or functionality conflicts with these features.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Privacy Policy page</h2>\n\n\n\n<p>WordPress lets users select a privacy policy page via the <strong>Settings &gt; Privacy</strong> screen in the admin. For newly-created WordPress installs (since version 4.9.6), a privacy policy page is automatically created with a draft status.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Linking to the Privacy Policy page</h3>\n\n\n\n<p>If you need to manually link to the Privacy Policy page on a site, WordPress provides a few functions for getting or outputting the URL or link:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_privacy_policy_url/\"><strong><code>get_privacy_policy_url()</code></strong></a><strong>: </strong>Retrieves the URL to the Privacy Policy page.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/the_privacy_policy_link/\"><strong><code>the_privacy_policy_link()</code></strong></a><strong>:</strong> Displays the Privacy Policy page link with formatting, when applicable.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_the_privacy_policy_link/\"><strong><code>get_the_privacy_policy_link()</code></strong></a><strong>:</strong> Returns the Privacy Policy page link with formatting, when applicable.</li>\n</ul>\n\n\n\n<p>The following example will display the privacy policy link surrounded by a <code>&lt;div&gt;</code> element:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php the_privacy_policy_link( '&lt;div&gt;', '&lt;/div&gt;' ); ?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Privacy Policy page template</h3>\n\n\n\n<p>While it is generally unnecessary for most themes, you can add a custom <a href=\"https://developer.wordpress.org/themes/templates/template-hierarchy/#privacy-policy-page-hierarchy\">Privacy Policy template</a> to customize the output of the page. This is an optional template:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Block Themes:</strong> <code>templates/privacy-policy.html</code></li>\n\n\n\n<li><strong>Classic Themes:</strong> <code>privacy-policy.php</code></li>\n</ul>\n\n\n\n<p>If you decide to create a custom template, make sure that you output the page\u2019s content using the appropriate block or function:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Block Themes:</strong> <a href=\"https://wordpress.org/documentation/article/post-content-block/\">Post Content block</a></li>\n\n\n\n<li><strong>Classic Themes:</strong> <a href=\"https://developer.wordpress.org/reference/functions/the_content/\"><code>the_content()</code> function</a></li>\n</ul>\n\n\n\n<p>This ensures that the user\u2019s Privacy Policy content will be correctly displayed on the front end of the site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Comment cookies</h2>\n\n\n\n<p>When a logged out user comments on a post, they are asked for their name, email, and website. This information is stored locally in the commenter\u2019s browser for two purposes:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>When they leave another comment on the site, their name, email, and website will be pre-populated into the respective fields.</li>\n\n\n\n<li>If their comment is held for moderation, they can return to that post and remove the comment before it is approved.</li>\n</ol>\n\n\n\n<p>The information stored in this cookie is for convenience and is not essential. Therefore, the user needs to be given the choice to opt in or opt out of the storage of this data. For this reason, WordPress outputs a checkbox in the comment form that allows commenters to opt-in to storing this data in the cookie. This checkbox will be unchecked by default, as opt-in is an action the user must explicitly approve.</p>\n\n\n\n<p>The new checkbox field is automatically added to comment forms displayed using the <a href=\"https://wordpress.org/documentation/article/post-comments-form-block/\">Comment Form</a> block (block themes) or the <a href=\"https://developer.wordpress.org/reference/functions/comment_form/\"><code>comment_form()</code></a> function (classic themes).</p>\n\n\n\n<p>While most themes will not require any action, it is recommended that you double check that the input and label does not require CSS adjustments in custom themes.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152063",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152063",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152063/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153775,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/152063/revisions/153775"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152063"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

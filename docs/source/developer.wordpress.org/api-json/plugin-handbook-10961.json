@@ -1,0 +1,97 @@
+{
+    "id": 10961,
+    "date": "2014-09-17T22:03:12",
+    "date_gmt": "2014-09-17T22:03:12",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10961"
+    },
+    "modified": "2022-11-17T06:08:46",
+    "modified_gmt": "2022-11-17T06:08:46",
+    "slug": "sub-menus",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/administration-menus/sub-menus/",
+    "title": {
+        "rendered": "Sub-Menus"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Add a Sub-Menu</h2>\n\n\n\n<p>To add a new Sub-menu to WordPress Administration, use the <code>add_submenu_page()</code> function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_submenu_page(\n\tstring $parent_slug,\n\tstring $page_title,\n\tstring $menu_title,\n\tstring $capability,\n\tstring $menu_slug,\n\tcallable $function = &apos;&apos;\n);</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Example</h3>\n\n\n\n<p>Lets say we want to add a Sub-menu &#8220;WPOrg Options&#8221; to the &#8220;Tools&#8221; Top-level menu.</p>\n\n\n\n<p><strong>The first step</strong> will be creating a function which will output the HTML. In this function we will perform the necessary security checks and render the options we&#8217;ve registered using the <a href=\"https://developer.wordpress.org/plugins/settings/\">Settings API</a>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">We recommend wrapping your HTML using a <code>&lt;div&gt;</code> with a class of <code>wrap</code>.</div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_options_page_html() {\n\t// check user capabilities\n\tif ( ! current_user_can( 'manage_options' ) ) {\n\t\treturn;\n\t}\n\t?&gt;\n\t&lt;div class=\"wrap\"&gt;\n\t\t&lt;h1&gt;&lt;?php echo esc_html( get_admin_page_title() ); ?&gt;&lt;/h1&gt;\n\t\t&lt;form action=\"options.php\" method=\"post\"&gt;\n\t\t\t&lt;?php\n\t\t\t// output security fields for the registered setting \"wporg_options\"\n\t\t\tsettings_fields( 'wporg_options' );\n\t\t\t// output setting sections and their fields\n\t\t\t// (sections are registered for \"wporg\", each field is registered to a specific section)\n\t\t\tdo_settings_sections( 'wporg' );\n\t\t\t// output save settings button\n\t\t\tsubmit_button( __( 'Save Settings', 'textdomain' ) );\n\t\t\t?&gt;\n\t\t&lt;/form&gt;\n\t&lt;/div&gt;\n\t&lt;?php\n}</code></pre>\n\n\n\n<p><strong>The second step</strong> will be registering our WPOrg Options Sub-menu. The registration needs to occur during the <code>admin_menu</code> action hook.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_options_page()\n{\n\tadd_submenu_page(\n\t\t'tools.php',\n\t\t'WPOrg Options',\n\t\t'WPOrg Options',\n\t\t'manage_options',\n\t\t'wporg',\n\t\t'wporg_options_page_html'\n\t);\n}\nadd_action('admin_menu', 'wporg_options_page');</code></pre>\n\n\n\n<p>For a list of parameters and what each do please see the <a href=\"https://developer.wordpress.org/reference/functions/add_submenu_page/\" rel=\"function\">add_submenu_page()</a>  in the reference.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Predefined Sub-Menus</h2>\n\n\n\n<p>Wouldn&#8217;t it be nice if we had helper functions that define the <code>$parent_slug</code> for WordPress built-in Top-level menus and save us from manually searching it through the source code?</p>\n\n\n\n<p>Below is a list of parent slugs and their helper functions:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/add_dashboard_page/\" rel=\"function\">add_dashboard_page()</a>  &#8211; <code>index.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_posts_page/\" rel=\"function\">add_posts_page()</a>  &#8211; <code>edit.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_media_page/\" rel=\"function\">add_media_page()</a>  &#8211; <code>upload.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_pages_page/\" rel=\"function\">add_pages_page()</a>  &#8211; <code>edit.php?post_type=page</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_comments_page/\" rel=\"function\">add_comments_page()</a>  &#8211; <code>edit-comments.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_theme_page/\" rel=\"function\">add_theme_page()</a>  &#8211; <code>themes.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_plugins_page/\" rel=\"function\">add_plugins_page()</a>  &#8211; <code>plugins.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_users_page/\" rel=\"function\">add_users_page()</a>  &#8211; <code>users.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_management_page/\" rel=\"function\">add_management_page()</a>  &#8211; <code>tools.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_options_page/\" rel=\"function\">add_options_page()</a>  &#8211; <code>options-general.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_options_page/\" rel=\"function\">add_options_page()</a>  &#8211; <code>settings.php</code></li><li><a href=\"https://developer.wordpress.org/reference/functions/add_links_page/\" rel=\"function\">add_links_page()</a>  &#8211; <code>link-manager.php</code> &#8211; requires a plugin since WP 3.5+</li><li>Custom Post Type &#8211; <code>edit.php?post_type=wporg_post_type</code></li><li>Network Admin &#8211; <code>settings.php</code></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Remove a Sub-Menu</h2>\n\n\n\n<p>The process of removing Sub-menus is exactly the same as <a href=\"https://developer.wordpress.org/plugins/administration-menus/top-level-menus/#remove-a-top-level-menu\">removing Top-level menus</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Submitting forms</h2>\n\n\n\n<p>The process of handling form submissions within Sub-menus is exactly the same as <a href=\"https://developer.wordpress.org/plugins/administration-menus/top-level-menus/#submitting-forms\">Submitting forms within Top-Level Menus</a>.</p>\n\n\n\n<p><code>add_submenu_page()</code> along with all functions for pre-defined sub-menus (<code>add_dashboard_page</code>, <code>add_posts_page</code>, etc.) will return a <code>$hookname</code>, which you can use as the first parameter of <code>add_action</code> in order to handle the submission of forms within custom pages:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_options_page() {\n\t$hookname = add_submenu_page(\n\t\t'tools.php',\n\t\t'WPOrg Options',\n\t\t'WPOrg Options',\n\t\t'manage_options',\n\t\t'wporg',\n\t\t'wporg_options_page_html'\n\t);\n\n\tadd_action( 'load-' . $hookname, 'wporg_options_page_html_submit' );\n}\n\nadd_action('admin_menu', 'wporg_options_page');</code></pre>\n\n\n\n<p>As always, do not forget to check whether the form is being submitted,  do CSRF verification, <a href=\"https://developer.wordpress.org/plugins/security/data-validation/\">validation</a>, and sanitization.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10955,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10961",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10961",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10961/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144313,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10961/revisions/144313"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10955"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10961"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

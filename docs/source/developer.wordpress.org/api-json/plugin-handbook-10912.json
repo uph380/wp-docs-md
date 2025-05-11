@@ -1,0 +1,97 @@
+{
+    "id": 10912,
+    "date": "2014-09-16T17:08:16",
+    "date_gmt": "2014-09-16T17:08:16",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10912"
+    },
+    "modified": "2024-02-20T10:37:57",
+    "modified_gmt": "2024-02-20T10:37:57",
+    "slug": "including-a-software-license",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/plugin-basics/including-a-software-license/",
+    "title": {
+        "rendered": "Including a Software License"
+    },
+    "content": {
+        "rendered": "\n<p>Most WordPress plugins are released under the <a rel=\"noopener noreferrer\" href=\"http://www.gnu.org/licenses/gpl.html\" target=\"_blank\">GPL</a>, which is the same license that\u00a0<a rel=\"noreferrer noopener\" href=\"https://wordpress.org/about/license/\" target=\"_blank\">WordPress itself uses</a>. However, there are other compatible options available. It is always best to clearly indicate the license your plugin uses.</p>\n\n\n\n<p>In the <a href=\"https://developer.wordpress.org/plugins/the-basics/header-requirements/\">Header Requirements</a> section, we briefly mentioned how you can indicate your&nbsp;plugin&#8217;s license within the plugin header comment. Another common, and encouraged, practice is to place a license block comment near the top of your main plugin file (the same one that has the plugin header comment).</p>\n\n\n\n<p>This license block comment usually looks something like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/*\n{Plugin Name} is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 2 of the License, or\nany later version.\n\n{Plugin Name} is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with {Plugin Name}. If not, see {URI to Plugin License}.\n*/</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 10903,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10912",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10912",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10912/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144305,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10912/revisions/144305"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10903"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10912"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

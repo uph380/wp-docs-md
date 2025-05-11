@@ -1,0 +1,91 @@
+{
+    "id": 134429,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-publish-panel/"
+    },
+    "modified": "2024-10-30T16:55:53",
+    "modified_gmt": "2024-10-30T16:55:53",
+    "slug": "plugin-post-publish-panel",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-publish-panel/",
+    "title": {
+        "rendered": "PluginPostPublishPanel"
+    },
+    "content": {
+        "rendered": "<p>This slot allows for injecting items into the bottom of the post-publish panel that appears after a post is published.</p>\n<h2>Example</h2>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { PluginPostPublishPanel } from '@wordpress/editor';\n\nconst PluginPostPublishPanelTest = () =&gt; (\n    &lt;PluginPostPublishPanel&gt;\n        &lt;p&gt;Post Publish Panel&lt;/p&gt;\n    &lt;/PluginPostPublishPanel&gt;\n);\n\nregisterPlugin( 'post-publish-panel-test', {\n    render: PluginPostPublishPanelTest,\n} );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/plugin-post-publish-panel.png?ssl=1\" alt=\"post publish panel\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 98,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134429",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134429",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134429/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153706,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134429/revisions/153706"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134429"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 144986,
+    "date": "2023-02-23T11:10:02",
+    "date_gmt": "2023-02-23T11:10:02",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/circular-option-picker/"
+    },
+    "modified": "2025-02-18T15:49:07",
+    "modified_gmt": "2025-02-18T15:49:07",
+    "slug": "circular-option-picker",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/circular-option-picker/",
+    "title": {
+        "rendered": "CircularOptionPicker"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis component is not exported, and therefore can only be used internally to the `@wordpress/components` package.\n</div>\n<p><code>CircularOptionPicker</code> is a component that displays a set of options as circular buttons.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { CircularOptionPicker } from '../circular-option-picker';\n\nconst Example = () =&gt; {\n    const [ currentColor, setCurrentColor ] = useState();\n    const colors = [\n        { color: '#f00', name: 'Red' },\n        { color: '#0f0', name: 'Green' },\n        { color: '#00f', name: 'Blue' },\n    ];\n    const colorOptions = (\n        &lt;&gt;\n            { colors.map( ( { color, name }, index ) =&gt; {\n                return (\n                    &lt;CircularOptionPicker.Option\n                        key={ `${ color }-${ index }` }\n                        tooltipText={ name }\n                        style={ { backgroundColor: color, color } }\n                        isSelected={ index === currentColor }\n                        onClick={ () =&gt; setCurrentColor( index ) }\n                    /&gt;\n                );\n            } ) }\n        &lt;/&gt;\n    );\n    return (\n        &lt;CircularOptionPicker\n                options={ colorOptions }\n                actions={\n                    &lt;CircularOptionPicker.ButtonAction\n                        onClick={ () =&gt; setCurrentColor( undefined ) }\n                    &gt;\n                        { 'Clear' }\n                    &lt;/CircularOptionPicker.ButtonAction&gt;\n                }\n            /&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<h3><code>className</code>: <code>string</code></h3>\n<p>A CSS class to apply to the wrapper element.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>actions</code>: <code>ReactNode</code></h3>\n<p>The action(s) to be rendered after the options, such as a &#8216;clear&#8217; button as seen in <code>ColorPalette</code>.</p>\n<p>Usually a <code>CircularOptionPicker.ButtonAction</code> or <code>CircularOptionPicker.DropdownLinkAction</code> component.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>options</code>: <code>ReactNode</code></h3>\n<p>The options to be rendered, such as color swatches.</p>\n<p>Usually a <code>CircularOptionPicker.Option</code> component.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>children</code>: <code>ReactNode</code></h3>\n<p>The child elements.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>asButtons</code>: <code>boolean</code></h3>\n<p>Whether the control should present as a set of buttons, each with its own tab stop.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>loop</code>: <code>boolean</code></h3>\n<p>Prevents keyboard interaction from wrapping around. Only used when <code>asButtons</code> is not true.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>aria-labelledby</code>: <code>string</code></h3>\n<p>The ID reference list of one or more elements that label the wrapper element.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>aria-label</code>: <code>string</code></h3>\n<p>The label for the wrapper element. Not used if an &#8216;aria-labelledby&#8217; is provided.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>Custom color picker</code></li>\n</ul>\n<h2>Subcomponents</h2>\n<h3><code>CircularOptionPicker.ButtonAction</code></h3>\n<p>A <code>ButtonAction</code> is an action that is rendered as a button alongside the options themselves.</p>\n<p>A common use case is a &#8216;clear&#8217; button to deselect the currently selected option.</p>\n<h4>Props</h4>\n<h5><code>className</code>: <code>string</code></h5>\n<p>A CSS class to apply to the underlying <code>Button</code> component.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h5><code>children</code>: <code>ReactNode</code></h5>\n<p>The button&#8217;s children.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h5>Inherited props</h5>\n<p><code>CircularOptionPicker.ButtonAction</code> also inherits all of the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/#props\"><code>Button</code> props</a>, except for <code>href</code> and <code>target</code>.</p>\n<h3><code>CircularOptionPicker.DropdownLinkAction</code></h3>\n<p><code>CircularOptionPicker.DropdownLinkAction</code> is an action that&#8217;s hidden behind a dropdown toggle. The button is formatted as a link and rendered as an <code>anchor</code> element.</p>\n<h4>Props</h4>\n<h5><code>className</code>: <code>string</code></h5>\n<p>A CSS class to apply to the underlying <code>Dropdown</code> component.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h5><code>linkText</code>: <code>string</code></h5>\n<p>The text to be displayed on the button.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h5><code>dropdownProps</code>: <code>object</code></h5>\n<p>The props for the underlying <code>Dropdown</code> component.</p>\n<p>Inherits all of the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/dropdown/#props\"><code>Dropdown</code> props</a>, except for <code>className</code> and <code>renderToggle</code>.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h5><code>buttonProps</code>: <code>object</code></h5>\n<p>Props for the underlying <code>Button</code> component.</p>\n<p>Inherits all of the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/button/#props\"><code>Button</code> props</a>, except for <code>href</code>, <code>target</code>, and <code>children</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 128,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-144986",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/144986",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/144986/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156349,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/144986/revisions/156349"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=144986"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

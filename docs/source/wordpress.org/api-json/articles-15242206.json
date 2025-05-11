@@ -1,0 +1,109 @@
+{
+    "id": 15242206,
+    "date": "2022-01-17T21:59:29",
+    "date_gmt": "2022-01-17T21:59:29",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15242206"
+    },
+    "modified": "2024-06-06T14:01:44",
+    "modified_gmt": "2024-06-06T14:01:44",
+    "slug": "dimension-controls-overview",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/dimension-controls-overview/",
+    "title": {
+        "rendered": "Dimension Settings overview"
+    },
+    "content": {
+        "rendered": "\n<p>You can use the dimension settings in&nbsp;<a href=\"https://wordpress.org/documentation/article/blocks/\">blocks</a> to help you better customize your layout and design. These settings impact the dimensions of blocks in various ways, including how groups of blocks are placed alongside one another.</p>\n\n\n\n<p>The dimension settings are available when you use the&nbsp;<a href=\"https://wordpress.org/documentation/article/wordpress-editor/\">block editor</a>. If you are new to the block editor,&nbsp;<a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/working-with-blocks/\" target=\"_blank\">this guide</a>&nbsp;will show you how to work with blocks. You can read more about the new block editor features and improvements&nbsp;<a rel=\"noreferrer noopener\" href=\"https://make.wordpress.org/core/2022/09/26/core-editor-improvement-catalyst-for-creativity/\" target=\"_blank\">in this article.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-find-dimension-controls\">How to access dimension settings</h2>\n\n\n\n<p>The dimension settings can be found in the Block Settings sidebar of a&nbsp;<a href=\"https://wordpress.org/documentation/article/blocks/\">block</a>&nbsp;under the section&nbsp;<strong>Dimension</strong>. </p>\n\n\n\n<p>If you don\u2019t see the&nbsp;<strong>Block Settings</strong>&nbsp;sidebar, select the block you want to customize, then click the&nbsp;<strong>settings</strong>&nbsp;icon (a cog) that is to the right of the&nbsp;<strong>Publish</strong>&nbsp;or&nbsp;<strong>Update</strong>&nbsp;buttons in the WordPress Editor.</p>\n\n\n\n<p>Below are a few examples from different blocks:</p>\n\n\n\n<figure class=\"wp-block-gallery has-nested-images columns-default wp-block-gallery-12 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"280\" height=\"852\" data-id=\"16358698\" src=\"https://wordpress.org/documentation/files/2023/08/image-5.png\" alt=\"Button Block sidebar &amp; settings, with the dimensions section highlighted. \" class=\"wp-image-16358698\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-5.png 280w, https://wordpress.org/documentation/files/2023/08/image-5-99x300.png 99w\" sizes=\"auto, (max-width: 280px) 100vw, 280px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"278\" height=\"717\" data-id=\"16358701\" src=\"https://wordpress.org/documentation/files/2023/08/image-6.png\" alt=\"Paragraph Block sidebar &amp; settings, with the dimensions section highlighted. \" class=\"wp-image-16358701\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-6.png 278w, https://wordpress.org/documentation/files/2023/08/image-6-116x300.png 116w\" sizes=\"auto, (max-width: 278px) 100vw, 278px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"277\" height=\"866\" data-id=\"16358702\" src=\"https://wordpress.org/documentation/files/2023/08/image-7.png\" alt=\"Cover Block sidebar &amp; settings, with the dimensions section highlighted. \" class=\"wp-image-16358702\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-7.png 277w, https://wordpress.org/documentation/files/2023/08/image-7-96x300.png 96w\" sizes=\"auto, (max-width: 277px) 100vw, 277px\" /></figure>\n<figcaption class=\"blocks-gallery-caption wp-element-caption\">Each block has different dimensions settings </figcaption></figure>\n\n\n\n<p>In the\u00a0<strong>Dimension</strong>\u00a0section, click on the three-dot menu (also known as an ellipsis) to explore all the dimension settings that are not visible by default.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/03/Tools-Panel-for-dimension-controls.mov\"></video></figure>\n\n\n\n<p>Note that the type of dimension settings you can see in your block depends on whether they have been supported by the block or not.</p>\n\n\n\n<p>If you make customizations to these settings and want to revert back to the original settings quickly, you can do so by selecting the three-dot menu icon and clicking&nbsp;<strong>Reset All</strong>&nbsp;as&nbsp;<a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/working-with-blocks/#reset-controls\" target=\"_blank\">shown in this article</a>. This resets the settings and removes all of your changes. You can reset individual settings by clicking <strong>Reset</strong> on each setting. You can also reset all of them globally by clicking on the <strong>Reset All</strong> option.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"269\" height=\"294\" src=\"https://wordpress.org/documentation/files/2023/08/image-8.png\" alt=\"Image of the reset and reset all options.\" class=\"wp-image-16358705\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"types-of-controls\">Type of settings</h2>\n\n\n\n<p>Each block comes with different dimension settings. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Padding</h3>\n\n\n\n<p>This setting impacts the space between a block&#8217;s content and its border. You can either set horizontal and vertical paddings or set different padding values for each side. To set different padding for each side, follow the steps in the <strong><a href=\"#unlink-sides\" data-type=\"internal\" data-id=\"#unlink-sides\">Unlink sides</a></strong> section.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"331\" height=\"197\" src=\"https://wordpress.org/documentation/files/2023/08/image-9.png\" alt=\"Image of the padding dimension settings.\" class=\"wp-image-16358707\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-9.png 331w, https://wordpress.org/documentation/files/2023/08/image-9-300x179.png 300w\" sizes=\"auto, (max-width: 331px) 100vw, 331px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Margin</h3>\n\n\n\n<p>This setting impacts the space<strong> </strong>around a block. You can either set horizontal and vertical margins or set different margin values for each side. To set different margins for each side, follow the steps in the <strong><a href=\"#unlink-sides\" data-type=\"internal\" data-id=\"#unlink-sides\">Unlink sides</a></strong> section.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"329\" height=\"192\" src=\"https://wordpress.org/documentation/files/2023/08/image-10.png\" alt=\"Image of the padding dimension settings.\" class=\"wp-image-16358708\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-10.png 329w, https://wordpress.org/documentation/files/2023/08/image-10-300x175.png 300w\" sizes=\"auto, (max-width: 329px) 100vw, 329px\" /></figure>\n\n\n\n<p><strong>Preview margin and padding</strong></p>\n\n\n\n<p>When changing the margin or padding in a block, the editor will show the corresponding change, highlighted in a blue box around the block.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/10/dimensions-unlink-sides-video.mp4\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Block spacing</h3>\n\n\n\n<p>This setting impacts the space between nested blocks. This means that if you set block spacing for the entire block, you can change the spacing of the nested block within the parent block. You can find this setting in blocks like the <a href=\"https://wordpress.org/documentation/article/buttons-block/\" data-type=\"helphub_article\" data-id=\"13757096\">Buttons block</a> or <a href=\"https://wordpress.org/documentation/article/group-block/\" data-type=\"helphub_article\" data-id=\"13426347\">Group block</a>. </p>\n\n\n\n<p>Within this setting, you can choose to set block spacing using different values:<a href=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\"> px, %, em, rem, vw, vh</a>. </p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/dimensions-block-spacing.png\" alt=\"Image showing the various block spacing options.\" class=\"wp-image-16139820\" style=\"width:320px;height:121px\" width=\"320\" height=\"121\" srcset=\"https://wordpress.org/documentation/files/2022/10/dimensions-block-spacing.png 556w, https://wordpress.org/documentation/files/2022/10/dimensions-block-spacing-300x113.png 300w\" sizes=\"auto, (max-width: 320px) 100vw, 320px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Minimum height</h3>\n\n\n\n<p>This setting enables you to set a minimum height for the block. You can find this option in the <a href=\"https://wordpress.org/documentation/article/cover-block/\" data-type=\"helphub_article\" data-id=\"11284980\">Cover block</a>, <a href=\"https://wordpress.org/documentation/article/post-content-block/\">Post Content block</a>, <a href=\"https://wordpress.org/documentation/article/group-block/\">Group block</a> (including the <a href=\"https://wordpress.org/documentation/article/row-block/\">Row</a> and <a href=\"https://wordpress.org/documentation/article/stack-block/\">Stack</a> variations). Within this setting, you can choose to set the height using different values: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\">px, %, em, rem, vw, vh</a>.</p>\n\n\n\n<p>An example use case is to ensure that a Post Content area has a minimum height, forcing a footer area to render lower on the page, even if a page has very little content. Because of this, it can be quite useful to use viewport relative units when setting minimum height, e.g.&nbsp;<code>100vh</code>&nbsp;for a block that takes up the entire height of the viewport.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/dimensions-minimum-height-1.png\" alt=\"Image showing the various minimum height options.\" class=\"wp-image-16139822\" style=\"width:322px;height:209px\" width=\"322\" height=\"209\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"unlink-sides\">Unlink sides</h2>\n\n\n\n<p>By default, the Padding and Margin settings will apply the same value for vertical and horizontal settings around the block. You can add a different value to each of the sides by clicking on the <strong>padding options</strong> or <strong>margin options</strong> icon on the right.</p>\n\n\n\n<p>A drop-down menu will appear where you can select any of the side to modify. You can select a specific side (<strong>Top</strong>, <strong>Right</strong>, <strong>Bottom</strong>, and <strong>Left</strong>) to have a specific setting for the side, or select <strong>Custom</strong> to make individual setting for each side.</p>\n\n\n\n<figure class=\"wp-block-gallery has-nested-images columns-2 wp-block-gallery-13 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"321\" height=\"396\" data-id=\"16358714\" src=\"https://wordpress.org/documentation/files/2023/08/image-12.png\" alt=\"\" class=\"wp-image-16358714\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-12.png 321w, https://wordpress.org/documentation/files/2023/08/image-12-243x300.png 243w\" sizes=\"auto, (max-width: 321px) 100vw, 321px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"338\" height=\"322\" data-id=\"16358717\" src=\"https://wordpress.org/documentation/files/2023/08/image-13.png\" alt=\"\" class=\"wp-image-16358717\" srcset=\"https://wordpress.org/documentation/files/2023/08/image-13.png 338w, https://wordpress.org/documentation/files/2023/08/image-13-300x286.png 300w\" sizes=\"auto, (max-width: 338px) 100vw, 338px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"329\" height=\"121\" data-id=\"16358719\" src=\"https://wordpress.org/documentation/files/2023/08/2023-08-24_10-46.png\" alt=\"\" class=\"wp-image-16358719\" srcset=\"https://wordpress.org/documentation/files/2023/08/2023-08-24_10-46.png 329w, https://wordpress.org/documentation/files/2023/08/2023-08-24_10-46-300x110.png 300w\" sizes=\"auto, (max-width: 329px) 100vw, 329px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"329\" height=\"134\" data-id=\"16358721\" src=\"https://wordpress.org/documentation/files/2023/08/2023-08-24_10-47.png\" alt=\"\" class=\"wp-image-16358721\" srcset=\"https://wordpress.org/documentation/files/2023/08/2023-08-24_10-47.png 329w, https://wordpress.org/documentation/files/2023/08/2023-08-24_10-47-300x122.png 300w\" sizes=\"auto, (max-width: 329px) 100vw, 329px\" /></figure>\n</figure>\n\n\n\n<p>To return to adding the same value for all sides, just select the same icon again.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Set custom size &amp; change units</h2>\n\n\n\n<p>You can add custom values for a block&#8217;s margin, padding, or spacing, and also change the units to one of the following: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/#units-explained\">px, %, em, rem, vw, vh.</a></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/dimensions-custom-size-units-1-1.gif\" alt=\"\" class=\"wp-image-16139891\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Blocks that have dimension settings</h2>\n\n\n\n<p>Various combinations of these options are available in the following blocks:&nbsp;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Archives</li>\n\n\n\n<li>Audio</li>\n\n\n\n<li>Avatar</li>\n\n\n\n<li>Tag Cloud</li>\n\n\n\n<li>Table of contents \u2013 not available in 6.1</li>\n\n\n\n<li>Table</li>\n\n\n\n<li>Term Description</li>\n\n\n\n<li>Spacer</li>\n\n\n\n<li>Post Date</li>\n\n\n\n<li>Heading</li>\n\n\n\n<li>Paragraph</li>\n\n\n\n<li>Query Title</li>\n\n\n\n<li>Post Title</li>\n\n\n\n<li>Video</li>\n\n\n\n<li>List</li>\n\n\n\n<li>Media &amp; Text</li>\n\n\n\n<li>Verse</li>\n\n\n\n<li>Categories</li>\n\n\n\n<li>Comment Edit Link</li>\n\n\n\n<li>Comment Date</li>\n\n\n\n<li>Comment Reply Link</li>\n\n\n\n<li>Site Logo</li>\n\n\n\n<li>Social Links</li>\n\n\n\n<li>Gallery</li>\n\n\n\n<li>Button/Buttons</li>\n\n\n\n<li>Code</li>\n\n\n\n<li>Column/Columns</li>\n\n\n\n<li>Comment Author Name</li>\n\n\n\n<li>Comment Content</li>\n\n\n\n<li>Comments Title</li>\n\n\n\n<li>Cover</li>\n\n\n\n<li>Group</li>\n\n\n\n<li>Heading</li>\n\n\n\n<li>Navigation</li>\n\n\n\n<li>Post Author</li>\n\n\n\n<li>Post Author Biography</li>\n\n\n\n<li>Post Author Name</li>\n\n\n\n<li>Post Content</li>\n\n\n\n<li>Post Excerpt</li>\n\n\n\n<li>Post&nbsp;Featured Image</li>\n\n\n\n<li>Read More</li>\n\n\n\n<li>Row</li>\n\n\n\n<li>Separator</li>\n\n\n\n<li>Site Tagline</li>\n\n\n\n<li>Site Title</li>\n\n\n\n<li>Stack</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"demonstrations\">Demonstration</h2>\n\n\n\n<p>The following is a demonstration of various settings in action with the Post Featured Image, unlink the sides of the block, and use different units. </p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/01/axial-gap-1-1.mov\"></video></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Updated</strong> 2023-08-24\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for 6.3</li>\n\n\n\n<li>Updated unlink sides section to show the optimized and condensed spacing controls.</li>\n</ul>\n</li>\n\n\n\n<li><strong>Updated </strong>2023-03-27:\n<ul class=\"wp-block-list\">\n<li>Added a new demonstration video.</li>\n\n\n\n<li>Updated the min height section.</li>\n\n\n\n<li>Updated blocks with support. </li>\n</ul>\n</li>\n\n\n\n<li><strong>Updated</strong> 2022-10-27:\n<ul class=\"wp-block-list\">\n<li>List block supporting dimensions options</li>\n\n\n\n<li>Update screenshots to match 6.1 interface</li>\n\n\n\n<li>Include custom size &amp; custom units</li>\n\n\n\n<li>Add &#8220;Unlink Sides&#8221; as a separate section.</li>\n</ul>\n</li>\n\n\n\n<li><strong>Created</strong> 2022-01-17</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>You can use the dimension settings in&nbsp;blocks to help you better customize your layout and design. These settings impact the dimensions of blocks in various ways, including how groups of blocks are placed alongside one another. The dimension settings are available when you use the&nbsp;block editor. If you are new to the block editor,&nbsp;this guide&nbsp;will [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-15242206",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15242206",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15242206"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15242206/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360305,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15242206/revisions/16360305"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15242206"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15242206"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

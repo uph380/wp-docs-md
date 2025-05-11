@@ -1,0 +1,97 @@
+{
+    "id": 23167,
+    "date": "2016-12-06T19:18:11",
+    "date_gmt": "2016-12-06T19:18:11",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23167"
+    },
+    "modified": "2024-08-08T15:55:33",
+    "modified_gmt": "2024-08-08T15:55:33",
+    "slug": "global-parameters",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/",
+    "title": {
+        "rendered": "Global Parameters"
+    },
+    "content": {
+        "rendered": "The API includes a number of global parameters (also called &#8220;meta-parameters&#8221;) which control how the API handles the request/response handling. These operate at a layer above the actual resources themselves, and are available on all resources.\n\n<h2><code>_fields</code></h2>\n\nA REST resource like a Post contains a large quantity of data: basic information such as content, title, and author ID, but also <a href=\"https://developer.wordpress.org/rest-api/extending-the-rest-api/modifying-responses/\">registered metadata and fields</a>, media information, and links to other resources. Your application may not need all of this information on every request.\n\nTo instruct WordPress to return only a subset of the fields in a response, you may use the <code>_fields</code> query parameter. If for example you are building an archive view and only need the ID, title, permalink, author and excerpt for a collection of posts, you can restrict the response to only those properties with this fields query:\n\n<pre><code>/wp/v2/posts?_fields=author,id,excerpt,title,link\n</code></pre>\n\nYou may alternatively provide that same list using query parameter array syntax instead of a comma-separated list:\n\n<pre><code>/wp/v2/posts?_fields[]=author&amp;_fields[]=id&amp;_fields[]=excerpt&amp;_fields[]=title&amp;_fields[]=link\n</code></pre>\n\nWhen <code>_fields</code> is provided then WordPress will skip unneeded fields when generating your response object, avoiding potentially expensive internal computation or queries for data you don&#8217;t need. This also means the JSON object returned from the REST API will be smaller, requiring less time to download and less time to parse on your client device.\n\nCarefully design your queries to pull in only the needed properties from each resource to make your application faster to use and more efficient to run.\n\nAs of WordPress 5.3 the <code>_fields</code> parameter supports nested properties. This can be useful if you have registered many meta keys, permitting you to request the value for only one of the registered meta properties:\n\n<pre><code>?_fields=meta.one-of-many-keys\n</code></pre>\n\nOnly the meta value with the key <code>one-of-many-keys</code> will be returned, and others will be excluded.\n\nYou can also request specific deeply-nested properties within a complex meta object:\n\n<pre><code>?_fields=meta.key_name.nested_prop.deeply_nested_prop,meta.key_name.other_nested_prop\n</code></pre>\n\n<h2><code>_embed</code></h2>\n\nMost resources include links to related resources. For example, a post can link to the parent post, or to comments on the post. To reduce the number of HTTP requests required, clients may wish to fetch a resource as well as the linked resources. The <code>_embed</code> parameter indicates to the server that the response should include these embedded resources.\n\nEmbed mode is enabled if the <code>_embed</code> parameter is passed in the query string (GET parameter). This parameter does not require a value (i.e. <code>?_embed</code> is valid), however can be passed &#8220;1&#8221; as a value if required by a client library.\n\nAs of WordPress 5.4, the resources to embed can be limited by passing a list of link relation names to the <code>_embed</code> parameter. For example, <code>/wp/v2/posts?_embed=author,wp:term</code> will only embed the post&#8217;s author and the lists of terms associated with the post.\n\nResources in embed mode will contain an additional <code>_embedded</code> key next to the <code>_links</code> key containing the linked resources. Only links with the <code>embeddable</code> parameter set to <code>true</code> will be embedded.\n\nIn order to use <code>_embed</code> together with <code>_fields</code>, add <code>_embedded</code> as well as <code>_links</code> to the fields, for instance, <code>/wp-json/wp/v2/posts/_embed=author,wp:term&amp;_fields=title,author,_links,_embedded</code>.\n\nFor more about linking and embedding, see the <a href=\"https://developer.wordpress.org/rest-api/linking-and-embedding/\">Linking and Embedding</a> page.\n\n<h2><code>_method</code> (or <code>X-HTTP-Method-Override</code> header)</h2>\n\nSome servers and clients cannot correctly process some HTTP methods that the API makes use of. For example, all deletion requests on resources use the <code>DELETE</code> method, but some clients do not provide the ability to send this method.\n\nTo ensure compatibility with these servers and clients, the API supports a method override. This can be passed either via a <code>_method</code> parameter or the <code>X-HTTP-Method-Override</code> header, with the value set to the HTTP method to use.\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">\nClients should only ever send a method override parameter or header with POST requests. Using the method override with GET requests may cause the request to be incorrectly cached.\n</div></div>\n\n\nA <code>POST</code> to <code>/wp-json/wp/v2/posts/42?_method=DELETE</code> would be translated to a <code>DELETE</code> to the <code>wp/v2/posts/42</code> route.\n\nSimilarly, the following POST request would become a DELETE:\n\n<pre><code>POST /wp-json/wp/v2/posts/42 HTTP/1.1\nHost: example.com\nX-HTTP-Method-Override: DELETE\n</code></pre>\n\n<h2><code>_envelope</code></h2>\n\nSimilarly to <code>_method</code>, some servers, clients, and proxies do not support accessing the full response data. The API supports passing an <code>_envelope</code> parameter, which sends all response data in the body, including headers and status code.\n\nEnvelope mode is enabled if the <code>_envelope</code> parameter is passed in the query string (GET parameter). This parameter does not require a value (i.e. <code>?_envelope</code> is valid), but can be passed &#8220;1&#8221; as a value if required by a client library.\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">\nFor future compatibility, other values should not be passed.\n</div></div>\n\n\nEnveloped responses include a &#8220;fake&#8221; HTTP 200 response code with no additional headers (apart from Content-Type) that should ensure the response correctly passes through intermediaries.\n\nFor example, given the following response to a <code>GET</code> to <code>wp/v2/users/me</code>:\n\n<pre><code>HTTP/1.1 302 Found\nLocation: http://example.com/wp-json/wp/v2/users/42\n\n{\n  \"id\": 42,\n  ...\n}\n</code></pre>\n\nThe equivalent enveloped response (with a <code>GET</code> to <code>wp/v2/users/me?_envelope</code>) would be:\n\n<pre><code>HTTP/1.1 200 OK\n\n{\n  \"status\": 302,\n  \"headers\": {\n    \"Location\": \"http://example.com/wp-json/wp/v2/users/42\"\n  },\n  \"body\": {\n    \"id\": 42\n  }\n}\n</code></pre>\n\n<h2><code>_jsonp</code></h2>\n\nThe API natively supports <a href=\"https://en.wikipedia.org/wiki/JSONP\">JSONP</a> responses to allow cross-domain requests for legacy browsers and clients. This parameter takes a JavaScript callback function which will be prepended to the data. This URL can then be loaded via a <code>&lt;script&gt;</code> tag.\n\nThe callback function can contain any alphanumeric, <code>_</code> (underscore), or <code>.</code> (period) character. Callbacks which contain invalid characters will receive a HTTP 400 error response, and the callback will not be called.\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">\nModern browsers can use <a href=\"https://en.wikipedia.org/wiki/Cross-origin_resource_sharing\">Cross-Origin Resource Sharing (CORS)</a> preflight requests for cross-domain requests, but JSONP can be used to ensure support with all browsers.\n\n<ul>\n  <li><a href=\"http://caniuse.com/#feat=cors\">Browser Support</a></li>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS\">MDN Article on CORS</a></li>\n</ul>\n\n</div></div>\n\n\nFor example:\n\n<pre><code class=\"language-html\">&lt;script&gt;\nfunction receiveData( data ) {\n  // Do something with the data here.\n  // For demonstration purposes, we'll simply log it.\n  console.log( data );\n}\n&lt;/script&gt;\n&lt;script src=\"https://example.com/wp-json/?_jsonp=receiveData\"&gt;&lt;/script&gt;\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 24962,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23167",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23167",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23167/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154729,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23167/revisions/154729"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24962"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23167"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

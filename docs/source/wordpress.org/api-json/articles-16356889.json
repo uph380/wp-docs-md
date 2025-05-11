@@ -1,0 +1,109 @@
+{
+    "id": 16356889,
+    "date": "2023-05-11T20:11:34",
+    "date_gmt": "2023-05-11T20:11:34",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16356889"
+    },
+    "modified": "2024-06-08T17:44:43",
+    "modified_gmt": "2024-06-08T17:44:43",
+    "slug": "next-post-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/next-post-block/",
+    "title": {
+        "rendered": "Next Post block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>Use the\u00a0<strong>Next Post</strong>\u00a0block to display a\u00a0Next\u00a0link which automatically points to the next post or page to the one currently displayed.<br><a rel=\"noreferrer noopener\" href=\"https://user-images.githubusercontent.com/23632632/232006775-9d92a074-43f3-48a2-a9fe-37bcad024a46.png\" target=\"_blank\"></a></p>\n\n\n\n<p>Click the (<strong>+</strong>) icon to open the block inserter pop-up window and search for the\u00a0<strong>Next Post</strong>\u00a0block.\u00a0</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/05/232021838-2961f5aa-f27d-411c-be3f-b65ee9403a36.mov\"></video></figure>\n\n\n\n<p>You can also type the keyboard shortcut\u00a0<code>/next</code>\u00a0in a new paragraph and hit <code>enter</code> to quickly insert a Next Post\u00a0block.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/232007250-eddc4341-0e96-4ace-96e4-26f2205a26d8.png\" alt=\"Keyboard shortcut\u00a0to add the Next Post block\" class=\"wp-image-16356891\" width=\"453\" height=\"236\" srcset=\"https://wordpress.org/documentation/files/2023/05/232007250-eddc4341-0e96-4ace-96e4-26f2205a26d8.png 604w, https://wordpress.org/documentation/files/2023/05/232007250-eddc4341-0e96-4ace-96e4-26f2205a26d8-300x156.png 300w\" sizes=\"auto, (max-width: 453px) 100vw, 453px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Refer to this article for&nbsp;<a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">detailed instructions on adding blocks</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To display the block toolbar, click on the block.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The\u00a0<strong>Next Post</strong>\u00a0block toolbar shows 7 buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag</li>\n\n\n\n<li>Move up/down</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>Bold</li>\n\n\n\n<li>Italic</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image is-resized\"><a href=\"https://user-images.githubusercontent.com/23632632/232008594-ee14266e-ff9f-4fee-9cae-91bd4d361d6f.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/23632632/232008594-ee14266e-ff9f-4fee-9cae-91bd4d361d6f.png\" alt=\"Block toolbar in the Next Post block\" width=\"461\" height=\"153\" /></a></figure>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><a href=\"https://user-images.githubusercontent.com/23632632/232010950-546ba7f7-1afa-44a8-9066-f178f1dcf2b2.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/23632632/232010950-546ba7f7-1afa-44a8-9066-f178f1dcf2b2.png\" alt=\"Transform option in the Next Post block\" width=\"489\" height=\"290\" /></a></figure>\n\n\n\n<p>You can transform the <strong>Next Post</strong> block into the <a href=\"https://wordpress.org/documentation/article/columns-block\">Columns</a> block or the <a href=\"https://wordpress.org/documentation/article/group-block\">Group</a> block.</p>\n\n\n\n<p><strong>Drag</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><a href=\"https://user-images.githubusercontent.com/23632632/232025557-330b0310-949d-4938-9fd8-c93d5777e421.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/23632632/232025557-330b0310-949d-4938-9fd8-c93d5777e421.png\" alt=\"Drag option in the Next Post block\" width=\"449\" height=\"80\" /></a></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p><strong>Move up/down</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><a href=\"https://user-images.githubusercontent.com/23632632/232025910-7c97587e-744f-48c0-9ec3-f6b5d01edc92.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/23632632/232025910-7c97587e-744f-48c0-9ec3-f6b5d01edc92.png\" alt=\"Move up/down in the Next Post block\" width=\"447\" height=\"80\" /></a></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on moving a block within the editor can be found&nbsp;<a href=\"https://wordpress.org/documentation/article/moving-blocks/\">here</a>.</p>\n\n\n\n<p><strong>Align text</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><a href=\"https://user-images.githubusercontent.com/23632632/232015862-d45fa0f0-1e0e-4e4a-ae9d-dddf76853d00.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/23632632/232015862-d45fa0f0-1e0e-4e4a-ae9d-dddf76853d00.png\" alt=\"Align text in the Next Post block\" width=\"453\" height=\"300\" /></a></figure>\n\n\n\n<p>Using the alignment drop-down from the toolbar, you can align the whole paragraph text to the left, make it center-aligned or orient it to the right.</p>\n\n\n\n<p><strong>Bold</strong></p>\n\n\n\n<p>The\u00a0<strong>Next Post</strong>\u00a0block allows you to change the &#8220;Next&#8221; default label of the link to a phrase of your choice. If so, you can apply bold formatting to the new label.\u00a0</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/05/232024083-e7b77789-e4a9-42aa-a898-fec3976d74b1.mov\"></video></figure>\n\n\n\n<p><strong>Italic</strong></p>\n\n\n\n<p>Similar to the bold formatting, you can change the link&#8217;s label and apply italic formatting.<br><a rel=\"noreferrer noopener\" href=\"https://user-images.githubusercontent.com/23632632/232022141-17d56d7f-fb0d-4afd-b4c2-b083db327cba.png\" target=\"_blank\"></a></p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>More options on a block toolbar give you more features to customize the block.</p>\n\n\n\n<p>Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\" data-type=\"helphub_article\" data-id=\"13748329\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings</strong> icon next to the <strong>Publish</strong> button.</p>\n\n\n\n<p>Here are the options for the\u00a0<strong>Next Post</strong>\u00a0block:</p>\n\n\n\n<p><strong>Settings</strong></p>\n\n\n\n<p>Under the <strong>Settings</strong> tab, turn on\u00a0<strong>Display title as a link</strong>\u00a0button in the Block Settings to link the Next Post link to the URL of the next post. </p>\n\n\n\n<p>Choose between <strong>None</strong>, <strong>Arrow</strong> or <strong>Chevron</strong> options to add a decorative arrow next to the Next post link.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/232050010-82ef414b-5c4b-4007-b15e-846cc574ce35-554x1024.png\" alt=\"Block settings in the Next Post block\" class=\"wp-image-16356893\" width=\"277\" height=\"512\" srcset=\"https://wordpress.org/documentation/files/2023/05/232050010-82ef414b-5c4b-4007-b15e-846cc574ce35-554x1024.png 554w, https://wordpress.org/documentation/files/2023/05/232050010-82ef414b-5c4b-4007-b15e-846cc574ce35-162x300.png 162w, https://wordpress.org/documentation/files/2023/05/232050010-82ef414b-5c4b-4007-b15e-846cc574ce35.png 572w\" sizes=\"auto, (max-width: 277px) 100vw, 277px\" /></figure>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The Advanced tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles for the block.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-11-at-11.26.17-AM-1.png\" alt=\"Advanced tab with additional CSS\" class=\"wp-image-16190554\" width=\"282\" height=\"166\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<p><strong>Styles</strong></p>\n\n\n\n<p>Under the <strong>Styles</strong> tab, you can find options to customize the Color settings and Typography settings for the <strong>Next Post</strong> block.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/05/232049811-678fcf7b-124a-45c1-8713-1fa9b3c40321-517x1024.png\" alt=\"Styles tab in the Next Post block\" class=\"wp-image-16356894\" width=\"259\" height=\"512\" srcset=\"https://wordpress.org/documentation/files/2023/05/232049811-678fcf7b-124a-45c1-8713-1fa9b3c40321-517x1024.png 517w, https://wordpress.org/documentation/files/2023/05/232049811-678fcf7b-124a-45c1-8713-1fa9b3c40321-152x300.png 152w, https://wordpress.org/documentation/files/2023/05/232049811-678fcf7b-124a-45c1-8713-1fa9b3c40321.png 576w\" sizes=\"auto, (max-width: 259px) 100vw, 259px\" /></figure>\n\n\n\n<p class=\"has-normal-font-size\"><strong>Color</strong></p>\n\n\n\n<p>The <strong>Next Post\u00a0block </strong>has color settings options to change the text, background and link colors.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<p class=\"has-normal-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <strong><strong>Next Post\u00a0block</strong></strong> has typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-05-11</li>\n</ul>\n</div>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the list of Blocks Use the\u00a0Next Post\u00a0block to display a\u00a0Next\u00a0link which automatically points to the next post or page to the one currently displayed. Click the (+) icon to open the block inserter pop-up window and search for the\u00a0Next Post\u00a0block.\u00a0 You can also type the keyboard shortcut\u00a0/next\u00a0in a new paragraph and hit enter [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16356889",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356889",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16356889"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356889/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360347,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356889/revisions/16360347"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16356889"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16356889"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

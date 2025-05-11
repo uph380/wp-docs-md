@@ -1,0 +1,97 @@
+{
+    "id": 25145,
+    "date": "2017-01-13T10:06:02",
+    "date_gmt": "2017-01-13T10:06:02",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25145"
+    },
+    "modified": "2017-01-15T10:55:54",
+    "modified_gmt": "2017-01-15T10:55:54",
+    "slug": "audio",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/media/audio/",
+    "title": {
+        "rendered": "Audio"
+    },
+    "content": {
+        "rendered": "<h2>Audio</h2>\r\nYou can directly embed audio files and play them back using a simple shortcode <strong>[audio]</strong>. Supported file types are mp3, ogg, wma, m4a and wav.\r\n<h3>Audio shortcode</h3>\r\nFollowing shortcode displays audio player that loads music.mp3 file:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">[[audio src=&quot;music.mp3&quot;]]</code></pre>\r\n\r\nTo use the shortcode from template file, use do_shortcode function. When music.mp3 file was stored in (theme_directory)/sounds directory, insert following code into your template file:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">$music_file = get_template_directory_uri() . &quot;/sounds/music.mp3&quot;; \r\necho do_shortcode('[[audio mp3=' . $music_file . ']]');</code></pre>\r\n\r\nThe shortcode creates the audio player as shown in the screenshot below.\r\n\r\n<img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" class=\"aligncenter wp-image-22932 size-full\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/audio_shortcode_basic.jpg?resize=558%2C66&#038;ssl=1\" alt=\"Audio player\" width=\"558\" height=\"66\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/audio_shortcode_basic.jpg?w=558&amp;ssl=1 558w, https://i0.wp.com/developer.wordpress.org/files/2014/10/audio_shortcode_basic.jpg?resize=300%2C35&amp;ssl=1 300w\" sizes=\"auto, (max-width: 558px) 100vw, 558px\" />\r\n<h3>Loop and Autoplay</h3>\r\nThe following basic options are supported:\r\n<h4>loop</h4>\r\nAllows for the looping of media.\r\n<ul>\r\n \t<li>&#8220;off&#8221; &#8211; Do not loop the media. Default.</li>\r\n \t<li>&#8220;on&#8221; &#8211; Media will loop to beginning when finished and automatically continue playing.</li>\r\n</ul>\r\n<h4>autoplay</h4>\r\nCauses the media to automatically play as soon as the media file is ready.\r\n<ul>\r\n \t<li>0 &#8211; Do not automatically play the media. Default.</li>\r\n \t<li>1 &#8211; Media will play as soon as it is ready.</li>\r\n</ul>\r\nThe following example starts playing music immediately after the page load and loops.\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">echo do_shortcode('[[audio mp3=' . $music_file . ' loop = &quot;on&quot; autoplay = 1]]');</code></pre>\r\n\r\n<h3>Styling</h3>\r\nIf you want to change the look &amp; feel of audio player, you can do so by targeting the default class name of &#8220;wp-audio-shortcode&#8221;. If you insert following code into your style.css, half width of audio player will be displayed.\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css \">.wp-audio-shortcode {\r\n  width: 50%;\r\n}</code></pre>\r\n\r\n<h4>Supported Audio format</h4>\r\n<ul>\r\n \t<li>mp3</li>\r\n \t<li>ogg</li>\r\n \t<li>wma</li>\r\n \t<li>m4a</li>\r\n \t<li>wav</li>\r\n</ul>\r\n\r\n<h3>References</h3>\r\nFor more technical details such as the internal library that enables this function, refer\u00a0to\r\n<ul>\r\n \t<li><a href=\"https://make.wordpress.org/core/2013/04/08/audio-video-support-in-core/\">https://make.wordpress.org/core/2013/04/08/audio-video-support-in-core/</a>.</li>\r\n \t<li><a href=\"https://codex.wordpress.org/Audio_Shortcode\" target=\"_blank\">Audio Shortcode</a></li>\r\n \t<li><a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" target=\"_blank\">Function do_shortcode()</a></li>\r\n</ul>",
+        "protected": false
+    },
+    "author": 14467238,
+    "featured_media": 0,
+    "parent": 11360,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25145",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25145",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14467238"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25145/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 25155,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25145/revisions/25155"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11360"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25145"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

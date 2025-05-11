@@ -1,0 +1,97 @@
+{
+    "id": 24973,
+    "date": "2017-01-12T03:50:51",
+    "date_gmt": "2017-01-12T03:50:51",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=24973"
+    },
+    "modified": "2022-10-29T04:14:09",
+    "modified_gmt": "2022-10-29T04:14:09",
+    "slug": "sticky-posts",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/sticky-posts/",
+    "title": {
+        "rendered": "Sticky Posts"
+    },
+    "content": {
+        "rendered": "\n<p>A Sticky Post is the post will be placed at the top of the front page of posts. This feature is only available for the built-in post type post and not for custom post types.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How to stick a post</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to <strong>Administration Screen &gt; Posts &gt; Add New</strong> or <strong>Edit</strong></li>\n\n\n\n<li>In the right side menu, Click Edit link of Visibility option in Publish group</li>\n\n\n\n<li>Click Stick this post to the front page option</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"307\" height=\"449\" src=\"https://i0.wp.com/developer.wordpress.org/files/2017/01/sticked_post.jpg?resize=307%2C449&#038;ssl=1\" alt=\"\" class=\"wp-image-24975\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2017/01/sticked_post.jpg?w=307&amp;ssl=1 307w, https://i0.wp.com/developer.wordpress.org/files/2017/01/sticked_post.jpg?resize=205%2C300&amp;ssl=1 205w\" sizes=\"auto, (max-width: 307px) 100vw, 307px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Display Sticky Posts</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Show Sticky Posts</h3>\n\n\n\n<p>Display just the first sticky post. At least one post must be designated as a &#8220;sticky post&#8221; or else the loop will display all posts:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$sticky = get_option( 'sticky_posts' );\n$query  = new WP_Query( 'p=' . $sticky[0] );</code></pre>\n\n\n\n<p>Display just the first sticky post, if none return the last post published:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args  = array(\n\t'posts_per_page'      =&gt; 1,\n\t'post__in'            =&gt; get_option( 'sticky_posts' ),\n\t'ignore_sticky_posts' =&gt; 1,\n);\n$query = new WP_Query( $args );</code></pre>\n\n\n\n<p>Display just the first sticky post, if none return nothing:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args   = array(\n\t'posts_per_page'      =&gt; 1,\n\t'post__in'            =&gt; get_option( 'sticky_posts' ),\n\t'ignore_sticky_posts' =&gt; 1,\n);\n$query  = new WP_Query( $args );\nif ( isset( $sticky[0] ) ) {\n\t// Insert here your stuff...\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Don&#8217;t Show Sticky Posts</h3>\n\n\n\n<p>Exclude all sticky posts from the query:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args  = array( 'post__not_in' =&gt; get_option( 'sticky_posts' ) );\n$query = new WP_Query( $args );</code></pre>\n\n\n\n<p>Exclude sticky posts from a category. Return ALL posts within the category, but don&#8217;t show sticky posts at the top. The &#8216;sticky posts&#8217; will still show in their natural position (e.g. by date):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args  = array(\n\t'ignore_sticky_posts' =&gt; 1,\n\t'posts_per_page'      =&gt; 3,\n\t'cat'                 =&gt; 6,\n);\n$query = new WP_Query( $args );</code></pre>\n\n\n\n<p>Exclude sticky posts from a category. Return posts within the category, but exclude sticky posts completely, and adhere to paging rules:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args  = array(\n\t'cat'                 =&gt; 3,\n\t'ignore_sticky_posts' =&gt; 1,\n\t'post__not_in'        =&gt; get_option( 'sticky_posts' ),\n\t'paged'               =&gt; get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1,\n);\n$query = new WP_Query( $args );</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Use get_query_var( &#8216;page&#8217; ) if you want this query to work in a Page template that you&#8217;ve set as your static front page.</div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/* Get all Sticky Posts */\n$sticky = get_option( 'sticky_posts' );\n\n/* Sort Sticky Posts, newest at the top */\nrsort( $sticky );\n\n/* Get top 5 Sticky Posts */\n$sticky = array_slice( $sticky, 0, 5 );\n\n/* Query Sticky Posts */\n$query = new WP_Query( array(\n\t'post__in'            =&gt; $sticky,\n\t'ignore_sticky_posts' =&gt; 1,\n) );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Style Sticky Posts</h2>\n\n\n\n<p>To help theme authors perform simpler styling, the <a href=\"https://developer.wordpress.org/reference/functions/post_class/\" rel=\"function\">post_class()</a>  function is used to add class=&#8221;&#8230;&#8221; to DIV, just add:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div id=\"post-&lt;?php the_ID(); ?&gt;\" &lt;?php post_class(); ?&gt;&gt;</code></pre>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/reference/functions/post_class/\" rel=\"function\">post_class()</a>  outputs the class=&#8221;whatever&#8221; piece for that div. This includes several different classes of value: post, hentry (for hAtom microformat pages), category-X (where X is the slug of every category the post is in), and tag-X (similar, but with tags). It also adds &#8220;sticky&#8221; for posts marked as Sticky Posts.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.sticky { color: red; }</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">The &#8220;sticky&#8221; class is only added for sticky posts on the first page of the home page (<a href=\"https://developer.wordpress.org/reference/functions/is_home/\" rel=\"function\">is_home()</a>  is true and <a href=\"https://developer.wordpress.org/reference/functions/is_paged/\" rel=\"function\">is_paged()</a>  is false)</div></div>\n\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-24973",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/24973",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/24973/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143710,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/24973/revisions/143710"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=24973"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

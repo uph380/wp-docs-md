@@ -1,0 +1,91 @@
+{
+    "id": 134476,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/with-notices/"
+    },
+    "modified": "2024-10-30T16:55:43",
+    "modified_gmt": "2024-10-30T16:55:43",
+    "slug": "with-notices",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/with-notices/",
+    "title": {
+        "rendered": "WithNotices"
+    },
+    "content": {
+        "rendered": "<p><code>withNotices</code> is a React <a href=\"https://facebook.github.io/react/docs/higher-order-components.html\">higher-order component</a> used typically in adding the ability to post notice messages within the original component.</p>\n<p>Wrapping the original component with <code>withNotices</code> encapsulates the component with the additional props <code>noticeOperations</code>, <code>noticeUI</code>, and <code>noticeList</code>.</p>\n<p><strong>noticeOperations</strong><br />\nContains a number of useful functions to add notices to your site.</p>\n<p><a name=\"createNotice\" href=\"#createNotice\">#</a> <strong>createNotice</strong><br />\nFunction passed down as a prop that adds a new notice.</p>\n<p><em>Parameters</em></p>\n<ul>\n<li><em>notice</em> <code>object</code>: Notice to add.</li>\n</ul>\n<p><a name=\"createErrorNotice\" href=\"#createErrorNotice\">#</a> <strong>createErrorNotice</strong><br />\nFunction passed as a prop that adds a new error notice.</p>\n<p><em>Parameters</em></p>\n<ul>\n<li><em>msg</em> <code>string</code>: Error message of the notice.</li>\n</ul>\n<p><a name=\"removeAllNotices\" href=\"#removeAllNotices\">#</a> <strong>removeAllNotices</strong><br />\nFunction that removes all notices.</p>\n<p><a name=\"removeNotice\" href=\"#removeNotice\">#</a> <strong>removeNotice</strong><br />\nFunction that removes notice by ID.</p>\n<p><em>Parameters</em></p>\n<ul>\n<li><em>id</em> <code>string</code>: ID of notice to remove.</li>\n</ul>\n<p><a name=\"noticeUi\" href=\"#noticeUi\">#</a><strong>noticeUi</strong><br />\nThe rendered <code>NoticeList</code>.</p>\n<p><a name=\"noticeList\" href=\"#noticeList\">#</a><strong>noticeList</strong><br />\nThe array of notice objects to be displayed.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { withNotices, Button } from '@wordpress/components';\n\nconst MyComponentWithNotices = withNotices(\n    ( { noticeOperations, noticeUI } ) =&gt; {\n        const addError = () =&gt;\n            noticeOperations.createErrorNotice( 'Error message' );\n        return (\n            &lt;div&gt;\n                { noticeUI }\n                &lt;Button variant=\"secondary\" onClick={ addError }&gt;\n                    Add error\n                &lt;/Button&gt;\n            &lt;/div&gt;\n        );\n    }\n);\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 170,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134476",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134476",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134476/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151857,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134476/revisions/151857"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134476"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

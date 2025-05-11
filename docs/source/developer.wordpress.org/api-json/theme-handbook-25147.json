@@ -1,0 +1,97 @@
+{
+    "id": 25147,
+    "date": "2017-01-13T10:05:13",
+    "date_gmt": "2017-01-13T10:05:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25147"
+    },
+    "modified": "2022-10-25T15:42:21",
+    "modified_gmt": "2022-10-25T15:42:21",
+    "slug": "video",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/media/video/",
+    "title": {
+        "rendered": "Video"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Video</h2>\n\n\n\n<p>The WordPress video feature allows you to embed video files and play them back using a simple shortcode <strong>[video]</strong>. Supported file types are mp4, m4v, webm, ogv, wmv and flv.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Video shortcode</h3>\n\n\n\n<p>Following shortcode displays video player that loads pepper.mp4 file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">[video src=\"pepper.mp4\"]</code></pre>\n\n\n\n<p>To use the shortcode in the template file, use the <a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" rel=\"function\">do_shortcode()</a>  function. If the video file is stored in in your theme directory, get the file url directly using <a href=\"https://developer.wordpress.org/reference/functions/get_template_directory_uri/\" rel=\"function\">get_template_directory_uri()</a>  or <a href=\"https://developer.wordpress.org/reference/functions/get_stylesheet_uri/\" rel=\"function\">get_stylesheet_uri()</a> :</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$video_file = get_template_directory_uri() . \"/videos/pepper.mp4\";\necho do_shortcode( '[video mp4=' . $video_file . ']' );</code></pre>\n\n\n\n<p>The following video player will be loaded.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://videos.files.wordpress.com/GbdhpGF3/video-25313e7f01.mp4\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Loop and Autoplay</h3>\n\n\n\n<p>The shortcode video has the same option with audio. Refer to the related section for the <a href=\"#loop-and-autoplay\">loop and autoplay</a> options.</p>\n\n\n\n<p>The following example starts playing the video immediately after the page load and loops:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">echo do_shortcode( '[video mp4=' . $video_file . ' loop=\"on\" autoplay=1]' );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Initial image and Styling</h3>\n\n\n\n<p>The following basic options are supported:</p>\n\n\n\n<h4 class=\"wp-block-heading\">Poster</h4>\n\n\n\n<p>Defines image to show as placeholder before the media plays.<br>The following same code takes <code>album_cover.jpg</code> stored in <code>(theme directory)/images</code> folder as the initial image:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">echo do_shortcode( '[video mp4=' . $video_file . ' poster=' . get_template_directory_uri() . '/images/album_cover.jpg]' );</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Height</h4>\n\n\n\n<p>Defines height of the media. Value is automatically detected on file upload. When you omit this option, the media file height is used.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Width</h4>\n\n\n\n<p>Defines width of the media. Value is automatically detected on file upload. When you omit this option, the media file width is used.</p>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">The theme&#8217;s content_width sets the maximum width.</div></div>\n\n\n\n\n<p>The following example will load the audio player with 320 pixels width and 240 pixels height:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">echo do_shortcode( '[video mp4=' . $video_file . ' width=320 height=240]' );</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Styling</h4>\n\n\n\n<p>If you want to change look &amp; feel of video player from stylesheet, you can target the class name of &#8220;wp-video-shortcode&#8221;. If you want to show the audio player like above in 320 x 240 size, insert following code into your stylesheet:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.wp-video-shortcode {\n    height: 240px;\n    width: 320px;\n}\n</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Supported Video format</h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>mp4</li>\n\n\n\n<li>m4v</li>\n\n\n\n<li>webm</li>\n\n\n\n<li>ogv</li>\n\n\n\n<li>flv</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">References</h3>\n\n\n\n<p>For more technical details such as internal library that enables this function, refer to</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://make.wordpress.org/core/2013/04/08/audio-video-support-in-core/\">https://make.wordpress.org/core/2013/04/08/audio-video-support-in-core/</a>.</li>\n\n\n\n<li><a href=\"https://codex.wordpress.org/Video_Shortcode\" target=\"_blank\" rel=\"noopener\">Video Shortcode</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" target=\"_blank\" rel=\"noopener\">Function do_shortcode()</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 14467238,
+    "featured_media": 0,
+    "parent": 11360,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25147",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25147",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14467238"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25147/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143616,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25147/revisions/143616"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11360"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25147"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

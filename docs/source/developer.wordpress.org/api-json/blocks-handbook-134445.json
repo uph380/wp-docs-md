@@ -1,0 +1,91 @@
+{
+    "id": 134445,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/checkbox-control/"
+    },
+    "modified": "2024-10-30T16:55:49",
+    "modified_gmt": "2024-10-30T16:55:49",
+    "slug": "checkbox-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/checkbox-control/",
+    "title": {
+        "rendered": "CheckboxControl"
+    },
+    "content": {
+        "rendered": "<p>Checkboxes allow the user to select one or more items from a set.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/02/CheckboxControl.png?ssl=1\" alt=\"Selected and unselected checkboxes\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use checkboxes</h4>\n<p>Use checkboxes when you want users to:</p>\n<ul>\n<li>Select one or multiple items from a list.</li>\n<li>Open a list containing sub-selections.</li>\n</ul>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/02/select-from-list.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Do</strong><br />\nUse checkboxes when users can select multiple items from a list. They let users select more than one item.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/02/many-form-toggles.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Don\u2019t</strong><br />\nDon\u2019t use toggles when a list consists of multiple options. Use checkboxes \u2014 they take up less space.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/02/checkbox-sublist.gif?ssl=1\" alt=\"\" /></p>\n<p>Checkboxes can be used to open a list containing sub-selections.</p>\n<h4>Parent and child checkboxes</h4>\n<p>Checkboxes can have a parent-child relationship, with secondary options nested under primary options.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/02/checkbox-parent.gif?ssl=1\" alt=\"\" /></p>\n<p>When the parent checkbox is <em>checked</em>, all the child checkboxes are checked. When a parent checkbox is <em>unchecked</em>, all the child checkboxes are unchecked.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/design/files/2019/02/mixed-checkbox.png?ssl=1\" alt=\"\" /></p>\n<p>If only a few child checkboxes are checked, the parent checkbox becomes a mixed checkbox.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<p>Render an is author checkbox:</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { CheckboxControl } from '@wordpress/components';\n\nconst MyCheckboxControl = () =&gt; {\n    const [ isChecked, setChecked ] = useState( true );\n    return (\n        &lt;CheckboxControl\n            __nextHasNoMarginBottom\n            label=\"Is author\"\n            help=\"Is the user a author or not?\"\n            checked={ isChecked }\n            onChange={ setChecked }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<p>The set of props accepted by the component will be specified below.<br />\nProps not included in this set will be applied to the input element.</p>\n<h4><code>label</code>: <code>string</code></h4>\n<p>A label for the input field, that appears at the side of the checkbox.<br />\nThe prop will be rendered as content a label element.<br />\nIf no prop is passed an empty label is rendered.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>help</code>: <code>string|Element</code></h4>\n<p>If this property is added, a help text will be generated using help property as the content.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>checked</code>: <code>boolean</code></h4>\n<p>If checked is true the checkbox will be checked. If checked is false the checkbox will be unchecked.<br />\nIf no value is passed the checkbox will be unchecked.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>onChange</code>: <code>function</code></h4>\n<p>A function that receives the checked state (boolean) as input.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>indeterminate</code>: <code>boolean</code></h4>\n<p>If indeterminate is true the state of the checkbox will be indeterminate.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>__nextHasNoMarginBottom</code>: <code>boolean</code></h4>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To select one option from a set, and you want to show all the available options at once, use the <code>RadioControl</code> component.</li>\n<li>To toggle a single setting on or off, use the <code>FormToggle</code> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 127,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134445",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134445",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134445/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154496,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134445/revisions/154496"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134445"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

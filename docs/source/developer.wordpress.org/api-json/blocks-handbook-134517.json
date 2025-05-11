@@ -1,0 +1,91 @@
+{
+    "id": 134517,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/tree-grid/"
+    },
+    "modified": "2024-10-30T16:55:34",
+    "modified_gmt": "2024-10-30T16:55:34",
+    "slug": "tree-grid",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/tree-grid/",
+    "title": {
+        "rendered": "TreeGrid"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<h2>Development guidelines</h2>\n<p><code>TreeGrid</code>, <code>TreeGridRow</code>, and <code>TreeGridCell</code> are components used to create a tree hierarchy. They&#8217;re not visually styled components, but instead help with adding keyboard navigation and roving tabindex behaviors to tree grid structures.</p>\n<p>A tree grid is a hierarchical 2 dimensional UI component, for example it could be used to implement a file system browser.</p>\n<p>A tree grid allows the user to navigate using arrow keys. Up/down to navigate vertically across rows, and left/right to navigate horizontally between focusables in a row.</p>\n<p>For more information on a tree grid, see the following links:</p>\n<ul>\n<li>https://www.w3.org/TR/wai-aria-practices/examples/treegrid/treegrid-1.html</li>\n</ul>\n<h3>Usage</h3>\n<p>The <code>TreeGrid</code> renders both a <code>table</code> and <code>tbody</code> element, and is intended to be used with <code>TreeGridRow</code> (<code>tr</code>) and <code>TreeGridCell</code> (<code>td</code>) to build out a grid.</p>\n<pre><code class=\"language-jsx\">function TreeMenu() {\n    return (\n        &lt;TreeGrid&gt;\n            &lt;TreeGridRow level={ 1 } positionInSet={ 1 } setSize={ 2 }&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button onClick={ onSelect } { ...props }&gt;Select&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button onClick={ onMove } { ...props }&gt;Move&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n            &lt;/TreeGridRow&gt;\n            &lt;TreeGridRow level={ 1 } positionInSet={ 2 } setSize={ 2 }&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button onClick={ onSelect } { ...props }&gt;Select&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button onClick={ onMove } { ...props }&gt;Move&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n            &lt;/TreeGridRow&gt;\n            &lt;TreeGridRow level={ 2 } positionInSet={ 1 } setSize={ 1 }&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button onClick={ onSelect } { ...props }&gt;Select&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button onClick={ onMove } { ...props }&gt;Move&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n            &lt;/TreeGridRow&gt;\n        &lt;/TreeGrid&gt;\n    );\n}\n</code></pre>\n<h3>Sub-Components</h3>\n<h4>TreeGrid</h4>\n<h5>Props</h5>\n<p>Aside from the documented callback functions, any props specified will be passed to the <code>table</code> element rendered by <code>TreeGrid</code>.</p>\n<p><code>TreeGrid</code> should always have children.</p>\n<h6><code>onFocusRow</code>: <code>( event: KeyboardEvent, startRow: HTMLElement, destinationRow: HTMLElement ) =&gt; void</code></h6>\n<p>Callback that fires when focus is shifted from one row to another via the Up and Down keys. Callback is also fired on Home and End keys which move focus from the beginning row to the end row.<br />\nThe callback is passed the event, the start row element that the focus was on originally, and<br />\nthe destination row element after the focus has moved.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>onCollapseRow</code>: <code>( row: HTMLElement ) =&gt; void</code></h6>\n<p>A callback that passes in the row element to be collapsed.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h6><code>onExpandRow</code>: <code>( row: HTMLElement ) =&gt; void</code></h6>\n<p>A callback that passes in the row element to be expanded.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4>TreeGridRow</h4>\n<h5>Props</h5>\n<p>Additional props other than those specified below will be passed to the <code>tr</code> element rendered by <code>TreeGridRow</code>, so for example, it is possible to also set a <code>className</code> on a row.</p>\n<h6><code>level</code>: <code>number</code></h6>\n<p>An integer value designating the level in the hierarchical tree structure. Counting starts at 1. A value of <code>1</code> indicates the root level of the structure.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h6><code>positionInSet</code>: <code>number</code></h6>\n<p>An integer value that represents the position in the set. A set is the count of elements at a specific level. Counting starts at 1.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h6><code>setSize</code>: <code>number</code></h6>\n<p>An integer value that represents the total number of items in the set, at this specific level of the hierarchy.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h6><code>isExpanded</code>: <code>boolean</code></h6>\n<p>An optional value that designates whether a row is expanded or collapsed. Currently this value only sets the correct aria-expanded property on a row, it has no other built-in behavior.</p>\n<p>If there is a need to implement <code>aria-expanded</code> elsewhere in the row, cell, or element within a cell, you may pass <code>isExpanded={ undefined }</code>. In order for keyboard navigation to continue working, add the <code>data-expanded</code> attribute with either <code>true</code>/<code>false</code>. This allows the <code>TreeGrid</code> component to still manage keyboard interactions while allowing the <code>aria-expanded</code> attribute to be placed elsewhere. See the example below.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<pre><code class=\"language-jsx\">function TreeMenu() {\n    return (\n        &lt;TreeGrid&gt;\n            &lt;TreeGridRow level={ 1 } positionInSet={ 1 } setSize={ 2 } isExpanded={ undefined } data-expanded={ false }&gt;\n                &lt;TreeGridCell&gt;\n                    { ( props ) =&gt; (\n                        &lt;Button aria-expanded=\"false\" onClick={ onSelect } { ...props }&gt;Select&lt;/Button&gt;\n                    ) }\n                &lt;/TreeGridCell&gt;\n            &lt;/TreeGridRow&gt;\n        &lt;/TreeGrid&gt;\n    );\n}\n</code></pre>\n<h3>TreeGridCell</h3>\n<h4>Props</h4>\n<p><code>TreeGridCell</code> accepts no specific props. Any props specified will be passed to the <code>td</code> element rendered by <code>TreeGridCell</code>.</p>\n<h4><code>children</code> as a function</h4>\n<p><code>TreeGridCell</code> renders children using a function:</p>\n<pre><code class=\"language-jsx\">&lt;TreeGridCell&gt;\n    { ( props ) =&gt; (\n        &lt;Button onClick={ doSomething } { ...props }&gt;\n            Do something\n        &lt;/Button&gt;\n    ) }\n&lt;/TreeGridCell&gt;\n</code></pre>\n<p>Props passed as an argument to the render prop must be passed to the child focusable component/element within the cell. If a component is used, it must correctly handle the <code>onFocus</code>, <code>tabIndex</code>, and <code>ref</code> props, passing these to the element it renders. These props are used to handle the roving tabindex functionality of the tree grid.</p>\n<h2>Related components</h2>\n<ul>\n<li>This component implements <code>RovingTabIndex</code>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 227,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134517",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134517",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134517/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151832,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134517/revisions/151832"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134517"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

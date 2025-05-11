@@ -1,0 +1,91 @@
+{
+    "id": 147699,
+    "date": "2023-06-28T16:10:01",
+    "date_gmt": "2023-06-28T16:10:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interactivity/"
+    },
+    "modified": "2024-10-30T17:09:44",
+    "modified_gmt": "2024-10-30T17:09:44",
+    "slug": "packages-interactivity",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interactivity/",
+    "title": {
+        "rendered": "@wordpress/interactivity"
+    },
+    "content": {
+        "rendered": "<p>The package <code>@wordpress/interactivity</code> contains the logic that enables the Interactivity API which was <a href=\"https://make.wordpress.org/core/2024/02/19/merge-announcement-interactivity-api/\">introduced in WordPress Core in v6.5</a>. This means this package is already bundled in Core in any version of WordPress higher than v6.5.</p>\n<div class=\"callout callout-info\">\n    Check the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/\">Interactivity API Reference docs in the Block Editor handbook</a> to learn more about the Interactivity API.\n</div>\n<h2>Installation</h2>\n<p>Install the Interactivity API using the command:</p>\n<pre><code class=\"language-bash\">npm install @wordpress/interactivity --save\n</code></pre>\n<p>This step is only required if you use the Interactivity API outside WordPress.</p>\n<p>Within WordPress, the package is already bundled in Core. To ensure it&#8217;s loaded, add <code>@wordpress/interactivity</code> to the dependency array of the script module. This process is often done automatically with tools like <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/\"><code>wp-scripts</code></a>.</p>\n<p>Furthermore, this package assumes your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment with limited or no support for such language features and APIs, you should include the polyfill shipped in <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\"><code>@wordpress/babel-preset-default</code></a> in your code.</p>\n<h2>License</h2>\n<p>Interactivity API proposal, as part of Gutenberg and the WordPress project is free software, and is released under the terms of the GNU General Public License version 2 or (at your option) any later version. See <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/LICENSE.md\">LICENSE.md</a> for complete license.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 288,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-147699",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147699",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147699/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153604,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/147699/revisions/153604"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=147699"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

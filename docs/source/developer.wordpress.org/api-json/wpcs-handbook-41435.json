@@ -1,0 +1,85 @@
+{
+    "id": 41435,
+    "date": "2019-04-25T20:55:51",
+    "date_gmt": "2019-04-25T20:55:51",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/coding-standards/changelog/"
+    },
+    "modified": "2024-01-16T20:30:00",
+    "modified_gmt": "2024-01-16T20:30:00",
+    "slug": "changelog",
+    "status": "publish",
+    "type": "wpcs-handbook",
+    "link": "https://developer.wordpress.org/coding-standards/changelog/",
+    "title": {
+        "rendered": "Changelog"
+    },
+    "content": {
+        "rendered": "<ul>\n<li>2020-09-25 Update code examples to use Markdown code fence notation instead of shortcodes.</li>\n<li>2019-12-21 Update <code>javascript.md</code> from the <a href=\"https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/\">handbook page</a>.</li>\n<li>2019-12-21 Update <code>accessibility.md</code> from the <a href=\"https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/\">handbook page</a>.</li>\n<li>2018-01-14 Initial import from https://make.wordpress.org/core/handbook/best-practices/</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 3,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41435",
+        "wpcs-handbook",
+        "type-wpcs-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41435",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/wpcs-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41435/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151914,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41435/revisions/151914"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41435"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

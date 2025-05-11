@@ -1,0 +1,91 @@
+{
+    "id": 156816,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/page-link/page-link-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:53",
+    "modified_gmt": "2025-02-21T04:17:53",
+    "slug": "page-link-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/page-link/page-link-tutorial/",
+    "title": {
+        "rendered": "Using the Page Link Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Page Link field</li>\n<li>Configure options:\n<ul>\n<li>Select post types</li>\n<li>Configure taxonomy filters</li>\n<li>Set multiple selection</li>\n<li>Enable/disable archives</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Internal Navigation\n<ul>\n<li>Related content</li>\n<li>Section links</li>\n<li>Menu structures</li>\n</ul>\n</li>\n<li>Content Relationships\n<ul>\n<li>Related posts</li>\n<li>Resource links</li>\n<li>Content hierarchy</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Use clear selection filters</li>\n<li>Consider multiple selection needs</li>\n<li>Test search functionality</li>\n<li>Validate link targets</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156815,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156816",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156816",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156816/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156903,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156816/revisions/156903"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156815"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156816"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

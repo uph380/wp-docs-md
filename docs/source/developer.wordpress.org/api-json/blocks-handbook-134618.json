@@ -1,0 +1,91 @@
+{
+    "id": 134618,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/"
+    },
+    "modified": "2025-01-07T18:34:11",
+    "modified_gmt": "2025-01-07T18:34:11",
+    "slug": "key-concepts",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/",
+    "title": {
+        "rendered": "Key Concepts"
+    },
+    "content": {
+        "rendered": "<h2>Blocks</h2>\n<p>Blocks are an abstract unit for structuring and interacting with content. When composed together they create the content for a webpage. Everything from a paragraph, to a video, to the site title is represented as a block.</p>\n<p>Blocks come in many different forms but also provide a consistent interface. They can be inserted, moved, reordered, copied, duplicated, transformed, deleted, dragged, and combined. Blocks can also be reused, allowing them to be shared across posts and post types and/or used multiple times in the same post. If it helps, you can think of blocks as a more graceful shortcode, with rich formatting tools for users to compose content.</p>\n<p>The settings and content of a block can be customized in three main places: the block canvas, the block toolbar, and the block inspector.</p>\n<h3>Composability</h3>\n<p>Blocks are meant to be combined in different ways. Blocks are hierarchical in that a block can be nested within another block. Nested blocks and its container are also called <em>children</em> and <em>parent</em> respectively. For example, a <em>Columns</em> block can be the parent block to multiple child blocks in each of its columns. The API that governs child block usage is named <code>InnerBlocks</code>.</p>\n<h3>Data and attributes</h3>\n<p>Blocks understand content as attributes and are serializable to HTML. To this point, there is a new Block Grammar. Distilled, the block grammar is an HTML comment, either a self-closing tag or with a beginning tag and ending tag. In the main tag, depending on the block type and user customizations, there can be a JSON object. This raw form of the block is referred to as serialized.</p>\n<pre><code class=\"language-html\">&lt;!-- wp:paragraph {\"key\": \"value\"} --&gt;\n&lt;p&gt;Welcome to the world of blocks.&lt;/p&gt;\n&lt;!-- /wp:paragraph --&gt;\n</code></pre>\n<p>Blocks can be static or dynamic. Static blocks contain rendered content and an object of Attributes used to re-render based on changes. Dynamic blocks require server-side data and rendering while the post content is being generated (rendering).</p>\n<p>Each block contains Attributes or configuration settings, which can be sourced from raw HTML in the content via meta or other customizable origins.</p>\n<p>More on <a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/data-flow/\">Data format and data flow</a>.</p>\n<h3>Block transforms</h3>\n<p>Blocks have the ability to be transformed into other block types. This allows basic operations like converting a paragraph into a heading, but also more intricate ones like multiple images becoming a gallery. Block transforms work for single blocks and for multi-block selections. Internal block variations are also possible transformation targets.</p>\n<h3>Block variations</h3>\n<p>Given a block type, a block variation is a predefined set of its initial attributes. This API allows creating a single block from which multiple configurations are possible. Variations provide different possible interfaces, including showing up as entirely new blocks in the library, or as presets when inserting a new block. Read <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/#variations-optional\">the API documentation</a> for more details.</p>\n<p><strong>More on blocks</strong></p>\n<ul>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/\">Block API</a></strong></li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\">Tutorial: Building A Custom Block</a></strong></li>\n</ul>\n<h2>Reusable blocks</h2>\n<p>A reusable blocks is <strong>an instance</strong> of a block (or multiple blocks) that can be inserted and edited in multiples places, remaining in sync everywhere. If a reusable block is edited in one place, those changes are reflected across all posts and pages that block is used. Examples of reusable blocks include a block consisting of a heading whose content and a custom color that would be appear on multiple pages of the site and sidebar widgets that would appear on every page.</p>\n<p>Any edits to a reusable block will appear on every other use of that block, saving time from having to make the same edit on different posts.</p>\n<p>Internally, reusable blocks are stored as a hidden post type (<code>wp_block</code>) and are dynamic blocks that &#8220;ref&#8221; or reference the <code>post_id</code> and return the <code>post_content</code> for that block.</p>\n<h2>Patterns</h2>\n<p>A <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/\">block pattern</a> is a group of blocks that have been combined together creating a design pattern. These design patterns provide a starting point for building more advanced pages and layouts quickly, instead of inserting individual blocks. A block pattern can be as small as a single block or as large as a full page of content. Unlike reusable blocks, once a pattern is inserted it doesn&#8217;t remain in sync with the original content as the blocks contained are meant to be edited and customized by the user. Underneath the surface, patterns are just regular blocks composed together. Themes can register patterns to offer users quick starting points with a design language familiar to that theme&#8217;s aesthetics.</p>\n<h2>Templates</h2>\n<p>While the post editor concentrates on the content of a post, the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-templates/\">template</a> editor allows declaring and editing an entire site using blocks, from header to footer. Templates are broken down between templates (that describe a full page) and template parts (that describe reusable areas within a template, including semantic areas like header, sidebar, and footer).</p>\n<p>These templates and template parts can be composed together and registered by a theme. They are also entirely editable by users using the block editor; a collection of blocks that interact with different properties and settings of the site (like the site title, description, logo, navigation, etc) are especially useful when editing templates and template parts. Customized templates are saved in a <code>wp_template</code> post type. Block templates include both static pages and dynamic ones, like archives, singular, home, 404, etc.</p>\n<p>Note: custom post types can also be initialized with a starting <code>post_content</code> template that should not be confused with the theme template system described above.</p>\n<p>More on <a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/full-site-editing-templates/\">Site editing templates</a>.</p>\n<h2>Styles</h2>\n<p>Styles, formerly known as Global Styles and as such referenced in the code, is both an interface that users access through the editor and a configuration system done through <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/\">a <code>theme.json</code> file</a>. This file absorbs most of the configuration aspects usually scattered through various <code>add_theme_support</code> calls to simplify communicating with the editor. It thus aims to improve declaring what settings should be enabled, what specific tools a theme offers (like a custom color palette), the available design tools present, and an infrastructure that allows to coordinate the styles coming from WordPress, the active theme, and the user.</p>\n<p>Learn more about <a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/styles/#global-styles\">Global Styles</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134617,
+    "menu_order": 355,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134618",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134618",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134618/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151764,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134618/revisions/151764"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134618"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

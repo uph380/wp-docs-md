@@ -1,0 +1,97 @@
+{
+    "id": 144470,
+    "date": "2022-11-20T19:57:23",
+    "date_gmt": "2022-11-20T19:57:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=144470"
+    },
+    "modified": "2023-11-15T08:39:04",
+    "modified_gmt": "2023-11-15T08:39:04",
+    "slug": "data-validation",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/security/data-validation/",
+    "title": {
+        "rendered": "Validating Data"
+    },
+    "content": {
+        "rendered": "\n<p>Untrusted data comes from many sources (users, third party sites, even your own database!) and all of it needs to be checked before it&#8217;s used.</p>\n\n\n\n<p>Remember: Even admins are users, and users will enter incorrect data, either on purpose or accidentally. It\u2019s your job to protect them from themselves.</p>\n\n\n\n<p><em>Validating</em> input is the process of testing data against a predefined pattern (or patterns) with a definitive result: valid or invalid. Validation is a more specific approach when compared to sanitization, but both have their roles.</p>\n\n\n\n<p>Simple validation examples:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Check that required fields have not been left blank</li>\n\n\n\n<li>Check that an entered phone number only contains numbers and punctuation</li>\n\n\n\n<li>Check that an requested string is one of five valid options</li>\n\n\n\n<li>Check that a quantity field is greater than 0</li>\n</ul>\n\n\n\n<p><strong>Data validation should be performed as early as possible.</strong> That means validating the data before performing any actions.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Validation Philosophies</h2>\n\n\n\n<p>There are several different philosophies about how validation should be done. Each is appropriate for different scenarios.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Safelist</h3>\n\n\n\n<p>Accept data only from a finite list of known and trusted values.</p>\n\n\n\n<p>When comparing untrusted data against the safelist, it&#8217;s important to make sure that strict type checking is used. Otherwise an attacker could craft input in a way that will pass the safelist but still have a malicious effect.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Comparison Operator</h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$untrusted_input = '1 malicious string';  // will evaluate to integer 1 during loose comparisons\n\nif ( 1 === $untrusted_input ) {  // == would have evaluated to true, but === evaluates to false\n    echo '&lt;p&gt;Valid data';\n} else {\n    wp_die( 'Invalid data' );\n}</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\"><code>in_array()</code></h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$untrusted_input = '1 malicious string';  // will evaluate to integer 1 during loose comparisons\n$safe_values     = array( 1, 5, 7 );\n\nif ( in_array( $untrusted_input, $safe_values, true ) ) {  // `true` enables strict type checking\n    echo '&lt;p&gt;Valid data';\n} else {\n    wp_die( 'Invalid data' );\n}</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\"><code>switch()</code></h4>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$untrusted_input = '1 malicious string';  // will evaluate to integer 1 during loose comparisons\n\nswitch ( true ) {\n    case 1 === $untrusted_input:  // do your own strict comparison instead of relying on switch()'s loose comparison\n        echo '&lt;p&gt;Valid data';\n        break;\n\n    default:\n        wp_die( 'Invalid data' );\n}</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Blocklist</h4>\n\n\n\n<p>Reject data from finite list of known untrusted values. This is very rarely a good idea.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Format Detection</h4>\n\n\n\n<p>Test to see if the data is of the correct format. Only accept it if it is.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( ! ctype_alnum( $data ) ) {\n  wp_die( \"Invalid format\" );\n}\n\nif ( preg_match( \"/[^0-9.-]/\", $data ) ) {\n  wp_die( \"Invalid format\" );\n}</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Format Correction</h4>\n\n\n\n<p>Accept most any data, but remove or alter the dangerous pieces.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$trusted_integer = (int) $untrusted_integer;\n$trusted_alpha = preg_replace( '/[^a-z]/i', \"\", $untrusted_alpha );\n$trusted_slug = sanitize_title( $untrusted_slug );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Example One</h2>\n\n\n\n<p>Let&#8217;s say we have an input field designed to accept a US zipcode:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;input type=\"text\" id=\"wporg_zip_code\" name=\"my-zipcode\" maxlength=\"10\" /&gt;</code></pre>\n\n\n\n<p>Here we&#8217;ve told the browser to only allow up to ten characters of input\u2026but there&#8217;s no limitation on <em>which</em> characters they can input. They could enter <code>11221</code> or <code>eval()</code>.</p>\n\n\n\n<p>This is where validation comes in. When processing the form, we write code to check each field for its proper data type, and discard it if it&#8217;s incorrect.</p>\n\n\n\n<p>For example: to check the <code>my-zipcode</code> field, we might do something like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Validate a US zip code.\n *\n * @param string $zip_code   RAW zip code to check.\n *\n * @return bool              true if valid, false otherwise.\n */\nfunction wporg_is_valid_us_zip_code( string $zip_code ):bool {\n    // Scenario 1: empty.\n    if ( empty( $zip_code ) ) {\n        return false;\n    }\n\n    // Scenario 2: more than 10 characters.\n    // The `maxlength` attribute is only enforced by \n    // the browser, so we still need to validate the\n    // length of the input on the server to protect\n    // against a manual submission.\n    if ( 10 &lt; strlen( trim( $zip_code ) ) ) {\n        return false;\n    }\n\n    // Scenario 3: incorrect format.\n    if ( ! preg_match( '/^d{5}(-?d{4})?$/', $zip_code ) ) {\n        return false;\n    }\n\n    // Passed successfully.\n    return true;\n}</code></pre>\n\n\n\n<p>Then, when processing the form, your code should check the <code>wporg_zip_code</code> field and perform the action based on the result:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( isset( $_POST['wporg_zip_code'] ) &amp;&amp; wporg_is_valid_us_zip_code( $_POST['wporg_zip_code'] ) ) {\n    // $_POST['wporg_zip_code'] is valid; carry on\n}</code></pre>\n\n\n\n<p>Note that this specific example is checking that the supplied data is in the correct format; it is not checking that the supplied and correctly formatted data is a valid zipcode. For that, you&#8217;d need a second function to compare against a list of valid zipcodes.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Example Two</h2>\n\n\n\n<p>Say your code will query the database for posts, and you want to allow the user to sort the query results.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$allowed_keys = array( 'author', 'post_author', 'date', 'post_date' );\n$orderby      = sanitize_key( $_POST['orderby'] );\nif ( in_array( $orderby, $allowed_keys, true ) ) {\n    // $orderby is valid; carry on\n}</code></pre>\n\n\n\n<p>This example code checks an incoming sort key (stored in the <code>orderby</code>&nbsp;input parameter) for validity by comparing it against an array of allowed sort keys. This prevents the user from passing in arbitrary and potentially malicious data.</p>\n\n\n\n<p>Before checking the incoming sort key against the array, the key&nbsp;is passed into the built-in WordPress function&nbsp;<code>sanitize_key()</code>. This function ensures (among other things) that the key is in lowercase, which we want because <code>in_array()</code> performs a case-sensitive search.</p>\n\n\n\n<p>Passing <code>true</code> into the third parameter of&nbsp;<code>in_array()</code> enables strict type checking, which tells the function to not only compare values but value&nbsp;types&nbsp;as well. This allows the code to be certain that the incoming sort key is a string and not some other data type.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Validation Functions</h2>\n\n\n\n<p>Most validation is done as part of custom code, but there are some helper functions too. These are in addition to the ones listed on the Sanitization page. </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>balanceTags( $html )</code> or <code>force_balance_tags( $html )</code> &#8211; Tries to make sure HTML tags are balanced so that valid XML is output.</li>\n\n\n\n<li><code><a href=\"//php.net/count\">count()</a></code> for checking how many items are in an array</li>\n\n\n\n<li><code><a href=\"//php.net/in_array\">in_array()</a></code> for checking whether something exists in an array</li>\n\n\n\n<li><code><a href=\"/reference/functions/is_email/\">is_email()</a></code> will validate whether an email address is valid.</li>\n\n\n\n<li><a href=\"https://www.php.net/is_array\" data-type=\"link\" data-id=\"https://www.php.net/is_array\"><code>is_array()</code></a> for checking whether something is an array</li>\n\n\n\n<li><code><a href=\"https://php.net/mb_strlen\">mb_strlen()</a></code> or <code><a href=\"https://php.net/strlen\">strlen()</a></code> for checking that a string has the expected number of characters</li>\n\n\n\n<li><code><a href=\"https://php.net/preg_match\">preg_match()</a></code>, <code><a href=\"https://php.net/strpos\">strpos()</a></code> for checking for occurrences of certain strings in other strings</li>\n\n\n\n<li><code>sanitize_html_class( $class, $fallback )</code> &#8211; Sanitizes a html classname to ensure it only contains valid characters. Strips the string down to A-Z,a-z,0-9,&#8217;-&#8216; and if this results in an empty string then it will return the alternate value supplied.</li>\n\n\n\n<li><code>tag_escape( $html_tag_name )</code> &#8211; Sanitizes an HTML tag name (does not escape anything, despite the name of the function).</li>\n\n\n\n<li><code><a href=\"/reference/functions/term_exists/\">term_exists()</a></code> checks whether a tag, category, or other taxonomy term exists.</li>\n\n\n\n<li><code><a href=\"/reference/functions/username_exists/\">username_exists()</a></code> checks if username exists.</li>\n\n\n\n<li><code><a href=\"/reference/functions/validate_file/\">validate_file()</a></code> will validate that an entered file path is a real path (but not whether the file exists).</li>\n</ul>\n\n\n\n<p>Check the <a href=\"/reference/\">WordPress code reference</a> for more functions like these. Search for functions with names like these: <code>*_exists()</code>, <code>*_validate()</code>, and&nbsp;<code>is_*()</code>. Not all of these are validation functions, but many are helpful.</p>\n",
+        "protected": false
+    },
+    "author": 7756733,
+    "featured_media": 0,
+    "parent": 144458,
+    "menu_order": 20,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-144470",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144470",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7756733"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144470/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150165,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144470/revisions/150165"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/144458"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=144470"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 135662,
+    "date": "2021-04-26T13:39:48",
+    "date_gmt": "2021-04-26T13:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/themes/"
+    },
+    "modified": "2024-01-29T21:09:51",
+    "modified_gmt": "2024-01-29T21:09:51",
+    "slug": "themes",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/themes/",
+    "title": {
+        "rendered": "Themes"
+    },
+    "content": {
+        "rendered": "<p>The block editor provides a number of options for theme designers and developers, to interact with it, including theme-defined color settings, font size control, and much more.</p>\n<h2>Types of themes</h2>\n<h3>Classic theme</h3>\n<p>In terms of block editor terminology this is any theme that defines its templates in the traditional <code>.php</code> file format, and that doesn&#8217;t have an <code>index.html</code> format template in the <code>/block-templates</code> or <code>/templates</code> folders. A <code>Classic</code> theme has the ability to provide configuration and styling options to the block editor, and block content, via <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/\">Theme Supports</a>, or by including a <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/\">theme.json</a> file. A theme does not have to be a <code>Block</code> theme in order to take advantage of some of the flexibility provided by the use of a <code>theme.json</code> file.</p>\n<h3>Block theme</h3>\n<p>This is any theme that has, at a minimum, an <code>index.html</code> format template in the <code>/block-templates</code> or <code>/templates</code> folders, and with templates  provided in form of block content markup. While many <code>Block</code> themes will make use of a <code>theme.json</code> file to provide configuration and styling settings, a <code>theme.json</code> is not a requirement of <code>Block</code> themes. The advantage of <code>Block</code> themes is that the block editor can be used to edit all areas of the site: headers, footers, sidebars, etc.</p>\n<h3>Full site editing (FSE)</h3>\n<p>There isn&#8217;t an FSE specific theme type. In WordPress &gt; 5.9 FSE is enabled for any <code>Block</code> theme, ie. any theme that has an <code>index.html</code> format template in the <code>/block-templates</code> or <code>/templates</code> folders.</p>\n<p><strong>Contents</strong></p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/\">Global Settings (theme.json)</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/\">Theme Support</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134350,
+    "menu_order": 49,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135662",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135662",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135662/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151421,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135662/revisions/151421"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134350"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135662"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

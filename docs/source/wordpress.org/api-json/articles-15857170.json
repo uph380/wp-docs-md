@@ -1,0 +1,109 @@
+{
+    "id": 15857170,
+    "date": "2022-07-25T17:15:51",
+    "date_gmt": "2022-07-25T17:15:51",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15857170"
+    },
+    "modified": "2023-08-01T10:31:27",
+    "modified_gmt": "2023-08-01T10:31:27",
+    "slug": "comment-date-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comment-date-block/",
+    "title": {
+        "rendered": "Comment Date Block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the List of Blocks</a></p>\n\n\n\n<p>The <em>Comment Date</em> <em>Block</em> displays the date on which a comment was posted. This block is located inside a Comment Query Loop block and allows users to edit the appearance of the comment date.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/P1T4j6VrNLnePmR12_r8K3QKMppdmoku7XDCvC4X5PzeeRDZpq5KbyFnaf2w1sYOKA9NKG2FBm79OhZ6ie4vGrCXRAiP7mqiHwmIdLGi6hByIrFPP8HZ-9M74RTjilIlYT3eV9Gw9qrfT606T_Fr4Q\" alt=\"Comment Date inside the Comment Template block within the Comment \" style=\"width:567px;height:444px\" width=\"567\" height=\"444\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">You can only insert the <em>Comment Date Block</em> inside a Comment Template block within the Comment Query Loop block.&nbsp;</p>\n\n\n\n<p>Click the (+) icon inside the Comment Template block to open the block inserter pop-up window and search for the Comment Date Block. </p>\n\n\n\n<p>You can also use the keyboard shortcut <code>/comment-date</code> to quickly insert a Comment Date block inside a Comment Template block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/kasTjALjXSxbLHp0F1sMvnlIBzN64PbppKm2afgTV8ZyW_GEXWchvCmxAYJj05pwx33gwm07ExpI0eyoIyj5ey4etH2MZNl0hDJ9ZREtgxNbHHVpSJJFbrPzKVxBGDzDtCppvQRxQ-hZbIlqxdDPDQ\" alt=\"How to add a Comment Date block\" style=\"width:365px;height:337px\" width=\"365\" height=\"337\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/b2nvjTIuBGivg3wBQVZM2aNxJkPETPtjyzL27OYTbdeb8uvnrozpgUaQSllkCNeuOOKw0fh4FXsWFWsPu0TlyIL91hm-iIeKTwIDVQUWMx_Z67ZvG0XiwgkrQTEAkdDkejcbYEtpnTW27qhG75vgpQ\" alt=\"Block toolbar in the Comment Date block\" /></figure>\n\n\n\n<p>The block toolbar contains the tools to customize each block. The Comment Date Block\u2019s toolbar consists of the following tools:</p>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<p>You can transform a&nbsp;<em>Comment Date block</em>&nbsp;into a Columns, or a Group block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-02-at-10.50.22-AM-1.png\" alt=\"Transform option in the Comment Date block\" class=\"wp-image-15882095\" style=\"width:313px;height:187px\" width=\"313\" height=\"187\" /></figure>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh5.googleusercontent.com/BMUqC-W5K9GJvX8HaqNeEogwmfCjPx_BNIE1gU-JxFZ2muYyYP9ZVsJD2FYMtqsflOV7MuZHlrHeg_ZWw5U_RSPuqF3fKQyRXgf7i0GO8u0aaDECNm1VSClDc7SmXIjwHPXOVfTMtphXa8o3VJpuxA\" alt=\"Moe tools in the Comment Date block\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <em>Comment Date Block</em> and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by <strong>three vertical dots on the far right of the toolbar</strong> gives you more features such as the ability to duplicate, remove, or edit your block as HTML.&nbsp;</p>\n\n\n\n<p class=\"has-text-align-center\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/3ZRruou9uwU_69EM8ikcNkCMP4HQ7fT_CHDyGi8l5XazSv7iLJNSaQWDUL01XCN-lHB3dWO9UAyvkj2VD93pQWD7OVk-YPnccKf0ZJTfQdZzmwUnUGf0ovVasghk3SsiyLms23wvNckgypR9Z9DQyQ\" width=\"188\" height=\"67\">&nbsp;</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<p>Here are the options for the <em>Comment Date Block</em>:</p>\n\n\n\n<h3 class=\"wp-block-heading\">Settings</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/gaunkTZ656nCecmi8YPqCKSq439XJluhKVfB-NYsumTL4LJwqQhfh3-ZimLe_Cjyn2TxDSF11Npiy1ARejTYqhZuvOIsBOZESSYp4M0yxntzO23jC4xZbQWqkwQVTd_rbUft7gWgkr59kWDoEvHGSg\" alt=\"Block settings in the Comment Date block\" /></figure>\n\n\n\n<p>In the Settings tab, you can select the Date format. By turning on the <em>Default format</em><strong><em> </em></strong>option, you can choose to use the default date format. When this setting is turned off, you can select the preferred date format from the drop-down list or enter a custom date or time <a href=\"https://wordpress.org/documentation/article/formatting-date-and-time/\">format</a>.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-25-at-9.47.41-AM-2-524x1024.png\" alt=\"Changing the Default date format in the Comment Date block\" class=\"wp-image-15857269\" style=\"width:262px;height:512px\" width=\"262\" height=\"512\" /></figure>\n\n\n\n<p>You can also turn on/off the  &#8216;<em>Link to comment&#8217;</em> switch. Turning on this button will link the date field to the specific comment.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Color </h3>\n\n\n\n<p>The <em>Comment Date Block</em> lets you customize the text, background, and link color. Click on any of the options to change the color. Choose from the default color or click the upper rectangle area to pick a custom color using the color picker.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-25-at-9.55.47-AM-1-1024x530.png\" alt=\"Color settings in the Comment Date block\" class=\"wp-image-15857281\" style=\"width:363px;height:188px\" width=\"363\" height=\"188\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography </h3>\n\n\n\n<p>To access all the typography options click on the 3-dot button in the right corner of the Typography tab. You also have the option to Reset all the typography changes you made by clicking on the Reset all option in the dropdown.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-25-at-10.04.20-AM.png\" alt=\"Reset all typography settings\" class=\"wp-image-15857314\" style=\"width:284px;height:367px\" width=\"284\" height=\"367\" srcset=\"https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-25-at-10.04.20-AM.png 568w, https://wordpress.org/documentation/files/2022/07/Screen-Shot-2022-07-25-at-10.04.20-AM-232x300.png 232w\" sizes=\"auto, (max-width: 284px) 100vw, 284px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<p><strong>Advanced</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/HCaeEAd-xkijY3husAGN8FkRfOokz6h-mLa1vQoT11JIf366WEE4Y3jtoy6CTOJGTpBZELgZPdIewg2ug8pURV5XtFciGwLHJiNwleOvlGte5WnWTug0SYe4p-qBR54_8oR1NwHM\" alt=\"Advanced option in the selected Block\" style=\"width:283px;height:151px\" width=\"283\" height=\"151\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-07-25</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go to the List of Blocks The Comment Date Block displays the date on which a comment was posted. This block is located inside a Comment Query Loop block and allows users to edit the appearance of the comment date.&nbsp; You can only insert the Comment Date Block inside a Comment Template block within the [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15857170",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15857170",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15857170"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15857170/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358276,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15857170/revisions/16358276"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15857170"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15857170"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

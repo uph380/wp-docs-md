@@ -1,0 +1,85 @@
+{
+    "id": 41432,
+    "date": "2019-04-25T20:55:50",
+    "date_gmt": "2019-04-25T20:55:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/coding-standards/inline-documentation-standards/"
+    },
+    "modified": "2024-01-16T20:30:01",
+    "modified_gmt": "2024-01-16T20:30:01",
+    "slug": "inline-documentation-standards",
+    "status": "publish",
+    "type": "wpcs-handbook",
+    "link": "https://developer.wordpress.org/coding-standards/inline-documentation-standards/",
+    "title": {
+        "rendered": "Inline Documentation Standards"
+    },
+    "content": {
+        "rendered": "<p>Inline documentation provides a good resource for core developers in future development, and other developers when learning about WordPress. It also provides the information necessary to populate the <a href=\"https://developer.wordpress.org/reference/\">WordPress developer code reference</a>.</p>\n<blockquote><p>\n<strong>I don&#8217;t need to document my code. I wrote all of it &#8211; know it like the back of my hand.</strong></p>\n<p>&#8220;I would argue that, separately, documentation <em>is also</em> for you, the developer. I&#8217;ve found quite often that my inline documentation can be a very effective breadcrumb trail when establishing one&#8217;s own intent, particularly with regard to complex function arguments and usage. And it&#8217;s also helpful to return to a function two years later and find a paragraph in the inline documentation that describes, in meticulous fashion, something that I otherwise would have had to rediscover all over again.&#8221; <em>&#8211; Nacin</em>\n</p></blockquote>\n<h2>Language-specific Standards</h2>\n<ul class=\"sub-menu\">\n<li><a title=\"PHP Documentation Standards\" href=\"https://developer.wordpress.org/coding-standards/inline-documentation-standards/php/\">PHP Documentation Standards</a></li>\n<li><a href=\"https://developer.wordpress.org/coding-standards/inline-documentation-standards/javascript/\">JavaScript Documentation Standards</a></li>\n</ul>\n<h2>Resources</h2>\n<ul>\n<li><a href=\"https://jjj.blog/2012/06/inline-documentation/\">Inline documentation</a> &#8211; why you should</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 2,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-41432",
+        "wpcs-handbook",
+        "type-wpcs-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41432",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/wpcs-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41432/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129530,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/wpcs-handbook/41432/revisions/129530"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=41432"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

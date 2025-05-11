@@ -1,0 +1,109 @@
+{
+    "id": 16229386,
+    "date": "2022-11-24T02:49:12",
+    "date_gmt": "2022-11-24T02:49:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16229386"
+    },
+    "modified": "2024-06-08T18:42:19",
+    "modified_gmt": "2024-06-08T18:42:19",
+    "slug": "row-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/row-block/",
+    "title": {
+        "rendered": "Row block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Use the <strong>Row block</strong> to arrange blocks horizontally.&nbsp;&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-1-1024x352.png\" alt=\"A row block in the block editor\" class=\"wp-image-16229401\" /></figure>\n\n\n\n<p>Click the (<strong>+</strong>) icon to open the block inserter pop-up window and search for the Row block. </p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1186\" height=\"572\" src=\"https://wordpress.org/documentation/files/2022/11/adding-a-row-block-1.gif\" alt=\"Adding a row block using the block inserter\" class=\"wp-image-16229389\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/row-block</kbd> to quickly insert a Row block.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Row block shows six buttons in the block toolbar:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-toolbar.png\" alt=\"Block toolbar for the row block\" class=\"wp-image-16229402\" width=\"434\" height=\"83\" srcset=\"https://wordpress.org/documentation/files/2022/11/row-block-toolbar.png 578w, https://wordpress.org/documentation/files/2022/11/row-block-toolbar-300x57.png 300w\" sizes=\"auto, (max-width: 434px) 100vw, 434px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag</li>\n\n\n\n<li>Move up/down</li>\n\n\n\n<li>Change items justification</li>\n\n\n\n<li>Change vertical alignment</li>\n\n\n\n<li>Align</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-transform-1.png\" alt=\"Tranform option in the row block\" class=\"wp-image-16229403\" width=\"489\" height=\"429\" /></figure>\n\n\n\n<p>Click on the <strong>Transform </strong>button to convert the Row block into <strong>Quote</strong>, <strong>Columns</strong>, or <strong>Cover </strong>blocks. It\u2019s also possible to unwrap the Row block.&nbsp;&nbsp;</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Drag button</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-moving-tools-1.png\" alt=\"Drag button in the row block\" class=\"wp-image-16229405\" width=\"438\" height=\"87\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the <strong>Drag</strong> button, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Move arrows</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-move-arrows.png\" alt=\"Move arrows in the row block\" class=\"wp-image-16229433\" width=\"438\" height=\"90\" srcset=\"https://wordpress.org/documentation/files/2022/11/row-block-move-arrows.png 584w, https://wordpress.org/documentation/files/2022/11/row-block-move-arrows-300x62.png 300w\" sizes=\"auto, (max-width: 438px) 100vw, 438px\" /></figure>\n\n\n\n<p>The <strong>Move</strong> <strong>up</strong> and <strong>Move down</strong> buttons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on moving a block within the editor can be found <a href=\"https://wordpress.org/documentation/article/moving-blocks/\">here</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change items justification</strong>&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-horizontal-alignment.png\" alt=\"Change items justification\u00a0in the row block\" class=\"wp-image-16229407\" width=\"482\" height=\"351\" srcset=\"https://wordpress.org/documentation/files/2022/11/row-block-horizontal-alignment.png 642w, https://wordpress.org/documentation/files/2022/11/row-block-horizontal-alignment-300x219.png 300w\" sizes=\"auto, (max-width: 482px) 100vw, 482px\" /></figure>\n\n\n\n<p>Click the <strong>Change items justification</strong> button in the Block toolbar to display the justification drop-down. You can justify the block text to the left, make it center-justified, align it to the right or leave a space between items.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change vertical alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-vertical-alignment.png\" alt=\"Change vertical alignment in the row block\" class=\"wp-image-16229408\" width=\"452\" height=\"299\" srcset=\"https://wordpress.org/documentation/files/2022/11/row-block-vertical-alignment.png 602w, https://wordpress.org/documentation/files/2022/11/row-block-vertical-alignment-300x198.png 300w\" sizes=\"auto, (max-width: 452px) 100vw, 452px\" /></figure>\n\n\n\n<p>Use the <strong>Change vertical alignment</strong> tool to reposition the <em>Row </em>block. The following is a list of the block alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Align top</li>\n\n\n\n<li>Align middle</li>\n\n\n\n<li>Align bottom</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-alignment.png\" alt=\"Change alignment tool in the row block\" class=\"wp-image-16229409\" width=\"642\" height=\"312\" srcset=\"https://wordpress.org/documentation/files/2022/11/row-block-alignment.png 856w, https://wordpress.org/documentation/files/2022/11/row-block-alignment-300x146.png 300w, https://wordpress.org/documentation/files/2022/11/row-block-alignment-768x373.png 768w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></figure>\n\n\n\n<p>Use the <strong>Change alignment tool</strong> to change the width of the <em>Row </em>block. The following is a list of the block width options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Wide width</li>\n\n\n\n<li>Full width</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>The More option on a block toolbar gives you more features to customize the block.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the <strong>Settings</strong> button next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/settings-icon.png\" alt=\"Settings icon in the block editor\" class=\"wp-image-16229411\" width=\"455\" height=\"68\" srcset=\"https://wordpress.org/documentation/files/2022/11/settings-icon.png 606w, https://wordpress.org/documentation/files/2022/11/settings-icon-300x45.png 300w\" sizes=\"auto, (max-width: 455px) 100vw, 455px\" /></figure>\n\n\n\n<p>Here are the options for the <em>Row</em> block:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Settings</strong></p>\n\n\n\n<p>Click the <strong>Group</strong> or <strong>Stack</strong> button in the Block Settings to transform the Row block to <strong>Group</strong> or <strong>Stack</strong> blocks.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/row-block-settings-1.png\" alt=\"Group and Stack block options for the row block\" class=\"wp-image-16229412\" width=\"339\" height=\"177\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Layout</strong></p>\n\n\n\n<p>The <strong>Row block</strong><em> </em>provides Layout settings options to change the justification or orientation of the text and to wrap to multiple lines.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/layout-settings-overview/\">Layout settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Color</strong></p>\n\n\n\n<p>The <strong>Row block</strong><em> </em>provides Color settings options to change the text, background, and link colors.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <strong>Row block</strong><em> </em>provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The <strong>Row block</strong> provides dimension settings options to add padding and margin.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Border</strong></p>\n\n\n\n<p>The <strong><strong>Row block</strong></strong> provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The Advanced section lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/11/css-classes-1.png\" alt=\"CSS class(es) option in the row block settings\" class=\"wp-image-16233117\" width=\"415\" height=\"239\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Added link to Border and layout settings overview page and removed content from this page</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-11-24</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Use the Row block to arrange blocks horizontally.&nbsp;&nbsp; Click the (+) icon to open the block inserter pop-up window and search for the Row block. You can also use the keyboard shortcut /row-block to quickly insert a Row block. Detailed instructions on adding blocks can be found here. [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        88
+    ],
+    "class_list": [
+        "post-16229386",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-design-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16229386",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16229386"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16229386/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360386,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16229386/revisions/16360386"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16229386"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16229386"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

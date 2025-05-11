@@ -1,0 +1,109 @@
+{
+    "id": 10840105,
+    "date": "2018-11-02T04:26:12",
+    "date_gmt": "2018-11-02T04:26:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840105"
+    },
+    "modified": "2024-06-09T09:29:02",
+    "modified_gmt": "2024-06-09T09:29:02",
+    "slug": "video-shortcode",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/video-shortcode/",
+    "title": {
+        "rendered": "Video shortcode"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Video</strong> feature allows you to embed video files and play them back using a simple shortcode. This was added as of WordPress <a href=\"https://wordpress.org/documentation/wordpress-version/version-3-6/\" data-type=\"helphub_version\" data-id=\"11083792\">Version&nbsp;3.6</a> and is used like this:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&#091;video&#093;</pre>\n\n\n\n<p>You can also use built in embeds and simply put the media file on its own line:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">My cool content<br>http://my.movies.com/cool/movie/coolest.mp4<br>More cool content</pre>\n\n\n\n<h2 class=\"wp-block-heading\">Usage</h2>\n\n\n\n<p>I have an old post that has an audio file in the Media Library attached to it, and I want to use the new shortcode:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&#091;video&#093;</pre>\n\n\n\n<p>Note: Do Not put Space between &#8220;[&#8221; and &#8220;video&#8221;.</p>\n\n\n\n<p>I have the URL for an MP3, from the Media Library or external, that I want to play:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&#091;video src=\"video-source.mp4\"&#093;</pre>\n\n\n\n<p>I have a source URL and fallbacks for other HTML5-supported filetypes:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&#091;video mp4=\"source.mp4\" ogv=\"source.ogv\" webm=\"source.webm\"&#093;</pre>\n\n\n\n<h2 class=\"wp-block-heading\">Options</h2>\n\n\n\n<p>The following basic options are supported:</p>\n\n\n\n<p><code>src</code><br>\n(string) (optional) The source of your video file. If not included it will auto-populate with the first video file attached to the post. You can use the following options to define specific filetypes, allowing for graceful fallbacks:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>mp4, m4v, webm, ogv, wmv, flv</li>\n</ul>\n\n\n\n<p>Default: First video file attached to the post</p>\n\n\n\n<p><code>poster</code><br>\nDefines image to show as placeholder before the media plays.<br>\nDefault: none</p>\n\n\n\n<p><code>loop</code><br>\n(string) Allows for the looping of media. Defaults to &#8220;off.&#8221;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>&#8220;off&#8221; &#8211; (&#8220;default&#8221;) does not loop the media</li>\n\n\n\n<li>&#8220;on&#8221; &#8211; media will loop to beginning when finished and automatically continue playing</li>\n</ul>\n\n\n\n<p>Default: &#8220;off&#8221;</p>\n\n\n\n<p><code>autoplay</code><br>\n(string) Causes the media to automatically play as soon as the media file is ready. Defaults to &#8220;off.&#8221;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>&#8220;off&#8221; &#8211; (&#8220;default&#8221;) does not automatically play the media</li>\n\n\n\n<li>&#8220;on&#8221; &#8211; Media will play as soon as the media is ready</li>\n</ul>\n\n\n\n<p>Default: &#8220;off&#8221;</p>\n\n\n\n<p><code>preload</code><br>\n(string) (optional) Specifies if and how the video should be loaded when the page loads. Defaults to &#8220;metadata.&#8221;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>&#8220;metadata&#8221; &#8211; (&#8220;default&#8221;) only metadata should be loaded when the page loads</li>\n\n\n\n<li>&#8220;none&#8221; &#8211; the video should not be loaded when the page loads</li>\n\n\n\n<li>&#8220;auto&#8221; &#8211; the video should be loaded entirely when the page loads</li>\n</ul>\n\n\n\n<p>Default: &#8220;metadata&#8221;</p>\n\n\n\n<p><code>height</code><br>\n(integer) (required) Defines height of the media. Value is automatically detected on file upload.<br>\nDefault: [Media file height]</p>\n\n\n\n<p><code>width</code><br>\n(integer) (required) Defines width of the media. Value is automatically detected on file upload.<br>\nDefault: [Media file width]</p>\n\n\n\n<h2 class=\"wp-block-heading\">Related</h2>\n\n\n\n<p> WordPress Shortcodes:&nbsp;<a href=\"https://wordpress.org/documentation/article/audio-shortcode/\">audio</a>,&nbsp;<a href=\"https://codex.wordpress.org/Caption_Shortcode\">caption</a>,&nbsp;<a href=\"https://codex.wordpress.org/Embed_Shortcode\">embed</a>,&nbsp;<a href=\"https://codex.wordpress.org/Gallery_Shortcode\">gallery</a>,&nbsp;<a href=\"https://codex.wordpress.org/Playlist_Shortcode\">playlist</a></p>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h4 class=\"wp-block-heading\" id=\"changelog\"><strong>Changelog </strong></h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2021-10-18\n<ul class=\"wp-block-list\">\n<li>Added changelog</li>\n\n\n\n<li>Corrected the links to the codex pages for the caption, embed, gallery and playlist shortcodes</li>\n</ul>\n</li>\n</ul>\n</div>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Video feature allows you to embed video files and play them back using a simple shortcode. This was added as of WordPress Version&nbsp;3.6 and is used like this: &#091;video&#093; You can also use built in embeds and simply put the media file on its own line: My cool contenthttp://my.movies.com/cool/movie/coolest.mp4More cool content Usage I have [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10840105",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840105",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840105"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840105/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360447,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840105/revisions/16360447"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840105"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840105"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

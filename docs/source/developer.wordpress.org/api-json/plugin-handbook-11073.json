@@ -1,0 +1,97 @@
+{
+    "id": 11073,
+    "date": "2014-09-24T18:53:01",
+    "date_gmt": "2014-09-24T18:53:01",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11073"
+    },
+    "modified": "2022-11-17T06:08:51",
+    "modified_gmt": "2022-11-17T06:08:51",
+    "slug": "working-with-custom-taxonomies",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/taxonomies/working-with-custom-taxonomies/",
+    "title": {
+        "rendered": "Working with Custom Taxonomies"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\" id=\"introduction-to-taxonomies\">Introduction to Taxonomies</h2>\n\n\n\n<p>To understand what Taxonomies are and what they do please read the <a href=\"https://developer.wordpress.org/plugins/taxonomies/\">Taxonomy</a> introduction.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"custom-taxonomies\">Custom Taxonomies</h2>\n\n\n\n<p>As classification systems go, &#8220;Categories&#8221; and &#8220;Tags&#8221; aren&#8217;t very structured, so it may be beneficial for a developer to create their own.</p>\n\n\n\n<p>WordPress allows developers to create <strong>Custom Taxonomies</strong>. Custom Taxonomies are useful when one wants to create distinct naming systems and make them accessible behind the scenes in a predictable way.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"why-use-custom-taxonomies\">Why Use Custom Taxonomies?</h2>\n\n\n\n<p>You might ask, &#8220;Why bother creating a Custom Taxonomy, when I can organize by Categories and Tags?&#8221;</p>\n\n\n\n<p>Well&#8230; let&#8217;s use an example. Suppose we have a client that is a chef who wants you to create a website where she&#8217;ll feature original recipes.</p>\n\n\n\n<p>One way to organize the website might be to create a Custom Post Type called &#8220;Recipes&#8221; to store her recipes. Then create a Taxonomy &#8220;Courses&#8221; to separate &#8220;Appetizers&#8221; from &#8220;Desserts&#8221;, and finally a Taxonomy &#8220;Ingredients&#8221; to separate &#8220;Chicken&#8221; from &#8220;Chocolate&#8221; dishes.</p>\n\n\n\n<p>These groups <em>could</em> be defined using Categories or Tags, you could have a &#8220;Courses&#8221; Category with Subcategories for &#8220;Appetizers&#8221; and &#8220;Desserts&#8221;, and an &#8220;Ingredients&#8221; Category with Subcategories for each ingredient.</p>\n\n\n\n<p>The main advantage of using Custom Taxonomies is that you can reference &#8220;Courses&#8221; and &#8220;Ingredients&#8221; independently of Categories and Tags. They even get their own menus in the Administration area.</p>\n\n\n\n<p>In addition, creating Custom Taxonomies allows you to build custom interfaces which will ease the life of your client and make the process of inserting data intuitive to their business nature.</p>\n\n\n\n<p>Now imagine that these Custom Taxonomies and the interface is implemented inside a plugin; you&#8217;ve just built your own Recipes plugin that can be reused on any WordPress website.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"example-courses-taxonomy\">Example: Courses Taxonomy</h2>\n\n\n\n<p>The following example will show you how to create a plugin which adds a Custom Taxonomy &#8220;Courses&#8221; to the default <code>post</code> Post Type. Note that the code to add custom taxonomies does not have to be in its own plugin; it can be included in a theme or as part of an existing plugin if desired.</p>\n\n\n\n<p>Please make sure to read the <a title=\"Plugin Basics\" href=\"https://developer.wordpress.org/plugin/the-basics/\">Plugin Basics</a> chapter before attempting to create your own plugin.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"step-1-before-you-begin\">Step 1: Before You Begin</h3>\n\n\n\n<p>Go to <strong>Posts &gt; Add New</strong> page. You will notice that you only have Categories and Tags.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"https://i0.wp.com/make.wordpress.org/docs/files/2014/02/no-custom-taxonomy-meta-box.png?ssl=1\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/docs/files/2014/02/no-custom-taxonomy-meta-box.png?ssl=1\" alt=\"No Custom Taxonomy Meta Box (Yet)\" class=\"wp-image-4951\" /></a></figure></div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"step-2-creating-a-new-plugin\">Step 2: Creating a New Plugin</h3>\n\n\n\n<p>Register the Taxonomy &#8220;course&#8221; for the post type &#8220;post&#8221; using the <code>init</code> action hook.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/*\n* Plugin Name: Course Taxonomy\n* Description: A short example showing how to add a taxonomy called Course.\n* Version: 1.0\n* Author: developer.wordpress.org\n* Author URI: https://codex.wordpress.org/User:Aternus\n*/\n\nfunction wporg_register_taxonomy_course() {\n\t $labels = array(\n\t\t 'name'              =&gt; _x( 'Courses', 'taxonomy general name' ),\n\t\t 'singular_name'     =&gt; _x( 'Course', 'taxonomy singular name' ),\n\t\t 'search_items'      =&gt; __( 'Search Courses' ),\n\t\t 'all_items'         =&gt; __( 'All Courses' ),\n\t\t 'parent_item'       =&gt; __( 'Parent Course' ),\n\t\t 'parent_item_colon' =&gt; __( 'Parent Course:' ),\n\t\t 'edit_item'         =&gt; __( 'Edit Course' ),\n\t\t 'update_item'       =&gt; __( 'Update Course' ),\n\t\t 'add_new_item'      =&gt; __( 'Add New Course' ),\n\t\t 'new_item_name'     =&gt; __( 'New Course Name' ),\n\t\t 'menu_name'         =&gt; __( 'Course' ),\n\t );\n\t $args   = array(\n\t\t 'hierarchical'      =&gt; true, // make it hierarchical (like categories)\n\t\t 'labels'            =&gt; $labels,\n\t\t 'show_ui'           =&gt; true,\n\t\t 'show_admin_column' =&gt; true,\n\t\t 'query_var'         =&gt; true,\n\t\t 'rewrite'           =&gt; [ 'slug' =&gt; 'course' ],\n\t );\n\t register_taxonomy( 'course', [ 'post' ], $args );\n}\nadd_action( 'init', 'wporg_register_taxonomy_course' );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"step-3-review-the-result\">Step 3: Review the Result</h3>\n\n\n\n<p>Activate your plugin, then go to <strong>Posts &gt; Add New</strong>. You should see a new meta box for your &#8220;Courses&#8221; Taxonomy.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"https://i0.wp.com/make.wordpress.org/docs/files/2014/02/courses_taxonomy_post_screen.png?ssl=1\"><img data-recalc-dims=\"1\" height=\"545\" width=\"1024\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/docs/files/2014/02/courses_taxonomy_post_screen-1024x545.png?resize=1024%2C545&#038;ssl=1\" alt=\"courses_taxonomy_post_screen\" class=\"wp-image-6278\" /></a></figure></div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"code-breakdown\">Code Breakdown</h3>\n\n\n\n<p>The following discussion breaks down the code used above describing the functions and parameters.</p>\n\n\n\n<p>The function <code>wporg_register_taxonomy_course</code> contains all the steps necessary for registering a Custom Taxonomy.</p>\n\n\n\n<p>The <code>$labels</code> array holds the labels for the Custom Taxonomy.<br>These labels will be used for displaying various information about the Taxonomy in the Administration area.</p>\n\n\n\n<p>The <code>$args</code> array holds the configuration options that will be used when creating our Custom Taxonomy.</p>\n\n\n\n<p>The function <a href=\"https://developer.wordpress.org/reference/functions/register_taxonomy/\" rel=\"function\">register_taxonomy()</a>  creates a new Taxonomy with the identifier <code>course</code> for the <code>post</code> Post Type using the <code>$args</code> array for configuration.</p>\n\n\n\n<p>The function <a href=\"https://developer.wordpress.org/reference/functions/add_action/\" rel=\"function\">add_action()</a>  ties the <code>wporg_register_taxonomy_course</code> function execution to the <code>init</code> action hook.</p>\n\n\n\n<h4 class=\"wp-block-heading\" id=\"args\">$args</h4>\n\n\n\n<p>The $args array holds important configuration for the Custom Taxonomy, it instructs WordPress how the Taxonomy should work.</p>\n\n\n\n<p>Take a look at <a href=\"https://developer.wordpress.org/reference/functions/register_taxonomy/\" rel=\"function\">register_taxonomy()</a>  function for a full list of accepted parameters and what each of these do.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"summary\">Summary</h3>\n\n\n\n<p>With our Courses Taxonomy example, WordPress will automatically create an archive page and child pages for the <code>course</code> Taxonomy.</p>\n\n\n\n<p>The archive page will be at <code>/course/</code> with child pages spawning under it using the Term&#8217;s slug (<code>/course/%%term-slug%%/</code>).</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"using-your-taxonomy\">Using Your Taxonomy</h2>\n\n\n\n<p>WordPress has <strong>many</strong> functions for interacting with your Custom Taxonomy and the Terms within it.</p>\n\n\n\n<p>Here are some examples:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code>the_terms</code>: Takes a Taxonomy argument and renders the terms in a list.</li><li><code>wp_tag_cloud</code>: Takes a Taxonomy argument and renders a tag cloud of the terms.</li><li><code>is_taxonomy</code>: Allows you to determine if a given taxonomy exists.</li></ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 15122,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11073",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11073",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 16,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11073/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144324,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11073/revisions/144324"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/15122"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11073"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

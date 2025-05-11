@@ -1,0 +1,91 @@
+{
+    "id": 134427,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-document-setting-panel/"
+    },
+    "modified": "2024-10-30T16:55:54",
+    "modified_gmt": "2024-10-30T16:55:54",
+    "slug": "plugin-document-setting-panel",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-document-setting-panel/",
+    "title": {
+        "rendered": "PluginDocumentSettingPanel"
+    },
+    "content": {
+        "rendered": "<p>This SlotFill allows registering a UI to edit Document settings.</p>\n<h2>Available Props</h2>\n<ul>\n<li><strong>name</strong> <code>string</code>: A string identifying the panel.</li>\n<li><strong>className</strong> <code>string</code>: An optional class name added to the sidebar body.</li>\n<li><strong>title</strong> <code>string</code>: Title displayed at the top of the sidebar.</li>\n<li><strong>icon</strong> <code>(string|Element)</code>: The <a href=\"https://developer.wordpress.org/resource/dashicons/\">Dashicon</a> icon slug string, or an SVG WP element.</li>\n</ul>\n<h2>Example</h2>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { PluginDocumentSettingPanel } from '@wordpress/editor';\n\nconst PluginDocumentSettingPanelDemo = () =&gt; (\n    &lt;PluginDocumentSettingPanel\n        name=\"custom-panel\"\n        title=\"Custom Panel\"\n        className=\"custom-panel\"\n    &gt;\n        Custom Panel Contents\n    &lt;/PluginDocumentSettingPanel&gt;\n);\n\nregisterPlugin( 'plugin-document-setting-panel-demo', {\n    render: PluginDocumentSettingPanelDemo,\n    icon: 'palmtree',\n} );\n</code></pre>\n<h2>Accessing a panel programmatically</h2>\n<p>Core and custom panels can be accessed programmatically using their panel name. The core panel names are:</p>\n<ul>\n<li>Summary Panel: <code>post-status</code></li>\n<li>Categories Panel: <code>taxonomy-panel-category</code></li>\n<li>Tags Panel: <code>taxonomy-panel-post_tag</code></li>\n<li>Featured Image Panel: <code>featured-image</code></li>\n<li>Excerpt Panel: <code>post-excerpt</code></li>\n<li>DiscussionPanel: <code>discussion-panel</code></li>\n</ul>\n<p>Custom panels are namespaced with the plugin name that was passed to <code>registerPlugin</code>.<br />\nIn order to access the panels using function such as <code>toggleEditorPanelOpened</code> or <code>toggleEditorPanelEnabled</code> be sure to prepend the namespace.</p>\n<p>To programmatically toggle panels, use the following:</p>\n<pre><code class=\"language-js\">import { useDispatch } from '@wordpress/data';\nimport { store as editorStore } from '@wordpress/editor';\n\nconst Example = () =&gt; {\n    const { toggleEditorPanelOpened } = useDispatch( editorStore );\n    return (\n        &lt;Button\n            variant=\"primary\"\n            onClick={ () =&gt; {\n                // Toggle the Summary panel\n                toggleEditorPanelOpened( 'post-status' );\n\n                // Toggle the Custom Panel introduced in the example above.\n                toggleEditorPanelOpened(\n                    'plugin-document-setting-panel-demo/custom-panel'\n                );\n            } }\n        &gt;\n            Toggle Panels\n        &lt;/Button&gt;\n    );\n};\n</code></pre>\n<p>It is also possible to remove panels from the admin using the <code>removeEditorPanel</code> function by passing the name of the registered panel.</p>\n<pre><code class=\"language-js\">import { useDispatch } from '@wordpress/data';\nimport { store as editorStore } from '@wordpress/editor';\n\nconst Example = () =&gt; {\n    const { removeEditorPanel } = useDispatch( editorStore );\n    return (\n        &lt;Button\n            variant=\"primary\"\n            onClick={ () =&gt; {\n                // Remove the Featured Image panel.\n                removeEditorPanel( 'featured-image' );\n\n                // Remove the Custom Panel introduced in the example above.\n                removeEditorPanel(\n                    'plugin-document-setting-panel-demo/custom-panel'\n                );\n            } }\n        &gt;\n            Toggle Panels\n        &lt;/Button&gt;\n    );\n};\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 96,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134427",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134427",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134427/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153798,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134427/revisions/153798"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134427"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

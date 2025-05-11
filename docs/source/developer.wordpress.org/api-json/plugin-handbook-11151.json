@@ -1,0 +1,91 @@
+{
+    "id": 11151,
+    "date": "2014-10-19T18:01:19",
+    "date_gmt": "2014-10-19T18:01:19",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11151"
+    },
+    "modified": "2023-12-14T20:53:23",
+    "modified_gmt": "2023-12-14T20:53:23",
+    "slug": "javascript",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/javascript/",
+    "title": {
+        "rendered": "JavaScript"
+    },
+    "content": {
+        "rendered": "\n<p>JavaScript is an important component in many WordPress plugins.&nbsp; WordPress comes with a <a href=\"https://developer.wordpress.org/theme/basics/including-css-javascript/#default-scripts-included-and-registered-by-wordpress\">variety of JavaScript libraries bundled with core</a>. One of the most commonly-used libraries in WordPress is jQuery because it is lightweight and easy to use. jQuery can be used in your plugin to manipulate the DOM object or to perform Ajax actions.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 15,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11151",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11151",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11151/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 131533,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11151/revisions/131533"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11151"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

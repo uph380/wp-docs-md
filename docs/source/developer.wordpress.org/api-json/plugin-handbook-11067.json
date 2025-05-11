@@ -1,0 +1,97 @@
+{
+    "id": 11067,
+    "date": "2014-09-24T18:47:40",
+    "date_gmt": "2014-09-24T18:47:40",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11067"
+    },
+    "modified": "2022-11-17T06:08:50",
+    "modified_gmt": "2022-11-17T06:08:50",
+    "slug": "registering-custom-post-types",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/",
+    "title": {
+        "rendered": "Registering Custom Post Types"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress comes with five default post types: <code>post</code>, <code>page</code>, <code>attachment</code>, <code>revision</code>, and <code>menu</code>.</p>\n\n\n\n<p>While developing your plugin, you may need to create your own specific content type: for example, products for an e-commerce website, assignments for an e-learning website, or movies for a review website.</p>\n\n\n\n<p>Using Custom Post Types, you can register your own post type. Once a custom post type is registered, it gets a new top-level administrative screen that can be used to manage and create posts of that type.</p>\n\n\n\n<p>To register a new post type, you use the <a href=\"https://developer.wordpress.org/reference/functions/register_post_type/\" rel=\"function\">register_post_type()</a>  function.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nWe recommend that you put custom post types in a plugin rather than a theme. This ensures that user content remains portable even if the theme is changed.<br />\n</div></div>\n\n\n\n\n<p>The following minimal example registers a new post type, Products, which is identified in the database as <code>wporg_product</code>.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_custom_post_type() {\n\tregister_post_type('wporg_product',\n\t\tarray(\n\t\t\t'labels'      =&gt; array(\n\t\t\t\t'name'          =&gt; __('Products', 'textdomain'),\n\t\t\t\t'singular_name' =&gt; __('Product', 'textdomain'),\n\t\t\t),\n\t\t\t\t'public'      =&gt; true,\n\t\t\t\t'has_archive' =&gt; true,\n\t\t)\n\t);\n}\nadd_action('init', 'wporg_custom_post_type');\n</code></pre>\n\n\n\n<p>Please visit the reference page for <a href=\"https://developer.wordpress.org/reference/functions/register_post_type/\" rel=\"function\">register_post_type()</a>  for the description of arguments.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nYou must call <code>register_post_type()</code> before the <code><a href=\"https://developer.wordpress.org/reference/hooks/admin_init/\">admin_init</a></code> hook and after the <code><a href=\"https://developer.wordpress.org/reference/hooks/after_setup_theme/\">after_setup_theme</a></code> hook. A good hook to use is the <code><a href=\"https://developer.wordpress.org/reference/hooks/init/\">init</a></code> action hook.<br />\n</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Naming Best Practices</h2>\n\n\n\n<p>It is important that you prefix your post type functions and identifiers with a short prefix that corresponds to your plugin, theme, or website.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\n<strong>Make sure your custom post type identifier does not exceed 20 characters</strong> as the <code>post_type</code> column in the database is currently a VARCHAR field of that length.<br />\n</div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\n<strong>To ensure forward compatibility</strong>, do not use <strong>wp_</strong> as your identifier \u2014 it is being used by WordPress core.<br />\n</div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nIf your identifier is too generic (for example: &#8220;<code>product</code>&#8220;), it may conflict with other plugins or themes that have chosen to use that same identifier.<br />\n</div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\n<strong>Solving duplicate post type identifiers is not possible without disabling one of the conflicting post types.</strong></p>\n<p></div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">URLs</h2>\n\n\n\n<p>A custom post type gets its own slug within the site URL structure.</p>\n\n\n\n<p>A post of type <code>wporg_product</code> will use the following URL structure by default: <code>http://example.com/wporg_product/%product_name%</code>.</p>\n\n\n\n<p><code>wporg_product</code> is the slug of your custom post type and <code>%product_name%</code> is the slug of your particular product.</p>\n\n\n\n<p>The final permalink would be: <code>http://example.com/wporg_product/wporg-is-awesome</code>.</p>\n\n\n\n<p>You can see the permalink on the edit screen for your custom post type, just like with default post types.</p>\n\n\n\n<h3 class=\"wp-block-heading\">A Custom Slug for a Custom Post Type</h3>\n\n\n\n<p>To set a custom slug for the slug of your custom post type all you need to do is add a key =&gt; value pair to the <code>rewrite</code> key in the <code>register_post_type()</code> arguments array.</p>\n\n\n\n<p>Example:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function wporg_custom_post_type() {\n\tregister_post_type('wporg_product',\n\t\tarray(\n\t\t\t'labels'      =&gt; array(\n\t\t\t\t'name'          =&gt; __( 'Products', 'textdomain' ),\n\t\t\t\t'singular_name' =&gt; __( 'Product', 'textdomain' ),\n\t\t\t),\n\t\t\t'public'      =&gt; true,\n\t\t\t'has_archive' =&gt; true,\n\t\t\t'rewrite'     =&gt; array( 'slug' =&gt; 'products' ), // my custom slug\n\t\t)\n\t);\n}\nadd_action('init', 'wporg_custom_post_type');\n</code></pre>\n\n\n\n<p>The above will result in the following URL structure: <code>http://example.com/products/%product_name%</code></p>\n\n\n\n<div class=\"wp-block-wporg-notice is-warning-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nUsing a generic slug like <code>products</code> can potentially conflict with other plugins or themes, so try to use one that is more specific to your content.<br />\n</div></div>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nUnlike the custom post type identifiers, the duplicate slug problem can be solved easily by changing the slug for one of the conflicting post types.</p>\n<p>If the plugin author included an <code>apply_filters()</code> call on the arguments, this can be done programmatically by overriding the arguments submitted via the <code>register_post_type()</code> function.<br />\n</div></div>\n\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11065,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11067",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11067",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 34,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11067/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144322,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11067/revisions/144322"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11065"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11067"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

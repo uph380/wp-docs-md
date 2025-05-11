@@ -1,0 +1,109 @@
+{
+    "id": 10853951,
+    "date": "2018-11-06T18:42:05",
+    "date_gmt": "2018-11-06T18:42:05",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10853951"
+    },
+    "modified": "2023-04-14T11:06:36",
+    "modified_gmt": "2023-04-14T11:06:36",
+    "slug": "use-images",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/use-images/",
+    "title": {
+        "rendered": "Use Images"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Working with Images</h2>\n\n\n\n<p>Adding images in WordPress is very easy. All of your images will be stored and can be managed in the Media Library, but you can take several different paths to get there.</p>\n\n\n\n<p>The most common path is adding an image directly to a post or page. This automatically saves the image in the Media Library and displays the image wherever you inserted it.</p>\n\n\n\n<p>You can also add images directly to the Media Library through the multi-file loader or the single-file loader.</p>\n\n\n\n<p>Further reading:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Media library screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/media-add-new-screen/\">Media Add New Screen</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/edit-media/\">Edit Media</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/settings-media-screen/\">Settings Media Screen</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Adding Images Through Pages/Posts</h2>\n\n\n\n<p>When writing or editing a post, you can add an image using the Add Media button above the editor box. This opens a window that displays the multi-file uploader. From here you can drag and drop your picture or select it using the file selector.</p>\n\n\n\n<p>The images you add here will be automatically added to the Media Library.</p>\n\n\n\n<p>Further reading:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-block-editor/\">Inserting Images into Posts and Pages (Block Editor)</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/\">Inserting Images into Posts and Pages (Classic Editor)</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Miscellaneous</h2>\n\n\n\n<p>WordPress can resize images and create thumbnails.</p>\n\n\n\n<p>Further reading:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/image-size-and-quality/\">Image Size and Quality</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/use-image-and-file-attachments/\">Use image and file attachments</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Special Contents Using Images</h2>\n\n\n\n<figure class=\"wp-block-image alignright wp-image-1507 size-full\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/post-avatar.jpg?fit=300%2C211&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"211\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/post-avatar.jpg?fit=300%2C211&amp;ssl=1\" alt=\"Gravatar in comments\" class=\"wp-image-10853982\" /></a><figcaption class=\"wp-element-caption\">Gravatar in comments</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/documentation/article/use-gravatars/\" data-type=\"helphub_article\" data-id=\"10846147\">How to Use Gravatars in WordPress</a> &#8211; Display avatars in your comment stream.</li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/what-are-smilies/\" data-type=\"helphub_article\" data-id=\"10840090\">Smilies</a> &#8211; How to use smilies or emoticons on WordPress.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"http://en.wikipedia.org/wiki/Image_compression\">Image Compression on Wikipedia</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/showcase/\">WordPress Inspiration &#8211; Showcase</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Working with Images Adding images in WordPress is very easy. All of your images will be stored and can be managed in the Media Library, but you can take several different paths to get there. The most common path is adding an image directly to a post or page. This automatically saves the image in [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        87,
+        78
+    ],
+    "class_list": [
+        "post-10853951",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-media",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853951",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10853951"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 4,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853951/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16356721,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853951/revisions/16356721"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10853951"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10853951"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

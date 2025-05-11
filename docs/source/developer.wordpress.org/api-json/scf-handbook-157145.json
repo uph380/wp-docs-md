@@ -1,0 +1,91 @@
+{
+    "id": 157145,
+    "date": "2025-02-21T04:17:08",
+    "date_gmt": "2025-02-21T04:17:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/assets-file/"
+    },
+    "modified": "2025-02-21T05:46:12",
+    "modified_gmt": "2025-02-21T05:46:12",
+    "slug": "assets-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/assets-file/",
+    "title": {
+        "rendered": "Assets Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_localize_text()</code></h2>\n<p>Appends an array of i18n data for localization.</p>\n<ul>\n<li>@date    13/4/18</li>\n<li>@since ACF 5.6.9</li>\n<li>@param   array $text An array of text for i18n.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_localize_data()</code></h2>\n<p>Appends an array of l10n data for localization.</p>\n<ul>\n<li>@date    13/4/18</li>\n<li>@since ACF 5.6.9</li>\n<li>@param   array $data An array of data for l10n.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_enqueue_script()</code></h2>\n<p>Enqueues a script with support for supplemental inline scripts.</p>\n<ul>\n<li>@date    27/4/20</li>\n<li>@since ACF 5.9.0</li>\n<li>@param   string $name The script name.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_enqueue_scripts()</code></h2>\n<p>Enqueues the input scripts required for fields.</p>\n<ul>\n<li>@date    13/4/18</li>\n<li>@since ACF 5.6.9</li>\n<li>@param   array $args See ACF_Assets::enqueue_scripts() for a list of args.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_enqueue_uploader()</code></h2>\n<p>Enqueues the WP media uploader scripts and styles.</p>\n<ul>\n<li>@date    27/10/2014</li>\n<li>@since ACF 5.0.9</li>\n<li>@return  void</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157145",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157145",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157145/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157316,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157145/revisions/157316"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157145"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

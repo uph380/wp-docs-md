@@ -1,0 +1,109 @@
+{
+    "id": 16224926,
+    "date": "2022-11-22T21:45:41",
+    "date_gmt": "2022-11-22T21:45:41",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16224926"
+    },
+    "modified": "2024-06-06T13:51:20",
+    "modified_gmt": "2024-06-06T13:51:20",
+    "slug": "comments-title-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comments-title-block/",
+    "title": {
+        "rendered": "Comments Title block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <strong>Comments Title </strong>block displays a title with the number of comments. The block is nested inside the Comments block and allows you to customize the comment title.</p>\n\n\n\n<p>You can only insert the <strong>Comments Title</strong> block inside a Comments block.</p>\n\n\n\n<p>By default, the <strong>Comments Title</strong> block is included when you insert the Comments block into the editor. However, you can still insert it manually when needed.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/11/202590642-80e9154d-a034-403b-9d90-1294b5c1cabb.mp4\"></video></figure>\n\n\n\n<p>To add a <strong>Comments Title </strong>block, click the (+) icon inside the Comments block to open the block inserter window pop-up and look for the <strong>Comments Title </strong>block.</p>\n\n\n\n<p>Alternatively, you can manually insert the <strong>Comments Title </strong>block using the keyboard shortcut <kbd>/comments-title.</kbd></p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>The block toolbar displays several tools used to customize each block. When you select the <strong>Comments Title </strong>block, it will show the block toolbar that contains the following tools:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Select Comments block</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh3.googleusercontent.com/bSSUWpinUMbrjP35BjPwc3dBvt_x6W8_vVx9m3MDQoWp-jgXsCHNabRuaewfsOT5KkDWvUT5rNLpdOdhgF9bqj_YTsyOr8C1vyMwAypzIEidL6rP25cXq9H41nmktJ0Q6nC2vb502OvLoQgQIfiFhT-SPaWeKG_OEMLVxg5kQuIO7ZOCIu-NGZd_15UxWQ\" alt=\"Select Comments block in the Comments Title block\" style=\"width:375px;height:60px\" width=\"375\" height=\"60\" /></figure>\n\n\n\n<p>The Select Comments block button lets you navigate to the Comments block, the parent\u2019s block of the <strong>Comments Title </strong>block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/mmzgKk2JFO60sZj6kFABH-XE-_IUC63DioAbgn-YMl1CajbLA-pXl_UCZBJjvsZFlirAhSTfL9G8uvuMpCTHh7gDMkp6fhQNE1jUTXbUxck9SqvkGj6YclQQZ1zQYTGRv2S1RSVrbBUOQoucPYfurd74AaIQWUp0PwnuYf5POWBeIK8bEJGjg9RtyuvhNg\" alt=\"Transform tool in the Comments Title block\" style=\"width:375px;height:60px\" width=\"375\" height=\"60\" /></figure>\n\n\n\n<p>Use the Transform to button to change the <strong>Comments Title</strong> block into a Columns or a Group block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/-rGJxTKBPVa3wPT4wis65FtoFHQ9_hHZmQILJC3Po3v0q6-XArf9OBD3nmCbXmC3FhVPvhurOnP1FfYokqoAHq8bByHlhLWgVuCm7eDfHadLa3q0PODjDMCGbwpd_gvWY1W6tgj0FwRE3HBvHCImg8igMixNT4MY6L4S_hmovfSnQ9Gs1EedfW3_earg5A\" alt=\"Block moving tool in the Comments Title block\" style=\"width:375px;height:60px\" width=\"375\" height=\"60\" /></figure>\n\n\n\n<p>The block-moving tool lets you adjust the position of the <strong>Comments Title </strong>block within the Comments block. The six dots icon functions as a drag-and-drop, allowing you to move and place the <strong>Comments Title</strong> block anywhere in the Comments block. Meanwhile, you can use the arrow icons to move the block up or down.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/65Y581PNcDR7xk3hrbXYiRTNOokr-X7Ja50TlU1PS66VhNdZBrwWkbGwm2tT3_V3itPQR2C3ZuFS3ddt__OXH9LQtcfVeexSE4xMH6vD7jvcJZHhpBYxmpZCyJquj472sZbBEtaZjldxUquZZV2ZpGmQTS8OKZfH1ebMzj82CYrr_2Tq4wpQ8jk7pWleGA\" alt=\"Change alignment in the Comments Title block\" style=\"width:375px;height:60px\" width=\"375\" height=\"60\" /></figure>\n\n\n\n<p>You can change the alignment of the <strong>Comments Title</strong> block using this tool. Click on the Change alignment icon and select one of the following alignment options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Align left</li>\n\n\n\n<li>Align center</li>\n\n\n\n<li>Align right</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change text alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/3WxdvuurLZtC2VentpR9qY2QGfiGRy7HAbPLEQLlZL4YL32hpSR2o43rZ7ihER417-8ww32SKi9Qtcs-B0_jI7QtU0Uhn8gdYjOJmXf-xOeModGfL9u4Iy-gkAwCsYRfe982xzmTkH7DBkZ610WgcHGnknpzb7XaQxnVtX8l4X54gCmaJjziBIFK0MbNkg\" alt=\"Change text alignment in the Comments Title block\" style=\"width:375px;height:60px\" width=\"375\" height=\"60\" /></figure>\n\n\n\n<p>Click the Change alignment button to display the alignment dropdown that contains the following options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Align text left</li>\n\n\n\n<li>Align text center</li>\n\n\n\n<li>Align text right</li>\n</ul>\n\n\n\n<p>The alignment options let you adjust the <strong>Comments Title </strong>block text to the left and right or make it centered-aligned.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change heading level</strong></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/-glw7xIHgIH2BKRlytoMlqRyS3pa36Z_9N08XWN9Td5gV9u3TEkpMFiss5KZnb3wuxOi_nTrj0CQ6iB5nh0BY_eoD_q7TlNs-0jg-dTsDvcOr-hfrX6ziq23NAHhA6_Cfx25gV_NLDGgdSf10ebeSOYlkSzvN1tpMqsmWokPUc60AfTcJFQpX-3VLlgpCQ\" alt=\"Change heading level in the Comments Title block\" style=\"width:375px;height:60px\" width=\"375\" height=\"60\" /></figure>\n\n\n\n<p>You can change the heading level of the <strong>Comments Title</strong> block by selecting this button and choosing a heading from H1 to H6.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by <strong>three vertical dots on the far right of the toolbar</strong> gives you more features such as the ability to duplicate, remove, or edit your block as HTML.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3.png\" alt=\"Examples of the location of the &quot;More Options&quot; menu in a Paragraph block. \" class=\"wp-image-16358234\" style=\"object-fit:cover;width:482px;height:145px\" width=\"482\" height=\"145\" srcset=\"https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3.png 816w, https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3-300x90.png 300w, https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3-768x232.png 768w\" sizes=\"auto, (max-width: 482px) 100vw, 482px\" /><figcaption class=\"wp-element-caption\">Example of the location of the &#8220;More Options&#8221; menu in a Paragraph block.</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>WordPress blocks have specific configuration options in the block settings panel. To access the <strong>Comments Title </strong>block settings panel, click the <strong>Settings</strong> button at the top-right corner of the WordPress editor. Alternatively, click the <strong>More options</strong> or three dots icon in the <strong>Comments Title </strong>block toolbar and select <strong>Show more settings</strong>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Settings</strong></p>\n\n\n\n<p>You can toggle the post title in the <strong>Comments Title</strong> block in the Settings section by enabling the <strong>Show post title</strong> option. You can also choose whether to show the number of comments in the block by toggling on or off the <strong>Show comments count</strong> option.</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/6T30I-xUS2TqZ8K3GnvsEsESVr-Ttp6vpeByk_bn_MKQS_VxgPsAl4DibhBkZxqI5-iMqc1NqpqSiVUEBRjfsXQEOSlseohq7hnsosAMD85__Ne1kHU_dqighAHWfZAYbMUcOzZkhvzKlYKa07fhuJVp9sgrRUBX1fQo1KFcZyRmFHZuGH3DOsad--njng\" alt=\"Settings in the Comments Title block\" style=\"width:303px;height:148px\" width=\"303\" height=\"148\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Color</strong></p>\n\n\n\n<p>The <strong><strong>Comments Title</strong> </strong>block provides Color settings options to change the text and background colors. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <strong>Comments Title</strong> block provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The <strong>Comments Title</strong> block provides dimension settings options to add padding and margin.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Border</strong></p>\n\n\n\n<p>The <strong>Comments Title</strong> block provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The <strong>Advanced</strong> section allows you to add CSS class(es) to the <strong>Comments Title</strong> block. Therefore, you can insert custom CSS styles into the block.</p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh4.googleusercontent.com/obGn_OV0VHaoVM6DN3tN4ez-ZLphYdY-yRw6yc4ljvu6IARxmGOt2EAf3ck95g_xBi0AZZ-_UXesGT1kePoasqg-s39s_pa926OtzkvAhbf_d2959P-8SYACGAaDqFXD9YsRcDU2ebkgvsC8IhAtia94NWsaw_KZXfDQpJMC0EcZ7UsmattxDVlalXKrNQ\" alt=\"Advanced settings in the Comments Title block\" style=\"width:303px;height:175px\" width=\"303\" height=\"175\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-11-22</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Comments Title block displays a title with the number of comments. The block is nested inside the Comments block and allows you to customize the comment title. You can only insert the Comments Title block inside a Comments block. By default, the Comments Title block is included [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16224926",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16224926",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16224926"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16224926/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360298,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16224926/revisions/16360298"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16224926"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16224926"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11399,
+    "date": "2014-10-23T17:47:30",
+    "date_gmt": "2014-10-23T17:47:30",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11399"
+    },
+    "modified": "2024-01-26T16:47:00",
+    "modified_gmt": "2024-01-26T16:47:00",
+    "slug": "ui-best-practices",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/advanced-topics/ui-best-practices/",
+    "title": {
+        "rendered": "UI Best Practices"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\" id=\"logo-homepage-link\">Logo Homepage Link</h2>\n\n\n\n<p>The logo at the top each&nbsp;page should send the user to the homepage of your site.<br>If you are using the recommended function, <a href=\"https://developer.wordpress.org/reference/functions/the_custom_logo/\" data-type=\"URL\" data-id=\"https://developer.wordpress.org/reference/functions/the_custom_logo/\">the_custom_logo()</a> or the site logo block, the logo is linked to the homepage by default.</p>\n\n\n\n<p>You can also add your logo manually. Assuming your logo is in your theme directory, this is how to\u00a0display it in the\u00a0<code>header.php</code>\u00a0template file.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">&lt;a href=\"&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;\"&gt;&lt;img src=\"&lt;?php echo get_stylesheet_directory_uri(); ?&gt;/logo.png\" alt=\"&lt;?php esc_attr_e( 'Home Page', 'textdmomain' );?&gt;\" /&gt;&lt;/a&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"descriptive-anchor-text\">Descriptive Anchor Text</h2>\n\n\n\n<p>The anchor text is&nbsp;the visible text&nbsp;for a&nbsp;hyperlink. Good link text should give the reader an&nbsp;idea of the action that will take place&nbsp;when&nbsp;clicking it.</p>\n\n\n\n<p>A bad example:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"\" class=\"\">The best way to learn WordPress is to start using it. To Download WordPress, <a href=\"https://wordpress.org/download/\">click here</a>.\n</code></pre>\n\n\n\n<p>A better example:</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\"><a href=\"https://wordpress.org/download/\">Download WordPress</a> and start using it. That's the best way to learn.\n</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"style-links-with-underlines\">Style&nbsp;Links with Underlines</h2>\n\n\n\n<p>By default, browsers underline links to let the user know what is clickable. Some designers use CSS to turn off underlines for hyperlinks. This causes&nbsp;usability and accessibility problems, as it makes it more difficult to identify&nbsp;hyperlinks from the surrounding text.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"different-link-colors\">Different Link Colors</h2>\n\n\n\n<p>Color is another&nbsp;visual cue&nbsp;that text is clickable. Styling&nbsp;hyperlinks with&nbsp;a different color than the surrounding text makes&nbsp;them&nbsp;easier to distinguish.</p>\n\n\n\n<p>Hyperlinks are one of the few HTML features that&nbsp;have state. The two most important states are <em>visited</em> and <em>unvisited</em>.</p>\n\n\n\n<p>Having different colors for these two states helps users&nbsp;identify the pages they&#8217;ve visited before. A good trick for taking the guess&nbsp;work out of visited links is to color them 10%-20% darker than the unvisited links.</p>\n\n\n\n<p>There are 3 other states that links can have:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>hover, when a mouse is over an element</li>\n\n\n\n<li>focus, similar to hover but for keyboard users</li>\n\n\n\n<li>active, when a user is clicking on a link</li>\n</ul>\n\n\n\n<p>Since&nbsp;hover and focus have similar meanings, it is useful to give them the same&nbsp;styles.</p>\n\n\n\n<p>Though hover and focus have similar meanings, they have different interaction patterns. If you choose a subtle hover state, you should have a more easily identifiable focus state. Hovering over a link is a directed activity, where the user knows where they are in the page and only needs to identify whether that spot is linked. Focus is an undirected activity, where the user needs to discover where their focus has moved to after shifting focus from the previous location.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"color-contrast\">Color Contrast</h2>\n\n\n\n<p>Color contrast refers to the <strong>difference between two colors</strong>. Contrast is low between navy blue and black. Contrast is high between white and black. WebAIM, a non-profit web accessibility organization, provides a <a href=\"https://webaim.org/resources/contrastchecker/\">color contrast calculator</a> to help you determine the contrast in your website design. The WCAG 2.0 requires a ratio of&nbsp;4.5:1 on normal text to be <a href=\"http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast\">AA compliant</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"sufficient-font-size\">Sufficient Font Size</h2>\n\n\n\n<p>Make your text easy to read. By making your text large enough, you increase the usability of your site and make the content easier to understand. 14px is the smallest&nbsp;text&nbsp;should be.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"associate-labels-with-inputs\">Associate Labels with Inputs</h2>\n\n\n\n<p>Labels inform the user what an input field is for.\u00a0You\u00a0can connect the label to the input\u00a0by using the <code>for</code> attribute in the label.\u00a0This\u00a0will allow the\u00a0user to\u00a0click the label and\u00a0focus on the input field.</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">&lt;label for=\"username\"&gt;Username&lt;/label&gt;\n&lt;input type=\"text\" id=\"username\" name=\"login\" /&gt;</code></pre>\n\n\n\n<p>Labels work for radio buttons as well. Since it works using the&nbsp;<strong>id</strong> field <em>and not the name</em>, each input for the&nbsp;group gets its own label.</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">&lt;input type=\"radio\" id=\"user_group_blogger\" name=\"user_group\" value=\"blogger\" /&gt;\n&lt;label for=\"user_group_blogger\"&gt;Blogger&lt;/label&gt;\n \n&lt;input type=\"radio\"  id=\"user_group_designer\" name=\"user_group\" value=\"designer\" /&gt;\n&lt;label for=\"user_group_designer\"&gt;Designer&lt;/label&gt;\n \n&lt;input type=\"radio\"  id=\"user_group_developer\" name=\"user_group\" value=\"developer\" /&gt;\n&lt;label for=\"user_group_developer\"&gt;Developer&lt;/label&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"placeholder-text-in-forms\">Placeholder Text in Forms</h2>\n\n\n\n<p>Placeholder text shows the user an example of what to type. When a user puts their cursor in the field, the placeholder text will disappear, while the label remains.</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">&lt;label for=\"name\"&gt;Name&lt;/label&gt;\n&lt;input type=\"text\" id=\"name\" name=\"name\" placeholder=\"John Smith\" /&gt;</code></pre>\n\n\n\n<p>Use placeholders to suggest the type of data a field requires, and not as a substitute for the field label.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"descriptive-buttons\">Descriptive Buttons</h2>\n\n\n\n<p>The web is filled with buttons that have unclear meanings. Remember the last&nbsp;time you used &#8216;OK&#8217; or &#8216;submit&#8217; on your login form? Choosing&nbsp;better words to display on your buttons can make your website easier to use.&nbsp;Try the pattern <em>[verb] [noun]</em> &#8212; Create user, Delete File, Update&nbsp;Password, Send Message. Each describes what will happen when the user&nbsp;clicks the button.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5821,
+    "menu_order": 305,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11399",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11399",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 18,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11399/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143019,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11399/revisions/143019"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5821"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11399"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

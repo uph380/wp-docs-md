@@ -1,0 +1,91 @@
+{
+    "id": 157149,
+    "date": "2025-02-21T04:17:08",
+    "date_gmt": "2025-02-21T04:17:08",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields-file/"
+    },
+    "modified": "2025-03-10T18:31:05",
+    "modified_gmt": "2025-03-10T18:31:05",
+    "slug": "fields-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields-file/",
+    "title": {
+        "rendered": "Fields Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_register_field_type()</code></h2>\n<p>alias of acf()-&gt;fields-&gt;register_field_type()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_register_field_type_info()</code></h2>\n<p>alias of acf()-&gt;fields-&gt;register_field_type_info()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_get_field_type()</code></h2>\n<p>alias of acf()-&gt;fields-&gt;get_field_type()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_get_field_types()</code></h2>\n<p>alias of acf()-&gt;fields-&gt;get_field_types()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_get_field_types_info()</code></h2>\n<p>acf_get_field_types_info</p>\n<ul>\n<li>Returns an array containing information about each field type</li>\n<li>@date    18/6/18</li>\n<li>@since ACF 5.6.9</li>\n<li>@param   type $var Description. Default.</li>\n<li>@return type Description.</li>\n</ul>\n<h2><code>acf_is_field_type()</code></h2>\n<p>alias of acf()-&gt;fields-&gt;is_field_type()</p>\n<ul>\n<li>@type    function</li>\n<li>@date 31/5/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   n/a</li>\n<li>@return n/a</li>\n</ul>\n<h2><code>acf_get_field_type_prop()</code></h2>\n<p>This function will return a field type&#8217;s property</p>\n<ul>\n<li>@type    function</li>\n<li>@date 1/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   n/a</li>\n<li>@return (array)</li>\n</ul>\n<h2><code>acf_get_field_type_label()</code></h2>\n<p>This function will return the label of a field type</p>\n<ul>\n<li>@type    function</li>\n<li>@date 1/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   n/a</li>\n<li>@return (array)</li>\n</ul>\n<h2><code>acf_field_type_supports()</code></h2>\n<p>Returns the value of a field type &#8220;supports&#8221; property.</p>\n<ul>\n<li>@since ACF 6.2.5</li>\n<li>@param string $name    The name of the field type.</li>\n<li>@param string $prop    The name of the supports property.</li>\n<li>@param mixed  $default The default value if the property is not set.</li>\n<li>@return mixed The value of the supports property which may be false, or $default on failure.</li>\n</ul>\n<h2><code>acf_field_type_exists()</code></h2>\n<ul>\n<li>@deprecated<br />\n@see acf_is_field_type()</li>\n<li>@type    function</li>\n<li>@date 1/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   $type (string)</li>\n<li>@return (boolean)</li>\n</ul>\n<h2><code>acf_get_field_categories_i18n()</code></h2>\n<p>Returns an array of localised field categories.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_grouped_field_types()</code></h2>\n<p>Returns an multi-dimensional array of field types &#8220;name =&gt; label&#8221; grouped by category</p>\n<ul>\n<li>@since   ACF 5.0.0</li>\n<li>@return  array</li>\n</ul>\n<h2><code>acf_get_combined_field_type_settings_tabs()</code></h2>\n<p>Returns an array of tabs for a field type.<br />\nWe combine a list of default tabs with filtered tabs.<br />\nI.E. Default tabs should be static and should not be changed by the<br />\nfiltered tabs.</p>\n<ul>\n<li>@since   ACF 6.1</li>\n<li>@return array Key/value array of the default settings tabs for field type settings.</li>\n</ul>\n<h2><code>acf_get_pro_field_types()</code></h2>\n<p>Get the PRO only fields and their core metadata.</p>\n<ul>\n<li>@since ACF 6.1</li>\n<li>@return array An array of all the pro field types and their field type selection required meta data.</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157149",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157149",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157149/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157388,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157149/revisions/157388"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157149"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10851352,
+    "date": "2018-11-06T03:54:27",
+    "date_gmt": "2018-11-06T03:54:27",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851352"
+    },
+    "modified": "2023-01-16T13:22:51",
+    "modified_gmt": "2023-01-16T13:22:51",
+    "slug": "write-code-in-your-posts-classic-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/write-code-in-your-posts-classic-editor/",
+    "title": {
+        "rendered": "Write code in your posts (Classic Editor)"
+    },
+    "content": {
+        "rendered": "\n<p>Whether you write <a href=\"/support/article/plugins/\">plugins</a> or hacks for WordPress, or you want to add bits and pieces of code about your own WordPress site or other <a href=\"https://en.wikipedia.org/wiki/Code_(disambiguation)#Computing\" target=\"_blank\" rel=\"noopener noreferrer\">programming</a> code like HTML, CSS, PHP, or JavaScript, putting code in your <a href=\"/support/article/writing-posts/\" target=\"_blank\" rel=\"noreferrer noopener\">post</a> that <em>looks</em> like code, but doesn&#8217;t <em>behave</em> like code, is a frequent challenge for bloggers.</p>\n\n\n\n<p>By default, the way a piece of code written or pasted to WordPress&nbsp;<a href=\"/support/article/writing-posts/\">post editor</a> is interpreted depends on whether you use visual or HTML post editor. Visual editor will consider the code to be an ordinary text, converting (encoding) the &lt; and &gt; characters into their&nbsp;&lt;&nbsp;and&nbsp;&gt;&nbsp;<a href=\"/support/article/glossary#character-entity\">character entity</a>&nbsp;equivalents, so that the code is not interpreted by a web browser. Quotes are converted too, but remember that by default, WordPress also applies&nbsp;<a href=\"#quotes-auto-correction\">auto-correction</a>&nbsp;so that the text is quoted properly according to your language specifics. HTML editor does not convert any of these characters, so be aware that HTML and CSS markup you use in your code examples will be recognized by a web browser and you may end up with a funky looking text and a messed up layout.</p>\n\n\n\n<p>Note that this behavior may differ with respect to the WordPress version, post editor and other plugins used. In some older versions of WordPress, unrecognized uses of the &lt; and &gt; characters were converted into the&nbsp;&amp;lt; and &amp;gt;&nbsp;character entities, and when an <a href=\"https://en.wikipedia.org/wiki/HTML_element\" target=\"_blank\" rel=\"noreferrer noopener\">HTML tag</a> was found within the post, the tag was left as it was, allowing for its interpretation in a web browser.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Code Within Paragraphs</h2>\n\n\n\n<p>The HTML tag which will turn text into a <code>monospaced</code> font.&nbsp;They are&nbsp;&lt;code&gt;&nbsp;and&nbsp;&lt;tt&gt;. The latter is rarely used today, replaced by the more useful and semantically correct&nbsp;&lt;code&gt;, which distinguishes text that is computer code from natural language.</p>\n\n\n\n<pre class=\"wp-block-preformatted\">This is an example which mentions code within a paragraph,<br />namely the functions &lt;code&gt;wp_title()&lt;/code&gt;, <br />&lt;code&gt;wp_content()&lt;/code&gt; and &lt;code&gt;wp_footer()&lt;/code&gt;, <br />which are very useful in WordPress.</pre>\n\n\n\n<p>This is great for making a piece of non-HTML text look like code, but what about HTML tags that you want to showcase?</p>\n\n\n\n<pre class=\"wp-block-preformatted\">In the header.php template file,<br />look for the &lt;code&gt;&lt;div class=\"header\"&gt;&lt;/code&gt;<br />section to change the &lt;code&gt;&lt;h1&gt;&lt;/code&gt; heading.</pre>\n\n\n\n<p>Using the <code>&lt;code&gt;</code> tag doesn&#8217;t tell WordPress to encode HTML markup within the tag or strip it from the post. WordPress thinks that you are using this markup for formatting, leaving it untouched. A web browser then sees a <code>&lt;code&gt;</code> tag followed by a <code>&lt;div&gt;</code> tag and so it responds by creating a new container in your web page.&nbsp;</p>\n\n\n\n<p>To avoid this behavior, use <a href=\"https://codex.wordpress.org/Fun_Character_Entities\">character entities or extended characters</a> to represent the left and right arrow characters in a way that is not recognized as the beginning and end of an HTML tag by a web browser, like this:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">In the header.php template file,<br />look for the &lt;code&gt;&amp;lt;div class=\"header\"&amp;gt;&lt;/code&gt;<br />section to change the &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; heading.<br /><br /></pre>\n\n\n\n<h2 class=\"wp-block-heading\">URLs Within Paragraphs</h2>\n\n\n\n<p>By default, WordPress will turn any phrase that begins with <em>http:</em> into a link. If you are giving an example of how to link to a specific post within a WordPress site, instead of using the link with <em><code>http://example.com/index.php?p=453</code></em> and having it turn into a link, you can use extended characters for the slashes, so WordPress won&#8217;t &#8220;see&#8221; the link:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">...link to a specific WordPress post using <br />&lt;code&gt;http:&amp; amp;#47;&amp; amp;#47;example.com&amp; amp;#47;index.php?p=453&lt;/code&gt;<br />in your post....</pre>\n\n\n\n<p>Note: Take off Space between &#8216;&amp;&#8217; and &#8216;amp&#8217;.</p>\n\n\n\n<h2 class=\"wp-block-heading\">List of Related Character Entities</h2>\n\n\n\n<p>Here is a list of some HTML character entities related to the topic of this article:</p>\n\n\n<pre class=\"brush: plain; title: ; notranslate\" title=\"\">(less than) = &amp;lt; or &amp;#060;\n(greater than) = &amp;gt; or &amp;#062;\n/ = &amp;#047;\n] = &amp;#093;\n&#x5B; = &amp;#091;\n&quot; = &amp;quot; or &amp;#034;\n&#039; = &amp;#039;\n\u201c = &amp;ldquo; or &amp;#8220;\n\u201d = &amp;rdquo; or &amp;#8220;\n\u2018 = &amp;lsquo; or &amp;#8216;\n\u2019 = &amp;rsquo; or &amp;#8217;\n(ampersand) = &amp;amp; or &amp;#038;</pre>\n\n\n\n<p>There is a list of resources below which will help you turn HTML tags into character entities automatically, so you don&#8217;t have to memorize these character codes.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using the\u00a0&lt;pre&gt;\u00a0tag</h2>\n\n\n\n<p>To set your code aside so that it looks like a box of code which may be copied and pasted within other code or template file, you can use the&nbsp;&lt;pre&gt;&nbsp;HTML tag.</p>\n\n\n\n<p>The&nbsp;&lt;pre&gt;&nbsp;tag instructs the browser to use a monospaced font, but to&nbsp;<em>exactly reproduce</em>&nbsp;whatever is inside of the&nbsp;&lt;pre&gt;tags. Every space, line break, every bit of code is exactly reproduced.</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;h3&gt;Section Three Title&lt;/h3&gt;<br />&lt;p&gt;This is the start of a <br />&lt;a title=\"article on relationships\" href=\"goodtalk.php\"&gt;<br />good relationship&lt;/a&gt; between you and me....</pre>\n\n\n\n<p>Using the&nbsp;&lt;pre&gt;&nbsp;tag isn&#8217;t very &#8220;pretty&#8221; but it does the job. Examples of how to style it can be found in the next section. Still, it showcases the code&nbsp;<em>exactly</em>.</p>\n\n\n\n<p>By&nbsp;<em>exactly</em>, we mean EXACTLY. If you have a long line of code, it will run off the page because there are no&nbsp;<em>instructions</em>which tell the code to wrap. It won&#8217;t. Here is an example:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;h3&gt;Section Three Title&lt;/h3&gt;&lt;p&gt;This is the start of a &lt;a title=\"article on relationships\"<br />href=\"goodtalk.php\"&gt;good relationship&lt;/a&gt; between you and I and I think you should read it because it is<br />important that we have these little &lt;a title=\"article on communication\"<br />href=\"communication.php\"&gt;conversations&lt;/a&gt; once in a while to let each other know how we feel....</pre>\n\n\n\n<p>Not pretty, is it. To avoid this screen run-off, put in line breaks. Unfortunately, deciding where to put those line breaks in when you are showcasing code that will be copied makes it a difficult decision.</p>\n\n\n\n<p>If you are familiar with programming language, you will know when a line break won&#8217;t mess up a line of code, so choose there. If you are unfamiliar with where to put line breaks, experiment. Put the code in, make the line breaks, and then test the code. If it works, then use the line break there. If not, change the line break position.</p>\n\n\n\n<p>If you have long lines of code, consider showcasing only excerpts and providing a link to the full code placed on your site in a text or\u00a0PHP\u00a0file, or using one of the many\u00a0online pastebins\u00a0which are available for temporarily showcasing code.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Troubleshooting Codes</h2>\n\n\n\n<p>Writing code within a WordPress post can be a challenge, maybe forcing you to override the WordPress default styles and to use filters which &#8220;fix&#8221; what we write. If you are having trouble with writing code within your WordPress post, this section might help.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Quotes Auto-correction</h3>\n\n\n\n<p>A frequent problem when using codes within your post is the quotes auto-correction feature of WordPress, mostly known from word processing software. By default, when serving a web page, WordPress converts the <strong>&#8220;</strong>straight<strong>&#8220;</strong> quotes into the opening and closing \u201ccurly\u201d quotation marks according to your WordPress <a href=\"/support/article/installing-wordpress-in-your-language/\">installation language</a> set in the <em>wp-config.php</em> file. Note that the auto-correction (also called smart quotes) feature is applied regardless of whether you have written the quotes in visual or HTML post editor.</p>\n\n\n\n<p>In HTML post editor, you can avoid this problem by wrapping the quotes with the &lt;code&gt;, &lt;tt&gt; or &lt;pre&gt; tags.\u00a0Other solution is replacing quotes with their respective character entities, e.g. using:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;code&gt;&lt;p class=&amp; #34;red&amp; #34;&gt;&lt;/code&gt;    // Take off space between &amp; and #</pre>\n\n\n\n<p>instead of:</p>\n\n\n\n<pre class=\"wp-block-preformatted\">&lt;p class=\"red\"&gt;</pre>\n\n\n\n<p>Note that in some older versions of WordPress, if you edited a page again after publishing it, the HTML editor replaced all these entities with their literal equivalents. For example, if you carefully used &amp;#34 for your quotes, they would have come back as &#8220;, and if saved, the auto-correction feature would have an effect on them.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://codex.wordpress.org/Fun Character Entities\">Fun Character Entities</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Frequent Code User</h3>\n\n\n\n<p>If you consistently use a lot of formulas, functions, and programming code in your posts, consider using a plugin or PHP tool to make the entire process easier. If you tend to post a LOT of code blocks, consider pasting the code in a Paste Bin and linking to it on your site.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://chris-lamb.co.uk/projects/figurerender\">FigureRender</a> &#8211; LaTeX rendering plugin</li><li><a href=\"http://www.narga.net/syntax-highlighter-wordpress-plugins-code-snippets/\">9 Syntax Highlighter Plugins and Services for Embedding Code Snippets in WordPress</a> &#8211; Following are list of best WordPress plugins or 3rd-party services to highlight code snippets within your blog that I have personally tried in 2013.</li><li><a href=\"http://www.coffee2code.com/archives/2005/03/29/plugin-preserve-code-formatting/\">Coffee2code&#8217;s Preserve Code Formatting WordPress Plugin</a></li><li><a href=\"http://blog.netnerds.net/quickcode/\">QuickCode WordPress Plugin</a> &#8211; Hides/unhides formatted blocks of code.</li><li><a href=\"http://www1.chapman.edu/~jipsen/mathml/asciimath.html\">Using ASCIIMath</a></li><li><a href=\"http://www.latex-project.org/\">LaTex &#8211; A document preparation system</a></li><li><a href=\"http://sixthform.info/steve/wordpress/index.php?cat=2\">Using LaTeX in WordPress</a></li><li><a href=\"https://wordpress.org/plugins/wpmathpub/\">Display mathematical equations within your posts</a></li><li><a href=\"http://www.embeddedcomponents.com/blogs/2007/05/how-to-build-dean-lees-syntax-highlighter-from-latest-components/\">How to Build Dean Lee&#8217;s Plugin</a> &#8211; A plugin for GeSHi &#8211; Generic Syntax Highlighter</li><li><a href=\"http://www.webveteran.com/blog/index.php/visual-code-editor/\">Visual Code Editor Plugin</a> &#8211; Modifies WordPress&#8217;s behavior so that code format is preserved when using the visual editor. It will work with any syntax highlighter that accepts encoded/escaped syntax.</li><li><a href=\"http://www.viper007bond.com/wordpress-plugins/syntaxhighlighter/\">SyntaxHighlighter Evolved</a> &#8211; allows you to easily post syntax-highlighted code to your site without having to escape the code.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Paste Tools</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.pastebin.com/\">Pastebin.com</a></li><li><a href=\"https://gist.github.com/\">GitHub:Gist</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Whether you write plugins or hacks for WordPress, or you want to add bits and pieces of code about your own WordPress site or other programming code like HTML, CSS, PHP, or JavaScript, putting code in your post that looks like code, but doesn&#8217;t behave like code, is a frequent challenge for bloggers. By default, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10851352",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851352",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851352"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851352/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355449,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851352/revisions/16355449"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851352"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851352"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

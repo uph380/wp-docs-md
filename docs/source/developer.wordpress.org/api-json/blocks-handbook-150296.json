@@ -1,0 +1,91 @@
+{
+    "id": 150296,
+    "date": "2023-11-28T18:10:01",
+    "date_gmt": "2023-11-28T18:10:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/"
+    },
+    "modified": "2024-12-13T09:04:06",
+    "modified_gmt": "2024-12-13T09:04:06",
+    "slug": "registration-of-a-block",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/",
+    "title": {
+        "rendered": "Registration of a block"
+    },
+    "content": {
+        "rendered": "<p>Blocks in WordPress are typically bundled in a plugin and registered on both the server and client-side using <code>block.json</code> metadata.</p>\n<p>While it&#8217;s possible to register blocks solely on the client-side, best practices strongly advise registering them on both the server and client. This dual registration is crucial for enabling server-side features such as Dynamic Rendering, Block Supports, Block Hooks, and Style Variations. Without server-side registration, these functionalities will not operate correctly.</p>\n<p>For instance, if you want a block <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/blocks/\">to be styled via <code>theme.json</code></a>, it must be registered on the server. Otherwise, the block won&#8217;t recognize or apply any styles assigned to it in <code>theme.json</code>.</p>\n<p>The following diagram details the registration process for a block.</p>\n<p><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/block-registration-e1700493399839.png?ssl=1\" title=\"Open Block Registration diagram image\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/block-registration-e1700493399839.png?ssl=1\" alt=\"Open Block Registration diagram image\" /></a></p>\n<h2>Registering a block with PHP (server-side)</h2>\n<p>Block registration on the server usually takes place in the main plugin PHP file with the <a href=\"https://developer.wordpress.org/reference/functions/register_block_type/\"><code>register_block_type()</code></a> function called on the <a href=\"https://developer.wordpress.org/reference/hooks/init/\"><code>init</code></a> hook. This function simplifies block type registration by reading metadata stored in a <code>block.json</code> file.</p>\n<p>This function is designed to register block types and primarily uses two parameters in this context, although it can accommodate more variations:</p>\n<ul>\n<li><strong><code>$block_type</code> (<code>string</code>):</strong> This can either be the path to the directory containing the <code>block.json</code> file or the complete path to the metadata file if it has a different name. This parameter tells WordPress where to find the block&#8217;s configuration.</p>\n</li>\n<li>\n<p><strong><code>$args</code> (<code>array</code>):</strong> This is an optional parameter where you can specify additional arguments for the block type. By default, this is an empty array, but it can include various options, one of which is the <code>$render_callback</code>. This callback is used to render blocks on the front end and is an alternative to the <code>render</code> property in <code>block.json</code>.</p>\n</li>\n</ul>\n<p>During the development process, the <code>block.json</code> file is typically moved from the <code>src</code> (source) directory to the <code>build</code> directory as part of compiling your code. Therefore, when registering your block, ensure the <code>$block_type</code> path points to the <code>block.json</code> file within the <code>build</code> directory.</p>\n<p>The <code>register_block_type()</code> function returns the registered block type (<code>WP_Block_Type</code>) on success or <code>false</code> on failure. Here is a simple example using the <code>render_callback</code>.</p>\n<pre><code class=\"language-php\">register_block_type(\n    __DIR__ . '/build',\n    array(\n        'render_callback' =&gt; 'render_block_core_notice',\n    )\n);\n</code></pre>\n<p>Here is a more complete example, including the <code>init</code> hook.</p>\n<pre><code class=\"language-php\">function minimal_block_ca6eda___register_block() {\n    register_block_type( __DIR__ . '/build' );\n}\nadd_action( 'init', 'minimal_block_ca6eda___register_block' );\n</code></pre>\n<p><em>See the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/minimal-block-ca6eda\">full block example</a> of the  <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/minimal-block-ca6eda/plugin.php\">code above</a></em></p>\n<h2>Registering a block with JavaScript (client-side)</h2>\n<p>When the block has already been registered on the server, you only need to register the client-side settings in JavaScript using the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/#registerblocktype\"><code>registerBlockType</code></a> method from the <code>@wordpress/blocks</code> package. You just need to make sure you use the same block name as defined in the block&#8217;s <code>block.json</code> file. Here&#8217;s an example:</p>\n<pre><code class=\"language-js\">import { registerBlockType } from '@wordpress/blocks';\n\nregisterBlockType( 'my-plugin/notice', {\n    edit: Edit,\n    // ...other client-side settings\n} );\n</code></pre>\n<p>While it&#8217;s generally advised to register blocks on the server using PHP for the benefits outlined in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file\">&#8220;Benefits using the metadata file&#8221;</a> section, you can opt to register a block solely on the client-side. The <code>registerBlockType</code> method allows you to register a block type using metadata.</p>\n<p>The function accepts two parameters:</p>\n<ul>\n<li><strong><code>blockNameOrMetadata</code> (<code>string</code>|<code>Object</code>):</strong> This can either be the block type&#8217;s name as a string or an object containing the block&#8217;s metadata, which is typically loaded from the <code>block.json</code> file.</li>\n<li><strong><code>settings</code> (<code>Object</code>):</strong> This is an object containing the block&#8217;s client-side settings.</li>\n</ul>\n<div class=\"callout callout-tip\">\n    You can import the contents of the <code>block.json</code> file (or any other <code>.json</code> file) directly into your JavaScript files if you&#8217;re using a build process, such as the one provided by <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/#the-build-process-with-wp-scripts\"><code>wp-scripts</code></a>.\n</div>\n<p>The <code>settings</code> object passed as the second parameter includes many properties, but these are the two most important ones:</p>\n<ul>\n<li><strong><code>edit</code>:</strong> The React component that gets used in the Editor for our block.</li>\n<li><strong><code>save</code>:</strong> The function that returns the static HTML markup that gets saved to the database.</li>\n</ul>\n<p>The <code>registerBlockType()</code> function returns the registered block type (<code>WPBlock</code>) on success or <code>undefined</code> on failure. Here&#8217;s an example:</p>\n<pre><code class=\"language-js\">import { registerBlockType } from '@wordpress/blocks';\nimport { useBlockProps } from '@wordpress/block-editor';\nimport metadata from './block.json';\n\nconst Edit = () =&gt; &lt;p { ...useBlockProps() }&gt;Hello World - Block Editor&lt;/p&gt;;\nconst save = () =&gt; &lt;p { ...useBlockProps.save() }&gt;Hello World - Frontend&lt;/p&gt;;\n\nregisterBlockType( metadata.name, {\n    edit: Edit,\n    save,\n} );\n</code></pre>\n<p><em>See the <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/minimal-block-ca6eda\">full block example</a> of the <a href=\"https://github.com/WordPress/block-development-examples/blob/trunk/plugins/minimal-block-ca6eda/src/index.js\">code above</a></em></p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/reference/functions/register_block_type/\"><code>register_block_type</code> PHP function</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/#registerblocktype\"><code>registerBlockType</code> JS function</a></li>\n<li><a href=\"https://github.com/WordPress/gutenberg/discussions/55884\">Why a block needs to be registered in both the server and the client?</a> | GitHub Discussion</li>\n<li><a href=\"https://excalidraw.com/#json=PUQu7jpvbKsUHYfpHWn7s,61QnhpZtjykp3s44lbUN_g\">Block Registration diagram</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 150294,
+    "menu_order": 12,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-150296",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150296",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150296/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156099,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150296/revisions/156099"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150294"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=150296"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

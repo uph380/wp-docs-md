@@ -1,0 +1,91 @@
+{
+    "id": 136328,
+    "date": "2021-06-10T13:54:47",
+    "date_gmt": "2021-06-10T13:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/card-media/"
+    },
+    "modified": "2024-10-30T17:09:59",
+    "modified_gmt": "2024-10-30T17:09:59",
+    "slug": "card-media",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/card-media/",
+    "title": {
+        "rendered": "CardMedia"
+    },
+    "content": {
+        "rendered": "<p><code>CardMedia</code> provides a container for full-bleed content within a <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/card/card/\"><code>Card</code></a>, such as images, video, or even just a background color.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Card, CardBody, CardMedia } from '@wordpress/components';\n\nconst Example = () =&gt; (\n    &lt;Card&gt;\n        &lt;CardMedia&gt;\n            &lt;img src=\"...\" /&gt;\n        &lt;/CardMedia&gt;\n        &lt;CardBody&gt;...&lt;/CardBody&gt;\n    &lt;/Card&gt;\n);\n</code></pre>\n<h2>Placement</h2>\n<p><code>CardMedia</code> can be placed in any order as a direct child of a <code>Card</code> (it can also exist as the only child component). The styles will automatically round the corners of the inner media element.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 125,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-136328",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136328",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136328/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151724,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/136328/revisions/151724"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=136328"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11639,
+    "date": "2014-12-01T15:13:06",
+    "date_gmt": "2014-12-01T15:13:06",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11639"
+    },
+    "modified": "2022-11-17T06:26:44",
+    "modified_gmt": "2022-11-17T06:26:44",
+    "slug": "summary",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/javascript/summary/",
+    "title": {
+        "rendered": "Summary"
+    },
+    "content": {
+        "rendered": "\n<p>Here are all the example code snippets from the preceding discussion, assembled into two complete code pages: one for jQuery and the other for PHP.</p>\n\n\n\n<h2 class=\"wp-block-heading\">PHP</h2>\n\n\n\n<p>This code resides on one of your plugin pages.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'admin_enqueue_scripts', 'my_enqueue' );\nfunction my_enqueue( $hook ) {\n   if ( 'myplugin_settings.php' !== $hook ) {\n      return;\n   }\n\n   wp_enqueue_script(\n      'ajax-script',\n      plugins_url( '/js/myjquery.js', __FILE__ ),\n      array( 'jquery' ),\n      '1.0.0',\n      true\n   );\n\n   $title_nonce = wp_create_nonce( 'title_example' );\n   wp_localize_script(\n      'ajax-script',\n      'my_ajax_obj',\n      array(\n         'ajax_url' =&gt; admin_url( 'admin-ajax.php' ),\n         'nonce'    =&gt; $title_nonce,\n      )\n   );\n}\n\nadd_action( 'wp_ajax_my_tag_count', 'my_ajax_handler' );\nfunction my_ajax_handler() {\n   check_ajax_referer( 'title_example' );\n\n   $title = wp_unslash( $_POST['title'] );\n\n   update_user_meta( get_current_user_id(), 'title_preference', $title );\n\n   $args = array(\n      'tag' =&gt; $title,\n   );\n\n   $the_query = new WP_Query( $args );\n\n   echo esc_html( $title ) . ' (' . $the_query-&gt;post_count . ') ';\n\n   wp_die(); // all ajax handlers should die when finished\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">jQuery</h2>\n\n\n\n<p>This code is in the file <code>js/myjquery.js</code> below your plugin folder.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">jQuery(document).ready(function($) { \t   //wrapper\n\t$(\".pref\").change(function() { \t\t   //event\n\t\tvar this2 = this; \t\t           //use in callback\n\t\t$.post(my_ajax_obj.ajax_url, { \t   //POST request\n\t       _ajax_nonce: my_ajax_obj.nonce, //nonce\n\t\t\taction: \"my_tag_count\",        //action\n\t  \t\ttitle: this.value \t           //data\n  \t\t}, function(data) {\t\t           //callback\n\t\t\tthis2.nextSibling.remove();    //remove the current title\n\t\t\t$(this2).after(data); \t       //insert server response\n\t\t});\n\t});\n});</code></pre>\n\n\n\n<p>And after storing the preference, the resulting post count is added to the selected title.</p>\n\n\n\n<h2 class=\"wp-block-heading\">More Information</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a title=\"External Site\" href=\"http://wp.smashingmagazine.com/2011/10/18/how-to-use-ajax-in-wordpress/\">How To Use AJAX In WordPress</a></li>\n\n\n\n<li><a title=\"External Site\" href=\"http://www.glennmessersmith.com/pages/wpajax.html\">AJAX for WordPress</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 1130752,
+    "featured_media": 0,
+    "parent": 11151,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11639",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11639",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/1130752"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11639/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144382,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11639/revisions/144382"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11151"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11639"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

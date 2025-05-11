@@ -1,0 +1,85 @@
+{
+    "id": 134405,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/"
+    },
+    "modified": "2024-04-30T17:55:19",
+    "modified_gmt": "2024-04-30T17:55:19",
+    "slug": "reference-guides",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/",
+    "title": {
+        "rendered": "Reference Guides"
+    },
+    "content": {
+        "rendered": "<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/\">Block API Reference</a></h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-annotations/\">Annotations</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/\">API Versions</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/\">Attributes</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-context/\">Context</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-deprecation/\">Deprecation</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/\">Edit and Save</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/\">Patterns</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/\">Registration</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/\">Supports</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-templates/\">Templates</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-transforms/\">Transformations</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/\">Metadata</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/\">Variations</a></li>\n</ul>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/\">Hooks Reference</a></h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/\">Block Filters</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/\">Editor Hooks</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/i18n-filters/\">i18n Hooks</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/parser-filters/\">Parser Hooks</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/autocomplete-filters/\">Autocomplete</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/\">Global Styles Hooks</a></li>\n</ul>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/\">SlotFills Reference</a></h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/main-dashboard-button/\">MainDashboardButton</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-block-settings-menu-item/\">PluginBlockSettingsMenuItem</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-document-setting-panel/\">PluginDocumentSettingPanel</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-more-menu-item/\">PluginMoreMenuItem</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-publish-panel/\">PluginPostPublishPanel</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-status-info/\">PluginPostStatusInfo</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-pre-publish-panel/\">PluginPrePublishPanel</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar/\">PluginSidebar</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar-more-menu-item/\">PluginSidebarMoreMenuItem</a></li>\n</ul>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/\">Theme.json Reference</a></h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/\">Version 3 (latest)</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v2/\">Version 2</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v1/\">Version 1</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-migrations/\">Migrating to Newer Versions</a></li>\n</ul>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/richtext/\">RichText Reference</a></h2>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/\">Component Reference</a></h2>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/\">Package Reference</a></h2>\n<h2><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/\">Data Module Reference</a></h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core/\"><strong>core</strong>: WordPress Core Data</a>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-annotations/\"><strong>core/annotations</strong>: Annotations</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-block-directory/\"><strong>core/block-directory</strong>: Block directory</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-block-editor/\"><strong>core/block-editor</strong>: The Block Editor\u2019s Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-blocks/\"><strong>core/blocks</strong>: Block Types Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-customize-widgets/\"><strong>core/customize-widgets</strong>: Customize Widgets</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-post/\"><strong>core/edit-post</strong>: The Editor\u2019s UI Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-site/\"><strong>core/edit-site</strong>: Edit Site</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-widgets/\"><strong>core/edit-widgets</strong>: Edit Widgets</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-editor/\"><strong>core/editor</strong>: The Post Editor\u2019s Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-keyboard-shortcuts/\"><strong>core/keyboard-shortcuts</strong>: The Keyboard Shortcuts Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-notices/\"><strong>core/notices</strong>: Notices Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-nux/\"><strong>core/nux</strong>: The NUX (New User Experience) Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-preferences/\"><strong>core/preferences</strong>: Preferences</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-reusable-blocks/\"><strong>core/reusable-blocks</strong>: Reusable blocks</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-rich-text/\"><strong>core/rich-text</strong>: Rich Text</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-viewport/\"><strong>core/viewport</strong>: The Viewport Data</a></li>\n</ul>\n</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 57,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134405",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153638,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405/revisions/153638"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134405"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

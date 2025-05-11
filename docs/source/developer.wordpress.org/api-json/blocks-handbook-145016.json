@@ -1,0 +1,91 @@
+{
+    "id": 145016,
+    "date": "2023-03-02T02:55:01",
+    "date_gmt": "2023-03-02T02:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/overusing-snapshots/"
+    },
+    "modified": "2025-01-07T18:34:07",
+    "modified_gmt": "2025-01-07T18:34:07",
+    "slug": "overusing-snapshots",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/overusing-snapshots/",
+    "title": {
+        "rendered": "Overusing snapshots"
+    },
+    "content": {
+        "rendered": "<p>Take a look at the below code. Could you understand what the test is trying to do at first glance?</p>\n<pre><code class=\"language-js\">await editor.insertBlock( { name: 'core/quote' } );\nawait page.keyboard.type( '1' );\nawait page.keyboard.press( 'Enter' );\nawait page.keyboard.press( 'Enter' );\n\nexpect( await editor.getEditedPostContent() ).toMatchSnapshot();\n\nawait page.keyboard.press( 'Backspace' );\nawait page.keyboard.type( '2' );\n\nexpect( await editor.getEditedPostContent() ).toMatchSnapshot();\n</code></pre>\n<p>This is borrowed from the real code in gutenberg, with the test title and the comments removed and refactored into Playwright. Ideally, E2E tests should be self-documented and readable to end users; in the end, they are trying to resemble how end users interact with the app. However, there are a couple of red flags in the code.</p>\n<h2>Problems with snapshot testing</h2>\n<p>Popularized by Jest, <a href=\"https://jestjs.io/docs/snapshot-testing\">snapshot testing</a> is a great tool to help test our app <em>when it makes sense</em>. However, probably because it&#8217;s so powerful, it&#8217;s often overused by developers. There are already multiple <a href=\"https://kentcdodds.com/blog/effective-snapshot-testing\">articles</a> about this. In this particular case, snapshot testing fails to reflect the developer&#8217;s intention. It&#8217;s not clear what the assertions are about without looking into other information. This makes the code harder to understand and creates a mental overhead for all the other readers other than the one who wrote it. As readers, we have to jump around the code to fully understand them. The added complexity of the code discourages contributors from changing the test to fit their needs. It could sometimes even confuse the authors and make them accidentally <a href=\"https://github.com/WordPress/gutenberg/pull/42780#discussion_r949865612\">commit the wrong snapshots</a>.</p>\n<p>Here&#8217;s the same test with the test title and comments. Now you know what these assertions are actually about.</p>\n<pre><code class=\"language-js\">it( 'can be split at the end', async () =&gt; {\n    // ...\n\n    // Expect empty paragraph outside quote block.\n    expect( await getEditedPostContent() ).toMatchSnapshot();\n\n    // ...\n\n    // Expect the paragraph to be merged into the quote block.\n    expect( await getEditedPostContent() ).toMatchSnapshot();\n} );\n</code></pre>\n<p>The developer&#8217;s intention is a bit more readable, but it still feels disconnected from the test. You might be tempted to try <a href=\"https://jestjs.io/docs/snapshot-testing#inline-snapshots\">inline snapshots</a>, which do solve the issue of having to jump around files, but they&#8217;re still not self-documented nor explicit. We can do better.</p>\n<h2>The solution</h2>\n<p>Instead of writing the assertions in comments, we can try directly writing them out explicitly. With the help of <code>editor.getBlocks</code>, we can rewrite them into simpler and atomic assertions.</p>\n<pre><code class=\"language-js\">// ...\n\n// Expect empty paragraph outside quote block.\nawait expect.poll( editor.getBlocks ).toMatchObject( [\n    {\n        name: 'core/quote',\n        innerBlocks: [\n            {\n                name: 'core/paragraph',\n                attributes: { content: '1' },\n            },\n        ],\n    },\n    {\n        name: 'core/paragraph',\n        attributes: { content: &apos;&apos; },\n    }\n] );\n\n// ...\n\n// Expect the paragraph to be merged into the quote block.\nawait expect.poll( editor.getBlocks ).toMatchObject( [ {\n    name: 'core/quote',\n    innerBlocks: [\n        {\n            name: 'core/paragraph',\n            attributes: { content: '1' },\n        },\n        {\n            name: 'core/paragraph',\n            attributes: { content: '2' },\n        },\n    ],\n} ] );\n</code></pre>\n<p>These assertions are more readable and explicit. You can add additional assertions or split existing ones into multiple ones to highlight their importance. Whether to keep the comments is up to you, but it&#8217;s usually fine to omit them when the code is already readable without them.</p>\n<h2>Snapshot variants</h2>\n<p>Due to the lack of inline snapshots in Playwright, some migrated tests are using string assertions (<code>toBe</code>) to simulate similar effects without having to create dozens of snapshot files.</p>\n<pre><code class=\"language-js\">expect( await editor.getEditedPostContent() ).toBe( `&lt;!-- wp:paragraph --&gt;\n&lt;p&gt;Paragraph&lt;/p&gt;\n&lt;!-- /wp:paragraph --&gt;` );\n</code></pre>\n<p>We can consider this pattern as a variant of snapshot testing, and we should follow the same rule when writing them. It&#8217;s often better to rewrite them using <code>editor.getBlocks</code> or other methods to make explicit assertions.</p>\n<pre><code class=\"language-js\">await expect.poll( editor.getBlocks ).toMatchObject( [ {\n    name: 'core/paragraph',\n    attributes: { content: 'Paragraph' },\n} ] );\n</code></pre>\n<h2>What about test coverage?</h2>\n<p>Comparing the explicit assertions to snapshot testing, we&#8217;re definitely losing some test coverage in this test. Snapshot testing is still useful when we want to assert the full serialized content of the block. Fortunately, though, some tests in the integration test already assert the <a href=\"https://github.com/WordPress/gutenberg/blob/trunk/test/integration/fixtures/blocks/README.md\">full content</a> of each core block. They run in Node.js, making them way faster than repeating the same test in Playwright. Running 273 test cases in my machine only costs about 5.7 seconds. These sorts of tests work great at the unit or integration level, and we can run them much faster without losing test coverage.</p>\n<h2>Best practices</h2>\n<p>Snapshot testing should rarely be required in E2E tests, often there are better alternatives that leverage explicit assertions. For times when there isn&#8217;t any other suitable alternative, we should follow the best practices when using them.</p>\n<h3>Avoid huge snapshots</h3>\n<p>Huge snapshots are hard to read and difficult to review. Moreover, when everything is important then nothing is important. Huge snapshots prevent us from focusing on the important parts of the snapshots.</p>\n<h3>Avoid repetitive snapshots</h3>\n<p>If you find yourself creating multiple snapshots of similar contents in the same test, then it&#8217;s probably a sign that you want to make more atomic assertions instead. Rethink what you want to test, if the first snapshot is only just a reference for the second one, then what you want is likely the <strong>difference</strong> between the snapshots. Store the first result in a variable and assert the difference between the results instead.</p>\n<h2>Further readings</h2>\n<ul>\n<li><a href=\"https://kentcdodds.com/blog/effective-snapshot-testing\">Effective Snapshot Testing &#8211; Kent C. Dodds</a></li>\n<li><a href=\"https://kentcdodds.com/blog/common-testing-mistakes\">Common Testing Mistakes &#8211; Kent C. Dodds</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 145014,
+    "menu_order": 376,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145016",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145016",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145016/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 145017,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145016/revisions/145017"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145014"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145016"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

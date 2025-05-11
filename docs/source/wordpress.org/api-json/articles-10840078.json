@@ -1,0 +1,109 @@
+{
+    "id": 10840078,
+    "date": "2018-11-02T04:13:19",
+    "date_gmt": "2018-11-02T04:13:19",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840078"
+    },
+    "modified": "2023-06-27T14:10:34",
+    "modified_gmt": "2023-06-27T14:10:34",
+    "slug": "administer-your-blog",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/administer-your-blog/",
+    "title": {
+        "rendered": "Administer your Blog"
+    },
+    "content": {
+        "rendered": "\n<p>Generally, the daily tasks associated with administering your WordPress site are quick and easy to do, freeing you to concentrate on the content, editorials, and stories you want to share with the world, and allowing you to get back to other activities.</p>\n\n\n\n<p>Here is a quick look at the various activities involved in administering your WordPress site. Some of these may need to be done daily, while others can be done weekly, monthly, or less frequently. It depends upon your blogging activity level and the intent of your WordPress site.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Daily Tasks</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Login and Write</h3>\n\n\n\n<p>Most people begin by logging into their WordPress site because they have news, information, or a story to tell. So they head straight for the <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#add-new-post\">Posts</a> &gt; <a href=\"/support/article/writing-posts/\">Add New</a>. There, the title is set, the information is entered, categories and tags chosen, and any other minor details noted, and with a click is published.</p>\n\n\n\n<p>If you have any new images, movies, or music, to upload to your site, you can easily to that when writing the post or switch to the \ufeff<a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#media-add-pictures-and-movies-to-your-posts\">Media</a> &gt; <a href=\"/support/article/using-images/\">Add New Screen</a> and add any other images to your WordPress site. Then, you can either add these to your new posts, or visit the <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#add-new-post\">Posts</a> &gt; <a href=\"/support/article/posts-screen/\">Posts screen</a> and click Edit to edit the post in which you now wish to add an image. Again, click SAVE and it is released to the world.</p>\n\n\n\n<p>Also, there are those <a href=\"/support/article/post-status/#draft\">Drafts</a> sitting up at the top of the Write Post screen, which you can publish or move to the trash, if you&#8217;d like.</p>\n\n\n\n<p>Luckily with WordPress, you have some options for dealing with all those posts. They don&#8217;t all have to be released today. Many people work ahead with their blog content, setting the dates into the future. When the day and time arrives, WordPress will automatically release the post, without any additional effort from you.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Checking Comments</h3>\n\n\n\n<p>After you have cleaned up the content on your site, it is time to find out what they have been saying about what you say. On the <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"https://codex.wordpress.org/Comments_Screen\">Comments Screen</a>, you can inspect the comments posted to your site. If a comment has been marked for <a href=\"https://codex.wordpress.org/Comment_Moderation\">moderation approval</a>, it will look lighter colored than the rest of the comments. Click <a href=\"https://codex.wordpress.org/Manage_Comments_SubPanel#View_Mode\">Edit Comment</a> to access the comment and set it to be approved. Click <strong>Delete Comment</strong> if you want it removed.</p>\n\n\n\n<p>The <a href=\"https://codex.wordpress.org/Awaiting_Moderation_SubPanel\">Moderation Screen</a> will segregate the comments awaiting moderation from the rest of the comments if you have set your <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#settings-configuration-settings\">Settings</a> &gt; <a href=\"/support/article/settings-discussion-screen/\">Discussion</a> to moderate all comments. This allows for quick and easy comment moderation.</p>\n\n\n\n<p>Determining which comments to keep and delete is a challenge. Be aware that often nice comments like <em>&#8220;I really like your site. Keep up the great work.&#8221;</em> and <em>&#8220;It shows you put a lot of time and effort in this. Thanks.&#8221;</em> might be benign comments, or more likely comment <a href=\"/support/article/glossary/#spam\">spam</a>. To help you determine and check on what might be comment spam, and how to increase your protection against comment spammers, check out the following documents:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://codex.wordpress.org/Comment_Spam\">Introduction to Dealing with Comment Spam</a></li><li><a href=\"https://codex.wordpress.org/Comment_Moderation\">Moderating Comments</a></li><li><a href=\"https://codex.wordpress.org/Combating_Comment_Spam\">Combating Comment Spam</a></li><li><a href=\"https://codex.wordpress.org/Combating_Comment_Spam/Denying_Access\">Denying Access to Comment Spammers with .htaccess</a></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Users and Authors</h3>\n\n\n\n<p>If you have set your site set up to <a href=\"https://codex.wordpress.org/Registered_User_Features\">allow users to register</a> and submit articles, stop by your <a href=\"/support/article/administration-screens/#users-your-blogging-family\">Users Screen</a> to check on those who have registered and make any adjustments to their <a href=\"/support/article/roles-and-capabilities/\">User Roles and Capabilities</a> as needed.</p>\n\n\n\n<p>If you do allow users to post articles, be sure to check the <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#add-new-post\">Posts</a> &gt; <a href=\"/support/article/posts-screen/\">Posts screen</a> for any newly posted articles in the <strong>Drafts</strong> or <strong>Pending</strong> status awaiting your review and release.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Check the Dashboard</h3>\n\n\n\n<p>At this point, your daily tasks are almost complete. Your site is up-to-date and on its way to entertaining and educating the world. But, there is one last task you might want to check. Stop by your WordPress <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#dashboard-information-central\">Dashboard</a> &gt; <a href=\"/support/article/dashboard-screen/\">Dashboard</a> screen and check to see if there are any new activities going on in the WordPress Community, especially any announcements about upgrades.</p>\n\n\n\n<p>While there, take advantage of your handy &#8220;To Do List&#8221; featured on the Dashboard. This lists your most recently released posts, the next batch of scheduled entries, recent comments, blog stats, and incoming links (referrers). This helpful information lets you know what has been released to the public from your site, what is next on the list, and shows you, at a glance, to view the most recent comments.\n</p>\n\n\n\n<p>The blog stats and incoming links give you different information. The Stats give you information about how many posts, comments, and categories are on your site. While this may not be critical information, you can use it as a general scoreboard or counter. The incoming links information tells you who has <a href=\"/support/article/glossary/#pingback\">pinged</a> or <a href=\"/support/article/glossary/#trackback\">trackbacked</a> your site. This helps your link popularity for your site and gives you an idea of who thought your site&#8217;s material was worthy of praise.</p>\n\n\n\n<p>At the bottom of the page, you will see a list of your Drafts, waiting to be done.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Administration Tasks</h2>\n\n\n\n<p>As the administrator or site owner, there are a few more tasks you should add to your schedule. These do not have to be done daily, but they still need to be done on a regular basis. Many of these are outlined in the articles <a href=\"https://codex.wordpress.org/WordPress_Housekeeping\">WordPress Housekeeping</a> and <a href=\"https://codex.wordpress.org/WordPress_Site_Maintenance\">WordPress Site Maintenance</a>. In general they are:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/updating-wordpress/\">Updating WordPress</a></li><li>Check for Dead Links Throughout Your Site</li><li><a href=\"https://www.wordpress.org/\">Check in with WordPress for Changes and Information</a></li><li><a href=\"/support/article/backing-up-your-database/\">Backup Your WordPress Site and Database</a></li><li><a href=\"/support/article/using-themes/\">Update Your Site&#8217;s Content and/or Look</a></li><li>Update <a href=\"/plugins/managing-plugins/\">Plugins</a> and <a href=\"/support/article/using-themes/\">Themes</a></li><li><a href=\"https://codex.wordpress.org/Validating_a_Website\">Check for Validation Errors</a></li><li><a href=\"/support/article/optimization/\">Optimize Your WordPress Site</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">More Administration Resources</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/administration-screens/\">Administration Screens</a></li><li><a href=\"https://codex.wordpress.org/Registered_User_Features\">What Registered Users Can Do</a></li><li><a href=\"/support/article/administration-screens/#categories\">Manage Categories</a></li><li><a href=\"/support/article/roles-and-capabilities/\">Roles and Capabilities</a></li><li><a href=\"/support/article/administration-screens/#settings-configuration-settings\">Manage WordPress Settings</a></li><li><a href=\"/support/article/settings-discussion-screen/\">Manage Discussion Options\ufeff</a></li><li><a href=\"/support/article/using-permalinks/\">Using Permalinks</a></li><li><a href=\"https://codex.wordpress.org/Comment_Moderation\">Moderate Comments</a></li><li><a href=\"/support/article/managing-plugins/\">Manage Plugins</a></li><li><a href=\"/support/article/using-themes/\">Manage Themes</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Generally, the daily tasks associated with administering your WordPress site are quick and easy to do, freeing you to concentrate on the content, editorials, and stories you want to share with the world, and allowing you to get back to other activities. Here is a quick look at the various activities involved in administering your [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        33,
+        73
+    ],
+    "class_list": [
+        "post-10840078",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-maintenance",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840078",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840078"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840078/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357520,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840078/revisions/16357520"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840078"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840078"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134489,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/number-control/"
+    },
+    "modified": "2025-02-17T02:04:13",
+    "modified_gmt": "2025-02-17T02:04:13",
+    "slug": "number-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/number-control/",
+    "title": {
+        "rendered": "NumberControl"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p>NumberControl is an enhanced HTML <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number\"><code>input[type=\"number\"]</code></a> element.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { __experimentalNumberControl as NumberControl } from '@wordpress/components';\n\nconst Example = () =&gt; {\n    const [ value, setValue ] = useState( 10 );\n\n    return (\n        &lt;NumberControl\n            __next40pxDefaultSize\n            isShiftStepEnabled={ true }\n            onChange={ setValue }\n            shiftStep={ 10 }\n            value={ value }\n        /&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<h3>dragDirection</h3>\n<p>Determines the drag axis to increment/decrement the value.<br />\nDirections: <code>n</code> | <code>e</code> | <code>s</code> | <code>w</code></p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: <code>n</code></li>\n</ul>\n<h3>dragThreshold</h3>\n<p>If <code>isDragEnabled</code> is true, this controls the amount of <code>px</code> to have been dragged before the value changes.</p>\n<ul>\n<li>Type: <code>Number</code></li>\n<li>Required: No</li>\n<li>Default: <code>10</code></li>\n</ul>\n<h3>spinControls</h3>\n<p>The type of spin controls to display. These are buttons that allow the user to<br />\n quickly increment and decrement the number.</p>\n<ul>\n<li>&#8216;none&#8217; &#8211; Do not show spin controls.</li>\n<li>&#8216;native&#8217; &#8211; Use browser&#8217;s native HTML <code>input</code> controls.</li>\n<li>&#8216;custom&#8217; &#8211; Use plus and minus icon buttons.\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: <code>'native'</code></li>\n</ul>\n</li>\n</ul>\n<h3>isDragEnabled</h3>\n<p>If true, enables mouse drag gesture to increment/decrement the number value. Holding <code>SHIFT</code> while dragging will increase the value by the <code>shiftStep</code>.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h3>isShiftStepEnabled</h3>\n<p>If true, pressing <code>UP</code> or <code>DOWN</code> along with the <code>SHIFT</code> key will increment the value by the <code>shiftStep</code> value.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3>label</h3>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>labelPosition</h3>\n<p>The position of the label (<code>top</code>, <code>side</code>, <code>bottom</code>, or <code>edge</code>).</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>max</h3>\n<p>The maximum <code>value</code> allowed.</p>\n<ul>\n<li>Type: <code>Number</code></li>\n<li>Required: No</li>\n<li>Default: <code>Infinity</code></li>\n</ul>\n<h3>min</h3>\n<p>The minimum <code>value</code> allowed.</p>\n<ul>\n<li>Type: <code>Number</code></li>\n<li>Required: No</li>\n<li>Default: <code>-Infinity</code></li>\n</ul>\n<h3>onChange</h3>\n<p>Callback fired whenever the value of the input changes.</p>\n<p>The callback receives two arguments:</p>\n<ol>\n<li><code>newValue</code>: the new value of the input</li>\n<li><code>extra</code>: an object containing, under the <code>event</code> key, the original browser event.</li>\n</ol>\n<p>Note that the value received as the first argument of the callback is <em>not</em> guaranteed to be a valid value (e.g. it could be outside of the range defined by the [<code>min</code>, <code>max</code>] props, or it could not match the <code>step</code>). In order to check the value&#8217;s validity, check the <code>event.target?.validity.valid</code> property from the callback&#8217;s second argument.</p>\n<ul>\n<li>Type: <code>(newValue, extra) =&gt; void</code></li>\n<li>Required: No</li>\n</ul>\n<h3>required</h3>\n<p>If <code>true</code> enforces a valid number within the control&#8217;s min/max range. If <code>false</code> allows an empty string as a valid value.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3>shiftStep</h3>\n<p>Amount to increment by when the <code>SHIFT</code> key is held down. This shift value is a multiplier to the <code>step</code> value. For example, if the <code>step</code> value is <code>5</code>, and <code>shiftStep</code> is <code>10</code>, each jump would increment/decrement by <code>50</code>.</p>\n<ul>\n<li>Type: <code>Number</code></li>\n<li>Required: No</li>\n<li>Default: <code>10</code></li>\n</ul>\n<h3>step</h3>\n<p>Amount by which the <code>value</code> is changed when incrementing/decrementing. It is also a factor in validation as <code>value</code> must be a multiple of <code>step</code> (offset by <code>min</code>, if specified) to be valid. Accepts the special string value <code>any</code> that voids the validation constraint and causes stepping actions to increment/decrement by <code>1</code>.</p>\n<ul>\n<li>Type: <code>Number | \"any\"</code></li>\n<li>Required: No</li>\n<li>Default: <code>1</code></li>\n</ul>\n<h3>__next40pxDefaultSize</h3>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 186,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134489",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134489",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134489/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156335,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134489/revisions/156335"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134489"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

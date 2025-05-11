@@ -1,0 +1,91 @@
+{
+    "id": 140530,
+    "date": "2022-05-05T13:54:47",
+    "date_gmt": "2022-05-05T13:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/how-to-get-your-pull-request-reviewed/"
+    },
+    "modified": "2025-01-07T18:34:07",
+    "modified_gmt": "2025-01-07T18:34:07",
+    "slug": "how-to-get-your-pull-request-reviewed",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/how-to-get-your-pull-request-reviewed/",
+    "title": {
+        "rendered": "How To Get Your Pull Request Reviewed?"
+    },
+    "content": {
+        "rendered": "<p>Sometimes we publish a Pull Request and no one <a href=\"https://developer.wordpress.org/block-editor/contributors/repository-management/#code-review\">reviews</a> our work. What to do?</p>\n<p>Attracting a review largely isn&#8217;t about the code \u2013 it is about making the reviewing easy.</p>\n<p>If you published a Pull Request that isn&#8217;t getting any comments or reviews, try one of the strategies used by core contributors:</p>\n<h2>Create the smallest reasonable PRs</h2>\n<p>Approving a 2000-line-long PR takes months and feels overwhelming.</p>\n<p>Approving a 50-line long PR takes days or hours and feels easy.</p>\n<p>Large batches slow you down. Ship your work in small chunks to merge more and learn faster.</p>\n<h2>Share relevant context:</h2>\n<p>Clarify:<br />\n* What problem are you solving?<br />\n* How does your PR solve it?<br />\n* What feedback do you need?<br />\n* What\u2019s out of scope?<br />\n* What\u2019s unintuitive?<br />\n* How to test?</p>\n<p>Summarize any related issues and PRs.</p>\n<p>It&#8217;s easier than asking others to go and figure it out.</p>\n<h2>Make your PR exciting</h2>\n<p>All contributions are competing for attention. Make your stand out.</p>\n<p>The easiest way? Say why it matters:</p>\n<p>\u274c A new react hook to get data<br />\n\u2705 <code>useEntityRecord</code>: get data with 10x less boilerplate</p>\n<p>Then prove it with code examples, visuals, and screencasts.</p>\n<h2>Show your work</h2>\n<p>Post a link to your PR in related issues &amp; PRs.</p>\n<p>Ping commenters of related issues, previous committers, and tech leads.</p>\n<p>Bring it up on the #core-editor channel of the WordPress.org slack. The easiest way to get feedback is to speak out during the <a href=\"https://make.wordpress.org/core/tag/core-editor-agenda/\">open floor section</a> of the weekly <a href=\"https://developer.wordpress.org/block-editor/getting-started/\">Core Editor meeting</a>.</p>\n<p>Assign relevant labels, milestones, and projects (or ask someone).</p>\n<h2>Review the work of others</h2>\n<p>It\u2019s the easiest way to get on others\u2019 radar.</p>\n<p>Look up the PRs of commenters of related issues, previous committers, and tech leads. Then review them.</p>\n<p>Is their work unfamiliar? Do:</p>\n<ul>\n<li>Take some time to understand it</li>\n<li>Propose a pair programming session</li>\n<li>Skip, go for the next PR</li>\n</ul>\n<h2>Reduce risk with clarity</h2>\n<p>Risk adds friction \u2013 an approval can backfire later.</p>\n<p>Clarity is like grease. Clearly document:</p>\n<ul>\n<li>What risks are involved? Why take them?</li>\n<li>Why is this PR the best solution?</li>\n<li>How can the risk be minimized?</li>\n<li>What else has been tried?</li>\n</ul>\n<h2>Follow the attention</h2>\n<p>Some PRs naturally get more traction than others.</p>\n<p>Double down on these.</p>\n<p>Some Issues are more topical than others (e.g. those listed in the goals for an upcoming release) and thus will garner more attention. By focusing on these it will be easier to attract reviewers.</p>\n<p>How to get there quickly? Help with an active project from the WordPress roadmap</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135090,
+    "menu_order": 388,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-140530",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140530",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140530/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151688,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/140530/revisions/151688"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=140530"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

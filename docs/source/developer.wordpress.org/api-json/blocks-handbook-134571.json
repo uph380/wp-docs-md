@@ -1,0 +1,91 @@
+{
+    "id": 134571,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-console/"
+    },
+    "modified": "2024-10-30T16:55:21",
+    "modified_gmt": "2024-10-30T16:55:21",
+    "slug": "packages-jest-console",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-console/",
+    "title": {
+        "rendered": "@wordpress/jest-console"
+    },
+    "content": {
+        "rendered": "<p>Custom <a href=\"https://jestjs.io/\">Jest</a> matchers for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Console\">Console</a><br />\nobject to test JavaScript code in WordPress.</p>\n<p>This package converts <code>console.error</code>, <code>console.info</code>, <code>console.log</code> and <code>console.warn</code> functions into mocks and tracks their calls.<br />\nIt also enforces usage of one of the related matchers whenever tested code calls one of the mentioned <code>console</code> methods.<br />\nIt means that you need to assert with <code>.toHaveErrored()</code> or <code>.toHaveErroredWith( arg1, arg2, ... )</code> when <code>console.error</code><br />\ngets executed, and use the corresponding methods when <code>console.info</code>, <code>console.log</code> or <code>console.warn</code> are called.<br />\nYour test will fail otherwise! This is a conscious design decision which helps to detect deprecation warnings when<br />\nupgrading dependent libraries or smaller errors when refactoring code.</p>\n<h2>Installation</h2>\n<p>Install the module:</p>\n<pre><code class=\"language-bash\">npm install @wordpress/jest-console --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h3>Setup</h3>\n<p>The simplest setup is to use Jest&#8217;s <code>setupFilesAfterEnv</code> config option:</p>\n<pre><code class=\"language-js\">\"jest\": {\n  \"setupFilesAfterEnv\": [\n    \"@wordpress/jest-console\"\n  ]\n},\n</code></pre>\n<h3>Usage</h3>\n<h3><code>.toHaveErrored()</code></h3>\n<p>Use <code>.toHaveErrored</code> to ensure that <code>console.error</code> function was called.</p>\n<p>For example, let&#8217;s say you have a <code>drinkAll( flavor )</code> function that makes you drink all available beverages.<br />\nYou might want to check if function calls <code>console.error</code> for <code>'octopus'</code> instead, because <code>'octopus'</code> flavor is really<br />\nweird and why would anything be octopus-flavored? You can do that with this test suite:</p>\n<pre><code class=\"language-js\">describe( 'drinkAll', () =&gt; {\n    test( 'drinks something lemon-flavored', () =&gt; {\n        drinkAll( 'lemon' );\n        expect( console ).not.toHaveErrored();\n    } );\n\n    test( 'errors when something is octopus-flavored', () =&gt; {\n        drinkAll( 'octopus' );\n        expect( console ).toHaveErrored();\n    } );\n} );\n</code></pre>\n<h3><code>.toHaveErroredWith( arg1, arg2, ... )</code></h3>\n<p>Use <code>.toHaveErroredWith</code> to ensure that <code>console.error</code> function was called with<br />\nspecific arguments.</p>\n<p>For example, let&#8217;s say you have a <code>drinkAll( flavor )</code> function again makes you drink all available beverages.<br />\nYou might want to check if function calls <code>console.error</code> with a specific message for <code>'octopus'</code> instead, because<br />\n<code>'octopus'</code> flavor is really weird and why would anything be octopus-flavored? To make sure this works, you could write:</p>\n<pre><code class=\"language-js\">describe( 'drinkAll', () =&gt; {\n    test( 'errors with message when something is octopus-flavored', () =&gt; {\n        drinkAll( 'octopus' );\n        expect( console ).toHaveErroredWith(\n            'Should I really drink something that is octopus-flavored?'\n        );\n    } );\n} );\n</code></pre>\n<h3><code>.toHaveInformed()</code></h3>\n<p>Use <code>.toHaveInformed</code> to ensure that <code>console.info</code> function was called.</p>\n<p>Almost identical usage as <code>.toHaveErrored()</code>.</p>\n<h3><code>.toHaveInformedWith( arg1, arg2, ... )</code></h3>\n<p>Use <code>.toHaveInformedWith</code> to ensure that <code>console.info</code> function was called with<br />\nspecific arguments.</p>\n<p>Almost identical usage as <code>.toHaveErroredWith()</code>.</p>\n<h3><code>.toHaveLogged()</code></h3>\n<p>Use <code>.toHaveLogged</code> to ensure that <code>console.log</code> function was called.</p>\n<p>Almost identical usage as <code>.toHaveErrored()</code>.</p>\n<h3><code>.toHaveLoggedWith( arg1, arg2, ... )</code></h3>\n<p>Use <code>.toHaveLoggedWith</code> to ensure that <code>console.log</code> function was called with<br />\nspecific arguments.</p>\n<p>Almost identical usage as <code>.toHaveErroredWith()</code>.</p>\n<h3><code>.toHaveWarned()</code></h3>\n<p>Use <code>.toHaveWarned</code> to ensure that <code>console.warn</code> function was called.</p>\n<p>Almost identical usage as <code>.toHaveErrored()</code>.</p>\n<h3><code>.toHaveWarnedWith( arg1, arg2, ... )</code></h3>\n<p>Use <code>.toHaveWarneddWith</code> to ensure that <code>console.warn</code> function was called with<br />\nspecific arguments.</p>\n<p>Almost identical usage as <code>.toHaveErroredWith()</code>.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 291,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134571",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134571",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134571/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153847,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134571/revisions/153847"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134571"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 24963,
+    "date": "2017-01-04T15:29:47",
+    "date_gmt": "2017-01-04T15:29:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=24963"
+    },
+    "modified": "2024-01-16T20:30:16",
+    "modified_gmt": "2024-01-16T20:30:16",
+    "slug": "client-libraries",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/using-the-rest-api/client-libraries/",
+    "title": {
+        "rendered": "Client Libraries"
+    },
+    "content": {
+        "rendered": "<p>The API can be used from any application by sending basic HTTP requests; however, client libraries simplify the process of querying or creating\u00a0specific resources.\u00a0These libraries\u00a0make it easy to\u00a0connect an external application to the WordPress REST API\u00a0using a variety of programming languages.</p>\n<p>\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><p>Aside from the Backbone.js client,\u00a0these\u00a0libraries\u00a0are not part of WordPress core,\u00a0and are not necessarily maintained or endorsed by the WordPress REST API team.</p>\n</div></div>\n</p>\n<p>\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">To\u00a0perform authenticated requests from outside of the WordPress admin, themes, or plugins, a separate <a href=\"https://developer.wordpress.org/rest-api/authentication/#authentication-plugins\">authentication plugin</a> is required.</div></div>\n</p>\n<h2>PHP</h2>\n<p><a href=\"https://github.com/WordPress/Requests\">Requests</a> for PHP is a general purpose HTTP request library. While not specifically designed for the WordPress REST API, it is a great tool for interacting with any HTTP API.</p>\n<p><a href=\"https://github.com/madeITBelgium/WordPress-PHP-SDK\">WordPress-PHP-SDK</a> is a PHP SDK for the WordPress REST API, which can be installed using <a href=\"https://getcomposer.org/\">composer</a>.</p>\n<p><a href=\"https://github.com/storipress/wordpress-sdk\">WordPress-SDK</a> is a Laravel package for the WordPress REST API, which can be installed using <a href=\"https://getcomposer.org\">composer</a>.</p>\n<h2>JavaScript</h2>\n<p>The <a href=\"https://developer.wordpress.org/rest-api/backbone-javascript-client/\">Backbone.js client</a>\u00a0is\u00a0built in to WordPress core and provides Backbone.js models &amp; collections for working with REST API resources.</p>\n<p><a href=\"http://wp-api.org/node-wpapi\">node-wpapi</a> is an isomorphic JavaScript client library for querying or writing to the REST API using\u00a0an intuitive chaining syntax. It can be used with Node.js or with client-side JavaScript applications.</p>\n<p><a href=\"https://github.com/oskarrough/ember-wordpress\">ember-wordpress</a>\u00a0provides a connection between\u00a0Ember Data\u00a0and the REST API</p>\n<h2>Ruby</h2>\n<p><a href=\"https://github.com/duncanjbrown/wp-api-client\">wp-api-client</a>: a read-only REST API client written in Ruby.</p>\n<h2>C# / .NET</h2>\n<p><a href=\"https://github.com/wp-net/WordPressPCL\">WordPressPCL</a>: a full REST API client written in C#.</p>\n<h2>Dart / Flutter</h2>\n<p><a href=\"https://pub.dev/packages/wordpress_client\">wordpress_client</a>: A library exposing a fluent api to interact with the WordPress REST API.</p>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 24962,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-24963",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24963",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24963/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 150347,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24963/revisions/150347"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24962"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=24963"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

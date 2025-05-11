@@ -1,0 +1,109 @@
+{
+    "id": 11136763,
+    "date": "2019-01-28T16:25:31",
+    "date_gmt": "2019-01-28T16:25:31",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11136763"
+    },
+    "modified": "2024-06-08T17:52:18",
+    "modified_gmt": "2024-06-08T17:52:18",
+    "slug": "plugins-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/plugins-screen/",
+    "title": {
+        "rendered": "Plugins screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Plugins Screen</strong> enables you to manage your Plugins.  Management of Plugins entails activating, deactivating, updating, editing, and deleting Plugins that are <strong>installed</strong>.  </p>\n\n\n\n<p>Visit the <a href=\"/support/articles/plugins-add-new-screen\">Plugins Add New Screen</a> to install new plugins by clicking Add New link at the top of this screen or Select <strong>Plugins &gt; Add New</strong> from left side menu. Once a plugin has been installed, you may activate it here. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Manage Plugins</h2>\n\n\n\n<p>Once a plugin is installed, you may activate it, deactivate it, edit\nthe Plugin file, delete the Plugin, or Upgrade the Plugin.  As a special\n note regarding the Plugin Upgrade process&#8211;when Plugins need to be\nupdated, the left navigation menu Plugin option will display a balloon,\nwith a number inside the balloon.  That number represents the number of\nPlugins that need to be Updated.\n</p>\n\n\n\n<p>On visiting the <strong>Plugins Screen</strong>, there may be a splash warning message, similar to, <em>The plugin &#8220;some plugin name&#8221; has been <strong>deactivated</strong> due to an error: xxxxxxxxxxxx.</em>\n  If such a message is displayed, investigation is required to find out\nwhy a particular Plugin was deactivated.  Possible causes for the\ndeactivation are, (1) an incomplete set of plugin files, (2) the plugin\nis coded incorrectly, or (3) the Plugin is dependent on another Plugin,\nand that Plugin is missing, deactivated, or has problems.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Table of Plugins</h3>\n\n\n\n<p>A table lists all of your Plugins, by row. The plugins are listed in alphabetical order. </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11136857\"><img loading=\"lazy\" decoding=\"async\" width=\"1221\" height=\"400\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/01/plugins-screen.png?fit=1221%2C400&amp;ssl=1\" alt=\"\" class=\"wp-image-11136857\" srcset=\"https://wordpress.org/documentation/files/2019/01/plugins-screen.png 1221w, https://wordpress.org/documentation/files/2019/01/plugins-screen-300x98.png 300w, https://wordpress.org/documentation/files/2019/01/plugins-screen-1024x335.png 1024w, https://wordpress.org/documentation/files/2019/01/plugins-screen-768x252.png 768w\" sizes=\"auto, (max-width: 1221px) 100vw, 1221px\" /></a></figure>\n\n\n\n<p>The table of Plugins contains the following columns: </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[ ]</strong> \u2013 This checkbox, when clicked (checked), &#8216;selects&#8217; that particular plugin to be processed by a Bulk Action. </li><li><strong>Plugin</strong> &#8211; The name of the Plugin.</li><li><strong>Description</strong> &#8211; information about its Plugin. Includes version\nnumber, Plugin author name and link to the plugin&#8217;s web site for more\ndetail information or support.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Page Navigation</h4>\n\n\n\n<p>Above and below the Table, to the right, the number of Plugins\ndisplayed per page is determined. If more then one page of Plugins is\navailable, two double-arrow boxes to move to the first and last page are\n provided. Also two single-arrow boxes are displayed to move one page\nbackward or forward. Finally, a box showing the current page number can\nbe used to enter a page to directly display.\n</p>\n\n\n\n<h4 class=\"wp-block-heading\">Screen Options</h4>\n\n\n\n<p><strong>Screen Options</strong>, displayed as a hanging tab under <strong>the toolbar</strong>,  allow you to choose which columns are displayed, or not displayed, in  the underlying Table. Clicking on the Screen Options tab shows a list of  the columns with a check-box next to each column. Check the box for  each column you want displayed in the Table, or uncheck the box to not  display that column. Click the Screen Options tab again to close the  Screen Options.  In addition, the number of Plugins per page can be set.  </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11136868\"><img loading=\"lazy\" decoding=\"async\" width=\"235\" height=\"174\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/plugins-screen-options.png?fit=235%2C174&amp;ssl=1\" alt=\"\" class=\"wp-image-11136868\" /></a><figcaption>screen options</figcaption></figure>\n\n\n\n<h4 class=\"wp-block-heading\">Search</h4>\n\n\n\n<p>Above the Table, to the right, is a search box where you can enter a\nword, or series of words, and click the &#8220;Search Installed Plugins&#8221;\nbutton to search and display all the Posts meeting your search words.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Filtering Options</h3>\n\n\n\n<p>At the top of this Screen are links such as All, Active, Inactive,  Recently Active, Update Available, that when clicked, will cause just  the Plugins of that type to be displayed in the underlying Table.</p>\n\n\n\n<p><strong>All</strong>: lists all installed Plugins.</p>\n\n\n\n<p><strong>Active</strong>: lists currently active Plugins. Note that each Active Plugin is displayed in a light green background.</p>\n\n\n\n<p><strong>Inactive</strong>: lists installed, but inactive Plugins.</p>\n\n\n\n<p><strong>Recently Active</strong>: lists recently deactivated Plugins. When a plugin has been inactive for more than 7 days it will be dropped off.</p>\n\n\n\n<p><strong>Update Available</strong>: lists upgrade available Plugins at the <a href=\"/plugins/\">WordPress Plugin Directory</a>. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Selection, Actions, and Apply</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Selection</h4>\n\n\n\n<p> The Screen allows Bulk Actions to be performed on one or more  Plugins selected in the Table. For Bulk Actions to be performed on  multiple Plugins at once, those Plugins must be first <strong>selected</strong> via one of these methods:</p>\n\n\n\n<p>The various Tables in this Screen allow Actions to be performed on  one or more Plugins.  For Actions to be performed on multiple Plugins at  once, those Plugins must be first <strong>selected</strong> via one of these methods: </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Select one Plugin at a time</strong> &#8211; To select a Plugin, the\ncheckbox to the left of the Plugin entry must be checked (clicked).  It\nis possible to keep selecting more Plugins by checking their respective\ncheckbox.</li><li><strong>Select all Plugins in given Table</strong> &#8211; All Plugins in a given\ntable can be selected by checking the checkbox in the Table&#8217;s title, or\nfooter bar.  Of course, unchecking the header or footer title bar\ncheckbox will cause all entries in that Table to be unchecked (NOT\nselected). </li><li><strong>Reverse Selection</strong> &#8211; A Reverse Selection means checked items\nbecome unchecked, and unchecked items become checked. A Reverse\nSelection is accomplished by holding the Shift key on the keyboard and\nclicking the header or footer title bar checkbox.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Actions</h4>\n\n\n\n<p>\nActions describe the process to be performed on particular\nPlugins.  There are two styles of Actions that will be referred to as <em>Bulk Actions</em> and <em>Immediate Actions</em>.  The follow describes these Actions:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Bulk Actions</strong> &#8211; These Actions can be performed on one, or more Plugins, at one time, if those Plugins have been previously selected.  Bulk Actions are available, when appropriate, as choices in the Actions  <strong>pull-down</strong> box, above each Table.  The Bulk Actions are Activate,  Deactivate, Update and Delete.   </li><li><strong>Immediate Actions</strong> &#8211; Immediate Actions are performed  immediately, on an individual Plugin, by clicking the Activate,  Deactivate, Edit, or Delete links, displayed under the Action column in  that Plugin row.  The Upgrade Action is also an Immediate Action, but  the Upgrade link is seen in the upgrade message below the Plugin row,  and the Upgrade <strong>nag</strong> message only appears if there is an upgrade available at the WordPress Plugins site.</li></ul>\n\n\n\n<p>\nThe list of Actions available are described below:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Activate</strong> &#8211; This Action enables a Plugin, or better yet,  turns the Plugin on.  Activating a Plugin is necessary to use the  features of a Plugin.   Only Inactive Plugins can be activated.  Activate can be either a Bulk Action, or an Immediate Action.  </li></ul>\n\n\n\n<p>\nNote:  Successful activation will display a splash message at the top of the Screen (e.g. <em>Plugin <strong>activated</strong>.</em> or <em>Selected plugins <strong>activated</strong>.</em>)  <strong>Failure to activate</strong> a Plugin results in the message <em>Plugin could not be activated because it triggered a <strong>fatal error</strong></em>\n &#8211; this should be further investigated.  Likely causes of failure are\n(1) an incomplete set of plugin files, (2) the plugin is coded\nincorrectly, (3) or the Plugin is dependent on another Plugin before it\ncan be successfully activated.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Deactivate</strong> &#8211; This Action disables, or turns off, a\nPlugin.  Only Active Plugins can be deactivated.  Deactivate is either a\n Bulk Action, or an Immediate Action. </li></ul>\n\n\n\n<p>\nNote:  Successful deactivation will display a splash message at the top of the Screen (e.g. <em>Plugin <strong>deactivated</strong></em>. or <em>Selected plugins <strong>deactivated</strong>.</em>)\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Delete</strong> &#8211; This Action deletes the Plugins files. Only Inactive Plugins can be deleted.  Delete is either a Bulk Action, or an Immediate Action.</li><li><strong>Upgrade</strong> &#8211; This Action initiates the Plugin upgrade process.  </li><li><strong>Edit</strong> &#8211; This Immediate Action places the Plugin code in the Plugins Editor text box for editing.  <strong>Warning</strong>:  Making changes to active plugins is not recommended. If your changes  cause a fatal error, the plugin will be automatically deactivated.  </li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Apply</h4>\n\n\n\n<p>After one or more Plugins are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected Plugins. </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Apply</strong> &#8211; Click the Apply button to execute the  Bulk Action, specified in the Actions pull-down, on the selected Plugins.   Remember, prior to executing Actions, one or more Plugins must be <strong>selected</strong>, as described before.</li></ul>\n\n\n\n<p>Successful application of the Action is noted in a splash message at  the top of the Screen.  For instance, when the Activate Action is  applied, the message <em>Selected plugins activated.</em>&#8221; is displayed. </p>\n\n\n\n<h4 class=\"wp-block-heading\">Deleting Plugins</h4>\n\n\n\n<p>When the Delete Action is Applied to selected Plugin(s), a Screen similar to the follow is displayed:</p>\n\n\n\n<p><em>Deleting the selected plugins will remove the following plugin(s) and their files:</em><br /><em>* Plugin xyx by John Doe</em><br /><em>* Plugin abc by Jane JoeAre you sure you wish to delete these files?</em></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Yes Delete these Files</strong> &#8211; This is the final chance, because clicking this will delete the Plugin(s), and return to the <strong>Plugins Screen</strong> with the <em>The selected plugins have been deleted.</em> splash message displayed.</li></ul>\n\n\n\n<p>\nNote: If deletion is unsuccessful The message <em>Plugin could not be deleted due to an error: xxxxxxxxx.</em>  This should be further investigated.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>No, Return me to the plugin list</strong> &#8211; Click this to be returned to the <strong>Plugins Screen</strong></li><li><strong>Click to view entire list of files which will be deleted</strong> &#8211; Clicking this causes a listing of all the files that are part of the Plugins being deleted.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Upgrading Plugins</h4>\n\n\n\n<p><strong>Important note:</strong> If a Plugin is hosted at the <a href=\"/plugins/\">WordPress Plugins Directory</a>  Upgrade notices will be displayed, when appropriate, for a given  Plugin.  If the Plugin is hosted elsewhere, such as the Plugin author&#8217;s  site, it is important for you to check for available updates for those  Plugins.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Plugins Screen enables you to manage your Plugins. Management of Plugins entails activating, deactivating, updating, editing, and deleting Plugins that are installed. Visit the Plugins Add New Screen to install new plugins by clicking Add New link at the top of this screen or Select Plugins &gt; Add New from left side menu. Once [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11136763",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11136763",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11136763"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11136763/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360357,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11136763/revisions/16360357"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11136763"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11136763"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

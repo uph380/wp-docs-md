@@ -1,0 +1,91 @@
+{
+    "id": 129901,
+    "date": "2020-08-09T03:34:43",
+    "date_gmt": "2020-08-09T03:34:43",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/rest-api/reference/plugins/"
+    },
+    "modified": "2024-01-16T20:30:14",
+    "modified_gmt": "2024-01-16T20:30:14",
+    "slug": "plugins",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/plugins/",
+    "title": {
+        "rendered": "Plugins"
+    },
+    "content": {
+        "rendered": "<section class=\"route\">\n<div class=\"primary\">\n<h2>Schema</h2>\n<p>The schema defines all the fields that exist within a plugin record. Any response from these endpoints can be expected to contain the fields below unless the `_filter` query parameter is used or the schema field only appears in a specific context.</p>\n<table class=\"attributes\">\n<tr id=\"schema-plugin\">\n<td>\n                <code>plugin</code>\n            </td>\n<td>\n                The plugin file.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-status\">\n<td>\n                <code>status</code>\n            </td>\n<td>\n                The plugin activation status.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n<p>                                    One of: <code>inactive</code>, <code>active</code>\n                            </td>\n</tr>\n<tr id=\"schema-name\">\n<td>\n                <code>name</code>\n            </td>\n<td>\n                The plugin name.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-plugin_uri\">\n<td>\n                <code>plugin_uri</code>\n            </td>\n<td>\n                The plugin&#039;s website address.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: uri\n                                    </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-author\">\n<td>\n                <code>author</code>\n            </td>\n<td>\n                The plugin author.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-author_uri\">\n<td>\n                <code>author_uri</code>\n            </td>\n<td>\n                Plugin author&#039;s website address.</p>\n<p class=\"type\">\n                    JSON data type: string,<br />\n                                            Format: uri\n                                    </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-description\">\n<td>\n                <code>description</code>\n            </td>\n<td>\n                The plugin description.</p>\n<p class=\"type\">\n                    JSON data type: object              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-version\">\n<td>\n                <code>version</code>\n            </td>\n<td>\n                The plugin version number.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n<tr id=\"schema-network_only\">\n<td>\n                <code>network_only</code>\n            </td>\n<td>\n                Whether the plugin can only be activated network-wide.</p>\n<p class=\"type\">\n                    JSON data type: boolean             </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-requires_wp\">\n<td>\n                <code>requires_wp</code>\n            </td>\n<td>\n                Minimum required version of WordPress.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-requires_php\">\n<td>\n                <code>requires_php</code>\n            </td>\n<td>\n                Minimum required version of PHP.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code>, <code>embed</code></p>\n</td>\n</tr>\n<tr id=\"schema-textdomain\">\n<td>\n                <code>textdomain</code>\n            </td>\n<td>\n                The plugin&#039;s text domain.</p>\n<p class=\"type\">\n                    JSON data type: string              </p>\n<p class=\"read-only\">Read only</p>\n<p class=\"context\">Context: <code>view</code>, <code>edit</code></p>\n</td>\n</tr>\n</table></div>\n</section>\n<div>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Plugin</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/plugins</code></p>\n<p>        Query this endpoint to retrieve a specific plugin record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/plugins</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code>search</code>\n                                    </td>\n<td>\n                                            Limit results to those matching a string.\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code>status</code>\n                                    </td>\n<td>\n                                            Limits results to plugins with the given status.\n                                                                                                </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Create a Plugin</h2>\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code><a href=\"#schema-slug\">slug</a></code>\n                                    </td>\n<td>\n                                            WordPress.org plugin directory slug.</p>\n<p class=\"required\">\n                            Required: 1\n                        </p>\n</td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-status\">status</a></code>\n                                    </td>\n<td>\n                                            The plugin activation status.</p>\n<p class=\"default\">\n                            Default: <code>inactive</code>\n                        </p>\n<p>                                                                One of: <code>inactive</code>, <code>active</code>\n                                    </td>\n</tr>\n</table></div>\n<div class=\"secondary\">\n<h3>Definition</h3>\n<p>        <code>POST /wp/v2/plugins</code>\n    </div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Retrieve a Plugin</h2>\n<h3>Definition &amp; Example Request</h3>\n<p>        <code>GET /wp/v2/plugins/&lt;plugin&gt;?)</code></p>\n<p>        Query this endpoint to retrieve a specific plugin record.</p>\n<p>        <code>$ curl https://example.com/wp-json/wp/v2/plugins/&lt;plugin&gt;?)</code>\n    </div>\n<div class=\"secondary\">\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code>plugin</code>\n                                    </td>\n<td>\n                                                                                                </td>\n</tr>\n</table></div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Update a Plugin</h2>\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code><a href=\"#schema-context\">context</a></code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-plugin\">plugin</a></code>\n                                    </td>\n<td>\n                                                                                                </td>\n</tr>\n<tr>\n<td>\n                                            <code><a href=\"#schema-status\">status</a></code>\n                                    </td>\n<td>\n                                            The plugin activation status.<br />\n                                                                                                        One of: <code>inactive</code>, <code>active</code>\n                                    </td>\n</tr>\n</table></div>\n<div class=\"secondary\">\n<h3>Definition</h3>\n<p>        <code>POST /wp/v2/plugins/&lt;plugin&gt;?)</code></p>\n<h3>Example Request</h3>\n<p>        <code></code>\n    </div>\n</section>\n<section class=\"route\">\n<div class=\"primary\">\n<h2>Delete a Plugin</h2>\n<h3>Arguments</h3>\n<table class=\"arguments\">\n<tr>\n<td>\n                                            <code>context</code>\n                                    </td>\n<td>\n                                            Scope under which the request is made; determines fields present in response.</p>\n<p class=\"default\">\n                            Default: <code>view</code>\n                        </p>\n<p>                                                                One of: <code>view</code>, <code>embed</code>, <code>edit</code>\n                                    </td>\n</tr>\n<tr>\n<td>\n                                            <code>plugin</code>\n                                    </td>\n<td>\n                                                                                                </td>\n</tr>\n</table></div>\n<div class=\"secondary\">\n<h3>Definition</h3>\n<p>        <code>DELETE /wp/v2/plugins/&lt;plugin&gt;?)</code></p>\n<h3>Example Request</h3>\n<p>        <code>$ curl -X DELETE https://example.com/wp-json/wp/v2/plugins/&lt;plugin&gt;?)</code>\n    </div>\n</section>\n</div>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 23078,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129901",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/129901",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/129901/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151984,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/129901/revisions/151984"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129901"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

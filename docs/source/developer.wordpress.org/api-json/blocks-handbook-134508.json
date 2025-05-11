@@ -1,0 +1,91 @@
+{
+    "id": 134508,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/text-highlight/"
+    },
+    "modified": "2024-10-30T16:55:36",
+    "modified_gmt": "2024-10-30T16:55:36",
+    "slug": "text-highlight",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/text-highlight/",
+    "title": {
+        "rendered": "TextHighlight"
+    },
+    "content": {
+        "rendered": "<p>Highlights occurrences of a given string within another string of text. Wraps each match with a <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark\"><code>&lt;mark&gt;</code> tag</a> which provides browser default styling.</p>\n<h2>Usage</h2>\n<p>Pass in the <code>text</code> and the <code>highlight</code> string to be matched against.</p>\n<p>In the example below, the string <code>Gutenberg</code> would be highlighted twice.</p>\n<pre><code class=\"language-jsx\">import { TextHighlight } from '@wordpress/components';\n\nconst MyTextHighlight = () =&gt; (\n    &lt;TextHighlight\n        text=\"Why do we like Gutenberg? Because Gutenberg is the best!\"\n        highlight=\"Gutenberg\"\n    /&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props.</p>\n<h3><code>highlight</code>: <code>string</code></h3>\n<p>The string to search for and highlight within the <code>text</code>. Case insensitive. Multiple matches.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Default: <code>&apos;&apos;</code></li>\n</ul>\n<h3><code>text</code>: <code>string</code></h3>\n<p>The string of text to be tested for occurrences of then given <code>highlight</code>.</p>\n<ul>\n<li>Required: Yes</li>\n<li>Default: <code>&apos;&apos;</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 210,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134508",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134508",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134508/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151837,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134508/revisions/151837"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134508"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

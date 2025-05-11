@@ -1,0 +1,109 @@
+{
+    "id": 15603527,
+    "date": "2022-04-29T16:52:28",
+    "date_gmt": "2022-04-29T16:52:28",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15603527"
+    },
+    "modified": "2024-06-09T10:10:27",
+    "modified_gmt": "2024-06-09T10:10:27",
+    "slug": "wolfram-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/wolfram-embed/",
+    "title": {
+        "rendered": "Wolfram embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the Wolfram embed block, you can embed <a href=\"https://www.wolfram.com/featureset/notebooks/\">Wolfram Notebook</a> content into your posts and pages (deployed through the Wolfram Cloud). All of the Wolfram services are tied together by the Wolfram Language: Wolfram Cloud Notebooks are the cloud-hosted version of Wolfram Language Notebooks.</p>\n\n\n\n<p><strong><strong>Example of a Wolfram embed:</strong></strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/00-example-wolfram-embed-1.webp\" alt=\"Screenshot of  Wolfram\" class=\"wp-image-15603650\" /></figure>\n\n\n\n<div style=\"height:10px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p class=\"has-medium-font-size\"><strong><strong>Steps to embed Wolfram Notebook content</strong></strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>First, find the Wolfram Notebook content that you want to embed. If already embedded in a page, open the Notebook in the Wolfram Cloud to locate and copy its wolframcloud.com URL.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"700\" height=\"225\" src=\"https://wordpress.org/documentation/files/2022/04/01-open-in-wolfram-cloud-link.webp\" alt=\"\" class=\"wp-image-15603651\" srcset=\"https://wordpress.org/documentation/files/2022/04/01-open-in-wolfram-cloud-link.webp 700w, https://wordpress.org/documentation/files/2022/04/01-open-in-wolfram-cloud-link-300x96.webp 300w\" sizes=\"auto, (max-width: 700px) 100vw, 700px\" /></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"910\" height=\"451\" src=\"https://wordpress.org/documentation/files/2022/04/02-copy-url-browser-bar-wolfram-embed.webp\" alt=\"Screenshot of Wolfram and the correct URL to copy to use the embed block.\" class=\"wp-image-15603652\" srcset=\"https://wordpress.org/documentation/files/2022/04/02-copy-url-browser-bar-wolfram-embed.webp 910w, https://wordpress.org/documentation/files/2022/04/02-copy-url-browser-bar-wolfram-embed-300x149.webp 300w, https://wordpress.org/documentation/files/2022/04/02-copy-url-browser-bar-wolfram-embed-768x381.webp 768w\" sizes=\"auto, (max-width: 910px) 100vw, 910px\" /></figure>\n\n\n\n<div style=\"height:10px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Go to your post or page and add the Wolfram embed block. One way to do this is to press the &#8220;/&#8221; key to open the block inserter and type /wolfram.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"198\" src=\"https://wordpress.org/documentation/files/2022/04/03-add-wolfram-embed-block.webp\" alt=\"Embed option for the Wolfram block to paste the URL.\" class=\"wp-image-15603660\" srcset=\"https://wordpress.org/documentation/files/2022/04/03-add-wolfram-embed-block.webp 657w, https://wordpress.org/documentation/files/2022/04/03-add-wolfram-embed-block-300x90.webp 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the link into the text box and click the \u201cEmbed\u201d button.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"733\" height=\"313\" src=\"https://wordpress.org/documentation/files/2022/04/04-paste-wolfram-cloud-url.webp\" alt=\"Embed option for the Wolfram block to paste the URL.\" class=\"wp-image-15603663\" srcset=\"https://wordpress.org/documentation/files/2022/04/04-paste-wolfram-cloud-url.webp 733w, https://wordpress.org/documentation/files/2022/04/04-paste-wolfram-cloud-url-300x128.webp 300w\" sizes=\"auto, (max-width: 733px) 100vw, 733px\" /></figure>\n\n\n\n<p>If the link can be successfully embedded into your post/page, you will see the preview in your block editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"702\" height=\"584\" src=\"https://wordpress.org/documentation/files/2022/04/05-preview-editor-wolfram-embed.webp\" alt=\"Preview of the embedded Wolfram video within the WordPress editor.\" class=\"wp-image-15603666\" srcset=\"https://wordpress.org/documentation/files/2022/04/05-preview-editor-wolfram-embed.webp 702w, https://wordpress.org/documentation/files/2022/04/05-preview-editor-wolfram-embed-300x250.webp 300w\" sizes=\"auto, (max-width: 702px) 100vw, 702px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block displays the message: <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: try again with a different URL or convert it to a link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"718\" height=\"419\" src=\"https://wordpress.org/documentation/files/2022/04/06-incorrect-url-wolfram-embed.webp\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" class=\"wp-image-15603667\" srcset=\"https://wordpress.org/documentation/files/2022/04/06-incorrect-url-wolfram-embed.webp 718w, https://wordpress.org/documentation/files/2022/04/06-incorrect-url-wolfram-embed-300x175.webp 300w\" sizes=\"auto, (max-width: 718px) 100vw, 718px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click the \u201cPreview\u201d button in the top right corner of the post/page to see how it will look on the front end.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"591\" height=\"656\" src=\"https://wordpress.org/documentation/files/2022/04/07-preview-frontend-wolfram-embed.webp\" alt=\"Preview of the embedded Wolfram\n within the WordPress editor.\" class=\"wp-image-15603674\" srcset=\"https://wordpress.org/documentation/files/2022/04/07-preview-frontend-wolfram-embed.webp 591w, https://wordpress.org/documentation/files/2022/04/07-preview-frontend-wolfram-embed-270x300.webp 270w\" sizes=\"auto, (max-width: 591px) 100vw, 591px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the &#8220;Mover&#8221; and &#8220;Drag &amp; Drop Handle&#8221;, the Block Toolbar for the Wolfram embed block shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to \u2013 also the icon for the block</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/08-block-toolbar-wolfram-embed.webp\" alt=\"Block Toolbar with options available for the Wolfram embed\" class=\"wp-image-15603676\" width=\"358\" height=\"48\" srcset=\"https://wordpress.org/documentation/files/2022/04/08-block-toolbar-wolfram-embed.webp 536w, https://wordpress.org/documentation/files/2022/04/08-block-toolbar-wolfram-embed-300x41.webp 300w\" sizes=\"auto, (max-width: 358px) 100vw, 358px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<p>The first option will allow you to transform a Wolfram embed into a Paragraph. This will convert the Notebook content embedded to a link. Additionally, you can transform a Wolfram embed into Columns or into a Group.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"709\" height=\"310\" src=\"https://wordpress.org/documentation/files/2022/04/09-transform-to-option-wolfram-embed.webp\" alt=\"Options to transform the Wolfram block to Paragraph, Columns or Group.\" class=\"wp-image-15603679\" srcset=\"https://wordpress.org/documentation/files/2022/04/09-transform-to-option-wolfram-embed.webp 709w, https://wordpress.org/documentation/files/2022/04/09-transform-to-option-wolfram-embed-300x131.webp 300w\" sizes=\"auto, (max-width: 709px) 100vw, 709px\" /></figure>\n\n\n\n<div style=\"height:10px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p>Transforming it into a Group will give you the ability to change the following, among other options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The background color around the Wolfram embed</li>\n\n\n\n<li>The padding, margin, and spacing dimensions of the block</li>\n\n\n\n<li>The block border settings (width, style, color, and radius)</li>\n</ul>\n\n\n\n<p><strong>Note</strong>: you can preview what each block (paragraph, column, or group) will look like by hovering the mouse over each option.</p>\n\n\n\n<div style=\"height:10px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\">\n<div class=\"wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular\"><div class=\"tiled-gallery__gallery\"><div class=\"tiled-gallery__row\"><div class=\"tiled-gallery__col\" style=\"flex-basis:63.37312%\"><figure class=\"tiled-gallery__item\"><a href=\"https://wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp\"><img decoding=\"async\" srcset=\"https://i2.wp.com/wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp?strip=info&#038;w=600&#038;ssl=1 600w,https://i2.wp.com/wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp?strip=info&#038;w=900&#038;ssl=1 900w,https://i2.wp.com/wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp?strip=info&#038;w=1200&#038;ssl=1 1200w,https://i2.wp.com/wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp?strip=info&#038;w=1242&#038;ssl=1 1242w\" alt=\"\" data-height=\"832\" data-id=\"15603682\" data-link=\"https://wordpress.org/support/?attachment_id=15603682\" data-url=\"https://wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp\" data-width=\"1242\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2022/04/10-editor-view-with-block-settings-panel-wolfram-embed-1024x686.webp?ssl=1\" data-amp-layout=\"responsive\" /></a></figure></div><div class=\"tiled-gallery__col\" style=\"flex-basis:36.62688%\"><figure class=\"tiled-gallery__item\"><a href=\"https://wordpress.org/documentation/files/2022/04/11-frontend-view-block-with-background-wolfram-embed.webp\"><img decoding=\"async\" srcset=\"https://i1.wp.com/wordpress.org/documentation/files/2022/04/11-frontend-view-block-with-background-wolfram-embed.webp?strip=info&#038;w=600&#038;ssl=1 600w,https://i1.wp.com/wordpress.org/documentation/files/2022/04/11-frontend-view-block-with-background-wolfram-embed.webp?strip=info&#038;w=702&#038;ssl=1 702w\" alt=\"\" data-height=\"815\" data-id=\"15603683\" data-link=\"https://wordpress.org/support/?attachment_id=15603683\" data-url=\"https://wordpress.org/documentation/files/2022/04/11-frontend-view-block-with-background-wolfram-embed.webp\" data-width=\"702\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2022/04/11-frontend-view-block-with-background-wolfram-embed.webp?ssl=1\" data-amp-layout=\"responsive\" /></a></figure></div></div></div></div>\n</div>\n\n\n\n<p class=\"has-text-align-center has-small-font-size\"><em><em>Left image: Editor view of a Wolfram embed block as a group with color, dimension, and border settings. Right image: Front-end view of a Wolfram embed block with a border and a light grey background.</em></em></p>\n\n\n\n<div style=\"height:18px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change Alignment</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong> \u2013 Default alignment option</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width </strong>\u2013 Extend the block to cover the full width of the screen</li>\n\n\n\n<li><strong>Align left</strong> \u2013 Make the block left-aligned</li>\n\n\n\n<li><strong>Align center</strong> \u2013 Make the block alignment centered</li>\n\n\n\n<li><strong>Align right</strong> \u2013 Make the block right-aligned</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"711\" height=\"466\" src=\"https://wordpress.org/documentation/files/2022/04/12-change-alignment-wolfram-embed.webp\" alt=\"Alignment options for the Wolfram block: wide width, full width, align left, align center, and align right.\" class=\"wp-image-15603691\" srcset=\"https://wordpress.org/documentation/files/2022/04/12-change-alignment-wolfram-embed.webp 711w, https://wordpress.org/documentation/files/2022/04/12-change-alignment-wolfram-embed-300x197.webp 300w\" sizes=\"auto, (max-width: 711px) 100vw, 711px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Wolfram embed URL in the embed block. Overwrite the existing URL and click on the \u201cEmbed\u201d button on the right.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"713\" height=\"314\" src=\"https://wordpress.org/documentation/files/2022/04/13-edit-url-wolfram-embed.webp\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" class=\"wp-image-15603698\" srcset=\"https://wordpress.org/documentation/files/2022/04/13-edit-url-wolfram-embed.webp 713w, https://wordpress.org/documentation/files/2022/04/13-edit-url-wolfram-embed-300x132.webp 300w\" sizes=\"auto, (max-width: 713px) 100vw, 713px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>There are two additional options in the block settings sidebar: Media Settings and Advanced.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media Settings</strong></p>\n\n\n\n<p>Via the Media Settings, you can control the behavior of the Wolfram embed block when viewed on the screen of a smaller device.</p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/16-media-settings-on-wolfram-embed.webp\" alt=\"Media settings for the embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-15603728\" width=\"361\" height=\"178\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/17-media-settings-off-wolfram-embed.webp\" alt=\"Media settings for the embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-15603730\" width=\"326\" height=\"166\" /></figure>\n</div>\n</div>\n\n\n\n<div style=\"height:10px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n\n\n\n<p>The toggle switch turns on or off the resize functionality for smaller devices. The default setting is &#8220;on&#8221; or blue.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>&#8220;On&#8221;: This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the &#8220;On\u201d position.</li>\n\n\n\n<li>&#8220;Off&#8221;: This embed may not preserve its aspect ratio when the browser is resized.</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>In the Advanced tab, you can add additional CSS class(es) to your block. This allows you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/18-advanced-tab-wolfram-embed.webp\" alt=\"Additional CSS Class(es) option for the Wolfram Embed block.\" class=\"wp-image-15603739\" width=\"279\" height=\"153\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"has-medium-font-size wp-block-heading\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-05-14\n<ul class=\"wp-block-list\">\n<li>Added link to Wolfram Notebooks for more information</li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-04-29</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Wolfram embed block, you can embed Wolfram Notebook content into your posts and pages (deployed through the Wolfram Cloud). All of the Wolfram services are tied together by the Wolfram Language: Wolfram Cloud Notebooks are the cloud-hosted version of Wolfram Language Notebooks. Example of a Wolfram [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-15603527",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15603527",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15603527"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15603527/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360452,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15603527/revisions/16360452"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15603527"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15603527"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

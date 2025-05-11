@@ -1,0 +1,109 @@
+{
+    "id": 16360665,
+    "date": "2024-09-01T07:48:33",
+    "date_gmt": "2024-09-01T07:48:33",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16360665"
+    },
+    "modified": "2024-10-22T12:07:51",
+    "modified_gmt": "2024-10-22T12:07:51",
+    "slug": "grid-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/grid-block/",
+    "title": {
+        "rendered": "Grid block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p><em>Grid</em> block is one of the container blocks that can be used to organize multiple blocks and adjust the height, width, and position of all blocks inside the container.&nbsp;As a container block, it&#8217;s possible to transform a <em>Grid</em> block into a <em>Group</em>, <em>Row</em> or <em>Stack</em> block without changing the content of the block.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2024/08/grid-block-6.6.mp4\"></video></figure>\n\n\n\n<p>Click the block inserter <strong>(+)</strong> icon to open the block inserter pop-up window and search for the <em>Grid </em>block.\u00a0You can also use the keyboard shortcut <kbd>/grid</kbd> to quickly insert a Grid block.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Grid block shows the following buttons in the block toolbar:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-medium\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"77\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-6.6-300x77.jpg\" alt=\"Grid block Toolbar\" class=\"wp-image-16360878\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-6.6-300x77.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-6.6.jpg 430w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Moving handles</li>\n\n\n\n<li>Align</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Transform to</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"650\" height=\"622\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-transforms-6.6.jpg\" alt=\"Grid block Toolbar - Transform to button\" class=\"wp-image-16360879\" style=\"width:auto;height:282px\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-transforms-6.6.jpg 650w, https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-transforms-6.6-300x287.jpg 300w\" sizes=\"auto, (max-width: 650px) 100vw, 650px\" /></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to convert the <em>Grid</em> block into Group, Row, Stack, Cover or Columns blocks.\u00a0\u00a0</p>\n\n\n\n<h3 class=\"wp-block-heading\">Moving handles</h3>\n\n\n\n<p>The dotted icons can be used to drag and drop a block to the place of your choosing. The up and down arrow icons can be used to shift a block up and down in your document.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-medium is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"77\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-movinghandle-6.6-300x77.jpg\" alt=\"Grid block Toolbar - Moving handles\" class=\"wp-image-16360880\" style=\"width:auto;height:84px\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-movinghandle-6.6-300x77.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-movinghandle-6.6.jpg 430w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/moving-blocks/\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Align</h3>\n\n\n\n<figure class=\"wp-block-image aligncenter size-medium\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"181\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-align-6.6-300x181.jpg\" alt=\"Grid block Toolbar - Align button\" class=\"wp-image-16360881\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-align-6.6-300x181.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-toolbar-align-6.6.jpg 700w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<p>Use the change alignment tool to change the width of the <em>Grid </em>block. The following is a list of the block width options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>None</li>\n\n\n\n<li>Wide width</li>\n\n\n\n<li>Full width</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Options</h3>\n\n\n\n<p>The Options button on a block toolbar gives you more features to customize the block.&nbsp;</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"646\" height=\"102\" src=\"https://wordpress.org/documentation/files/2023/05/block-settings-icon.png\" alt=\"Block settings icon on the editor\" class=\"wp-image-16357054\" style=\"width:485px;height:77px\" srcset=\"https://wordpress.org/documentation/files/2023/05/block-settings-icon.png 646w, https://wordpress.org/documentation/files/2023/05/block-settings-icon-300x47.png 300w\" sizes=\"auto, (max-width: 646px) 100vw, 646px\" /></figure>\n\n\n\n<p>Click Group, Row, Stack button in the Block Settings to transform the Grid block to each block.\u00a0</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-medium\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"191\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-settings-6.6-300x191.jpg\" alt=\"Settings icons\" class=\"wp-image-16360883\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-settings-6.6-300x191.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-settings-6.6.jpg 564w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Layout</h3>\n\n\n\n<p>The Grid block provides Layout settings options to change the number of columns in the Grid block.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Auto</strong> &#8211; Automatically the number of columns is defined by the value specified in <strong>Minimum column width</strong>.</li>\n\n\n\n<li><strong>Manual</strong> &#8211; The number of columns is set at <strong>Columns</strong> field.</li>\n</ul>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cad298ab wp-block-columns-is-layout-flex\" style=\"padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image aligncenter size-medium\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"297\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-layout-auto-6.6-300x297.jpg\" alt=\"Layout Auto option\" class=\"wp-image-16360884\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-layout-auto-6.6-300x297.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-layout-auto-6.6-150x150.jpg 150w, https://wordpress.org/documentation/files/2024/08/grid-block-layout-auto-6.6.jpg 562w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image aligncenter size-medium\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"284\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-layout-manual-6.6-300x284.jpg\" alt=\"Layout Manual option\" class=\"wp-image-16360886\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-layout-manual-6.6-300x284.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-layout-manual-6.6.jpg 562w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n</div>\n</div>\n\n\n\n<h3 class=\"wp-block-heading\">Position</h3>\n\n\n\n<p>The position setting is only available when the Grid block is located at the root-level. The drop-down menu has two options: <strong>Default</strong> and <strong>Sticky</strong>. If the Sticky option is selected, the Grid block will remain at the top of the window when you scroll down the page.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"337\" height=\"304\" src=\"https://wordpress.org/documentation/files/2023/05/position.png\" alt=\"The position settings for stack block\" class=\"wp-image-16357058\" style=\"width:311px;height:280px\" srcset=\"https://wordpress.org/documentation/files/2023/05/position.png 337w, https://wordpress.org/documentation/files/2023/05/position-300x271.png 300w\" sizes=\"auto, (max-width: 337px) 100vw, 337px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Advanced</h3>\n\n\n\n<p>The <strong>Advanced</strong> tab lets you add HTML anchor and CSS class(es) to your block.</p>\n\n\n\n<p><strong>HTML element</strong> lets you choose the HTML element you want to be used for the block&#8217;s wrapper in the HTML code.<br></p>\n\n\n\n<p><strong>HTML anchor</strong> allows you to&nbsp;<a href=\"https://wordpress.org/documentation/article/page-jumps/\">make a unique web address</a> just for this block, Then, you\u2019ll be able to link directly to this section of your page. This can be helpful for longer pages where visitors might want to click on a link to go directly to a specific section.</p>\n\n\n\n<p>The <strong>Additional CSS class(es)</strong> lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"560\" height=\"846\" src=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-28-at-8.40.21-AM.png\" alt=\"Advanced tab in the Stack block\" class=\"wp-image-16241432\" style=\"width:280px;height:423px\" srcset=\"https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-28-at-8.40.21-AM.png 560w, https://wordpress.org/documentation/files/2022/11/Screenshot-2022-11-28-at-8.40.21-AM-199x300.png 199w\" sizes=\"auto, (max-width: 560px) 100vw, 560px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Styles</h2>\n\n\n\n<p>Click Styles icon in the block settings sidebar to access the design settings.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-medium has-custom-border\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"269\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-styles-6.6-300x269.jpg\" alt=\"Styles icon in the block settings\" class=\"wp-image-16360891\" style=\"border-width:1px\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-styles-6.6-300x269.jpg 300w, https://wordpress.org/documentation/files/2024/08/grid-block-styles-6.6.jpg 562w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>The Grid block<em> </em>provides Color settings options to change the text, background, and link colors.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a></p>\n\n\n\n<figure class=\"wp-block-image alignright size-medium\"><img loading=\"lazy\" decoding=\"async\" width=\"207\" height=\"300\" src=\"https://wordpress.org/documentation/files/2024/08/grid-block-background-image-2-6.6-207x300.jpg\" alt=\"Background image options\" class=\"wp-image-16360889\" srcset=\"https://wordpress.org/documentation/files/2024/08/grid-block-background-image-2-6.6-207x300.jpg 207w, https://wordpress.org/documentation/files/2024/08/grid-block-background-image-2-6.6.jpg 566w\" sizes=\"auto, (max-width: 207px) 100vw, 207px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Background Image</h3>\n\n\n\n<p>The Grid block provides Background Image settings to display behind the block\u2019s content:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Click <strong>Add background image</strong> under the <strong>Background Image</strong> in the block&#8217;s Styles.</li>\n\n\n\n<li>Select image from Media Library or Upload an image.</li>\n\n\n\n<li>You can set Top and/or Left position, and Size from Cover, Contain and Tile.</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Typography</h3>\n\n\n\n<p>The Grid block<em> </em>provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Dimensions</h3>\n\n\n\n<p>The Grid<em> </em>block provides dimension settings options to add padding, margin, and block spacing.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Border</h3>\n\n\n\n<p>The Grid block provides border settings options to add border color, width, and radius.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/border-settings-overview/\">Border settings overview</a></p>\n\n\n\n<h3 class=\"wp-block-heading\"></h3>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2024-08-24</li>\n</ul>\n</div>\n\n\n\n<p></p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Grid block is one of the container blocks that can be used to organize multiple blocks and adjust the height, width, and position of all blocks inside the container.&nbsp;As a container block, it&#8217;s possible to transform a Grid block into a Group, Row or Stack block without changing [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        88
+    ],
+    "class_list": [
+        "post-16360665",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-design-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360665",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16360665"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360665/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360893,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16360665/revisions/16360893"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16360665"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16360665"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

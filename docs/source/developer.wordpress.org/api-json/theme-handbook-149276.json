@@ -1,0 +1,97 @@
+{
+    "id": 149276,
+    "date": "2023-11-06T14:06:35",
+    "date_gmt": "2023-11-06T14:06:35",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149276"
+    },
+    "modified": "2023-11-06T14:06:35",
+    "modified_gmt": "2023-11-06T14:06:35",
+    "slug": "block-stylesheets",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/features/block-stylesheets/",
+    "title": {
+        "rendered": "Block Stylesheets"
+    },
+    "content": {
+        "rendered": "\n<p>When styling blocks, you should always do so via the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/\"><code>theme.json</code> styles property</a> if possible. This ensures that your styles have the best compatibility across the system, working alongside the default WordPress styles, those added by plugins, and user customizations.</p>\n\n\n\n<p>But there are times when you simply need to step outside of what\u2019s easily achievable via <code>theme.json</code>. For those cases, you should use WordPress\u2019 built-in block stylesheets system.</p>\n\n\n\n<p>In this article, you will learn how to register per-block stylesheets, but remember that <code>theme.json</code> should be your first choice for styling in most cases.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Why use block stylesheets?</h2>\n\n\n\n<p>The primary use case for block stylesheets is when you have too much CSS to add to <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/styles/styles-reference/#css\"><code>styles.blocks.{blockname}.css</code></a> in <code>theme.json</code>. This property allows you to add custom CSS, but it\u2019s only ideal when it\u2019s just a small bit of code. This is because you lose out on syntax highlighting and must place everything in a single line (JSON doesn\u2019t support line breaks).</p>\n\n\n\n<p>You may also be tempted to put all your custom CSS into your theme\u2019s primary <code>style.css</code> file. That may be OK for some use cases, but the block stylesheets system often offers better performance by only loading the block\u2019s CSS if the block is in use on a page. On the front end, it will also inline this code within the <code>&lt;head&gt;</code> area.</p>\n\n\n\n<p>Creating separate stylesheets for individual blocks is also beneficial for larger and more complex projects that have a lot of custom CSS for many different blocks. The separation of the files makes it easier to organize and manage your code.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Creating block stylesheets</h2>\n\n\n\n<p>To create custom block stylesheets, there are three steps you must take:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Decide on an organizational and naming scheme.</li>\n\n\n\n<li>Write your custom CSS.</li>\n\n\n\n<li>Register your custom block stylesheet(s).</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Organizing and naming block stylesheets</h3>\n\n\n\n<p>Before registering a block stylesheet, you first need to know what folder you will store your custom block stylesheets in. This can be anywhere you choose (there is no standard location), and the code below will assume you are putting block stylesheets in an <code>/assets/blocks</code> folder in your theme.</p>\n\n\n\n<p>You should also decide on how you will name your CSS files. Again, there is no standard naming convention, but a good option is to use the block namespace and slug like so: <code>{namespace}-{slug}.css</code>. With this naming convention, a stylesheet for the <code>core/group</code> block would become <code>core-group.css</code>.</p>\n\n\n\n<p>Here is an example structure of what this could look like with CSS files for a few core blocks:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>assets/</code>\n<ul class=\"wp-block-list\">\n<li><code>blocks/</code>\n<ul class=\"wp-block-list\">\n<li><code>core-group.css</code></li>\n\n\n\n<li><code>core-image.css</code></li>\n\n\n\n<li><code>core-media-text.css</code></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Adding CSS to a block stylesheet</h3>\n\n\n\n<p>To style a core block, the most important thing you need to know is its CSS class. This is automatically generated according to the block\u2019s namespace and slug in the form of <code>.wp-block-{namespace}-{slug}</code>.</p>\n\n\n\n<p>Here is an example of styling a block with the namespace and slug of <code>super/duper</code> would look like:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.wp-block-super-duper {\n\t/* custom CSS goes here. */\n}</code></pre>\n\n\n\n<p>Core WordPress blocks are an exception to this naming rule. Their namespace is <code>core</code>, but this is not included in any of the core blocks\u2019 CSS classes. Instead, they use the <code>.wp-block-{slug}</code> format.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>It\u2019s possible for third-party block developers to change the CSS class that gets output, so this general guide may not always be true for third-party blocks. In those cases, you will want to locate the block\u2019s CSS class in the source code.</p></div></div>\n\n\n\n<p>Suppose that you wanted to add some custom styling for the core Image block, which has the namespace and slug of <code>core/image</code>. You would need to target the <code>.wp-block-image</code> class.</p>\n\n\n\n<p>Let\u2019s try creating a gradient background, which essentially acts as a <em>faux</em> border for the <code>&lt;img&gt;</code> element within the Image block. The goal is to create a style that looks like this:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"923\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?resize=2048%2C923&#038;ssl=1\" alt=\"WordPress post editor showing an image of palm trees with an orange-to-red gradient border.\" class=\"wp-image-149277\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?resize=300%2C135&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?resize=1024%2C462&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?resize=768%2C346&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/block-stylesheets-image-bg.jpg?resize=1536%2C692&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>First, create an <code>/assets/blocks/core-image.css</code> file in your theme. Then, add this CSS code to it:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.wp-block-image img {\n\tpadding: 1rem;\n\tbackground: linear-gradient(-60deg,#ff5858,#f09819);\n}</code></pre>\n\n\n\n<p>Because this stylesheet isn\u2019t registered, your custom styles won\u2019t show in the editor or on the front end yet.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Registering a block stylesheet</h3>\n\n\n\n<p>To register your block stylesheet, you will use the <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/\"><code>wp_enqueue_block_style()</code></a> function. When registering block stylesheets, you should also execute the code on the <code>init</code> hook.</p>\n\n\n\n<p>The <code>wp_enqueue_block_style()</code> function accepts two parameters:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>$block_name</code>:</strong> The block name, including both the namespace and slug (e.g., <code>core/image</code>).</li>\n\n\n\n<li><strong><code>$args</code>:</strong> An array of arguments that is passed to <a href=\"https://developer.wordpress.org/reference/functions/wp_register_style/\"><code>wp_register_style()</code></a>:\n<ul class=\"wp-block-list\">\n<li><strong><code>handle</code>:</strong> A unique handle for your stylesheet.</li>\n\n\n\n<li><strong><code>src</code>:</strong> The source URL for the stylesheet.</li>\n\n\n\n<li><strong><code>path</code>:</strong> The directory path for the stylesheet (needed to inline the CSS in <code>&lt;head&gt;</code>).</li>\n\n\n\n<li><strong><code>deps</code>:</strong> An array of registered stylesheet handles this stylesheet depends on.</li>\n\n\n\n<li><strong><code>ver</code>:</strong> A custom stylesheet version number.</li>\n\n\n\n<li><strong><code>media</code></strong>: The media for which the stylesheet has been defined.</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>To register your custom stylesheet for the Image block, add this code to your <code>functions.php</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_action( 'init', 'themeslug_enqueue_block_styles' );\n\nfunction themeslug_enqueue_block_styles() {\n\twp_enqueue_block_style( 'core/image', array(\n\t\t'handle' =&gt; 'themeslug-block-image',\n\t\t'src'    =&gt; get_theme_file_uri( \"assets/blocks/core-image.css\" ),\n\t\t'path'   =&gt; get_theme_file_path( \"assets/blocks/core-image.css\" )\n\t) );\n}</code></pre>\n\n\n\n<p>You can also configure additional arguments for your call to <code>wp_enqueue_block_style()</code>, but the above is the minimum needed for WordPress to inline your CSS code in the <code>&lt;head&gt;</code> area of the site.</p>\n\n\n\n<p>For a deeper dive into block stylesheets, check out <a href=\"https://developer.wordpress.org/news/2022/12/leveraging-theme-json-and-per-block-styles-for-more-performant-themes/\">Leveraging theme.json and per-block styles for more performant themes</a> on the WordPress Developer Blog.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 149260,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149276",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149276",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149276/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149279,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149276/revisions/149279"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149260"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149276"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

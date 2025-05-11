@@ -1,0 +1,109 @@
+{
+    "id": 13303226,
+    "date": "2020-08-24T09:47:37",
+    "date_gmt": "2020-08-24T09:47:37",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13303226"
+    },
+    "modified": "2023-02-07T05:07:59",
+    "modified_gmt": "2023-02-07T05:07:59",
+    "slug": "cloudup-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/cloudup-embed/",
+    "title": {
+        "rendered": "Cloudup Embed"
+    },
+    "content": {
+        "rendered": "\n<p>With the <a href=\"https://cloudup.com/\">Cloudup</a> Embed block, you can embed contents from Cloudup into your posts and pages. You need a Cloudup account to be able to embed contents from Cloudup into your posts or pages.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Embedded Cloudup content:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"777\" height=\"453\" src=\"https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar.png\" alt=\"Embedded Cloudup content\" class=\"wp-image-13303261\" srcset=\"https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar.png 777w, https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar-300x175.png 300w, https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar-768x448.png 768w\" sizes=\"auto, (max-width: 777px) 100vw, 777px\" /><figcaption class=\"wp-element-caption\">Embedded Cloudup content</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to embed Cloudup content:</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><strong>Go to Cloudup.com and request an account to start using the service. </strong>You need an account to use the service.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1686\" height=\"928\" src=\"https://wordpress.org/documentation/files/2020/08/cloudup-homepage.png\" alt=\"Open your CloudUp account to copy the link of the content you want to embed to your site \" class=\"wp-image-13303269\" srcset=\"https://wordpress.org/documentation/files/2020/08/cloudup-homepage.png 1686w, https://wordpress.org/documentation/files/2020/08/cloudup-homepage-300x165.png 300w, https://wordpress.org/documentation/files/2020/08/cloudup-homepage-1024x564.png 1024w, https://wordpress.org/documentation/files/2020/08/cloudup-homepage-768x423.png 768w, https://wordpress.org/documentation/files/2020/08/cloudup-homepage-1536x845.png 1536w\" sizes=\"auto, (max-width: 1686px) 100vw, 1686px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li><strong>When/If you have a Cloudup account. </strong><br>You can copy the custom links of the contents you want to embed on your page/post</li>\n</ol>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li><strong>Add a Cloudup Embed Block to your post/page</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"321\" height=\"419\" src=\"https://wordpress.org/documentation/files/2023/02/cloudup.png\" alt=\"Embeds block options with the Cloudup block highlighted\" class=\"wp-image-16355587\" srcset=\"https://wordpress.org/documentation/files/2023/02/cloudup.png 321w, https://wordpress.org/documentation/files/2023/02/cloudup-230x300.png 230w\" sizes=\"auto, (max-width: 321px) 100vw, 321px\" /></figure>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\">\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n</div>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li><strong>Paste the Cloudup link</strong></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"658\" height=\"268\" src=\"https://wordpress.org/documentation/files/2023/02/cloudup_placeholder.png\" alt=\"Cloudup block placeholder, showing the field to insert the URL\" class=\"wp-image-16355588\" srcset=\"https://wordpress.org/documentation/files/2023/02/cloudup_placeholder.png 658w, https://wordpress.org/documentation/files/2023/02/cloudup_placeholder-300x122.png 300w\" sizes=\"auto, (max-width: 658px) 100vw, 658px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li><strong>Click the \u201cEmbed\u201d button</strong></li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"775\" height=\"453\" src=\"https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar-1-edited.png\" alt=\"When you click the embed button the content will be displayed on a post or page\" class=\"wp-image-13303294\" srcset=\"https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar-1-edited.png 775w, https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar-1-edited-300x175.png 300w, https://wordpress.org/documentation/files/2020/08/embedded-cloudup-link-no-toolbar-1-edited-768x449.png 768w\" sizes=\"auto, (max-width: 775px) 100vw, 775px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: Try again with a different URL or convert to link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"654\" height=\"358\" src=\"https://wordpress.org/documentation/files/2023/02/cloudup_error.png\" alt=\"Error message when you cannot embed a URL in the Cloudup block\" class=\"wp-image-16355590\" srcset=\"https://wordpress.org/documentation/files/2023/02/cloudup_error.png 654w, https://wordpress.org/documentation/files/2023/02/cloudup_error-300x164.png 300w\" sizes=\"auto, (max-width: 654px) 100vw, 654px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<figure class=\"wp-block-image alignright size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"389\" height=\"308\" src=\"https://wordpress.org/documentation/files/2020/08/embedded-cloudup-toolbar.png\" alt=\"Block toolbar in the Cloudup block\" class=\"wp-image-13303305\" srcset=\"https://wordpress.org/documentation/files/2020/08/embedded-cloudup-toolbar.png 389w, https://wordpress.org/documentation/files/2020/08/embedded-cloudup-toolbar-300x238.png 300w\" sizes=\"auto, (max-width: 389px) 100vw, 389px\" /></figure>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Cloudup embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><br><br><br><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image alignright size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"314\" height=\"242\" src=\"https://wordpress.org/documentation/files/2023/02/transform.png\" alt=\"Transform options in the cloudup block\" class=\"wp-image-16355591\" srcset=\"https://wordpress.org/documentation/files/2023/02/transform.png 314w, https://wordpress.org/documentation/files/2023/02/transform-300x231.png 300w\" sizes=\"auto, (max-width: 314px) 100vw, 314px\" /></figure>\n\n\n\n<p>You can transform a Cloudup embed to a Group. This would give you the ability to change the background and text color around the Cloudup embed.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"490\" src=\"https://wordpress.org/documentation/files/2020/08/change-background-1024x490.png\" alt=\"Editor view of a Cloudup Embed as a group with Color Settings controls\" class=\"wp-image-13303310\" srcset=\"https://wordpress.org/documentation/files/2020/08/change-background-1024x490.png 1024w, https://wordpress.org/documentation/files/2020/08/change-background-300x143.png 300w, https://wordpress.org/documentation/files/2020/08/change-background-768x367.png 768w, https://wordpress.org/documentation/files/2020/08/change-background-1536x735.png 1536w, https://wordpress.org/documentation/files/2020/08/change-background.png 1545w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of a Cloudup Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"772\" height=\"496\" src=\"https://wordpress.org/documentation/files/2020/08/cloudup-embed-with-red-bg.png\" alt=\"Cloudup Embed with a red background.\" class=\"wp-image-13303395\" srcset=\"https://wordpress.org/documentation/files/2020/08/cloudup-embed-with-red-bg.png 772w, https://wordpress.org/documentation/files/2020/08/cloudup-embed-with-red-bg-300x193.png 300w, https://wordpress.org/documentation/files/2020/08/cloudup-embed-with-red-bg-768x493.png 768w\" sizes=\"auto, (max-width: 772px) 100vw, 772px\" /><figcaption class=\"wp-element-caption\">Cloudup Embed with a red background.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image alignright size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"345\" height=\"316\" src=\"https://wordpress.org/documentation/files/2023/02/align.png\" alt=\"Change alignment in the Cloudup block\" class=\"wp-image-16355592\" srcset=\"https://wordpress.org/documentation/files/2023/02/align.png 345w, https://wordpress.org/documentation/files/2023/02/align-300x275.png 300w\" sizes=\"auto, (max-width: 345px) 100vw, 345px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the Cloudup embed post-left-aligned.</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Cloudup embed post alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the Cloudup embed post-align-right.</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the Cloudup embed post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the Cloudup embed post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p>\u201cWide width\u201d and \u201cFull width\u201d alignment need to be enabled by the Theme of your site.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Edit URL</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"262\" height=\"56\" src=\"https://wordpress.org/documentation/files/2023/02/edit_URL.png\" alt=\"Edit URL option in the Cloudup block toolbar\" class=\"wp-image-16355593\" /></figure>\n\n\n\n<p>Via the edit URL icon, you can change the Cloudup embed URL in the embed block. To overwrite the existing URL and click on the &#8220;Embed&#8221; button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"658\" height=\"268\" src=\"https://wordpress.org/documentation/files/2023/02/cloudup_placeholder-1.png\" alt=\"Edit URL in the CloudUp block\" class=\"wp-image-16355594\" srcset=\"https://wordpress.org/documentation/files/2023/02/cloudup_placeholder-1.png 658w, https://wordpress.org/documentation/files/2023/02/cloudup_placeholder-1-300x122.png 300w\" sizes=\"auto, (max-width: 658px) 100vw, 658px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"> </p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media settings</strong></p>\n\n\n\n<figure class=\"wp-block-gallery aligncenter has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"290\" height=\"132\" data-id=\"16355595\" src=\"https://wordpress.org/documentation/files/2023/02/resize-off.png\" alt=\"Media settings turned off in the Cloudup block\" class=\"wp-image-16355595\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"289\" height=\"130\" data-id=\"16355596\" src=\"https://wordpress.org/documentation/files/2023/02/resize-on.png\" alt=\"Media settings turned on in the Cloudup block\" class=\"wp-image-16355596\" /></figure>\n</figure>\n\n\n\n<p>Via the Media Settings, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p>\u201cOff:\u201d This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p>\u201cOn:\u201d This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"337\" height=\"169\" src=\"https://wordpress.org/documentation/files/2023/02/css.png\" alt=\"Additional CSS class field\" class=\"wp-image-16355597\" srcset=\"https://wordpress.org/documentation/files/2023/02/css.png 337w, https://wordpress.org/documentation/files/2023/02/css-300x150.png 300w\" sizes=\"auto, (max-width: 337px) 100vw, 337px\" /></figure>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-02-07\n<ul class=\"wp-block-list\">\n<li>Updated images</li>\n\n\n\n<li>Fixed headings capitalization</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-08-24</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>With the Cloudup Embed block, you can embed contents from Cloudup into your posts and pages. You need a Cloudup account to be able to embed contents from Cloudup into your posts or pages. Embedded Cloudup content: Steps to embed Cloudup content: Detailed instructions on adding blocks If it\u2019s a link that can be successfully [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13303226",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13303226",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13303226"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13303226/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355599,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13303226/revisions/16355599"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13303226"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13303226"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

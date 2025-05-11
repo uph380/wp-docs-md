@@ -1,0 +1,91 @@
+{
+    "id": 135760,
+    "date": "2021-04-30T08:39:48",
+    "date_gmt": "2021-04-30T08:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/flex-block/"
+    },
+    "modified": "2024-10-30T16:55:02",
+    "modified_gmt": "2024-10-30T16:55:02",
+    "slug": "flex-block",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/flex-block/",
+    "title": {
+        "rendered": "FlexBlock"
+    },
+    "content": {
+        "rendered": "<p>A layout component to contain items of a fixed width within <code>Flex</code>.</p>\n<h2>Usage</h2>\n<p>See <a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/flex/#usage\"><code>flex/README.md#usage</code></a> for how to use <code>FlexBlock</code>.</p>\n<h2>Props</h2>\n<h3><code>display</code>: <code>CSSProperties['display']</code></h3>\n<p>The CSS display property of <code>FlexBlock</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 149,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135760",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135760",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135760/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151746,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135760/revisions/151746"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135760"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

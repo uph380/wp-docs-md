@@ -1,0 +1,109 @@
+{
+    "id": 11132728,
+    "date": "2019-01-26T03:21:28",
+    "date_gmt": "2019-01-26T03:21:28",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11132728"
+    },
+    "modified": "2023-01-11T13:45:33",
+    "modified_gmt": "2023-01-11T13:45:33",
+    "slug": "appearance-widgets-screen-classic-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/appearance-widgets-screen-classic-editor/",
+    "title": {
+        "rendered": "Appearance Widgets Screen (Classic Editor)"
+    },
+    "content": {
+        "rendered": "\n<p><strong>Note: </strong>This is documentation for the Classic Widgets Screen. The documentation for the <a href=\"https://wordpress.org/documentation/article/block-based-widgets-editor/\">Block-based Widgets editor can be found here.</a></p>\n\n\n\n<p>Themes usually have at least 1 or 2 sidebars. Each section in the sidebar is known as a &#8220;Widget&#8221; that you can add or remove, and move up or down. You configure Widgets in your sidebar by via the <strong>Appearance Widgets Screen</strong>. Some themes also are configured to accept widgets in certain parts of the footer and header.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11132735\"><img loading=\"lazy\" decoding=\"async\" width=\"932\" height=\"606\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/01/wigets-screen.png?fit=932%2C606&amp;ssl=1\" alt=\"\" class=\"wp-image-11132735\" srcset=\"https://wordpress.org/documentation/files/2019/01/wigets-screen.png 932w, https://wordpress.org/documentation/files/2019/01/wigets-screen-300x195.png 300w, https://wordpress.org/documentation/files/2019/01/wigets-screen-768x499.png 768w\" sizes=\"auto, (max-width: 932px) 100vw, 932px\" /></a><figcaption>widgets screen</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Widgets Management in Customizer</h3>\n\n\n\n<p>You can add, rearrange and remove Widgets just like in Appearance  Widgets Screen, but you also get a live preview of your changes. From  the Appearance Widgets Screen, click the &#8220;Manage in Customizer&#8221; link at  the top to access the Widgets section of Theme Customizer. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Configuring Your Widgets</h3>\n\n\n\n<ol class=\"wp-block-list\"><li> Click on <strong>Appearance &gt; Widgets</strong> from the main navigation menu in your Dashboard.</li><li> Add new widgets from the Available Widgets section by dragging them\n to the Sidebar you want to customize. (There might be more than one\nsidebar option, depending on your theme.)</li><li> Preview your site and you should see the content from your new Widget.</li><li> Return to the Widgets Screen to continue adding Widgets to the Sidebar as needed.</li><li> To arrange the Widgets within the Sidebar, <strong>click, drag and drop</strong> the widgets in the order you want.</li><li> To customize the Widget features, click the <strong>down arrow</strong> (or edit link) in the upper right corner to expand the Widget&#8217;s interface.</li><li> To save the Widget&#8217;s customization, click <strong>Save</strong>. (If simply moving a widget to the sidebar without making customizations, you do not need to click the Save button.)</li><li> Preview your site again, and all of your changes should be visible.</li></ol>\n\n\n\n<h3 class=\"wp-block-heading\">Remove a Widget</h3>\n\n\n\n<ol class=\"wp-block-list\"><li> Click on <strong>Appearance &gt; Widgets</strong> from the main navigation menu in your Dashboard.</li><li> Decide which Sidebar from which you want to remove your widget if there is more than one option.</li><li> For the Widget that is to be removed, click the <strong>down arrow</strong> (or edit link) in the upper right corner to expand the Widget&#8217;s interface</li><li> Click the <strong>Delete</strong> link in the dialog box.</li><li> The Widget will now be removed permanently. </li><li> Preview your site to see your changes.</li></ol>\n\n\n\n<p><strong>Note:</strong> If you would like to remove a widget temporarily and\nkeep your settings, drag the widget from the Sidebar into the Inactive\nWidgets section. When you are ready to return the widget, drag it from\nyour Inactive Widgets section back to the Sidebar.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Moving a Widget</h3>\n\n\n\n<p>To move a Widget:\n</p>\n\n\n\n<ol class=\"wp-block-list\"><li>The Widget must be located in a Sidebar or other active content area before it can be moved.</li><li>Click on the Widget Title and hold the mouse button down, then drag\nthe Widget bar up or down to the location desired.  At that point\nrelease the mouse button.  That process is called drag-and-drop.</li></ol>\n\n\n\n<h3 class=\"wp-block-heading\">Descriptions of Each Widget</h3>\n\n\n\n<p>Here&#8217;s a description of the various types of widget along with their configuration options:\n<strong>Archives</strong> &#8211; displays archive links for each month that has posts.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the list of archive links.</li><li> Display as a drop down \u2014 if checked, this box causes the archives to be displayed in a drop-down box. </li><li> Show post counts \u2014 if checked, this box causes a count of the number of posts for each archive period.</li></ul>\n\n\n\n<p><strong>Calendar</strong> &#8211; displays a calendar of the current month.  Dates appear as links if there are posts for that day.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the calendar</li></ul>\n\n\n\n<p><strong>Categories</strong> &#8211; displays a list of post categories as links to those posts.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the list of categories.</li><li> Display as dropdown \u2014 if checked, this box causes the categories to be displayed in a dropdown box. </li><li> Show post counts \u2014 if checked, this box causes the count of the number of posts to display with each category.</li><li> Show hierarchy \u2014 if checked, shows parent/child relationships in an indented manner.</li></ul>\n\n\n\n<p><strong>Custom Menu</strong> &#8211; displays a custom menu.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the menu</li><li> Select Menu \u2014 select the desired created menu</li></ul>\n\n\n\n<p><strong>Meta</strong> &#8211; displays links to meta functions such as Register, Site Admin, Login/out, Entries RSS, Comments RSS, and WordPress.org.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the list of meta links. </li></ul>\n\n\n\n<p><strong>Pages</strong> &#8211; displays a link to each Page.   </p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the list of pages.</li><li> Sort by \u2014 select the order to sort the list of pages.  Choose Page Title, Page Order, or Page ID from pulldown box</li><li> Exclude (Page IDs, separated by commas) \u2014 enter the Page ID(s) to exclude, separating each Page ID with a comma</li></ul>\n\n\n\n<p><strong>Recent Comments</strong> &#8211; displays a list of the blog&#8217;s most recent approved comments.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the list of recent comments. </li><li> Number of comments to show: (at most 15); enter the number of comments to be displayed.</li></ul>\n\n\n\n<p><strong>Recent Posts</strong> &#8211; displays list of the blog&#8217;s most recent posts.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the list of recent posts. </li><li> Number of posts to show: (at most 15) \u2014 enter the number of posts to display.</li><li> Display post date? \u2014 check this to display the date the post was published.</li></ul>\n\n\n\n<p><strong>RSS </strong> &#8211; displays an RSS Feed.  Multiple instances of this widget can be added to the Current Widgets list. </p>\n\n\n\n<ul class=\"wp-block-list\"><li> Enter the RSS feed URL here \u2014 enter a complete feed URL.<a href=\"https://wordpress.org/development/feed/\"></a></li><li> Give the feed a title (optional) \u2014 enter a description that appears over the list of feed items </li><li> How many items would you like to display? \u2014 enter the number of items from the feed you want displayed. </li><li> Display item content? \u2014 check this to display the content of the feed </li><li> Display item author if available? \u2014 check this to display the author of this particular item content</li><li> Display item date? \u2014 check this to display the date the item was published </li></ul>\n\n\n\n<p><strong>Search</strong> &#8211; displays a Search box to enter text to search your blog.  A submit button is also provided.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the Search box. </li></ul>\n\n\n\n<p><strong>Tag Cloud</strong> &#8211; displays list of the blog&#8217;s top 45 used tags in a tag cloud.   </p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title \u2014 description that appears over the tag cloud. </li><li> Taxonomy \u2014 select the desired registered taxonomy (e.g. Tags, Category).</li></ul>\n\n\n\n<p><strong>Text</strong> &#8211; used to enter HTML, JavaScript, or just plain  text. Multiple instances of this widget can be added to the Current  Widgets list.  <a href=\"https://codex.wordpress.org/Plugins/WordPress_Widgets#Using_Text_Widgets\"></a></p>\n\n\n\n<ul class=\"wp-block-list\"><li> Title area \u2014 a description of the text widget </li><li> Text area \u2014 use this area to enter text, valid HTML, or even valid JavaScript.</li><li> Automatically add paragraphs \u2014 check this to automatically add\nparagraphs to wrap each block of text in an HTML paragraph tag\n(recommended for text).</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Adding Multiple Widgets of the Same Kind</h3>\n\n\n\n<p>To add multiple text widgets, RSS widgets, or any other widgets, just\n drag and drop the widget from Available Widgets to your Sidebar as many\n times as you need.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">No Sidebars Defined</h3>\n\n\n\n<p>If the current active Theme is not widget compatible, meaning the\ntheme is not coded for widgets, you will see the message, &#8220;You are\nseeing this message because the theme you are currently using isn\u2019t\nwidget-aware, meaning that it has no sidebars that you are able to\nchange. For information on making your theme widget-aware, please <a href=\"http://automattic.com/code/widgets/themes/\">follow these instructions</a>&#8220;.\n</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Note: This is documentation for the Classic Widgets Screen. The documentation for the Block-based Widgets editor can be found here. Themes usually have at least 1 or 2 sidebars. Each section in the sidebar is known as a &#8220;Widget&#8221; that you can add or remove, and move up or down. You configure Widgets in your [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11132728",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11132728",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11132728"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11132728/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355087,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11132728/revisions/16355087"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11132728"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11132728"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 11108219,
+    "date": "2019-01-22T16:30:59",
+    "date_gmt": "2019-01-22T16:30:59",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11108219"
+    },
+    "modified": "2024-06-08T18:31:59",
+    "modified_gmt": "2024-06-08T18:31:59",
+    "slug": "posts-tags-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/posts-tags-screen/",
+    "title": {
+        "rendered": "Posts Tags screen"
+    },
+    "content": {
+        "rendered": "\n<p>Every post in WordPress can be filed under one or more Tags. This\naids in navigation and allows posts and to be grouped with others of\nsimilar content.\n</p>\n\n\n\n<p>Unlike Categories, Tags have no hierarchy so there is no\nParent-&gt;Child relationship like that of Categories.  But like\nCategories, Tag names must be unique.\n</p>\n\n\n\n<p>Assuming you are using the WordPress <a href=\"/themes/twentyseventeen/\">Twenty Seventeen theme</a>,  Tags are displayed under each post.  When someone viewing your blog  clicks on one of these Tag links, a Tag archive page with all the posts  belonging to that Tag, will be displayed.  In addition, if using  Widgets, the Tag Cloud Widget can be added to the sidebar to display all  the Tags used in a cloud (Tags sized by number of times reference in  posts).  </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11108222\"><img loading=\"lazy\" decoding=\"async\" width=\"1168\" height=\"600\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2019/01/tag-screen.png?fit=1168%2C600&amp;ssl=1\" alt=\"Posts Tag Screen\" class=\"wp-image-11108222\" srcset=\"https://wordpress.org/documentation/files/2019/01/tag-screen.png 1168w, https://wordpress.org/documentation/files/2019/01/tag-screen-300x154.png 300w, https://wordpress.org/documentation/files/2019/01/tag-screen-1024x526.png 1024w, https://wordpress.org/documentation/files/2019/01/tag-screen-768x395.png 768w\" sizes=\"auto, (max-width: 1168px) 100vw, 1168px\" /></a><figcaption>Posts Tag Screen</figcaption></figure>\n\n\n\n<p>This Screen allows you to create new Tags, and to edit or delete existing ones. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Manage Tags</h2>\n\n\n\n<p>This Screen is divided into the Popular Tags, Add New Tag and Tag Table sections.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Popular Tags</h3>\n\n\n\n<p>In this section, a Tag Cloud displays the forty-five (45) most\npopular Tags&#8211;meaning the Tags that are most used on posts.  With the\nproper capability, each Tag can be clicked to edit that Tag.  Of course,\n if no Tags have been assigned to posts, then this section will not\nappear.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Add New Tag</h3>\n\n\n\n<p>This part of the Screen, which is conveniently linked to from the top of the Table of Tags,  allows you to create a new Tag.  There are three pieces of information  associated with each new Tag:  the name, description, slug, and number  of posts containing that Tag.</p>\n\n\n\n<p><strong>Tag Name</strong>:  To reiterate, the Tag Name\u00a0<em>must</em>\u00a0be unique. </p>\n\n\n\n<p><strong>Tag Slug</strong>: The Tag slug <em>must</em> be unique. The &#8220;slug&#8221; is the URL-friendly  version of the name. It is usually all lowercase and contains only  letters, numbers, and hyphens. For example, setting a Tag Name of  &#8220;Recipes&#8221; and a Tag Slug of &#8220;food&#8221; would show all &#8220;Recipes&#8221; posts with a  URL like <strong>example.com/blog/food/</strong>.</p>\n\n\n\n<p><strong>Description</strong>: A description for the Tag.  Note:  In many themes the Tag Description not displayed, however some themes may show it.</p>\n\n\n\n<p><strong>Add New Tag</strong>: Click this button to save your new Tag. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Table of Tags</h3>\n\n\n\n<p>This table lists all of your Tags by row.  Tags are displayed alphabetically by Tag Name.\n</p>\n\n\n\n<p>The table of Tags contains the following columns:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>[ ]</strong> &#8211; A checkbox that when clicked (checked), &#8216;selects&#8217; that particular Tag to be deleted when the Delete Action is Applied. </li><li><strong>Name</strong> &#8211; The name of the Tag.  Remember each Name must be unique.  Click on the Tag&#8217;s Name to edit the Tag.</li><li><strong>Description</strong> &#8211; The description of the Tag.  </li><li><strong>Slug</strong> \u2013 The slug of a Tag, and must be unique.</li><li><strong>Count</strong> &#8211; The number of posts which have this Tag assigned. Click on the number in the Count column to be directed to the Posts Screen to manage the Posts in that Tag.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Screen Options</h4>\n\n\n\n<p>The Screen Options  allow you to choose which columns are displayed, or not displayed, in  the underlying Table.  Clicking on the Screen Options tab shows a list  of the columns with a check-box next to each column.  Check the box for  each column you want displayed in the Table, or uncheck the box to not  display that column.  In addition, the number of Tags to display in the Table of Tags can be set.  Click the Screen Options tab again to close the Screen Options. </p>\n\n\n\n<h4 class=\"wp-block-heading\">Search</h4>\n\n\n\n<p>Above the Table, to the right, is a search box where you can enter a\nword, or series of words, and click the &#8220;Search Tags&#8221; button to search\nand display all the Tags meeting your search words.\n</p>\n\n\n\n<h3 class=\"wp-block-heading\">Using Selection, Actions, and Apply</h3>\n\n\n\n<h4 class=\"wp-block-heading\">Selection</h4>\n\n\n\n<p>\nThis section allows Actions to be performed on one or more Tags\ndisplayed in the Table.  For Actions to be performed on multiple Tags at\n once, those Tags must be first <strong>selected</strong> via one of these methods:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Select one Tag at a time</strong> &#8211; To select a Tag, the checkbox\nto the left of the Tag entry must be checked (clicked).  It is possible\nto keep selecting more Tags by checking their respective checkbox.</li><li><strong>Select all Tags in given Table</strong> &#8211; All Tags in a given table\ncan be selected by checking the checkbox in the Table&#8217;s title, or footer\n bar.  Of course, unchecking the header or footer title bar checkbox\nwill cause all entries in that Table to be unchecked (NOT selected). </li><li><strong>Reverse Selection</strong> &#8211; A Reverse Selection means checked items\nbecome unchecked, and unchecked items become checked. A Reverse\nSelection is accomplished by holding the Shift key on the keyboard and\nclicking the header or footer title bar checkbox.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Actions</h4>\n\n\n\n<p>\nActions describe the process to be performed on particular Tags.  There are two styles of Actions that will be referred to as <em>Bulk Actions</em> and <em>Immediate Actions</em>.  The follow describes these Actions:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Bulk Actions</strong> &#8211; These Actions can be performed on one, or more Tags, at one time, if those Tags have been previously selected.  Bulk Actions are available, when appropriate, as choices in the Actions  pulldown box, above each Table.  The only Bulk Action allowed is  Delete.   </li><li><strong>Immediate Actions</strong> &#8211; Immediate Actions are performed  immediately, on an individual Tag.  Hovering the mouse cursor over the  Tag row reveals the Edit, Quick Edit, and Delete options under the Name  column in that Tag row.  Clicking on a Tag Name will also initiate the  Edit Action.</li></ul>\n\n\n\n<p>\nThe available Actions are described below:\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Edit</strong> &#8211; This Immediate Action displays the Edit Tag Screen  to edit the Tag fields.  This Action can be initiated by click on the  Tag Name or clicking on the Edit option just below the Tag Name.  See  the Edit Tag section for details on editing a Tag.</li><li><strong>Quick Edit</strong> &#8211; This Immediate Action initiates the Quick Edit of that Tag.  See the Quick Edit section for details doing a Quick Edit on a Tag. </li><li><strong>Delete</strong> &#8211; This Action deletes the Tags files. Note: Deleting a Tag does not delete the posts in that Tag.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Apply</h4>\n\n\n\n<p>\nAfter one or more Tags are <em>selected</em>, and after a <em>Bulk</em> Action is specified, the <strong>Apply</strong> button performs the given Action on the selected Tags.\n</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Apply</strong> &#8211; Click the Apply button to execute the  Bulk Action, specified in the Actions pull-down, on the selected Tags.   Remember, prior to executing Actions, one or more Tags must be <strong>selected</strong>, as described before.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Quick Edit</h3>\n\n\n\n<p>  The following fields can be change via the Quick Edit Action: </p>\n\n\n\n<p><strong>Tag name:</strong>  The Tag name <em>must</em> be unique. </p>\n\n\n\n<p><strong>Tag slug:</strong>  The Tag slug <em>must</em> be unique.  Cancel:  Click this button to cancel any changes and return to the Table of Tags </p>\n\n\n\n<p><strong>Update Tag:</strong>  Once you&#8217;ve edited all the information about the Tag, use this button to save the changes. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Edit Tag</h3>\n\n\n\n<p>This Screen is displayed by clicking on a Tags&#8217; <strong>Name</strong> in the Table of Tags  or clicking on the Edit option just below the Tag Name. It is possible  to edit three pieces of information associated with each Tag:  the  name, the slug, and the description.</p>\n\n\n\n<p><strong>Tag name</strong>: The Tag name <em>must</em> be unique. </p>\n\n\n\n<p><strong>Tag Slug:</strong>  The Tag slug <em>must</em> be unique.</p>\n\n\n\n<p><strong>Description</strong>: Text describing this Tag. </p>\n\n\n\n<p><strong>Update:</strong>   Once you&#8217;ve changed the Tag information, use this button to save the changes.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Every post in WordPress can be filed under one or more Tags. This aids in navigation and allows posts and to be grouped with others of similar content. Unlike Categories, Tags have no hierarchy so there is no Parent-&gt;Child relationship like that of Categories. But like Categories, Tag names must be unique. Assuming you are [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11108219",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11108219",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11108219"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11108219/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360376,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11108219/revisions/16360376"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11108219"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11108219"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

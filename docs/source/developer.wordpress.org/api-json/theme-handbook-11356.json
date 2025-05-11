@@ -1,0 +1,97 @@
+{
+    "id": 11356,
+    "date": "2014-10-23T15:09:24",
+    "date_gmt": "2014-10-23T15:09:24",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11356"
+    },
+    "modified": "2022-10-29T02:10:36",
+    "modified_gmt": "2022-10-29T02:10:36",
+    "slug": "comment-template",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comment-template/",
+    "title": {
+        "rendered": "Comment Template"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress displays comments in your theme based on the settings and code in the <code>comments.php</code> file within your WordPress theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Simple comments loop</h2>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// Get only the approved comments\n$args = array(\n\t'status' =&gt; 'approve',\n);\n\n// The comment Query\n$comments_query = new WP_Comment_Query();\n$comments       = $comments_query-&gt;query( $args );\n\n// Comment Loop\nif ( $comments ) {\n\tforeach ( $comments as $comment ) {\n\t\techo '&lt;p&gt;' . $comment-&gt;comment_content . '&lt;/p&gt;';\n\t}\n} else {\n\techo 'No comments found.';\n}</code></pre>\n\n\n\n<p>The <code>comments.php</code> template contains all the logic needed to pull comments out of the database and display them in your theme.</p>\n\n\n\n<p>Before we explore the template file you&#8217;ll want to know how to pull in the partial template file on the appropriate pages such as <code>single.php</code>. You&#8217;ll wrap the comment <a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">template tag</a> in a conditional statement so comments.php is only pulled in if it makes sense to do.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// If comments are open or we have at least one comment, load up the comment template.\nif ( comments_open() || get_comments_number() ) :\n\tcomments_template();\nendif;</code></pre>\n\n\n\n<figure class=\"wp-block-image\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"350\" height=\"257\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/functionality-comments-01.png?resize=350%2C257&#038;ssl=1\" alt=\"functionality-comments-01\" class=\"wp-image-11358\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/functionality-comments-01.png?w=350&amp;ssl=1 350w, https://i0.wp.com/developer.wordpress.org/files/2014/10/functionality-comments-01.png?resize=300%2C220&amp;ssl=1 300w\" sizes=\"auto, (max-width: 350px) 100vw, 350px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Another comments.php Example</h2>\n\n\n\n<p>Here&#8217;s an example of the <code>comments.php</code> template included with the Twenty Thirteen theme:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/**\n * The template for displaying Comments.\n *\n * The area of the page that contains comments and the comment form.\n *\n * @package WordPress\n * @subpackage Twenty_Thirteen\n * @since Twenty Thirteen 1.0\n */\n\n/*\n * If the current post is protected by a password and the visitor has not yet\n * entered the password we will return early without loading the comments.\n */\nif ( post_password_required() ) {\n\treturn;\n}\n?&gt;\n\n&lt;div id=\"comments\" class=\"comments-area\"&gt;\n\n\t&lt;?php if ( have_comments() ) : ?&gt;\n\t\t&lt;h2 class=\"comments-title\"&gt;\n\t\t\t&lt;?php\n\t\t\tprintf(\n\t\t\t\t_nx(\n\t\t\t\t\t'One thought on \"%2$s\"',\n\t\t\t\t\t'%1$s thoughts on \"%2$s\"',\n\t\t\t\t\tget_comments_number(),\n\t\t\t\t\t'comments title',\n\t\t\t\t\t'twentythirteen'\n\t\t\t\t),\n\t\t\t\tnumber_format_i18n( get_comments_number() ),\n\t\t\t\t'&lt;span&gt;' . get_the_title() . '&lt;/span&gt;'\n\t\t\t);\n\t\t\t?&gt;\n\t\t&lt;/h2&gt;\n\n\t\t&lt;ol class=\"comment-list\"&gt;\n\t\t\t&lt;?php\n\t\t\twp_list_comments( array(\n\t\t\t\t'style'       =&gt; 'ol',\n\t\t\t\t'short_ping'  =&gt; true,\n\t\t\t\t'avatar_size' =&gt; 74,\n\t\t\t) );\n\t\t\t?&gt;\n\t\t&lt;/ol&gt;&lt;!-- .comment-list --&gt;\n\n\t\t&lt;?php if ( get_comment_pages_count() &gt; 1 &amp;&amp; get_option( 'page_comments' ) ) : ?&gt;\n\t\t\t&lt;nav class=\"navigation comment-navigation\" role=\"navigation\"&gt;\n\n\t\t\t\t&lt;h1 class=\"screen-reader-text section-heading\"&gt;&lt;?php _e( 'Comment navigation', 'twentythirteen' ); ?&gt;&lt;/h1&gt;\n\t\t\t\t&lt;div class=\"nav-previous\"&gt;&lt;?php previous_comments_link( __( '&amp;larr; Older Comments', 'twentythirteen' ) ); ?&gt;&lt;/div&gt;\n\t\t\t\t&lt;div class=\"nav-next\"&gt;&lt;?php next_comments_link( __( 'Newer Comments &amp;rarr;', 'twentythirteen' ) ); ?&gt;&lt;/div&gt;\n\t\t\t&lt;/nav&gt;&lt;!-- .comment-navigation --&gt;\n\t\t&lt;?php endif; // Check for comment navigation ?&gt;\n\n\t\t&lt;?php if ( ! comments_open() &amp;&amp; get_comments_number() ) : ?&gt;\n\t\t\t&lt;p class=\"no-comments\"&gt;&lt;?php _e( 'Comments are closed.', 'twentythirteen' ); ?&gt;&lt;/p&gt;\n\t\t&lt;?php endif; ?&gt;\n\n\t&lt;?php endif; // have_comments() ?&gt;\n\n\t&lt;?php comment_form(); ?&gt;\n\n&lt;/div&gt;&lt;!-- #comments --&gt;\n</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Breaking down the comments.php</h2>\n\n\n\n<p>The above <code>comments.php</code> can be broken down to the below parts for better understanding.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li><a href=\"#template-header\">Template Header</a></li>\n\n\n\n<li><a href=\"#comments-title\">Comments Title</a></li>\n\n\n\n<li><a href=\"#comment-listing\">Comment Listing</a></li>\n\n\n\n<li><a href=\"#comment-pagination\">Comment Pagination</a></li>\n\n\n\n<li><a href=\"#comments-are-closed-message\">Comments are closed message</a>.</li>\n\n\n\n<li><a href=\"#the-end\">The End</a></li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">Template Header</h3>\n\n\n\n<p>This template begins by identifying the template.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n/**\n * The template for displaying Comments.\n *\n * The area of the page that contains comments and the comment form.\n *\n * @package WordPress\n * @subpackage Twenty_Thirteen\n * @since Twenty Thirteen 1.0\n */</code></pre>\n\n\n\n<p>Next, there&#8217;s a test to see if the post is password protected and, if so, it stops processing the template.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/*\n * If the current post is protected by a password and the visitor has not yet\n * entered the password we will return early without loading the comments.\n */\nif ( post_password_required() )\n return;\n?&gt;</code></pre>\n\n\n\n<p>Finally, there&#8217;s a test to see if there are comments associated with this post.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div id=\"comments\" class=\"comments-area\"&gt;\n\t&lt;?php if ( have_comments() ) : ?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Comments Title</h3>\n\n\n\n<p>Prints out the header that appears above the comments.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">Uses the <a href=\"https://developer.wordpress.org/reference/functions/_nx/\" rel=\"function\">_nx()</a>  translation function so other developers can provide alternative language translations.</div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;h2 class=\"comments-title\"&gt;\n\t&lt;?php\n\tprintf(\n\t\t_nx(\n\t\t\t'One thought on \"%2$s\"',\n\t\t\t'%1$s thoughts on \"%2$s\"',\n\t\t\tget_comments_number(),\n\t\t\t'comments title',\n\t\t\t'twentythirteen'\n\t\t),\n\t\tnumber_format_i18n( get_comments_number() ),\n\t\t'&lt;span&gt;' . get_the_title() . '&lt;/span&gt;'\n\t);\n\t?&gt;\n&lt;/h2&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Comment Listing</h3>\n\n\n\n<p>The following snippet creates an ordered listing of comments using the <a href=\"https://developer.wordpress.org/reference/functions/wp_list_comments/\" rel=\"function\">wp_list_comments()</a>  function.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;ol class=\"comment-list\"&gt;\n\t&lt;?php\n\twp_list_comments( array(\n\t\t'style'       =&gt; 'ol',\n\t\t'short_ping'  =&gt; true,\n\t\t'avatar_size' =&gt; 74,\n\t) );\n\t?&gt;\n&lt;/ol&gt;&lt;!-- .comment-list --&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Comment Pagination</h3>\n\n\n\n<p>Checks to see if there are enough comments to merit adding comment navigation and, if so, create comment navigation.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( get_comment_pages_count() &gt; 1 &amp;&amp; get_option( 'page_comments' ) ) : ?&gt;\n\n\t&lt;nav class=\"navigation comment-navigation\" role=\"navigation\"&gt;\n\n\t\t&lt;h3 class=\"screen-reader-text section-heading\"&gt;&lt;?php _e( 'Comment navigation', 'twentythirteen' ); ?&gt;&lt;/h3&gt;\n\t\t&lt;div class=\"nav-previous\"&gt;&lt;?php previous_comments_link( __( '&amp;larr; Older Comments', 'twentythirteen' ) ); ?&gt;&lt;/div&gt;\n\t\t&lt;div class=\"nav-next\"&gt;&lt;?php next_comments_link( __( 'Newer Comments &amp;rarr;', 'twentythirteen' ) ); ?&gt;&lt;/div&gt;\n\n\t&lt;/nav&gt;&lt;!-- .comment-navigation --&gt;\n\n&lt;?php endif; // Check for comment navigation ?&gt;\n</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Comments are closed message.</h3>\n\n\n\n<p>If comments aren&#8217;t open, displays a line indicating that they&#8217;re closed.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( ! comments_open() &amp;&amp; get_comments_number() ) : ?&gt;\n\t&lt;p class=\"no-comments\"&gt;&lt;?php _e( 'Comments are closed.', 'twentythirteen' ); ?&gt;&lt;/p&gt;\n&lt;?php endif; ?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">The End</h3>\n\n\n\n<p>This section ends the comments loop, includes the comment form, and closes the comment wrapper.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">\t&lt;?php endif; // have_comments() ?&gt;\n\n\t&lt;?php comment_form(); ?&gt;\n\n&lt;/div&gt;&lt;!-- #comments --&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Comments Pagination</h2>\n\n\n\n<p>If you have a lot of comments (which makes your page long), then there are a number of potential benefits to paginating your comments. Pagination helps improve page load speed, especially on mobile devices.<br>Enabling comments pagination is done in two steps.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Enable paged comments within WordPress by going to <em>Settings</em> &gt;<em> Discussion </em>, and checking the box \u201c<em>Break comments into pages</em>\u201d . You can enter any number for the \u201c<em>top level comments per page</em>\u201d.</li>\n\n\n\n<li>Open your <code>comments.php</code> template file and add the following line where you want the comment pagination to appear.</li>\n</ol>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;div class=\"pagination\"&gt;\n\t&lt;?php paginate_comments_links(); ?&gt;\n&lt;/div&gt;</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Alternative Comment Template</h2>\n\n\n\n<p>On some occasions you may want display your comments differently within your theme. For this you would build an alternate file (ex. short-comments.php) and call it as follows:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php comments_template( '/short-comments.php' );</code></pre>\n\n\n\n<p>The path to the file used for an alternative comments template should be relative to the current theme root directory, and include any subfolders. So if the custom comments template is in a folder inside the theme, it may look like this when called:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php comments_template( '/custom-templates/alternative-comments.php' );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/wp_list_comments/\" rel=\"function\">wp_list_comments()</a>  : Displays all comments for a post or Page based on a variety of parameters including ones set in the administration area.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/comment_form/\" rel=\"function\">comment_form()</a>  : This tag outputs a complete commenting form for use within a template.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/comments_template/\" rel=\"function\">comments_template()</a>  : Load the comment template specified in first argument</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/paginate_comments_links/\" rel=\"function\">paginate_comments_links()</a>  : Create pagination links for the comments on the current post.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_comments/\" rel=\"function\">get_comments()</a>  : Retrieve the comments with possible use of arguments</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_approved_comments/\" rel=\"function\">get_approved_comments()</a>  : Retrieve the approved comments for post id provided.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Functions reference for retrieving comments meta</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_comment_link/\" rel=\"function\">get_comment_link()</a> </li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_comment_author/\" rel=\"function\">get_comment_author()</a> </li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_comment_date/\" rel=\"function\">get_comment_date()</a> </li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_comment_time/\" rel=\"function\">get_comment_time()</a> </li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_comment_text/\" rel=\"function\">get_comment_text()</a> </li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 17409,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11356",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11356",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 67,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11356/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143698,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11356/revisions/143698"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17409"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11356"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

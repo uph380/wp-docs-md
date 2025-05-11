@@ -1,0 +1,97 @@
+{
+    "id": 37629,
+    "date": "2018-05-17T16:29:55",
+    "date_gmt": "2018-05-17T16:29:55",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=37629"
+    },
+    "modified": "2024-09-16T07:20:41",
+    "modified_gmt": "2024-09-16T07:20:41",
+    "slug": "adding-the-personal-data-eraser-to-your-plugin",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/",
+    "title": {
+        "rendered": "Adding the Personal Data Eraser to Your Plugin"
+    },
+    "content": {
+        "rendered": "\n<p>In WordPress 4.9.6, new tools were added to make compliance easier with laws like the European Union&#8217;s General Data Protection Regulation, or GDPR for short. Among the tools added is a Personal Data Removal tool which supports erasing/anonymizing personal data for a given user. It does NOT delete registered user accounts &#8211; that is still a separate step the admin can choose whether or not to do.</p>\n\n\n\n<p>In addition to the personal data stored in things like WordPress comments, plugins can also hook into the eraser feature to erase the personal data they collect, whether it be in something like postmeta or even an entirely new Custom Post Type (CPT).</p>\n\n\n\n<p>Like the exporters, the &#8220;key&#8221; for all the erasers is the user&#8217;s email address &#8211; this was chosen because it supports erasing personal data for both full-fledged registered users and also unregistered users (e.g. like a logged out commenter).</p>\n\n\n\n<p>However, since performing a personal data erase is a destructive process, we don&#8217;t want to just do it without confirming the request, so the admin-facing user interface starts all requests by having the admin enter the username or email address making the request and then sends then a link to click to confirm their request. Once a request has been confirmed, the admin can kick off personal data erasure for the user, or force one if the need arises.</p>\n\n\n\n<p>The way the personal data export is erased is similar to how the personal data exporters &#8211; and relies on hooking &#8220;eraser&#8221; callbacks to do the dirty work of erasing the data. When the admin clicks on the remove personal data link, an AJAX loop begins that iterates over all the erasers registered in the system, one at a time. In addition to erasers built into core, plugins can register their own eraser callbacks.</p>\n\n\n\n<p>The eraser callback interface is designed to be as simple as possible. An eraser callback receives the email address we are working with, and a page parameter as well. The page parameter (which starts at 1) is used to avoid plugins potentially causing timeouts by attempting to erase all the personal data they&#8217;ve collected at once. A well behaved plugin will limit the amount of data it attempts to erase per page (e.g. 100 posts, 200 comments, etc.)</p>\n\n\n\n<p>The eraser callback replies whether items containing personal data were erased, whether any items containing personal data were retained, an array of messages to present to the admin (explaining why items that were retained were retained) and whether it is done or not. If an eraser callback reports that it is not done, it will be called again (in a separate request) with the page parameter incremented by 1.</p>\n\n\n\n<p>When all the exporters have been called to completion, the admin user interface is updated to show whether or not all personal data found was erased, and any messages explaining why personal data was retained.</p>\n\n\n\n<p>Let&#8217;s work on a hypothetical plugin which adds commenter location data to comments. Let&#8217;s assume the plugin has used <code>add_comment_meta</code> to add location data using <code>meta_ke</code>ys of <code>latitude</code> and <code>longitude</code></p>\n\n\n\n<p>The first thing the plugin needs to do is to create an eraser function that accepts an email address and a page, e.g.:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Removes any stored location data from a user's comment meta for the supplied email address.\n *\n * @param string $email_address   email address to manipulate\n * @param int    $page            pagination\n *\n * @return array\n */\nfunction wporg_remove_location_meta_from_comments_for_email( $email_address, $page = 1 ) {\n\t$number = 500; // Limit us to avoid timing out\n\t$page   = (int) $page;\n\n\t$comments = get_comments(\n\t\tarray(\n\t\t\t'author_email' =&gt; $email_address,\n\t\t\t'number'       =&gt; $number,\n\t\t\t'paged'        =&gt; $page,\n\t\t\t'order_by'     =&gt; 'comment_ID',\n\t\t\t'order'        =&gt; 'ASC',\n\t\t)\n\t);\n\n\t$items_removed = false;\n\n\tforeach ( (array) $comments as $comment ) {\n\t\t$latitude  = get_comment_meta( $comment-&gt;comment_ID, 'latitude', true );\n\t\t$longitude = get_comment_meta( $comment-&gt;comment_ID, 'longitude', true );\n\n\t\tif ( ! empty( $latitude ) ) {\n\t\t\tdelete_comment_meta( $comment-&gt;comment_ID, 'latitude' );\n\t\t\t$items_removed = true;\n\t\t}\n\n\t\tif ( ! empty( $longitude ) ) {\n\t\t\tdelete_comment_meta( $comment-&gt;comment_ID, 'longitude' );\n\t\t\t$items_removed = true;\n\t\t}\n\t}\n\n\t// Tell core if we have more comments to work on still\n\t$done = count( $comments ) &lt; $number;\n\treturn array(\n\t\t'items_removed'  =&gt; $items_removed,\n\t\t'items_retained' =&gt; false, // always false in this example\n\t\t'messages'       =&gt; array(), // no messages in this example\n\t\t'done'           =&gt; $done,\n\t);\n}</code></pre>\n\n\n\n<p>The next thing the plugin needs to do is to register the callback by filtering the eraser array using the `wp_privacy_personal_data_erasers`<br>filter.</p>\n\n\n\n<p>When registering you provide a friendly name for the eraser (to aid in debugging &#8211; this friendly name is not shown to anyone at this time) and the callback, e.g.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Registers all data erasers.\n *\n * @param array $exporters\n *\n * @return mixed\n */\nfunction wporg_register_privacy_erasers( $erasers ) {\n\t$erasers['my-plugin-slug'] = array(\n\t\t'eraser_friendly_name' =&gt; __( 'Comment Location Plugin', 'text-domain' ),\n\t\t'callback'             =&gt; 'wporg_remove_location_meta_from_comments_for_email',\n\t);\n\treturn $erasers;\n}\n\nadd_filter( 'wp_privacy_personal_data_erasers', 'wporg_register_privacy_erasers' );</code></pre>\n\n\n\n<p>And that&#8217;s all there is to it! Your plugin will now clean up its personal data!</p>\n",
+        "protected": false
+    },
+    "author": 11423746,
+    "featured_media": 0,
+    "parent": 37615,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-37629",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37629",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/11423746"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37629/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155223,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37629/revisions/155223"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/37615"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=37629"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

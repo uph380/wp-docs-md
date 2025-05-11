@@ -1,0 +1,91 @@
+{
+    "id": 134466,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/form-toggle/"
+    },
+    "modified": "2024-10-30T16:55:45",
+    "modified_gmt": "2024-10-30T16:55:45",
+    "slug": "form-toggle",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/form-toggle/",
+    "title": {
+        "rendered": "FormToggle"
+    },
+    "content": {
+        "rendered": "<p>FormToggle switches a single setting on or off.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/Toggle.jpg?ssl=1\" alt=\"On and off FormToggles. The top toggle is on, while the bottom toggle is off.\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use toggles</h4>\n<p>Use toggles when you want users to:</p>\n<ul>\n<li>Switch a single option on or off.</li>\n<li>Immediately activate or deactivate something.</li>\n</ul>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/Toggle-Do.jpg?ssl=1\" alt=\"FormToggle used for a \u201cfixed background\u201d setting\" /></p>\n<p><strong>Do</strong><br />\nUse toggles to switch an option on or off.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/Toggle-Dont.jpg?ssl=1\" alt=\"Radio used for a \u201cfixed background\u201d setting\" /></p>\n<p><strong>Don\u2019t</strong><br />\nDon\u2019t use radio buttons for settings that toggle on and off.</p>\n<p>Toggles are preferred when the user is not expecting to submit data, as is the case with checkboxes and radio buttons.</p>\n<h4>State</h4>\n<p>When the user slides a toggle thumb (1) to the other side of the track (2) and the state of the toggle changes, it\u2019s been successfully toggled.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/01/Toggle-Diagram.jpg?ssl=1\" alt=\"Diagram showing FormToggle states\" /></p>\n<h4>Text label</h4>\n<p>Toggles should have clear inline labels so users know exactly what option the toggle controls, and whether the option is enabled or disabled.</p>\n<p>Do not include any text (e.g. \u201con\u201d or \u201coff\u201d) within the toggle element itself. The toggle alone should be sufficient to communicate the state.</p>\n<h3>Behavior</h3>\n<p>When a user switches a toggle, its corresponding action takes effect immediately.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { FormToggle } from '@wordpress/components';\n\nconst MyFormToggle = () =&gt; {\n    const [ isChecked, setChecked ] = useState( true );\n\n    return (\n        &lt;FormToggle\n            checked={ isChecked }\n            onChange={ () =&gt; setChecked( ( state ) =&gt; ! state ) }\n        /&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<p>The component accepts the following props:</p>\n<h4><code>checked</code>: <code>boolean</code></h4>\n<p>If checked is true the toggle will be checked. If checked is false the toggle will be unchecked.<br />\nIf no value is passed the toggle will be unchecked.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>disabled</code>: <code>boolean</code></h4>\n<p>If disabled is true the toggle will be disabled and apply the appropriate styles.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>onChange</code>: <code>( event: ChangeEvent&lt;HTMLInputElement&gt; ) =&gt; void</code></h4>\n<p>A callback function invoked when the toggle is clicked.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To select one option from a set, and you want to show them all the available options at once, use the <code>Radio</code> component.</li>\n<li>To select one or more items from a set, use the <code>CheckboxControl</code> component.</li>\n<li>To display a toggle with label and help text, use the <code>ToggleControl</code> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 156,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134466",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134466",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134466/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151156,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134466/revisions/151156"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134466"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

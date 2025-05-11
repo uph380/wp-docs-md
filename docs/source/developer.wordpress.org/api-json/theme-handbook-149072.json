@@ -1,0 +1,97 @@
+{
+    "id": 149072,
+    "date": "2023-10-17T14:37:13",
+    "date_gmt": "2023-10-17T14:37:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149072"
+    },
+    "modified": "2023-10-17T14:37:13",
+    "modified_gmt": "2023-10-17T14:37:13",
+    "slug": "position",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/position/",
+    "title": {
+        "rendered": "Position"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.position</code> property in <code>theme.json</code> gives you control over the global positioning settings for blocks in WordPress. It\u2019s important to note that this lets you configure the available settings in the user interface, not the position styles.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Position settings</h2>\n\n\n\n<p><code>position</code> is an object that\u2019s nested directly within the top-level <code>settings</code> property in <code>theme.json</code>. Currently, it only lets you set a single property:\u00a0</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>sticky</code>:</strong> A boolean value for enabling block support for the <strong>Position: Sticky</strong> option.</li>\n</ul>\n\n\n\n<p>Take a look at the <code>position</code> property in the context of a <code>theme.json</code> file with its default values:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"position\": {\n\t\t\t\"sticky\": false\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Enabling sticky positioning</h3>\n\n\n\n<p>Sticky positioning can be particularly useful in theme designs that feature a header that sticks to the top of the screen as the user scrolls down the page. This is one of the primary use cases, but it can also be useful in other scenarios.</p>\n\n\n\n<p>Setting a block to the sticky position will stick the block to its most immediate parent when the user scrolls the page. Sticky positioning is only possible if enabled in <code>theme.json</code>.</p>\n\n\n\n<p>To enable sticky positioning for blocks that support it, set <code>settings.position.sticky</code> to <code>true</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"position\": {\n\t\t\t\"sticky\": true\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>This will enable a new <strong>Position</strong> tab in the block inspector controls (for blocks that support the position feature, such as Group). The control will show a dropdown select with the available position options: <strong>Default</strong> and <strong>Sticky</strong>:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress site editor with the Header template part selected. In the right sidebar, the Sticky option is selected for the Position setting.\" class=\"wp-image-149073\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/position-sticky-header.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>If you want to create a sticky header, note that you cannot use positioning on the Header template part. You must wrap it with a containing Group block and apply the sticky positioning to the Group.</p></div></div>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149072",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149072",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149072/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149074,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149072/revisions/149074"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149072"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

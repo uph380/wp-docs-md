@@ -1,0 +1,91 @@
+{
+    "id": 10896,
+    "date": "2014-09-16T16:42:07",
+    "date_gmt": "2014-09-16T16:42:07",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=10896"
+    },
+    "modified": "2024-07-19T19:56:23",
+    "modified_gmt": "2024-07-19T19:56:23",
+    "slug": "credits",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/credits/",
+    "title": {
+        "rendered": "Credits"
+    },
+    "content": {
+        "rendered": "\n<p>List of credits brought over manually.</p>\n\n\n\n<ul class=\"wp-block-list\"><li>@2Neil</li><li>@aternus</li><li>@awoods</li><li>@blobaugh</li><li>@code_poet</li><li>@cyrijones</li><li>@danielbachhuber</li><li>@dawnmschaffer</li><li>@drewapicture</li><li>@endeavorm</li><li>@grapplerulrich</li><li>@hanni</li><li>@hlashbrooke</li><li>@iandunn</li><li>@jasonm4563</li><li>@jazzs3quence</li><li>@joedolson</li><li>@johnregan3</li><li>@kimparsell</li><li>@krogsgard</li><li>@Marella</li><li>@metripaldi9</li><li>@mordauk</li><li>@NemesisVex</li><li>@netweb</li><li>@NikV</li><li>@nlarnold1</li><li>@Otto42</li><li>@pjackson1972</li><li>@pollyplumber</li><li>@ramiy</li><li>@roccotripaldi</li><li>@sewmyheadon</li><li>@skippywp</li><li>@theMikeD</li><li>@tmoorewp</li><li>@topher1kenobe</li></ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-10896",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10896",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 31,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10896/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 129818,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/10896/revisions/129818"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=10896"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 156814,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/oembed/oembed-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:53",
+    "modified_gmt": "2025-02-21T04:17:53",
+    "slug": "oembed-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/oembed/oembed-tutorial/",
+    "title": {
+        "rendered": "Using the oEmbed Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add an oEmbed field</li>\n<li>Configure options:\n<ul>\n<li>Set width/height</li>\n<li>Configure preview</li>\n<li>Set display options</li>\n<li>Choose providers</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Media Integration\n<ul>\n<li>Video embeds</li>\n<li>Social media posts</li>\n<li>Audio content</li>\n</ul>\n</li>\n<li>External Content\n<ul>\n<li>YouTube videos</li>\n<li>Twitter posts</li>\n<li>Spotify tracks</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Check provider compatibility</li>\n<li>Consider responsive sizing</li>\n<li>Test embed previews</li>\n<li>Validate URLs properly</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156813,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156814",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156814",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156814/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156905,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156814/revisions/156905"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156813"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156814"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

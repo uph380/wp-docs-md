@@ -1,0 +1,97 @@
+{
+    "id": 149064,
+    "date": "2023-10-17T14:36:16",
+    "date_gmt": "2023-10-17T14:36:16",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149064"
+    },
+    "modified": "2023-10-17T14:36:16",
+    "modified_gmt": "2023-10-17T14:36:16",
+    "slug": "layout",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/layout/",
+    "title": {
+        "rendered": "Layout"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.layout</code> property in <code>theme.json</code> is an object that stores layout-related settings that you can configure. At the moment, it is used for setting \u201ccontent\u201d and \u201cwide\u201d widths, but it could also be used for other settings in the future.</p>\n\n\n\n<p>In this document, you will learn what the <code>layout</code> property is used for and how you can use it in your theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Layout settings</h2>\n\n\n\n<p><code>layout</code> is an object that\u2019s nested directly within the top-level <code>settings</code> property in <code>theme.json</code>. Within that object, you can define two settings:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code><strong>contentSize</strong></code>: A valid CSS length value for defining the default width for content. It is typically used for controlling the width of the post content and related areas on the page.</li>\n\n\n\n<li><strong><code>wideSize</code>:</strong> A valid CSS length value for defining the default wide alignment width, which is generally between the content size and full viewport width.</li>\n</ul>\n\n\n\n<p>Take a look at the <code>layout</code> property in the context of a <code>theme.json</code> file with its default values:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"layout\": {\n\t\t\t\"contentSize\": \"\",\n\t\t\t\"wideSize\": \"\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Content size</h3>\n\n\n\n<p>The <code>settings.layout.contentSize</code> property is primarily useful for defining the width of a site\u2019s content area. Think of this as the default width of your site. You can break outside of this by applying the \u201cwide\u201d (below) or \u201cfull\u201d width to a block. The content width is merely the foundation.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>In almost any design, you will want to limit this width to something that is comfortable to read, especially if the content is going to include text. This is a value that you will need to determine for yourself, but a good rule of thumb is that you should have 45-75 characters of text per line (though some guidelines differ slightly on the number range). Of course, your default font-family and font-size are crucial pieces to figuring this out.</p></div></div>\n\n\n\n<p>Try configuring a content size in your <code>theme.json</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"layout\": {\n\t\t\t\"contentSize\": \"40rem\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>If you open a template in the <strong>Site Editor</strong>, you can use it to define the layout for various blocks. In the screenshot below, you can see that the Post Content block has the <strong>Inner blocks use content width</strong> option selected under the <strong>Layout</strong> tab:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress post editor with a Post Content block selected, showing its inner content limited to the content width.\" class=\"wp-image-149065\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/content-size.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>What this setting does is tell WordPress that any nested blocks within the Post Content block should be set to the <code>40rem</code> value defined for <code>settings.layout.contentSize</code> in <code>theme.json</code>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Wide Size</h3>\n\n\n\n<p>The <code>settings.layout.wideSize</code> property defines a width for \u201cwide\u201d blocks. To be useful, wide blocks must be nested within a block that is telling WordPress that its inner blocks should be limited to the \u201ccontent\u201d size. Wide-aligned blocks are meant to \u201cbreak outside\u201d of their parent block.</p>\n\n\n\n<p>Not every theme will benefit by having a wide size. Depending on the design, a theme\u2019s layout may simply not have additional room for blocks to break out of their container. In those cases, you do not need to set this value.</p>\n\n\n\n<p>For theme designs that can accommodate wide blocks (typical of sidebar-less designs), you will want to set this to a value that is greater than <code>settings.layout.contentWidth</code>. But it shouldn\u2019t stretch to the width of the full screen (e.g., <code>100vw</code>). WordPress has a separate full-width setting that you can use for that.</p>\n\n\n\n<p>Try adding a custom <code>settings.layout.wideSize</code> to your <code>theme.json</code> file (remember, you need a set content size for this to be useful):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"layout\": {\n\t\t\t\"contentSize\": \"40rem\",\n\t\t\t\"wideSize\": \"64rem\"\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>Now open your <strong>Site Editor</strong> in the WordPress admin and edit a template. First, add a <strong>Group</strong> block with the <strong>Inner blocks use content width</strong> option enabled. Then, stick another block within it and select the <strong>Wide width</strong> option.</p>\n\n\n\n<p>In the screenshot below, you can see the Post Featured Image block nested within a Group block. It breaks out of its parent container but the other post-related blocks are limited to the content width:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress site editor with the Post Featured Image block selected and set to &quot;wide width&quot;.\" class=\"wp-image-149066\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/wide-size.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149064",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149064",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149064/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149067,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149064/revisions/149067"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149064"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

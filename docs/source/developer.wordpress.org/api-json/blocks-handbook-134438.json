@@ -1,0 +1,91 @@
+{
+    "id": 134438,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/animate/"
+    },
+    "modified": "2024-10-30T16:55:51",
+    "modified_gmt": "2024-10-30T16:55:51",
+    "slug": "animate",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/animate/",
+    "title": {
+        "rendered": "Animate"
+    },
+    "content": {
+        "rendered": "<p>Simple interface to introduce animations to components.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Animate, Notice } from '@wordpress/components';\n\nconst MyAnimatedNotice = () =&gt; (\n    &lt;Animate type=\"slide-in\" options={ { origin: 'top' } }&gt;\n        { ( { className } ) =&gt; (\n            &lt;Notice className={ className } status=\"success\"&gt;\n                &lt;p&gt;Animation finished.&lt;/p&gt;\n            &lt;/Notice&gt;\n        ) }\n    &lt;/Animate&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>type</code></td>\n<td><code>string</code></td>\n<td><code>undefined</code></td>\n<td>Type of the animation to use.</td>\n</tr>\n<tr>\n<td><code>options</code></td>\n<td><code>object</code></td>\n<td><code>{}</code></td>\n<td>Options of the chosen animation.</td>\n</tr>\n<tr>\n<td><code>children</code></td>\n<td><code>function</code></td>\n<td><code>undefined</code></td>\n<td>A callback receiving a list of props ( <code>className</code> ) to apply to the DOM element to animate.</td>\n</tr>\n</tbody>\n</table>\n<h2>Available Animation Types</h2>\n<h3>appear</h3>\n<p>This animation is meant for popover/modal content, such as menus appearing. It shows the height and width of the animated element scaling from 0 to full size, from its point of origin.</p>\n<h4>Options</h4>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>origin</code></td>\n<td><code>string</code></td>\n<td><code>top center</code></td>\n<td>Point of origin (<code>top</code>, <code>bottom</code>,<code>middle right</code>, <code>left</code>, <code>center</code>).</td>\n</tr>\n</tbody>\n</table>\n<h3>loading</h3>\n<p>This animation is meant to be used to indicate that activity is happening in the background. It is an infinitely-looping fade from 50% to full opacity. This animation has no options, and should be removed as soon as its relevant operation is completed.</p>\n<h3>slide-in</h3>\n<p>This animation is meant for sidebars and sliding menus. It shows the height and width of the animated element moving from a hidden position to its normal one.</p>\n<h4>Options</h4>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>origin</code></td>\n<td><code>string</code></td>\n<td><code>left</code></td>\n<td>Point of origin (<code>left</code>).</td>\n</tr>\n</tbody>\n</table>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 113,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134438",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134438",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134438/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151884,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134438/revisions/151884"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134438"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

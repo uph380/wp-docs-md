@@ -1,0 +1,91 @@
+{
+    "id": 134441,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/box-control/"
+    },
+    "modified": "2024-12-26T16:49:14",
+    "modified_gmt": "2024-12-26T16:49:14",
+    "slug": "box-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/box-control/",
+    "title": {
+        "rendered": "BoxControl"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-boxcontrol--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p>A control that lets users set values for top, right, bottom, and left. Can be<br />\nused as an input control for values like <code>padding</code> or <code>margin</code>.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { BoxControl } from '@wordpress/components';\n\nfunction Example() {\n  const [ values, setValues ] = useState( {\n    top: '50px',\n    left: '10%',\n    right: '10%',\n    bottom: '50px',\n  } );\n\n  return (\n    &lt;BoxControl\n      __next40pxDefaultSize\n      values={ values }\n      onChange={ setValues }\n    /&gt;\n  );\n};\n</code></pre>\n<h2>Props</h2>\n<h3><code>__next40pxDefaultSize</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<h3><code>allowReset</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<p>If this property is true, a button to reset the box control is rendered.</p>\n<h3><code>id</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The id to use as a base for the unique HTML id attribute of the control.</p>\n<h3><code>inputProps</code></h3>\n<ul>\n<li>Type: <code>UnitControlPassthroughProps</code></li>\n<li>Required: No</li>\n<li>Default: <code>{<br />\n    min: 0,<br />\n}</code></li>\n</ul>\n<p>Props for the internal <code>UnitControl</code> components.</p>\n<h3><code>label</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>__( 'Box Control' )</code></li>\n</ul>\n<p>Heading label for the control.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>(next: BoxControlValue) =&gt; void</code></li>\n<li>Required: No</li>\n<li>Default: <code>() =&gt; {}</code></li>\n</ul>\n<p>A callback function when an input value changes.</p>\n<h3><code>presets</code></h3>\n<ul>\n<li>Type: <code>Preset[]</code></li>\n<li>Required: No</li>\n</ul>\n<p>Available presets to pick from.</p>\n<h3><code>presetKey</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The key of the preset to apply.<br />\nIf you provide a list of presets, you must provide a preset key to use.<br />\nThe format of preset selected values is going to be <code>var:preset|${ presetKey }|${ presetSlug }</code></p>\n<h3><code>resetValues</code></h3>\n<ul>\n<li>Type: <code>BoxControlValue</code></li>\n<li>Required: No</li>\n<li>Default: <code>{<br />\n    top: undefined,<br />\n    right: undefined,<br />\n    bottom: undefined,<br />\n    left: undefined,<br />\n}</code></li>\n</ul>\n<p>The <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> box dimension values to use when the control is reset.</p>\n<h3><code>sides</code></h3>\n<ul>\n<li>Type: <code>readonly (keyof BoxControlValue | \"horizontal\" | \"vertical\")[]</code></li>\n<li>Required: No</li>\n</ul>\n<p>Collection of sides to allow control of. If omitted or empty, all sides will be available.</p>\n<p>Allowed values are &#8220;top&#8221;, &#8220;right&#8221;, &#8220;bottom&#8221;, &#8220;left&#8221;, &#8220;vertical&#8221;, and &#8220;horizontal&#8221;.</p>\n<h3><code>splitOnAxis</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>If this property is true, when the box control is unlinked, vertical and horizontal controls<br />\ncan be used instead of updating individual sides.</p>\n<h3><code>units</code></h3>\n<ul>\n<li>Type: <code>WPUnitControlUnit[]</code></li>\n<li>Required: No</li>\n<li>Default: <code>CSS_UNITS</code></li>\n</ul>\n<p>Available units to select from.</p>\n<h3><code>values</code></h3>\n<ul>\n<li>Type: <code>BoxControlValue</code></li>\n<li>Required: No</li>\n</ul>\n<p>The current values of the control, expressed as an object of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> values.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 118,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134441",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134441",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 18,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134441/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156149,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134441/revisions/156149"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134441"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

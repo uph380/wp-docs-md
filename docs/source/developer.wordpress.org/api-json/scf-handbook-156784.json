@@ -1,0 +1,91 @@
+{
+    "id": 156784,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/clone/clone-tutorial/"
+    },
+    "modified": "2025-02-21T04:18:00",
+    "modified_gmt": "2025-02-21T04:18:00",
+    "slug": "clone-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/clone/clone-tutorial/",
+    "title": {
+        "rendered": "Using the Clone Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Clone field</li>\n<li>Configure clone settings:\n<ul>\n<li>Select fields/groups to clone</li>\n<li>Choose display format</li>\n<li>Set prefix options</li>\n<li>Configure labels</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Reusable Field Sets\n<ul>\n<li>Contact information</li>\n<li>Social media links</li>\n<li>Common metadata</li>\n</ul>\n</li>\n<li>Template Components\n<ul>\n<li>Shared content blocks</li>\n<li>Repeated field patterns</li>\n<li>Standard form elements</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Use meaningful prefixes</li>\n<li>Consider data structure</li>\n<li>Keep cloned groups focused</li>\n<li>Document clone relationships</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156783,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156784",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156784",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156784/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156935,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156784/revisions/156935"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156783"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156784"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

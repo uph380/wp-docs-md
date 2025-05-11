@@ -1,0 +1,109 @@
+{
+    "id": 10851232,
+    "date": "2018-11-06T02:46:03",
+    "date_gmt": "2018-11-06T02:46:03",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10851232"
+    },
+    "modified": "2024-06-08T18:43:43",
+    "modified_gmt": "2024-06-08T18:43:43",
+    "slug": "settings-discussion-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/settings-discussion-screen/",
+    "title": {
+        "rendered": "Settings Discussion screen"
+    },
+    "content": {
+        "rendered": "\n<p>The <strong>Settings Discussion Screen</strong> allows you to set the options concerning comments (also called discussion). It is here the administrator decides if <a href=\"/support/article/glossary/#comments\">comments</a> are allowed, if <a href=\"/support/article/glossary/#pingback\">pingbacks</a> and <a href=\"/support/article/glossary/#trackback\">trackbacks</a> are acceptable, and what constitutes <a href=\"https://codex.wordpress.org/Combating_Comment_Spam\">Comment Spam</a>. On this Screen you also control the circumstances under which your blog sends you e-mail notification of certain events at your site.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" decoding=\"async\" width=\"320\" height=\"547\" src=\"https://wordpress.org/documentation/files/2018/11/320px-options-discussion1.png\" alt=\"\" class=\"wp-image-10851287\" srcset=\"https://wordpress.org/documentation/files/2018/11/320px-options-discussion1.png 320w, https://wordpress.org/documentation/files/2018/11/320px-options-discussion1-176x300.png 176w\" sizes=\"auto, (max-width: 320px) 100vw, 320px\" /></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Discussion Settings</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Default article Setting</h3>\n\n\n\n<p>These settings may be overridden for individual articles.<br /></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Attempt to notify any blogs linked to from the article</strong> &#8211; If you check this box, WordPress will send out a ping to a site or article you have linked to in your post. Your mention of their site or article will show up in the comment section of their site, if that site allows <a href=\"/support/article/glossary/#pingback\">pingbacks</a>. The notification occurs during the process of publishing your article to the internet. An article with many hyperlinks will slow the posting process as WordPress contacts all of the sites before the post is published.<br /></li><li><strong>Allow link notifications from other blogs (pingbacks and trackbacks)</strong> &#8211; Check this box so WordPress to accepts or declines the pings from other sites which may reference your site or an article on your site. If this box is checked, <a href=\"/support/article/glossary/#pingback\">pingbacks</a> and <a href=\"/support/article/glossary/#trackback\">trackbacks</a> will appear in the comments section of your posts.<br /></li><li><strong>Allow people to post comments on new articles</strong> &#8211; Check this box if you wish to allow comments to your posts. Remember that this can be overridden for individual articles. Comments can also be controlled by making an article PRIVATE, which requires the appropriate password before a comment is allowed. If you don&#8217;t wish to allow comments uncheck this setting.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Other comment settings</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Comment author must fill out name and e-mail</strong>&nbsp;&#8211; Check this box as a way to force spammers to do a bit of extra work. In reality, the name and e-mail address are not verified in any way prior to the comment being submitted. Most legitimate commenters are more than willing to fill out a name and e-mail address.</li><li><strong>Users must be registered and logged in to comment</strong>&nbsp;&#8211; If this checkbox is checked, only logged in&nbsp;<em>registered users</em>&nbsp;will be able to write comments on your site.</li><li><strong>Automatically close comments on articles older than [X] days</strong>&nbsp;&#8211; Check the box and enter the number of days (e.g. 14 days) after which WordPress will automatically flag eligible posts so that no more comments are accepted.<br /></li><li><strong>Enable threaded (nested) comments [X] levels deep</strong>&nbsp;&#8211; Check this box to enable threaded comments, then from the drop-down box, select the number of levels deep (maximum of 10 levels) you will allow for nested comments. Note that themes need to be specially coded to properly display threaded comments.<br /></li><li><strong>Break comments into pages with [X] top level comments per page and the [last/first] page displayed by default. Comments should be displayed with the [older/newer] comments at the top of each page</strong> &#8211;&nbsp;Check this box to cause comments to display in a paginated format with the specified number of comments per page. In addition, specify if the pages should be ordered &#8220;first to last&#8221; or &#8220;last to first&#8221;, and within each page, whether the oldest, or newest, comment is to be displayed first.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Email me whenever</h3>\n\n\n\n<p>These two settings give you control of when authors and administrators receive notification that comments have been made, or that comments are held for moderation. Please note that the use of &#8220;me&#8221; refers to either a post author or the administrator (person whose email address is used for admin purposes).</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Anyone posts a comment</strong>&nbsp;&#8211; Check this box so that every single comment posted will generate an email to the author of that post. Be warned that if your posts receive a large number of comments, post authors may find a very full email Inbox. If you wish to micromanage comments, then by all means, activate this setting by checking the box.</li><li><strong>A comment is held for moderation</strong>&nbsp;&#8211; Check this box if you want WordPress to send notification that a comment is being held for moderation. The email notification is sent to the E-mail address listed in the&nbsp;<a href=\"/support/article/administration-screens/\">Administration</a>&nbsp;&gt;&nbsp;<a href=\"/support/article/administration-screens/#general\">Settings</a>&nbsp;&gt;&nbsp;<a href=\"/support/article/settings-general-screen/\">General</a>&nbsp;Screen. This is useful if your blog has multiple authors and each author is authorized to allow or decline comments. That way, you, the owner of the site, can review what comments are being allowed or denied.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Before a comment appears</h3>\n\n\n\n<p>These settings provide you even more control over the instances of when and how comments are posted.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>An administrator must always approve the comment</strong>&nbsp;&#8211; Select this option to force comments to be approved by a blog user or owner having the proper&nbsp;<a href=\"/support/article/roles-and-capabilities/\">Role</a>&nbsp;to approve comments, even if the comments appear to be spam . See the Comment Moderation options below regarding spam.</li><li><strong>Comment author must have a previously approved comment</strong>&nbsp;&#8211; Check the box to insure comments are only posted if the comment author&#8217;s email address matches the address of a previously approved comment, otherwise, the comment is held for moderation. Comments from blocked email addresses (those listed in the Local Spam Words Text Box) are held for moderation regardless of whitelist status.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Comment Moderation</h3>\n\n\n\n<p>In the&nbsp;<a href=\"https://codex.wordpress.org/Comment_Moderation\">Comment Moderation</a>&nbsp;section you specify these options to help you deal with&nbsp;<a href=\"https://codex.wordpress.org/Comment_Spam\">Comment Spam</a>.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Hold a comment in the queue if it contains [X] or more links (A common characteristic of comment spam is a large number of hyperlinks.)</strong>&nbsp;&#8211; Not too long ago, comment spammers would have five, ten, or more hyperlinks in their comment spam. This made it very easy for bloggers to quickly screen comments but spammers recognized that and commonly use only one or two hyperlinks. You can enter a number in this box to tell WordPress how many links you allow in a comment before holding it for moderation.</li><li><strong>When a comment contains any of these words in its content, name, URL, e-mail, IP or browser&#8217;s user-agent string it will be held in the moderation queue. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;&nbsp;</strong>&#8211; In this text box you can add your own spam words which will filter the comments when posted.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Comment Blocklist</h3>\n\n\n\n<p>Previous to WordPress version 5.4, this was named &#8220;Comment Blacklist&#8221;.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>When a comment contains any of these words in its content, author name, URL, e-mail, IP address or browser&#8217;s user-agent string, it will be marked as spam. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;</strong>. This text box acts the same as &#8220;When a comment conatins any of these words&#8230;&#8221; except comments which match these words will be&nbsp;<strong>deleted without warning</strong>. You may want to use this as a last resort, as genuine comments can end up deleted</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Avatars</h3>\n\n\n\n<p>An avatar is an image that follows you from weblog to weblog appearing beside your name when you comment on avatar enabled sites. Here you can enable the display of avatars for people who comment on your blog. By default WordPress uses Gravatars \u2014 short for Globally Recognized Avatars \u2014 for the pictures that show up next to comments. Plugins may override this.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Avatar display</h4>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Don\u2019t show Avatars</strong>&nbsp;&#8211; Check this radio button to suppress avatar display in comments.</li><li><strong>Show Avatars</strong>&nbsp;&#8211; Check this so comment author avatars are displayed along with the comments.</li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Maximum Rating</h4>\n\n\n\n<p>This setting controls (or limits) the &#8216;highest&#8217; level or rating of gravatar you allow to be displayed.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>G \u2014 Suitable for all audiences</strong></li><li><strong>PG \u2014 Possibly offensive, usually for audiences 13 and above</strong></li><li><strong>R \u2014 Intended for adult audiences above 17</strong></li><li><strong>\ufeffX \u2014 Even more mature than above</strong></li></ul>\n\n\n\n<h4 class=\"wp-block-heading\">Default Avatar</h4>\n\n\n\n<p>For users without a custom avatar of their own, you can either display a generic logo or a generated one based on their e-mail address.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Mystery Man</strong></li><li><strong>Blank</strong></li><li><strong>Gravatar Logo</strong></li><li><strong>Identicon (Generated)</strong></li><li><strong>Wavatar (Generated)</strong></li><li><strong>MonsterID (Generated)</strong></li><li><strong>\ufeffRetro (Generated)</strong></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Save Changes</h3>\n\n\n\n<p>Click the&nbsp;<strong>Save Changes</strong>&nbsp;button to ensure any changes you have made to your Settings are saved to your database. Once you click the button, a confirmation text box will appear at the top of the page telling you your settings have been saved.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Settings Discussion Screen allows you to set the options concerning comments (also called discussion). It is here the administrator decides if comments are allowed, if pingbacks and trackbacks are acceptable, and what constitutes Comment Spam. On this Screen you also control the circumstances under which your blog sends you e-mail notification of certain events [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10851232",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851232",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10851232"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851232/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360393,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10851232/revisions/16360393"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10851232"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10851232"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

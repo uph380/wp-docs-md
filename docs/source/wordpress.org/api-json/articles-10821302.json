@@ -1,0 +1,109 @@
+{
+    "id": 10821302,
+    "date": "2018-10-27T09:57:36",
+    "date_gmt": "2018-10-27T09:57:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10821302"
+    },
+    "modified": "2023-05-23T14:25:30",
+    "modified_gmt": "2023-05-23T14:25:30",
+    "slug": "password-best-practices",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/password-best-practices/",
+    "title": {
+        "rendered": "Password Best Practices"
+    },
+    "content": {
+        "rendered": "\n<p>Securing your WordPress starts with a strong password. A strong password is complex and elaborate. It isn\u2019t easy to guess since it doesn\u2019t contain recognizable words, names, dates or numbers. You shouldn&#8217;t pick a password containing less than 20 characters. It can be hard though to remember a random string of letters, numbers and special characters. But in general, the more characters and complexity, the better.</p>\n\n\n\n<p>Here are some suggested guidelines when creating a strong password:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>At least 20 characters (preferably more)</li>\n\n\n\n<li>Use lowercase and uppercase</li>\n\n\n\n<li>Containing numbers</li>\n\n\n\n<li>Containing special characters such as <code>`!\"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_{}|~``</code></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">More about special characters</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>a backslash&nbsp;<code>\\</code>&nbsp;is not allowed</li>\n\n\n\n<li>many typographical characters like elegant quotes, ligatures, letters with accents and mathematical symbols are allowed (by WordPress) in passwords, but not recommended. Some characters are hard to recognize. Many characters are harder or sometimes impossible to type on a device. The characters can not be substituted by simpler version, it has to be exactly that character</li>\n\n\n\n<li>a space is allowed, but not recommended at the start of a password</li>\n</ul>\n\n\n\n<p><strong>Example</strong></p>\n\n\n\n<p>A good password that upholds all of the guidelines above could be:</p>\n\n\n\n<p><code>As32!KoP43??@ZkI??L0d</code></p>\n\n\n\n<h2 class=\"wp-block-heading\">Things you should absolutely avoid</h2>\n\n\n\n<p>Names or words that can be easily linked to you:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>The name of your partner or kids</li>\n\n\n\n<li>The name of your pet</li>\n\n\n\n<li>The name of your company</li>\n\n\n\n<li>The name of your favorite sports team or car brand</li>\n\n\n\n<li>The year in which you were born</li>\n\n\n\n<li>Your birthday</li>\n</ul>\n\n\n\n<p>All these items are personal (mostly public) information and thus possible risks for social engineering. So avoid these at all costs!</p>\n\n\n\n<p><strong>Example</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>If your name is John Rogers and you were born in 1976,&nbsp;<code>JohnRogers1976</code>&nbsp;would be a really bad idea for a password.</li>\n</ul>\n\n\n\n<p>Generic password elements:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Number sequences like \u201c123\u201d or \u201c54321\u201d</li>\n\n\n\n<li>Using generic words like \u201cadmin\u201d, \u201cadministrator\u201d, \u201cpass\u201d, \u201cpassword\u201d, \u201cblue\u201d, \u201chouse\u201d\u2026</li>\n</ul>\n\n\n\n<p>These elements are often the first terms that are used by malicious people or software when attempting to brute force your password, so should be avoided!</p>\n\n\n\n<p><strong>Example</strong></p>\n\n\n\n<p>Obviously, the password examples below are horrible passwords and NOT SECURE:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>MattMullenweg2018</li>\n\n\n\n<li>admin123</li>\n\n\n\n<li>Password1!</li>\n</ul>\n\n\n\n<p>You should also avoid using the same password on multiple sites or accounts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Automatically generated passwords in WordPress</h2>\n\n\n\n<p>When you make a new account for your site or reset your password, a password will be suggested for you (or you can use the button &#8220;Generate password&#8221;). These strong passwords contain 24 characters, numbers, letters, capitals, and special characters.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Keeping track of your passwords</h2>\n\n\n\n<p>Since complex passwords are a real necessity these days, it can be a real burden to remember every single password. Fortunately, password managers can help users keep track of their different passwords without resorting to using the same password on multiple sites. Password managers act as a vault for your passwords, secured by one (complex) master password. Many also have functionality to automatically (or on your command) enter your stored password for you, via browser extensions or desktop applications. Using a password manager means you only need to remember your one master password to access all of your other passwords.</p>\n\n\n\n<p>A list of password managers and their features is available on&nbsp;<a href=\"https://en.wikipedia.org/wiki/List_of_password_managers\">https://en.wikipedia.org/wiki/List_of_password_managers</a>. Most browsers can store and synchronize your accounts and passwords.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Other security recommendations</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Two factor authentication</h3>\n\n\n\n<p>Another great way to keep your WordPress acess more secure is to set up two factor authentication (2FA). Currently, this requires installation of a third-party plugin. To set up 2FA look for plugins in the plugins directory with tags like &#8220;2FA&#8221;, &#8220;two factor authentication&#8221;, or &#8220;two step&#8221;.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Usernames</h3>\n\n\n\n<p>A common method of brute force hacking is to use a \u201cdictionary\u201d of common username and password combinations. For this reason, it is often recommended to avoid common usernames such as \u201cadmin\u201d.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2018-10-27</li>\n\n\n\n<li>Updated 2023-05-23 with additional recommendations on automatically generated passwords, 2FA and Usernames, and minor grammatical/clarity modifications.</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Securing your WordPress starts with a strong password. Read on for some actionable tips on how to keep your WordPress site secure.</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        34,
+        73
+    ],
+    "class_list": [
+        "post-10821302",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-security",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821302",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10821302"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821302/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357064,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821302/revisions/16357064"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10821302"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10821302"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

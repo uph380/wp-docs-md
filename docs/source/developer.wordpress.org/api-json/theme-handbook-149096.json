@@ -1,0 +1,97 @@
+{
+    "id": 149096,
+    "date": "2023-10-17T14:39:46",
+    "date_gmt": "2023-10-17T14:39:46",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149096"
+    },
+    "modified": "2024-02-01T19:49:39",
+    "modified_gmt": "2024-02-01T19:49:39",
+    "slug": "blocks",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/blocks/",
+    "title": {
+        "rendered": "Blocks"
+    },
+    "content": {
+        "rendered": "\n<p>Most settings in <code>theme.json</code> let you configure properties at the global level. This means that they apply to all blocks that support them. But WordPress also lets you control this at the block level.</p>\n\n\n\n<p>That\u2019s what the <code>settings.block</code> property is for\u2014you can configure everything from typography, to colors, to spacing, and more for individual blocks.</p>\n\n\n\n<p>Before moving forward with this page of the handbook, it is important to familiarize yourself with at least some of the existing <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/\"><code>theme.json</code> settings</a>. This way, you can apply them on a per-block basis.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How block settings work</h2>\n\n\n\n<p>In the previous pages of the <code>theme.json</code> settings documentation, you learned how to configure specific properties at the global level. Essentially, this means that they are applied to all blocks that support the specific property/feature.</p>\n\n\n\n<p>You would have configured many of these properties in your <code>theme.json</code> (shortened for example\u2014you can review all available properties via the main <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/\">settings documentation</a>):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"border\": {},\n\t\t\"color\": {},\n\t\t\"custom\": {},\n\t\t\"spacing\": {},\n\t\t\"typography\": {}\n\t}\n}</code></pre>\n\n\n\n<p>But there are times when you need to add settings at the individual block level, and anything set for the block will overrule its global setting. So let\u2019s explore an example that shows block-specific settings overwriting the global settings.</p>\n\n\n\n<p>For this example, you will create a custom color palette, which you can learn about in the <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/settings/color\">color settings documentation</a>. This will be applied globally and used for every block\u2019s color picker. Then, you will create a custom color palette for the Cover block that\u2019s only shown for the Cover block.</p>\n\n\n\n<p>First, add your global color palette in <code>theme.json</code> with two colors named <code>base</code> and <code>contrast</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"color\": {\n\t\t\t\"palette\": [\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#0284c7\",\n\t\t\t\t\t\"name\": \"Base\",\n\t\t\t\t\t\"slug\": \"base\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#ffffff\",\n\t\t\t\t\t\"name\": \"Contrast\",\n\t\t\t\t\t\"slug\": \"contrast\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>Now add a Cover block and some nested text in the WordPress editor, saving the <strong>Text</strong> and <strong>Overlay</strong> colors for the block to your two custom colors:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1071\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?resize=2048%2C1071&#038;ssl=1\" alt=\"WordPress post editor showing a Cover block with a blue background and white text.\" class=\"wp-image-149097\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-global-colors.jpg?resize=1536%2C803&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>As you can see, the Cover block currently uses the global color palette that you configured in your <code>theme.json</code> file.</p>\n\n\n\n<p>Suppose that you wanted the Cover block to use an orange color palette. You can configure that by targeting <code>settings.blocks[core/cover].color.palette</code> in your <code>theme.json</code> file and passing an array of custom colors.</p>\n\n\n\n<p>Add this new section to your existing <code>theme.json</code> so that it looks like this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"color\": {\n\t\t\t\"palette\": [\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#0284c7\",\n\t\t\t\t\t\"name\": \"Base\",\n\t\t\t\t\t\"slug\": \"base\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"color\": \"#ffffff\",\n\t\t\t\t\t\"name\": \"Contrast\",\n\t\t\t\t\t\"slug\": \"contrast\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t\t\"blocks\": {\n\t\t\t\"core/cover\": {\n\t\t\t\t\"color\": {\n\t\t\t\t\t\"palette\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"color\": \"#ea580c\",\n\t\t\t\t\t\t\t\"name\": \"Base\",\n\t\t\t\t\t\t\t\"slug\": \"base\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"color\": \"#fff7ed\",\n\t\t\t\t\t\t\t\"name\": \"Contrast\",\n\t\t\t\t\t\t\t\"slug\": \"contrast\"\n\t\t\t\t\t\t}\n\t\t\t\t\t]\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>As shown in the <code>theme.json</code> example, you use the same organizational structure for block settings as you do for global settings (i.e., <code>settings.color</code> at the global level but <code>settings.blocks[core/cover].color</code> at the block level).</p>\n\n\n\n<p>If you refresh your browser window, your Cover block should now show the new colors:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1071\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?resize=2048%2C1071&#038;ssl=1\" alt=\"WordPress post editor showing a Cover block with an orange background and white text.\" class=\"wp-image-149098\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/cover-block-colors.jpg?resize=1536%2C803&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>If you check other blocks, they will still use the global color palette. Only the Cover block will use this custom orange palette.</p>\n\n\n\n<p>Per-block color palettes are just the tip of the iceberg. You can configure any <code>theme.json</code> for any block (assuming the block supports it). This gives you an incredible amount of control over how your theme works.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>When targeting a block\u2019s settings, you must know both its namespace and slug. Above, you learned that the Cover block has the namespace (<code>core</code>) and slug (<code>cover</code>), creating the namespace/slug combination of <code>core/cover</code>. All core WordPress blocks have the <code>core</code> namespace, and you can find this information for any block (including from third-party plugins) in its <code>block.json</code> file.</p></div></div>\n\n\n\n<h2 class=\"wp-block-heading\">Default block settings</h2>\n\n\n\n<p>Believe it or not, WordPress actually configures a couple of default block settings in <code>theme.json</code>. Generally, this would be left to themes, but these settings are primarily enabled for backward compatibility with features from older versions of WordPress.</p>\n\n\n\n<p>WordPress enables a few settings for the Button and Pullquote blocks by default. Here is what this looks like in the default <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"blocks\": {\n\t\t\t\"core/button\": {\n\t\t\t\t\"border\": {\n\t\t\t\t\t\"radius\": true\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"core/pullquote\": {\n\t\t\t\t\"border\": {\n\t\t\t\t\t\"color\": true,\n\t\t\t\t\t\"radius\": true,\n\t\t\t\t\t\"style\": true,\n\t\t\t\t\t\"width\": true\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<p>You can overwrite these block-specific settings in your <code>theme.json</code> file just as you learned to do in the previous section of this documentation.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>If you are wondering why some of your global settings do not seem to apply to certain blocks, particularly Button and Pullquote, it is likely because they are being set at the block level. You will need to override these in <code>settings.blocks</code> in your <code>theme.json</code> if you want a different behavior.</p></div></div>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149096",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149096",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149096/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152161,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149096/revisions/152161"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149096"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

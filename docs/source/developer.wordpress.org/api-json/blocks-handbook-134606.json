@@ -1,0 +1,91 @@
+{
+    "id": 134606,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/data/"
+    },
+    "modified": "2025-01-07T18:34:12",
+    "modified_gmt": "2025-01-07T18:34:12",
+    "slug": "data",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/data/",
+    "title": {
+        "rendered": "Data Module Reference"
+    },
+    "content": {
+        "rendered": "<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core/\"><strong>core</strong>: WordPress Core Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-annotations/\"><strong>core/annotations</strong>: Annotations</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-block-directory/\"><strong>core/block-directory</strong>: Block directory</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-block-editor/\"><strong>core/block-editor</strong>: The Block Editor\u2019s Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-blocks/\"><strong>core/blocks</strong>: Block Types Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-commands/\"><strong>core/commands</strong>: Command Palette</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-customize-widgets/\"><strong>core/customize-widgets</strong>: Customize Widgets</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-post/\"><strong>core/edit-post</strong>: The Editor\u2019s UI Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-site/\"><strong>core/edit-site</strong>: Edit Site</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-widgets/\"><strong>core/edit-widgets</strong>: Edit Widgets</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-editor/\"><strong>core/editor</strong>: The Post Editor\u2019s Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-keyboard-shortcuts/\"><strong>core/keyboard-shortcuts</strong>: The Keyboard Shortcuts Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-notices/\"><strong>core/notices</strong>: Notices Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-nux/\"><strong>core/nux</strong>: The NUX (New User Experience) Data</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-preferences/\"><strong>core/preferences</strong>: Preferences</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-reusable-blocks/\"><strong>core/reusable-blocks</strong>: Reusable blocks</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-rich-text/\"><strong>core/rich-text</strong>: Rich Text</a></li>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/data/data-core-viewport/\"><strong>core/viewport</strong>: The Viewport Data</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134405,
+    "menu_order": 334,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134606",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134606",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134606/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151775,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134606/revisions/151775"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134405"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134606"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

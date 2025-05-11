@@ -1,0 +1,109 @@
+{
+    "id": 10821664,
+    "date": "2018-10-27T13:05:49",
+    "date_gmt": "2018-10-27T13:05:49",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10821664"
+    },
+    "modified": "2023-01-13T22:12:09",
+    "modified_gmt": "2023-01-13T22:12:09",
+    "slug": "what-is-post-type",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/what-is-post-type/",
+    "title": {
+        "rendered": "What is Post Type?"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress houses lots of different types of content and they are divided into something called <strong><em>Post Types\ufeff</em></strong>. A single item is called a <em><strong>post</strong></em> however this is also the name of a standard post type called <em><strong>posts</strong></em>. By default WordPress comes with a few different post types which are all stored in the database under the <em><strong>wp_posts</strong></em> table.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Default Post Types</h2>\n\n\n\n<p>The default post types that are always included within a WordPress installation unless otherwise removed are:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Posts</li><li>Pages</li><li>Attachments</li><li>Revisions</li><li>Navigation Menus</li><li>Custom CSS</li><li>Changesets<br /></li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Posts</h3>\n\n\n\n<p>A <strong><em>post</em></strong> in WordPress is a <em>post type</em> that is typical for, and most used by blogs. <em>Posts</em> are normally displayed in a blog in reverse sequential order by time (newest posts first). Posts are also used for creating RSS feeds.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Pages</h3>\n\n\n\n<p>A page is similar to posts however they have some very important differences. Pages aren&#8217;t displayed in a reversed time-based order. They can also be placed into a hierarchical order where a page can be the parent or child of another page creating a page structure. Traditionally, pages also do not make use of categories and tags like posts do.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Attachments</h3>\n\n\n\n<p>Attachments are another post type that is special as these hold information about any media that is uploaded to your WordPress website. Not only is the main post information stored where other posts are, attachments also make use of the wp_postmeta table for storing extra information like metadata for images and videos that you&#8217;ve added.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Revisions</h3>\n\n\n\n<p>Revisions are a particularly special post type as they are used to create a history of other post types in case you make a mistake and want to rollback to a previous version. Whilst you technically can&#8217;t edit revisions directly unless you restore a revision, they are editable just like posts and are stored in the <em><strong>wp_posts</strong></em> table like any other post type.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Menus</h3>\n\n\n\n<p>Menus in WordPress are lists of links that can be used to navigate your website. This allows you to create custom lists of links to various locations on your website that is used by your visitors and are edited in the theme section of the dashboard away from traditional post types like posts or pages.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Custom CSS</h3>\n\n\n\n<p>Custom CSS\ufeff is a theme specific post type used to store CSS saved from The Customizers <em><strong>Additional CSS</strong></em> screen. Each theme can have its own custom CSS post but only the active themes `custom_css` post is actually used.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Changesets</h3>\n\n\n\n<p>Changesets are similar to revisions but specifically for the Customizer. This is to keep the Customizer in a persistent state. WordPress will attempt to keep content changes made through the Customizer during the user session in a `customize_changeset` post and attempt to restore them should you exit your current session.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Custom Post Types</h2>\n\n\n\n<p>Whilst there are already lots of standard post types within WordPress, you may want to extend the amount of post types you have if you want to break things down into smaller categories. For example, if you want to have a section on Books, it would be better suited to creating a custom post type for them. This can be done using the <a href=\"https://developer.wordpress.org/reference/functions/register_post_type/\">register_post_type</a> function.</p>\n\n\n\n<p>It&#8217;s highly recommended that you define custom post types within a plugin or must-use plugin to ensure that if you switch themes, the post type isn&#8217;t lost. That way you can ensure your content is always accessible.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Template Files</h2>\n\n\n\n<p>By default WordPress makes use of the index.php, single.php and archive.php files in a theme to display posts of any type of the front-end of a website. However, if you&#8217;ve made a custom post type, you may find that you want to show this information in a different way to other types. You can do this by using post type specific <a href=\"https://developer.wordpress.org/themes/template-files-section/custom-post-type-template-files/\">custom templates</a> within your theme.</p>\n\n\n\n<p>If you create a post type called Books like in the example above, you can create a template file called single-books.php which will show the individual book posts that you publish. Again, to show all your books in a custom archive page (where they are all listed), you can create an archive-books.php template file and this will show all the book posts that you&#8217;ve published.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Post Type Queries</h2>\n\n\n\n<p>In the event that you want to get a list of your custom posts called Books, you can create a new <a href=\"https://developer.wordpress.org/reference/classes/wp_query/\">WP_Query</a> instance and fetch them all. This is handy if you want to create a custom loop somewhere on your website and show them in a different way to other posts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The Posts Query</h2>\n\n\n\n<p>You might find that in some cases you want to include custom posts into your main query of blog posts. You can do this by using the <a href=\"https://developer.wordpress.org/reference/hooks/pre_get_posts/\">pre_get_posts</a> filter hook which lets you customize the query that gets your posts before it&#8217;s shown on the front-end of the website.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress houses lots of different types of content and they are divided into something called Post Types\ufeff. A single item is called a post however this is also the name of a standard post type called posts. By default WordPress comes with a few different post types which are all stored in the database under [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10821664",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821664",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10821664"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821664/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355315,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10821664/revisions/16355315"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10821664"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10821664"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

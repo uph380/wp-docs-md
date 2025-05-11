@@ -1,0 +1,91 @@
+{
+    "id": 134459,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/dropdown/"
+    },
+    "modified": "2024-10-30T16:55:46",
+    "modified_gmt": "2024-10-30T16:55:46",
+    "slug": "dropdown",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/dropdown/",
+    "title": {
+        "rendered": "Dropdown"
+    },
+    "content": {
+        "rendered": "<p>Dropdown is a React component to render a button that opens a floating content modal when clicked.</p>\n<p>This component takes care of updating the state of the dropdown menu (opened/closed), handles closing the menu when clicking outside and uses render props to render the button and the content.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Button, Dropdown } from '@wordpress/components';\n\nconst MyDropdown = () =&gt; (\n    &lt;Dropdown\n        className=\"my-container-class-name\"\n        contentClassName=\"my-popover-content-classname\"\n        popoverProps={ { placement: 'bottom-start' } }\n        renderToggle={ ( { isOpen, onToggle } ) =&gt; (\n            &lt;Button\n                variant=\"primary\"\n                onClick={ onToggle }\n                aria-expanded={ isOpen }\n            &gt;\n                Toggle Popover!\n            &lt;/Button&gt;\n        ) }\n        renderContent={ () =&gt; &lt;div&gt;This is the content of the popover.&lt;/div&gt; }\n    /&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props. Props not included in this set will be applied to the element wrapping Popover content.</p>\n<h3><code>className</code>: <code>string</code></h3>\n<p>className of the global container</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>contentClassName</code>: <code>string</code></h3>\n<p>If you want to target the dropdown menu for styling purposes, you need to provide a contentClassName because it&#8217;s not being rendered as a child of the container node.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>defaultOpen</code>: <code>boolean</code></h3>\n<p>The open state of the dropdown when initially rendered. Use when you do not need to control its open state. It will be overridden by the <code>open</code> prop if it is specified on the component&#8217;s first render.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>expandOnMobile</code>: <code>boolean</code></h3>\n<p>Opt-in prop to show popovers fullscreen on mobile.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>focusOnMount</code>: <code>'firstElement' | boolean</code></h3>\n<p>By default, the <em>first tabbable element</em> in the popover will receive focus when it mounts. This is the same as setting this prop to <code>\"firstElement\"</code>.</p>\n<p>Specifying a <code>true</code> value will focus the container instead.</p>\n<p>Specifying a <code>false</code> value disables the focus handling entirely (this should only be done when an appropriately accessible substitute behavior exists).</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>\"firstElement\"</code></li>\n</ul>\n<h3><code>headerTitle</code>: <code>string</code></h3>\n<p>Set this to customize the text that is shown in the dropdown&#8217;s header when it is fullscreen on mobile.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onClose</code>: <code>() =&gt; void</code></h3>\n<p>A callback invoked when the popover should be closed.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>open</code>: <code>boolean</code></h3>\n<p>The controlled open state of the dropdown. Must be used in conjunction with <code>onToggle</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onToggle</code>: <code>( willOpen: boolean ) =&gt; void</code></h3>\n<p>A callback invoked when the state of the dropdown changes from open to closed and vice versa.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>popoverProps</code>: <code>WordPressComponentProps&lt; Omit&lt; PopoverProps, 'children' &gt; 'div', false &gt;</code></h3>\n<p>Properties of popoverProps object will be passed as props to the <code>Popover</code> component.</p>\n<p>Use this object to access properties/features of the <code>Popover</code> component that are not already exposed in the <code>Dropdown</code> component, e.g.: the ability to have the popover without an arrow.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>renderContent</code>: <code>( props: CallbackProps ) =&gt; ReactNode</code></h3>\n<p>A callback invoked to render the content of the dropdown menu.</p>\n<ul>\n<li><code>isOpen</code>: whether the dropdown menu is opened or not</li>\n<li><code>onToggle</code>: A function switching the dropdown menu&#8217;s state from open to closed and vice versa</li>\n<li><code>onClose</code>: A function that closes the menu if invoked</p>\n</li>\n<li>\n<p>Required: Yes</p>\n</li>\n</ul>\n<h3><code>renderToggle</code>: <code>( props: CallbackProps ) =&gt; ReactNode</code></h3>\n<p>A callback invoked to render the Dropdown Toggle Button.</p>\n<p>Its props are the same as the <code>renderContent</code> props.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>style</code>: <code>React.CSSProperties</code></h3>\n<p>The style of the global container</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 145,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134459",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134459",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134459/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 148794,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134459/revisions/148794"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134459"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

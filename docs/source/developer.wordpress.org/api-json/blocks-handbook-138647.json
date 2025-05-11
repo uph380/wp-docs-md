@@ -1,0 +1,91 @@
+{
+    "id": 138647,
+    "date": "2021-12-28T01:54:47",
+    "date_gmt": "2021-12-28T01:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/"
+    },
+    "modified": "2024-12-26T16:49:09",
+    "modified_gmt": "2024-12-26T16:49:09",
+    "slug": "gradient-picker",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/",
+    "title": {
+        "rendered": "GradientPicker"
+    },
+    "content": {
+        "rendered": "<p><!-- This file is generated automatically and cannot be edited directly. Make edits via TypeScript types and TSDocs. --></p>\n<p class=\"callout callout-info\">See the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-gradientpicker--docs\">WordPress Storybook</a> for more detailed, interactive documentation.</p>\n<p>GradientPicker is a React component that renders a color gradient picker to<br />\ndefine a multi step gradient. There&#8217;s either a <em>linear</em> or a <em>radial</em> type<br />\navailable.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { GradientPicker } from '@wordpress/components';\n\nconst MyGradientPicker = () =&gt; {\n  const [ gradient, setGradient ] = useState( null );\n\n  return (\n    &lt;GradientPicker\n      value={ gradient }\n      onChange={ ( currentGradient ) =&gt; setGradient( currentGradient ) }\n      gradients={ [\n        {\n          name: 'JShine',\n          gradient:\n            'linear-gradient(135deg,#12c2e9 0%,#c471ed 50%,#f64f59 100%)',\n          slug: 'jshine',\n        },\n        {\n          name: 'Moonlit Asteroid',\n          gradient:\n            'linear-gradient(135deg,#0F2027 0%, #203A43 0%, #2c5364 100%)',\n          slug: 'moonlit-asteroid',\n        },\n        {\n          name: 'Rastafarie',\n          gradient:\n            'linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)',\n          slug: 'rastafari',\n        },\n      ] }\n    /&gt;\n  );\n};\n</code></pre>\n<h2>Props</h2>\n<h3><code>__experimentalIsRenderedInSidebar</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Whether this is rendered in the sidebar.</p>\n<h3><code>asButtons</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>Whether the control should present as a set of buttons,<br />\neach with its own tab stop.</p>\n<h3><code>aria-label</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>A label to identify the purpose of the control.</p>\n<h3><code>aria-labelledby</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>An ID of an element to provide a label for the control.</p>\n<h3><code>className</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n</ul>\n<p>The class name added to the wrapper.</p>\n<h3><code>clearable</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<p>Whether the palette should have a clearing button or not.</p>\n<h3><code>disableCustomGradients</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<p>If true, the gradient picker will not be displayed and only defined<br />\ngradients from <code>gradients</code> will be shown.</p>\n<h3><code>enableAlpha</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<p>Whether to enable alpha transparency options in the picker.</p>\n<h3><code>gradients</code></h3>\n<ul>\n<li>Type: <code>GradientsProp</code></li>\n<li>Required: No</li>\n<li>Default: <code>[]</code></li>\n</ul>\n<p>An array of objects as predefined gradients displayed above the gradient<br />\nselector. Alternatively, if there are multiple sets (or &#8216;origins&#8217;) of<br />\ngradients, you can pass an array of objects each with a <code>name</code> and a<br />\n<code>gradients</code> array which will in turn contain the predefined gradient objects.</p>\n<h3><code>headingLevel</code></h3>\n<ul>\n<li>Type: <code>1 | 2 | 3 | 4 | 5 | 6 | \"1\" | \"2\" | \"3\" | \"4\" | ...</code></li>\n<li>Required: No</li>\n<li>Default: <code>2</code></li>\n</ul>\n<p>The heading level. Only applies in cases where gradients are provided<br />\nfrom multiple origins (i.e. when the array passed as the <code>gradients</code> prop<br />\ncontains two or more items).</p>\n<h3><code>loop</code></h3>\n<ul>\n<li>Type: <code>boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<p>Prevents keyboard interaction from wrapping around.<br />\nOnly used when <code>asButtons</code> is not true.</p>\n<h3><code>onChange</code></h3>\n<ul>\n<li>Type: <code>(currentGradient: string) =&gt; void</code></li>\n<li>Required: Yes</li>\n</ul>\n<p>The function called when a new gradient has been defined. It is passed to<br />\nthe <code>currentGradient</code> as an argument.</p>\n<h3><code>value</code></h3>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>'linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)'</code></li>\n</ul>\n<p>The current value of the gradient. Pass a css gradient string (See default value for example).<br />\nOptionally pass in a <code>null</code> value to specify no gradient is currently selected.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 158,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-138647",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138647",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 11,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138647/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156144,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138647/revisions/156144"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=138647"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10850430,
+    "date": "2018-11-05T19:56:06",
+    "date_gmt": "2018-11-05T19:56:06",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10850430"
+    },
+    "modified": "2024-06-08T17:51:15",
+    "modified_gmt": "2024-06-08T17:51:15",
+    "slug": "pages-add-new-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/pages-add-new-screen/",
+    "title": {
+        "rendered": "Pages Add New screen"
+    },
+    "content": {
+        "rendered": "\n<p>The Pages Add New Screen allows you to add new <a href=\"/support/article/pages/\">Pages</a>.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1263\" height=\"874\" src=\"https://wordpress.org/documentation/files/2018/11/writepage.png\" alt=\"Add a New Page Screeen\" class=\"wp-image-10850434\" srcset=\"https://wordpress.org/documentation/files/2018/11/writepage.png 1263w, https://wordpress.org/documentation/files/2018/11/writepage-300x208.png 300w, https://wordpress.org/documentation/files/2018/11/writepage-1024x709.png 1024w, https://wordpress.org/documentation/files/2018/11/writepage-768x531.png 768w\" sizes=\"auto, (max-width: 1263px) 100vw, 1263px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Screen options</h2>\n\n\n\n<p>The <a href=\"/support/article/administration-screens#screen-options\">Screen Options</a> allow you to choose which modules are displayed, or not displayed, in the underlying screen. Clicking on the Screen Options tab shows a list of the columns with a checkbox next to each column. Check the box for each module you want displayed, or uncheck the box to not display that module. Click the Screen Options tab again to close the Screen Options. These options are saved so that you can customize how your own editing screen looks. So if modules such as Custom Fields, Discussion, Slug and Post Author are hidden from view use the Screen Options to expose those modules.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Expanding, collapsing, and rearranging, modules</h2>\n\n\n\n<p>The modules, Publish, Page Attribute, Features Image and others, can be expanded, or collapsed, by clicking on the module title bar.</p>\n\n\n\n<p>In addition, those modules can be moved by hovering the mouse cursor over the module title bar, when the mouse cursor changes to 4-arrows, hold the left-mouse button down, drag the module to where you want to place it, then release the mouse button (this is called drag-and-drop).</p>\n\n\n\n<h2 class=\"wp-block-heading\">Add new page</h2>\n\n\n\n<p><strong>Title </strong></p>\n\n\n\n<p>The title of your page. You can use any words or phrases. Avoid using the same title twice as that will cause problems. You can use commas, apostrophes, quotes, hypens/dashes, and other typical symbols in the page like &#8220;About My Site &#8211; Here&#8217;s Lookin&#8217; at You, Kid.&#8221; WordPress will clean it up for the link to the page, called the <em>slug</em>.</p>\n\n\n\n<p><strong>Page editing area </strong></p>\n\n\n\n<p>The blank box where you enter your writing, links, links to images, and any information you want to display on your site. You can use either the Visual or the Text view to compose your posts. For more on the Text view, see the <a href=\"https://codex.wordpress.org/Writing Posts#Visual_Versus Text_Editor\">Visual </a><a href=\"/support/article/writing-posts/#visual-versus-text-editor\">Versus</a><a href=\"https://codex.wordpress.org/Writing Posts#Visual_Versus Text_Editor\"> Text View</a> article.</p>\n\n\n\n<p><strong>Preview button </strong></p>\n\n\n\n<p>Allows you to view the page before officially publishing it.</p>\n\n\n\n<p><strong>Publish box </strong></p>\n\n\n\n<p>Contains buttons that control the state of your page. The main states are Published, Pending Review, and Draft. A <em>Published</em> status means the page has been published on your blog for all to see. <em>Pending Review</em> means the draft is waiting for review by an editor prior to publication. <em>Draft</em> means the page has not been published and remains a draft for you. If you select a specific publish status and click the update page or Publish button, that status is applied to the page. For example, to save a page in the <em>Pending Review</em> status, click Edit link of Status and select Pending Review from the drop-down box, click OK to close the drop-down box and click Save As Pending button. (You will see all pages organized by status by going to Pages &gt; All Pages). To schedule a page for publication on a future time or date, click &#8220;Edit&#8221; in the Publish area next to the words &#8220;Publish immediately&#8221;. You can also change the publish date to a date in the past to back-date pages. Change the settings to the desired time and date. You must also hit the &#8220;Publish&#8221; button when you have completed the page to publish at the desired time and date.</p>\n\n\n\n<p>Visibility &#8211; This determines how your page appears to the world. Public pages will be visible by all website visitors once published. Password Protected pages are published to all, but visitors must know the password to view the page content. Private pages are visible only to you (and to other editors or admins within your site)</p>\n\n\n\n<p><strong>Permalink </strong></p>\n\n\n\n<p>After you save your page, the Permalink below the title shows the potential URL for the page, as long as you have <a href=\"/support/article/using-permalinks/\">permalinks</a> enabled. (To enable permalinks, go to Settings &gt; Permalinks.) The URL is generated from your title. In previous versions of WordPress, this was referred to as the &#8220;page-slug.&#8221; The commas, quotes, apostrophes, and other non-HTML favorable characters are changed and a dash is put between each word. If your title is &#8220;My Site &#8211; Here&#8217;s Lookin&#8217; at You, Kid&#8221;, it will be cleaned up to be &#8220;my-site-heres-lookin-at-you-kid&#8221; as the title. You can manually change this, maybe shortening it to &#8220;my-site-lookin-at-you-kid&#8221;.</p>\n\n\n\n<p><strong>Save </strong></p>\n\n\n\n<p>Allows you to save your page as a draft / pending review rather than immediately publishing it. To return to your drafts later, visit Pages &gt; All Pages from dashboard, then click your page title from the list.</p>\n\n\n\n<p><strong>Publish </strong></p>\n\n\n\n<p>Publishes your page on the site. You can edit the time when the page is published by clicking the Edit link above the Publish button and specifying the time you want the page to be published. By default, at the time the page is first auto-saved, that will be the date and time of the page within the database.</p>\n\n\n\n<p><strong>Parent </strong></p>\n\n\n\n<p>Parent page controls how deep your page hierarchy goes.</p>\n\n\n\n<p><strong>Template </strong></p>\n\n\n\n<p>Some Themes have custom templates you can use for certain pages that might have additional features or custom layouts. If so, you&#8217;ll see them in this dropdown menu.</p>\n\n\n\n<p><strong>Order </strong></p>\n\n\n\n<p>Page order to sort the list of Pages.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Pages Add New Screen allows you to add new Pages. Screen options The Screen Options allow you to choose which modules are displayed, or not displayed, in the underlying screen. Clicking on the Screen Options tab shows a list of the columns with a checkbox next to each column. Check the box for each [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10850430",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10850430",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10850430"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10850430/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360351,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10850430/revisions/16360351"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10850430"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10850430"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

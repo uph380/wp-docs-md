@@ -1,0 +1,91 @@
+{
+    "id": 157130,
+    "date": "2025-02-21T04:17:06",
+    "date_gmt": "2025-02-21T04:17:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-field-functions-file/"
+    },
+    "modified": "2025-02-21T05:46:15",
+    "modified_gmt": "2025-02-21T05:46:15",
+    "slug": "acf-field-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-field-functions-file/",
+    "title": {
+        "rendered": "Acf Field Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_get_field()</code></h2>\n<p>acf_get_field</p>\n<ul>\n<li>Retrieves a field for the given identifier.</li>\n<li>@date    17/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   (int|string) $id The field ID, key or name.</li>\n<li>@return (array|false) The field array.</li>\n</ul>\n<h2><code>acf_get_raw_field()</code></h2>\n<p>acf_get_raw_field</p>\n<ul>\n<li>Retrieves raw field data for the given identifier.</li>\n<li>@date    18/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   (int|string) $id The field ID, key or name.</li>\n<li>@return (array|false) The field array.</li>\n</ul>\n<h2><code>acf_get_field_post()</code></h2>\n<p>acf_get_field_post</p>\n<ul>\n<li>Retrieves the field&#8217;s <a href=\"https://developer.wordpress.org/reference/classes/wp_post/\" rel=\"class\">WP_Post</a> object.</li>\n<li>@date    18/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   (int|string) $id The field ID, key or name.</li>\n<li>@return (array|false) The field array.</li>\n</ul>\n<h2><code>acf_is_field_key()</code></h2>\n<p>acf_is_field_key</p>\n<ul>\n<li>Returns true if the given identifier is a field key.</li>\n<li>@date    6/12/2013</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   string $id The identifier.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_validate_field()</code></h2>\n<p>acf_validate_field</p>\n<ul>\n<li>Ensures the given field valid.</li>\n<li>@date    18/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_valid_field()</code></h2>\n<p>acf_get_valid_field</p>\n<ul>\n<li>Ensures the given field valid.</li>\n<li>@date        28/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_translate_field()</code></h2>\n<p>acf_translate_field</p>\n<ul>\n<li>Translates a field&#8217;s settings.</li>\n<li>@date    8/03/2016</li>\n<li>@since ACF 5.3.2</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_fields()</code></h2>\n<p>acf_get_fields</p>\n<ul>\n<li>Returns and array of fields for the given $parent.</li>\n<li>@date    30/09/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   (int|string|array) $parent The field group or field settings. Also accepts the field group ID or key.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_raw_fields()</code></h2>\n<p>acf_get_raw_fields</p>\n<ul>\n<li>Returns and array of raw field data for the given parent id.</li>\n<li>@date    18/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   integer $id The field group or field id.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_get_field_count()</code></h2>\n<p>acf_get_field_count</p>\n<ul>\n<li>Return the number of fields for the given field group.</li>\n<li>@date    17/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $parent The field group or field array.</li>\n<li>@return integer</li>\n</ul>\n<h2><code>acf_clone_field()</code></h2>\n<p>acf_clone_field</p>\n<ul>\n<li>Allows customization to a field when it is cloned. Used by the clone field.</li>\n<li>@date    8/03/2016</li>\n<li>@since ACF 5.3.2</li>\n<li>@param   array $field       The field being cloned.</li>\n<li>@param array $clone_field The clone field.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_prepare_field()</code></h2>\n<p>acf_prepare_field</p>\n<ul>\n<li>Prepare a field for input.</li>\n<li>@date    20/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_render_fields()</code></h2>\n<p>acf_render_fields</p>\n<ul>\n<li>Renders an array of fields. Also loads the field&#8217;s value.</li>\n<li>@date    8/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@since ACF 5.6.9 Changed parameter order.</li>\n<li>@param   array        $fields      An array of fields.</li>\n<li>@param (int|string) $post_id     The post ID to load values from.</li>\n<li>@param string       $element     The wrapping element type.</li>\n<li>@param string       $instruction The instruction render position (label|field).</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_render_field_wrap()</code></h2>\n<p>Render the wrapping element for a given field.</p>\n<ul>\n<li>@since   ACF 5.0.0</li>\n<li>@param   array   $field         The field array.</li>\n<li>@param string  $element       The wrapping element type.</li>\n<li>@param string  $instruction   The instruction render position (label|field).</li>\n<li>@param boolean $field_setting If a field setting is being rendered.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_render_field()</code></h2>\n<p>acf_render_field</p>\n<ul>\n<li>Render the input element for a given field.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array $field The field array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_render_field_label()</code></h2>\n<p>acf_render_field_label</p>\n<ul>\n<li>Renders the field&#8217;s label.</li>\n<li>@date    19/9/17</li>\n<li>@since ACF 5.6.3</li>\n<li>@param   array $field The field array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_field_label()</code></h2>\n<p>acf_get_field_label</p>\n<ul>\n<li>Returns the field&#8217;s label with appropriate required label.</li>\n<li>@date    4/11/2013</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array  $field   The field array.</li>\n<li>@param string $context The output context (admin).</li>\n<li>@return string The field label in HTML format.</li>\n</ul>\n<h2><code>acf_render_field_instructions()</code></h2>\n<p>Renders the field&#8217;s instructions.</p>\n<ul>\n<li>@since   ACF 5.6.3</li>\n<li>@param array   $field   The field array.</li>\n<li>@param boolean $tooltip If the instructions are being rendered as a tooltip.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_render_field_setting()</code></h2>\n<p>acf_render_field_setting</p>\n<ul>\n<li>Renders a field setting used in the admin edit screen.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array   $field   The field array.</li>\n<li>@param array   $setting The settings field array.</li>\n<li>@param boolean $global  Whether this setting is a global or field type specific one.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_update_field()</code></h2>\n<p>acf_update_field</p>\n<ul>\n<li>Updates a field in the database.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array $field    The field array.</li>\n<li>@param array $specific An array of specific field attributes to update.</li>\n<li>@return array</li>\n</ul>\n<h2><code>_acf_apply_unique_field_slug()</code></h2>\n<p>_acf_apply_unique_field_slug</p>\n<ul>\n<li>Allows full control over &#8216;acf-field&#8217; slugs.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param string  $slug          The post slug.</li>\n<li>@param integer $post_ID       Post ID.</li>\n<li>@param string  $post_status   The post status.</li>\n<li>@param string  $post_type     Post type.</li>\n<li>@param integer $post_parent   Post parent ID</li>\n<li>@param string  $original_slug The original post slug.</li>\n</ul>\n<h2><code>acf_flush_field_cache()</code></h2>\n<p>acf_flush_field_cache</p>\n<ul>\n<li>Deletes all caches for this field.</li>\n<li>@date    22/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array $field The field array.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_delete_field()</code></h2>\n<p>acf_delete_field</p>\n<ul>\n<li>Deletes a field from the database.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   (int|string) $id The field ID, key or name.</li>\n<li>@return boolean True if field was deleted.</li>\n</ul>\n<h2><code>acf_trash_field()</code></h2>\n<p>acf_trash_field</p>\n<ul>\n<li>Trashes a field from the database.</li>\n<li>@date    2/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   (int|string) $id The field ID, key or name.</li>\n<li>@return boolean True if field was trashed.</li>\n</ul>\n<h2><code>acf_untrash_field()</code></h2>\n<p>acf_untrash_field</p>\n<ul>\n<li>Restores a field from the trash.</li>\n<li>@date    2/10/13</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   (int|string) $id The field ID, key or name.</li>\n<li>@return boolean True if field was trashed.</li>\n</ul>\n<h2><code>_acf_untrash_field_post_status()</code></h2>\n<p>Filter callback which returns the previous post_status instead of &#8220;draft&#8221; for the &#8220;acf-field&#8221; post type.</p>\n<ul>\n<li>Prior to WordPress 5.6.0, this filter was not needed as restored posts were always assigned their original status.</li>\n<li>@since ACF 5.9.5</li>\n<li>@param string  $new_status      The new status of the post being restored.</li>\n<li>@param integer $post_id         The ID of the post being restored.</li>\n<li>@param string  $previous_status The status of the post at the point where it was trashed.</li>\n<li>@return string.</li>\n</ul>\n<h2><code>acf_prefix_fields()</code></h2>\n<p>acf_prefix_fields</p>\n<ul>\n<li>Changes the prefix for an array of fields by reference.</li>\n<li>@date    5/9/17</li>\n<li>@since ACF 5.6.0</li>\n<li>@param   array  $fields An array of fields.</li>\n<li>@param string $prefix The new prefix.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_get_sub_field()</code></h2>\n<p>acf_get_sub_field</p>\n<ul>\n<li>Searches a field for sub fields matching the given selector.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   (int|string) $id    The field ID, key or name.</li>\n<li>@param array        $field The parent field array.</li>\n<li>@return (array|false)</li>\n</ul>\n<h2><code>acf_search_fields()</code></h2>\n<p>acf_search_fields</p>\n<ul>\n<li>Searches an array of fields for one that matches the given identifier.</li>\n<li>@date    12/2/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   (int|string) $id       The field ID, key or name.</li>\n<li>@param array        $haystack The array of fields.</li>\n<li>@return (int|false)</li>\n</ul>\n<h2><code>acf_is_field()</code></h2>\n<p>acf_is_field</p>\n<ul>\n<li>Returns true if the given params match a field.</li>\n<li>@date    21/1/19</li>\n<li>@since ACF 5.7.10</li>\n<li>@param   array $field The field array.</li>\n<li>@param mixed $id    An optional identifier to search for.</li>\n<li>@return boolean</li>\n</ul>\n<h2><code>acf_get_field_ancestors()</code></h2>\n<p>acf_get_field_ancestors</p>\n<ul>\n<li>Returns an array of ancestor field ID&#8217;s or keys.</li>\n<li>@date    22/06/2016</li>\n<li>@since ACF 5.3.8</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_duplicate_fields()</code></h2>\n<p>acf_duplicate_fields</p>\n<ul>\n<li>Duplicate an array of fields.</li>\n<li>@date    16/06/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array   $fields    An array of fields.</li>\n<li>@param integer $parent_id The new parent ID.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_duplicate_field()</code></h2>\n<p>acf_duplicate_field</p>\n<ul>\n<li>Duplicates a field.</li>\n<li>@date    16/06/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   (int|string) $id        The field ID, key or name.</li>\n<li>@param integer      $parent_id The new parent ID.</li>\n<li>@return boolean True if field was duplicated.</li>\n</ul>\n<h2><code>acf_prepare_fields_for_export()</code></h2>\n<p>acf_prepare_fields_for_export</p>\n<ul>\n<li>Returns a modified array of fields ready for export.</li>\n<li>@date    11/03/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $fields An array of fields.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_prepare_field_for_export()</code></h2>\n<p>acf_prepare_field_for_export</p>\n<ul>\n<li>Returns a modified field ready for export.</li>\n<li>@date    11/03/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_prepare_fields_for_import()</code></h2>\n<p>acf_prepare_field_for_import</p>\n<ul>\n<li>Returns a modified array of fields ready for import.</li>\n<li>@date    11/03/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $fields An array of fields.</li>\n<li>@return array</li>\n</ul>\n<h2><code>acf_prepare_field_for_import()</code></h2>\n<p>acf_prepare_field_for_import</p>\n<ul>\n<li>Returns a modified field ready for import.<br />\nAllows parent fields to modify themselves and also return sub fields.</li>\n<li>@date    11/03/2014</li>\n<li>@since ACF 5.0.0</li>\n<li>@param   array $field The field array.</li>\n<li>@return array</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157130",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157130",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157130/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157331,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157130/revisions/157331"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157130"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

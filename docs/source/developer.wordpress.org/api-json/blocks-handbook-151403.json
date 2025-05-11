@@ -1,0 +1,91 @@
+{
+    "id": 151403,
+    "date": "2023-12-27T20:55:01",
+    "date_gmt": "2023-12-27T20:55:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/patterns/"
+    },
+    "modified": "2024-04-30T17:54:37",
+    "modified_gmt": "2024-04-30T17:54:37",
+    "slug": "patterns",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/patterns/",
+    "title": {
+        "rendered": "Patterns"
+    },
+    "content": {
+        "rendered": "<p>Block <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/\">patterns</a> are one of the best ways to provide users with unique and curated editing experiences.</p>\n<h2>Prioritize starter patterns for any post type</h2>\n<p>When a user creates new content, regardless of post type, they are met with an empty canvas. However, that experience can be improved thanks to the option to have patterns from a specific type prioritized upon creation of a new piece of content. The modal appears each time the user creates a new item when there are patterns on their website that declare support for the <code>core/post-content</code> block types. By default, WordPress does not include any of these patterns, so the modal will not appear without at least two of these post content patterns being added.</p>\n<p>To opt into this, include <code>core/post-content</code> in the Block Types for your pattern. From there, you can control which post types the pattern should show up for via the Post Types option. Here&#8217;s an example of a pattern that would appear when creating a new post.</p>\n<pre><code class=\"language-php\">&lt;?php\n /**\n  * Title: New Event Announcement\n  * Slug: twentytwentytwo/new-event-announcement\n  * Block Types: core/post-content\n  * Post Types: post\n  * Categories: featured, text\n  */\n?&gt;\n\n&lt;!-- wp:heading {\"lock\":{\"move\":false,\"remove\":true}} --&gt;\n&lt;h2&gt;Details&lt;/h2&gt;\n&lt;!-- /wp:heading --&gt;\n\n&lt;!-- wp:heading {\"lock\":{\"move\":false,\"remove\":true}} --&gt;\n&lt;h2&gt;Directions&lt;/h2&gt;\n&lt;!-- /wp:heading --&gt;\n\n&lt;!-- wp:heading {\"lock\":{\"move\":false,\"remove\":true}} --&gt;\n&lt;h2&gt;RSVP&lt;/h2&gt;\n&lt;!-- /wp:heading --&gt;\n\n&lt;!-- wp:paragraph {\"lock\":{\"move\":true,\"remove\":true}} --&gt;\n&lt;p&gt;To RSVP, please join the #fse-outreach-experiment in Make Slack. &lt;/p&gt;\n&lt;!-- /wp:paragraph --&gt;\n\n&lt;!-- wp:buttons --&gt;\n&lt;div class=\"wp-block-buttons\"&gt;&lt;!-- wp:button {\"lock\":{\"move\":true,\"remove\":false}} --&gt;\n&lt;div class=\"wp-block-button\"&gt;&lt;a class=\"wp-block-button__link wp-element-button\"&gt;Learn more&lt;/a&gt;&lt;/div&gt;\n&lt;!-- /wp:button --&gt;&lt;/div&gt;\n&lt;!-- /wp:buttons --&gt;\n\n&lt;!-- wp:cover {\"useFeaturedImage\":true,\"dimRatio\":80,\"overlayColor\":\"primary\",\"contentPosition\":\"center center\",\"align\":\"full\"} --&gt;\n&lt;div class=\"wp-block-cover alignfull\"&gt;&lt;span aria-hidden=\"true\" class=\"wp-block-cover__background has-primary-background-color has-background-dim-80 has-background-dim\"&gt;&lt;/span&gt;&lt;div class=\"wp-block-cover__inner-container\"&gt;&lt;!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Write title\u0101\u0080\u00a6\",\"fontSize\":\"large\"} --&gt;\n&lt;p class=\"has-text-align-center has-large-font-size\"&gt;We hope to see you there!&lt;/p&gt;\n&lt;!-- /wp:paragraph --&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;!-- /wp:cover --&gt;\n</code></pre>\n<p>Read more about this functionality in the <a href=\"https://make.wordpress.org/core/2022/05/03/page-creation-patterns-in-wordpress-6-0/\">Page creation patterns in WordPress 6.0 dev note</a> and <a href=\"https://make.wordpress.org/core/2022/10/10/miscellaneous-editor-changes-for-wordpress-6-1/#start-content-patterns-for-all-post-types\">note that WordPress 6.1 brought this functionality to all post types</a>.</p>\n<h2>Prioritize starter patterns for template creation</h2>\n<p>In the same way patterns can be prioritized for new posts or pages, the same experience can be added to the template creation process. When patterns declare support for the &#8216;templateTypes&#8217; property, the patterns will appear anytime a template that matches the designation is created, along with the options to start from a blank state or use the current fallback of the template. By default, WordPress does not include any of these patterns.</p>\n<p>To opt into this, a pattern needs to specify a property called <code>templateTypes</code>, which is an array containing the templates where the patterns can be used as the full content. Here&#8217;s an example of a pattern that would appear when creating a 404 template:</p>\n<pre><code class=\"language-php\">register_block_pattern(\n  'wp-my-theme/404-template-pattern',\n  array(\n      'title'         =&gt; __( '404 Only template pattern', 'wp-my-theme' ),\n      'templateTypes' =&gt; array( '404' ),\n      'content'       =&gt; '&lt;!-- wp:paragraph {\"align\":\"center\",\"fontSize\":\"x-large\"} --&gt;&lt;p class=\"has-text-align-center has-x-large-font-size\"&gt;404 pattern&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;',\n  )\n);\n</code></pre>\n<p>Read more about this functionality in the <a href=\"https://make.wordpress.org/core/2023/07/18/miscellaneous-editor-changes-in-wordpress-6-3/#patterns-on-the-create-a-new-template-modal\">Patterns on the create a new template modal in the WordPress 6.3 dev note</a>.</p>\n<h2>Lock patterns</h2>\n<p>As mentioned in the prior section on Locking APIs, aspects of patterns themselves can be locked so that the important aspects of the design can be preserved. <a href=\"https://gist.github.com/annezazu/acee30f8b6e8995e1b1a52796e6ef805\">Here\u2019s an example of a pattern</a> with various blocks locked in different ways. You can build these patterns in the editor itself, including adding locking options, before <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/\">following the documentation to register them</a>.</p>\n<h2>Prioritize specific patterns from the Pattern Directory</h2>\n<p>With WordPress 6.0 themes can register patterns from <a href=\"https://wordpress.org/patterns/\">Pattern Directory</a> through theme.json. To accomplish this, themes should use the new patterns top level key in theme.json. Within this field, themes can list patterns to register from the Pattern Directory. The patterns field is an array of pattern slugs from the Pattern Directory. Pattern slugs can be extracted by the url in a single pattern view at the Pattern Directory. Example: This url https://wordpress.org/patterns/pattern/partner-logos the slug is partner-logos.</p>\n<pre><code class=\"language-json\">{\n    \"patterns\": [ \"short-text-surrounded-by-round-images\", \"partner-logos\" ]\n}\n</code></pre>\n<p>The content creator will then find the respective Pattern in the inserter \u201cPatterns\u201d tab in the categories that match the categories from the Pattern Directory.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/news/2023/04/13/using-template-patterns-to-build-multiple-homepage-designs/\">Using template patterns to build multiple homepage designs</a> (WordPress Developer Blog)</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 141559,
+    "menu_order": 37,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-151403",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151403",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151403/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153630,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/151403/revisions/153630"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/141559"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=151403"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

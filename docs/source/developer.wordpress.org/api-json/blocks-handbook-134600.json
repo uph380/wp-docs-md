@@ -1,0 +1,91 @@
+{
+    "id": 134600,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-stylelint-config/"
+    },
+    "modified": "2024-10-30T16:55:16",
+    "modified_gmt": "2024-10-30T16:55:16",
+    "slug": "packages-stylelint-config",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-stylelint-config/",
+    "title": {
+        "rendered": "@wordpress/stylelint-config"
+    },
+    "content": {
+        "rendered": "<p><a href=\"https://stylelint.io/\">stylelint</a> configuration rules to ensure your CSS is compliant with the <a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/\">WordPress CSS Coding Standards</a>.</p>\n<h2>Installation</h2>\n<pre><code class=\"language-bash\">$ npm install @wordpress/stylelint-config --save-dev\n</code></pre>\n<p><strong>Note</strong>: This package requires Node.js version with long-term support status (check <a href=\"https://nodejs.org/en/about/previous-releases\">Active LTS or Maintenance LTS releases</a>). It is not compatible with older versions.</p>\n<h2>Usage</h2>\n<p>If you&#8217;ve installed <code>@wordpress/stylelint-config</code> locally within your project, just set your <code>stylelint</code> config to:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": \"@wordpress/stylelint-config\"\n}\n</code></pre>\n<p>If you&#8217;ve globally installed <code>@wordpress/stylelint-config</code> using the <code>-g</code> flag, then you&#8217;ll need to use the absolute path to <code>@wordpress/stylelint-config</code> in your config:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": \"/absolute/path/to/@wordpress/stylelint-config\"\n}\n</code></pre>\n<h2>Presets</h2>\n<p>In addition to the default preset, there is also a SCSS preset and 2 stylistic variant presets.</p>\n<h3>SCSS</h3>\n<p>This preset extends both <code>@wordpress/stylelint-config</code> and <a href=\"https://github.com/kristerkari/stylelint-config-recommended-scss\"><code>stylelint-config-recommended-scss</code></a>.</p>\n<pre><code class=\"language-json\">{\n    \"extends\": [ \"@wordpress/stylelint-config/scss\" ]\n}\n</code></pre>\n<h3>Stylistic</h3>\n<p>This preset extends <code>@wordpress/stylelint-config</code> and adds stylistic rules such as <code>indentation</code>.</p>\n<pre><code class=\"language-json\">{\n    \"extends\": [ \"@wordpress/stylelint-config/stylistic\" ]\n}\n</code></pre>\n<h3>SCSS Stylistic</h3>\n<p>This preset extends<code>@wordpress/stylelint-config</code>, <code>@wordpress/stylelint-config/stylistic</code> and <code>@wordpress/stylelint-config/scss</code>, and adapts some stylistic rules for SCSS.</p>\n<pre><code class=\"language-json\">{\n    \"extends\": [ \"@wordpress/stylelint-config/scss-stylistic\" ]\n}\n</code></pre>\n<h2>Extending the config</h2>\n<p>Simply add a <code>\"rules\"</code> key to your config and add your overrides there.</p>\n<p>For example, to change the <code>indentation</code> to four spaces and turn off the <code>number-leading-zero</code> rule:</p>\n<pre><code class=\"language-json\">{\n    \"extends\": \"@wordpress/stylelint-config/stylistic\",\n    \"rules\": {\n        \"@stylistic/indentation\": 4,\n        \"@stylistic/number-leading-zero\": null\n    }\n}\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 324,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134600",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134600",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134600/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155215,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134600/revisions/155215"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134600"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

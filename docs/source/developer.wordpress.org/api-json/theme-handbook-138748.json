@@ -1,0 +1,91 @@
+{
+    "id": 138748,
+    "date": "2022-01-10T11:33:17",
+    "date_gmt": "2022-01-10T11:33:17",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=138748"
+    },
+    "modified": "2023-12-14T20:57:25",
+    "modified_gmt": "2023-12-14T20:57:25",
+    "slug": "classic-themes",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/classic-themes/",
+    "title": {
+        "rendered": "Classic themes"
+    },
+    "content": {
+        "rendered": "\n<p>In this section you will find information about developing classic WordPress themes.</p>\n",
+        "protected": false
+    },
+    "author": 634001,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1000,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-138748",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/138748",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/634001"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/138748/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138749,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/138748/revisions/138749"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=138748"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

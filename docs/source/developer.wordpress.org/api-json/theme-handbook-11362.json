@@ -1,0 +1,97 @@
+{
+    "id": 11362,
+    "date": "2014-10-23T15:15:08",
+    "date_gmt": "2014-10-23T15:15:08",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11362"
+    },
+    "modified": "2022-10-27T11:11:13",
+    "modified_gmt": "2022-10-27T11:11:13",
+    "slug": "featured-images-post-thumbnails",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/",
+    "title": {
+        "rendered": "Featured Images &amp; Post Thumbnails"
+    },
+    "content": {
+        "rendered": "\n<p>Featured images (also sometimes called Post Thumbnails) are images that represent an individual Post, Page, or Custom Post Type. When you create your Theme, you can output the featured image in a number of different ways, on your archive page, in your header, or above a post, for example.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Enabling Support for Featured Image</h2>\n\n\n\n<p>Themes must declare support for the Featured Image function before the Featured Image interface will appear on the Edit screen. Support is declared by putting the following in your theme&#8217;s <a title=\"Theme Functions\" href=\"https://make.wordpress.org/docs/theme-developer-handbook/theme-basics/theme-functions/\">functions.php</a> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_theme_support( 'post-thumbnails' );</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">To enable Featured Image only for specific post types, see <a title=\"Allows a theme to register its support of a certain feature...\" href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\">add_theme_support()</a> </div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Setting a Featured Image</h2>\n\n\n\n<p>Once you add support for Featured Images, the Featured Image meta box will be visible on the appropriate content item&#8217;s Edit screens. If a user is unable to see it, they can enable it in their screen options.</p>\n\n\n\n<p>By default, the Featured Image meta box is displayed in the sidebar of the Edit Post and Edit Page screens.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://i0.wp.com/make.wordpress.org/docs/files/2013/02/devhbook-featured_image1.png?ssl=1\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/make.wordpress.org/docs/files/2013/02/devhbook-featured_image1.png?ssl=1\" alt=\"devhbook-featured_image\" class=\"wp-image-3094\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<p><code><a title=\"Register a new image size\" href=\"https://developer.wordpress.org/reference/functions/add_image_size/\">add_image_size()</a></code> &#8211; Register a new image size.<br><code><a title=\"Registers an image size for the post thumbnail\" href=\"https://developer.wordpress.org/reference/functions/set_post_thumbnail_size/\">set_post_thumbnail_size()</a></code> &#8211; Registers an image size for the post thumbnail.</p>\n\n\n\n<p><code><a title=\"Check if post has an image attached\" href=\"https://developer.wordpress.org/reference/functions/has_post_thumbnail/\">has_post_thumbnail()</a></code> &#8211; Check if post has an image attached.<br><code><a title=\"Display Post Thumbnail\" href=\"https://developer.wordpress.org/reference/functions/the_post_thumbnail/\">the_post_thumbnail()</a></code> &#8211; Display Post Thumbnail.</p>\n\n\n\n<p><code><a title=\"Retrieve Post Thumbnail\" href=\"https://developer.wordpress.org/reference/functions/get_the_post_thumbnail/\">get_the_post_thumbnail()</a></code> &#8211; Retrieve Post Thumbnail.<br><code><a title=\"Retrieve Post Thumbnail ID\" href=\"https://developer.wordpress.org/reference/functions/get_post_thumbnail_id/\">get_post_thumbnail_id()</a></code> &#8211; Retrieve Post Thumbnail ID.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Image Sizes</h2>\n\n\n\n<p>The default image sizes of WordPress are &#8220;Thumbnail&#8221;, &#8220;Medium&#8221;, &#8220;Large&#8221; and &#8220;Full Size&#8221; (the original size of the image you uploaded). These image sizes can be configured in the WordPress Administration Media panel under <strong>&gt;Settings &gt; Media</strong>. You can also define your own image size by passing an array with your image dimensions:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">the_post_thumbnail(); // Without parameter -&gt;; Thumbnail\nthe_post_thumbnail( 'thumbnail' ); // Thumbnail (default 150px x 150px max)\nthe_post_thumbnail( 'medium' ); // Medium resolution (default 300px x 300px max)\nthe_post_thumbnail( 'medium_large' ); // Medium-large resolution (default 768px x no height limit max)\nthe_post_thumbnail( 'large' ); // Large resolution (default 1024px x 1024px max)\nthe_post_thumbnail( 'full' ); // Original image resolution (unmodified)\nthe_post_thumbnail( array( 100, 100 ) ); // Other resolutions (height, width)</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Add Custom Featured Image Sizes</h2>\n\n\n\n<p>In addition to defining image sizes individually using</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">the_post_thumbnail( array(  ,  ) );</code></pre>\n\n\n\n<p>you can create custom featured image sizes in your theme&#8217;s functions file that can then be called in your theme&#8217;s template files.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_image_size( 'category-thumb', 300, 9999 ); // 300 pixels wide (and unlimited height)</code></pre>\n\n\n\n<p>Here is an example of how to create custom Featured Image sizes in your theme&#8217;s <code>functions.php</code> file.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( function_exists( 'add_theme_support' ) ) {\n    add_theme_support( 'post-thumbnails' );\n    set_post_thumbnail_size( 150, 150, true ); // default Featured Image dimensions (cropped)\n\n    // additional image sizes\n    // delete the next line if you do not need additional image sizes\n    add_image_size( 'category-thumb', 300, 9999 ); // 300 pixels wide (and unlimited height)\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Set the Featured Image Output Size</h2>\n\n\n\n<p>To be used in the current Theme&#8217;s functions.php file.<br> You can use <code>set_post_thumbnail_size()</code> to set the default Featured Image size by resizing the image proportionally (that is, without distorting it):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">set_post_thumbnail_size( 50, 50 ); // 50 pixels wide by 50 pixels tall, resize mode</code></pre>\n\n\n\n<p>Set the default Featured Image size by cropping the image (either from the sides, or from the top and bottom):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">set_post_thumbnail_size( 50, 50, true ); // 50 pixels wide by 50 pixels tall, crop mode</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Styling Featured Images</h2>\n\n\n\n<p>Featured Images are given a class &#8220;wp-post-image&#8221;. They also get a class depending on the size of the thumbnail being displayed. You can style the output with these CSS selectors:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">img.wp-post-image\nimg.attachment-thumbnail\nimg.attachment-medium\nimg.attachment-large\nimg.attachment-full</code></pre>\n\n\n\n<p>You can also give Featured Images their own classes by using the attribute parameter in <a title=\"Display Post Thumbnail\" href=\"https://developer.wordpress.org/reference/functions/the_post_thumbnail/\">the_post_thumbnail()</a>.<br> Display the Featured Image with a class &#8220;alignleft&#8221;:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">the_post_thumbnail( 'thumbnail', array( 'class' =&gt; 'alignleft' ) );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Default Usage</h3>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// check if the post or page has a Featured Image assigned to it.\nif ( has_post_thumbnail() ) {\n    the_post_thumbnail();\n}</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">To return the Featured Image for use in your PHP code instead of displaying it, use: <a title=\"Retrieve Post Thumbnail\" href=\"https://developer.wordpress.org/reference/functions/get_the_post_thumbnail/\">get_the_post_thumbnail()</a></div></div>\n\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// check for a Featured Image and then assign it to a PHP variable for later use\nif ( has_post_thumbnail() ) {\n    $featured_image = get_the_post_thumbnail();\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Linking to Post Permalink or Larger Image</h3>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> Don&#8217;t use these two examples together in the same Theme.</div></div>\n\n\n\n\n<p>Example 1. To link Post Thumbnails to the Post Permalink in a specific loop, use the following within your Theme&#8217;s template files:        </p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php if ( has_post_thumbnail()) : ?&gt;\n    &lt;a href=\"&lt;?php the_permalink(); ?&gt;\" alt=\"&lt;?php the_title_attribute(); ?&gt;\"&gt;\n        &lt;?php the_post_thumbnail(); ?&gt;\n    &lt;/a&gt;\n&lt;?php endif; ?&gt;</code></pre>\n\n\n\n<p>Example 2. To link <b>all Post Thumbnails</b> on your website to the Post Permalink, put this in the current Theme&#8217;s <a title=\"Theme Functions\" href=\"https://make.wordpress.org/docs/theme-developer-handbook/part-one-theme-basics/theme-functions/\">functions.php</a> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );\nfunction my_post_image_html( $html, $post_id, $post_image_id ) {\n\n  $html = '&lt;a href=\"' . get_permalink( $post_id ) . '\"&gt;' . $html . '&lt;/a&gt;';\n  return $html;\n\n}</code></pre>\n\n\n\n<p>This example links to the &#8220;large&#8221; Post Thumbnail image size and must be used within The Loop.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">if ( has_post_thumbnail()) {\n    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');\n    echo '&lt;a href=\"' . $large_image_url[0] . '\"&gt;';\n    the_post_thumbnail('thumbnail');\n    echo '&lt;/a&gt;';\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Source File</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://core.trac.wordpress.org/browser/tags/3.5.1/wp-includes/post-thumbnail-template.php#L0\">wp-includes/post-thumbnail-template.php</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">External Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"http://justintadlock.com/archives/2009/11/16/everything-you-need-to-know-about-wordpress-2-9s-post-image-feature\">Everything you need to know about WordPress 2.9\u2019s post image feature</a></li>\n\n\n\n<li><a href=\"http://wpengineer.com/the-ultimative-guide-for-the_post_thumbnail-in-wordpress-2-9/\">The Ultimative Guide For the_post_thumbnail In WordPress 2.9</a></li>\n\n\n\n<li><a href=\"http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/\">New in WordPress 2.9: Post Thumbnail Images</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11362",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11362",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 20,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11362/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143684,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11362/revisions/143684"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11362"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 16288637,
+    "date": "2022-12-14T12:14:02",
+    "date_gmt": "2022-12-14T12:14:02",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=16288637"
+    },
+    "modified": "2024-06-08T18:25:46",
+    "modified_gmt": "2024-06-08T18:25:46",
+    "slug": "post-navigation-link-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-navigation-link-block/",
+    "title": {
+        "rendered": "Post Navigation Link block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>Use the <em>Post Navigation Link</em> block to display the post pages link navigation for the previous and next pages.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image12-2-1024x286.png\" alt=\"WordPress block editor with a post navigation link block selected\" class=\"wp-image-16288649\" /></figure>\n\n\n\n<p>Click the (<strong>+</strong>) icon to open the block inserter pop-up window and search for the <em>Next post</em> or <em>Previous post</em> blocks. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image10.gif\" alt=\"A demonstration how to add the post navigation link block\" class=\"wp-image-16288654\" style=\"width:768px;height:371px\" width=\"768\" height=\"371\" /></figure>\n\n\n\n<p>You can also use the keyboard shortcut <kbd>/next-post</kbd> or <kbd>/previous-post</kbd> to quickly insert a preferred <em>Post Navigation Link</em> block.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block, and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>Both the <em>Previous</em> <em>post </em>and <em>Next post</em> blocks show five buttons in the block toolbar:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image8-4.png\" alt=\"Block toolbar for the post navigation link block\" class=\"wp-image-16288669\" style=\"width:336px;height:86px\" width=\"336\" height=\"86\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag</li>\n\n\n\n<li>Move up/down</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>Options</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"634\" height=\"378\" src=\"https://wordpress.org/documentation/files/2022/12/image11-2.png\" alt=\"The transform button on the post navigation link block toolbar\" class=\"wp-image-16289550\" srcset=\"https://wordpress.org/documentation/files/2022/12/image11-2.png 634w, https://wordpress.org/documentation/files/2022/12/image11-2-300x179.png 300w\" sizes=\"auto, (max-width: 634px) 100vw, 634px\" /></figure>\n\n\n\n<p>Click on the <strong>Transform</strong> button to convert the <em>Post Navigation Link</em> blocks into <em>Columns </em>or <em>Group </em>blocks.&nbsp;&nbsp;</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Drag icon</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"438\" height=\"114\" src=\"https://wordpress.org/documentation/files/2022/12/image6-2.png\" alt=\"The drag icon on the post navigation link block toolbar\" class=\"wp-image-16289552\" srcset=\"https://wordpress.org/documentation/files/2022/12/image6-2.png 438w, https://wordpress.org/documentation/files/2022/12/image6-2-300x78.png 300w\" sizes=\"auto, (max-width: 438px) 100vw, 438px\" /></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag it to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Move arrows</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"440\" height=\"114\" src=\"https://wordpress.org/documentation/files/2022/12/image9-2.png\" alt=\"The move arrows on the post navigation link block toolbar\" class=\"wp-image-16289554\" srcset=\"https://wordpress.org/documentation/files/2022/12/image9-2.png 440w, https://wordpress.org/documentation/files/2022/12/image9-2-300x78.png 300w\" sizes=\"auto, (max-width: 440px) 100vw, 440px\" /></figure>\n\n\n\n<p>The <strong>up </strong>and <strong>down </strong>arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on moving a block within the editor can be found <a href=\"https://wordpress.org/documentation/article/moving-blocks/\">here</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Change text alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"608\" height=\"404\" src=\"https://wordpress.org/documentation/files/2022/12/image5-3.png\" alt=\"Change alignment tool on the post navigation link block toolbar\" class=\"wp-image-16289556\" srcset=\"https://wordpress.org/documentation/files/2022/12/image5-3.png 608w, https://wordpress.org/documentation/files/2022/12/image5-3-300x199.png 300w\" sizes=\"auto, (max-width: 608px) 100vw, 608px\" /></figure>\n\n\n\n<p>Use the change text alignment tool to change the text alignment for the <em>Post Navigation Link</em> blocks. The following is a list of the block width options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Align text left</li>\n\n\n\n<li>Align text center</li>\n\n\n\n<li>Align text right</li>\n</ul>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Options</strong></p>\n\n\n\n<p>The <a href=\"https://wordpress.org/documentation/article/more-options\">More Options menu</a> represented by <strong>three vertical dots on the far right of the toolbar</strong> gives you more features such as the ability to duplicate, remove, or edit your block as HTML.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3.png\" alt=\"Examples of the location of the &quot;More Options&quot; menu in a Paragraph block. \" class=\"wp-image-16358234\" style=\"object-fit:cover;width:482px;height:145px\" width=\"482\" height=\"145\" srcset=\"https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3.png 816w, https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3-300x90.png 300w, https://wordpress.org/documentation/files/2023/08/more-options-generic-6-3-768x232.png 768w\" sizes=\"auto, (max-width: 482px) 100vw, 482px\" /><figcaption class=\"wp-element-caption\">Example of the location of the &#8220;More Options&#8221; menu in a Paragraph block.</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image3-1.png\" alt=\"Settings button on the WordPress block editor interface\" class=\"wp-image-16288677\" style=\"width:455px;height:68px\" width=\"455\" height=\"68\" /></figure>\n\n\n\n<p>Here are the options for the <em>Post Navigation Link</em> block:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Settings</strong></p>\n\n\n\n<p>Click Transform to variation to convert the <em>Next post</em> or <em>Previous post</em> blocks to their opposite blocks.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/image2-4.png\" alt=\"Drop-down menu to transform the post navigation link block variation\" class=\"wp-image-16288678\" style=\"width:402px;height:413px\" width=\"402\" height=\"413\" /></figure>\n\n\n\n<p>It\u2019s also possible to display the title as a link, or include the label as part of the link.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <em>Post Navigation Link</em> block<em> </em>provides typography settings to change the font size, appearance, line height, letter case, and letter spacing.</p>\n\n\n\n<p>For details, refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The <strong>Advanced </strong>tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles for the block.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"278\" height=\"130\" src=\"https://wordpress.org/documentation/files/2019/03/image3-7.png\" alt=\"The advanced section lets you add a CSS class to your block.\" class=\"wp-image-11286000\" /><figcaption class=\"wp-element-caption\">The advanced section lets you add a CSS class to your block.</figcaption></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>2023-07-25\n<ul class=\"wp-block-list\">\n<li>Fix broken images URLs </li>\n</ul>\n</li>\n\n\n\n<li>Created 2022-12-14</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Use the Post Navigation Link block to display the post pages link navigation for the previous and next pages. Click the (+) icon to open the block inserter pop-up window and search for the Next post or Previous post blocks. You can also use the keyboard shortcut /next-post [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16288637",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16288637",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16288637"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16288637/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360369,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16288637/revisions/16360369"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16288637"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16288637"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

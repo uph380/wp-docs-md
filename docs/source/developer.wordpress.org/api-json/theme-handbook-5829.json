@@ -1,0 +1,97 @@
+{
+    "id": 5829,
+    "date": "2014-08-02T01:44:40",
+    "date_gmt": "2014-08-02T01:44:40",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=5829"
+    },
+    "modified": "2022-10-25T16:21:34",
+    "modified_gmt": "2022-10-25T16:21:34",
+    "slug": "organizing-theme-files",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/organizing-theme-files/",
+    "title": {
+        "rendered": "Organizing Theme Files"
+    },
+    "content": {
+        "rendered": "\n<p>While WordPress themes technically only require two files (<code>index.php</code> in classic themes and <code>index.html</code> in block themes, and <code>style.css</code>), they usually are made up of many files. That&nbsp;means they can quickly become disorganized! This section will show you how to keep your files organized.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"theme-folder-and-file-structure\">Theme folder and file structure</h2>\n\n\n\n<p>As mentioned previously, the default Twenty themes are some of the best examples of good theme development. For instance, here is how the&nbsp;<a href=\"https://wordpress.org/themes/twentyseventeen/\">Twenty Seventeen Theme</a>&nbsp;organizes its <a rel=\"noopener\" href=\"https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentyseventeen\" target=\"_blank\">file structure</a>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">.\n\u251c\u2500\u2500 assets (dir)/\n\u2502   \u251c\u2500\u2500 css (dir)\n\u2502   \u251c\u2500\u2500 images (dir)\n\u2502   \u2514\u2500\u2500 js (dir)\n\u251c\u2500\u2500 inc (dir)\n\u251c\u2500\u2500 template-parts (dir)/\n\u2502   \u251c\u2500\u2500 footer (dir)\n\u2502   \u251c\u2500\u2500 header (dir)\n\u2502   \u251c\u2500\u2500 navigation (dir)\n\u2502   \u251c\u2500\u2500 page (dir)\n\u2502   \u2514\u2500\u2500 post (dir)\n\u251c\u2500\u2500 404.php\n\u251c\u2500\u2500 archive.php\n\u251c\u2500\u2500 comments.php\n\u251c\u2500\u2500 footer.php\n\u251c\u2500\u2500 front-page.php\n\u251c\u2500\u2500 functions.php\n\u251c\u2500\u2500 header.php\n\u251c\u2500\u2500 index.php\n\u251c\u2500\u2500 page.php\n\u251c\u2500\u2500 README.txt\n\u251c\u2500\u2500 rtl.css\n\u251c\u2500\u2500 screenshot.png\n\u251c\u2500\u2500 search.php\n\u251c\u2500\u2500 searchform.php\n\u251c\u2500\u2500 sidebar.php\n\u251c\u2500\u2500 single.php\n\u2514\u2500\u2500 style.css</code></pre>\n\n\n\n<p>You can see that the main theme template files are in the root directory, while JavaScript, CSS, images are placed in assets directory, template-parts are placed in under respective subdirectory of template-parts and collection of &nbsp;functions related to core functionalities are placed in inc directory.</p>\n\n\n\n<p>There are no required folders in classic themes. In block themes, templates must be placed inside a folder called <strong>templates</strong>, and all template parts must be placed inside a folder called <strong>parts</strong>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><code>style.css</code>&nbsp;should reside in the root directory of your theme not within the CSS directory.</div></div>\n\n\n\n\n<h3 class=\"wp-block-heading\" id=\"languages-folder\">Languages folder</h3>\n\n\n\n<p>It&#8217;s best practice to&nbsp;<a title=\"Internationalization\" href=\"https://developer.wordpress.org/themes/functionality/internationalization/\">internationalize your theme</a> so it can be translated into&nbsp;other languages. Default themes include the <code>languages</code> folder, which contains a&nbsp;.pot file for translation and any translated&nbsp;.mo files. While&nbsp;<code>languages</code> is the default name of this folder, you can change the name. If you do so, you must&nbsp;update <code><a href=\"https://developer.wordpress.org/reference/functions/load_theme_textdomain/\">load_theme_textdomain()</a></code>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-5829",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5829",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 32,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5829/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143625,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5829/revisions/143625"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=5829"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

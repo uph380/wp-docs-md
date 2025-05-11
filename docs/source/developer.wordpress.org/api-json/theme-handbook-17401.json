@@ -1,0 +1,91 @@
+{
+    "id": 17401,
+    "date": "2015-06-11T18:39:32",
+    "date_gmt": "2015-06-11T18:39:32",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=17401"
+    },
+    "modified": "2023-12-14T20:59:41",
+    "modified_gmt": "2023-12-14T20:59:41",
+    "slug": "template-files-section",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/template-files-section/",
+    "title": {
+        "rendered": "Template Files Section"
+    },
+    "content": {
+        "rendered": "\n<p>We introduced <a href=\"https://developer.wordpress.org/themes/basics/template-files/\">template files</a> earlier in the handbook. &nbsp;This next section is going to break up the different template files through the <a href=\"https://developer.wordpress.org/themes/basics/post-types/\">post types</a> that they display and provide a&nbsp;more in depth explanation of the purpose for these template files. &nbsp;You&#8217;ll also get a handle on some practical use cases for the different template files.</p>\n\n\n\n<p>You&#8217;ll start with <a href=\"https://developer.wordpress.org/themes/template-files-section/post-template-files/\">post template files</a> that deal with displaying the Post post type. &nbsp;Then you&#8217;ll look at <a href=\"https://developer.wordpress.org/themes/template-files-section/page-template-files/\">page template files</a> that display the Page post type and drill down into <a href=\"https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/\">specific page templates</a> that WordPress has built in to its functionality. &nbsp;Next you&#8217;ll learn about <a href=\"https://developer.wordpress.org/themes/template-files-section/attachment-template-files/\">attachment template files</a> which display the attachment post type. &nbsp;You&#8217;ll also learn about how to display custom post types that are built by a plugin in the <a href=\"https://developer.wordpress.org/themes/template-files-section/custom-post-type-template-files/\">custom post type templates</a>. &nbsp;Lastly, you&#8217;ll touch on some <a href=\"https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/\">partial and miscellaneous template files</a> which are important to include but don&#8217;t necessarily display post types.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">\u00a0It&#8217;s important to understand WordPress doesn&#8217;t really break down template files down into specific types of template files such as post template files or attachment template files. Especially since many template files, such as <code>index.php</code> or\u00a0<code>search.php</code> can display many different post types.\u00a0To help you reference specific template files this handbook is categorizing them based on the post types they can display.</div></div>\n\n",
+        "protected": false
+    },
+    "author": 14167654,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 1115,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-17401",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17401",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17401/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 126987,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/17401/revisions/126987"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wporg/v1/users/lizkaraffa"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=17401"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

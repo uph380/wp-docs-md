@@ -1,0 +1,109 @@
+{
+    "id": 16356739,
+    "date": "2023-04-17T01:54:03",
+    "date_gmt": "2023-04-17T01:54:03",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16356739"
+    },
+    "modified": "2024-11-04T11:32:22",
+    "modified_gmt": "2024-11-04T11:32:22",
+    "slug": "distraction-free-mode",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/distraction-free-mode/",
+    "title": {
+        "rendered": "Distraction Free mode"
+    },
+    "content": {
+        "rendered": "\n<p>Distraction Free mode is a new visual option that creates a focused writing experience by hiding various parts of the editor interface. When enabled, any open sidebars are closed and toolbars fade away, leaving your content to take center stage. You can toggle this mode on/off as you write and as you\u2019d like. This mode doesn\u2019t work in the <a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\">How Distraction Free mode works</h2>\n\n\n\n<p>Distraction free mode works by adjusting the following interfaces and simplifying the writing experience:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Removing the Top toolbar, making it only appear when you hover your cursor over it.</li>\n\n\n\n<li>Removes many Top toolbar buttons.&nbsp;</li>\n\n\n\n<li>Automatically closes any open sidebars.&nbsp;</li>\n\n\n\n<li>Hides various + options for adding new blocks.</li>\n\n\n\n<li>Hides the block toolbar.&nbsp;</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">How to use Distraction Free mode</h2>\n\n\n\n<h3 class=\"wp-block-heading\">How to find Distraction Free mode</h3>\n\n\n\n<p>To find Distraction Free mode, use the three-dot menu on the top right and check the Distraction free mode. Your choice will be stored in your browser\u2019s local storage, meaning if you switch browsers or computers, you will have to switch into this mode once more.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"643\" height=\"419\" src=\"https://wordpress.org/documentation/files/2023/04/Edit_Post_Distraction_Free_Mode_\u2039_DEMO_\u2014_WordPre.png\" alt=\"Visual of the settings open showing distraction free mode checked off with two red arrows pointing to where to take action. \" class=\"wp-image-16365253\" style=\"aspect-ratio:1.1802030456852792;width:485px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2023/04/Edit_Post_Distraction_Free_Mode_\u2039_DEMO_\u2014_WordPre.png 643w, https://wordpress.org/documentation/files/2023/04/Edit_Post_Distraction_Free_Mode_\u2039_DEMO_\u2014_WordPre-300x195.png 300w\" sizes=\"auto, (max-width: 643px) 100vw, 643px\" /><figcaption class=\"wp-element-caption\">How to find Distraction Free mode.</figcaption></figure>\n\n\n\n<p>Keep in mind that you can use Distraction free mode with additional modes like Fullscreen mode or Spotlight mode. </p>\n\n\n\n<h3 class=\"wp-block-heading\">How to toggle on and off</h3>\n\n\n\n<p>To toggle this mode off, move your cursor to the very top of the editor until the top toolbar appears. From there, you can select the three-dot menu on the top right and un-check the Distraction free mode.</p>\n\n\n\n<p>You can also use the keyboard shortcut \u21e7 \u2318 \\ on Mac and Ctrl+Shift+\\ for Windows.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">How to show the top toolbar</h3>\n\n\n\n<p>To see the top toolbar in this view, move your cursor to the top of the editor. As you do so, the top toolbar will come back into view and will fade if you move your cursor away again.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">How to add blocks</h3>\n\n\n\n<p>Because this mode is built for writing, you can create new paragraphs by hitting enter. To add different kinds of blocks though, like a Heading or Image, you must use the slash command (<code>/</code>) as it&#8217;s the only way to add additional blocks. <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/#slash-command\">Read more here</a>.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\">Demonstration of Distraction Free mode</h2>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/04/Edit_Post_Distraction_Free_Mode_\u2039_DEMO_\u2014_WordPre.mp4\"></video></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<p class=\"has-medium-font-size\"><strong>Changelog:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-11-04\n<ul class=\"wp-block-list\">\n<li>Updated the screenshot as it appears in the latest Gutenberg editor.</li>\n\n\n\n<li>Updated the video record with one that shows how to navigate the top tool bar while in distraction free mode.</li>\n</ul>\n</li>\n\n\n\n<li>2023-04-16 Created</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Distraction Free mode is a new visual option that creates a focused writing experience by hiding various parts of the editor interface. When enabled, any open sidebars are closed and toolbars fade away, leaving your content to take center stage. You can toggle this mode on/off as you write and as you\u2019d like. This mode [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-16356739",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356739",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16356739"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356739/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365260,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356739/revisions/16365260"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16356739"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16356739"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

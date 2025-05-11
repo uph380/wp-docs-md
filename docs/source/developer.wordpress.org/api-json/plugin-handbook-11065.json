@@ -1,0 +1,91 @@
+{
+    "id": 11065,
+    "date": "2014-09-24T18:44:34",
+    "date_gmt": "2014-09-24T18:44:34",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11065"
+    },
+    "modified": "2023-12-14T20:50:09",
+    "modified_gmt": "2023-12-14T20:50:09",
+    "slug": "post-types",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/post-types/",
+    "title": {
+        "rendered": "Custom Post Types"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress stores the Post Types in the <code>posts</code> table allowing developers to register Custom Post Types along the ones that already exist.</p>\n\n\n\n<p>This chapter will show you how to <a href=\"https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/\">register Custom Post Types</a>, how to <a href=\"https://developer.wordpress.org/plugins/post-types/working-with-custom-post-types/\">retrieve their content from the database, and how to render them to the public</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 11,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11065",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11065",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 10,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11065/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 127735,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11065/revisions/127735"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11065"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

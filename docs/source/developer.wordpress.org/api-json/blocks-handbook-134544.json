@@ -1,0 +1,91 @@
+{
+    "id": 134544,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-customize-widgets/"
+    },
+    "modified": "2024-10-30T16:55:28",
+    "modified_gmt": "2024-10-30T16:55:28",
+    "slug": "packages-customize-widgets",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-customize-widgets/",
+    "title": {
+        "rendered": "@wordpress/customize-widgets"
+    },
+    "content": {
+        "rendered": "<p>Widgets blocks in Customizer Module for WordPress.</p>\n<blockquote><p>\n  This package is meant to be used only with WordPress core. Feel free to use it in your own project but please keep in mind that it might never get fully documented.\n</p></blockquote>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/customize-widgets\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>Technical implementation details</h2>\n<p>The new Widgets Customizer replaces <code>Appearance &gt; Customize &gt; Widgets</code> with block-based editors. The original Customizer is a Backbone app, but the new editor is a React app. One of the challenges is to integrate them together but make sure features from both sides still work.</p>\n<p>We extend the Customizer&#8217;s sections and controls in the <code>/controls</code> directory and inject some custom logic for the editor. We use React portal to render each editor in its section to reuse most of the styles and scripts provided by the Customizer.</p>\n<p><code>components/sidebar-block-editor</code> is the entry point for each widget area&#8217;s block editor. <code>component/sidebar-block-editor/sidebar-adapter.js</code> is an adapter to talk to <a href=\"https://developer.wordpress.org/themes/customize-api/\">the Customize API</a> and transform widget objects into widget instances.</p>\n<p><code>components/sidebar-block-editor/use-sidebar-block-editor.js</code> is a custom React Hook to integrate the adapter into React and handle most of the translations between blocks and widgets. These allow us to implement basic editing features as well as real-time preview in a backwards-compatible way.</p>\n<p>Whenever the blocks change, we run through each block to determine if there are created, edited, or deleted blocks. We then convert them to their widget counterparts and call the Customize API to update them.</p>\n<p>For React developers, this can be thought of as a custom reconciler or a custom renderer for the Customizer. But instead of targeting DOM as the render target, we are targeting WordPress widgets using the Customize API.</p>\n<p>This is not the typical way the block editor is intended to be used. As a result, we have to also implement some missing features such as undo/redo and custom focus control. It is still a goal to make the block editor as easy to integrate into different systems as possible, so the integration in the Widgets Customizer can be a good experience for us to reflect some drawbacks in our current API and potentially improve them in the future.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 260,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134544",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134544",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134544/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151815,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134544/revisions/151815"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134544"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

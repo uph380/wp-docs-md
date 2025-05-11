@@ -1,0 +1,85 @@
+{
+    "id": 135089,
+    "date": "2021-03-10T00:39:48",
+    "date_gmt": "2021-03-10T00:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/"
+    },
+    "modified": "2025-01-07T18:34:10",
+    "modified_gmt": "2025-01-07T18:34:10",
+    "slug": "contributors",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/",
+    "title": {
+        "rendered": "Contributor Guide"
+    },
+    "content": {
+        "rendered": "<p>Welcome to the Gutenberg Project Contributor Guide. This guide is here to help you get setup and start contributing to the project. If you have any questions, you&#8217;ll find us in the #core-editor channel in the WordPress Core Slack, <a href=\"https://make.wordpress.org/chat/\">free to join</a>.</p>\n<p>Gutenberg is a sub-project of Core WordPress. Please see the <a href=\"https://make.wordpress.org/core/handbook/\">Core Contributor Handbook</a> for additional information.</p>\n<h2>Sections</h2>\n<p>Find the section below based on what you are looking to contribute:</p>\n<ul>\n<li><strong>Code?</strong> See the <a href=\"https://developer.wordpress.org/block-editor/contributors/code/\">developer section</a>.</p>\n</li>\n<li>\n<p><strong>Design?</strong> See the <a href=\"https://developer.wordpress.org/block-editor/contributors/design/\">design section</a>.</p>\n</li>\n<li>\n<p><strong>Documentation?</strong> See the <a href=\"https://developer.wordpress.org/block-editor/contributors/documentation/\">documentation section</a></p>\n</li>\n<li>\n<p><strong>Triage Support?</strong> See the <a href=\"https://developer.wordpress.org/block-editor/contributors/triage/\">triaging issues section</a></p>\n</li>\n<li>\n<p><strong>Internationalization?</strong> See the <a href=\"https://developer.wordpress.org/block-editor/contributors/localizing/\">localizing and translating section</a></p>\n</li>\n</ul>\n<h3>Repository management</h3>\n<p>The Gutenberg project uses GitHub for managing code and tracking issues. Please see the following sections for the project methodologies using GitHub.</p>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/repository-management/#issues\">Issue Management</a></p>\n</li>\n<li>\n<p><a href=\"https://developer.wordpress.org/block-editor/contributors/repository-management/#pull-requests\">Pull Requests</a></p>\n</li>\n<li>\n<p><a href=\"https://developer.wordpress.org/block-editor/contributors/repository-management/#teams\">Teams and Projects</a></p>\n</li>\n</ul>\n<h2>Guidelines</h2>\n<p>See the <a href=\"https://github.com/WordPress/gutenberg/blob/HEAD/CONTRIBUTING.md\">Contributing Guidelines</a> for the rules around contributing: This includes the code of conduct and licensing information.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 368,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135089",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151756,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089/revisions/151756"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135089"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

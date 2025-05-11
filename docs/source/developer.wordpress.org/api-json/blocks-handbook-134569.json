@@ -1,0 +1,91 @@
+{
+    "id": 134569,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interface/"
+    },
+    "modified": "2024-10-30T16:55:22",
+    "modified_gmt": "2024-10-30T16:55:22",
+    "slug": "packages-interface",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interface/",
+    "title": {
+        "rendered": "@wordpress/interface"
+    },
+    "content": {
+        "rendered": "<p>The Interface Package contains the basis to start a new WordPress screen as Edit Post or Edit Site. The package offers a data store and a set of components. The store is useful to contain common data required by a screen (e.g., active areas). The information is persisted across screen reloads. The components allow one to implement functionality like a sidebar or menu items. Third-party plugins can extend them by default.</p>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/interface --save\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>API Usage</h2>\n<h3>Complementary Areas</h3>\n<p>This component was named after a <a href=\"https://www.w3.org/TR/wai-aria-practices/examples/landmarks/complementary.html\">complementary landmark</a> \u2013 a supporting section of the document, designed to be complementary to the main content at a similar level in the DOM hierarchy, but remains meaningful when separated from the main content.</p>\n<p><code>ComplementaryArea</code> and <code>ComplementaryArea.Slot</code> form a slot fill pair to render complementary areas. Multiple <code>ComplementaryArea</code> components representing different complementary areas may be rendered at the same time, but only one appears on the slot depending on which complementary area is enabled.</p>\n<p>It is possible to control which complementary is enabled by using the store:</p>\n<p>Below are some examples of how to control the active complementary area using the store:</p>\n<pre><code class=\"language-js\">wp.data\n    .select( 'core/interface' )\n    .getActiveComplementaryArea( 'core' );\n// -&gt; \"edit-post/document\"\n\nwp.data\n    .dispatch( 'core/interface' )\n    .enableComplementaryArea( 'core', 'edit-post/block' );\n\nwp.data\n    .select( 'core/interface' )\n    .getActiveComplementaryArea( 'core' );\n// -&gt; \"edit-post/block\"\n\nwp.data\n    .dispatch( 'core/interface' )\n    .disableComplementaryArea( 'core' );\n\nwp.data\n    .select( 'core/interface' )\n    .getActiveComplementaryArea( 'core' );\n// -&gt; null\n</code></pre>\n<h3>Pinned Items</h3>\n<p><code>PinnedItems</code> and <code>PinnedItems.Slot</code> form a slot fill pair to render pinned items (or areas) that act as a list of favorites similar to browser extensions listed in the Chrome Menu.</p>\n<p>Example usage: <code>ComplementaryArea</code> component makes use of <code>PinnedItems</code> and automatically adds a pinned item for the complementary areas marked as a favorite.</p>\n<pre><code class=\"language-js\">wp.data.select( 'core/interface' ).isItemPinned( 'core', 'edit-post-block-patterns/block-patterns-sidebar' );\n// -&gt; false\n\nwp.data.dispatch( 'core/interface' ).pinItem( 'core', 'edit-post-block-patterns/block-patterns-sidebar' );\n\nwp.data.select( 'core/interface' ).isItemPinned( 'core', 'edit-post-block-patterns/block-patterns-sidebar' );\n// -&gt; true\n\nwp.data.dispatch( 'core/interface' ).unpinItem( 'core', 'edit-post-block-patterns/block-patterns-sidebar' );\n\nwp.data.select( 'core/interface' ).isItemPinned( 'core', 'edit-post-block-patterns/block-patterns-sidebar' ); -&gt; false\n</code></pre>\n<h3>Preferences</h3>\n<p>The interface package provides some helpers for implementing editor preferences.</p>\n<h4>Features</h4>\n<p>Features are boolean values used for toggling specific editor features on or off.</p>\n<p>Set the default values for any features on editor initialization:</p>\n<pre><code class=\"language-js\">import { dispatch } from '@wordpress/data';\nimport { store as interfaceStore } from '@wordpress/interface';\n\nfunction initialize() {\n    // ...\n\n    dispatch( interfaceStore ).setFeatureDefaults(\n        'namespace/editor-or-plugin-name',\n        {\n            myFeatureName: true,\n        }\n    );\n\n    // ...\n}\n</code></pre>\n<p>Use the <code>toggleFeature</code> action and the <code>isFeatureActive</code> selector to toggle features within your app:</p>\n<pre><code class=\"language-js\">wp.data\n    .select( 'core/interface' )\n    .isFeatureActive( 'namespace/editor-or-plugin-name', 'myFeatureName' ); // true\nwp.data\n    .dispatch( 'core/interface' )\n    .toggleFeature( 'namespace/editor-or-plugin-name', 'myFeatureName' );\nwp.data\n    .select( 'core/interface' )\n    .isFeatureActive( 'namespace/editor-or-plugin-name', 'myFeatureName' ); // false\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 289,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134569",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134569",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134569/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153517,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134569/revisions/153517"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134569"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": 11368,
+    "date": "2014-10-23T15:23:22",
+    "date_gmt": "2014-10-23T15:23:22",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11368"
+    },
+    "modified": "2022-10-29T04:03:06",
+    "modified_gmt": "2022-10-29T04:03:06",
+    "slug": "post-formats",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/post-formats/",
+    "title": {
+        "rendered": "Post Formats"
+    },
+    "content": {
+        "rendered": "\n<p>A Post Format is used by a theme for presenting posts in a certain format and style. The Post Formats feature provides a standardized list of formats available to all themes that support the feature. A theme may not support every format on the list; in such a case, it is good form to make this known to users.</p>\n\n\n\n<p>A theme cannot introduce formats not on the standardized list, even through plugins. This standardization ensures compatibility between themes and a way for external tools to use the feature in a consistent fashion.</p>\n\n\n\n<p>In short, with a theme that supports Post Formats, a blogger can change how a post looks by choosing a Post Format.</p>\n\n\n\n<p>Using <strong>Asides</strong> as an example, in the past, a category called Asides was created, and posts were assigned that category, and then displayed differently based on styling rules from <a href=\"https://developer.wordpress.org/reference/functions/post_class/\">post_class()</a> or from <a href=\"https://developer.wordpress.org/reference/functions/in_category/\">in_category(&#8216;asides&#8217;)</a>.</p>\n\n\n\n<p>With <strong>Post Formats</strong>, the new approach allows a theme to add support for a Post Format (e.g. <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\">add_theme_support(&#8216;post-formats&#8217;, array(&#8216;aside&#8217;))</a>), and then the post format can be selected in the Publish meta box when saving the post. A function call of <a href=\"https://developer.wordpress.org/reference/functions/get_post_format/\">get_post_format($post-&gt;ID)</a> can be used to determine the format, and <a href=\"https://developer.wordpress.org/reference/functions/post_class/\">post_class()</a> will also create the &#8220;format-asides&#8221; class, for pure-css styling.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Supported Formats</h2>\n\n\n\n<p>The following Post Formats are available, if supported by the theme.</p>\n\n\n\n<p>Note that while actual post content won&#8217;t change, the theme can display a post differently based on the format chosen. How posts are displayed is entirely up to the theme, but here are some general guidelines on typical uses for the different Post Formats.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>aside</strong> &#8211; Typically styled without a title. Similar to a Facebook note update.</li>\n\n\n\n<li><strong>gallery</strong> &#8211; A gallery of images. Post will likely contain a gallery shortcode and will have image attachments.</li>\n\n\n\n<li><strong>link</strong> &#8211; A link to another site. Themes may wish to use the first &lt;a href=\u201d\u201d&gt; tag in the post content as the external link for that post. An alternative approach could be if the post consists only of a URL, then that will be the URL and the title (post_title) will be the name attached to the anchor for it.</li>\n\n\n\n<li><strong>image</strong> &#8211; A single image. The first &lt;img /&gt; tag in the post could be considered the image. Alternatively, if the post consists only of a URL, that will be the image URL and the title of the post (post_title) will be the title attribute for the image.</li>\n\n\n\n<li><strong>quote</strong> &#8211; A quotation. Probably will contain a blockquote holding the quote content. Alternatively, the quote may be just the content, with the source/author being the title.</li>\n\n\n\n<li><strong>status</strong> &#8211; A short status update, similar to a Twitter status update.</li>\n\n\n\n<li><strong>video</strong> &#8211; A single video. The first &lt;video /&gt; tag or object/embed in the post content could be considered the video. Alternatively, if the post consists only of a URL, that will be the video URL. May also contain the video as an attachment to the post, if video support is enabled on the blog (like via a plugin).</li>\n\n\n\n<li><strong>audio</strong> &#8211; An audio file. Could be used for Podcasting.</li>\n\n\n\n<li><strong>chat</strong> &#8211; A chat transcript, like so:</li>\n</ul>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"bash\" class=\"language-bash\">John: foo\nMary: bar\nJohn: foo 2</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\">When writing or editing a Post, &#8220;Standard&#8221; designates that no Post Format is specified. Also if an invalid format is specified, &#8220;Standard&#8221; (no format) is applied by default.</div></div>\n\n\n\n\n<h2 class=\"wp-block-heading\">Function Reference</h2>\n\n\n\n<h3 class=\"wp-block-heading\">Main Functions</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/set_post_format/\">set_post_format()</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_post_format/\">get_post_format()</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/has_post_format/\">has_post_format()</a></li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\">Other Functions</h3>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_post_format_link/\">get_post_format_link()</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/get_post_format_string/\">get_post_format_string()</a></li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Adding Theme Support</h2>\n\n\n\n<p>Themes need to use <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\">add_theme_support()</a> in the <em>functions.php</em> file to tell WordPress which post formats to support by passing an array of formats like so:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction themename_post_formats_setup() {\n\tadd_theme_support( 'post-formats', array( 'aside', 'gallery' ) );\n}\nadd_action( 'after_setup_theme', 'themename_post_formats_setup' );</code></pre>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/reference/hooks/after_setup_theme/\">after_setup_theme</a> hook is used so that the post formats support is registered after the theme has loaded.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding Post Type Support</h2>\n\n\n\n<p>Post Types need to use <a href=\"https://developer.wordpress.org/reference/functions/add_post_type_support/\">add_post_type_support()</a> in the <em>functions.php</em> file to tell WordPress which post formats to support:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nfunction themename_custom_post_formats_setup() {\n\t// add post-formats to post_type 'page'\n\tadd_post_type_support( 'page', 'post-formats' );\n\t// add post-formats to post_type 'my_custom_post_type'\n\tadd_post_type_support( 'my_custom_post_type', 'post-formats' );\n}\nadd_action( 'init', 'themename_custom_post_formats_setup' );</code></pre>\n\n\n\n<p>Or in the function <a href=\"https://developer.wordpress.org/reference/functions/register_post_type/\">register_post_type()</a>, add &#8216;post-formats&#8217;, in &#8216;supports&#8217; parameter array:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\n$args = array(\n\t'supports' =&gt; array( 'title', 'editor', 'author', 'post-formats' ),\n);\nregister_post_type( 'book', $args );</code></pre>\n\n\n\n<p><a href=\"https://developer.wordpress.org/reference/functions/add_post_type_support/\">add_post_type_support</a> should be hooked to <a href=\"https://developer.wordpress.org/reference/hooks/init/\">init</a> hook, as custom post types may not have been registered at <a href=\"https://developer.wordpress.org/reference/hooks/after_setup_theme/\">after_setup_theme</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using Formats</h2>\n\n\n\n<p>In the theme, use <a href=\"https://developer.wordpress.org/reference/functions/get_post_format/\">get_post_format()</a> to check the format for a post, and change its presentation accordingly. Note that posts with the default format will return a value of FALSE. Alternatively, use the <a href=\"https://developer.wordpress.org/reference/functions/has_post_format/\">has_post_format()</a> <a href=\"https://developer.wordpress.org/themes/basics/conditional-tags/\">conditional tag</a>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nif ( has_post_format( 'video' ) ) {\n\techo 'This is the video format.';\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Suggested Styling</h3>\n\n\n\n<p>An alternate approach to formats is through styling rules. Themes should use the <a href=\"https://developer.wordpress.org/reference/functions/post_class/\">post_class()</a> function in the wrapper code that surrounds the post to add dynamic styling classes. Post formats will cause extra classes to be added in this manner, using the &#8220;format-foo&#8221; name.</p>\n\n\n\n<p>For example, one could hide post titles from status format posts by putting this in your theme&#8217;s stylesheet:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"css\" class=\"language-css\">.format-status .post-title {\n     display: none;\n}</code></pre>\n\n\n\n<p>Each of the formats lend themselves to a certain type of &#8220;style&#8221;, as dictated by modern usage. It is well to keep in mind the intended usage for each format when applying styles.</p>\n\n\n\n<p>For example, the aside, link, and status formats are simple, short, and minor. These will typically be displayed without title or author information. The aside could contain perhaps a paragraph or two, while the link would be only a sentence with a link to a URL in it. Both the link and aside might have a link to the single post page (using <a href=\"https://developer.wordpress.org/reference/functions/the_permalink/\">the_permalink()</a>) and would thus allow comments, but the status format very likely would not have such a link.</p>\n\n\n\n<p>An image post, on the other hand, would typically just contain a single image, with or without a caption/text to go along with it. An audio/video post would be the same but with audio/video added in. Any of these three could use either plugins or standard <a href=\"https://codex.wordpress.org/Embeds\">Embeds</a> to display their content. Titles and authorship might not be displayed for them either, as the content could be self-explanatory.</p>\n\n\n\n<p>The quote format is especially well suited to posting a simple quote from a person with no extra information. If you were to put the quote into the post content alone, and put the quoted person&#8217;s name into the title of the post, then you could style the post so as to display <a href=\"https://developer.wordpress.org/reference/functions/the_content/\">the_content()</a> by itself but restyled into a blockquote format, and use <a href=\"https://developer.wordpress.org/reference/functions/the_title/\">the_title()</a> to display the quoted person&#8217;s name as the byline.</p>\n\n\n\n<p>A chat in particular will probably tend towards a monospaced type display, in many cases. With some styling on the .format-chat, you can make it display the content of the post using a monospaced font, perhaps inside a gray background div or similar, thus distinguishing it visually as a chat session.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Formats in a Child Theme</h3>\n\n\n\n<p><a href=\"https://developer.wordpress.org/themes/advanced-topics/child-themes/\">Child Themes</a> inherit the post formats defined by the parent theme. Calling <a href=\"https://developer.wordpress.org/reference/functions/add_theme_support/\">add_theme_support()</a> for post formats in a child theme must be done at a later priority than that of the parent theme and will <strong>override</strong> the existing list, not add to it.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php\nadd_action( 'after_setup_theme', 'childtheme_formats', 11 );\nfunction childtheme_formats() {\n\t add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link' ) );\n}</code></pre>\n\n\n\n<p>Calling <a href=\"https://developer.wordpress.org/reference/functions/remove_theme_support/\">remove_theme_support(&#8216;post-formats&#8217;)</a> will remove it all together.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5819,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11368",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11368",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11368/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143708,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11368/revisions/143708"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5819"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11368"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

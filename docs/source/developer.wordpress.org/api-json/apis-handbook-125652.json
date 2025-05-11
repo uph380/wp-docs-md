@@ -1,0 +1,91 @@
+{
+    "id": 125652,
+    "date": "2019-08-12T08:26:22",
+    "date_gmt": "2019-08-12T08:26:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=125652"
+    },
+    "modified": "2023-02-27T14:35:08",
+    "modified_gmt": "2023-02-27T14:35:08",
+    "slug": "quicktags",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/quicktags/",
+    "title": {
+        "rendered": "Quicktags"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Description</h2>\n\n\n\n<p>The Quicktags API allows you to include additional buttons in the Text (HTML) mode of the WordPress Classic editor.</p>\n\n\n\n<figure class=\"wp-block-image\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"550\" height=\"90\" src=\"https://i0.wp.com/developer.wordpress.org/files/2019/08/quicktags-editor.png?resize=550%2C90&#038;ssl=1\" alt=\"\" class=\"wp-image-125756\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2019/08/quicktags-editor.png?w=550&amp;ssl=1 550w, https://i0.wp.com/developer.wordpress.org/files/2019/08/quicktags-editor.png?resize=300%2C49&amp;ssl=1 300w\" sizes=\"auto, (max-width: 550px) 100vw, 550px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">History</h2>\n\n\n\n<p>This API was introduced in <a href=\"/support/wordpress-version/version-3-3\">WordPress 3.3</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Usage</h2>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"js\" class=\"language-js\">QTags.addButton( id, display, arg1, arg2, access_key, title, priority, instance, object );</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Parameters</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code><strong>id</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>required</strong></em><strong>):</strong> The html id for the button. Default:&nbsp;<em>None</em></li>\n\n\n\n<li><code><strong>display</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>required</strong></em><strong>):</strong> The html value for the button. Default:&nbsp;<em>None</em></li>\n\n\n\n<li><code><strong>arg1</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>required</strong></em><strong>): </strong>Either a starting tag to be inserted like &#8220;&lt;span&gt;&#8221; or a callback that is executed when the button is clicked. Default:&nbsp;<em>None</em></li>\n\n\n\n<li><code><strong>arg2</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>optional</strong></em><strong>):</strong> Ending tag like &#8220;&lt;/span&gt;&#8221;. Leave empty if tag doesn&#8217;t need to be closed (i.e. &#8220;&lt;hr /&gt;&#8221;). Default:&nbsp;<em>None</em></li>\n\n\n\n<li><code><strong>access_key</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>optional</strong></em><strong>):</strong> <strong>Deprecated and Not used.</strong> Shortcut access key for the button. Default:\u00a0<em>None</em></li>\n\n\n\n<li><code><strong>title</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>optional</strong></em><strong>):</strong> The html title value for the button. Default:&nbsp;<em>None</em></li>\n\n\n\n<li><code><strong>priority</strong></code><strong> (</strong><em><strong>int</strong></em><strong>) (</strong><em><strong>optional</strong></em><strong>):</strong> A number representing the desired position of the button in the toolbar. 1 &#8211; 9 = first, 11 &#8211; 19 = second, 21 &#8211; 29 = third, etc. Default:&nbsp;<em>None</em></li>\n\n\n\n<li><code><strong>instance</strong></code><strong> (</strong><em><strong>string</strong></em><strong>) (</strong><em><strong>optional</strong></em><strong>):</strong> Limit the button to a specific instance of Quicktags, add to all instances if not present. Default:\u00a0<em>None</em></li>\n\n\n\n<li><code><strong>object</strong></code><strong> (</strong><em><strong>attr</strong></em><strong>) (</strong><em><strong>optional</strong></em><strong>):</strong> Used to pass additional attributes. Currently supports <code>ariaLabel</code> and <code>ariaLabelClose</code> (for &#8220;close tag&#8221; state)</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Return Values</h2>\n\n\n\n<p>(<em>mixed</em>)&nbsp;Null or the button object that is needed for back-compat.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Examples</h2>\n\n\n\n<p>Below examples would add HTML buttons to the default Quicktags in the Text editor.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Modern example</h3>\n\n\n\n<p>This example uses the inline JS API to add the JavaScript when quicktags are enqueued.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Add a paragraph tag button to the quicktags toolbar\n *\n * @return void\n */\nfunction wporg_add_quicktag_paragraph() {\n\twp_add_inline_script(\n\t\t'quicktags',\n\t\t\"QTags.addButton( 'eg_paragraph_v2', 'p_v2', '&lt;p&gt;', '&lt;/p&gt;', &apos;&apos;, 'Paragraph tag v2', 2, &apos;&apos;, { ariaLabel: 'Paragraph', ariaLabelClose: 'Close Paragraph tag' });\"\n\t);\n}\nadd_action( 'admin_enqueue_scripts', 'wporg_add_quicktag_paragraph' );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Another modern example</h3>\n\n\n\n<p>In this example,</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Enqueue a script using the proper WordPress function&nbsp;<a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_script\"><code>wp_enqueue_script</code></a>.</li>\n\n\n\n<li>Call any JavaScript that you want to fire when or after the QuickTag was clicked inside the QuickTag call-back.</li>\n</ol>\n\n\n\n<h4 class=\"wp-block-heading\">Enqueue the script</h4>\n\n\n\n<p>Put below codes into active theme&#8217;s\u00a0<code>functions.php</code>.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">function enqueue_quicktag_script(){\n\twp_enqueue_script( 'your-handle', get_template_directory_uri() . '/editor-script.js', array( 'jquery', 'quicktags' ), '1.0.0', true );\n}\nadd_action( 'admin_enqueue_scripts', 'enqueue_quicktag_script' );</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">The JavaScript itself</h4>\n\n\n\n<p>Create new file\u00a0<code>editor-script</code>\u00a0and save under the active theme directory.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"javascript\" class=\"language-javascript\">QTags.addButton( 'eg_paragraph_v3', 'p_v3', my_callback, &apos;&apos;, &apos;&apos;, 'Prompted Paragraph tag', 3, &apos;&apos;, { ariaLabel: 'Prompted Paragraph' } ); \n\nfunction my_callback(){\n  var my_stuff = prompt( 'Enter Some Stuff:', &apos;&apos; );\n  if ( my_stuff ) {\n    QTags.insertContent( '&lt;p&gt;' + my_stuff + '&lt;/p&gt;' );\n  }\n}</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Traditional example</h3>\n\n\n\n<p>This example manually add hardcoded JavaScript with\u00a0<code>wp_script_is</code>\u00a0on the admin footer hook. You should consider to use modern example. See above.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Add more buttons to the quicktags HTML editor\n *\n * @return void\n */\nfunction wporg_traditional_add_quicktags() {\n\tif ( ! wp_script_is( 'quicktags' ) ) {\n\t\treturn;\n\t}\n\n\t?&gt;\n\t&lt;script type=\"text/javascript\"&gt;\n\t\tQTags.addButton( 'eg_paragraph', 'p', '&lt;p&gt;', '&lt;/p&gt;', &apos;&apos;, 'Paragraph tag', 1, &apos;&apos;, { ariaLabel: 'Paragraph', ariaLabelClose: 'Close Paragraph tag' } );\n\t\tQTags.addButton( 'eg_hr', 'hr', '&lt;hr /&gt;', &apos;&apos;, &apos;&apos;, 'Horizontal rule line', 201, &apos;&apos;, { ariaLabel: 'Horizontal' } );\n\t\tQTags.addButton( 'eg_pre', 'pre', '&lt;pre lang=\"php\"&gt;', '&lt;/pre&gt;', &apos;&apos;, 'Preformatted text tag', 111, &apos;&apos;, { ariaLabel: 'Pre', ariaLabelClose: 'Close Pre tag' } );\n\t&lt;/script&gt;\n\t&lt;?php\n}\n\nadd_action( 'admin_print_footer_scripts', 'wporg_traditional_add_quicktags', 11 );</code></pre>\n\n\n\n<p>Note:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>To avoid a Reference Error we check to see whether or not the \u2018quicktags\u2019 script is in use.</li>\n\n\n\n<li>Since WordPress 6.0, the script loading order was changed and the error &#8220;QTags is not defined&#8221; occurs without 3rd parameter of&nbsp;<code>add_action()</code>. Also, you have to specfy the larger number than 10 (ex.11).</li>\n</ul>\n\n\n\n<p>The \u201cp\u201d button HTML would be:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;input type=\"button\" id=\"qt_content_eg_paragraph\" class=\"ed_button button button-small\" title=\"Paragraph tag\" aria-label=\"Paragraph\" value=\"p\"&gt;</code></pre>\n\n\n\n<p>The ID value for each button is automatically prepended with the string qt_content_.</p>\n\n\n\n<p></p>\n\n\n\n<p>Here is a dump of the docblock from <code>quicktags.js</code>, it&#8217;s pretty useful on it&#8217;s own.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Main API function for adding a button to Quicktags\n *\n * Adds qt.Button or qt.TagButton depending on the args. The first three args are always required.\n * To be able to add button(s) to Quicktags, your script should be enqueued as dependent\n * on \"quicktags\" and outputted in the footer. If you are echoing JS directly from PHP,\n * use add_action( 'admin_print_footer_scripts', 'output_my_js', 100 ) or add_action( 'wp_footer', 'output_my_js', 100 )\n *\n * Minimum required to add a button that calls an external function:\n *     QTags.addButton( 'my_id', 'my button', my_callback );\n *     function my_callback() { alert('yeah!'); }\n *\n * Minimum required to add a button that inserts a tag:\n *     QTags.addButton( 'my_id', 'my button', '&lt;span&gt;', '&lt;/span&gt;' );\n *     QTags.addButton( 'my_id2', 'my button', '&lt;br /&gt;' );\n */</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Default Quicktags</h2>\n\n\n\n<p>Here are the values of the default Quicktags added by WordPress to the Text editor. ID must be unique. When adding your own buttons, do not use these values:</p>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><th><strong>ID</strong></th><th><strong>Value</strong></th><th><strong>Tag Start</strong></th><th><strong>Tag End</strong></th></tr><tr><td>link</td><td>link</td><td>&lt;a href=&#8221;&#8216; + URL + &#8216;&#8221;&gt;</td><td>&lt;/a&gt;</td></tr><tr><td>strong</td><td>b</td><td>&lt;strong&gt;</td><td>&lt;/strong&gt;</td></tr><tr><td>code</td><td>code</td><td>&lt;code&gt;</td><td>&lt;/code&gt;</td></tr><tr><td>del</td><td>del</td><td>&lt;del datetime=&#8221;&#8216; + _datetime + &#8216;&#8221;&gt;</td><td>&lt;/del&gt;</td></tr><tr><td>fullscreen</td><td>fullscreen</td><td></td><td></td></tr><tr><td>em</td><td>i</td><td>&lt;em&gt;</td><td>&lt;/em&gt;</td></tr><tr><td>li</td><td>li</td><td>t&lt;li&gt;</td><td>&lt;/li&gt;n</td></tr><tr><td>img</td><td>img</td><td>&lt;img src=&#8221;&#8216; + src + &#8216;&#8221; alt=&#8221;&#8216; + alt + &#8216;&#8221; /&gt;</td><td></td></tr><tr><td>ol</td><td>ol</td><td>&lt;ol&gt;n</td><td>&lt;/ol&gt;nn</td></tr><tr><td>block</td><td>b-quote</td><td>nn&lt;blockquote&gt;</td><td>&lt;/blockquote&gt;nn</td></tr><tr><td>ins</td><td>ins</td><td>&lt;ins datetime=&#8221;&#8216; + _datetime + &#8216;&#8221;&gt;</td><td>&lt;/ins&gt;</td></tr><tr><td>more</td><td>more</td><td>&lt;!&#8211;more&#8211;&gt;</td><td></td></tr><tr><td>ul</td><td>ul</td><td>&lt;ul&gt;n</td><td>&lt;/ul&gt;nn</td></tr><tr><td>spell</td><td>lookup</td><td></td><td></td></tr><tr><td>close</td><td>close</td><td></td></tr></tbody></table></figure>\n\n\n\n<p>Some tag values above use variables, such as&nbsp;URL&nbsp;and&nbsp;<code>_datetime</code>, passed from functions.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Source File</h2>\n\n\n\n<p>qt.addButton()&nbsp;source is located in&nbsp;<code><a href=\"https://core.trac.wordpress.org/browser/tags/5.2.1/src/js/_enqueues/lib/quicktags.js#L0\">js/_enqueues/lib/quicktags.js</a></code>, during build it&#8217;s output in <code>wp-incudes/js/quicktags.js</code> and <code>wp-includes/js/quicktags.min.js</code>.</p>\n",
+        "protected": false
+    },
+    "author": 14216496,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 90,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-125652",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125652",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14216496"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125652/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 145007,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/125652/revisions/145007"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=125652"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

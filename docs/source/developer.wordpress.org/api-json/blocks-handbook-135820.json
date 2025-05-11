@@ -1,0 +1,91 @@
+{
+    "id": 135820,
+    "date": "2021-05-08T17:54:47",
+    "date_gmt": "2021-05-08T17:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/opting-out/"
+    },
+    "modified": "2024-01-29T21:09:49",
+    "modified_gmt": "2024-01-29T21:09:49",
+    "slug": "opting-out",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/widgets/opting-out/",
+    "title": {
+        "rendered": "Restoring the classic Widgets Editor"
+    },
+    "content": {
+        "rendered": "<p>There are several ways to disable the new Widgets Block Editor.</p>\n<h2>Using <code>remove_theme_support</code></h2>\n<p>Themes may disable the Widgets Block Editor by calling <code>remove_theme_support( 'widgets-block-editor' )</code>.</p>\n<p>For example, a theme may have the following PHP code in <code>functions.php</code>.</p>\n<pre><code class=\"language-php\">function example_theme_support() {\n    remove_theme_support( 'widgets-block-editor' );\n}\nadd_action( 'after_setup_theme', 'example_theme_support' );\n</code></pre>\n<h2>Using the Classic Widgets plugin</h2>\n<p>End users may disable the Widgets Block Editor by installing and activating the <a href=\"https://wordpress.org/plugins/classic-widgets/\">Classic Widgets plugin</a>.</p>\n<p>With this plugin installed, the Widgets Block Editor can be toggled on and off by deactivating and activating the plugin.</p>\n<h2>Using a filter</h2>\n<p>the <code>use_widgets_block_editor</code> filter controls whether or not the Widgets Block Editor is enabled.</p>\n<p>For example, a site administrator may include the following PHP code in a mu-plugin to disable the Widgets Block Editor.</p>\n<pre><code class=\"language-php\">add_filter( 'use_widgets_block_editor', '__return_false' );\n</code></pre>\n<p>For more advanced uses, you may supply your own function. In this example, the Widgets Block Editor is disabled for a specific user.</p>\n<pre><code class=\"language-php\">function example_use_widgets_block_editor( $use_widgets_block_editor ) {\n    if ( 123 === get_current_user_id() ) {\n        return false;\n    }\n    return $use_widgets_block_editor;\n}\nadd_filter( 'use_widgets_block_editor', 'example_use_widgets_block_editor' );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135818,
+    "menu_order": 55,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135820",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135820",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135820/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151734,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135820/revisions/151734"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135818"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135820"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

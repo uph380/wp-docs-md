@@ -1,0 +1,97 @@
+{
+    "id": 11424,
+    "date": "2014-10-23T20:10:40",
+    "date_gmt": "2014-10-23T20:10:40",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11424"
+    },
+    "modified": "2022-01-04T13:09:40",
+    "modified_gmt": "2022-01-04T13:09:40",
+    "slug": "testing",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/releasing-your-theme/testing/",
+    "title": {
+        "rendered": "Testing"
+    },
+    "content": {
+        "rendered": "\n<p>If you&#8217;ve followed this handbook, you&#8217;ll already have a good grasp on the testing required before submitting your theme to the WordPress.org theme directory. If you haven&#8217;t, this page will give you a quick refresher.</p>\n\n\n\n<p>Testing is incredibly important before releasing a theme. You may have built the most beautiful WordPress theme, but if it breaks when someone tries to comment or insert an image, your theme isn&#8217;t ready for real world usage.</p>\n\n\n\n<p>Before testing your theme, make sure you&#8217;ve setup a development environment. There are a number of ways to setup your environment, many of which are documented on the <a href=\"https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/\">Setting up a Development Environment</a> page.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"theme-unit-test\">Theme Unit Test</h2>\n\n\n\n<p>After you&#8217;ve setup your development environment, you&#8217;ll need test content to test your theme with. While you can create your own test content, the theme review team has created the <a href=\"https://codex.wordpress.org/Theme_Unit_Test\">Theme Unit Test</a>, which includes many different types of content. This will help ensure that your theme works in circumstances you may not have anticipated.</p>\n\n\n\n<p>The Theme Unit Test is a WordPress export file that can be imported into any WordPress installation by using the WordPress Importer. You should import it into your local development environment.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"wordpress-settings\">WordPress Settings</h2>\n\n\n\n<p>Making tweaks and changes to your WordPress installation is another good way to ensure that you&#8217;ve built your theme to handle numerous scenarios. Use the following settings to test your theme.</p>\n\n\n\n<p><strong>General</strong><br>Set the Site Title to something long and set the Tagline to something even longer. These settings will test how your theme&nbsp;handles edge cases for site titles and taglines.</p>\n\n\n\n<p><strong>Reading</strong><br>Set &#8220;Blog pages show at most&#8221; to 5. This setting will ensure that index/archive pagination is triggered.</p>\n\n\n\n<p><strong>Discussion</strong><br>Enable &#8220;Threaded Comments&#8221; at least 3 levels deep. This setting will facilitate testing of your theme&#8217;s comment list styling.</p>\n\n\n\n<p>Enable &#8220;Break comments into pages&#8221; and set 5 comments per page to test the pagination and styling of comments.</p>\n\n\n\n<p><strong>Media</strong><br>Remove the values for the large size of media to test the theme&#8217;s&nbsp;<code>$content_width</code> setting.</p>\n\n\n\n<p><strong>Permalinks</strong><br>Change the permalink setting a few times to ensure your theme can handle various URL formats.</p>\n\n\n\n<p>For more&nbsp;setup instructions, take a look at the <a href=\"https://codex.wordpress.org/Theme_Unit_Test#Setup\" target=\"_blank\" rel=\"noopener\">Theme Unit Test</a> page in the&nbsp;WordPress Codex.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"wordpress-beta-tester\">WordPress Beta Tester</h2>\n\n\n\n<p>WordPress releases happen three times a year. It&#8217;s a good idea to test your theme against the next version of WordPress so you can anticipate issues when the next version is released. This can be done easily with the <a href=\"https://wordpress.org/plugins/wordpress-beta-tester/\">WordPress Beta Tester</a> plugin. The plugin&nbsp;makes it easy to&nbsp;download either the latest nightly version of WordPress or the latest branch version (for minor bugfix releases). This is especially useful when anticipating a new major release or developing for an upcoming feature.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"testing-and-debugging-tools\">Testing and debugging tools</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"theme-check\">Theme Check</h3>\n\n\n\n<p>Each theme goes through an automated check before a reviewer even sees it. If there are any immediate problems with the theme, identified by the automated check, the theme will be rejected with notes on how to resolve the issues. The <a href=\"https://wordpress.org/plugins/theme-check/\">Theme Check</a> plugin adds a dashboard link under Appearance so you can run&nbsp;the exact same checks that WordPress.org does right from your administration panel. Doing this prior to uploading your theme lets you know what needs to be addressed prior to submission. Running the check will give you a list of any warnings your theme has generated and what items are required for the theme to be accepted in the WordPress.org theme directory, as well as&nbsp;any recommended items that may be missing from your theme.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"developer\">Developer</h3>\n\n\n\n<p>The <a href=\"https://wordpress.org/plugins/developer/\">Developer</a> plugin is really just a tool to automatically download and install some of the plugins you\u2019ll want when developing your theme. Some of the ones discussed in this handbook&nbsp;will already be installed and active. Others you can install as soon as you activate the plugin.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"debug-bar\">Debug Bar</h3>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar/\">Debug Bar</a> pushes all debug messages to a separate page where they are listed in an easy-to-read layout and organized&nbsp;by&nbsp;type of message. There are also a number of&nbsp;<a href=\"https://wordpress.org/plugins/search.php?q=debug+bar\">other plugins</a>&nbsp;that add on to Debug Bar, extending its features or adding more&nbsp;information.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"log-deprecated-notices\">Log Deprecated Notices</h3>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/log-deprecated-notices/\">Log Deprecated Notices</a> displays a list of the deprecated function notices in your theme and where the code can be found. This should be run, at minimum, after every&nbsp;major release of&nbsp;WordPress, so you can resolve and remove any deprecated code and functions from your theme.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"browser-testing\">Browser testing</h3>\n\n\n\n<p>When submitting your theme to WordPress.org, it&#8217;s expected that it works well in modern browsers and at any resolution. You should test your theme against a number of popular browsers before submitting, both mobile and desktop. Many browsers have built-in features making it easy to test, for example the <a href=\"https://developer.chrome.com/devtools\">Chrome Developer Tools</a>, <a href=\"https://developer.mozilla.org/en-US/docs/Tools\">Firefox Developer Tools</a>, and the <a href=\"http://dev.modern.ie\">Microsoft Edge tools</a>. Note that <a href=\"https://make.wordpress.org/core/2021/04/22/ie-11-support-phase-out-plan/\">Internet Explorer is no longer supported by WordPress</a> since 5.8 release.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"validation\">Validation</h3>\n\n\n\n<p>Likewise, your theme should use valid HTML5 and CSS&nbsp;code. There are a variety of tools that will test your site for valid code, include <a href=\"http://html5.validator.nu/\">this HTML5 validator</a> and <a href=\"http://jigsaw.w3.org/css-validator/\">this CSS validator</a>.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5823,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11424",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11424",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11424/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138666,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11424/revisions/138666"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5823"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11424"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

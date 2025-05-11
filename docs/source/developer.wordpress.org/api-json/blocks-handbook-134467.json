@@ -1,0 +1,91 @@
+{
+    "id": 134467,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/form-token-field/"
+    },
+    "modified": "2024-12-03T18:49:13",
+    "modified_gmt": "2024-12-03T18:49:13",
+    "slug": "form-token-field",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/form-token-field/",
+    "title": {
+        "rendered": "FormTokenField"
+    },
+    "content": {
+        "rendered": "<p>A <code>FormTokenField</code> is a field similar to the tags and categories fields in the interim editor chrome, or the &#8220;to&#8221; field in Mail on OS X. Tokens can be entered by typing them or selecting them from a list of suggested tokens.</p>\n<p>Up to one hundred suggestions that match what the user has typed so far will be shown from which the user can pick from (auto-complete). Tokens are separated by the &#8220;,&#8221; character. Suggestions can be selected with the up or down arrows and added with the tab or enter key.</p>\n<p>The <code>value</code> property is handled in a manner similar to controlled form components. See <a href=\"https://react.dev/reference/react-dom/components#form-components\">Forms</a> in the React Documentation for more information.</p>\n<h2>Keyboard Accessibility</h2>\n<ul>\n<li><code>left arrow</code> &#8211; if input field is empty, move insertion point before previous token</li>\n<li><code>right arrow</code> &#8211; if input field is empty, move insertion point after next token</li>\n<li><code>up arrow</code> &#8211; select previous suggestion</li>\n<li><code>down arrow</code> &#8211; select next suggestion</li>\n<li><code>tab</code> / <code>enter</code> &#8211; if suggestion selected, insert suggestion as a new token; otherwise, insert value typed into input as new token</li>\n<li><code>comma</code> &#8211; insert value typed into input as new token</li>\n</ul>\n<h2>Properties</h2>\n<ul>\n<li><code>value</code> &#8211; An array of strings or objects to display as tokens in the field. If objects are present in the array, they <strong>must</strong> have a property of <code>value</code>. Here is an example object that could be passed in as a value:</li>\n</ul>\n<pre><code class=\"language-javascript\">{\n    value: '(string) The value of the token.',\n    status: \"(string) One of 'error', 'validating', or 'success'. Applies styles to token.\"\n    title: '(string) If not falsey, will add a title to the token.',\n    onMouserEnter: '(function) Function to call when onMouseEnter event triggered on token.'\n    onMouseLeave: '(function) Function to call when onMouseLeave is triggered on token.'\n}\n</code></pre>\n<ul>\n<li><code>displayTransform</code> &#8211; Function to call to transform tokens for display. (In<br />\nthe editor, this is needed to decode HTML entities embedded in tags &#8211;<br />\notherwise entities like <code>&amp;</code> in tag names are double-encoded like <code>&amp;amp;</code>,<br />\nonce by the REST API and once by React).</li>\n<li><code>saveTransform</code> &#8211; Function to call to transform tokens for saving. The<br />\ndefault is to trim the token value. This function is also applied when<br />\nmatching suggestions against the current value so that matching works<br />\ncorrectly with leading or trailing spaces. (In the editor, this is needed to<br />\nremove leading and trailing spaces from tag names, like wp-admin does.<br />\nOtherwise the REST API won&#8217;t save them.)</li>\n<li><code>onChange</code> &#8211; Function to call when the tokens have changed. An array of new<br />\ntokens is passed to the callback.</li>\n<li><code>onInputChange</code> &#8211; Function to call when the users types in the input field. It can be used to trigger autocomplete requests.</li>\n<li><code>onFocus</code> &#8211; Function to call when the TokenField has been focused on. The event is passed to the callback. Useful for analytics.</li>\n<li><code>suggestions</code> &#8211; An array of strings to present to the user as suggested<br />\ntokens.</li>\n<li><code>maxSuggestions</code> &#8211; The maximum number of suggestions to display at a time.</li>\n<li><code>tokenizeOnSpace</code> &#8211; If true, will add a token when <code>TokenField</code> is focused and <code>space</code> is pressed.</li>\n<li><code>isBorderless</code> &#8211; When true, renders tokens as without a background.</li>\n<li><code>maxLength</code> &#8211; If passed, <code>TokenField</code> will disable ability to add new tokens once number of tokens is greater than or equal to <code>maxLength</code>.</li>\n<li><code>disabled</code> &#8211; When true, tokens are not able to be added or removed.</li>\n<li><code>placeholder</code> &#8211; If passed, the <code>TokenField</code> input will show a placeholder string if no value tokens are present.</li>\n<li><code>messages</code> &#8211; Allows customizing the messages presented by screen readers in different occasions:\n<ul>\n<li><code>added</code> &#8211; The user added a new token.</li>\n<li><code>removed</code> &#8211; The user removed an existing token.</li>\n<li><code>remove</code> &#8211; The user focused the button to remove the token.</li>\n<li><code>__experimentalInvalid</code> &#8211; The user tried to add a token that didn&#8217;t pass the validation.</li>\n</ul>\n</li>\n<li><code>__experimentalRenderItem</code> &#8211; Custom renderer invoked for each option in the suggestion list. The render prop receives as its argument an object containing, under the <code>item</code> key, the single option&#8217;s data (directly from the array of data passed to the <code>options</code> prop).</li>\n<li><code>__experimentalExpandOnFocus</code> &#8211; If true, the suggestions list will be always expanded when the input field has the focus.</li>\n<li><code>__experimentalShowHowTo</code> &#8211; If false, the text on how to use the select (ie: <em>Separate with commas or the Enter key.</em>) will be hidden.</li>\n<li><code>__experimentalValidateInput</code> &#8211; If passed, all introduced values will be validated before being added as tokens.</li>\n<li><code>__experimentalAutoSelectFirstMatch</code> &#8211; If true, the select the first matching suggestion when the user presses the Enter key (or space when tokenizeOnSpace is true).</li>\n<li><code>__next40pxDefaultSize</code> &#8211; Start opting into the larger default height that will become the default size in a future version.</li>\n<li><code>__nextHasNoMarginBottom</code> &#8211; Start opting into the new margin-free styles that will become the default in a future version, currently scheduled to be WordPress 7.0. (The prop can be safely removed once this happens.)</li>\n<li><code>tokenizeOnBlur</code> &#8211; If true, add any incompleteTokenValue as a new token when the field loses focus.</li>\n</ul>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { FormTokenField } from '@wordpress/components';\n\nconst continents = [\n    'Africa',\n    'America',\n    'Antarctica',\n    'Asia',\n    'Europe',\n    'Oceania',\n];\n\nconst MyFormTokenField = () =&gt; {\n    const [ selectedContinents, setSelectedContinents ] = useState( [] );\n\n    return (\n        &lt;FormTokenField\n            __next40pxDefaultSize\n            value={ selectedContinents }\n            suggestions={ continents }\n            onChange={ ( tokens ) =&gt; setSelectedContinents( tokens ) }\n            __nextHasNoMarginBottom\n        /&gt;\n    );\n};\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 157,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134467",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134467",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134467/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155931,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134467/revisions/155931"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134467"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

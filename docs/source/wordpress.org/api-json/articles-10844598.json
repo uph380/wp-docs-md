@@ -1,0 +1,109 @@
+{
+    "id": 10844598,
+    "date": "2018-11-03T15:48:36",
+    "date_gmt": "2018-11-03T15:48:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10844598"
+    },
+    "modified": "2023-01-13T18:10:50",
+    "modified_gmt": "2023-01-13T18:10:50",
+    "slug": "troubleshoot-login-issues",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/troubleshoot-login-issues/",
+    "title": {
+        "rendered": "Troubleshoot login issues"
+    },
+    "content": {
+        "rendered": "\n<p>If you are having trouble logging in to your WordPress <a href=\"https://wordpress.org/documentation/article/administration-screens/\">Administration Screen</a>, here are some possible solutions.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"password-problems-1\">Password Problems</h2>\n\n\n\n<p>For information on problems logging in due to a wrong or lost password, see <a href=\"https://wordpress.org/documentation/article/resetting-your-password/\">Resetting Your Password</a>. Remember: the Username and Password fields are <strong>case-sensitive</strong>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"enable-cookies-1\">Enable Cookies</h2>\n\n\n\n<p>In order to make sure that cookies are enabled for your browser, you need to:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Clear your browser cookies.</li><li>Clear your browser cache.</li></ol>\n\n\n\n<p>To see how to clear cookies and caches on various browsers, visit <a href=\"https://support.google.com/accounts/answer/32050?hl=en&amp;rd=2\">Clearing Cache and Cookies</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"check-your-firewall-1\">Check your Firewall</h2>\n\n\n\n<p>Some firewalls (e.g., eTrust Personal Firewall) block you from logging in to WordPress. Disable your firewall and try to log in again.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"if-all-else-fails-1\">If All Else Fails</h2>\n\n\n\n<p>If these steps fail, please indicate that you have tried all these possible solutions when posting at the <a href=\"https://wordpress.org/support/\">WordPress Support Forum</a>.&nbsp;</p>\n\n\n\n<p>Be sure to give <a href=\"https://wordpress.org/documentation/article/finding-server-info/\">details of your server setup</a>, if you know it, including MySQL and PHP versions, as well as your operating system (OS), browser, and the WordPress version that is causing these problems.</p>\n\n\n\n<div class=\"wp-block-group has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#d3d3d3\">\n<h4 class=\"wp-block-heading\" id=\"changelog\">Changelog</h4>\n\n\n\n<ul class=\"wp-block-list\"><li>Removed technical parts from the end user doc. Mar 2-2022</li><li>Removed 2020-06-20<ul><li>Removed &#8216;Secure HTTPS&#8217;, because its advice is modifying core file.</li></ul></li></ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>If you are having trouble logging in to your WordPress Administration Screen, here are some possible solutions. Password Problems For information on problems logging in due to a wrong or lost password, see Resetting Your Password. Remember: the Username and Password fields are case-sensitive. Enable Cookies In order to make sure that cookies are enabled [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        21,
+        73
+    ],
+    "class_list": [
+        "post-10844598",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-installation",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10844598",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10844598"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10844598/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355257,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10844598/revisions/16355257"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10844598"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10844598"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

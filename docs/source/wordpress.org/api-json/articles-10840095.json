@@ -1,0 +1,109 @@
+{
+    "id": 10840095,
+    "date": "2018-11-02T04:17:26",
+    "date_gmt": "2018-11-02T04:17:26",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840095"
+    },
+    "modified": "2023-01-13T12:36:53",
+    "modified_gmt": "2023-01-13T12:36:53",
+    "slug": "keyboard-shortcuts-classic-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/keyboard-shortcuts-classic-editor/",
+    "title": {
+        "rendered": "Use keyboard shortcuts (Classic Editor)"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\" id=\"editor-shortcuts\">Editor Shortcuts</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Note: This page lists keyboard Shortcuts for the Classic editor. </strong></li><li><strong>For the Block Editor, <a href=\"https://wordpress.org/documentation/article/block-editor-keyboard-shortcuts/\">the list of  Keyboard Shortcuts is here</a></strong></li></ul>\n\n\n\n<p>In the WordPress visual editor you can use a combination of keys to do things that normally need a mouse, trackpad or other input device. Rather than reaching for your mouse to click on the toolbar, you can use the following keyboard shortcuts:</p>\n\n\n\n<p>Windows and Linux use &#8220;Ctrl + letter&#8221;, Mac uses &#8220;Command (\u2318) + letter&#8221;.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"ctrl-key\">Ctrl + key</h3>\n\n\n\n<pre class=\"wp-block-preformatted\">Letter Action<br />c ... Copy<br />v ... Paste<br />a ... Select all<br />x ... Cut<br />z ... Undo<br />y ... Redo<br />b ... Bold<br />i ... Italic<br />u ... Underline<br />k ... Insert/edit link<br /></pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"alt-shift-key\">Alt + Shift + key</h3>\n\n\n\n<p>The following shortcuts use a different key combination: Windows/Linux: &#8220;Alt + Shift (\u21e7) + letter&#8221;. Mac: &#8220;Ctrl + Option (alt \u2325) + letter&#8221;. (Macs running any WordPress version below 4.2 use &#8220;Alt + Shift (\u21e7) + letter&#8221;).</p>\n\n\n\n<pre class=\"wp-block-preformatted\">Letter Action<br />n ... Check Spelling (This requires a plugin.)<br />l ... Align Left<br />j ... Justify Text<br />c ... Align Center<br />d ... Strikethrough<br />r ... Align Right<br />u ... \u2022 List<br />a ... Insert link<br />o ... 1. List<br />s ... Remove link<br />q ... Quote<br />m ... Insert Image<br />w ... Distraction Free Writing mode<br />t ... Insert More Tag<br />p ... Insert Page Break tag<br />h ... Help<br />x ... Add/remove code tag<br />1 ... Heading 1<br />2 ... Heading 2<br />3 ... Heading 3<br />4 ... Heading 4<br />5 ... Heading 5<br />6 ... Heading 6<br />9 ... Address</pre>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"formatting-shortcuts\">Formatting Shortcuts</h3>\n\n\n\n<p>Formatting Shortcuts while using visual editor (Since <a href=\"https://codex.wordpress.org/Version 4.3\">Version 4.3</a>)</p>\n\n\n\n<pre class=\"wp-block-preformatted\">Letter . Action<br />* ...... Start an unordered list<br />- ...... Start an unordered list<br />1. ..... Start an ordered list<br />1) ..... Start an ordered list<br />## ..... H2<br />### .... H3<br />#### ... H4<br />##### .. H5<br />###### . H6<br />&gt; ...... transform text into blockquote<br />--- .... horizontal line<br />`..` ... transform text into code block</pre>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"keyboard-shortcuts-for-comments\">Keyboard Shortcuts for Comments</h2>\n\n\n\n<p>Beginning with <a href=\"https://codex.wordpress.org/Version 2.7\">WordPress Version 2.7</a>, the ability to use keyboard shortcuts to browse and moderate comments was introduced. These keyboard shortcuts are designed to save time by allowing you to rapidly navigate and perform actions on comments. If your blog gets a large number of comments, you will find these shortcuts especially useful.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"activating-keyboard-shortcuts\">Activating Keyboard Shortcuts</h3>\n\n\n\n<p>Keyboard shortcuts are enabled on a per-user setting, and can be turned on by visiting the Profile panel in <a href=\"/support/article/administration-screens/\">Administration Screens</a> &gt; <a href=\"/support/article/administration-screens/#your-profile\">Users</a> &gt; <a href=\"/support/article/users-your-profile-screen/\">Your Profile</a>. Check the <a href=\"/support/article/users-your-profile-screen/#your-profile-and-personal-options\">Keyboard Shortcuts</a> checkbox to enable keyboard shortcuts for comment moderation.</p>\n\n\n\n<p>Please note, the keyboard shortcuts are designed to use both hands, simultaneously, on a QWERTY style keyboard layout.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"the-meaning-of-selected\">The Meaning of Selected</h3>\n\n\n\n<p>The keyboard shortcuts are used for navigation and for actions. For any action to affect a comment, that comment must be first <strong>selected</strong>. The comment that is considered <strong>selected</strong> is indicated with a light-blue background. By default, no comment is selected, so, you will need to press either the letter <strong>j</strong> key, or letter <strong>k</strong> key, to start navigating.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"using-keyboard-shortcuts-to-navigate-comments\">Using Keyboard Shortcuts to Navigate Comments</h3>\n\n\n\n<p>Navigating comments is accomplished with the <strong>j</strong> and <strong>k</strong> keys. When you first visit the Comments page, no comments is selected, so, first press the letter <strong>j</strong>, or the letter <strong>k</strong>, to select the first comment. After that, just press the letter <strong>j</strong> to move the select to the next comment.</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Pressing <strong>j</strong> moves the current selection (light-blue background) down.</li><li>Pressing <strong>k</strong> moves the current selection (light-blue background) up.</li></ul>\n\n\n\n<p>Note that if you come to the bottom of a page of comments and press <strong>j</strong> again, you will be taken to the next page and the first comment of that next page will be selected. Likewise, pressing <strong>k</strong> at the top of a comment page will zoom you to the previous page, selecting the comment at the bottom of that previous page. This makes it very easy to navigate through a long list of comments to perform the necessary actions.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"using-keyboard-shortcuts-to-perform-actions-on-comments\">Using Keyboard Shortcuts to Perform Actions on Comments</h3>\n\n\n\n<p>For one of these actions to affect a comment, make sure the comment is first selected (see above).</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Pressing <strong>a</strong> approves the currently selected comment.</li><li>Pressing <strong>s</strong> marks the current comment as spam.</li><li>Pressing <strong>d</strong> moves the comment to the trash (WordPress 2.9) or deletes the current comment.</li><li>Pressing <strong>z</strong> restores the current comment from the trash or activates the Undo when that row is selected.</li><li>Pressing <strong>u</strong> unapproves the currently selected comment, placing it back into moderation.</li><li>Pressing <strong>r</strong> initiates an inline reply to the current comment (you can press <strong>Esc</strong> to cancel the reply).</li><li>Pressing <strong>q</strong> activates &#8220;Quick Edit&#8221; which allows for rapid inline editing of the current comment.</li><li>Pressing <strong>e</strong> navigates to the edit screen for the current comment.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"bulk-actions\">Bulk Actions</h3>\n\n\n\n<p>You can also perform an action on multiple comments at once. First, you&#8217;ll need to select the comments for the bulk action, using the <strong>x</strong> key to check the checkbox for the currently selected comment. <strong>Shift-x</strong> can be used to toggle the checkboxes, inverting their state. Once you have some comments checked:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Pressing <strong>Shift-a</strong> approves the checked comments.</li><li>Pressing <strong>Shift-s</strong> marks the checked comments as spam.</li><li>Pressing <strong>Shift-d</strong> deletes the checked comments.</li><li>Pressing <strong>Shift-u</strong> unapproves the checked comments.</li><li>Pressing <strong>Shift-t</strong> moves the checked comments to the Trash.</li><li>Pressing <strong>Shift-z</strong> restores the checked comments from the Trash.</li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Editor Shortcuts Note: This page lists keyboard Shortcuts for the Classic editor. For the Block Editor, the list of Keyboard Shortcuts is here In the WordPress visual editor you can use a combination of keys to do things that normally need a mouse, trackpad or other input device. Rather than reaching for your mouse to [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10840095",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840095",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840095"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840095/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355242,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840095/revisions/16355242"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840095"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840095"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

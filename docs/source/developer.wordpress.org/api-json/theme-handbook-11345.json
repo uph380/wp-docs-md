@@ -1,0 +1,97 @@
+{
+    "id": 11345,
+    "date": "2014-10-22T21:29:19",
+    "date_gmt": "2014-10-22T21:29:19",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11345"
+    },
+    "modified": "2022-01-12T02:44:52",
+    "modified_gmt": "2022-01-12T02:44:52",
+    "slug": "categories-tags-custom-taxonomies",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/categories-tags-custom-taxonomies/",
+    "title": {
+        "rendered": "Categories, Tags, &amp; Custom Taxonomies"
+    },
+    "content": {
+        "rendered": "\n<p>Categories, tags, and taxonomies are all related and can be easily confused. &nbsp;</p>\n\n\n\n<p>We&#8217;ll use the example of building a theme for a recipe website to help break down categories, tags, and taxonomies.&nbsp;</p>\n\n\n\n<p>In our recipe website, the <strong>categories</strong> would be Breakfast, Lunch, Dinner, Appetizers, Soups, Salads, Sides, and Desserts. All recipes will fit within those categories, but users might want to search for something specific like chocolate desserts or ginger chicken dinners. &nbsp;</p>\n\n\n\n<p>Chocolate, ginger, and chicken are all examples of <strong>tags</strong>. &nbsp;They are another level of specificity that provides meaning to the user.</p>\n\n\n\n<p>Lastly, there\u00a0are taxonomies.\u00a0In reality, categories and tags are examples of default taxonomies which simply are\u00a0a way to organize content. \u00a0Taxonomies are the method of classifying content and data in WordPress. When you use a taxonomy you&#8217;re grouping similar things together. The taxonomy refers to the sum of those groups. As with Post Types, there are a number of default taxonomies, and you can also create your own.</p>\n\n\n\n<p>Recipes are normally organized by category and tag, but there are some other helpful ways to break the recipes down to be more user friendly. &nbsp;For example, the recipe website might want an easy way to display&nbsp;recipes by cook time. A custom taxonomy of cook time with 0-30 min, 30-min to an hour, 1 to 2 hours, 2+ hours would be a great breakdown. &nbsp;Additionally, cook method such as grill, oven, stove, refrigerator, etc would be another example of a custom taxonomy that would be relevant for the site. &nbsp;There could also be a custom taxonomy for how spicy the recipe is and then a rating from 1-5 on spiciness.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"default-taxonomies\">Default Taxonomies</h2>\n\n\n\n<p>The default taxonomies in WordPress are:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>categories: a hierarchical taxonomy that organizes\u00a0content in the <em>post</em> Post Type</li><li>tags: a non-hierarchical taxonomy\u00a0that organizes\u00a0content in the <em>post</em> Post Type</li><li>post formats: a method for creating formats for your posts. You can learn more about these on the <a title=\"Post Formats\" href=\"https://developer.wordpress.org/themes/functionality/post-formats/\">Post Formats</a> page.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"terms\">Terms</h3>\n\n\n\n<p>Terms are items within your taxonomy. So, for example, if you have the&nbsp;<em>Animal&nbsp;</em>taxonomy you would have the terms, dogs, cats, and sheep. Terms can be created via the WordPress admin, or you can use the <a title=\"wp_insert_term\" href=\"https://developer.wordpress.org/reference/functions/wp_insert_term/\">wp_insert_term()</a> function.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"database-schema\">Database&nbsp;Schema</h2>\n\n\n\n<p>Taxonomies and terms are stored in the following database tables:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>wp_terms &#8211; stores&nbsp;all of the terms</li><li>wp_term_taxonomy &#8211; places the term in a taxonomy</li><li>wp_term_relationships &#8211; relates the taxonomy to an object (for example,&nbsp;<em>category</em> to&nbsp;<em>post)</em></li></ul>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/taxonomy-schema.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"311\" height=\"452\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/taxonomy-schema.png?resize=311%2C452&#038;ssl=1\" alt=\"taxonomy-schema\" class=\"wp-image-22928\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/taxonomy-schema.png?w=311&amp;ssl=1 311w, https://i0.wp.com/developer.wordpress.org/files/2014/10/taxonomy-schema.png?resize=206%2C300&amp;ssl=1 206w\" sizes=\"auto, (max-width: 311px) 100vw, 311px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"templates\">Templates</h2>\n\n\n\n<p>WordPress offers several different hierarchies of templates for categories, tags, or custom taxonomies. More details on their structure and usage may be found on the&nbsp;<a title=\"Taxonomy Templates\" href=\"https://developer.wordpress.org/themes/functionality/taxonomy-templates/\">Taxonomy Templates</a> page.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"custom-taxonomies\">Custom Taxonomies</h2>\n\n\n\n<p>It is possible to create new taxonomies in WordPress. You may, for example, want to create an&nbsp;<em>author</em> taxonomy on a book review website, or an&nbsp;<em>actor</em> taxonomy on a film site. As with custom post type <strong>it is recommended that you put this functionality in a plugin</strong>. This ensures that when the user changes their website&#8217;s design, their content is preserved in the plugin.</p>\n\n\n\n<p>You can read more about creating custom taxonomies in the <a title=\"Working with Custom Taxonomies\" href=\"https://developer.wordpress.org/plugins/taxonomy/working-with-custom-taxonomies/\">Plugin Developer Handbook.</a></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11345",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11345",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 26,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11345/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 138836,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11345/revisions/138836"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11345"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

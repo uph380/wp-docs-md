@@ -1,0 +1,91 @@
+{
+    "id": 145060,
+    "date": "2023-03-08T17:40:01",
+    "date_gmt": "2023-03-08T17:40:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/styles-versions/"
+    },
+    "modified": "2024-10-30T17:09:45",
+    "modified_gmt": "2024-10-30T17:09:45",
+    "slug": "styles-versions",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/styles-versions/",
+    "title": {
+        "rendered": "Available Styles Options"
+    },
+    "content": {
+        "rendered": "<p>New styles options are integrated into theme.json on a regular basis. Knowing the style options available through theme.json or the styles editor at any given time can be challenging. To clarify, the table below indicates the WordPress version when each theme.json styles option became available and when a corresponding control was added to the user interface to allow management of the style from the Styles editor.</p>\n<h2>Styles keys</h2>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th align=\"center\">theme.json Since</th>\n<th align=\"center\">Style Editor Since</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>color.gradient</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>color.background</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>color.text</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.color</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.width</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.style</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.radius</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.radius.topLeft</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.radius.topRight</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.radius.bottomLeft</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.radius.bottomRight</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>border.top.color</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.top.width</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.top.style</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.right.color</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.right.width</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.right.style</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.bottom.color</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.bottom.width</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.bottom.style</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.left.color</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.left.width</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>border.left.style</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.1</td>\n</tr>\n<tr>\n<td><code>typography.fontFamily</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>typography.fontSize</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>typography.fontStyle</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>typography.fontWeight</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>typography.letterSpacing</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>typography.lineHeight</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>typography.textDecoration</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">6.2</td>\n</tr>\n<tr>\n<td><code>typography.textTransform</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">6.0</td>\n</tr>\n<tr>\n<td><code>spacing.padding</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.padding.top</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.padding.right</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.padding.left</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.padding.bottom</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.margin</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.margin.top</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.margin.right</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.margin.left</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.margin.bottom</code></td>\n<td align=\"center\">5.8</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>spacing.blockGap</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">5.9</td>\n</tr>\n<tr>\n<td><code>dimensions.minHeight</code></td>\n<td align=\"center\">6.2</td>\n<td align=\"center\">N/A</td>\n</tr>\n<tr>\n<td><code>outline.color</code></td>\n<td align=\"center\">6.2</td>\n<td align=\"center\">N/A</td>\n</tr>\n<tr>\n<td><code>outline.offset</code></td>\n<td align=\"center\">6.2</td>\n<td align=\"center\">N/A</td>\n</tr>\n<tr>\n<td><code>outline.style</code></td>\n<td align=\"center\">6.2</td>\n<td align=\"center\">N/A</td>\n</tr>\n<tr>\n<td><code>outline.width</code></td>\n<td align=\"center\">6.2</td>\n<td align=\"center\">N/A</td>\n</tr>\n<tr>\n<td><code>filter.duotone</code></td>\n<td align=\"center\">5.9</td>\n<td align=\"center\">N/A</td>\n</tr>\n<tr>\n<td><code>shadow</code></td>\n<td align=\"center\">6.1</td>\n<td align=\"center\">6.2</td>\n</tr>\n</tbody>\n</table>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 138654,
+    "menu_order": 109,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145060",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145060",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145060/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151268,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/145060/revisions/151268"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/138654"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145060"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

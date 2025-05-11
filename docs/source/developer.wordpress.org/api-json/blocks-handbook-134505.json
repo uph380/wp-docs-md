@@ -1,0 +1,91 @@
+{
+    "id": 134505,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/spinner/"
+    },
+    "modified": "2024-10-30T16:55:37",
+    "modified_gmt": "2024-10-30T16:55:37",
+    "slug": "spinner",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/spinner/",
+    "title": {
+        "rendered": "Spinner"
+    },
+    "content": {
+        "rendered": "<p><code>Spinner</code> is a component used to notify users that their action is being processed.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { Spinner } from '@wordpress/components';\n\nfunction Example() {\n    return &lt;Spinner /&gt;;\n}\n</code></pre>\n<h2>Best practices</h2>\n<p>The spinner component should:</p>\n<ul>\n<li>Signal to users that the processing of their request is underway and will soon complete.</li>\n</ul>\n<p>Check out the <a href=\"https://wordpress.github.io/gutenberg/?path=/docs/components-spinner--docs\">Storybook page</a> for a visual exploration of this component.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 206,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134505",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134505",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134505/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151838,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134505/revisions/151838"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134505"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

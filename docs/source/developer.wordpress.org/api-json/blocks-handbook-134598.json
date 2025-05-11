@@ -1,0 +1,91 @@
+{
+    "id": 134598,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/"
+    },
+    "modified": "2024-12-24T00:19:10",
+    "modified_gmt": "2024-12-24T00:19:10",
+    "slug": "packages-server-side-render",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/",
+    "title": {
+        "rendered": "@wordpress/server-side-render"
+    },
+    "content": {
+        "rendered": "<p>ServerSideRender is a component used for server-side rendering a preview of dynamic blocks to display in the editor. Server-side rendering in a block&#8217;s <code>edit</code> function should be limited to blocks that are heavily dependent on existing PHP rendering logic that is heavily intertwined with data, particularly when there are no endpoints available.</p>\n<p>ServerSideRender may also be used when a legacy block is provided as a backward compatibility measure, rather than needing to re-write the deprecated code that the block may depend on.</p>\n<p>ServerSideRender should be regarded as a fallback or legacy mechanism, it is not appropriate for developing new features against.</p>\n<p>New blocks should be built in conjunction with any necessary REST API endpoints, so that JavaScript can be used for rendering client-side in the <code>edit</code> function. This gives the best user experience, instead of relying on using the PHP <code>render_callback</code>. The logic necessary for rendering should be included in the endpoint, so that both the client-side JavaScript and server-side PHP logic should require a minimal amount of differences.</p>\n<blockquote><p>\n  This package is meant to be used only with WordPress core. Feel free to use it in your own project but please keep in mind that it might never get fully documented.\n</p></blockquote>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/server-side-render --save\n</code></pre>\n<p><em>This package assumes that your code will run in an <strong>ES2015+</strong> environment. If you&#8217;re using an environment that has limited or no support for such language features and APIs, you should include <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/babel-preset-default#polyfill\">the polyfill shipped in <code>@wordpress/babel-preset-default</code></a> in your code.</em></p>\n<h2>Usage</h2>\n<p>The props accepted by the component are described below.</p>\n<h2>Props</h2>\n<h3>attributes</h3>\n<p>An object containing the attributes of the block to be server-side rendered.<br />\nE.g: <code>{ displayAsDropdown: true }</code>, <code>{ showHierarchy: true }</code>, etc&#8230;</p>\n<ul>\n<li>Type: <code>Object</code></li>\n<li>Required: No</li>\n</ul>\n<h3>block</h3>\n<p>The identifier of the block to be server-side rendered.<br />\nExamples: &#8220;core/archives&#8221;, &#8220;core/latest-comments&#8221;, &#8220;core/rss&#8221;, etc&#8230;</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: Yes</li>\n</ul>\n<h3>className</h3>\n<p>A class added to the DOM element that wraps the server side rendered block.<br />\nExamples: &#8220;my-custom-server-side-rendered&#8221;.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h3>httpMethod</h3>\n<p>The HTTP request method to use, either &#8216;GET&#8217; or &#8216;POST&#8217;. It&#8217;s &#8216;GET&#8217; by default. The &#8216;POST&#8217; value will cause an error on WP earlier than 5.5, unless &#8216;rest_endpoints&#8217; is filtered in PHP to allow this. If &#8216;POST&#8217;, this sends the attributes in the request body, not in the URL. This can allow a bigger attributes object.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n<li>Default: &#8216;GET&#8217;</li>\n</ul>\n<h4>Example:</h4>\n<pre><code class=\"language-php\">function add_rest_method( $endpoints ) {\n    if ( is_wp_version_compatible( '5.5' ) ) {\n        return $endpoints;\n    }\n\n    foreach ( $endpoints as $route =&gt; $handler ) {\n        if ( isset( $endpoints[ $route ][0] ) ) {\n            $endpoints[ $route ][0]['methods'] = [ WP_REST_Server::READABLE, WP_REST_Server::CREATABLE ];\n        }\n    }\n\n    return $endpoints;\n}\nadd_filter( 'rest_endpoints', 'add_rest_method');\n</code></pre>\n<h3>skipBlockSupportAttributes</h3>\n<p>Remove attributes and style properties applied by the block supports. This prevents duplication of styles in the block wrapper and the <code>ServerSideRender</code> components. Even if certain features skip serialization to HTML markup by <code>__experimentalSkipSerialization</code>, all attributes and style properties are removed.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: false</li>\n</ul>\n<h3>urlQueryArgs</h3>\n<p>Query arguments to apply to the request URL.<br />\nE.g: <code>{ post_id: 12 }</code>.</p>\n<ul>\n<li>Type: <code>Object</code></li>\n<li>Required: No</li>\n</ul>\n<h3>EmptyResponsePlaceholder</h3>\n<p>The component is rendered when the API response is empty. The component will receive the value of the API response, and all props passed into <code>ServerSideRenderer</code>.</p>\n<ul>\n<li>Type: <code>Component</code></li>\n<li>Required: No</li>\n</ul>\n<h3>ErrorResponsePlaceholder</h3>\n<p>The component is rendered when the API response is an error. The component will receive the value of the API response, and all props passed into <code>ServerSideRenderer</code>.</p>\n<ul>\n<li>Type: <code>Component</code></li>\n<li>Required: No</li>\n</ul>\n<h3>LoadingResponsePlaceholder</h3>\n<p>The component is rendered while the API request is being processed (loading state). The component will receive the value of the API response, and all props passed into <code>ServerSideRenderer</code>.</p>\n<ul>\n<li>Type: <code>Component</code></li>\n<li>Required: No</li>\n</ul>\n<h4>Example usage</h4>\n<pre><code class=\"language-jsx\">const MyServerSideRender = () =&gt; (\n    &lt;ServerSideRender LoadingResponsePlaceholder={ MyAmazingPlaceholder } /&gt;\n);\n</code></pre>\n<h2>Usage</h2>\n<p>Render core/archives preview.</p>\n<pre><code class=\"language-jsx\">import ServerSideRender from '@wordpress/server-side-render';\n\nconst MyServerSideRender = () =&gt; (\n    &lt;ServerSideRender\n        block=\"core/archives\"\n        attributes={ {\n            showPostCounts: true,\n            displayAsDropdown: false,\n        } }\n    /&gt;\n);\n</code></pre>\n<p>If imported from the <code>wp</code> global, an alias is required to work in JSX.</p>\n<pre><code class=\"language-jsx\">const { serverSideRender: ServerSideRender } = wp;\n\nconst MyServerSideRender = () =&gt; (\n    &lt;ServerSideRender\n        block=\"core/archives\"\n        attributes={ {\n            showPostCounts: true,\n            displayAsDropdown: false,\n        } }\n    /&gt;\n);\n</code></pre>\n<h2>Output</h2>\n<p>Output uses the block&#8217;s <code>render_callback</code> function, set when defining the block.</p>\n<h2>API Endpoint</h2>\n<p>The API endpoint for getting the output for ServerSideRender is <code>/wp/v2/block-renderer/:block</code>. It will use the block&#8217;s <code>render_callback</code> method.</p>\n<p>If you pass <code>attributes</code> to <code>ServerSideRender</code>, the block must also be registered and have its attributes defined in PHP.</p>\n<pre><code class=\"language-php\">register_block_type(\n    'core/archives',\n    array(\n        'api_version' =&gt; 3,\n        'attributes'      =&gt; array(\n            'showPostCounts'    =&gt; array(\n                'type'      =&gt; 'boolean',\n                'default'   =&gt; false,\n            ),\n            'displayAsDropdown' =&gt; array(\n                'type'      =&gt; 'boolean',\n                'default'   =&gt; false,\n            ),\n        ),\n        'render_callback' =&gt; 'render_block_core_archives',\n    )\n);\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 320,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134598",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134598",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134598/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156142,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134598/revisions/156142"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134598"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

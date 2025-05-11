@@ -1,0 +1,91 @@
+{
+    "id": 134376,
+    "date": "2021-03-09T08:38:19",
+    "date_gmt": "2021-03-09T08:38:19",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/applying-styles-with-stylesheets/"
+    },
+    "modified": "2024-08-07T21:10:20",
+    "modified_gmt": "2024-08-07T21:10:20",
+    "slug": "applying-styles-with-stylesheets",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/applying-styles-with-stylesheets/",
+    "title": {
+        "rendered": "Use styles and stylesheets"
+    },
+    "content": {
+        "rendered": "<h2>Overview</h2>\n<p>A block typically inserts markup (HTML) into post content that you want to style in some way. This guide walks through a few different ways you can use CSS with the block editor and how to work with styles and stylesheets.</p>\n<h2>Before you start</h2>\n<p>You will need a basic block and WordPress development environment to implement the examples shown in this guide. See the <a href=\"https://developer.wordpress.org/block-editor/getting-started/quick-start-guide/\">Quick Start Guide</a> or <a href=\"https://developer.wordpress.org/block-editor/getting-started/tutorial/\">block tutorial</a> to get set up.</p>\n<h2>Methods to add style</h2>\n<p>The following are different methods you can use to add style to your block, either in the editor or when saved.</p>\n<h2>Method 1: Inline style</h2>\n<p>The first method shows adding the style inline. This transforms the defined style into a property on the element inserted.</p>\n<p>The <code>useBlockProps</code> React hook is used to set and apply properties on the block&#8217;s wrapper element. The following example shows how:</p>\n<pre><code class=\"language-jsx\">import { registerBlockType } from '@wordpress/blocks';\nimport { useBlockProps } from '@wordpress/block-editor';\n\nregisterBlockType( 'gutenberg-examples/example-02-stylesheets', {\n    edit() {\n        const greenBackground = {\n            backgroundColor: '#090',\n            color: '#fff',\n            padding: '20px',\n        };\n\n        const blockProps = useBlockProps( { style: greenBackground } );\n\n        return (\n            &lt;p { ...blockProps }&gt;Hello World (from the editor, in green).&lt;/p&gt;\n        );\n    },\n    save() {\n        const redBackground = {\n            backgroundColor: '#900',\n            color: '#fff',\n            padding: '20px',\n        };\n\n        const blockProps = useBlockProps.save( { style: redBackground } );\n\n        return (\n            &lt;p { ...blockProps }&gt;Hello World (from the frontend, in red).&lt;/p&gt;\n        );\n    },\n} );\n</code></pre>\n<h2>Method 2: Block classname</h2>\n<p>The inline style works well for a small amount of CSS to apply. If you have much more than the above you will likely find that it is easier to manage with them in a separate stylesheet file.</p>\n<p>The <code>useBlockProps</code> hooks includes the classname for the block automatically, it generates a name for each block using the block&#8217;s name prefixed with <code>wp-block-</code>, replacing the <code>/</code> namespace separator with a single <code>-</code>.</p>\n<p>For example the block name: <code>gutenberg-examples/example-02-stylesheets</code> would get the classname: <code>wp-block-gutenberg-examples-example-02-stylesheets</code>. It might be a bit long but best to avoid conflicts with other blocks.</p>\n<pre><code class=\"language-jsx\">import { registerBlockType } from '@wordpress/blocks';\nimport { useBlockProps } from '@wordpress/block-editor';\n\nregisterBlockType( 'gutenberg-examples/example-02-stylesheets', {\n    edit() {\n        const blockProps = useBlockProps();\n\n        return (\n            &lt;p { ...blockProps }&gt;Hello World (from the editor, in green).&lt;/p&gt;\n        );\n    },\n    save() {\n        const blockProps = useBlockProps.save();\n\n        return (\n            &lt;p { ...blockProps }&gt;Hello World (from the frontend, in red).&lt;/p&gt;\n        );\n    },\n} );\n</code></pre>\n<h3>Build or add dependency</h3>\n<p>In order to include the blockEditor as a dependency, make sure to run the build step, or update the asset php file.</p>\n<p>Build the scripts and update the asset file which is used to keep track of dependencies and the build version.</p>\n<pre><code class=\"language-bash\">npm run build\n</code></pre>\n<h3>Enqueue stylesheets</h3>\n<p>Like scripts, you can enqueue your block&#8217;s styles using the <code>block.json</code> file.</p>\n<p>Use the <code>editorStyle</code> property to a CSS file you want to load in the editor view only, use the <code>style</code> property for a CSS file you want to load both in the editor view and on the frontend when the block is used, and use the <code>viewStyle</code> property for a CSS file you want to load only on the frontend when the block is used.</p>\n<p>It is worth noting that, if the editor content is iframed, both the <code>style</code> and <code>editorStyle</code> will load in the iframe. <code>editorStyle</code> will also load outside the iframe, so it can be used for editor content as well as UI.</p>\n<p>For example:</p>\n<pre><code class=\"language-json\">{\n    \"apiVersion\": 3,\n    \"name\": \"gutenberg-examples/example-02-stylesheets\",\n    \"title\": \"Example: Stylesheets\",\n    \"icon\": \"universal-access-alt\",\n    \"category\": \"layout\",\n    \"editorScript\": \"file:./block.js\",\n    \"editorStyle\": \"file:./editor.css\",\n    \"style\": \"file:./style.css\"\n}\n</code></pre>\n<p>So in your plugin directory, create an <code>editor.css</code> file to load in editor view:</p>\n<pre><code class=\"language-css\">/* green background */\n.wp-block-gutenberg-examples-example-02-stylesheets {\n    background: #090;\n    color: white;\n    padding: 20px;\n}\n</code></pre>\n<p>And a <code>style.css</code> file to load on the frontend:</p>\n<pre><code class=\"language-css\">/* red background */\n.wp-block-gutenberg-examples-example-02-stylesheets {\n    background: #900;\n    color: white;\n    padding: 20px;\n}\n</code></pre>\n<p>The files will automatically be enqueued when specified in the block.json.</p>\n<div class=\"callout callout-info\">\n<p>If you are using `@wordpress/scripts` you will need to import your stylesheet within your corresponding JavaScript file in order for `@wordpress/scripts` to process the stylesheet.</p>\n<p>Example:</p>\n<p>&#8211; In `edit.js` you would place `import &#8216;./editor.scss&#8217;;`<br />\n&#8211; In `index.js` you would place `import &#8216;./style.scss&#8217;;`<br />\n&#8211; In `view.js` you would place `import &#8216;./view.scss&#8217;;` (interactive block template)\n</p></div>\n<p><strong>Note:</strong> If you have multiple files to include, you can use standard <code>wp_enqueue_style</code> functions like any other plugin or theme. You will want to use the following hooks for the block editor:</p>\n<ul>\n<li><code>enqueue_block_editor_assets</code> &#8211; to load only in editor view</li>\n<li><code>enqueue_block_assets</code> &#8211; loads both on frontend and editor view</li>\n</ul>\n<h2>Conclusion</h2>\n<p>This guide showed a couple of different ways to apply styles to your block, by either inline or in its own style sheet. Both of these methods use the <code>useBlockProps</code> hook, see the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#block-wrapper-props\">block wrapper reference documentation</a> for additional details.</p>\n<p>See the complete <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/stylesheets-79a4c3\">stylesheets-79a4c3</a> code in the <a href=\"https://github.com/WordPress/block-development-examples\">block-development-examples repository</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134374,
+    "menu_order": 23,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134376",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134376",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 23,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134376/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154582,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134376/revisions/154582"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134374"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134376"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

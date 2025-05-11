@@ -1,0 +1,109 @@
+{
+    "id": 14633472,
+    "date": "2021-07-08T16:00:12",
+    "date_gmt": "2021-07-08T16:00:12",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=14633472"
+    },
+    "modified": "2023-07-27T15:19:54",
+    "modified_gmt": "2023-07-27T15:19:54",
+    "slug": "block-based-widgets-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/block-based-widgets-editor/",
+    "title": {
+        "rendered": "Block-based Widgets Editor"
+    },
+    "content": {
+        "rendered": "\n<p>The Block-based Widgets Editor brings the power of blocks to the <strong>Theme Customizer</strong> and <strong>Appearance</strong> &gt; <strong>Widgets</strong> sections in the WordPress Administration Screens allowing you to add blocks right next to any current widgets. You can now customize your Widget Areas using blocks, just like how you use the <a href=\"https://wordpress.org/documentation/article/wordpress-editor/\" data-type=\"helphub_article\" data-id=\"11284616\">block editor</a> to create content.</p>\n\n\n\n<p>The Block-based Widgets Editor was introduced in 5.8 for those who use classic themes with <a href=\"https://wordpress.org/documentation/article/wordpress-widgets/\" data-type=\"helphub_article\" data-id=\"10813566\">widgets</a>. With WordPress 5.8 or higher and a classic theme like <a href=\"https://wordpress.org/documentation/article/twenty-twenty/\" data-type=\"helphub_article\" data-id=\"11965628\">Twenty Twenty</a>, you can see the Block-based Widgets Editor.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"643\" src=\"https://wordpress.org/documentation/files/2021/07/test-widgets_v2-1-1024x643.jpeg\" alt=\"Block-based Widgets Editor\" class=\"wp-image-14637450\" srcset=\"https://wordpress.org/documentation/files/2021/07/test-widgets_v2-1-1024x643.jpeg 1024w, https://wordpress.org/documentation/files/2021/07/test-widgets_v2-1-300x188.jpeg 300w, https://wordpress.org/documentation/files/2021/07/test-widgets_v2-1-768x482.jpeg 768w, https://wordpress.org/documentation/files/2021/07/test-widgets_v2-1.jpeg 1438w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Appearance &gt; Widgets View</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"643\" src=\"https://wordpress.org/documentation/files/2021/07/test-widgets-customizer-1-1024x643.jpeg\" alt=\"Widget area in the Customizer\" class=\"wp-image-14637451\" srcset=\"https://wordpress.org/documentation/files/2021/07/test-widgets-customizer-1-1024x643.jpeg 1024w, https://wordpress.org/documentation/files/2021/07/test-widgets-customizer-1-300x188.jpeg 300w, https://wordpress.org/documentation/files/2021/07/test-widgets-customizer-1-768x482.jpeg 768w, https://wordpress.org/documentation/files/2021/07/test-widgets-customizer-1.jpeg 1438w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Customizer View</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to use blocks in the Widget editor</h2>\n\n\n\n<p>The interface replicates the <a href=\"https://wordpress.org/documentation/article/wordpress-editor/\" data-type=\"helphub_article\" data-id=\"11284616\">Post Editor</a> experience, allowing you to use similar workflows like drag and drop. The biggest difference is that you will see distinct editing areas that represent the various Widget Areas as part of your theme, like Footer and Sidebar. </p>\n\n\n\n<p>Within each of these areas, you can add blocks like you would in the Post Editor. You can edit any previous Widgets you\u2019ve added using the <strong>Legacy Widgets</strong> block. Of note, <a href=\"https://wordpress.org/documentation/article/blocks/#theme-blocks\">Theme blocks</a> (Site Logo, Site Title, etc) and <a href=\"https://wordpress.org/documentation/article/reusable-blocks/\">Synced patterns</a> have been disabled in this editor.</p>\n\n\n\n<p><strong>How to add a block</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Navigate to <strong>Appearance</strong> &gt; <strong>Widgets</strong>.</li>\n\n\n\n<li>Click on a specific Widget Area you&#8217;d like to edit.</li>\n\n\n\n<li>Select the <strong>+</strong> prompt to add a block. You can use the search functionality to find the block you want or select <strong>Browse All</strong> to see the various options. </li>\n</ol>\n\n\n\n<p><strong>How to move items between areas</strong></p>\n\n\n\n<p>There are two ways to move items between areas:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>You can use drag and drop by hovering over the block toolbar, selecting and holding it, and dragging it to a new section.  </li>\n\n\n\n<li>You can use the option shown below in the block toolbar to move to the desired Widget Area:</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-06-at-8.36.47-PM-1-edited.png\" alt=\"Block widget mover\" class=\"wp-image-14633599\" style=\"width:660px\" width=\"660\" srcset=\"https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-06-at-8.36.47-PM-1-edited.png 1657w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-06-at-8.36.47-PM-1-edited-300x143.png 300w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-06-at-8.36.47-PM-1-edited-1024x489.png 1024w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-06-at-8.36.47-PM-1-edited-768x367.png 768w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-06-at-8.36.47-PM-1-edited-1536x733.png 1536w\" sizes=\"(max-width: 1657px) 100vw, 1657px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to use blocks in the Customizer</h2>\n\n\n\n<p>If you&#8217;re more comfortable managing your Widget Areas in the Customizer, you can now add widgets and blocks with the same ability to live preview, schedule changes, and publish that you&#8217;re used to. The main thing to keep in mind is that, due to the small size of the Customizer, some settings require a few more steps to find. To find all block settings, follow the steps below:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Use the <strong>+</strong> to add a new block. </li>\n\n\n\n<li>After adding the block, select the three-dot ellipsis menu and choose the top option of <strong>Show more settings</strong>. </li>\n\n\n\n<li>From there, you&#8217;ll see more options to customize your block to your liking. </li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/12/Loom-Message-4-November-2022.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to manage&nbsp;Legacy Widgets</h2>\n\n\n\n<p>For any widget that doesn&#8217;t come with WordPress and that hasn&#8217;t been converted to a block, you can use the Legacy Widget block to manage any existing widgets or third-party widgets. </p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/12/Widgets-\u2039-catcatgirls.com-\u2014-WordPress-4-November-2022.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">How to opt-out</h2>\n\n\n\n<p>A user may install and activate&nbsp;<a href=\"https://wordpress.org/plugins/classic-widgets/\">the Classic Widgets plugin</a> to opt-out of this feature. This will return you to the <a href=\"https://wordpress.org/documentation/article/appearance-widgets-screen/\">original view</a> of the <strong>Appearance</strong> &gt; <strong>Widgets</strong> and the <strong>Customizer</strong>. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Demonstration of the Block-based Widgets Editor</h2>\n\n\n\n<figure class=\"wp-block-embed is-type-video is-provider-videopress wp-block-embed-videopress wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"VideoPress Video Player\" aria-label='VideoPress Video Player' width='500' height='281' src='https://video.wordpress.com/embed/63dxpgzD?hd=0&amp;cover=1' frameborder='0' allowfullscreen allow='clipboard-write'></iframe><script src='https://v0.wordpress.com/js/next/videopress-iframe.js?m=1674852142'></script>\n</div><figcaption class=\"wp-element-caption\">Demonstration of the block-based Widgets Editor and blocks in Customizer experience</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://make.wordpress.org/core/2021/06/29/block-based-widgets-editor-in-wordpress-5-8/\">Block-based Widgets Editor in WordPress 5.8</a></li>\n</ul>\n\n\n\n<p></p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-12-06\n<ul class=\"wp-block-list\">\n<li>Added ALT tags for the images</li>\n\n\n\n<li>Added internal links to other support articles.</li>\n\n\n\n<li>Updated videos.</li>\n</ul>\n</li>\n\n\n\n<li>Created 2021-07-08</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Block-based Widgets Editor brings the power of blocks to the Theme Customizer and Appearance &gt; Widgets sections in the WordPress Administration Screens allowing you to add blocks right next to any current widgets. You can now customize your Widget Areas using blocks, just like how you use the block editor to create content. The [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-14633472",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14633472",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=14633472"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14633472/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16357985,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/14633472/revisions/16357985"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=14633472"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=14633472"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

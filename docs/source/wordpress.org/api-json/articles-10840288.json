@@ -1,0 +1,109 @@
+{
+    "id": 10840288,
+    "date": "2018-11-02T06:25:24",
+    "date_gmt": "2018-11-02T06:25:24",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10840288"
+    },
+    "modified": "2024-08-09T18:49:55",
+    "modified_gmt": "2024-08-09T18:49:55",
+    "slug": "twenty-sixteen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/twenty-sixteen/",
+    "title": {
+        "rendered": "Twenty Sixteen"
+    },
+    "content": {
+        "rendered": "\n<p><a href=\"https://wordpress.org/themes/twentysixteen\">Twenty Sixteen</a> is the default theme for WordPress in 2016.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1200\" height=\"900\" src=\"https://wordpress.org/documentation/files/2024/02/twenty-sixteen-screenshot.png\" alt=\"The screenshot of Twenty sixteen with a black border, white background, black text and a blue accent color.\nThe screenshot shows a blog post with a photo of a sunset over water, and a sidebar with text, a search form, and category links.\" class=\"wp-image-16359736\" srcset=\"https://wordpress.org/documentation/files/2024/02/twenty-sixteen-screenshot.png 1200w, https://wordpress.org/documentation/files/2024/02/twenty-sixteen-screenshot-300x225.png 300w, https://wordpress.org/documentation/files/2024/02/twenty-sixteen-screenshot-1024x768.png 1024w, https://wordpress.org/documentation/files/2024/02/twenty-sixteen-screenshot-768x576.png 768w\" sizes=\"auto, (max-width: 1200px) 100vw, 1200px\" /></figure>\n\n\n\n<p>Twenty Sixteen is a modernized take on an ever-popular WordPress layout \u2014 the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.</p>\n\n\n\n<div class=\"wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-23441af8 wp-block-group-is-layout-flex\">\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"499\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-mobile-nav-open.png\" alt=\"Twenty Sixteen mobile design.\" class=\"wp-image-16359742\" style=\"width:200px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-mobile-nav-open.png 499w, https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-mobile-nav-open-146x300.png 146w\" sizes=\"auto, (max-width: 499px) 100vw, 499px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"690\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-ipad-portrait.png\" alt=\"Twenty Sixteen tablet design.\" class=\"wp-image-16359744\" style=\"width:376px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-ipad-portrait.png 690w, https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-ipad-portrait-202x300.png 202w\" sizes=\"auto, (max-width: 690px) 100vw, 690px\" /></figure>\n</div>\n\n\n\n<p><strong>Quick Specs</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>The main column width is up to 840px. </li>\n\n\n\n<li>The sidebar column width is up to 300px.</li>\n\n\n\n<li> The recommended Featured Image size is 1200px wide.</li>\n\n\n\n<li> The recommended Custom Header image size is 1200px wide and 280px height.</li>\n</ol>\n\n\n\n<h2 class=\"wp-block-heading\">No-Sidebar Layout</h2>\n\n\n\n<p>If you&#8217;d like to keep your visitors&#8217; focus squarely on your content, simply don&#8217;t add any <a href=\"https://wordpress.org/documentation/article/manage-wordpress-widgets/\">widgets</a> to the sidebar widget area. This also allows you to give your posts a powerful visual boost by adding a large <a href=\"https://wordpress.org/documentation/article/page-post-settings-sidebar/#featured-image\">Featured Image</a>, up to 1200px wide.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"446\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-post-no-sidebar-446x1024-1.png\" alt=\"Twenty Sixteen blog post design without sidebar. The post has a wide featured image below the post title, above the content.\" class=\"wp-image-16359747\" srcset=\"https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-post-no-sidebar-446x1024-1.png 446w, https://wordpress.org/documentation/files/2018/11/Twenty-Sixteen-post-no-sidebar-446x1024-1-131x300.png 131w\" sizes=\"auto, (max-width: 446px) 100vw, 446px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Content Bottom Widget Areas</h2>\n\n\n\n<p>Twenty Sixteen&#8217;s two Content Bottom Widget Areas are handy spots where you can place supplementary content. On single posts and pages, these widget areas display below your content. To add widgets to them, Click <strong>Appearance &gt; Widgets</strong> from the <a href=\"https://wordpress.org/documentation/article/appearance-widgets-screen-classic-editor/\">Administration Screen</a> and add your favorite widgets to <strong>Content Bottom 1</strong> or <strong>Content Bottom 2</strong> or both.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"470\" src=\"https://wordpress.org/documentation/files/2018/11/twentysixteen-content-bottom-widgets1.webp\" alt=\"A screenshot of a blog post with two widgets below the content.\nThe left most widget shows the recent posts. The second widget shows a newsletter signup form.\" class=\"wp-image-16359755\" srcset=\"https://wordpress.org/documentation/files/2018/11/twentysixteen-content-bottom-widgets1.webp 640w, https://wordpress.org/documentation/files/2018/11/twentysixteen-content-bottom-widgets1-300x220.webp 300w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Post Intro</h2>\n\n\n\n<p>Twenty Sixteen has a small but nifty intro feature. Also known as a &#8220;deck&#8221; or &#8220;kicker,&#8221; the intro area is displayed between the headline and body copy. Your intro can provide important information and act as a link between the title and the rest of your post. A carefully crafted deck grabs readers&#8217; attention, giving them an idea of what to expect in the full post.</p>\n\n\n\n<p>Add your intro in the <a href=\"https://wordpress.org/documentation/article/what-is-an-excerpt-classic-editor/\">Excerpt option</a> in your Post panel.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Overhanging Full-Size Image</h2>\n\n\n\n<p>Have you ever wanted to show off your large images without sacrificing the post&#8217;s readability? On a large screen, full-size images wider than or equal to 840px overhang the column.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Pull Quotes</h2>\n\n\n\n<p>Pull quotes are a great way to refocus your readers&#8217; attention \u2014 just add a class of <code>alignleft</code> or <code>alignright</code> to a <code>blockquote</code> element. Here are some examples of how to do that in the <a href=\"https://wordpress.org/documentation/article/write-posts-classic-editor/#Visual_Versus_Text_Editor\">Classic Editor</a>.</p>\n\n\n<pre class=\"brush: php; title: ; notranslate\" title=\"\">\n&lt;blockquote class=&quot;alignleft&quot;&gt;A bolder pull blockquote that aligns to the lef&lt;/blockquote&gt;\n\n&lt;blockquote class=&quot;alignright&quot;&gt;A bolder pull blockquote that aligns to the right&lt;/blockquote&gt;\n</pre>\n\n\n\n<p>On a large monitor, the left-aligned pull quote overhangs the main column to maintain the readability of the text wrapped around it.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"750\" src=\"https://wordpress.org/documentation/files/2018/11/twentysixteen-pull-quotes.jpg\" alt=\"A screenshot of a large section of text with two pullquotes:  One left aligned that extends outside of the main column, and a right aligned that is aligned with the right side of the main text column.\" class=\"wp-image-16359739\" srcset=\"https://wordpress.org/documentation/files/2018/11/twentysixteen-pull-quotes.jpg 640w, https://wordpress.org/documentation/files/2018/11/twentysixteen-pull-quotes-256x300.jpg 256w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Customize</h2>\n\n\n\n<p>Open the <a href=\"https://wordpress.org/documentation/article/customizer/\">Customizer</a> to check out the four featured color schemes you can use to instantly change the look of your website.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>(Default)</li>\n\n\n\n<li>Red</li>\n\n\n\n<li>Gray</li>\n\n\n\n<li>Dark</li>\n\n\n\n<li>Yellow</li>\n</ul>\n\n\n\n<p>Personalize the design even further by adding a Custom Header Image or/and Site Logo.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"631\" src=\"https://wordpress.org/documentation/files/2018/11/twentysixteen_color_schemes3.webp\" alt=\"An image of the color schemes in Twenty Sixteen: dark (black), red, yellow and grey.\" class=\"wp-image-16359757\" srcset=\"https://wordpress.org/documentation/files/2018/11/twentysixteen_color_schemes3.webp 640w, https://wordpress.org/documentation/files/2018/11/twentysixteen_color_schemes3-300x296.webp 300w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Social Menu</h2>\n\n\n\n<p>With Twenty Sixteen, you can display links to your social media profiles with perfectly sized icons in the footer, using the Social Links menu. You can manage menus under <a href=\"https://wordpress.org/documentation/article/appearance-menus-screen/\">Appearance &gt; Menus</a>.</p>\n\n\n\n<p>Linking to any of the following sites will automatically display its icon in your menu:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>CodePen</li>\n\n\n\n<li>Digg</li>\n\n\n\n<li>Dribbble</li>\n\n\n\n<li>Dropbox</li>\n\n\n\n<li>Email (mailto: links)</li>\n\n\n\n<li>Facebook</li>\n\n\n\n<li>Flickr</li>\n\n\n\n<li>Foursquare</li>\n\n\n\n<li>GitHub</li>\n\n\n\n<li>Google+</li>\n\n\n\n<li>Instagram</li>\n\n\n\n<li>LinkedIn</li>\n\n\n\n<li>Path</li>\n\n\n\n<li>Pinterest</li>\n\n\n\n<li>Polldaddy</li>\n\n\n\n<li>Reddit</li>\n\n\n\n<li>RSS Feed (urls with /feed/)</li>\n\n\n\n<li>Spotify</li>\n\n\n\n<li>StumbleUpon</li>\n\n\n\n<li>Tumblr</li>\n\n\n\n<li>Twitch</li>\n\n\n\n<li>Twitter</li>\n\n\n\n<li>Vimeo</li>\n\n\n\n<li>WordPress</li>\n\n\n\n<li>YouTube</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Links</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://wordpress.org/themes/twentysixteen/\">Twenty Sixteen Demo and Download</a></li>\n\n\n\n<li><a href=\"https://wordpress.org/documentation/article/twenty-sixteen-changelog/\">Twenty Sixteen Changelog</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Twenty Sixteen is the default theme for WordPress in 2016. Twenty Sixteen is a modernized take on an ever-popular WordPress layout \u2014 the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 16,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        82
+    ],
+    "class_list": [
+        "post-10840288",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-default-themes"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840288",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10840288"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 22,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840288/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359761,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10840288/revisions/16359761"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10840288"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10840288"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

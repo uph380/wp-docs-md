@@ -1,0 +1,91 @@
+{
+    "id": 134426,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-block-settings-menu-item/"
+    },
+    "modified": "2024-10-30T16:55:54",
+    "modified_gmt": "2024-10-30T16:55:54",
+    "slug": "plugin-block-settings-menu-item",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-block-settings-menu-item/",
+    "title": {
+        "rendered": "PluginBlockSettingsMenuItem"
+    },
+    "content": {
+        "rendered": "<p>This slot allows for adding a new item into the More Options area.<br />\nThis will either appear in the controls for each block or at the Top Toolbar depending on the users setting.</p>\n<h2>Example</h2>\n<pre><code class=\"language-js\">import { registerPlugin } from '@wordpress/plugins';\nimport { PluginBlockSettingsMenuItem } from '@wordpress/editor';\n\nconst PluginBlockSettingsMenuGroupTest = () =&gt; (\n    &lt;PluginBlockSettingsMenuItem\n        allowedBlocks={ [ 'core/paragraph' ] }\n        icon=\"smiley\"\n        label=\"Menu item text\"\n        onClick={ () =&gt; {\n            alert( 'clicked' );\n        } }\n    /&gt;\n);\n\nregisterPlugin( 'block-settings-menu-group-test', {\n    render: PluginBlockSettingsMenuGroupTest,\n} );\n</code></pre>\n<h2>Location</h2>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/raw.githubusercontent.com/WordPress/gutenberg/HEAD/docs/assets/plugin-block-settings-menu-item-screenshot.png?ssl=1\" alt=\"Location\" title=\"PluginBlockSettingsMenuItem Location\" /></p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134424,
+    "menu_order": 95,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134426",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134426",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134426/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154891,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134426/revisions/154891"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134426"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

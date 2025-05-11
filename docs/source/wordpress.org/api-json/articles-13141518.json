@@ -1,0 +1,109 @@
+{
+    "id": 13141518,
+    "date": "2020-07-19T12:50:43",
+    "date_gmt": "2020-07-19T12:50:43",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13141518"
+    },
+    "modified": "2024-06-06T17:19:10",
+    "modified_gmt": "2024-06-06T17:19:10",
+    "slug": "issuu-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/issuu-embed/",
+    "title": {
+        "rendered": "Issuu embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the Issuu Embed block, you can embed your published content and magazines from Issuu into your posts and pages. You need an Issuu account and an upgraded plan to be able to embed content from Issuu into your posts or pages. <br></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Embedded Issuu content</strong><br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/support/files/2022/10/issuu-embedded-edited.jpg\" alt=\"Embedded Issuu document in WordPress block editor.\" class=\"wp-image-16111714\" width=\"363\" height=\"242\" srcset=\"https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited.jpg 1112w, https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited-300x200.jpg 300w, https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited-1024x683.jpg 1024w, https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited-768x512.jpg 768w\" sizes=\"auto, (max-width: 363px) 100vw, 363px\" /><figcaption class=\"wp-element-caption\">Embedded Issuu document in WordPress block editor.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><br><strong>Steps to embed Issuu content:</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Go to Issuu.com to create your account and content.<br><br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"477\" src=\"https://wordpress.org/documentation/files/2020/07/issuu-homepage-1024x477.jpg\" alt=\"Go to Issuu.com to create your account and contents\" class=\"wp-image-13141532\" srcset=\"https://wordpress.org/documentation/files/2020/07/issuu-homepage-1024x477.jpg 1024w, https://wordpress.org/documentation/files/2020/07/issuu-homepage-300x140.jpg 300w, https://wordpress.org/documentation/files/2020/07/issuu-homepage-768x358.jpg 768w, https://wordpress.org/documentation/files/2020/07/issuu-homepage-1536x715.jpg 1536w, https://wordpress.org/documentation/files/2020/07/issuu-homepage.jpg 1920w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Go to Issuu.com to create your account and contents</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Create your content, and click the <strong>Share</strong> button to grab the embed URL or shareable link.<br><br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/196313147-b31c588e-9247-4a5c-9747-6a6609e09c98.jpg\" alt=\"Grab the sharable publication link from issuu to embed the document in block editor\" class=\"wp-image-16262560\" width=\"501\" height=\"397\" srcset=\"https://wordpress.org/documentation/files/2022/12/196313147-b31c588e-9247-4a5c-9747-6a6609e09c98.jpg 1001w, https://wordpress.org/documentation/files/2022/12/196313147-b31c588e-9247-4a5c-9747-6a6609e09c98-300x238.jpg 300w, https://wordpress.org/documentation/files/2022/12/196313147-b31c588e-9247-4a5c-9747-6a6609e09c98-768x608.jpg 768w\" sizes=\"auto, (max-width: 501px) 100vw, 501px\" /><figcaption class=\"wp-element-caption\">Grab the sharable publication link from issuu to embed the document in the block editor</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Add an <strong>Issuu Embed Block</strong> to your post/page by clicking the <strong>(+) Block inserter </strong>icon.<br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/image26.jpg\" alt=\"Insert the Issuu Embed Block with Block Inserter\" class=\"wp-image-13270105\" width=\"265\" height=\"398\" srcset=\"https://wordpress.org/documentation/files/2020/08/image26.jpg 501w, https://wordpress.org/documentation/files/2020/08/image26-200x300.jpg 200w\" sizes=\"auto, (max-width: 265px) 100vw, 265px\" /><figcaption class=\"wp-element-caption\">Insert the Issuu Embed Block with Block Inserter</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Paste the Issuu content link from step 2.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2020/08/image19.jpg\" alt=\"Paste the Issuu content link from step 2\" class=\"wp-image-13270108\" width=\"698\" height=\"391\" srcset=\"https://wordpress.org/documentation/files/2020/08/image19.jpg 931w, https://wordpress.org/documentation/files/2020/08/image19-300x168.jpg 300w, https://wordpress.org/documentation/files/2020/08/image19-768x430.jpg 768w\" sizes=\"auto, (max-width: 698px) 100vw, 698px\" /><figcaption class=\"wp-element-caption\">Paste the Issuu content link from step 2</figcaption></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>Click the <strong>Embed</strong> button. If it\u2019s a link that can be successfully embedded, you will see a preview in your editor.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"683\" src=\"https://wordpress.org/support/files/2022/10/issuu-embedded-edited-1024x683.jpg\" alt=\"Embedded Issuu document in WordPress block editor.\" class=\"wp-image-16111714\" srcset=\"https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited-1024x683.jpg 1024w, https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited-300x200.jpg 300w, https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited-768x512.jpg 768w, https://wordpress.org/documentation/files/2022/10/issuu-embedded-edited.jpg 1112w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Embedded Issuu document in WordPress block editor.</figcaption></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201c</em>Sorry, this content could not be embedded.\u201d You will have two choices: <strong>Try again</strong> with a different URL or <strong>Convert to link</strong>.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"924\" height=\"569\" src=\"https://wordpress.org/documentation/files/2020/08/image22.jpg\" alt=\"Error is shown when the issuu document cannot be embedded\" class=\"wp-image-13270112\" srcset=\"https://wordpress.org/documentation/files/2020/08/image22.jpg 924w, https://wordpress.org/documentation/files/2020/08/image22-300x185.jpg 300w, https://wordpress.org/documentation/files/2020/08/image22-768x473.jpg 768w\" sizes=\"auto, (max-width: 924px) 100vw, 924px\" /><figcaption class=\"wp-element-caption\">Error is shown when the Issuu document cannot be embedded</figcaption></figure>\n\n\n\n<p>If you don&#8217;t have an upgraded Issuu account, you will see an overlay on top of the embedded content with the message &#8220;Why I can&#8217;t see my embed&#8221;.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Issuu embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More options.<br></li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/196313143-a1dd1ff0-e222-4957-b324-81fb4f900dde.jpg\" alt=\"Click on embedded content to see Issuu Block Toolbar\" class=\"wp-image-16262578\" width=\"561\" height=\"357\" srcset=\"https://wordpress.org/documentation/files/2022/12/196313143-a1dd1ff0-e222-4957-b324-81fb4f900dde.jpg 748w, https://wordpress.org/documentation/files/2022/12/196313143-a1dd1ff0-e222-4957-b324-81fb4f900dde-300x191.jpg 300w\" sizes=\"auto, (max-width: 561px) 100vw, 561px\" /><figcaption class=\"wp-element-caption\">Click on embedded content to see Issuu Block Toolbar</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong><br></p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/196313149-58b861f8-c387-458a-8e0c-9881bec7694e-1.jpg\" alt=\"Transform an embedded block to Paragraph, Columns or Group\" class=\"wp-image-16262582\" width=\"575\" height=\"383\" /><figcaption class=\"wp-element-caption\">Transform an embedded block to Paragraph, Columns or Group</figcaption></figure>\n\n\n\n<p>You can transform an Issuu embed into a Group. This would give you the ability to change the background and text color around the Issuu embed.<br></p>\n\n\n\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1.jpg\" alt=\"Editor view of a Issuu Embed as a group with Color Settings controls\" class=\"wp-image-16262592\" width=\"768\" height=\"493\" srcset=\"https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1.jpg 2560w, https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1-300x192.jpg 300w, https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1-1024x657.jpg 1024w, https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1-768x493.jpg 768w, https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1-1536x985.jpg 1536w, https://wordpress.org/documentation/files/2022/12/196313146-9e4ac66f-4997-4ee0-a1ae-9ef9adfb3f4a-scaled-1-2048x1314.jpg 2048w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" /><figcaption class=\"wp-element-caption\">Editor view of a Issuu Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"752\" src=\"https://wordpress.org/documentation/files/2020/07/issuu-with-blue-background-1024x752.jpg\" alt=\"Issuu Embed with a blue background.\" class=\"wp-image-16111412\" srcset=\"https://wordpress.org/documentation/files/2020/07/issuu-with-blue-background-1024x752.jpg 1024w, https://wordpress.org/documentation/files/2020/07/issuu-with-blue-background-300x220.jpg 300w, https://wordpress.org/documentation/files/2020/07/issuu-with-blue-background-768x564.jpg 768w, https://wordpress.org/documentation/files/2020/07/issuu-with-blue-background.jpg 1448w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Issuu Embed with a blue background.</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><br><strong>Change alignment</strong><br></p>\n\n\n\n<figure class=\"wp-block-image alignright size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/10/issuu-alignment-e1666120405883-1.jpg\" alt=\"Align Issuu Embed Block by clicking on the Issuu Embed Block\" width=\"355\" height=\"191\" /><figcaption class=\"wp-element-caption\">Align Issuu Embed Block by clicking on the Issuu Embed Block</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the Issuu embed post-left-aligned.</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Issuu embed post alignment centered.</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the Issuu embed post align right.</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the Issuu embed post beyond the content size.</li>\n\n\n\n<li><strong>Full width</strong> &#8211; extend the Issuu embed post to cover the full width of the screen.<br></li>\n</ul>\n\n\n\n<p><strong>Wide width</strong> and <strong>Full width</strong> alignment need to be enabled by the theme of your site.<br><br><strong>Edit URL</strong><br>Via the edit URL, you can change the Issuu embed URL in the embed block. To overwrite the existing URL and click on the <strong>Embed</strong> button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"931\" height=\"521\" src=\"https://wordpress.org/documentation/files/2020/08/image19-1.jpg\" alt=\"Change or edit the embed URL\" class=\"wp-image-13270123\" srcset=\"https://wordpress.org/documentation/files/2020/08/image19-1.jpg 931w, https://wordpress.org/documentation/files/2020/08/image19-1-300x168.jpg 300w, https://wordpress.org/documentation/files/2020/08/image19-1-768x430.jpg 768w\" sizes=\"auto, (max-width: 931px) 100vw, 931px\" /><figcaption class=\"wp-element-caption\">Change or edit the embed URL</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media Settings</strong></p>\n\n\n\n<figure class=\"wp-block-gallery aligncenter has-nested-images columns-default is-cropped wp-block-gallery-9 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"406\" height=\"182\" data-id=\"12996503\" src=\"https://wordpress.org/documentation/files/2020/06/media-settings.png\" alt=\"Resize for smaller devices switched off\" class=\"wp-image-12996503\" srcset=\"https://wordpress.org/documentation/files/2020/06/media-settings.png 406w, https://wordpress.org/documentation/files/2020/06/media-settings-300x134.png 300w\" sizes=\"auto, (max-width: 406px) 100vw, 406px\" /><figcaption class=\"wp-element-caption\">Resize for smaller devices switched off</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"408\" height=\"197\" data-id=\"12996537\" src=\"https://wordpress.org/documentation/files/2020/06/media-settings-2-1.png\" alt=\"Resize for smaller devices switched on\" class=\"wp-image-12996537\" srcset=\"https://wordpress.org/documentation/files/2020/06/media-settings-2-1.png 408w, https://wordpress.org/documentation/files/2020/06/media-settings-2-1-300x145.png 300w\" sizes=\"auto, (max-width: 408px) 100vw, 408px\" /><figcaption class=\"wp-element-caption\">Resize for smaller devices switched on</figcaption></figure>\n</figure>\n\n\n\n<p>Via the Media Settings, you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p>\u201cOff:\u201d This embed may not preserve its aspect ratio when the browser is resized. In the off position, the toggle switch is gray.</p>\n\n\n\n<p>\u201cOn:\u201d This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.<br></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"349\" height=\"191\" src=\"https://wordpress.org/documentation/files/2020/06/advanced.png\" alt=\"Additional CSS class(es)\" class=\"wp-image-12996547\" srcset=\"https://wordpress.org/documentation/files/2020/06/advanced.png 349w, https://wordpress.org/documentation/files/2020/06/advanced-300x164.png 300w\" sizes=\"auto, (max-width: 349px) 100vw, 349px\" /><figcaption class=\"wp-element-caption\">Additional CSS class(es)</figcaption></figure>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-10-18</li>\n\n\n\n<li>Updated 2020-08-17\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshot</li>\n\n\n\n<li>Updated &#8220;Move to&#8221; and &#8220;Copy&#8221; section under &#8220;More Options&#8221;</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-07-25\n<ul class=\"wp-block-list\">\n<li>Uploaded image for issuu embed with red background</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-19</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Issuu Embed block, you can embed your published content and magazines from Issuu into your posts and pages. You need an Issuu account and an upgraded plan to be able to embed content from Issuu into your posts or pages. Embedded Issuu content Steps to embed [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13141518",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13141518",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13141518"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13141518/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360328,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13141518/revisions/16360328"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13141518"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13141518"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

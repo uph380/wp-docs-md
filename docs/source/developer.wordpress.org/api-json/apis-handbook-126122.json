@@ -1,0 +1,97 @@
+{
+    "id": 126122,
+    "date": "2019-10-31T16:17:54",
+    "date_gmt": "2019-10-31T16:17:54",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=126122"
+    },
+    "modified": "2020-01-28T19:06:45",
+    "modified_gmt": "2020-01-28T19:06:45",
+    "slug": "internationalization-functions",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/internationalization/internationalization-functions/",
+    "title": {
+        "rendered": "Internationalization Functions"
+    },
+    "content": {
+        "rendered": "\n<p>Check the <a href=\"https://developer.wordpress.org/apis/handbook/internationalization/internationalization-guidelines/\">Internationalization Guidelines</a> and learn what each i18n function is for, how to use them, and the best practices when writing your strings.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Basic functions</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/__/\">__()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_e/\">_e()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_x/\">_x()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_ex/\">_ex()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_n/\">_n()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_nx/\">_nx()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_n_noop/\">_n_noop()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/_nx_noop/\">_nx_noop()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/translate_nooped_plural()/\">translate_nooped_plural()</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Translate &amp; Escape functions</h2>\n\n\n\n<p>Strings that require translation and is used in attributes of html tags must be escaped.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/esc_html__/\">esc_html__()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/esc_html_e/\">esc_html_e()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/esc_html_x/\">esc_html_x()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/esc_attr__/\">esc_attr__()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/esc_attr_e/\">esc_attr_e()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/esc_attr_x/\">esc_attr_x()</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Date and number functions</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/number_format_i18n\">number_format_i18n()</a></li><li><a href=\"https://developer.wordpress.org/reference/functions/date_i18n\">date_i18n()</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Functions also available in javascript</h2>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/__/\" rel=\"function\">__()</a> </li><li> <a href=\"https://developer.wordpress.org/reference/functions/_x/\" rel=\"function\">_x()</a> </li><li> <a href=\"https://developer.wordpress.org/reference/functions/_n/\" rel=\"function\">_n()</a> </li><li> <a href=\"https://developer.wordpress.org/reference/functions/_nx/\" rel=\"function\">_nx()</a> </li><li> sprintf()</li></ul>\n\n\n\n<p>Note: To be able to use these functions available in your javascript, you have to <a href=\"https://developer.wordpress.org/apis/handbook/internationalization/#internationalizing-javascript\">set up your plugin/theme javascript localization</a>.</p>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 126023,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-126122",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126122",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126122/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 126899,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126122/revisions/126899"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/126023"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=126122"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

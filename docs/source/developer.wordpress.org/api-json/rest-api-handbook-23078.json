@@ -1,0 +1,91 @@
+{
+    "id": 23078,
+    "date": "2016-12-06T18:00:24",
+    "date_gmt": "2016-12-06T18:00:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23078"
+    },
+    "modified": "2024-01-16T20:30:19",
+    "modified_gmt": "2024-01-16T20:30:19",
+    "slug": "reference",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/reference/",
+    "title": {
+        "rendered": "Reference"
+    },
+    "content": {
+        "rendered": "<p>The WordPress REST API is organized around <a href=\"http://en.wikipedia.org/wiki/Representational_state_transfer\">REST</a>, and is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. The API uses built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and supports cross-origin resource sharing to allow you to interact securely with the API from a client-side web application.</p>\n<p>The REST API uses JSON exclusively as the request and response format, including error responses. While the REST API does not completely conform to the <a href=\"http://stateless.co/hal_specification.html\">HAL standard</a>, it does implement HAL&#8217;s <code>._links</code> and <code>._embedded</code> properties for linking API resources, and is fully discoverable via hyperlinks in the responses.</p>\n<p>The REST API provides public data accessible to any client anonymously, as well as private data only available after <a href=\"https://developer.wordpress.org/rest-api/authentication/\">authentication</a>. Once authenticated the REST API supports most content management actions, allowing you to build alternative dashboards for a site, enhance your plugins with more responsive management tools, or build complex single-page applications.</p>\n<p>This API reference provides information on the specific endpoints available through the API, their parameters, and their response data format.</p>\n<h2>REST API Developer Endpoint Reference</h2>\n<table>\n<tr>\n<th>Resource</th>\n<th>Base Route</th>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/posts/\">Posts</td>\n<td><code>/wp/v2/posts</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/post-revisions/\">Post Revisions</a></td>\n<td><code>/wp/v2/posts/&lt;id&gt;/revisions</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/categories/\">Categories</a></td>\n<td><code>/wp/v2/categories</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/tags/\">Tags</a></td>\n<td><code>/wp/v2/tags</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/pages/\">Pages</a></td>\n<td><code>/wp/v2/pages</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/page-revisions/\">Page Revisions</a></td>\n<td><code>/wp/v2/pages/&lt;id&gt;/revisions</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/comments/\">Comments</a></td>\n<td><code>/wp/v2/comments</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/taxonomies/\">Taxonomies</a></td>\n<td><code>/wp/v2/taxonomies</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/media/\">Media</a></td>\n<td><code>/wp/v2/media</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/users/\">Users</a></td>\n<td><code>/wp/v2/users</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/post-types/\">Post Types</a></td>\n<td><code>/wp/v2/types</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/post-statuses/\">Post Statuses</a></td>\n<td><code>/wp/v2/statuses</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/settings/\">Settings</a></td>\n<td><code>/wp/v2/settings</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/themes/\">Themes</a></td>\n<td><code>/wp/v2/themes</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/search-results/\">Search</a></td>\n<td><code>/wp/v2/search</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/block-types/\">Block Types</a></td>\n<td><code>/wp/v2/block-types</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/blocks/\">Blocks</a></td>\n<td><code>/wp/v2/blocks</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/block-revisions/\">Block Revisions</a></td>\n<td><code>/wp/v2/blocks/&lt;id&gt;/autosaves/</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/rendered-blocks/\">Block Renderer</a></td>\n<td><code>/wp/v2/block-renderer</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/block-directory-items/\">Block Directory Items</a></td>\n<td><code>/wp/v2/block-directory/search</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/rest-api/reference/plugins/\">Plugins</a></td>\n<td><code>/wp/v2/plugins</code></td>\n</tr>\n</table>\n<h2>A Distributed API</h2>\n<p>Unlike many other REST APIs, the WordPress REST API is distributed and available individually on each site that supports it. This means there is no singular API root or base to contact; instead, we have <a href=\"https://developer.wordpress.org/rest-api/discovery/\">a discovery process</a> that allows interacting with sites without prior contact. The API also exposes self-documentation at the index endpoint, or via an <code>OPTIONS</code> request to any endpoint, allowing human- or machine-discovery of endpoint capabilities.</p>\n",
+        "protected": false
+    },
+    "author": 14582129,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 6,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23078",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14582129"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152011,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23078/revisions/152011"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23078"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

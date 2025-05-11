@@ -1,0 +1,97 @@
+{
+    "id": 149042,
+    "date": "2023-10-17T14:33:10",
+    "date_gmt": "2023-10-17T14:33:10",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149042"
+    },
+    "modified": "2023-10-17T14:33:10",
+    "modified_gmt": "2023-10-17T14:33:10",
+    "slug": "border",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/border/",
+    "title": {
+        "rendered": "Border"
+    },
+    "content": {
+        "rendered": "\n<p>The <code>settings.border</code> property in <code>theme.json</code> gives you control over the global border settings for blocks in WordPress. It\u2019s important to note that this lets you configure the available settings in the user interface, not the border styles themselves.</p>\n\n\n\n<p>Each of the border settings maps to a control at the individual block level and in the <strong>Styles</strong> interface for blocks, letting you curate which controls are available to your theme users:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress post editor showing a Post Featured Image block with custom border settings.\" class=\"wp-image-149043\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/10/border-settings.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Border settings</h2>\n\n\n\n<p>WordPress supports four border settings that you can configure via the <code>settings.border</code> property in <code>theme.json</code>. Each of them allows you to enable or disable a specific border feature and accepts a boolean (<code>true</code> or <code>false</code>) value:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>color</code>:</strong> Enables/Disables the border-color picker.</li>\n\n\n\n<li><strong><code>radius</code>:</strong> Enables/Disables the border-radius control.</li>\n\n\n\n<li><strong><code>style</code>:</strong> Enables/Disables the border-style selector (users have the option of <code>solid</code>, <code>dashed</code>, or <code>dotted</code>).</li>\n\n\n\n<li><code><strong>width</strong></code>: Enables/Disables the border-width input.</li>\n</ul>\n\n\n\n<p>By default, all border properties are set to <code>false</code>, as shown in this example <code>theme.json</code> code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"settings\": {\n\t\t\"border\": {\n\t\t\t\"color\": false,\n\t\t\t\"radius\": false,\n\t\t\t\"style\": false,\n\t\t\t\"width\": false\n\t\t}\n\t}\n}</code></pre>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>As of WordPress 6.3, <code>color</code>, <code>style</code>, and <code>width</code> are intertwined. If any one of them is set to <code>true</code>, the others will be available as options within the user interface.</p><p>Also, setting the <code>radius</code> option to <code>false</code> does not work for the Button block. The border-radius control in the editor always appears.</p></div></div>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148907,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149042",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149042",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149042/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149044,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149042/revisions/149044"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148907"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149042"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

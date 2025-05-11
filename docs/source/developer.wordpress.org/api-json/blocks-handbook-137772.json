@@ -1,0 +1,91 @@
+{
+    "id": 137772,
+    "date": "2021-12-07T19:39:49",
+    "date_gmt": "2021-12-07T19:39:49",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/react-native/"
+    },
+    "modified": "2025-01-07T18:34:08",
+    "modified_gmt": "2025-01-07T18:34:08",
+    "slug": "react-native",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/react-native/",
+    "title": {
+        "rendered": "React Native mobile editor"
+    },
+    "content": {
+        "rendered": "<p>The Gutenberg repository includes the source for the <a href=\"https://reactnative.dev/\">React Native</a> based editor for mobile.</p>\n<h2>Mind the mobile</h2>\n<p>Contributors need to ensure that they update any affected native mobile files during code refactorings because we cannot yet rely on automated tooling to do this for us. For example, renaming a function or a prop should also be performed in the native modules too, otherwise, the mobile client will break. We have added some mobile specific CI tests as safeguards in place in PRs, but we&#8217;re still far from done. Please bear with us and thank you in advance. \u2764\ufe0f\ud83d\ude47\u200d</p>\n<h2>Native mobile specific files</h2>\n<p>The majority of the code shared with native mobile is in the very same JavaScript module and SASS style files. In the cases where the code paths need to diverge, a <code>.native.js</code> or <code>.native.scss</code> variant of the file is created. In some cases, platform specific files can be also found for Android (<code>.android.js</code>) or iOS (<code>.ios.js</code>).</p>\n<h2>Running Gutenberg Mobile on Android and iOS</h2>\n<p>For instructions on how to run the <strong>Gutenberg Mobile Demo App</strong> on Android or iOS, see <a href=\"https://developer.wordpress.org/block-editor/contributors/code/react-native/getting-started-react-native/\">Getting Started for the React Native based Mobile Gutenberg</a></p>\n<p>Also, the mobile client is packaged and released via the <a href=\"https://wordpress.org/mobile/\">official WordPress apps</a>. Even though the build pipeline is slightly different then the mobile demo apps and lives in its own repo for now (<a href=\"https://github.com/wordpress-mobile/gutenberg-mobile\">here&#8217;s the native mobile repo</a>), the source code itself is taken directly from this repo and the &#8220;web&#8221; side codepaths.</p>\n<h2>Native mobile E2E tests in Continuous Integration</h2>\n<p>If you encounter a failed Android/iOS test on your pull request, we recommend the following steps:</p>\n<ol>\n<li>Re-running the failed GitHub Action job (<a href=\"https://docs.github.com/en/actions/configuring-and-managing-workflows/managing-a-workflow-run#viewing-your-workflow-history\">guide for how to re-run</a>) &#8211; This should fix failed tests the majority of the time.</li>\n<li>You can check if the test is failing locally by following the steps to run the E2E test on your machine from the <a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-react-native-editor/__device-tests__/\">E2E testing documentation</a>.</li>\n<li>In addition to reading the logs from the E2E test, you can download a video recording from the Artifacts section of the GitHub job that may have additional useful information.</li>\n<li>Check if any changes in your PR would require corresponding changes to <code>.native.js</code> versions of files.</li>\n<li>Lastly, if you&#8217;re stuck on a failing mobile test, feel free to reach out to contributors on Slack in the #mobile or #core-editor chats in the WordPress Core Slack, <a href=\"https://make.wordpress.org/chat/\">free to join</a>.</li>\n</ol>\n<h2>Debugging the native mobile unit tests</h2>\n<p>Follow the instructions in <a href=\"https://developer.wordpress.org/block-editor/contributors/code/react-native/integration-test-guide/\">Native mobile testing</a> to locally debug the native mobile unit tests when needed.</p>\n<h2>Internationalization (i18n)</h2>\n<p>Further information about this topic can be found in the <a href=\"https://developer.wordpress.org/block-editor/contributors/code/react-native/internationalization-guide/\">React Native Internationalization Guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135090,
+    "menu_order": 381,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-137772",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137772",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137772/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152496,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/137772/revisions/152496"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=137772"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

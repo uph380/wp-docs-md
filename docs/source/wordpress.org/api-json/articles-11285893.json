@@ -1,0 +1,109 @@
+{
+    "id": 11285893,
+    "date": "2019-03-07T12:43:29",
+    "date_gmt": "2019-03-07T12:43:29",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11285893"
+    },
+    "modified": "2025-04-17T08:10:13",
+    "modified_gmt": "2025-04-17T08:10:13",
+    "slug": "spacer-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/spacer-block/",
+    "title": {
+        "rendered": "Spacer block"
+    },
+    "content": {
+        "rendered": "\n<p>If you want to have a space between two blocks, the spacer block is what you will use.<br>A&nbsp;<strong>vertical</strong>&nbsp;spacer adds space between blocks in a column (as in a page or post).<br>A&nbsp;<strong>horizontal</strong>&nbsp;spacer adds space between blocks in a row (as in a&nbsp;<a href=\"https://wordpress.org/support/article/navigation-block/\">Navigation block</a>).</p>\n\n\n\n<p>(Note: Using a Navigation block requires a&nbsp;<a href=\"https://wordpress.org/themes/tags/full-site-editing/\">block theme</a>&nbsp;or a theme that has support for&nbsp;<a href=\"https://wordpress.org/themes/tags/template-editing/\">template editing</a>.)</p>\n\n\n\n<p>In this video, you can see how you can use the spacer block and the different settings to modify it.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2019/03/spacer-1.mp4\"></video><figcaption class=\"wp-element-caption\">Demo of inserting Spacer block into post content and modifying its settings.</figcaption></figure>\n\n\n\n<p>To add an <em>spacer block</em>, click on the <strong>Add Block</strong> icon.</p>\n\n\n\n<p>You can also type /spacer and hit enter in a new <em>paragraph block </em>to add one quickly.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/28687464/189541348-49772276-96e3-4eac-9fde-4b08df482b83.jpeg\" alt=\"How to add a space block to a page or post\" style=\"width:680px;height:auto\" /><figcaption class=\"wp-element-caption\">Add Spacer Block</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>In order to reveal the block toolbar, you can click on the block and the toolbar will display.</p>\n\n\n\n<p>Every block comes with unique toolbar icons and blocks specific user controls that allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Spacer block shows four buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"382\" height=\"148\" src=\"https://wordpress.org/documentation/files/2019/03/spacer-block-toolbar-all.png\" alt=\"The spacer block toolbar \" class=\"wp-image-15480100\" srcset=\"https://wordpress.org/documentation/files/2019/03/spacer-block-toolbar-all.png 382w, https://wordpress.org/documentation/files/2019/03/spacer-block-toolbar-all-300x116.png 300w\" sizes=\"auto, (max-width: 382px) 100vw, 382px\" /><figcaption class=\"wp-element-caption\">Spacer Block Toolbar</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to:</strong></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"325\" height=\"283\" src=\"https://wordpress.org/documentation/files/2019/03/spacer-transforms.png\" alt=\"Transform options for Spacer Block\" class=\"wp-image-16365594\" srcset=\"https://wordpress.org/documentation/files/2019/03/spacer-transforms.png 325w, https://wordpress.org/documentation/files/2019/03/spacer-transforms-300x261.png 300w\" sizes=\"auto, (max-width: 325px) 100vw, 325px\" /><figcaption class=\"wp-element-caption\">Transform options for Spacer Block</figcaption></figure>\n\n\n\n<p>When you click on the&nbsp;<strong>\u201cTransform\u201d</strong>&nbsp;button, you can convert the&nbsp;<strong>Spacer</strong>&nbsp;block into&nbsp;<strong>Columns</strong>,&nbsp;<strong>Separator</strong>,&nbsp;<strong>Details</strong>, or&nbsp;<strong>Group</strong>&nbsp;blocks.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Separator</strong>: Changes the Spacer into a visual horizontal line that helps divide content, providing a cleaner visual break between sections.</li>\n\n\n\n<li><strong>Group</strong>: Allows you to wrap the Spacer inside a Group, enabling background color, padding, margin, and border customization for better layout styling.</li>\n\n\n\n<li><strong>Columns</strong>: Useful if you want to place multiple blocks side-by-side; this transformation helps shift the layout into a multi-column structure.</li>\n\n\n\n<li><strong>Details</strong>: Converts the Spacer into a collapsible content block, allowing additional context or content to be toggled by the user.</li>\n</ul>\n\n\n\n<p><strong>Drag icon:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2019/03/spacer-block-toolbar-drag-1.png\" alt=\"Drag icon in the Spacer block\" class=\"wp-image-15480105\" /><figcaption class=\"wp-element-caption\">Drag icon in the Spacer block</figcaption></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p><strong>Move arrows:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2019/03/spacer-block-toolbar-moving-1.png\" alt=\"Move arrows in the Spacer block\" class=\"wp-image-15480104\" /><figcaption class=\"wp-element-caption\">Move arrows in the Spacer block</figcaption></figure>\n\n\n\n<p>The up and down arrow icons can be used to move a block up and down in your document.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f4fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\"></a><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every block has specific options in the editor sidebar in addition to the options found in the block toolbar.&nbsp;<em>If you do not see the sidebar, simply click the &#8216;cog&#8217; icon next to the Publish button.</em></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Spacer settings</strong></p>\n\n\n\n<p>The Height setting adjusts the height of the space. The Width setting adjusts the width of the space. You can adjust the settings by either:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Typing the number in the &#8220;Spacer Settings&#8221; box, or</li>\n\n\n\n<li>Dragging the handle at the bottom of the spacer (for the vertical spacer) or at the side of the spacer (for the horizontal spacer).</li>\n</ul>\n\n\n\n<p>You can also change the unit by clicking on PX to display a dropdown with the other supported units- PX, %, EM, REM, VW, and VH.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"284\" height=\"310\" src=\"https://wordpress.org/documentation/files/2024/01/image-9.png\" alt=\"Spacer block settings, showing the supported units\" class=\"wp-image-16359527\" srcset=\"https://wordpress.org/documentation/files/2024/01/image-9.png 284w, https://wordpress.org/documentation/files/2024/01/image-9-275x300.png 275w\" sizes=\"auto, (max-width: 284px) 100vw, 284px\" /></figure>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2019/03/spacer-2.mp4\"></video><figcaption class=\"wp-element-caption\">The interactive resizable box and the sidebar preset controls used to tweaks the Spacer block.</figcaption></figure>\n\n\n\n<p>When Spacer is a child of a flex layout block (Row, Stack, Navigation) custom size controls are removed and flex child controls added instead. </p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"567\" src=\"https://wordpress.org/documentation/files/2019/03/spacer-flexbox-1-1024x567.png\" alt=\"Fixed size control for Spacer block when it's a child of a flex layout block.\" class=\"wp-image-16365596\" srcset=\"https://wordpress.org/documentation/files/2019/03/spacer-flexbox-1-1024x567.png 1024w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-1-300x166.png 300w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-1-768x425.png 768w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-1-1536x850.png 1536w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-1.png 1783w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Fixed size flex control for Spacer block</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"503\" src=\"https://wordpress.org/documentation/files/2019/03/spacer-flexbox-2-1024x503.png\" alt=\"Fill size control for Spacer block when it's a child of a flex layout block.\" class=\"wp-image-16365597\" srcset=\"https://wordpress.org/documentation/files/2019/03/spacer-flexbox-2-1024x503.png 1024w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-2-300x147.png 300w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-2-768x377.png 768w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-2-1536x754.png 1536w, https://wordpress.org/documentation/files/2019/03/spacer-flexbox-2.png 1741w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Fill size flex control for Spacer block</figcaption></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The<strong> </strong>paragraph provides dimension settings options to add padding and margin. For details refer to this support article: </p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a></p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add HTML anchor and CSS class(es) to your block.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"279\" height=\"340\" src=\"https://wordpress.org/documentation/files/2024/01/image-12.png\" alt=\"Advanced settings for the spacer block\" class=\"wp-image-16359530\" srcset=\"https://wordpress.org/documentation/files/2024/01/image-12.png 279w, https://wordpress.org/documentation/files/2024/01/image-12-246x300.png 246w\" sizes=\"auto, (max-width: 279px) 100vw, 279px\" /><figcaption class=\"wp-element-caption\">The advanced section lets you add HTML anchor and a CSS class to your block.</figcaption></figure>\n\n\n\n<p>\u201cHTML anchor\u201d allows you to&nbsp;<a href=\"https://wordpress.org/documentation/article/page-jumps/\">make a unique web address</a>&nbsp;for a particular \u201cShortcode\u201d block. Then, you\u2019ll be able to link directly to a \u201cShortcode\u201d block of your page.</p>\n\n\n\n<p>The \u201cAdditional CSS class(es)\u201d lets you add CSS class(es) to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<div class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#e0e0e0\">\n<h2 class=\"wp-block-heading has-extra-large-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>2025-04-17 (props to <a href=\"https://profiles.wordpress.org/karthickmurugan/\">@karthickmurugan</a>)\n<ul class=\"wp-block-list\">\n<li>Update screenshots and videos to 6.8</li>\n\n\n\n<li>Update <strong>Transform to</strong> section with new options.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2024-01-30\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for 6.4</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-10-24\n<ul class=\"wp-block-list\">\n<li>Update screenshots for 6.3</li>\n\n\n\n<li>Add custom units for height and width</li>\n\n\n\n<li>The resizable box and controls</li>\n\n\n\n<li>Add dimnesions support for margin</li>\n\n\n\n<li>Add spacing presets </li>\n\n\n\n<li>Add flex child controls for Spacer</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content </li>\n\n\n\n<li>Added alt text </li>\n\n\n\n<li>Aligned images for mobile view </li>\n</ul>\n</li>\n\n\n\n<li>Update 2022-03-21\n<ul class=\"wp-block-list\">\n<li>Updated all screenshots to WordPress 5.9</li>\n</ul>\n</li>\n\n\n\n<li>Update 2021-06-22\n<ul class=\"wp-block-list\">\n<li>Updated more options block</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-09-28\n<ul class=\"wp-block-list\">\n<li>Updated 5.5 screenshots</li>\n\n\n\n<li>Updated the block toolbar</li>\n\n\n\n<li>Updated the block settings</li>\n</ul>\n</li>\n\n\n\n<li>Created 2019-03-07</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>If you want to have a space between two blocks, the spacer block is what you will use.A&nbsp;vertical&nbsp;spacer adds space between blocks in a column (as in a page or post).A&nbsp;horizontal&nbsp;spacer adds space between blocks in a row (as in a&nbsp;Navigation block). (Note: Using a Navigation block requires a&nbsp;block theme&nbsp;or a theme that has support [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        88
+    ],
+    "class_list": [
+        "post-11285893",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-design-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285893",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11285893"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285893/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16365598,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11285893/revisions/16365598"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11285893"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11285893"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

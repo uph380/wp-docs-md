@@ -1,0 +1,91 @@
+{
+    "id": 157202,
+    "date": "2025-02-21T04:17:15",
+    "date_gmt": "2025-02-21T04:17:15",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/url/"
+    },
+    "modified": "2025-02-21T04:17:27",
+    "modified_gmt": "2025-02-21T04:17:27",
+    "slug": "url",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/url/",
+    "title": {
+        "rendered": "URL Field"
+    },
+    "content": {
+        "rendered": "<p>The URL field provides input for web addresses with validation and formatting options. It ensures proper URL format and structure.</p>\n<h2>Key Features</h2>\n<ul>\n<li>URL validation</li>\n<li>Protocol handling</li>\n<li>Placeholder text</li>\n<li>Custom formatting</li>\n<li>Link preview</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Default Value &#8211; Preset URL</li>\n<li>Placeholder &#8211; Helper text</li>\n<li>Protocol &#8211; Required/optional</li>\n<li>Return Format &#8211; URL structure</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157202",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157202",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157202/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157213,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157202/revisions/157213"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157202"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

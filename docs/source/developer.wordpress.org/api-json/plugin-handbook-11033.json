@@ -1,0 +1,97 @@
+{
+    "id": 11033,
+    "date": "2014-09-24T00:26:12",
+    "date_gmt": "2014-09-24T00:26:12",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11033"
+    },
+    "modified": "2022-11-17T06:52:27",
+    "modified_gmt": "2022-11-17T06:52:27",
+    "slug": "custom-settings-page",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/settings/custom-settings-page/",
+    "title": {
+        "rendered": "Custom Settings Page"
+    },
+    "content": {
+        "rendered": "\n<p>Creating a custom settings page includes the combination of: <a href=\"https://developer.wordpress.org/plugins/administration-menus/\">creating an administration menu</a>, <a href=\"https://developer.wordpress.org/plugins/settings/using-settings-api/\">using Settings API</a> and <a href=\"https://developer.wordpress.org/plugins/settings/options-api/\">Options API</a>.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-alert-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br />\nPlease read these chapters before attempting to create your own settings page.<br />\n</div></div>\n\n\n\n\n<p>The example below can be used for quick reference on these topics by following the comments.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Complete Example</h2>\n\n\n\n<p>Complete example which adds a Top-Level Menu named <code>WPOrg</code>, registers a custom option named <code>wporg_options</code> and performs the CRUD (create, read, update, delete) logic using Settings API and Options API (including showing error/update messages).</p>\n\n\n\n<pre class=\"wp-block-code expanded\"><code lang=\"php\" class=\"language-php\">/**\n * @internal never define functions inside callbacks.\n * these functions could be run multiple times; this would result in a fatal error.\n */\n\n/**\n * custom option and settings\n */\nfunction wporg_settings_init() {\n\t// Register a new setting for \"wporg\" page.\n\tregister_setting( 'wporg', 'wporg_options' );\n\n\t// Register a new section in the \"wporg\" page.\n\tadd_settings_section(\n\t\t'wporg_section_developers',\n\t\t__( 'The Matrix has you.', 'wporg' ), 'wporg_section_developers_callback',\n\t\t'wporg'\n\t);\n\n\t// Register a new field in the \"wporg_section_developers\" section, inside the \"wporg\" page.\n\tadd_settings_field(\n\t\t'wporg_field_pill', // As of WP 4.6 this value is used only internally.\n\t\t                        // Use $args' label_for to populate the id inside the callback.\n\t\t\t__( 'Pill', 'wporg' ),\n\t\t'wporg_field_pill_cb',\n\t\t'wporg',\n\t\t'wporg_section_developers',\n\t\tarray(\n\t\t\t'label_for'         =&gt; 'wporg_field_pill',\n\t\t\t'class'             =&gt; 'wporg_row',\n\t\t\t'wporg_custom_data' =&gt; 'custom',\n\t\t)\n\t);\n}\n\n/**\n * Register our wporg_settings_init to the admin_init action hook.\n */\nadd_action( 'admin_init', 'wporg_settings_init' );\n\n\n/**\n * Custom option and settings:\n *  - callback functions\n */\n\n\n/**\n * Developers section callback function.\n *\n * @param array $args  The settings array, defining title, id, callback.\n */\nfunction wporg_section_developers_callback( $args ) {\n\t?&gt;\n\t&lt;p id=\"&lt;?php echo esc_attr( $args['id'] ); ?&gt;\"&gt;&lt;?php esc_html_e( 'Follow the white rabbit.', 'wporg' ); ?&gt;&lt;/p&gt;\n\t&lt;?php\n}\n\n/**\n * Pill field callbakc function.\n *\n * WordPress has magic interaction with the following keys: label_for, class.\n * - the \"label_for\" key value is used for the \"for\" attribute of the &lt;label&gt;.\n * - the \"class\" key value is used for the \"class\" attribute of the &lt;tr&gt; containing the field.\n * Note: you can add custom key value pairs to be used inside your callbacks.\n *\n * @param array $args\n */\nfunction wporg_field_pill_cb( $args ) {\n\t// Get the value of the setting we've registered with register_setting()\n\t$options = get_option( 'wporg_options' );\n\t?&gt;\n\t&lt;select\n\t\t\tid=\"&lt;?php echo esc_attr( $args['label_for'] ); ?&gt;\"\n\t\t\tdata-custom=\"&lt;?php echo esc_attr( $args['wporg_custom_data'] ); ?&gt;\"\n\t\t\tname=\"wporg_options[&lt;?php echo esc_attr( $args['label_for'] ); ?&gt;]\"&gt;\n\t\t&lt;option value=\"red\" &lt;?php echo isset( $options[ $args['label_for'] ] ) ? ( selected( $options[ $args['label_for'] ], 'red', false ) ) : ( &apos;&apos; ); ?&gt;&gt;\n\t\t\t&lt;?php esc_html_e( 'red pill', 'wporg' ); ?&gt;\n\t\t&lt;/option&gt;\n \t\t&lt;option value=\"blue\" &lt;?php echo isset( $options[ $args['label_for'] ] ) ? ( selected( $options[ $args['label_for'] ], 'blue', false ) ) : ( &apos;&apos; ); ?&gt;&gt;\n\t\t\t&lt;?php esc_html_e( 'blue pill', 'wporg' ); ?&gt;\n\t\t&lt;/option&gt;\n\t&lt;/select&gt;\n\t&lt;p class=\"description\"&gt;\n\t\t&lt;?php esc_html_e( 'You take the blue pill and the story ends. You wake in your bed and you believe whatever you want to believe.', 'wporg' ); ?&gt;\n\t&lt;/p&gt;\n\t&lt;p class=\"description\"&gt;\n\t\t&lt;?php esc_html_e( 'You take the red pill and you stay in Wonderland and I show you how deep the rabbit-hole goes.', 'wporg' ); ?&gt;\n\t&lt;/p&gt;\n\t&lt;?php\n}\n\n/**\n * Add the top level menu page.\n */\nfunction wporg_options_page() {\n\tadd_menu_page(\n\t\t'WPOrg',\n\t\t'WPOrg Options',\n\t\t'manage_options',\n\t\t'wporg',\n\t\t'wporg_options_page_html'\n\t);\n}\n\n\n/**\n * Register our wporg_options_page to the admin_menu action hook.\n */\nadd_action( 'admin_menu', 'wporg_options_page' );\n\n\n/**\n * Top level menu callback function\n */\nfunction wporg_options_page_html() {\n\t// check user capabilities\n\tif ( ! current_user_can( 'manage_options' ) ) {\n\t\treturn;\n\t}\n\n\t// add error/update messages\n\n\t// check if the user have submitted the settings\n\t// WordPress will add the \"settings-updated\" $_GET parameter to the url\n\tif ( isset( $_GET['settings-updated'] ) ) {\n\t\t// add settings saved message with the class of \"updated\"\n\t\tadd_settings_error( 'wporg_messages', 'wporg_message', __( 'Settings Saved', 'wporg' ), 'updated' );\n\t}\n\n\t// show error/update messages\n\tsettings_errors( 'wporg_messages' );\n\t?&gt;\n\t&lt;div class=\"wrap\"&gt;\n\t\t&lt;h1&gt;&lt;?php echo esc_html( get_admin_page_title() ); ?&gt;&lt;/h1&gt;\n\t\t&lt;form action=\"options.php\" method=\"post\"&gt;\n\t\t\t&lt;?php\n\t\t\t// output security fields for the registered setting \"wporg\"\n\t\t\tsettings_fields( 'wporg' );\n\t\t\t// output setting sections and their fields\n\t\t\t// (sections are registered for \"wporg\", each field is registered to a specific section)\n\t\t\tdo_settings_sections( 'wporg' );\n\t\t\t// output save settings button\n\t\t\tsubmit_button( 'Save Settings' );\n\t\t\t?&gt;\n\t\t&lt;/form&gt;\n\t&lt;/div&gt;\n\t&lt;?php\n}</code></pre>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11025,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11033",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11033",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11033/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144417,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11033/revisions/144417"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11033"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

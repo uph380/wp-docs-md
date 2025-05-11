@@ -1,0 +1,109 @@
+{
+    "id": 11031919,
+    "date": "2019-05-03T16:06:58",
+    "date_gmt": "2019-05-03T16:06:58",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11031919"
+    },
+    "modified": "2023-01-11T17:19:25",
+    "modified_gmt": "2023-01-11T17:19:25",
+    "slug": "content-visibility-block-editor",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/content-visibility-block-editor/",
+    "title": {
+        "rendered": "Set blog content visibility (Block Editor)"
+    },
+    "content": {
+        "rendered": "\n<p> Note: This page uses Block Editor. If you are a Classic Editor User, refer <a href=\"/support/article/content-visibility/\">this page</a>.  </p>\n\n\n\n<p>Content visibility is about controlling who can see your blog content. WordPress allows you to control the visibility of your posts and <a href=\"/support/article/pages/\">Pages</a> on an individual basis. By default, all posts and Pages are visible.</p>\n\n\n\n<p>There are several ways to set the visibility for your blog content. You can set it on a per post/Page basis for public, private, or Password Protected, or make the entire blog private and Password Protected through the use of WordPress Plugins.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Setting Page and Post Visibility</h2>\n\n\n\n<p>The option is available in the <strong>Document</strong> tab on the right of the page under &#8220;<strong>Status &amp; Visibility</strong>&#8220;. The screenshot below shows the interface, with the relevant section highlighted in the red rectangle.</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"522\" src=\"https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-1024x522.png\" alt=\"Gutenberg - Content Visibility\" class=\"wp-image-11493473\" srcset=\"https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-1024x522.png 1024w, https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-300x153.png 300w, https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-768x392.png 768w, https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility.png 1365w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>The default state for post and Page visibility is <strong>Public</strong>. Public visibility means that the content will be visible to the outside world as soon as it is published.</p>\n\n\n\n<p>By clicking on the edit link next to <strong>Visibility: Public</strong> in the Publish options, you can choose from an expanded selection of visibility options.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" decoding=\"async\" width=\"279\" height=\"393\" src=\"https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Selection.png\" alt=\"Gutenberg - Content Visibility Selection\" class=\"wp-image-11493478\" srcset=\"https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Selection.png 279w, https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Selection-213x300.png 213w\" sizes=\"auto, (max-width: 279px) 100vw, 279px\" /></figure></div>\n\n\n\n<p>The options are:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Public:</strong> The default, viewable to all.</li><li><strong>Private:</strong> This option hides the content from the public completely.</li><li><strong>Password Protected:</strong> Clicking this radio button followed by &#8220;OK&#8221; causes a further text box to appear, into which you can enter a password. </li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Password Protected Content</h3>\n\n\n\n<p>Password Protected content is not immediately visible to the outside world. Instead, visitors will see a prompt similar to this:</p>\n\n\n\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"791\" height=\"416\" src=\"https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Protected.png\" alt=\"Gutenberg - Content Visibility Protected\" class=\"wp-image-11493491\" srcset=\"https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Protected.png 791w, https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Protected-300x158.png 300w, https://wordpress.org/documentation/files/2018/12/Gutenberg-Content-Visibility-Protected-768x404.png 768w\" sizes=\"auto, (max-width: 791px) 100vw, 791px\" /></figure>\n\n\n\n<p>The title for your protected entry is shown, along with a password prompt. A visitor to your site must enter the password in the box in order to see the content of the post or Page.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Private Content</h3>\n\n\n\n<p>Private content is published only for your eyes, or the eyes of only those with authorization permission levels to see private content. Normal users and visitors will not be aware of private content. It will not appear in the article lists. If a visitor were to guess the URL for your private post, they would still not be able to see your content. You will only see the private content when you are logged into your WordPress blog.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" decoding=\"async\" width=\"275\" height=\"172\" src=\"https://wordpress.org/documentation/files/2019/05/Gutenberg-Content-Visibility-Private.png\" alt=\"Gutenberg - Content Visibility Private\" class=\"wp-image-11493503\" /></figure></div>\n\n\n\n<p>Once you change the visibility to private, the post or page status changes to &#8220;Privately Published&#8221; as shown. Private posts are automatically published but not visible to anyone but those with the appropriate permission levels (Editor or Administrator).</p>\n\n\n\n<p><strong>WARNING:</strong> If your site has multiple editors or administrators, they will be able to see your protected and private posts in the <strong>Edit</strong> screen. They do not need the password to be able to see your protected posts. They can see the private posts in the <strong>Edit</strong> Posts/Pages list, and are able to modify them, or even make them public. Consider these consequences before making such posts in such a multiple-user environment.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Hiding The Entire WordPress Blog</h2>\n\n\n\n<p>Currently the functionality to hide your entire blog from public view, or to restrict it to certain users, is not part of the core WordPress product. There are possible plans to introduce this functionality into a later version.</p>\n\n\n\n<p>There are various WordPress Plugins to restrict the visibility such as:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://wordpress.org/plugins/pagerestrict/\">Page Restrict</a></li><li><a href=\"https://wordpress.org/plugins/wp-force-login/\">Force Login</a></li><li><a href=\"https://wordpress.org/plugins/jonradio-private-site/\">jonradio Private Site</a></li></ul>\n\n\n\n<p>Alternatively, you could use the <code>.htaccess</code> to restrict who can visit your web site, but this is beyond the scope of this document.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Note: This page uses Block Editor. If you are a Classic Editor User, refer this page. Content visibility is about controlling who can see your blog content. WordPress allows you to control the visibility of your posts and Pages on an individual basis. By default, all posts and Pages are visible. There are several ways [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-11031919",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11031919",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11031919"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11031919/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355140,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11031919/revisions/16355140"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11031919"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11031919"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

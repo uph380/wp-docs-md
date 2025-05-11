@@ -1,0 +1,97 @@
+{
+    "id": 25263,
+    "date": "2017-01-17T06:40:47",
+    "date_gmt": "2017-01-17T06:40:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=25263"
+    },
+    "modified": "2022-11-17T06:09:03",
+    "modified_gmt": "2022-11-17T06:09:03",
+    "slug": "heartbeat-api",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/javascript/heartbeat-api/",
+    "title": {
+        "rendered": "Heartbeat API"
+    },
+    "content": {
+        "rendered": "\n<p>The Heartbeat API is a simple server polling API built in to WordPress, allowing near-real-time frontend updates.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How it works</h2>\n\n\n\n<p>When the page loads, the client-side heartbeat code sets up an interval (called the &#8220;tick&#8221;) to run every 15-120 seconds. When it runs, heartbeat gathers data to send via a jQuery event, then sends this to the server and waits for a response. On the server, an admin-ajax handler takes the passed data, prepares a response, filters the response, then returns the data in JSON format. The client receives this data and fires a final jQuery event to indicate the data has been received.</p>\n\n\n\n<p>The basic process for custom Heartbeat events is:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Add additional fields to the data to be sent (JS <code>heartbeat-send</code> event)</li><li>Detect sent fields in PHP, and add additional response fields (<code>heartbeat_received</code> filter)</li><li>Process returned data in JS (JS <code>heartbeat-tick</code>)</li></ol>\n\n\n\n<p>(You can choose to use only one or two of these events, depending on what functionality you need.)</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using the API</h2>\n\n\n\n<p>Using the heartbeat API requires two separate pieces of functionality: send and receive callbacks in JavaScript, and a server-side filter to process passed data in PHP.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Sending Data to the Server</h3>\n\n\n\n<p>When Heartbeat sends data to the server, you can include custom data. This can be any data you want to send to the server, or a simple true value to indicate you are expecting data.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"js\" class=\"language-js\">jQuery( document ).on( 'heartbeat-send', function ( event, data ) {\n\t// Add additional data to Heartbeat data.\n\tdata.myplugin_customfield = 'some_data';\n});</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Receiving and Responding on the Server</h3>\n\n\n\n<p>On the server side, you can then detect this data, and add additional data to the response.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">/**\n * Receive Heartbeat data and respond.\n *\n * Processes data received via a Heartbeat request, and returns additional data to pass back to the front end.\n *\n * @param array $response Heartbeat response data to pass back to front end.\n * @param array $data     Data received from the front end (unslashed).\n *\n * @return array\n */\nfunction myplugin_receive_heartbeat( array $response, array $data ) {\n\t// If we didn't receive our data, don't send any back.\n\tif ( empty( $data['myplugin_customfield'] ) ) {\n\t\treturn $response;\n\t}\n\n\t// Calculate our data and pass it back. For this example, we'll hash it.\n\t$received_data = $data['myplugin_customfield'];\n\n\t$response['myplugin_customfield_hashed'] = sha1( $received_data );\n\treturn $response;\n}\nadd_filter( 'heartbeat_received', 'myplugin_receive_heartbeat', 10, 2 );</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Processing the Response</h3>\n\n\n\n<p>Back on the frontend, you can then handle receiving this data back.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"js\" class=\"language-js\">jQuery( document ).on( 'heartbeat-tick', function ( event, data ) {\n\t// Check for our data, and use it.\n\tif ( ! data.myplugin_customfield_hashed ) {\n\t\treturn;\n\t}\n\n\talert( 'The hash is ' + data.myplugin_customfield_hashed );\n});</code></pre>\n\n\n\n<p><br>Not every feature will need all three of these steps. For example, if you don&#8217;t need to send any data to the server, you can use just the latter two steps.</p>\n",
+        "protected": false
+    },
+    "author": 112221,
+    "featured_media": 0,
+    "parent": 11151,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25263",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/25263",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/112221"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/25263/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144346,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/25263/revisions/144346"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11151"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25263"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

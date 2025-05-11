@@ -1,0 +1,91 @@
+{
+    "id": 143014,
+    "date": "2022-09-26T06:39:47",
+    "date_gmt": "2022-09-26T06:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-experiments/"
+    },
+    "modified": "2023-02-09T11:01:23",
+    "modified_gmt": "2023-02-09T11:01:23",
+    "slug": "packages-experiments",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-experiments/",
+    "title": {
+        "rendered": "@wordpress/experiments"
+    },
+    "content": {
+        "rendered": "<p><code>@wordpress/experiments</code>  enables sharing private <code>__experimental</code> APIs across <code>@wordpress</code> packages without<br />\n<a href=\"https://make.wordpress.org/core/2022/08/10/proposal-stop-merging-experimental-apis-from-gutenberg-to-wordpress-core/#respond\">publicly exposing them to WordPress extenders</a>.</p>\n<h2>Getting started</h2>\n<p>Every <code>@wordpress</code> package wanting to privately access or expose experimental APIs must opt-in to <code>@wordpress/experiments</code>:</p>\n<pre><code class=\"language-js\">// In packages/block-editor/experiments.js:\nimport { __dangerousOptInToUnstableAPIsOnlyForCoreModules } from '@wordpress/experiments';\nexport const { lock, unlock } =\n    __dangerousOptInToUnstableAPIsOnlyForCoreModules(\n        'I know using unstable features means my plugin or theme will inevitably break on the next WordPress release.',\n        '@wordpress/block-editor' // Name of the package calling __dangerousOptInToUnstableAPIsOnlyForCoreModules,\n                                  // (not the name of the package whose APIs you want to access)\n    );\n</code></pre>\n<p>Each package may only opt in once. The function name communicates that plugins are not supposed to use it.</p>\n<p>The function will throw an error if the following conditions are not met:</p>\n<ol>\n<li>The first argument must exactly match the required consent string: <code>'I know using unstable features means my plugin or theme will inevitably break on the next WordPress release.'</code>. </li>\n<li>The second argument must be a known <code>@wordpress</code> package that hasn&#8217;t yet opted into <code>@wordpress/experiments</code></li>\n</ol>\n<p>Once the opt-in is complete, the obtained <code>lock()</code> and <code>unlock()</code> utilities enable hiding <code>__experimental</code> APIs from the naked eye:</p>\n<pre><code class=\"language-js\">// Say this object is exported from a package:\nexport const publicObject = {};\n\n// However, this string is internal and should not be publicly available:\nconst __experimentalString = '__experimental information';\n\n// Solution: lock the string \"inside\" of the object:\nlock( publicObject, __experimentalString );\n\n// The string is not nested in the object and cannot be extracted from it:\nconsole.log( publicObject );\n// {}\n\n// The only way to access the string is by \"unlocking\" the object:\nconsole.log( unlock( publicObject ) );\n// \"__experimental information\"\n\n// lock() accepts all data types, not just strings:\nexport const anotherObject = {};\nlock( anotherObject, function __experimentalFn() {} );\nconsole.log( unlock( anotherObject ) );\n// function __experimentalFn() {}\n</code></pre>\n<p>Use <code>lock()</code> and <code>unlock()</code> to privately distribute the <code>__experimental</code> APIs across <code>@wordpress</code> packages:</p>\n<pre><code class=\"language-js\">// In packages/package1/index.js:\nimport { lock } from './experiments';\n\nexport const experiments = {};\n/* Attach private data to the exported object */\nlock(experiments, {\n    __experimentalFunction: function() {},\n});\n\n// In packages/package2/index.js:\nimport { experiments } from '@wordpress/package1';\nimport { unlock } from './experiments';\n\nconst {\n    __experimentalFunction\n} = unlock( experiments );\n</code></pre>\n<h2>Shipping experimental APIs</h2>\n<p>See the <a href=\"https://developer.wordpress.org/block-editor/contributors/code/coding-guidelines/\">Experimental and Unstable APIs chapter of Coding Guidelines</a> to learn how <code>lock()</code> and <code>unlock()</code> can help<br />\nyou ship private experimental functions, arguments, components, properties, actions, selectors.</p>\n<h2>Technical limitations</h2>\n<p>A determined developer who would want to use the private experimental APIs at all costs would have to:</p>\n<ul>\n<li>Realize a private importing system exists</li>\n<li>Read the code where the risks would be spelled out in capital letters</li>\n<li>Explicitly type out he or she is aware of the consequences</li>\n<li>Pretend to register a <code>@wordpress</code> package (and trigger an error as soon as the real package is loaded)</li>\n</ul>\n<p>Dangerously opting in to using these APIs by theme and plugin developers is not recommended. Furthermore, the WordPress Core philosophy to strive to maintain backward compatibility for third-party developers <strong>does not apply</strong> to experimental APIs registered via this package.</p>\n<p>The consent string for opting in to these APIs may change at any time and without notice. This change will break existing third-party code. Such a change may occur in either a major or minor release.</p>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 268,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-143014",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/143014",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/143014/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144765,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/143014/revisions/144765"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=143014"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

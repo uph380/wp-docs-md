@@ -1,0 +1,97 @@
+{
+    "id": 25149,
+    "date": "2017-01-13T10:03:47",
+    "date_gmt": "2017-01-13T10:03:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=25149"
+    },
+    "modified": "2022-11-01T02:05:30",
+    "modified_gmt": "2022-11-01T02:05:30",
+    "slug": "galleries",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/functionality/media/galleries/",
+    "title": {
+        "rendered": "Galleries"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Galleries</h2>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/Capture.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"711\" height=\"583\" src=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/Capture.png?resize=711%2C583&#038;ssl=1\" alt=\"\" class=\"wp-image-24910\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2014/10/Capture.png?w=711&amp;ssl=1 711w, https://i0.wp.com/developer.wordpress.org/files/2014/10/Capture.png?resize=300%2C246&amp;ssl=1 300w\" sizes=\"auto, (max-width: 711px) 100vw, 711px\" /></a></figure>\n\n\n\n<p>Image galleries are the best way to showcase your pictures on your WordPress sites. WordPress bundles the <strong>Create Gallery</strong> feature by default in the media uploader which allows you to create a simple gallery.<br></p>\n\n\n\n<p>Note: Before adding a gallery, you must have images in your media library. Otherwise, you need to upload the images into the library and can proceed on gallery creation.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Gallery shortcode</h3>\n\n\n\n<p>The <strong>Gallery</strong> feature allows you to add one or more image galleries to your posts and pages using a simple Shortcode.</p>\n\n\n\n<p>The basic form of gallery shortcode is:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery]</code></pre>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br>If you use the [gallery] shortcode without using the <code>ids</code> argument in your post or page, only images that are &#8220;attached&#8221; to that post or page will be displayed.<br></div></div>\n\n\n\n\n<p>If&nbsp;you need to add multiple images with ID&#8217;s, use the following sample shortcode</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">//Note: 10, 205, 552 and 607 are the IDs of respected image.\n&#091;gallery ids=\"10, 205, 552, 607\"]</code></pre>\n\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"><br>NOTE: find the proper IDs of the images for the gallery. Go to Media library and click on the respected image and ID will appear on the URL.<br></div></div>\n\n\n\n\n<p>To use the shortcode from the template file, use the <a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" rel=\"function\">do_shortcode()</a>  function. Insert the following code into your template file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php echo do_shortcode( &#091;gallery] ); ?&gt;</code></pre>\n\n\n\n<p>If you need to use the shortcode with IDs, insert the following code in your template file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php echo do_shortcode( &#091;gallery ids=\"10, 205, 552, 607\"] ); ?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Usage</h3>\n\n\n\n<p>There are may options that may be specified using the below syntax:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery option1=\"value1\" option2=\"value2\"]</code></pre>\n\n\n\n<p>If you want to print the gallery directly on the template file, use `<a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" rel=\"function\">do_shortcode()</a> ` function like below:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php echo do_shortcode( '&#091;gallery option1=\"value1\"]' ); ?&gt;</code></pre>\n\n\n\n<p>If you need to filter the shortcodes, the following example gives you some tips</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// Note: 'the_content' filter is used to filter the content of the\n// post after it is retrieved from the database and before it is \n// printed to the screen.\n&lt;?php\n$gallery_shortcode = '&#091;gallery id=\"' . intval( $post-&gt;post_parent ) . '\"]';\nprint apply_filters( 'the_content', $gallery_shortcode );\n?&gt;</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">Supported Options</h3>\n\n\n\n<p>Gallery Shortcodes supports the basic options which are listed below:</p>\n\n\n\n<h4 class=\"wp-block-heading\">Orderby</h4>\n\n\n\n<p>&#8216;orderby&#8217; specifies the order the thumbnails show up. The default order is &#8216;menu_order&#8217;.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>menu_order: You can reorder the images in the Gallery tab of the Add Media popup</li>\n\n\n\n<li>title: Order by the title of the image in the Media Library</li>\n\n\n\n<li>post_date: Sort by date/time</li>\n\n\n\n<li>rand: Order randomly</li>\n\n\n\n<li>ID: Specify the post ID</li>\n</ul>\n\n\n\n<h4 class=\"wp-block-heading\">Order</h4>\n\n\n\n<p>order specify the sort order used to display thumbnail; ASC or DESC. For Example, to sort by ID and DESC:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery order=\"DESC\" orderby=\"ID\"]</code></pre>\n\n\n\n<p>If you need to print it on template file, use the <a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" rel=\"function\">do_shortcode()</a>  function;</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php echo do_shortcode( '&#091;gallery]' ); ?&gt;</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">columns</h4>\n\n\n\n<p>The Columns options specify the number of columns in the gallery. The default value is 3.<br>If you want to increase the number of column in the galley, use the following shortcode.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery columns=\"4\"]</code></pre>\n\n\n\n<p>If you need to print it on your template file, use the <a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" rel=\"function\">do_shortcode()</a>  function;</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&lt;?php echo do_shortcode(' &#091;gallery columns=\"4\"] '); ?&gt;</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">IDs</h4>\n\n\n\n<p>The IDs option on the gallery shortcode loads images with specific post IDs.</p>\n\n\n\n<p>If you want to display the attached image with the specific post ID, follow the following code example.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// Note: remove each space between brackets and 'gallery' and brackets and `123\"`.\n//Here \"123\" stands for the post IDs. If you want to display more than\n//one ID, separate the IDs by a comma `,`.\n&#091; gallery id=\"123\" ]</code></pre>\n\n\n\n<p>Use &#8216;do_shortcode&#8217; function to print the gallery with IDs on template files like below:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">// Note: remove each space between brackets and 'gallery' and brackets and `123\"`.\n&lt;?php echo do_shortcode(' &#091; gallery id=\"123\" ] '); ?&gt;</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Size</h4>\n\n\n\n<p>Size determines the image size to use for the thumbnail display. Valid values include &#8220;thumbnail&#8221;, &#8220;medium&#8221;, &#8220;large&#8221;, &#8220;full&#8221; and any other additional image size that was registered with <a href=\"https://developer.wordpress.org/reference/functions/add_image_size/\">add_image_size()</a>. The default value is &#8220;thumbnail&#8221;. The size of the images for &#8220;thumbnail&#8221;, &#8220;medium&#8221; and &#8220;large&#8221; can be configured in WordPress admin panel under Settings &gt; Media.</p>\n\n\n\n<p>For example, to display a gallery of medium sized images:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery size=\"medium\"]</code></pre>\n\n\n\n<p>Some advanced options are also available on Gallery shortcodes.</p>\n\n\n\n<h4 class=\"wp-block-heading\">itemtag</h4>\n\n\n\n<p>The name of the HTML tag used to enclose each item in the gallery. The default is &#8220;dl&#8221;.</p>\n\n\n\n<h4 class=\"wp-block-heading\">icontag</h4>\n\n\n\n<p>The name of the HTMLtag used to enclose each thumbnail icon in the gallery. The default is &#8220;dt&#8221;.</p>\n\n\n\n<h4 class=\"wp-block-heading\">captiontag</h4>\n\n\n\n<p>The name of the HTML tag used to enclose each caption. The default is &#8220;dd&#8221;.</p>\n\n\n\n<p>You are allowed to change the defaults.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery itemtag=\"div\" icontag=\"span\" captiontag=\"p\"]</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Link</h4>\n\n\n\n<p>Specify where you want the image to link. The default value links to the attachment&#8217;s <a href=\"https://codex.wordpress.org/Using_Permalinks\">permalink</a>. Options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>file &#8211; Link directly to image file</li>\n\n\n\n<li>none &#8211; No link</li>\n</ul>\n\n\n\n<p>Example:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery link=\"file\"]</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Include</h4>\n\n\n\n<p>Include allows you to insert an &#8220;array&#8221; of comma separated attachment IDs to show only the images from these attachments.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">&#091;gallery include=\"23,39,45\"]</code></pre>\n\n\n\n<h4 class=\"wp-block-heading\">Exclude</h4>\n\n\n\n<p>Exclude callows you to insert an &#8220;array&#8221; of comma separated attachment IDs to not show the images from these attachments. Please note that include and exclude cannot be used together.</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&#091;gallery exclude=\"21,32,43\"]</code></pre>\n\n\n\n<h3 class=\"wp-block-heading\">References</h3>\n\n\n\n<p>For more technical details take a reference from below links</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://codex.wordpress.org/Gallery_Shortcode\" target=\"_blank\" rel=\"noreferrer noopener\">Gallery Shortcode</a></li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/reference/functions/do_shortcode/\" target=\"_blank\" rel=\"noreferrer noopener\">Function do_shortcode()</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 14467238,
+    "featured_media": 0,
+    "parent": 11360,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-25149",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25149",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14467238"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25149/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 143719,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/25149/revisions/143719"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11360"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=25149"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

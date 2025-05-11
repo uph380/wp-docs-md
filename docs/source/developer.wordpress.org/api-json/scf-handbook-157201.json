@@ -1,0 +1,91 @@
+{
+    "id": 157201,
+    "date": "2025-02-21T04:17:15",
+    "date_gmt": "2025-02-21T04:17:15",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/true-false/true-false-tutorial/"
+    },
+    "modified": "2025-02-21T04:17:27",
+    "modified_gmt": "2025-02-21T04:17:27",
+    "slug": "true-false-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/true-false/true-false-tutorial/",
+    "title": {
+        "rendered": "Using the True/False Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a True/False field</li>\n<li>Configure options:\n<ul>\n<li>Set message</li>\n<li>Choose default</li>\n<li>Configure labels</li>\n<li>Style interface</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Simple Toggles\n<ul>\n<li>Feature flags</li>\n<li>Display options</li>\n<li>Status switches</li>\n</ul>\n</li>\n<li>Settings Control\n<ul>\n<li>Visibility settings</li>\n<li>Enable/disable</li>\n<li>Option toggles</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Use clear labels</li>\n<li>Set logical defaults</li>\n<li>Consider UI placement</li>\n<li>Plan conditional logic</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157200,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157201",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157201",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157201/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157214,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157201/revisions/157214"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157200"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157201"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 150295,
+    "date": "2023-11-28T18:10:01",
+    "date_gmt": "2023-11-28T18:10:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/file-structure-of-a-block/"
+    },
+    "modified": "2024-05-23T08:09:37",
+    "modified_gmt": "2024-05-23T08:09:37",
+    "slug": "file-structure-of-a-block",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/fundamentals/file-structure-of-a-block/",
+    "title": {
+        "rendered": "File structure of a block"
+    },
+    "content": {
+        "rendered": "<p>When developing custom blocks for WordPress, it&#8217;s best practice to register them within plugins rather than themes. This strategy guarantees that your blocks stay accessible, even when users switch themes. While there might be situations where embedding blocks directly into a theme could be appropriate, this guide focuses on blocks housed within a plugin. Specifically, it details the file structure as produced by the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\"><code>create-block</code></a> tool.</p>\n<p>Adhering to the <code>create-block</code> tool&#8217;s structure is not mandatory, but it serves as a reliable reference. The files it generates encompass everything needed for a block&#8217;s definition and registration. Following this structure can help maintain consistency and ensure your blocks are well-organized and easy to maintain.</p>\n<p><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/file-structure-block.png?ssl=1\" title=\"Open File Structure of a Block diagram image\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/file-structure-block.png?ssl=1\" alt=\"Open File Structure of a Block diagram image\" /></a></p>\n<h2><code>&lt;plugin-file&gt;.php</code></h2>\n<p>When creating a block in a WordPress plugin, you usually register the block on the server in the main PHP file of the plugin. This is done using the <a href=\"https://developer.wordpress.org/reference/functions/register_block_type/\"><code>register_block_type()</code></a> function.</p>\n<div class=\"callout callout-info\">\n    For more on creating a WordPress plugin, refer to the documentation on <a href=\"https://developer.wordpress.org/plugins/plugin-basics/\">Plugin Basics</a> and the <a href=\"https://developer.wordpress.org/plugins/plugin-basics/header-requirements/\"> Header Requirements</a> for the main PHP file.\n</div>\n<h2><code>package.json</code></h2>\n<p>The <code>package.json</code> file is used to configure a Node.js project, which is technically what a block plugin is. In this file, you define the <code>npm</code> dependencies of the block and the scripts used for local development.</p>\n<h2><code>src</code> folder</h2>\n<p>In a standard project, the <code>src</code> (source) folder contains the raw, uncompiled code, including JavaScript, CSS, and other assets necessary for developing the block. This is where you write and edit your block&#8217;s source code, utilizing modern JavaScript features and JSX for React components.</p>\n<p>The <a href=\"docs/block-editor/getting-started/fundamentals/javascript-in-the-block-editor/#javascript-build-process.md\">build process</a> provided by <code>wp-scripts</code> will then take the files from this folder and generate the production-ready files in the project&#8217;s <code>build</code> folder.</p>\n<h3><code>block.json</code></h3>\n<p>The <code>block.json</code> file contains the <a href=\"docs/block-editor/reference-guides/block-api/block-metadata/\">block&#8217;s metadata</a>, streamlining its definition and registration across client-side and server-side environments.</p>\n<p>This file includes the block name, description, <a href=\"docs/block-editor/reference-guides/block-api/block-attributes/\">attributes</a>, <a href=\"docs/block-editor/reference-guides/block-api/block-supports/\">supports</a>, and more, as well as the locations of essential files responsible for the block&#8217;s functionality, appearance, and styling.</p>\n<p>When a build process is applied, the <code>block.json</code> file and the other generated files are moved to a designated folder, often the <code>build</code> folder. Consequently, the file paths specified within <code>block.json</code> point to these processed, bundled versions of the files.</p>\n<p>A few of the most important properties that can be defined in a <code>block.json</code> are:</p>\n<ul>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#editor-script\"><code>editorScript</code></a>:</strong> Usually set with the path of a bundled <code>index.js</code> file that was built from <code>src/index.js</code>.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#style\"><code>style</code></a>:</strong> Usually set with the path of a bundled <code>style-index.css</code> file that was built from <code>src/style.(css|scss|sass)</code>.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#editor-style\"><code>editorStyle</code></a>:</strong> Usually set with the path of a bundled <code>index.css</code> that was built from <code>src/editor.(css|scss|sass)</code>.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#render\"><code>render</code></a>:</strong> Usually set with the path of a bundled <code>render.php</code> that was copied from <code>src/render.php</code>.</li>\n<li><strong><a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script\"><code>viewScript</code></a>:</strong> Usually set with the path of a bundled <code>view.js</code> that was built from <code>src/view.js</code>.</li>\n</ul>\n<p><a href=\"https://excalidraw.com/#json=c22LROgcG4JkD-7SkuE-N,rQW_ViJBq0Yk3qhCgqD6zQ\" title=\"Open Build Output Diagram in excalidraw\"><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/file-structure-build-output.png?ssl=1\" alt=\"Open Build Output Diagram in excalidraw\" /></a></p>\n<h3><code>index.js</code></h3>\n<p>The <code>index.js</code> file (or any other file defined in the <code>editorScript</code> property of <code>block.json</code>) is the entry point file for JavaScript that should only get loaded in the Block Editor. It&#8217;s responsible for calling the <code>registerBlockType</code> function to register the block on the client and typically imports the <code>edit.js</code> and <code>save.js</code> files to get the functions required for block registration.</p>\n<h3><code>edit.js</code></h3>\n<p>The <code>edit.js</code> file contains the React component responsible for rendering the block&#8217;s editing user interface, allowing users to interact with and customize the block&#8217;s content and settings in the Block Editor. This component gets passed to the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit\"><code>edit</code></a> property of the <code>registerBlockType</code> function in the <code>index.js</code> file.</p>\n<h3><code>save.js</code></h3>\n<p>The <code>save.js</code> exports the function that returns the static HTML markup that gets saved to the WordPress database. This function gets passed to the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save\"><code>save</code></a> property of the <code>registerBlockType</code> function in the <code>index.js</code> file.</p>\n<h3><code>style.(css|scss|sass)</code></h3>\n<p>A <code>style</code> file with extensions <code>.css</code>, <code>.scss</code>, or <code>.sass</code> contains the styles of the block that will be loaded in both the Block Editor and on the front end. In the build process, this file is converted into <code>style-index.css</code>, which is usually defined using the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#style\"><code>style</code></a> property in <code>block.json</code></p>\n<div class=\"callout callout-info\">\n    The webpack configuration used internally by <code>wp-scripts</code> includes a <a href=\"https://webpack.js.org/loaders/css-loader/\">css-loader</a> chained with <a>postcss-loader</a> and <a href=\"https://webpack.js.org/loaders/sass-loader/\">sass-loader</a> that allows it to process CSS, SASS or SCSS files. Check <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/#default-webpack-config\">Default webpack config</a> for more info\n</div>\n<h3><code>editor.(css|scss|sass)</code></h3>\n<p>An <code>editor</code> file with extensions <code>.css</code>, <code>.scss</code>, or <code>.sass</code> contains the additional styles applied to the block in the Block Editor. You will often use this file for styles specific to the block&#8217;s user interface. This file is converted to <code>index.css</code> during the build process, usually defined using the <code>editorStyle</code> property in <code>block.json</code>.</p>\n<h3><code>render.php</code></h3>\n<p>The <code>render.php</code> file (or any other file defined in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#render\"><code>render</code></a> property of <code>block.json</code>) defines the server-side process that returns the markup for the block when there is a request from the front end. If defined, this file will take precedence over other ways to render the block&#8217;s markup on the front end.</p>\n<h3><code>view.js</code></h3>\n<p>The <code>view.js</code> file (or any other file defined in the <a href=\"https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script\"><code>viewScript</code></a> property of <code>block.json</code>) will be loaded in the front end when the block is displayed.</p>\n<h2><code>build</code> folder</h2>\n<p>The <code>build</code> folder contains the compiled and optimized versions of the code from the <code>src</code> folder. These files are generated from the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/#the-build-process-with-wp-scripts\">build process</a>, triggered by the <code>build</code> or <code>start</code> commands of <code>wp-scripts</code>.</p>\n<p>This transformation process includes minification, transpilation from modern JavaScript to a version compatible with a wider range of browsers, and bundling of assets for efficient loading. WordPress ultimately enqueues and uses the <code>build</code> folder&#8217;s contents to render the block in the Block Editor and on the front end.</p>\n<div class=\"callout callout-info\">\n    You can use <code>webpack-src-dir</code> and <code>output-path</code> option of <code>wp-scripts</code> build commands to <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/#automatic-block-json-detection-and-the-source-code-directory\">customize the entry and output points</a>.\n</div>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://excalidraw.com/#json=YYpeR-kY1ZMhFKVZxGhMi,mVZewfwNAh_oL-7bj4gmdw\">Diagram featuring the file structure of a block</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 150294,
+    "menu_order": 10,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-150295",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150295",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150295/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153832,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150295/revisions/153832"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/150294"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=150295"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

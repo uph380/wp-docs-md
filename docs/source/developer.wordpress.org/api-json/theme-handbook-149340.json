@@ -1,0 +1,97 @@
+{
+    "id": 149340,
+    "date": "2023-11-21T14:54:23",
+    "date_gmt": "2023-11-21T14:54:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149340"
+    },
+    "modified": "2023-12-14T21:05:47",
+    "modified_gmt": "2023-12-14T21:05:47",
+    "slug": "templates",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/core-concepts/templates/",
+    "title": {
+        "rendered": "Templates"
+    },
+    "content": {
+        "rendered": "\n<p>In block themes, templates are made up of a collection of blocks. You might have a Site Logo block sitting next to a Navigation block in the header area. You might put Social Icons in the footer above a copyright notice.</p>\n\n\n\n<p>As you build out your own themes, you will get to decide how your templates come together. <em>That\u2019s at least half the fun of theming!</em></p>\n\n\n\n<p>In this document, you will learn the basic terminology around templating in WordPress. Reading through this quick primer on the subject will provide you with some foundational knowledge moving forward. There is a dedicated <a href=\"https://developer.wordpress.org/themes/templates/\">Templates</a> chapter that provides a full overview of working with templates.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What are templates?</h2>\n\n\n\n<p>Theme templates represent the markup of the webpage. They create the document structure and print both static data (e.g., paragraph text) and dynamic data (e.g., post content) to the front end of your site.</p>\n\n\n\n<p>Let\u2019s take a look at a template from the default Twenty Twenty-Three theme.</p>\n\n\n\n<p>Go to <strong>Appearance &gt; Editor &gt; Templates &gt; Single Posts</strong> in your WordPress admin. This will show you what a Single post template looks like:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress Site Editor with a focus on the Single Post template.\" class=\"wp-image-149341\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-editor.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Single post template of the default Twenty Twenty-Three theme.</figcaption></figure>\n\n\n\n<p>As shown above, the template is made up of various blocks. Some of them are in placeholder states and will dynamically display content based on what page is being viewed on the front end of the site.</p>\n\n\n\n<p>If you select the <strong>\u22ee (Options)</strong> button in the template editor and select the <strong>Code editor</strong> option, you will see the block markup of the template:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress site editor showing the Single Post template in code view, which shows the block markup.\" class=\"wp-image-149342\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-single-template-code.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Code view of the default Twenty Twenty-Three theme\u2019s single post template.</figcaption></figure>\n\n\n\n<div class=\"wp-block-wporg-notice is-info-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>One of the great things about templating in WordPress is that you never really have to interact directly with template code. You have the visual Site Editor to make any and all customizations you want. But the code is there if you need it.</p></div></div>\n\n\n\n<p>Ultimately, the template produces HTML markup on the front end like this (shortened for clarity):</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en-US\"&gt;\n&lt;head&gt;\n\t&lt;title&gt;Post Title&lt;/title&gt;\n\t&lt;!-- Scripts, styles, and meta here. --&gt;\n&lt;/head&gt;\n\n&lt;body class=\"post-template single single-post\"&gt;\n\t&lt;div class=\"wp-site-blocks\"&gt;\n\t\t&lt;header class=\"wp-block-template-part\"&gt;\n\t\t\t&lt;!-- Header blocks here. --&gt;\n\t\t&lt;/header&gt;\n\t\t&lt;main class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\"&gt;\n\t\t\t&lt;!-- Nested blocks here. --&gt;\n\t\t&lt;/main&gt;\n\t\t&lt;footer class=\"wp-block-template-part\"&gt;\n\t\t\t&lt;!-- Footer blocks here. --&gt;\n\t\t&lt;/footer&gt;\n\t&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;</code></pre>\n\n\n\n<p>WordPress automatically handles the final markup for you, so all you need to do is create the templates.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How the templating system works</h2>\n\n\n\n<p>Whenever you visit a page on the front end of your website, WordPress must determine which template file to load. In the example above, the Single post template (<code>single.html</code>) is used to display the content of single blog posts.</p>\n\n\n\n<p>But there are many other types of templates. For example, you might have a Page template (<code>page.html</code>) for displaying the content of your site\u2019s pages or an Author template (<code>author.html</code>) for displaying post author archives.</p>\n\n\n\n<p>WordPress uses the template hierarchy to determine which template file to load. It is essentially a set of rules that defines which template to use based on the web page being viewed. If a template doesn\u2019t exist, WordPress will continue looking down through the hierarchy until it finds one that does.&nbsp;</p>\n\n\n\n<p>If no specific template is found, it will fall back to the Index template: <code>index.html</code>. As you learned in <a href=\"https://developer.wordpress.org/themes/core-concepts/theme-structure/\">Theme Structure</a>, this is the minimum required template for a block theme to function.</p>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/themes/templates/\">Templates</a> chapter covers the hierarchy in full detail. There, you will learn which templates are loaded for each page of a WordPress site.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Template files</h3>\n\n\n\n<p>WordPress expects template files to be located under the <code>/templates</code> folder in your theme. A typical theme will have several templates, which would be organized like this:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>templates/</code>\n<ul class=\"wp-block-list\">\n<li><code>404.html</code></li>\n\n\n\n<li><code>archive.html</code></li>\n\n\n\n<li><code>author.html</code></li>\n\n\n\n<li><code>index.html</code> (required)</li>\n\n\n\n<li><code>page.html</code></li>\n\n\n\n<li><code>single.html</code></li>\n\n\n\n<li><code>search.html</code></li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>These are some of the common templates you will find a theme:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>index.html</code>:</strong> The fallback template file. It is required in all themes.</li>\n\n\n\n<li><strong><code>404.html</code>:</strong> The 404 template is used when WordPress cannot find a post, page, or other content that matches the visitor\u2019s request.</li>\n\n\n\n<li><strong><code>archive.html</code>:</strong> The archive template is used when visitors request posts by archive-type views like category, author, or date and a more-specific template is unavailable.</li>\n\n\n\n<li><strong><code>author.html</code>:</strong> The author page template is used whenever a visitor loads an author archive.</li>\n\n\n\n<li><strong><code>category.html</code>:</strong> The category template is used when visitors request posts by category.</li>\n\n\n\n<li><strong><code>page.html</code>:</strong> The page template is used when visitors request individual pages.</li>\n\n\n\n<li><strong><code>search.html</code>:</strong> The search results template is used to display a visitor\u2019s search results.</li>\n\n\n\n<li><strong><code>single.html</code>:</strong>\u00a0 The single post template is used when a visitor requests a single post.</li>\n\n\n\n<li><strong><code>tag.html</code>:</strong> The tag template is used when visitors request posts by tag.</li>\n</ul>\n\n\n\n<p>This is not an exhaustive list. You will learn the ins and outs of every template file as you dive deeper into the <a href=\"https://developer.wordpress.org/themes/templates/\">Templates</a> chapter. The goal for now is to give you a baseline understanding of what to expect.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Template parts</h2>\n\n\n\n<p>Template parts, or \u201cparts\u201d for short, are another integral part of the templating system in WordPress. As the name suggests, template parts are a \u201cpart\u201d of a template.</p>\n\n\n\n<p>A template may consist of none, one, or more parts.</p>\n\n\n\n<p>The great thing about parts is they help you follow the DRY (Don\u2019t Repeat Yourself) principle. By including parts in your templates, you avoid having to repeat building the same block code over and over.</p>\n\n\n\n<p>On most websites, there are sections of the page that typically stay the same, regardless of the page that you are viewing. <em>Can you think of any repeated sections that are common on websites?</em></p>\n\n\n\n<p>The site header and footer are likely the most recognizable \u201cparts\u201d of a webpage, and they just so happen to be the most common template parts you\u2019ll find in themes. While it\u2019s not required to include them, they are <em>de facto</em> standards.</p>\n\n\n\n<p>Go to <strong>Appearance &gt; Editor &gt; Patterns &gt; Template Parts</strong> in your WordPress admin. Here is what the Header template part looks like from the default Twenty Twenty-Three theme:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1066\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?resize=2048%2C1066&#038;ssl=1\" alt=\"WordPress Patterns library showing Header Template parts.\" class=\"wp-image-149343\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?resize=300%2C156&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?resize=1024%2C533&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?resize=768%2C400&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/11/tt3-template-parts.jpg?resize=1536%2C800&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a><figcaption class=\"wp-element-caption\">Headers for the Twenty Twenty-Three theme.</figcaption></figure>\n\n\n\n<p>WordPress looks for template parts in your theme\u2019s <code>/parts</code> folder, which should be organized like this:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>parts/</code>\n<ul class=\"wp-block-list\">\n<li><code>header.html</code></li>\n\n\n\n<li><code>footer.html</code></li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>Other common template parts are for the comments area and sidebars, but your theme can have as few or as many parts as you want.\u00a0</p>\n\n\n\n<p>You\u2019ll learn more about how to register and create custom parts in the <a href=\"https://developer.wordpress.org/themes/templates/template-parts/\">Template Parts</a> documentation.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 149331,
+    "menu_order": 30,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149340",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149340",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149340/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 149344,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149340/revisions/149344"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149331"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149340"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 10778661,
+    "date": "2018-10-14T09:12:59",
+    "date_gmt": "2018-10-14T09:12:59",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10778661"
+    },
+    "modified": "2024-06-09T09:27:56",
+    "modified_gmt": "2024-06-09T09:27:56",
+    "slug": "users-your-profile-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/users-your-profile-screen/",
+    "title": {
+        "rendered": "Users Your Profile screen"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Users <span aria-hidden=\"true\" class=\"wp-exclude-emoji\">\u2192</span> Your Profile</h2>\n\n\n\n<p>The <a href=\"/support/article/users-your-profile-screen/\">Your Profile Screen</a> is accessible from both the main navigation menu under <a href=\"/support/article/administration-screens/#your-profile\">Users</a> and by clicking on your name link at the top of the WordPress screen. Here you can specify your name and how it will be displayed on your site, your e-mail address (for administrative purposes), other personal information, and personal options.</p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/10/profile.png\"><img loading=\"lazy\" decoding=\"async\" width=\"1263\" height=\"1187\" src=\"https://wordpress.org/documentation/files/2018/10/profile.png\" alt=\"\" class=\"wp-image-10778664\" srcset=\"https://wordpress.org/documentation/files/2018/10/profile.png 1263w, https://wordpress.org/documentation/files/2018/10/profile-300x282.png 300w, https://wordpress.org/documentation/files/2018/10/profile-1024x962.png 1024w, https://wordpress.org/documentation/files/2018/10/profile-768x722.png 768w\" sizes=\"auto, (max-width: 1263px) 100vw, 1263px\" /></a><figcaption>Your Profile Screen</figcaption></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Your Profile and Personal Options</h2>\n\n\n\n<p>The only pieces of information WordPress requires you to include in your Profile are your <strong>e-mail address</strong> and a <strong>nickname</strong>. It should be noted that WordPress requires your email address only for your blog&#8217;s administration purposes. The email address is never sent to any other site (not even to the people at WordPress headquarters), and it is never displayed on your site (unless you put it there manually). Only the other <em>registered</em> users of your blog have access to the e-mail address you provide. Also, remember that each user&#8217;s email address must be unique.</p>\n\n\n\n<p><strong>Note</strong>: it is <em>possible</em> for a theme to display your e-mail address (and the e-mail addresses of your other registered users) on your site, since the <a href=\"https://codex.wordpress.org/Template Tags/the_author_meta\"><code>the_author_meta('user_email')</code></a> template tag can be used for such purposes. This would be a poorly conceived theme, however, if it didn&#8217;t inform you of that before you downloaded it. None of the themes included with WordPress display any e-mail address anywhere on the public side of your site by default.</p>\n\n\n\n<p>All of the other personal information asked for here is <em>optional</em>, and, again, it is never sent to any other site or person. It <em>may</em> be displayed on your site, however, depending on the theme you use, so you should test things out with your particular theme if you&#8217;re at all paranoid (and a bit of paranoia regarding your personal information is healthy). See <a href=\"https://developer.wordpress.org/reference/functions/the_author\">the_author</a> and related template tags for information on how to display this information on your site (and, consequently, how to ensure the theme you use does/does not display any of this information). Typically, themes only display the information you enter in the <strong>Display name publicly as</strong> field, however the Authors username is also often included in the URL (for Author Archives) and in the CSS classes for per-author targeted stylings.</p>\n\n\n\n<p><strong>Personal Options :</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Visual Editor</strong> &#8211; Checking this box <strong>Disables the visual editor when writing</strong>, and uses the plain HTML editor.</li><li><strong>Syntax Highlighting</strong> &#8211; Checking this box <strong>Disable syntax highlighting when editing code</strong>.</li><li><strong>Admin Color Scheme</strong> &#8211; Check this radio button next to the color scheme desired for the <a href=\"/support/article/administration-screens\">Administration Screens</a>. The left two colors are menu background colors and the right two are roll-over colors.</li></ul>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/documentation/files/2018/10/profile-colors.png\"><img loading=\"lazy\" decoding=\"async\" width=\"824\" height=\"172\" src=\"https://wordpress.org/documentation/files/2018/10/profile-colors.png\" alt=\"\" class=\"wp-image-10778668\" srcset=\"https://wordpress.org/documentation/files/2018/10/profile-colors.png 824w, https://wordpress.org/documentation/files/2018/10/profile-colors-300x63.png 300w, https://wordpress.org/documentation/files/2018/10/profile-colors-768x160.png 768w\" sizes=\"auto, (max-width: 824px) 100vw, 824px\" /></a><figcaption>Color scheme of Administration Screens</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Keyboard Shortcuts</strong> &#8211; Checking this box <strong>Enables keyboard shortcuts for comment moderation</strong>. Keyboard shortcuts are designed to allow you to rapidly navigate and perform actions on comments. The <a href=\"/support/article/keyboard-shortcuts/\">Keyboard Shortcuts article</a> describes the various shortcuts in detail.</li><li><strong>Toolbar</strong> &#8211; Check the box to display the <a href=\"https://codex.wordpress.org/Toolbar\">Toolbar</a> when you are viewing your site.</li><li><strong>Language</strong> &#8211; You can select the language you wish to use while using the <a href=\"/support/article/administration-screens/\">Administration Screen</a> without affecting the language site visitors see.</li></ul>\n\n\n\n<p><strong>Name :</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Username</strong> &#8211; You cannot edit your Username because it is used as your Username during the login process. Even an <a href=\"/support/article/roles-and-capabilities/\">Administrator</a> cannot change your Username. Usually, no one else ever needs to see your Username.</li><li><strong>First name</strong> &#8211; Enter your first name in this text box.</li><li><strong>Last name</strong> &#8211; Enter your last name in this text box.</li><li><strong>Nickname</strong> &#8211; Enter the nickname as it is a required for every user. It may be the same as your <strong>User Name</strong> or it can be different. If you don\u2019t supply a Nickname, then the <strong>User Name</strong> will be placed in this field.</li><li><strong>Display name publicly as</strong> &#8211; Select, from the drop-down, how your name is cited on your blog. This defaults to your first and last name. You can choose from several of the above pieces of information: <strong>Nickname</strong>, <strong>Login</strong> name, <strong>First Name</strong>, <strong>Last Name</strong>, &#8220;<strong>First Last</strong>&#8220;, or &#8220;<strong>Last First</strong>&#8220;. If you prefer &#8220;<strong>Last, First</strong>&#8220;, insert a comma after your last name in the <strong>Last Name</strong> text box above and choose the last option from this dropdown.</li></ul>\n\n\n\n<p><strong>Contact Info :</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>E-mail</strong> &#8211; All users are required to list an e-mail address in their respective Profiles. The E-mail address must be unique for each user. Your blog will use this address to notify you of new comments to your posts and for other administrative purposes. To reiterate what was said above, only other registered users of your blog will have access to this e-mail address. It is <em>never</em> sent anywhere.</li><li><strong>Website</strong> &#8211; Enter your website address.</li></ul>\n\n\n\n<p><strong>About Yourself :</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Biographical Info</strong> &#8211; Enter a short description or profile of yourself here. This optional information can be displayed by your theme if so configured by the theme author. See <a href=\"https://codex.wordpress.org/Template Tags/the_author_meta\"><code>the_author_meta('description')</code></a> template tag.</li><li><strong>Profile Picture</strong> &#8211; Your picture in <a href=\"/support/article/Glossary/#gravatar\">Gravatar</a> is shown here. To change it, access to the https://en.gravatar.com/. See also <a href=\"/support/article/how-to-use-gravatars/\">Using Gravatars</a>.</li></ul>\n\n\n\n<p><strong>Account Management :</strong></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Generate Password</strong> &#8211; You can click this button to generate a new password for the account. This will show you a new field with the generated password. If you choose to change this password, a checkbox will appear to confirm that you want to use a weak password. You can check this box to confirm that you want to use your own password instead of a secure one.</li><li><strong>Strength Indicator</strong> This indicates if the password you entered is Very Weak, Weak, Medium, or Strong (displayed in green). The stronger the password the more secure your login. Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like <em>!&#8221;?$%^&amp;)</em>.</li><li><strong>Log Out Everywhere Else</strong> &#8211; You can click this button to log out of other devices, such as your phone or a public computer.</li></ul>\n\n\n\n<h3 class=\"wp-block-heading\">Update Profile</h3>\n\n\n\n<p>Remember to click this button to save the changes you have made to your Profile and Personal Options. After clicking this button you should see a splash message at the top of the screen saying User Updated. If you don&#8217;t see that message, then your changes are not saved!</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Users \u2192 Your Profile The Your Profile Screen is accessible from both the main navigation menu under Users and by clicking on your name link at the top of the WordPress screen. Here you can specify your name and how it will be displayed on your site, your e-mail address (for administrative purposes), other personal [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-10778661",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10778661",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10778661"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10778661/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360444,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10778661/revisions/16360444"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10778661"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10778661"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

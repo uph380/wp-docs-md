@@ -1,0 +1,91 @@
+{
+    "id": 156782,
+    "date": "2025-02-20T08:04:07",
+    "date_gmt": "2025-02-20T08:04:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/fields/checkbox/checkbox-tutorial/"
+    },
+    "modified": "2025-02-21T04:18:01",
+    "modified_gmt": "2025-02-21T04:18:01",
+    "slug": "checkbox-tutorial",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/fields/checkbox/checkbox-tutorial/",
+    "title": {
+        "rendered": "Using the Checkbox Field"
+    },
+    "content": {
+        "rendered": "<h2>Basic Setup</h2>\n<ol>\n<li>Create a new Field Group</li>\n<li>Add a Checkbox field</li>\n<li>Configure options:\n<ul>\n<li>Add checkbox choices</li>\n<li>Set layout (vertical/horizontal)</li>\n<li>Choose return format</li>\n<li>Enable/disable &#8220;Select All&#8221;</li>\n</ul>\n</li>\n</ol>\n<h2>Common Use Cases</h2>\n<ol>\n<li>Multiple Selection Lists\n<ul>\n<li>Categories/Tags</li>\n<li>Feature toggles</li>\n<li>Permission settings</li>\n</ul>\n</li>\n<li>Option Configuration\n<ul>\n<li>Settings panels</li>\n<li>Display preferences</li>\n<li>Content filters</li>\n</ul>\n</li>\n</ol>\n<h2>Tips</h2>\n<ul>\n<li>Group related options together</li>\n<li>Consider using columns for many options</li>\n<li>Provide clear labels</li>\n<li>Use &#8220;Select All&#8221; for long lists</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156781,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156782",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156782",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156782/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156937,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156782/revisions/156937"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156781"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156782"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

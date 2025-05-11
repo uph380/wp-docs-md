@@ -1,0 +1,91 @@
+{
+    "id": 129278,
+    "date": "2020-07-13T13:00:50",
+    "date_gmt": "2020-07-13T13:00:50",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=apis-handbook&#038;p=129278"
+    },
+    "modified": "2022-11-21T16:09:05",
+    "modified_gmt": "2022-11-21T16:09:05",
+    "slug": "making-http-requests",
+    "status": "publish",
+    "type": "apis-handbook",
+    "link": "https://developer.wordpress.org/apis/making-http-requests/",
+    "title": {
+        "rendered": "Making HTTP requests"
+    },
+    "content": {
+        "rendered": "\n<p>Very often we need to make HTTP requests from our theme or plugin, for example when we need to fetch data from an external API. Luckily WordPress has many helper functions to help you do that.</p>\n\n\n\n<p>In this section, you will learn how to properly make HTTP requests and handle their responses.</p>\n\n\n\n<p>Here&#8217;s an example of what you&#8217;re going to see</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php\">$response = wp_remote_get( 'https://api.github.com/users/wordpress' );\n$body     = wp_remote_retrieve_body( $response );</code></pre>\n\n\n\n<p>In the next articles you&#8217;ll see a detailed explanation on how to make the requests:</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/apis/making-http-requests/getting-data-from-an-external-service/\">GETting data from an external service</a></li><li><a href=\"https://developer.wordpress.org/apis/making-http-requests/posting-data-to-an-external-service/\">POSTing data to an external service</a></li><li><a href=\"https://developer.wordpress.org/apis/making-http-requests/performance/\">Performance</a></li><li><a href=\"https://developer.wordpress.org/apis/making-http-requests/advanced/\">Advanced</a></li><li><a href=\"https://developer.wordpress.org/apis/making-http-requests/authentication/\">Authentication</a></li></ul>\n\n\n\n<p>If you&#8217;re just looking for the available helper functions, here they are:</p>\n\n\n\n<p>The functions below are the ones you will use to retrieve a URL.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_get/\"><code>wp_remote_get()</code></a>: Retrieves a URL using the GET HTTP method.</li><li><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_post/\"><code>wp_remote_post()</code></a>: Retrieves a URL using the POST HTTP method.</li><li><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_head/\"><code>wp_remote_head()</code></a>: Retrieves a URL using the HEAD HTTP method.</li><li><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_request/\"><code>wp_remote_request()</code></a>: Retrieves a URL using either the default GET or a custom HTTP method that you specify. </li></ul>\n\n\n\n<p>The other helper functions deal with retrieving different parts of the response. These make usage of the API very simple and are the preferred method for processing response objects.</p>\n\n\n\n<ul class=\"wp-block-list\"><li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_body/\">wp_remote_retrieve_body()</a></code> &#8211; Retrieves just the body from the response.</li><li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_header/\">wp_remote_retrieve_header()</a></code> &#8211; Retrieve a single header by name from the raw response.</li><li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_headers/\">wp_remote_retrieve_headers()</a></code> &#8211; Retrieve only the headers from the raw response.</li><li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_response_code/\">wp_remote_retrieve_response_code()</a></code> &#8211; Retrieve the response code for the HTTP response. This should be 200, but could be 4xx or even 3xx on failure.</li><li><code><a href=\"https://developer.wordpress.org/reference/functions/wp_remote_retrieve_response_message/\">wp_remote_retrieve_response_message()</a></code> &#8211; Retrieve only the response message from the raw response.</li></ul>\n",
+        "protected": false
+    },
+    "author": 144759,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 90,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-129278",
+        "apis-handbook",
+        "type-apis-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/apis-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/144759"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 144365,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/apis-handbook/129278/revisions/144365"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=129278"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

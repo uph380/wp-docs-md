@@ -1,0 +1,91 @@
+{
+    "id": 134500,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/sandbox/"
+    },
+    "modified": "2024-10-30T16:55:38",
+    "modified_gmt": "2024-10-30T16:55:38",
+    "slug": "sandbox",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/sandbox/",
+    "title": {
+        "rendered": "Sandbox"
+    },
+    "content": {
+        "rendered": "<p>This component provides an isolated environment for arbitrary HTML via iframes.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { SandBox } from '@wordpress/components';\n\nconst MySandBox = () =&gt; (\n    &lt;SandBox html=\"&lt;p&gt;Content&lt;/p&gt;\" title=\"SandBox\" type=\"embed\" /&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<h3><code>html</code>: <code>string</code></h3>\n<p>The HTML to render in the body of the iframe document.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: &#8220;&#8221;</li>\n</ul>\n<h3><code>onFocus</code>: <code>React.DOMAttributes&lt; HTMLIFrameElement &gt;[ 'onFocus' ]</code></h3>\n<p>The <code>onFocus</code> callback for the iframe.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>scripts</code>: <code>string[]</code></h3>\n<p>An array of script URLs to inject as <code>&lt;script&gt;</code> tags into the bottom of the <code>&lt;body&gt;</code> of the iframe document.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: []</li>\n</ul>\n<h3><code>styles</code>: <code>string[]</code></h3>\n<p>An array of CSS strings to inject into the <code>&lt;head&gt;</code> of the iframe document.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: []</li>\n</ul>\n<h3><code>title</code>: <code>string</code></h3>\n<p>The <code>&lt;title&gt;</code> of the iframe document.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: &#8220;&#8221;</li>\n</ul>\n<h3><code>type</code>: <code>string</code></h3>\n<p>The CSS class name to apply to the <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> elements of the iframe.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: &#8220;&#8221;</li>\n</ul>\n<h3><code>tabIndex</code>: <code>HTMLElement[ 'tabIndex' ]</code></h3>\n<p>The <code>tabindex</code> the iframe should receive.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 198,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134500",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134500",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134500/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 148879,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134500/revisions/148879"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134500"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

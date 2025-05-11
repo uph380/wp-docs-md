@@ -1,0 +1,109 @@
+{
+    "id": 15124095,
+    "date": "2022-01-05T22:50:52",
+    "date_gmt": "2022-01-05T22:50:52",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15124095"
+    },
+    "modified": "2024-09-23T08:32:19",
+    "modified_gmt": "2024-09-23T08:32:19",
+    "slug": "template-part-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/template-part-block/",
+    "title": {
+        "rendered": "Template Part block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <em>Template Part block</em> is an advanced block introduced in WordPress 5.9 that can be used with a block theme or a theme that supports <a href=\"https://wordpress.org/themes/tags/template-editing/\" data-type=\"URL\" data-id=\"https://wordpress.org/themes/tags/template-editing/\">template editing</a>. They often come with your theme and are used to organize and display your site structure. You can only use them while creating and editing templates to manage blocks in areas repeated across the website. For context, this block is best used to create areas like your site header and site footer. When you change blocks inside a template part, the editor updates the blocks on every block template that includes the template part.</p>\n\n\n\n<p>In order to add a&nbsp;<em>Template Part block</em>, click on the add block button and select the&nbsp;<em>Template Part block</em>. You can also type&nbsp;<em>\u201c/template part\u201d</em>&nbsp;and hit enter in a new paragraph block to add one quickly. In many cases, you&#8217;ll also see options to select types of Template Part blocks, like Header and Footer when searching for this block. You can search for the header or footer in the block inserter to insert the blocks or use the shortcuts <em>&#8220;/header&#8221;</em> and <em>&#8220;/footer&#8221;.</em></p>\n\n\n\n<p class=\"has-very-light-gray-background-color has-background\"><em>Detailed instructions on adding blocks can be found&nbsp;<a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</em></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"adding-template-parts\">Adding template parts</h2>\n\n\n\n<p>You can add templates when using the <a href=\"https://wordpress.org/documentation/article/template-editor/\">Template Editor</a> or <a href=\"https://wordpress.org/documentation/article/site-editor/\" data-type=\"URL\" data-id=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a> to edit templates directly. After adding a template part, you can choose from existing parts or create a new template part:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"984\" height=\"570\" src=\"https://wordpress.org/documentation/files/2023/08/adding-template-part-block.png\" alt=\"Template part block provides two buttons: &quot;choose&quot; and &quot;start blank&quot;. \" class=\"wp-image-16358393\" srcset=\"https://wordpress.org/documentation/files/2023/08/adding-template-part-block.png 984w, https://wordpress.org/documentation/files/2023/08/adding-template-part-block-300x174.png 300w, https://wordpress.org/documentation/files/2023/08/adding-template-part-block-768x445.png 768w\" sizes=\"auto, (max-width: 984px) 100vw, 984px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"choosing-from-existing-template-parts\">Choosing from existing template parts</h3>\n\n\n\n<p>Selecting the button &#8220;Choose&#8221; opens a modal where you can search, preview, and select existing parts. These  parts will depend on what your theme has provided:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"752\" src=\"https://wordpress.org/documentation/files/2023/08/choosing-template-part-1024x752.png\" alt=\"Using the &quot;choose button&quot;, existing template parts can be selected. \" class=\"wp-image-16358394\" srcset=\"https://wordpress.org/documentation/files/2023/08/choosing-template-part-1024x752.png 1024w, https://wordpress.org/documentation/files/2023/08/choosing-template-part-300x220.png 300w, https://wordpress.org/documentation/files/2023/08/choosing-template-part-768x564.png 768w, https://wordpress.org/documentation/files/2023/08/choosing-template-part.png 1392w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"creating-new-template-parts\">Creating new template parts</h3>\n\n\n\n<p>Selecting &#8220;Start blank&#8221; will prompt you to add a name. It&#8217;s best to pick a descriptive name so that it&#8217;s easy to find in the future:</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"858\" height=\"524\" src=\"https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.12.43-PM.png\" alt=\"When we create a new template part block, we get a field to edit the name and options to create or cancel. \" class=\"wp-image-15222745\" style=\"width:429px;height:262px\" srcset=\"https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.12.43-PM.png 858w, https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.12.43-PM-300x183.png 300w, https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.12.43-PM-768x469.png 768w\" sizes=\"auto, (max-width: 858px) 100vw, 858px\" /><figcaption class=\"wp-element-caption\">Click on the &#8220;start blank&#8221; button to place the block and begin customizing. </figcaption></figure>\n\n\n\n<p></p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"creating-new-template-parts-from-the-template-part-list\">Creating new template parts from the template part list</h3>\n\n\n\n<p>If you are using a block theme, you can also create a new template part from the template part list in Administration Screen &gt; Appearance &gt; Editor &gt; Patterns &gt; Template Parts. Click on the Create patterns icon to find Create template part:</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"770\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2023/08/creating-new-template-part-770x1024.png\" alt=\"Template part list area also provides an option to create template part. \" class=\"wp-image-16358396\" srcset=\"https://wordpress.org/documentation/files/2023/08/creating-new-template-part-770x1024.png 770w, https://wordpress.org/documentation/files/2023/08/creating-new-template-part-225x300.png 225w, https://wordpress.org/documentation/files/2023/08/creating-new-template-part-768x1022.png 768w, https://wordpress.org/documentation/files/2023/08/creating-new-template-part.png 998w\" sizes=\"auto, (max-width: 770px) 100vw, 770px\" /><figcaption class=\"wp-element-caption\">Creating template part from Patterns area</figcaption></figure>\n\n\n\n<p>When you select the Create template part, a modal appears where you can add a name and select the area for the template part. You must provide a name in order to create a new template part:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"982\" height=\"1024\" src=\"https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.19.00-PM-982x1024.png\" alt=\"Upon clicking on create template part, a pop up appears with the title &quot;Create a template part&quot;.\" class=\"wp-image-15222765\" style=\"width:491px;height:512px\" srcset=\"https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.19.00-PM-982x1024.png 982w, https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.19.00-PM-288x300.png 288w, https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.19.00-PM-768x801.png 768w, https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.19.00-PM.png 984w\" sizes=\"auto, (max-width: 982px) 100vw, 982px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Importing widget area</h3>\n\n\n\n<p>If you&#8217;ve switched from a classic theme to a block theme and widgets created in the classic theme, you can import them from Import Widget Area dropdown in the Advanced Settings. Select the widget from dropdown and click Import.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"588\" src=\"https://wordpress.org/documentation/files/2024/02/importing-widget-area_6.4-1024x588.jpg\" alt=\"Import Widget Area menu in the sidebar.\" class=\"wp-image-16359621\" srcset=\"https://wordpress.org/documentation/files/2024/02/importing-widget-area_6.4-1024x588.jpg 1024w, https://wordpress.org/documentation/files/2024/02/importing-widget-area_6.4-300x172.jpg 300w, https://wordpress.org/documentation/files/2024/02/importing-widget-area_6.4-768x441.jpg 768w, https://wordpress.org/documentation/files/2024/02/importing-widget-area_6.4-1536x883.jpg 1536w, https://wordpress.org/documentation/files/2024/02/importing-widget-area_6.4.jpg 1890w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Screenshot</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Managing template parts and patterns</h3>\n\n\n\n<p>At the bottom of the patterns screen, there is an option to manage all template parts. From you can create new template parts, or rename, delete and reset customizations made to the template parts.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"355\" src=\"https://wordpress.org/documentation/files/2023/08/managing-template-parts-1024x355.png\" alt=\"At the bottom of template part list, there is a link named &quot;manage all template parts&quot; which opens this list of template parts.\" class=\"wp-image-16358409\" srcset=\"https://wordpress.org/documentation/files/2023/08/managing-template-parts-1024x355.png 1024w, https://wordpress.org/documentation/files/2023/08/managing-template-parts-300x104.png 300w, https://wordpress.org/documentation/files/2023/08/managing-template-parts-768x266.png 768w, https://wordpress.org/documentation/files/2023/08/managing-template-parts-1536x533.png 1536w, https://wordpress.org/documentation/files/2023/08/managing-template-parts-2048x710.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"customizing-template-parts\">Customizing template parts</h2>\n\n\n\n<p>After adding or selecting a <em>Template Part block</em>, you can customize in various ways by adding additional blocks within it. To make it easier to find current template parts to edit, it&#8217;s recommended that you use one of the following options:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Use <a href=\"https://wordpress.org/documentation/article/list-view/\">List View</a> when you&#8217;re editing a template to quickly identify the Headers and Footers in your content to edit.</li>\n\n\n\n<li>Use the template part focus mode described below.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"template-part-focus-mode\">Template part focus mode</h3>\n\n\n\n<p>To make it easier to focus specifically on editing a single template part, like a&nbsp;Header&nbsp;or Footer, you can use a dedicated mode that only shows an individual template part. To access this mode, Select the template part and click Edit from the toolbar.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/01/template-parts-mordal-6.4.mp4\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"replacing-one-template-part-with-another\">Replacing one template part with another</h3>\n\n\n\n<p>If the theme has more than one\u00a0patterns\u00a0for the same template part area, you will see a pattern selector in the template inspector panel. If you don\u2019t see this selector, this is because the theme hasn\u2019t provided multiple\u00a0patterns\u00a0for the same area.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/01/template-parts-selection-6.6.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"advanced-settings\">Advanced Settings</h2>\n\n\n\n<p>Under Advanced settings, you can rename the template part and select an area: General, header, or footer. The panel also lets you change the HTML element and add CSS class(es) to your block. You can choose between these HTML elements: Div, header, footer, main, section, article, and aside.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"538\" height=\"754\" src=\"https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.30.36-PM.png\" alt=\"Image of advanced options with the template part block.\" class=\"wp-image-15222802\" style=\"width:269px;height:377px\" srcset=\"https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.30.36-PM.png 538w, https://wordpress.org/documentation/files/2022/01/Screen-Shot-2022-01-05-at-12.30.36-PM-214x300.png 214w\" sizes=\"auto, (max-width: 538px) 100vw, 538px\" /></figure>\n\n\n\n<p></p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\"><p class=\"has-medium-font-size\" id=\"changelog\">Changelog</p></h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-09-23\n<ul class=\"wp-block-list\">\n<li>Updated Replacing one template part with another</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2024-02-18\n<ul class=\"wp-block-list\">\n<li>Swapped block action places between Replace and Edit</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-08-04\n\n\n\n\n\n\n\n\n\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/50841\">Sort template parts by type in navigation screen</a>.</li>\n\n\n\n<li>I have added screenshot that depicts the sorting under a new section that I created i.e <strong>Creating new template parts from the template part list</strong></li>\n\n\n\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/52102\">Add corresponding area icon to template part menu items</a>.</li>\n\n\n\n<li>I noticed the library has been replaced by Pattern so the screenshot from the section <strong>Creating new template parts from the template part list</strong> covers this as well.</li>\n\n\n\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/50769\">Library: Rename template parts to library</a>.</li>\n\n\n\n<li>I noticed this PR is dated as May 19th and the one <a href=\"https://github.com/WordPress/gutenberg/pull/52102\">52102</a> was on June 29th so I am assuming the one dated with June 29th is the latest one. Is that correct?</li>\n\n\n\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/50076\">Add chevrons to the templates and template parts in site editor</a> and</li>\n\n\n\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/48496\">Change &#8220;Browse all templates&#8221; to &#8220;Manage all templates&#8221; in template details popover</a><br>In the section <strong>Creating new template parts from the template part list</strong>, the screenshot shows chevron icons on the left of patterns and on the right of manage all template parts and manage all patterns. Since there is no description of template, I didn&#8217;t add screenshot for template&#8217;s chevron icon. In the same screenshot, the manage all template parts is shown.</li>\n</ul>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/48732\">Add &#8220;Added by&#8221; description to template part navigation sidebar</a><br>I created this section <strong>Managing template parts and patterns</strong>, and there I added a screenshot that shows the Added by for template parts.</li>\n</ul>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://github.com/WordPress/gutenberg/pull/50410\">Update Template Parts icon to use the symbol</a><br>I updated the screenshots to show the latest Template parts icon</li>\n</ul>\n</li>\n\n\n\n<li>Created: 2022-01-05</li>\n</ul>\n\n\n\n<p></p>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Template Part block is an advanced block introduced in WordPress 5.9 that can be used with a block theme or a theme that supports template editing. They often come with your theme and are used to organize and display your site structure. You can only use them [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15124095",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15124095",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15124095"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15124095/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16361002,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15124095/revisions/16361002"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15124095"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15124095"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

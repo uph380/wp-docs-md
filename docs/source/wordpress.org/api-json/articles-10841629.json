@@ -1,0 +1,109 @@
+{
+    "id": 10841629,
+    "date": "2018-11-02T13:36:08",
+    "date_gmt": "2018-11-02T13:36:08",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10841629"
+    },
+    "modified": "2023-01-16T11:56:40",
+    "modified_gmt": "2023-01-16T11:56:40",
+    "slug": "taxonomies",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/taxonomies/",
+    "title": {
+        "rendered": "Taxonomies"
+    },
+    "content": {
+        "rendered": "\n<p>A taxonomy within WordPress is a way of grouping posts together based on a select number of relationships. By default, a standard post will have two taxonomy types called Categories and Tags which are a handy way of ensuring related content on your website is easy for visitors to find. These two types of taxonomies are included in WordPress by default, but just like any other taxonomy, can be removed or changed and you can even add more if you like.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Taxonomies &amp; Terms</h2>\n\n\n\n<p>The relationship between taxonomies and terms is rather simple; think of taxonomies as the &#8216;parent&#8217; and terms as the &#8216;children&#8217;. For example, a taxonomy called &#8216;Recipes&#8217; for the &#8216;Food&#8217; post type could have multiple terms such as &#8216;Vegetarian&#8217; or &#8216;Fresh&#8217;, &#8216;Easy Cooking&#8217;.</p>\n\n\n\n<p>Another example is where you might have a post type called Reviews and a new post called &#8216;Best Films of The Year&#8217;. You can help define this content by having a taxonomy called &#8216;Films&#8217; and create new terms such &#8216;Top Picks&#8217; or &#8216;Film Reviews&#8217;. All this does is help define your content into smaller chunks making it much easier to find and focus on.</p>\n\n\n\n<h2 class=\"wp-block-heading\">New Taxonomies &amp; Terms</h2>\n\n\n\n<p>As of WordPress version 2.3 you can create your own taxonomies for use on your website or blog with a small amount of code. You can also create an unlimited amount of terms if you wish which can be done within the dashboard user interface once the taxonomies have been created.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Extending Taxonomies</h2>\n\n\n\n<p>Depending on whether your theme and plugins allow it, you can also extend the functionality of taxonomies and their terms to improve the categorisation of the content. This means that you can create taxonomy specific templates in your themes and also add new filtering options to look for posts in the dashboard too.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>A taxonomy within WordPress is a way of grouping posts together based on a select number of relationships. By default, a standard post will have two taxonomy types called Categories and Tags which are a handy way of ensuring related content on your website is easy for visitors to find. These two types of taxonomies [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        86,
+        78
+    ],
+    "class_list": [
+        "post-10841629",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-publishing",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10841629",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10841629"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10841629/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355374,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10841629/revisions/16355374"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10841629"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10841629"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

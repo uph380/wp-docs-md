@@ -1,0 +1,109 @@
+{
+    "id": 16358352,
+    "date": "2023-08-08T10:26:20",
+    "date_gmt": "2023-08-08T10:26:20",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16358352"
+    },
+    "modified": "2023-11-11T10:46:51",
+    "modified_gmt": "2023-11-11T10:46:51",
+    "slug": "site-editor-navigation",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/site-editor-navigation/",
+    "title": {
+        "rendered": "Site Editor navigation"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress version 6.3 introduces the possibility to edit your site&#8217;s menus via the Site Editor. </p>\n\n\n\n<p>You can view, manage, and modify your menus without having to find them in a specific template in the site editor.  If your site has several menus, they will all be listed together and you will be able to edit them from there.</p>\n\n\n\n<p>You can learn about the Site Editor in this support article: <a href=\"https://wordpress.org/documentation/article/site-editor/\" data-type=\"link\" data-id=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a>.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">The Site Editor navigation is <strong>only</strong> available when you install and activate a <a href=\"https://wordpress.org/documentation/article/block-themes/\">Block theme</a> on your site.</p>\n\n\n\n<p>You can do the follow actions using the Site Editor Navigation:</p>\n\n\n\n<h2 class=\"wp-block-heading\">Access all your menus</h2>\n\n\n\n<p>When you navigate to <strong>Appearance &gt; Editor &gt; Navigation</strong>, you will see all your menus listed there. </p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menus-1.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Rename, duplicate, and delete menus</h2>\n\n\n\n<p>Once you select an individual menu, you will be able to rename, duplicate or delete it by clicking the <strong>Actions</strong> button next to its name.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"594\" src=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-options-1024x594.png\" alt=\"\" class=\"wp-image-16358363\" srcset=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-options-1024x594.png 1024w, https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-options-300x174.png 300w, https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-options-768x445.png 768w, https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-options-1536x890.png 1536w, https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-options-2048x1187.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Opening a page</h2>\n\n\n\n<h2 class=\"wp-block-heading\">Reorder, delete, and opening menu items</h2>\n\n\n\n<p>You can reorder and delete menu items from the Site Editor navigation sidebar by clicking on the <strong>Options for page link</strong> button next to each menu item. </p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"604\" src=\"https://wordpress.org/documentation/files/2023/08/site-editor-navigation-menu-items-1024x604.png\" alt=\"How to access the Move, Delete and Go to options for individual menu items in the Site Editor Navigation.\" class=\"wp-image-16358358\" srcset=\"https://wordpress.org/documentation/files/2023/08/site-editor-navigation-menu-items-1024x604.png 1024w, https://wordpress.org/documentation/files/2023/08/site-editor-navigation-menu-items-300x177.png 300w, https://wordpress.org/documentation/files/2023/08/site-editor-navigation-menu-items-768x453.png 768w, https://wordpress.org/documentation/files/2023/08/site-editor-navigation-menu-items-1536x906.png 1536w, https://wordpress.org/documentation/files/2023/08/site-editor-navigation-menu-items-2048x1208.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>You can also reorder items by dragging and dropping items, and even create submenus.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-items-drag-drop.mp4\"></video></figure>\n\n\n\n<p>You can open any page from the Site Editor navigation section by clicking the <strong>Options for page link</strong> button and select <strong>Go to page</strong>. See the demostration video below.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-go-to-page.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Focus mode and advanced editing</h2>\n\n\n\n<p>The Site Editor navigation sidebar only allows you to do basic changes to individual menu items. If you need to edit menu item details, you can click on the menu itself (on the right) or on the <strong>Edit</strong> button (depicted by a pencil icon in the sidebar) to enter Focus Mode and access all menu settings.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-menu-items-focus-mode-details-1.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Saving your changes</h2>\n\n\n\n<p>Please note that you will need to save your changes. You will be asked to save these changes before you exit the Site Editor but you can also save them manually at any point.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/Site-Editor-Navigation-save-changes.mp4\"></video></figure>\n\n\n\n<p>You can also save them by clicking <code>cmd+s</code> in Mac or <code>ctrl+s</code> in Windows. </p>\n\n\n\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog</h2>\n\n\n\n<ul style=\"background-color:#e5f5fa\" class=\"has-background wp-block-list\">\n<li>Updated 2023-11-11\n<ul class=\"wp-block-list\">\n<li>Updating capitalisations.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-08-24\n<ul class=\"wp-block-list\">\n<li>Updated formatting</li>\n\n\n\n<li>Changed the category to Site Editor</li>\n</ul>\n</li>\n\n\n\n<li>Created 2023-08-08</li>\n</ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>WordPress version 6.3 introduces the possibility to edit your site&#8217;s menus via the Site Editor. You can view, manage, and modify your menus without having to find them in a specific template in the site editor. If your site has several menus, they will all be listed together and you will be able to edit [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        94
+    ],
+    "class_list": [
+        "post-16358352",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-site-editor"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358352",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16358352"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 12,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358352/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359203,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16358352/revisions/16359203"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16358352"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16358352"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

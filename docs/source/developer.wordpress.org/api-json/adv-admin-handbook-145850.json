@@ -1,0 +1,91 @@
+{
+    "id": 145850,
+    "date": "2023-03-28T04:02:41",
+    "date_gmt": "2023-03-28T04:02:41",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/"
+    },
+    "modified": "2024-01-16T20:30:07",
+    "modified_gmt": "2024-01-16T20:30:07",
+    "slug": "phpmyadmin",
+    "status": "publish",
+    "type": "adv-admin-handbook",
+    "link": "https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+    "title": {
+        "rendered": "phpMyAdmin"
+    },
+    "content": {
+        "rendered": "<h2>What is phpMyAdmin?</h2>\n<p>An administrator&#8217;s tool of sorts, phpMyAdmin is a PHP script meant for giving users the ability to interact with their MySQL databases. WordPress stores all of its information in the MySQL database and interacts with the database to generate information within your WordPress site. A &#8220;raw&#8221; view of the data, tables and fields stored in the MySQL database is accessible through phpMyAdmin.</p>\n<h2>What is it good for?</h2>\n<p>The phpMyAdmin program is handy for performing maintenance operations on tables, backing up information, and editing things directly in the event that WordPress is not working. Occasionally, in the <a href=\"https://wordpress.org/support/welcome/#asking-for-support\">Support Forums</a>, someone will post a SQL query of some benefit or other that can be run using phpMyAdmin. Although many of the same tasks can be performed on the MySQL command line, doing so is not an option for many people.</p>\n<h2>Where can I get it?</h2>\n<p>Often host control panels, such as cPanel and Plesk, have phpMyAdmin pre-installed, so there is nothing special you have to do to use it. It is usually linked from the database page. Ask your host if this is available.</p>\n<p>You can download phpMyAdmin yourself and install it from the main <a href=\"https://www.phpmyadmin.net/\">phpMyAdmin project page</a>.</p>\n<h2>Changelog</h2>\n<ul>\n<li>2022-09-11: Original content from <a href=\"https://wordpress.org/documentation/article/phpmyadmin/\">phpMyAdmin</a>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 145847,
+    "menu_order": 2,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-145850",
+        "adv-admin-handbook",
+        "type-adv-admin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145850",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/adv-admin-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145850/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151944,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145850/revisions/151944"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/adv-admin-handbook/145847"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=145850"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

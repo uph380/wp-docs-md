@@ -1,0 +1,91 @@
+{
+    "id": 149260,
+    "date": "2023-10-27T18:41:22",
+    "date_gmt": "2023-10-27T18:41:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=149260"
+    },
+    "modified": "2024-04-30T20:21:06",
+    "modified_gmt": "2024-04-30T20:21:06",
+    "slug": "features",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/features/",
+    "title": {
+        "rendered": "Features"
+    },
+    "content": {
+        "rendered": "\n<p>Welcome to the Features documentation. In this chapter, you will learn about various features supported by the WordPress block theming system.</p>\n\n\n\n<p>This chapter does not have a singular focus. Instead, it offers information on several different topics that will help you work with more advanced features, stepping beyond the basics that you learned in <a href=\"https://developer.wordpress.org/themes/global-settings-and-styles/\">Global Settings and Styles</a> and <a href=\"https://developer.wordpress.org/themes/templates/\">Templates</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Navigating this chapter</h2>\n\n\n\n<p>Use the following links to locate a topic within this chapter. Each article covers a specific feature related to building block themes, and you can explore each at your own pace.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://developer.wordpress.org/themes/features/block-style-variations/\"><strong>Block Style Variations</strong></a><strong>:</strong> Build custom block style variations (aka: block styles) for your users to select.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/features/block-stylesheets/\"><strong>Block Stylesheets</strong></a><strong>:</strong> Register per-block stylesheets to compartmentalize your custom CSS and make your theme load faster.</li>\n\n\n\n<li><a href=\"https://developer.wordpress.org/themes/features/block-variations/\"><strong>Block Variations</strong></a><strong>:</strong> Register variations on the default settings for a block and let your users add them via the interface.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149260",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149260",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 3,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149260/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153685,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/149260/revisions/153685"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149260"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

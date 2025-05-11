@@ -1,0 +1,91 @@
+{
+    "id": 157186,
+    "date": "2025-02-21T04:17:13",
+    "date_gmt": "2025-02-21T04:17:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/features/field/select/"
+    },
+    "modified": "2025-02-21T04:17:31",
+    "modified_gmt": "2025-02-21T04:17:31",
+    "slug": "select",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/features/field/select/",
+    "title": {
+        "rendered": "Select Field"
+    },
+    "content": {
+        "rendered": "<p>The Select field provides a dropdown interface for selecting single or multiple options from a predefined list.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Single/multiple selection</li>\n<li>Custom choices</li>\n<li>Ajax loading support</li>\n<li>Placeholder text</li>\n<li>Conditional logic</li>\n</ul>\n<h2>Settings</h2>\n<ul>\n<li>Choices &#8211; Define available options</li>\n<li>Default Value &#8211; Set initial selection</li>\n<li>Allow Null &#8211; Make selection optional</li>\n<li>Multiple &#8211; Enable multiple selections</li>\n<li>UI &#8211; Enhanced select interface</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157183,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157186",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157186",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157186/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157229,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157186/revisions/157229"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157183"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157186"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 13287229,
+    "date": "2020-08-20T13:00:42",
+    "date_gmt": "2020-08-20T13:00:42",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13287229"
+    },
+    "modified": "2023-01-13T20:37:36",
+    "modified_gmt": "2023-01-13T20:37:36",
+    "slug": "moving-blocks",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/moving-blocks/",
+    "title": {
+        "rendered": "Moving blocks"
+    },
+    "content": {
+        "rendered": "\n<p>There are three different ways to move or change the position of a block within your post or page from the admin screen of the\u00a0<a href=\"https://wordpress.org/documentation/article/wordpress-editor/\">WordPress Block Editor</a>: using the move handles, drag &amp; drop, or using the <em>Move to </em>option in the Block toolbar (under the More options three-dot menu).</p>\n\n\n\n<h2 class=\"wp-block-heading\">Using the move handles </h2>\n\n\n\n<p>The move handles are the up and down arrow handles in the Block toolbar of a selected block.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.52.18-AM.png\" alt=\"Using the move handles\" class=\"wp-image-15895269\" width=\"609\" height=\"165\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.52.18-AM.png 812w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.52.18-AM-300x81.png 300w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.52.18-AM-768x208.png 768w\" sizes=\"auto, (max-width: 609px) 100vw, 609px\" /></figure>\n\n\n\n<p><strong>NOTE</strong>: If you set your WordPress Block Editor to display the Block toolbar pinned to the top of the WordPress block editor (right under the top toolbar) instead of appearing directly above the block, then the move handles will appear right under the top toolbar.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.51.00-AM.png\" alt=\"Using the move handles when the block toolbar is pinned to the top toolbar\" class=\"wp-image-15895266\" width=\"758\" height=\"248\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.51.00-AM.png 1010w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.51.00-AM-300x98.png 300w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.51.00-AM-768x251.png 768w\" sizes=\"auto, (max-width: 758px) 100vw, 758px\" /></figure>\n\n\n\n<p>The up and down arrow icons in a Block toolbar can be used to move the selected block up and down in your post or page. </p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/07/168280683-b6cc0f74-15ae-4e0a-bb86-5fd9ff3cf09d.mp4\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Using the drag &amp; drop</h2>\n\n\n\n<p>To drag and drop the selected block to a new location on the post or page, use the rectangle of dots in the Block toolbar of the selected block.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.58.42-AM.png\" alt=\"Using the drag and drop\" class=\"wp-image-15895281\" width=\"608\" height=\"177\" srcset=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.58.42-AM.png 810w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.58.42-AM-300x87.png 300w, https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-9.58.42-AM-768x224.png 768w\" sizes=\"auto, (max-width: 608px) 100vw, 608px\" /></figure>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">The drag and drop option is not available if you set your WordPress Block Editor to display the Block toolbar pinned to the top of the WordPress block editor (right under the top toolbar) instead of appearing directly above the block.</p>\n\n\n\n<p>To drag and drop the selected block, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/07/168280680-4f62dc53-063a-4d70-a5fd-1a327393f022.mp4\"></video></figure>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"using-the-move-to-option\">Using the \u201cMove To\u201d option in the block toolbar</h2>\n\n\n\n<p>The <em>Move to</em> option can be found by selecting a block and clicking the three-dot menu in the block toolbar.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-10.06.38-AM-1-1024x852.png\" alt=\"Using the Move to option in the block toolbar\" class=\"wp-image-15895298\" width=\"768\" height=\"639\" /></figure>\n\n\n\n<p><strong>NOTE</strong>: If you set your WordPress Block Editor to display the Block toolbar pinned to the top of the WordPress block editor (right under the top toolbar) instead of appearing directly above the block, then the <em>Move to</em> option can be found following the same steps.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/08/Screen-Shot-2022-08-07-at-10.19.13-AM-1-1024x835.png\" alt=\"Using the Move to option when the block toolbar is pinned to the top toolbar\" class=\"wp-image-15895315\" width=\"768\" height=\"626\" /></figure>\n\n\n\n<p>On selecting the&nbsp;<em>Move to </em>option, you will get a blue line inside your content. You can then use the arrows to move that line, up and down to where you want the selected content to be moved. Hitting&nbsp;<code>return</code>&nbsp;on your keyboard at that point moves the block to that position</p>\n\n\n\n<figure class=\"wp-block-video aligncenter\"><video autoplay controls loop muted src=\"https://wordpress.org/documentation/files/2020/08/Using-the-Move-To-Option.mp4\" playsinline></video></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h4 class=\"wp-block-heading\" id=\"changelog\"><strong>Changelog </strong></h4>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-08-07\n<ul class=\"wp-block-list\">\n<li>Updated content and screenshots for 6.0</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-02-16\n<ul class=\"wp-block-list\">\n<li>Updated screenshots and videos for 5.9</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-08-20</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>There are three different ways to move or change the position of a block within your post or page from the admin screen of the\u00a0WordPress Block Editor: using the move handles, drag &amp; drop, or using the Move to option in the Block toolbar (under the More options three-dot menu). Using the move handles The [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-13287229",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13287229",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13287229"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13287229/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355269,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13287229/revisions/16355269"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13287229"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13287229"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

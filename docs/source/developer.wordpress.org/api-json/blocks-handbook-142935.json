@@ -1,0 +1,91 @@
+{
+    "id": 142935,
+    "date": "2022-09-13T09:54:47",
+    "date_gmt": "2022-09-13T09:54:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/"
+    },
+    "modified": "2024-10-30T17:09:47",
+    "modified_gmt": "2024-10-30T17:09:47",
+    "slug": "global-styles-filters",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/",
+    "title": {
+        "rendered": "Global Styles Filters"
+    },
+    "content": {
+        "rendered": "<p>WordPress 6.1 has introduced some server-side filters to hook into the <code>theme.json</code> data provided at the different data layers:</p>\n<ul>\n<li><code>wp_theme_json_data_default</code>: hooks into the default data provided by WordPress</li>\n<li><code>wp_theme_json_data_blocks</code>: hooks into the data provided by the blocks</li>\n<li><code>wp_theme_json_data_theme</code>: hooks into the data provided by the theme</li>\n<li><code>wp_theme_json_data_user</code>: hooks into the data provided by the user</li>\n</ul>\n<p>Each filter receives an instance of the <code>WP_Theme_JSON_Data</code> class with the data for the respective layer. To provide new data, the filter callback needs to use the <code>update_with( $new_data )</code> method, where <code>$new_data</code> is a valid <code>theme.json</code>-like structure. As with any <code>theme.json</code>, the new data needs to declare which <code>version</code> of the <code>theme.json</code> is using, so it can correctly be migrated to the runtime one, should it be different.</p>\n<p><em>Example:</em></p>\n<p>This is how to pass a new color palette for the theme and disable the text color UI:</p>\n<pre><code class=\"language-php\">function wpdocs_filter_theme_json_theme( $theme_json ){\n    $new_data = array(\n        'version'  =&gt; 2,\n        'settings' =&gt; array(\n            'color' =&gt; array(\n                'text'       =&gt; false,\n                'palette'    =&gt; array( /* New palette */\n                    array(\n                        'slug'  =&gt; 'foreground',\n                        'color' =&gt; 'black',\n                        'name'  =&gt; __( 'Foreground', 'theme-domain' ),\n                    ),\n                    array(\n                        'slug'  =&gt; 'background',\n                        'color' =&gt; 'white',\n                        'name'  =&gt; __( 'Background', 'theme-domain' ),\n                    ),\n                ),\n            ),\n        ),\n    );\n\n    return $theme_json-&gt;update_with( $new_data );\n}\nadd_filter( 'wp_theme_json_data_theme', 'wpdocs_filter_theme_json_theme' );\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134419,
+    "menu_order": 82,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-142935",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/142935",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/142935/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152045,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/142935/revisions/152045"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134419"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=142935"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

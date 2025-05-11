@@ -1,0 +1,109 @@
+{
+    "id": 16356162,
+    "date": "2023-03-28T03:25:43",
+    "date_gmt": "2023-03-28T03:25:43",
+    "guid": {
+        "rendered": "https://wordpress.org/documentation/?post_type=helphub_article&#038;p=16356162"
+    },
+    "modified": "2024-06-08T17:54:32",
+    "modified_gmt": "2024-06-08T17:54:32",
+    "slug": "post-author-name-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/post-author-name-block/",
+    "title": {
+        "rendered": "Post Author Name block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>The <strong>Post Author </strong>block<em> </em>displays the username of the post\u2019s author. This block is primarily nested inside a&nbsp;<a href=\"https://wordpress.org/documentation/article/query-loop-block/\">query loop</a>&nbsp;block and helps to customize the appearance of the query loop.&nbsp;This block is a part of the <a href=\"https://wordpress.org/documentation/article/post-author-block/\">Post Author block</a> but exists on its own for deeper customization. </p>\n\n\n\n<p>You can insert this block elsewhere by clicking the&nbsp;<strong>Add block&nbsp;</strong>icon to open the block inserter pop-up window and search for the Post Author Name block. You can also type&nbsp;<kbd>/Post Author name</kbd>&nbsp;and hit&nbsp;<kbd>enter</kbd>&nbsp;in a new paragraph block to add one quickly.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">Detailed instructions on adding blocks can be found <a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">here</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block toolbar</h2>\n\n\n\n<p>Each block has its own toolbar, which contains unique controls that let you customize or configure the block. The Post Author block has the following options on its toolbar:</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Transform to</strong></p>\n\n\n\n<p>If you click the <strong>Post Author</strong> icon on the toolbar, you\u2019ll open the <strong>Transform to </strong>options to convert the block into <strong>Columns</strong>, <strong>Group</strong>, and <strong>Post Author Name</strong> blocks.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/Transform-menu-for-Post-Author-Name-block.png\" alt=\"Transform menu for Post Author Name block.\" class=\"wp-image-16356164\" style=\"width:395px;height:283px\" width=\"395\" height=\"283\" srcset=\"https://wordpress.org/documentation/files/2023/03/Transform-menu-for-Post-Author-Name-block.png 790w, https://wordpress.org/documentation/files/2023/03/Transform-menu-for-Post-Author-Name-block-300x215.png 300w, https://wordpress.org/documentation/files/2023/03/Transform-menu-for-Post-Author-Name-block-768x550.png 768w\" sizes=\"auto, (max-width: 395px) 100vw, 395px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Block moving tools</strong></p>\n\n\n\n<p>The <strong>Drag</strong> button lets you drag and drop the Post Author block and reposition it anywhere on the editor, while the <strong>Move up</strong> and <strong>Move down</strong> buttons let you move the Post Author block up or down on the editor.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/Block-movers-in-the-post-author-name-block.png\" alt=\"Block toolbar options for the Post Author Name block with a red box around the mover controls for up and down options. \" class=\"wp-image-16356165\" style=\"width:351px;height:99px\" width=\"351\" height=\"99\" srcset=\"https://wordpress.org/documentation/files/2023/03/Block-movers-in-the-post-author-name-block.png 468w, https://wordpress.org/documentation/files/2023/03/Block-movers-in-the-post-author-name-block-300x85.png 300w\" sizes=\"auto, (max-width: 351px) 100vw, 351px\" /></figure>\n\n\n\n<p>If the Post Author is inside a row block, the <strong>Move up</strong> and <strong>Move down</strong> buttons are replaced by the <strong>Move left </strong>and <strong>Move right </strong>buttons to move the Post Author block inside the row block.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/Block-mover-tools-left-and-right-in-post-author-name-block.png\" alt=\"Block toolbar options for the Post Author Name block with a red box around the mover controls for left and right options. \" class=\"wp-image-16356166\" style=\"width:360px;height:99px\" width=\"360\" height=\"99\" srcset=\"https://wordpress.org/documentation/files/2023/03/Block-mover-tools-left-and-right-in-post-author-name-block.png 480w, https://wordpress.org/documentation/files/2023/03/Block-mover-tools-left-and-right-in-post-author-name-block-300x83.png 300w\" sizes=\"auto, (max-width: 360px) 100vw, 360px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More options</strong></p>\n\n\n\n<p>Details about <strong>More options</strong> can be found in this <a href=\"https://wordpress.org/documentation/article/more-options/\" data-type=\"helphub_article\" data-id=\"13748329\">support article</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Block settings</h2>\n\n\n\n<p>Every block has specific options in the block settings panel. To open it, select the block and click the <strong>Settings </strong>button at the top-right section of the editor, or click the <strong>Options </strong>button on the block toolbar and select <strong>show more settings</strong>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Settings</strong></p>\n\n\n\n<p>The settings section lets you choose whether to have the Post Author Name link to the same author&#8217;s archive with an option to toggle that on or off.</p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/Post-Author-Name-settings.png\" alt=\"Post Author Name settings showing a red arrow pointing to the option to toggle on and off the ability to link to an author's archive. \" class=\"wp-image-16356168\" style=\"width:414px;height:329px\" width=\"414\" height=\"329\" srcset=\"https://wordpress.org/documentation/files/2023/03/Post-Author-Name-settings.png 552w, https://wordpress.org/documentation/files/2023/03/Post-Author-Name-settings-300x238.png 300w\" sizes=\"auto, (max-width: 414px) 100vw, 414px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Color</strong></p>\n\n\n\n<p>The <strong>Post Author&nbsp;Name block </strong>provides Color settings options to change the text, background, and link colors. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">Color settings overview</a>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Typography</strong></p>\n\n\n\n<p>The <strong><strong>Post Author&nbsp;Name block </strong></strong>provides typography settings to change the font family, appearance, line height, letter spacing, decoration, letter case, and font size. </p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Typography settings overview</a>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Dimensions</strong></p>\n\n\n\n<p>The <strong><strong>Post Author&nbsp;block </strong></strong>provides dimension settings options to add padding and margin.</p>\n\n\n\n<p>For details refer to this support article: <a href=\"https://wordpress.org/documentation/article/dimension-controls-overview/\">Dimension settings overview</a>.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced section lets you add CSS classes to use a custom style for the selected&nbsp;<strong>Post Author</strong> <strong>Name</strong>&nbsp;block and to apply any changes globally when you&#8217;re in the <a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a> using a block theme. </p>\n\n\n\n<figure class=\"wp-block-image size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://wordpress.org/documentation/files/2023/03/Post-author-name-advanced-settings.png\" alt=\"Post Author Name settings showing the advanced settings available including additional CSS classes and the ability to apply changes globally, available when in the Site Editor. \" class=\"wp-image-16356169\" style=\"width:277px;height:303px\" width=\"277\" height=\"303\" srcset=\"https://wordpress.org/documentation/files/2023/03/Post-author-name-advanced-settings.png 554w, https://wordpress.org/documentation/files/2023/03/Post-author-name-advanced-settings-274x300.png 274w\" sizes=\"auto, (max-width: 277px) 100vw, 277px\" /></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-container-core-group-is-layout-9e092a97 wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2023-03-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks The Post Author block displays the username of the post\u2019s author. This block is primarily nested inside a&nbsp;query loop&nbsp;block and helps to customize the appearance of the query loop.&nbsp;This block is a part of the Post Author block but exists on its own for deeper customization. You can [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-16356162",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356162",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16356162"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356162/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360362,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/16356162/revisions/16360362"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16356162"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=16356162"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 134519,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/unit-control/"
+    },
+    "modified": "2024-11-29T15:34:13",
+    "modified_gmt": "2024-11-29T15:34:13",
+    "slug": "unit-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/unit-control/",
+    "title": {
+        "rendered": "UnitControl"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>UnitControl</code> allows the user to set a numeric quantity as well as a unit (e.g. <code>px</code>).</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { __experimentalUnitControl as UnitControl } from '@wordpress/components';\n\nconst Example = () =&gt; {\n    const [ value, setValue ] = useState( '10px' );\n\n    return &lt;UnitControl __next40pxDefaultSize onChange={ setValue } value={ value } /&gt;;\n};\n</code></pre>\n<h2>Props</h2>\n<h3><code>disableUnits</code>: <code>boolean</code></h3>\n<p>If true, the unit <code>&lt;select&gt;</code> is hidden.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isPressEnterToChange</code>: <code>boolean</code></h3>\n<p>If <code>true</code>, the <code>ENTER</code> key press is required in order to trigger an <code>onChange</code>. If enabled, a change is also triggered when tabbing away (<code>onBlur</code>).</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isResetValueOnUnitChange</code>: <code>boolean</code></h3>\n<p>If <code>true</code>, and the selected unit provides a <code>default</code> value, this value is set when changing units.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3><code>isUnitSelectTabbable</code>: <code>boolean</code></h3>\n<p>Determines if the unit <code>&lt;select&gt;</code> is tabbable.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h3><code>label</code>: <code>string</code></h3>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>labelPosition</code>: <code>string</code></h3>\n<p>The position of the label (<code>top</code>, <code>side</code>, <code>bottom</code>, or <code>edge</code>).</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onBlur</code>: <code>FocusEventHandler&lt; HTMLInputElement | HTMLSelectElement &gt;</code></h3>\n<p>Callback invoked when either the quantity or unit inputs fire the <code>blur</code> event.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onFocus</code>: <code>FocusEventHandler&lt; HTMLInputElement | HTMLSelectElement &gt;</code></h3>\n<p>Callback invoked when either the quantity or unit inputs fire the <code>focus</code> event.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onChange</code>: <code>UnitControlOnChangeCallback</code></h3>\n<p>Callback when the <code>value</code> changes.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onUnitChange</code>: <code>UnitControlOnChangeCallback</code></h3>\n<p>Callback when the <code>unit</code> changes.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>size</code>: <code>string</code></h3>\n<p>Adjusts the size of the input.<br />\nSizes include: <code>default</code>, <code>small</code></p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>default</code></li>\n</ul>\n<h3><code>unit</code>: <code>string</code></h3>\n<p>Deprecated: Current unit value.<br />\nInstead, provide a unit with a value through the <code>value</code> prop.</p>\n<p>Example:</p>\n<pre><code class=\"language-jsx\">&lt;UnitControl value=\"50%\" /&gt;\n</code></pre>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>units</code>: <code>WPUnitControlUnit[]</code></h3>\n<p>Collection of available units.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<p>Example:</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { __experimentalUnitControl as UnitControl } from '@wordpress/components';\n\nconst Example = () =&gt; {\n    const [ value, setValue ] = useState( '10px' );\n\n    const units = [\n        { value: 'px', label: 'px', default: 0 },\n        { value: '%', label: '%', default: 10 },\n        { value: 'em', label: 'em', default: 0 },\n    ];\n\n    return (\n        &lt;UnitControl __next40pxDefaultSize onChange={ setValue } value={ value } units={ units } /&gt;\n    );\n};\n</code></pre>\n<p>A <code>default</code> value (in the example above, <code>10</code> for <code>%</code>), if defined, is set as the new <code>value</code> when a unit changes. This is helpful in scenarios where changing a unit may cause drastic results, such as changing from <code>px</code> to <code>vh</code>.</p>\n<h3><code>value</code>: <code>number | string</code></h3>\n<p>Current value. If passed as a string, the current unit will be inferred from this value.<br />\nFor example, a <code>value</code> of <code>50%</code> will set the current unit to <code>%</code>.</p>\n<p>Example:</p>\n<pre><code class=\"language-jsx\">&lt;UnitControl __next40pxDefaultSize value=\"50%\" /&gt;\n</code></pre>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>__next40pxDefaultSize</code>: <code>boolean</code></h3>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 230,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134519",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134519",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134519/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155913,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134519/revisions/155913"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134519"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

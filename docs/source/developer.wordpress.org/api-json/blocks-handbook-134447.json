@@ -1,0 +1,91 @@
+{
+    "id": 134447,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/color-indicator/"
+    },
+    "modified": "2024-10-30T16:55:49",
+    "modified_gmt": "2024-10-30T16:55:49",
+    "slug": "color-indicator",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/color-indicator/",
+    "title": {
+        "rendered": "ColorIndicator"
+    },
+    "content": {
+        "rendered": "<p>ColorIndicator is a React component that renders a specific color in a circle. It&#8217;s often used to summarize a collection of used colors in a child component.</p>\n<h3>Single component</h3>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/user-images.githubusercontent.com/881729/147558034-cba09db5-2f06-458b-a7b1-fd2f2ffb982a.png?ssl=1\" alt=\"simple color indicator\" /></p>\n<h3>Used in sidebar</h3>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/user-images.githubusercontent.com/881729/147559177-69ce52e1-30dc-4f24-8483-ca2a580f434f.png?ssl=1\" alt=\"multiple color indicator\" /></p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { ColorIndicator } from '@wordpress/components';\n\nconst MyColorIndicator = () =&gt; &lt;ColorIndicator colorValue=\"#0073aa\" /&gt;;\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3><code>className</code>: <code>string</code></h3>\n<p>Extra classes for the used <code>&lt;span&gt;</code> element. By default only <code>component-color-indicator</code> is added.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>colorValue</code>: <code>CSSProperties[ 'background' ]</code></h3>\n<p>The color of the indicator. Any value from the CSS <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/background\"><code>background</code></a> property is supported.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 130,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134447",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134447",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 7,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134447/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151879,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134447/revisions/151879"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134447"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

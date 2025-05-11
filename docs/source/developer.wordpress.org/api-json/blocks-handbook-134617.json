@@ -1,0 +1,91 @@
+{
+    "id": 134617,
+    "date": "2021-03-09T08:38:24",
+    "date_gmt": "2021-03-09T08:38:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/explanations/architecture/"
+    },
+    "modified": "2025-01-07T18:34:11",
+    "modified_gmt": "2025-01-07T18:34:11",
+    "slug": "architecture",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/explanations/architecture/",
+    "title": {
+        "rendered": "Architecture"
+    },
+    "content": {
+        "rendered": "<p>Let\u2019s look at the big picture and the architectural and UX principles of the block editor and the Gutenberg repository.</p>\n<h2>Editor</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/\">Key concepts</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/data-flow/\">Data format and data flow</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/entities/\">Entities and undo/redo</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/full-site-editing-templates/\">Site editing templates</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/styles/\">Styles in the editor</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/performance/\">Performance</a>.</li>\n</ul>\n<h2>Gutenberg repository</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/modularity/\">Modularity and WordPress Packages</a>.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/folder-structure/\">Understand the repository folder structure</a>.</li>\n<li><strong>Outdated!</strong> <a href=\"https://developer.wordpress.org/block-editor/explanations/architecture/automated-testing/\">Why is Puppeteer the tool of choice for end-to-end tests?</a>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134616,
+    "menu_order": 354,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134617",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151297,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134617/revisions/151297"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134616"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134617"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 13173655,
+    "date": "2020-07-27T06:27:07",
+    "date_gmt": "2020-07-27T06:27:07",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13173655"
+    },
+    "modified": "2024-06-08T19:29:43",
+    "modified_gmt": "2024-06-08T19:29:43",
+    "slug": "speaker-deck-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/speaker-deck-embed/",
+    "title": {
+        "rendered": "Speaker Deck embed"
+    },
+    "content": {
+        "rendered": "\n\n\n<p>The Speaker Deck embed block will allow users to embed their own slides/presentation in their post/page. Users need to create an account to upload their own slides/presentation on Speaker Deck. You don\u2019t need a Speaker Deck account to embed a presentation, although it needs to be public.</p>\n\n\n\n<p><strong>Embedded Speaker Deck Slide</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"711\" height=\"407\" src=\"https://wordpress.org/documentation/files/2020/07/image-48.png\" alt=\" Screenshot of Speaker Deck\" class=\"wp-image-13173656\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-48.png 711w, https://wordpress.org/documentation/files/2020/07/image-48-300x172.png 300w\" sizes=\"auto, (max-width: 711px) 100vw, 711px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to Embed a slide from Speaker Deck&nbsp;</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Find the URL of your Speaker Deck slide</li>\n</ol>\n\n\n\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log in to your Speaker Deck account and visit the My Decks menu to get your all decks&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"513\" src=\"https://wordpress.org/documentation/files/2020/07/image-49-1024x513.png\" alt=\"Screenshot of Speaker Deck\" class=\"wp-image-13173658\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-49-1024x513.png 1024w, https://wordpress.org/documentation/files/2020/07/image-49-300x150.png 300w, https://wordpress.org/documentation/files/2020/07/image-49-768x385.png 768w, https://wordpress.org/documentation/files/2020/07/image-49.png 1200w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Open the deck that you want to embed. After that Copy the link from the browser address bar.</p>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Add the Speaker Deck block from the block list&nbsp;</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161037725-85bd3595-c839-4312-93c0-ec6f9c70a21b.png\" alt=\"Screenshot adding the Speaker Deck block to a page or post\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the Deck link into the URL box&nbsp;</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161038851-7a051c65-9e37-4a4f-8d55-47c48b334253.png\" alt=\"The correct URL to copy to use the embed block\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click the \u201cEmbed\u201d button</li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161039067-69b1a744-1aa1-4b7e-b2a9-323e43832089.png\" alt=\"Preview of the embedded Speaker Deck video within the WordPress editor.\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: Try again with a different URL or convert to link.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161039572-ca4f6d43-3d9c-4195-9de2-32f31e620bcf.png\" alt=\"Example of a URL that cannot be embedded. Two options are presented, try again or convert to link.\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Speaker Deck embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/1508963/164016766-bdbd8008-0e92-465d-ab5a-d0c98ea62d49.png\" alt=\"Block Toolbar with options available for the Speaker Deck Block.\" /></figure>\n\n\n\n<p><strong>Transform to</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161039947-ef59200b-6e10-4f53-9ec4-9022fcd50990.png\" alt=\"Options to transform the Speaker Deck block to Paragraph, Columns or Group.\" /></figure>\n\n\n\n<p>You can transform a Speaker Deck embed to a Group. This would give you the ability to change the background color around the Speaker Deck embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161040416-6121804a-2642-4fa5-bad5-a639c4fa44e6.png\" alt=\"Editor view of an Speaker Deck Embed as a group with Color Settings controls\" /><figcaption class=\"wp-element-caption\">Editor view of an Speaker Deck Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<p><strong>Change Alignment </strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161040849-29b189d4-05b5-4825-bd36-cf46077089b8.png\" alt=\"Speaker Deck Embed with a grey background.\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None</strong> &#8211; No alignment.</li>\n\n\n\n<li><strong>Align left</strong> &#8211; Make the Speaker Deck post left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Speaker Deck post alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the&nbsp; Speaker Deck] post align right</li>\n</ul>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Speaker Deck Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161041061-35fc54ec-4b16-4d11-b18f-00fed34568ec.png\" alt=\"Editing the block URL via the &quot;edit&quot; option.\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options:</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings&nbsp;</h2>\n\n\n\n<p>Besides the Advanced section, the Speaker Deck embed has only one setting in the \u201cBlock Settings\u201d sidebar: Media Settings.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media Settings</strong></p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"406\" height=\"182\" src=\"https://wordpress.org/documentation/files/2020/07/image-29.png\" alt=\"Media settings for the embed block with the toggle OFF for resizing on smaller devices.\" class=\"wp-image-13173562\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-29.png 406w, https://wordpress.org/documentation/files/2020/07/image-29-300x134.png 300w\" sizes=\"auto, (max-width: 406px) 100vw, 406px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"408\" height=\"197\" src=\"https://wordpress.org/documentation/files/2020/07/image-28.png\" alt=\"Media settings for the embed block with the toggle ON for resizing on smaller devices.\" class=\"wp-image-13173561\" srcset=\"https://wordpress.org/documentation/files/2020/07/image-28.png 408w, https://wordpress.org/documentation/files/2020/07/image-28-300x145.png 300w\" sizes=\"auto, (max-width: 408px) 100vw, 408px\" /></figure>\n</div>\n</div>\n\n\n\n<p>Via the Media Settings you can control the behavior of your post embed when viewed from a smaller device, like on a phone screen.</p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is \u201con\u201d or blue.</p>\n\n\n\n<p><strong>\u201cOff:\u201d</strong> This embed may not preserve its aspect ratio when the browser is resized. In the off position the toggle switch is gray.</p>\n\n\n\n<p><strong>\u201cOn:\u201d</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the \u201cOn\u201d position.</p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/11435772/161041297-6d03d9f2-9360-499f-9717-8ba388292afa.png\" alt=\"Additional CSS Class(es) option for the Speaker Deck Embed block.\" width=\"288\" height=\"500\" /></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-25\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n\n\n\n<li>Added alt text to images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-04-19\n<ul class=\"wp-block-list\">\n<li>Updated screenshots for 5.9</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-09-04\n<ul class=\"wp-block-list\">\n<li>Screenshots updated to 5.5</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-19\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-11\n<ul class=\"wp-block-list\">\n<li>Screenshots as per WordPress 5.5</li>\n\n\n\n<li>Embedded VideoPress video</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-07-27</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>The Speaker Deck embed block will allow users to embed their own slides/presentation in their post/page. Users need to create an account to upload their own slides/presentation on Speaker Deck. You don\u2019t need a Speaker Deck account to embed a presentation, although it needs to be public. Embedded Speaker Deck Slide Steps to Embed a [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-13173655",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173655",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13173655"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173655/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360410,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13173655/revisions/16360410"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13173655"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13173655"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

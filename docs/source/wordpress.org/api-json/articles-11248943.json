@@ -1,0 +1,109 @@
+{
+    "id": 11248943,
+    "date": "2019-03-15T11:11:59",
+    "date_gmt": "2019-03-15T11:11:59",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11248943"
+    },
+    "modified": "2023-01-16T13:07:54",
+    "modified_gmt": "2023-01-16T13:07:54",
+    "slug": "wordpress-housekeeping",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/wordpress-housekeeping/",
+    "title": {
+        "rendered": "WordPress Housekeeping"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Cleaning Your WordPress House</h2>\n\n\n\n<p>Just as with your house, WordPress requires a little housekeeping once in a while to keep it working right. Here is a list of things you should do on a&nbsp;<a href=\"/support/article/wordpress-site-maintenance/\">regularly scheduled basis</a>&nbsp;to keep your WordPress site running smoothly.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Upgrade WordPress</h2>\n\n\n\n<p>If a new release of WordPress is out, we recommend that you&nbsp;<a href=\"/support/article/updating-wordpress/\">upgrade</a>. These new releases often include&nbsp;<a href=\"/support/article/wordpress-features/\">new and improved features</a>&nbsp;and fixes. It is recommended to check in with WordPress for updates and upgrades at least every three months, six months at the most. Check&nbsp;<a href=\"https://www.wordpress.org/\">WordPress.org</a>&nbsp;or&nbsp;<a href=\"https://www.wordpress.org/downloads\">WordPress Downloads</a>&nbsp;for latest version available.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Plugins</h2>\n\n\n\n<p><a href=\"/support/article/plugins/\">Plugins</a>&nbsp;are an exciting feature of WordPress. They add functions and features to your WordPress site such as adding customized post listings to featuring a local weather forecast on your site.</p>\n\n\n\n<p>With the hundreds of plugins available, it&#8217;s fun to test drive them, trying out different ones to see what they will do, if you need them, and if they really add to your site or clutter things up. Once in a while, you should do a little housekeeping on your plugins.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Upgrade Plugins</h3>\n\n\n\n<p>Every three to six months, check for the latest plugin version. This is easy to do from the&nbsp;<a href=\"/support/article/administration-screens/\">Administration</a>&nbsp;&gt;&nbsp;<a href=\"/support/article/administration-screens/#plugins-add-functionality-to-your-blog\">Plugin</a>&nbsp;Screen. If an update is available, WordPress will notify you with a banner below the plugin. Just click the &#8220;upgrade automatically&#8221; link, or click the &#8220;Download&#8221; link if you would prefer to upgrade manually.</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter is-resized\"><a href=\"https://codex.wordpress.org/File:plugins.png\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i1.wp.com/wordpress.org/documentation/files/2019/03/plugins-screen.png?fit=1024%2C655&amp;ssl=1\" alt=\"\" class=\"wp-image-11313333\" width=\"512\" height=\"328\" srcset=\"https://wordpress.org/documentation/files/2019/03/plugins-screen.png 1134w, https://wordpress.org/documentation/files/2019/03/plugins-screen-300x192.png 300w, https://wordpress.org/documentation/files/2019/03/plugins-screen-1024x655.png 1024w, https://wordpress.org/documentation/files/2019/03/plugins-screen-768x491.png 768w\" sizes=\"auto, (max-width: 512px) 100vw, 512px\" /></a><figcaption>Administration Plugins Screen</figcaption></figure></div>\n\n\n\n<h3 class=\"wp-block-heading\">Delete Old or Unwanted Plugins</h3>\n\n\n\n<p>To uninstall a WordPress Plugin:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Go to&nbsp;<strong><a href=\"/support/article/administration-screens/#plugins-add-functionality-to-your-blog\">Plugins</a></strong>&nbsp;screen.</li><li>Find the Plugin you wish to deactivate and uninstall.</li><li>Click&nbsp;Deactivate.</li><li>Click Delete.</li></ol>\n\n\n\n<p>The Plugin will initiate the deactivation and deletion.</p>\n\n\n\n<p>Most WordPress Plugins have an option to completely uninstall themselves, though not all. If you wish to remove a WordPress Plugin permanently:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Check the WordPress Plugin instructions in the&nbsp;<strong>Details</strong>&nbsp;readme file on how to properly uninstall the Plugin.</li><li>If the WordPress Plugin required the addition of code to the WordPress Theme, manually edit the Theme files to remove it.</li><li>Deactivate the Plugin and remove it manually through your FTP program.<ol><li>Login to the site via your FTP Program.</li><li>Go to the Plugin directory and find where the Plugin is installed.</li><li>Delete the WordPress Plugin folder and/or files from your server.</li></ol></li></ol>\n\n\n\n<h3 class=\"wp-block-heading\">New Plugins</h3>\n\n\n\n<p>WordPress plugins are being added constantly. Every three to six months search the Internet or visit the <a href=\"https://wordpress.org/plugins/\">WordPress plugins repository</a> to see if there are any new plugins available that will improve your site. There might be a new plugin that will do what one of your older plugins do. </p>\n\n\n\n<h2 class=\"wp-block-heading\">Theme Housekeeping</h2>\n\n\n\n<p>Just like plugins, many users love test driving all the different&nbsp;<a href=\"/support/article/using-themes/\">WordPress Themes</a>&nbsp;available. Some users might have twenty or more Themes in their theme list. If you aren&#8217;t using them, why not do a little housekeeping on your themes?</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"https://codex.wordpress.org/File:themes.png\"><img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"548\" src=\"https://wordpress.org/documentation/files/2019/03/800px-themes.png\" alt=\"\" class=\"wp-image-11315403\" srcset=\"https://wordpress.org/documentation/files/2019/03/800px-themes.png 800w, https://wordpress.org/documentation/files/2019/03/800px-themes-300x206.png 300w, https://wordpress.org/documentation/files/2019/03/800px-themes-768x526.png 768w\" sizes=\"auto, (max-width: 800px) 100vw, 800px\" /></a><figcaption>Appearance Themes Screen</figcaption></figure></div>\n\n\n\n<p>To remove a theme from your WordPress site:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Log in to the WordPress&nbsp;<a href=\"/support/article/administration-screens/\">Administration Screen</a>.</li><li>Select the&nbsp;<a href=\"/support/article/administration-screens/#appearance-change-the-look-of-your-blog\">Appearance</a>&nbsp;screen then&nbsp;<a href=\"/support/article/administration-screens/#themes\">Themes</a>.</li><li>Select Theme Details for the theme you want to remove.</li><li>Select Delete near the bottom-right corner.</li></ol>\n\n\n\n<h3 class=\"wp-block-heading\">Get a New Theme</h3>\n\n\n\n<p>Tired of your old theme&#8217;s look? Maybe it&#8217;s time to do a little presentation housekeeping and change the look of your WordPress site. Thanks to WordPress&#8217;s support for&nbsp;<a href=\"/support/article/using-themes/\">themes</a>, changing your site&#8217;s look is easy.</p>\n\n\n\n<p>Check out the various resources for&nbsp;<a href=\"/support/article/using-themes/\">WordPress Themes</a>. If you find one you like, install it and then activate it.</p>\n\n\n\n<p>Don&#8217;t worry, your old theme will still be there. Test drive the new one for a while. You can always go back to the old one. If you are really determined to turn your theme housekeeping efforts into some serious work, check out the article on&nbsp;<a href=\"https://developer.wordpress.org/themes/\">Theme Development</a>&nbsp;to create your own unique theme.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Unwanted Images</h2>\n\n\n\n<p>Many users upload a lot of graphics to their site that they end up never using. If you find yourself with a lot of unused graphics and images, consider going through them and cleaning house by deleting them.</p>\n\n\n\n<p>If you aren&#8217;t sure you will never need them again, but you aren&#8217;t using them now and want to remove them from your site if server site space is limited, move them to a folder in your hard drive WordPress folder called&nbsp;<em>backupimages</em>&nbsp;or something similar and store them there,&nbsp;<em>just in case</em>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Database Optimization</h2>\n\n\n\n<p>Over time, your WordPress database can generate what&#8217;s called &#8220;overhead.&#8221; This condition is similar to a defragmented hard drive. There are some plugins that optimize your database (e.g. <a href=\"https://wordpress.org/plugins/wp-sweep/\">WP-Sweep</a>) </p>\n\n\n\n<h2 class=\"wp-block-heading\">Maintenance Schedule</h2>\n\n\n\n<p>In the article,\u00a0<a href=\"/support/article/wordpress-site-maintenance\">Lessons: WordPress Site Maintenance</a>, we cover website maintenance, but take a moment now to go through this list of WordPress housekeeping chores and add them to your calendar so you can clean up your site on a regular basis, keeping your WordPress site a lean and clean site to visit.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Cleaning Your WordPress House Just as with your house, WordPress requires a little housekeeping once in a while to keep it working right. Here is a list of things you should do on a&nbsp;regularly scheduled basis&nbsp;to keep your WordPress site running smoothly. Upgrade WordPress If a new release of WordPress is out, we recommend that [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        33,
+        73
+    ],
+    "class_list": [
+        "post-11248943",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-maintenance",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11248943",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11248943"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11248943/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355434,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11248943/revisions/16355434"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11248943"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11248943"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

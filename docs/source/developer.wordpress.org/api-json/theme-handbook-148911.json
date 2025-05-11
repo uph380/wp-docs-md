@@ -1,0 +1,97 @@
+{
+    "id": 148911,
+    "date": "2023-10-26T13:51:59",
+    "date_gmt": "2023-10-26T13:51:59",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=148911"
+    },
+    "modified": "2023-12-14T21:07:57",
+    "modified_gmt": "2023-12-14T21:07:57",
+    "slug": "custom-templates",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/custom-templates/",
+    "title": {
+        "rendered": "Custom Templates"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress lets you register custom templates in <code>theme.json</code>. More specifically, you can register single post, page, or CPT (custom post type) templates via the <code>customTemplates</code> property.</p>\n\n\n\n<p>It\u2019s important to make the distinction that these templates are meant for single post/page/CPT templates and not for other types of templates. When registering these templates, your theme users can select them from the edit post screen, and their post\u2019s design will match the template on the front end of the site.</p>\n\n\n\n<p>Custom templates give you a lot of flexibility in designing variations on your default post or page templates. For example, you could create a blank post template that only shows the content, design a page template with a sidebar, or even one that has no sidebars at all. Really, it depends on what your goals are for your theme project.</p>\n\n\n\n<p>This documentation is to teach you how to register custom templates via <code>theme.json</code>. For a more extensive look into how to build custom templates, check out the <a href=\"https://developer.wordpress.org/themes/templates/\">Templates documentation</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Adding custom templates</h2>\n\n\n\n<p>You can register custom templates via the <code>customTemplates</code> property in <code>theme.json</code>. It accepts an array of template objects, each defining an individual template.</p>\n\n\n\n<p>Each object passed to the <code>customTemplates</code> array supports these properties:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>name</code>:</strong> The name of your template file without the file extension.</li>\n\n\n\n<li><strong><code>title</code>:</strong> A human-readable title for your template, which may be translated.</li>\n\n\n\n<li><strong><code>postTypes</code>:</strong> An array of post type slugs that the template is usable on. This is an optional setting and defaults to the <code>page</code> post type.</li>\n</ul>\n\n\n\n<p>For block themes, WordPress will look for custom templates (all templates, actually) in the theme\u2019s <code>/templates</code> folder. Therefore, if you register a template with the name of <code>example</code>, you must also have an <code>/templates/example.html</code> file in your theme.</p>\n\n\n\n<p>You can add as many custom templates as you want to your theme. Just keep in mind the usability aspect of offering too many choices.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Registering a template</h3>\n\n\n\n<p>Suppose you wanted to create a template named Content Canvas for both pages and posts. This template will only show the site header, post/page content, and site footer. Your users can select it when they need the full content area to behave as a sort of blank canvas.</p>\n\n\n\n<p>The first step you\u2019d take is to create a <code>/templates/content-canvas.html</code> file in your theme. Don\u2019t worry about adding anything to it yet; just leave it empty for the moment.</p>\n\n\n\n<p>Now register this template in <code>theme.json</code>, as shown below:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"customTemplates\": [\n\t\t{\n\t\t\t\"name\": \"content-canvas\",\n\t\t\t\"title\": \"Content Canvas\",\n\t\t\t\"postTypes\": [\n\t\t\t\t\"page\",\n\t\t\t\t\"post\"\n\t\t\t]\n\t\t}\n\t]\n}</code></pre>\n\n\n\n<p>If you edit a post or page in the WordPress admin, you should see the new <strong>Content Canvas</strong> option under the <strong>Template</strong> selector in the <strong>Post/Page</strong> sidebar panel:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1071\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?resize=2048%2C1071&#038;ssl=1\" alt=\"WordPress post editor with the Template select control highlighted in the right sidebar.\" class=\"wp-image-148912\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-select.jpg?resize=1536%2C803&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Building a template</h3>\n\n\n\n<p>Now let\u2019s take care of actually building the template, at least for the sake of demonstration. Remember, you can learn more about building templates in the <a href=\"https://developer.wordpress.org/themes/templates/\">Templates chapter</a> of the handbook.</p>\n\n\n\n<p>Add this code to your <code>/templates/content-canvas.html</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:template-part {\"slug\":\"header\",\"tagName\":\"header\"} /--&gt;\n\n&lt;!-- wp:group {\"tagName\":\"main\",\"layout\":{\"type\":\"default\"}} --&gt;\n&lt;main class=\"wp-block-group\"&gt;\n\t&lt;!-- wp:post-content {\"layout\":{\"type\":\"constrained\"}} /--&gt;\n&lt;/main&gt;\n&lt;!-- /wp:group --&gt;\n\n&lt;!-- wp:template-part {\"slug\":\"footer\",\"tagName\":\"footer\"} /--&gt;</code></pre>\n\n\n\n<p>This will give you a working template with an open content area.</p>\n\n\n\n<p>To see what this looks like in the site editor, head over to <strong>Appearance &gt; Editor</strong> in the WordPress admin. Then, select <strong>Content Canvas</strong> under the <strong>Templates</strong> section:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1071\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?resize=2048%2C1071&#038;ssl=1\" alt=\"WordPress Site Editor showing the Content Canvas template on the screen.\" class=\"wp-image-148913\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/09/custom-templates-canvas-site-editor.jpg?resize=1536%2C803&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<p>This is just a demonstration of what is possible. The real power of custom templates is in what you build with them.</p>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148901,
+    "menu_order": 40,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148911",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148911",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148911/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 148914,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148911/revisions/148914"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148901"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148911"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

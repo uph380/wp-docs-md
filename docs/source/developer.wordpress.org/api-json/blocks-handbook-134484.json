@@ -1,0 +1,91 @@
+{
+    "id": 134484,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-items-choice/"
+    },
+    "modified": "2024-10-30T16:55:41",
+    "modified_gmt": "2024-10-30T16:55:41",
+    "slug": "menu-items-choice",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-items-choice/",
+    "title": {
+        "rendered": "MenuItemsChoice"
+    },
+    "content": {
+        "rendered": "<p><code>MenuItemsChoice</code> functions similarly to a set of <code>MenuItem</code>s, but allows the user to select one option from a set of multiple choices.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/03/MenuItemsChoice.png?ssl=1\" alt=\"MenuItemsChoice Example\" /></p>\n<h2>Design guidelines</h2>\n<p>A <code>MenuItemsChoice</code> should be housed within in its own distinct <code>MenuGroup</code>, so that the set of options are distinct from nearby <code>MenuItems</code>.</p>\n<h3>Usage</h3>\n<p><code>MenuItemsChoice</code> is used in a <code>DropdownMenu</code> to present users with a set of options. When one option in a <code>MenuItemsChoice</code> is selected, the others are automatically deselected.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/03/MenuItemsChoice-Checkbox-Keyboard-Shortcut.png?ssl=1\" alt=\"MenuItemsChoice Diagram\" /></p>\n<ol>\n<li>A checkmark icon appears next to the choice when it\u2019s enabled, and disappears when disabled.</li>\n<li>If an item in <code>MenuItemsChoice</code> has an associated keyboard shortcut, that should be displayed to the right of the menu title, aligned to the right side of the menu item. Selected choices should not have visible shortcuts, since they are already active.</li>\n</ol>\n<h4>When to use <code>MenuItemsChoice</code></h4>\n<p>Use <code>MenuItemsChoice</code> when you want users to:</p>\n<ul>\n<li>Select a single option from a set of choices in a menu.</li>\n<li>Expose all available options.</li>\n</ul>\n<p><code>MenuItemsChoice</code> should not be used to toggle individual features on and off. For that, consider using a <code>FeatureToggle</code>.</p>\n<h4>Defaults</h4>\n<p>When using <code>MenuItemsChoice</code> , <strong>one option should be selected by default</strong> (i.e., when the page loads, in the case of a web application).</p>\n<p><strong>User control</strong></p>\n<p>Selecting an option by default communicates that the user is required to choose one in the set.</p>\n<p><strong>Expediting tasks</strong></p>\n<p>When one choice in a set of <code>MenuItemsChoice</code> is the most desirable or frequently selected, it\u2019s helpful to select it by default. Doing this reduces the interaction cost and can save the user time and clicks.</p>\n<p><strong>The power of suggestion</strong></p>\n<p>Designs with a <code>MenuItemsChoice</code> option selected by default make a strong suggestion to the user. It can help them make the best decision and increase their confidence. (Use this guidance with caution, and only for good.)</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { MenuGroup, MenuItemsChoice } from '@wordpress/components';\n\nconst MyMenuItemsChoice = () =&gt; {\n    const [ mode, setMode ] = useState( 'visual' );\n    const choices = [\n        {\n            value: 'visual',\n            label: 'Visual editor',\n        },\n        {\n            value: 'text',\n            label: 'Code editor',\n        },\n    ];\n\n    return (\n        &lt;MenuGroup label=\"Editor\"&gt;\n            &lt;MenuItemsChoice\n                choices={ choices }\n                value={ mode }\n                onSelect={ ( newMode ) =&gt; setMode( newMode ) }\n            /&gt;\n        &lt;/MenuGroup&gt;\n    );\n};\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 180,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134484",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134484",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134484/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151850,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134484/revisions/151850"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134484"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

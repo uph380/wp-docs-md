@@ -1,0 +1,91 @@
+{
+    "id": 11025,
+    "date": "2014-09-24T00:15:37",
+    "date_gmt": "2014-09-24T00:15:37",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11025"
+    },
+    "modified": "2023-12-14T20:49:44",
+    "modified_gmt": "2023-12-14T20:49:44",
+    "slug": "settings",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/settings/",
+    "title": {
+        "rendered": "Settings"
+    },
+    "content": {
+        "rendered": "\n<p>WordPress provides two core APIs to make the administrative interfaces easy to build, secure, and consistent with the design of WordPress Administration.</p>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/plugins/settings/settings-api/\">Settings API</a> focuses on providing a way for developers to create forms and manage form data.</p>\n\n\n\n<p>The <a href=\"https://developer.wordpress.org/plugins/settings/options-api/\">Options API</a> focuses on managing data using a simple key/value system.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Quick Reference</h2>\n\n\n\n<p>See the complete example of <a href=\"https://developer.wordpress.org/plugins/settings/custom-settings-page/\">building a custom settings page</a> using the Settings API and Options API.</p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 9,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11025",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 21,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 131013,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11025/revisions/131013"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11025"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

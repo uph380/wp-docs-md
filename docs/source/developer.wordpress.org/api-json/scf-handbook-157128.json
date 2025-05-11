@@ -1,0 +1,91 @@
+{
+    "id": 157128,
+    "date": "2025-02-21T04:17:06",
+    "date_gmt": "2025-02-21T04:17:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/"
+    },
+    "modified": "2025-02-21T05:55:48",
+    "modified_gmt": "2025-02-21T05:55:48",
+    "slug": "code-reference",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/",
+    "title": {
+        "rendered": "Code Reference"
+    },
+    "content": {
+        "rendered": "<h2>Files</h2>\n<ul>\n<li><a href=\"acf-bidirectional-functions-file\">Acf Bidirectional Functions</a></li>\n<li><a href=\"acf-field-functions-file\">Acf Field Functions</a></li>\n<li><a href=\"acf-field-group-functions-file\">Acf Field Group Functions</a></li>\n<li><a href=\"acf-form-functions-file\">Acf Form Functions</a></li>\n<li><a href=\"acf-helper-functions-file\">Acf Helper Functions</a></li>\n<li><a href=\"acf-hook-functions-file\">Acf Hook Functions</a></li>\n<li><a href=\"acf-input-functions-file\">Acf Input Functions</a></li>\n<li><a href=\"acf-internal-post-type-functions-file\">Acf Internal Post Type Functions</a></li>\n<li><a href=\"acf-meta-functions-file\">Acf Meta Functions</a></li>\n<li><a href=\"acf-post-functions-file\">Acf Post Functions</a></li>\n<li><a href=\"acf-post-type-functions-file\">Acf Post Type Functions</a></li>\n<li><a href=\"acf-taxonomy-functions-file\">Acf Taxonomy Functions</a></li>\n<li><a href=\"acf-user-functions-file\">Acf User Functions</a></li>\n<li><a href=\"acf-utility-functions-file\">Acf Utility Functions</a></li>\n<li><a href=\"acf-value-functions-file\">Acf Value Functions</a></li>\n<li><a href=\"acf-wp-functions-file\">Acf Wp Functions</a></li>\n<li><a href=\"assets-file\">Assets</a></li>\n<li><a href=\"blocks-file\">Blocks</a></li>\n<li><a href=\"compatibility-file\">Compatibility</a></li>\n<li><a href=\"deprecated-file\">Deprecated</a></li>\n<li><a href=\"fields-file\">Fields</a></li>\n<li><a href=\"l10n-file\">L10n</a></li>\n<li><a href=\"local-fields-file\">Local Fields</a></li>\n<li><a href=\"local-json-file\">Local Json</a></li>\n<li><a href=\"local-meta-file\">Local Meta</a></li>\n<li><a href=\"locations-file\">Locations</a></li>\n<li><a href=\"loop-file\">Loop</a></li>\n<li><a href=\"revisions-file\">Revisions</a></li>\n<li><a href=\"scf-ui-options-page-functions-file\">Scf Ui Options Page Functions</a></li>\n<li><a href=\"upgrades-file\">Upgrades</a></li>\n<li><a href=\"validation-file\">Validation</a></li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 7879583,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 999,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157128",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/7879583"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157333,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128/revisions/157333"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157128"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

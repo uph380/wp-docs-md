@@ -1,0 +1,109 @@
+{
+    "id": 12940235,
+    "date": "2020-06-04T19:22:36",
+    "date_gmt": "2020-06-04T19:22:36",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=12940235"
+    },
+    "modified": "2024-06-08T19:29:53",
+    "modified_gmt": "2024-06-08T19:29:53",
+    "slug": "spotify-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/spotify-embed/",
+    "title": {
+        "rendered": "Spotify embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p>With the Spotify Embed block, you can embed tracks, podcasts, playlists &amp; albums into your posts and pages. You need a Spotify account to be able to listen to entire tracks. For users who are not logged in on their Spotify account, the Spotify Play button embed plays a 30-second long audio preview, and then the users are prompted to either login or to sign up. You don\u2019t need a Spotify account to embed a track, podcast, playlist or album.</p>\n\n\n\n<p class=\"has-medium-font-size\">Embedded Spotify track</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"286\" src=\"https://wordpress.org/documentation/files/2022/04/001-spotify_track_example.jpg\" alt=\"Spotify embed\" class=\"wp-image-15568305\" srcset=\"https://wordpress.org/documentation/files/2022/04/001-spotify_track_example.jpg 657w, https://wordpress.org/documentation/files/2022/04/001-spotify_track_example-300x131.jpg 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\">Embedded Spotify Podcast</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"236\" src=\"https://wordpress.org/documentation/files/2022/04/002-spotify_podcast_example.jpg\" alt=\"Spotify embed for a podcast \" class=\"wp-image-15568308\" srcset=\"https://wordpress.org/documentation/files/2022/04/002-spotify_podcast_example.jpg 657w, https://wordpress.org/documentation/files/2022/04/002-spotify_podcast_example-300x108.jpg 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\">Embedded Spotify Album</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"286\" src=\"https://wordpress.org/documentation/files/2022/04/003-spotify_album_example.jpg\" alt=\"Spotify embed for a playlist \" class=\"wp-image-15568310\" srcset=\"https://wordpress.org/documentation/files/2022/04/003-spotify_album_example.jpg 657w, https://wordpress.org/documentation/files/2022/04/003-spotify_album_example-300x131.jpg 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Steps to Embed a track from Spotify</strong></p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Find your track link on Spotify</li>\n</ol>\n\n\n\n<p>In the Web Player select the track and click on the three dots (options menu). Click on &#8220;Share&#8221; and then click on \u201cCopy Spotify URI<strong>\u201d</strong>.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"472\" src=\"https://wordpress.org/documentation/files/2022/04/01-spotify_copy_link-1024x472.jpg\" alt=\"How to get a Spotify embed URL\" class=\"wp-image-15568312\" srcset=\"https://wordpress.org/documentation/files/2022/04/01-spotify_copy_link-1024x472.jpg 1024w, https://wordpress.org/documentation/files/2022/04/01-spotify_copy_link-300x138.jpg 300w, https://wordpress.org/documentation/files/2022/04/01-spotify_copy_link-768x354.jpg 768w, https://wordpress.org/documentation/files/2022/04/01-spotify_copy_link.jpg 1099w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Alternatively, on the Desktop application select the track and click on the options menu. Click on \u201cShare\u201d<strong> </strong>and then click on \u201cCopy Song Link<strong>\u201d</strong>.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/02-spotify_copy_link_desktop-2-1.jpg\" alt=\"How to get a spotify embed URL \" class=\"wp-image-15568345\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"2\">\n<li>Add a Spotify Embed block to your page/post</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"125\" src=\"https://wordpress.org/documentation/files/2022/04/03-add_block.jpg\" alt=\"How to add the Spotify embed block to a post or page\" class=\"wp-image-15568346\" srcset=\"https://wordpress.org/documentation/files/2022/04/03-add_block.jpg 400w, https://wordpress.org/documentation/files/2022/04/03-add_block-300x94.jpg 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol class=\"wp-block-list\" start=\"3\">\n<li>Paste the track link into the text box</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"660\" height=\"272\" src=\"https://wordpress.org/documentation/files/2022/04/04-embed_button.jpg\" alt=\"How to add a Spotify URL to the embed \" class=\"wp-image-15568350\" srcset=\"https://wordpress.org/documentation/files/2022/04/04-embed_button.jpg 660w, https://wordpress.org/documentation/files/2022/04/04-embed_button-300x124.jpg 300w\" sizes=\"auto, (max-width: 660px) 100vw, 660px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"4\">\n<li>Click the \u201cEmbed\u201d button</li>\n</ol>\n\n\n\n<p>If it\u2019s a link that can be successfully embedded you will see a preview in your editor.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"658\" height=\"347\" src=\"https://wordpress.org/documentation/files/2022/04/05-spotify_preview.jpg\" alt=\"Preview of the embed\" class=\"wp-image-15568360\" srcset=\"https://wordpress.org/documentation/files/2022/04/05-spotify_preview.jpg 658w, https://wordpress.org/documentation/files/2022/04/05-spotify_preview-300x158.jpg 300w\" sizes=\"auto, (max-width: 658px) 100vw, 658px\" /></figure>\n\n\n\n<p>If you use a URL that can\u2019t be embedded, the block shows the message <em>\u201cSorry, this content could not be embedded.\u201d </em>You will have two choices: Try again with a different URL or convert to link.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"658\" height=\"356\" src=\"https://wordpress.org/documentation/files/2022/04/06-spotify_wrong_link.jpg\" alt=\"How to add a Spotify URL to the embed \" class=\"wp-image-15568361\" srcset=\"https://wordpress.org/documentation/files/2022/04/06-spotify_wrong_link.jpg 658w, https://wordpress.org/documentation/files/2022/04/06-spotify_wrong_link-300x162.jpg 300w\" sizes=\"auto, (max-width: 658px) 100vw, 658px\" /></figure>\n\n\n\n<ol class=\"wp-block-list\" start=\"5\">\n<li>Click on \u201cPreview\u201d to see how it will look on the front-end.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"286\" src=\"https://wordpress.org/documentation/files/2022/04/001-spotify_track_example-1-1.jpg\" alt=\"Preview of the embed\" class=\"wp-image-15568363\" srcset=\"https://wordpress.org/documentation/files/2022/04/001-spotify_track_example-1-1.jpg 657w, https://wordpress.org/documentation/files/2022/04/001-spotify_track_example-1-1-300x131.jpg 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<p><strong>Embed other Spotify links&nbsp;</strong></p>\n\n\n\n<p>Podcasts, albums and playlists can also be embedded with the Spotify embed block.</p>\n\n\n\n<p><strong>Podcast</strong></p>\n\n\n\n<p>A podcast URL can be embedded and the entire podcast can be listened from the embed box, with an additional navigation for the podcast.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"296\" src=\"https://wordpress.org/documentation/files/2022/04/07-embed_podcast.jpg\" alt=\"Podcast URL for the Spotify embed\" class=\"wp-image-15568365\" srcset=\"https://wordpress.org/documentation/files/2022/04/07-embed_podcast.jpg 657w, https://wordpress.org/documentation/files/2022/04/07-embed_podcast-300x135.jpg 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<p><strong>Album/Playlist</strong></p>\n\n\n\n<p>A album or playlist URL can be embedded and the complete track list shows in the embed box, with an additional navigation for the current track in the top.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"657\" height=\"346\" src=\"https://wordpress.org/documentation/files/2022/04/08-embed_album.jpg\" alt=\"Spotify Album playlist\" class=\"wp-image-15568367\" srcset=\"https://wordpress.org/documentation/files/2022/04/08-embed_album.jpg 657w, https://wordpress.org/documentation/files/2022/04/08-embed_album-300x158.jpg 300w\" sizes=\"auto, (max-width: 657px) 100vw, 657px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>Besides the Mover and Drag &amp; Drop Handle, the Block Toolbar for the Spotify embed shows four buttons:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Edit URL, and</li>\n\n\n\n<li>More Options.</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"290\" height=\"111\" src=\"https://wordpress.org/documentation/files/2022/04/09-spotify_toolbar.jpg\" alt=\"Spotify embed block toolbar\" class=\"wp-image-15568376\" /></figure>\n\n\n\n<p><strong>Transform to</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"316\" height=\"229\" src=\"https://wordpress.org/documentation/files/2022/04/10-transform_to.jpg\" alt=\"Transform option in the SoundCloud block\" class=\"wp-image-15568408\" srcset=\"https://wordpress.org/documentation/files/2022/04/10-transform_to.jpg 316w, https://wordpress.org/documentation/files/2022/04/10-transform_to-300x217.jpg 300w\" sizes=\"auto, (max-width: 316px) 100vw, 316px\" /></figure>\n\n\n\n<p>You can transform a Spotify embed to a Group. This would give you the ability to change the background color around the Spotify embed.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"496\" src=\"https://wordpress.org/documentation/files/2022/04/11-group_color-1024x496.jpg\" alt=\"Editor view of a Spotify Embed as a group with Color Settings controls\" class=\"wp-image-15568410\" srcset=\"https://wordpress.org/documentation/files/2022/04/11-group_color-1024x496.jpg 1024w, https://wordpress.org/documentation/files/2022/04/11-group_color-300x145.jpg 300w, https://wordpress.org/documentation/files/2022/04/11-group_color-768x372.jpg 768w, https://wordpress.org/documentation/files/2022/04/11-group_color.jpg 1149w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">Editor view of a Spotify Embed as a group with Color Settings controls</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"648\" height=\"306\" src=\"https://wordpress.org/documentation/files/2022/04/12-spotify_color_example.jpg\" alt=\"Spotify embed with a blue background.\" class=\"wp-image-15568415\" srcset=\"https://wordpress.org/documentation/files/2022/04/12-spotify_color_example.jpg 648w, https://wordpress.org/documentation/files/2022/04/12-spotify_color_example-300x142.jpg 300w\" sizes=\"auto, (max-width: 648px) 100vw, 648px\" /><figcaption class=\"wp-element-caption\">Spotify embed with a blue background.</figcaption></figure>\n\n\n\n<p><strong>Change Alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/13-alignment-1.jpg\" alt=\"Change alignment in the SoundCloud block\" class=\"wp-image-15568417\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> &#8211; Make the Spotify post left aligned</li>\n\n\n\n<li><strong>Align center</strong> &#8211; Make the Spotify&nbsp; post alignment centered</li>\n\n\n\n<li><strong>Align right </strong>&#8211; Make the Spotify post align right</li>\n\n\n\n<li><strong>Wide width</strong> &#8211; Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> &#8211; Extend the Spotify post to cover the full width of the screen&nbsp;</li>\n</ul>\n\n\n\n<p><strong>Edit URL</strong></p>\n\n\n\n<p>Via the edit URL, you can change the Spotify Embed URL in the embed block. Overwrite the existing URL and click on the &#8220;Embed&#8221; Button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"661\" height=\"271\" src=\"https://wordpress.org/documentation/files/2022/04/14-edit_url.jpg\" alt=\"Edit URL in the Spotify block\" class=\"wp-image-15568422\" srcset=\"https://wordpress.org/documentation/files/2022/04/14-edit_url.jpg 661w, https://wordpress.org/documentation/files/2022/04/14-edit_url-300x123.jpg 300w\" sizes=\"auto, (max-width: 661px) 100vw, 661px\" /></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>More Options:</strong> </p>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<h3 class=\"wp-block-heading has-medium-font-size\">Media Settings</h3>\n\n\n\n<figure class=\"wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"268\" height=\"132\" data-id=\"15568430\" src=\"https://wordpress.org/documentation/files/2022/04/18-media_settings_disabled.jpg\" alt=\"Media settings turned off in the SoundCloud block\" class=\"wp-image-15568430\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"268\" height=\"139\" data-id=\"15568431\" src=\"https://wordpress.org/documentation/files/2022/04/17-media_settings_enabled.jpg\" alt=\"Media settings turned on in the SoundCloud block\" class=\"wp-image-15568431\" /></figure>\n</figure>\n\n\n\n<p>Via the <em>Media Settings</em> you can control the behavior of your post embed when viewed from a smaller device, like on a  phone screen. </p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is &#8220;on&#8221; or blue. </p>\n\n\n\n<p><strong>&#8220;Off:&#8221;</strong> This embed may not preserve its aspect ratio when the browser is resized. In the off position the toggle switch is gray. </p>\n\n\n\n<p><strong>&#8220;On:&#8221;</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the &#8220;On&#8221; position. </p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced</strong></p>\n\n\n\n<p>The advanced tab lets you add a CSS class to your block, allowing you to write custom CSS and style the block as you see fit.<br></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><a href=\"https://wordpress.org/documentation/files/2022/04/19-advanced_settings-1.jpg\"><img decoding=\"async\" src=\"https://wordpress.org/documentation/files/2022/04/19-advanced_settings-1.jpg\" alt=\"\" class=\"wp-image-15568432\" /></a><figcaption class=\"wp-element-caption\">The advanced section lets you add a CSS class to your block.</figcaption></figure>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-medium-font-size\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2022-11-26\n<ul class=\"wp-block-list\">\n<li>Removed redundant content</li>\n\n\n\n<li>Aligned images for mobile view</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-04-18</li>\n\n\n\n<li>Updated 2020-08-18\n<ul class=\"wp-block-list\">\n<li>Updated images to WP 5.5</li>\n\n\n\n<li>Added \u201cMove to\u201d and \u201cCopy\u201d section under More Options</li>\n\n\n\n<li>General improvements</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-06-05\n<ul class=\"wp-block-list\">\n<li>Uploaded images to media library and replaced deprecated images</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-06-04 </li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks With the Spotify Embed block, you can embed tracks, podcasts, playlists &amp; albums into your posts and pages. You need a Spotify account to be able to listen to entire tracks. For users who are not logged in on their Spotify account, the Spotify Play button embed plays [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-12940235",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12940235",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=12940235"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12940235/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360411,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12940235/revisions/16360411"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=12940235"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=12940235"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

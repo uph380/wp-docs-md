@@ -1,0 +1,91 @@
+{
+    "id": 134535,
+    "date": "2021-03-09T08:38:22",
+    "date_gmt": "2021-03-09T08:38:22",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-serialization-spec-parser/"
+    },
+    "modified": "2025-05-08T08:45:42",
+    "modified_gmt": "2025-05-08T08:45:42",
+    "slug": "packages-block-serialization-spec-parser",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-serialization-spec-parser/",
+    "title": {
+        "rendered": "@wordpress/block-serialization-spec-parser"
+    },
+    "content": {
+        "rendered": "<p>This library contains the grammar file (<code>grammar.pegjs</code>) for WordPress posts which is a block serialization <em>specification</em> which is used to generate the actual <em>parser</em> which is also bundled in this package.</p>\n<p>PEG parser generators are available in many languages, though different libraries may require some translation of this grammar into their syntax. For more information see:</p>\n<ul>\n<li><a href=\"https://github.com/pegjs/pegjs\">PEG.js</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Parsing_expression_grammar\">Parsing expression grammar</a></li>\n</ul>\n<h2>Installation</h2>\n<p>Install the module</p>\n<pre><code class=\"language-bash\">npm install @wordpress/block-serialization-spec-parser --save\n</code></pre>\n<h2>Usage</h2>\n<pre><code class=\"language-js\">import { parse } from '@wordpress/block-serialization-spec-parser';\n\nparse( '&lt;!-- wp:core/more --&gt;&lt;!--more--&gt;&lt;!-- /wp:core/more --&gt;' );\n// [{\"attrs\": null, \"blockName\": \"core/more\", \"innerBlocks\": [], \"innerHTML\": \"&lt;!--more--&gt;\"}]\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 248,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134535",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134535",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134535/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 158698,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134535/revisions/158698"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134535"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

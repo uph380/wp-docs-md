@@ -1,0 +1,91 @@
+{
+    "id": 134460,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/external-link/"
+    },
+    "modified": "2024-10-30T16:55:46",
+    "modified_gmt": "2024-10-30T16:55:46",
+    "slug": "external-link",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/external-link/",
+    "title": {
+        "rendered": "ExternalLink"
+    },
+    "content": {
+        "rendered": "<p>Link to an external resource.</p>\n<h2>Usage</h2>\n<pre><code class=\"language-jsx\">import { ExternalLink } from '@wordpress/components';\n\nconst MyExternalLink = () =&gt; (\n    &lt;ExternalLink href=\"https://wordpress.org\"&gt;WordPress.org&lt;/ExternalLink&gt;\n);\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props. Any other props will be passed through to the <code>a</code>.</p>\n<h3><code>children</code>: <code>ReactNode</code></h3>\n<p>The content to be displayed within the link.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h3><code>href</code>: <code>string</code></h3>\n<p>The URL of the external resource.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 148,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134460",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134460",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134460/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151869,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134460/revisions/151869"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134460"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

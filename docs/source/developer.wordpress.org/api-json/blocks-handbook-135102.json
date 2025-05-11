@@ -1,0 +1,91 @@
+{
+    "id": 135102,
+    "date": "2021-03-10T02:39:47",
+    "date_gmt": "2021-03-10T02:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/scripts/"
+    },
+    "modified": "2025-01-07T18:34:10",
+    "modified_gmt": "2025-01-07T18:34:10",
+    "slug": "scripts",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/scripts/",
+    "title": {
+        "rendered": "Scripts"
+    },
+    "content": {
+        "rendered": "<p>The editor provides several vendor and internal scripts to plugin developers. Script names, handles, and descriptions are documented in the table below.</p>\n<h2>WordPress scripts</h2>\n<p>The editor includes a number of packages to enable various pieces of functionality. Plugin developers can utilize them to create blocks, editor plugins, or generic plugins.</p>\n<table>\n<thead>\n<tr>\n<th>Script Name</th>\n<th>Handle</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-blob/\">Blob</a></td>\n<td>wp-blob</td>\n<td>Blob utilities</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-block-library/\">Block Library</a></td>\n<td>wp-block-library</td>\n<td>Block library for the editor</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-blocks/\">Blocks</a></td>\n<td>wp-blocks</td>\n<td>Block creations</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-block-serialization-default-parser/\">Block Serialization Default Parser</a></td>\n<td>wp-block-serialization-default-parser</td>\n<td>Default block serialization parser implementations for WordPress documents</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-block-serialization-spec-parser/\">Block Serialization Spec Parser</a></td>\n<td>wp-block-serialization-spec-parser</td>\n<td>Grammar file (grammar.pegjs) for WordPress posts</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/components/\">Components</a></td>\n<td>wp-components</td>\n<td>Generic components to be used for creating common UI elements</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-compose/\">Compose</a></td>\n<td>wp-compose</td>\n<td>Collection of handy Higher Order Components (HOCs)</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-core-data/\">Core Data</a></td>\n<td>wp-core-data</td>\n<td>Simplify access to and manipulation of core WordPress entities</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-data/\">Data</a></td>\n<td>wp-data</td>\n<td>Data module serves as a hub to manage application state for both plugins and WordPress itself</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-date/\">Date</a></td>\n<td>wp-date</td>\n<td>Date module for WordPress</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-deprecated/\">Deprecated</a></td>\n<td>wp-deprecated</td>\n<td>Utility to log a message to notify developers about a deprecated feature</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-dom/\">Dom</a></td>\n<td>wp-dom</td>\n<td>DOM utilities module for WordPress</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-dom-ready/\">Dom Ready</a></td>\n<td>wp-dom-ready</td>\n<td>Execute callback after the DOM is loaded</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-editor/\">Editor</a></td>\n<td>wp-editor</td>\n<td>Building blocks for WordPress editors</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-edit-post/\">Edit Post</a></td>\n<td>wp-edit-post</td>\n<td>Edit Post Module for WordPress</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-element/\">Element</a></td>\n<td>wp-element</td>\n<td>Element is, quite simply, an abstraction layer atop <a href=\"https://reactjs.org/\">React</a></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-escape-html/\">Escape Html</a></td>\n<td>wp-escape-html</td>\n<td>Escape HTML utils</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-hooks/\">Hooks</a></td>\n<td>wp-hooks</td>\n<td>A lightweight and efficient EventManager for JavaScript</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-html-entities/\">Html Entities</a></td>\n<td>wp-html-entities</td>\n<td>HTML entity utilities for WordPress</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-i18n/\">I18N</a></td>\n<td>wp-i18n</td>\n<td>Internationalization utilities for client-side localization</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-is-shallow-equal/\">Is Shallow Equal</a></td>\n<td>wp-is-shallow-equal</td>\n<td>A function for performing a shallow comparison between two objects or arrays</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-keycodes/\">Keycodes</a></td>\n<td>wp-keycodes</td>\n<td>Keycodes utilities for WordPress, used to check the key pressed in events like <code>onKeyDown</code></td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-list-reusable-blocks/\">List Reusable blocks</a></td>\n<td>wp-list-reusable-blocks</td>\n<td>Package used to add import/export links to the listing page of the reusable blocks</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-nux/\">NUX</a></td>\n<td>wp-nux</td>\n<td>Components, and wp.data methods useful for onboarding a new user to the WordPress admin interface</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-plugins/\">Plugins</a></td>\n<td>wp-plugins</td>\n<td>Plugins module for WordPress</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-redux-routine/\">Redux Routine</a></td>\n<td>wp-redux-routine</td>\n<td>Redux middleware for generator coroutines</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-rich-text/\">Rich Text</a></td>\n<td>wp-rich-text</td>\n<td>Helper functions to convert HTML or a DOM tree into a rich text value and back</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-shortcode/\">Shortcode</a></td>\n<td>wp-shortcode</td>\n<td>Shortcode module for WordPress</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-token-list/\">Token List</a></td>\n<td>wp-token-list</td>\n<td>Constructable, plain JavaScript <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList\">DOMTokenList</a> implementation, supporting non-browser runtimes</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-url/\">URL</a></td>\n<td>wp-url</td>\n<td>A collection of utilities to manipulate URLs</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-viewport/\">Viewport</a></td>\n<td>wp-viewport</td>\n<td>Module for responding to changes in the browser viewport size</td>\n</tr>\n<tr>\n<td><a href=\"https://developer.wordpress.org/block-editor/reference-guide/packages/packages-wordcount/\">Wordcount</a></td>\n<td>wp-wordcount</td>\n<td>WordPress word count utility</td>\n</tr>\n</tbody>\n</table>\n<h2>Vendor scripts</h2>\n<p>The editor also uses some popular third-party packages and scripts. Plugin developers can use these scripts as well without bundling them in their code (and increasing file sizes).</p>\n<table>\n<thead>\n<tr>\n<th>Script Name</th>\n<th>Handle</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://reactjs.org\">React</a></td>\n<td>react</td>\n<td>React is a JavaScript library for building user interfaces</td>\n</tr>\n<tr>\n<td><a href=\"https://reactjs.org/docs/react-dom.html\">React Dom</a></td>\n<td>react-dom</td>\n<td>Serves as the entry point to the DOM and server renderers for React, intended to be paired with React</td>\n</tr>\n<tr>\n<td><a href=\"https://momentjs.com/\">Moment</a></td>\n<td>moment</td>\n<td>Parse, validate, manipulate, and display dates and times in JavaScript</td>\n</tr>\n<tr>\n<td><a href=\"https://lodash.com\">Lodash</a></td>\n<td>lodash</td>\n<td>Lodash is a JavaScript library which provides utility functions for common programming tasks</td>\n</tr>\n</tbody>\n</table>\n<h2>Polyfill scripts</h2>\n<p>The editor also provides polyfills for certain features that may not be available in all modern browsers.</p>\n<p>It is recommended to use the main <code>wp-polyfill</code> script handle which takes care of loading all the below mentioned polyfills.</p>\n<table>\n<thead>\n<tr>\n<th>Script Name</th>\n<th>Handle</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://babeljs.io/docs/en/babel-polyfill\">Babel Polyfill</a></td>\n<td>wp-polyfill</td>\n<td>Emulate a full ES2015+ environment. Main script to load all the below mentioned additional polyfills</td>\n</tr>\n<tr>\n<td><a href=\"https://www.npmjs.com/package/whatwg-fetch\">Fetch Polyfill</a></td>\n<td>wp-polyfill-fetch</td>\n<td>Polyfill that implements a subset of the standard Fetch specification</td>\n</tr>\n<tr>\n<td><a href=\"https://www.npmjs.com/package/promise-polyfill\">Promise Polyfill</a></td>\n<td>wp-polyfill-promise</td>\n<td>Lightweight ES6 Promise polyfill for the browser and node</td>\n</tr>\n<tr>\n<td><a href=\"https://www.npmjs.com/package/formdata-polyfill\">Formdata Polyfill</a></td>\n<td>wp-polyfill-formdata</td>\n<td>Polyfill conditionally replaces the native implementation</td>\n</tr>\n<tr>\n<td><a href=\"https://www.npmjs.com/package/polyfill-library\">Node Contains Polyfill</a></td>\n<td>wp-polyfill-node-contains</td>\n<td>Polyfill for Node.contains</td>\n</tr>\n<tr>\n<td><a href=\"https://www.npmjs.com/package/element-closest\">Element Closest Polyfill</a></td>\n<td>wp-polyfill-element-closest</td>\n<td>Return the closest element matching a selector up the DOM tree</td>\n</tr>\n</tbody>\n</table>\n<h2>Bundling and code sharing</h2>\n<p>When using a JavaScript bundler like <a href=\"https://webpack.js.org/\">webpack</a>, the scripts mentioned here can be excluded from the bundle and provided by WordPress in the form of script dependencies see <a href=\"https://developer.wordpress.org/reference/functions/wp_enqueue_script/#default-scripts-included-and-registered-by-wordpress\"><code>wp_enqueue_script</code></a>.</p>\n<p>The <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/dependency-extraction-webpack-plugin\"><code>@wordpress/dependency-extraction-webpack-plugin</code></a> provides a webpack plugin to help extract WordPress dependencies from bundles. The <code>@wordpress/scripts</code> <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/packages/scripts#build\"><code>build</code></a> script includes the plugin by default.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135090,
+    "menu_order": 377,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135102",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135102",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135102/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153990,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135102/revisions/153990"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135102"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

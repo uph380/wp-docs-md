@@ -1,0 +1,97 @@
+{
+    "id": 11300,
+    "date": "2014-10-22T01:55:52",
+    "date_gmt": "2014-10-22T01:55:52",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=theme-handbook&#038;p=11300"
+    },
+    "modified": "2017-01-12T04:04:43",
+    "modified_gmt": "2017-01-12T04:04:43",
+    "slug": "linking-theme-files-directories",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/basics/linking-theme-files-directories/",
+    "title": {
+        "rendered": "Linking Theme Files &amp; Directories"
+    },
+    "content": {
+        "rendered": "<h2>Linking to Core Theme Files</h2>\r\nAs you&#8217;ve learned, WordPress themes are built from a number of different template\u00a0files. At the very least this will usually include a <code>sidebar.php</code>, <code>header.php</code> and <code>footer.php</code>. These are called using <a title=\"Template Tags\" href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a>, for example:\r\n\r\n<ul>\r\n\t<li><a href=\"https://developer.wordpress.org/reference/functions/get_header/\" rel=\"function\">get_header()</a> ;</li>\r\n\r\n\t<li><a href=\"https://developer.wordpress.org/reference/functions/get_footer/\" rel=\"function\">get_footer()</a> ;</li>\r\n\r\n\t<li><a href=\"https://developer.wordpress.org/reference/functions/get_sidebar/\" rel=\"function\">get_sidebar()</a> ;</li>\r\n</ul>\r\n\r\n\r\n\r\nYou can create custom versions of these files can be called as well by naming the file <code>sidebar-{your_custom_template}.php</code>, <code>header-{your_custom_template}.php</code> and\u00a0<code>footer-{your_custom_template}.php</code>. You can then use Template Tags with\u00a0the custom template name as the only parameter, like this:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">get_header( 'your_custom_template' );\r\nget_footer( 'your_custom_template' );\r\nget_sidebar( 'your_custom_template' );</code></pre>\r\n\r\nWordPress creates pages by assembling various files. Aside from the standard files for the header, footer and sidebar, you can create custom template files and call them at any location in the page using\u00a0<a href=\"https://developer.wordpress.org/reference/functions/get_template_part/\" rel=\"function\">get_template_part()</a> . To create a custom template file in your theme give the file an appropriate name and use the same custom template system as with the header, sidebar and footer files:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">slug-template.php</code></pre>\r\n\r\nFor example, if you would like to create a custom template to handle your post content you could create a template file called <code>content.php</code> and then add a specific content layout for product content by extending the file name to <code>content-product.php</code>. You would then load this template file in your theme like this:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">get_template_part( 'content', 'product' );</code></pre>\r\n\r\nIf you want to add more organization to your templates, you can place them in their own directories within your theme directory. For example, suppose you add a couple more <em>content</em> templates for <em>profiles</em> and <em>locations</em>, and group them in their own directory called <code>content-templates</code>.\r\n\r\nThe theme hierarchy for your theme called <code>my-theme</code> might look like the following. <code>style.css</code> and <code>page.php</code> are included for context.\r\n<ul>\r\n \t<li>themes</li>\r\n \t<li>my-theme</li>\r\n \t<li>content-templates</li>\r\n \t<li>content-location.php</li>\r\n \t<li>content-product.php</li>\r\n \t<li>content-profile.php</li>\r\n \t<li>style.css</li>\r\n</ul>\r\nTo include your content templates, prepend the directory names to the <code>slug</code> argument like this:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">get_template_part( 'content-templates/content', 'location' );\r\nget_template_part( 'content-templates/content', 'product' );\r\nget_template_part( 'content-templates/content', 'profile' );</code></pre>\r\n<h2>Linking to Theme Directories</h2>\r\nTo link to the theme&#8217;s directory, you can use the following function:\r\n<ul>\r\n\t<li><a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_uri/\" rel=\"function\">get_theme_file_uri()</a> ;</li>\r\n</ul>\r\n\r\nIf you are not using a child theme, this function will return the\u00a0full URI to your theme&#8217;s main folder. You can use this to reference sub-folders and files in your theme like this:\r\n\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">echo get_theme_file_uri( 'images/logo.png' );</code></pre>\r\n\r\nIf you are using a child theme then this function\u00a0will return the URI of the file\u00a0in your child theme if it exists. If the file cannot be found in your child theme, the function will return the URI of the file in the parent theme. This is particularly important to keep in mind when distributing a theme or in any other case where a child theme may or may not be active.\r\n\r\nTo access the path to a file in your theme&#8217;s directories, you can use the following function:\r\n\r\n<ul>\r\n\t<li><a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_path/\" rel=\"function\">get_theme_file_path()</a> ;</li>\r\n\r\n</ul>\r\n\r\n\r\n\r\nLike\u00a0<a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_uri/\" rel=\"function\">get_theme_file_uri()</a> , this will access the path of the file in the child theme if it exists. If the file cannot be found in the child theme, the function will access the\u00a0path to the file in the parent theme.\r\n\r\nIn\u00a0a child theme, you can link to a file URI or path in the parent theme&#8217;s directories using the following functions:\r\n<ul>\r\n \t<li><a href=\"https://developer.wordpress.org/reference/functions/get_parent_theme_file_uri/\" rel=\"function\">get_parent_theme_file_uri()</a> ;</li>\r\n \t<li><a href=\"https://developer.wordpress.org/reference/functions/get_parent_theme_file_path/\" rel=\"function\">get_parent_theme_file_path()</a> ;</li>\r\n</ul>\r\nAs with\u00a0\u00a0<code>get_theme_file_uri(),</code>\u00a0you can\u00a0reference sub-folders and files like this:\r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">echo get_parent_theme_file_uri( 'images/logo.png' );\r\n//or\r\necho get_parent_theme_file_path( 'images/logo.png' );</code></pre>\r\n\r\nTake care when referencing files that may not be present, as these functions will return the URI or file path whether the file exists or not.\u00a0If the file is missing, these functions will return a broken link.\r\n\r\n\n<div class=\"wp-block-wporg-notice is-info-notice\">\n<div class=\"wp-block-wporg-notice__icon\"></div>\n<div class=\"wp-block-wporg-notice__content\"> The functions <a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_uri/\" rel=\"function\">get_theme_file_uri()</a> , <a href=\"https://developer.wordpress.org/reference/functions/get_theme_file_path/\" rel=\"function\">get_theme_file_path()</a> , <a href=\"https://developer.wordpress.org/reference/functions/get_parent_theme_file_uri/\" rel=\"function\">get_parent_theme_file_uri()</a> , <a href=\"https://developer.wordpress.org/reference/functions/get_parent_theme_file_path/\" rel=\"function\">get_parent_theme_file_path()</a>  were introduced in WordPress 4.7. \r\n\r\nFor previous WordPress versions, use <a href=\"https://developer.wordpress.org/reference/functions/get_template_directory_uri/\" rel=\"function\">get_template_directory_uri()</a> , <a href=\"https://developer.wordpress.org/reference/functions/get_template_directory/\" rel=\"function\">get_template_directory()</a> , <a href=\"https://developer.wordpress.org/reference/functions/get_stylesheet_directory_uri/\" rel=\"function\">get_stylesheet_directory_uri()</a> , <a href=\"https://developer.wordpress.org/reference/functions/get_stylesheet_directory/\" rel=\"function\">get_stylesheet_directory()</a> . \r\n\r\nTake note that the newer 4.7 functions run the older functions anyway as part of the checking process so it makes sense to use the newer functions when possible.</div></div>\n\r\n\r\n<h2>Dynamic Linking in Templates</h2>\r\nRegardless of your permalink settings, you can link to a page or post dynamically by referring to its unique numerical ID (seen in several pages in the admin interface) with \r\n<pre class=\"wp-block-code\"><code lang=\"php\" class=\"language-php \">&lt;a href=&quot;&lt;?php echo get_permalink($ID); ?&gt;&quot;&gt;This is a link&lt;/a&gt;</code></pre> \r\n\r\nThis is a convenient way to create page menus as you can later change page slugs without breaking links, as IDs will stay the same. However, this might increase database queries.",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 5817,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11300",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11300",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 39,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11300/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 25491,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/11300/revisions/25491"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/5817"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11300"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 15289733,
+    "date": "2022-01-25T18:43:32",
+    "date_gmt": "2022-01-25T18:43:32",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15289733"
+    },
+    "modified": "2023-08-08T10:00:03",
+    "modified_gmt": "2023-08-08T10:00:03",
+    "slug": "comparing-patterns-template-parts-and-reusable-blocks",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks/",
+    "title": {
+        "rendered": "Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks)"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\" id=\"overview\">Overview</h2>\n\n\n\n<p>With more types of reusable content you can create with WordPress, this article seeks to clarify when it makes sense to use certain types in different situations to help guide you to make the best decisions possible. At a high level, this will focus on Template Part blocks,\u00a0Block Patterns, and Synced Patterns (Reusable Blocks).</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">WordPress 6.3 renamed Reusable Blocks to Patterns. A synced pattern will behave in exactly the same way as a reusable block.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Template Part</h3>\n\n\n\n<p>The Template Part block is an advanced block that can be used with a block theme or a theme that supports <a href=\"https://wordpress.org/themes/tags/template-editing/\">template editing</a>. They often come with your theme and are used to organize and display your site structure. For more information, you can learn more in the <a href=\"https://wordpress.org/documentation/article/template-part-block/\">Template Part block support article</a>.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\">Synced pattern (Reusable block)</h3>\n\n\n\n<p>Synced pattern is a kind of block pattern that enabled Synced option, and it will behave in exactly the same way as a reusable block. Editing the synced pattern will update it anywhere it is used. After creating a synced pattern, you can &#8216;Detach&#8217; it to a regular block, and edit the block without affecting your already saved synced pattern. For more information, you can learn more in the <a href=\"https://wordpress.org/documentation/article/reusable-blocks/\">Synced Pattern article</a>.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Block Patterns</h3>\n\n\n\n<p>Block Patterns are a collection of predefined blocks that you can insert into posts and pages and then customize with your own content. For more information, you can learn more in the <a href=\"https://wordpress.org/documentation/article/block-pattern/\">Block Pattern support article</a>.</p>\n\n\n\n<p>Here\u2019s a table comparing these different options to each other:&nbsp;</p>\n\n\n\n<figure class=\"wp-block-table\"><table><tbody><tr><td></td><td><strong>Template Part</strong></td><td><strong>Synced Patterns </strong><br><strong>(Reusable Block)</strong></td><td><strong>Patterns</strong></td></tr><tr><td>Type</td><td>Site Structure</td><td>User Content</td><td>User Content</td></tr><tr><td>Syncing Ability</td><td>Synced</td><td>Synced</td><td>Un-synced</td></tr><tr><td>Example</td><td>Footer</td><td>Business hours</td><td>Call to action</td></tr></tbody></table></figure>\n\n\n\n<p>Site structure means it should not be a part of your content, like a post or page. Syncing ability touches on whether if you update it in one spot, it updates everywhere the same block is used.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"guidelines\">Guidelines</h2>\n\n\n\n<p>Based on the above, this means it\u2019s best to use template parts and Synced pattern for things you want to have in sync with each other whereas patterns are best for content that you expect to change across your site.\u00a0</p>\n\n\n\n<p>In general, template parts should not be added to a Synced pattern or a regular pattern since this is meant to represent site structure rather than content. A template part can include a Synced pattern though or be built using patterns! You can also use block patterns to build templates and template parts, but you should not use a template part inside a pattern.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"situationals\">Situationals</h2>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"repeated-content-across-your-site\">Repeated content across your site</h3>\n\n\n\n<p>This could be everything from how to get in touch to your business hours to your social media accounts. To avoid having to add the same content to a paragraph block every time you want to place it at the end of your post, you can make it a Synced pattern.\u00a0</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"repeated-structure-across-your-site\">Repeated structure across your site</h3>\n\n\n\n<p>For anything that\u2019s more about site structure that\u2019s repeated across your site, like a Header or Footer, it\u2019s best to use a template part. These carry semantic meaning within block themes so it\u2019s important to make the distinction.&nbsp;</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"repeated-design-or-layout\">Repeated design or layout</h3>\n\n\n\n<p>When it\u2019s less about content and more about wanting to repeat a design or layout, patterns are best to use. This is because the content doesn\u2019t need to be synced and, instead, what you want repeated is how something visually looks.\u00a0</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2023-08-08\n<ul class=\"wp-block-list\">\n<li>WP 6.3 introduced custom patterns, and Reusable Block was renamed to Synced Pattern.</li>\n</ul>\n</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Overview With more types of reusable content you can create with WordPress, this article seeks to clarify when it makes sense to use certain types in different situations to help guide you to make the best decisions possible. At a high level, this will focus on Template Part blocks,\u00a0Block Patterns, and Synced Patterns (Reusable Blocks). [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        81,
+        80
+    ],
+    "class_list": [
+        "post-15289733",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-appearance",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15289733",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15289733"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15289733/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16358212,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15289733/revisions/16358212"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15289733"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15289733"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

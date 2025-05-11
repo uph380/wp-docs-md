@@ -1,0 +1,91 @@
+{
+    "id": 149187,
+    "date": "2023-10-18T11:25:01",
+    "date_gmt": "2023-10-18T11:25:01",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/"
+    },
+    "modified": "2024-04-17T06:09:37",
+    "modified_gmt": "2024-04-17T06:09:37",
+    "slug": "get-started-with-wp-scripts",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/",
+    "title": {
+        "rendered": "Get started with wp-scripts"
+    },
+    "content": {
+        "rendered": "<p>The <a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/\"><code>@wordpress/scripts</code></a> package, commonly referred to as <code>wp-scripts</code>, is a set of configuration files and scripts that primarily aims to standardize and simplify the development process of WordPress projects that require a JavaScript build step.</p>\n<p>A JavaScript build step refers to the process of transforming, bundling, and optimizing JavaScript source code and related assets into a format suitable for production environments. These build steps often take modern JavaScript (ESNext and JSX) and convert it to a version compatible with most browsers. They can also bundle multiple files into one, minify the code to reduce file size and perform various other tasks to optimize the code.</p>\n<p>You will typically be working with ESNext and JSX when building for the Block Editor, and all examples in the Block Editor Handbook are written in these syntaxes. Learning how to set up a build step is essential. However, configuring the necessary tools like <a href=\"https://webpack.js.org/\">webpack</a>, <a href=\"https://babeljs.io/\">Babel</a>, and <a href=\"https://eslint.org/\">ESLint</a> can become complex. This is where <code>wp-scripts</code> comes in.</p>\n<p>Here are a few things that <code>wp-scripts</code> can do:</p>\n<ul>\n<li><strong>Compilation:</strong> Converts modern JavaScript (ESNext and JSX) into code compatible with most browsers, using Babel.</li>\n<li><strong>Bundling:</strong> Uses webpack to combine multiple JavaScript files into a single bundle for better performance.</li>\n<li><strong>Code Linting:</strong> Provides configurations for ESLint to help ensure code quality and conformity to coding standards.</li>\n<li><strong>Code Formatting:</strong> Incorporates Prettier for automated code styling to maintain consistent code formatting across projects.</li>\n<li><strong>Sass Compilation:</strong> Converts Sass (.scss or .sass) files to standard CSS.</li>\n<li><strong>Code Minification:</strong> Reduces the size of the JavaScript code for production to ensure faster page loads.</li>\n</ul>\n<p>The package abstracts away much of the initial setup, configuration, and boilerplate code associated with JavaScript development for modern WordPress. You can then focus on building blocks and Block Editor extensions.</p>\n<h2>Quick start</h2>\n<div class=\"callout callout-tip\">\n    If you use <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\"><code>@wordpress/create-block</code></a> package to scaffold the structure of files needed to create and register a block, you&#8217;ll also get a modern JavaScript build setup (using <code>wp-scripts</code>) with no configuration required, so you don&#8217;t need to worry about installing <code>wp-scripts</code> or enqueuing assets. Refer to <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/\">Get started with <code>create-block</code></a> for more details.\n</div>\n<h3>Installation</h3>\n<p>Ensure you have Node.js and <code>npm</code> installed on your computer. Review the <a href=\"https://developer.wordpress.org/block-editor/getting-started/devenv/nodejs-development-environment/\">Node.js development environment</a> guide if not.</p>\n<p>Then, create a project folder and ensure it contains a <code>package.json</code> file, a <code>build</code> folder, and an <code>src</code> folder. The <code>src</code> folder should also include an <code>index.js</code> file.</p>\n<p>If you have not created a <code>package.json</code> file before, navigate to the project folder in the terminal and run the <code>npm init</code> command. An interactive prompt will walk you through the steps. Configure as you like, but when it asks for the &#8220;entry point&#8221;, enter <code>build/index.js</code>.</p>\n<p>Of course, there are many ways to set up a project using <code>wp-scripts</code>, but this is the recommended approach used throughout the Block Editor Handbook.</p>\n<p>Finally, install the <code>wp-scripts</code> package as a development dependency by running the command:</p>\n<pre><code class=\"language-bash\">npm install @wordpress/scripts --save-dev\n</code></pre>\n<p>Once the installation is complete, your project folder should look like this:</p>\n<pre><code class=\"language-bash\">example-project-folder/\n\u251c\u2500\u2500 build/\n\u251c\u2500\u2500 node_modules/ (autogenerated)\n\u251c\u2500\u2500 src/\n\u2502   \u2514\u2500\u2500 index.js\n\u251c\u2500\u2500 package-lock.json (autogenerated)\n\u2514\u2500\u2500 package.json\n</code></pre>\n<h3>Basic usage</h3>\n<p>Once installed, you can run the predefined scripts provided with <code>wp-scripts</code> by referencing them in the scripts section of your <code>package.json</code> file. Here\u2019s an example:</p>\n<pre><code class=\"language-json\">{\n    \"scripts\": {\n        \"start\": \"wp-scripts start\",\n        \"build\": \"wp-scripts build\"\n    }\n}\n</code></pre>\n<p>These scripts can then be run using the command <code>npm run {script name}</code>.</p>\n<h3>The build process with <code>wp-scripts</code></h3>\n<p>The two scripts you will use most often are <code>start</code> and <code>build</code> since they handle the build step. See the <a href=\"https://developer.wordpress.org/block-editor/packages/packages-scripts/\">package documentation</a> for all options.</p>\n<p>When working on your project, use the <code>npm run start</code> command. This will start a development server and automatically rebuild the project whenever any change is detected. Note that the compiled code in <code>build/index.js</code> will not be optimized.</p>\n<p>When you are ready to deploy your project, use the <code>npm run build</code> command. This optimizes your code and makes it production-ready.</p>\n<p>After the build finishes, you will see the compiled JavaScript file created at <code>build/index.js</code>.</p>\n<p>A <code>build/index.asset.php</code> file will also be created in the build process, which contains an array of dependencies and a version number (for cache busting). Please, note that to register a block without this <code>wp-scripts</code> build process you&#8217;ll need to manually create <code>*.asset.php</code> dependencies files (see <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/minimal-block-no-build-e621a6\">example</a>).</p>\n<h3>Enqueuing assets</h3>\n<p>If you register a block via <code>register_block_type</code> the scripts defined in <code>block.json</code> will be automatically enqueued (see <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/minimal-block-ca6eda\">example</a>)</p>\n<p>To manually enqueue files in the editor, in any other context, you can refer to the <a href=\"https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/\">Enqueueing assets in the Editor</a> guide for more information, but here&#8217;s a typical implementation.</p>\n<pre><code class=\"language-php\">/**\n * Enqueue Editor assets.\n */\nfunction example_project_enqueue_editor_assets() {\n    $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');\n\n    wp_enqueue_script(\n        'example-editor-scripts',\n        plugins_url( 'build/index.js', __FILE__ ),\n        $asset_file['dependencies'],\n        $asset_file['version']\n    );\n}\nadd_action( 'enqueue_block_editor_assets', 'example_project_enqueue_editor_assets' );\n</code></pre>\n<p>Here&#8217;s <a href=\"https://github.com/WordPress/block-development-examples/tree/trunk/plugins/data-basics-59c8f8\">an example</a> of manually enqueuing files in the editor.</p>\n<h2>Next steps</h2>\n<p>While <code>start</code> and <code>build</code> will be the two most used scripts, several other useful tools come with <code>wp-scripts</code> that are worth exploring. Here&#8217;s a look at a few.</p>\n<h3>Maintaining code quality</h3>\n<p>To help developers improve the quality of their code, <code>wp-scripts</code> comes pre-configured with tools like ESLint and Prettier. ESLint ensures your JavaScript adheres to best practices and the <a href=\"https://developer.wordpress.org/coding-standards/wordpress-coding-standards/\">WordPress coding standards</a>, while Prettier automatically formats your code. The available scripts include:</p>\n<pre><code class=\"language-json\">{\n    \"scripts\": {\n        \"format\": \"wp-scripts format\",\n        \"lint:css\": \"wp-scripts lint-style\",\n        \"lint:js\": \"wp-scripts lint-js\",\n    }\n}\n</code></pre>\n<p>Regularly linting and formatting your code ensures it&#8217;s functional, clear, and maintainable for yourself and other developers.</p>\n<h3>Running tests</h3>\n<p>Beyond just writing code, verifying its functionality is crucial. <code>wp-scripts</code> includes <a href=\"https://jestjs.io/\">Jest</a>, a JavaScript testing framework, and both end-to-end and unit testing scripts:</p>\n<pre><code class=\"language-json\">{\n    \"scripts\": {\n        \"test:e2e\": \"wp-scripts test-e2e\",\n        \"test:unit\": \"wp-scripts test-unit-js\"\n    }\n}\n</code></pre>\n<p>Unit tests validate individual units of code, such as functions, ensuring they work as intended, while end-to-end (E2E) tests evaluate the entire project by simulating real-world user scenarios to ensure all parts of the system work seamlessly together.</p>\n<h3>Advanced configurations</h3>\n<p>While <code>wp-scripts</code> provides a solid default configuration, there might be cases where you need more specialized setups. The good news is <code>wp-scripts</code> is highly adaptable. For example, you can extend and override the default webpack configuration, allowing you to add loaders and plugins or modify almost any part of the build process. This flexibility ensures that as your project grows or its requirements change, <code>wp-scripts</code> can be tailored to your evolving needs.</p>\n<p>See the <code>wp-scripts</code> <a href=\"https://developer.wordpress.org/block-editor/packages/packages-scripts/\">package documentation</a> for all configuration options.</p>\n<h2>Additional resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/\">@wordpress/scripts</a> (Official documentation)</li>\n<li><a href=\"https://developer.wordpress.org/news/2023/04/how-webpack-and-wordpress-packages-interact/\">How webpack and WordPress packages interact</a> (WordPress Developer Blog)</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134336,
+    "menu_order": 6,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-149187",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/149187",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 6,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/149187/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 153513,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/149187/revisions/153513"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134336"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=149187"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

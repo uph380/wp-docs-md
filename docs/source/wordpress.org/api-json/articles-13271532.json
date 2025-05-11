@@ -1,0 +1,109 @@
+{
+    "id": 13271532,
+    "date": "2020-09-04T19:01:48",
+    "date_gmt": "2020-09-04T19:01:48",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=13271532"
+    },
+    "modified": "2024-03-26T15:12:32",
+    "modified_gmt": "2024-03-26T15:12:32",
+    "slug": "block-pattern",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/block-pattern/",
+    "title": {
+        "rendered": "Block Patterns"
+    },
+    "content": {
+        "rendered": "\n<p>Block Patterns are a collection of blocks that you can insert into posts and pages and then customize with your own content. Using a Block Pattern can reduce the time required to create content on your site, as well as being a great way to learn how different blocks can be combined to produce interesting effects. </p>\n\n\n\n<p>To find more patterns, you can also <a href=\"https://wordpress.org/documentation/article/block-pattern-directory\">use the Block Pattern Directory</a>.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"#how-to-use-a-block-pattern\" data-type=\"internal\" data-id=\"#how-to-use-a-block-pattern\">How to use a Block Pattern</a></li>\n\n\n\n<li><a href=\"#how-to-customize-a-block-pattern\" data-type=\"internal\" data-id=\"#how-to-customize-a-block-pattern\">How to customize a block pattern</a></li>\n\n\n\n<li><a href=\"#contextual-patterns\" data-type=\"internal\" data-id=\"#contextual-patterns\">How to find contextual patterns</a></li>\n\n\n\n<li><a href=\"#resources\" data-type=\"internal\" data-id=\"#resources\">Resources</a></li>\n\n\n\n<li><a href=\"#frequently-asked-questions\" data-type=\"internal\" data-id=\"#frequently-asked-questions\">Frequently asked questions</a></li>\n</ul>\n\n\n\n<p>Since WordPress 6.3, you can create your own patterns. Patterns work exactly the same as predefined patterns stored in the Patterns Directory. Also, with the &#8220;Sync&#8221; option enabled, the synced pattern will behave in exactly the same way as a reusable block. Editing the synced pattern will update it anywhere it is used. After creating a synced pattern, you can &#8216;Detach&#8217; it to a regular block, and edit the block without affecting your already saved synced pattern.</p>\n\n\n\n<p class=\"has-background\" style=\"background-color:#e5f5fa\">WordPress 6.3 renamed Reusable Blocks to Patterns. A synced pattern will behave in exactly the same way as a reusable block.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-use-a-block-pattern\">How to use a Block Pattern</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Click the + icon to add a new block from the top toolbar in the <a href=\"https://wordpress.org/documentation/article/wordpress-editor/\" data-type=\"helphub_article\" data-id=\"11284616\">WordPress Block editor</a>.</li>\n\n\n\n<li>Click on the&nbsp;<strong>Patterns</strong><em>&nbsp;</em>tab or Synced Patterns tab.</li>\n\n\n\n<li>For Patterns tab, use the dropdown to choose which category of patterns you want to use or click <strong>Explore</strong> to open a modal that allows you to have a larger view of each pattern.</li>\n\n\n\n<li>Either click on the pattern you wish to insert or drag and drop the pattern into your content. If you click on the pattern, it will be inserted at the location of your cursor.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2021/12/Block-pattern-5.9.mov\"></video></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-use-a-block-pattern\">How to create a Block Pattern</h2>\n\n\n\n<p>Since WordPress 6.3, you can create your own patterns.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Select the block or blocks you want to turn into a pattern.</li>\n\n\n\n<li>Click on the <strong>three dot</strong> menu that opens up the <strong>additional settings</strong>.</li>\n\n\n\n<li>Click on &#8220;<strong>Create pattern/reusable block</strong>&#8220;.</li>\n\n\n\n<li>Enter the name of pattern.</li>\n\n\n\n<li>To synchronize patterns, turn on the <strong>Sync option</strong>. Editing the pattern will update it anywhere it is used.</li>\n\n\n\n<li>Click Create.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/256239744-52edd86c-a582-4719-97e3-d11159161e46.mp4\"></video></figure>\n\n\n\n<p>You\u2019ll then be able to locate the created patterns at <strong>Patterns -&gt; My Pattern</strong> or Synced Patterns (overlapping rhombus icon) of Block Inserter.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"579\" src=\"https://wordpress.org/documentation/files/2023/08/WP-6-3-create-patterns-1024x579.jpeg\" alt=\"Location of &quot;My Patterns&quot; within the block inserter.\" class=\"wp-image-16358208\" srcset=\"https://wordpress.org/documentation/files/2023/08/WP-6-3-create-patterns-1024x579.jpeg 1024w, https://wordpress.org/documentation/files/2023/08/WP-6-3-create-patterns-300x170.jpeg 300w, https://wordpress.org/documentation/files/2023/08/WP-6-3-create-patterns-768x434.jpeg 768w, https://wordpress.org/documentation/files/2023/08/WP-6-3-create-patterns.jpeg 1302w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-customize-a-block-pattern\">How to manage a Block Pattern</h2>\n\n\n\n<p>You can manage your pattern from the Site Editor.</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Select <strong>Appearance</strong> -&gt; <strong>Editor</strong> at Administration Screen.</li>\n\n\n\n<li>Click <strong>Patterns</strong>.<br>Selecting <strong>Options</strong> -&gt; Manage Patterns from Block Editor will open the same panel.</li>\n</ol>\n\n\n\n<h3 class=\"wp-block-heading\">How to work with patterns</h3>\n\n\n\n<p>You can Rename, Duplicate, Export as JSON, and Delete the pattern from Actions menu (three dot icon) of each pattern.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"576\" src=\"https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-6-1024x576.png\" alt=\"Site Editor listing all custom patterns and how to edit them.\" class=\"wp-image-16359989\" srcset=\"https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-6-1024x576.png 1024w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-6-300x169.png 300w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-6-768x432.png 768w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-6-1536x863.png 1536w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-6.png 1948w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\">How to edit the content of pattern</h3>\n\n\n\n<p>To modify a pattern, click the pattern, and click Edit (pencil icon).</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2023/08/2p-6-3-How-to-edit-a-pattern.mp4\"></video></figure>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"how-to-customize-a-block-pattern\">How to customize a Block Pattern</h3>\n\n\n\n<p>Once you insert a Block Pattern, the blocks can be edited in the same way as any other blocks.</p>\n\n\n\n<p>Click on any block in the pattern, to edit the content within the block.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"440\" src=\"https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-08-at-5.22.08-PM-1024x440.png\" alt=\"Image of a block pattern showing an arrow pointing to the Replace option for the image in the pattern. \" class=\"wp-image-14641522\" srcset=\"https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-08-at-5.22.08-PM-1024x440.png 1024w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-08-at-5.22.08-PM-300x129.png 300w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-08-at-5.22.08-PM-768x330.png 768w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-08-at-5.22.08-PM-1536x660.png 1536w, https://wordpress.org/documentation/files/2021/07/Screen-Shot-2021-07-08-at-5.22.08-PM-2048x880.png 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>You can also add more blocks to a Block Pattern and insert more Block Patterns to your page anywhere you want. </p>\n\n\n\n<p>For the synced pattern, you\u2019ll see the synced pattern mentioned in the saving flow when you save the post or page itself. Saving will update it anywhere it is used even in other posts or pages.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"623\" src=\"https://wordpress.org/documentation/files/2023/08/wp-6-3-saving-a-pattern-1024x623.jpeg\" alt=\"Message confirming that a patterns is about to be saved.\" class=\"wp-image-16358211\" srcset=\"https://wordpress.org/documentation/files/2023/08/wp-6-3-saving-a-pattern-1024x623.jpeg 1024w, https://wordpress.org/documentation/files/2023/08/wp-6-3-saving-a-pattern-300x182.jpeg 300w, https://wordpress.org/documentation/files/2023/08/wp-6-3-saving-a-pattern-768x467.jpeg 768w, https://wordpress.org/documentation/files/2023/08/wp-6-3-saving-a-pattern-1536x934.jpeg 1536w, https://wordpress.org/documentation/files/2023/08/wp-6-3-saving-a-pattern.jpeg 1598w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"contextual-patterns\">How to find contextual patterns</h3>\n\n\n\n<p>Some blocks such as the <a href=\"https://wordpress.org/documentation/article/social-icons/\">Social Icons</a> block and <a href=\"https://wordpress.org/documentation/article/query-loop-block/\">Query Loop</a> block have patterns built into the settings of the block. To find the contextual patterns for the <strong>Social Icons</strong> block, select the <strong>Social Icon</strong> in the <strong>Block toolbar</strong> and navigate to <strong>Patterns</strong> in the drop-down:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"703\" height=\"432\" src=\"https://wordpress.org/documentation/files/2020/09/social-icons-contextual-pattern.gif\" alt=\"Contextual patterns found in Social Icons block\" class=\"wp-image-16068824\" /><figcaption class=\"wp-element-caption\">Demonstration of contextual pattern within the Social Icons block in Twenty Twenty-Two theme</figcaption></figure>\n\n\n\n<p>For the <strong>Query Loop</strong> block, patterns are shown as part of the configuration of the block itself. You can learn more about the <a href=\"https://wordpress.org/documentation/article/query-loop-block/\">Query Loop block here</a>. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-to-find-more-patterns\">How to find more patterns </h2>\n\n\n\n<p>If you want more patterns to choose from, you can explore the <a href=\"https://wordpress.org/patterns/\">Block Pattern Directory</a>. This is a new directory that allows you to search and find new patterns to use on your site. After searching and finding a pattern you like, select <strong>Copy</strong> and it will be saved to your clipboard. From there, return to your page or post and use the <strong>Paste</strong> function to add the pattern to your content. </p>\n\n\n\n<p>You can read more about the <a href=\"https://wordpress.org/documentation/article/block-pattern-directory\">Block Pattern Directory here</a>. </p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"resources\">Resources</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li><a href=\"https://learn.wordpress.org/workshop/intro-to-block-patterns/\">&#8220;Introduction to Block Patterns&#8221;</a> &#8211; a short workshop published by the Training team. </li>\n\n\n\n<li><a href=\"https://learn.wordpress.org/tutorial/using-block-patterns/\">&#8220;Using Block Patterns&#8221;</a>&#8211; a tutorial published by the Training team.</li>\n\n\n\n<li>&#8220;<a href=\"https://make.wordpress.org/core/2021/05/20/core-editor-improvement-contextual-patterns-for-easier-creation/\">Contextual patterns for easier creation</a>&#8221; &#8211; a post on the WordPress Core blog. </li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"frequently-asked-questions\">Frequently asked questions</h2>\n\n\n\n<p><strong>Can I use the default images within Block Patterns on my own site? </strong></p>\n\n\n\n<p>Yes! The images provided within Block Patterns are free to use on your site. However, because these images are being referenced from an external source (i.e. they are not added to your site\u2019s Media Library), there is always a chance they could change or be removed.</p>\n\n\n\n<p>We recommend replacing these images with your own content but if you would like to use the ones in the patterns, please consider uploading them to your own Media Library by using the &#8220;<em>Upload external image</em>&#8221; button.</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"469\" height=\"96\" src=\"https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-7.png\" alt=\"Screenshot of an image block toolbar displaying the &quot;upload image to media library&quot;.\" class=\"wp-image-16359991\" srcset=\"https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-7.png 469w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-7-300x61.png 300w\" sizes=\"auto, (max-width: 469px) 100vw, 469px\" /></figure>\n\n\n\n<p>When you publish a post, the pre-publish check will ask you if you want to upload external images to the media library.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1009\" src=\"https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-10-1024x1009.png\" alt=\"Pre-publish option for uploading all external images to media library.\" class=\"wp-image-16359994\" srcset=\"https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-10-1024x1009.png 1024w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-10-300x296.png 300w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-10-768x757.png 768w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-10-1536x1513.png 1536w, https://wordpress.org/documentation/files/2024/03/257561238-782eee25-933c-4f66-95b7-439ae8022e28-10.png 1908w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p><strong>Will Block Patterns be changed? Will changes to patterns that I use impact my site?</strong></p>\n\n\n\n<p>New Block Patterns will be continuously added and existing Block Patterns may be changed or removed over time. However, once you add a Block Pattern to your site, there is no link to the original pattern in the Add Block menu, and any subsequent changes would not impact anything on your site\u2019s pages or posts.</p>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-03-26\n<ul class=\"wp-block-list\">\n<li>Update screenshots to 6.4</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2023-08-08\n<ul class=\"wp-block-list\">\n<li>WP 6.3 introduced custom patterns, and Reusable Block was renamed to Synced Pattern.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-11-28\n<ul class=\"wp-block-list\">\n<li>Removed external link in the resources</li>\n\n\n\n<li>Updated heading levels and some content for 6.1</li>\n</ul>\n</li>\n\n\n\n<li>2022-10-19 Added animated <code>.gif</code> for contextual patterns. Added link to Learn Tutorial. Sentence casing updates.</li>\n\n\n\n<li>2021-12-21 Added in an update to include Block Pattern modal</li>\n\n\n\n<li>2021-07-08 Reference to Block Pattern directory and contextual patterns added, visuals updated</li>\n\n\n\n<li>2021-02-19 Internal links corrected </li>\n\n\n\n<li>2020-09-04 Created</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Block Patterns are a collection of blocks that you can insert into posts and pages and then customize with your own content. Using a Block Pattern can reduce the time required to create content on your site, as well as being a great way to learn how different blocks can be combined to produce interesting [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        83,
+        80
+    ],
+    "class_list": [
+        "post-13271532",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-block-editor",
+        "category-customization"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13271532",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=13271532"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13271532/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16359995,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/13271532/revisions/16359995"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=13271532"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=13271532"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

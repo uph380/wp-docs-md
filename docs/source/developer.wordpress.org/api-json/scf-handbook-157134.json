@@ -1,0 +1,91 @@
+{
+    "id": 157134,
+    "date": "2025-02-21T04:17:07",
+    "date_gmt": "2025-02-21T04:17:07",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-hook-functions-file/"
+    },
+    "modified": "2025-02-21T05:46:14",
+    "modified_gmt": "2025-02-21T05:46:14",
+    "slug": "acf-hook-functions-file",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/code-reference/acf-hook-functions-file/",
+    "title": {
+        "rendered": "Acf Hook Functions Global Functions"
+    },
+    "content": {
+        "rendered": "<h2><code>acf_add_filter_variations()</code></h2>\n<p>acf_add_filter_variations</p>\n<ul>\n<li>Registers variations for the given filter.</li>\n<li>@date    26/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   string  $filter     The filter name.</li>\n<li>@param array   $variations An array variation keys.</li>\n<li>@param integer $index      The param index to find variation values.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_add_action_variations()</code></h2>\n<p>acf_add_action_variations</p>\n<ul>\n<li>Registers variations for the given action.</li>\n<li>@date    26/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   string  $action     The action name.</li>\n<li>@param array   $variations An array variation keys.</li>\n<li>@param integer $index      The param index to find variation values.</li>\n<li>@return void</li>\n</ul>\n<h2><code>_acf_apply_hook_variations()</code></h2>\n<p>_acf_apply_hook_variations</p>\n<ul>\n<li>Applies hook variations during <a href=\"https://developer.wordpress.org/reference/functions/apply_filters/\" rel=\"function\">apply_filters()</a>  or <a href=\"https://developer.wordpress.org/reference/functions/do_action/\" rel=\"function\">do_action()</a> .</li>\n<li>@date    25/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   mixed</li>\n<li>@return mixed</li>\n</ul>\n<h2><code>acf_add_deprecated_filter()</code></h2>\n<p>acf_add_deprecated_filter</p>\n<ul>\n<li>Registers a deprecated filter to run during the replacement.</li>\n<li>@date    25/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   string $deprecated  The deprecated hook.</li>\n<li>@param string $version     The version this hook was deprecated.</li>\n<li>@param string $replacement The replacement hook.</li>\n<li>@return void</li>\n</ul>\n<h2><code>acf_add_deprecated_action()</code></h2>\n<p>acf_add_deprecated_action</p>\n<ul>\n<li>Registers a deprecated action to run during the replacement.</li>\n<li>@date    25/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   string $deprecated  The deprecated hook.</li>\n<li>@param string $version     The version this hook was deprecated.</li>\n<li>@param string $replacement The replacement hook.</li>\n<li>@return void</li>\n</ul>\n<h2><code>_acf_apply_deprecated_hook()</code></h2>\n<p>Applies a deprecated filter during <a href=\"https://developer.wordpress.org/reference/functions/apply_filters/\" rel=\"function\">apply_filters()</a>  or <a href=\"https://developer.wordpress.org/reference/functions/do_action/\" rel=\"function\">do_action()</a> .</p>\n<ul>\n<li>@date    25/1/19</li>\n<li>@since ACF 5.7.11</li>\n<li>@param   mixed</li>\n<li>@return mixed</li>\n</ul>\n<hr />\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 157128,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-157134",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157134",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157134/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 157327,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157134/revisions/157327"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/157128"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=157134"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

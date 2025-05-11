@@ -1,0 +1,97 @@
+{
+    "id": 148919,
+    "date": "2023-10-26T13:52:30",
+    "date_gmt": "2023-10-26T13:52:30",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=theme-handbook&#038;p=148919"
+    },
+    "modified": "2023-12-14T21:09:17",
+    "modified_gmt": "2023-12-14T21:09:17",
+    "slug": "template-parts",
+    "status": "publish",
+    "type": "theme-handbook",
+    "link": "https://developer.wordpress.org/themes/global-settings-and-styles/template-parts/",
+    "title": {
+        "rendered": "Template Parts"
+    },
+    "content": {
+        "rendered": "\n<p>Template parts are small sections (i.e., <em>parts</em>) that you can include in top-level templates. Following the DRY (Don\u2019t Repeat Yourself) principle, they are generally used as sections that need to be reused across multiple templates. Instead of writing the code multiple times, you can break it apart into a single file and include it when needed.</p>\n\n\n\n<p>Because this chapter is focused on <code>theme.json</code>, the goal of this document is to explain how to register template parts within the <code>theme.json</code> file. You can dive more deeply into templates and template parts within the <a href=\"https://developer.wordpress.org/themes/templates/\">Templates chapter</a>.</p>\n\n\n\n<p>In <code>theme.json</code>, you can register additional metadata for template parts, such as the title and area the part is assigned to.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Registering template parts</h2>\n\n\n\n<p>Technically, you can use custom template parts without ever registering them via <code>theme.json</code>. But registering them has some distinct advantages:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>You can give the part a translatable title that is more appealing in the user interface.</li>\n\n\n\n<li>You can assign each part to an area, creating a nicer user experience in the Site Editor.</li>\n\n\n\n<li>It plays more nicely with plugins, style variations, and child themes that may grab, filter, or otherwise use the registered metadata in some way.</li>\n</ul>\n\n\n\n<p>To register template parts, you must pass an array of objects to the <code>templateParts</code> property in <code>theme.json</code>. Each object in the array accepts three key/value pairs:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong><code>area</code>:</strong> The area that the template part belongs to. The default options are <code>header</code>, <code>footer</code>, and <code>uncategorized</code>. You can also assign it to any custom area.</li>\n\n\n\n<li><strong><code>name</code>:</strong> The filename of your template part without the extension.</li>\n\n\n\n<li><strong><code>title</code>:</strong> A human-readable title for your template, which may be translated.</li>\n</ul>\n\n\n\n<p>WordPress will look for template parts in the theme\u2019s <code>/parts</code> folder. Therefore, if you register a template part with the name of `example`, you must also have a <code>/parts/example.html</code> file in your theme.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>You will learn more about template part areas in the Templates chapter. Also, check out the <a href=\"https://developer.wordpress.org/news/2023/06/upgrading-the-site-editing-experience-with-custom-template-part-areas/\">Upgrading the site-editing experience with custom template part areas</a> tutorial on the WordPress Developer Blog for an in-depth walkthrough of creating custom areas.</p></div></div>\n\n\n\n<h3 class=\"wp-block-heading\">Registering a template part</h3>\n\n\n\n<p>The two most common template parts that any theme will register are for a site header and footer. This is also why WordPress has the default areas of <code>header</code> and <code>footer</code>. You are not required to use these parts or areas, but they are pretty much standard sections for nearly all websites.</p>\n\n\n\n<p>For this exercise, let\u2019s register them both. First, add a couple of empty files named <code>header.html</code> and <code>footer.html</code> in your theme\u2019s <code>/parts</code> folder if they do not already exist. You\u2019ll add some block code to them in the next step.</p>\n\n\n\n<p>Now register those template parts in <code>theme.json</code>:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n\t\"version\": 2,\n\t\"templateParts\": [\n\t\t{\n\t\t\t\"area\": \"header\",\n\t\t\t\"name\": \"header\",\n\t\t\t\"title\": \"Header\"\n\t\t},\n\t\t{\n\t\t\t\"area\": \"footer\",\n\t\t\t\"name\": \"footer\",\n\t\t\t\"title\": \"Footer\"\n\t\t}\n\t]\n}</code></pre>\n\n\n\n<p>It can be confusing when both the <code>area</code> and <code>name</code> values match. That\u2019s not always the case, but is often how things look when dealing with the header and footer.</p>\n\n\n\n<div class=\"wp-block-wporg-notice is-tip-notice\"><div class=\"wp-block-wporg-notice__icon\"></div><div class=\"wp-block-wporg-notice__content\"><p>Some theme authors prefer to name the <code>header</code> and <code>footer</code> template parts <code>site-header</code> and <code>site-footer</code> to better differentiate them. Feel free to do that if it makes more sense to you. Or rename them to anything you want.</p></div></div>\n\n\n\n<p>You are not limited to these two common template parts. You can add as many parts as you need for your theme project.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Building a template part</h3>\n\n\n\n<p>All template parts should be placed in your theme\u2019s <code>/parts</code> folder (WordPress also recognizes the <code>/template-parts</code> folder for backwards compatibility). So you will now be editing the <code>/parts/header.html</code> and <code>/parts/footer.html</code> files.</p>\n\n\n\n<p>You will learn more about building custom template parts in the <a href=\"https://developer.wordpress.org/themes/templates/\">Templates chapter</a>. For the purposes of this documentation, just consider the following code snippets as examples that you can customize.</p>\n\n\n\n<p>In your <code>/parts/header.html</code> file, add this code:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:group {\"style\":{\"spacing\":{\"padding\":{\"top\":\"2rem\",\"bottom\":\"2rem\",\"right\":\"2rem\",\"left\":\"2rem\"}}},\"layout\":{\"type\":\"default\"}} --&gt;\n&lt;div class=\"wp-block-group\" style=\"padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem\"&gt;\n\t&lt;!-- wp:group {\"layout\":{\"type\":\"flex\",\"justifyContent\":\"space-between\"}} --&gt;\n\t&lt;div class=\"wp-block-group\"&gt;\n\t\t&lt;!-- wp:site-title /--&gt;\n\t\t&lt;!-- wp:navigation {\"icon\":\"menu\",\"layout\":{\"type\":\"flex\",\"setCascadingProperties\":true,\"justifyContent\":\"right\"}} /--&gt;\n\t&lt;/div&gt;\n\t&lt;!-- /wp:group --&gt;\n&lt;/div&gt;\n&lt;!-- /wp:group --&gt;</code></pre>\n\n\n\n<p>Then add this code to your <code>/parts/footer.html</code> file:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:group {\"style\":{\"spacing\":{\"padding\":{\"top\":\"2rem\",\"right\":\"2rem\",\"bottom\":\"2rem\",\"left\":\"2rem\"}}}} --&gt;\n&lt;div class=\"wp-block-group\" style=\"padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem\"&gt;\n\n\t&lt;!-- wp:group {\"align\":\"wide\",\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"center\"}} --&gt;\n\t&lt;div class=\"wp-block-group alignwide\"&gt;\n\t\t&lt;!-- wp:site-title {\"level\":0,\"isLink\":false,\"className\":\"is-style-normalize\"} /--&gt;\n\n\t\t&lt;!-- wp:paragraph --&gt;\n\t\t\t&lt;p&gt;Powered by WordPress.&lt;/p&gt;\n\t\t&lt;!-- /wp:paragraph --&gt;\n\t&lt;/div&gt;\n\t&lt;!-- /wp:group --&gt;\n\n&lt;/div&gt;\n&lt;!-- /wp:group --&gt;</code></pre>\n\n\n\n<p>Now go to <strong>Appearance &gt; Editor</strong> in your WordPress admin and look at the <strong>Patterns &gt; Template Parts</strong> section. You should see both the <strong>Header</strong> and <strong>Footer</strong> areas listed with your custom template parts:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1071\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?resize=2048%2C1071&#038;ssl=1\" alt=\"Templates screen in the WordPress Site Editor. The Header area is specifically selected, showing a single Header template part.\" class=\"wp-image-148920\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-site-editor.jpg?resize=1536%2C803&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Including a template part</h3>\n\n\n\n<p>Creating template part files and registering them in <code>theme.json</code> does not mean that your parts will automatically appear on the site. Because they are only <em>parts</em>, you must also include them inside of a template.</p>\n\n\n\n<p>Remember, you\u2019ll learn more about creating templates in the <a href=\"https://developer.wordpress.org/themes/templates/\">Templates documentation</a> if you are not already familiar with them. For now, you just need to test how the registration process works.</p>\n\n\n\n<p>To include a template part in a top-level template, you must use the Template Part block. The basic markup for this block is:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:template-part {\"slug\":\"your-part-slug\"} /--&gt;</code></pre>\n\n\n\n<p>So open one of the template files from your theme\u2019s <code>/templates</code> folder. Your theme should at least have an <code>index.html</code> template there, but you can test with any file.</p>\n\n\n\n<p>Now add the calls to the <code>wp:template-part</code> block as shown here:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"markup\" class=\"language-markup\">&lt;!-- wp:template-part {\"slug\":\"header\",\"tagName\":\"header\"} /--&gt;\n\n&lt;!-- Other block markup goes here. --&gt;\n\n&lt;!-- wp:template-part {\"slug\":\"footer\",\"tagName\":\"footer\"} /--&gt;</code></pre>\n\n\n\n<p>Now you should be able to see both the Header and Footer template parts if you open the top-level template you added them to via <strong>Appearance &gt; Editor &gt; Templates</strong> in your WordPress admin:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"2048\" height=\"1071\" src=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?resize=2048%2C1071&#038;ssl=1\" alt=\"WordPress Site Editor with a template being edited. The Header template part is selected.\" class=\"wp-image-148921\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?w=2048&amp;ssl=1 2048w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?resize=768%2C402&amp;ssl=1 768w, https://i0.wp.com/developer.wordpress.org/files/2023/09/template-parts-include.jpg?resize=1536%2C803&amp;ssl=1 1536w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></a></figure>\n",
+        "protected": false
+    },
+    "author": 20482,
+    "featured_media": 0,
+    "parent": 148901,
+    "menu_order": 60,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-148919",
+        "theme-handbook",
+        "type-theme-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148919",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/theme-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/20482"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148919/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 148922,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148919/revisions/148922"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/theme-handbook/148901"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=148919"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

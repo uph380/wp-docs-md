@@ -1,0 +1,91 @@
+{
+    "id": 134453,
+    "date": "2021-03-09T08:38:20",
+    "date_gmt": "2021-03-09T08:38:20",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/date-time/"
+    },
+    "modified": "2024-10-30T16:55:48",
+    "modified_gmt": "2024-10-30T16:55:48",
+    "slug": "date-time",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/date-time/",
+    "title": {
+        "rendered": "DateTime"
+    },
+    "content": {
+        "rendered": "<p>DateTimePicker is a React component that renders a calendar and clock for date and time selection. The calendar and clock components can be accessed individually using the <code>DatePicker</code> and <code>TimePicker</code> components respectively.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/07/date-time-picker.png?ssl=1\" alt=\"Date Time component\" /></p>\n<h2>Best practices</h2>\n<p>Date pickers should:</p>\n<ul>\n<li>Use smart defaults and highlight the current date.</li>\n</ul>\n<h2>Usage</h2>\n<p>Render a DateTimePicker.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { DateTimePicker } from '@wordpress/components';\n\nconst MyDateTimePicker = () =&gt; {\n    const [ date, setDate ] = useState( new Date() );\n\n    return (\n        &lt;DateTimePicker\n            currentDate={ date }\n            onChange={ ( newDate ) =&gt; setDate( newDate ) }\n            is12Hour={ true }\n        /&gt;\n    );\n};\n</code></pre>\n<h2>Props</h2>\n<p>The component accepts the following props:</p>\n<h3><code>currentDate</code>: <code>Date | string | number | null</code></h3>\n<p>The current date and time at initialization. Optionally pass in a <code>null</code> value to specify no date is currently selected.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: today&#8217;s date</li>\n</ul>\n<h3><code>onChange</code>: <code>( date: string | null ) =&gt; void</code></h3>\n<p>The function called when a new date or time has been selected. It is passed the <code>currentDate</code> as an argument.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>is12Hour</code>: <code>boolean</code></h3>\n<p>Whether we use a 12-hour clock. With a 12-hour clock, an AM/PM widget is displayed and the time format is assumed to be <code>MM-DD-YYYY</code> (as opposed to the default format <code>DD-MM-YYYY</code>).</p>\n<ul>\n<li>Type: <code>bool</code></li>\n<li>Required: No</li>\n<li>Default: false</li>\n</ul>\n<h3><code>dateOrder</code>: <code>'dmy' | 'mdy' | 'ymd'</code></h3>\n<p>The order of day, month, and year. This prop overrides the time format determined by <code>is12Hour</code> prop.</p>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: No</li>\n<li>Default: <code>'dmy'</code></li>\n</ul>\n<h3><code>isInvalidDate</code>: <code>( date: Date ) =&gt; boolean</code></h3>\n<p>A callback function which receives a Date object representing a day as an argument, and should return a Boolean to signify if the day is valid or not.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>onMonthPreviewed</code>: <code>( date: Date ) =&gt; void</code></h3>\n<p>A callback invoked when selecting the previous/next month in the date picker. The callback receives the new month date in the ISO format as an argument.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h3><code>events</code>: <code>{ date: Date }[]</code></h3>\n<p>List of events to show in the date picker. Each event will appear as a dot on the day of the event.</p>\n<ul>\n<li>Type: <code>Array</code></li>\n<li>Required: No</li>\n</ul>\n<h3><code>startOfWeek</code>: <code>number</code></h3>\n<p>The day that the week should start on. 0 for Sunday, 1 for Monday, etc.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: 0</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 138,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134453",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134453",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134453/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154028,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134453/revisions/154028"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134453"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

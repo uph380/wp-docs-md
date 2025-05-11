@@ -1,0 +1,91 @@
+{
+    "id": 134485,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/modal/"
+    },
+    "modified": "2024-10-30T16:55:41",
+    "modified_gmt": "2024-10-30T16:55:41",
+    "slug": "modal",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/modal/",
+    "title": {
+        "rendered": "Modal"
+    },
+    "content": {
+        "rendered": "<p>Modals give users information and choices related to a task they\u2019re trying to accomplish. They can contain critical information, require decisions, or involve multiple tasks.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/04/Modal.png?ssl=1\" alt=\"An alert modal for trashing a post\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<p>A modal is a type of floating window that appears in front of content to provide critical information or ask for a decision. Modals disable all other functionality when they appear. A modal remains on screen until the user confirms it, dismisses it, or takes the required action.</p>\n<p>While modals can be an effective way to disclose additional controls or information, they can also be a source of interruption for the user. For this reason, always question whether a modal is necessary, and work to avoid the situations in which they are required.</p>\n<h4>Principles</h4>\n<ul>\n<li><strong>Focused</strong>. Modals pull user attention away from the rest of the screen to focus their attention, ensuring that the modal\u2019s content is addressed.</li>\n<li><strong>Direct</strong>. Modal text should communicate important information and be dedicated to helping the user appropriately complete a task.</li>\n<li><strong>Helpful</strong>. Modals should appear in response to a user task or an action to offer relevant and contextual information.</li>\n</ul>\n<h4>When to use</h4>\n<p>Modals are used for:</p>\n<ul>\n<li>Errors that block normal operation.</li>\n<li>Critical information that requires a specific user task, decision, or acknowledgement.</li>\n<li>Contextual information that appears in response to a user task or action.</li>\n</ul>\n<h3>Anatomy</h3>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/04/Modal-diagram.png?ssl=1\" alt=\"A modal diagram with labels\" /></p>\n<ol>\n<li>Container</li>\n<li>Title</li>\n<li>Supporting text</li>\n<li>Buttons</li>\n<li>Scrim</li>\n<li>Close button (optional)</li>\n</ol>\n<h3>Modal box and scrim</h3>\n<p>A modal is a type of window. Access to the rest of the UI is disabled until the modal is addressed. All modals are interruptive by design \u2013 their purpose is to have the user focus on content, so the modal surface appears in front of all other surfaces.</p>\n<p>To clarify that the rest of the screen is inaccessible and to focus attention on the modal, surfaces behind the modal are scrimmed \u2014 they get a temporary overlay to obscure their content and make it less prominent.</p>\n<h3>Title</h3>\n<p>A modal\u2019s purpose is communicated through its title and button text.<br />\nAll modals should have a title for accessibility reasons (the <code>contentLabel</code> prop can be used to set titles that aren&#8217;t visible).</p>\n<p>Titles should:</p>\n<ul>\n<li>Contain a brief, clear statement or question</li>\n<li>Avoid apologies (\u201cSorry for the interruption\u201d), alarm (\u201cWarning!\u201d), or ambiguity (\u201cAre you sure?\u201d).</li>\n</ul>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/04/Modal-do-1.png?ssl=1\" alt=\"A modal that asks &quot;Trash post?&quot;\" /></p>\n<p><strong>Do</strong><br />\nThis modal title poses a specific question, concisely explains the purpose the request, and provides clear actions.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/04/Modal-dont-1.png?ssl=1\" alt=\"A modal that asks &quot;Are you sure?&quot;\" /></p>\n<p><strong>Don\u2019t</strong><br />\nThis modal creates ambiguity, and therefore unease \u2014 it leaves the user unsure about how to respond, or causes them to second-guess their answer.</p>\n<h3>Buttons</h3>\n<h4>Side-by-side buttons (recommended)</h4>\n<p>Side-by-side buttons display two text buttons next to one another.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/04/Modal-buttons.png?ssl=1\" alt=\"A modal with two buttons next to each other\" /></p>\n<h4>Stacked or full-width buttons</h4>\n<p>Use stacked buttons when you need to accommodate longer button text. Always place confirming actions above dismissive actions.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2019/04/Modal-buttons-stacked.png?ssl=1\" alt=\"A modal with two buttons stacked on top of each other\" /></p>\n<h3>Behavior</h3>\n<p>Modals appear without warning, requiring users to stop their current task. They should be used sparingly \u2014 not every choice or setting warrants this kind of abrupt interruption.</p>\n<h4>Position</h4>\n<p>Modals retain focus until dismissed or the user completes an action, like choosing a setting. They shouldn\u2019t be obscured by other elements or appear partially on screen.</p>\n<h4>Scrolling</h4>\n<p>Most modal content should avoid scrolling. Scrolling is permissible if the modal content exceeds the height of the modal (e.g. a list component with many rows). When a modal scrolls, the modal title is pinned at the top and the buttons are pinned at the bottom. This ensures that content remains visible alongside the title and buttons, even while scrolling.</p>\n<p>Modals don\u2019t scroll with elements outside of the modal, like the background.</p>\n<p>When viewing a scrollable list of options, the modal title and buttons remain fixed.</p>\n<h4>Dismissing modals</h4>\n<p>Modals are dismissible in three ways:</p>\n<ul>\n<li>Tapping outside of the modal</li>\n<li>Tapping the \u201cCancel\u201d button</li>\n<li>Tapping the \u201cClose\u201d icon button, or pressing the <code>esc</code> key</li>\n</ul>\n<p>If the user\u2019s ability to dismiss a modal is disabled, they must choose a modal action to proceed.</p>\n<h2>Development guidelines</h2>\n<p>The modal is used to create an accessible modal over an application.</p>\n<p><strong>Note:</strong> The API for this modal has been mimicked to resemble <a href=\"https://github.com/reactjs/react-modal\"><code>react-modal</code></a>.</p>\n<h3>Usage</h3>\n<p>The following example shows you how to properly implement a modal. For the modal to properly work it&#8217;s important you implement the close logic for the modal properly.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { Button, Modal } from '@wordpress/components';\n\nconst MyModal = () =&gt; {\n    const [ isOpen, setOpen ] = useState( false );\n    const openModal = () =&gt; setOpen( true );\n    const closeModal = () =&gt; setOpen( false );\n\n    return (\n        &lt;&gt;\n            &lt;Button variant=\"secondary\" onClick={ openModal }&gt;\n                Open Modal\n            &lt;/Button&gt;\n            { isOpen &amp;&amp; (\n                &lt;Modal title=\"This is my modal\" onRequestClose={ closeModal }&gt;\n                    &lt;Button variant=\"secondary\" onClick={ closeModal }&gt;\n                        My custom close button\n                    &lt;/Button&gt;\n                &lt;/Modal&gt;\n            ) }\n        &lt;/&gt;\n    );\n};\n</code></pre>\n<h3>Props</h3>\n<p>The set of props accepted by the component will be specified below.<br />\nProps not included in this set will be applied to the input elements.</p>\n<h4><code>aria.describedby</code>: <code>string</code></h4>\n<p>If this property is added, it will be added to the modal content <code>div</code> as <code>aria-describedby</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>aria.labelledby</code>: <code>string</code></h4>\n<p>If this property is added, it will be added to the modal content <code>div</code> as <code>aria-labelledby</code>.<br />\nUse this when you are rendering the title yourself within the modal&#8217;s content area instead of using the <code>title</code> prop. This ensures the title is usable by assistive technology.</p>\n<p>Titles are required for accessibility reasons, see <code>contentLabel</code> and <code>title</code> for other ways to provide a title.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: if the <code>title</code> prop is provided, this will default to the id of the element that renders <code>title</code></li>\n</ul>\n<h4><code>bodyOpenClassName</code>: <code>string</code></h4>\n<p>Class name added to the body element when the modal is open.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>modal-open</code></li>\n</ul>\n<h4><code>className</code>: <code>string</code></h4>\n<p>If this property is added, it will an additional class name to the modal content <code>div</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>contentLabel</code>: <code>string</code></h4>\n<p>If this property is added, it will be added to the modal content <code>div</code> as <code>aria-label</code>.</p>\n<p>Titles are required for accessibility reasons, see <code>aria.labelledby</code> and <code>title</code> for other ways to provide a title.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>focusOnMount</code>: <code>boolean | 'firstElement'</code> | &#8216;firstContentElement&#8217;</h4>\n<p>If this property is true, it will focus the first tabbable element rendered in the modal.</p>\n<p>If this property is false, focus will not be transferred and it is the responsibility of the consumer to ensure accessible focus management.</p>\n<p>If set to <code>firstElement</code> focus will be placed on the first tabbable element anywhere within the Modal.</p>\n<p>If set to <code>firstContentElement</code> focus will be placed on the first tabbable element within the Modal&#8217;s <strong>content</strong> (i.e. children). Note that it is the responsibility of the consumer to ensure there is at least one tabbable element within the children <strong>or the focus will be lost</strong>.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h4>headerActions</h4>\n<p>An optional React node intended to contain additional actions or other elements related to the modal, for example, buttons. Content is rendered in the top right corner of the modal and to the left of the close button, if visible.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>null</code></li>\n</ul>\n<h4><code>isDismissible</code>: <code>boolean</code></h4>\n<p>If this property is set to false, the modal will not display a close icon and cannot be dismissed.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h4><code>isFullScreen</code>: <code>boolean</code></h4>\n<p>This property when set to <code>true</code> will render a full screen modal.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h4><code>size</code>: <code>'small' | 'medium' | 'large' | 'fill'</code></h4>\n<p>If this property is added it will cause the modal to render at a preset width, or expand to fill the screen. This prop will be ignored if <code>isFullScreen</code> is set to <code>true</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<p>Note: <code>Modal</code>&#8216;s width can also be controlled by adjusting the width of the modal&#8217;s contents via CSS.</p>\n<h4><code>onRequestClose</code>: &#8220;</h4>\n<p>This function is called to indicate that the modal should be closed.</p>\n<ul>\n<li>Required: Yes</li>\n</ul>\n<h4><code>overlayClassName</code>: <code>string</code></h4>\n<p>If this property is added, it will an additional class name to the modal overlay <code>div</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>role</code>: <code>AriaRole</code></h4>\n<p>If this property is added, it will override the default role of the modal.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>dialog</code></li>\n</ul>\n<h4><code>shouldCloseOnClickOutside</code>: <code>boolean</code></h4>\n<p>If this property is added, it will determine whether the modal requests to close when a mouse click occurs outside of the modal content.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h4><code>shouldCloseOnEsc</code>: <code>boolean</code></h4>\n<p>If this property is added, it will determine whether the modal requests to close when the escape key is pressed.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>true</code></li>\n</ul>\n<h4><code>style</code>: <code>CSSProperties</code></h4>\n<p>If this property is added, it will be added to the modal frame <code>div</code>.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>title</code>: <code>string</code></h4>\n<p>This property is used as the modal header&#8217;s title.</p>\n<p>Titles are required for accessibility reasons, see <code>aria.labelledby</code> and <code>contentLabel</code> for other ways to provide a title.</p>\n<ul>\n<li>Required: No</li>\n</ul>\n<h4><code>__experimentalHideHeader</code>: <code>boolean</code></h4>\n<p>When set to <code>true</code>, the Modal&#8217;s header (including the icon, title and close button) will not be rendered.</p>\n<p><em>Warning</em>: This property is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.</p>\n<ul>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To notify a user with a message of medium importance, use <code>Notice</code>.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 181,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134485",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134485",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 13,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134485/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 151153,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134485/revisions/151153"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134485"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

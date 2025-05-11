@@ -1,0 +1,91 @@
+{
+    "id": 135796,
+    "date": "2021-05-06T06:39:47",
+    "date_gmt": "2021-05-06T06:39:47",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/h-stack/"
+    },
+    "modified": "2024-10-30T17:10:03",
+    "modified_gmt": "2024-10-30T17:10:03",
+    "slug": "h-stack",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/h-stack/",
+    "title": {
+        "rendered": "HStack"
+    },
+    "content": {
+        "rendered": "<div class=\"callout callout-alert\">\nThis feature is still experimental. \u201cExperimental\u201d means this is an early implementation subject to drastic and breaking changes.\n</div>\n<p><code>HStack</code> (Horizontal Stack) arranges child elements in a horizontal line.</p>\n<h2>Usage</h2>\n<p><code>HStack</code> can render anything inside.</p>\n<pre><code class=\"language-jsx\">import {\n    __experimentalHStack as HStack,\n    __experimentalText as Text,\n} from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;HStack&gt;\n            &lt;Text&gt;Code&lt;/Text&gt;\n            &lt;Text&gt;is&lt;/Text&gt;\n            &lt;Text&gt;Poetry&lt;/Text&gt;\n        &lt;/HStack&gt;\n    );\n}\n</code></pre>\n<h2>Props</h2>\n<h3>alignment</h3>\n<p><strong>Type</strong>: <code>HStackAlignment</code> | <code>CSS[ 'alignItems' ]</code></p>\n<p>Determines how the child elements are aligned.</p>\n<ul>\n<li><code>top</code>: Aligns content to the top.</li>\n<li><code>topLeft</code>: Aligns content to the top/left.</li>\n<li><code>topRight</code>: Aligns content to the top/right.</li>\n<li><code>left</code>: Aligns content to the left.</li>\n<li><code>center</code>: Aligns content to the center.</li>\n<li><code>right</code>: Aligns content to the right.</li>\n<li><code>bottom</code>: Aligns content to the bottom.</li>\n<li><code>bottomLeft</code>: Aligns content to the bottom/left.</li>\n<li><code>bottomRight</code>: Aligns content to the bottom/right.</li>\n<li><code>edge</code>: Justifies content to be evenly spread out up to the main axis edges of the container.</li>\n<li><code>stretch</code>: Stretches content to the cross axis edges of the container.</li>\n</ul>\n<h3>direction</h3>\n<p><strong>Type</strong>: <code>FlexDirection</code></p>\n<p>The direction flow of the children content can be adjusted with <code>direction</code>. <code>column</code> will align children vertically and <code>row</code> will align children horizontally.</p>\n<h3>expanded</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Expands to the maximum available width (if horizontal) or height (if vertical).</p>\n<h3>justify</h3>\n<p><strong>Type</strong>: <code>CSS['justifyContent']</code></p>\n<p>Horizontally aligns content if the <code>direction</code> is <code>row</code>, or vertically aligns content if the <code>direction</code> is <code>column</code>.<br />\nIn the example below, <code>flex-start</code> will align the children content to the left.</p>\n<h3>spacing</h3>\n<p><strong>Type</strong>: <code>CSS['width']</code></p>\n<p>The amount of space between each child element. Spacing in between each child can be adjusted by using <code>spacing</code>.<br />\nThe value of <code>spacing</code> works as a multiplier to the library&#8217;s grid system (base of <code>4px</code>).</p>\n<h3>wrap</h3>\n<p><strong>Type</strong>: <code>boolean</code></p>\n<p>Determines if children should wrap.</p>\n<h2>Spacer</h2>\n<p>When a <code>Spacer</code> is used within an <code>HStack</code>, the <code>Spacer</code> adaptively expands to take up the remaining space.</p>\n<pre><code class=\"language-jsx\">import {\n    __experimentalHStack as HStack,\n    __experimentalSpacer as Spacer,\n    __experimentalText as Text,\n} from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;HStack&gt;\n            &lt;Text&gt;Code&lt;/Text&gt;\n            &lt;Spacer&gt;\n                &lt;Text&gt;is&lt;/Text&gt;\n            &lt;/Spacer&gt;\n            &lt;Text&gt;Poetry&lt;/Text&gt;\n        &lt;/HStack&gt;\n    );\n}\n</code></pre>\n<p><code>Spacer</code> also be used in-between items to push them apart.</p>\n<pre><code class=\"language-jsx\">import {\n    __experimentalHStack as HStack,\n    __experimentalSpacer as Spacer,\n    __experimentalText as Text,\n} from '@wordpress/components';\n\nfunction Example() {\n    return (\n        &lt;HStack&gt;\n            &lt;Text&gt;Code&lt;/Text&gt;\n            &lt;Spacer /&gt;\n            &lt;Text&gt;is&lt;/Text&gt;\n            &lt;Text&gt;Poetry&lt;/Text&gt;\n        &lt;/HStack&gt;\n    );\n}\n</code></pre>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 161,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135796",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135796",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135796/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152711,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135796/revisions/152711"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135796"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

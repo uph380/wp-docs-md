@@ -1,0 +1,97 @@
+{
+    "id": 152747,
+    "date": "2024-03-14T08:48:24",
+    "date_gmt": "2024-03-14T08:48:24",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=152747"
+    },
+    "modified": "2024-07-18T10:28:28",
+    "modified_gmt": "2024-07-18T10:28:28",
+    "slug": "previews-and-blueprints",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/wordpress-org/previews-and-blueprints/",
+    "title": {
+        "rendered": "Previews and Blueprints"
+    },
+    "content": {
+        "rendered": "\n<p>If you haven\u2019t noticed it yet, the&nbsp;WordPress Playground&nbsp;is an amazing feature that lets anyone safely run a temporary WordPress install within their browser. It uses WASM to run a complete WordPress install \u2013&nbsp;PHP, database, and all \u2013 entirely from within your web browser. No server needed, nothing to install.</p>\n\n\n\n<p>For a while now Playground has supported loading any plugin or theme from the plugin directory;&nbsp;here\u2019s how.&nbsp;</p>\n\n\n\n<h2 class=\"wp-block-heading\">The Plugin Preview Button<a href=\"https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#the-plugin-preview-button\"></a></h2>\n\n\n\n<p>The Plugin Preview feature adds a convenient button to plugins in the plugin directory, when enabled by a plugin&#8217;s developers. The button takes the user to Playground with that plugin installed. It\u2019s right beside the Download button.</p>\n\n\n\n<p>The Preview button is not shown by default; it must be explicitly enabled. Developers can use blueprint files in order to configure the preview environment and install dependencies (such as other plugins and themes).</p>\n\n\n\n<h2 class=\"wp-block-heading\">Enabling Plugin Previews<a href=\"https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#enabling-plugin-previews\"></a></h2>\n\n\n\n<p>There are two things required for a plugin preview button to appear to all users:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>A valid&nbsp;<code>blueprint.json</code>&nbsp;file must be provided in a&nbsp;blueprints&nbsp;sub-directory of the&nbsp;plugin\u2019s&nbsp;assets&nbsp;folder.</li>\n\n\n\n<li>The plugin preview must be set to \u201cpublic\u201d from the plugin\u2019s Advanced view by a committer.</li>\n</ol>\n\n\n\n<p>If a valid&nbsp;<code>blueprint.json</code>&nbsp;file is present, then the Preview button will be present for&nbsp;plugin committers only. In which case it will look like this:</p>\n\n\n\n<figure class=\"wp-block-image size-full\"><a href=\"https://i0.wp.com/developer.wordpress.org/files/2024/03/live-preview.png?ssl=1\"><img data-recalc-dims=\"1\" loading=\"lazy\" decoding=\"async\" width=\"554\" height=\"140\" src=\"https://i0.wp.com/developer.wordpress.org/files/2024/03/live-preview.png?resize=554%2C140&#038;ssl=1\" alt=\"The Test Preview button allows plugin authors to showcase what their plugin does with one click.\" class=\"wp-image-154499\" srcset=\"https://i0.wp.com/developer.wordpress.org/files/2024/03/live-preview.png?w=554&amp;ssl=1 554w, https://i0.wp.com/developer.wordpress.org/files/2024/03/live-preview.png?resize=300%2C76&amp;ssl=1 300w\" sizes=\"auto, (max-width: 554px) 100vw, 554px\" /></a></figure>\n\n\n\n<p>It\u2019s called Test Preview because that\u2019s why it\u2019s there: to allow plugin committers to test their plugin in the Playground environment and decide whether or not to make it easily available to the public.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Blueprints<a href=\"https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#blueprints\"></a></h2>\n\n\n\n<p>Blueprints&nbsp;are&nbsp;json&nbsp;files used to set up a WordPress Playground instance.&nbsp;</p>\n\n\n\n<p>They can be used to specify things like PHP and WP versions, the landing page, and (most importantly) a series of automated steps such as logging in, and installing and activating plugins and themes.</p>\n\n\n\n<p>The blueprint for your plugin should be committed to the assets folder with&nbsp;subversion&nbsp;as&nbsp;<code>assets/blueprints/blueprint.json</code>. Initially only the one blueprint file is supported, but we expect to allow multiple in future.</p>\n\n\n\n<p>Here\u2019s an example of a simple&nbsp;blueprint.json&nbsp;file that you could use as a starting point:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n    \"landingPage\": \"/wp-admin/edit.php\",\n    \"preferredVersions\": {\n        \"php\": \"7.4\",\n        \"wp\": \"5.9\"\n    },\n    \"phpExtensionBundles\": [\n        \"kitchen-sink\"\n    ],\n    \"steps\": [\n        {\n            \"step\": \"login\",\n            \"username\": \"admin\",\n            \"password\": \"password\"\n        }\n    ]\n}</code></pre>\n\n\n\n<p>The features used here are:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><code>landingPage</code>, which specifies the&nbsp;URL&nbsp;of the page that the user will land on when the preview loads.</li>\n\n\n\n<li><code>preferredVersions</code>, which specifies versions of PHP and WordPress.</li>\n\n\n\n<li><code>phpExtensionBundles</code>, which in this case specifies that we want most common PHP extensions to be available (kitchen-sink).</li>\n\n\n\n<li><code>steps</code>, which tells Playground what to do before displaying the landing page. In this case, it will simply log the user in to&nbsp;wp-admin.</li>\n</ul>\n\n\n\n<p>Here\u2019s an example of a more advanced&nbsp;blueprint.json&nbsp;that demonstrates some more features you could use to create a rich demo environment for users:</p>\n\n\n\n<pre class=\"wp-block-code\"><code lang=\"json\" class=\"language-json\">{\n    \"landingPage\": \"/wp-admin/post.php?post=5&amp;action=edit\",\n    \"preferredVersions\": {\n        \"php\": \"7.4\",\n        \"wp\": \"5.9\"\n    },\n    \"phpExtensionBundles\": [\n        \"kitchen-sink\"\n    ],\n    \"steps\": [\n        {\n            \"step\": \"login\",\n            \"username\": \"admin\",\n            \"password\": \"password\"\n        },\n        {\n            \"step\": \"installPlugin\",\n            \"pluginZipFile\": {\n                \"resource\": \"wordpress.org\\/plugins\",\n                \"slug\": \"my-imaginary-plugin-dependency\"\n            },\n            \"options\": {\n                \"activate\": true\n            }\n        },\n        {\n            \"step\": \"installPlugin\",\n            \"pluginZipFile\": {\n                \"resource\": \"wordpress.org\\/plugins\",\n                \"slug\": \"my-imaginary-plugin\"\n            },\n            \"options\": {\n                \"activate\": true\n            }\n        },\n        {\n            \"step\": \"installTheme\",\n            \"themeZipFile\": {\n                \"resource\": \"wordpress.org\\/themes\",\n                \"slug\": \"my-imaginary-theme\"\n            }\n        },\n        {\n            \"step\": \"setSiteOptions\",\n            \"options\": {\n                \"some_required_option_1\": \"your_favorite_values\",\n                \"some_required_option_2\": \"your_favorite_values\"\n            }\n        },\n        {\n            \"step\": \"runPHP\",\n            \"code\": \"&lt;?php require_once 'wordpress/wp-load.php'; wp_insert_post(array('post_title' =&gt; 'wp-load.php required for WP functionality', 'post_status' =&gt; 'publish')); ?&gt;\"\n        }\n    ]\n}</code></pre>\n\n\n\n<h2 class=\"wp-block-heading\">Using a generated Blueprint file<a href=\"https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#using-a-generated-blueprint-file\"></a></h2>\n\n\n\n<p>You might see a notice similar to this on your plugin&#8217;s page:</p>\n\n\n\n<pre class=\"wp-block-code\"><code class=\"\">Your plugin does not yet have a blueprint file for user previews. If you'd like to enable previews, please follow these steps to create a blueprint.\n\n1. Test your plugin in Playground.\n2. Fix any bugs in your plugin that prevent it from working in Playground.\n3. Download blueprint.json\n4. Commit your blueprint to svn.\n</code></pre>\n\n\n\n<p>The&nbsp;<strong>Test</strong>&nbsp;link will use an auto-generated Blueprint file to load your plugin in Playground, with some default configuration values and steps. The&nbsp;<strong>Download blueprint.json</strong>&nbsp;link will let you download that auto-generated&nbsp;<code>blueprint.json</code>&nbsp;file, which you can then modify as needed and commit to Subversion when your plugin is ready for Playground previews.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Committing a Blueprint to Subversion<a href=\"https://github.com/WordPress/developer-plugins-handbook/blob/main/wordpress-org/previews-and-blueprints/index.md#committing-a-blueprint-to-subversion\"></a></h2>\n\n\n\n<p>You must commit your blueprint.json file to your plugin&#8217;s assets folder, named like this:</p>\n\n\n\n<p><code>/<code>assets/blueprints/</code>blueprint.json</code></p>\n",
+        "protected": false
+    },
+    "author": 8967770,
+    "featured_media": 0,
+    "parent": 11185,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-152747",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/152747",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/8967770"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 9,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/152747/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 154501,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/152747/revisions/154501"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11185"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=152747"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

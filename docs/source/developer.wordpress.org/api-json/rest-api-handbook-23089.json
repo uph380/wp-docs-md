@@ -1,0 +1,97 @@
+{
+    "id": 23089,
+    "date": "2016-12-06T17:52:51",
+    "date_gmt": "2016-12-06T17:52:51",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=23089"
+    },
+    "modified": "2024-01-16T20:30:20",
+    "modified_gmt": "2024-01-16T20:30:20",
+    "slug": "adding-rest-api-support-for-custom-content-types",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types/",
+    "title": {
+        "rendered": "Adding REST API Support For Custom Content Types"
+    },
+    "content": {
+        "rendered": "<p>The REST API can create routes for custom post types and custom taxonomies inside of the <code>wp/v2</code> namespace, using the same controllers as the default post type or taxonomy term controllers. Alternatively, you can use your own controllers and namespace. This document will cover using the default controllers for your custom content type&#8217;s API routes. This is the easiest way and ensures the highest chance of compatibility with third parties.</p>\n<h2>Registering A Custom Post Type With REST API Support</h2>\n<p>When registering a custom post type, if you want it to be available via the REST API you should set <code>'show_in_rest' =&gt; true</code> in the arguments passed to <code>register_post_type</code>. Setting this argument to true will add a route in the <code>wp/v2</code> namespace.</p>\n<pre><code class=\"language-php\">/**\n * Register a book post type, with REST API support\n *\n * Based on example at: https://developer.wordpress.org/reference/functions/register_post_type\n */\nadd_action( 'init', 'my_book_cpt' );\nfunction my_book_cpt() {\n    $args = array(\n      'public'       =&gt; true,\n      'show_in_rest' =&gt; true,\n      'label'        =&gt; 'Books'\n    );\n    register_post_type( 'book', $args );\n}\n</code></pre>\n<p>You can optionally set the <code>rest_base</code> argument to change the base url, which will otherwise default to the post type&#8217;s name. In the example below, &#8220;books&#8221; is used as the value of <code>rest_base</code>. This will make the URL for the route <code>wp-json/wp/v2/books</code> instead of <code>wp-json/wp/v2/book/</code>, which would have been the default.</p>\n<p>In addition, you can pass an argument for <code>rest_controller_class</code>. This class must be a subclass of <code>WP_REST_Controller</code>. By default, <code>WP_REST_Posts_Controller</code> is used as the controller. If you are using a custom controller, then you likely will not be within the <code>wp/v2</code> namespace.</p>\n<p>Here is an example of registering a post type, with full labels, support for the REST API, a customized rest_base, and explicit registry of the default controller:</p>\n<pre><code class=\"language-php\">/**\n * Register a book post type, with REST API support\n *\n * Based on example at: https://developer.wordpress.org/reference/functions/register_post_type\n */\nadd_action( 'init', 'my_book_cpt' );\nfunction my_book_cpt() {\n  $labels = array(\n    'name'               =&gt; _x( 'Books', 'post type general name', 'your-plugin-textdomain' ),\n    'singular_name'      =&gt; _x( 'Book', 'post type singular name', 'your-plugin-textdomain' ),\n    'menu_name'          =&gt; _x( 'Books', 'admin menu', 'your-plugin-textdomain' ),\n    'name_admin_bar'     =&gt; _x( 'Book', 'add new on admin bar', 'your-plugin-textdomain' ),\n    'add_new'            =&gt; _x( 'Add New', 'book', 'your-plugin-textdomain' ),\n    'add_new_item'       =&gt; __( 'Add New Book', 'your-plugin-textdomain' ),\n    'new_item'           =&gt; __( 'New Book', 'your-plugin-textdomain' ),\n    'edit_item'          =&gt; __( 'Edit Book', 'your-plugin-textdomain' ),\n    'view_item'          =&gt; __( 'View Book', 'your-plugin-textdomain' ),\n    'all_items'          =&gt; __( 'All Books', 'your-plugin-textdomain' ),\n    'search_items'       =&gt; __( 'Search Books', 'your-plugin-textdomain' ),\n    'parent_item_colon'  =&gt; __( 'Parent Books:', 'your-plugin-textdomain' ),\n    'not_found'          =&gt; __( 'No books found.', 'your-plugin-textdomain' ),\n    'not_found_in_trash' =&gt; __( 'No books found in Trash.', 'your-plugin-textdomain' )\n  );\n\n  $args = array(\n    'labels'             =&gt; $labels,\n    'description'        =&gt; __( 'Description.', 'your-plugin-textdomain' ),\n    'public'             =&gt; true,\n    'publicly_queryable' =&gt; true,\n    'show_ui'            =&gt; true,\n    'show_in_menu'       =&gt; true,\n    'query_var'          =&gt; true,\n    'rewrite'            =&gt; array( 'slug' =&gt; 'book' ),\n    'capability_type'    =&gt; 'post',\n    'has_archive'        =&gt; true,\n    'hierarchical'       =&gt; false,\n    'menu_position'      =&gt; null,\n    'show_in_rest'       =&gt; true,\n    'rest_base'          =&gt; 'books',\n    'rest_controller_class' =&gt; 'WP_REST_Posts_Controller',\n    'supports'           =&gt; array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )\n  );\n\n  register_post_type( 'book', $args );\n}\n</code></pre>\n<p>If you are using a custom <code>rest_controller_class</code>, then the REST API is unable to automatically determine the route for a given post. In this case, you can use the <code>rest_route_for_post</code> filter to provide this information. This allows for your custom post type to be properly formatted in the Search endpoint and enables automated discovery links.</p>\n<pre><code class=\"language-php\">function my_plugin_rest_route_for_post( $route, $post ) {\n    if ( $post-&gt;post_type === 'book' ) {\n        $route = '/wp/v2/books/' . $post-&gt;ID;\n    }\n\n    return $route;\n}\nadd_filter( 'rest_route_for_post', 'my_plugin_rest_route_for_post', 10, 2 );\n</code></pre>\n<h2>Registering A Custom Taxonomy With REST API Support</h2>\n<p>Registering a custom taxonomy with REST API support is very similar to registering a custom post type: pass <code>'show_in_rest' =&gt; true</code> in the arguments passed to <code>register_taxonomy</code>. You may optionally pass <code>rest_base</code> to change the base url for the taxonomy&#8217;s routes.</p>\n<p>The default controller for taxonomies is <code>WP_REST_Terms_Controller</code>. You may modify this with the <code>rest_controller_class</code> if you choose to use a custom controller.</p>\n<p>Here is an example of how to register a custom taxonomy with REST API support:</p>\n<pre><code class=\"language-php\">/**\n * Register a genre post type, with REST API support\n *\n * Based on example at: https://developer.wordpress.org/reference/functions/register_taxonomy/\n */\nadd_action( 'init', 'my_book_taxonomy', 30 );\nfunction my_book_taxonomy() {\n\n  $labels = array(\n    'name'              =&gt; _x( 'Genres', 'taxonomy general name' ),\n    'singular_name'     =&gt; _x( 'Genre', 'taxonomy singular name' ),\n    'search_items'      =&gt; __( 'Search Genres' ),\n    'all_items'         =&gt; __( 'All Genres' ),\n    'parent_item'       =&gt; __( 'Parent Genre' ),\n    'parent_item_colon' =&gt; __( 'Parent Genre:' ),\n    'edit_item'         =&gt; __( 'Edit Genre' ),\n    'update_item'       =&gt; __( 'Update Genre' ),\n    'add_new_item'      =&gt; __( 'Add New Genre' ),\n    'new_item_name'     =&gt; __( 'New Genre Name' ),\n    'menu_name'         =&gt; __( 'Genre' ),\n  );\n\n  $args = array(\n    'hierarchical'          =&gt; true,\n    'labels'                =&gt; $labels,\n    'show_ui'               =&gt; true,\n    'show_admin_column'     =&gt; true,\n    'query_var'             =&gt; true,\n    'rewrite'               =&gt; array( 'slug' =&gt; 'genre' ),\n    'show_in_rest'          =&gt; true,\n    'rest_base'             =&gt; 'genre',\n    'rest_controller_class' =&gt; 'WP_REST_Terms_Controller',\n  );\n\n  register_taxonomy( 'genre', array( 'book' ), $args );\n\n}\n</code></pre>\n<p>If you are using a custom <code>rest_controller_class</code>, then the REST API is unable to automatically determine the route for a given term. In this case, you can use the <code>rest_route_for_term</code> filter to provide this information. This allows for your custom taxonomy to be properly formatted in the Search endpoint and enables automated discovery links.</p>\n<pre><code class=\"language-php\">function my_plugin_rest_route_for_term( $route, $term ) {\n    if ( $term-&gt;taxonomy === 'genre' ) {\n        $route = '/wp/v2/genre/' . $term-&gt;term_id;\n    }\n\n    return $route;\n}\nadd_filter( 'rest_route_for_term', 'my_plugin_rest_route_for_term', 10, 2 );\n</code></pre>\n<h2>Adding REST API Support To Existing Content Types</h2>\n<p>If you need to add REST API support for a custom post type or custom taxonomy you do not control, for example a theme or plugin you are using, you can use the <code>register_post_type_args</code> filter hook that exists since WordPress version 4.6.0.</p>\n<pre><code class=\"language-php\">/**\n * Add REST API support to an already registered post type.\n */\nadd_filter( 'register_post_type_args', 'my_post_type_args', 10, 2 );\n\nfunction my_post_type_args( $args, $post_type ) {\n\n    if ( 'book' === $post_type ) {\n        $args['show_in_rest'] = true;\n\n        // Optionally customize the rest_base or rest_controller_class\n        $args['rest_base']             = 'books';\n        $args['rest_controller_class'] = 'WP_REST_Posts_Controller';\n    }\n\n    return $args;\n}\n</code></pre>\n<p>For custom taxonomies it is almost the same. You can use the <code>register_taxonomy_args</code> filter that exists since WordPress version 4.4.0.</p>\n<pre><code class=\"language-php\">/**\n * Add REST API support to an already registered taxonomy.\n */\nadd_filter( 'register_taxonomy_args', 'my_taxonomy_args', 10, 2 );\n\nfunction my_taxonomy_args( $args, $taxonomy_name ) {\n\n    if ( 'genre' === $taxonomy_name ) {\n        $args['show_in_rest'] = true;\n\n        // Optionally customize the rest_base or rest_controller_class\n        $args['rest_base']             = 'genres';\n        $args['rest_controller_class'] = 'WP_REST_Terms_Controller';\n    }\n\n    return $args;\n}\n</code></pre>\n<h2>Custom Link Relationships</h2>\n<p>Taxonomies &amp; custom post types have a built-in association within WordPress, but what if you want to establish a link between two custom post types? This is not supported formally within WordPress itself, but we can create our own connections between arbitrary content types using the <code>_link</code> relation.</p>\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 25312,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-23089",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23089",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 17,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23089/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 152013,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/23089/revisions/152013"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/25312"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=23089"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

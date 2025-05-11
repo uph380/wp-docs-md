@@ -1,0 +1,109 @@
+{
+    "id": 10853837,
+    "date": "2018-11-06T18:13:28",
+    "date_gmt": "2018-11-06T18:13:28",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=10853837"
+    },
+    "modified": "2023-01-11T13:58:31",
+    "modified_gmt": "2023-01-11T13:58:31",
+    "slug": "use-automated-installation",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/use-automated-installation/",
+    "title": {
+        "rendered": "Use automated installation"
+    },
+    "content": {
+        "rendered": "\n<p>Although WordPress is very easy to install, you can use one of the one-click auto-installers typically available from hosting companies. The most popular auto-installers, <a href=\"https://codex.wordpress.org/Installing_WordPress#APS_.28Plesk.29\">APS</a>, <a href=\"https://codex.wordpress.org/Installing_WordPress#Fantastico\">Fantastico</a>, <a href=\"https://codex.wordpress.org/Installing_WordPress#Installatron\">Installatron</a>, and <a href=\"https://codex.wordpress.org/Installing_WordPress#Softaculous\">Softaculous</a> are described here.</p>\n\n\n\n<h2 class=\"wp-block-heading\">APS (Plesk)</h2>\n\n\n\n<p>If you&#8217;re using the Plesk control panel, you have two options: one-click quick install or custom install which allows you to configure things like installation path or database prefix. Both these options are available regardless of whether you have <a href=\"http://www.plesk.com/#solutions\">WordPress Toolkit</a> enabled or not. However, special security measures are applied during installation only if WordPress Toolkit is enabled. If you don&#8217;t have WordPress Toolkit, your WordPress installations will have the same security as manual WordPress installs.</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Log in to your Plesk account and go to Applications tab. The Featured Applications screen will open.</li><li>Click <strong>Install</strong> next to WordPress if you want a one-click quick install, or click the drop-down arrow next to Install and click <strong>Custom</strong> if you want to change installation parameters.</li><li>If you chose quick installation, no need to do anything else, as your WordPress blog has already been installed. If you chose custom installation, change the settings you want and click <strong>Install</strong>.</li></ol>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"https://wordpress.org/documentation/files/2018/11/plesk-aps-1-768x307.png\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"768\" height=\"307\" src=\"https://wordpress.org/documentation/files/2018/11/plesk-aps-1-768x307.png\" alt=\"APS Plesk Install WordPress\" class=\"wp-image-10853852\" srcset=\"https://wordpress.org/documentation/files/2018/11/plesk-aps-1-768x307.png 768w, https://wordpress.org/documentation/files/2018/11/plesk-aps-1-300x120.png 300w, https://wordpress.org/documentation/files/2018/11/plesk-aps-1-1024x410.png 1024w, https://wordpress.org/documentation/files/2018/11/plesk-aps-1.png 1472w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" /></a></figure></div>\n\n\n\n<h2 class=\"wp-block-heading\">Fantastico</h2>\n\n\n\n<ol class=\"wp-block-list\"><li>Log in to your cPanel account and click on the <strong>Fantastico</strong> (or Fantastico Deluxe) option.</li><li>Once you enter Fantastico, on the left hand side there is a Blogs category under which you will find WordPress. Click on it.</li><li>Click on the <strong>New Installation</strong> link in the WordPress Overview.</li><li>Fill in the various details and click <strong>Submit</strong>.</li><li>That&#8217;s it, you are done!</li></ol>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/fant.jpg?fit=400%2C205&amp;ssl=1\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"205\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2018/11/fant.jpg?fit=400%2C205&amp;ssl=1\" alt=\"Fantastico WordPress install\" class=\"wp-image-10853875\" srcset=\"https://wordpress.org/documentation/files/2018/11/fant.jpg 400w, https://wordpress.org/documentation/files/2018/11/fant-300x154.jpg 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></a></figure></div>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.netenberg.com/fantastico.php\">Fantastico Home Page</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Installatron</h2>\n\n\n\n<p>Installatron is a one-click web application installer that enables WordPress and other top web applications to be instantly installed and effortlessly managed. WordPress installations managed by Installatron can be updated (manually or automated), cloned, backed up and restored, edited to change installation parameters, and more.</p>\n\n\n\n<p>Many web hosting providers include Installatron through their web hosting control panel. If Installatron is not available from your provider, you can use Installatron directly from Installatron.com.</p>\n\n\n\n<p>Here&#8217;s how to install WordPress through your web hosting provider&#8217;s control panel:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Log in to your web host&#8217;s control panel, navigate to &#8220;Installatron,&#8221; click <strong>WordPress</strong>, and choose the <strong>Install this application</strong> option.</li><li>Change any of the install prompts to customize the install. For example, you can choose a different language for WordPress.</li><li>Click the <strong>Install</strong> button to begin the installation process. You will be redirected to a progress page where you can watch as WordPress is installed within a few seconds to your website.</li></ol>\n\n\n\n<p>Here&#8217;s how to install WordPress using Installatron.com:</p>\n\n\n\n<ol class=\"wp-block-list\"><li>Navigate to <a href=\"http://installatron.com/wordpress\">Installatron WordPress</a> and choose the <strong>Install this application</strong> option.</li><li>Enter your hosting account&#8217;s FTP or SSH account information, and then enter MySQL/MariaDB database information for a created database. For increased security, create a separate FTP account and MySQL/MariaDB database for your WordPress installation.</li><li>Change any of the install prompts to customize the install. For example, you can choose a different language for WordPress.</li><li>Click the <strong>Install</strong> button to begin the installation process. You will be redirected to a progress page where you can watch as WordPress is installed within a few seconds to your website.</li></ol>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.installatron.com/\">Installatron Home Page</a></li></ul>\n\n\n\n<h2 class=\"wp-block-heading\">Softaculous</h2>\n\n\n\n<ol class=\"wp-block-list\"><li>Log in to your host and look for Software/Services.</li><li>In Softaculous, there is a Blogs category. Collapse the category and WordPress will be there. Click on it.</li><li>You will see an Install TAB. Click it.</li><li>Fill in the various details and submit.</li><li>That&#8217;s it, you are done!</li></ol>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"294\" src=\"https://i2.wp.com/wordpress.org/documentation/files/2018/11/soft.jpg?fit=400%2C294&amp;ssl=1\" alt=\"Softaculous WordPress install\" class=\"wp-image-10853885\" srcset=\"https://wordpress.org/documentation/files/2018/11/soft.jpg 400w, https://wordpress.org/documentation/files/2018/11/soft-300x221.jpg 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure></div>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"http://www.softaculous.com/\">Softaculous Home Page</a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Although WordPress is very easy to install, you can use one of the one-click auto-installers typically available from hosting companies. The most popular auto-installers, APS, Fantastico, Installatron, and Softaculous are described here. APS (Plesk) If you&#8217;re using the Plesk control panel, you have two options: one-click quick install or custom install which allows you to [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        21,
+        73
+    ],
+    "class_list": [
+        "post-10853837",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-installation",
+        "category-technical-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853837",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=10853837"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853837/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16355092,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/10853837/revisions/16355092"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=10853837"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=10853837"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

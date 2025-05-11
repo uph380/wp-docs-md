@@ -1,0 +1,109 @@
+{
+    "id": 11154672,
+    "date": "2019-01-31T18:28:39",
+    "date_gmt": "2019-01-31T18:28:39",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11154672"
+    },
+    "modified": "2024-06-08T20:03:40",
+    "modified_gmt": "2024-06-08T20:03:40",
+    "slug": "tools-import-screen",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/tools-import-screen/",
+    "title": {
+        "rendered": "Tools Import screen"
+    },
+    "content": {
+        "rendered": "\n<p>Importing data into your WordPress blog is many times, necessary and\nuseful.  If you are moving from another host, or just to start your blog\n anew, then import data into your blog may be the answer.\n</p>\n\n\n\n<p>Remember that <a href=\"/support/article/importing-content/\">Importing Content</a> has explicit details about most of the import choices listed below.  </p>\n\n\n\n<figure class=\"wp-block-image\"><a href=\"https://wordpress.org/support/?attachment_id=11154678\"><img loading=\"lazy\" decoding=\"async\" width=\"776\" height=\"488\" src=\"https://i0.wp.com/wordpress.org/documentation/files/2019/01/tools-import-screen.png?fit=776%2C488&amp;ssl=1\" alt=\"\" class=\"wp-image-11154678\" srcset=\"https://wordpress.org/documentation/files/2019/01/tools-import-screen.png 776w, https://wordpress.org/documentation/files/2019/01/tools-import-screen-300x189.png 300w, https://wordpress.org/documentation/files/2019/01/tools-import-screen-768x483.png 768w\" sizes=\"auto, (max-width: 776px) 100vw, 776px\" /></a><figcaption>Tools &#8211; import screen</figcaption></figure>\n\n\n\n<p>If you have posts or comments in another system, WordPress can import  those into this blog. To get started, choose a system to import from  below: </p>\n\n\n\n<p><strong>Blogger</strong>&nbsp;  </p>\n\n\n\n<p>Import posts, comments, and users from a Blogger blog.  </p>\n\n\n\n<p><strong>Blogroll</strong>&nbsp; </p>\n\n\n\n<p>Import links in OPML format.  If not already installed this will direct you to install the WordPress.org OPML Importer.  </p>\n\n\n\n<p><strong>Categories to Tags Converter&nbsp;  </strong></p>\n\n\n\n<p>Convert existing categories to tags, selectively.  </p>\n\n\n\n<p><strong>LiveJournal&nbsp;  </strong></p>\n\n\n\n<p>Import posts from a LiveJournal XML export file.  </p>\n\n\n\n<p><strong>Movable Type and TypePad&nbsp;</strong>  </p>\n\n\n\n<p>Import posts and comments from a Movable Type or Typepad blog.  </p>\n\n\n\n<p><strong>RSS&nbsp;</strong>  </p>\n\n\n\n<p>Import posts from an RSS feed.  </p>\n\n\n\n<p><strong>Tumblr</strong>&nbsp;  </p>\n\n\n\n<p>Install the Tumblr importer to import posts &amp; media from Tumblr using their API.  </p>\n\n\n\n<p><strong>WordPress&nbsp; </strong> </p>\n\n\n\n<p>Import posts, comments, custom fields, pages, and categories from a WordPress export file.</p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Importing data into your WordPress blog is many times, necessary and useful. If you are moving from another host, or just to start your blog anew, then import data into your blog may be the answer. Remember that Importing Content has explicit details about most of the import choices listed below. If you have posts [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        79,
+        78
+    ],
+    "class_list": [
+        "post-11154672",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-dashboard",
+        "category-support-guides"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11154672",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11154672"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11154672/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360424,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11154672/revisions/16360424"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11154672"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11154672"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

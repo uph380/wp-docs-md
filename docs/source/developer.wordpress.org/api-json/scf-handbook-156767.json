@@ -1,0 +1,91 @@
+{
+    "id": 156767,
+    "date": "2025-02-20T08:04:06",
+    "date_gmt": "2025-02-20T08:04:06",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/secure-custom-fields/documentation/"
+    },
+    "modified": "2025-02-21T04:16:05",
+    "modified_gmt": "2025-02-21T04:16:05",
+    "slug": "documentation",
+    "status": "publish",
+    "type": "scf-handbook",
+    "link": "https://developer.wordpress.org/secure-custom-fields/contributing/documentation/",
+    "title": {
+        "rendered": "Documentation Guidelines"
+    },
+    "content": {
+        "rendered": "<p>Guidelines for contributing to SCF documentation.</p>\n<h2>Style Guide</h2>\n<p>We follow the <a href=\"https://make.wordpress.org/docs/style-guide/\">WordPress Documentation Style Guide</a>:</p>\n<ol>\n<li><strong>Voice and Tone</strong>\n<ul>\n<li>Clear and concise</li>\n<li>Professional but friendly</li>\n<li>Internationally accessible</li>\n<li>Gender-neutral language</li>\n</ul>\n</li>\n<li><strong>Formatting</strong>\n<ul>\n<li>Use Markdown</li>\n<li>Follow heading hierarchy</li>\n<li>Include code examples</li>\n<li>Use proper spacing</li>\n</ul>\n</li>\n<li><strong>Content Structure</strong>\n<ul>\n<li>Start with overview</li>\n<li>Include examples</li>\n<li>Provide context</li>\n<li>Link related topics</li>\n</ul>\n</li>\n</ol>\n<h2>Documentation Types</h2>\n<ol>\n<li><strong>User Documentation</strong>\n<ul>\n<li>Installation guides</li>\n<li>Usage instructions</li>\n<li>UI explanations</li>\n<li>Troubleshooting</li>\n</ul>\n</li>\n<li><strong>Developer Documentation</strong>\n<ul>\n<li>API reference</li>\n<li>Hook documentation</li>\n<li>Integration guides</li>\n<li>Security practices</li>\n</ul>\n</li>\n</ol>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 156766,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-156767",
+        "scf-handbook",
+        "type-scf-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156767",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/scf-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156767/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156952,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156767/revisions/156952"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/scf-handbook/156766"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=156767"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

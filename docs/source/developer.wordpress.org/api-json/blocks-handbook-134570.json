@@ -1,0 +1,91 @@
+{
+    "id": 134570,
+    "date": "2021-03-09T08:38:23",
+    "date_gmt": "2021-03-09T08:38:23",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-is-shallow-equal/"
+    },
+    "modified": "2025-01-29T11:34:11",
+    "modified_gmt": "2025-01-29T11:34:11",
+    "slug": "packages-is-shallow-equal",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-is-shallow-equal/",
+    "title": {
+        "rendered": "@wordpress/is-shallow-equal"
+    },
+    "content": {
+        "rendered": "<p>A function for performing a shallow comparison between two objects or arrays. Two values have shallow equality when all of their members are strictly equal to the corresponding member of the other.</p>\n<h2>Usage</h2>\n<p>The default export of <code>@wordpress/is-shallow-equal</code> is a function which accepts two objects or arrays:</p>\n<pre><code class=\"language-js\">import isShallowEqual from '@wordpress/is-shallow-equal';\n\nisShallowEqual( { a: 1 }, { a: 1, b: 2 } );\n// \u21d2 false\n\nisShallowEqual( { a: 1 }, { a: 1 } );\n// \u21d2 true\n\nisShallowEqual( [ 1 ], [ 1, 2 ] );\n// \u21d2 false\n\nisShallowEqual( [ 1 ], [ 1 ] );\n// \u21d2 true\n</code></pre>\n<p>You can import a specific implementation if you already know the types of values you are working with:</p>\n<pre><code class=\"language-js\">import { isShallowEqualArrays } from '@wordpress/is-shallow-equal';\nimport { isShallowEqualObjects } from '@wordpress/is-shallow-equal';\n</code></pre>\n<p>Shallow comparison differs from deep comparison by the fact that it compares members from each as being strictly equal to the other, meaning that arrays and objects will be compared by their <em>references</em>, not by their values (see also <a href=\"https://adripofjavascript.com/blog/drips/object-equality-in-javascript.html\"><em>Object Equality in JavaScript</em>.</a>) In situations where nested objects must be compared by value, consider using <a href=\"https://github.com/epoberezkin/fast-deep-equal\"><code>fast-deep-equal</code></a> instead.</p>\n<pre><code class=\"language-js\">import isShallowEqual from '@wordpress/is-shallow-equal';\nimport fastDeepEqual from 'fast-deep-equal/es6'; // deep comparison\n\nlet object = { a: 1 };\n\nisShallowEqual( [ { a: 1 } ], [ { a: 1 } ] );\n// \u21d2 false\n\nfastDeepEqual( [ { a: 1 } ], [ { a: 1 } ] );\n// \u21d2 true\n\nisShallowEqual( [ object ], [ object ] );\n// \u21d2 true\n</code></pre>\n<h2>Rationale</h2>\n<p>Shallow equality utilities are already a dime a dozen. Since these operations are often at the core of critical hot code paths, the WordPress contributors had specific requirements that were found to only be partially satisfied by existing solutions.</p>\n<p>In particular, it should\u2026</p>\n<ol>\n<li>\u2026consider non-primitive yet referentially-equal members values as equal.\n<ul>\n<li>Eliminates <a href=\"https://www.npmjs.com/package/is-equal-shallow\"><code>is-equal-shallow</code></a> as an option.</li>\n</ul>\n</li>\n<li>\u2026offer a single function through which to interface, regardless of value type.\n<ul>\n<li>Eliminates <a href=\"https://www.npmjs.com/package/shallow-equal\"><code>shallow-equal</code></a> as an option.</li>\n</ul>\n</li>\n<li>\u2026be barebones; only providing the basic functionality of shallow equality.\n<ul>\n<li>Eliminates <a href=\"https://www.npmjs.com/package/shallow-equals\"><code>shallow-equals</code></a> as an option.</li>\n</ul>\n</li>\n<li>\u2026anticipate and optimize for referential sameness as equal.\n<ul>\n<li>Eliminates <a href=\"https://www.npmjs.com/package/is-equal-shallow\"><code>is-equal-shallow</code></a> and <a href=\"https://www.npmjs.com/package/shallow-equals\"><code>shallow-equals</code></a> as options.</li>\n</ul>\n</li>\n<li>\u2026be intended for use in non-Facebook projects.\n<ul>\n<li>Eliminates <a href=\"https://www.npmjs.com/package/fbjs\"><code>fbjs/lib/shallowEqual</code></a> as an option.</li>\n</ul>\n</li>\n<li>\u2026be the most performant implementation.\n<ul>\n<li>See <a href=\"#benchmarks\">Benchmarks</a>.</li>\n</ul>\n</li>\n</ol>\n<h2>Benchmarks</h2>\n<p>The following results were produced under Node v10.15.3 (LTS) on a MacBook Pro (Late 2016) 2.9 GHz Intel Core i7.</p>\n<blockquote><p>\n  <code>@wordpress/is-shallow-equal (type specific) (object, equal) x 4,519,009 ops/sec \u00b11.09% (90 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (type specific) (object, same) x 795,527,700 ops/sec \u00b10.24% (93 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (type specific) (object, unequal) x 4,841,640 ops/sec \u00b10.94% (93 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (type specific) (array, equal) x 106,393,795 ops/sec \u00b10.16% (94 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (type specific) (array, same) x 800,741,511 ops/sec \u00b10.22% (95 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (type specific) (array, unequal) x 49,178,977 ops/sec \u00b11.99% (82 runs sampled)</code></p>\n<p>  <code>@wordpress/is-shallow-equal (object, equal) x 4,449,367 ops/sec \u00b10.31% (91 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (object, same) x 796,677,179 ops/sec \u00b10.23% (94 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (object, unequal) x 4,989,529 ops/sec \u00b10.30% (91 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (array, equal) x 44,840,546 ops/sec \u00b11.18% (89 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (array, same) x 794,344,723 ops/sec \u00b10.24% (91 runs sampled)</code> &gt;<code>@wordpress/is-shallow-equal (array, unequal) x 49,860,115 ops/sec \u00b11.73% (85 runs sampled)</code></p>\n<p>  <code>shallowequal (object, equal) x 3,702,126 ops/sec \u00b10.87% (92 runs sampled)</code> &gt;<code>shallowequal (object, same) x 796,649,597 ops/sec \u00b10.21% (92 runs sampled)</code> &gt;<code>shallowequal (object, unequal) x 4,027,885 ops/sec \u00b10.31% (96 runs sampled)</code> &gt;<code>shallowequal (array, equal) x 1,684,977 ops/sec \u00b10.37% (94 runs sampled)</code> &gt;<code>shallowequal (array, same) x 794,287,091 ops/sec \u00b10.26% (91 runs sampled)</code> &gt;<code>shallowequal (array, unequal) x 1,738,554 ops/sec \u00b10.29% (91 runs sampled)</code></p>\n<p>  <code>shallow-equal (type specific) (object, equal) x 4,669,656 ops/sec \u00b10.34% (92 runs sampled)</code> &gt;<code>shallow-equal (type specific) (object, same) x 799,610,214 ops/sec \u00b10.20% (95 runs sampled)</code> &gt;<code>shallow-equal (type specific) (object, unequal) x 4,908,591 ops/sec \u00b10.49% (93 runs sampled)</code> &gt;<code>shallow-equal (type specific) (array, equal) x 104,711,254 ops/sec \u00b10.65% (91 runs sampled)</code> &gt;<code>shallow-equal (type specific) (array, same) x 798,454,281 ops/sec \u00b10.29% (94 runs sampled)</code> &gt;<code>shallow-equal (type specific) (array, unequal) x 48,764,338 ops/sec \u00b11.48% (84 runs sampled)</code></p>\n<p>  <code>is-equal-shallow (object, equal) x 5,068,750 ops/sec \u00b10.28% (92 runs sampled)</code> &gt;<code>is-equal-shallow (object, same) x 17,231,997 ops/sec \u00b10.42% (92 runs sampled)</code> &gt;<code>is-equal-shallow (object, unequal) x 5,524,878 ops/sec \u00b10.41% (92 runs sampled)</code> &gt;<code>is-equal-shallow (array, equal) x 1,067,063 ops/sec \u00b10.40% (92 runs sampled)</code> &gt;<code>is-equal-shallow (array, same) x 1,074,356 ops/sec \u00b10.20% (94 runs sampled)</code> &gt;<code>is-equal-shallow (array, unequal) x 1,758,859 ops/sec \u00b10.44% (92 runs sampled)</code></p>\n<p>  <code>shallow-equals (object, equal) x 8,380,550 ops/sec \u00b10.31% (90 runs sampled)</code> &gt;<code>shallow-equals (object, same) x 27,583,073 ops/sec \u00b10.60% (91 runs sampled)</code> &gt;<code>shallow-equals (object, unequal) x 8,954,268 ops/sec \u00b10.71% (92 runs sampled)</code> &gt;<code>shallow-equals (array, equal) x 104,437,640 ops/sec \u00b10.22% (96 runs sampled)</code> &gt;<code>shallow-equals (array, same) x 141,850,542 ops/sec \u00b10.25% (93 runs sampled)</code> &gt;<code>shallow-equals (array, unequal) x 47,964,211 ops/sec \u00b11.51% (84 runs sampled)</code></p>\n<p>  <code>fbjs/lib/shallowEqual (object, equal) x 3,366,709 ops/sec \u00b10.35% (93 runs sampled)</code> &gt;<code>fbjs/lib/shallowEqual (object, same) x 794,825,194 ops/sec \u00b10.24% (94 runs sampled)</code> &gt;<code>fbjs/lib/shallowEqual (object, unequal) x 3,612,268 ops/sec \u00b10.37% (94 runs sampled)</code> &gt;<code>fbjs/lib/shallowEqual (array, equal) x 1,613,800 ops/sec \u00b10.23% (90 runs sampled)</code> &gt;<code>fbjs/lib/shallowEqual (array, same) x 794,861,384 ops/sec \u00b10.24% (93 runs sampled)</code> &gt;<code>fbjs/lib/shallowEqual (array, unequal) x 1,648,398 ops/sec \u00b10.77% (92 runs sampled)</code>\n</p></blockquote>\n<p>You can run the benchmarks yourselves by cloning the repository, installing dependencies, and running the <code>benchmark/index.js</code> script:</p>\n<pre><code>git clone https://github.com/WordPress/gutenberg.git\nnpm install\nnpm run build:packages\nnode ./packages/is-shallow-equal/benchmark\n</code></pre>\n<h2>Contributing to this package</h2>\n<p>This is an individual package that&#8217;s part of the Gutenberg project. The project is organized as a monorepo. It&#8217;s made up of multiple self-contained software packages, each with a specific purpose. The packages in this monorepo are published to <a href=\"https://www.npmjs.com/\">npm</a> and used by <a href=\"https://make.wordpress.org/core/\">WordPress</a> as well as other software projects.</p>\n<p>To find out more about contributing to this package or Gutenberg as a whole, please read the project&#8217;s main <a href=\"https://github.com/WordPress/gutenberg/tree/HEAD/CONTRIBUTING.md\">contributor guide</a>.</p>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134521,
+    "menu_order": 290,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134570",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134570",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134570/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156236,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134570/revisions/156236"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134521"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134570"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

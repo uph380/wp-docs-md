@@ -1,0 +1,91 @@
+{
+    "id": 134502,
+    "date": "2021-03-09T08:38:21",
+    "date_gmt": "2021-03-09T08:38:21",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/reference-guides/components/select-control/"
+    },
+    "modified": "2024-12-11T23:19:12",
+    "modified_gmt": "2024-12-11T23:19:12",
+    "slug": "select-control",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/reference-guides/components/select-control/",
+    "title": {
+        "rendered": "SelectControl"
+    },
+    "content": {
+        "rendered": "<p>SelectControl allow users to select from a single or multiple option menu. It functions as a wrapper around the browser&#8217;s native <code>&lt;select&gt;</code> element.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select.png?ssl=1\" alt=\"A \u201cLink To\u201d select with \u201cnone\u201d selected.\" /></p>\n<h2>Design guidelines</h2>\n<h3>Usage</h3>\n<h4>When to use a select control</h4>\n<p>Use a select control when:</p>\n<ul>\n<li>You want users to select one or more options from a list.</li>\n<li>There is a strong default option.</li>\n<li>There is little available space.</li>\n<li>The contents of the hidden part of the menu are obvious from its label and the one selected item. For example, if you have an option menu labelled \u201cMonth:\u201d with the item \u201cJanuary\u201d selected, the user might reasonably infer that the menu contains the 12 months of the year without having to look.</li>\n</ul>\n<p>If you have a shorter list of options, consider using RadioControl instead.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select-do-multiple.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Do</strong><br />\nUse selects when you have multiple options.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select-dont-binary.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Don\u2019t</strong><br />\nUse selects for binary questions.</p>\n<h3>Behavior</h3>\n<p>A SelectControl includes a double-arrow indicator. The menu appears layered over the select.</p>\n<h4>Opening and Closing</h4>\n<p>Once the menu is displayed onscreen, it remains open until the user chooses a menu item, clicks outside of the menu, or switches to another browser tab.</p>\n<h3>Content Guidelines</h3>\n<h4>Labels</h4>\n<p>Label the SelectControl with a text label above it, or to its left, using sentence capitalization. Clicking the label allows the user to focus directly on the select.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select-do-position.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Do</strong><br />\nPosition the label above, or to the left of, the select.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select-dont-position.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Don\u2019t</strong><br />\nPosition the label centered over the select, or right aligned against the side of the select.</p>\n<p><strong>Menu Items</strong></p>\n<ul>\n<li>Menu items should be short \u2014 ideally, single words \u2014 and use sentence capitalization.</li>\n<li>Do not use full sentences inside menu items.</li>\n<li>Ensure that menu items are ordered in a way that is most useful to users. Alphabetical or recency ordering is preferred.</li>\n</ul>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select-do-options.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Do</strong><br />\nUse short menu items.</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" src=\"https://i0.wp.com/wordpress.org/gutenberg/files/2018/12/select-dont-options.png?ssl=1\" alt=\"\" /></p>\n<p><strong>Don\u2019t</strong><br />\nUse sentences in your menu.</p>\n<h2>Development guidelines</h2>\n<h3>Usage</h3>\n<p>Render a user interface to select the size of an image.</p>\n<pre><code class=\"language-jsx\">import { useState } from 'react';\nimport { SelectControl } from '@wordpress/components';\n\nconst MySelectControl = () =&gt; {\n    const [ size, setSize ] = useState( '50%' );\n\n    return (\n        &lt;SelectControl\n            label=\"Size\"\n            value={ size }\n            options={ [\n                { label: 'Big', value: '100%' },\n                { label: 'Medium', value: '50%' },\n                { label: 'Small', value: '25%' },\n            ] }\n            onChange={ ( newSize ) =&gt; setSize( newSize ) }\n            __next40pxDefaultSize\n            __nextHasNoMarginBottom\n        /&gt;\n    );\n};\n</code></pre>\n<p>Render a user interface to select multiple users from a list.</p>\n<pre><code class=\"language-jsx\">&lt;SelectControl\n    multiple\n    label={ __( 'User' ) }\n    value={ this.state.users } // e.g: value = [ 'a', 'c' ]\n    onChange={ ( users ) =&gt; {\n        this.setState( { users } );\n    } }\n    options={ [\n        { value: &apos;&apos;, label: 'Select a User', disabled: true },\n        { value: 'a', label: 'User A' },\n        { value: 'b', label: 'User B' },\n        { value: 'c', label: 'User c' },\n    ] }\n    __next40pxDefaultSize\n    __nextHasNoMarginBottom\n/&gt;\n</code></pre>\n<p>Render a user interface to select items within groups</p>\n<pre><code class=\"language-jsx\">const [ item, setItem ] = useState( &apos;&apos; );\n\n// ...\n\n&lt;SelectControl\n    label={ __( 'My dinosaur' ) }\n    value={ item } // e.g: value = 'a'\n    onChange={ ( selection ) =&gt; { setItem( selection ) } }\n    __next40pxDefaultSize\n    __nextHasNoMarginBottom\n&gt;\n    &lt;optgroup label=\"Theropods\"&gt;\n        &lt;option value=\"Tyrannosaurus\"&gt;Tyrannosaurus&lt;/option&gt;\n        &lt;option value=\"Velociraptor\"&gt;Velociraptor&lt;/option&gt;\n        &lt;option value=\"Deinonychus\"&gt;Deinonychus&lt;/option&gt;\n    &lt;/optgroup&gt;\n    &lt;optgroup label=\"Sauropods\"&gt;\n        &lt;option value=\"Diplodocus\"&gt;Diplodocus&lt;/option&gt;\n        &lt;option value=\"Saltasaurus\"&gt;Saltasaurus&lt;/option&gt;\n        &lt;option value=\"Apatosaurus\"&gt;Apatosaurus&lt;/option&gt;\n    &lt;/optgroup&gt;\n&lt;/SelectControl&gt;\n</code></pre>\n<h3>Props</h3>\n<ul>\n<li>The set of props accepted by the component will be specified below.</li>\n<li>Props not included in this set will be applied to the select element.</li>\n<li>One important prop to refer is <code>value</code>. If <code>multiple</code> is <code>true</code>, <code>value</code> should be an array with the values of the selected options.</li>\n<li>If <code>multiple</code> is <code>false</code>, <code>value</code> should be equal to the value of the selected option.</li>\n</ul>\n<h4>label</h4>\n<p>If this property is added, a label will be generated using label property as the content.</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>labelPosition</h4>\n<p>The position of the label (<code>top</code>, <code>side</code>, or <code>bottom</code>).</p>\n<ul>\n<li>Type: <code>String</code></li>\n<li>Required: No</li>\n</ul>\n<h4>hideLabelFromVision</h4>\n<p>If true, the label will only be visible to screen readers.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h4>help</h4>\n<p>If this property is added, a help text will be generated using help property as the content.</p>\n<ul>\n<li>Type: <code>String|Element</code></li>\n<li>Required: No</li>\n</ul>\n<h4>multiple</h4>\n<p>If this property is added, multiple values can be selected. The <code>value</code> passed should be an array.</p>\n<p>In most cases, it is preferable to use the <code>FormTokenField</code> or <code>CheckboxControl</code> components instead.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n</ul>\n<h4>options</h4>\n<p>An array of objects containing the following properties, as well as any other <code>option</code> element attributes:</p>\n<ul>\n<li><code>label</code>: (string) The label to be shown to the user.</li>\n<li><code>value</code>: (string) The internal value used to choose the selected value. This is also the value passed to onChange when the option is selected.</li>\n<li><code>disabled</code>: (boolean) Whether or not the option should have the disabled attribute.</li>\n<li>Type: <code>Array</code></li>\n<li>Required: No</li>\n</ul>\n<h4>children</h4>\n<p>An alternative to the <code>options</code> prop.<br />\nUse the <code>children</code> prop to have more control on the style of the items being rendered, like <code>optgroup</code>s or <code>options</code> and possibly avoid re-rendering due to the reference update on the <code>options</code> prop.<br />\n&#8211; Type: <code>ReactNode</code><br />\n&#8211; Required: No</p>\n<h4>onChange</h4>\n<p>A function that receives the value of the new option that is being selected as input.<br />\nIf multiple is true the value received is an array of the selected value.<br />\nIf multiple is false the value received is a single value with the new selected value.</p>\n<ul>\n<li>Type: <code>function</code></li>\n<li>Required: Yes</li>\n</ul>\n<h4>value</h4>\n<p>The value of the selected option. If <code>multiple</code> is true, the <code>value</code> should be an array with the values of the selected options.</p>\n<ul>\n<li>Type: <code>String|String[]</code></li>\n<li>Required: No</li>\n</ul>\n<h4>variant</h4>\n<p>The style variant of the control.</p>\n<ul>\n<li>Type: <code>'default' | 'minimal'</code></li>\n<li>Required: No</li>\n<li>Default: <code>'default'</code></li>\n</ul>\n<h3>__next40pxDefaultSize</h3>\n<p>Start opting into the larger default height that will become the default size in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h3>__nextHasNoMarginBottom</h3>\n<p>Start opting into the new margin-free styles that will become the default in a future version.</p>\n<ul>\n<li>Type: <code>Boolean</code></li>\n<li>Required: No</li>\n<li>Default: <code>false</code></li>\n</ul>\n<h2>Related components</h2>\n<ul>\n<li>To select one option from a set, and you want to show them all the available options at once, use the <code>Radio</code> component.</li>\n<li>To select one or more items from a set, use the <code>CheckboxControl</code> component.</li>\n<li>To toggle a single setting on or off, use the <code>ToggleControl</code> component.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 134435,
+    "menu_order": 202,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-134502",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134502",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 19,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134502/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 156085,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134502/revisions/156085"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/134435"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=134502"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

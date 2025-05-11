@@ -1,0 +1,91 @@
+{
+    "id": 24962,
+    "date": "2017-01-18T20:44:13",
+    "date_gmt": "2017-01-18T20:44:13",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=rest-api-handbook&#038;p=24962"
+    },
+    "modified": "2024-01-16T20:30:16",
+    "modified_gmt": "2024-01-16T20:30:16",
+    "slug": "using-the-rest-api",
+    "status": "publish",
+    "type": "rest-api-handbook",
+    "link": "https://developer.wordpress.org/rest-api/using-the-rest-api/",
+    "title": {
+        "rendered": "Using the REST API"
+    },
+    "content": {
+        "rendered": "These articles explore the basic structure of the WordPress REST API.\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/\">Global Parameters</a>: learn about the global REST API query parameters that apply to every endpoint\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/\">Pagination</a>: work with large collections of resources &amp; control how many records you receive from the REST API\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/linking-and-embedding/\">Linking &amp; Embedding</a>: understand how to read and modify connections between different objects, and embed related resources such as author and media data in the REST API&#8217;s responses\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/discovery/\">Discovery</a>: determine what REST API resources a site supports, and where they are located\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/\">Authentication</a>: authorize your REST API requests so that you can create, update and delete your data\n\n<a href=\"https://developer.wordpress.org/rest-api/frequently-asked-questions/\">Frequently Asked Questions</a>: see some of the most frequent inquiries about the REST API and learn how to solve common problems\n\n<h2>Resources &amp; Utilities</h2>\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/backbone-javascript-client/\">Backbone.js Client</a>: interact with the API from within WP-Admin using Backbone models &amp; collections\n\n<a href=\"https://developer.wordpress.org/rest-api/using-the-rest-api/client-libraries/\">Client Libraries</a>: utilities in a variety of programming languages that simplify interacting with the API\n",
+        "protected": false
+    },
+    "author": 5896197,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 4,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-24962",
+        "rest-api-handbook",
+        "type-rest-api-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24962",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/rest-api-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/5896197"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 15,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24962/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 127334,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/rest-api-handbook/24962/revisions/127334"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=24962"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

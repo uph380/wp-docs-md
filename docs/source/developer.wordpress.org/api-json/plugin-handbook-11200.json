@@ -1,0 +1,97 @@
+{
+    "id": 11200,
+    "date": "2014-10-19T18:59:19",
+    "date_gmt": "2014-10-19T18:59:19",
+    "guid": {
+        "rendered": "http://developer.wordpress.org/?post_type=plugin-handbook&#038;p=11200"
+    },
+    "modified": "2020-04-05T18:06:39",
+    "modified_gmt": "2020-04-05T18:06:39",
+    "slug": "debug-bar-and-add-ons",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/developer-tools/debug-bar-and-add-ons/",
+    "title": {
+        "rendered": "Debug Bar and Add-Ons"
+    },
+    "content": {
+        "rendered": "\n<p>The Debug Bar is a plugin that adds a debug menu to the admin bar that shows query, cache, and other helpful debugging information.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar</h2>\n\n\n\n<p>This is the main plugin, adding the base functionality that is extended by the remaining plugins listed on this page.</p>\n\n\n\n<p>When WP_DEBUG is enabled it also tracks PHP Warnings and Notices to make them easier to find.</p>\n\n\n\n<p>When SAVEQUERIES is enabled the mysql queries are tracked and displayed.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar/\">Visit Debug Bar</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Console</h2>\n\n\n\n<p>This plugin adds a console in which you can run arbitrary PHP.\u00a0 This is excellent for testing the contents of variables, among many other uses.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-console/\">Visit Debug Bar Console</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Shortcodes</h2>\n\n\n\n<p>This plugin adds a new panel to the Debug Bar that displays the registered shortcodes for the current request.</p>\n\n\n\n<p>Additionally it will show you:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Which function/method is called by the shortcode.</li><li>Whether the shortcode is used on the current post/page/post type and how (only when on singular).</li><li>Any additional information available about the shortcode, such as a description, which parameters it takes, whether or not it is self-closing.</li><li>Find out all pages/posts/etc on which a shortcode is used.</li></ul>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-shortcodes/\">Visit Debug Bar Shortcodes</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Constants</h2>\n\n\n\n<p>This plugin adds three new panels to the Debug Bar that display the defined constants available to you as a developer for the current request:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>WP Constants</li><li>WP Class Constants</li><li>PHP Constants</li></ul>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-constants/\">Visit Debug Bar Constants</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Post Types</h2>\n\n\n\n<p>This plugin adds a new panel to the Debug Bar that displays detailed information about the registered post types for your site.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-post-types/\">Visit Debug Bar Post Types</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Cron</h2>\n\n\n\n<p>This plugin adds a new panel in the Debug Bar displaying information about WordPress&#8217; scheduled events.</p>\n\n\n\n<p>Once installed, you will have access to the following information:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Number of scheduled events</li><li>If cron is currently running</li><li>Time of next event</li><li>Current time</li><li>List of custom scheduled events</li><li>List of core scheduled events</li><li>List of schedules</li></ul>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-cron/\">Visit Debug Bar Cron</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Actions and Filters Addon</h2>\n\n\n\n<p>This plugin adds two more tabs in the Debug Bar to display hooks (Actions and Filters) attached to the current request. Actions tab displays the actions hooked to current request. Filters tab displays the filter tags along with the functions attached to it with respective priority.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-actions-and-filters-addon/\">Visit Debug Bar Actions and Filters Addon</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Transients</h2>\n\n\n\n<p>This plugin adds information about WordPress transients to a new panel in the Debug Bar.</p>\n\n\n\n<p>Once installed, you will have access to the following information:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Number of existing transients</li><li>List of custom transients</li><li>List of core transients</li><li>List of custom site transients</li><li>List of core site transients</li><li>An option to delete a transient</li></ul>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-transients/\">Visit Debug Bar Transients</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar List Script &amp; Style Dependencies</h2>\n\n\n\n<p>This plugin lists scripts and styles that are loaded, in which order they&#8217;re loaded, and what dependencies exist.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-list-dependencies/\">Visit Debug Bar List Script &amp; Style Dependencies</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Debug Bar Remote Requests</h2>\n\n\n\n<p>This plugin will add a new panel to Debug Bar that will display and profile  remote requests made through the HTTP API.</p>\n\n\n\n<p>Once installed, you will have access to the following information:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>Request method (GET, POST, etc)</li><li>URL</li><li>Time per request</li><li>Total time for all requests</li><li>Total number of requests</li></ul>\n\n\n\n<p>Optionally, you can add <code>?dbrr_full=1</code> to your URL to get additional information, including all request parameters and a full dump of the response with headers.</p>\n\n\n\n<p><a href=\"https://wordpress.org/plugins/debug-bar-remote-requests/\">Visit Debug Bar Remote Requests</a></p>\n",
+        "protected": false
+    },
+    "author": 12560283,
+    "featured_media": 0,
+    "parent": 11198,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-11200",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11200",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/12560283"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11200/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 127748,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11200/revisions/127748"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/11198"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=11200"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "id": 15443554,
+    "date": "2022-03-09T22:35:49",
+    "date_gmt": "2022-03-09T22:35:49",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=15443554"
+    },
+    "modified": "2024-06-08T19:54:24",
+    "modified_gmt": "2024-06-08T19:54:24",
+    "slug": "term-description-block",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/term-description-block/",
+    "title": {
+        "rendered": "Term Description block"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go to the list of Blocks</a></p>\n\n\n\n<p>Use the Term Description block to display the description of the Category, Tag, or custom Taxonomy on the archive pages.&nbsp;</p>\n\n\n\n<div class=\"callout callout-info\" style=\"background: #e5f5fa;border-left: 5px solid #00a0d2;padding: 1.5em 3em 1.6em 3.7em;margin-bottom: 1.5em\"><p><em><strong>Note:</strong> </em>This block works only in the archive pages and will not be visible on other pages of the website<em>.</em> This block should be used only in the <a href=\"https://wordpress.org/documentation/article/site-editor/\">Site Editor</a> to edit the archive page templates. </p></div>\n\n\n\n<p>To add a term description block, click the <strong>Block Inserter</strong> icon when editing the archive page template. Search for the Term Description<strong> </strong>block. Click on it to add the block to your page template.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls src=\"https://wordpress.org/documentation/files/2022/03/Screen-Recording-2022-03-08-at-3.25.05-PM.mov\"></video><figcaption class=\"wp-element-caption\"><em>Video showing how to add Term Description Block</em></figcaption></figure>\n\n\n\n<p>You can also type /term-description and hit enter in a new paragraph block to add the Term Description block quickly.</p>\n\n\n\n<p class=\"has-text-align-center\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/lvkVqu-Rv2KFP6kpbMAywR2rBdbSXO5UxhXaylws9QKuyrD4rS7Ha4zzHI88IndS4nmE5y4od2TnJhToqpeItt407xz0oycQpnmsw3oYLhyjNrAIt31NgfpSXdm6FATWUecyxiHz\" style=\"width: 430px\">&nbsp;</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<p>To view the block toolbar, click on the block and the toolbar will be displayed.</p>\n\n\n\n<p>Every block comes with unique toolbar icons. These block-specific controls allow you to manipulate the block right in the editor.</p>\n\n\n\n<p>The Term Description block shows six buttons in the block toolbar:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Transform to</li>\n\n\n\n<li>Drag icon</li>\n\n\n\n<li>Move arrows</li>\n\n\n\n<li>Change alignment</li>\n\n\n\n<li>Change text alignment</li>\n\n\n\n<li>More options</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/LYl_juP8TLdwssyxpirACEee3SaPU9CkuCno43moTSPrm2SfvEyI4UGL1VjOTVUlvZCEMkvKVmi6FDGnv3TnI09D2mJyCt2Oog0l9RBTCYaNB5_h5yKiX-jI_K-BTX80fRhcIJev\" alt=\"Term Description Block Toolbar\" style=\"width:258px;height:57px\" width=\"258\" height=\"57\" /><figcaption class=\"wp-element-caption\">Term Description Block Toolbar</figcaption></figure>\n\n\n\n<p><strong>Transform to:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/iwLpWvJ4BYzBoVVZD9tCOaQj6MarzkRZhnl7KCbfXJmnogyOpLKMTanO__RODyK8YBm28fLOQPpqefV9iKOzWe8tVoF9U6a3_oYXIeUfvZJDXYKi9cnstQn15ngf0aD_xfX3FerP\" alt=\"Transform options in the Term Description Block\" style=\"width:260px;height:156px\" width=\"260\" height=\"156\" /><figcaption class=\"wp-element-caption\"> Transform options in the Term Description Block</figcaption></figure>\n\n\n\n<p>Click on the \u201cTransform\u201d button to convert the Term Description block into a \u201cGroup\u201d block or \u201cColumns\u201d block.&nbsp;</p>\n\n\n\n<p><strong>Drag icon:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/atMNGUfXYEMxaIwgDm6LEnLAu-11ClhGWGx6e5HbVqCHohLCSchnPgORXaqAhXXm6XtsY_bBjbaeZ4vDMIANC34Xby9jTVFlXfFOqlC9etMaCjRchka00NgGDccv-F9xyLA11cHS\" alt=\"Drag icon in the Term Description Block\" style=\"width:259px;height:74px\" width=\"259\" height=\"74\" /><figcaption class=\"wp-element-caption\">Drag icon in the Term Description Block</figcaption></figure>\n\n\n\n<p>To drag and drop the block to a new location on the page template, click and hold the rectangle of dots, then drag to the new location. The blue separator line indicates where the block will be placed. Release the left mouse button when you find the new location to place the block.</p>\n\n\n\n<p><strong>Move arrows:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh5.googleusercontent.com/3YG1V7gqjHVyHO24ld_wexDfmTm4wGbbFkBpiCVp7xz6xpo76NWdhZZmr-yDJpBmTPcdutEvafoifs4TQQHmSTY_wDXvJWI0FMiPClVkgqgldbFyoDXtegi-5zj8I9efoHj2jvkr\" alt=\"Move arrows in the Term Description Block\" style=\"width:276px;height:71px\" width=\"276\" height=\"71\" /><figcaption class=\"wp-element-caption\">Move arrows in the Term Description Block</figcaption></figure>\n\n\n\n<p>The up and down arrow icons can be used to move the block up and down on the page.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a rel=\"noreferrer noopener\" href=\"https://wordpress.org/documentation/article/moving-blocks/\" target=\"_blank\">Get more information about moving a block within the editor.</a></p>\n\n\n\n<p><strong>Change alignment:</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/iR_l6rG6VvtaSH4qDtmWbRaS3XCs9DeHcuKf7CIiegn0Ni7m2r1v6IbfoBjrzbLFVxXseJP-8qNgUfpP8tQu-aX7YyQTx8-JmuTb0oYy9wcmVXWJZKh7QrvY7CWV04SmGs7Rd4AX\" alt=\"Change alignment options in the Term Description Block\" style=\"width:350px;height:185px\" width=\"350\" height=\"185\" /><figcaption class=\"wp-element-caption\">Change alignment options in the Term Description Block</figcaption></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>None \u2013 </strong>Leaves the block the current size.</li>\n\n\n\n<li><strong>Wide width \u2013 </strong>Increase the width of the block beyond the content size.</li>\n\n\n\n<li><strong>Full width \u2013 </strong>Extend the block to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p><strong>Change text alignment</strong>:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh3.googleusercontent.com/vIs7s6OFFbgG9kkhP3PENMtf4HSLiGq82TxqnaMK9Cw5rxE2HoFcXhGLNPcmNSZ6iM3vTz34J9WgefH5rS3FplyfMFhUdazA_bGsHwLRQunCL48YVdF8-ScHco4srOTRjTChzgdi\" alt=\"Change text alignment options in the Term Description Block\" style=\"width:354px;height:168px\" width=\"354\" height=\"168\" /><figcaption class=\"wp-element-caption\">Change text alignment options in the Term Description Block</figcaption></figure>\n\n\n\n<p>Click the \u201cChange text alignment\u201d button in the Block toolbar to display the options in the drop-down. You can align the block text to the left, make it center-aligned or align it to the right.</p>\n\n\n\n<h3 class=\"wp-block-heading\">More options</h3>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>In addition to the block toolbar, every block has specific options in the editor sidebar.</p>\n\n\n\n<p><em>If you do not see the sidebar, click the \u2018cog\u2019 icon next to the Save button.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh4.googleusercontent.com/X2GkvYhDtWANEdEhCnCuceni8VSAq_zr9ALsTbwpPbJvryNKiKWDO0zBKICHrzEPw3DjpaNeDRuLk2ea7WdqcC6h59_UcEs-2gOoaAktxUqvmWJKGc8eEJZ3s23KxKsVIwBuGeJp\" alt=\"How to turn on the Block Settings sidebar\" style=\"width:-67px;height:-13px\" width=\"-67\" height=\"-13\" /><figcaption class=\"wp-element-caption\">How to turn on the Block Settings sidebar</figcaption></figure>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/L5ebVHjcIAJ9R8Dm3mToIiPXXoEtaQjnCX_mNEhPLOk7BS3CZUIvtQciqRbg0d7ST3zCjoqxeHjW71Xk9ayx0iIu7WZs9YFpf2hJqqHEgKqYuOdsKE0S7mx9TJbh1aDgauuotleS\" alt=\"Block Settings sidebar in the Term Description Block\" style=\"width:276px;height:446px\" width=\"276\" height=\"446\" /><figcaption class=\"wp-element-caption\">Block Settings sidebar in the Term Description Block</figcaption></figure>\n\n\n\n<h3 class=\"wp-block-heading\">Color</h3>\n\n\n\n<p>You can customize the text color, background color, and link color for&nbsp;the Term Description block.<em> The color options available will vary based on the theme.</em></p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/9-PRqGNzS_m1KFv6XQ5nG-VYOhezHhKzKTe2vaMI-UdNGX2jlm54BIxh0ZgTdpLmo6z3v1tPk3eoMKwKGDKA-BA9-YiKl_FqeyYXsWfwZvuxxXF7dIEpY_LU6E50FizqWBD6kZiI\" alt=\"Color Settings in the Term Description Block\" style=\"width:358px;height:216px\" width=\"358\" height=\"216\" /><figcaption class=\"wp-element-caption\">Color Settings in the Term Description Block</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\">See this guide for more information about changing colors.</a></p>\n\n\n\n<h3 class=\"wp-block-heading\">Typography </h3>\n\n\n\n<p>On this tab, you can adjust the font size and line height of the Term Description block.&nbsp;To change the font size, select the numbers 1 (for small), 2 (for medium), 3 (for large) or 4 (for extra large).&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh3.googleusercontent.com/G-Ge3SopNlqWxHGRN-pF-VIABpWUHu2-7DacsUMhNbrg21wsRvss-bUVp43r98RV3Wva8UvFRLyokdKKXAS8ryx0Wz5vQQHwKCgecVkJK_r48jhV95wcma4m4B4QLq2oWHKPw5vR\" alt=\"Typography Setting in the Term Description Block\" style=\"width:307px;height:154px\" width=\"307\" height=\"154\" /><figcaption class=\"wp-element-caption\">Typography Setting in the Term Description Block</figcaption></figure>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/colors-settings-overview/\"></a><a href=\"https://wordpress.org/documentation/article/typography-settings-overview/\">Get more details about changing typography settings.</a></p>\n\n\n\n<p></p>\n\n\n\n<p><strong>Advanced </strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img loading=\"lazy\" decoding=\"async\" src=\"https://lh6.googleusercontent.com/HCaeEAd-xkijY3husAGN8FkRfOokz6h-mLa1vQoT11JIf366WEE4Y3jtoy6CTOJGTpBZELgZPdIewg2ug8pURV5XtFciGwLHJiNwleOvlGte5WnWTug0SYe4p-qBR54_8oR1NwHM\" alt=\"Advanced option in the selected Block\" style=\"width:283px;height:151px\" width=\"283\" height=\"151\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<div id=\"changelog\" class=\"wp-block-group changelog has-background is-layout-flow wp-block-group-is-layout-flow\" style=\"background-color:#dce5ec\">\n<h2 class=\"wp-block-heading has-medium-font-size\">Changelog</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Created 2022-03-09</li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Use the Term Description block to display the description of the Category, Tag, or custom Taxonomy on the archive pages.&nbsp; Note: This block works only in the archive pages and will not be visible on other pages of the website. This block should be used only in the Site Editor to edit the archive page [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        91
+    ],
+    "class_list": [
+        "post-15443554",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-theme-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15443554",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=15443554"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 5,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15443554/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360419,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/15443554/revisions/16360419"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=15443554"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=15443554"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

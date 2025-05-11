@@ -1,0 +1,91 @@
+{
+    "id": 135090,
+    "date": "2021-03-10T00:39:48",
+    "date_gmt": "2021-03-10T00:39:48",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/block-editor/contributors/code/"
+    },
+    "modified": "2025-01-07T18:34:10",
+    "modified_gmt": "2025-01-07T18:34:10",
+    "slug": "code",
+    "status": "publish",
+    "type": "blocks-handbook",
+    "link": "https://developer.wordpress.org/block-editor/contributors/code/",
+    "title": {
+        "rendered": "Code Contributions"
+    },
+    "content": {
+        "rendered": "<p>A guide on how to get started contributing code to the Gutenberg project.</p>\n<h2>Discussions</h2>\n<p>The <a href=\"https://make.wordpress.org/core/\">Make WordPress Core blog</a> is the primary spot for the latest information around WordPress development, including announcements, product goals, meeting notes, meeting agendas, and more.</p>\n<p>Development discussions take place in real-time in the <code>#core-editor</code> and <code>#core-js</code> channels in <a href=\"https://make.wordpress.org/chat\">Make WordPress Slack</a> (registration required).</p>\n<h2>Development Hub</h2>\n<p>The Gutenberg project uses GitHub to manage code and track issues. The main repository is at: <a href=\"https://github.com/WordPress/gutenberg\">https://github.com/WordPress/gutenberg</a>.</p>\n<p>Browse <a href=\"https://github.com/wordpress/gutenberg/issues\">the issues list</a> to find issues to work on. The <a href=\"https://github.com/wordpress/gutenberg/issues?q=is%3Aopen+is%3Aissue+label%3A%22Good+First+Issue%22\">good first issue</a> and <a href=\"https://github.com/WordPress/gutenberg/pulls?q=is%3Aopen+is%3Apr+label%3A%22Good+First+Review%22\">good first review</a> labels are good starting points.</p>\n<h2>Contributor resources</h2>\n<ul>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/getting-started-with-code-contribution/\">Getting Started</a> documents getting your development environment setup, this includes your test site and developer tools suggestions.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/git-workflow/\">Git Workflow</a> documents the git process for deploying changes using pull requests.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/coding-guidelines/\">Coding Guidelines</a> outline additional patterns and conventions used in the Gutenberg project.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/testing-overview/\">Testing Overview</a> for PHP and JavaScript development in Gutenberg.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/accessibility-testing/\">Accessibility Testing</a> documents the process of testing accessibility in Gutenberg.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/managing-packages/\">Managing Packages</a> documents the process for managing the npm packages.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/release/\">Gutenberg Release Process</a> &#8211; a checklist for the different types of releases for the Gutenberg project.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/react-native/\">React Native mobile editor</a> &#8211; a guide on contributing to the React Native mobile editor.</li>\n<li><a href=\"https://developer.wordpress.org/block-editor/contributors/code/react-native/integration-test-guide/\">React Native Integration Test Guide</a> &#8211; a guide on creating integration tests for the mobile editor.</li>\n</ul>\n",
+        "protected": false
+    },
+    "author": 0,
+    "featured_media": 0,
+    "parent": 135089,
+    "menu_order": 369,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-135090",
+        "blocks-handbook",
+        "type-blocks-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/blocks-handbook"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 8,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 155613,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135090/revisions/155613"
+            }
+        ],
+        "up": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/blocks-handbook/135089"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=135090"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

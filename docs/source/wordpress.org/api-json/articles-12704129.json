@@ -1,0 +1,109 @@
+{
+    "id": 12704129,
+    "date": "2020-04-20T20:33:17",
+    "date_gmt": "2020-04-20T20:33:17",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=12704129"
+    },
+    "modified": "2024-09-27T12:43:08",
+    "modified_gmt": "2024-09-27T12:43:08",
+    "slug": "facebook-embed",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/facebook-embed/",
+    "title": {
+        "rendered": "Facebook embed"
+    },
+    "content": {
+        "rendered": "\n<p class=\"has-text-align-right has-small-font-size\"><a href=\"https://wordpress.org/documentation/article/blocks/\">Go back to the list of <strong>Blocks</strong></a></p>\n\n\n\n<p class=\"has-black-color has-text-color has-background\" style=\"background-color:#eaf3f9\">Due to Facebook&#8217;s <a href=\"https://developers.facebook.com/blog/post/2020/08/04/Introducing-graph-v8-marketing-api-v8\">decision to close the oEmbed end </a>point for embedding Facebook links, the block will not work anymore after October 24, 2020. Publishers who want to embed Facebook links into their sites will require a developer account and an appid, and provide an authentication token with their call to the endpoint. Facebook Documentation:  <a href=\"https://developers.facebook.com/docs/apps/\" data-type=\"URL\" data-id=\"https://developers.facebook.com/docs/apps/\">create an app</a></p>\n\n\n\n<p>WordPress leadership reached out to Facebook but it seems the policy change is final. Apart from alerting users here and in other places, WordPress contributors can&#8217;t do anything about it. </p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity\" />\n\n\n\n<p><em>Facebook Embed</em> block allows you to add Facebook posts to your post or pages. Keep in mind that the post needs to be <em>public</em><strong><em> </em></strong>in order to add it.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"467\" src=\"https://wordpress.org/documentation/files/2020/04/image6-1024x467.png\" alt=\"Facebook Embed block\" class=\"wp-image-16361032\" srcset=\"https://wordpress.org/documentation/files/2020/04/image6-1024x467.png 1024w, https://wordpress.org/documentation/files/2020/04/image6-300x137.png 300w, https://wordpress.org/documentation/files/2020/04/image6-768x350.png 768w, https://wordpress.org/documentation/files/2020/04/image6-1536x701.png 1536w, https://wordpress.org/documentation/files/2020/04/image6.png 1552w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Besides Facebook Posts, you can also share links to Facebook Photos, Facebook Albums, and Facebook Videos.</p>\n\n\n\n<p>Note that you can not embed Facebook pages, Facebook events, and Facebook groups.</p>\n\n\n\n<p>Embedding a Facebook post is as simple as following these steps:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Copy the preferred link from the Facebook post you want to embed. Make sure it&#8217;s a public post.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"551\" src=\"https://wordpress.org/documentation/files/2020/04/image3-1024x551.png\" alt=\"Copy the preferred link from a Facebook post\n\" class=\"wp-image-16361034\" style=\"width:347px;height:187px\" srcset=\"https://wordpress.org/documentation/files/2020/04/image3-1024x551.png 1024w, https://wordpress.org/documentation/files/2020/04/image3-300x162.png 300w, https://wordpress.org/documentation/files/2020/04/image3-768x414.png 768w, https://wordpress.org/documentation/files/2020/04/image3-1536x827.png 1536w, https://wordpress.org/documentation/files/2020/04/image3.png 1675w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ol start=\"2\" class=\"wp-block-list\">\n<li>From the WordPress dashboard, go to your post and click the (+) icon to open the block inserter pop-up window and search for the <em>Facebook</em> block. You can also use the keyboard shortcut <kbd>/facebook</kbd> to quickly insert a <em>Facebook </em>block.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"868\" height=\"588\" src=\"https://wordpress.org/documentation/files/2020/04/image9.png\" alt=\"Inserting a Facebook embed block using the keyboard shortcut.\n\" class=\"wp-image-16361035\" style=\"width:357px;height:242px\" srcset=\"https://wordpress.org/documentation/files/2020/04/image9.png 868w, https://wordpress.org/documentation/files/2020/04/image9-300x203.png 300w, https://wordpress.org/documentation/files/2020/04/image9-768x520.png 768w\" sizes=\"auto, (max-width: 868px) 100vw, 868px\" /></figure>\n\n\n\n<p></p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/adding-a-new-block/\">Detailed instructions on adding blocks</a></p>\n\n\n\n<ol start=\"3\" class=\"wp-block-list\">\n<li>Paste the link that you\u2019ve copied and click <em>Embed</em>.</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"324\" src=\"https://wordpress.org/documentation/files/2020/04/image7-1024x324.png\" alt=\"Embed the post into the block\" class=\"wp-image-16361037\" style=\"aspect-ratio:3.1607142857142856;width:397px\" srcset=\"https://wordpress.org/documentation/files/2020/04/image7-1024x324.png 1024w, https://wordpress.org/documentation/files/2020/04/image7-300x95.png 300w, https://wordpress.org/documentation/files/2020/04/image7-768x243.png 768w, https://wordpress.org/documentation/files/2020/04/image7.png 1492w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ol start=\"4\" class=\"wp-block-list\">\n<li>In your editor, you see the link and the comment  &#8220;<em>Embedded content from facebook.com can\u2019t be previewed in the editor&#8221;</em>.<br></li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"690\" src=\"https://wordpress.org/documentation/files/2020/04/image1-1024x690.png\" alt=\"The message \u201cEmbedded content from facebook.com can\u2019t be previewed in the editor\u201d when you embed a Facebook post.\n\" class=\"wp-image-16361038\" style=\"aspect-ratio:1.4816326530612245;width:397px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2020/04/image1-1024x690.png 1024w, https://wordpress.org/documentation/files/2020/04/image1-300x202.png 300w, https://wordpress.org/documentation/files/2020/04/image1-768x517.png 768w, https://wordpress.org/documentation/files/2020/04/image1.png 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ol start=\"5\" class=\"wp-block-list\">\n<li>Use the <em>Preview</em> button to see how the post fits into your post/page</li>\n</ol>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1004\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.49.15-AM-1024x1004.png\" alt=\"Preview of the Facebook embed post.\" class=\"wp-image-16017641\" style=\"object-fit:cover;width:397px;height:345px\" srcset=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.49.15-AM-1024x1004.png 1024w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.49.15-AM-300x294.png 300w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.49.15-AM-768x753.png 768w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.49.15-AM.png 1212w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Block Toolbar</h2>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"856\" height=\"218\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.51.37-AM.png\" alt=\"Block toolbar for the Facebook embed block\" class=\"wp-image-16017649\" style=\"aspect-ratio:3.932584269662921;width:397px\" srcset=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.51.37-AM.png 856w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.51.37-AM-300x76.png 300w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.51.37-AM-768x196.png 768w\" sizes=\"auto, (max-width: 856px) 100vw, 856px\" /></figure>\n\n\n\n<p>The block toolbar contains the tools to customize each block. The <em>Facebook </em>&nbsp;block\u2019s toolbar consists of the following tools:</p>\n\n\n\n<p><strong>Transform to</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"758\" height=\"475\" src=\"https://wordpress.org/documentation/files/2020/04/image10.png\" alt=\"Transform tool in the Facebook embed block toolbar\" class=\"wp-image-16361042\" style=\"aspect-ratio:1.5947136563876652;width:428px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2020/04/image10.png 758w, https://wordpress.org/documentation/files/2020/04/image10-300x188.png 300w\" sizes=\"auto, (max-width: 758px) 100vw, 758px\" /></figure>\n\n\n\n<p>You can transform a <em>Facebook embed</em> into a Group. This would give you the ability to change the background color around the <em>Facebook embed</em>.</p>\n\n\n\n<p><strong>Block-moving tools</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"545\" height=\"155\" src=\"https://wordpress.org/documentation/files/2020/04/image5.png\" alt=\"Block moving tools in the Facebook embed block toolbar\" class=\"wp-image-16361043\" style=\"width:397px\" srcset=\"https://wordpress.org/documentation/files/2020/04/image5.png 545w, https://wordpress.org/documentation/files/2020/04/image5-300x85.png 300w\" sizes=\"auto, (max-width: 545px) 100vw, 545px\" /></figure>\n\n\n\n<p>Use the block-moving tools to move the block up and down inside the editor. Use the six dots icon to drag and drop the <em>Facebook</em> block and reposition it anywhere on the editor. Alternatively, click on the up and down arrows to move the block up or down the editor.</p>\n\n\n\n<p><strong>Change alignment</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"492\" src=\"https://wordpress.org/documentation/files/2020/04/image8-1024x492.png\" alt=\"Change alignment in the Facebook embed block toolbar\" class=\"wp-image-16361044\" style=\"aspect-ratio:2.083798882681564;width:459px;height:auto\" srcset=\"https://wordpress.org/documentation/files/2020/04/image8-1024x492.png 1024w, https://wordpress.org/documentation/files/2020/04/image8-300x144.png 300w, https://wordpress.org/documentation/files/2020/04/image8-768x369.png 768w, https://wordpress.org/documentation/files/2020/04/image8-1536x737.png 1536w, https://wordpress.org/documentation/files/2020/04/image8.png 1552w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Align left</strong> \u2013 Make the Facebook post left aligned</li>\n\n\n\n<li><strong>Align center</strong> \u2013 Make the Facebook post alignment centered</li>\n\n\n\n<li><strong>Align right </strong>\u2013 Make the Facebook post align right</li>\n\n\n\n<li><strong>Wide width</strong> \u2013 Increase the width of the post beyond the content size</li>\n\n\n\n<li><strong>Full width</strong> \u2013 Extend the Facebook post to cover the full width of the screen.</li>\n</ul>\n\n\n\n<p><strong>Note:</strong> <em>\u201cWide width\u201d and \u201cFull width\u201d alignments need to be enabled by the Theme of your site.</em></p>\n\n\n\n<p><strong>More options</strong></p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"878\" height=\"236\" src=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.59.04-AM.png\" alt=\"More options in the Facebook embed block\" class=\"wp-image-16017670\" style=\"object-fit:cover;width:397px;height:97px\" srcset=\"https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.59.04-AM.png 878w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.59.04-AM-300x81.png 300w, https://wordpress.org/documentation/files/2022/09/Screen-Shot-2022-09-16-at-10.59.04-AM-768x206.png 768w\" sizes=\"auto, (max-width: 878px) 100vw, 878px\" /></figure>\n\n\n\n<p>These controls give you the option to copy, duplicate, and edit your block as HTML.</p>\n\n\n\n<p class=\"has-text-align-left has-background\" style=\"background-color:#e5f5fa\"><a href=\"https://wordpress.org/documentation/article/more-options/\">Read about these and other settings.</a></p>\n\n\n\n<h2 class=\"wp-block-heading\">Block Settings</h2>\n\n\n\n<p>The block settings panel contains customization options specific to the block. To open it, select the block and click the cog icon next to the Publish button.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"240\" height=\"58\" src=\"https://wordpress.org/documentation/files/2020/04/image4.png\" alt=\"How to show the block settings sidebar\" class=\"wp-image-16361048\" style=\"width:274px;height:auto\" /></figure>\n\n\n\n<p>Besides the Advanced section, the Facebook embed has only one setting in the &#8220;Block Settings&#8221; sidebar: Media Settings. </p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Media settings</strong></p>\n\n\n\n<figure class=\"wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex\">\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"406\" height=\"182\" data-id=\"12701737\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-20-at-9.29.46-AM.png\" alt=\"Media settings turned off in the Facebook embed block\" class=\"wp-image-12701737\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-20-at-9.29.46-AM.png 406w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-20-at-9.29.46-AM-300x134.png 300w\" sizes=\"auto, (max-width: 406px) 100vw, 406px\" /></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"408\" height=\"197\" data-id=\"12701738\" src=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-20-at-9.29.55-AM.png\" alt=\"Media settings turned on in the Facebook embed block\" class=\"wp-image-12701738\" srcset=\"https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-20-at-9.29.55-AM.png 408w, https://wordpress.org/documentation/files/2020/04/Screen-Shot-2020-04-20-at-9.29.55-AM-300x145.png 300w\" sizes=\"auto, (max-width: 408px) 100vw, 408px\" /></figure>\n</figure>\n\n\n\n<p>Via the <em>Media Settings</em> you can control the behavior of your post embed when viewed from a smaller device, like on a  phone screen. </p>\n\n\n\n<p>The Toggle switch turns on or off the resize functionality for smaller devices. The default setting is &#8220;on&#8221; or blue. </p>\n\n\n\n<p><strong>&#8220;Off:&#8221;</strong> This embed may not preserve its aspect ratio when the browser is resized. In the off position the toggle switch is gray. </p>\n\n\n\n<p><strong>&#8220;On:&#8221;</strong> This embed will preserve its aspect ratio when the browser is resized. The toggle switch turns blue in the &#8220;On&#8221; position. </p>\n\n\n\n<p class=\"has-medium-font-size\"><strong>Advanced settings</strong></p>\n\n\n\n<p>The \u201cAdvanced\u201d tab lets you add CSS class(es) to your block. This will allow you to write custom CSS and styles to the block.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter is-resized\"><img decoding=\"async\" src=\"https://lh6.googleusercontent.com/HCaeEAd-xkijY3husAGN8FkRfOokz6h-mLa1vQoT11JIf366WEE4Y3jtoy6CTOJGTpBZELgZPdIewg2ug8pURV5XtFciGwLHJiNwleOvlGte5WnWTug0SYe4p-qBR54_8oR1NwHM\" alt=\"Advanced option in the selected Block\" style=\"width:397px\" /><figcaption class=\"wp-element-caption\">Advanced option in the selected Block</figcaption></figure>\n\n\n\n<p></p>\n\n\n\n<div class=\"wp-block-group changelog has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading\" id=\"changelog\">Changelog </h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Updated 2024-09-27\n<ul class=\"wp-block-list\">\n<li>Updated broken image Screenshots.</li>\n\n\n\n<li>Fixed inconsistent &#8220;Facebook&#8221; capitalization issue in the images&#8217; ALT texts.</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2022-08-16\n<ul class=\"wp-block-list\">\n<li>Fixed formatting, updated screenshots, and added new information about block-moving tools functionality.</li>\n\n\n\n<li>Added ALT tags for the images</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-09-21\n<ul class=\"wp-block-list\">\n<li>Announcement of discontinuation of Facebook block in v. 9.0 and WordPress 5.6</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-08-18\n<ul class=\"wp-block-list\">\n<li>Replaced \u201cMore Options\u201d \u2013 new screenshot</li>\n\n\n\n<li>Added \u201cMove To\u201d and \u201cCopy\u201d section under More Options</li>\n</ul>\n</li>\n\n\n\n<li>Updated 2020-04-21\n<ul class=\"wp-block-list\">\n<li>Add sentence to the Alignment about Theme support for wide width and full width options.</li>\n</ul>\n</li>\n\n\n\n<li>Created 2020-04-20 </li>\n</ul>\n</div>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Go back to the list of Blocks Due to Facebook&#8217;s decision to close the oEmbed end point for embedding Facebook links, the block will not work anymore after October 24, 2020. Publishers who want to embed Facebook links into their sites will require a developer account and an appid, and provide an authentication token with [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        80,
+        89
+    ],
+    "class_list": [
+        "post-12704129",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-customization",
+        "category-embed-blocks"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12704129",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=12704129"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 14,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12704129/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16361051,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/12704129/revisions/16361051"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=12704129"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=12704129"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

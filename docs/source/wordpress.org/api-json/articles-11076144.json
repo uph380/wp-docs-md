@@ -1,0 +1,109 @@
+{
+    "id": 11076144,
+    "date": "2019-01-13T14:28:55",
+    "date_gmt": "2019-01-13T14:28:55",
+    "guid": {
+        "rendered": "https://wordpress.org/support/?post_type=helphub_article&#038;p=11076144"
+    },
+    "modified": "2024-06-09T10:12:39",
+    "modified_gmt": "2024-06-09T10:12:39",
+    "slug": "wordpress-semantics",
+    "status": "publish",
+    "type": "helphub_article",
+    "link": "https://wordpress.org/documentation/article/wordpress-semantics/",
+    "title": {
+        "rendered": "WordPress Semantics"
+    },
+    "content": {
+        "rendered": "\n<h2 class=\"wp-block-heading\">Terminology Introduction</h2>\n\n\n\n<p>The developers created WordPress as a <strong>weblogging</strong> &nbsp;(<a href=\"/support/article/introduction-to-blogging/\">blogging</a>) system. A <a href=\"/support/article/glossary#blog\">blog</a>, as defined in the <a href=\"/support/article/glossary\">Codex Glossary</a>, is \u201can online journal, diary, or serial, published by a person or group of people\u201d. Many <em>blogs</em> are personal in nature, reflecting the opinions and interests of the owner. But, <em>blogs</em> are now important tools in the world of news, business, politics, and entertainment. </p>\n\n\n\n<p><em>Blogs</em> are a form of a <a href=\"/support/article/glossary#content-management-system\">Content Management System (CMS)</a>, which <a href=\"http://en.wikipedia.org/wiki/Content_management_system\">Wikipedia</a> calls &#8220;a system used to organize and facilitate collaborative content creation.&#8221; Both <em>blogs</em> and <em>Content Management Systems</em> can perform the role of a <a href=\"http://en.wikipedia.org/wiki/Website\">website</a> (<strong>site</strong> for short). A <em>website</em> can be thought of as a collection of articles and information about a specific subject, service, or product, which may not be a personal reflection of the owner. More recently, as the role of WordPress has expanded, WordPress developers have begun using the more general term <strong>site</strong>, in place of blog.</p>\n\n\n\n<h3 class=\"wp-block-heading\">Content Terminology</h3>\n\n\n\n<p>The term <strong>Word</strong> in WordPress refers to the words used to compose <a href=\"/support/article/glossary/#post\">posts</a>. <em>Posts</em> are the principal element (or <a href=\"/support/article/glossary#content\">content</a>) of a blog. The <em>posts</em> are the writings, compositions, discussions, discourses, musings, and, yes, the rantings of the blog&#8217;s owner and guest authors. <em>Posts</em>, in most cases, are the reason a blog exists; without <em>posts</em>, there is no blog! </p>\n\n\n\n<p>Integral to a blog are the pictures, images, sounds, and movies, otherwise know as <a href=\"/support/article/media-library-screen/\">media</a>. <em>Media</em> enhances, and gives life to a blog&#8217;s content. WordPress provides an easy to use method of inserting <em>Media</em> directly into posts, and a method to <a href=\"https://codex.wordpress.org/Media_Add_New_SubPanel\">upload Media</a> that can be later attached to posts, and a <a href=\"/support/article/media-library-screen/\">Media Library</a> to manage those various <em>Media</em>. </p>\n\n\n\n<p>An important part of the <a href=\"/support/article/writing-posts/\">posting</a> process is the act of assigning those posts to <a href=\"https://codex.wordpress.org/Posts_Categories_SubPanel\">categories</a>. Each post in WordPress is filed under one or more <em>categories</em>. <em>Categories</em> can be hierarchical in nature, where one category acts as a parent to several child, or grandchild, categories. Thoughtful <em>categorization</em> allows posts of similar content to be grouped, thereby aiding viewers in the navigation, and use of a site. In addition to categories, terms or keywords called <a href=\"https://codex.wordpress.org/Posts_Tags_SubPanel\">tags</a> can be assigned to each post. <em>Tags</em> act as another navigation tool, but are not hierarchical in nature. Both categories and tags are part of a system called <a href=\"/support/article/glossary#taxonomy\">taxonomies</a>. If categories and tags are not enough, users can also create <a href=\"https://codex.wordpress.org/Function_Reference/register_taxonomy\">custom taxonomies</a> that allow more specific identification of posts or pages or <a href=\"/support/article/glossary#post-type\">custom post types</a>. </p>\n\n\n\n<p>In turn, post categories and tags are two of the elements of what&#8217;s called <a href=\"https://codex.wordpress.org/Post_Meta_Data_Section\">post meta data</a>. <em>Post meta data</em> refers to the information associated with each post and includes the author&#8217;s name and the date posted as well as the post categories. <em>Post meta data</em> also refers to <a href=\"/support/article/custom-fields/\">Custom Fields</a> where you assign specific words, or keys, that can describe posts. But, you can&#8217;t mention <em>post meta data</em> without discussing the term <strong>meta</strong>. </p>\n\n\n\n<p>Generally, <a href=\"/support/article/glossary#meta\">meta</a> means <strong>&#8220;information\nabout&#8221;</strong>; in WordPress, <em>meta</em> usually refers to <strong>administrative</strong>-type\ninformation. So, besides <em>post meta data</em>, <em>Meta</em> is the <a href=\"/support/article/glossary#html\">HTML</a> tag used to describe\nand define a web page to the outside world, like <em>meta tag keywords</em> for\nsearch engines. Also, many WordPress-based sites offer a <em>Meta</em> section,\nusually found in the <a href=\"https://codex.wordpress.org/Customizing_Your_Sidebar\">sidebar</a>, with links to login or register at that site. And,\ndon&#8217;t forget <a href=\"https://codex.wordpress.org/Codex:Guidelines#Meta_Rules\">Meta Rules</a>: The rules defining the general protocol to follow in\nusing this Codex, or <em>Meta,</em> as in the <a href=\"http://www.mediawiki.org\">MediaWiki</a> <a href=\"http://meta.wikimedia.org/wiki/Namespace\">namespace</a> that refers to\nadministrative functions within Codex. That&#8217;s a lot of <em>Meta</em>! </p>\n\n\n\n<p>After a post\nis made public, a blog&#8217;s readers will respond, via <a href=\"/support/article/glossary#comments\">comments</a>, to that post, and in\nturn, authors will reply. <em>Comments</em> enable the communication process,\nthat give-and-take, between author and reader. <em>Comments</em> are the\nlife-blood of most blogs. </p>\n\n\n\n<p>Finally, WordPress also offers two other <a href=\"/support/article/glossary#content-management-system\">content management tools</a> called <a href=\"/support/article/pages\">Pages</a> and <a href=\"/support/article/glossary#post-type\">custom post types</a>. <em>Pages</em> often present static information, such as &#8220;About Me&#8221;, or &#8220;Contact Us&#8221;, <em>Pages</em>. Typically &#8220;timeless&#8221; in nature, <em>Pages</em> should not be confused with the time-oriented objects called <em>posts</em>. Interestingly, a <em>Page</em> is allowed to be <a href=\"/support/article/glossary#comments\">commented upon</a>, but a <em>Page</em> cannot be <a href=\"https://codex.wordpress.org/Posts_Categories_SubPanel\">categorized</a>. A <a href=\"/support/article/glossary#post-type\">custom post type</a> refers to a type of structured data that is different from a post or a page. Custom post types allow users to easily create and manage such things as portfolios, projects, video libraries, podcasts, quotes, chats, and whatever a user or developer can imagine. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Design Terminology </h3>\n\n\n\n<p>A <em>WordPress\nTheme</em> is the overall design of a site and encompasses color, graphics, and\ntext. A <em>Theme</em> is sometimes called the <strong>skin</strong> or template, but it\nisn&#8217;t really. A skin and template are really website paint jobs. A WordPress\nTheme is where code meets design, allowing a site to change based upon specific\nconditions set by the site administrator. </p>\n\n\n\n<p>Installation of WordPress Themes is made easy with the <a href=\"/support/article/administration-screens/#themes\">Themes Menu</a> on the Administration Screens. Simply search for a new Theme from within the <a href=\"https://wordpress.org/themes/\">official WordPress Theme Directory</a> and activate it with a few clicks. You can also preview your site before installing and activating the Theme to see what your site will look like with that WordPress Theme. </p>\n\n\n\n<p>The <em>flexibility</em> of WordPress is apparent when discussing terminology related to the <a href=\"https://codex.wordpress.org/Blog_Design_and_Layout\">design</a> of a WordPress site. At the core of WordPress, developers created a programming structure named <a href=\"https://developer.wordpress.org/themes/basics/the-loop/\">The Loop</a> to handle the processing of posts. <em>The Loop</em> is the critical <a href=\"/support/article/glossary#php\">PHP</a> program code used to display <em>posts</em>. Anyone wanting to enhance and <strong>customize</strong> WordPress will need to understand <a href=\"https://developer.wordpress.org/themes/basics/the-loop/\">the mechanics of </a><em><a href=\"https://developer.wordpress.org/themes/basics/the-loop/\">The Loop</a></em>. </p>\n\n\n\n<p>Along with The Loop, WordPress developers have created <a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Template Tags</a> which are a group of PHP functions that can be invoked by designers to perform an action or display specific information. It is the <em>Template Tags</em> that form the basis of the <a href=\"https://developer.wordpress.org/themes/basics/template-files/\">Template</a> Files. <em>Templates (files)</em> contain the programming pieces, such as <em>Template Tags</em>, that control the structure and flow of a WordPress site. These files draw information from your WordPress <a href=\"/support/article/glossary#mysql\">MySQL</a> <a href=\"https://codex.wordpress.org/Database_Description\">database</a> and generate the <a href=\"/support/article/glossary#html\">HTML</a> code which is sent to the web browser. A <a href=\"https://developer.wordpress.org/themes/basics/template-hierarchy/\">Template Hierarchy</a>, in essence the order of processing, dictates how <em>Templates</em> control almost all aspects of the output, including <a href=\"https://developer.wordpress.org/themes/functionality/custom-headers/\">Headers</a>, <a href=\"https://developer.wordpress.org/themes/functionality/sidebars/\">Sidebars</a>, and <a href=\"/support/article/introduction-to-blogging/#archives\">Archives</a>. <em>Archives</em> are a dynamically generated list of posts, and are typically grouped by <a href=\"https://codex.wordpress.org/Creating_an_Archive_Index\">date</a>, <a href=\"https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#category\">category</a>, <a href=\"https://codex.wordpress.org/Tag_Templates\">tag</a>, or <a href=\"https://codex.wordpress.org/Author_Templates\">author</a>. </p>\n\n\n\n<p>As the\ncapabilities of WordPress have improved, developers have added tools that allow\nusers to easily manage a site&#8217;s look and functionality: </p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Widgets</strong> provide an easy way to add little programs, such as the current weather, to a sidebar. </li><li><strong>Menus</strong> make it easy to define the navigation buttons that are typically present near the top of a site&#8217;s pages. </li><li>The <strong>Background</strong> tool allows the user to change the background image and color of a site.</li><li>The <strong>Header</strong> tool gives the user control of the images displayed at the top of a site&#8217;s various pages.      </li><li><a href=\"/support/article/post-formats/\">Post Formats</a> allow the user to control the display of a specific post (i.e. display this post as an Aside or as a quote or as a gallery). </li></ul>\n\n\n\n<p><a href=\"https://codex.wordpress.org/Plugins\">Plug</a><a href=\"/support/article/plugins\">i</a><a href=\"https://codex.wordpress.org/Plugins\">ns</a> are custom functions created to extend the core functionality of WordPress. The WordPress developers have maximized flexibility and minimized code bloat by allowing outside developers the opportunity to create their own useful add-on features. As evidenced by the <a href=\"https://wordpress.org/plugins/\">WordPress Plugin Directory</a>, there&#8217;s a <em>Plugin</em> to enhance virtually every aspect of WordPress. </p>\n\n\n\n<p>A <a href=\"https://codex.wordpress.org/Plugins_Add_New_SubPanel\">Plugin management tool</a> makes it extremely easy\nto find and install Plugins directly from the official directory. </p>\n\n\n\n<h3 class=\"wp-block-heading\">Administrative Terminology</h3>\n\n\n\n<p>Another set of terms to examine are those involving the <a href=\"/support/article/administering-your-blog/\">Administration</a> of a WordPress site. A comprehensive set of <a href=\"/support/article/administration-screens/\">Administration Screens</a> enables users to <strong>easily</strong> administer and monitor their blog. A WordPress administrator has a number of powers which include requiring a visitor to register in order to participate in the blog, who can create new posts, whether comments can be left, and if files can be uploaded to the blog. </p>\n\n\n\n<p>Some of the main administrative responsibilities of a WordPress blog involve adding, deleting, and managing <a href=\"https://codex.wordpress.org/Registered_User_Features\">Registered Users</a>. Administering users means controlling <a href=\"/support/article/roles-and-capabilities/\">Roles and Capabilities</a>, or permissions. <strong>Roles</strong> control what functions a registered <em>user</em> can perform as those functions can range from just being able to login at a blog to performing the role administrator. </p>\n\n\n\n<p>Another chief concern for the blog administrator is <a href=\"https://codex.wordpress.org/Comment_Moderation\">Comment Moderation</a>. <a href=\"/support/article/glossary#comments\">Comments</a>, also called <a href=\"/support/article/settings-discussion-screen/\">discussions</a>, are responses to posts left for the post author by the visitor and represent an important part of &#8220;the give and take&#8221; of a blog. But <em>Comments</em> must be <a href=\"https://codex.wordpress.org/Combating_Comment_Spam\">patrolled</a> for <a href=\"/support/article/glossary#spam\">Spam</a> and other malicious intentions. The WordPress Administration <a href=\"https://codex.wordpress.org/Comments_Comments_SubPanel\">Comments Screen</a> simplifies that process with easy-to-use screens which add, change, and delete Comments. </p>\n\n\n\n<p>And not to be forgotten is the obligation for an administrator to keep their WordPress current to insure that the latest features, bugs, and security fixes are in effect. To accommodate administrators, WordPress has a simple <a href=\"https://codex.wordpress.org/Tools_Upgrade_SubPanel\">Upgrade Screen</a> to download and install the latest version of WordPress. There&#8217;s no excuse to not upgrade! </p>\n\n\n\n<h3 class=\"wp-block-heading\">Help Terminology </h3>\n\n\n\n<p>The final set of <em>jargon</em> relates to <strong>helping</strong> you with WordPress. First and foremost is the hanging Help tab that is displayed under each of the <a href=\"https://wordpress.org/documentation/article/administration-screens/#help\">Administration Screens</a>. That contextual help describes the function and use of the current screen and provides links to other help topics. And, there are other <em>help</em> resources available to WordPress users; <a href=\"https://codex.wordpress.org/Finding_WordPress_Help\">Finding WordPress Help</a>, <a href=\"https://codex.wordpress.org/Troubleshooting\">Troubleshooting</a>, and <a href=\"https://codex.wordpress.org/FAQ\">WordPress FAQ (frequently asked questions)</a> are good starting points. Also <a href=\"https://codex.wordpress.org/Getting_Started_with_WordPress\">Getting Started with WordPress</a> will <strong>jump-start</strong> readers into the world of WordPress and the excellent <a href=\"/support/article/wordpress-lessons/\">WordPress Lessons</a> provide in-depth <strong>tutorials</strong> on many of the aspects of using WordPress. Among the most important resources is the <a href=\"https://codex.wordpress.org/Using_the_Support_Forums\">WordPress Support Forum</a> where <strong>knowledgeable</strong> volunteers answer your questions and help solve any problems related to WordPress. And, of course, this Support site which is filled with hundreds of articles designed to make your WordPress experience a success! </p>\n\n\n\n<h2 class=\"wp-block-heading\">More Information\nand Resources</h2>\n\n\n\n<h3 class=\"wp-block-heading\">See Also</h3>\n\n\n\n<ul class=\"wp-block-list\"><li><a href=\"/support/article/glossary\">The WordPress Glossary</a></li><li><a href=\"/support/article/wordpress-features/\">WordPress Features</a></li><li><a href=\"https://wordpress.org/support\">WordPress Support Forum</a><a href=\"https://codex.wordpress.org/Special:AllPages\"></a></li></ul>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>Terminology Introduction The developers created WordPress as a weblogging &nbsp;(blogging) system. A blog, as defined in the Codex Glossary, is \u201can online journal, diary, or serial, published by a person or group of people\u201d. Many blogs are personal in nature, reflecting the opinions and interests of the owner. But, blogs are now important tools in [&hellip;]</p>\n",
+        "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+        "advanced_seo_description": "",
+        "jetpack_seo_html_title": "",
+        "jetpack_seo_noindex": false
+    },
+    "category": [
+        76,
+        74
+    ],
+    "class_list": [
+        "post-11076144",
+        "helphub_article",
+        "type-helphub_article",
+        "status-publish",
+        "hentry",
+        "category-where-to-start",
+        "category-wordpress-overview"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11076144",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/helphub_article"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11076144"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11076144/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 16360454,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles/11076144/revisions/16360454"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11076144"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wordpress.org/documentation/wp-json/wp/v2/category?post=11076144"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": 22370,
+    "date": "2021-08-26T21:35:26",
+    "date_gmt": "2021-08-26T21:35:26",
+    "guid": {
+        "rendered": "https://developer.wordpress.org/?post_type=plugin-handbook&#038;p=22370"
+    },
+    "modified": "2024-07-19T19:57:56",
+    "modified_gmt": "2024-07-19T19:57:56",
+    "slug": "rest-api",
+    "status": "publish",
+    "type": "plugin-handbook",
+    "link": "https://developer.wordpress.org/plugins/rest-api/",
+    "title": {
+        "rendered": "REST API"
+    },
+    "content": {
+        "rendered": "<p>WordPress 4.4 introduced the infrastructure for a REST API. \u00a0The REST API provides an easy way to get data into and out of WordPress. \u00a0Data can be\u00a0retrieved and stored by sending HTTP requests to the REST API server. \u00a0The REST API takes advantage of different HTTP methods.</p>\n<ul>\n<li><code>GET</code>\u00a0should be used for retrieving data from the API.</li>\n<li><code>POST</code>\u00a0should be used for creating new resources (i.e users, posts, taxonomies).</li>\n<li><code>PUT</code> should be used for updating resources.</li>\n<li><code>DELETE</code> should be used for deleting resources.</li>\n<li><code>OPTIONS</code> should be used to provide context about our resources.</li>\n</ul>\n<p>A resource is\u00a0any single entity or object. \u00a0A good example of a resource for WordPress would be a post. A post has different properties like its title and content. \u00a0A response from the API could show us title and content as fields in the response. \u00a0The REST API enables us to interact with posts and other\u00a0WordPress resources \u00a0in a new way. \u00a0The REST API makes\u00a0sharing our content with the rest of the web easier, and it provides us a structured way to handle complex interactions within WordPress.</p>\n<p>In this chapter of the Plugin Handbook, we will explore how the API works and how we can leverage its power to do great\u00a0things with WordPress!</p>\n",
+        "protected": false
+    },
+    "author": 14582129,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 14,
+    "template": "",
+    "meta": {
+        "footnotes": ""
+    },
+    "class_list": [
+        "post-22370",
+        "plugin-handbook",
+        "type-plugin-handbook",
+        "status-publish",
+        "hentry",
+        "type-handbook"
+    ],
+    "revision_note": "",
+    "jetpack_sharing_enabled": true,
+    "_links": {
+        "self": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22370",
+                "targetHints": {
+                    "allow": [
+                        "GET"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/types/plugin-handbook"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/users/14582129"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 2,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22370/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 22377,
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/plugin-handbook/22370/revisions/22377"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://developer.wordpress.org/wp-json/wp/v2/media?parent=22370"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}
