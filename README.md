@@ -26,6 +26,10 @@ Copy the desired markdown files to your project directory and use them during AI
 
 Run `php parser.php --update` to fetch updated content over WP REST API (sorted by `modified` date).
 
+## To Do
+
+- [ ] Consider including the `wp-parser-(function|class|hook|method)` content types.
+
 ## Credits
 
 - Tooling created by [Kaspars](https://kaspars.net) ([@konstruktors](https://x.com/konstruktors)) and [contributors](https://github.com/kasparsd/wp-docs-md/graphs/contributors).
