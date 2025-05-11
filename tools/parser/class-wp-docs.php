@@ -18,7 +18,7 @@ class WP_Docs {
 		$this->sites[] = $site;
 	}
 
-	private function get_anchor_id_for_url( string $link ): ?string {
+	public function get_anchor_id_for_url( string $link ): ?string {
 		$path = parse_url( $link, PHP_URL_PATH );
 
 		if ( $path ) {

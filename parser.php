@@ -53,6 +53,7 @@ $content_types = [
 $handbooks_md = [];
 foreach ( $content_types as $content_type ) {
 	$content_md = [];
+	$toc = [];
 	
 	if ( isset( $cli_options['update'] ) ) {
 		$json_files = $wp_developer->get_from_rest_api( $content_type );
@@ -61,10 +62,19 @@ foreach ( $content_types as $content_type ) {
 	}
 
 	foreach ( $json_files as $json_file ) {
-		$content_md[] = $docs->get_post_json_as_markdown( $wp_developer->get_json( $json_file ) );
+		$json = $wp_developer->get_json( $json_file );
+		$toc[] = sprintf( '- [%s](#%s)', $json['title']['rendered'], $docs->get_anchor_id_for_url( $json['link'] ) );
+		$content_md[] = $docs->get_post_json_as_markdown( $json );
 	}
 
-	$handbooks_md[ $content_type ] = implode( "\n\n---\n\n", $content_md );
+	$handbooks_md[ $content_type ] = implode( 
+		"\n\n",
+		[
+			'Table of Contents:',
+			implode( "\n", $toc ),
+			implode( "\n\n---\n\n", $content_md ),
+		] 
+	);
 
 	file_put_contents(
 		sprintf( '%s/docs/wp-%s.md', __DIR__, $content_type ), 
