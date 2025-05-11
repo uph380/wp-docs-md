@@ -1,4 +1,4 @@
-# Markdown Style Guide <a id="coding-standards/styleguide" />
+# Markdown Style Guide <a name="coding-standards/styleguide" />
 
 Source: https://developer.wordpress.org/coding-standards/styleguide/
 
@@ -231,7 +231,7 @@ This is _italic text_. This is **bold text**.
 
 ---
 
-# Best Practices <a id="coding-standards" />
+# Best Practices <a name="coding-standards" />
 
 Source: https://developer.wordpress.org/coding-standards/
 
@@ -249,7 +249,7 @@ WordPress is a big project with thousands of contributors. It’s important that
 
 ---
 
-# WordPress Coding Standards <a id="coding-standards/wordpress-coding-standards" />
+# WordPress Coding Standards <a name="coding-standards/wordpress-coding-standards" />
 
 Source: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/
 
@@ -282,7 +282,7 @@ Third-party libraries are not subject to these standards, even when integrated w
 
 ---
 
-# Accessibility Coding Standards <a id="coding-standards/wordpress-coding-standards/accessibility" />
+# Accessibility Coding Standards <a name="coding-standards/wordpress-coding-standards/accessibility" />
 
 Source: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/
 
@@ -439,7 +439,7 @@ For more information on techniques, visit [Understanding Techniques for WCAG Suc
 
 ---
 
-# CSS Coding Standards <a id="coding-standards/wordpress-coding-standards/css" />
+# CSS Coding Standards <a name="coding-standards/wordpress-coding-standards/css" />
 
 Source: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/
 
@@ -757,7 +757,7 @@ Check out the [WP Admin CSS Audit](https://wordpress.github.io/css-audit/public/
 
 ---
 
-# HTML Coding Standards <a id="coding-standards/wordpress-coding-standards/html" />
+# HTML Coding Standards <a name="coding-standards/wordpress-coding-standards/html" />
 
 Source: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/html/
 
@@ -880,7 +880,7 @@ Incorrect:
 
 ---
 
-# JavaScript Coding Standards <a id="coding-standards/wordpress-coding-standards/javascript" />
+# JavaScript Coding Standards <a name="coding-standards/wordpress-coding-standards/javascript" />
 
 Source: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/
 
@@ -1359,7 +1359,7 @@ if ( typeof jQuery.fn.hoverIntent === 'undefined' ) {
 
 ---
 
-# PHP Coding Standards <a id="coding-standards/wordpress-coding-standards/php" />
+# PHP Coding Standards <a name="coding-standards/wordpress-coding-standards/php" />
 
 Source: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/
 
@@ -2448,7 +2448,7 @@ Use of the backtick operator is identical to [`shell_exec()`](https://www.php.ne
 
 ---
 
-# Inline Documentation Standards <a id="coding-standards/inline-documentation-standards" />
+# Inline Documentation Standards <a name="coding-standards/inline-documentation-standards" />
 
 Source: https://developer.wordpress.org/coding-standards/inline-documentation-standards/
 
@@ -2469,7 +2469,7 @@ Inline documentation provides a good resource for core developers in future deve
 
 ---
 
-# JavaScript Documentation Standards <a id="coding-standards/inline-documentation-standards/javascript" />
+# JavaScript Documentation Standards <a name="coding-standards/inline-documentation-standards/javascript" />
 
 Source: https://developer.wordpress.org/coding-standards/inline-documentation-standards/javascript/
 
@@ -2940,7 +2940,7 @@ WordPress uses JSHint for general code quality testing. Any inline configuration
 
 ---
 
-# PHP Documentation Standards <a id="coding-standards/inline-documentation-standards/php" />
+# PHP Documentation Standards <a name="coding-standards/inline-documentation-standards/php" />
 
 Source: https://developer.wordpress.org/coding-standards/inline-documentation-standards/php/
 
@@ -3375,7 +3375,7 @@ As proposed in the [new PSR-5](https://github.com/phpDocumentor/fig-standards/bl
 
 ---
 
-# Changelog <a id="coding-standards/changelog" />
+# Changelog <a name="coding-standards/changelog" />
 
 Source: https://developer.wordpress.org/coding-standards/changelog/
 

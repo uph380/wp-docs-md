@@ -1,4 +1,4 @@
-# Common APIs Handbook <a id="apis" />
+# Common APIs Handbook <a name="apis" />
 
 Source: https://developer.wordpress.org/apis/
 
@@ -6,7 +6,7 @@ This handbook serves as a clearinghouse for documentation on all APIs present wi
 
 ---
 
-# Dashboard widgets API <a id="apis/dashboard-widgets" />
+# Dashboard widgets API <a name="apis/dashboard-widgets" />
 
 Source: https://developer.wordpress.org/apis/dashboard-widgets/
 
@@ -332,7 +332,7 @@ function update_dashboard_widget_options( $widget_id , $args = array(), $add_onl
 
 ---
 
-# Database API <a id="apis/database" />
+# Database API <a name="apis/database" />
 
 Source: https://developer.wordpress.org/apis/database/
 
@@ -350,7 +350,7 @@ If you’ve read through all of these you should have a good sense of how to ext
 
 ---
 
-# Filesystem <a id="apis/filesystem" />
+# Filesystem <a name="apis/filesystem" />
 
 Source: https://developer.wordpress.org/apis/filesystem/
 
@@ -529,7 +529,7 @@ unzip_file( $file, $to );
 
 ---
 
-# Global Variables <a id="apis/global-variables" />
+# Global Variables <a name="apis/global-variables" />
 
 Source: https://developer.wordpress.org/apis/global-variables/
 
@@ -619,7 +619,7 @@ These globals store data about which web server WordPress is running on.
 
 ---
 
-# Metadata <a id="apis/metadata" />
+# Metadata <a name="apis/metadata" />
 
 Source: https://developer.wordpress.org/apis/metadata/
 
@@ -677,7 +677,7 @@ Metadata API is located in `<a href="https://core.trac.wordpress.org/browser/tag
 
 ---
 
-# Options <a id="apis/options" />
+# Options <a name="apis/options" />
 
 Source: https://developer.wordpress.org/apis/options/
 
@@ -1106,7 +1106,7 @@ update_option( $option, $newvalue );
 
 ---
 
-# Plugins <a id="apis/plugins" />
+# Plugins <a name="apis/plugins" />
 
 Source: https://developer.wordpress.org/apis/plugins/
 
@@ -1114,7 +1114,7 @@ Refer [Plugin Developer Handbook](#plugins).
 
 ---
 
-# Quicktags <a id="apis/quicktags" />
+# Quicktags <a name="apis/quicktags" />
 
 Source: https://developer.wordpress.org/apis/quicktags/
 
@@ -1295,7 +1295,7 @@ qt.addButton() source is located in `<a href="https://core.trac.wordpress.org/br
 
 ---
 
-# REST <a id="apis/rest" />
+# REST <a name="apis/rest" />
 
 Source: https://developer.wordpress.org/apis/rest/
 
@@ -1303,7 +1303,7 @@ Refer [REST API Handbook](#rest-api).
 
 ---
 
-# Rewrite <a id="apis/rewrite" />
+# Rewrite <a name="apis/rewrite" />
 
 Source: https://developer.wordpress.org/apis/rewrite/
 
@@ -1347,7 +1347,7 @@ Please note that these rules are usually called inside the `init` hook. Furtherm
 
 ---
 
-# Settings <a id="apis/settings" />
+# Settings <a name="apis/settings" />
 
 Source: https://developer.wordpress.org/apis/settings/
 
@@ -1548,7 +1548,7 @@ function wporg_settings_api_init() {
 
 ---
 
-# Shortcode <a id="apis/shortcode" />
+# Shortcode <a name="apis/shortcode" />
 
 Source: https://developer.wordpress.org/apis/shortcode/
 
@@ -2229,7 +2229,7 @@ For enclosing shortcodes, use the following syntax:
 
 ---
 
-# Theme <a id="apis/theme" />
+# Theme <a name="apis/theme" />
 
 Source: https://developer.wordpress.org/apis/theme/
 
@@ -2237,7 +2237,7 @@ See [Theme Developer Handbook](#themes).
 
 ---
 
-# Transients <a id="apis/transients" />
+# Transients <a name="apis/transients" />
 
 Source: https://developer.wordpress.org/apis/transients/
 
@@ -2428,7 +2428,7 @@ Using transients in your plugins and themes is simple and only adds a few extra 
 
 ---
 
-# XML-RPC <a id="apis/xml-rpc" />
+# XML-RPC <a name="apis/xml-rpc" />
 
 Source: https://developer.wordpress.org/apis/xml-rpc/
 
@@ -2507,7 +2507,7 @@ XML-RPC API that supersedes the legacy Blogger, MovableType, and metaWeblog APIs
 
 ---
 
-# Internationalization <a id="apis/internationalization" />
+# Internationalization <a name="apis/internationalization" />
 
 Source: https://developer.wordpress.org/apis/internationalization/
 
@@ -2613,7 +2613,7 @@ Now that you are ready to internationalize your application, read through the [I
 
 ---
 
-# Internationalization Functions <a id="apis/internationalization/internationalization-functions" />
+# Internationalization Functions <a name="apis/internationalization/internationalization-functions" />
 
 Source: https://developer.wordpress.org/apis/internationalization/internationalization-functions/
 
@@ -2659,7 +2659,7 @@ Note: To be able to use these functions available in your javascript, you have t
 
 ---
 
-# Internationalization Guidelines <a id="apis/internationalization/internationalization-guidelines" />
+# Internationalization Guidelines <a name="apis/internationalization/internationalization-guidelines" />
 
 Source: https://developer.wordpress.org/apis/internationalization/internationalization-guidelines/
 
@@ -2926,7 +2926,7 @@ __( 'Posts:', 'my-theme' ); and __( 'Posts', 'my-theme' );
 
 ---
 
-# Localization <a id="apis/internationalization/localization" />
+# Localization <a name="apis/internationalization/localization" />
 
 Source: https://developer.wordpress.org/apis/internationalization/localization/
 
@@ -3138,7 +3138,7 @@ As of [WordPress 4.0](https://make.wordpress.org/core/2014/09/05/language-choose
 
 ---
 
-# Performance <a id="apis/making-http-requests/performance" />
+# Performance <a name="apis/making-http-requests/performance" />
 
 Source: https://developer.wordpress.org/apis/making-http-requests/performance/
 
@@ -3166,7 +3166,7 @@ Check the Advanced &gt; Headers section for more information.
 
 ---
 
-# POSTing data to an external service <a id="apis/making-http-requests/posting-data-to-an-external-service" />
+# POSTing data to an external service <a name="apis/making-http-requests/posting-data-to-an-external-service" />
 
 Source: https://developer.wordpress.org/apis/making-http-requests/posting-data-to-an-external-service/
 
@@ -3210,7 +3210,7 @@ $response = wp_remote_post( 'https://your-contact-form.com', $args );
 
 ---
 
-# GETting data from an external service <a id="apis/making-http-requests/getting-data-from-an-external-service" />
+# GETting data from an external service <a name="apis/making-http-requests/getting-data-from-an-external-service" />
 
 Source: https://developer.wordpress.org/apis/making-http-requests/getting-data-from-an-external-service/
 
@@ -3395,7 +3395,7 @@ MORE ABOUT AUTH
 
 ---
 
-# Advanced <a id="apis/making-http-requests/advanced" />
+# Advanced <a name="apis/making-http-requests/advanced" />
 
 Source: https://developer.wordpress.org/apis/making-http-requests/advanced/
 
@@ -3480,7 +3480,7 @@ All of the same helper functions can be used on this function as with the previo
 
 ---
 
-# Authentication <a id="apis/making-http-requests/authentication" />
+# Authentication <a name="apis/making-http-requests/authentication" />
 
 Source: https://developer.wordpress.org/apis/making-http-requests/authentication/
 
@@ -3501,7 +3501,7 @@ If you want to make authenticated requests to the WordPress REST API, check [thi
 
 ---
 
-# Making HTTP requests <a id="apis/making-http-requests" />
+# Making HTTP requests <a name="apis/making-http-requests" />
 
 Source: https://developer.wordpress.org/apis/making-http-requests/
 
@@ -3543,7 +3543,7 @@ The other helper functions deal with retrieving different parts of the response.
 
 ---
 
-# Responsive Images <a id="apis/responsive-images" />
+# Responsive Images <a name="apis/responsive-images" />
 
 Source: https://developer.wordpress.org/apis/responsive-images/
 
@@ -3628,7 +3628,7 @@ $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'medium' );
 
 ---
 
-# Site Health <a id="apis/site-health" />
+# Site Health <a name="apis/site-health" />
 
 Source: https://developer.wordpress.org/apis/site-health/
 
@@ -3699,7 +3699,7 @@ add_action( 'site_health_tab_content', 'wporg_add_button_to_site_health_info_tab
 
 ---
 
-# wp-config.php <a id="apis/wp-config-php" />
+# wp-config.php <a name="apis/wp-config-php" />
 
 Source: https://developer.wordpress.org/apis/wp-config-php/
 
@@ -4533,7 +4533,7 @@ To save the file, choose **File &gt; Save As &gt; wp-config.php** and save the f
 
 ---
 
-# Filter Reference <a id="apis/hooks/filter-reference" />
+# Filter Reference <a name="apis/hooks/filter-reference" />
 
 Source: https://developer.wordpress.org/apis/hooks/filter-reference/
 
@@ -5496,7 +5496,7 @@ This section contains filters added by the Admin Bar added in WordPress
 
 ---
 
-# Action Reference <a id="apis/hooks/action-reference" />
+# Action Reference <a name="apis/hooks/action-reference" />
 
 Source: https://developer.wordpress.org/apis/hooks/action-reference/
 
@@ -6143,7 +6143,7 @@ This section contains actions that the WordPress Admin login page uses to handle
 
 ---
 
-# Security <a id="apis/security" />
+# Security <a name="apis/security" />
 
 Source: https://developer.wordpress.org/apis/security/
 
@@ -6171,7 +6171,7 @@ When developing, it is important to consider security as you add functionality. 
 
 ---
 
-# Sanitizing Data <a id="apis/security/sanitizing" />
+# Sanitizing Data <a name="apis/security/sanitizing" />
 
 Source: https://developer.wordpress.org/apis/security/sanitizing/
 
@@ -6232,7 +6232,7 @@ There are many functions that will help you sanitize your data.
 
 ---
 
-# Validating Data <a id="apis/security/data-validation" />
+# Validating Data <a name="apis/security/data-validation" />
 
 Source: https://developer.wordpress.org/apis/security/data-validation/
 
@@ -6425,7 +6425,7 @@ Check the [WordPress code reference](/reference/) for more functions like these.
 
 ---
 
-# Escaping Data <a id="apis/security/escaping" />
+# Escaping Data <a name="apis/security/escaping" />
 
 Source: https://developer.wordpress.org/apis/security/escaping/
 
@@ -6705,7 +6705,7 @@ echo '<loc>', ent2ncr( $var ), '</loc>';
 
 ---
 
-# Nonces <a id="apis/security/nonces" />
+# Nonces <a name="apis/security/nonces" />
 
 Source: https://developer.wordpress.org/apis/security/nonces/
 
@@ -6915,7 +6915,7 @@ Nonce hooks: `nonce_life`, `nonce_user_logged_out`, `explain_nonce_(verb)-(noun)
 
 ---
 
-# Example <a id="apis/security/example" />
+# Example <a name="apis/security/example" />
 
 Source: https://developer.wordpress.org/apis/security/example/
 
@@ -6999,7 +6999,7 @@ function wporg_add_delete_post_ability() {
 
 ---
 
-# User Roles and Capabilities <a id="apis/security/user-roles-and-capabilities" />
+# User Roles and Capabilities <a name="apis/security/user-roles-and-capabilities" />
 
 Source: https://developer.wordpress.org/apis/security/user-roles-and-capabilities/
 
@@ -7179,7 +7179,7 @@ function wporg_add_delete_post_ability() {
 
 ---
 
-# Common Vulnerabilities <a id="apis/security/common-vulnerabilities" />
+# Common Vulnerabilities <a name="apis/security/common-vulnerabilities" />
 
 Source: https://developer.wordpress.org/apis/security/common-vulnerabilities/
 
@@ -7258,7 +7258,7 @@ It is important to stay current on potential security holes. The following resou
 
 ---
 
-# Hooks <a id="apis/hooks" />
+# Hooks <a name="apis/hooks" />
 
 Source: https://developer.wordpress.org/apis/hooks/
 

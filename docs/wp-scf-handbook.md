@@ -1,4 +1,4 @@
-# Core Concepts <a id="secure-custom-fields/concepts" />
+# Core Concepts <a name="secure-custom-fields/concepts" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/concepts/
 
@@ -15,7 +15,7 @@ Secure Custom Fields is built on several core concepts that ensure security, fle
 
 ---
 
-# Architecture <a id="secure-custom-fields/concepts/architecture" />
+# Architecture <a name="secure-custom-fields/concepts/architecture" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/concepts/architecture/
 
@@ -125,7 +125,7 @@ The plugin is organized into several key directories:
 
 ---
 
-# Security in Secure Custom Fields <a id="secure-custom-fields/concepts/security" />
+# Security in Secure Custom Fields <a name="secure-custom-fields/concepts/security" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/concepts/security/
 
@@ -157,7 +157,7 @@ When working with SCF:
 
 ---
 
-# Contributing to SCF <a id="secure-custom-fields/contributing" />
+# Contributing to SCF <a name="secure-custom-fields/contributing" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/contributing/
 
@@ -201,7 +201,7 @@ Guide for contributing to Secure Custom Fields development.
 
 ---
 
-# Documentation Guidelines <a id="secure-custom-fields/contributing/documentation" />
+# Documentation Guidelines <a name="secure-custom-fields/contributing/documentation" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/contributing/documentation/
 
@@ -242,7 +242,7 @@ We follow the [WordPress Documentation Style Guide](https://make.wordpress.org/d
 
 ---
 
-# Features <a id="secure-custom-fields/features" />
+# Features <a name="secure-custom-fields/features" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/
 
@@ -298,7 +298,7 @@ This section details all features available in Secure Custom Fields.
 
 ---
 
-# Api <a id="secure-custom-fields/code-reference/api" />
+# Api <a name="secure-custom-fields/code-reference/api" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/api/
 
@@ -310,7 +310,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/api/
 
 ---
 
-# Custom Post Types <a id="secure-custom-fields/features/post-types" />
+# Custom Post Types <a name="secure-custom-fields/features/post-types" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/post-types/
 
@@ -354,7 +354,7 @@ Common use cases for custom post types:
 
 ---
 
-# Installing Secure Custom Fields <a id="secure-custom-fields/welcome/installation" />
+# Installing Secure Custom Fields <a name="secure-custom-fields/welcome/installation" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/welcome/installation/
 
@@ -395,7 +395,7 @@ After installation:
 
 ---
 
-# Quick Start Guide <a id="secure-custom-fields/welcome/quick-start" />
+# Quick Start Guide <a name="secure-custom-fields/welcome/quick-start" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/welcome/quick-start/
 
@@ -431,7 +431,7 @@ Let’s create a simple author bio field group:
 
 ---
 
-# Tutorials <a id="secure-custom-fields/tutorials" />
+# Tutorials <a name="secure-custom-fields/tutorials" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/tutorials/
 
@@ -461,7 +461,7 @@ Each tutorial follows these principles:
 
 ---
 
-# Creating Your First Post Type <a id="secure-custom-fields/tutorials/first-post-type" />
+# Creating Your First Post Type <a name="secure-custom-fields/tutorials/first-post-type" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/tutorials/first-post-type/
 
@@ -499,7 +499,7 @@ A step-by-step guide to creating a custom post type using Secure Custom Fields.
 
 ---
 
-# Fields <a id="secure-custom-fields/code-reference/fields" />
+# Fields <a name="secure-custom-fields/code-reference/fields" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/
 
@@ -509,7 +509,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Accordion Field <a id="secure-custom-fields/code-reference/fields/accordion" />
+# Accordion Field <a name="secure-custom-fields/code-reference/fields/accordion" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/accordion/
 
@@ -530,7 +530,7 @@ The Accordion field creates collapsible sections to organize your fields into lo
 
 ---
 
-# Using the Accordion Field <a id="secure-custom-fields/code-reference/fields/accordion/accordion-tutorial" />
+# Using the Accordion Field <a name="secure-custom-fields/code-reference/fields/accordion/accordion-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/accordion/accordion-tutorial/
 
@@ -563,7 +563,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Button Group Field <a id="secure-custom-fields/code-reference/fields/button-group" />
+# Button Group Field <a name="secure-custom-fields/code-reference/fields/button-group" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/button-group/
 
@@ -585,7 +585,7 @@ The Button Group field provides a set of buttons where users can select one opti
 
 ---
 
-# Using the Button Group Field <a id="secure-custom-fields/code-reference/fields/button-group/button-group-tutorial" />
+# Using the Button Group Field <a name="secure-custom-fields/code-reference/fields/button-group/button-group-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/button-group/button-group-tutorial/
 
@@ -618,7 +618,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Checkbox Field <a id="secure-custom-fields/code-reference/fields/checkbox" />
+# Checkbox Field <a name="secure-custom-fields/code-reference/fields/checkbox" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/checkbox/
 
@@ -641,7 +641,7 @@ The Checkbox field allows users to select one or multiple choices from a set of 
 
 ---
 
-# Using the Checkbox Field <a id="secure-custom-fields/code-reference/fields/checkbox/checkbox-tutorial" />
+# Using the Checkbox Field <a name="secure-custom-fields/code-reference/fields/checkbox/checkbox-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/checkbox/checkbox-tutorial/
 
@@ -675,7 +675,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Clone Field <a id="secure-custom-fields/code-reference/fields/clone" />
+# Clone Field <a name="secure-custom-fields/code-reference/fields/clone" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/clone/
 
@@ -697,7 +697,7 @@ The Clone field allows you to reuse existing fields or field groups in multiple 
 
 ---
 
-# Using the Clone Field <a id="secure-custom-fields/code-reference/fields/clone/clone-tutorial" />
+# Using the Clone Field <a name="secure-custom-fields/code-reference/fields/clone/clone-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/clone/clone-tutorial/
 
@@ -731,7 +731,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Color Picker Field <a id="secure-custom-fields/code-reference/fields/color-picker" />
+# Color Picker Field <a name="secure-custom-fields/code-reference/fields/color-picker" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/color-picker/
 
@@ -753,7 +753,7 @@ The Color Picker field provides an interactive interface for selecting colors. I
 
 ---
 
-# Using the Color Picker Field <a id="secure-custom-fields/code-reference/fields/color-picker/color-picker-tutorial" />
+# Using the Color Picker Field <a name="secure-custom-fields/code-reference/fields/color-picker/color-picker-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/color-picker/color-picker-tutorial/
 
@@ -787,7 +787,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Date Picker Field <a id="secure-custom-fields/code-reference/fields/date-picker" />
+# Date Picker Field <a name="secure-custom-fields/code-reference/fields/date-picker" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/date-picker/
 
@@ -810,7 +810,7 @@ The Date Picker field provides a calendar interface for selecting dates. It offe
 
 ---
 
-# Using the Date Picker Field <a id="secure-custom-fields/code-reference/fields/date-picker/date-picker-tutorial" />
+# Using the Date Picker Field <a name="secure-custom-fields/code-reference/fields/date-picker/date-picker-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/date-picker/date-picker-tutorial/
 
@@ -844,7 +844,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Date Time Picker Field <a id="secure-custom-fields/code-reference/fields/date-time-picker" />
+# Date Time Picker Field <a name="secure-custom-fields/code-reference/fields/date-time-picker" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/date-time-picker/
 
@@ -867,7 +867,7 @@ The Date Time Picker field combines date and time selection into a single interf
 
 ---
 
-# Using the Date Time Picker Field <a id="secure-custom-fields/code-reference/fields/date-time-picker/date-time-picker-tutorial" />
+# Using the Date Time Picker Field <a name="secure-custom-fields/code-reference/fields/date-time-picker/date-time-picker-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/date-time-picker/date-time-picker-tutorial/
 
@@ -901,7 +901,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Email Field <a id="secure-custom-fields/code-reference/fields/email" />
+# Email Field <a name="secure-custom-fields/code-reference/fields/email" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/email/
 
@@ -924,7 +924,7 @@ The Email field provides a specialized input for email addresses. It includes bu
 
 ---
 
-# Using the Email Field <a id="secure-custom-fields/code-reference/fields/email/email-tutorial" />
+# Using the Email Field <a name="secure-custom-fields/code-reference/fields/email/email-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/email/email-tutorial/
 
@@ -958,7 +958,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# File Field <a id="secure-custom-fields/code-reference/fields/file" />
+# File Field <a name="secure-custom-fields/code-reference/fields/file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/file/
 
@@ -982,7 +982,7 @@ The File field enables file uploads and management through the WordPress media l
 
 ---
 
-# Using the File Field <a id="secure-custom-fields/code-reference/fields/file/file-tutorial" />
+# Using the File Field <a name="secure-custom-fields/code-reference/fields/file/file-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/file/file-tutorial/
 
@@ -1016,7 +1016,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Flexible Content Field <a id="secure-custom-fields/code-reference/fields/flexible-content" />
+# Flexible Content Field <a name="secure-custom-fields/code-reference/fields/flexible-content" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/flexible-content/
 
@@ -1039,7 +1039,7 @@ The Flexible Content field provides a flexible content builder interface. It all
 
 ---
 
-# Using the Flexible Content Field <a id="secure-custom-fields/code-reference/fields/flexible-content/flexible-content-tutorial" />
+# Using the Flexible Content Field <a name="secure-custom-fields/code-reference/fields/flexible-content/flexible-content-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/flexible-content/flexible-content-tutorial/
 
@@ -1073,7 +1073,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Gallery Field <a id="secure-custom-fields/code-reference/fields/gallery" />
+# Gallery Field <a name="secure-custom-fields/code-reference/fields/gallery" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/gallery/
 
@@ -1097,7 +1097,7 @@ The Gallery field enables management of multiple images in a single field. It pr
 
 ---
 
-# Using the Gallery Field <a id="secure-custom-fields/code-reference/fields/gallery/gallery-tutorial" />
+# Using the Gallery Field <a name="secure-custom-fields/code-reference/fields/gallery/gallery-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/gallery/gallery-tutorial/
 
@@ -1131,7 +1131,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Google Map Field <a id="secure-custom-fields/code-reference/fields/google-map" />
+# Google Map Field <a name="secure-custom-fields/code-reference/fields/google-map" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/google-map/
 
@@ -1155,7 +1155,7 @@ The Google Map field provides an interactive map interface for selecting and sto
 
 ---
 
-# Using the Google Map Field <a id="secure-custom-fields/code-reference/fields/google-map/google-map-tutorial" />
+# Using the Google Map Field <a name="secure-custom-fields/code-reference/fields/google-map/google-map-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/google-map/google-map-tutorial/
 
@@ -1189,7 +1189,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Group Field <a id="secure-custom-fields/code-reference/fields/group" />
+# Group Field <a name="secure-custom-fields/code-reference/fields/group" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/group/
 
@@ -1211,7 +1211,7 @@ The Group field allows you to organize multiple fields together into a single da
 
 ---
 
-# Using the Group Field <a id="secure-custom-fields/code-reference/fields/group/group-tutorial" />
+# Using the Group Field <a name="secure-custom-fields/code-reference/fields/group/group-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/group/group-tutorial/
 
@@ -1245,7 +1245,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Icon Picker Field <a id="secure-custom-fields/code-reference/fields/icon-picker" />
+# Icon Picker Field <a name="secure-custom-fields/code-reference/fields/icon-picker" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/icon-picker/
 
@@ -1268,7 +1268,7 @@ The Icon Picker field provides an interface for selecting icons from various sou
 
 ---
 
-# Using the Icon Picker Field <a id="secure-custom-fields/code-reference/fields/icon-picker/icon-picker-tutorial" />
+# Using the Icon Picker Field <a name="secure-custom-fields/code-reference/fields/icon-picker/icon-picker-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/icon-picker/icon-picker-tutorial/
 
@@ -1302,7 +1302,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Image Field <a id="secure-custom-fields/code-reference/fields/image" />
+# Image Field <a name="secure-custom-fields/code-reference/fields/image" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/image/
 
@@ -1326,7 +1326,7 @@ The Image field provides a dedicated interface for uploading and selecting image
 
 ---
 
-# Using the Image Field <a id="secure-custom-fields/code-reference/fields/image/image-tutorial" />
+# Using the Image Field <a name="secure-custom-fields/code-reference/fields/image/image-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/image/image-tutorial/
 
@@ -1360,7 +1360,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Link Field <a id="secure-custom-fields/code-reference/fields/link" />
+# Link Field <a name="secure-custom-fields/code-reference/fields/link" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/link/
 
@@ -1382,7 +1382,7 @@ The Link field provides an interface for creating links with various properties.
 
 ---
 
-# Using the Link Field <a id="secure-custom-fields/code-reference/fields/link/link-tutorial" />
+# Using the Link Field <a name="secure-custom-fields/code-reference/fields/link/link-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/link/link-tutorial/
 
@@ -1416,7 +1416,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Message Field <a id="secure-custom-fields/code-reference/fields/message" />
+# Message Field <a name="secure-custom-fields/code-reference/fields/message" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/message/
 
@@ -1439,7 +1439,7 @@ The Message field displays instructional text or HTML content within the editing
 
 ---
 
-# Using the Message Field <a id="secure-custom-fields/code-reference/fields/message/message-tutorial" />
+# Using the Message Field <a name="secure-custom-fields/code-reference/fields/message/message-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/message/message-tutorial/
 
@@ -1473,7 +1473,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Number Field <a id="secure-custom-fields/code-reference/fields/number" />
+# Number Field <a name="secure-custom-fields/code-reference/fields/number" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/number/
 
@@ -1499,7 +1499,7 @@ The Number field provides an input specifically for numeric values. It includes 
 
 ---
 
-# Using the Number Field <a id="secure-custom-fields/code-reference/fields/number/number-tutorial" />
+# Using the Number Field <a name="secure-custom-fields/code-reference/fields/number/number-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/number/number-tutorial/
 
@@ -1533,7 +1533,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# oEmbed Field <a id="secure-custom-fields/code-reference/fields/oembed" />
+# oEmbed Field <a name="secure-custom-fields/code-reference/fields/oembed" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/oembed/
 
@@ -1555,7 +1555,7 @@ The oEmbed field allows embedding external content from various providers like Y
 
 ---
 
-# Using the oEmbed Field <a id="secure-custom-fields/code-reference/fields/oembed/oembed-tutorial" />
+# Using the oEmbed Field <a name="secure-custom-fields/code-reference/fields/oembed/oembed-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/oembed/oembed-tutorial/
 
@@ -1589,7 +1589,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Page Link Field <a id="secure-custom-fields/code-reference/fields/page-link" />
+# Page Link Field <a name="secure-custom-fields/code-reference/fields/page-link" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/page-link/
 
@@ -1613,7 +1613,7 @@ The Page Link field provides an interface for creating links to internal WordPre
 
 ---
 
-# Using the Page Link Field <a id="secure-custom-fields/code-reference/fields/page-link/page-link-tutorial" />
+# Using the Page Link Field <a name="secure-custom-fields/code-reference/fields/page-link/page-link-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/page-link/page-link-tutorial/
 
@@ -1647,7 +1647,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Password Field <a id="secure-custom-fields/code-reference/fields/password" />
+# Password Field <a name="secure-custom-fields/code-reference/fields/password" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/password/
 
@@ -1669,7 +1669,7 @@ The Password field provides a secure input for password data. It includes maskin
 
 ---
 
-# Using the Password Field <a id="secure-custom-fields/code-reference/fields/password/password-tutorial" />
+# Using the Password Field <a name="secure-custom-fields/code-reference/fields/password/password-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/password/password-tutorial/
 
@@ -1703,7 +1703,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Post Object Field <a id="secure-custom-fields/code-reference/fields/post-object" />
+# Post Object Field <a name="secure-custom-fields/code-reference/fields/post-object" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/post-object/
 
@@ -1727,7 +1727,7 @@ The Post Object field creates relationships with other WordPress posts, pages, o
 
 ---
 
-# Using the Post Object Field <a id="secure-custom-fields/code-reference/fields/post-object/post-object-tutorial" />
+# Using the Post Object Field <a name="secure-custom-fields/code-reference/fields/post-object/post-object-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/post-object/post-object-tutorial/
 
@@ -1761,7 +1761,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Radio Field <a id="secure-custom-fields/code-reference/fields/radio" />
+# Radio Field <a name="secure-custom-fields/code-reference/fields/radio" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/radio/
 
@@ -1785,7 +1785,7 @@ The Radio field presents users with a list of options where they can select a si
 
 ---
 
-# Using the Radio Field <a id="secure-custom-fields/code-reference/fields/radio/radio-tutorial" />
+# Using the Radio Field <a name="secure-custom-fields/code-reference/fields/radio/radio-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/radio/radio-tutorial/
 
@@ -1819,7 +1819,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Range Field <a id="secure-custom-fields/code-reference/fields/range" />
+# Range Field <a name="secure-custom-fields/code-reference/fields/range" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/range/
 
@@ -1843,7 +1843,7 @@ The Range field provides a slider interface for selecting numeric values within 
 
 ---
 
-# Using the Range Field <a id="secure-custom-fields/code-reference/fields/range/range-tutorial" />
+# Using the Range Field <a name="secure-custom-fields/code-reference/fields/range/range-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/range/range-tutorial/
 
@@ -1877,7 +1877,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fiel
 
 ---
 
-# Code Reference <a id="secure-custom-fields/code-reference" />
+# Code Reference <a name="secure-custom-fields/code-reference" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/
 
@@ -1917,7 +1917,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/
 
 ---
 
-# Acf Bidirectional Functions Global Functions <a id="secure-custom-fields/code-reference/acf-bidirectional-functions-file" />
+# Acf Bidirectional Functions Global Functions <a name="secure-custom-fields/code-reference/acf-bidirectional-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-bidirectional-functions-file/
 
@@ -1974,7 +1974,7 @@ Returns the translated instructional text for the message field for the bidirect
 
 ---
 
-# Acf Field Functions Global Functions <a id="secure-custom-fields/code-reference/acf-field-functions-file" />
+# Acf Field Functions Global Functions <a name="secure-custom-fields/code-reference/acf-field-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-field-functions-file/
 
@@ -2373,7 +2373,7 @@ acf\_prepare\_field\_for\_import
 
 ---
 
-# Acf Field Group Functions Global Functions <a id="secure-custom-fields/code-reference/acf-field-group-functions-file" />
+# Acf Field Group Functions Global Functions <a name="secure-custom-fields/code-reference/acf-field-group-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-field-group-functions-file/
 
@@ -2665,7 +2665,7 @@ Checks if a field group has the provided location rule.
 
 ---
 
-# Acf Form Functions Global Functions <a id="secure-custom-fields/code-reference/acf-form-functions-file" />
+# Acf Form Functions Global Functions <a name="secure-custom-fields/code-reference/acf-form-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-form-functions-file/
 
@@ -2725,7 +2725,7 @@ acf\_save\_post
 
 ---
 
-# Acf Helper Functions Global Functions <a id="secure-custom-fields/code-reference/acf-helper-functions-file" />
+# Acf Helper Functions Global Functions <a name="secure-custom-fields/code-reference/acf-helper-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-helper-functions-file/
 
@@ -3037,7 +3037,7 @@ this function returns false (boolean) to indicate that the version could not be 
 
 ---
 
-# Acf Hook Functions Global Functions <a id="secure-custom-fields/code-reference/acf-hook-functions-file" />
+# Acf Hook Functions Global Functions <a name="secure-custom-fields/code-reference/acf-hook-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-hook-functions-file/
 
@@ -3112,7 +3112,7 @@ Applies a deprecated filter during [apply\_filters()](#reference/functions/apply
 
 ---
 
-# Acf Input Functions Global Functions <a id="secure-custom-fields/code-reference/acf-input-functions-file" />
+# Acf Input Functions Global Functions <a name="secure-custom-fields/code-reference/acf-input-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-input-functions-file/
 
@@ -3361,7 +3361,7 @@ acf\_esc\_atts\_e
 
 ---
 
-# Acf Internal Post Type Functions Global Functions <a id="secure-custom-fields/code-reference/acf-internal-post-type-functions-file" />
+# Acf Internal Post Type Functions Global Functions <a name="secure-custom-fields/code-reference/acf-internal-post-type-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-internal-post-type-functions-file/
 
@@ -3668,7 +3668,7 @@ Gets an ACF options page from request args and verifies nonce based on action.
 
 ---
 
-# Acf Meta Functions Global Functions <a id="secure-custom-fields/code-reference/acf-meta-functions-file" />
+# Acf Meta Functions Global Functions <a name="secure-custom-fields/code-reference/acf-meta-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-meta-functions-file/
 
@@ -3788,7 +3788,7 @@ acf\_update\_metaref
 
 ---
 
-# Acf Post Functions Global Functions <a id="secure-custom-fields/code-reference/acf-post-functions-file" />
+# Acf Post Functions Global Functions <a name="secure-custom-fields/code-reference/acf-post-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-post-functions-file/
 
@@ -3804,7 +3804,7 @@ Returns available templates for each post type.
 
 ---
 
-# Acf Post Type Functions Global Functions <a id="secure-custom-fields/code-reference/acf-post-type-functions-file" />
+# Acf Post Type Functions Global Functions <a name="secure-custom-fields/code-reference/acf-post-type-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-post-type-functions-file/
 
@@ -3996,7 +3996,7 @@ Exports the “Enter Title Here” text for the provided ACF post types.
 
 ---
 
-# Acf Taxonomy Functions Global Functions <a id="secure-custom-fields/code-reference/acf-taxonomy-functions-file" />
+# Acf Taxonomy Functions Global Functions <a name="secure-custom-fields/code-reference/acf-taxonomy-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-taxonomy-functions-file/
 
@@ -4180,7 +4180,7 @@ Imports an ACF taxonomy into the database.
 
 ---
 
-# Acf User Functions Global Functions <a id="secure-custom-fields/code-reference/acf-user-functions-file" />
+# Acf User Functions Global Functions <a name="secure-custom-fields/code-reference/acf-user-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-user-functions-file/
 
@@ -4227,7 +4227,7 @@ acf\_allow\_unfiltered\_html
 
 ---
 
-# Acf Utility Functions Global Functions <a id="secure-custom-fields/code-reference/acf-utility-functions-file" />
+# Acf Utility Functions Global Functions <a name="secure-custom-fields/code-reference/acf-utility-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-utility-functions-file/
 
@@ -4316,7 +4316,7 @@ Includes a file within the ACF plugin.
 
 ---
 
-# Acf Value Functions Global Functions <a id="secure-custom-fields/code-reference/acf-value-functions-file" />
+# Acf Value Functions Global Functions <a name="secure-custom-fields/code-reference/acf-value-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-value-functions-file/
 
@@ -4421,7 +4421,7 @@ Potentially log an error if a field doesn’t exist when we expect it to.
 
 ---
 
-# Acf Wp Functions Global Functions <a id="secure-custom-fields/code-reference/acf-wp-functions-file" />
+# Acf Wp Functions Global Functions <a name="secure-custom-fields/code-reference/acf-wp-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/acf-wp-functions-file/
 
@@ -4465,7 +4465,7 @@ load\_fields() callbacks.
 
 ---
 
-# Assets Global Functions <a id="secure-custom-fields/code-reference/assets-file" />
+# Assets Global Functions <a name="secure-custom-fields/code-reference/assets-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/assets-file/
 
@@ -4517,7 +4517,7 @@ Enqueues the WP media uploader scripts and styles.
 
 ---
 
-# Blocks Global Functions <a id="secure-custom-fields/code-reference/blocks-file" />
+# Blocks Global Functions <a name="secure-custom-fields/code-reference/blocks-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/blocks-file/
 
@@ -4863,7 +4863,7 @@ that need to be saved to post meta.
 
 ---
 
-# Compatibility Global Functions <a id="secure-custom-fields/code-reference/compatibility-file" />
+# Compatibility Global Functions <a name="secure-custom-fields/code-reference/compatibility-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/compatibility-file/
 
@@ -4880,7 +4880,7 @@ Returns true if compatibility is enabled for the given component.
 
 ---
 
-# Deprecated Global Functions <a id="secure-custom-fields/code-reference/deprecated-file" />
+# Deprecated Global Functions <a name="secure-custom-fields/code-reference/deprecated-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/deprecated-file/
 
@@ -4956,7 +4956,7 @@ acf\_get\_dir
 
 ---
 
-# Fields Global Functions <a id="secure-custom-fields/code-reference/fields-file" />
+# Fields Global Functions <a name="secure-custom-fields/code-reference/fields-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields-file/
 
@@ -5095,7 +5095,7 @@ Get the PRO only fields and their core metadata.
 
 ---
 
-# L10n Global Functions <a id="secure-custom-fields/code-reference/l10n-file" />
+# L10n Global Functions <a name="secure-custom-fields/code-reference/l10n-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/l10n-file/
 
@@ -5131,7 +5131,7 @@ acf\_load\_textdomain
 
 ---
 
-# Local Fields Global Functions <a id="secure-custom-fields/code-reference/local-fields-file" />
+# Local Fields Global Functions <a name="secure-custom-fields/code-reference/local-fields-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/local-fields-file/
 
@@ -5488,7 +5488,7 @@ Returns true if is a local key.
 
 ---
 
-# Local Json Global Functions <a id="secure-custom-fields/code-reference/local-json-file" />
+# Local Json Global Functions <a name="secure-custom-fields/code-reference/local-json-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/local-json-file/
 
@@ -5523,7 +5523,7 @@ Deletes a field group JSON file.
 
 ---
 
-# Local Meta Global Functions <a id="secure-custom-fields/code-reference/local-meta-file" />
+# Local Meta Global Functions <a name="secure-custom-fields/code-reference/local-meta-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/local-meta-file/
 
@@ -5551,7 +5551,7 @@ acf\_reset\_meta
 
 ---
 
-# Locations Global Functions <a id="secure-custom-fields/code-reference/locations-file" />
+# Locations Global Functions <a name="secure-custom-fields/code-reference/locations-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/locations-file/
 
@@ -5668,7 +5668,7 @@ Alias of acf\_validate\_location\_rule().
 
 ---
 
-# Loop Global Functions <a id="secure-custom-fields/code-reference/loop-file" />
+# Loop Global Functions <a name="secure-custom-fields/code-reference/loop-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/loop-file/
 
@@ -5716,7 +5716,7 @@ alias of acf()-&gt;loop-&gt;remove\_loop()
 
 ---
 
-# Revisions Global Functions <a id="secure-custom-fields/code-reference/revisions-file" />
+# Revisions Global Functions <a name="secure-custom-fields/code-reference/revisions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/revisions-file/
 
@@ -5744,7 +5744,7 @@ This function will return the latest revision for a given post
 
 ---
 
-# Scf Ui Options Page Functions Global Functions <a id="secure-custom-fields/code-reference/scf-ui-options-page-functions-file" />
+# Scf Ui Options Page Functions Global Functions <a name="secure-custom-fields/code-reference/scf-ui-options-page-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/scf-ui-options-page-functions-file/
 
@@ -5930,7 +5930,7 @@ Imports an ACF UI options page into the database.
 
 ---
 
-# Upgrades Global Functions <a id="secure-custom-fields/code-reference/upgrades-file" />
+# Upgrades Global Functions <a name="secure-custom-fields/code-reference/upgrades-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/upgrades-file/
 
@@ -6059,7 +6059,7 @@ acf\_upgrade\_550\_taxonomy
 
 ---
 
-# Validation Global Functions <a id="secure-custom-fields/code-reference/validation-file" />
+# Validation Global Functions <a name="secure-custom-fields/code-reference/validation-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/validation-file/
 
@@ -6144,7 +6144,7 @@ This function will validate a field’s value
 
 ---
 
-# API Reference <a id="secure-custom-fields/features/scf-api" />
+# API Reference <a name="secure-custom-fields/features/scf-api" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/scf-api/
 
@@ -6191,7 +6191,7 @@ The Secure Custom Fields API provides programmatic access to field data and plug
 
 ---
 
-# Admin Notices Global Functions <a id="secure-custom-fields/code-reference/admin/admin-notices-file" />
+# Admin Notices Global Functions <a name="secure-custom-fields/code-reference/admin/admin-notices-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/admin/admin-notices-file/
 
@@ -6228,7 +6228,7 @@ Creates and returns a new notice.
 
 ---
 
-# Admin Tools Global Functions <a id="secure-custom-fields/code-reference/admin/admin-tools-file" />
+# Admin Tools Global Functions <a name="secure-custom-fields/code-reference/admin/admin-tools-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/admin/admin-tools-file/
 
@@ -6264,7 +6264,7 @@ This function will return the admin URL to the tools page
 
 ---
 
-# Admin <a id="secure-custom-fields/code-reference/admin" />
+# Admin <a name="secure-custom-fields/code-reference/admin" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/admin/
 
@@ -6275,7 +6275,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/admi
 
 ---
 
-# API Helpers Global Functions <a id="secure-custom-fields/code-reference/api/api-helpers-file" />
+# API Helpers Global Functions <a name="secure-custom-fields/code-reference/api/api-helpers-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/api/api-helpers-file/
 
@@ -7306,7 +7306,7 @@ Detect if we’re on a multisite main site.
 
 ---
 
-# API Template Global Functions <a id="secure-custom-fields/code-reference/api/api-template-file" />
+# API Template Global Functions <a name="secure-custom-fields/code-reference/api/api-template-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/api/api-template-file/
 
@@ -7638,7 +7638,7 @@ Deprecated Functions
 
 ---
 
-# API Term Global Functions <a id="secure-custom-fields/code-reference/api/api-term-file" />
+# API Term Global Functions <a name="secure-custom-fields/code-reference/api/api-term-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/api/api-term-file/
 
@@ -7801,7 +7801,7 @@ No longer needed since WP introduced the termmeta table in WP 4.4.
 
 ---
 
-# ACF_Repeater_Table <a id="secure-custom-fields/code-reference/fields/class-acf-repeater-table-file" />
+# ACF_Repeater_Table <a name="secure-custom-fields/code-reference/fields/class-acf-repeater-table-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/fields/class-acf-repeater-table-file/
 
@@ -7933,7 +7933,7 @@ Mostly lifted from the WordPress core [WP\_List\_Table](#reference/classes/wp_li
 
 ---
 
-# Form Front Global Functions <a id="secure-custom-fields/code-reference/form-front-file" />
+# Form Front Global Functions <a name="secure-custom-fields/code-reference/form-front-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/form-front-file/
 
@@ -7952,7 +7952,7 @@ Functions
 
 ---
 
-# Forms <a id="secure-custom-fields/code-reference/forms" />
+# Forms <a name="secure-custom-fields/code-reference/forms" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/forms/
 
@@ -7962,7 +7962,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/form
 
 ---
 
-# Hooks <a id="secure-custom-fields/code-reference/hooks" />
+# Hooks <a name="secure-custom-fields/code-reference/hooks" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/hooks/
 
@@ -7973,7 +7973,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/hook
 
 ---
 
-# Acf Rest API Functions Global Functions <a id="secure-custom-fields/code-reference/class-acf-rest-api-file/acf-rest-api-functions-file" />
+# Acf Rest API Functions Global Functions <a name="secure-custom-fields/code-reference/class-acf-rest-api-file/acf-rest-api-functions-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/acf-rest-api-functions-file/
 
@@ -8010,7 +8010,7 @@ Format a given field’s value for output in the REST API.
 
 ---
 
-# ACF_Rest_Api <a id="secure-custom-fields/code-reference/class-acf-rest-api-file" />
+# ACF_Rest_Api <a name="secure-custom-fields/code-reference/class-acf-rest-api-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/
 
@@ -8118,7 +8118,7 @@ Get all ACF fields for a given field group and allow third party filtering.
 
 ---
 
-# ACF_Rest_Embed_Links <a id="secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-embed-links-file" />
+# ACF_Rest_Embed_Links <a name="secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-embed-links-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-embed-links-file/
 
@@ -8156,7 +8156,7 @@ Hook into the rest\_prepare\_{$type} filters and add links for the object being 
 
 ---
 
-# ACF_Rest_Request <a id="secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-request-file" />
+# ACF_Rest_Request <a name="secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-request-file" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/class-acf-rest-api-file/class-acf-rest-request-file/
 
@@ -8257,7 +8257,7 @@ Find the REST enabled taxonomy object that matches the given REST base.
 
 ---
 
-# REST API <a id="secure-custom-fields/code-reference/rest-api" />
+# REST API <a name="secure-custom-fields/code-reference/rest-api" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/code-reference/rest-api/
 
@@ -8270,7 +8270,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/code-reference/rest
 
 ---
 
-# Field Types <a id="secure-custom-fields/features/field" />
+# Field Types <a name="secure-custom-fields/features/field" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/
 
@@ -8319,7 +8319,7 @@ Each field type has its own documentation and tutorial showing how to implement 
 
 ---
 
-# Repeater Field <a id="secure-custom-fields/features/field/repeater" />
+# Repeater Field <a name="secure-custom-fields/features/field/repeater" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/repeater/
 
@@ -8343,7 +8343,7 @@ The Repeater field allows you to create a set of sub fields which can be repeate
 
 ---
 
-# Using the Repeater Field <a id="secure-custom-fields/features/field/repeater/repeater-tutorial" />
+# Using the Repeater Field <a name="secure-custom-fields/features/field/repeater/repeater-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/repeater/repeater-tutorial/
 
@@ -8377,7 +8377,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/repe
 
 ---
 
-# Select Field <a id="secure-custom-fields/features/field/select" />
+# Select Field <a name="secure-custom-fields/features/field/select" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/select/
 
@@ -8401,7 +8401,7 @@ The Select field provides a dropdown interface for selecting single or multiple 
 
 ---
 
-# Using the Select Field <a id="secure-custom-fields/features/field/select/select-tutorial" />
+# Using the Select Field <a name="secure-custom-fields/features/field/select/select-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/select/select-tutorial/
 
@@ -8435,7 +8435,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/sele
 
 ---
 
-# Separator Field <a id="secure-custom-fields/features/field/separator" />
+# Separator Field <a name="secure-custom-fields/features/field/separator" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/separator/
 
@@ -8457,7 +8457,7 @@ The Separator field provides visual separation between fields in the editing int
 
 ---
 
-# Using the Separator Field <a id="secure-custom-fields/features/field/separator/separator-tutorial" />
+# Using the Separator Field <a name="secure-custom-fields/features/field/separator/separator-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/separator/separator-tutorial/
 
@@ -8491,7 +8491,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/sepa
 
 ---
 
-# Tab Field <a id="secure-custom-fields/features/field/tab" />
+# Tab Field <a name="secure-custom-fields/features/field/tab" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/tab/
 
@@ -8514,7 +8514,7 @@ The Tab field creates navigation tabs to organize fields into sections. It impro
 
 ---
 
-# Using the Tab Field <a id="secure-custom-fields/features/field/tab/tab-tutorial" />
+# Using the Tab Field <a name="secure-custom-fields/features/field/tab/tab-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/tab/tab-tutorial/
 
@@ -8548,7 +8548,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/tab/
 
 ---
 
-# Taxonomy Field <a id="secure-custom-fields/features/field/taxonomy" />
+# Taxonomy Field <a name="secure-custom-fields/features/field/taxonomy" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/taxonomy/
 
@@ -8572,7 +8572,7 @@ The Taxonomy field creates an interface for selecting taxonomy terms. It support
 
 ---
 
-# Using the Taxonomy Field <a id="secure-custom-fields/features/field/taxonomy/taxonomy-tutorial" />
+# Using the Taxonomy Field <a name="secure-custom-fields/features/field/taxonomy/taxonomy-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/taxonomy/taxonomy-tutorial/
 
@@ -8606,7 +8606,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/taxo
 
 ---
 
-# Text Field <a id="secure-custom-fields/features/field/text" />
+# Text Field <a name="secure-custom-fields/features/field/text" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/text/
 
@@ -8630,7 +8630,7 @@ The Text field provides a standard single-line text input with various formattin
 
 ---
 
-# Using the Text Field <a id="secure-custom-fields/features/field/text/text-tutorial" />
+# Using the Text Field <a name="secure-custom-fields/features/field/text/text-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/text/text-tutorial/
 
@@ -8666,7 +8666,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/text
 
 ---
 
-# Textarea Field <a id="secure-custom-fields/features/field/textarea" />
+# Textarea Field <a name="secure-custom-fields/features/field/textarea" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/textarea/
 
@@ -8690,7 +8690,7 @@ The Textarea field provides a multi-line text input for longer content with form
 
 ---
 
-# Using the Textarea Field <a id="secure-custom-fields/features/field/textarea/textarea-tutorial" />
+# Using the Textarea Field <a name="secure-custom-fields/features/field/textarea/textarea-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/textarea/textarea-tutorial/
 
@@ -8726,7 +8726,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/text
 
 ---
 
-# Time Picker Field <a id="secure-custom-fields/features/field/time-picker" />
+# Time Picker Field <a name="secure-custom-fields/features/field/time-picker" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/time-picker/
 
@@ -8750,7 +8750,7 @@ The Time Picker field provides an interface for selecting time values with custo
 
 ---
 
-# Using the Time Picker Field <a id="secure-custom-fields/features/field/time-picker/time-picker-tutorial" />
+# Using the Time Picker Field <a name="secure-custom-fields/features/field/time-picker/time-picker-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/time-picker/time-picker-tutorial/
 
@@ -8784,7 +8784,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/time
 
 ---
 
-# True/False Field <a id="secure-custom-fields/features/field/true-false" />
+# True/False Field <a name="secure-custom-fields/features/field/true-false" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/true-false/
 
@@ -8808,7 +8808,7 @@ The True/False field provides a simple toggle switch for boolean values. It offe
 
 ---
 
-# Using the True/False Field <a id="secure-custom-fields/features/field/true-false/true-false-tutorial" />
+# Using the True/False Field <a name="secure-custom-fields/features/field/true-false/true-false-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/true-false/true-false-tutorial/
 
@@ -8842,7 +8842,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/true
 
 ---
 
-# URL Field <a id="secure-custom-fields/features/field/url" />
+# URL Field <a name="secure-custom-fields/features/field/url" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/url/
 
@@ -8865,7 +8865,7 @@ The URL field provides input for web addresses with validation and formatting op
 
 ---
 
-# Using the URL Field <a id="secure-custom-fields/features/field/url/url-tutorial" />
+# Using the URL Field <a name="secure-custom-fields/features/field/url/url-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/url/url-tutorial/
 
@@ -8899,7 +8899,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/url/
 
 ---
 
-# User Field <a id="secure-custom-fields/features/field/user" />
+# User Field <a name="secure-custom-fields/features/field/user" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/user/
 
@@ -8923,7 +8923,7 @@ The User field creates an interface for selecting WordPress users. It supports m
 
 ---
 
-# Using the User Field <a id="secure-custom-fields/features/field/user/user-tutorial" />
+# Using the User Field <a name="secure-custom-fields/features/field/user/user-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/user/user-tutorial/
 
@@ -8957,7 +8957,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/user
 
 ---
 
-# WYSIWYG Field <a id="secure-custom-fields/features/field/wysiwyg" />
+# WYSIWYG Field <a name="secure-custom-fields/features/field/wysiwyg" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/wysiwyg/
 
@@ -8981,7 +8981,7 @@ The WYSIWYG (What You See Is What You Get) field provides a rich text editor wit
 
 ---
 
-# Using the WYSIWYG Field <a id="secure-custom-fields/features/field/wysiwyg/wysiwyg-tutorial" />
+# Using the WYSIWYG Field <a name="secure-custom-fields/features/field/wysiwyg/wysiwyg-tutorial" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/features/field/wysiwyg/wysiwyg-tutorial/
 
@@ -9015,7 +9015,7 @@ Source: https://developer.wordpress.org/secure-custom-fields/features/field/wysi
 
 ---
 
-# Getting Started with Secure Custom Fields <a id="secure-custom-fields" />
+# Getting Started with Secure Custom Fields <a name="secure-custom-fields" />
 
 Source: https://developer.wordpress.org/secure-custom-fields/
 

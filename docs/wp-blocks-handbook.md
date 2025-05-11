@@ -1,4 +1,4 @@
-# Block Editor Handbook <a id="block-editor" />
+# Block Editor Handbook <a name="block-editor" />
 
 Source: https://developer.wordpress.org/block-editor/
 
@@ -57,7 +57,7 @@ The Block Editor Handbook is designed for those looking to create and develop fo
 
 ---
 
-# Triage <a id="block-editor/contributors/triage" />
+# Triage <a name="block-editor/contributors/triage" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/triage/
 
@@ -171,7 +171,7 @@ For more detailed information about weekly design triage and to join in, please 
 
 ---
 
-# Block Development Environment <a id="block-editor/getting-started/devenv" />
+# Block Development Environment <a name="block-editor/getting-started/devenv" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/devenv/
 
@@ -232,7 +232,7 @@ This list is not exhaustive, but here are several additional options to choose f
 
 ---
 
-# How-to Guides <a id="block-editor/how-to-guides" />
+# How-to Guides <a name="block-editor/how-to-guides" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/
 
@@ -282,7 +282,7 @@ Customizing the parser is an advanced topic that you can learn more about in the
 
 ---
 
-# Notices <a id="block-editor/how-to-guides/notices" />
+# Notices <a name="block-editor/how-to-guides/notices" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/notices/
 
@@ -369,7 +369,7 @@ For a full list of the available actions and selectors, refer to the [Notices Da
 
 ---
 
-# Blocks <a id="block-editor/how-to-guides/block-tutorial" />
+# Blocks <a name="block-editor/how-to-guides/block-tutorial" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/
 
@@ -385,7 +385,7 @@ Note that it is not required to use JSX to create blocks or extend the editor, y
 
 ---
 
-# Use styles and stylesheets <a id="block-editor/how-to-guides/block-tutorial/applying-styles-with-stylesheets" />
+# Use styles and stylesheets <a name="block-editor/how-to-guides/block-tutorial/applying-styles-with-stylesheets" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/applying-styles-with-stylesheets/
 
@@ -555,7 +555,7 @@ See the complete [stylesheets-79a4c3](https://github.com/WordPress/block-develop
 
 ---
 
-# Creating dynamic blocks <a id="block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks" />
+# Creating dynamic blocks <a name="block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks/
 
@@ -701,7 +701,7 @@ Note that this code uses the `wp-server-side-render` package but not `wp-data`. 
 
 ---
 
-# Nested Blocks: Using InnerBlocks <a id="block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks" />
+# Nested Blocks: Using InnerBlocks <a name="block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks/
 
@@ -996,7 +996,7 @@ registerBlockType( 'gutenberg-examples/example-06', {
 
 ---
 
-# Feature Flags <a id="block-editor/how-to-guides/feature-flags" />
+# Feature Flags <a name="block-editor/how-to-guides/feature-flags" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/feature-flags/
 
@@ -1116,7 +1116,7 @@ Introducing complexity may prevent webpack’s minifier from identifying and the
 
 ---
 
-# Development Platform <a id="block-editor/how-to-guides/platform" />
+# Development Platform <a name="block-editor/how-to-guides/platform" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/platform/
 
@@ -1185,7 +1185,7 @@ You can learn more by reading the [tutorial “Building a custom block editor”
 
 ---
 
-# Building a custom block editor <a id="block-editor/how-to-guides/platform/custom-block-editor" />
+# Building a custom block editor <a name="block-editor/how-to-guides/platform/custom-block-editor" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/platform/custom-block-editor/
 
@@ -1745,7 +1745,7 @@ The full code for the custom block editor you have just built is [available on G
 
 ---
 
-# User Interface <a id="block-editor/explanations/user-interface" />
+# User Interface <a name="block-editor/explanations/user-interface" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/user-interface/
 
@@ -1813,7 +1813,7 @@ The **Block Library** appears when someone inserts a block, whether via the tool
 
 ---
 
-# Accessibility <a id="block-editor/how-to-guides/accessibility" />
+# Accessibility <a name="block-editor/how-to-guides/accessibility" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/accessibility/
 
@@ -1835,7 +1835,7 @@ Read more regarding landmark design from W3C:
 
 ---
 
-# Internationalization <a id="block-editor/how-to-guides/internationalization" />
+# Internationalization <a name="block-editor/how-to-guides/internationalization" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/internationalization/
 
@@ -2079,7 +2079,7 @@ The outputs of the translation functions (`__()`, `_x()`, `_n()`, and `_nx()`) a
 
 ---
 
-# Reference Guides <a id="block-editor/reference-guides" />
+# Reference Guides <a name="block-editor/reference-guides" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/
 
@@ -2155,7 +2155,7 @@ Source: https://developer.wordpress.org/block-editor/reference-guides/
 
 ---
 
-# Block API Reference <a id="block-editor/reference-guides/block-api" />
+# Block API Reference <a name="block-editor/reference-guides/block-api" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/
 
@@ -2182,7 +2182,7 @@ The following sections will walk you through the existing block APIs:
 
 ---
 
-# Edit and Save <a id="block-editor/reference-guides/block-api/block-edit-save" />
+# Edit and Save <a name="block-editor/reference-guides/block-api/block-edit-save" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/
 
@@ -2530,7 +2530,7 @@ Refer to the guide on [Deprecated Blocks](#block-editor/reference-guides/block-a
 
 ---
 
-# Attributes <a id="block-editor/reference-guides/block-api/block-attributes" />
+# Attributes <a name="block-editor/reference-guides/block-api/block-attributes" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/
 
@@ -3051,7 +3051,7 @@ The value is provided by the `default` field, and the value should match the exp
 
 ---
 
-# Templates <a id="block-editor/reference-guides/block-api/block-templates" />
+# Templates <a name="block-editor/reference-guides/block-api/block-templates" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-templates/
 
@@ -3247,7 +3247,7 @@ $template = array(
 
 ---
 
-# Annotations <a id="block-editor/reference-guides/block-api/block-annotations" />
+# Annotations <a name="block-editor/reference-guides/block-api/block-annotations" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-annotations/
 
@@ -3315,7 +3315,7 @@ The text annotation is controlled by the `start` and `end` properties. Simple `s
 
 ---
 
-# Hooks Reference <a id="block-editor/reference-guides/filters" />
+# Hooks Reference <a name="block-editor/reference-guides/filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/
 
@@ -3327,7 +3327,7 @@ You can also learn more about both APIs: [PHP](#reference) and [JavaScript](#blo
 
 ---
 
-# Block Filters <a id="block-editor/reference-guides/filters/block-filters" />
+# Block Filters <a name="block-editor/reference-guides/filters/block-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/
 
@@ -3931,7 +3931,7 @@ To set an SVG icon for the category shown in the previous example, add the follo
 
 ---
 
-# Editor Hooks <a id="block-editor/reference-guides/filters/editor-filters" />
+# Editor Hooks <a name="block-editor/reference-guides/filters/editor-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/
 
@@ -4193,7 +4193,7 @@ addAction(
 
 ---
 
-# Parser Filters <a id="block-editor/reference-guides/filters/parser-filters" />
+# Parser Filters <a name="block-editor/reference-guides/filters/parser-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/parser-filters/
 
@@ -4235,7 +4235,7 @@ add_filter( 'block_parser_class', 'wpdocs_select_empty_parser', 10, 1 );
 
 ---
 
-# Autocomplete <a id="block-editor/reference-guides/filters/autocomplete-filters" />
+# Autocomplete <a name="block-editor/reference-guides/filters/autocomplete-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/autocomplete-filters/
 
@@ -4285,7 +4285,7 @@ wp.hooks.addFilter(
 
 ---
 
-# SlotFills Reference <a id="block-editor/reference-guides/slotfills" />
+# SlotFills Reference <a name="block-editor/reference-guides/slotfills" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/
 
@@ -4666,7 +4666,7 @@ The following SlotFills are available in the `edit-post` or `editor` packages. P
 
 ---
 
-# MainDashboardButton <a id="block-editor/reference-guides/slotfills/main-dashboard-button" />
+# MainDashboardButton <a name="block-editor/reference-guides/slotfills/main-dashboard-button" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/main-dashboard-button/
 
@@ -4728,7 +4728,7 @@ registerPlugin( 'main-dashboard-button-icon-test', {
 
 ---
 
-# PluginBlockSettingsMenuItem <a id="block-editor/reference-guides/slotfills/plugin-block-settings-menu-item" />
+# PluginBlockSettingsMenuItem <a name="block-editor/reference-guides/slotfills/plugin-block-settings-menu-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-block-settings-menu-item/
 
@@ -4764,7 +4764,7 @@ registerPlugin( 'block-settings-menu-group-test', {
 
 ---
 
-# PluginDocumentSettingPanel <a id="block-editor/reference-guides/slotfills/plugin-document-setting-panel" />
+# PluginDocumentSettingPanel <a name="block-editor/reference-guides/slotfills/plugin-document-setting-panel" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-document-setting-panel/
 
@@ -4872,7 +4872,7 @@ const Example = () => {
 
 ---
 
-# PluginMoreMenuItem <a id="block-editor/reference-guides/slotfills/plugin-more-menu-item" />
+# PluginMoreMenuItem <a name="block-editor/reference-guides/slotfills/plugin-more-menu-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-more-menu-item/
 
@@ -4906,7 +4906,7 @@ registerPlugin( 'more-menu-item-test', { render: MyButtonMoreMenuItemTest } );
 
 ---
 
-# PluginPostPublishPanel <a id="block-editor/reference-guides/slotfills/plugin-post-publish-panel" />
+# PluginPostPublishPanel <a name="block-editor/reference-guides/slotfills/plugin-post-publish-panel" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-publish-panel/
 
@@ -4936,7 +4936,7 @@ registerPlugin( 'post-publish-panel-test', {
 
 ---
 
-# PluginPostStatusInfo <a id="block-editor/reference-guides/slotfills/plugin-post-status-info" />
+# PluginPostStatusInfo <a name="block-editor/reference-guides/slotfills/plugin-post-status-info" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-post-status-info/
 
@@ -4964,7 +4964,7 @@ registerPlugin( 'post-status-info-test', { render: PluginPostStatusInfoTest } );
 
 ---
 
-# PluginPrePublishPanel <a id="block-editor/reference-guides/slotfills/plugin-pre-publish-panel" />
+# PluginPrePublishPanel <a name="block-editor/reference-guides/slotfills/plugin-pre-publish-panel" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-pre-publish-panel/
 
@@ -4994,7 +4994,7 @@ registerPlugin( 'pre-publish-panel-test', {
 
 ---
 
-# PluginSidebar <a id="block-editor/reference-guides/slotfills/plugin-sidebar" />
+# PluginSidebar <a name="block-editor/reference-guides/slotfills/plugin-sidebar" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar/
 
@@ -5069,7 +5069,7 @@ registerPlugin( 'plugin-sidebar-example', { render: PluginSidebarExample } );
 
 ---
 
-# PluginSidebarMoreMenuItem <a id="block-editor/reference-guides/slotfills/plugin-sidebar-more-menu-item" />
+# PluginSidebarMoreMenuItem <a name="block-editor/reference-guides/slotfills/plugin-sidebar-more-menu-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-sidebar-more-menu-item/
 
@@ -5155,7 +5155,7 @@ registerPlugin( 'plugin-sidebar-more-menu-item-example', {
 
 ---
 
-# RichText Reference <a id="block-editor/reference-guides/richtext" />
+# RichText Reference <a name="block-editor/reference-guides/richtext" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/richtext/
 
@@ -5252,7 +5252,7 @@ To apply, you would need to enqueue the above script in your plugin or theme. Se
 
 ---
 
-# Component Reference <a id="block-editor/reference-guides/components" />
+# Component Reference <a name="block-editor/reference-guides/components" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/
 
@@ -5344,7 +5344,7 @@ This package also has its own [contributing information](https://github.com/Word
 
 ---
 
-# AlignmentMatrixControl <a id="block-editor/reference-guides/components/alignment-matrix-control" />
+# AlignmentMatrixControl <a name="block-editor/reference-guides/components/alignment-matrix-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/alignment-matrix-control/
 
@@ -5434,7 +5434,7 @@ The current alignment value.
 
 ---
 
-# AnglePickerControl <a id="block-editor/reference-guides/components/angle-picker-control" />
+# AnglePickerControl <a name="block-editor/reference-guides/components/angle-picker-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/angle-picker-control/
 
@@ -5495,7 +5495,7 @@ and should be a value between 0 and 360.
 
 ---
 
-# Animate <a id="block-editor/reference-guides/components/animate" />
+# Animate <a name="block-editor/reference-guides/components/animate" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/animate/
 
@@ -5554,7 +5554,7 @@ This animation is meant for sidebars and sliding menus. It shows the height and 
 
 ---
 
-# Autocomplete <a id="block-editor/reference-guides/components/autocomplete" />
+# Autocomplete <a name="block-editor/reference-guides/components/autocomplete" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/autocomplete/
 
@@ -5795,7 +5795,7 @@ add_action( 'init', 'enqueue_fruit_autocompleter_plugin_script' );
 
 ---
 
-# BaseControl <a id="block-editor/reference-guides/components/base-control" />
+# BaseControl <a name="block-editor/reference-guides/components/base-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/base-control/
 
@@ -5931,7 +5931,7 @@ The content to be displayed within the `BaseControl.VisualLabel`.
 
 ---
 
-# BoxControl <a id="block-editor/reference-guides/components/box-control" />
+# BoxControl <a name="block-editor/reference-guides/components/box-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/box-control/
 
@@ -6071,7 +6071,7 @@ The current values of the control, expressed as an object of `top`, `right`, `bo
 
 ---
 
-# ButtonGroup <a id="block-editor/reference-guides/components/button-group" />
+# ButtonGroup <a name="block-editor/reference-guides/components/button-group" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/button-group/
 
@@ -6135,7 +6135,7 @@ const MyButtonGroup = () => (
 
 ---
 
-# Button <a id="block-editor/reference-guides/components/button" />
+# Button <a name="block-editor/reference-guides/components/button" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/button/
 
@@ -6333,7 +6333,7 @@ The accepted values are:
 
 ---
 
-# Card <a id="block-editor/reference-guides/components/card" />
+# Card <a name="block-editor/reference-guides/components/card" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/card/
 
@@ -6477,7 +6477,7 @@ const Example = () => (
 
 ---
 
-# CheckboxControl <a id="block-editor/reference-guides/components/checkbox-control" />
+# CheckboxControl <a name="block-editor/reference-guides/components/checkbox-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/checkbox-control/
 
@@ -6599,7 +6599,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# ClipboardButton <a id="block-editor/reference-guides/components/clipboard-button" />
+# ClipboardButton <a name="block-editor/reference-guides/components/clipboard-button" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/clipboard-button/
 
@@ -6669,7 +6669,7 @@ Any additional props will be passed the underlying `<Button/>` component. See th
 
 ---
 
-# ColorIndicator <a id="block-editor/reference-guides/components/color-indicator" />
+# ColorIndicator <a name="block-editor/reference-guides/components/color-indicator" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/color-indicator/
 
@@ -6710,7 +6710,7 @@ The color of the indicator. Any value from the CSS [`background`](https://develo
 
 ---
 
-# ColorPalette <a id="block-editor/reference-guides/components/color-palette" />
+# ColorPalette <a name="block-editor/reference-guides/components/color-palette" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/color-palette/
 
@@ -6816,7 +6816,7 @@ Prevents keyboard interaction from wrapping around. Only used when `asButtons` i
 
 ---
 
-# ColorPicker <a id="block-editor/reference-guides/components/color-picker" />
+# ColorPicker <a name="block-editor/reference-guides/components/color-picker" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/color-picker/
 
@@ -6878,7 +6878,7 @@ The format to copy when clicking the displayed color format.
 
 ---
 
-# ComboboxControl <a id="block-editor/reference-guides/components/combobox-control" />
+# ComboboxControl <a name="block-editor/reference-guides/components/combobox-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/combobox-control/
 
@@ -7042,7 +7042,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# CustomSelectControl <a id="block-editor/reference-guides/components/custom-select-control" />
+# CustomSelectControl <a name="block-editor/reference-guides/components/custom-select-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/custom-select-control/
 
@@ -7208,7 +7208,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# Dashicon <a id="block-editor/reference-guides/components/dashicon" />
+# Dashicon <a name="block-editor/reference-guides/components/dashicon" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/dashicon/
 
@@ -7229,7 +7229,7 @@ const MyDashicon = () => (
 
 ---
 
-# DateTime <a id="block-editor/reference-guides/components/date-time" />
+# DateTime <a name="block-editor/reference-guides/components/date-time" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/date-time/
 
@@ -7326,7 +7326,7 @@ The day that the week should start on. 0 for Sunday, 1 for Monday, etc.
 
 ---
 
-# DimensionControl <a id="block-editor/reference-guides/components/dimension-control" />
+# DimensionControl <a name="block-editor/reference-guides/components/dimension-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/dimension-control/
 
@@ -7444,7 +7444,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# Disabled <a id="block-editor/reference-guides/components/disabled" />
+# Disabled <a name="block-editor/reference-guides/components/disabled" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/disabled/
 
@@ -7515,7 +7515,7 @@ Whether to disable all the descendant fields. Defaults to `true`.
 
 ---
 
-# Draggable <a id="block-editor/reference-guides/components/draggable" />
+# Draggable <a name="block-editor/reference-guides/components/draggable" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/draggable/
 
@@ -7632,7 +7632,7 @@ const MyDraggable = ( { onDragStart, onDragEnd } ) => (
 
 ---
 
-# DropZone <a id="block-editor/reference-guides/components/drop-zone" />
+# DropZone <a name="block-editor/reference-guides/components/drop-zone" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/drop-zone/
 
@@ -7705,7 +7705,7 @@ The function is generic drop handler called if the `onFilesDrop` or `onHTMLDrop`
 
 ---
 
-# DropdownMenu <a id="block-editor/reference-guides/components/dropdown-menu" />
+# DropdownMenu <a name="block-editor/reference-guides/components/dropdown-menu" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/dropdown-menu/
 
@@ -7925,7 +7925,7 @@ A callback invoked when the state of the dropdown changes from open to closed an
 
 ---
 
-# Dropdown <a id="block-editor/reference-guides/components/dropdown" />
+# Dropdown <a name="block-editor/reference-guides/components/dropdown" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/dropdown/
 
@@ -8055,7 +8055,7 @@ The style of the global container
 
 ---
 
-# ExternalLink <a id="block-editor/reference-guides/components/external-link" />
+# ExternalLink <a name="block-editor/reference-guides/components/external-link" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/external-link/
 
@@ -8090,7 +8090,7 @@ The URL of the external resource.
 
 ---
 
-# Flex <a id="block-editor/reference-guides/components/flex" />
+# Flex <a name="block-editor/reference-guides/components/flex" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/flex/
 
@@ -8164,7 +8164,7 @@ Determines if children should wrap.
 
 ---
 
-# FocalPointPicker <a id="block-editor/reference-guides/components/focal-point-picker" />
+# FocalPointPicker <a name="block-editor/reference-guides/components/focal-point-picker" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/focal-point-picker/
 
@@ -8287,7 +8287,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# FocusableIframe <a id="block-editor/reference-guides/components/focusable-iframe" />
+# FocusableIframe <a name="block-editor/reference-guides/components/focusable-iframe" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/focusable-iframe/
 
@@ -8331,7 +8331,7 @@ If a reference to the underlying DOM element is needed, pass `iframeRef` as the 
 
 ---
 
-# FontSizePicker <a id="block-editor/reference-guides/components/font-size-picker" />
+# FontSizePicker <a name="block-editor/reference-guides/components/font-size-picker" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/font-size-picker/
 
@@ -8462,7 +8462,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# FormFileUpload <a id="block-editor/reference-guides/components/form-file-upload" />
+# FormFileUpload <a name="block-editor/reference-guides/components/form-file-upload" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/form-file-upload/
 
@@ -8573,7 +8573,7 @@ native file upload modal window.
 
 ---
 
-# FormToggle <a id="block-editor/reference-guides/components/form-toggle" />
+# FormToggle <a name="block-editor/reference-guides/components/form-toggle" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/form-toggle/
 
@@ -8672,7 +8672,7 @@ A callback function invoked when the toggle is clicked.
 
 ---
 
-# FormTokenField <a id="block-editor/reference-guides/components/form-token-field" />
+# FormTokenField <a name="block-editor/reference-guides/components/form-token-field" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/form-token-field/
 
@@ -8775,7 +8775,7 @@ const MyFormTokenField = () => {
 
 ---
 
-# Guide <a id="block-editor/reference-guides/components/guide" />
+# Guide <a name="block-editor/reference-guides/components/guide" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/guide/
 
@@ -8872,7 +8872,7 @@ A list of objects describing each page in the guide. Each object **must** contai
 
 ---
 
-# NavigateRegions <a id="block-editor/reference-guides/components/navigate-regions" />
+# NavigateRegions <a name="block-editor/reference-guides/components/navigate-regions" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/navigate-regions/
 
@@ -8905,7 +8905,7 @@ It’s important to note that an ARIA `role="region"` is an ARIA landmark role. 
 
 ---
 
-# HigherOrder <a id="block-editor/reference-guides/components/higher-order" />
+# HigherOrder <a name="block-editor/reference-guides/components/higher-order" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/higher-order/
 
@@ -8915,7 +8915,7 @@ This directory includes a library of generic Higher Order React Components.
 
 ---
 
-# WithConstrainedTabbing <a id="block-editor/reference-guides/components/with-constrained-tabbing" />
+# WithConstrainedTabbing <a name="block-editor/reference-guides/components/with-constrained-tabbing" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-constrained-tabbing/
 
@@ -8978,7 +8978,7 @@ const MyComponentWithConstrainedTabbing = () => {
 
 ---
 
-# WithFallbackStyles <a id="block-editor/reference-guides/components/with-fallback-styles" />
+# WithFallbackStyles <a name="block-editor/reference-guides/components/with-fallback-styles" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-fallback-styles/
 
@@ -9010,7 +9010,7 @@ const MyComponentWithFallbackStyles = withFallbackStyles(
 
 ---
 
-# WithFilters <a id="block-editor/reference-guides/components/with-filters" />
+# WithFilters <a name="block-editor/reference-guides/components/with-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-filters/
 
@@ -9076,7 +9076,7 @@ const MyComponentWithFilters = withFilters( 'MyHookName' )( MyComponent );
 
 ---
 
-# WithFocusOutside <a id="block-editor/reference-guides/components/with-focus-outside" />
+# WithFocusOutside <a name="block-editor/reference-guides/components/with-focus-outside" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-focus-outside/
 
@@ -9114,7 +9114,7 @@ In the above example, the `handleFocusOutside` function is only called if focus 
 
 ---
 
-# WithFocusReturn <a id="block-editor/reference-guides/components/with-focus-return" />
+# WithFocusReturn <a name="block-editor/reference-guides/components/with-focus-return" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-focus-return/
 
@@ -9197,7 +9197,7 @@ const EnhancedMyComponent = withFocusReturn( {
 
 ---
 
-# WithNotices <a id="block-editor/reference-guides/components/with-notices" />
+# WithNotices <a name="block-editor/reference-guides/components/with-notices" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-notices/
 
@@ -9262,7 +9262,7 @@ const MyComponentWithNotices = withNotices(
 
 ---
 
-# WithSpokenMessages <a id="block-editor/reference-guides/components/with-spoken-messages" />
+# WithSpokenMessages <a name="block-editor/reference-guides/components/with-spoken-messages" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/with-spoken-messages/
 
@@ -9294,7 +9294,7 @@ const MyComponentWithSpokenMessages = withSpokenMessages(
 
 ---
 
-# Icon <a id="block-editor/reference-guides/components/icon" />
+# Icon <a name="block-editor/reference-guides/components/icon" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/icon/
 
@@ -9338,7 +9338,7 @@ Defaults to `20` when `icon` is a string (i.e. a Dashicon id), otherwise `24`.
 
 ---
 
-# InputControl <a id="block-editor/reference-guides/components/input-control" />
+# InputControl <a name="block-editor/reference-guides/components/input-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/input-control/
 
@@ -9460,7 +9460,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# IsolatedEventContainer <a id="block-editor/reference-guides/components/isolated-event-container" />
+# IsolatedEventContainer <a name="block-editor/reference-guides/components/isolated-event-container" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/isolated-event-container/
 
@@ -9503,7 +9503,7 @@ All props are passed as-is to the `<IsolatedEventContainer />`
 
 ---
 
-# KeyboardShortcuts <a id="block-editor/reference-guides/components/keyboard-shortcuts" />
+# KeyboardShortcuts <a name="block-editor/reference-guides/components/keyboard-shortcuts" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/keyboard-shortcuts/
 
@@ -9585,7 +9585,7 @@ By default, a callback is invoked in response to the `keydown` event. To overrid
 
 ---
 
-# MenuGroup <a id="block-editor/reference-guides/components/menu-group" />
+# MenuGroup <a name="block-editor/reference-guides/components/menu-group" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/menu-group/
 
@@ -9628,7 +9628,7 @@ const MyMenuGroup = () => (
 
 ---
 
-# MenuItem <a id="block-editor/reference-guides/components/menu-item" />
+# MenuItem <a name="block-editor/reference-guides/components/menu-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/menu-item/
 
@@ -9729,7 +9729,7 @@ Allows for markup other than icons or shortcuts to be added to the menu item.
 
 ---
 
-# MenuItemsChoice <a id="block-editor/reference-guides/components/menu-items-choice" />
+# MenuItemsChoice <a name="block-editor/reference-guides/components/menu-items-choice" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/menu-items-choice/
 
@@ -9811,7 +9811,7 @@ const MyMenuItemsChoice = () => {
 
 ---
 
-# Modal <a id="block-editor/reference-guides/components/modal" />
+# Modal <a name="block-editor/reference-guides/components/modal" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/modal/
 
@@ -10101,7 +10101,7 @@ When set to `true`, the Modal’s header (including the icon, title and close bu
 
 ---
 
-# NavigableContainer <a id="block-editor/reference-guides/components/navigable-container" />
+# NavigableContainer <a name="block-editor/reference-guides/components/navigable-container" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/navigable-container/
 
@@ -10205,7 +10205,7 @@ const MyNavigableContainer = () => (
 
 ---
 
-# Navigation <a id="block-editor/reference-guides/components/navigation" />
+# Navigation <a name="block-editor/reference-guides/components/navigation" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/navigation/
 
@@ -10474,7 +10474,7 @@ The item title.
 
 ---
 
-# Notice <a id="block-editor/reference-guides/components/notice" />
+# Notice <a name="block-editor/reference-guides/components/notice" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/notice/
 
@@ -10645,7 +10645,7 @@ The default appearance of an action button is inferred based on whether `url` or
 
 ---
 
-# NumberControl <a id="block-editor/reference-guides/components/number-control" />
+# NumberControl <a name="block-editor/reference-guides/components/number-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/number-control/
 
@@ -10798,7 +10798,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# Panel <a id="block-editor/reference-guides/components/panel" />
+# Panel <a name="block-editor/reference-guides/components/panel" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/panel/
 
@@ -11014,7 +11014,7 @@ The content to display within the panel row.
 
 ---
 
-# Placeholder <a id="block-editor/reference-guides/components/placeholder" />
+# Placeholder <a name="block-editor/reference-guides/components/placeholder" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/placeholder/
 
@@ -11080,7 +11080,7 @@ Outputs a placeholder illustration.
 
 ---
 
-# Popover <a id="block-editor/reference-guides/components/popover" />
+# Popover <a name="block-editor/reference-guides/components/popover" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/popover/
 
@@ -11324,7 +11324,7 @@ Leave undefined for the default style. Possible values are:
 
 ---
 
-# QueryControls <a id="block-editor/reference-guides/components/query-controls" />
+# QueryControls <a name="block-editor/reference-guides/components/query-controls" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/query-controls/
 
@@ -11587,7 +11587,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# RadioControl <a id="block-editor/reference-guides/components/radio-control" />
+# RadioControl <a name="block-editor/reference-guides/components/radio-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/
 
@@ -11714,7 +11714,7 @@ The value property of the currently selected option.
 
 ---
 
-# RadioGroup <a id="block-editor/reference-guides/components/radio-group" />
+# RadioGroup <a name="block-editor/reference-guides/components/radio-group" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/radio-group/
 
@@ -11812,7 +11812,7 @@ const MyUncontrolledRadioRadioGroup = () => {
 
 ---
 
-# RangeControl <a id="block-editor/reference-guides/components/range-control" />
+# RangeControl <a name="block-editor/reference-guides/components/range-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/range-control/
 
@@ -12202,7 +12202,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# ResizableBox <a id="block-editor/reference-guides/components/resizable-box" />
+# ResizableBox <a name="block-editor/reference-guides/components/resizable-box" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/resizable-box/
 
@@ -12268,7 +12268,7 @@ For additional props, check out [re-resizable](https://github.com/bokuweb/re-res
 
 ---
 
-# ResizeTooltip <a id="block-editor/reference-guides/components/resize-tooltip" />
+# ResizeTooltip <a name="block-editor/reference-guides/components/resize-tooltip" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/resize-tooltip/
 
@@ -12379,7 +12379,7 @@ The `z-index` style property for the label.
 
 ---
 
-# ResponsiveWrapper <a id="block-editor/reference-guides/components/responsive-wrapper" />
+# ResponsiveWrapper <a name="block-editor/reference-guides/components/responsive-wrapper" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/responsive-wrapper/
 
@@ -12436,7 +12436,7 @@ The intrinsic width of the element to wrap. Will be used to determine the aspect
 
 ---
 
-# Sandbox <a id="block-editor/reference-guides/components/sandbox" />
+# Sandbox <a name="block-editor/reference-guides/components/sandbox" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/sandbox/
 
@@ -12504,7 +12504,7 @@ The `tabindex` the iframe should receive.
 
 ---
 
-# ScrollLock <a id="block-editor/reference-guides/components/scroll-lock" />
+# ScrollLock <a name="block-editor/reference-guides/components/scroll-lock" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/scroll-lock/
 
@@ -12543,7 +12543,7 @@ const MyScrollLock = () => {
 
 ---
 
-# SelectControl <a id="block-editor/reference-guides/components/select-control" />
+# SelectControl <a name="block-editor/reference-guides/components/select-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/select-control/
 
@@ -12806,7 +12806,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# SlotFill <a id="block-editor/reference-guides/components/slot-fill" />
+# SlotFill <a name="block-editor/reference-guides/components/slot-fill" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/slot-fill/
 
@@ -12942,7 +12942,7 @@ const Toolbar = () => {
 
 ---
 
-# Snackbar <a id="block-editor/reference-guides/components/snackbar" />
+# Snackbar <a name="block-editor/reference-guides/components/snackbar" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/snackbar/
 
@@ -13051,7 +13051,7 @@ Used to provide a custom spoken message.
 
 ---
 
-# Spinner <a id="block-editor/reference-guides/components/spinner" />
+# Spinner <a name="block-editor/reference-guides/components/spinner" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/spinner/
 
@@ -13078,7 +13078,7 @@ Check out the [Storybook page](https://wordpress.github.io/gutenberg/?path=/docs
 
 ---
 
-# TabPanel <a id="block-editor/reference-guides/components/tab-panel" />
+# TabPanel <a name="block-editor/reference-guides/components/tab-panel" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tab-panel/
 
@@ -13239,7 +13239,7 @@ A function which renders the tabviews given the selected tab. The function is pa
 
 ---
 
-# TextControl <a id="block-editor/reference-guides/components/text-control" />
+# TextControl <a name="block-editor/reference-guides/components/text-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/text-control/
 
@@ -13386,7 +13386,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# TextHighlight <a id="block-editor/reference-guides/components/text-highlight" />
+# TextHighlight <a name="block-editor/reference-guides/components/text-highlight" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/text-highlight/
 
@@ -13430,7 +13430,7 @@ The string of text to be tested for occurrences of then given `highlight`.
 
 ---
 
-# Text <a id="block-editor/reference-guides/components/text" />
+# Text <a name="block-editor/reference-guides/components/text" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/text/
 
@@ -13686,7 +13686,7 @@ Adjusts font-weight of the text.
 
 ---
 
-# TextareaControl <a id="block-editor/reference-guides/components/textarea-control" />
+# TextareaControl <a name="block-editor/reference-guides/components/textarea-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/textarea-control/
 
@@ -13836,7 +13836,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# ToggleControl <a id="block-editor/reference-guides/components/toggle-control" />
+# ToggleControl <a name="block-editor/reference-guides/components/toggle-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/
 
@@ -13931,7 +13931,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# ToolbarButton <a id="block-editor/reference-guides/components/toolbar-button" />
+# ToolbarButton <a name="block-editor/reference-guides/components/toolbar-button" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-button/
 
@@ -14009,7 +14009,7 @@ An optional subscript for the button.
 
 ---
 
-# ToolbarGroup <a id="block-editor/reference-guides/components/toolbar-group" />
+# ToolbarGroup <a name="block-editor/reference-guides/components/toolbar-group" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-group/
 
@@ -14048,7 +14048,7 @@ ToolbarGroup will pass all HTML props to the underlying element.
 
 ---
 
-# ToolbarItem <a id="block-editor/reference-guides/components/toolbar-item" />
+# ToolbarItem <a name="block-editor/reference-guides/components/toolbar-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-item/
 
@@ -14128,7 +14128,7 @@ function Edit() {
 
 ---
 
-# Toolbar <a id="block-editor/reference-guides/components/toolbar" />
+# Toolbar <a name="block-editor/reference-guides/components/toolbar" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toolbar/
 
@@ -14222,7 +14222,7 @@ Leave undefined or ‘horizontal’ for horizontal orientation keyboard interact
 
 ---
 
-# Tooltip <a id="block-editor/reference-guides/components/tooltip" />
+# Tooltip <a name="block-editor/reference-guides/components/tooltip" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tooltip/
 
@@ -14305,7 +14305,7 @@ The text shown in the tooltip when anchor element is focused or hovered.
 
 ---
 
-# TreeGrid <a id="block-editor/reference-guides/components/tree-grid" />
+# TreeGrid <a name="block-editor/reference-guides/components/tree-grid" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tree-grid/
 
@@ -14481,7 +14481,7 @@ Props passed as an argument to the render prop must be passed to the child focus
 
 ---
 
-# TreeSelect <a id="block-editor/reference-guides/components/tree-select" />
+# TreeSelect <a name="block-editor/reference-guides/components/tree-select" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tree-select/
 
@@ -14703,7 +14703,7 @@ The style variant of the control.
 
 ---
 
-# UnitControl <a id="block-editor/reference-guides/components/unit-control" />
+# UnitControl <a name="block-editor/reference-guides/components/unit-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/unit-control/
 
@@ -14866,7 +14866,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# VisuallyHidden <a id="block-editor/reference-guides/components/visually-hidden" />
+# VisuallyHidden <a name="block-editor/reference-guides/components/visually-hidden" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/visually-hidden/
 
@@ -14893,7 +14893,7 @@ The element that `VisuallyHidden` renders has the style `position: absolute`. Wh
 
 ---
 
-# Package Reference <a id="block-editor/reference-guides/packages" />
+# Package Reference <a name="block-editor/reference-guides/packages" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/
 
@@ -14959,7 +14959,7 @@ All major WordPress versions starting from `5.7.x` are supported (e.g., `wp-5.7`
 
 ---
 
-# @wordpress/a11y <a id="block-editor/reference-guides/packages/packages-a11y" />
+# @wordpress/a11y <a name="block-editor/reference-guides/packages/packages-a11y" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-a11y/
 
@@ -15038,7 +15038,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/annotations <a id="block-editor/reference-guides/packages/packages-annotations" />
+# @wordpress/annotations <a name="block-editor/reference-guides/packages/packages-annotations" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-annotations/
 
@@ -15071,7 +15071,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/autop <a id="block-editor/reference-guides/packages/packages-autop" />
+# @wordpress/autop <a name="block-editor/reference-guides/packages/packages-autop" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-autop/
 
@@ -15143,7 +15143,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/babel-plugin-import-jsx-pragma <a id="block-editor/reference-guides/packages/packages-babel-plugin-import-jsx-pragma" />
+# @wordpress/babel-plugin-import-jsx-pragma <a name="block-editor/reference-guides/packages/packages-babel-plugin-import-jsx-pragma" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-plugin-import-jsx-pragma/
 
@@ -15248,7 +15248,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/babel-plugin-makepot <a id="block-editor/reference-guides/packages/packages-babel-plugin-makepot" />
+# @wordpress/babel-plugin-makepot <a name="block-editor/reference-guides/packages/packages-babel-plugin-makepot" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-plugin-makepot/
 
@@ -15285,7 +15285,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/babel-preset-default <a id="block-editor/reference-guides/packages/packages-babel-preset-default" />
+# @wordpress/babel-preset-default <a name="block-editor/reference-guides/packages/packages-babel-preset-default" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-preset-default/
 
@@ -15349,7 +15349,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/base-styles <a id="block-editor/reference-guides/packages/packages-base-styles" />
+# @wordpress/base-styles <a name="block-editor/reference-guides/packages/packages-base-styles" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-base-styles/
 
@@ -15409,7 +15409,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/blob <a id="block-editor/reference-guides/packages/packages-blob" />
+# @wordpress/blob <a name="block-editor/reference-guides/packages/packages-blob" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blob/
 
@@ -15516,7 +15516,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/block-directory <a id="block-editor/reference-guides/packages/packages-block-directory" />
+# @wordpress/block-directory <a name="block-editor/reference-guides/packages/packages-block-directory" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-directory/
 
@@ -15767,7 +15767,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/block-editor <a id="block-editor/reference-guides/packages/packages-block-editor" />
+# @wordpress/block-editor <a name="block-editor/reference-guides/packages/packages-block-editor" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/
 
@@ -16968,7 +16968,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/block-library <a id="block-editor/reference-guides/packages/packages-block-library" />
+# @wordpress/block-library <a name="block-editor/reference-guides/packages/packages-block-library" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-library/
 
@@ -17122,7 +17122,7 @@ Webpack assumes that, prefixes aside, the functions’ names are identical: `wp_
 
 ---
 
-# @wordpress/block-serialization-default-parser <a id="block-editor/reference-guides/packages/packages-block-serialization-default-parser" />
+# @wordpress/block-serialization-default-parser <a name="block-editor/reference-guides/packages/packages-block-serialization-default-parser" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-serialization-default-parser/
 
@@ -17284,7 +17284,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/block-serialization-spec-parser <a id="block-editor/reference-guides/packages/packages-block-serialization-spec-parser" />
+# @wordpress/block-serialization-spec-parser <a name="block-editor/reference-guides/packages/packages-block-serialization-spec-parser" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-serialization-spec-parser/
 
@@ -17322,7 +17322,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/blocks <a id="block-editor/reference-guides/packages/packages-blocks" />
+# @wordpress/blocks <a name="block-editor/reference-guides/packages/packages-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/
 
@@ -18362,7 +18362,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/browserslist-config <a id="block-editor/reference-guides/packages/packages-browserslist-config" />
+# @wordpress/browserslist-config <a name="block-editor/reference-guides/packages/packages-browserslist-config" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-browserslist-config/
 
@@ -18407,7 +18407,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/components <a id="block-editor/reference-guides/packages/packages-components" />
+# @wordpress/components <a name="block-editor/reference-guides/packages/packages-components" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-components/
 
@@ -18499,7 +18499,7 @@ This package also has its own [contributing information](https://github.com/Word
 
 ---
 
-# @wordpress/compose <a id="block-editor/reference-guides/packages/packages-compose" />
+# @wordpress/compose <a name="block-editor/reference-guides/packages/packages-compose" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-compose/
 
@@ -19175,7 +19175,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/core-data <a id="block-editor/reference-guides/packages/packages-core-data" />
+# @wordpress/core-data <a name="block-editor/reference-guides/packages/packages-core-data" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-core-data/
 
@@ -20435,7 +20435,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/create-block-tutorial-template <a id="block-editor/reference-guides/packages/packages-create-block-tutorial-template" />
+# @wordpress/create-block-tutorial-template <a name="block-editor/reference-guides/packages/packages-create-block-tutorial-template" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block-tutorial-template/
 
@@ -20460,7 +20460,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/create-block <a id="block-editor/reference-guides/packages/packages-create-block" />
+# @wordpress/create-block <a name="block-editor/reference-guides/packages/packages-create-block" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/
 
@@ -20621,7 +20621,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/custom-templated-path-webpack-plugin <a id="block-editor/reference-guides/packages/packages-custom-templated-path-webpack-plugin" />
+# @wordpress/custom-templated-path-webpack-plugin <a name="block-editor/reference-guides/packages/packages-custom-templated-path-webpack-plugin" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-custom-templated-path-webpack-plugin/
 
@@ -20697,7 +20697,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/customize-widgets <a id="block-editor/reference-guides/packages/packages-customize-widgets" />
+# @wordpress/customize-widgets <a name="block-editor/reference-guides/packages/packages-customize-widgets" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-customize-widgets/
 
@@ -20740,7 +20740,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/data-controls <a id="block-editor/reference-guides/packages/packages-data-controls" />
+# @wordpress/data-controls <a name="block-editor/reference-guides/packages/packages-data-controls" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-data-controls/
 
@@ -20858,7 +20858,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/data <a id="block-editor/reference-guides/packages/packages-data" />
+# @wordpress/data <a name="block-editor/reference-guides/packages/packages-data" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-data/
 
@@ -22107,7 +22107,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/date <a id="block-editor/reference-guides/packages/packages-date" />
+# @wordpress/date <a name="block-editor/reference-guides/packages/packages-date" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-date/
 
@@ -22266,7 +22266,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/dependency-extraction-webpack-plugin <a id="block-editor/reference-guides/packages/packages-dependency-extraction-webpack-plugin" />
+# @wordpress/dependency-extraction-webpack-plugin <a name="block-editor/reference-guides/packages/packages-dependency-extraction-webpack-plugin" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dependency-extraction-webpack-plugin/
 
@@ -22646,7 +22646,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/deprecated <a id="block-editor/reference-guides/packages/packages-deprecated" />
+# @wordpress/deprecated <a name="block-editor/reference-guides/packages/packages-deprecated" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-deprecated/
 
@@ -22734,7 +22734,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/docgen <a id="block-editor/reference-guides/packages/packages-docgen" />
+# @wordpress/docgen <a name="block-editor/reference-guides/packages/packages-docgen" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-docgen/
 
@@ -23051,7 +23051,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/dom-ready <a id="block-editor/reference-guides/packages/packages-dom-ready" />
+# @wordpress/dom-ready <a name="block-editor/reference-guides/packages/packages-dom-ready" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dom-ready/
 
@@ -23105,7 +23105,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/dom <a id="block-editor/reference-guides/packages/packages-dom" />
+# @wordpress/dom <a name="block-editor/reference-guides/packages/packages-dom" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dom/
 
@@ -23512,7 +23512,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/e2e-test-utils <a id="block-editor/reference-guides/packages/packages-e2e-test-utils" />
+# @wordpress/e2e-test-utils <a name="block-editor/reference-guides/packages/packages-e2e-test-utils" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-test-utils/
 
@@ -24452,7 +24452,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/e2e-tests <a id="block-editor/reference-guides/packages/packages-e2e-tests" />
+# @wordpress/e2e-tests <a name="block-editor/reference-guides/packages/packages-e2e-tests" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-tests/
 
@@ -24553,7 +24553,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/edit-post <a id="block-editor/reference-guides/packages/packages-edit-post" />
+# @wordpress/edit-post <a name="block-editor/reference-guides/packages/packages-edit-post" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-edit-post/
 
@@ -24667,7 +24667,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/edit-site <a id="block-editor/reference-guides/packages/packages-edit-site" />
+# @wordpress/edit-site <a name="block-editor/reference-guides/packages/packages-edit-site" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-edit-site/
 
@@ -24709,7 +24709,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/edit-widgets <a id="block-editor/reference-guides/packages/packages-edit-widgets" />
+# @wordpress/edit-widgets <a name="block-editor/reference-guides/packages/packages-edit-widgets" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-edit-widgets/
 
@@ -24760,7 +24760,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/editor <a id="block-editor/reference-guides/packages/packages-editor" />
+# @wordpress/editor <a name="block-editor/reference-guides/packages/packages-editor" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-editor/
 
@@ -26596,7 +26596,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/element <a id="block-editor/reference-guides/packages/packages-element" />
+# @wordpress/element <a name="block-editor/reference-guides/packages/packages-element" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-element/
 
@@ -27042,7 +27042,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/env <a id="block-editor/reference-guides/packages/packages-env" />
+# @wordpress/env <a name="block-editor/reference-guides/packages/packages-env" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/
 
@@ -27852,7 +27852,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/escape-html <a id="block-editor/reference-guides/packages/packages-escape-html" />
+# @wordpress/escape-html <a name="block-editor/reference-guides/packages/packages-escape-html" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-escape-html/
 
@@ -27987,7 +27987,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/eslint-plugin <a id="block-editor/reference-guides/packages/packages-eslint-plugin" />
+# @wordpress/eslint-plugin <a name="block-editor/reference-guides/packages/packages-eslint-plugin" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-eslint-plugin/
 
@@ -28105,7 +28105,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/format-library <a id="block-editor/reference-guides/packages/packages-format-library" />
+# @wordpress/format-library <a name="block-editor/reference-guides/packages/packages-format-library" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-format-library/
 
@@ -28130,7 +28130,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/hooks <a id="block-editor/reference-guides/packages/packages-hooks" />
+# @wordpress/hooks <a name="block-editor/reference-guides/packages/packages-hooks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-hooks/
 
@@ -28209,7 +28209,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/html-entities <a id="block-editor/reference-guides/packages/packages-html-entities" />
+# @wordpress/html-entities <a name="block-editor/reference-guides/packages/packages-html-entities" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-html-entities/
 
@@ -28258,7 +28258,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/i18n <a id="block-editor/reference-guides/packages/packages-i18n" />
+# @wordpress/i18n <a name="block-editor/reference-guides/packages/packages-i18n" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
 
@@ -28484,7 +28484,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/icons <a id="block-editor/reference-guides/packages/packages-icons" />
+# @wordpress/icons <a name="block-editor/reference-guides/packages/packages-icons" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-icons/
 
@@ -28528,7 +28528,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/interface <a id="block-editor/reference-guides/packages/packages-interface" />
+# @wordpress/interface <a name="block-editor/reference-guides/packages/packages-interface" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interface/
 
@@ -28656,7 +28656,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/is-shallow-equal <a id="block-editor/reference-guides/packages/packages-is-shallow-equal" />
+# @wordpress/is-shallow-equal <a name="block-editor/reference-guides/packages/packages-is-shallow-equal" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-is-shallow-equal/
 
@@ -28765,7 +28765,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/jest-console <a id="block-editor/reference-guides/packages/packages-jest-console" />
+# @wordpress/jest-console <a name="block-editor/reference-guides/packages/packages-jest-console" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-console/
 
@@ -28896,7 +28896,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/jest-preset-default <a id="block-editor/reference-guides/packages/packages-jest-preset-default" />
+# @wordpress/jest-preset-default <a name="block-editor/reference-guides/packages/packages-jest-preset-default" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-preset-default/
 
@@ -29008,7 +29008,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/jest-puppeteer-axe <a id="block-editor/reference-guides/packages/packages-jest-puppeteer-axe" />
+# @wordpress/jest-puppeteer-axe <a name="block-editor/reference-guides/packages/packages-jest-puppeteer-axe" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-jest-puppeteer-axe/
 
@@ -29086,7 +29086,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/keyboard-shortcuts <a id="block-editor/reference-guides/packages/packages-keyboard-shortcuts" />
+# @wordpress/keyboard-shortcuts <a name="block-editor/reference-guides/packages/packages-keyboard-shortcuts" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-keyboard-shortcuts/
 
@@ -29148,7 +29148,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/keycodes <a id="block-editor/reference-guides/packages/packages-keycodes" />
+# @wordpress/keycodes <a name="block-editor/reference-guides/packages/packages-keycodes" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-keycodes/
 
@@ -29385,7 +29385,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/lazy-import <a id="block-editor/reference-guides/packages/packages-lazy-import" />
+# @wordpress/lazy-import <a name="block-editor/reference-guides/packages/packages-lazy-import" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-lazy-import/
 
@@ -29490,7 +29490,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/list-reusable-blocks <a id="block-editor/reference-guides/packages/packages-list-reusable-blocks" />
+# @wordpress/list-reusable-blocks <a name="block-editor/reference-guides/packages/packages-list-reusable-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-list-reusable-blocks/
 
@@ -29517,7 +29517,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/media-utils <a id="block-editor/reference-guides/packages/packages-media-utils" />
+# @wordpress/media-utils <a name="block-editor/reference-guides/packages/packages-media-utils" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-media-utils/
 
@@ -29647,7 +29647,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/notices <a id="block-editor/reference-guides/packages/packages-notices" />
+# @wordpress/notices <a name="block-editor/reference-guides/packages/packages-notices" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-notices/
 
@@ -29680,7 +29680,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/npm-package-json-lint-config <a id="block-editor/reference-guides/packages/packages-npm-package-json-lint-config" />
+# @wordpress/npm-package-json-lint-config <a name="block-editor/reference-guides/packages/packages-npm-package-json-lint-config" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-npm-package-json-lint-config/
 
@@ -29755,7 +29755,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/nux <a id="block-editor/reference-guides/packages/packages-nux" />
+# @wordpress/nux <a name="block-editor/reference-guides/packages/packages-nux" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-nux/
 
@@ -29877,7 +29877,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/plugins <a id="block-editor/reference-guides/packages/packages-plugins" />
+# @wordpress/plugins <a name="block-editor/reference-guides/packages/packages-plugins" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-plugins/
 
@@ -30098,7 +30098,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/postcss-plugins-preset <a id="block-editor/reference-guides/packages/packages-postcss-plugins-preset" />
+# @wordpress/postcss-plugins-preset <a name="block-editor/reference-guides/packages/packages-postcss-plugins-preset" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-postcss-plugins-preset/
 
@@ -30123,7 +30123,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/postcss-themes <a id="block-editor/reference-guides/packages/packages-postcss-themes" />
+# @wordpress/postcss-themes <a name="block-editor/reference-guides/packages/packages-postcss-themes" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-postcss-themes/
 
@@ -30148,7 +30148,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/prettier-config <a id="block-editor/reference-guides/packages/packages-prettier-config" />
+# @wordpress/prettier-config <a name="block-editor/reference-guides/packages/packages-prettier-config" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-prettier-config/
 
@@ -30196,7 +30196,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/primitives <a id="block-editor/reference-guides/packages/packages-primitives" />
+# @wordpress/primitives <a name="block-editor/reference-guides/packages/packages-primitives" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-primitives/
 
@@ -30239,7 +30239,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/priority-queue <a id="block-editor/reference-guides/packages/packages-priority-queue" />
+# @wordpress/priority-queue <a name="block-editor/reference-guides/packages/packages-priority-queue" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-priority-queue/
 
@@ -30292,7 +30292,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/project-management-automation <a id="block-editor/reference-guides/packages/packages-project-management-automation" />
+# @wordpress/project-management-automation <a name="block-editor/reference-guides/packages/packages-project-management-automation" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-project-management-automation/
 
@@ -30336,7 +30336,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/react-i18n <a id="block-editor/reference-guides/packages/packages-react-i18n" />
+# @wordpress/react-i18n <a name="block-editor/reference-guides/packages/packages-react-i18n" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-react-i18n/
 
@@ -30435,7 +30435,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/redux-routine <a id="block-editor/reference-guides/packages/packages-redux-routine" />
+# @wordpress/redux-routine <a name="block-editor/reference-guides/packages/packages-redux-routine" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-redux-routine/
 
@@ -30564,7 +30564,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/reusable-blocks <a id="block-editor/reference-guides/packages/packages-reusable-blocks" />
+# @wordpress/reusable-blocks <a name="block-editor/reference-guides/packages/packages-reusable-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-reusable-blocks/
 
@@ -30688,7 +30688,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/rich-text <a id="block-editor/reference-guides/packages/packages-rich-text" />
+# @wordpress/rich-text <a name="block-editor/reference-guides/packages/packages-rich-text" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-rich-text/
 
@@ -31177,7 +31177,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/scripts <a id="block-editor/reference-guides/packages/packages-scripts" />
+# @wordpress/scripts <a name="block-editor/reference-guides/packages/packages-scripts" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/
 
@@ -32027,7 +32027,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/server-side-render <a id="block-editor/reference-guides/packages/packages-server-side-render" />
+# @wordpress/server-side-render <a name="block-editor/reference-guides/packages/packages-server-side-render" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/
 
@@ -32231,7 +32231,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/shortcode <a id="block-editor/reference-guides/packages/packages-shortcode" />
+# @wordpress/shortcode <a name="block-editor/reference-guides/packages/packages-shortcode" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-shortcode/
 
@@ -32368,7 +32368,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/stylelint-config <a id="block-editor/reference-guides/packages/packages-stylelint-config" />
+# @wordpress/stylelint-config <a name="block-editor/reference-guides/packages/packages-stylelint-config" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-stylelint-config/
 
@@ -32465,7 +32465,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/token-list <a id="block-editor/reference-guides/packages/packages-token-list" />
+# @wordpress/token-list <a name="block-editor/reference-guides/packages/packages-token-list" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-token-list/
 
@@ -32525,7 +32525,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/url <a id="block-editor/reference-guides/packages/packages-url" />
+# @wordpress/url <a name="block-editor/reference-guides/packages/packages-url" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-url/
 
@@ -33122,7 +33122,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/viewport <a id="block-editor/reference-guides/packages/packages-viewport" />
+# @wordpress/viewport <a name="block-editor/reference-guides/packages/packages-viewport" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-viewport/
 
@@ -33256,7 +33256,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/warning <a id="block-editor/reference-guides/packages/packages-warning" />
+# @wordpress/warning <a name="block-editor/reference-guides/packages/packages-warning" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-warning/
 
@@ -33316,7 +33316,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/wordcount <a id="block-editor/reference-guides/packages/packages-wordcount" />
+# @wordpress/wordcount <a name="block-editor/reference-guides/packages/packages-wordcount" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-wordcount/
 
@@ -33365,7 +33365,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Data Module Reference <a id="block-editor/reference-guides/data" />
+# Data Module Reference <a name="block-editor/reference-guides/data" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/
 
@@ -33390,7 +33390,7 @@ Source: https://developer.wordpress.org/block-editor/reference-guides/data/
 
 ---
 
-# WordPress Core Data <a id="block-editor/reference-guides/data/data-core" />
+# WordPress Core Data <a name="block-editor/reference-guides/data/data-core" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core/
 
@@ -34314,7 +34314,7 @@ Action triggered to undo the last edit to an entity record, if any.
 
 ---
 
-# Annotations <a id="block-editor/reference-guides/data/data-core-annotations" />
+# Annotations <a name="block-editor/reference-guides/data/data-core-annotations" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-annotations/
 
@@ -34332,7 +34332,7 @@ Nothing to document.
 
 ---
 
-# Block Types Data <a id="block-editor/reference-guides/data/data-core-blocks" />
+# Block Types Data <a name="block-editor/reference-guides/data/data-core-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-blocks/
 
@@ -35068,7 +35068,7 @@ It addresses the issue where third party block filters get registered after thir
 
 ---
 
-# The Block Editor’s Data <a id="block-editor/reference-guides/data/data-core-block-editor" />
+# The Block Editor’s Data <a name="block-editor/reference-guides/data/data-core-block-editor" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-block-editor/
 
@@ -36991,7 +36991,7 @@ Block validity is a function of blocks state (at the point of a reset) and the t
 
 ---
 
-# The Post Editor’s Data <a id="block-editor/reference-guides/data/data-core-editor" />
+# The Post Editor’s Data <a name="block-editor/reference-guides/data/data-core-editor" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-editor/
 
@@ -38726,7 +38726,7 @@ Action that locks the editor.
 
 ---
 
-# The Editor’s UI Data <a id="block-editor/reference-guides/data/data-core-edit-post" />
+# The Editor’s UI Data <a name="block-editor/reference-guides/data/data-core-edit-post" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-post/
 
@@ -39282,7 +39282,7 @@ Returns an action object used in signaling that a style should be auto-applied w
 
 ---
 
-# Notices Data <a id="block-editor/reference-guides/data/data-core-notices" />
+# Notices Data <a name="block-editor/reference-guides/data/data-core-notices" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-notices/
 
@@ -39692,7 +39692,7 @@ const ExampleComponent = () => {
 
 ---
 
-# The NUX (New User Experience) Data <a id="block-editor/reference-guides/data/data-core-nux" />
+# The NUX (New User Experience) Data <a name="block-editor/reference-guides/data/data-core-nux" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-nux/
 
@@ -39782,7 +39782,7 @@ Returns an action object that, when dispatched, presents a guide that takes the 
 
 ---
 
-# The Viewport Data <a id="block-editor/reference-guides/data/data-core-viewport" />
+# The Viewport Data <a name="block-editor/reference-guides/data/data-core-viewport" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-viewport/
 
@@ -39832,7 +39832,7 @@ Nothing to document.
 
 ---
 
-# Explanations <a id="block-editor/explanations" />
+# Explanations <a name="block-editor/explanations" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/
 
@@ -39849,7 +39849,7 @@ Source: https://developer.wordpress.org/block-editor/explanations/
 
 ---
 
-# Architecture <a id="block-editor/explanations/architecture" />
+# Architecture <a name="block-editor/explanations/architecture" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/
 
@@ -39872,7 +39872,7 @@ Let’s look at the big picture and the architectural and UX principles of the b
 
 ---
 
-# Key Concepts <a id="block-editor/explanations/architecture/key-concepts" />
+# Key Concepts <a name="block-editor/explanations/architecture/key-concepts" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/
 
@@ -39948,7 +39948,7 @@ Learn more about [Global Styles](#block-editor/explanations/architecture/styles)
 
 ---
 
-# Data Flow and Data Format <a id="block-editor/explanations/architecture/data-flow" />
+# Data Flow and Data Format <a name="block-editor/explanations/architecture/data-flow" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/data-flow/
 
@@ -40083,7 +40083,7 @@ The workflow process relies on a serialization/parser pair to persist posts. Hyp
 
 ---
 
-# Modularity <a id="block-editor/explanations/architecture/modularity" />
+# Modularity <a name="block-editor/explanations/architecture/modularity" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/modularity/
 
@@ -40193,7 +40193,7 @@ Structured this way, these packages can be used in a variety of combinations out
 
 ---
 
-# Performance <a id="block-editor/explanations/architecture/performance" />
+# Performance <a name="block-editor/explanations/architecture/performance" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/performance/
 
@@ -40298,7 +40298,7 @@ The version of the plugin used in the workflow can be pinned by adding the `gute
 
 ---
 
-# Automated Testing <a id="block-editor/explanations/architecture/automated-testing" />
+# Automated Testing <a name="block-editor/explanations/architecture/automated-testing" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/automated-testing/
 
@@ -40323,7 +40323,7 @@ For more context, refer to the following resources:
 
 ---
 
-# Site Editing Templates <a id="block-editor/explanations/architecture/full-site-editing-templates" />
+# Site Editing Templates <a name="block-editor/explanations/architecture/full-site-editing-templates" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/full-site-editing-templates/
 
@@ -40372,7 +40372,7 @@ In the future, we might consider allowing the user to mix template and template 
 
 ---
 
-# Copy Guidelines <a id="block-editor/contributors/documentation/copy-guide" />
+# Copy Guidelines <a name="block-editor/contributors/documentation/copy-guide" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/documentation/copy-guide/
 
@@ -40693,7 +40693,7 @@ A good error message also includes some context that orients the user. “Your a
 
 ---
 
-# Accessibility Testing <a id="block-editor/contributors/accessibility-testing" />
+# Accessibility Testing <a name="block-editor/contributors/accessibility-testing" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/accessibility-testing/
 
@@ -40763,7 +40763,7 @@ Once you find the region you want to interact with, you can use Control+Option p
 
 ---
 
-# Folder Structure <a id="block-editor/contributors/folder-structure" />
+# Folder Structure <a name="block-editor/contributors/folder-structure" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/folder-structure/
 
@@ -40916,7 +40916,7 @@ The following snippet explains how the Gutenberg repository is structured omitti
 
 ---
 
-# Versions in WordPress <a id="block-editor/contributors/versions-in-wordpress" />
+# Versions in WordPress <a name="block-editor/contributors/versions-in-wordpress" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/versions-in-wordpress/
 
@@ -41145,7 +41145,7 @@ If anything looks incorrect here, please bring it up in #core-editor in [WordPre
 
 ---
 
-# Design Contributions <a id="block-editor/contributors/design" />
+# Design Contributions <a name="block-editor/contributors/design" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/design/
 
@@ -41211,7 +41211,7 @@ Gutenberg wants to make it easier to author rich content. This means ensuring go
 
 ---
 
-# Documentation Contributions <a id="block-editor/contributors/documentation" />
+# Documentation Contributions <a name="block-editor/contributors/documentation" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/documentation/
 
@@ -41418,7 +41418,7 @@ Videos should have an aspect ratio of `16:9` and be filmed at the highest resolu
 
 ---
 
-# Glossary <a id="block-editor/getting-started/glossary" />
+# Glossary <a name="block-editor/getting-started/glossary" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/glossary/
 
@@ -41562,7 +41562,7 @@ A set of button controls. In the context of a block, usually referring to the to
 
 ---
 
-# Frequently Asked Questions <a id="block-editor/getting-started/faq" />
+# Frequently Asked Questions <a name="block-editor/getting-started/faq" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/faq/
 
@@ -41786,7 +41786,7 @@ $blocks = parse_blocks( $post_content );
 
 ---
 
-# History <a id="block-editor/explanations/history" />
+# History <a name="block-editor/explanations/history" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/history/
 
@@ -41827,7 +41827,7 @@ You can also view this [Index of Gutenberg related posts](https://make.wordpress
 
 ---
 
-# Contributor Guide <a id="block-editor/contributors" />
+# Contributor Guide <a name="block-editor/contributors" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/
 
@@ -41859,7 +41859,7 @@ See the [Contributing Guidelines](https://github.com/WordPress/gutenberg/blob/HE
 
 ---
 
-# Code Contributions <a id="block-editor/contributors/code" />
+# Code Contributions <a name="block-editor/contributors/code" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/
 
@@ -41891,7 +41891,7 @@ Browse [the issues list](https://github.com/wordpress/gutenberg/issues) to find 
 
 ---
 
-# Getting Started With Code Contribution <a id="block-editor/contributors/code/getting-started-with-code-contribution" />
+# Getting Started With Code Contribution <a name="block-editor/contributors/code/getting-started-with-code-contribution" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/getting-started-with-code-contribution/
 
@@ -42160,7 +42160,7 @@ For other editors, see [Prettier’s Editor Integration docs](https://prettier.i
 
 ---
 
-# Git Workflow <a id="block-editor/contributors/code/git-workflow" />
+# Git Workflow <a name="block-editor/contributors/code/git-workflow" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/git-workflow/
 
@@ -42330,7 +42330,7 @@ git blame --ignore-revs-file .git-blame-ignore-revs -L 66,73 packages/api-fetch/
 
 ---
 
-# Coding Guidelines <a id="block-editor/contributors/code/coding-guidelines" />
+# Coding Guidelines <a name="block-editor/contributors/code/coding-guidelines" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/coding-guidelines/
 
@@ -43162,7 +43162,7 @@ If you prefer to install PHPCS locally, you should use `composer`. [Install `com
 
 ---
 
-# Testing Overview <a id="block-editor/contributors/code/testing-overview" />
+# Testing Overview <a name="block-editor/contributors/code/testing-overview" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/testing-overview/
 
@@ -43859,7 +43859,7 @@ Finally, you can pass an additional `--tests-branch` argument to specify which b
 
 ---
 
-# Scripts <a id="block-editor/contributors/code/scripts" />
+# Scripts <a name="block-editor/contributors/code/scripts" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/scripts/
 
@@ -43938,7 +43938,7 @@ The [`@wordpress/dependency-extraction-webpack-plugin`](https://github.com/WordP
 
 ---
 
-# Managing Packages <a id="block-editor/contributors/code/managing-packages" />
+# Managing Packages <a name="block-editor/contributors/code/managing-packages" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/managing-packages/
 
@@ -43950,7 +43950,7 @@ Publishing WordPress packages to npm is automated by synchronizing it with the b
 
 ---
 
-# Gutenberg Release Process <a id="block-editor/contributors/code/release" />
+# Gutenberg Release Process <a name="block-editor/contributors/code/release" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/release/
 
@@ -44446,7 +44446,7 @@ the `wp/next` branch is synchronized with the latest release branch (`release/X.
 
 ---
 
-# Blocks are the Interface <a id="block-editor/contributors/design/the-block" />
+# Blocks are the Interface <a name="block-editor/contributors/design/the-block" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/design/the-block/
 
@@ -44481,7 +44481,7 @@ The Settings Sidebar is not visible by default on a small / mobile screen, and m
 
 ---
 
-# API Versions <a id="block-editor/reference-guides/block-api/block-api-versions" />
+# API Versions <a name="block-editor/reference-guides/block-api/block-api-versions" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/
 
@@ -44502,7 +44502,7 @@ Initial version.
 
 ---
 
-# Context <a id="block-editor/reference-guides/block-api/block-context" />
+# Context <a name="block-editor/reference-guides/block-api/block-context" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-context/
 
@@ -44681,7 +44681,7 @@ export default function save( props ) {
 
 ---
 
-# Deprecation <a id="block-editor/reference-guides/block-api/block-deprecation" />
+# Deprecation <a name="block-editor/reference-guides/block-api/block-deprecation" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-deprecation/
 
@@ -44891,7 +44891,7 @@ In the example above we updated the block to use an inner Paragraph block with a
 
 ---
 
-# Metadata in block.json <a id="block-editor/reference-guides/block-api/block-metadata" />
+# Metadata in block.json <a name="block-editor/reference-guides/block-api/block-metadata" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/
 
@@ -45777,7 +45777,7 @@ In the case of [dynamic blocks](#block-editor/how-to-guides/block-tutorial/creat
 
 ---
 
-# Patterns <a id="block-editor/reference-guides/block-api/block-patterns" />
+# Patterns <a name="block-editor/reference-guides/block-api/block-patterns" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/
 
@@ -45999,7 +45999,7 @@ register_block_pattern(
 
 ---
 
-# Registration <a id="block-editor/reference-guides/block-api/block-registration" />
+# Registration <a name="block-editor/reference-guides/block-api/block-registration" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
 
@@ -46367,7 +46367,7 @@ registerBlockCollection( 'my-plugin', { title: 'My Plugin' } );
 
 ---
 
-# Supports <a id="block-editor/reference-guides/block-api/block-supports" />
+# Supports <a name="block-editor/reference-guides/block-api/block-supports" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/
 
@@ -47526,7 +47526,7 @@ the selection correctly and we know where to split.
 
 ---
 
-# Transforms <a id="block-editor/reference-guides/block-api/block-transforms" />
+# Transforms <a name="block-editor/reference-guides/block-api/block-transforms" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-transforms/
 
@@ -47904,7 +47904,7 @@ export const settings = {
 
 ---
 
-# Variations <a id="block-editor/reference-guides/block-api/block-variations" />
+# Variations <a name="block-editor/reference-guides/block-api/block-variations" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/
 
@@ -48166,7 +48166,7 @@ Note that specificity cannot be determined for a matching variation if its `isAc
 
 ---
 
-# DuotonePicker <a id="block-editor/reference-guides/components/duotone-picker" />
+# DuotonePicker <a name="block-editor/reference-guides/components/duotone-picker" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/duotone-picker/
 
@@ -48260,7 +48260,7 @@ An array of colors to show or `null` to show the placeholder swatch icon.
 
 ---
 
-# Themes <a id="block-editor/how-to-guides/themes" />
+# Themes <a name="block-editor/how-to-guides/themes" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/themes/
 
@@ -48287,7 +48287,7 @@ There isn’t an FSE specific theme type. In WordPress &gt; 5.9 FSE is enabled f
 
 ---
 
-# theme.json <a id="block-editor/how-to-guides/curating-the-editor-experience/theme-json" />
+# theme.json <a name="block-editor/how-to-guides/curating-the-editor-experience/theme-json" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/theme-json/
 
@@ -48505,7 +48505,7 @@ To enable something from the above, just set whatever value you want to change t
 
 ---
 
-# Theme Support <a id="block-editor/how-to-guides/themes/theme-support" />
+# Theme Support <a name="block-editor/how-to-guides/themes/theme-support" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
 
@@ -49056,7 +49056,7 @@ You can find out more about block based template parts in the [themes handbook b
 
 ---
 
-# FlexBlock <a id="block-editor/reference-guides/components/flex-block" />
+# FlexBlock <a name="block-editor/reference-guides/components/flex-block" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/flex-block/
 
@@ -49076,7 +49076,7 @@ The CSS display property of `FlexBlock`.
 
 ---
 
-# FlexItem <a id="block-editor/reference-guides/components/flex-item" />
+# FlexItem <a name="block-editor/reference-guides/components/flex-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/flex-item/
 
@@ -49103,7 +49103,7 @@ Determines if `FlexItem` should render as an adaptive full-width block.
 
 ---
 
-# Truncate <a id="block-editor/reference-guides/components/truncate" />
+# Truncate <a name="block-editor/reference-guides/components/truncate" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/truncate/
 
@@ -49188,7 +49188,7 @@ function Example() {
 
 ---
 
-# Heading <a id="block-editor/reference-guides/components/heading" />
+# Heading <a name="block-editor/reference-guides/components/heading" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/heading/
 
@@ -49225,7 +49225,7 @@ Passing any of the heading levels to `level` will both render the correct typogr
 
 ---
 
-# @wordpress/widgets <a id="block-editor/reference-guides/packages/packages-widgets" />
+# @wordpress/widgets <a name="block-editor/reference-guides/packages/packages-widgets" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-widgets/
 
@@ -49252,7 +49252,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# HStack <a id="block-editor/reference-guides/components/h-stack" />
+# HStack <a name="block-editor/reference-guides/components/h-stack" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/h-stack/
 
@@ -49383,7 +49383,7 @@ function Example() {
 
 ---
 
-# VStack <a id="block-editor/reference-guides/components/v-stack" />
+# VStack <a name="block-editor/reference-guides/components/v-stack" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/v-stack/
 
@@ -49502,7 +49502,7 @@ function Example() {
 
 ---
 
-# ToolbarDropdownMenu <a id="block-editor/reference-guides/components/toolbar-dropdown-menu" />
+# ToolbarDropdownMenu <a name="block-editor/reference-guides/components/toolbar-dropdown-menu" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toolbar-dropdown-menu/
 
@@ -49615,7 +49615,7 @@ This component accepts [the same API of the DropdownMenu](#block-editor/referenc
 
 ---
 
-# Spacer <a id="block-editor/reference-guides/components/spacer" />
+# Spacer <a name="block-editor/reference-guides/components/spacer" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/spacer/
 
@@ -49742,7 +49742,7 @@ Adjusts top and bottom padding, potentially overriding the value from the more g
 
 ---
 
-# Grid <a id="block-editor/reference-guides/components/grid" />
+# Grid <a name="block-editor/reference-guides/components/grid" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/grid/
 
@@ -49842,7 +49842,7 @@ Adjusts the CSS grid `template-rows`.
 
 ---
 
-# Divider <a id="block-editor/reference-guides/components/divider" />
+# Divider <a name="block-editor/reference-guides/components/divider" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/divider/
 
@@ -49904,7 +49904,7 @@ Divider’s orientation. When using inside a flex container, you may need to mak
 
 ---
 
-# Widgets <a id="block-editor/how-to-guides/widgets" />
+# Widgets <a name="block-editor/how-to-guides/widgets" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/widgets/
 
@@ -49918,7 +49918,7 @@ The Gutenberg plugin replaces the Widgets Editor screen in WP Admin with a new s
 
 ---
 
-# Widgets Block Editor overview <a id="block-editor/how-to-guides/widgets/overview" />
+# Widgets Block Editor overview <a name="block-editor/how-to-guides/widgets/overview" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/widgets/overview/
 
@@ -49954,7 +49954,7 @@ Users may disable the Widgets Block Editor by installing the [Classic Widgets pl
 
 ---
 
-# Restoring the classic Widgets Editor <a id="block-editor/how-to-guides/widgets/opting-out" />
+# Restoring the classic Widgets Editor <a name="block-editor/how-to-guides/widgets/opting-out" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/widgets/opting-out/
 
@@ -50006,7 +50006,7 @@ add_filter( 'use_widgets_block_editor', 'example_use_widgets_block_editor' );
 
 ---
 
-# About the Legacy Widget block <a id="block-editor/how-to-guides/widgets/legacy-widget-block" />
+# About the Legacy Widget block <a name="block-editor/how-to-guides/widgets/legacy-widget-block" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/widgets/legacy-widget-block/
 
@@ -50212,7 +50212,7 @@ add_action( 'enqueue_block_editor_assets', function() {
 
 ---
 
-# Styles <a id="block-editor/reference-guides/block-api/block-styles" />
+# Styles <a name="block-editor/reference-guides/block-api/block-styles" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/
 
@@ -50369,7 +50369,7 @@ unregister_block_style( 'core/quote', 'fancy-quote' );
 
 ---
 
-# ZStack <a id="block-editor/reference-guides/components/z-stack" />
+# ZStack <a name="block-editor/reference-guides/components/z-stack" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/z-stack/
 
@@ -50425,7 +50425,7 @@ The children to stack.
 
 ---
 
-# Elevation <a id="block-editor/reference-guides/components/elevation" />
+# Elevation <a name="block-editor/reference-guides/components/elevation" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/elevation/
 
@@ -50520,7 +50520,7 @@ function Example() {
 
 ---
 
-# BaseField <a id="block-editor/reference-guides/components/base-field" />
+# BaseField <a name="block-editor/reference-guides/components/base-field" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/base-field/
 
@@ -50590,7 +50590,7 @@ Renders a subtle variant of the component.
 
 ---
 
-# Scrollable <a id="block-editor/reference-guides/components/scrollable" />
+# Scrollable <a name="block-editor/reference-guides/components/scrollable" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/scrollable/
 
@@ -50638,7 +50638,7 @@ Enables (CSS) smooth scrolling.
 
 ---
 
-# Surface <a id="block-editor/reference-guides/components/surface" />
+# Surface <a name="block-editor/reference-guides/components/surface" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/surface/
 
@@ -50719,7 +50719,7 @@ Modifies the background color of `Surface`.
 
 ---
 
-# CardBody <a id="block-editor/reference-guides/components/card-body" />
+# CardBody <a name="block-editor/reference-guides/components/card-body" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/card-body/
 
@@ -50766,7 +50766,7 @@ Determines the amount of padding within the component.
 
 ---
 
-# CardDivider <a id="block-editor/reference-guides/components/card-divider" />
+# CardDivider <a name="block-editor/reference-guides/components/card-divider" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/card-divider/
 
@@ -50795,7 +50795,7 @@ const Example = () => (
 
 ---
 
-# CardFooter <a id="block-editor/reference-guides/components/card-footer" />
+# CardFooter <a name="block-editor/reference-guides/components/card-footer" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/card-footer/
 
@@ -50876,7 +50876,7 @@ Determines the amount of padding within the component.
 
 ---
 
-# CardHeader <a id="block-editor/reference-guides/components/card-header" />
+# CardHeader <a name="block-editor/reference-guides/components/card-header" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/card-header/
 
@@ -50924,7 +50924,7 @@ Determines the amount of padding within the component.
 
 ---
 
-# CardMedia <a id="block-editor/reference-guides/components/card-media" />
+# CardMedia <a name="block-editor/reference-guides/components/card-media" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/card-media/
 
@@ -50952,7 +50952,7 @@ const Example = () => (
 
 ---
 
-# @wordpress/readable-js-assets-webpack-plugin <a id="block-editor/reference-guides/packages/packages-readable-js-assets-webpack-plugin" />
+# @wordpress/readable-js-assets-webpack-plugin <a name="block-editor/reference-guides/packages/packages-readable-js-assets-webpack-plugin" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-readable-js-assets-webpack-plugin/
 
@@ -51003,7 +51003,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Flyout <a id="block-editor/reference-guides/components/flyout" />
+# Flyout <a name="block-editor/reference-guides/components/flyout" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/flyout/
 
@@ -51104,7 +51104,7 @@ Position of the popover element. See [the `popper` docs](https://popper.js.org/d
 
 ---
 
-# SearchControl <a id="block-editor/reference-guides/components/search-control" />
+# SearchControl <a name="block-editor/reference-guides/components/search-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/search-control/
 
@@ -51230,7 +51230,7 @@ The size of the component.
 
 ---
 
-# i18n Filters <a id="block-editor/reference-guides/filters/i18n-filters" />
+# i18n Filters <a name="block-editor/reference-guides/filters/i18n-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/i18n-filters/
 
@@ -51350,7 +51350,7 @@ wp.hooks.addFilter(
 
 ---
 
-# ItemGroup <a id="block-editor/reference-guides/components/item-group" />
+# ItemGroup <a name="block-editor/reference-guides/components/item-group" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/item-group/
 
@@ -51433,7 +51433,7 @@ const Example = () => (
 
 ---
 
-# Item <a id="block-editor/reference-guides/components/item" />
+# Item <a name="block-editor/reference-guides/components/item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/item/
 
@@ -51500,7 +51500,7 @@ const Example = () => (
 
 ---
 
-# ToolsPanelHeader <a id="block-editor/reference-guides/components/tools-panel-header" />
+# ToolsPanelHeader <a name="block-editor/reference-guides/components/tools-panel-header" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel-header/
 
@@ -51556,7 +51556,7 @@ will update the panel’s menu item state and call the panel item’s `onSelect`
 
 ---
 
-# ToolsPanelItem <a id="block-editor/reference-guides/components/tools-panel-item" />
+# ToolsPanelItem <a name="block-editor/reference-guides/components/tools-panel-item" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel-item/
 
@@ -51635,7 +51635,7 @@ iterated over to perform additional tasks.
 
 ---
 
-# ToolsPanel <a id="block-editor/reference-guides/components/tools-panel" />
+# ToolsPanel <a name="block-editor/reference-guides/components/tools-panel" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel/
 
@@ -51848,7 +51848,7 @@ normally applied to a visible `ToolsPanelItem` via the `className` prop.
 
 ---
 
-# ToggleGroupControl <a id="block-editor/reference-guides/components/toggle-group-control" />
+# ToggleGroupControl <a name="block-editor/reference-guides/components/toggle-group-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control/
 
@@ -51956,7 +51956,7 @@ Start opting into the new margin-free styles that will become the default in a f
 
 ---
 
-# Navigator <a id="block-editor/reference-guides/components/navigator" />
+# Navigator <a name="block-editor/reference-guides/components/navigator" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/navigator/
 
@@ -52137,7 +52137,7 @@ The parsed record of parameters from the current location. For example if the cu
 
 ---
 
-# ToggleGroupControlOption <a id="block-editor/reference-guides/components/toggle-group-control-option" />
+# ToggleGroupControlOption <a name="block-editor/reference-guides/components/toggle-group-control-option" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control-option/
 
@@ -52196,7 +52196,7 @@ Whether to show a tooltip when hovering over the option. The tooltip will attemp
 
 ---
 
-# Getting Started <a id="block-editor/getting-started" />
+# Getting Started <a name="block-editor/getting-started" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/
 
@@ -52242,7 +52242,7 @@ If you are looking for more educational content, check out [Learn WordPress](htt
 
 ---
 
-# Thunks in Core-Data <a id="block-editor/how-to-guides/thunks" />
+# Thunks in Core-Data <a name="block-editor/how-to-guides/thunks" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/thunks/
 
@@ -52487,7 +52487,7 @@ const thunk = () => ( { registry } ) => {
 
 ---
 
-# ConfirmDialog <a id="block-editor/reference-guides/components/confirm-dialog" />
+# ConfirmDialog <a name="block-editor/reference-guides/components/confirm-dialog" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/confirm-dialog/
 
@@ -52641,7 +52641,7 @@ The ConfirmDialog component should:
 
 ---
 
-# React Native mobile editor <a id="block-editor/contributors/code/react-native" />
+# React Native mobile editor <a name="block-editor/contributors/code/react-native" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/react-native/
 
@@ -52681,7 +52681,7 @@ Further information about this topic can be found in the [React Native Internati
 
 ---
 
-# Getting Started for the React Native based Mobile Gutenberg <a id="block-editor/contributors/code/react-native/getting-started-react-native" />
+# Getting Started for the React Native based Mobile Gutenberg <a name="block-editor/contributors/code/react-native/getting-started-react-native" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/react-native/getting-started-react-native/
 
@@ -52840,7 +52840,7 @@ The E2E tests are found in the [`packages/react-native-editor/__device-tests__`]
 
 ---
 
-# React Native Integration Test Guide <a id="block-editor/contributors/code/react-native/integration-test-guide" />
+# React Native Integration Test Guide <a name="block-editor/contributors/code/react-native/integration-test-guide" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/react-native/integration-test-guide/
 
@@ -53230,7 +53230,7 @@ jest.mock( 'Platform', () => {
 
 ---
 
-# Setup guide for React Native development (macOS) <a id="block-editor/contributors/code/react-native/osx-setup-guide" />
+# Setup guide for React Native development (macOS) <a name="block-editor/contributors/code/react-native/osx-setup-guide" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/react-native/osx-setup-guide/
 
@@ -53528,7 +53528,7 @@ After a bit of a wait we should see:
 
 ---
 
-# Formatting Toolbar API <a id="block-editor/how-to-guides/format-api" />
+# Formatting Toolbar API <a name="block-editor/how-to-guides/format-api" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/format-api/
 
@@ -53776,7 +53776,7 @@ Download the [format-api example](https://github.com/WordPress/block-development
 
 ---
 
-# Plugin Sidebar <a id="block-editor/how-to-guides/plugin-sidebar-0" />
+# Plugin Sidebar <a name="block-editor/how-to-guides/plugin-sidebar-0" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/plugin-sidebar-0/
 
@@ -54204,7 +54204,7 @@ return el( TextControl, {
 
 ---
 
-# Core Blocks Reference <a id="block-editor/reference-guides/core-blocks" />
+# Core Blocks Reference <a name="block-editor/reference-guides/core-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/core-blocks/
 
@@ -55176,7 +55176,7 @@ Embed a video from your media library or upload a new one. ([Source](https://git
 
 ---
 
-# Meta Boxes <a id="block-editor/how-to-guides/metabox" />
+# Meta Boxes <a name="block-editor/how-to-guides/metabox" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/metabox/
 
@@ -55454,7 +55454,7 @@ Please also note that if your plugin triggers a PHP warning or notice to be outp
 
 ---
 
-# GradientPicker <a id="block-editor/reference-guides/components/gradient-picker" />
+# GradientPicker <a name="block-editor/reference-guides/components/gradient-picker" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/
 
@@ -55615,7 +55615,7 @@ Optionally pass in a `null` value to specify no gradient is currently selected.
 
 ---
 
-# Theme.json Reference <a id="block-editor/reference-guides/theme-json-reference" />
+# Theme.json Reference <a name="block-editor/reference-guides/theme-json-reference" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/
 
@@ -55631,7 +55631,7 @@ This reference guide lists the settings and style properties defined in the them
 
 ---
 
-# Theme.json Version 3 Reference (latest) <a id="block-editor/reference-guides/theme-json-reference/theme-json-living" />
+# Theme.json Version 3 Reference (latest) <a name="block-editor/reference-guides/theme-json-reference/theme-json-living" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/
 
@@ -55993,7 +55993,7 @@ Type: `[ string ]`.
 
 ---
 
-# Theme.json Version 1 Reference <a id="block-editor/reference-guides/theme-json-reference/theme-json-v1" />
+# Theme.json Version 1 Reference <a name="block-editor/reference-guides/theme-json-reference/theme-json-v1" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v1/
 
@@ -56129,7 +56129,7 @@ Typography styles.
 
 ---
 
-# Migrating Theme.json to Newer Versions <a id="block-editor/reference-guides/theme-json-reference/theme-json-migrations" />
+# Migrating Theme.json to Newer Versions <a name="block-editor/reference-guides/theme-json-reference/theme-json-migrations" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-migrations/
 
@@ -56248,7 +56248,7 @@ To keep behavior similar to v2 with a v3 theme.json:
 
 ---
 
-# React Native Internationalization Guide <a id="block-editor/contributors/code/react-native/internationalization-guide" />
+# React Native Internationalization Guide <a name="block-editor/contributors/code/react-native/internationalization-guide" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/react-native/internationalization-guide/
 
@@ -56348,7 +56348,7 @@ npm run native i18n:fetch-translations -- "gutenberg" <OUTPUT_PATH> <USED_STRING
 
 ---
 
-# Styles in the Editor <a id="block-editor/explanations/architecture/styles" />
+# Styles in the Editor <a name="block-editor/explanations/architecture/styles" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/styles/
 
@@ -56921,7 +56921,7 @@ Layout styles output is switched on by default because the styles are required b
 
 ---
 
-# Block Design <a id="block-editor/explanations/user-interface/block-design" />
+# Block Design <a name="block-editor/explanations/user-interface/block-design" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/user-interface/block-design/
 
@@ -57141,7 +57141,7 @@ Has no placeholder as it works immediately upon insertion. The default inserted 
 
 ---
 
-# Animation <a id="block-editor/explanations/user-interface/animation" />
+# Animation <a name="block-editor/explanations/user-interface/animation" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/user-interface/animation/
 
@@ -57186,7 +57186,7 @@ The generic `Animate` component is used to animate different parts of the interf
 
 ---
 
-# Resources <a id="block-editor/explanations/user-interface/design-resources" />
+# Resources <a name="block-editor/explanations/user-interface/design-resources" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/user-interface/design-resources/
 
@@ -57246,7 +57246,7 @@ If you have questions, please don’t hesitate to ask in the #design channel on 
 
 ---
 
-# Backward Compatibility <a id="block-editor/contributors/code/backward-compatibility" />
+# Backward Compatibility <a name="block-editor/contributors/code/backward-compatibility" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/backward-compatibility/
 
@@ -57331,7 +57331,7 @@ Dev notes are [posts published on the make/core site](https://make.wordpress.org
 
 ---
 
-# Deprecations <a id="block-editor/contributors/code/deprecations" />
+# Deprecations <a name="block-editor/contributors/code/deprecations" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/deprecations/
 
@@ -57642,7 +57642,7 @@ For features included in the Gutenberg plugin, the deprecation policy is intende
 
 ---
 
-# Create your First App with Gutenberg Data <a id="block-editor/how-to-guides/data-basics" />
+# Create your First App with Gutenberg Data <a name="block-editor/how-to-guides/data-basics" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/data-basics/
 
@@ -57662,7 +57662,7 @@ You may review the [finished app](https://github.com/WordPress/block-development
 
 ---
 
-# Setup <a id="block-editor/how-to-guides/data-basics/1-data-basics-setup" />
+# Setup <a name="block-editor/how-to-guides/data-basics/1-data-basics-setup" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/data-basics/1-data-basics-setup/
 
@@ -57887,7 +57887,7 @@ Congratulations! You are now ready to start building the app!
 
 ---
 
-# Building a list of pages <a id="block-editor/how-to-guides/data-basics/2-building-a-list-of-pages" />
+# Building a list of pages <a name="block-editor/how-to-guides/data-basics/2-building-a-list-of-pages" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/data-basics/2-building-a-list-of-pages/
 
@@ -58356,7 +58356,7 @@ All that’s left is to refresh the page and enjoy the brand new status indicato
 
 ---
 
-# @wordpress/style-engine <a id="block-editor/reference-guides/packages/packages-style-engine" />
+# @wordpress/style-engine <a name="block-editor/reference-guides/packages/packages-style-engine" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-style-engine/
 
@@ -58648,7 +58648,7 @@ Block style (Gutenberg internal)An object comprising a block’s style attribute
 
 ---
 
-# @wordpress/preferences <a id="block-editor/reference-guides/packages/packages-preferences" />
+# @wordpress/preferences <a name="block-editor/reference-guides/packages/packages-preferences" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-preferences/
 
@@ -58905,7 +58905,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Building an edit form <a id="block-editor/how-to-guides/data-basics/3-building-an-edit-form" />
+# Building an edit form <a name="block-editor/how-to-guides/data-basics/3-building-an-edit-form" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/data-basics/3-building-an-edit-form/
 
@@ -59483,7 +59483,7 @@ function EditPageForm( { pageId, onCancel, onSaveFinished } ) {
 
 ---
 
-# BorderControl <a id="block-editor/reference-guides/components/border-control" />
+# BorderControl <a name="block-editor/reference-guides/components/border-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/border-control/
 
@@ -59663,7 +59663,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# BorderBoxControl <a id="block-editor/reference-guides/components/border-box-control" />
+# BorderBoxControl <a name="block-editor/reference-guides/components/border-box-control" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/border-box-control/
 
@@ -59845,7 +59845,7 @@ Start opting into the larger default height that will become the default size in
 
 ---
 
-# ToggleGroupControlOptionBase <a id="block-editor/reference-guides/components/toggle-group-control-option-base" />
+# ToggleGroupControlOptionBase <a name="block-editor/reference-guides/components/toggle-group-control-option-base" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control-option-base/
 
@@ -59875,7 +59875,7 @@ Whether to show a tooltip when hovering over the option. The tooltip will only s
 
 ---
 
-# ToggleGroupControlOptionIcon <a id="block-editor/reference-guides/components/toggle-group-control-option-icon" />
+# ToggleGroupControlOptionIcon <a name="block-editor/reference-guides/components/toggle-group-control-option-icon" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control-option-icon/
 
@@ -59933,7 +59933,7 @@ The text to accessibly label the icon option. Will also be shown in a tooltip.
 
 ---
 
-# @wordpress/preferences-persistence <a id="block-editor/reference-guides/packages/packages-preferences-persistence" />
+# @wordpress/preferences-persistence <a name="block-editor/reference-guides/packages/packages-preferences-persistence" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-preferences-persistence/
 
@@ -59993,7 +59993,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# How To Get Your Pull Request Reviewed? <a id="block-editor/contributors/code/how-to-get-your-pull-request-reviewed" />
+# How To Get Your Pull Request Reviewed? <a name="block-editor/contributors/code/how-to-get-your-pull-request-reviewed" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/how-to-get-your-pull-request-reviewed/
 
@@ -60081,7 +60081,7 @@ How to get there quickly? Help with an active project from the WordPress roadmap
 
 ---
 
-# Building a Create page form <a id="block-editor/how-to-guides/data-basics/4-building-a-create-page-form" />
+# Building a Create page form <a name="block-editor/how-to-guides/data-basics/4-building-a-create-page-form" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/data-basics/4-building-a-create-page-form/
 
@@ -60490,7 +60490,7 @@ All that’s left is to refresh the page and enjoy the form:
 
 ---
 
-# Adding a delete button <a id="block-editor/how-to-guides/data-basics/5-adding-a-delete-button" />
+# Adding a delete button <a name="block-editor/how-to-guides/data-basics/5-adding-a-delete-button" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/data-basics/5-adding-a-delete-button/
 
@@ -60955,7 +60955,7 @@ function DeletePageButton( { pageId } ) {
 
 ---
 
-# Curating the Editor Experience <a id="block-editor/how-to-guides/curating-the-editor-experience" />
+# Curating the Editor Experience <a name="block-editor/how-to-guides/curating-the-editor-experience" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/
 
@@ -60985,7 +60985,7 @@ When considering the approaches to take, think about the specific ways you might
 
 ---
 
-# Block directory <a id="block-editor/reference-guides/data/data-core-block-directory" />
+# Block directory <a name="block-editor/reference-guides/data/data-core-block-directory" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-block-directory/
 
@@ -61205,7 +61205,7 @@ Action triggered to uninstall a block plugin.
 
 ---
 
-# Customize Widgets <a id="block-editor/reference-guides/data/data-core-customize-widgets" />
+# Customize Widgets <a name="block-editor/reference-guides/data/data-core-customize-widgets" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-customize-widgets/
 
@@ -61290,7 +61290,7 @@ const ExampleComponent = () => {
 
 ---
 
-# Edit Site <a id="block-editor/reference-guides/data/data-core-edit-site" />
+# Edit Site <a name="block-editor/reference-guides/data/data-core-edit-site" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-site/
 
@@ -61735,7 +61735,7 @@ Returns an action object used to update the settings.
 
 ---
 
-# Edit Widgets <a id="block-editor/reference-guides/data/data-core-edit-widgets" />
+# Edit Widgets <a name="block-editor/reference-guides/data/data-core-edit-widgets" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-edit-widgets/
 
@@ -62041,7 +62041,7 @@ Returns an action object used to signal that widget saving is unlocked.
 
 ---
 
-# Reusable blocks <a id="block-editor/reference-guides/data/data-core-reusable-blocks" />
+# Reusable blocks <a name="block-editor/reference-guides/data/data-core-reusable-blocks" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-reusable-blocks/
 
@@ -62059,7 +62059,7 @@ Nothing to document.
 
 ---
 
-# Rich Text <a id="block-editor/reference-guides/data/data-core-rich-text" />
+# Rich Text <a name="block-editor/reference-guides/data/data-core-rich-text" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-rich-text/
 
@@ -62222,7 +62222,7 @@ Nothing to document.
 
 ---
 
-# Cherry-picking automation <a id="block-editor/contributors/code/release/auto-cherry-picking" />
+# Cherry-picking automation <a name="block-editor/contributors/code/release/auto-cherry-picking" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/release/auto-cherry-picking/
 
@@ -62325,7 +62325,7 @@ relevant label based on the currently selected branch:
 
 ---
 
-# External Project Templates <a id="block-editor/reference-guides/packages/packages-create-block/packages-create-block-external-template" />
+# External Project Templates <a name="block-editor/reference-guides/packages/packages-create-block/packages-create-block-external-template" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/packages-create-block-external-template/
 
@@ -62511,7 +62511,7 @@ This content is only rendered if `--variant secondary` is passed.
 
 ---
 
-# Propagating updates for block types <a id="block-editor/how-to-guides/propagating-updates" />
+# Propagating updates for block types <a name="block-editor/how-to-guides/propagating-updates" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/propagating-updates/
 
@@ -62577,7 +62577,7 @@ Likewise, it is generally poor practice to delete template parts in theme update
 
 ---
 
-# Global Styles Filters <a id="block-editor/reference-guides/filters/global-styles-filters" />
+# Global Styles Filters <a name="block-editor/reference-guides/filters/global-styles-filters" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/
 
@@ -62625,7 +62625,7 @@ add_filter( 'wp_theme_json_data_theme', 'wpdocs_filter_theme_json_theme' );
 
 ---
 
-# @wordpress/experiments <a id="block-editor/reference-guides/packages/packages-experiments" />
+# @wordpress/experiments <a name="block-editor/reference-guides/packages/packages-experiments" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-experiments/
 
@@ -62731,7 +62731,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/style-engine Using the Style Engine to generate block supports styles <a id="block-editor/reference-guides/packages/packages-style-engine/using-the-style-engine-with-block-supports" />
+# @wordpress/style-engine Using the Style Engine to generate block supports styles <a name="block-editor/reference-guides/packages/packages-style-engine/using-the-style-engine-with-block-supports" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-style-engine/using-the-style-engine-with-block-supports/
 
@@ -62977,7 +62977,7 @@ Read more about [global styles](#block-editor/explanations/architecture/styles) 
 
 ---
 
-# Extending the Query Loop block <a id="block-editor/how-to-guides/block-tutorial/extending-the-query-loop-block" />
+# Extending the Query Loop block <a name="block-editor/how-to-guides/block-tutorial/extending-the-query-loop-block" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/extending-the-query-loop-block/
 
@@ -63282,7 +63282,7 @@ And, just like that, you’ll have created a fully functional variation of the Q
 
 ---
 
-# @wordpress/private-apis <a id="block-editor/reference-guides/packages/packages-private-apis" />
+# @wordpress/private-apis <a name="block-editor/reference-guides/packages/packages-private-apis" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-private-apis/
 
@@ -63413,7 +63413,7 @@ The final string in this list is the current version.
 
 ---
 
-# CircularOptionPicker <a id="block-editor/reference-guides/components/circular-option-picker" />
+# CircularOptionPicker <a name="block-editor/reference-guides/components/circular-option-picker" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/circular-option-picker/
 
@@ -63584,7 +63584,7 @@ Inherits all of the [`Button` props](#block-editor/reference-guide/components/bu
 
 ---
 
-# End-to-End Testing <a id="block-editor/contributors/code/testing-overview/e2e" />
+# End-to-End Testing <a name="block-editor/contributors/code/testing-overview/e2e" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/
 
@@ -63707,7 +63707,7 @@ test.describe( 'Grouping tests (@webkit, -chromium)', () => {
 
 ---
 
-# Migration guide <a id="block-editor/contributors/code/testing-overview/e2e/migration" />
+# Migration guide <a name="block-editor/contributors/code/testing-overview/e2e/migration" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/migration/
 
@@ -63745,7 +63745,7 @@ Playwright utilities are organized a little differently from those in the `e2e-t
 
 ---
 
-# Overusing snapshots <a id="block-editor/contributors/code/testing-overview/e2e/overusing-snapshots" />
+# Overusing snapshots <a name="block-editor/contributors/code/testing-overview/e2e/overusing-snapshots" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/code/testing-overview/e2e/overusing-snapshots/
 
@@ -63880,7 +63880,7 @@ If you find yourself creating multiple snapshots of similar contents in the same
 
 ---
 
-# Available Styles Options <a id="block-editor/reference-guides/theme-json-reference/styles-versions" />
+# Available Styles Options <a name="block-editor/reference-guides/theme-json-reference/styles-versions" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/styles-versions/
 
@@ -63942,7 +63942,7 @@ New styles options are integrated into theme.json on a regular basis. Knowing th
 
 ---
 
-# @wordpress/commands <a id="block-editor/reference-guides/packages/packages-commands" />
+# @wordpress/commands <a name="block-editor/reference-guides/packages/packages-commands" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-commands/
 
@@ -64135,7 +64135,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Selectors <a id="block-editor/reference-guides/block-api/block-selectors" />
+# Selectors <a name="block-editor/reference-guides/block-api/block-selectors" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-selectors/
 
@@ -64264,7 +64264,7 @@ feature’s selector given that is present, i.e. `.my-custom-block-selector > h2
 
 ---
 
-# @wordpress/router <a id="block-editor/reference-guides/packages/packages-router" />
+# @wordpress/router <a name="block-editor/reference-guides/packages/packages-router" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-router/
 
@@ -64295,7 +64295,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/core-commands <a id="block-editor/reference-guides/packages/packages-core-commands" />
+# @wordpress/core-commands <a name="block-editor/reference-guides/packages/packages-core-commands" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-core-commands/
 
@@ -64326,7 +64326,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/e2e-test-utils-playwright <a id="block-editor/reference-guides/packages/packages-e2e-test-utils-playwright" />
+# @wordpress/e2e-test-utils-playwright <a name="block-editor/reference-guides/packages/packages-e2e-test-utils-playwright" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-test-utils-playwright/
 
@@ -64423,7 +64423,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Entities and Undo/Redo. <a id="block-editor/explanations/architecture/entities" />
+# Entities and Undo/Redo. <a name="block-editor/explanations/architecture/entities" />
 
 Source: https://developer.wordpress.org/block-editor/explanations/architecture/entities/
 
@@ -64502,7 +64502,7 @@ wp.data.dispatch( 'core' ).editEntityRecord( 'postType', 'post', 1, { title: 'He
 
 ---
 
-# @wordpress/interactivity <a id="block-editor/reference-guides/packages/packages-interactivity" />
+# @wordpress/interactivity <a name="block-editor/reference-guides/packages/packages-interactivity" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interactivity/
 
@@ -64531,7 +64531,7 @@ Interactivity API proposal, as part of Gutenberg and the WordPress project is fr
 
 ---
 
-# @wordpress/create-block-interactive-template <a id="block-editor/reference-guides/packages/packages-create-block-interactive-template" />
+# @wordpress/create-block-interactive-template <a name="block-editor/reference-guides/packages/packages-create-block-interactive-template" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block-interactive-template/
 
@@ -64556,7 +64556,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/sync <a id="block-editor/reference-guides/packages/packages-sync" />
+# @wordpress/sync <a name="block-editor/reference-guides/packages/packages-sync" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-sync/
 
@@ -64622,7 +64622,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# @wordpress/patterns <a id="block-editor/reference-guides/packages/packages-patterns" />
+# @wordpress/patterns <a name="block-editor/reference-guides/packages/packages-patterns" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-patterns/
 
@@ -64652,7 +64652,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Enqueueing assets in the Editor <a id="block-editor/how-to-guides/enqueueing-assets-in-the-editor" />
+# Enqueueing assets in the Editor <a name="block-editor/how-to-guides/enqueueing-assets-in-the-editor" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/
 
@@ -64783,7 +64783,7 @@ If you experience issues using any of the methods outlined in this guide that ha
 
 ---
 
-# The Commands Data <a id="block-editor/reference-guides/data/data-core-commands" />
+# The Commands Data <a name="block-editor/reference-guides/data/data-core-commands" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/data/data-core-commands/
 
@@ -64909,7 +64909,7 @@ Unregister command loader hook.
 
 ---
 
-# @wordpress/undo-manager <a id="block-editor/reference-guides/packages/packages-undo-manager" />
+# @wordpress/undo-manager <a name="block-editor/reference-guides/packages/packages-undo-manager" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-undo-manager/
 
@@ -64942,7 +64942,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Get started with wp-env <a id="block-editor/getting-started/devenv/get-started-with-wp-env" />
+# Get started with wp-env <a name="block-editor/getting-started/devenv/get-started-with-wp-env" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/
 
@@ -65097,7 +65097,7 @@ Your environment should now be set up at `http://localhost:8888`.
 
 ---
 
-# Node.js development environment <a id="block-editor/getting-started/devenv/nodejs-development-environment" />
+# Node.js development environment <a name="block-editor/getting-started/devenv/nodejs-development-environment" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/devenv/nodejs-development-environment/
 
@@ -65152,7 +65152,7 @@ The latest `node` version should work for most development projects, but be awar
 
 ---
 
-# Get started with create-block <a id="block-editor/getting-started/devenv/get-started-with-create-block" />
+# Get started with create-block <a name="block-editor/getting-started/devenv/get-started-with-create-block" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-create-block/
 
@@ -65258,7 +65258,7 @@ Templates must be set up in advance so the `create-block` package knows where to
 
 ---
 
-# Get started with wp-scripts <a id="block-editor/getting-started/devenv/get-started-with-wp-scripts" />
+# Get started with wp-scripts <a name="block-editor/getting-started/devenv/get-started-with-wp-scripts" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/
 
@@ -65417,7 +65417,7 @@ See the `wp-scripts` [package documentation](#block-editor/packages/packages-scr
 
 ---
 
-# Quick Start Guide <a id="block-editor/getting-started/quick-start-guide" />
+# Quick Start Guide <a name="block-editor/getting-started/quick-start-guide" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/quick-start-guide/
 
@@ -65474,7 +65474,7 @@ Visit the [Getting started](#block-editor/getting-started/devenv/get-started-wit
 
 ---
 
-# Fundamentals of Block Development <a id="block-editor/getting-started/fundamentals" />
+# Fundamentals of Block Development <a name="block-editor/getting-started/fundamentals" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/
 
@@ -65491,7 +65491,7 @@ This section provides an introduction to the most relevant concepts in block dev
 
 ---
 
-# File structure of a block <a id="block-editor/getting-started/fundamentals/file-structure-of-a-block" />
+# File structure of a block <a name="block-editor/getting-started/fundamentals/file-structure-of-a-block" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/file-structure-of-a-block/
 
@@ -65579,7 +65579,7 @@ This transformation process includes minification, transpilation from modern Jav
 
 ---
 
-# Registration of a block <a id="block-editor/getting-started/fundamentals/registration-of-a-block" />
+# Registration of a block <a name="block-editor/getting-started/fundamentals/registration-of-a-block" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/
 
@@ -65684,7 +65684,7 @@ registerBlockType( metadata.name, {
 
 ---
 
-# Working with JavaScript for the Block Editor <a id="block-editor/getting-started/fundamentals/javascript-in-the-block-editor" />
+# Working with JavaScript for the Block Editor <a name="block-editor/getting-started/fundamentals/javascript-in-the-block-editor" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/javascript-in-the-block-editor/
 
@@ -65780,7 +65780,7 @@ Refer to [Enqueueing assets in the Editor](#block-editor/how-to-guides/enqueuein
 
 ---
 
-# block.json <a id="block-editor/getting-started/fundamentals/block-json" />
+# block.json <a name="block-editor/getting-started/fundamentals/block-json" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-json/
 
@@ -65921,7 +65921,7 @@ For more information about supports and how to use them in your custom blocks, v
 
 ---
 
-# The block wrapper <a id="block-editor/getting-started/fundamentals/block-wrapper" />
+# The block wrapper <a name="block-editor/getting-started/fundamentals/block-wrapper" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-wrapper/
 
@@ -66043,7 +66043,7 @@ In dynamic blocks, where the front-end markup is rendered server-side, you can u
 
 ---
 
-# @wordpress/dataviews <a id="block-editor/reference-guides/packages/packages-dataviews" />
+# @wordpress/dataviews <a name="block-editor/reference-guides/packages/packages-dataviews" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dataviews/
 
@@ -67322,7 +67322,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Tutorial: Build your first block <a id="block-editor/getting-started/tutorial" />
+# Tutorial: Build your first block <a name="block-editor/getting-started/tutorial" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/tutorial/
 
@@ -68349,7 +68349,7 @@ Remember, every expert was once a beginner. Keep learning, experimenting, and, m
 
 ---
 
-# The block in the Editor <a id="block-editor/getting-started/fundamentals/block-in-the-editor" />
+# The block in the Editor <a name="block-editor/getting-started/fundamentals/block-in-the-editor" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/
 
@@ -68520,7 +68520,7 @@ Block controls rendered in both the toolbar and sidebar will also be available w
 
 ---
 
-# Markup representation of a block <a id="block-editor/getting-started/fundamentals/markup-representation-block" />
+# Markup representation of a block <a name="block-editor/getting-started/fundamentals/markup-representation-block" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/markup-representation-block/
 
@@ -68576,7 +68576,7 @@ As the example above shows, the stored markup is minimal for dynamically rendere
 
 ---
 
-# Block Locking API <a id="block-editor/how-to-guides/curating-the-editor-experience/block-locking" />
+# Block Locking API <a name="block-editor/how-to-guides/curating-the-editor-experience/block-locking" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/block-locking/
 
@@ -68652,7 +68652,7 @@ Developers may use any type of conditional check to determine who can lock/unloc
 
 ---
 
-# Patterns <a id="block-editor/how-to-guides/curating-the-editor-experience/patterns" />
+# Patterns <a name="block-editor/how-to-guides/curating-the-editor-experience/patterns" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/patterns/
 
@@ -68750,7 +68750,7 @@ The content creator will then find the respective Pattern in the inserter “Pat
 
 ---
 
-# Filters and hooks <a id="block-editor/how-to-guides/curating-the-editor-experience/filters-and-hooks" />
+# Filters and hooks <a name="block-editor/how-to-guides/curating-the-editor-experience/filters-and-hooks" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/filters-and-hooks/
 
@@ -68938,7 +68938,7 @@ You can learn more about the available block filters in the [Block Filters](#blo
 
 ---
 
-# Disable Editor functionality <a id="block-editor/how-to-guides/curating-the-editor-experience/disable-editor-functionality" />
+# Disable Editor functionality <a name="block-editor/how-to-guides/curating-the-editor-experience/disable-editor-functionality" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/disable-editor-functionality/
 
@@ -69090,7 +69090,7 @@ This JavaScript should be enqueued much like the block variation example above.
 
 ---
 
-# Global Settings &amp; Styles (theme.json) <a id="block-editor/how-to-guides/themes/global-settings-and-styles" />
+# Global Settings &amp; Styles (theme.json) <a name="block-editor/how-to-guides/themes/global-settings-and-styles" />
 
 Source: https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/
 
@@ -70488,7 +70488,7 @@ When you are actively developing with theme.json you may notice it takes 30+ sec
 
 ---
 
-# Static or Dynamic rendering of a block <a id="block-editor/getting-started/fundamentals/static-dynamic-rendering" />
+# Static or Dynamic rendering of a block <a name="block-editor/getting-started/fundamentals/static-dynamic-rendering" />
 
 Source: https://developer.wordpress.org/block-editor/getting-started/fundamentals/static-dynamic-rendering/
 
@@ -70663,7 +70663,7 @@ If you are using [InnerBlocks](#block-editor/how-to-guides/block-tutorial/nested
 
 ---
 
-# @wordpress/interactivity-router <a id="block-editor/reference-guides/packages/packages-interactivity-router" />
+# @wordpress/interactivity-router <a name="block-editor/reference-guides/packages/packages-interactivity-router" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interactivity-router/
 
@@ -70819,7 +70819,7 @@ Interactivity API proposal, as part of Gutenberg and the WordPress project is fr
 
 ---
 
-# Interactivity API Reference <a id="block-editor/reference-guides/interactivity-api" />
+# Interactivity API Reference <a name="block-editor/reference-guides/interactivity-api" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/
 
@@ -70950,7 +70950,7 @@ Here you have some more resources to learn/read more about the Interactivity API
 
 ---
 
-# API Reference <a id="block-editor/reference-guides/interactivity-api/api-reference" />
+# API Reference <a name="block-editor/reference-guides/interactivity-api/api-reference" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/api-reference/
 
@@ -72372,7 +72372,7 @@ will output:
 
 ---
 
-# Quick start guide <a id="block-editor/reference-guides/interactivity-api/iapi-quick-start-guide" />
+# Quick start guide <a name="block-editor/reference-guides/interactivity-api/iapi-quick-start-guide" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/iapi-quick-start-guide/
 
@@ -72425,7 +72425,7 @@ You should be able to insert the “My First Interactive Block” block into any
 
 ---
 
-# Theme.json Version 2 Reference <a id="block-editor/reference-guides/theme-json-reference/theme-json-v2" />
+# Theme.json Version 2 Reference <a name="block-editor/reference-guides/theme-json-reference/theme-json-v2" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-v2/
 
@@ -72756,7 +72756,7 @@ Type: `array`.
 
 ---
 
-# About the Interactivity API <a id="block-editor/reference-guides/interactivity-api/iapi-about" />
+# About the Interactivity API <a name="block-editor/reference-guides/interactivity-api/iapi-about" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/iapi-about/
 
@@ -72955,7 +72955,7 @@ By adopting a standard, learning from other interactive blocks is simpler, and f
 
 ---
 
-# Frequently Asked Questions <a id="block-editor/reference-guides/interactivity-api/iapi-faq" />
+# Frequently Asked Questions <a name="block-editor/reference-guides/interactivity-api/iapi-faq" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/iapi-faq/
 
@@ -73092,7 +73092,7 @@ Sure. Actions and callbacks called by directives can do anything a JavaScript fu
 
 ---
 
-# ProgressBar <a id="block-editor/reference-guides/components/progress-bar" />
+# ProgressBar <a name="block-editor/reference-guides/components/progress-bar" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/progress-bar/
 
@@ -73165,7 +73165,7 @@ Any additional props will be passed the underlying `<progress/>` element.
 
 ---
 
-# Composite <a id="block-editor/reference-guides/components/composite" />
+# Composite <a name="block-editor/reference-guides/components/composite" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/components/composite/
 
@@ -73474,7 +73474,7 @@ The React context used by the composite components. It can be used by to access 
 
 ---
 
-# Core Concepts <a id="block-editor/reference-guides/interactivity-api/core-concepts" />
+# Core Concepts <a name="block-editor/reference-guides/interactivity-api/core-concepts" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/core-concepts/
 
@@ -73487,7 +73487,7 @@ This section provides some guides on important concepts and mental models relate
 
 ---
 
-# The Reactive and Declarative mindset <a id="block-editor/reference-guides/interactivity-api/core-concepts/the-reactive-and-declarative-mindset" />
+# The Reactive and Declarative mindset <a name="block-editor/reference-guides/interactivity-api/core-concepts/the-reactive-and-declarative-mindset" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/core-concepts/the-reactive-and-declarative-mindset/
 
@@ -73809,7 +73809,7 @@ As you continue to work with the Interactivity API, remember to think in terms o
 
 ---
 
-# Understanding global state, local context and derived state <a id="block-editor/reference-guides/interactivity-api/core-concepts/undestanding-global-state-local-context-and-derived-state" />
+# Understanding global state, local context and derived state <a name="block-editor/reference-guides/interactivity-api/core-concepts/undestanding-global-state-local-context-and-derived-state" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/core-concepts/undestanding-global-state-local-context-and-derived-state/
 
@@ -74659,7 +74659,7 @@ Remember, the key to effective state management is to keep your state minimal an
 
 ---
 
-# Server-side rendering: Processing directives on the server <a id="block-editor/reference-guides/interactivity-api/core-concepts/server-side-rendering" />
+# Server-side rendering: Processing directives on the server <a name="block-editor/reference-guides/interactivity-api/core-concepts/server-side-rendering" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/core-concepts/server-side-rendering/
 
@@ -75172,7 +75172,7 @@ The Interactivity API ensures a smooth and transparent transition from server-re
 
 ---
 
-# @wordpress/fields <a id="block-editor/reference-guides/packages/packages-fields" />
+# @wordpress/fields <a name="block-editor/reference-guides/packages/packages-fields" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-fields/
 
@@ -75326,7 +75326,7 @@ To find out more about contributing to this package or Gutenberg as a whole, ple
 
 ---
 
-# Using TypeScript <a id="block-editor/reference-guides/interactivity-api/core-concepts/using-typescript" />
+# Using TypeScript <a name="block-editor/reference-guides/interactivity-api/core-concepts/using-typescript" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/core-concepts/using-typescript/
 
@@ -76114,7 +76114,7 @@ Remember that the choice between inferring types and manually defining them depe
 
 ---
 
-# Bindings <a id="block-editor/reference-guides/block-api/block-bindings" />
+# Bindings <a name="block-editor/reference-guides/block-api/block-bindings" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-bindings/
 
@@ -76453,7 +76453,7 @@ function clearBlockBindings() {
 
 ---
 
-# @wordpress/upload-media <a id="block-editor/reference-guides/packages/packages-upload-media" />
+# @wordpress/upload-media <a name="block-editor/reference-guides/packages/packages-upload-media" />
 
 Source: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-upload-media/
 
@@ -76588,7 +76588,7 @@ Determines whether an upload is currently in progress given an attachment URL.
 
 ---
 
-# Repository Management <a id="block-editor/contributors/repository-management" />
+# Repository Management <a name="block-editor/contributors/repository-management" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/repository-management/
 
@@ -76759,7 +76759,7 @@ We use [GitHub projects](https://github.com/WordPress/gutenberg/projects) to kee
 
 ---
 
-# Localizing Gutenberg <a id="block-editor/contributors/localizing" />
+# Localizing Gutenberg <a name="block-editor/contributors/localizing" />
 
 Source: https://developer.wordpress.org/block-editor/contributors/localizing/
 

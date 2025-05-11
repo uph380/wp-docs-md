@@ -1,4 +1,4 @@
-# Rendered Blocks <a id="rest-api/reference/rendered-blocks" />
+# Rendered Blocks <a name="rest-api/reference/rendered-blocks" />
 
 Source: https://developer.wordpress.org/rest-api/reference/rendered-blocks/
 
@@ -25,7 +25,7 @@ The schema defines all the fields that exist within a Rendered Block record. Any
 
 ---
 
-# Search Results <a id="rest-api/reference/search-results" />
+# Search Results <a name="rest-api/reference/search-results" />
 
 Source: https://developer.wordpress.org/rest-api/reference/search-results/
 
@@ -66,7 +66,7 @@ The schema defines all the fields that exist within a search result record. Any 
 
 ---
 
-# Themes <a id="rest-api/reference/themes" />
+# Themes <a name="rest-api/reference/themes" />
 
 Source: https://developer.wordpress.org/rest-api/reference/themes/
 
@@ -124,7 +124,7 @@ The schema defines all the fields that exist within a theme record. Any response
 
 ---
 
-# Block Revisions <a id="rest-api/reference/block-revisions" />
+# Block Revisions <a name="rest-api/reference/block-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/block-revisions/
 
@@ -260,7 +260,7 @@ The schema defines all the fields that exist within a Block Revision record. Any
 
 ---
 
-# Editor Blocks <a id="rest-api/reference/blocks" />
+# Editor Blocks <a name="rest-api/reference/blocks" />
 
 Source: https://developer.wordpress.org/rest-api/reference/blocks/
 
@@ -395,7 +395,7 @@ The schema defines all the fields that exist within a Editor Block record. Any r
 
 ---
 
-# Key Concepts <a id="rest-api/key-concepts" />
+# Key Concepts <a name="rest-api/key-concepts" />
 
 Source: https://developer.wordpress.org/rest-api/key-concepts/
 
@@ -445,7 +445,7 @@ A single class usually contains all of the logic for a given route, and a given 
 
 ---
 
-# Block Directory Items <a id="rest-api/reference/block-directory-items" />
+# Block Directory Items <a name="rest-api/reference/block-directory-items" />
 
 Source: https://developer.wordpress.org/rest-api/reference/block-directory-items/
 
@@ -490,7 +490,7 @@ The schema defines all the fields that exist within a block directory item recor
 
 ---
 
-# Block Types <a id="rest-api/reference/block-types" />
+# Block Types <a name="rest-api/reference/block-types" />
 
 Source: https://developer.wordpress.org/rest-api/reference/block-types/
 
@@ -580,7 +580,7 @@ The schema defines all the fields that exist within a block type record. Any res
 
 ---
 
-# Plugins <a id="rest-api/reference/plugins" />
+# Plugins <a name="rest-api/reference/plugins" />
 
 Source: https://developer.wordpress.org/rest-api/reference/plugins/
 
@@ -682,7 +682,7 @@ The schema defines all the fields that exist within a plugin record. Any respons
 
 ---
 
-# Application Passwords <a id="rest-api/reference/application-passwords" />
+# Application Passwords <a name="rest-api/reference/application-passwords" />
 
 Source: https://developer.wordpress.org/rest-api/reference/application-passwords/
 
@@ -798,7 +798,7 @@ The schema defines all the fields that exist within a application password recor
 
 ---
 
-# Block Pattern Categories <a id="rest-api/reference/block-pattern-categories" />
+# Block Pattern Categories <a name="rest-api/reference/block-pattern-categories" />
 
 Source: https://developer.wordpress.org/rest-api/reference/block-pattern-categories/
 
@@ -825,7 +825,7 @@ The schema defines all the fields that exist within a block pattern category rec
 
 ---
 
-# Block Patterns <a id="rest-api/reference/block-patterns" />
+# Block Patterns <a name="rest-api/reference/block-patterns" />
 
 Source: https://developer.wordpress.org/rest-api/reference/block-patterns/
 
@@ -861,7 +861,7 @@ The schema defines all the fields that exist within a block pattern record. Any 
 
 ---
 
-# Menu Locations <a id="rest-api/reference/menu-locations" />
+# Menu Locations <a name="rest-api/reference/menu-locations" />
 
 Source: https://developer.wordpress.org/rest-api/reference/menu-locations/
 
@@ -907,7 +907,7 @@ The schema defines all the fields that exist within a menu location record. Any 
 
 ---
 
-# Nav_Menu_Item Revisions <a id="rest-api/reference/nav_menu_item-revisions" />
+# Nav_Menu_Item Revisions <a name="rest-api/reference/nav_menu_item-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/nav_menu_item-revisions/
 
@@ -988,7 +988,7 @@ The schema defines all the fields that exist within a nav\_menu\_item revision r
 
 ---
 
-# Nav_Menu_Items <a id="rest-api/reference/nav_menu_items" />
+# Nav_Menu_Items <a name="rest-api/reference/nav_menu_items" />
 
 Source: https://developer.wordpress.org/rest-api/reference/nav_menu_items/
 
@@ -1141,7 +1141,7 @@ The schema defines all the fields that exist within a nav\_menu\_item record. An
 
 ---
 
-# Nav_Menus <a id="rest-api/reference/nav_menus" />
+# Nav_Menus <a name="rest-api/reference/nav_menus" />
 
 Source: https://developer.wordpress.org/rest-api/reference/nav_menus/
 
@@ -1257,7 +1257,7 @@ The schema defines all the fields that exist within a nav\_menu record. Any resp
 
 ---
 
-# Pattern Directory Items <a id="rest-api/reference/pattern-directory-items" />
+# Pattern Directory Items <a name="rest-api/reference/pattern-directory-items" />
 
 Source: https://developer.wordpress.org/rest-api/reference/pattern-directory-items/
 
@@ -1303,7 +1303,7 @@ The schema defines all the fields that exist within a pattern directory item rec
 
 ---
 
-# Sidebars <a id="rest-api/reference/sidebars" />
+# Sidebars <a name="rest-api/reference/sidebars" />
 
 Source: https://developer.wordpress.org/rest-api/reference/sidebars/
 
@@ -1371,7 +1371,7 @@ The schema defines all the fields that exist within a sidebar record. Any respon
 
 ---
 
-# Widget Types <a id="rest-api/reference/widget-types" />
+# Widget Types <a name="rest-api/reference/widget-types" />
 
 Source: https://developer.wordpress.org/rest-api/reference/widget-types/
 
@@ -1419,7 +1419,7 @@ The schema defines all the fields that exist within a widget type record. Any re
 
 ---
 
-# Widgets <a id="rest-api/reference/widgets" />
+# Widgets <a name="rest-api/reference/widgets" />
 
 Source: https://developer.wordpress.org/rest-api/reference/widgets/
 
@@ -1518,7 +1518,7 @@ The schema defines all the fields that exist within a widget record. Any respons
 
 ---
 
-# Wp Site Health Tests <a id="rest-api/reference/wp-site-health-tests" />
+# Wp Site Health Tests <a name="rest-api/reference/wp-site-health-tests" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp-site-health-tests/
 
@@ -1596,7 +1596,7 @@ The schema defines all the fields that exist within a wp site health test record
 
 ---
 
-# Global_Styles <a id="rest-api/reference/wp_global_styles" />
+# Global_Styles <a name="rest-api/reference/wp_global_styles" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_global_styles/
 
@@ -1644,7 +1644,7 @@ The schema defines all the fields that exist within a global\_styles record. Any
 
 ---
 
-# Navigation Revisions <a id="rest-api/reference/wp_navigation-revisions" />
+# Navigation Revisions <a name="rest-api/reference/wp_navigation-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_navigation-revisions/
 
@@ -1779,7 +1779,7 @@ The schema defines all the fields that exist within a navigation revision record
 
 ---
 
-# Navigations <a id="rest-api/reference/wp_navigations" />
+# Navigations <a name="rest-api/reference/wp_navigations" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_navigations/
 
@@ -1911,7 +1911,7 @@ The schema defines all the fields that exist within a navigation record. Any res
 
 ---
 
-# Template Revisions <a id="rest-api/reference/wp_template-revisions" />
+# Template Revisions <a name="rest-api/reference/wp_template-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_template-revisions/
 
@@ -2046,7 +2046,7 @@ The schema defines all the fields that exist within a template revision record. 
 
 ---
 
-# Template_Part Revisions <a id="rest-api/reference/wp_template_part-revisions" />
+# Template_Part Revisions <a name="rest-api/reference/wp_template_part-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_template_part-revisions/
 
@@ -2182,7 +2182,7 @@ The schema defines all the fields that exist within a template\_part revision re
 
 ---
 
-# Template_Parts <a id="rest-api/reference/wp_template_parts" />
+# Template_Parts <a name="rest-api/reference/wp_template_parts" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_template_parts/
 
@@ -2302,7 +2302,7 @@ The schema defines all the fields that exist within a template\_part record. Any
 
 ---
 
-# Templates <a id="rest-api/reference/wp_templates" />
+# Templates <a name="rest-api/reference/wp_templates" />
 
 Source: https://developer.wordpress.org/rest-api/reference/wp_templates/
 
@@ -2420,7 +2420,7 @@ The schema defines all the fields that exist within a template record. Any respo
 
 ---
 
-# REST API Handbook <a id="rest-api" />
+# REST API Handbook <a name="rest-api" />
 
 Source: https://developer.wordpress.org/rest-api/
 
@@ -2440,7 +2440,7 @@ Familiarize yourself with the [key technical concepts](#rest-api/key-concepts) b
 
 ---
 
-# Authentication <a id="rest-api/using-the-rest-api/authentication" />
+# Authentication <a name="rest-api/using-the-rest-api/authentication" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
 
@@ -2525,7 +2525,7 @@ Note that this plugin requires sending your username and password with every req
 
 ---
 
-# Routes and Endpoints <a id="rest-api/extending-the-rest-api/routes-and-endpoints" />
+# Routes and Endpoints <a name="rest-api/extending-the-rest-api/routes-and-endpoints" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/routes-and-endpoints/
 
@@ -3009,7 +3009,7 @@ We have covered the basics of registering endpoints for the WordPress REST API. 
 
 ---
 
-# Controller Classes <a id="rest-api/extending-the-rest-api/controller-classes" />
+# Controller Classes <a name="rest-api/extending-the-rest-api/controller-classes" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/controller-classes/
 
@@ -3311,7 +3311,7 @@ Most types of API-driven application will not require you to extend or interact 
 
 ---
 
-# Requests <a id="rest-api/requests" />
+# Requests <a name="rest-api/requests" />
 
 Source: https://developer.wordpress.org/rest-api/requests/
 
@@ -3779,7 +3779,7 @@ That is quite a decent chunk of code that covers a number of topics, but everyth
 
 ---
 
-# Schema <a id="rest-api/extending-the-rest-api/schema" />
+# Schema <a name="rest-api/extending-the-rest-api/schema" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/
 
@@ -4847,7 +4847,7 @@ To generate more helpful error messages, it is highly recommended to give each `
 
 ---
 
-# Pagination <a id="rest-api/using-the-rest-api/pagination" />
+# Pagination <a name="rest-api/using-the-rest-api/pagination" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/
 
@@ -4889,7 +4889,7 @@ In addition to the pagination query parameters detailed above, several other par
 
 ---
 
-# Reference <a id="rest-api/reference" />
+# Reference <a name="rest-api/reference" />
 
 Source: https://developer.wordpress.org/rest-api/reference/
 
@@ -4933,7 +4933,7 @@ Unlike many other REST APIs, the WordPress REST API is distributed and available
 
 ---
 
-# Discovery <a id="rest-api/using-the-rest-api/discovery" />
+# Discovery <a name="rest-api/using-the-rest-api/discovery" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/discovery/
 
@@ -5117,7 +5117,7 @@ Links are added for post, pages, and other custom post types, as well as terms a
 
 ---
 
-# Adding REST API Support For Custom Content Types <a id="rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types" />
+# Adding REST API Support For Custom Content Types <a name="rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types/
 
@@ -5331,7 +5331,7 @@ Taxonomies &amp; custom post types have a built-in association within WordPress,
 
 ---
 
-# Posts <a id="rest-api/reference/posts" />
+# Posts <a name="rest-api/reference/posts" />
 
 Source: https://developer.wordpress.org/rest-api/reference/posts/
 
@@ -5501,7 +5501,7 @@ The schema defines all the fields that exist within a post record. Any response 
 
 ---
 
-# Post Revisions <a id="rest-api/reference/post-revisions" />
+# Post Revisions <a name="rest-api/reference/post-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/post-revisions/
 
@@ -5647,7 +5647,7 @@ The schema defines all the fields that exist within a post revision record. Any 
 
 ---
 
-# Pages <a id="rest-api/reference/pages" />
+# Pages <a name="rest-api/reference/pages" />
 
 Source: https://developer.wordpress.org/rest-api/reference/pages/
 
@@ -5810,7 +5810,7 @@ The schema defines all the fields that exist within a page record. Any response 
 
 ---
 
-# Site Settings <a id="rest-api/reference/settings" />
+# Site Settings <a name="rest-api/reference/settings" />
 
 Source: https://developer.wordpress.org/rest-api/reference/settings/
 
@@ -5888,7 +5888,7 @@ The schema defines all the fields that exist within a Site Setting record. Any r
 
 ---
 
-# Users <a id="rest-api/reference/users" />
+# Users <a name="rest-api/reference/users" />
 
 Source: https://developer.wordpress.org/rest-api/reference/users/
 
@@ -6091,7 +6091,7 @@ The schema defines all the fields that exist within a user record. Any response 
 
 ---
 
-# Media <a id="rest-api/reference/media" />
+# Media <a name="rest-api/reference/media" />
 
 Source: https://developer.wordpress.org/rest-api/reference/media/
 
@@ -6253,7 +6253,7 @@ The schema defines all the fields that exist within a Media Item record. Any res
 
 ---
 
-# Types <a id="rest-api/reference/post-types" />
+# Types <a name="rest-api/reference/post-types" />
 
 Source: https://developer.wordpress.org/rest-api/reference/post-types/
 
@@ -6310,7 +6310,7 @@ The schema defines all the fields that exist within a type record. Any response 
 
 ---
 
-# Categories <a id="rest-api/reference/categories" />
+# Categories <a name="rest-api/reference/categories" />
 
 Source: https://developer.wordpress.org/rest-api/reference/categories/
 
@@ -6426,7 +6426,7 @@ The schema defines all the fields that exist within a category record. Any respo
 
 ---
 
-# Statuses <a id="rest-api/reference/post-statuses" />
+# Statuses <a name="rest-api/reference/post-statuses" />
 
 Source: https://developer.wordpress.org/rest-api/reference/post-statuses/
 
@@ -6477,7 +6477,7 @@ The schema defines all the fields that exist within a status record. Any respons
 
 ---
 
-# Comments <a id="rest-api/reference/comments" />
+# Comments <a name="rest-api/reference/comments" />
 
 Source: https://developer.wordpress.org/rest-api/reference/comments/
 
@@ -6627,7 +6627,7 @@ The schema defines all the fields that exist within a comment record. Any respon
 
 ---
 
-# Tags <a id="rest-api/reference/tags" />
+# Tags <a name="rest-api/reference/tags" />
 
 Source: https://developer.wordpress.org/rest-api/reference/tags/
 
@@ -6740,7 +6740,7 @@ The schema defines all the fields that exist within a tag record. Any response f
 
 ---
 
-# Taxonomies <a id="rest-api/reference/taxonomies" />
+# Taxonomies <a name="rest-api/reference/taxonomies" />
 
 Source: https://developer.wordpress.org/rest-api/reference/taxonomies/
 
@@ -6795,7 +6795,7 @@ The schema defines all the fields that exist within a taxonomy record. Any respo
 
 ---
 
-# Linking and Embedding <a id="rest-api/using-the-rest-api/linking-and-embedding" />
+# Linking and Embedding <a name="rest-api/using-the-rest-api/linking-and-embedding" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/linking-and-embedding/
 
@@ -6862,7 +6862,7 @@ Optionally, some linked resources may be included in the response to reduce the 
 
 ---
 
-# Global Parameters <a id="rest-api/using-the-rest-api/global-parameters" />
+# Global Parameters <a name="rest-api/using-the-rest-api/global-parameters" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/
 
@@ -6958,7 +6958,7 @@ function receiveData( data ) {
 
 ---
 
-# Glossary <a id="rest-api/glossary" />
+# Glossary <a name="rest-api/glossary" />
 
 Source: https://developer.wordpress.org/rest-api/glossary/
 
@@ -7015,7 +7015,7 @@ A “schema” is a representation of the format for WP-API’s response data. F
 
 ---
 
-# Backbone JavaScript Client <a id="rest-api/using-the-rest-api/backbone-javascript-client" />
+# Backbone JavaScript Client <a name="rest-api/using-the-rest-api/backbone-javascript-client" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/backbone-javascript-client/
 
@@ -7289,7 +7289,7 @@ someCustomPosts.fetch().then( ( posts ) => {
 
 ---
 
-# Using the REST API <a id="rest-api/using-the-rest-api" />
+# Using the REST API <a name="rest-api/using-the-rest-api" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/
 
@@ -7301,7 +7301,7 @@ These articles explore the basic structure of the WordPress REST API. [Global Pa
 
 ---
 
-# Client Libraries <a id="rest-api/using-the-rest-api/client-libraries" />
+# Client Libraries <a name="rest-api/using-the-rest-api/client-libraries" />
 
 Source: https://developer.wordpress.org/rest-api/using-the-rest-api/client-libraries/
 
@@ -7341,7 +7341,7 @@ The [Backbone.js client](#rest-api/backbone-javascript-client) is built in to Wo
 
 ---
 
-# Modifying Responses <a id="rest-api/extending-the-rest-api/modifying-responses" />
+# Modifying Responses <a name="rest-api/extending-the-rest-api/modifying-responses" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/modifying-responses/
 
@@ -7874,7 +7874,7 @@ This will convert link URLs from `https://api.mypluginurl.com/my_link` to`my\_pl
 
 ---
 
-# Extending the REST API <a id="rest-api/extending-the-rest-api" />
+# Extending the REST API <a name="rest-api/extending-the-rest-api" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/
 
@@ -7886,7 +7886,7 @@ Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/
 
 ---
 
-# Frequently Asked Questions <a id="rest-api/frequently-asked-questions" />
+# Frequently Asked Questions <a name="rest-api/frequently-asked-questions" />
 
 Source: https://developer.wordpress.org/rest-api/frequently-asked-questions/
 
@@ -8022,7 +8022,7 @@ This is an [intentional design decision](https://core.trac.wordpress.org/changes
 
 ---
 
-# Adding Custom Endpoints <a id="rest-api/extending-the-rest-api/adding-custom-endpoints" />
+# Adding Custom Endpoints <a name="rest-api/extending-the-rest-api/adding-custom-endpoints" />
 
 Source: https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-custom-endpoints/
 
@@ -8587,7 +8587,7 @@ class Slug_Custom_Route extends WP_REST_Controller {
 
 ---
 
-# Changelog <a id="rest-api/changelog" />
+# Changelog <a name="rest-api/changelog" />
 
 Source: https://developer.wordpress.org/rest-api/changelog/
 
@@ -8775,7 +8775,7 @@ This document details changes to the WP REST API since its public release in ver
 
 ---
 
-# Page Revisions <a id="rest-api/reference/page-revisions" />
+# Page Revisions <a name="rest-api/reference/page-revisions" />
 
 Source: https://developer.wordpress.org/rest-api/reference/page-revisions/
 

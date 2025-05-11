@@ -1,4 +1,4 @@
-# Advanced Administration Handbook <a id="advanced-administration" />
+# Advanced Administration Handbook <a name="advanced-administration" />
 
 Source: https://developer.wordpress.org/advanced-administration/
 
@@ -27,7 +27,7 @@ If you’re interested in improving this handbook, check the [Github Handbook re
 
 ---
 
-# Before You Install <a id="advanced-administration/before-install" />
+# Before You Install <a name="advanced-administration/before-install" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/
 
@@ -53,7 +53,7 @@ You will need to know how to use a text editor to edit the main configuration fi
 
 ---
 
-# Creating Database for WordPress <a id="advanced-administration/before-install/creating-database" />
+# Creating Database for WordPress <a name="advanced-administration/before-install/creating-database" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/creating-database/
 
@@ -167,7 +167,7 @@ In MySQL Management, click on the small words: **Create new database**. Here you
 
 ---
 
-# How to install WordPress <a id="advanced-administration/before-install/howto-install" />
+# How to install WordPress <a name="advanced-administration/before-install/howto-install" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/howto-install/
 
@@ -408,7 +408,7 @@ If you use the Rich Text Editor on a blog that’s installed in a subdirectory, 
 
 ---
 
-# Running a Development Copy of WordPress <a id="advanced-administration/before-install/development" />
+# Running a Development Copy of WordPress <a name="advanced-administration/before-install/development" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/development/
 
@@ -503,7 +503,7 @@ function test_localhosts( ) {
 
 ---
 
-# Installing WordPress in your language <a id="advanced-administration/before-install/in-your-language" />
+# Installing WordPress in your language <a name="advanced-administration/before-install/in-your-language" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/in-your-language/
 
@@ -574,7 +574,7 @@ If you want to add translations for terms that are still displaying in English a
 
 ---
 
-# Installing Multiple WordPress Instances <a id="advanced-administration/before-install/multiple-instances" />
+# Installing Multiple WordPress Instances <a name="advanced-administration/before-install/multiple-instances" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/multiple-instances/
 
@@ -667,7 +667,7 @@ See [Editing wp-config.php/Custom User and Usermeta Tables](#advanced-administra
 
 ---
 
-# Install WordPress at popular providers <a id="advanced-administration/before-install/popular-providers" />
+# Install WordPress at popular providers <a name="advanced-administration/before-install/popular-providers" />
 
 Source: https://developer.wordpress.org/advanced-administration/before-install/popular-providers/
 
@@ -718,7 +718,7 @@ You can also install WordPress on Ubuntu with one click [WordPress Hosting](http
 
 ---
 
-# Server configuration <a id="advanced-administration/server" />
+# Server configuration <a name="advanced-administration/server" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/
 
@@ -728,7 +728,7 @@ Source: https://developer.wordpress.org/advanced-administration/server/
 
 ---
 
-# Changing File Permissions <a id="advanced-administration/server/file-permissions" />
+# Changing File Permissions <a name="advanced-administration/server/file-permissions" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/file-permissions/
 
@@ -1060,7 +1060,7 @@ usage:  setenforce \[ Enforcing | Permissive | 1 | 0 \]
 
 ---
 
-# Finding Server Info <a id="advanced-administration/server/server-info" />
+# Finding Server Info <a name="advanced-administration/server/server-info" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/server-info/
 
@@ -1116,7 +1116,7 @@ That’s it. Make sure you remember to delete the file once you’re done with i
 
 ---
 
-# Giving WordPress Its Own Directory <a id="advanced-administration/server/wordpress-in-directory" />
+# Giving WordPress Its Own Directory <a name="advanced-administration/server/wordpress-in-directory" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/wordpress-in-directory/
 
@@ -1188,7 +1188,7 @@ The following links explains how to change specific directories within WordPress
 
 ---
 
-# Configuring Wildcard Subdomains <a id="advanced-administration/server/subdomains-wildcard" />
+# Configuring Wildcard Subdomains <a name="advanced-administration/server/subdomains-wildcard" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/subdomains-wildcard/
 
@@ -1257,7 +1257,7 @@ AWS Elastic Load Balancers cannot be assigned an elastic IP, therefore you must 
 
 ---
 
-# Emptying a Database Table <a id="advanced-administration/server/empty-database" />
+# Emptying a Database Table <a name="advanced-administration/server/empty-database" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/empty-database/
 
@@ -1302,7 +1302,7 @@ See [WordPress Backups](#advanced-administration/security/backup) and [Backing U
 
 ---
 
-# Web servers <a id="advanced-administration/server/web-server" />
+# Web servers <a name="advanced-administration/server/web-server" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/web-server/
 
@@ -1322,7 +1322,7 @@ See [Nginx](#advanced-administration/server/web-server/nginx).
 
 ---
 
-# Nginx <a id="advanced-administration/server/web-server/nginx" />
+# Nginx <a name="advanced-administration/server/web-server/nginx" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/web-server/nginx/
 
@@ -2049,7 +2049,7 @@ For WordPress Nginx scripted installation [CentminMod](https://centminmod.com/ng
 
 ---
 
-# Control Panels <a id="advanced-administration/server/control-panel" />
+# Control Panels <a name="advanced-administration/server/control-panel" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/control-panel/
 
@@ -2142,7 +2142,7 @@ The controls below give you easy access to the following settings and tools:
 
 ---
 
-# WordPress configuration <a id="advanced-administration/wordpress" />
+# WordPress configuration <a name="advanced-administration/wordpress" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/
 
@@ -2152,7 +2152,7 @@ Source: https://developer.wordpress.org/advanced-administration/wordpress/
 
 ---
 
-# Editing wp-config.php <a id="advanced-administration/wordpress/wp-config" />
+# Editing wp-config.php <a name="advanced-administration/wordpress/wp-config" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
 
@@ -2913,7 +2913,7 @@ To save the file, choose **File &gt; Save As &gt; wp-config.php** and save the f
 
 ---
 
-# Site Architecture (v1.5) <a id="advanced-administration/wordpress/site-architecture" />
+# Site Architecture (v1.5) <a name="advanced-administration/wordpress/site-architecture" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/site-architecture/
 
@@ -3594,7 +3594,7 @@ The Default Theme’s footer is styled by the footer ID and the paragraph tag. W
 
 ---
 
-# Cookies <a id="advanced-administration/wordpress/cookies" />
+# Cookies <a name="advanced-administration/wordpress/cookies" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/cookies/
 
@@ -3664,7 +3664,7 @@ WordPress allows you to alter the language of all translatable strings on login.
 
 ---
 
-# Update Services <a id="advanced-administration/wordpress/update-services" />
+# Update Services <a name="advanced-administration/wordpress/update-services" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/update-services/
 
@@ -3710,7 +3710,7 @@ By default, editing the Ping Services for a WordPress Multisite network site is 
 
 ---
 
-# Editing Files <a id="advanced-administration/wordpress/edit-files" />
+# Editing Files <a name="advanced-administration/wordpress/edit-files" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/edit-files/
 
@@ -3828,7 +3828,7 @@ The following [text editors](https://wordpress.org/documentation/article/wordpre
 
 ---
 
-# CSS <a id="advanced-administration/wordpress/css" />
+# CSS <a name="advanced-administration/wordpress/css" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/css/
 
@@ -4026,7 +4026,7 @@ If you are having some problems or questions about your WordPress Theme or layou
 
 ---
 
-# WordPress Feeds <a id="advanced-administration/wordpress/feeds" />
+# WordPress Feeds <a name="advanced-administration/wordpress/feeds" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/feeds/
 
@@ -4098,7 +4098,7 @@ RewriteRule ^index.xml(.*)? /wordpress/?feed=rss2 [QSA]
 
 ---
 
-# Multilingual WordPress <a id="advanced-administration/wordpress/multilingual" />
+# Multilingual WordPress <a name="advanced-administration/wordpress/multilingual" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/multilingual/
 
@@ -4224,7 +4224,7 @@ Since many multilingual plugins change the database significantly, doing a [data
 
 ---
 
-# oEmbed <a id="advanced-administration/wordpress/oembed" />
+# oEmbed <a name="advanced-administration/wordpress/oembed" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/oembed/
 
@@ -4270,7 +4270,7 @@ The oEmbed discovery content for “link” and “photo” types is not quite s
 
 ---
 
-# Loopbacks <a id="advanced-administration/wordpress/loopback" />
+# Loopbacks <a name="advanced-administration/wordpress/loopback" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/loopback/
 
@@ -4298,7 +4298,7 @@ The most common cause of loopback failures is a plugin or theme conflict, you sh
 
 ---
 
-# Common WordPress errors <a id="advanced-administration/wordpress/common-errors" />
+# Common WordPress errors <a name="advanced-administration/wordpress/common-errors" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/common-errors/
 
@@ -4589,7 +4589,7 @@ If you are running a database query when you encounter the error then you may by
 
 ---
 
-# Upgrading / Migration <a id="advanced-administration/upgrade" />
+# Upgrading / Migration <a name="advanced-administration/upgrade" />
 
 Source: https://developer.wordpress.org/advanced-administration/upgrade/
 
@@ -4599,7 +4599,7 @@ Source: https://developer.wordpress.org/advanced-administration/upgrade/
 
 ---
 
-# Updating WordPress using FTP <a id="advanced-administration/upgrade/ftp" />
+# Updating WordPress using FTP <a name="advanced-administration/upgrade/ftp" />
 
 Source: https://developer.wordpress.org/advanced-administration/upgrade/ftp/
 
@@ -4626,7 +4626,7 @@ Want to try a different FTP or SFTP client? [Find more on Wikipedia](https://en.
 
 ---
 
-# Using FileZilla <a id="advanced-administration/upgrade/ftp/filezilla" />
+# Using FileZilla <a name="advanced-administration/upgrade/ftp/filezilla" />
 
 Source: https://developer.wordpress.org/advanced-administration/upgrade/ftp/filezilla/
 
@@ -4692,7 +4692,7 @@ Look at the top area of the FileZilla main window and check the messages.
 
 ---
 
-# phpMyAdmin <a id="advanced-administration/upgrade/phpmyadmin" />
+# phpMyAdmin <a name="advanced-administration/upgrade/phpmyadmin" />
 
 Source: https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/
 
@@ -4716,7 +4716,7 @@ You can download phpMyAdmin yourself and install it from the main [phpMyAdmin pr
 
 ---
 
-# Upgrading WordPress <a id="advanced-administration/upgrade/upgrading" />
+# Upgrading WordPress <a name="advanced-administration/upgrade/upgrading" />
 
 Source: https://developer.wordpress.org/advanced-administration/upgrade/upgrading/
 
@@ -5100,7 +5100,7 @@ apply_filters( 'auto_core_update_send_email', true, $type, $core_update, $result
 
 ---
 
-# Migrating WordPress <a id="advanced-administration/upgrade/migrating" />
+# Migrating WordPress <a name="advanced-administration/upgrade/migrating" />
 
 Source: https://developer.wordpress.org/advanced-administration/upgrade/migrating/
 
@@ -5628,7 +5628,7 @@ Another option might be the [Internet Archive Wayback Machine](https://archive.o
 
 ---
 
-# WordPress Multisite / Network <a id="advanced-administration/multisite" />
+# WordPress Multisite / Network <a name="advanced-administration/multisite" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/
 
@@ -5646,7 +5646,7 @@ You can create a multisite that works with subdirectories (“path-based”) or 
 
 ---
 
-# Before You Create A Network <a id="advanced-administration/multisite/prepare-network" />
+# Before You Create A Network <a name="advanced-administration/multisite/prepare-network" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/prepare-network/
 
@@ -5773,7 +5773,7 @@ You *cannot choose **Sub-directory** Install* (for a path-based network) if your
 
 ---
 
-# Create A Network <a id="advanced-administration/multisite/create-network" />
+# Create A Network <a name="advanced-administration/multisite/create-network" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/create-network/
 
@@ -5895,7 +5895,7 @@ For help troubleshooting:
 
 ---
 
-# WordPress Multisite Domain Mapping <a id="advanced-administration/multisite/domain-mapping" />
+# WordPress Multisite Domain Mapping <a name="advanced-administration/multisite/domain-mapping" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/domain-mapping/
 
@@ -5940,7 +5940,7 @@ define( 'COOKIE_DOMAIN', $_SERVER['HTTP_HOST'] );
 
 ---
 
-# Multisite Network Administration <a id="advanced-administration/multisite/administration" />
+# Multisite Network Administration <a name="advanced-administration/multisite/administration" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/administration/
 
@@ -6171,7 +6171,7 @@ When you’ve created your WordPress Network for importing other sites, you need
 
 ---
 
-# Network Admin <a id="advanced-administration/multisite/admin" />
+# Network Admin <a name="advanced-administration/multisite/admin" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/admin/
 
@@ -6305,7 +6305,7 @@ If a version update to core has not happened, clicking this button won’t affec
 
 ---
 
-# Migrate WordPress sites into WordPress Multisite <a id="advanced-administration/multisite/sites-multisite" />
+# Migrate WordPress sites into WordPress Multisite <a name="advanced-administration/multisite/sites-multisite" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/sites-multisite/
 
@@ -6393,7 +6393,7 @@ Another option might be the [Internet Archive Wayback Machine](https://archive.o
 
 ---
 
-# Plugins <a id="advanced-administration/plugins" />
+# Plugins <a name="advanced-administration/plugins" />
 
 Source: https://developer.wordpress.org/advanced-administration/plugins/
 
@@ -6403,7 +6403,7 @@ Source: https://developer.wordpress.org/advanced-administration/plugins/
 
 ---
 
-# Must Use Plugins <a id="advanced-administration/plugins/mu-plugins" />
+# Must Use Plugins <a name="advanced-administration/plugins/mu-plugins" />
 
 Source: https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/
 
@@ -6452,7 +6452,7 @@ Thus “Must-Use” is effectively a [Backronym](https://en.wikipedia.org/wiki/B
 
 ---
 
-# Themes <a id="advanced-administration/themes" />
+# Themes <a name="advanced-administration/themes" />
 
 Source: https://developer.wordpress.org/advanced-administration/themes/
 
@@ -6531,7 +6531,7 @@ Proper security practices include keeping themes and WordPress core up-to-date, 
 
 ---
 
-# Security <a id="advanced-administration/security" />
+# Security <a name="advanced-administration/security" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/
 
@@ -6556,7 +6556,7 @@ Security is also about more than WordPress. It is also about making sure your ho
 
 ---
 
-# Your password <a id="advanced-administration/security/logging-in" />
+# Your password <a name="advanced-administration/security/logging-in" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/logging-in/
 
@@ -6571,7 +6571,7 @@ Creating an extension [of this post about resetting your password](https://wordp
 
 ---
 
-# Two Step Authentication <a id="advanced-administration/security/mfa" />
+# Two Step Authentication <a name="advanced-administration/security/mfa" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/mfa/
 
@@ -6643,7 +6643,7 @@ You can [search for two-step authentication plugins](https://wordpress.org/plugi
 
 ---
 
-# Backups <a id="advanced-administration/security/backup" />
+# Backups <a name="advanced-administration/security/backup" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/backup/
 
@@ -6840,7 +6840,7 @@ Various plugins exist to take automatic scheduled backups of your WordPress data
 
 ---
 
-# HTTPS <a id="advanced-administration/security/https" />
+# HTTPS <a name="advanced-administration/security/https" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/https/
 
@@ -7106,7 +7106,7 @@ The author assumes (but hasn’t checked) that if the user has stored cookies/to
 
 ---
 
-# Brute Force Attacks <a id="advanced-administration/security/brute-force" />
+# Brute Force Attacks <a name="advanced-administration/security/brute-force" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/brute-force/
 
@@ -7425,7 +7425,7 @@ Services like CloudFlare and Sucuri CloudProxy can also help mitigate these atta
 
 ---
 
-# Hardening WordPress <a id="advanced-administration/security/hardening" />
+# Hardening WordPress <a name="advanced-administration/security/hardening" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/hardening/
 
@@ -7828,7 +7828,7 @@ If the attacker tries to deface your site or add malware, you can also detect th
 
 ---
 
-# Performance / Optimization <a id="advanced-administration/performance" />
+# Performance / Optimization <a name="advanced-administration/performance" />
 
 Source: https://developer.wordpress.org/advanced-administration/performance/
 
@@ -7838,7 +7838,7 @@ Source: https://developer.wordpress.org/advanced-administration/performance/
 
 ---
 
-# Cache <a id="advanced-administration/performance/cache" />
+# Cache <a name="advanced-administration/performance/cache" />
 
 Source: https://developer.wordpress.org/advanced-administration/performance/cache/
 
@@ -7888,7 +7888,7 @@ Adding an opcode cache like [Opcache](https://www.php.net/manual/en/book.opcache
 
 ---
 
-# Optimization <a id="advanced-administration/performance/optimization" />
+# Optimization <a name="advanced-administration/performance/optimization" />
 
 Source: https://developer.wordpress.org/advanced-administration/performance/optimization/
 
@@ -8134,7 +8134,7 @@ If you use a Persistent Object Cache, options (whether autoloaded or not) load f
 
 ---
 
-# Debugging WordPress <a id="advanced-administration/debug" />
+# Debugging WordPress <a name="advanced-administration/debug" />
 
 Source: https://developer.wordpress.org/advanced-administration/debug/
 
@@ -8164,7 +8164,7 @@ When it comes to [debugging a WordPress site](#advanced-administration/debug/deb
 
 ---
 
-# Debugging in WordPress <a id="advanced-administration/debug/debug-wordpress" />
+# Debugging in WordPress <a name="advanced-administration/debug/debug-wordpress" />
 
 Source: https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
 
@@ -8334,7 +8334,7 @@ For example, [Debug Bar](https://wordpress.org/plugins/debug-bar/) adds a debug 
 
 ---
 
-# Debugging a WordPress Network <a id="advanced-administration/debug/debug-network" />
+# Debugging a WordPress Network <a name="advanced-administration/debug/debug-network" />
 
 Source: https://developer.wordpress.org/advanced-administration/debug/debug-network/
 
@@ -8466,7 +8466,7 @@ One or more database tables are unavailable. The database may need to be repaire
 
 ---
 
-# Using Your Browser to Diagnose JavaScript Errors <a id="advanced-administration/debug/debug-javascript" />
+# Using Your Browser to Diagnose JavaScript Errors <a name="advanced-administration/debug/debug-javascript" />
 
 Source: https://developer.wordpress.org/advanced-administration/debug/debug-javascript/
 
@@ -8538,7 +8538,7 @@ Please include the below information:
 
 ---
 
-# Test Driving WordPress <a id="advanced-administration/debug/test-driving" />
+# Test Driving WordPress <a name="advanced-administration/debug/test-driving" />
 
 Source: https://developer.wordpress.org/advanced-administration/debug/test-driving/
 
@@ -8829,7 +8829,7 @@ Coming soon – how to move your test site from your computer back live onto you
 
 ---
 
-# Resources for Building on WordPress <a id="advanced-administration/resources" />
+# Resources for Building on WordPress <a name="advanced-administration/resources" />
 
 Source: https://developer.wordpress.org/advanced-administration/resources/
 
@@ -8911,7 +8911,7 @@ Other than that, these are some solid resources for you to review:
 
 ---
 
-# File Editor Screen <a id="advanced-administration/plugins/editor-screen" />
+# File Editor Screen <a name="advanced-administration/plugins/editor-screen" />
 
 Source: https://developer.wordpress.org/advanced-administration/plugins/editor-screen/
 
@@ -8956,7 +8956,7 @@ Remember to click this button to save the changes you have made to the Plugin fi
 
 ---
 
-# Apache HTTPD / .htaccess <a id="advanced-administration/server/web-server/httpd" />
+# Apache HTTPD / .htaccess <a name="advanced-administration/server/web-server/httpd" />
 
 Source: https://developer.wordpress.org/advanced-administration/server/web-server/httpd/
 
@@ -9349,7 +9349,7 @@ ErrorDocument 403 https://www.example.com
 
 ---
 
-# Post Formats <a id="advanced-administration/wordpress/post-formats" />
+# Post Formats <a name="advanced-administration/wordpress/post-formats" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/post-formats/
 
@@ -9527,7 +9527,7 @@ You must also register the `post_format` taxonomy with [register\_taxonomy()](#r
 
 ---
 
-# Importing Content <a id="advanced-administration/wordpress/import" />
+# Importing Content <a name="advanced-administration/wordpress/import" />
 
 Source: https://developer.wordpress.org/advanced-administration/wordpress/import/
 
@@ -9724,7 +9724,7 @@ You will first be asked to map the authors in this export file to users on the b
 
 ---
 
-# Network Admin Settings Screen <a id="advanced-administration/multisite/admin/settings" />
+# Network Admin Settings Screen <a name="advanced-administration/multisite/admin/settings" />
 
 Source: https://developer.wordpress.org/advanced-administration/multisite/admin/settings/
 
@@ -9878,7 +9878,7 @@ On WordPress Multisite the default setting for plugins is disabled. This means y
 
 ---
 
-# Backing Up Your Database <a id="advanced-administration/security/backup/database" />
+# Backing Up Your Database <a name="advanced-administration/security/backup/database" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/backup/database/
 
@@ -10179,7 +10179,7 @@ user@linux:~/files/blog>
 
 ---
 
-# Backing Up Your WordPress Files <a id="advanced-administration/security/backup/files" />
+# Backing Up Your WordPress Files <a name="advanced-administration/security/backup/files" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/backup/files/
 
@@ -10237,7 +10237,7 @@ Normally, there would be no need to copy the WordPress core files, as you can re
 
 ---
 
-# FAQ Troubleshooting <a id="advanced-administration/resources/faq" />
+# FAQ Troubleshooting <a name="advanced-administration/resources/faq" />
 
 Source: https://developer.wordpress.org/advanced-administration/resources/faq/
 
@@ -10570,7 +10570,7 @@ See also:
 
 ---
 
-# Version Control <a id="advanced-administration/debug/version-control" />
+# Version Control <a name="advanced-administration/debug/version-control" />
 
 Source: https://developer.wordpress.org/advanced-administration/debug/version-control/
 
@@ -10585,7 +10585,7 @@ A lot of WordPress hosts offer version control but there are third-party service
 
 ---
 
-# Monitoring <a id="advanced-administration/security/monitoring" />
+# Monitoring <a name="advanced-administration/security/monitoring" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/monitoring/
 
@@ -10610,7 +10610,7 @@ It is best practice to use performance profiling tools, such as New Relic, AppDy
 
 ---
 
-# PHP Optimization <a id="advanced-administration/performance/php" />
+# PHP Optimization <a name="advanced-administration/performance/php" />
 
 Source: https://developer.wordpress.org/advanced-administration/performance/php/
 
@@ -10700,7 +10700,7 @@ The `wp-cron.php` script is responsible for causing certain tasks to be schedule
 
 ---
 
-# Display Errors <a id="advanced-administration/security/hardening/display-errors" />
+# Display Errors <a name="advanced-administration/security/hardening/display-errors" />
 
 Source: https://developer.wordpress.org/advanced-administration/security/hardening/display-errors/
 

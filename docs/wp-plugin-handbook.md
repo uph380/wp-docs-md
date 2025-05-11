@@ -1,4 +1,4 @@
-# Credits <a id="plugins/credits" />
+# Credits <a name="plugins/credits" />
 
 Source: https://developer.wordpress.org/plugins/credits/
 
@@ -44,7 +44,7 @@ List of credits brought over manually.
 
 ---
 
-# Plugin Basics <a id="plugins/plugin-basics" />
+# Plugin Basics <a name="plugins/plugin-basics" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/
 
@@ -126,7 +126,7 @@ Sometimes a plugin you create is just for your site. But many people like to sha
 
 ---
 
-# Header Requirements <a id="plugins/plugin-basics/header-requirements" />
+# Header Requirements <a name="plugins/plugin-basics/header-requirements" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/header-requirements/
 
@@ -217,7 +217,7 @@ When assigning a version number to your project, keep in mind that WordPress use
 
 ---
 
-# Including a Software License <a id="plugins/plugin-basics/including-a-software-license" />
+# Including a Software License <a name="plugins/plugin-basics/including-a-software-license" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/including-a-software-license/
 
@@ -246,7 +246,7 @@ along with {Plugin Name}. If not, see {URI to Plugin License}.
 
 ---
 
-# Activation / Deactivation Hooks <a id="plugins/plugin-basics/activation-deactivation-hooks" />
+# Activation / Deactivation Hooks <a name="plugins/plugin-basics/activation-deactivation-hooks" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/
 
@@ -333,7 +333,7 @@ For further information regarding activation and deactivation hooks, here are so
 
 ---
 
-# Uninstall Methods <a id="plugins/plugin-basics/uninstall-methods" />
+# Uninstall Methods <a name="plugins/plugin-basics/uninstall-methods" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/
 
@@ -401,7 +401,7 @@ In Multisite, looping through all blogs to delete options can be very resource i
 
 ---
 
-# Best Practices <a id="plugins/plugin-basics/best-practices" />
+# Best Practices <a name="plugins/plugin-basics/best-practices" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/best-practices/
 
@@ -592,7 +592,7 @@ Of course, you could take different aspects of these and others to create your o
 
 ---
 
-# Plugin Security <a id="plugins/security" />
+# Plugin Security <a name="plugins/security" />
 
 Source: https://developer.wordpress.org/plugins/security/
 
@@ -600,7 +600,7 @@ This content has been moved to the [Security page](#apis/security) in the Common
 
 ---
 
-# Hooks <a id="plugins/hooks" />
+# Hooks <a name="plugins/hooks" />
 
 Source: https://developer.wordpress.org/plugins/hooks/
 
@@ -635,7 +635,7 @@ The *something* referred to is the parameter list sent via the hook definition. 
 
 ---
 
-# Actions <a id="plugins/hooks/actions" />
+# Actions <a name="plugins/hooks/actions" />
 
 Source: https://developer.wordpress.org/plugins/hooks/actions/
 
@@ -737,7 +737,7 @@ It’s good practice to give your callback function parameters the same name as 
 
 ---
 
-# Filters <a id="plugins/hooks/filters" />
+# Filters <a name="plugins/hooks/filters" />
 
 Source: https://developer.wordpress.org/plugins/hooks/filters/
 
@@ -795,7 +795,7 @@ add_filter( 'body_class', 'wporg_css_body_class' );
 
 ---
 
-# Custom Hooks <a id="plugins/hooks/custom-hooks" />
+# Custom Hooks <a name="plugins/hooks/custom-hooks" />
 
 Source: https://developer.wordpress.org/plugins/hooks/custom-hooks/
 
@@ -871,7 +871,7 @@ Also note that since no priority is given, it will run at default priority 10. A
 
 ---
 
-# Advanced Topics <a id="plugins/hooks/advanced-topics" />
+# Advanced Topics <a name="plugins/hooks/advanced-topics" />
 
 Source: https://developer.wordpress.org/plugins/hooks/advanced-topics/
 
@@ -969,7 +969,7 @@ add_action( 'all', 'wporg_debug' );
 
 ---
 
-# Administration Menus <a id="plugins/administration-menus" />
+# Administration Menus <a name="plugins/administration-menus" />
 
 Source: https://developer.wordpress.org/plugins/administration-menus/
 
@@ -989,7 +989,7 @@ We recommend developers with a single option page to add it as Sub-menu to one o
 
 ---
 
-# Top-Level Menus <a id="plugins/administration-menus/top-level-menus" />
+# Top-Level Menus <a name="plugins/administration-menus/top-level-menus" />
 
 Source: https://developer.wordpress.org/plugins/administration-menus/top-level-menus/
 
@@ -1160,7 +1160,7 @@ You can program `wporg_options_page_submit` according to your needs, but keep in
 
 ---
 
-# Sub-Menus <a id="plugins/administration-menus/sub-menus" />
+# Sub-Menus <a name="plugins/administration-menus/sub-menus" />
 
 Source: https://developer.wordpress.org/plugins/administration-menus/sub-menus/
 
@@ -1283,7 +1283,7 @@ As always, do not forget to check whether the form is being submitted, do CSRF v
 
 ---
 
-# Shortcodes <a id="plugins/shortcodes" />
+# Shortcodes <a name="plugins/shortcodes" />
 
 Source: https://developer.wordpress.org/plugins/shortcodes/
 
@@ -1333,7 +1333,7 @@ See the complete example of using a [basic shortcode structure, taking care of s
 
 ---
 
-# Basic Shortcodes <a id="plugins/shortcodes/basic-shortcodes" />
+# Basic Shortcodes <a name="plugins/shortcodes/basic-shortcodes" />
 
 Source: https://developer.wordpress.org/plugins/shortcodes/basic-shortcodes/
 
@@ -1377,7 +1377,7 @@ To check whether a shortcode has been registered use `shortcode_exists()`.
 
 ---
 
-# Enclosing Shortcodes <a id="plugins/shortcodes/enclosing-shortcodes" />
+# Enclosing Shortcodes <a name="plugins/shortcodes/enclosing-shortcodes" />
 
 Source: https://developer.wordpress.org/plugins/shortcodes/enclosing-shortcodes/
 
@@ -1453,7 +1453,7 @@ Instead of being treated as two shortcodes separated by the text “`non-enclose
 
 ---
 
-# Shortcodes with Parameters <a id="plugins/shortcodes/shortcodes-with-parameters" />
+# Shortcodes with Parameters <a name="plugins/shortcodes/shortcodes-with-parameters" />
 
 Source: https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/
 
@@ -1551,7 +1551,7 @@ add_action( 'init', 'wporg_shortcodes_init' );
 
 ---
 
-# TinyMCE Enhanced Shortcodes <a id="plugins/shortcodes/tinymce-enhanced-shortcodes" />
+# TinyMCE Enhanced Shortcodes <a name="plugins/shortcodes/tinymce-enhanced-shortcodes" />
 
 Source: https://developer.wordpress.org/plugins/shortcodes/tinymce-enhanced-shortcodes/
 
@@ -1593,7 +1593,7 @@ The `[video]` shortcode is very similar to the `[audio]` shortcode, it simply re
 
 ---
 
-# Settings <a id="plugins/settings" />
+# Settings <a name="plugins/settings" />
 
 Source: https://developer.wordpress.org/plugins/settings/
 
@@ -1609,7 +1609,7 @@ See the complete example of [building a custom settings page](#plugins/settings/
 
 ---
 
-# Using Settings API <a id="plugins/settings/using-settings-api" />
+# Using Settings API <a name="plugins/settings/using-settings-api" />
 
 Source: https://developer.wordpress.org/plugins/settings/using-settings-api/
 
@@ -1726,7 +1726,7 @@ $setting = get_option('wporg_setting_name');
 
 ---
 
-# Options API <a id="plugins/settings/options-api" />
+# Options API <a name="plugins/settings/options-api" />
 
 Source: https://developer.wordpress.org/plugins/settings/options-api/
 
@@ -1780,7 +1780,7 @@ Accessing data as individual options may result in many individual database tran
 
 ---
 
-# Settings API <a id="plugins/settings/settings-api" />
+# Settings API <a name="plugins/settings/settings-api" />
 
 Source: https://developer.wordpress.org/plugins/settings/settings-api/
 
@@ -1825,7 +1825,7 @@ Of course the most immediate benefit is that the WordPress API does a lot of wor
 
 ---
 
-# Custom Settings Page <a id="plugins/settings/custom-settings-page" />
+# Custom Settings Page <a name="plugins/settings/custom-settings-page" />
 
 Source: https://developer.wordpress.org/plugins/settings/custom-settings-page/
 
@@ -1990,7 +1990,7 @@ function wporg_options_page_html() {
 
 ---
 
-# Metadata <a id="plugins/metadata" />
+# Metadata <a name="plugins/metadata" />
 
 Source: https://developer.wordpress.org/plugins/metadata/
 
@@ -2002,7 +2002,7 @@ This chapter will discuss [managing post metadata](#plugins/metadata/managing-po
 
 ---
 
-# Managing Post Metadata <a id="plugins/metadata/managing-post-metadata" />
+# Managing Post Metadata <a name="plugins/metadata/managing-post-metadata" />
 
 Source: https://developer.wordpress.org/plugins/metadata/managing-post-metadata/
 
@@ -2075,7 +2075,7 @@ In addition, if the `meta_value` is an array, it will not be displayed on the pa
 
 ---
 
-# Custom Meta Boxes <a id="plugins/metadata/custom-meta-boxes" />
+# Custom Meta Boxes <a name="plugins/metadata/custom-meta-boxes" />
 
 Source: https://developer.wordpress.org/plugins/metadata/custom-meta-boxes/
 
@@ -2405,7 +2405,7 @@ See [Handbook’s AJAX Chapter](#plugins/javascript/ajax) and the [Codex](https:
 
 ---
 
-# Rendering Post Metadata <a id="plugins/metadata/rendering-post-metadata" />
+# Rendering Post Metadata <a name="plugins/metadata/rendering-post-metadata" />
 
 Source: https://developer.wordpress.org/plugins/metadata/rendering-post-metadata/
 
@@ -2417,7 +2417,7 @@ Here is a non exhaustive list of functions and [template tags](#themes/basics/te
 
 ---
 
-# Custom Post Types <a id="plugins/post-types" />
+# Custom Post Types <a name="plugins/post-types" />
 
 Source: https://developer.wordpress.org/plugins/post-types/
 
@@ -2427,7 +2427,7 @@ This chapter will show you how to [register Custom Post Types](#plugins/post-typ
 
 ---
 
-# Registering Custom Post Types <a id="plugins/post-types/registering-custom-post-types" />
+# Registering Custom Post Types <a name="plugins/post-types/registering-custom-post-types" />
 
 Source: https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/
 
@@ -2528,7 +2528,7 @@ Unlike the custom post type identifiers, the duplicate slug problem can be solve
 
 ---
 
-# Working with Custom Post Types <a id="plugins/post-types/working-with-custom-post-types" />
+# Working with Custom Post Types <a name="plugins/post-types/working-with-custom-post-types" />
 
 Source: https://developer.wordpress.org/plugins/post-types/working-with-custom-post-types/
 
@@ -2589,7 +2589,7 @@ add_action('pre_get_posts', 'wporg_add_custom_post_types');
 
 ---
 
-# Working with Custom Taxonomies <a id="plugins/taxonomies/working-with-custom-taxonomies" />
+# Working with Custom Taxonomies <a name="plugins/taxonomies/working-with-custom-taxonomies" />
 
 Source: https://developer.wordpress.org/plugins/taxonomies/working-with-custom-taxonomies/
 
@@ -2716,7 +2716,7 @@ Here are some examples:
 
 ---
 
-# Users <a id="plugins/users" />
+# Users <a name="plugins/users" />
 
 Source: https://developer.wordpress.org/plugins/users/
 
@@ -2738,7 +2738,7 @@ WordPress adheres to the principal of least privileges, the practice of giving a
 
 ---
 
-# Working with Users <a id="plugins/users/working-with-users" />
+# Working with Users <a name="plugins/users/working-with-users" />
 
 Source: https://developer.wordpress.org/plugins/users/working-with-users/
 
@@ -2858,7 +2858,7 @@ Please refer to the Function Reference about `wp_delete_user()` for full explana
 
 ---
 
-# Working with User Metadata <a id="plugins/users/working-with-user-metadata" />
+# Working with User Metadata <a name="plugins/users/working-with-user-metadata" />
 
 Source: https://developer.wordpress.org/plugins/users/working-with-user-metadata/
 
@@ -3042,7 +3042,7 @@ You can render User Metadata anywhere in your plugin or theme.
 
 ---
 
-# Roles and Capabilities <a id="plugins/users/roles-and-capabilities" />
+# Roles and Capabilities <a name="plugins/users/roles-and-capabilities" />
 
 Source: https://developer.wordpress.org/plugins/users/roles-and-capabilities/
 
@@ -3205,7 +3205,7 @@ Codex Reference for [User Roles and Capabilities](https://wordpress.org/support/
 
 ---
 
-# HTTP API <a id="plugins/http-api" />
+# HTTP API <a name="plugins/http-api" />
 
 Source: https://developer.wordpress.org/plugins/http-api/
 
@@ -3574,7 +3574,7 @@ More information on transients can be found [here](#apis/handbook/transients).
 
 ---
 
-# JavaScript <a id="plugins/javascript" />
+# JavaScript <a name="plugins/javascript" />
 
 Source: https://developer.wordpress.org/plugins/javascript/
 
@@ -3582,7 +3582,7 @@ JavaScript is an important component in many WordPress plugins. WordPress comes 
 
 ---
 
-# Server Side PHP and Enqueuing <a id="plugins/javascript/enqueuing" />
+# Server Side PHP and Enqueuing <a name="plugins/javascript/enqueuing" />
 
 Source: https://developer.wordpress.org/plugins/javascript/enqueuing/
 
@@ -3854,7 +3854,7 @@ function my_ajax_handler() {
 
 ---
 
-# Cron <a id="plugins/cron" />
+# Cron <a name="plugins/cron" />
 
 Source: https://developer.wordpress.org/plugins/cron/
 
@@ -3876,7 +3876,7 @@ Scheduling errors could occur if you schedule a task for 2:00PM and no page load
 
 ---
 
-# Understanding WP-Cron Scheduling <a id="plugins/cron/understanding-wp-cron-scheduling" />
+# Understanding WP-Cron Scheduling <a name="plugins/cron/understanding-wp-cron-scheduling" />
 
 Source: https://developer.wordpress.org/plugins/cron/understanding-wp-cron-scheduling/
 
@@ -3913,7 +3913,7 @@ This filter function creates a new interval that will allow us to run a cron tas
 
 ---
 
-# Scheduling WP Cron Events <a id="plugins/cron/scheduling-wp-cron-events" />
+# Scheduling WP Cron Events <a name="plugins/cron/scheduling-wp-cron-events" />
 
 Source: https://developer.wordpress.org/plugins/cron/scheduling-wp-cron-events/
 
@@ -3998,7 +3998,7 @@ You can read more about activation and deactivation hooks [here](#plugins/plugin
 
 ---
 
-# Hooking WP-Cron Into the System Task Scheduler <a id="plugins/cron/hooking-wp-cron-into-the-system-task-scheduler" />
+# Hooking WP-Cron Into the System Task Scheduler <a name="plugins/cron/hooking-wp-cron-into-the-system-task-scheduler" />
 
 Source: https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/
 
@@ -4055,7 +4055,7 @@ A daily call to your site’s WordPress Cron that triggers at midnight every nig
 
 ---
 
-# Testing of WP-Cron <a id="plugins/cron/simple-testing" />
+# Testing of WP-Cron <a name="plugins/cron/simple-testing" />
 
 Source: https://developer.wordpress.org/plugins/cron/simple-testing/
 
@@ -4077,7 +4077,7 @@ Cron jobs can be tested using [WP-CLI](https://wp-cli.org/). It offers commands 
 
 ---
 
-# Internationalization <a id="plugins/internationalization" />
+# Internationalization <a name="plugins/internationalization" />
 
 Source: https://developer.wordpress.org/plugins/internationalization/
 
@@ -4109,7 +4109,7 @@ Read further on “[How to Internationalize your Plugin](#plugins/internationali
 
 ---
 
-# How to Internationalize Your Plugin <a id="plugins/internationalization/how-to-internationalize-your-plugin" />
+# How to Internationalize Your Plugin <a name="plugins/internationalization/how-to-internationalize-your-plugin" />
 
 Source: https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/
 
@@ -4494,7 +4494,7 @@ Also refer [Plugin/Theme Authors Guide in Polyglots Handbooks](https://make.word
 
 ---
 
-# Localization <a id="plugins/internationalization/localization" />
+# Localization <a name="plugins/internationalization/localization" />
 
 Source: https://developer.wordpress.org/plugins/internationalization/localization/
 
@@ -4673,7 +4673,7 @@ You can change the language in the “General Settings”. If you do not see thi
 
 ---
 
-# The WordPress.org Plugin Directory <a id="plugins/wordpress-org" />
+# The WordPress.org Plugin Directory <a name="plugins/wordpress-org" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/
 
@@ -4721,7 +4721,7 @@ If you’re just getting started, it helps to know how to submit your plugin, us
 
 ---
 
-# Planning, Submitting, and Maintaining Plugins <a id="plugins/wordpress-org/planning-submitting-and-maintaining-plugins" />
+# Planning, Submitting, and Maintaining Plugins <a name="plugins/wordpress-org/planning-submitting-and-maintaining-plugins" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/planning-submitting-and-maintaining-plugins/
 
@@ -4789,7 +4789,7 @@ Like in other parts of life, the best things come from patience and hard work.
 
 ---
 
-# Developer Tools <a id="plugins/developer-tools" />
+# Developer Tools <a name="plugins/developer-tools" />
 
 Source: https://developer.wordpress.org/plugins/developer-tools/
 
@@ -4797,7 +4797,7 @@ There are a wide variety of tools available to help with plugin development. Som
 
 ---
 
-# Debug Bar and Add-Ons <a id="plugins/developer-tools/debug-bar-and-add-ons" />
+# Debug Bar and Add-Ons <a name="plugins/developer-tools/debug-bar-and-add-ons" />
 
 Source: https://developer.wordpress.org/plugins/developer-tools/debug-bar-and-add-ons/
 
@@ -4909,7 +4909,7 @@ Optionally, you can add `?dbrr_full=1` to your URL to get additional information
 
 ---
 
-# Helper Plugins <a id="plugins/developer-tools/helper-plugins" />
+# Helper Plugins <a name="plugins/developer-tools/helper-plugins" />
 
 Source: https://developer.wordpress.org/plugins/developer-tools/helper-plugins/
 
@@ -4929,7 +4929,7 @@ Query Monitor is a debugging plugin for anyone developing with WordPress. You ca
 
 ---
 
-# Checking User Capabilities <a id="plugins/security/checking-user-capabilities" />
+# Checking User Capabilities <a name="plugins/security/checking-user-capabilities" />
 
 Source: https://developer.wordpress.org/plugins/security/checking-user-capabilities/
 
@@ -5109,7 +5109,7 @@ function wporg_add_delete_post_ability() {
 
 ---
 
-# Data Validation <a id="plugins/security/data-validation" />
+# Data Validation <a name="plugins/security/data-validation" />
 
 Source: https://developer.wordpress.org/plugins/security/data-validation/
 
@@ -5117,7 +5117,7 @@ This content has been moved to the [Data Validation page](#apis/security/data-va
 
 ---
 
-# Securing (sanitizing) Input <a id="plugins/security/securing-input" />
+# Securing (sanitizing) Input <a name="plugins/security/securing-input" />
 
 Source: https://developer.wordpress.org/plugins/security/securing-input/
 
@@ -5125,7 +5125,7 @@ This content has been moved to the [Sanitizing Data](#apis/security/sanitizing) 
 
 ---
 
-# Nonces <a id="plugins/security/nonces" />
+# Nonces <a name="plugins/security/nonces" />
 
 Source: https://developer.wordpress.org/plugins/security/nonces/
 
@@ -5133,7 +5133,7 @@ This content has been moved to the [Nonces page](#apis/security/nonces) in the C
 
 ---
 
-# Securing (escaping) Output <a id="plugins/security/securing-output" />
+# Securing (escaping) Output <a name="plugins/security/securing-output" />
 
 Source: https://developer.wordpress.org/plugins/security/securing-output/
 
@@ -5141,7 +5141,7 @@ This content has been moved to the [Escaping Data](#apis/security/escaping) page
 
 ---
 
-# AJAX <a id="plugins/javascript/ajax" />
+# AJAX <a name="plugins/javascript/ajax" />
 
 Source: https://developer.wordpress.org/plugins/javascript/ajax/
 
@@ -5291,7 +5291,7 @@ This script can either be output into a block on the web page or contained in it
 
 ---
 
-# jQuery <a id="plugins/javascript/jquery" />
+# jQuery <a name="plugins/javascript/jquery" />
 
 Source: https://developer.wordpress.org/plugins/javascript/jquery/
 
@@ -5344,7 +5344,7 @@ This code will “do stuff” when any element of the “pref” class changes.
 
 ---
 
-# Summary <a id="plugins/javascript/summary" />
+# Summary <a name="plugins/javascript/summary" />
 
 Source: https://developer.wordpress.org/plugins/javascript/summary/
 
@@ -5429,7 +5429,7 @@ And after storing the preference, the resulting post count is added to the selec
 
 ---
 
-# Block Specific Plugin Guidelines <a id="plugins/wordpress-org/block-specific-plugin-guidelines" />
+# Block Specific Plugin Guidelines <a name="plugins/wordpress-org/block-specific-plugin-guidelines" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/block-specific-plugin-guidelines/
 
@@ -5554,7 +5554,7 @@ Block Plugins must not include code that displays alerts, dashboard notification
 
 ---
 
-# Add Your Plugin to the Block Directory <a id="plugins/wordpress-org/add-your-plugin-to-the-block-directory" />
+# Add Your Plugin to the Block Directory <a name="plugins/wordpress-org/add-your-plugin-to-the-block-directory" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/add-your-plugin-to-the-block-directory/
 
@@ -5591,7 +5591,7 @@ Before you email, please make certain your plugin is compatible with the latest 
 
 ---
 
-# Release Confirmation Emails <a id="plugins/wordpress-org/release-confirmation-emails" />
+# Release Confirmation Emails <a name="plugins/wordpress-org/release-confirmation-emails" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/release-confirmation-emails/
 
@@ -5620,7 +5620,7 @@ If a group would like to require multiple committers to approve a release, pleas
 
 ---
 
-# Transferring Your Plugin to a New Owner <a id="plugins/wordpress-org/transferring-your-plugin-to-a-new-owner" />
+# Transferring Your Plugin to a New Owner <a name="plugins/wordpress-org/transferring-your-plugin-to-a-new-owner" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/transferring-your-plugin-to-a-new-owner/
 
@@ -5653,7 +5653,7 @@ Most requests are processed without issue, however should a plugin be determined
 
 ---
 
-# Preventing WordPress from Updating Your External Plugin <a id="plugins/wordpress-org/preventing-wordpress-from-updating-your-external-plugin" />
+# Preventing WordPress from Updating Your External Plugin <a name="plugins/wordpress-org/preventing-wordpress-from-updating-your-external-plugin" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/preventing-wordpress-from-updating-your-external-plugin/
 
@@ -5724,7 +5724,7 @@ What that does is check if the update request is from the WordPress.org api, and
 
 ---
 
-# Term Splitting (WordPress 4.2) <a id="plugins/taxonomies/split-terms-wp-4-2" />
+# Term Splitting (WordPress 4.2) <a name="plugins/taxonomies/split-terms-wp-4-2" />
 
 Source: https://developer.wordpress.org/plugins/taxonomies/split-terms-wp-4-2/
 
@@ -5861,7 +5861,7 @@ If you need to retrieve a list of all split terms associated with an old Term ID
 
 ---
 
-# Taxonomies <a id="plugins/taxonomies" />
+# Taxonomies <a name="plugins/taxonomies" />
 
 Source: https://developer.wordpress.org/plugins/taxonomies/
 
@@ -5880,7 +5880,7 @@ WordPress 3.4 and earlier had a Taxonomy named “Links” which was deprecated 
 
 ---
 
-# Creating Tables with Plugins <a id="plugins/creating-tables-with-plugins" />
+# Creating Tables with Plugins <a name="plugins/creating-tables-with-plugins" />
 
 Source: https://developer.wordpress.org/plugins/creating-tables-with-plugins/
 
@@ -6105,7 +6105,7 @@ For further reading on plugin development, check out [Plugin Handbook](#plugins)
 
 ---
 
-# Detailed Plugin Guidelines <a id="plugins/wordpress-org/detailed-plugin-guidelines" />
+# Detailed Plugin Guidelines <a name="plugins/wordpress-org/detailed-plugin-guidelines" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/
 
@@ -6297,7 +6297,7 @@ In return, we promise to use those rights sparingly and with as much respect as 
 
 ---
 
-# Using Subversion <a id="plugins/wordpress-org/how-to-use-subversion" />
+# Using Subversion <a name="plugins/wordpress-org/how-to-use-subversion" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/
 
@@ -6545,7 +6545,7 @@ You also should never upload zip files. Like most code repository systems, SVN e
 
 ---
 
-# Previews and Blueprints <a id="plugins/wordpress-org/previews-and-blueprints" />
+# Previews and Blueprints <a name="plugins/wordpress-org/previews-and-blueprints" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/previews-and-blueprints/
 
@@ -6691,7 +6691,7 @@ You must commit your blueprint.json file to your plugin’s assets folder, named
 
 ---
 
-# Plugin Developer FAQ <a id="plugins/wordpress-org/plugin-developer-faq" />
+# Plugin Developer FAQ <a name="plugins/wordpress-org/plugin-developer-faq" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/
 
@@ -7288,7 +7288,7 @@ When a developer is determined to have died, they are removed from their own plu
 
 ---
 
-# Internationalization Security <a id="plugins/internationalization/security" />
+# Internationalization Security <a name="plugins/internationalization/security" />
 
 Source: https://developer.wordpress.org/plugins/internationalization/security/
 
@@ -7353,7 +7353,7 @@ msgfmt -cv -o /path/to/output.mo /path/to/input.po
 
 ---
 
-# Common issues <a id="plugins/wordpress-org/common-issues" />
+# Common issues <a name="plugins/wordpress-org/common-issues" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/common-issues/
 
@@ -7947,7 +7947,7 @@ As one of the strengths of open source is the ability to review, observe, and ad
 
 ---
 
-# How Your Plugin Assets Work <a id="plugins/wordpress-org/plugin-assets" />
+# How Your Plugin Assets Work <a name="plugins/wordpress-org/plugin-assets" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/
 
@@ -8050,7 +8050,7 @@ That’ll apply to only new files though. Fixing already-committed files will re
 
 ---
 
-# Plugin Readmes <a id="plugins/wordpress-org/how-your-readme-txt-works" />
+# Plugin Readmes <a name="plugins/wordpress-org/how-your-readme-txt-works" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/
 
@@ -8174,7 +8174,7 @@ Similarly, if you need in-depth documentation with inline images and so on, dire
 
 ---
 
-# Take Over an Existing Plugin <a id="plugins/wordpress-org/take-over-an-existing-plugin" />
+# Take Over an Existing Plugin <a name="plugins/wordpress-org/take-over-an-existing-plugin" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/take-over-an-existing-plugin/
 
@@ -8290,7 +8290,7 @@ There are rare cases where the plugin has already been given to new owners, but 
 
 ---
 
-# Reporting Plugin Security Issues <a id="plugins/wordpress-org/plugin-security/reporting-plugin-security-issues" />
+# Reporting Plugin Security Issues <a name="plugins/wordpress-org/plugin-security/reporting-plugin-security-issues" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/
 
@@ -8313,7 +8313,7 @@ If you’ve already posted the vulnerability in public and provided a link to yo
 
 ---
 
-# Managing Your Plugin&#8217;s Security <a id="plugins/wordpress-org/plugin-security" />
+# Managing Your Plugin&#8217;s Security <a name="plugins/wordpress-org/plugin-security" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/plugin-security/
 
@@ -8392,7 +8392,7 @@ This comes up when people are breaking other guidelines like including their own
 
 ---
 
-# REST API <a id="plugins/rest-api" />
+# REST API <a name="plugins/rest-api" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/
 
@@ -8410,7 +8410,7 @@ In this chapter of the Plugin Handbook, we will explore how the API works and ho
 
 ---
 
-# REST API Overview <a id="plugins/rest-api/rest-api-overview" />
+# REST API Overview <a name="plugins/rest-api/rest-api-overview" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/rest-api-overview/
 
@@ -8462,7 +8462,7 @@ Let’s dive into how to register routes and endpoints for the REST API.
 
 ---
 
-# Routes &amp; Endpoints <a id="plugins/rest-api/routes-endpoints" />
+# Routes &amp; Endpoints <a name="plugins/rest-api/routes-endpoints" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/routes-endpoints/
 
@@ -9001,7 +9001,7 @@ We have covered the basics of registering endpoints for the WordPress REST API. 
 
 ---
 
-# Requests <a id="plugins/rest-api/requests" />
+# Requests <a name="plugins/rest-api/requests" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/requests/
 
@@ -9731,7 +9731,7 @@ That is quite a decent chunk of code that covers a number of topics, but everyth
 
 ---
 
-# Responses <a id="plugins/rest-api/responses-2" />
+# Responses <a name="plugins/rest-api/responses-2" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/responses-2/
 
@@ -9945,7 +9945,7 @@ Smart use of embedding and links make the WordPress REST API incredibly flexible
 
 ---
 
-# Schema <a id="plugins/rest-api/schema" />
+# Schema <a name="plugins/rest-api/schema" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/schema/
 
@@ -10369,7 +10369,7 @@ Schema can seem silly at points and possibly like unnecessary work, but if you w
 
 ---
 
-# Controller Classes <a id="plugins/rest-api/controller-classes" />
+# Controller Classes <a name="plugins/rest-api/controller-classes" />
 
 Source: https://developer.wordpress.org/plugins/rest-api/controller-classes/
 
@@ -10598,7 +10598,7 @@ Currently, “core endpoints” supporting posts, post types, post statuses, rev
 
 ---
 
-# Special User Roles and Capabilities <a id="plugins/wordpress-org/special-user-roles-capabilities" />
+# Special User Roles and Capabilities <a name="plugins/wordpress-org/special-user-roles-capabilities" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/special-user-roles-capabilities/
 
@@ -10654,7 +10654,7 @@ While it is common to add people who helped with a plugin’s conceptualization 
 
 ---
 
-# Heartbeat API <a id="plugins/javascript/heartbeat-api" />
+# Heartbeat API <a name="plugins/javascript/heartbeat-api" />
 
 Source: https://developer.wordpress.org/plugins/javascript/heartbeat-api/
 
@@ -10737,7 +10737,7 @@ Not every feature will need all three of these steps. For example, if you don’
 
 ---
 
-# Alerts and Warnings <a id="plugins/wordpress-org/alerts-and-warnings" />
+# Alerts and Warnings <a name="plugins/wordpress-org/alerts-and-warnings" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/alerts-and-warnings/
 
@@ -10789,7 +10789,7 @@ Developers are emailed before every major release of WordPress and asked to upda
 
 ---
 
-# Compliance Disclaimers <a id="plugins/wordpress-org/compliance-disclaimers" />
+# Compliance Disclaimers <a name="plugins/wordpress-org/compliance-disclaimers" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/compliance-disclaimers/
 
@@ -10845,7 +10845,7 @@ Same way you would anything. Email `plugins@wordpress.org` with a link to their 
 
 ---
 
-# Privacy <a id="plugins/privacy" />
+# Privacy <a name="plugins/privacy" />
 
 Source: https://developer.wordpress.org/plugins/privacy/
 
@@ -10919,7 +10919,7 @@ To help your plugin be ready, we recommend going through the following list of q
 
 ---
 
-# Suggesting text for the site privacy policy <a id="plugins/privacy/suggesting-text-for-the-site-privacy-policy" />
+# Suggesting text for the site privacy policy <a name="plugins/privacy/suggesting-text-for-the-site-privacy-policy" />
 
 Source: https://developer.wordpress.org/plugins/privacy/suggesting-text-for-the-site-privacy-policy/
 
@@ -10975,7 +10975,7 @@ add_action( 'admin_init', 'wporg_add_privacy_policy_content' );
 
 ---
 
-# Adding the Personal Data Exporter to Your Plugin <a id="plugins/privacy/adding-the-personal-data-exporter-to-your-plugin" />
+# Adding the Personal Data Exporter to Your Plugin <a name="plugins/privacy/adding-the-personal-data-exporter-to-your-plugin" />
 
 Source: https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-exporter-to-your-plugin/
 
@@ -11106,7 +11106,7 @@ And that’s all there is to it! Your plugin will now provide data for the expor
 
 ---
 
-# Adding the Personal Data Eraser to Your Plugin <a id="plugins/privacy/adding-the-personal-data-eraser-to-your-plugin" />
+# Adding the Personal Data Eraser to Your Plugin <a name="plugins/privacy/adding-the-personal-data-eraser-to-your-plugin" />
 
 Source: https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/
 
@@ -11209,7 +11209,7 @@ And that’s all there is to it! Your plugin will now clean up its personal data
 
 ---
 
-# Privacy Related Options, Hooks and Capabilities <a id="plugins/privacy/privacy-related-options-hooks-and-capabilities" />
+# Privacy Related Options, Hooks and Capabilities <a name="plugins/privacy/privacy-related-options-hooks-and-capabilities" />
 
 Source: https://developer.wordpress.org/plugins/privacy/privacy-related-options-hooks-and-capabilities/
 
@@ -11313,7 +11313,7 @@ Access to the privacy tools is controlled by a few new capabilities. Administrat
 
 ---
 
-# Using the Forums <a id="plugins/wordpress-org/using-the-forums" />
+# Using the Forums <a name="plugins/wordpress-org/using-the-forums" />
 
 Source: https://developer.wordpress.org/plugins/wordpress-org/using-the-forums/
 
@@ -11379,7 +11379,7 @@ Related to that, don’t share accounts. It causes confusion, drama, and makes i
 
 ---
 
-# Determining Plugin and Content Directories <a id="plugins/plugin-basics/determining-plugin-and-content-directories" />
+# Determining Plugin and Content Directories <a name="plugins/plugin-basics/determining-plugin-and-content-directories" />
 
 Source: https://developer.wordpress.org/plugins/plugin-basics/determining-plugin-and-content-directories/
 
@@ -11487,7 +11487,7 @@ UPLOADS // (If set, uploads folder, relative to ABSPATH) (for e.g.: /wp-content/
 
 ---
 
-# Plugin Handbook <a id="plugins" />
+# Plugin Handbook <a name="plugins" />
 
 Source: https://developer.wordpress.org/plugins/
 
@@ -11511,7 +11511,7 @@ The WordPress Plugin Developer Handbook is created by the WordPress community, f
 
 ---
 
-# Introduction to Plugin Development <a id="plugins/intro" />
+# Introduction to Plugin Development <a name="plugins/intro" />
 
 Source: https://developer.wordpress.org/plugins/intro/
 
@@ -11529,7 +11529,7 @@ Plugins allow you to greatly extend the functionality of WordPress without touch
 
 ---
 
-# What is a Plugin? <a id="plugins/intro/what-is-a-plugin" />
+# What is a Plugin? <a name="plugins/intro/what-is-a-plugin" />
 
 Source: https://developer.wordpress.org/plugins/intro/what-is-a-plugin/
 

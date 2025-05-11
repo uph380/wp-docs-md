@@ -1,4 +1,4 @@
-# Credits <a id="themes/credits" />
+# Credits <a name="themes/credits" />
 
 Source: https://developer.wordpress.org/themes/credits/
 
@@ -98,7 +98,7 @@ Source: https://developer.wordpress.org/themes/credits/
 
 ---
 
-# Page Templates <a id="themes/template-files-section/page-template-files" />
+# Page Templates <a name="themes/template-files-section/page-template-files" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/page-template-files/
 
@@ -309,7 +309,7 @@ These built-in WordPress functions and methods can help you work with page templ
 
 ---
 
-# Template Hierarchy <a id="themes/basics/template-hierarchy" />
+# Template Hierarchy <a name="themes/basics/template-hierarchy" />
 
 Source: https://developer.wordpress.org/themes/basics/template-hierarchy/
 
@@ -585,7 +585,7 @@ Changelog:
 
 ---
 
-# Template Tags <a id="themes/basics/template-tags" />
+# Template Tags <a name="themes/basics/template-tags" />
 
 Source: https://developer.wordpress.org/themes/basics/template-tags/
 
@@ -706,7 +706,7 @@ These are functions that typically do not require the global post object.
 
 ---
 
-# The Loop <a id="themes/basics/the-loop" />
+# The Loop <a name="themes/basics/the-loop" />
 
 Source: https://developer.wordpress.org/themes/basics/the-loop/
 
@@ -1050,7 +1050,7 @@ To properly use this function, place the following code after any loops with `<a
 
 ---
 
-# Theme Functions <a id="themes/basics/theme-functions" />
+# Theme Functions <a name="themes/basics/theme-functions" />
 
 Source: https://developer.wordpress.org/themes/basics/theme-functions/
 
@@ -1334,7 +1334,7 @@ add_action( 'after_setup_theme', 'myfirsttheme_setup' );
 
 ---
 
-# Linking Theme Files &amp; Directories <a id="themes/basics/linking-theme-files-directories" />
+# Linking Theme Files &amp; Directories <a name="themes/basics/linking-theme-files-directories" />
 
 Source: https://developer.wordpress.org/themes/basics/linking-theme-files-directories/
 
@@ -1411,7 +1411,7 @@ Regardless of your permalink settings, you can link to a page or post dynamicall
 
 ---
 
-# Including CSS &amp; JavaScript (Archived) <a id="themes/basics/including-css-javascript" />
+# Including CSS &amp; JavaScript (Archived) <a name="themes/basics/including-css-javascript" />
 
 Source: https://developer.wordpress.org/themes/basics/including-css-javascript/
 
@@ -1626,7 +1626,7 @@ Changelog:
 
 ---
 
-# Conditional Tags <a id="themes/basics/conditional-tags" />
+# Conditional Tags <a name="themes/basics/conditional-tags" />
 
 Source: https://developer.wordpress.org/themes/basics/conditional-tags/
 
@@ -2488,7 +2488,7 @@ if ( is_page( '2' ) ) {
 
 ---
 
-# Custom Headers <a id="themes/functionality/custom-headers" />
+# Custom Headers <a name="themes/functionality/custom-headers" />
 
 Source: https://developer.wordpress.org/themes/functionality/custom-headers/
 
@@ -2669,7 +2669,7 @@ endif;
 
 ---
 
-# Sidebars <a id="themes/functionality/sidebars" />
+# Sidebars <a name="themes/functionality/sidebars" />
 
 Source: https://developer.wordpress.org/themes/functionality/sidebars/
 
@@ -2862,7 +2862,7 @@ You may want your sidebar to be populated with some widgets by default. For exam
 
 ---
 
-# Widgets <a id="themes/functionality/widgets" />
+# Widgets <a name="themes/functionality/widgets" />
 
 Source: https://developer.wordpress.org/themes/functionality/widgets/
 
@@ -3185,7 +3185,7 @@ You may want to use this approach if you need to use a widget in a specific area
 
 ---
 
-# Navigation Menus <a id="themes/functionality/navigation-menus" />
+# Navigation Menus <a name="themes/functionality/navigation-menus" />
 
 Source: https://developer.wordpress.org/themes/functionality/navigation-menus/
 
@@ -3280,7 +3280,7 @@ wp_nav_menu(
 
 ---
 
-# Post Types <a id="themes/basics/post-types" />
+# Post Types <a name="themes/basics/post-types" />
 
 Source: https://developer.wordpress.org/themes/basics/post-types/
 
@@ -3383,7 +3383,7 @@ While you generally won’t develop Custom Post Types in your theme, you may wan
 
 ---
 
-# Taxonomy Templates <a id="themes/template-files-section/taxonomy-templates" />
+# Taxonomy Templates <a name="themes/template-files-section/taxonomy-templates" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/
 
@@ -3530,7 +3530,7 @@ And if your theme is displaying excerpts but you want to display the full conten
 
 ---
 
-# Categories, Tags, &amp; Custom Taxonomies <a id="themes/basics/categories-tags-custom-taxonomies" />
+# Categories, Tags, &amp; Custom Taxonomies <a name="themes/basics/categories-tags-custom-taxonomies" />
 
 Source: https://developer.wordpress.org/themes/basics/categories-tags-custom-taxonomies/
 
@@ -3578,7 +3578,7 @@ You can read more about creating custom taxonomies in the [Plugin Developer Hand
 
 ---
 
-# Pagination <a id="themes/functionality/pagination" />
+# Pagination <a name="themes/functionality/pagination" />
 
 Source: https://developer.wordpress.org/themes/functionality/pagination/
 
@@ -3721,7 +3721,7 @@ If you use that tag in the content, you need to ensure that the [wp\_link\_pages
 
 ---
 
-# Comment Template <a id="themes/template-files-section/partial-and-miscellaneous-template-files/comment-template" />
+# Comment Template <a name="themes/template-files-section/partial-and-miscellaneous-template-files/comment-template" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comment-template/
 
@@ -4010,7 +4010,7 @@ The path to the file used for an alternative comments template should be relativ
 
 ---
 
-# Media <a id="themes/functionality/media" />
+# Media <a name="themes/functionality/media" />
 
 Source: https://developer.wordpress.org/themes/functionality/media/
 
@@ -4074,7 +4074,7 @@ From the [Administration Screen](https://codex.wordpress.org/Administration_Scre
 
 ---
 
-# Featured Images &amp; Post Thumbnails <a id="themes/functionality/featured-images-post-thumbnails" />
+# Featured Images &amp; Post Thumbnails <a name="themes/functionality/featured-images-post-thumbnails" />
 
 Source: https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 
@@ -4251,7 +4251,7 @@ if ( has_post_thumbnail()) {
 
 ---
 
-# Post Formats <a id="themes/functionality/post-formats" />
+# Post Formats <a name="themes/functionality/post-formats" />
 
 Source: https://developer.wordpress.org/themes/functionality/post-formats/
 
@@ -4392,7 +4392,7 @@ Calling [remove\_theme\_support(‘post-formats’)](#reference/functions/remove
 
 ---
 
-# Internationalization <a id="themes/functionality/internationalization" />
+# Internationalization <a name="themes/functionality/internationalization" />
 
 Source: https://developer.wordpress.org/themes/functionality/internationalization/
 
@@ -4549,7 +4549,7 @@ Check the [Internationalization](#apis/handbook/internationalization) page on th
 
 ---
 
-# Localization <a id="themes/functionality/localization" />
+# Localization <a name="themes/functionality/localization" />
 
 Source: https://developer.wordpress.org/themes/functionality/localization/
 
@@ -4561,7 +4561,7 @@ Please refer to the [Localization](#apis/handbook/internationalization/localizat
 
 ---
 
-# Accessibility <a id="themes/functionality/accessibility" />
+# Accessibility <a name="themes/functionality/accessibility" />
 
 Source: https://developer.wordpress.org/themes/functionality/accessibility/
 
@@ -4758,7 +4758,7 @@ Changelog:
 
 ---
 
-# Administration Menus <a id="themes/functionality/administration-menus" />
+# Administration Menus <a name="themes/functionality/administration-menus" />
 
 Source: https://developer.wordpress.org/themes/functionality/administration-menus/
 
@@ -5242,7 +5242,7 @@ function my_options() {
 
 ---
 
-# 404 Pages <a id="themes/functionality/404-pages" />
+# 404 Pages <a name="themes/functionality/404-pages" />
 
 Source: https://developer.wordpress.org/themes/functionality/404-pages/
 
@@ -5315,7 +5315,7 @@ Now you have a functional 404 page with a search form and some text in case a us
 
 ---
 
-# Child Themes <a id="themes/advanced-topics/child-themes" />
+# Child Themes <a name="themes/advanced-topics/child-themes" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/child-themes/
 
@@ -5491,7 +5491,7 @@ The biggest changes, as noted in the Internationalization documentation, are tha
 
 ---
 
-# Theme Options &#8211; The Customize API <a id="themes/customize-api" />
+# Theme Options &#8211; The Customize API <a name="themes/customize-api" />
 
 Source: https://developer.wordpress.org/themes/customize-api/
 
@@ -5505,7 +5505,7 @@ This section contains an overview of the Customize API, including code examples 
 
 ---
 
-# UI Best Practices <a id="themes/advanced-topics/ui-best-practices" />
+# UI Best Practices <a name="themes/advanced-topics/ui-best-practices" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/ui-best-practices/
 
@@ -5607,7 +5607,7 @@ The web is filled with buttons that have unclear meanings. Remember the last tim
 
 ---
 
-# JavaScript Best Practices <a id="themes/advanced-topics/javascript-best-practices" />
+# JavaScript Best Practices <a name="themes/advanced-topics/javascript-best-practices" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/javascript-best-practices/
 
@@ -5694,7 +5694,7 @@ $(document).on('click', 'a', logClick);
 
 ---
 
-# Plugin API Hooks <a id="themes/advanced-topics/plugin-api-hooks" />
+# Plugin API Hooks <a name="themes/advanced-topics/plugin-api-hooks" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/plugin-api-hooks/
 
@@ -5706,7 +5706,7 @@ Most hooks are executed internally by WordPress, so your theme does not need spe
 
 ---
 
-# Required Theme Files <a id="themes/releasing-your-theme/required-theme-files" />
+# Required Theme Files <a name="themes/releasing-your-theme/required-theme-files" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/required-theme-files/
 
@@ -5726,7 +5726,7 @@ While these files are the only files required by the theme review team for accep
 
 ---
 
-# Testing <a id="themes/releasing-your-theme/testing" />
+# Testing <a name="themes/releasing-your-theme/testing" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/testing/
 
@@ -5797,7 +5797,7 @@ Likewise, your theme should use valid HTML5 and CSS code. There are a variety of
 
 ---
 
-# Theme Review Guidelines <a id="themes/releasing-your-theme/theme-review-guidelines" />
+# Theme Review Guidelines <a name="themes/releasing-your-theme/theme-review-guidelines" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/theme-review-guidelines/
 
@@ -5811,7 +5811,7 @@ The WordPress Themes Team is [open to anyone](https://make.wordpress.org/themes/
 
 ---
 
-# Writing Documentation <a id="themes/releasing-your-theme/writing-documentation" />
+# Writing Documentation <a name="themes/releasing-your-theme/writing-documentation" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/writing-documentation/
 
@@ -5824,7 +5824,7 @@ Here’s a list of **requirements** and **recommendations** for your theme’s d
 
 ---
 
-# Submitting Your Theme to WordPress.org <a id="themes/releasing-your-theme/submitting-your-theme-to-wordpress-org" />
+# Submitting Your Theme to WordPress.org <a name="themes/releasing-your-theme/submitting-your-theme-to-wordpress-org" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/submitting-your-theme-to-wordpress-org/
 
@@ -5850,7 +5850,7 @@ More information about the theme review process is available on the [Themes Team
 
 ---
 
-# Template Files <a id="themes/basics/template-files" />
+# Template Files <a name="themes/basics/template-files" />
 
 Source: https://developer.wordpress.org/themes/basics/template-files/
 
@@ -6035,7 +6035,7 @@ To include the search form, use the block markup for the search block:
 
 ---
 
-# Reworking Theme Files &amp; Organization <a id="themes/basics/reworking-theme-files-organization" />
+# Reworking Theme Files &amp; Organization <a name="themes/basics/reworking-theme-files-organization" />
 
 Source: https://developer.wordpress.org/themes/basics/reworking-theme-files-organization/
 
@@ -6071,7 +6071,7 @@ If you wish to [internationalize your theme](#themes/functionality/international
 
 ---
 
-# Updating Your Theme <a id="themes/releasing-your-theme/updating-your-theme" />
+# Updating Your Theme <a name="themes/releasing-your-theme/updating-your-theme" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/updating-your-theme/
 
@@ -6144,7 +6144,7 @@ Once you successfully upload the new update, you will receive a confirmation ema
 
 ---
 
-# Classic themes <a id="themes/classic-themes" />
+# Classic themes <a name="themes/classic-themes" />
 
 Source: https://developer.wordpress.org/themes/classic-themes/
 
@@ -6152,7 +6152,7 @@ In this section you will find information about developing classic WordPress the
 
 ---
 
-# Block theme accessibility <a id="themes/functionality/block-theme-accessibility" />
+# Block theme accessibility <a name="themes/functionality/block-theme-accessibility" />
 
 Source: https://developer.wordpress.org/themes/functionality/block-theme-accessibility/
 
@@ -6209,7 +6209,7 @@ Changelog:
 
 ---
 
-# Tools &amp; Resources <a id="themes/basics/tools-resources" />
+# Tools &amp; Resources <a name="themes/basics/tools-resources" />
 
 Source: https://developer.wordpress.org/themes/basics/tools-resources/
 
@@ -6286,7 +6286,7 @@ Find more theme lessons on [learn.wordpress.org](https://learn.wordpress.org/?s=
 
 ---
 
-# Theme security issues <a id="themes/theme-security/theme-security-issues" />
+# Theme security issues <a name="themes/theme-security/theme-security-issues" />
 
 Source: https://developer.wordpress.org/themes/theme-security/theme-security-issues/
 
@@ -6338,7 +6338,7 @@ https://developer.wordpress.org/themes/theme-security/common-vulnerabilities
 
 ---
 
-# Global Settings and Styles (theme.json) <a id="themes/global-settings-and-styles" />
+# Global Settings and Styles (theme.json) <a name="themes/global-settings-and-styles" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/
 
@@ -6360,7 +6360,7 @@ Use the below links to find the topic you are looking for in this chapter. Each 
 
 ---
 
-# Introduction to theme.json <a id="themes/global-settings-and-styles/introduction-to-theme-json" />
+# Introduction to theme.json <a name="themes/global-settings-and-styles/introduction-to-theme-json" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/
 
@@ -6473,7 +6473,7 @@ Now it’s time to really dive into learning more about `theme.json`. You can ta
 
 ---
 
-# Settings <a id="themes/global-settings-and-styles/settings" />
+# Settings <a name="themes/global-settings-and-styles/settings" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/
 
@@ -6529,7 +6529,7 @@ The Theme Handbook also maintains a [reference for available settings](#themes/g
 
 ---
 
-# Styles <a id="themes/global-settings-and-styles/styles" />
+# Styles <a name="themes/global-settings-and-styles/styles" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/styles/
 
@@ -6595,7 +6595,7 @@ Use the following links to explore configuring styles via `theme.json` file:
 
 ---
 
-# Custom Templates <a id="themes/global-settings-and-styles/custom-templates" />
+# Custom Templates <a name="themes/global-settings-and-styles/custom-templates" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/custom-templates/
 
@@ -6673,7 +6673,7 @@ To see what this looks like in the site editor, head over to **Appearance &gt; E
 
 ---
 
-# Patterns <a id="themes/global-settings-and-styles/patterns" />
+# Patterns <a name="themes/global-settings-and-styles/patterns" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/patterns/
 
@@ -6734,7 +6734,7 @@ Now you should see your chosen patterns in the **Patterns** inserter in the UI:
 
 ---
 
-# Template Parts <a id="themes/global-settings-and-styles/template-parts" />
+# Template Parts <a name="themes/global-settings-and-styles/template-parts" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/template-parts/
 
@@ -6867,7 +6867,7 @@ Now you should be able to see both the Header and Footer template parts if you o
 
 ---
 
-# Style Variations <a id="themes/global-settings-and-styles/style-variations" />
+# Style Variations <a name="themes/global-settings-and-styles/style-variations" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/style-variations/
 
@@ -6938,7 +6938,7 @@ Style variations can be a great feature to add to your theme, but they have a sp
 
 ---
 
-# Appearance Tools <a id="themes/global-settings-and-styles/settings/appearance-tools" />
+# Appearance Tools <a name="themes/global-settings-and-styles/settings/appearance-tools" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/appearance-tools/
 
@@ -7035,7 +7035,7 @@ For agencies and freelancers, this could create issues for your clients. Often, 
 
 ---
 
-# Border <a id="themes/global-settings-and-styles/settings/border" />
+# Border <a name="themes/global-settings-and-styles/settings/border" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/border/
 
@@ -7074,7 +7074,7 @@ Also, setting the `radius` option to `false` does not work for the Button block.
 
 ---
 
-# Color <a id="themes/global-settings-and-styles/settings/color" />
+# Color <a name="themes/global-settings-and-styles/settings/color" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/color/
 
@@ -7564,7 +7564,7 @@ Duotone does not currently support CSS custom properties or references and canno
 
 ---
 
-# Custom <a id="themes/global-settings-and-styles/settings/custom" />
+# Custom <a name="themes/global-settings-and-styles/settings/custom" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/custom/
 
@@ -7738,7 +7738,7 @@ Suppose you needed to target a class with the name of `.example-class` and to gi
 
 ---
 
-# Dimensions <a id="themes/global-settings-and-styles/settings/dimensions" />
+# Dimensions <a name="themes/global-settings-and-styles/settings/dimensions" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/dimensions/
 
@@ -7788,7 +7788,7 @@ This will enable the control in the interface. As shown in this screenshot, the 
 
 ---
 
-# Layout <a id="themes/global-settings-and-styles/settings/layout" />
+# Layout <a name="themes/global-settings-and-styles/settings/layout" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/layout/
 
@@ -7870,7 +7870,7 @@ In the screenshot below, you can see the Post Featured Image block nested within
 
 ---
 
-# Lightbox <a id="themes/global-settings-and-styles/settings/lightbox" />
+# Lightbox <a name="themes/global-settings-and-styles/settings/lightbox" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/lightbox/
 
@@ -7950,7 +7950,7 @@ To disallow user editing, you must set `settings.blocks.core/image.lightbox.allo
 
 ---
 
-# Position <a id="themes/global-settings-and-styles/settings/position" />
+# Position <a name="themes/global-settings-and-styles/settings/position" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/position/
 
@@ -8002,7 +8002,7 @@ If you want to create a sticky header, note that you cannot use positioning on t
 
 ---
 
-# Shadow <a id="themes/global-settings-and-styles/settings/shadow" />
+# Shadow <a name="themes/global-settings-and-styles/settings/shadow" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/shadow/
 
@@ -8161,7 +8161,7 @@ For a deeper dive into this feature, read [Using the box-shadow feature for them
 
 ---
 
-# Spacing <a id="themes/global-settings-and-styles/settings/spacing" />
+# Spacing <a name="themes/global-settings-and-styles/settings/spacing" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/spacing/
 
@@ -8577,7 +8577,7 @@ This results in the following values, as shown in this table:
 
 ---
 
-# Typography <a id="themes/global-settings-and-styles/settings/typography" />
+# Typography <a name="themes/global-settings-and-styles/settings/typography" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/typography/
 
@@ -9005,7 +9005,7 @@ For a deeper understanding of fluid font sizes, read [Intrinsic design, theming,
 
 ---
 
-# Use Root Padding Aware Alignments <a id="themes/global-settings-and-styles/settings/use-root-padding-aware-alignments" />
+# Use Root Padding Aware Alignments <a name="themes/global-settings-and-styles/settings/use-root-padding-aware-alignments" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/use-root-padding-aware-alignments/
 
@@ -9129,7 +9129,7 @@ Beyond that, WordPress adds inline CSS to stretch nested wide and full-width blo
 
 ---
 
-# Blocks <a id="themes/global-settings-and-styles/settings/blocks" />
+# Blocks <a name="themes/global-settings-and-styles/settings/blocks" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/blocks/
 
@@ -9279,7 +9279,7 @@ If you are wondering why some of your global settings do not seem to apply to ce
 
 ---
 
-# Settings Reference <a id="themes/global-settings-and-styles/settings/settings-reference" />
+# Settings Reference <a name="themes/global-settings-and-styles/settings/settings-reference" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/settings/settings-reference/
 
@@ -9424,7 +9424,7 @@ This setting works together with `styles.spacing.padding` in `theme.json`. If en
 
 ---
 
-# Applying Styles <a id="themes/global-settings-and-styles/styles/applying-styles" />
+# Applying Styles <a name="themes/global-settings-and-styles/styles/applying-styles" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/styles/applying-styles/
 
@@ -9707,7 +9707,7 @@ For a deeper dive into customizing block style variations, check out [Customizin
 
 ---
 
-# Using Presets <a id="themes/global-settings-and-styles/styles/using-presets" />
+# Using Presets <a name="themes/global-settings-and-styles/styles/using-presets" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/styles/using-presets/
 
@@ -9902,7 +9902,7 @@ WordPress has several features that you can register presets for. You can find t
 
 ---
 
-# Styles Reference <a id="themes/global-settings-and-styles/styles/styles-reference" />
+# Styles Reference <a name="themes/global-settings-and-styles/styles/styles-reference" />
 
 Source: https://developer.wordpress.org/themes/global-settings-and-styles/styles/styles-reference/
 
@@ -10160,7 +10160,7 @@ For an in-depth look at how to use the `css` style property, read [Per-block CSS
 
 ---
 
-# Templates <a id="themes/templates" />
+# Templates <a name="themes/templates" />
 
 Source: https://developer.wordpress.org/themes/templates/
 
@@ -10179,7 +10179,7 @@ Use the below links to find the topic you are looking for in this chapter. Each 
 
 ---
 
-# Introduction to Templates <a id="themes/templates/introduction-to-templates" />
+# Introduction to Templates <a name="themes/templates/introduction-to-templates" />
 
 Source: https://developer.wordpress.org/themes/templates/introduction-to-templates/
 
@@ -10344,7 +10344,7 @@ At this point, you’ve only been learning about templates at an overarching hig
 
 ---
 
-# Templates <a id="themes/templates/templates" />
+# Templates <a name="themes/templates/templates" />
 
 Source: https://developer.wordpress.org/themes/templates/templates/
 
@@ -10476,7 +10476,7 @@ Originally, custom templates were called “page templates.” This is because t
 
 ---
 
-# Template Hierarchy <a id="themes/templates/template-hierarchy" />
+# Template Hierarchy <a name="themes/templates/template-hierarchy" />
 
 Source: https://developer.wordpress.org/themes/templates/template-hierarchy/
 
@@ -10761,7 +10761,7 @@ If you were embedding a post with a post type of `post` and the post format of `
 
 ---
 
-# Template Parts <a id="themes/templates/template-parts" />
+# Template Parts <a name="themes/templates/template-parts" />
 
 Source: https://developer.wordpress.org/themes/templates/template-parts/
 
@@ -10965,7 +10965,7 @@ There are many reasons you might want to register custom areas. For a deeper div
 
 ---
 
-# Features <a id="themes/features" />
+# Features <a name="themes/features" />
 
 Source: https://developer.wordpress.org/themes/features/
 
@@ -10983,7 +10983,7 @@ Use the following links to locate a topic within this chapter. Each article cove
 
 ---
 
-# Block Patterns (Archived) <a id="themes/features/block-patterns" />
+# Block Patterns (Archived) <a name="themes/features/block-patterns" />
 
 Source: https://developer.wordpress.org/themes/features/block-patterns/
 
@@ -11522,7 +11522,7 @@ add_action( 'init', 'themeslug_unregister_pattern_categories' );<br></br><br></b
 
 ---
 
-# Block Style Variations <a id="themes/features/block-style-variations" />
+# Block Style Variations <a name="themes/features/block-style-variations" />
 
 Source: https://developer.wordpress.org/themes/features/block-style-variations/
 
@@ -11743,7 +11743,7 @@ For a deeper dive into styling core blocks, read [Customizing core block style v
 
 ---
 
-# Block Stylesheets <a id="themes/features/block-stylesheets" />
+# Block Stylesheets <a name="themes/features/block-stylesheets" />
 
 Source: https://developer.wordpress.org/themes/features/block-stylesheets/
 
@@ -11849,7 +11849,7 @@ For a deeper dive into block stylesheets, check out [Leveraging theme.json and p
 
 ---
 
-# Block Variations <a id="themes/features/block-variations" />
+# Block Variations <a name="themes/features/block-variations" />
 
 Source: https://developer.wordpress.org/themes/features/block-variations/
 
@@ -12008,7 +12008,7 @@ One important thing to note when unregistering variations is that you should wra
 
 ---
 
-# Who Is This Handbook For? <a id="themes/getting-started/who-is-this-handbook-for" />
+# Who Is This Handbook For? <a name="themes/getting-started/who-is-this-handbook-for" />
 
 Source: https://developer.wordpress.org/themes/getting-started/who-is-this-handbook-for/
 
@@ -12049,7 +12049,7 @@ If this sounds like something you’d be interested in, come along. You’re in 
 
 ---
 
-# Reading This Handbook <a id="themes/getting-started/reading-this-handbook" />
+# Reading This Handbook <a name="themes/getting-started/reading-this-handbook" />
 
 Source: https://developer.wordpress.org/themes/getting-started/reading-this-handbook/
 
@@ -12172,7 +12172,7 @@ The WordPress Coding Standards [encourages the use of PHP’s built-in namespace
 
 ---
 
-# Tools and Setup <a id="themes/getting-started/tools-and-setup" />
+# Tools and Setup <a name="themes/getting-started/tools-and-setup" />
 
 Source: https://developer.wordpress.org/themes/getting-started/tools-and-setup/
 
@@ -12272,7 +12272,7 @@ You should also follow the [WordPress Coding Standards](https://make.wordpress.o
 
 ---
 
-# Quick-Start Guide <a id="themes/getting-started/quick-start-guide" />
+# Quick-Start Guide <a name="themes/getting-started/quick-start-guide" />
 
 Source: https://developer.wordpress.org/themes/getting-started/quick-start-guide/
 
@@ -12383,7 +12383,7 @@ The one thing that Create Block Theme does not yet do is let you upload a custom
 
 ---
 
-# Core Concepts <a id="themes/core-concepts" />
+# Core Concepts <a name="themes/core-concepts" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/
 
@@ -12404,7 +12404,7 @@ Use the following links to locate a topic within this chapter. Each article is l
 
 ---
 
-# Theme Structure <a id="themes/core-concepts/theme-structure" />
+# Theme Structure <a name="themes/core-concepts/theme-structure" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/theme-structure/
 
@@ -12537,7 +12537,7 @@ So, consider this documentation the foundation in which you can build upon. But 
 
 ---
 
-# Main Stylesheet (style.css) <a id="themes/core-concepts/main-stylesheet" />
+# Main Stylesheet (style.css) <a name="themes/core-concepts/main-stylesheet" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/main-stylesheet/
 
@@ -12648,7 +12648,7 @@ But there are times when you will want or need to add custom CSS. You can learn 
 
 ---
 
-# Templates <a id="themes/core-concepts/templates" />
+# Templates <a name="themes/core-concepts/templates" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/templates/
 
@@ -12767,7 +12767,7 @@ You’ll learn more about how to register and create custom parts in the [Templa
 
 ---
 
-# Custom Functionality (functions.php) <a id="themes/core-concepts/custom-functionality" />
+# Custom Functionality (functions.php) <a name="themes/core-concepts/custom-functionality" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/custom-functionality/
 
@@ -12887,7 +12887,7 @@ The easiest way to avoid this issue is to leave the closing `?>` tag out altoget
 
 ---
 
-# Including Assets <a id="themes/core-concepts/including-assets" />
+# Including Assets <a name="themes/core-concepts/including-assets" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/including-assets/
 
@@ -13227,7 +13227,7 @@ Typically, you would expect fonts to fall directly under the assets documentatio
 
 ---
 
-# Global Settings and Styles <a id="themes/core-concepts/global-settings-and-styles" />
+# Global Settings and Styles <a name="themes/core-concepts/global-settings-and-styles" />
 
 Source: https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/
 
@@ -13308,7 +13308,7 @@ The important thing to remember is that anything configured in your `theme.json`
 
 ---
 
-# Internationalization <a id="themes/advanced-topics/internationalization" />
+# Internationalization <a name="themes/advanced-topics/internationalization" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/internationalization/
 
@@ -13465,7 +13465,7 @@ WordPress has many [internationalization functions](#apis/internationalization/i
 
 ---
 
-# Build Process <a id="themes/advanced-topics/build-process" />
+# Build Process <a name="themes/advanced-topics/build-process" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/build-process/
 
@@ -13688,7 +13688,7 @@ function themeslug_editor_assets() {
 
 ---
 
-# Privacy <a id="themes/advanced-topics/privacy" />
+# Privacy <a name="themes/advanced-topics/privacy" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/privacy/
 
@@ -13743,7 +13743,7 @@ While most themes will not require any action, it is recommended that you double
 
 ---
 
-# Debugging <a id="themes/advanced-topics/debugging" />
+# Debugging <a name="themes/advanced-topics/debugging" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/debugging/
 
@@ -13835,7 +13835,7 @@ There are several plugins that are helpful when debugging your theme. Each is ho
 
 ---
 
-# Security <a id="themes/advanced-topics/security" />
+# Security <a name="themes/advanced-topics/security" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/security/
 
@@ -13932,7 +13932,7 @@ It is important to stay current on potential security holes. The following resou
 
 ---
 
-# Testing <a id="themes/advanced-topics/testing" />
+# Testing <a name="themes/advanced-topics/testing" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/testing/
 
@@ -14035,7 +14035,7 @@ When shipping media or other assets with your theme, be sure that they are optim
 
 ---
 
-# Publishing Themes <a id="themes/advanced-topics/publishing-themes" />
+# Publishing Themes <a name="themes/advanced-topics/publishing-themes" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/publishing-themes/
 
@@ -14125,7 +14125,7 @@ When hosting on third-party marketplaces, it is important to understand the audi
 
 ---
 
-# Patterns <a id="themes/patterns" />
+# Patterns <a name="themes/patterns" />
 
 Source: https://developer.wordpress.org/themes/patterns/
 
@@ -14147,7 +14147,7 @@ Use the following links to locate a specific topic within this chapter. It’s b
 
 ---
 
-# Introduction to Patterns <a id="themes/patterns/introduction-to-patterns" />
+# Introduction to Patterns <a name="themes/patterns/introduction-to-patterns" />
 
 Source: https://developer.wordpress.org/themes/patterns/introduction-to-patterns/
 
@@ -14261,7 +14261,7 @@ These are certainly challenges that you’ll encounter when deciding the best me
 
 ---
 
-# Registering Patterns <a id="themes/patterns/registering-patterns" />
+# Registering Patterns <a name="themes/patterns/registering-patterns" />
 
 Source: https://developer.wordpress.org/themes/patterns/registering-patterns/
 
@@ -14619,7 +14619,7 @@ function themeslug_unregister_pattern_categories() {
 
 ---
 
-# Using PHP in Patterns <a id="themes/patterns/using-php-in-patterns" />
+# Using PHP in Patterns <a name="themes/patterns/using-php-in-patterns" />
 
 Source: https://developer.wordpress.org/themes/patterns/using-php-in-patterns/
 
@@ -14916,7 +14916,7 @@ At this point, your pattern is fully dynamic. As you dive deeper into pattern de
 
 ---
 
-# Usage in Templates <a id="themes/patterns/usage-in-templates" />
+# Usage in Templates <a name="themes/patterns/usage-in-templates" />
 
 Source: https://developer.wordpress.org/themes/patterns/usage-in-templates/
 
@@ -15021,7 +15021,7 @@ From this point, you can use this feature however you need. Whether you’re inc
 
 ---
 
-# Starter Patterns <a id="themes/patterns/starter-patterns" />
+# Starter Patterns <a name="themes/patterns/starter-patterns" />
 
 Source: https://developer.wordpress.org/themes/patterns/starter-patterns/
 
@@ -15156,7 +15156,7 @@ To learn more about including patterns in templates, check out the [Usage in Tem
 
 ---
 
-# Block Type Patterns <a id="themes/patterns/block-type-patterns" />
+# Block Type Patterns <a name="themes/patterns/block-type-patterns" />
 
 Source: https://developer.wordpress.org/themes/patterns/block-type-patterns/
 
@@ -15309,7 +15309,7 @@ Parts for custom [template part areas](#themes/templates/template-parts#template
 
 ---
 
-# Patterns and Block Locking <a id="themes/patterns/patterns-and-block-locking" />
+# Patterns and Block Locking <a name="themes/patterns/patterns-and-block-locking" />
 
 Source: https://developer.wordpress.org/themes/patterns/patterns-and-block-locking/
 
@@ -15786,7 +15786,7 @@ With this setting in place, the user will be able to edit the Image block’s me
 
 ---
 
-# Core-Supported Features <a id="themes/functionality/core-supported" />
+# Core-Supported Features <a name="themes/functionality/core-supported" />
 
 Source: https://developer.wordpress.org/themes/functionality/core-supported/
 
@@ -15794,7 +15794,7 @@ This page will list and somewhat detail all core-supported features. Each featur
 
 ---
 
-# Post Template Files <a id="themes/template-files-section/post-template-files" />
+# Post Template Files <a name="themes/template-files-section/post-template-files" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/post-template-files/
 
@@ -15925,7 +15925,7 @@ This code snippet pulls in the query that was searched with `get_search_query()`
 
 ---
 
-# Template Files Section <a id="themes/template-files-section" />
+# Template Files Section <a name="themes/template-files-section" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/
 
@@ -15937,7 +15937,7 @@ You’ll start with [post template files](#themes/template-files-section/post-te
 
 ---
 
-# Attachment Template Files <a id="themes/template-files-section/attachment-template-files" />
+# Attachment Template Files <a name="themes/template-files-section/attachment-template-files" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/attachment-template-files/
 
@@ -15993,7 +15993,7 @@ Creation of attachment page is as simple as creating an attachment.php file. The
 
 ---
 
-# Custom Post Type Template Files <a id="themes/template-files-section/custom-post-type-template-files" />
+# Custom Post Type Template Files <a name="themes/template-files-section/custom-post-type-template-files" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/custom-post-type-template-files/
 
@@ -16034,7 +16034,7 @@ Alternatively, you can use the `is_post_type_archive()` function in any template
 
 ---
 
-# Partial and Miscellaneous Template Files <a id="themes/template-files-section/partial-and-miscellaneous-template-files" />
+# Partial and Miscellaneous Template Files <a name="themes/template-files-section/partial-and-miscellaneous-template-files" />
 
 Source: https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/
 
@@ -16234,7 +16234,7 @@ Here is twenty fifteen’s example of a `content-page.php` template file.
 
 ---
 
-# Custom Logo <a id="themes/functionality/custom-logo" />
+# Custom Logo <a name="themes/functionality/custom-logo" />
 
 Source: https://developer.wordpress.org/themes/functionality/custom-logo/
 
@@ -16313,7 +16313,7 @@ To manage displaying a custom logo in the front-end, these three template tags c
 
 ---
 
-# Main Stylesheet (style.css) <a id="themes/basics/main-stylesheet-style-css" />
+# Main Stylesheet (style.css) <a name="themes/basics/main-stylesheet-style-css" />
 
 Source: https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
@@ -16391,7 +16391,7 @@ For more information on creating a Child Theme, visit the [Child Themes](/themes
 
 ---
 
-# Sticky Posts <a id="themes/functionality/sticky-posts" />
+# Sticky Posts <a name="themes/functionality/sticky-posts" />
 
 Source: https://developer.wordpress.org/themes/functionality/sticky-posts/
 
@@ -16515,7 +16515,7 @@ The “sticky” class is only added for sticky posts on the first page of the h
 
 ---
 
-# Customizer Objects <a id="themes/customize-api/customizer-objects" />
+# Customizer Objects <a name="themes/customize-api/customizer-objects" />
 
 Source: https://developer.wordpress.org/themes/customize-api/customizer-objects/
 
@@ -16864,7 +16864,7 @@ add_action( 'customize_preview_nav_menu', 'menu_customizer_preview_nav_menu', 10
 
 ---
 
-# Tools for Improved User Experience <a id="themes/customize-api/tools-for-improved-user-experience" />
+# Tools for Improved User Experience <a name="themes/customize-api/tools-for-improved-user-experience" />
 
 Source: https://developer.wordpress.org/themes/customize-api/tools-for-improved-user-experience/
 
@@ -17283,7 +17283,7 @@ You can also supply “info” as a notification’s `type`. The default `type` 
 
 ---
 
-# The Customizer JavaScript API <a id="themes/customize-api/the-customizer-javascript-api" />
+# The Customizer JavaScript API <a name="themes/customize-api/the-customizer-javascript-api" />
 
 Source: https://developer.wordpress.org/themes/customize-api/the-customizer-javascript-api/
 
@@ -17426,7 +17426,7 @@ When working with custom Customizer objects in JS, it is usually easiest to exam
 
 ---
 
-# JavaScript/Underscore.js-Rendered Custom Controls <a id="themes/customize-api/javascriptunderscore-js-rendered-custom-controls" />
+# JavaScript/Underscore.js-Rendered Custom Controls <a name="themes/customize-api/javascriptunderscore-js-rendered-custom-controls" />
 
 Source: https://developer.wordpress.org/themes/customize-api/javascriptunderscore-js-rendered-custom-controls/
 
@@ -17522,7 +17522,7 @@ The PHP-only parts of the Customize API are still fully supported and perfectly 
 
 ---
 
-# Advanced Usage <a id="themes/customize-api/advanced-usage" />
+# Advanced Usage <a name="themes/customize-api/advanced-usage" />
 
 Source: https://developer.wordpress.org/themes/customize-api/advanced-usage/
 
@@ -17548,7 +17548,7 @@ Note that it is currently necessary to manually add links to the Customizer in t
 
 ---
 
-# References <a id="themes/references" />
+# References <a name="themes/references" />
 
 Source: https://developer.wordpress.org/themes/references/
 
@@ -17560,7 +17560,7 @@ This section contains lists of [Template Tags](#themes/references/list-of-templa
 
 ---
 
-# List of Template Tags <a id="themes/references/list-of-template-tags" />
+# List of Template Tags <a name="themes/references/list-of-template-tags" />
 
 Source: https://developer.wordpress.org/themes/references/list-of-template-tags/
 
@@ -17794,7 +17794,7 @@ Template tags files are stored in the `<a class="external text" href="https://co
 
 ---
 
-# List of Conditional Tags <a id="themes/references/list-of-conditional-tags" />
+# List of Conditional Tags <a name="themes/references/list-of-conditional-tags" />
 
 Source: https://developer.wordpress.org/themes/references/list-of-conditional-tags/
 
@@ -18052,7 +18052,7 @@ All of the Conditional Tags test to see whether a certain condition is met, and 
 
 ---
 
-# Images <a id="themes/functionality/media/images" />
+# Images <a name="themes/functionality/media/images" />
 
 Source: https://developer.wordpress.org/themes/functionality/media/images/
 
@@ -18173,7 +18173,7 @@ Setting the output format to WebP will verify if the web server supports it, and
 
 ---
 
-# Audio <a id="themes/functionality/media/audio" />
+# Audio <a name="themes/functionality/media/audio" />
 
 Source: https://developer.wordpress.org/themes/functionality/media/audio/
 
@@ -18233,7 +18233,7 @@ For more technical details such as the internal library that enables this functi
 
 ---
 
-# Video <a id="themes/functionality/media/video" />
+# Video <a name="themes/functionality/media/video" />
 
 Source: https://developer.wordpress.org/themes/functionality/media/video/
 
@@ -18327,7 +18327,7 @@ For more technical details such as internal library that enables this function, 
 
 ---
 
-# Galleries <a id="themes/functionality/media/galleries" />
+# Galleries <a name="themes/functionality/media/galleries" />
 
 Source: https://developer.wordpress.org/themes/functionality/media/galleries/
 
@@ -18529,7 +18529,7 @@ For more technical details take a reference from below links
 
 ---
 
-# Feedback <a id="themes/credits/feedback" />
+# Feedback <a name="themes/credits/feedback" />
 
 Source: https://developer.wordpress.org/themes/credits/feedback/
 
@@ -18547,7 +18547,7 @@ In-page feedback forms are currently planned for the handbooks.
 
 ---
 
-# Custom Front Page Templates <a id="themes/functionality/custom-front-page-templates" />
+# Custom Front Page Templates <a name="themes/functionality/custom-front-page-templates" />
 
 Source: https://developer.wordpress.org/themes/functionality/custom-front-page-templates/
 
@@ -18659,7 +18659,7 @@ Static front pages are not intended to be paged. None of the WordPress [Previous
 
 ---
 
-# Custom Backgrounds <a id="themes/functionality/custom-backgrounds" />
+# Custom Backgrounds <a name="themes/functionality/custom-backgrounds" />
 
 Source: https://developer.wordpress.org/themes/functionality/custom-backgrounds/
 
@@ -18756,7 +18756,7 @@ This will show single image at the top right corner as below.
 
 ---
 
-# Other Resources <a id="themes/customize-api/other-resources" />
+# Other Resources <a name="themes/customize-api/other-resources" />
 
 Source: https://developer.wordpress.org/themes/customize-api/other-resources/
 
@@ -18764,7 +18764,7 @@ Source: https://developer.wordpress.org/themes/customize-api/other-resources/
 
 ---
 
-# Theme Handbook <a id="themes" />
+# Theme Handbook <a name="themes" />
 
 Source: https://developer.wordpress.org/themes/
 
@@ -18792,7 +18792,7 @@ The WordPress Theme Developer Handbook is created by the WordPress community, fo
 
 ---
 
-# Getting Started <a id="themes/getting-started" />
+# Getting Started <a name="themes/getting-started" />
 
 Source: https://developer.wordpress.org/themes/getting-started/
 
@@ -18812,7 +18812,7 @@ Use the following links to locate a topic within this chapter. Each article will
 
 ---
 
-# What Is a Theme? <a id="themes/getting-started/what-is-a-theme" />
+# What Is a Theme? <a name="themes/getting-started/what-is-a-theme" />
 
 Source: https://developer.wordpress.org/themes/getting-started/what-is-a-theme/
 
@@ -18896,7 +18896,7 @@ Remember, some users switch themes often. It is best practice to make sure any f
 
 ---
 
-# Your First Theme <a id="themes/classic-themes/your-first-theme" />
+# Your First Theme <a name="themes/classic-themes/your-first-theme" />
 
 Source: https://developer.wordpress.org/themes/classic-themes/your-first-theme/
 
@@ -19111,7 +19111,7 @@ In [Chapter 2: Theme Basics](#themes/basics "Chapter 2: Theme Basics"), we’ll 
 
 ---
 
-# Theme Basics <a id="themes/basics" />
+# Theme Basics <a name="themes/basics" />
 
 Source: https://developer.wordpress.org/themes/basics/
 
@@ -19125,7 +19125,7 @@ Finally, you’ll learn more about adding features to your theme by [using theme
 
 ---
 
-# Theme Functionality <a id="themes/functionality" />
+# Theme Functionality <a name="themes/functionality" />
 
 Source: https://developer.wordpress.org/themes/functionality/
 
@@ -19151,7 +19151,7 @@ If you’re new to themes it’s worth working your way through each section, bu
 
 ---
 
-# Advanced Topics <a id="themes/advanced-topics" />
+# Advanced Topics <a name="themes/advanced-topics" />
 
 Source: https://developer.wordpress.org/themes/advanced-topics/
 
@@ -19180,7 +19180,7 @@ This chapter also includes several other documents that are currently undergoing
 
 ---
 
-# Releasing Your Theme <a id="themes/releasing-your-theme" />
+# Releasing Your Theme <a name="themes/releasing-your-theme" />
 
 Source: https://developer.wordpress.org/themes/releasing-your-theme/
 
@@ -19215,7 +19215,7 @@ Theme Check plugin is an easy way to test your theme and ensure it’s up to spe
 
 ---
 
-# Organizing Theme Files <a id="themes/basics/organizing-theme-files" />
+# Organizing Theme Files <a name="themes/basics/organizing-theme-files" />
 
 Source: https://developer.wordpress.org/themes/basics/organizing-theme-files/
 
