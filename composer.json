@@ -1,0 +1,10 @@
+{
+	"autoload": {
+		"classmap": [
+			"tools/parser/"
+		]
+	},
+	"require": {
+		"league/html-to-markdown": "^5.1"
+	}
+}
