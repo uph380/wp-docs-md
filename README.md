@@ -12,9 +12,22 @@ Collection of single markdown files for each post type on [WordPress Developer R
 - [Secure Custom Fields Handbook](https://developer.wordpress.org/secure-custom-fields/) as [wp-scf-handbook.md](docs/wp-scf-handbook.md)
 - [WordPress user documentation](https://wordpress.org/documentation/) as [wp-articles.md](docs/wp-articles.md)
 
-Extracted from REST API of each site using custom PHP CLI scripts. 
+Extracted from REST API of each site using custom PHP CLI scripts.
 
-## Notes
+Note:
 
-- Links to the same handbook sections are converted to anchor links using path as the anchor.
+- Links to the URLs of the same content type are converted to anchor links using path as the anchor name/ID.
 
+## Usage
+
+Copy the desired markdown files to your project directory and use them during AI prompts as desired.
+
+## How to Update
+
+Run `php parser.php --update` to fetch updated content over WP REST API (sorted by `modified` date).
+
+## Credits
+
+- Tooling created by [Kaspars](https://kaspars.net) ([@konstruktors](https://x.com/konstruktors)) and [contributors](https://github.com/kasparsd/wp-docs-md/graphs/contributors).
+
+- All origin content licensed under respective licenses.
